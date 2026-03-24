@@ -1,0 +1,7 @@
+- ideally, this is planned to have followup so the quantifiable measures can be reported and trends looked at
+- we could pivot this so I just distill this down to a framework for you & team to run internally
+- should I remove mentions of FAST / ongoing engagement?
+- I have no idea what makes sense to charge for this and your ideal optics over there. what are you thinking? 
+- github/aws/jira probably not all the systems; just the 3 examples I'm using.
+- what is internal attitude on [thoughtful] 'ai generated' content?
+- not including 'Kennedy is CTO in title only / Chathura runs things' in anything yet
