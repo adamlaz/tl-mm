@@ -1,16 +1,17 @@
 # DORA Quick Check — Mad Mobile Engineering Assessment
 
-**Purpose:** Measure software delivery performance against Google's DORA research benchmarks (33,000+ professionals). Results classify teams as Elite / High / Medium / Low performers.
+**What this measures:** Software delivery performance against Google's DORA research benchmarks (33,000+ professionals). Results classify teams as Elite / High / Medium / Low.
 
-**Time to complete:** ~3 minutes
-**Who should take this:** Each engineering lead or manager, one per team/squad.
-**Note:** This is a self-assessment. We will cross-reference against actual system metrics from GitHub/Jira during the engagement.
+**Time:** ~3 minutes
+**Who takes this:** Each engineering lead or manager — one per team/squad.
+**Anonymity:** Your responses are anonymous. Only aggregate patterns are reported — nothing is attributed by name.
+**Note:** This is a self-assessment. I'll cross-reference against actual system metrics during the engagement.
 
 ---
 
 ## Instructions
 
-For each question, select the answer that best describes your team's current performance over the last 3 months. Be honest — there are no wrong answers, and this is not a performance review. The goal is to establish a baseline we can measure against in 30/60 days.
+For each question, pick the answer that best describes your team's actual performance over the last 3 months. Be honest — there are no wrong answers, and this is not a performance review. The goal is a baseline we can measure against in 30/60 days.
 
 ---
 

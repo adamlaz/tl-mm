@@ -1,16 +1,16 @@
 # Westrum Organizational Culture Survey — Mad Mobile
 
-**Purpose:** Measure organizational culture type — Pathological, Bureaucratic, or Generative — based on how information flows. DORA research validates that generative cultures predict significantly higher organizational and software delivery performance.
+**What this measures:** Organizational culture type — Pathological, Bureaucratic, or Generative — based on how information flows. DORA research shows generative cultures predict significantly better delivery performance.
 
-**Time to complete:** ~2 minutes
-**Who should take this:** All engineering leads, managers, senior ICs, and product managers.
-**Anonymity:** Individual responses are never attributed by name. Only aggregate patterns are reported.
+**Time:** ~2 minutes
+**Who takes this:** All engineering leads, managers, senior ICs, and product managers.
+**Anonymity:** Your responses are anonymous. Only aggregate patterns are reported — nothing is attributed by name.
 
 ---
 
 ## Instructions
 
-For each statement, rate how strongly you agree or disagree as it applies to your experience at Mad Mobile over the last 6 months. Answer based on reality, not aspiration.
+For each statement, rate how strongly you agree or disagree based on your experience at Mad Mobile over the last 6 months. Answer based on reality, not aspiration.
 
 **Scale:** 1 = Strongly Disagree | 2 = Disagree | 3 = Neutral | 4 = Agree | 5 = Strongly Agree
 

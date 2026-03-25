@@ -1,6 +1,10 @@
 # Survey Deployment Guide — Mad Mobile Pre-Work
 
-**Purpose:** Deploy four established engineering assessments before the April 13 onsite to create a quantitative baseline. These surveys are designed to be re-run at 30 and 60 days by Mad Mobile's team without Adam's involvement.
+**From:** Adam Lazarus
+
+Four established engineering assessments, deployed before the April 13 onsite. These create a quantitative baseline I can reference in every interview — and they're designed so Mad Mobile can re-run them at 30 and 60 days without me.
+
+The coordination brief already tells Chathura and Kennedy that survey deployment is their responsibility (distribution + nudging completion). This guide is the operational detail.
 
 ---
 
@@ -13,7 +17,7 @@
 | DevEx (DX Core 4) | Individual contributors only (engineers, QE) | ~5 min | 18 | Developer experience: feedback loops, cognitive load, flow state, satisfaction |
 | Pragmatic Engineer Test | 3–5 engineering leads or senior engineers | ~2 min | 15 | Engineering culture maturity: 12 yes/no + 3 context |
 
-**Total time per person: under 15 minutes** (most people take only 2 of the 4 surveys based on their role)
+**Total time per person: under 15 minutes.** Most people take only 2 of the 4 based on their role.
 
 ---
 
@@ -34,30 +38,30 @@
 
 | Date | Action |
 |---|---|
-| ~April 1–3 | Don sends introduction message to engineering (see template below) |
-| ~April 3–4 | Surveys go live. Adam sends links or Don's team distributes through internal survey tool. |
+| April 1–3 | Don sends introduction message to engineering (template below) |
+| April 3–4 | Surveys go live. I send links or Don's team distributes through their internal survey tool. |
 | April 10 | Reminder for anyone who hasn't completed |
-| April 11 | Surveys close. Adam analyzes results. |
-| April 13 | Adam arrives onsite with baseline data. Uses results in interviews. |
+| April 11 | Surveys close. I analyze results. |
+| April 13 | I arrive onsite with baseline data. Results feed directly into interviews. |
 
 ---
 
 ## Deployment Options
 
 ### Option A: Mad Mobile's internal survey tool (preferred)
-If MM has SurveyMonkey, Typeform, Google Forms, or similar — deploy through their existing infrastructure. This makes it feel like an internal initiative, not an external exercise. Adam provides the questions; MM's team sets them up.
+If MM has SurveyMonkey, Typeform, Google Forms, or similar — deploy through their existing infrastructure. Makes it feel like an internal initiative, not an outside exercise. I provide the questions; MM's team sets them up.
 
-### Option B: Adam sets up Google Forms (fallback)
-If no internal tool is available or it's faster, Adam creates Google Forms for each survey and shares links. Results are private to Adam and shared only in aggregate with Don.
+### Option B: I set up Google Forms (fallback)
+If there's no internal tool or it's faster this way, I create Google Forms for each survey and share links. Results stay private to me and get shared only in aggregate with Don.
 
 ### Option C: Hybrid
-DORA and Pragmatic Engineer go to a small group (leads only) — Adam can send directly. Westrum and DevEx go to a broader group — better deployed through internal channels with Don's framing.
+DORA and Pragmatic Engineer go to a small group (leads only) — I can send directly. Westrum and DevEx go broader — better deployed through internal channels with Don's framing.
 
 ---
 
 ## Introduction Message (from Don to the team)
 
-This message should come from Don — not from Adam. It positions the surveys as part of Don's leadership onboarding, not as an external consultant's data collection.
+This should come from Don, not from me. It positions the surveys as part of his leadership onboarding, not as an outside consultant collecting data.
 
 > **Subject:** Quick surveys ahead of our technology review
 >
@@ -85,24 +89,24 @@ This message should come from Don — not from Adam. It positions the surveys as
 
 ---
 
-## Analysis Plan (for Adam)
+## My Analysis Plan
 
 ### Pre-Onsite (by April 12)
 - Score each survey per the scoring guides in the individual survey files
 - Segment by team/product area wherever possible (CAKE/Restaurant vs. Concierge/Retail vs. Neo/AI)
 - Identify top 3 patterns from each survey
-- Flag any extreme outliers (very high or very low scores)
-- Prepare 2–3 "data-informed" interview questions for the onsite (e.g., "I can see your DORA lead time is X — does that match your experience?")
+- Flag extreme outliers (very high or very low scores)
+- Build 2–3 data-informed interview questions (e.g., "Your team's DORA lead time self-reports as X — does that match your experience?")
 
 ### Onsite (April 13–15)
 - Reference survey data during interviews: "The survey data suggests X — does that resonate?"
-- Use Westrum culture scores to guide which teams may be more or less candid
-- Validate DORA self-reported metrics against actual system data from GitHub/Jira
+- Use Westrum culture scores to gauge which teams may be more or less candid
+- Cross-reference DORA self-reported metrics against actual system data from source control and project management tools
 
 ### Post-Engagement Deliverable
 - Package all four surveys with Mad Mobile-specific instructions, baseline scores, and comparison guidance
-- Deliver as the "Baseline Survey Package (Repeatable)" so MM can re-run at 30/60 days
-- Include a simple scoring template so Don's team doesn't need Adam to interpret results
+- Deliver as the "Baseline Survey Package (Repeatable)" — a core deliverable so MM can re-run at 30/60 days
+- Include a simple scoring template so Don's team can interpret results without me
 
 ---
 

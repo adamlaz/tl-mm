@@ -1,10 +1,11 @@
 # Pragmatic Engineer Test — Mad Mobile
 
-**Purpose:** A modern 12-question yes/no engineering culture maturity check. Created by Gergely Orosz (The Pragmatic Engineer) as a successor to Joel Spolsky's classic "Joel Test." Provides a quick snapshot of engineering health.
+**What this measures:** Engineering culture maturity — a modern 12-question yes/no check created by Gergely Orosz (The Pragmatic Engineer) as a successor to Joel Spolsky's classic "Joel Test."
 
-**Time to complete:** ~2 minutes
-**Who should take this:** 3–5 engineering leads or senior engineers. Each person answers for their team/area.
-**Note:** A score of 10+ out of 12 indicates a mature engineering culture. Below 6 is a red flag.
+**Time:** ~2 minutes
+**Who takes this:** 3–5 engineering leads or senior engineers. Answer for your team/area.
+**Anonymity:** Your responses are anonymous. Only aggregate patterns are reported — nothing is attributed by name.
+**Scoring:** 10+ out of 12 = mature engineering culture. Below 6 = red flag.
 
 ---
 

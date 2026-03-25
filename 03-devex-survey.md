@@ -1,10 +1,10 @@
 # Developer Experience (DevEx) Survey — Mad Mobile
 
-**Purpose:** Measure developer experience across three core dimensions: Feedback Loops, Cognitive Load, and Flow State. Results map to four executive-ready dimensions: Speed, Effectiveness, Quality, and Impact (DX Core 4).
+**What this measures:** Developer experience across three dimensions — Feedback Loops, Cognitive Load, and Flow State. Results map to four executive-ready dimensions: Speed, Effectiveness, Quality, and Impact (DX Core 4).
 
-**Time to complete:** ~5 minutes
-**Who should take this:** Individual contributors (software engineers, QE engineers, DevOps/SRE). Not managers — this captures the IC perspective.
-**Anonymity:** Individual responses are never attributed by name. Only aggregate patterns and team-level trends are reported.
+**Time:** ~5 minutes
+**Who takes this:** Individual contributors — software engineers, QE engineers, DevOps/SRE. Not managers — this captures the IC perspective.
+**Anonymity:** Your responses are anonymous. Only aggregate patterns and team-level trends are reported — nothing is attributed by name.
 
 ---
 
