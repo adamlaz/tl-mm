@@ -52,7 +52,7 @@ An ~60-hour compressed diagnostic sprint to give Don an executable map of how Ma
 |---|---|---|
 | Pre-Work | Now → Onsite | AI-augmented system scanning (GitHub, AWS, Jira), engineering health surveys (DORA, Westrum, DevEx), pre-read analysis, alignment sessions with Don |
 | Onsite | April 13–15 (Mon–Wed) | 3-day sprint in Tampa: 15+ interviews, architecture walkthroughs, value stream mapping, decision-rights mapping, real case tracing |
-| Deliverables | Week after Onsite | CEO operating brief, execution map, friction register, hypothesis scorecard, 30/60/90-day plan, optional board deck |
+| Deliverables | Week after Onsite | CEO operating brief, execution map, friction register, hypothesis scorecard, 30/60/90-day plan, board-ready investor presentation, baseline survey package |
 
 ### The Approach
 
@@ -78,7 +78,7 @@ Each is scored with evidence onsite.
 
 ### The Deliverable
 
-A CEO Operating Brief structured as the technology chapter of Don's transition playbook: executive summary, execution system map, prioritized friction register, hypothesis scorecard, STARS transition diagnostic, 30/60/90-day plan with an explicit "leave alone" list, and a board-ready presentation for investor audiences.
+A CEO Operating Brief structured as the technology chapter of Don's transition playbook: executive summary, execution system map, prioritized friction register, hypothesis scorecard, STARS transition diagnostic, 30/60/90-day plan with an explicit "leave alone" list, and a **board-ready presentation for investor audiences**. A key outcome of this engagement is producing an independent, empirically grounded technology assessment that Don can present directly to Morgan Stanley and the board — establishing credibility through third-party analysis backed by named industry frameworks, not internal narratives.
 
 ### Tone, Compensation & Effort
 
@@ -90,7 +90,7 @@ Collaborative and systems-focused — not a blame exercise. All individual inter
 
 > *Note: This is a working document for Adam and Don to align on the engagement before broadening to other stakeholders. Once we're aligned on scope, approach, and logistics, we'll produce a cleaner version for internal distribution at Mad Mobile.*
 
-**Purpose**: Accelerate CEO understanding of Mad Mobile's business/technology operating system and identify the highest-leverage opportunities to improve execution velocity. Don already has deep financial and operational visibility from two years as Acting CFO — this engagement adds the technology translation layer.
+**Purpose**: Accelerate CEO understanding of Mad Mobile's business/technology operating system and identify the highest-leverage opportunities to improve execution velocity. Don already has deep financial and operational visibility from two years as Acting CFO — this engagement adds the technology translation layer. Equally important: produce an independent, empirically grounded technology assessment that Don can present to the board and investors (Morgan Stanley, Western Alliance) — establishing credibility through third-party analysis backed by named industry frameworks rather than internal narratives.
 
 **Scope**: Product decision-making, engineering organization and delivery, architecture and platform strategy, cross-functional workflows, operating cadence, business-technology alignment, AI strategy (aspiration vs. reality), vendor and tooling utilization, and major systemic blockers.
 
@@ -98,7 +98,7 @@ Collaborative and systems-focused — not a blame exercise. All individual inter
 
 **Methods**: Leadership interviews, team-level interviews, workflow walk-throughs, AI-augmented artifact review (automated system audits of GitHub, AWS, Jira, infrastructure), architecture/system mapping, value-stream mapping, and pattern validation against named hypotheses.
 
-**Outputs**: CEO operating brief, execution system map, friction register with prioritized findings, 30/60/90-day action plan (including an explicit "leave alone" list), optional board-ready presentation, and optional stakeholder communication draft.
+**Outputs**: CEO operating brief, execution system map, friction register with prioritized findings, 30/60/90-day action plan (including an explicit "leave alone" list), board-ready presentation for investor audiences, baseline survey package (repeatable at 30/60 days), vendor/tool utilization assessment, and optional stakeholder communication draft.
 
 **Timeline**: 3 weeks. Pre-Work: async + alignment sessions (now through April 11). Onsite: April 13–15 (Mon–Wed). Deliverables: April 16–25.
 
@@ -752,7 +752,7 @@ Using Watkins' STARS framework, classify the business situation Don is stepping 
 
 #### Board-Ready Presentation
 
-20–30 slides for non-technical investor audience. Organized around the PE Tech DD pillar structure with maturity scores per pillar. Designed for Don to present directly to Morgan Stanley and the board.
+20–30 slides for non-technical investor audience. Organized around the PE Tech DD pillar structure with maturity scores per pillar. Designed for Don to present directly to Morgan Stanley and the board. This is a core deliverable, not an add-on — a key purpose of this engagement is producing an independent, third-party technology assessment grounded in named industry frameworks and empirical data that gives the board a credible, clear picture of what's working, what needs attention, and what the path forward looks like. The credibility comes from the methodology: DORA benchmarks, Watkins STARS classification, PE DD pillar scoring — not opinion.
 
 #### Stakeholder Communication Draft (Optional)
 
@@ -839,7 +839,7 @@ This engagement succeeds if Don can:
 - Install a repeatable execution cadence with real metrics
 - Communicate change without triggering panic or defensiveness
 - Know where to personally spend time vs. delegate
-- Present a credible technology narrative to Morgan Stanley and the board
+- Present a credible, independent technology narrative to Morgan Stanley and the board — backed by empirical data and named frameworks, not internal spin
 - Know what NOT to touch in the first 90 days
 - Resolve the gap between formal and informal authority in the technology organization
 

@@ -26,16 +26,16 @@
 
 ## 1. Engagement Overview
 
-**What:** A ~80-hour, three-week compressed CEO ramp accelerator and technology operations diagnostic for Mad Mobile, Inc.
+**What:** A ~60-hour, three-week compressed CEO ramp accelerator and technology operations diagnostic for Mad Mobile, Inc.
 
 **Who:** Adam Lazarus (consultant/advisor) for Don Salama (Incoming/Co-CEO, Mad Mobile)
 
 **Why:** Mad Mobile has strong assets ($75M revenue, ~370 employees, Sysco/Visa/Best Buy/Apple partnerships, 21,000+ deployed locations) but is struggling to execute. Don is stepping into a Co-CEO role from a board member position and needs a clear, honest picture of the operating reality fast. The outgoing CEO (Bruce Bennett) and investors (Morgan Stanley, Goldman Sachs) have had communication breakdowns — that's the catalyst for the transition.
 
 **Structure:**
-- **Pre-Work (Now → Onsite):** AI-augmented system reconnaissance (GitHub, AWS, Jira), engineering surveys (DORA, Westrum, DevEx, Pragmatic Engineer Test), pre-read analysis, 3 alignment sessions with Don
-- **Onsite (3–5 days in Tampa, dates TBD):** 15+ interviews, architecture walkthroughs, value stream mapping, decision-rights mapping, real case tracing
-- **Deliverables (Week after onsite):** CEO operating brief, execution map, friction register, hypothesis scorecard, STARS diagnostic, 30/60/90-day plan, optional board deck
+- **Pre-Work (Now → April 11):** AI-augmented system reconnaissance, engineering surveys (DORA, Westrum, DevEx, Pragmatic Engineer Test), pre-read analysis, 3 alignment sessions with Don
+- **Onsite (April 13–15, Mon–Wed in Tampa):** 15+ interviews, architecture walkthroughs, value stream mapping, decision-rights mapping, real case tracing
+- **Deliverables (April 16–25):** CEO operating brief, execution map, friction register, hypothesis scorecard, 30/60/90-day plan, board-ready presentation, baseline survey package
 
 **Google Doc:** https://docs.google.com/document/d/1bQeR8VA6-uOQEqNw1FMCoJhX-yBP16UPNtLUal46B9s/edit
 
@@ -87,6 +87,10 @@ The engagement plan went through 8+ versions across conversations:
 - **v6:** Added deployable assessments section (DORA Quick Check, Westrum, DevEx, Pragmatic Engineer Test). Added Slack/Teams access request. Survey positioning as "new leadership is listening."
 - **v7:** Added methodological foundation table (Section 6.2), framework-specific applications woven into onsite day-by-day, deliverable sections updated with framework references.
 - **v8 (current Google Doc):** Incorporated fact-check corrections (departed executives, payment terminology, product names, additional leadership). Title page and Incoming/Co-CEO updates. Pre-work timeline changed from "Week 1" to "Now → Onsite." Scope boundaries table added back into Section 9.4.
+- **v9:** Updated org chart from Don's official source (supersedes public research). Added CAKE ecosystem detail (15+ live systems, team size). Added AI usage current state. Added requirements & prioritization process. Onsite dates still TBD. ~80 hours estimated.
+- **v10:** Incorporated March 24 call decisions: onsite confirmed April 13–15 (Mon–Wed), compressed from 5 days to 3. Compensation direction set (~$10K, deferred). Vendor/tool evaluation added to scope.
+- **v11:** Full integration of v10 changes. Added compensation amount ($10K). Board deck made core deliverable. Hours adjusted to ~60. Interview schedule detailed with specific people and focus areas. Added Mark Guilarte (PMO), Randy Brown detail, Akshay Bhasin. Expanded interview questions with CAKE-specific items. Added travel logistics.
+- **v12:** Full voice rewrite (Adam's first-person POV, killed filler language). Removed FAST/advisory section. Added scope discipline & triage protocol (interview tiers, hypothesis convergence rule, daily scope checks). Added concrete pre-work timeline with dates. Added MM-side coordination section. Tiered deliverables (core/expected/stretch). Pruned interview questions (must-ask vs. if-time). Reorganized methodology table by phase. Sharpened success criteria to 7 testable items. Fixed hours math. Added [PRIVATE] tags on sensitive observations. Added "What Interviewees Should Expect" blurb. Created companion documents: `mm-coordination-brief.md` (shareable with Chathura/Kennedy) and `notebooklm-source-chathura-kennedy.md` (for NotebookLM podcast/video/slides generation).
 
 ---
 
@@ -104,15 +108,15 @@ These are explicit decisions made during our planning conversations:
 - **Document title:** "CEO Ramp Accelerator & Execution Diagnostic" — NOT a "technology audit"
 
 ### Engagement Structure
-- **Pre-work is NOT a rigid "Week 1"** — it starts now and runs through whenever onsite lands. The more lead time, the better.
-- **Proposed onsite dates:** Week of April 14 or April 21 (Adam unavailable April 6–10)
+- **Pre-work is NOT a rigid "Week 1"** — it starts now and runs through April 11. The more lead time, the better.
+- **Onsite dates confirmed:** April 13–15 (Mon–Wed) in Tampa
 - **Adam needs lead time** to arrange coverage at Legacybox for the onsite week
-- **Onsite duration:** 3–5 days in Tampa (flexible)
-- **Total effort:** ~80 hours across 3 weeks
+- **Onsite duration:** 3 days (Mon–Wed)
+- **Total effort:** ~60 hours across 3 weeks
 
 ### Compensation
-- **Diagnostic:** One-time fixed fee, friendly deferred terms. Specific amount TBD through conversation, not in document.
-- **Advisory role:** Separate conversation from diagnostic. FAST agreement framework ready if both parties see value.
+- **Diagnostic:** $10K fixed fee, fully deferred (potentially to next year). Adam told Don "I'll think about it" on March 24 call — final terms pending.
+- **Advisory role:** Separate conversation from diagnostic. FAST section removed from v12 — discuss if/when warranted.
 - **SOW/engagement letter** needed before onsite for NDA coverage, IP ownership, liability.
 
 ### Methodology
@@ -283,28 +287,30 @@ The original prompt over-indexed on diagnosing Mad Mobile's problems. This revis
 
 These are the items that require Don's response before the engagement can proceed. Organized by priority:
 
-### Time-Sensitive (Blocks Everything Else)
-1. **Target onsite week** — April 14 or April 21? Any conflicts?
-2. **System access logistics** — Who at MM coordinates read-only access to GitHub, AWS, Jira?
-3. **SOW / engagement letter** — Who handles this on MM's side? Need NDA coverage before onsite.
+### Resolved
+1. ~~**Target onsite week**~~ — **Confirmed: April 13–15 (Mon–Wed)**
+2. **System access logistics** — Jorge Maltes (Dir IT) is the access contact. Chathura coordinates on eng side. **Needs to be initiated by April 1.**
+3. **SOW / engagement letter** — Still needed before onsite. Who handles on MM's side?
 
 ### Pre-Onsite Planning
 4. **Internal messaging** — Tone check on suggested language. Timing relative to onsite. From Don alone or jointly with Greg?
-5. **Leadership table validation** — Correct roles, departed people, missing names?
+5. **Leadership table validation** — **New org chart pending from Don's HR.** Current v2 is latest.
 6. **Survey infrastructure** — What internal survey tool does MM use? Slack or Teams?
-7. **Pre-read package** — Who compiles documents?
-8. **Interview schedule** — Priority order, additions, politically sensitive people?
+7. **Pre-read package** — **Chathura/Dulanjan own collection per v12 coordination section. Target: April 7.**
+8. **Interview schedule** — **Draft complete in v12 with priority tiers.** Chathura/Kennedy to book calendar blocks.
 
 ### Strategic / Contextual
-9. **Scope depth levels** — Any "Light" domains that should go deeper? Any "Deep" that matters less?
+9. ~~**Scope depth levels**~~ — **Vendor/tool utilization added at Medium. Otherwise scope mostly locked per March 24 call.**
 10. **Hypothesis gut check** — Which patterns resonate? Which would surprise?
 11. **Real cases to trace** — Specific CAKE outage, delayed initiative, mid-sprint change, etc.
 12. **Bruce's ongoing involvement** — Board seat? Advisory? Equity-only?
-13. **Investor relationship details** — Goldman Sachs role? Morgan Stanley dynamics?
+13. **Investor relationship details** — Goldman Sachs treated as recognition program. Morgan Stanley dynamics?
 14. **Known challenges** — Anything wrong, overstated, or missing from Section 5.6?
 15. **Confidentiality framework** — Confirm synthesized-not-attributed approach
-16. **Board deck** — Yes or no? If yes, built into Week 3 timeline from the start.
-17. **Compensation specifics** — Discuss on a call, not in writing.
+16. **Board deck** — Treated as "expected" deliverable in v12. Confirm with Don if he wants it guaranteed.
+17. ~~**Compensation specifics**~~ — **$10K penciled in, fully deferred. Final terms pending.**
+18. NEW: **"Execution Acceleration Diagnostic" framing** — Coordinate with Don on final language before Chathura/Kennedy see it.
+19. NEW: **Internal attitude on AI-generated content** — Surface during coordination with Chathura/Kennedy.
 
 ---
 
@@ -382,72 +388,83 @@ Full catalog of named frameworks used in the engagement, organized by assessment
 
 **This section is where you capture new information from Don's review sessions. Fill this in as you get feedback.**
 
-### From Don's Review Session(s)
-- [ ] Onsite week confirmed: _____
-- [ ] Leadership table corrections: _____
+### From Don's Review Sessions & March 24 Call
+- [x] Onsite week confirmed: **April 13–15 (Mon–Wed)** — confirmed on March 24 call
+- [ ] Leadership table corrections: **Pending — Don's HR producing updated org chart**
 - [ ] CFO status confirmed: _____
-- [ ] CRO confirmed as Brandan Rabdau: _____
-- [ ] Mike Jackson COO vs. Jack Kennedy COO — clarified: _____
-- [ ] David Strainick CPO — role/scope: _____
-- [ ] Thomas Lichtwerch — role/scope: _____
+- [ ] CRO confirmed as Brandan Rabdau: **Superseded — org chart from Don shows Bill Lodes as CRO**
+- [ ] Mike Jackson COO vs. Jack Kennedy COO — clarified: **Superseded — org chart shows Steven Seigel as COO, John Kennedy as CTO**
+- [ ] David Strainick CPO — role/scope: **Confirmed from org chart — owns HR/People & Culture, Sri Lanka country ops, IT, technical training**
+- [ ] Thomas Lichtwerch — role/scope: **Not on current org chart — may have departed**
 - [ ] Bruce's ongoing role: _____
-- [ ] Goldman Sachs relationship clarified: _____
+- [ ] Goldman Sachs relationship clarified: **Treated as recognition program (100 Most Intriguing Entrepreneurs) not investment in v12**
 - [ ] Greg Schmitzer's posture on transition: _____
 - [ ] Internal messaging — tone adjustments: _____
 - [ ] Survey infrastructure identified (Slack/Teams? Survey tool?): _____
-- [ ] System access contact identified: _____
-- [ ] Pre-read package owner identified: _____
+- [ ] System access contact identified: **Jorge Maltes (Director IT, reports to Strainick)**
+- [ ] Pre-read package owner identified: **Chathura/Dulanjan per v12 coordination section**
 - [ ] Hypothesis gut check — Don's reactions: _____
 - [ ] Known challenges — corrections/additions: _____
 - [ ] Real cases identified for tracing: _____
-- [ ] Board deck — yes or no: _____
-- [ ] Compensation discussed: _____
-- [ ] Scope depth adjustments: _____
-- [ ] Additional context from Don: _____
+- [ ] Board deck — yes or no: **Treated as "expected" deliverable in v12 (not guaranteed core). Confirm with Don.**
+- [x] Compensation discussed: **$10K fixed fee, fully deferred. Final terms pending Adam-Don agreement.**
+- [x] Scope depth adjustments: **Vendor/tool utilization added at Medium depth per March 24 call**
+- [x] Additional context from Don: **Kennedy/Chathura dynamic — Don said keep understated in all shared materials. New org chart pending from HR. Saturday March 29 informal meetup planned.**
 
 ### Known Doc Issues Still to Fix
-- [ ] Section 10.2, Wednesday: CRO reference still says "Doug Iverson" → should be "Brandan Rabdau"
-- [ ] Verify Goldman Sachs is actually an investor vs. just recognition program
-- [ ] CAKE restaurant count: ~4,500 in doc, may be 5,000+ — confirm with Don
+- [x] Section 10.2, Wednesday: CRO reference — **Fixed in v11/v12. No CRO named by Doug Iverson in current text. Bill Lodes is CRO per org chart.**
+- [x] Verify Goldman Sachs is actually an investor vs. just recognition program — **Treated as recognition program in v12. Not listed as investor.**
+- [ ] CAKE restaurant count: ~4,500 in doc, may be 5,000+ — **Still pending confirmation from Don. v12 notes "pending confirmation."**
 
 ---
 
-## 14. Current State of the Google Doc
+## 14. Current State of the Engagement Plan
 
-**URL:** https://docs.google.com/document/d/1bQeR8VA6-uOQEqNw1FMCoJhX-yBP16UPNtLUal46B9s/edit
+**Google Doc URL:** https://docs.google.com/document/d/1bQeR8VA6-uOQEqNw1FMCoJhX-yBP16UPNtLUal46B9s/edit
 
-**Last modified:** March 17, 2026
+**Latest local version:** v12 (`mad-mobile-engagement-plan-v12.md`)
 
-**Status:** Working draft. Fact-check corrections applied. Comments have been added for Don's review. Don has had "a few conversations" reviewing the document and Adam needs to incorporate new information from those reviews.
+**Last modified:** March 24, 2026
 
-### Document Structure (17 sections)
+**Status:** Working draft v12 complete. Full voice rewrite in Adam's first-person POV. Scope mostly locked per March 24 call with Don. Next step: Don briefs Chathura and Kennedy using the companion documents.
+
+### Companion Documents (NEW in v12)
+- `mm-coordination-brief.md` — Clean 3-5 page brief for Chathura/Kennedy. Action-oriented: what the engagement is, what they need to do, deadlines. No sensitive content.
+- `notebooklm-source-chathura-kennedy.md` — Purpose-built source for NotebookLM podcast/video/slides generation. Narrative and explanatory. Same content boundaries as coordination brief.
+
+### Document Structure (17 sections, same as v11)
 1. Engagement Charter
 2. The Actual Objective (5 questions)
 3. Why This Works: The Translation Layer
-4. Engagement Philosophy & Tone
-5. Company Context & Pre-Engagement Intelligence
-6. Diagnostic Framework: The Six Systems
+4. Engagement Philosophy & Tone (added 4.4: What Interviewees Should Expect)
+5. Company Context & Pre-Engagement Intelligence (added [PRIVATE] tags)
+6. Diagnostic Framework: The Six Systems (methodology table reorganized by phase)
 7. Hypothesis Library (9 patterns A–I)
-8. Three-Week Execution Plan
-9. Week 1: Pre-Work
-10. Week 2: Onsite Diagnostic Sprint
-11. Interview Framework
+8. Three-Week Execution Plan (added 8.2: Scope Discipline, 8.3: Concrete Timeline)
+9. Pre-Work (added 9.8: MM-Side Coordination Requirements)
+10. Onsite Diagnostic Sprint (hours fixed)
+11. Interview Framework (pruned, added must-ask/if-time markers)
 12. Artifacts to Build During Onsite
-13. Week 3: Analysis, Synthesis & Deliverables
+13. Analysis, Synthesis & Deliverables (tiered: core/expected/stretch)
 14. AI-Augmented Execution Model
-15. Compensation & Engagement Structure
+15. Compensation & Engagement Structure (FAST section removed)
 16. Handling the Bruce / Investor Context
-17. Defining Success
+17. Defining Success (sharpened to 7 testable criteria)
 
-### Key Features of Current Doc
-- "WORKING DRAFT" badge on title page
-- "For discussion between Adam & Don" callout in Section 1
-- Scope boundaries table in Session 1 (Section 9.4)
-- Concierge AI (formerly Mad.x) — updated product name
-- Bundled payment processing — corrected from "closed-loop"
-- Expanded leadership table with fact-checked additions
-- $50M described as "secured note, not equity"
-- Pre-work timeline: "Now → Onsite" (not rigid "Week 1")
+### Key Changes from v11 → v12
+- Full voice rewrite (Adam's first-person, killed filler language)
+- FAST/advisory section removed
+- Scope discipline & triage protocol added (interview tiers, hypothesis convergence, daily scope checks)
+- Concrete pre-work timeline with dates (March 24 → April 25)
+- MM-side coordination section with owner/deadline table
+- Deliverables tiered: 5 core, 3 expected, 2 stretch
+- Interview questions pruned (must-ask vs. if-time)
+- Methodology table reorganized by phase (pre-work/onsite/deliverables)
+- Success criteria sharpened from 11 to 7
+- Hours math fixed (onsite: ~25 hrs + ~3 hrs evening = ~28 hrs; total ~63 hrs)
+- [PRIVATE] tags on Kennedy/Chathura observations
+- "What Interviewees Should Expect" blurb added
+- Companion documents created
 
 ---
 
