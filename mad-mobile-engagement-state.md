@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 2, 2026
+**Date:** April 3, 2026 (updated from April 2 with automated inventory findings)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -108,27 +108,40 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 | Shared Artifact Registry | 278608866843 | aws+shared-artifacts@madmobile.com | Shared build artifacts (ECR? S3?) |
 | Shared Services | 654654350563 | aws+shared-services@madmobile.com | Shared infrastructure services |
 
-**Observations from AWS structure:**
-- Multi-account org with proper segmentation — not a single-account mess
-- CAKE has dedicated dev + R&D accounts (separate from retail)
-- Retail is geographically split (US/EU/APAC) with US DR — confirms international deployment complexity
-- Payments has its own production account — isolated from other workloads
-- Forensics + Security accounts suggest infosec scaffolding exists
-- MenuPad-Prod-Metro and Monvia are unknowns — ask about in interviews
-- No obvious Neo/AI-specific account — where does the AI platform live?
-- Shared Artifact Registry suggests centralized build pipeline exists
+**Observations from AWS structure (updated April 3 with automated inventory):**
+- Multi-account org with proper segmentation — ControlTower governance deployed across all accounts
+- **Total AWS spend: ~$383K/month** (March 2026). ~$309K in Mgmt account (likely consolidated billing/RIs — needs confirmation). Next largest: Monvia ($25.9K), CAKE Dev ($14.7K), Retail Prod US ($13.0K)
+- **201 running EC2 instances** across all accounts, **23 stopped**, **167 pre-Graviton (83%)**
+- **248 Lambda functions**, **53 on EOL runtimes (21%)** including Python 2.7, Node 6/8/10/12
+- **Retail Prod US is the heaviest workload account**: 45 EC2 instances, EKS cluster (`marvel-cloud-prod-us`), Amazon MQ ($3.3K/month), 57 CloudFormation stacks (some from 2016)
+- **Payments Prod US is architecturally cleanest**: Fully containerized on EKS, no EC2, Terraform IaC, own Grafana observability, 0 IAM users / 61 roles
+- **Monitoring is self-hosted Grafana** (Mimir + Loki + Tempo) in Shared Services — not Datadog/New Relic
+- **Jenkins is CI/CD** for CAKE (found in CAKE Development), **Bitbucket Pipelines** for other workloads
+- **Terraform is the IaC standard** (state buckets across many accounts)
+- **Security posture**: GuardDuty active across all accounts, Wiz.io deployed, Security Hub in R&D, Forensics account provisioned (Jan 2026)
+- **MenuPad-Prod-Metro**: Running instance (`venom_new`, r4.xlarge), ~$2K/month. Legacy — asked Ana to route internally.
+- **Monvia**: **$25.9K/month** — significantly more than expected for legacy. Contains Leapset-era SVN instance, m1 hardware. Asked Ana to investigate.
+- **MM-Archive**: Running "Relate" instances + FTP server. Legacy product — asked Ana.
+- **No dedicated Neo/AI account**: SageMaker artifacts found in CAKE R&D, but no production AI infrastructure identified. Asked Ana to route to Jack/Chathura.
+- Shared Artifact Registry has ECR + CodeArtifact + a `mm-techdocs-storage` bucket (suggests Backstage/TechDocs)
+- Marketplace Seller account has Lambda functions for AWS Marketplace entitlements — MM sells via AWS Marketplace
+
+### Confirmed (Updated April 3)
+- **Monitoring**: Grafana/Mimir/Loki/Tempo (self-hosted in Shared Services). Viewer access requested.
+- **CI/CD**: Jenkins (CAKE) + Bitbucket Pipelines (Retail, Payments). Dual system.
+- **IaC**: Terraform (state buckets in multiple accounts)
 
 ### Not Yet Confirmed
-- Monitoring / observability dashboards (Datadog, New Relic, CloudWatch, etc.)
-- Internal documentation platform beyond Confluence (Guru mentioned in pre-read materials)
+- Grafana dashboard access (requested from Ana/Matias)
+- Guru access (requested from Ana)
 - Internal survey tool (Ana checking with HR)
 
-### Phase 2 Access (Not Yet Requested)
-- Bitbucket personal access tokens (API/CLI)
-- Jira API tokens
-- AWS CLI / programmatic IAM access
-- Monitoring API keys
-- These come after Phase 1 exploration identifies what to point tooling at
+### Phase 2 Access (Partially Complete)
+- ✅ Bitbucket API key (created, working across all 4 workspaces)
+- ✅ Atlassian API token (created, working for Jira + Confluence)
+- ✅ AWS CLI / SSO (18 profiles configured, `Global-Audit-RO` role)
+- ⏳ Grafana viewer access (requested)
+- ⏳ CloudWatch alarm permissions (`cloudwatch:DescribeAlarms` not in audit role — requested)
 
 ---
 
@@ -163,10 +176,45 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 - **Third-party integrations**: Checkmate, 7Shifts, OLO.com, LRS, Paytronix, Bloop, DoorDash, NOLO, Orca, Davo, Parafin, Dolce, QSR KDS
 - **Team size**: ~10 engineers + ~7 QE under Randy Brown. This ratio vs. system surface area is a primary investigation target.
 
-### Source Control (Bitbucket)
-- Four separate orgs: MadMobile, Sysco Labs, Mad Payments, Sysco Labs Conf
-- This confirms CAKE acquisition integration is incomplete or deliberately separated
-- Four code lineages to analyze for: repo count, commit patterns, PR review cycles, CI/CD config, test coverage
+### Source Control (Bitbucket) — Inventoried April 3
+
+| Workspace | Total Repos | Active (90d) | Stale | CI/CD Coverage |
+|---|---|---|---|---|
+| madmobile | 1,422 | 370 (26%) | 1,052 (74%) | Checked |
+| syscolabs | 1,527 | 361 (24%) | 1,166 (76%) | Checked |
+| madpayments | 80 | 52 (65%) | 28 (35%) | 45/52 (87%) |
+| syscolabsconf | 162 | 6 (4%) | 156 (96%) | 0 |
+| **Total** | **3,191** | **789 (25%)** | **2,402 (75%)** | — |
+
+- **75% of repos are stale** — massive code sprawl with unclear ownership
+- **madpayments is the engineering quality benchmark**: TypeScript, domain-driven project structure, 87% CI/CD coverage, fully containerized on EKS
+- **madmobile**: NodeJS/JavaScript dominant (158/134 repos), C# (90), Java (80). Key projects: core-services (213), Archive (190), Menu Pad (94), Concierge (93)
+- **syscolabs**: CAKE/Leapset legacy. 1,410 of 1,527 repos have "unknown" language. QA project alone has 222 repos. Two Payment Gateway projects (v1: 101 repos, v2: 21)
+- **syscolabsconf**: Nearly dead (4% active). Single ECSP project, likely CAKE-era per-merchant configs
+- **No monorepo pattern** — microservices proliferation across all workspaces
+- **Four code lineages confirm CAKE acquisition integration was never completed**
+
+### Jira — Inventoried April 3
+
+- **141 projects**, **313 boards** (89 scrum, 224 kanban)
+- **~55K total issues**: 31,614 stories, 11,985 bugs, 6,988 subtasks, 4,099 epics, 242 tasks
+- **18,583 open issues**: 85% older than 6 months, **72% older than 1 year** — massive backlog debt
+- **Created vs resolved (26 weeks)**: 5,790 created, 5,212 resolved — **net growth of 578 issues** (backlog expanding)
+- **Sprint velocity (19 active scrum boards)**: Multiple declining trends. Ops Prime dropped from 127 → 56 issues/sprint in Q1 2026 (-56%). OS board dropped from 114 → 49 (-57%).
+- **Cycle time P50 = 59 days** (In Progress to Done). P75 = 210 days. P95 = 233 days.
+- **Per-customer Jira projects**: Every major retail customer (Brooks Brothers, Ralph Lauren, Estee Lauder, etc.) gets their own project — creates cross-project tracking complexity
+- **4 active AI/Neo projects**: AI Evangelism, AI Agent Kanban, L1 AI Agent, Neo — confirms active AI development
+- **Largest projects by issue count**: REST (17,318), OS (4,794), DSO (4,762), CE (4,441), DR (4,218), BO (4,091)
+
+### Confluence — Inventoried April 3
+
+- **165 spaces** (80 global, ~30 personal, rest inactive)
+- **Top spaces by page count**: Leapset Platform (6,445), POS (3,024), CAKE Payments (2,203), Data & Analytics (2,056), Cake Payment Gateway (1,838), Cloud Engineering (1,752)
+- **Active documentation culture**: Multiple spaces updated daily, consistent release docs
+- **Architecture docs exist but fragmented**: Spread across MMA, ES, LP, CCE, PT spaces
+- **No centralized runbook space**: Operational knowledge scattered across SWAT, SEAOA, LP, CCE
+- **RCA process confirmed**: "Root Cause Analysis: Account 11607728 SQS Retry Storm" in Team Tesla
+- **"Agentic Lovable Dev Flow"** in Cake Apps — Cursor + Chrome DevTools MCP workflow documentation
 
 ### Current AI Tooling in Use
 - **Cursor** — heavy use for daily development
@@ -175,15 +223,17 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 - **AI-driven RCA on production POS logs** — in progress
 - **Architecture Review Board (ARB)** exists for requirements/prioritization
 
-### Known Challenges (Pre-Engagement Signal)
+### Known Challenges (Pre-Engagement Signal + System Evidence)
 - Glassdoor: 2.4/5, 31% recommend, 32% positive outlook
-- Execution velocity problems (multiple sources)
-- Neo/AI gap: heavy marketing, production readiness unclear
+- Execution velocity problems — **now confirmed quantitatively**: declining sprint velocity, 59-day cycle time P50, backlog growing faster than it's being resolved
+- Neo/AI gap: heavy marketing, **no dedicated production infrastructure found** — SageMaker artifacts in R&D only
 - CAKE reliability: system-wide payment outages
 - Priority whiplash: shifting priorities mid-sprint
 - Sales-driven distortion: sales promises overriding product logic
 - Culture erosion: layoffs, shifted bonuses, forced RTO, Houston office shutdown
 - Offshore coordination: Sri Lanka timezone challenges, reporting through People not Engineering
+- **Legacy infrastructure debt**: 83% pre-Graviton EC2, 21% EOL Lambda runtimes, running instances on m1-generation hardware from 2012, CloudFormation stacks from 2016
+- **Backlog debt**: 72% of 18,583 open issues are older than 1 year
 
 ---
 
@@ -294,39 +344,73 @@ Four instruments ready. Target deployment: **Monday, April 7** (pending survey t
 - translationlayer.ai domain registered (Cloudflare)
 - MM email active (adam.lazarus@madmobile.com)
 - Microsoft Teams access
-- Bitbucket access (4 orgs)
-- Jira / Confluence access
-- AWS SSO (18 accounts)
+- Bitbucket access (4 orgs) + API key (programmatic access working)
+- Jira / Confluence access + API token (programmatic access working)
+- AWS SSO (18 accounts) + CLI profiles configured (all 18 accounts, `Global-Audit-RO` role)
 - Jira comment confirming AWS access (CLD-2431)
+- **V1 system inventory** — automated scans across all 4 platforms (April 2–3)
+- **V2 enhanced inventory** — fixed Jira API issues, expanded velocity coverage, corrected Confluence page counts, added DORA-adjacent metrics (April 3)
+- **Quantitative analysis pipeline** — 9 CSV exports, 16 interactive HTML charts in `analysis/charts/`
+- **Ana request email drafted** with findings and follow-up access requests (see `ana-request.md`)
 
 ### In Progress 🔄
 - Waiting on Ana: internal survey tool info from HR
 - Waiting on Ana: document gathering folder
+- Waiting on Ana: Grafana viewer access (requested)
+- Waiting on Ana: answers to Monvia ($25.9K/month!), MenuPad, Relate, Neo/AI infra questions
 - Don's intro message for surveys (not yet discussed internally — template ready)
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
 ### Next Steps (This Week)
-1. **Explore systems** — Bitbucket repos, Jira boards, Confluence wiki, AWS accounts. Build an inventory of what exists before asking for more.
+1. **Send Ana request email** — `ana-request.md` is ready to send
 2. **Build surveys** — have Google Forms ready as fallback regardless of what MM's tool is
 3. **Finalize interview schedule** — send to Ana for calendar booking
 4. **Nudge Don** on the survey intro message timing (target: ahead of Monday deployment)
 5. **Collect pre-read docs** as Ana's folder becomes available
+6. **Review analysis charts** — open `analysis/charts/*.html` in browser, identify top findings to lead with onsite
+7. **Prep interview questions** — update with specific data points from inventory (e.g., "Your PR cycle time averages X hours — walk me through why")
 
-### Explore & Inventory Priority
-- **Bitbucket:** Repo count across all 4 orgs, commit frequency, active vs. stale repos, CI/CD pipeline configs, branch strategy, PR review patterns
-- **Jira:** Project boards, sprint velocity (last 6 months), ticket lifecycle, backlog health, cross-team dependencies, Jira project keys (especially CLD for cloud)
-- **Confluence:** Architecture docs, runbooks, post-mortems, onboarding docs, anything that reveals how the org documents itself
-- **AWS:** Service inventory per account, deployment patterns, monitoring/alerting config, cost allocation, what lives where
-- **Teams:** Channel structure, activity patterns, system monitoring alerts
+### System Exploration — Completed (Key Answers)
+- **Where does Neo/AI live?** No dedicated account. SageMaker in CAKE R&D. Jira projects exist (NEO, AAK, LAA). Confluence docs exist. But no production AI infrastructure found. **This is a key onsite question for Jack/Chathura.**
+- **What are MenuPad-Prod-Metro and Monvia?** Legacy accounts with running instances. Monvia is costing $25.9K/month. **Escalated to Ana.**
+- **What CI/CD tools are in use?** Jenkins (CAKE, found in CAKE Dev account) + Bitbucket Pipelines (Retail, Payments). Dual CI/CD system.
+- **How are the four Bitbucket orgs related?** madmobile = Concierge/Retail core. syscolabs = CAKE/Leapset legacy. madpayments = Modern payments (TypeScript, domain-driven). syscolabsconf = Dead CAKE-era configs.
+- **What monitoring/observability exists?** Self-hosted Grafana stack (Mimir + Loki + Tempo) in Shared Services. Payments has its own Grafana instance. **Not Datadog or New Relic.** Viewer access requested.
+- **Are there other platforms?** Wiz.io for security scanning. GuardDuty across all accounts. AWS Marketplace seller functions. Backstage/TechDocs likely (mm-techdocs-storage bucket found).
 
-### Key Questions for System Exploration
-- Where does Neo/AI live? (No obvious AWS account for it)
-- What are MenuPad-Prod-Metro and Monvia? (Unknown AWS accounts)
-- What CI/CD tools are in use? (Jenkins? GitHub Actions? Bitbucket Pipelines? Something else?)
-- How are the four Bitbucket orgs related? What's in each?
-- What monitoring/observability exists? (No access confirmed yet)
-- Are there any other infrastructure or tooling platforms not yet visible?
+### Pre-Work Quantitative Baseline (Available for Onsite)
+
+| Metric | Value | Source |
+|---|---|---|
+| AWS monthly spend | ~$383K (March 2026) | Cost Explorer |
+| AWS running EC2 instances | 201 | EC2 API |
+| EC2 pre-Graviton percentage | 83% (167/201) | EC2 API |
+| Lambda EOL runtime percentage | 21% (53/248) | Lambda API |
+| Total Bitbucket repos | 3,191 across 4 workspaces | Bitbucket API |
+| Active repos (commits in 90d) | 789 (25%) | Bitbucket API |
+| Stale repos | 2,402 (75%) | Bitbucket API |
+| madpayments CI/CD coverage | 87% | Bitbucket API |
+| Jira projects | 141 | Jira API |
+| Jira boards | 313 (89 scrum, 224 kanban) | Jira API |
+| Total Jira issues | ~55,000 | Jira approximate-count |
+| Open Jira issues | 18,583 | Jira approximate-count |
+| Open issues > 1 year old | 13,376 (72%) | Jira approximate-count |
+| Issues created (last 90d) | 2,912 | Jira approximate-count |
+| Issues resolved (last 90d) | 2,973 | Jira approximate-count |
+| Sprint velocity trend | Declining on multiple boards | Jira Agile API |
+| Cycle time P50 | 59 days | Jira changelog |
+| Confluence spaces | 165 | Confluence API |
+| Largest Confluence space | Leapset Platform (6,445 pages) | Confluence API |
+| PR cycle time (sample) | ~27–31h avg for active repos | Bitbucket API |
+
+### Analysis Artifacts (in repo)
+- `inventory/` — Raw JSON inventory data (18 AWS, 4 BB, Jira, Confluence)
+- `analysis/*.csv` — 9 spreadsheet-ready CSV exports
+- `analysis/charts/*.html` — 16 interactive plotly charts (open in browser)
+- `inventory/summary.md` — V1 consolidated summary
+- `ana-request.md` — Ready-to-send email for Ana
+- `scripts/` — Reusable inventory and analysis scripts
 
 ---
 
