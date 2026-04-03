@@ -1,0 +1,31 @@
+name,open_issues,bugs,stories,tasks,epics,other,project_count,projects,role_classification,primary_category,engineering_projects,customer_success_projects,operations_projects,is_overloaded
+Ana Chambers,186,55,26,3,20,82,20,"['BB', 'CLN', 'CLOUD', 'ELCE', 'EN', 'FAS', 'FASCPY', 'KWGCPY', 'NEO', 'PLTRTL', 'REST', 'RRS', 'SGNT', 'TALCPY', 'TCSD', 'TEA', 'TSC', 'TSCTEST', 'UR', 'WEMA']",cross_functional,customer_success,5,15,0,True
+chalaka.thushara,113,0,95,0,7,11,2,"['OS', 'TOS']",engineering_ic,engineering,1,0,1,True
+Dulanjan Wengappuliarachchi,106,2,7,0,44,53,6,"['AR', 'CHRC', 'ELC', 'KDS', 'OS', 'REST']",operations,operations,2,0,4,True
+Chip O'Connell,60,0,12,1,25,22,7,"['CHRC', 'CX', 'ELC', 'KDS', 'OS', 'PLAT', 'TOS']",operations,operations,2,0,5,True
+Dilruwan Madubashitha,47,0,16,12,4,15,4,"['DR', 'ELC', 'KDS', 'REST']",engineering_ic,engineering,2,0,2,False
+Eriq Breland,41,0,34,7,0,0,1,['TOS'],operations,operations,0,0,1,False
+Benjamin Roedell,38,2,18,0,5,13,8,"['AI', 'AR', 'CLN', 'CM', 'CORE', 'KWGCPY', 'OS', 'REST']",engineering_ic,engineering,6,1,1,False
+Amy Arunamata,35,4,0,0,0,31,1,['RL'],customer_success,customer_success,0,1,0,False
+Anderson Lavor,32,3,24,2,1,2,1,['REST'],engineering_ic,engineering,1,0,0,False
+Antonio Mussi,28,0,18,3,7,0,1,['WM'],customer_success,customer_success,0,1,0,False
+Darren Blackwell,26,1,25,0,0,0,1,['REST'],engineering_ic,engineering,1,0,0,False
+Cory Renard,25,14,7,0,1,3,2,"['CORE', 'REST']",engineering_ic,engineering,2,0,0,False
+Ashen,24,4,20,0,0,0,2,"['DR', 'REST']",engineering_ic,engineering,2,0,0,False
+chathura.ratnayake,23,0,1,0,12,10,4,"['AR', 'CHRC', 'ELC', 'REST']",operations,operations,1,0,3,False
+Danika Munasinghe,22,11,11,0,0,0,2,"['REST', 'UP']",engineering_ic,engineering,2,0,0,False
+Dulana Dharmaratne,22,1,0,0,0,21,1,['REST'],engineering_lead,engineering,1,0,0,False
+Alexander Baine,21,5,4,0,0,12,3,"['CLN', 'CORE', 'REST']",engineering_lead,engineering,3,0,0,False
+Bill Fenley,18,3,11,1,1,2,1,['REST'],engineering_ic,engineering,1,0,0,False
+anil.rathore,15,0,7,0,3,5,4,"['BB', 'ELCE', 'FUL', 'WEMA']",customer_success,customer_success,1,3,0,False
+Altaaf Anver,14,2,10,0,0,2,5,"['CM', 'DSO', 'OS', 'REST', 'UP']",engineering_ic,engineering,5,0,0,False
+Das DeSilva,14,2,3,0,1,8,5,"['KWGCPY', 'OS', 'RL', 'RM', 'SGNT']",customer_success,customer_success,1,3,1,False
+Chathura Lalinda Ranasingha,13,0,3,0,2,8,2,"['OS', 'REST']",engineering_lead,engineering,2,0,0,False
+Daniel Lomsak,12,0,1,0,2,9,3,"['AR', 'PLAT', 'REST']",engineering_lead,engineering,2,0,1,False
+Arunkumar Vijayakumar,9,0,0,0,0,9,1,['RL'],customer_success,customer_success,0,1,0,False
+Beau Bruderer,9,5,4,0,0,0,1,['REST'],engineering_ic,engineering,1,0,0,False
+Dilmith nimtharana bulathsinhala,7,0,7,0,0,0,1,['DR'],engineering_ic,engineering,1,0,0,False
+Anthony Goad,4,0,2,1,0,1,2,"['AI', 'OS']",engineering_ic,engineering,2,0,0,False
+Austin.Spreadbury,4,0,1,0,0,3,1,['REST'],engineering_lead,engineering,1,0,0,False
+Chalaka Sudusinghe,4,2,2,0,0,0,2,"['DR', 'REST']",engineering_ic,engineering,2,0,0,False
+Debbie Keye,4,0,0,0,0,4,3,"['CM', 'RL', 'TCSD']",customer_success,customer_success,1,2,0,False

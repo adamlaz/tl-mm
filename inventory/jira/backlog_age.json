@@ -1,7 +1,30 @@
 {
-  "0-30d": 611,
-  "30-90d": 1089,
-  "90-180d": 1028,
-  "180-365d": 2479,
-  "365d+": 13376
+  "overall": {
+    "0-30d": 611,
+    "30-90d": 1089,
+    "90-180d": 1028,
+    "180-365d": 2478,
+    "365d+": 13377
+  },
+  "engineering": {
+    "0-30d": 511,
+    "30-90d": 1015,
+    "90-180d": 845,
+    "180-365d": 2239,
+    "365d+": 9115
+  },
+  "customer_success": {
+    "0-30d": "error: 400 Client Error: Bad Request for url: https://madmobile-eng.atlassian.net/rest/api/3/search/approximate-count",
+    "30-90d": "error: 400 Client Error: Bad Request for url: https://madmobile-eng.atlassian.net/rest/api/3/search/approximate-count",
+    "90-180d": "error: 400 Client Error: Bad Request for url: https://madmobile-eng.atlassian.net/rest/api/3/search/approximate-count",
+    "180-365d": "error: 400 Client Error: Bad Request for url: https://madmobile-eng.atlassian.net/rest/api/3/search/approximate-count",
+    "365d+": "error: 400 Client Error: Bad Request for url: https://madmobile-eng.atlassian.net/rest/api/3/search/approximate-count"
+  },
+  "operations": {
+    "0-30d": 0,
+    "30-90d": 1,
+    "90-180d": 0,
+    "180-365d": 21,
+    "365d+": 2080
+  }
 }

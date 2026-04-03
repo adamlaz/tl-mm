@@ -1,102 +1,402 @@
 {
-  "AAK": 40,
-  "ACT": 25,
-  "AH": 0,
-  "AHSKREST": 0,
-  "AI": 87,
-  "AL": 0,
-  "APOLLO": 0,
-  "AR": 199,
-  "AUD": 238,
-  "BB": 21,
-  "BBOOK": 40,
-  "BO": 4091,
-  "BT": 424,
-  "BTP": 39,
-  "CAKE": 270,
-  "CAS": 1,
-  "CE": 4441,
-  "CHECK": "error",
-  "CHRC": 172,
-  "CK": 0,
-  "CL": 2,
-  "CLD": 2422,
-  "CLN": 1164,
-  "CLOUD": 999,
-  "CM": 391,
-  "CONNECT": "error",
-  "CONVO": 46,
-  "CORE": 1554,
-  "CP": 19,
-  "CQP": 0,
-  "CX": 59,
-  "DASH": 5,
-  "DEV": 214,
-  "DO": "error",
-  "DP": 70,
-  "DR": 4218,
-  "DRAC": 0,
-  "DSO": 4762,
-  "EA": 34,
-  "EI": 0,
-  "ELC": 168,
-  "ELCE": 984,
-  "EN": 101,
-  "FAS": 117,
-  "FASCPY": 99,
-  "FUL": 181,
-  "GO": "error",
-  "GRC": 468,
-  "GUESS": 18,
-  "HULK": 0,
-  "IAL": 44,
-  "ITP": 7,
-  "JC": 881,
-  "KDS": 175,
-  "KEN": 0,
-  "KR": 297,
-  "KWG": 471,
-  "KWGCPY": 233,
-  "L2": 0,
-  "LAA": 0,
-  "LEO": 0,
-  "LIBRA": 0,
-  "LPC": 150,
-  "M60": 176,
-  "MAUI": 0,
-  "MCP": 178,
-  "MDM": 0,
-  "MIRA": 1,
-  "MP": 2272,
-  "MPOS": 173,
-  "NEO": 22,
-  "NOVA": 0,
-  "OP": 4,
-  "OR": "error",
-  "OS": 4794,
-  "PAY": 174,
-  "PCATALOG": 1,
-  "PD": 129,
-  "PHOEN": 0,
-  "PI": 83,
-  "PLAT": 507,
-  "PLTFRM": 1694,
-  "PLTRTL": 58,
-  "POL": 0,
-  "POS": 894,
-  "PP": 82,
-  "PR": 846,
-  "PS": 78,
-  "PSTT": 0,
-  "PTES": 13,
-  "RE": 377,
-  "RES": 40,
-  "REST": 17318,
-  "RL": 3832,
-  "RM": 519,
-  "RP": 59,
-  "RPT": 0,
-  "RRS": 383,
-  "SE": 621,
-  "SGNT": 606
+  "AAK": {
+    "count": 40,
+    "classification": "engineering"
+  },
+  "ACT": {
+    "count": 25,
+    "classification": "customer_success"
+  },
+  "AH": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "AHSKREST": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "AI": {
+    "count": 87,
+    "classification": "engineering"
+  },
+  "AL": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "APOLLO": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "AR": {
+    "count": 199,
+    "classification": "operations"
+  },
+  "AUD": {
+    "count": 238,
+    "classification": "operations"
+  },
+  "BB": {
+    "count": 21,
+    "classification": "customer_success"
+  },
+  "BBOOK": {
+    "count": 40,
+    "classification": "customer_success"
+  },
+  "BO": {
+    "count": 4091,
+    "classification": "engineering"
+  },
+  "BT": {
+    "count": 424,
+    "classification": "operations"
+  },
+  "BTP": {
+    "count": 39,
+    "classification": "operations"
+  },
+  "CAKE": {
+    "count": 270,
+    "classification": "operations"
+  },
+  "CAS": {
+    "count": 1,
+    "classification": "engineering"
+  },
+  "CE": {
+    "count": 4441,
+    "classification": "engineering"
+  },
+  "CHECK": {
+    "count": "error",
+    "classification": "customer_success"
+  },
+  "CHRC": {
+    "count": 172,
+    "classification": "operations"
+  },
+  "CK": {
+    "count": 0,
+    "classification": "inactive"
+  },
+  "CL": {
+    "count": 2,
+    "classification": "inactive"
+  },
+  "CLD": {
+    "count": 2422,
+    "classification": "engineering"
+  },
+  "CLN": {
+    "count": 1164,
+    "classification": "engineering"
+  },
+  "CLOUD": {
+    "count": 999,
+    "classification": "engineering"
+  },
+  "CM": {
+    "count": 391,
+    "classification": "engineering"
+  },
+  "CONNECT": {
+    "count": "error",
+    "classification": "customer_success"
+  },
+  "CONVO": {
+    "count": 46,
+    "classification": "customer_success"
+  },
+  "CORE": {
+    "count": 1554,
+    "classification": "engineering"
+  },
+  "CP": {
+    "count": 19,
+    "classification": "operations"
+  },
+  "CQP": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "CX": {
+    "count": 59,
+    "classification": "operations"
+  },
+  "DASH": {
+    "count": 5,
+    "classification": "customer_success"
+  },
+  "DEV": {
+    "count": 214,
+    "classification": "engineering"
+  },
+  "DO": {
+    "count": "error",
+    "classification": "engineering"
+  },
+  "DP": {
+    "count": 70,
+    "classification": "engineering"
+  },
+  "DR": {
+    "count": 4218,
+    "classification": "engineering"
+  },
+  "DRAC": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "DSO": {
+    "count": 4762,
+    "classification": "engineering"
+  },
+  "EA": {
+    "count": 34,
+    "classification": "customer_success"
+  },
+  "EI": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "ELC": {
+    "count": 168,
+    "classification": "operations"
+  },
+  "ELCE": {
+    "count": 984,
+    "classification": "customer_success"
+  },
+  "EN": {
+    "count": 101,
+    "classification": "customer_success"
+  },
+  "FAS": {
+    "count": 117,
+    "classification": "customer_success"
+  },
+  "FASCPY": {
+    "count": 99,
+    "classification": "customer_success"
+  },
+  "FUL": {
+    "count": 181,
+    "classification": "engineering"
+  },
+  "GO": {
+    "count": "error",
+    "classification": "inactive"
+  },
+  "GRC": {
+    "count": 468,
+    "classification": "operations"
+  },
+  "GUESS": {
+    "count": 18,
+    "classification": "customer_success"
+  },
+  "HULK": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "IAL": {
+    "count": 44,
+    "classification": "engineering"
+  },
+  "ITP": {
+    "count": 7,
+    "classification": "operations"
+  },
+  "JC": {
+    "count": 881,
+    "classification": "operations"
+  },
+  "KDS": {
+    "count": 175,
+    "classification": "operations"
+  },
+  "KEN": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "KR": {
+    "count": 297,
+    "classification": "engineering"
+  },
+  "KWG": {
+    "count": 471,
+    "classification": "customer_success"
+  },
+  "KWGCPY": {
+    "count": 233,
+    "classification": "customer_success"
+  },
+  "L2": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "LAA": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "LEO": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "LIBRA": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "LPC": {
+    "count": 150,
+    "classification": "operations"
+  },
+  "M60": {
+    "count": 176,
+    "classification": "operations"
+  },
+  "MAUI": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "MCP": {
+    "count": 178,
+    "classification": "operations"
+  },
+  "MDM": {
+    "count": 0,
+    "classification": "inactive"
+  },
+  "MIRA": {
+    "count": 1,
+    "classification": "engineering"
+  },
+  "MP": {
+    "count": 2272,
+    "classification": "engineering"
+  },
+  "MPOS": {
+    "count": 173,
+    "classification": "customer_success"
+  },
+  "NEO": {
+    "count": 22,
+    "classification": "engineering"
+  },
+  "NOVA": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "OP": {
+    "count": 4,
+    "classification": "engineering"
+  },
+  "OR": {
+    "count": "error",
+    "classification": "engineering"
+  },
+  "OS": {
+    "count": 4794,
+    "classification": "engineering"
+  },
+  "PAY": {
+    "count": 174,
+    "classification": "engineering"
+  },
+  "PCATALOG": {
+    "count": 1,
+    "classification": "customer_success"
+  },
+  "PD": {
+    "count": 129,
+    "classification": "operations"
+  },
+  "PHOEN": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "PI": {
+    "count": 83,
+    "classification": "engineering"
+  },
+  "PLAT": {
+    "count": 507,
+    "classification": "engineering"
+  },
+  "PLTFRM": {
+    "count": 1694,
+    "classification": "engineering"
+  },
+  "PLTRTL": {
+    "count": 58,
+    "classification": "engineering"
+  },
+  "POL": {
+    "count": 0,
+    "classification": "engineering"
+  },
+  "POS": {
+    "count": 894,
+    "classification": "engineering"
+  },
+  "PP": {
+    "count": 82,
+    "classification": "operations"
+  },
+  "PR": {
+    "count": 846,
+    "classification": "engineering"
+  },
+  "PS": {
+    "count": 78,
+    "classification": "operations"
+  },
+  "PSTT": {
+    "count": 0,
+    "classification": "operations"
+  },
+  "PTES": {
+    "count": 13,
+    "classification": "operations"
+  },
+  "RE": {
+    "count": 377,
+    "classification": "engineering"
+  },
+  "RES": {
+    "count": 40,
+    "classification": "operations"
+  },
+  "REST": {
+    "count": 17318,
+    "classification": "engineering"
+  },
+  "RL": {
+    "count": 3832,
+    "classification": "customer_success"
+  },
+  "RM": {
+    "count": 519,
+    "classification": "operations"
+  },
+  "RP": {
+    "count": 59,
+    "classification": "operations"
+  },
+  "RPT": {
+    "count": 0,
+    "classification": "inactive"
+  },
+  "RRS": {
+    "count": 383,
+    "classification": "customer_success"
+  },
+  "SE": {
+    "count": 621,
+    "classification": "engineering"
+  },
+  "SGNT": {
+    "count": 606,
+    "classification": "customer_success"
+  }
 }

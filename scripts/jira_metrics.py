@@ -7,6 +7,7 @@ import os
 import time
 from datetime import datetime, timedelta, timezone
 from requests.auth import HTTPBasicAuth
+import jira_config
 
 JIRA_URL = os.environ.get("ATLASSIAN_URL", "https://madmobile-eng.atlassian.net")
 JIRA_EMAIL = os.environ.get("ATLASSIAN_EMAIL", "adam.lazarus@madmobile.com")
@@ -111,30 +112,35 @@ def get_all_velocity():
     return velocity
 
 def get_created_vs_resolved_trend():
-    """Weekly created vs resolved counts over 6 months."""
-    trend = []
+    """Weekly created vs resolved counts over 6 months, segmented."""
+    result = {}
     now = datetime.now(timezone.utc)
-    for weeks_ago in range(26, -1, -1):
-        week_start = now - timedelta(weeks=weeks_ago + 1)
-        week_end = now - timedelta(weeks=weeks_ago)
-        start_str = week_start.strftime('%Y-%m-%d')
-        end_str = week_end.strftime('%Y-%m-%d')
-        try:
-            created = approximate_count(f'created >= "{start_str}" AND created < "{end_str}"')
-            resolved = approximate_count(f'resolved >= "{start_str}" AND resolved < "{end_str}"')
-            trend.append({
-                'week_start': start_str, 'week_end': end_str,
-                'created': created, 'resolved': resolved,
-                'net': resolved - created,
-            })
-        except Exception as e:
-            trend.append({'week_start': start_str, 'error': str(e)})
-        time.sleep(0.2)
-    return trend
+    for seg_name, seg_fn in [('overall', None), ('engineering', jira_config.engineering_jql)]:
+        prefix = f" AND {seg_fn()}" if seg_fn else ""
+        trend = []
+        print(f"    Segment: {seg_name}...", flush=True)
+        for weeks_ago in range(26, -1, -1):
+            week_start = now - timedelta(weeks=weeks_ago + 1)
+            week_end = now - timedelta(weeks=weeks_ago)
+            start_str = week_start.strftime('%Y-%m-%d')
+            end_str = week_end.strftime('%Y-%m-%d')
+            try:
+                created = approximate_count(f'created >= "{start_str}" AND created < "{end_str}"{prefix}')
+                resolved = approximate_count(f'resolved >= "{start_str}" AND resolved < "{end_str}"{prefix}')
+                trend.append({
+                    'week_start': start_str, 'week_end': end_str,
+                    'created': created, 'resolved': resolved,
+                    'net': resolved - created,
+                })
+            except Exception as e:
+                trend.append({'week_start': start_str, 'error': str(e)})
+            time.sleep(0.2)
+        result[seg_name] = trend
+    return result
 
 def get_backlog_age_distribution():
-    """Open issues bucketed by age."""
-    buckets = {}
+    """Open issues bucketed by age, segmented."""
+    result = {}
     age_ranges = [
         ('0-30d', 'statusCategory != Done AND created >= -30d'),
         ('30-90d', 'statusCategory != Done AND created >= -90d AND created < -30d'),
@@ -142,17 +148,23 @@ def get_backlog_age_distribution():
         ('180-365d', 'statusCategory != Done AND created >= -365d AND created < -180d'),
         ('365d+', 'statusCategory != Done AND created < -365d'),
     ]
-    for label, jql in age_ranges:
-        try:
-            buckets[label] = approximate_count(jql)
-        except Exception as e:
-            buckets[label] = f"error: {e}"
-    return buckets
+    for seg_name, seg_fn in jira_config.SEGMENTS.items():
+        prefix = f" AND {seg_fn()}" if seg_fn else ""
+        buckets = {}
+        print(f"    Segment: {seg_name}...", flush=True)
+        for label, jql_base in age_ranges:
+            try:
+                buckets[label] = approximate_count(f'{jql_base}{prefix}')
+            except Exception as e:
+                buckets[label] = f"error: {e}"
+        result[seg_name] = buckets
+    return result
 
 def get_cycle_time_sample():
-    """Sample resolved issues and compute cycle time from changelog."""
+    """Sample resolved issues from engineering projects and compute cycle time."""
+    eng_filter = f" AND {jira_config.engineering_jql()}"
     issues = search_issues_jql(
-        'statusCategory = Done AND resolved >= -90d ORDER BY resolved DESC',
+        f'statusCategory = Done AND resolved >= -90d{eng_filter} ORDER BY resolved DESC',
         fields=["key", "summary", "issuetype", "project", "created", "resolutiondate", "status"],
         max_results=200
     )

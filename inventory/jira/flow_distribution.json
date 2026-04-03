@@ -1,0 +1,62 @@
+{
+  "overall": {
+    "resolved_90d": {
+      "features": 1347,
+      "defects": 510,
+      "tasks": 20,
+      "epics": 211,
+      "subtasks": 1
+    },
+    "created_90d": {
+      "features": 917,
+      "defects": 431,
+      "tasks": 28,
+      "epics": 120,
+      "subtasks": 87
+    },
+    "open": {
+      "features": 8075,
+      "defects": 2109,
+      "tasks": 35,
+      "epics": 2278
+    },
+    "resolved_90d_percentages": {
+      "features": 64.5,
+      "defects": 24.4,
+      "tasks": 1.0,
+      "epics": 10.1,
+      "subtasks": 0.0
+    },
+    "resolved_90d_total": 2089
+  },
+  "engineering": {
+    "resolved_90d": {
+      "features": 1247,
+      "defects": 400,
+      "tasks": 20,
+      "epics": 197,
+      "subtasks": 1
+    },
+    "created_90d": {
+      "features": 811,
+      "defects": 319,
+      "tasks": 28,
+      "epics": 104,
+      "subtasks": 51
+    },
+    "open": {
+      "features": 6483,
+      "defects": 1667,
+      "tasks": 35,
+      "epics": 1363
+    },
+    "resolved_90d_percentages": {
+      "features": 66.9,
+      "defects": 21.4,
+      "tasks": 1.1,
+      "epics": 10.6,
+      "subtasks": 0.1
+    },
+    "resolved_90d_total": 1865
+  }
+}

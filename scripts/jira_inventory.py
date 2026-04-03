@@ -6,6 +6,7 @@ import json
 import os
 from datetime import datetime, timedelta, timezone
 from requests.auth import HTTPBasicAuth
+import jira_config
 
 JIRA_URL = os.environ.get("ATLASSIAN_URL", "https://madmobile-eng.atlassian.net")
 JIRA_EMAIL = os.environ.get("ATLASSIAN_EMAIL", "adam.lazarus@madmobile.com")
@@ -88,14 +89,16 @@ def approximate_count(jql):
     resp.raise_for_status()
     return resp.json().get('count', 0)
 
-def get_issue_distribution():
+def get_issue_distribution_segment(segment_name, segment_jql_fn):
+    """Run issue distribution queries for a single segment."""
+    prefix = f" AND {segment_jql_fn()}" if segment_jql_fn else ""
     distributions = {}
     jql_types = {
-        'bugs': 'issuetype = Bug',
-        'stories': 'issuetype = Story',
-        'tasks': 'issuetype = Task',
-        'epics': 'issuetype = Epic',
-        'subtasks': 'issuetype in subtaskIssueTypes()',
+        'bugs': f'issuetype = Bug{prefix}',
+        'stories': f'issuetype = Story{prefix}',
+        'tasks': f'issuetype = Task{prefix}',
+        'epics': f'issuetype = Epic{prefix}',
+        'subtasks': f'issuetype in subtaskIssueTypes(){prefix}',
     }
     for label, jql in jql_types.items():
         try:
@@ -103,7 +106,7 @@ def get_issue_distribution():
         except Exception as e:
             distributions[label] = f"error: {e}"
 
-    for label, jql in [
+    for label, jql_base in [
         ('total_open', 'statusCategory != Done'),
         ('open_older_than_6mo', 'statusCategory != Done AND created <= -180d'),
         ('open_older_than_1yr', 'statusCategory != Done AND created <= -365d'),
@@ -113,11 +116,18 @@ def get_issue_distribution():
         ('created_last_90d', 'created >= -90d'),
     ]:
         try:
-            distributions[label] = approximate_count(jql)
+            distributions[label] = approximate_count(f'{jql_base}{prefix}')
         except Exception as e:
             distributions[label] = f"error: {e}"
 
     return distributions
+
+def get_issue_distribution():
+    result = {}
+    for seg_name, seg_fn in jira_config.SEGMENTS.items():
+        print(f"    Segment: {seg_name}...", flush=True)
+        result[seg_name] = get_issue_distribution_segment(seg_name, seg_fn)
+    return result
 
 def get_issue_count_by_project():
     try:
@@ -125,9 +135,13 @@ def get_issue_count_by_project():
         counts = {}
         for p in projects:
             try:
-                counts[p['key']] = approximate_count(f'project = {p["key"]}')
+                count = approximate_count(f'project = {p["key"]}')
             except Exception:
-                counts[p['key']] = 'error'
+                count = 'error'
+            counts[p['key']] = {
+                'count': count,
+                'classification': jira_config.classify_project(p['key']),
+            }
         return counts
     except Exception as e:
         return {'error': str(e)}

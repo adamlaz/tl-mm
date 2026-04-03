@@ -194,17 +194,29 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 - **No monorepo pattern** — microservices proliferation across all workspaces
 - **Four code lineages confirm CAKE acquisition integration was never completed**
 
-### Jira — Inventoried April 3
+### Jira — Inventoried April 3 (Segmented)
 
-- **141 projects**, **313 boards** (89 scrum, 224 kanban)
-- **~55K total issues**: 31,614 stories, 11,985 bugs, 6,988 subtasks, 4,099 epics, 242 tasks
-- **18,583 open issues**: 85% older than 6 months, **72% older than 1 year** — massive backlog debt
-- **Created vs resolved (26 weeks)**: 5,790 created, 5,212 resolved — **net growth of 578 issues** (backlog expanding)
+**Key finding: Jira is the company's universal work system**, not just engineering's tool. Of 141 projects, ~68 are engineering, ~50 are customer success (per-client implementations), and ~23 are operations/governance (GRC, audits, business transformation, programs). This is itself a finding about operating cadence (Hypothesis G).
+
+| Segment | Projects | Open Issues | >1 Year Old | Bugs | Stories |
+|---|---|---|---|---|---|
+| **Overall** | 141 | 18,583 | 13,377 (72%) | 11,985 | 31,614 |
+| **Engineering** | ~68 | 13,725 | 9,115 (66%) | 8,712 | 26,734 |
+| **Customer Success** | ~50 | 2,525 | 1,957 (77%) | 3,186 | 2,231 |
+| **Operations** | ~23 | 2,102 | 2,080 (99%) | 72 | 2,577 |
+
+- **313 boards** (89 scrum, 224 kanban)
+- **Engineering backlog**: 13,725 open issues, 66% older than 1 year — still significant backlog debt
+- **CS backlog**: 2,525 open issues, 77% older than 1 year — customer implementations stalling
+- **Operations backlog**: 2,102 open, 99% older than 1 year — nearly all dormant
+- **Created vs resolved (26 weeks)**: Engineering: 4,701 created / 4,432 resolved (net -269). Overall: 5,790 / 5,212 (net -578). Engineering backlog growing slower than overall.
 - **Sprint velocity (19 active scrum boards)**: Multiple declining trends. Ops Prime dropped from 127 → 56 issues/sprint in Q1 2026 (-56%). OS board dropped from 114 → 49 (-57%).
-- **Cycle time P50 = 59 days** (In Progress to Done). P75 = 210 days. P95 = 233 days.
-- **Per-customer Jira projects**: Every major retail customer (Brooks Brothers, Ralph Lauren, Estee Lauder, etc.) gets their own project — creates cross-project tracking complexity
+- **Cycle time P50 = 59 days** (engineering-only, In Progress to Done). P75 = 210 days. P95 = 233 days.
+- **Flow distribution (engineering, last 90d resolved)**: 67% features, 21% defects, 11% epics, 1% tasks — not in firefighting mode
+- **32 per-customer Jira projects**: Every major retail customer (Brooks Brothers, Ralph Lauren, Estee Lauder, etc.) gets their own project — creates cross-project tracking complexity and reveals how CS work flows (or doesn't) into engineering
 - **4 active AI/Neo projects**: AI Evangelism, AI Agent Kanban, L1 AI Agent, Neo — confirms active AI development
 - **Largest projects by issue count**: REST (17,318), OS (4,794), DSO (4,762), CE (4,441), DR (4,218), BO (4,091)
+- **Assignee concentration (role-classified)**: Top 30 assignees include 14 engineering ICs, 5 engineering leads, 6 customer success, 4 operations, 1 cross-functional. 4 people have 50+ open issues assigned.
 
 ### Confluence — Inventoried April 3
 
@@ -350,7 +362,9 @@ Four instruments ready. Target deployment: **Monday, April 7** (pending survey t
 - Jira comment confirming AWS access (CLD-2431)
 - **V1 system inventory** — automated scans across all 4 platforms (April 2–3)
 - **V2 enhanced inventory** — fixed Jira API issues, expanded velocity coverage, corrected Confluence page counts, added DORA-adjacent metrics (April 3)
-- **Quantitative analysis pipeline** — 9 CSV exports, 16 interactive HTML charts in `analysis/charts/`
+- **V3 targeted data collection** — PR reviewer concentration, sprint scope change, flow distribution, assignee analysis, deploy tags, Confluence trends, post-mortem catalog, AWS ECS/Route53 deep (April 3)
+- **V4 Jira segmentation** — classified all 141 projects into engineering/CS/operations, re-ran all Jira queries with segmented output, role-classified assignees (April 3)
+- **Quantitative analysis pipeline** — 12 CSV exports, 25 interactive HTML charts in `analysis/charts/`
 - **Ana request email drafted** with findings and follow-up access requests (see `ana-request.md`)
 
 ### In Progress 🔄
@@ -381,36 +395,38 @@ Four instruments ready. Target deployment: **Monday, April 7** (pending survey t
 
 ### Pre-Work Quantitative Baseline (Available for Onsite)
 
-| Metric | Value | Source |
-|---|---|---|
-| AWS monthly spend | ~$383K (March 2026) | Cost Explorer |
-| AWS running EC2 instances | 201 | EC2 API |
-| EC2 pre-Graviton percentage | 83% (167/201) | EC2 API |
-| Lambda EOL runtime percentage | 21% (53/248) | Lambda API |
-| Total Bitbucket repos | 3,191 across 4 workspaces | Bitbucket API |
-| Active repos (commits in 90d) | 789 (25%) | Bitbucket API |
-| Stale repos | 2,402 (75%) | Bitbucket API |
-| madpayments CI/CD coverage | 87% | Bitbucket API |
-| Jira projects | 141 | Jira API |
-| Jira boards | 313 (89 scrum, 224 kanban) | Jira API |
-| Total Jira issues | ~55,000 | Jira approximate-count |
-| Open Jira issues | 18,583 | Jira approximate-count |
-| Open issues > 1 year old | 13,376 (72%) | Jira approximate-count |
-| Issues created (last 90d) | 2,912 | Jira approximate-count |
-| Issues resolved (last 90d) | 2,973 | Jira approximate-count |
-| Sprint velocity trend | Declining on multiple boards | Jira Agile API |
-| Cycle time P50 | 59 days | Jira changelog |
-| Confluence spaces | 165 | Confluence API |
-| Largest Confluence space | Leapset Platform (6,445 pages) | Confluence API |
-| PR cycle time (sample) | ~27–31h avg for active repos | Bitbucket API |
+| Metric | Overall | Engineering Only | Source |
+|---|---|---|---|
+| AWS monthly spend | ~$383K (March 2026) | — | Cost Explorer |
+| AWS running EC2 instances | 201 | — | EC2 API |
+| EC2 pre-Graviton percentage | 83% (167/201) | — | EC2 API |
+| Lambda EOL runtime percentage | 21% (53/248) | — | Lambda API |
+| ECS clusters / services | 38 clusters, 357 services | — | ECS API |
+| Total Bitbucket repos | 3,191 across 4 workspaces | — | Bitbucket API |
+| Active repos (commits in 90d) | 789 (25%) | — | Bitbucket API |
+| madpayments CI/CD coverage | 87% | — | Bitbucket API |
+| PR cycle time (sample) | ~27–31h avg for active repos | — | Bitbucket API |
+| Jira projects | 141 | ~68 engineering | Jira API |
+| Jira boards | 313 (89 scrum, 224 kanban) | — | Jira API |
+| Open Jira issues | **18,583** | **13,725** | Jira approximate-count |
+| Open issues > 1 year old | 13,377 (72%) | 9,115 (66%) | Jira approximate-count |
+| Created last 90d | 2,912 | — | Jira approximate-count |
+| Resolved last 90d | 2,973 | — | Jira approximate-count |
+| 26-week net backlog growth | -578 (growing) | -269 (growing slower) | Jira approximate-count |
+| Flow distribution (resolved 90d) | — | 67% features, 21% defects | Jira approximate-count |
+| Sprint velocity trend | — | Declining on multiple boards | Jira Agile API |
+| Cycle time P50 (engineering) | — | 59 days | Jira changelog |
+| Overloaded assignees (>50 open) | 4 people | — | Jira search |
+| Confluence spaces | 165 | — | Confluence API |
+| Largest Confluence space | Leapset Platform (6,445 pages) | — | Confluence API |
 
 ### Analysis Artifacts (in repo)
-- `inventory/` — Raw JSON inventory data (18 AWS, 4 BB, Jira, Confluence)
-- `analysis/*.csv` — 9 spreadsheet-ready CSV exports
-- `analysis/charts/*.html` — 16 interactive plotly charts (open in browser)
-- `inventory/summary.md` — V1 consolidated summary
+- `inventory/` — Raw JSON inventory data (18 AWS, 4 BB, Jira, Confluence) with segmented Jira output
+- `analysis/*.csv` — 12 spreadsheet-ready CSV exports (including `jira_project_classification.csv`)
+- `analysis/charts/*.html` — 25 interactive plotly charts (open in browser), including segmented Jira views
+- `interview-prep-with-data.md` — Per-interviewee data-backed questions organized by interview day
 - `ana-request.md` — Ready-to-send email for Ana
-- `scripts/` — Reusable inventory and analysis scripts
+- `scripts/` — Reusable inventory and analysis scripts with `jira_config.py` project classification
 
 ---
 

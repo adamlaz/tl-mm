@@ -1,0 +1,1109 @@
+{
+  "mm-cake-r-and-d/us-east-1/rnd-cde-secure-ecs": {
+    "profile": "mm-cake-r-and-d",
+    "region": "us-east-1",
+    "cluster": "rnd-cde-secure-ecs",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "nginx-test-service-epu08bwf",
+        "status": "ACTIVE",
+        "desired": 2,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-r-and-d/us-east-1/foo": {
+    "profile": "mm-cake-r-and-d",
+    "region": "us-east-1",
+    "cluster": "foo",
+    "service_count": 2,
+    "services": [
+      {
+        "name": "mongo",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "zero-service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-r-and-d/us-east-1/default": {
+    "profile": "mm-cake-r-and-d",
+    "region": "us-east-1",
+    "cluster": "default",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-cake-r-and-d/us-east-1/cloudservices-rnd-fargate": {
+    "profile": "mm-cake-r-and-d",
+    "region": "us-east-1",
+    "cluster": "cloudservices-rnd-fargate",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-cake-development/us-east-1/minuteman-tst1": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "minuteman-tst1",
+    "service_count": 50,
+    "services": [
+      {
+        "name": "ua-jobassignment_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "payment-admin-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "payment_api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "src-scat_tool_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "cake_shop_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "ua-timesheet_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "src-ua-staff-container_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "scat_tool_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "src-payroll-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "menu-core-admin-v2_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/dev-configapi": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "dev-configapi",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "config-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/cakecore-dev-cloud-services": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "cakecore-dev-cloud-services",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-cake-development/us-east-1/pos4-janus-cluster-new": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "pos4-janus-cluster-new",
+    "service_count": 2,
+    "services": [
+      {
+        "name": "replica-pos4-janus-service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "pos4-janus-service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/pos4-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "pos4-ecs",
+    "service_count": 85,
+    "services": [
+      {
+        "name": "src-day-part-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-daypart-mediator_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-scat_tool_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mm-marketing-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "operator_api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "payment_api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mm-content-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-menu-api-perf_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-order-proxy_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "wallet_data_pumper_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/ua-reports": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "ua-reports",
+    "service_count": 10,
+    "services": [
+      {
+        "name": "tyk_mock2_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "ua_reports_service_one_per_host",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_mock3_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "ua_reports_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "ua_reports_bff",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_mock4_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_mock1_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "loyalty_api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "rabbitmq_service_2",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "rabbitmq_service_3",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/qa-data-platform-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "qa-data-platform-ecs",
+    "service_count": 3,
+    "services": [
+      {
+        "name": "qa-data-platform-integration-api-ecs-service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "qa-data-platform-query-api-ecs-service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "qa_otel_collector_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/tst1-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "tst1-ecs",
+    "service_count": 100,
+    "services": [
+      {
+        "name": "src-printer-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "ua_reports_api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 2,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-template-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "email_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-onboarding-fe_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-capital-proxy-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-ua-jobassignment_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mm-customer-profile-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-day-part-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-ua-menu-admin_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/payments-ua": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "payments-ua",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "ua-reports-payments-bff-service",
+        "status": "ACTIVE",
+        "desired": 2,
+        "running": 0,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/beacon-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "beacon-ecs",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-cake-development/us-east-1/dev-test": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "dev-test",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-cake-development/us-east-1/qa-payments-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "qa-payments-ecs",
+    "service_count": 37,
+    "services": [
+      {
+        "name": "pos4_payment-config-portal_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "petl_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "pos4_payments-admin-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "echeck-core_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "pac_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "chargeback-merchant-admin_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "tst3_payments-onboarding-v3_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "tst2_payments-admin-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "payment-control-center_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "emaf-core_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/dev-api-gateway-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "dev-api-gateway-ecs",
+    "service_count": 4,
+    "services": [
+      {
+        "name": "tyk_pump_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_dashboard_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_gateway_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_identity_broker_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/dev-payment-gateway-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "dev-payment-gateway-ecs",
+    "service_count": 4,
+    "services": [
+      {
+        "name": "dev_pg_nginx",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "cake-payment-nginx_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "dev_vpc_nginx",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "cake-payment-gateway_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/tst1-mq-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "tst1-mq-ecs",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "rabbitmq_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/pci-scans-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "pci-scans-ecs",
+    "service_count": 3,
+    "services": [
+      {
+        "name": "leapset_api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "src-keycloak_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "idm-api_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/rnd-janus-shard-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "rnd-janus-shard-ecs",
+    "service_count": 2,
+    "services": [
+      {
+        "name": "rnd-janus100-ems-shard-1_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "rnd-janus-ems-shard-1_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/dev-payments-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "dev-payments-ecs",
+    "service_count": 19,
+    "services": [
+      {
+        "name": "pac_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "payment-mock-service_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "bc-worker_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "dummy-task-wallet",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "echeck-core_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "payment-config-portal_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "sfp-v2_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "petl_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "payment-client-proxy_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "temp-payment-mock-spot-testing",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/qa-api-gateway-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "qa-api-gateway-ecs",
+    "service_count": 4,
+    "services": [
+      {
+        "name": "tyk_gateway_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_dashboard_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_identity_broker_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "tyk_pump_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/qa-perf-cake-payment-gateway-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "qa-perf-cake-payment-gateway-ecs",
+    "service_count": 2,
+    "services": [
+      {
+        "name": "bc-worker_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "cake-payment-gateway_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/qa-payment-gateway-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "qa-payment-gateway-ecs",
+    "service_count": 2,
+    "services": [
+      {
+        "name": "madmobile-payment-gateway",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "cake-payment-gateway_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/dev-feature-flag-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "dev-feature-flag-ecs",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "src-mm-feature-flag_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/default": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "default",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-cake-development/us-east-1/pos4-mq-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "pos4-mq-ecs",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "rabbitmq_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/tst1-janus-cluster": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "tst1-janus-cluster",
+    "service_count": 4,
+    "services": [
+      {
+        "name": "tst1-janus-service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "test-tst1-janus-db-ecs",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "src_janus_server_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "oneagent_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/tst1-dimo-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "tst1-dimo-ecs",
+    "service_count": 5,
+    "services": [
+      {
+        "name": "src-mobile-ordering-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "platform-menu-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mobile-ordering-menu-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mobile-ordering-fe_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mobile-ordering-menu-admin_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/pos4-marvel-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "pos4-marvel-ecs",
+    "service_count": 6,
+    "services": [
+      {
+        "name": "src-mobile-ordering-fe_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mobile-ordering-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mobile-ordering-menu-admin_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-mobile-ordering-menu-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "src-marvel-menu-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      },
+      {
+        "name": "menu-service-wrapper-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/marvel-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "marvel-ecs",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "src-marvel-menu-api_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/tst1-janus-shard-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "tst1-janus-shard-ecs",
+    "service_count": 1,
+    "services": [
+      {
+        "name": "tst1-janus-ems-shard-1_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "unknown"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/pos4-janus-perf-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "pos4-janus-perf-ecs",
+    "service_count": 3,
+    "services": [
+      {
+        "name": "pos4-perf-janus-ems-shard-3_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "pos4-perf-janus-ems-shard-1_service",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 0,
+        "launch_type": "EC2"
+      },
+      {
+        "name": "pos4-perf-janus-ems-shard-2_service",
+        "status": "ACTIVE",
+        "desired": 0,
+        "running": 0,
+        "launch_type": "EC2"
+      }
+    ]
+  },
+  "mm-cake-development/us-east-1/tst1-marvel-ecs": {
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "cluster": "tst1-marvel-ecs",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-madmobile-mgmt/us-east-1/default": {
+    "profile": "mm-madmobile-mgmt",
+    "region": "us-east-1",
+    "cluster": "default",
+    "service_count": 0,
+    "services": []
+  },
+  "mm-retail-prod-us/us-east-1/redirector-us": {
+    "profile": "mm-retail-prod-us",
+    "region": "us-east-1",
+    "cluster": "redirector-us",
+    "service_count": 2,
+    "services": [
+      {
+        "name": "master",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "FARGATE"
+      },
+      {
+        "name": "prod-us",
+        "status": "ACTIVE",
+        "desired": 1,
+        "running": 1,
+        "launch_type": "FARGATE"
+      }
+    ]
+  },
+  "mm-retail-prod-us/us-east-1/shop-cpq": {
+    "profile": "mm-retail-prod-us",
+    "region": "us-east-1",
+    "cluster": "shop-cpq",
+    "service_count": 0,
+    "services": []
+  }
+}

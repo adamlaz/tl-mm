@@ -2,7 +2,7 @@
 
 **What this measures:** Developer experience across three dimensions — Feedback Loops, Cognitive Load, and Flow State. Results map to four executive-ready dimensions: Speed, Effectiveness, Quality, and Impact (DX Core 4).
 
-**Time:** ~5 minutes
+**Time:** ~7 minutes
 **Who takes this:** Individual contributors — software engineers, QE engineers, DevOps/SRE. Not managers — this captures the IC perspective.
 **Anonymity:** Your responses are anonymous. Only aggregate patterns and team-level trends are reported — nothing is attributed by name.
 
@@ -136,6 +136,49 @@ _________________________________
 
 ---
 
+## Section E: Mad Mobile Context
+
+*These questions help segment results and validate specific findings from the pre-work system analysis. They are not scored on the DX Core 4 scale.*
+
+### 19. Which Bitbucket workspace(s) does your team primarily work in?
+
+- [ ] madmobile
+- [ ] syscolabs
+- [ ] madpayments
+- [ ] syscolabsconf
+- [ ] I don't know
+
+### 20. How many Jira projects do you regularly interact with?
+
+- [ ] 1
+- [ ] 2–3
+- [ ] 4–6
+- [ ] 7+
+
+### 21. When priorities change mid-sprint, how is that typically communicated to you?
+
+- [ ] Sprint lead or manager tells me directly
+- [ ] Slack or Teams message
+- [ ] Jira ticket reassignment or comment
+- [ ] I find out at sprint review or standup
+- [ ] It just appears in my queue with no communication
+
+### 22. How confident are you that your team's Jira backlog accurately reflects what actually needs to be done?
+
+| 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+| Not at all confident | Slightly confident | Somewhat confident | Mostly confident | Very confident |
+
+### 23. Which CI/CD system does your team use?
+
+- [ ] Bitbucket Pipelines
+- [ ] Jenkins
+- [ ] Both
+- [ ] Other: _____________
+- [ ] I don't know
+
+---
+
 ## Scoring Guide (for Adam's analysis)
 
 **DX Core 4 Mapping:**
@@ -148,5 +191,12 @@ _________________________________
 | **Impact** | Q12, Q13, Q14 (Flow + Satisfaction) | Whether developers feel productive and connected to outcomes |
 
 **Segmentation:** Score by team, tenure, and role to identify patterns. Compare CAKE/Restaurant team scores to Concierge/Retail and Neo/AI teams.
+
+**MM Context Questions (Q19–Q23):** These are not scored on the DX Core 4 scale. They are analyzed separately as segmentation and hypothesis-validation data:
+- Q19 (Bitbucket workspace) → Segments responses by acquisition boundary. Cross-tab with DX Core 4 scores to compare madpayments vs syscolabs IC experience.
+- Q20 (Jira projects) → Tests cognitive load from project sprawl (141 projects exist). Correlate with Q7 (context-switching).
+- Q21 (Priority change communication) → Tests Hypothesis B (Sales-Led Chaos) and G (Missing Cadence). "It just appears in my queue" is the red flag answer.
+- Q22 (Backlog confidence) → Tests whether the 72%-older-than-1-year backlog is seen as a planning tool or write-only storage.
+- Q23 (CI/CD system) → Validates dual Jenkins + Bitbucket Pipelines finding. "I don't know" answers indicate tooling fragmentation.
 
 *Source: Noda, Storey, Forsgren, Greiler — "DevEx: What Actually Drives Productivity," ACM Queue, 2023*

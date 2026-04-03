@@ -1,0 +1,1197 @@
+{
+  "query_counts": {
+    "title ~ \"RCA\"": 46,
+    "title ~ \"root cause\"": 20,
+    "title ~ \"post-mortem\"": 34,
+    "title ~ \"postmortem\"": 2,
+    "title ~ \"incident report\"": 4,
+    "title ~ \"outage\"": 21,
+    "title ~ \"retrospective\"": 50
+  },
+  "unique_documents": [
+    {
+      "title": "Importance of &quot;RCA, FIX, &amp; IMPACT&quot; at a issue-fix",
+      "space": "Concierge Team",
+      "last_modified": "2024-05-20T13:18:23.000Z",
+      "url": "/spaces/PT/pages/356289448/Importance+of+RCA+FIX+IMPACT+at+a+issue-fix",
+      "excerpt": "Background\nQE raises the bug ticket(s) when an issue is found during the testing.\nNOTE: This would pertain to both internal &amp; external bugs reported\nThe bug ticket will then be assigned to a devel"
+    },
+    {
+      "title": "LEO - Recurring Issues RCA",
+      "space": "Leapset Platform",
+      "last_modified": "2024-06-11T11:10:46.000Z",
+      "url": "/spaces/LP/pages/283476086/LEO+-+Recurring+Issues+RCA",
+      "excerpt": "ISSUE-ID\nSymptom\nRCA\nRequired Permanent Solution"
+    },
+    {
+      "title": "Hosting a RCA Call for CodeRed/P1",
+      "space": "Hafeez Marzuk",
+      "last_modified": "2022-09-28T12:36:51.000Z",
+      "url": "/spaces/SMHMP/blog/2022/09/28/264274543/Hosting+a+RCA+Call+for+CodeRed+P1",
+      "excerpt": "Create a confluence page similar to this one \nPost the created confluence page URL into the #appsupport_prodsuppor slack channel to track the timeline of the resolution.\u00a0\u00a0\nSchedule a 30 minutes meetin"
+    },
+    {
+      "title": "2020 - OCT - 08 Codered RCA Analysis",
+      "space": "Hasitha Gamage",
+      "last_modified": "2024-05-16T09:37:53.000Z",
+      "url": "/spaces/SMHGP/pages/263358783/2020+-+OCT+-+08+Codered+RCA+Analysis",
+      "excerpt": "1. Investigations &amp; Observations\nBased on the previous investigations, proceed with the following investigations. \n1.1 Master 2 database Analysis\nMaster2 database had 100% CPU utilization and conn"
+    },
+    {
+      "title": "L2SP-1172 - RCA - Pulse Accessibility Issue",
+      "space": "Taurus",
+      "last_modified": "2023-03-15T04:39:46.000Z",
+      "url": "/spaces/PS/pages/260270642/L2SP-1172+-+RCA+-+Pulse+Accessibility+Issue",
+      "excerpt": "This is effective as of 2023-03-15 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\nIncident Summary\nLocations:  \nImpacted Ser"
+    },
+    {
+      "title": "L2SP-1170 - RCA - [CAKE] RDF Payout Delay",
+      "space": "Taurus",
+      "last_modified": "2023-03-14T12:34:18.000Z",
+      "url": "/spaces/PS/pages/260270457/L2SP-1170+-+RCA+-+CAKE+RDF+Payout+Delay",
+      "excerpt": "This is effective as of 2023-03-09 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nPayments\nAltaaf Anver \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n3/12/2023 11:50 AM "
+    },
+    {
+      "title": "L2SP-1044 - RCA - [CAKE] RDF Payout Delay",
+      "space": "Taurus",
+      "last_modified": "2023-03-09T11:00:54.000Z",
+      "url": "/spaces/PS/pages/260270246/L2SP-1044+-+RCA+-+CAKE+RDF+Payout+Delay",
+      "excerpt": "This is effective as of 2023-03-09 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nPayments\nAltaaf Anver \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n3/8/2023 12:34 PM I"
+    },
+    {
+      "title": "L2SP-1046 - RCA - EMS Menu admin / Services API Intermittent Disturbance",
+      "space": "Taurus",
+      "last_modified": "2023-03-15T08:27:45.000Z",
+      "url": "/spaces/PS/pages/260270205/L2SP-1046+-+RCA+-+EMS+Menu+admin+Services+API+Intermittent+Disturbance",
+      "excerpt": "This is effective as of 2023-03-09\nTicket Id\nTeam Assigned\nRCA Completed by\n\nStark\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n2023/03/08 4:40AM (CST) | 4.10 PM IST"
+    },
+    {
+      "title": "DE-98540 - RCA - [CAKE][GM] Intermittent issues with customers receiving text messages",
+      "space": "Taurus",
+      "last_modified": "2023-02-09T03:18:39.000Z",
+      "url": "/spaces/PS/pages/260268844/DE-98540+-+RCA+-+CAKE+GM+Intermittent+issues+with+customers+receiving+text+messages",
+      "excerpt": "This is effective as of 2023-02-06\nTicket Id\nTeam Assigned\nRCA Completed by\n\n\u00a0\n\u00a0\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n\u00a0\u00a005/02/2023 09:50 AM (CST)\n\u00a0\u00a005/02/202"
+    },
+    {
+      "title": "DE-98533 - RCA - [CAKE] Transaction Timeout Due to RDS Maintenance by AWS",
+      "space": "Taurus",
+      "last_modified": "2023-02-01T15:55:22.000Z",
+      "url": "/spaces/PS/pages/260268197/DE-98533+-+RCA+-+CAKE+Transaction+Timeout+Due+to+RDS+Maintenance+by+AWS",
+      "excerpt": "This is effective as of 2023-02-01 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nPayments\nAltaaf Anver \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n2/1/2022 10:41 AM I"
+    },
+    {
+      "title": "DE-98529 - RCA - [CAKE][Reports] [P1] Merchants having trouble accessing timesheets / payroll",
+      "space": "Taurus",
+      "last_modified": "2023-02-07T12:42:40.000Z",
+      "url": "/spaces/PS/pages/260268188/DE-98529+-+RCA+-+CAKE+Reports+P1+Merchants+having+trouble+accessing+timesheets+payroll",
+      "excerpt": "This is effective as of 2023-01-25 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nDBE \nPLAT\nCLOUD\nNishen Peiris  Raj Miandad Azhar Ali  Tharindu Nanayakkara \nIncident Start Date &amp; Time\nResolution Date"
+    },
+    {
+      "title": "DE-98525 - RCA - [CAKE][Menu Admin] [P1]Merchants in Menu core unable to edit menu",
+      "space": "Taurus",
+      "last_modified": "2023-01-19T04:02:29.000Z",
+      "url": "/spaces/PS/pages/260267526/DE-98525+-+RCA+-+CAKE+Menu+Admin+P1+Merchants+in+Menu+core+unable+to+edit+menu",
+      "excerpt": "This is effective as of 2023-01-13 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nCloud Services\nUpendra Kumarage \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\nIncident "
+    },
+    {
+      "title": "DE-98520 - RCA - [Code Red] [P1] [REPORTS] Unable to download excel format of the reports",
+      "space": "Taurus",
+      "last_modified": "2022-12-21T09:54:15.000Z",
+      "url": "/spaces/PS/pages/260264796/DE-98520+-+RCA+-+Code+Red+P1+REPORTS+Unable+to+download+excel+format+of+the+reports",
+      "excerpt": "This is effective as of 2022-12-15 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n15/12/2022 12:53 AM (IST)\n15/12/2022 02:00"
+    },
+    {
+      "title": "DE-98510- RCA - [Code Red] [P2] Unable to floor map edit in guest manager",
+      "space": "Taurus",
+      "last_modified": "2023-02-21T09:19:39.000Z",
+      "url": "/spaces/PS/pages/260264757/DE-98510-+RCA+-+Code+Red+P2+Unable+to+floor+map+edit+in+guest+manager",
+      "excerpt": "This is effective as of 2022-11-14\nTicket Id\nTeam Assigned\nRCA Completed by\n\nCAKE-GPS\nChula De Silva \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\nStart Time: 2022-1"
+    },
+    {
+      "title": "DE-98499- RCA - [Code Red] [P1] https://market.cake.net/ site is down",
+      "space": "Taurus",
+      "last_modified": "2022-10-06T02:23:16.000Z",
+      "url": "/spaces/PS/pages/260264441/DE-98499-+RCA+-+Code+Red+P1+https+market.cake.net+site+is+down",
+      "excerpt": "This is effective as of 2022-10-06\nTicket Id\nTeam Assigned\nRCA Completed by\n\nCloud-services\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\nStart Time: 05/10/2022 10:34"
+    },
+    {
+      "title": "DE-98497- RCA - [Code Red] [P1] Menu admin changes are not syncing with POS",
+      "space": "Taurus",
+      "last_modified": "2022-10-03T05:56:23.000Z",
+      "url": "/spaces/PS/pages/260264251/DE-98497-+RCA+-+Code+Red+P1+Menu+admin+changes+are+not+syncing+with+POS",
+      "excerpt": "This is effective as of 2022-09-29\nTicket Id\nTeam Assigned\nRCA Completed by\n\nCloud Services\nApplication Support\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\nStart Ti"
+    },
+    {
+      "title": "DE-98497- RCA - [P0] Vantiv Express Batch Notification failed due to Communicator API outage",
+      "space": "Taurus",
+      "last_modified": "2022-10-03T08:28:31.000Z",
+      "url": "/spaces/PS/pages/260264043/DE-98497-+RCA+-+P0+Vantiv+Express+Batch+Notification+failed+due+to+Communicator+API+outage",
+      "excerpt": "This is effective as of 2022-09-20\nTicket Id\nTeam Assigned\nRCA Completed by\n\nDBA\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\nStart Time: 28/09/2022 2.44 PM (IST) | "
+    },
+    {
+      "title": "DE-98484 - RCA - [Code Red] [P1] [Report Sync] Sales reports are not being updated for Cluster 60-80-120- and 100 so far",
+      "space": "Taurus",
+      "last_modified": "2022-09-20T10:24:00.000Z",
+      "url": "/spaces/PS/pages/260263610/DE-98484+-+RCA+-+Code+Red+P1+Report+Sync+Sales+reports+are+not+being+updated+for+Cluster+60-80-120-+and+100+so+far",
+      "excerpt": "This is effective as of 2022-09-17\nTicket Id\nTeam Assigned\nRCA Completed by\n\nDBE\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\nStart Time: 17/09/2022 07:24 AM IST\nEnd"
+    },
+    {
+      "title": "DE-98480 - RCA - [Code Red] [P1] [Report Sync] Unable to edit timesheets not syncing C30 cluster merchants",
+      "space": "Taurus",
+      "last_modified": "2022-09-14T18:39:38.000Z",
+      "url": "/spaces/PS/pages/260262304/DE-98480+-+RCA+-+Code+Red+P1+Report+Sync+Unable+to+edit+timesheets+not+syncing+C30+cluster+merchants",
+      "excerpt": "This is effective as of 2022-09-09\nTicket Id\nTeam Assigned\nRCA Completed by\n\nCAKE Apps - DC\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n08/09/2022 10:29 PM IST\n09/0"
+    },
+    {
+      "title": "DE-98476 - RCA - [Code Red] [P1] [Report Sync] Unable to edit timesheets and reports not syncing",
+      "space": "Taurus",
+      "last_modified": "2022-09-14T18:43:20.000Z",
+      "url": "/spaces/PS/pages/260260928/DE-98476+-+RCA+-+Code+Red+P1+Report+Sync+Unable+to+edit+timesheets+and+reports+not+syncing",
+      "excerpt": "This is effective as of 2022-09-05 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n05/09/2022 3.12 AM (3.42 PM 04/09/2022 PM "
+    },
+    {
+      "title": "DE-98474 - RCA - Reports has stopped syncing for c0030 cluster Merchants",
+      "space": "Taurus",
+      "last_modified": "2022-09-14T11:51:38.000Z",
+      "url": "/spaces/PS/pages/260260799/DE-98474+-+RCA+-+Reports+has+stopped+syncing+for+c0030+cluster+Merchants",
+      "excerpt": "This is effective as of 2022-07-31\nTicket Id\nTeam Assigned\nRCA Completed by\n\n   DBE\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n31/08/2022 4:11 AM (IST)\n31/08/2022 "
+    },
+    {
+      "title": "DE-98472 - RCA - [CAKE] [P1] 502 Bad Gateway error when loading admin.cake.net",
+      "space": "Taurus",
+      "last_modified": "2022-08-29T11:35:03.000Z",
+      "url": "/spaces/PS/pages/260260441/DE-98472+-+RCA+-+CAKE+P1+502+Bad+Gateway+error+when+loading+admin.cake.net",
+      "excerpt": "This is effective as of 2022-08-27 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nCloud Services\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n07:48 PM (IST) 26/08/2022\n0"
+    },
+    {
+      "title": "DE-98470 - RCA - [CAKE] [P1] [Admin Portal] \u2013 Cannot perform Menu changes and Timesheet edits for C30 merchants",
+      "space": "Taurus",
+      "last_modified": "2022-08-22T10:58:23.000Z",
+      "url": "/spaces/PS/pages/260260008/DE-98470+-+RCA+-+CAKE+P1+Admin+Portal+Cannot+perform+Menu+changes+and+Timesheet+edits+for+C30+merchants",
+      "excerpt": "8This is effective as of 2022-07-12 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nCAKEAPP DC\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n10:47 PM (IST) 21/08/2022\n05:2"
+    },
+    {
+      "title": "DE-98468 - RCA - [CAKE] Service-Interruption : Error saving menu changes",
+      "space": "Taurus",
+      "last_modified": "2022-09-07T04:01:51.000Z",
+      "url": "/spaces/PS/pages/260259660/DE-98468+-+RCA+-+CAKE+Service-Interruption+Error+saving+menu+changes",
+      "excerpt": "This is effective as of 2022-08-16 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nCAKEAPP DU\nBuddhika Karunatilleke  Dasun Wickramasinghe  Tharindu Nanayakkara \nIncident Start Date &amp; Time\nResolution D"
+    },
+    {
+      "title": "DE-98462 - RCA - [CAKE] Payment Funding Delay",
+      "space": "Taurus",
+      "last_modified": "2022-08-03T05:08:23.000Z",
+      "url": "/spaces/PS/pages/260259401/DE-98462+-+RCA+-+CAKE+Payment+Funding+Delay",
+      "excerpt": "This is effective as of 2022-08-02 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nPayments\nAltaaf Anver  Eshan Sudharaka \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n07"
+    },
+    {
+      "title": "DE-98448 - RCA - [CAKE] Pulse remote access tool is inaccessible : 503 Service Temporarily Unavailable",
+      "space": "Taurus",
+      "last_modified": "2022-07-26T11:27:01.000Z",
+      "url": "/spaces/PS/pages/260259080/DE-98448+-+RCA+-+CAKE+Pulse+remote+access+tool+is+inaccessible+503+Service+Temporarily+Unavailable",
+      "excerpt": "This is effective as of 2022-07-12 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nCAKEAPP GPS\nPrasanna Karunanayaka  Ananda Subasinghe \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Ti"
+    },
+    {
+      "title": "DE-98449 - RCA - UA Reports has stopped syncing for c0030 cluster Merchants",
+      "space": "Taurus",
+      "last_modified": "2022-07-19T19:43:47.000Z",
+      "url": "/spaces/PS/pages/260259049/DE-98449+-+RCA+-+UA+Reports+has+stopped+syncing+for+c0030+cluster+Merchants",
+      "excerpt": "This is effective as of 2022-07-11 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nCAKEAPP DC\nRaj Miandad Azhar Ali  Sineth Jayasinghe \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Tim"
+    },
+    {
+      "title": "DE-98445 - RCA - UA Reports has stopped syncing for some merchants",
+      "space": "Taurus",
+      "last_modified": "2022-07-04T10:25:43.000Z",
+      "url": "/spaces/PS/pages/260258855/DE-98445+-+RCA+-+UA+Reports+has+stopped+syncing+for+some+merchants",
+      "excerpt": "This is effective as of 2022-06-28 \nTicket Id\nTeam Assigned\nRCA Completed by\n \nCAKEAPP DC\nRaj Miandad Azhar Ali \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n01:30 A"
+    },
+    {
+      "title": "DE-98440 - RCA - Error (500) - Internal Server Error on admin.cake.net",
+      "space": "Taurus",
+      "last_modified": "2022-06-28T08:59:58.000Z",
+      "url": "/spaces/PS/pages/260258192/DE-98440+-+RCA+-+Error+500+-+Internal+Server+Error+on+admin.cake.net",
+      "excerpt": "This is effective as of 2022-03-18 \nTicket Id\nTeam Assigned\nRCA Completed by\n\nCAKEAPP DU\nFaizul Hasan  Buddhika Karunatilleke \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPr"
+    },
+    {
+      "title": "RCA - Twilio Security Breach 27/04/2022 - TBD",
+      "space": "Taurus",
+      "last_modified": "2022-05-04T08:12:59.000Z",
+      "url": "/spaces/PS/pages/260258009/RCA+-+Twilio+Security+Breach+27+04+2022+-+TBD",
+      "excerpt": "Ticket Id\nTeam Assigned\nRCA Completed by\n\u00a0\n\u00a0Cloud Services\nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n\u00a004.30 AM 28/04/2022 UTC\n03.23 PM 30/04/2022 UTC\n\u00a0\nIncident S"
+    },
+    {
+      "title": "DE-98436 - RCA - Payments Processing Outage 21/04/2022",
+      "space": "Taurus",
+      "last_modified": "2022-04-22T14:32:00.000Z",
+      "url": "/spaces/PS/pages/260257389/DE-98436+-+RCA+-+Payments+Processing+Outage+21+04+2022",
+      "excerpt": "Ticket Id\nTeam Assigned\nRCA Completed by\n\u00a0\n\u00a0Cake Payments, Cloud Services\nDarshana Buddhika  Eshan Sudharaka  Aarthika Arunthavanathan  Randika Munasinghe \nIncident Start Date &amp; Time\nResolution Da"
+    },
+    {
+      "title": "DE-98434 - RCA - GM Application outage 08/04/2022",
+      "space": "Taurus",
+      "last_modified": "2022-04-18T07:42:06.000Z",
+      "url": "/spaces/PS/pages/260257145/DE-98434+-+RCA+-+GM+Application+outage+08+04+2022",
+      "excerpt": "Ticket Id\nTeam Assigned\nRCA Completed by\n\u00a0\n\u00a0Cake Apps GPS\nJeff Lerman  Chula De Silva \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n\u00a007:07 AM (IST) 08/04/2022\n\u00a009:07"
+    },
+    {
+      "title": "DE-98431 - RCA - Paytronix Orders Did Not Push to the POS",
+      "space": "Taurus",
+      "last_modified": "2022-09-14T20:33:38.000Z",
+      "url": "/spaces/PS/pages/260256777/DE-98431+-+RCA+-+Paytronix+Orders+Did+Not+Push+to+the+POS",
+      "excerpt": "Ticket Id\nTeam Assigned\nRCA Completed by\n\u00a0\n\u00a0Platform\nHasitha Gamage  Nuwan Koggalahewa \nIncident Start Date &amp; Time\nResolution Date &amp; Time\nElapsed Time\nPriority\n\u00a02:22AM (IST) 22/03/2022\n\u00a05.05AM"
+    },
+    {
+      "title": "Process of handling Post Mortem RCAs",
+      "space": "Taurus",
+      "last_modified": "2022-03-22T06:15:18.000Z",
+      "url": "/spaces/PS/pages/260256687/Process+of+handling+Post+Mortem+RCAs",
+      "excerpt": "This is effective as of 2022-03-18 \nThe following format needs to be maintained for all RCAs for outages and service interruptions\nTicket Id\nTeam Assigned\nRCA Completed by\nIncident Start Date &amp; Ti"
+    },
+    {
+      "title": "RCA Ticket Workflow.png",
+      "space": "Taurus",
+      "last_modified": "2018-09-03T06:39:32.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=260243606&preview=%2F260243606%2F260244499%2FRCA+Ticket+Workflow.png",
+      "excerpt": ""
+    },
+    {
+      "title": "RCA Ticket Workflow",
+      "space": "Taurus",
+      "last_modified": "2018-09-03T06:39:32.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=260243606&preview=%2F260243606%2F260244445%2FRCA+Ticket+Workflow",
+      "excerpt": ""
+    },
+    {
+      "title": "Guidelines to Creating RCA Tickets v2",
+      "space": "Taurus",
+      "last_modified": "2018-06-12T09:05:38.000Z",
+      "url": "/spaces/PS/pages/260243797/Guidelines+to+Creating+RCA+Tickets+v2",
+      "excerpt": "The purpose of this page is to have a clear uninformed\u00a0approach to creating RCA tickets so that we can accurately report on statistics.\u00a0\n\u00a0\nCT Ticket\nOnce an\u00a0incidents RCA has been identified the CT ti"
+    },
+    {
+      "title": "Guidelines to Creating RCA Tickets",
+      "space": "Taurus",
+      "last_modified": "2018-07-03T12:02:20.000Z",
+      "url": "/spaces/PS/pages/260243566/Guidelines+to+Creating+RCA+Tickets",
+      "excerpt": "The purpose of this page is to have a clear uninformed\u00a0approach to creating RCA tickets so that we can accurately report on statistics.\u00a0\n\u00a0\nCT Ticket\nOnce an\u00a0incidents RCA has been identified the CT ti"
+    },
+    {
+      "title": "Environment RCA Analysis -  Recurring Issues",
+      "space": "Cloud Services Home",
+      "last_modified": "2022-02-15T12:45:24.000Z",
+      "url": "/spaces/DEP/pages/259241001/Environment+RCA+Analysis+-+Recurring+Issues",
+      "excerpt": "Purpose of this document is identifying the recurring issues reported in day to day and mitigate them.\nRecurring issue\nFix / Resolution\nimprovement plan\nolo issues\ncheck menu-core service. most of the"
+    },
+    {
+      "title": "RCA - Bitbucket Server Unavailability",
+      "space": "Cloud Services Home",
+      "last_modified": "2018-10-29T06:45:45.000Z",
+      "url": "/spaces/DEP/pages/259096860/RCA+-+Bitbucket+Server+Unavailability",
+      "excerpt": "\u00a0\n\u00a0\n\u00a0\nStatus / RCA\nTimings\nThis incident affected\n\u00a0\nIssue reported as Bitbucket is currently unavailable.\nOct\u00a025,\u00a02018\u00a0-\u00a008:00\u00a0UTC\nWebsite, API, SSH, Git via HTTPS, Mercurial via HTTPS, Webhooks, Sour"
+    },
+    {
+      "title": "RCA Creation &amp; Maintenance",
+      "space": "OPS Engineering",
+      "last_modified": "2020-03-13T07:28:41.000Z",
+      "url": "/spaces/OE/pages/258722978/RCA+Creation+Maintenance",
+      "excerpt": "1.0 Process Flow\n2.0 Special Notes\nOnce the Temporary Fix is identified, go and update the Trouble Shooting guide\nOnce the Permanent Fix is sent to production, create a Release version in JIRA and upd"
+    },
+    {
+      "title": "KADE-RCA",
+      "space": "OPS Engineering",
+      "last_modified": "2020-03-13T06:55:20.000Z",
+      "url": "/plugins/servlet/ac/com.mxgraph.confluence.plugins.diagramly/customContentViewer?content.plugin=ac%3Acom.mxgraph.confluence.plugins.diagramly%3Adrawio-diagram&space.key=OE&content.id=258722773&content.version=1&space.id=258605077&content.type=custom",
+      "excerpt": "%7B%22pageId%22%3A436076631%2C%22diagramName%22%3A%22Untitled%20Diagram.drawio%22%2C%22version%22%3A1%2C%22inComment%22%3Afalse%2C%22comments%22%3A%5B%5D%7D"
+    },
+    {
+      "title": "DE-98436 - RCA - Payments Processing Outage 21/04/2022",
+      "space": "Cake Payment Gateway",
+      "last_modified": "2024-05-31T10:09:21.000Z",
+      "url": "/spaces/CPG/pages/257617347/DE-98436+-+RCA+-+Payments+Processing+Outage+21+04+2022",
+      "excerpt": "Ticket Id\nTeam Assigned\nRCA Completed by\n\u00a0\n\u00a0Cake Payments, CS Team\nDarshana Buddhika  Eshan Sudharaka  Aarthika Arunthavanathan  Randika Munasinghe \nIncident Start Date &amp; Time\nResolution Date &amp"
+    },
+    {
+      "title": "RCA: TST2 RDS Data Corruption/Inconsistency",
+      "space": "Cloud Engineering",
+      "last_modified": "2024-04-11T03:15:38.000Z",
+      "url": "/spaces/CCE/pages/257201990/RCA+TST2+RDS+Data+Corruption+Inconsistency",
+      "excerpt": "Issue:\nVarious issues in TST2 environment indicating issues releated to TST Merchant Profile RDS Instance\nOperator API Database Access Issue:\n{ &quot;code&quot;: &quot;10600&quot;, &quot;description&q"
+    },
+    {
+      "title": "RCA of MC Merchants Menu Update Issue (SE-176)",
+      "space": "Cloud Engineering",
+      "last_modified": "2024-04-09T06:15:57.000Z",
+      "url": "/spaces/CCE/pages/257201305/RCA+of+MC+Merchants+Menu+Update+Issue+SE-176",
+      "excerpt": "Problem Reported\nMenu team is getting failed to save error when trying to create items or edit any existing items.\nThen ran https://menu.cake.net/replicator/11490201/mc-status/mc  to check the status "
+    },
+    {
+      "title": "OLO chargeback issues - RCA",
+      "space": "Leapset Platform",
+      "last_modified": "2019-11-19T11:19:23.000Z",
+      "url": "/spaces/LP/pages/253365907/OLO+chargeback+issues+-+RCA",
+      "excerpt": "1.\u00a0Issue\nOrder placement has failed after charge the credit card. Payment is not refunded since we are not supporting the per-auth/post-auth. Also, in some scenarios, the user has not charged but user"
+    },
+    {
+      "title": "Bug Root Cause Analysis",
+      "space": "Product Organization",
+      "last_modified": "2022-09-12T17:57:44.000Z",
+      "url": "/spaces/PO/pages/357346163/Bug+Root+Cause+Analysis",
+      "excerpt": "The Root Cause Analysis will be filled in by the development team when a bug is being fixed to assist in the identification of areas of improvement.\nRCA Option\nDefinition\nExample\nAC Incorrect / Change"
+    },
+    {
+      "title": "Bug Root Cause Analysis",
+      "space": "QA Team",
+      "last_modified": "2024-02-05T16:29:56.000Z",
+      "url": "/spaces/QT/pages/356451424/Bug+Root+Cause+Analysis",
+      "excerpt": "The Root Cause Analysis will be filled in by the development team when a bug is being fixed to assist in the identification of areas of improvement.\nRCA Option\nDefinition\nExample\nAC Incorrect / Change"
+    },
+    {
+      "title": "Root Cause Analysis for Bug Tickets",
+      "space": "Concierge Team",
+      "last_modified": "2024-02-08T14:09:30.000Z",
+      "url": "/spaces/PT/pages/356277624/Root+Cause+Analysis+for+Bug+Tickets",
+      "excerpt": "MM needs to understand the root causes on every bug that is submitted. They need to be categorized and then every Developer is required to set the Root Cause Category and Root Cause Analysis before th"
+    },
+    {
+      "title": "BAM_Cyber Monday Root Cause Analysis.pdf",
+      "space": "Implementations and Operations Team",
+      "last_modified": "2017-01-06T15:15:49.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=355632446&preview=%2F355632446%2F355639470%2FBAM_Cyber+Monday+Root+Cause+Analysis.pdf",
+      "excerpt": "ROOT CAUSE ANALYSIS\nClient: Books-A-Million\nPrepared by: Rachel Kim\nDate: Wednesday, November 30, 2016\nIntroduction\nThe following is an RCA for the intermittent guest cart \u201cSession Time-out\u201d issue rep"
+    },
+    {
+      "title": "Root Cause Analysis",
+      "space": "Implementations and Operations Team",
+      "last_modified": "2017-01-04T16:26:09.000Z",
+      "url": "/spaces/SET/pages/355632446/Root+Cause+Analysis",
+      "excerpt": "file-list"
+    },
+    {
+      "title": "Defect Classification by Root Cause Category",
+      "space": "Mirunaaliny S Iyer",
+      "last_modified": "2024-05-16T10:55:10.000Z",
+      "url": "/spaces/SMMSP/pages/264700947/Defect+Classification+by+Root+Cause+Category",
+      "excerpt": "Coding\nRequirements\nDesign\nDeployments\nConfiguration\nEnvironment\nNew Regression Bug\nNew Feature Bug\nLegacy Issue\nExtreme Scenario\nExternal Integration\nInvalid\nNetwork Failure\nDB Issue\nUnknown\nRNG-4008"
+    },
+    {
+      "title": "How to unblock merchant sync halts until fix all related sycn halts root causes",
+      "space": "Taurus",
+      "last_modified": "2017-09-29T18:26:44.000Z",
+      "url": "/spaces/PS/pages/260243748/How+to+unblock+merchant+sync+halts+until+fix+all+related+sycn+halts+root+causes",
+      "excerpt": "Download and unzip this\u00a0\nInstall latest node js and latest npm package manager\nGo inside the directory and delete node_modules directory\nRun &#39;npm install&#39;\nMove input.csv into completed_inputs "
+    },
+    {
+      "title": "Orange screen root cause detection and resolutions",
+      "space": "Thulya",
+      "last_modified": "2018-02-07T12:53:36.000Z",
+      "url": "/spaces/THUL/pages/260079680/Orange+screen+root+cause+detection+and+resolutions",
+      "excerpt": "\u00a0\nIntroduction\nThis document contains analysis done on orange screen issues (issues reported from merchants themselves and issues reported via pulse cases).\n&quot;Orange Screen&quot; issue is shown to"
+    },
+    {
+      "title": "Root Cause Analysis For Cake Shop Production Bugs",
+      "space": "OPS Engineering",
+      "last_modified": "2019-03-05T11:42:36.000Z",
+      "url": "/spaces/OE/pages/258628856/Root+Cause+Analysis+For+Cake+Shop+Production+Bugs",
+      "excerpt": "Author\nMohamed Yaseen\nDate\n2019-03-01 \u00a0\nStatus\nIN PROGRESS\nCirculation\nOps Engineering\n\nTable of Contents\n1.0 Introduction\nThis document illustrates the root causes of the production bugs and proposed"
+    },
+    {
+      "title": "Root Cause Analysis - Graylog Payments [WIP]",
+      "space": "Cloud Engineering",
+      "last_modified": "2024-04-22T10:19:34.000Z",
+      "url": "/spaces/CCE/pages/257202159/Root+Cause+Analysis+-+Graylog+Payments+WIP",
+      "excerpt": "Problem Description\nDue to the End of Support for the MongoDB 4.4, We had a requirement to update the MongoDB 4.4 to MongoDB 5.0 because of this, we had a requirement to upgrade Graylog to version 5 &"
+    },
+    {
+      "title": "Merchant Creation Failure Root Cause Investigation",
+      "space": "Leapset Platform",
+      "last_modified": "2024-04-02T06:59:03.000Z",
+      "url": "/spaces/LP/pages/253831622/Merchant+Creation+Failure+Root+Cause+Investigation",
+      "excerpt": "1. Table of root causes for merchant creation failure.\nRoot Cause\nRelated Issues\nCurrent Solution\nGetting a stackoverflaw error while generating PIN\nSTAG\nTST2\n\nMerchant cleanup\nCouch DB failures\nCouch"
+    },
+    {
+      "title": "Incident - Root Cause .png",
+      "space": "Cakecore QE",
+      "last_modified": "2023-05-19T07:36:06.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=252840622&preview=%2F252840622%2F252840586%2FIncident+-+Root+Cause+.png",
+      "excerpt": ""
+    },
+    {
+      "title": "Payments Patch Releases - Root Cause Analysis",
+      "space": "CAKE Payments",
+      "last_modified": "2017-02-20T09:47:47.000Z",
+      "url": "/spaces/POAI/pages/252249748/Payments+Patch+Releases+-+Root+Cause+Analysis",
+      "excerpt": "Following table shows the list of patch releases done in the year of 2016. Also we&#39;ve listed down the root cause for each issue in the relevant patch and the actions taken by QA not to happen the "
+    },
+    {
+      "title": "6.24 Release - Root Cause Classification Guideline",
+      "space": "Cake Reports",
+      "last_modified": "2017-07-17T11:19:39.000Z",
+      "url": "/spaces/CR/pages/250447606/6.24+Release+-+Root+Cause+Classification+Guideline",
+      "excerpt": "Sample Issue -\u00a0\n\u00a0\nTeam should go through the ticket and identify where the gap is and the real root cause of the issue\nFollowing fields to be filled out\nRoot Cause Category:\u00a0\nComponent/s:\nComment &lt;"
+    },
+    {
+      "title": "Root Cause Analysis for System Loading, Onboarding and Upgrading issues - WIP",
+      "space": "Cinco",
+      "last_modified": "2015-07-02T08:46:18.000Z",
+      "url": "/spaces/CIN/pages/250254917/Root+Cause+Analysis+for+System+Loading+Onboarding+and+Upgrading+issues+-+WIP",
+      "excerpt": "There are considerable amount of unschedule restarts happening in production devices and then it stuck on loading screen without startup the application properly. Also there are lot of customer compla"
+    },
+    {
+      "title": "Fixes and Root cause",
+      "space": "Leapset QA",
+      "last_modified": "2014-09-26T05:07:44.000Z",
+      "url": "/spaces/LQ/pages/249985438/Fixes+and+Root+cause",
+      "excerpt": "Feature File\nScenario\nRoot cause\nFixes\nAdminPanelEnhancementsDifferntLogins.feature\nValidate user should add at least one device type and Terminal ID to save the Admin panel_CHO-1182\nCreate user butto"
+    },
+    {
+      "title": "Production issues root cause analysis - CAKE POS",
+      "space": "Leapset QA",
+      "last_modified": "2017-02-06T10:10:35.000Z",
+      "url": "/spaces/LQ/pages/249985327/Production+issues+root+cause+analysis+-+CAKE+POS",
+      "excerpt": ""
+    },
+    {
+      "title": "Root Cause Analysis: Account 11607728 SQS Retry Storm",
+      "space": "Team Tesla",
+      "last_modified": "2026-04-02T18:10:54.000Z",
+      "url": "/spaces/TT/pages/1627357218/Root+Cause+Analysis+Account+11607728+SQS+Retry+Storm",
+      "excerpt": "Executive Summary\nBetween 2025-12-19  and 2025-12-22 , account 1607728 experienced 40,681 failed API requests due to a cascading failure caused by missing product configuration in Operator API combine"
+    },
+    {
+      "title": "Root Cause Analysis: Menu Core API Migration Status Retry Loop",
+      "space": "Team Tesla",
+      "last_modified": "2025-09-18T16:13:12.000Z",
+      "url": "/spaces/TT/pages/1421180945/Root+Cause+Analysis+Menu+Core+API+Migration+Status+Retry+Loop",
+      "excerpt": "Summary\nA critical issue was identified where the Menu Core API was generating excessive traffic (150,000+ requests per hour) to the Merchant API via UltraESB, causing system performance degradation. "
+    },
+    {
+      "title": "Why didn&#39;t  identify root cause for the report portal related blocker earlier.",
+      "space": "Cakecore QE",
+      "last_modified": "2025-06-16T00:22:56.000Z",
+      "url": "/spaces/CQ/pages/1201766519/Why+didn+t+identify+root+cause+for+the+report+portal+related+blocker+earlier.",
+      "excerpt": "Report Portal Dashboard Implementation Steps - Taken -Steps\nStart: Local Machine Setup\n \u2192 Began the POC on a personal/local computer for quick testing.\nIssue: Port 8080 in Use by QC\n \u2192 The AWS machine"
+    },
+    {
+      "title": "DE-98428 POST MORTEM Discussion - PX online orders not received by customers",
+      "space": "Taurus",
+      "last_modified": "2022-03-18T11:41:11.000Z",
+      "url": "/spaces/PS/pages/260256665/DE-98428+POST+MORTEM+Discussion+-+PX+online+orders+not+received+by+customers",
+      "excerpt": "Attendees: \n\nApprox. Start Time\n10/03/2022 IST 01:30 AM (IST)\nApprox. End Time\n10/03/2022 03:43 AM (IST)\nElapsed Time\n127M\nThe PX online order issue was affecting all PX O&amp;D operators. The Inciden"
+    },
+    {
+      "title": "DE-98425 POST MORTEM Discussion - Unable to access Cloud components",
+      "space": "Taurus",
+      "last_modified": "2022-03-13T11:35:40.000Z",
+      "url": "/spaces/PS/pages/260256632/DE-98425+POST+MORTEM+Discussion+-+Unable+to+access+Cloud+components",
+      "excerpt": "Attendees:  Angelo Senaratne   Nuwan Koggalahewa  Mahesh  Anton.Ferdinandez  Prasanna Karunanayaka  Randika Munasinghe  Ishara.Pathirage \n \nApprox. Start Time\n26/02/2022 IST 10:57 PM (IST)\nApprox. End"
+    },
+    {
+      "title": "DE-98399 POST MORTEM Discussion - PX Order fails to push down to the CAKE POS TBS/IKE&#39;s",
+      "space": "Taurus",
+      "last_modified": "2021-11-17T04:24:19.000Z",
+      "url": "/spaces/PS/pages/260256317/DE-98399+POST+MORTEM+Discussion+-+PX+Order+fails+to+push+down+to+the+CAKE+POS+TBS+IKE+s",
+      "excerpt": "Attendees:  Nuwan Koggalahewa  Mahesh Rajapakse  Wishwa Hettige  Angelo Senaratne  Shanil Jayamaha  Anton.Ferdinandez \n\nApprox. Start Time\n12/11/2021 IST 1:10 AM (IST)\nApprox. End Time\n12/11/2021 IST "
+    },
+    {
+      "title": "DE-98386 POST MORTEM Discussion - Large number of Infrastructure alerts and data syncing delay in UA reports",
+      "space": "Taurus",
+      "last_modified": "2021-10-07T09:22:24.000Z",
+      "url": "/spaces/PS/pages/260256225/DE-98386+POST+MORTEM+Discussion+-+Large+number+of+Infrastructure+alerts+and+data+syncing+delay+in+UA+reports",
+      "excerpt": "Attendees:  Raj Miandad Azhar Ali  Mahesh Rajapakse   Prasanna Karunanayaka   Angelo Senaratne   Anton.Ferdinandez  Shanil Jayamaha  Angelo Senaratne  Dulan Ratnayake  Vidura Jayasekera \n\nApprox. Star"
+    },
+    {
+      "title": "DE-98380 POST MORTEM Discussion - NDF/ SDF Payout delay due to error in submitting the ACH instructions",
+      "space": "Taurus",
+      "last_modified": "2021-09-21T09:28:42.000Z",
+      "url": "/spaces/PS/pages/260256120/DE-98380+POST+MORTEM+Discussion+-+NDF+SDF+Payout+delay+due+to+error+in+submitting+the+ACH+instructions",
+      "excerpt": "Attendees : Altaaf Anver  Aarthika Arunthavanathan  Anton.Ferdinandez  Angelo Senaratne  Vidura Jayasekera  Dulan Ratnayake  Darshana Buddhika  Geethanga Amarasinghe  Mahesh Rajapakse  Nathiesha Madda"
+    },
+    {
+      "title": "DE-98375 POST MORTEM Discussion - WP/Express/Litle Payment Outage",
+      "space": "Taurus",
+      "last_modified": "2021-08-16T12:58:26.000Z",
+      "url": "/spaces/PS/pages/260255935/DE-98375+POST+MORTEM+Discussion+-+WP+Express+Litle+Payment+Outage",
+      "excerpt": "Attendees : Aarthika Arunthavanathan  Darshana Buddhika  Vidura Jayasekera  Shanil Jayamaha  Anoma Perera  Mahesh Rajapakse \n\nThis was a payment incident that happened on Sat (14/08/2021)around 3:30 A"
+    },
+    {
+      "title": "DE-98370 POST MORTEM Discussion - Regular ACH Failure due to failure in renaming the ACH file",
+      "space": "Taurus",
+      "last_modified": "2021-09-17T01:07:26.000Z",
+      "url": "/spaces/PS/pages/260255852/DE-98370+POST+MORTEM+Discussion+-+Regular+ACH+Failure+due+to+failure+in+renaming+the+ACH+file",
+      "excerpt": "Attendees : Aarthika Arunthavanathan  Mahesh Rajapakse  Altaaf Anver  Anoma Perera  Angelo Senaratne  Buddhi De Silva  Shoba  Darshana Buddhika  Dulan Ratnayake  Nathiesha Maddage \nTicket : \nRegular A"
+    },
+    {
+      "title": "DE-98365 POST MORTEM Discussion -Menu core takes longer loading time with whoops error",
+      "space": "Taurus",
+      "last_modified": "2021-07-27T04:43:21.000Z",
+      "url": "/spaces/PS/pages/260255756/DE-98365+POST+MORTEM+Discussion+-Menu+core+takes+longer+loading+time+with+whoops+error",
+      "excerpt": "Attendees: Pasan Sumanathilake  Angelo Senaratne   Faizul Hasan   Kalinga Dissanayake   Mahesh Rajapakse  Shanil Jayamaha   Kokulan Kanagaratnam  Anoma Perera \n\n\nThe Menu core loading incident was aff"
+    },
+    {
+      "title": "DE-98368 POST MORTEM Discussion - Regular ACH Failure due to failure in Int32 conversion",
+      "space": "Taurus",
+      "last_modified": "2021-08-02T05:09:03.000Z",
+      "url": "/spaces/PS/pages/260255727/DE-98368+POST+MORTEM+Discussion+-+Regular+ACH+Failure+due+to+failure+in+Int32+conversion",
+      "excerpt": "Attendees : Aarthika Arunthavanathan  Anoma Perera  Altaaf Anver  Shoba  Angelo Senaratne  Anton.Ferdinandez  Shanil Jayamaha  Mahesh Rajapakse   Kumuditha Kalhan  Vidura Jayasekera  Buddhika Weerasoo"
+    },
+    {
+      "title": "DE-98362 POST MORTEM Discussion -Menu core takes longer loading time and OLO not syncing with new MA changes",
+      "space": "Taurus",
+      "last_modified": "2021-07-13T06:20:36.000Z",
+      "url": "/spaces/PS/pages/260255585/DE-98362+POST+MORTEM+Discussion+-Menu+core+takes+longer+loading+time+and+OLO+not+syncing+with+new+MA+changes",
+      "excerpt": "Attendees:   Pasan Sumanathilake   Mahesh Rajapakse   Shanil Jayamaha   Randika Munasinghe  Vidura Jayasekera   Dulan Ratnayake  Anton.Ferdinandez \n\nThe Menu core loading incident was affecting all op"
+    },
+    {
+      "title": "DE-98356 POST MORTEM Discussion : Payments platform service outage (Vantiv Express)",
+      "space": "Taurus",
+      "last_modified": "2021-12-15T14:53:28.000Z",
+      "url": "/spaces/PS/pages/260255089/DE-98356+POST+MORTEM+Discussion+Payments+platform+service+outage+Vantiv+Express",
+      "excerpt": "Attendees: Altaaf Anver  Angelo Senaratne   Aarthika Arunthavanathan  Dulan Ratnayake  Shanil Jayamaha  Shoba  Anton.Ferdinandez  Theekshana Jayasekera  Vidura Jayasekera  Mahesh Rajapakse  !-@5b12363"
+    },
+    {
+      "title": "DE-98346 POST MORTEM Discussion -Menucore not loading",
+      "space": "Taurus",
+      "last_modified": "2021-05-28T05:46:27.000Z",
+      "url": "/spaces/PS/pages/260254627/DE-98346+POST+MORTEM+Discussion+-Menucore+not+loading",
+      "excerpt": "Attendees :   Angelo Senaratne    Pasan Sumanathilake   Mahesh Rajapakse   Kokulan Kanagaratnam   Shanil Jayamaha   Dulan Ratnayake  Kalinga Dissanayake  Vidura Jayasekera  Udara Bibile  Anton.Ferdina"
+    },
+    {
+      "title": "DE-98339 POST MORTEM Discussion -Menucore not loading",
+      "space": "Taurus",
+      "last_modified": "2021-05-21T07:49:16.000Z",
+      "url": "/spaces/PS/pages/260254429/DE-98339+POST+MORTEM+Discussion+-Menucore+not+loading",
+      "excerpt": "Attendees :   Angelo Senaratne   Randika Munasinghe   Pasan Sumanathilake   Mahesh Rajapakse   Kokulan Kanagaratnam   Shanil Jayamaha   Dulan Ratnayake \nDE-98339\nThe Menu core loading incident was aff"
+    },
+    {
+      "title": "DE-98332 and DE-98333 POST MORTEM Discussion: 2CP plugin",
+      "space": "Taurus",
+      "last_modified": "2021-04-23T09:23:26.000Z",
+      "url": "/spaces/PS/pages/260254376/DE-98332+and+DE-98333+POST+MORTEM+Discussion+2CP+plugin",
+      "excerpt": "Attendees : Pasan Sumanathilake  Aarthika Arunthavanathan  Aruna Dissanayake  Altaaf Anver  Angelo Senaratne  Dulan Ratnayake  Mahesh Rajapakse  Shanil Jayamaha  Buddhi De Silva \n\n\nDE-98332 took place"
+    },
+    {
+      "title": "DE-98331 POST MORTEM Discussion - Unable to access buzztable",
+      "space": "Taurus",
+      "last_modified": "2021-04-20T08:39:41.000Z",
+      "url": "/spaces/PS/pages/260254299/DE-98331+POST+MORTEM+Discussion+-+Unable+to+access+buzztable",
+      "excerpt": "Attendees : Angelo Senaratne  Mahesh Rajapakse  Chula De Silva   Shanil Jayamaha   \nDE-98331\nThe Unable to access buzztable (\u00a0https://www.buzztable.com/waitlist/ )  incident was affecting all GM  merc"
+    },
+    {
+      "title": "DE-98334 POST MORTEM Discussion -Menucore not loading",
+      "space": "Taurus",
+      "last_modified": "2021-04-23T20:11:06.000Z",
+      "url": "/spaces/PS/pages/260254274/DE-98334+POST+MORTEM+Discussion+-Menucore+not+loading",
+      "excerpt": "Attendees :   Angelo Senaratne  Mahesh Rajapakse  Anton.Ferdinandez   Pasan Sumanathilake   Kokulan Kanagaratnam  Dulan Ratnayake\nDE-98334\nThe Menu core loading incident was affecting all operators. T"
+    },
+    {
+      "title": "DE-98328 POST MORTEM Discussion -MenuCore Down",
+      "space": "Taurus",
+      "last_modified": "2021-04-19T09:36:50.000Z",
+      "url": "/spaces/PS/pages/260254145/DE-98328+POST+MORTEM+Discussion+-MenuCore+Down",
+      "excerpt": "Attendees : Angelo Senaratne  Mahesh Rajapakse  Pasan Sumanathilake    Shanil Jayamaha  Kokulan Kanagaratnam   Prasanna Karunanayaka  Udara Bibile \nDE-98328\nThe MenuAdmin sporadically unrespons"
+    },
+    {
+      "title": "DE-98327 POST MORTEM Discussion -Admin Portal 500 error",
+      "space": "Taurus",
+      "last_modified": "2021-03-23T09:13:56.000Z",
+      "url": "/spaces/PS/pages/260254054/DE-98327+POST+MORTEM+Discussion+-Admin+Portal+500+error",
+      "excerpt": "Attendees : Angelo Senaratne  Mahesh Rajapakse  Randika Munasinghe  Maleesha Wijeratne  Shanil Jayamaha  Isuru Weerarathna \nDE-98327\nThe Unable to access admin portal\u00a0incident was affecting all operat"
+    },
+    {
+      "title": "DE-98326 POST MORTEM Discussion -Time-sheets Sync",
+      "space": "Taurus",
+      "last_modified": "2021-03-26T02:11:52.000Z",
+      "url": "/spaces/PS/pages/260254038/DE-98326+POST+MORTEM+Discussion+-Time-sheets+Sync",
+      "excerpt": "Attendees : Mahesh Rajapakse   Isuru Weerarathna   Shanil Jayamaha   Raj Miandad Azhar Ali   Former user   Randika Munasinghe   \nDE-98326\nThe Timesheet sync incident was affecting a particular set of "
+    },
+    {
+      "title": "DE-98325 POST MORTEM Discussion : Payout Delay",
+      "space": "Taurus",
+      "last_modified": "2021-03-17T11:16:38.000Z",
+      "url": "/spaces/PS/pages/260253967/DE-98325+POST+MORTEM+Discussion+Payout+Delay",
+      "excerpt": "Attendees: Altaaf Anver  Aarthika Arunthavanathan  Anton.Ferdinandez  Shanil Jayamaha  Mahesh Rajapakse  Randika Munasinghe  Viraj Premaratne  Shoba \nDE-98325\nDate of the Incident: 2021-0"
+    },
+    {
+      "title": "DE-98324 POST MORTEM Discussion : Payment Gateway continues restart",
+      "space": "Taurus",
+      "last_modified": "2021-03-12T04:53:41.000Z",
+      "url": "/spaces/PS/pages/260253932/DE-98324+POST+MORTEM+Discussion+Payment+Gateway+continues+restart",
+      "excerpt": "Attendees: Altaaf Anver  Shanil Jayamaha   Buddhi De Silva  Angelo Senaratne  Mahesh Rajapakse  Aarthika Arunthavanathan  Randika Munasinghe \nDE-98324\nDate of the Incident: 2021-03-11 \nThe Payment out"
+    },
+    {
+      "title": "DE-98319 POST MORTEM Discussion",
+      "space": "Taurus",
+      "last_modified": "2021-03-15T08:07:23.000Z",
+      "url": "/spaces/PS/pages/260253905/DE-98319+POST+MORTEM+Discussion",
+      "excerpt": "Attendees : Mahesh Rajapakse  Shanil Jayamaha  Randika Munasinghe  Angelo Senaratne   Eshan Sudharaka  \nDE-98319\nThe OLO phone all alert incident was affecting all operators. The Incident lasted for 1"
+    },
+    {
+      "title": "DE-98320 POST MORTEM Discussion : Payments platform service outage (Vantiv/WP)",
+      "space": "Taurus",
+      "last_modified": "2021-03-01T08:21:29.000Z",
+      "url": "/spaces/PS/pages/260253836/DE-98320+POST+MORTEM+Discussion+Payments+platform+service+outage+Vantiv+WP",
+      "excerpt": "Attendees: Altaaf Anver  Angelo Senaratne  Aarthika Arunthavanathan  Shanil Jayamaha  Anton.Ferdinandez  Mahesh Rajapakse \n DE-98320\nDate of the Incident: 2021-02-26 \nThe Payment outage was affecting "
+    },
+    {
+      "title": "DE-98318 POST MORTEM Discussion : Timesheets",
+      "space": "Taurus",
+      "last_modified": "2021-02-22T08:47:10.000Z",
+      "url": "/spaces/PS/pages/260253771/DE-98318+POST+MORTEM+Discussion+Timesheets",
+      "excerpt": "Attendees : Mahesh Rajapakse   Shanil Jayamaha   Randika Munasinghe   Isuru Weerarathna   Raj Miandad Azhar Ali   Buddhi De Silva   Dulan Ratnayake   Angelo Senaratne \nDE-98318\nThe Timesheet incide"
+    },
+    {
+      "title": "DE-98314 POST MORTEM Discussion",
+      "space": "Taurus",
+      "last_modified": "2021-03-01T01:32:02.000Z",
+      "url": "/spaces/PS/pages/260253420/DE-98314+POST+MORTEM+Discussion",
+      "excerpt": "Attendees : Altaaf Anver  Aarthika Arunthavanathan  Angelo Senaratne  Mahesh Rajapakse  Anton.Ferdinandez  Former user  Dulan Ratnayake \nThis was another payment incident which happened in one week ap"
+    },
+    {
+      "title": "DE-98313 POST MORTEM Discussion",
+      "space": "Taurus",
+      "last_modified": "2021-01-22T09:31:51.000Z",
+      "url": "/spaces/PS/pages/260253380/DE-98313+POST+MORTEM+Discussion",
+      "excerpt": "Attendees : Angelo Senaratne  Mahesh Rajapakse   Eshan Sudharaka  Prasanna Karunanayaka   Shanil Jayamaha  Wishwa Hettige  Randika Munasinghe  Dulan Ratnayake \nDE-98313\nThe da"
+    },
+    {
+      "title": "DE-98311 POST MORTEM Discussion",
+      "space": "Taurus",
+      "last_modified": "2021-01-20T05:45:14.000Z",
+      "url": "/spaces/PS/pages/260253029/DE-98311+POST+MORTEM+Discussion",
+      "excerpt": "Attendees : Angelo Senaratne  Altaaf Anver  Mahesh Rajapakse  Geethanga Amarasinghe  Anton.Ferdinandez  Shanil Jayamaha  Aarthika Arunthavanathan \n DE-98311\nThe payment incident was affecting Express,"
+    },
+    {
+      "title": "DE-98298 POST MORTEM Discussion",
+      "space": "Taurus",
+      "last_modified": "2020-10-12T07:11:13.000Z",
+      "url": "/spaces/PS/pages/260252266/DE-98298+POST+MORTEM+Discussion",
+      "excerpt": "Attendees : Angelo Senaratne  Altaaf Anver  Anuradha Jayalath  Dulan Ratnayake  Eshan Sudharaka  Geethanga Amarasinghe  Nishen Peiris  Raj Miandad Azhar Ali  Randika Munasinghe  Sajeeva Lakmal  Shanil"
+    },
+    {
+      "title": "DE-98293 POST MORTEM Discussion",
+      "space": "Taurus",
+      "last_modified": "2020-08-27T02:08:06.000Z",
+      "url": "/spaces/PS/pages/260251800/DE-98293+POST+MORTEM+Discussion",
+      "excerpt": "Attendees : Angelo Senaratne  Geethanga Amarasinghe  Former user  Manoj Fernando  Shanil Jayamaha  Mahesh Rajapakse  Randika Munasinghe  Dulan Ratnayake  Sajeeva Lakmal \nDetails\nCloud Components such "
+    },
+    {
+      "title": "POST MORTEMS",
+      "space": "Taurus",
+      "last_modified": "2021-09-21T09:32:52.000Z",
+      "url": "/spaces/PS/pages/260251417/POST+MORTEMS",
+      "excerpt": "Month/Year\nIssue\nReference\nSeptember 2021\n\n\nAugust 2021\n\n\nJuly 2021\nDE-98368 Payment Funding Delay for Regular Merchants\n\n\n\nJune 2021\nDE-98356 POST MORTEM Discussion : Payments platform service outage"
+    },
+    {
+      "title": "DE-98290 POST MORTEM Discussion",
+      "space": "Taurus",
+      "last_modified": "2020-07-20T08:30:36.000Z",
+      "url": "/spaces/PS/pages/260251405/DE-98290+POST+MORTEM+Discussion",
+      "excerpt": "Attendees : Geethanga Amarasinghe  Angelo Senaratne  Dulan Ratnayake  Randika Munasinghe  Diluka Talagala  Prasanna Karunanayaka  Manoj Fernando  Faizul Hasan  Eshan Sudharaka \nRandika Munasinghe  men"
+    },
+    {
+      "title": "POST MORTEM [CODE RED]: WP legacy operators are unable perform payments",
+      "space": "Taurus",
+      "last_modified": "2019-11-13T11:58:42.000Z",
+      "url": "/spaces/PS/pages/260248460/POST+MORTEM+CODE+RED+WP+legacy+operators+are+unable+perform+payments",
+      "excerpt": "Attendees not noted\nNotes and Action Items\nPrecedence took to get to the bottom of\u00a0\nDiscussion was mostly based on how to get through to WP support more efficiently as this was the most difficult thin"
+    },
+    {
+      "title": "Post Mortem for Code Red 2015-02-13",
+      "space": "Delivery",
+      "last_modified": "2015-02-20T20:52:17.000Z",
+      "url": "/spaces/DEL/pages/250875349/Post+Mortem+for+Code+Red+2015-02-13",
+      "excerpt": "Discussion With Magensa on 2015-02-19\nWe had a conference call with folks at Magensa to talk about the incident and thoughts surrounding the causes, occurrences, and action items moving forward.\nAtten"
+    },
+    {
+      "title": "07-05-2016 - Meeting Notes - Postmortem of CRM Phase I",
+      "space": "Data & Analytics",
+      "last_modified": "2016-07-11T07:58:11.000Z",
+      "url": "/spaces/DB/pages/258106294/07-05-2016+-+Meeting+Notes+-+Postmortem+of+CRM+Phase+I",
+      "excerpt": "Subject:\u00a0Postmortem of CRM Phase I\nDate: 5-July-2016\nTime: 3.00 pm - 4.00 pm\nAttendees:\u00a0Yasanka Horawalavithana (X) , \u00a0Nipuna Perera (X) ,\u00a0Danula Eranjith ,\u00a0Ruvini Shanika ,\u00a0Aruna Dissanayake\n\u00a0\nDiscus"
+    },
+    {
+      "title": "2016-04-06 - Meeting Notes - Customer Profiling Postmortem Q1",
+      "space": "Data & Analytics",
+      "last_modified": "2016-04-19T06:16:05.000Z",
+      "url": "/spaces/DB/pages/258106148/2016-04-06+-+Meeting+Notes+-+Customer+Profiling+Postmortem+Q1",
+      "excerpt": "Subject:\u00a0Customer Profiling Postmortem Q1\nDate: 6 April, 2016\nTime: 3.15 pm - 4.30 pm\nAttendees:\u00a0Nipuna Perera (X) ,\u00a0Yasanka Horawalavithana (X) ,\u00a0Malith Jayaweera (X) ,\u00a0Nilupulie Devasurendra\n\u00a0\nDiscu"
+    },
+    {
+      "title": "Production support App Support Incident Report",
+      "space": "Taurus",
+      "last_modified": "2023-01-09T06:48:46.000Z",
+      "url": "/spaces/PS/pages/260266039/Production+support+App+Support+Incident+Report",
+      "excerpt": "Home \u00a0\nApp Support Coverage\nAnnouncements\nProduction Environment\nReports, Stats &amp; Meeting Notes!--http://wiki.leapset.com/display/TO/R"
+    },
+    {
+      "title": "incident-report-info.png",
+      "space": "Cloud Services Home",
+      "last_modified": "2021-10-23T14:28:17.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=259236050&preview=%2F259236050%2F259236089%2Fincident-report-info.png",
+      "excerpt": ""
+    },
+    {
+      "title": "incident-report-info.png",
+      "space": "Cloud Services Home",
+      "last_modified": "2021-10-05T07:42:23.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=259234551&preview=%2F259234551%2F259234540%2Fincident-report-info.png",
+      "excerpt": ""
+    },
+    {
+      "title": "Incident Report for Code Red 10th Feb 2017",
+      "space": "Data & Analytics",
+      "last_modified": "2017-02-14T06:07:04.000Z",
+      "url": "/spaces/DB/pages/257950072/Incident+Report+for+Code+Red+10th+Feb+2017",
+      "excerpt": "Overview\nImpact from the DBA end\nMySQL shard1 environment as a unit was unaffected.\u00a0\nLost of replication connectivity from shard2 mater to slave.\u00a0\nLost of replication connectivity from datamart master"
+    },
+    {
+      "title": "2021-0611 Omnivore outage and reporting/dashboard discussion",
+      "space": "MenuPad",
+      "last_modified": "2021-06-11T15:04:56.000Z",
+      "url": "/spaces/MP/pages/358002096/2021-0611+Omnivore+outage+and+reporting+dashboard+discussion",
+      "excerpt": "Date (2021-0611 0900EST / 1930 IST)\n2021-06-11\nAttendees\nFull Name\nJoin Time\nLeave Time\nDuration\nEmail\nMichael Leatherbury\n6/11/2021, 8:57:06 AM\n6/11/2021, 9:30:49 AM\n33m 43s\nmleatherbury@madmobile.co"
+    },
+    {
+      "title": "Cant close cash after a credit card outage",
+      "space": "Thiwanka Wimalasuriya",
+      "last_modified": "2014-05-14T20:53:30.000Z",
+      "url": "/spaces/SMTWP/blog/2014/05/03/264566039/Cant+close+cash+after+a+credit+card+outage",
+      "excerpt": "if we have trouble doing\u00a0 close cash after the merchant has gone to offline card payments, do below\nlogin to pos as Administrator\ngoto system settings\non &quot;offline card payments&quot;\non &quot;for"
+    },
+    {
+      "title": "[DE-98107] Service Outage _ AWS cloud services outage - Leapset JIRA.pdf",
+      "space": "Cloud Services Home",
+      "last_modified": "2019-03-06T11:24:42.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=259108794&preview=%2F259108794%2F259118934%2F%5BDE-98107%5D+Service+Outage+_+AWS+cloud+services+outage+-+Leapset+JIRA.pdf",
+      "excerpt": "3/6/2019\n\n[DE-98107] Service Outage : AWS cloud services outage - Leapset JIRA\n\nDelivery Excellence\n\nDE-98107\n\nService Outage : AWS cloud services outage\nDetails\nType:\n\nCritical Task\n\nPriority:\n\nStatu"
+    },
+    {
+      "title": "Checklist for Express/ Litle or WP payment service outage",
+      "space": "Cake Payment Gateway",
+      "last_modified": "2025-10-21T01:52:12.000Z",
+      "url": "/spaces/CPG/pages/257606219/Checklist+for+Express+Litle+or+WP+payment+service+outage",
+      "excerpt": "NOTE: It is not required to move the gateway to Offline if there is only a litle (e-comm) outage\nThis highlights the process of changing the status of the payment gateway to offline during any process"
+    },
+    {
+      "title": "[DE-98107] Service Outage _ AWS cloud services outage - Leapset JIRA.pdf",
+      "space": "CAKE PCI",
+      "last_modified": "2019-05-08T10:33:02.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=255666917&preview=%2F255666917%2F255667797%2F%5BDE-98107%5D+Service+Outage+_+AWS+cloud+services+outage+-+Leapset+JIRA.pdf",
+      "excerpt": "3/6/2019\n\n[DE-98107] Service Outage : AWS cloud services outage - Leapset JIRA\n\nDelivery Excellence\n\nDE-98107\n\nService Outage : AWS cloud services outage\nDetails\nType:\n\nCritical Task\n\nPriority:\n\nStatu"
+    },
+    {
+      "title": "4. [2020-08-19] Cloud Service Outage",
+      "space": "Leapset Platform",
+      "last_modified": "2020-08-25T04:45:01.000Z",
+      "url": "/spaces/LP/pages/253439887/4.+2020-08-19+Cloud+Service+Outage",
+      "excerpt": "Outage of all platform services for a period of 1.5-2 hours.\nTHE TWO ESB NODES\nA very abnormal situation of the two esb nodes;\nCPU fluctuating\nNetwork IN going down\nLOG SNIPPETS FROM ESB\n2020-08-20T01"
+    },
+    {
+      "title": "Outage - July 17th",
+      "space": "Leapset Platform",
+      "last_modified": "2020-07-18T01:44:22.000Z",
+      "url": "/spaces/LP/pages/253439115/Outage+-+July+17th",
+      "excerpt": "THE TWO ESB NODES\nALB METRICS\nNote that the  snapshots/graphs below were taken at different times - hence check the values always with the x-axis timeline\nSNAPSHOT FROM ALB\nSNAPSHOT OF METRICS VIEW OF"
+    },
+    {
+      "title": "3. [2020-07-17] CloudFlare Outage: No Requests for ESB",
+      "space": "Leapset Platform",
+      "last_modified": "2020-07-18T17:03:31.000Z",
+      "url": "/spaces/LP/pages/253439074/3.+2020-07-17+CloudFlare+Outage+No+Requests+for+ESB",
+      "excerpt": "Incident:\n\nTroubleshooting Activities\nEBS OK\n \nESB ALB OK\nMaster2 DB OK\nRCA\nCloudFlare outage"
+    },
+    {
+      "title": "CAKE Payments Outages - 2018",
+      "space": "CAKE Payments",
+      "last_modified": "2018-08-01T08:02:54.000Z",
+      "url": "/spaces/POAI/pages/252249860/CAKE+Payments+Outages+-+2018",
+      "excerpt": "Overview\nBelow is the list of CODE RED incidents that occurred due to an issue with the CAKE Payments product in 2018.\n\u00a0\nIncidents\n#\nDate(IST)\nIssue\nJIRA Ticket\nImpact\nRoot Cause\nImmediate Solution\nLo"
+    },
+    {
+      "title": "CAKE Payments Outages",
+      "space": "CAKE Payments",
+      "last_modified": "2018-08-01T06:16:19.000Z",
+      "url": "/spaces/POAI/pages/252249563/CAKE+Payments+Outages",
+      "excerpt": ""
+    },
+    {
+      "title": "CAKE Payments Outages - 2017",
+      "space": "CAKE Payments",
+      "last_modified": "2017-09-18T12:30:57.000Z",
+      "url": "/spaces/POAI/pages/252249560/CAKE+Payments+Outages+-+2017",
+      "excerpt": "Overview\nBelow is the list of CODE RED incidents that occurred due to an issue with the CAKE Payments product in 2017.\n\u00a0\nIncidents\n#\nDate (IST)\nIssue\nJIRA ticket\nImpact\nRoot Cause\nImmediate Solution\nL"
+    },
+    {
+      "title": "Vantiv Service Outages",
+      "space": "CAKE Payments",
+      "last_modified": "2018-10-17T10:09:43.000Z",
+      "url": "/spaces/POAI/pages/252248822/Vantiv+Service+Outages",
+      "excerpt": ""
+    },
+    {
+      "title": "CAKE Payments Outages - 2016",
+      "space": "CAKE Payments",
+      "last_modified": "2017-09-18T12:37:40.000Z",
+      "url": "/spaces/POAI/pages/252248690/CAKE+Payments+Outages+-+2016",
+      "excerpt": "\u00a0\n\u00a0\nDate (IST)\nIssue\nJIRA ticket\nStatus\nResolution\nRoot Cause\nLong Term Solution\n10/19/2016\nPWS NDF Ledger Timeout\nIssue:\nRoot Cause:\n\u00a0\nRESOLVED\nTransactions will get ledgered with the normal funding "
+    },
+    {
+      "title": "Outages/Unhappy Path Scenarios that led to Gateway outage",
+      "space": "Payments",
+      "last_modified": "2025-05-02T16:53:02.000Z",
+      "url": "/spaces/P/pages/1093206065/Outages+Unhappy+Path+Scenarios+that+led+to+Gateway+outage",
+      "excerpt": "\ufffd\ufffd Unhappy Path Scenarios: Transaction Failures\n1. Gateway-Related Payment Failures\nError Code: 21186\nSymptoms: Merchants were unable to process card payments or close cash.\nRoot Cause: HSM (Hardware "
+    },
+    {
+      "title": "MIRA 2024 PI 3.5 - Review &amp; Retrospective",
+      "space": "Cake GPS",
+      "last_modified": "2024-09-23T13:06:13.000Z",
+      "url": "/spaces/CG/pages/502433221/MIRA+2024+PI+3.5+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nMIRA 2024 PI 3.5\nDuration:\n2024-09-11 \u00a0\u00a0-\u00a02024-09-24 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-09-24 \u00a0\nMain Theme of Sprint\nPre-auth initial flow development completion Label printer develo"
+    },
+    {
+      "title": "Cake Altair -  2024 PI 3.4 - Review &amp; Retrospective",
+      "space": "Team Stark",
+      "last_modified": "2024-09-11T10:19:43.000Z",
+      "url": "/spaces/TS/pages/471597161/Cake+Altair+-+2024+PI+3.4+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint\nAltair - 2024 PI 3.4\nDuration\n2024-08-28  \u00a0 -\u00a02024-09-10\nSprint Retrospect Meeting\n2024-09-10  \nMain Theme of Sprint\nEMS 2.0 Integration Testing\nGoals\nEMS 2.0 Integration Testing\nPrint"
+    },
+    {
+      "title": "LEO 2024 PI 3.4 - Review &amp; Retrospective",
+      "space": "Leapset Platform",
+      "last_modified": "2024-10-01T12:20:20.000Z",
+      "url": "/spaces/LP/pages/471597057/LEO+2024+PI+3.4+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nLEO 2024 PI 3.4\nDuration:\n2024-08-28 \u00a0-\u00a02024-09-10 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-09-10 \u00a0\u00a0\nMain Theme of Sprint\nMySQL upgrades\nSprint Goals:\nContinuation of the remaining MySQL d"
+    },
+    {
+      "title": "Castor 2024 PI 3.4 - Review &amp; Retrospective",
+      "space": "Optimo",
+      "last_modified": "2024-09-11T17:47:29.000Z",
+      "url": "/spaces/CP2/pages/471302145/Castor+2024+PI+3.4+-+Review+Retrospective",
+      "excerpt": "1.5\nOverview\nSprint: \nCASTOR 2024 PI 3.3\nDuration:\n2024-08-28 \u00a0-\u00a02024-09-10 \u00a0\nSprint Retrospect Meeting:\n2024-09-10 \u00a0\nMain Theme of Sprint\nPI3 Critical Support Fixes production release\nKDS Guest Ident"
+    },
+    {
+      "title": "MIRA 2024 PI 3.4 - Review &amp; Retrospective",
+      "space": "Cake GPS",
+      "last_modified": "2024-09-10T11:43:49.000Z",
+      "url": "/spaces/CG/pages/470974465/MIRA+2024+PI+3.4+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nMIRA 2024 PI 3.4\nDuration:\n2024-08-28 \u00a0\u00a0-\u00a02024-09-10 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-09-10 \u00a0\nMain Theme of Sprint\nPre-auth initial flow development completion Label printer develo"
+    },
+    {
+      "title": "Castor 2024 PI 3.3 - Review &amp; Retrospective",
+      "space": "Optimo",
+      "last_modified": "2024-10-01T12:31:34.000Z",
+      "url": "/spaces/CP2/pages/440565761/Castor+2024+PI+3.3+-+Review+Retrospective",
+      "excerpt": "1.5\nOverview\nSprint: \nCASTOR 2024 PI 3.3\nDuration:\n2024-08-14 \u00a0-\u00a02024-08-27 \u00a0\nSprint Retrospect Meeting:\n2024-08-27 \u00a0\nMain Theme of Sprint\nData Platform Kafka upgrade approach finalisation\nDevelopment"
+    },
+    {
+      "title": "Cake Altair -  2024 PI 3.3 - Review &amp; Retrospective",
+      "space": "Team Stark",
+      "last_modified": "2024-08-28T08:06:57.000Z",
+      "url": "/spaces/TS/pages/440467458/Cake+Altair+-+2024+PI+3.3+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint\nAltair - 2024 PI 3.2\nDuration\n2024-08-14  \u00a0 -\u00a02024-08-27\nSprint Retrospect Meeting\n2024-08-27  \nMain Theme of Sprint\nEMS 2.0 Integration Testing\nGoals\nEMS 2.0 Integration Testing\nKDS\nT"
+    },
+    {
+      "title": "MIRA 2024 PI 3.3 - Review &amp; Retrospective",
+      "space": "Cake GPS",
+      "last_modified": "2024-08-27T13:11:20.000Z",
+      "url": "/spaces/CG/pages/438567100/MIRA+2024+PI+3.3+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nMIRA 2024 PI 3.3\nDuration:\n2024-08-14 \u00a0\u00a0-\u00a02024-08-27 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-08-27 \u00a0\nMain Theme of Sprint\nEnable to search Loyalty Customer from merchant identifier DEV/ t"
+    },
+    {
+      "title": "LEO 2024 PI 3.3 - Review &amp; Retrospective",
+      "space": "Leapset Platform",
+      "last_modified": "2024-10-01T12:24:02.000Z",
+      "url": "/spaces/LP/pages/436666370/LEO+2024+PI+3.3+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nLEO 2024 PI 3.3\nDuration:\n2024-08-14 \u00a0-\u00a02024-08-27 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-08-27 \u00a0\u00a0\nMain Theme of Sprint\nMySQL upgrades\nSprint Goals:\nContinuation of the remaining MySQL d"
+    },
+    {
+      "title": "MIRA 2024 PI 3.2 - Review &amp; Retrospective",
+      "space": "Cake GPS",
+      "last_modified": "2024-08-20T12:52:27.000Z",
+      "url": "/spaces/CG/pages/412647428/MIRA+2024+PI+3.2+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nMIRA 2024 PI 3.2\nDuration:\n2024-07-31 \u00a0\u00a0-\u00a02024-08-13 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-08-13 \u00a0\nMain Theme of Sprint\nUtensil Display the PX order Attribute in POS Receipt and Enable "
+    },
+    {
+      "title": "Cake Altair -  2024 PI 3.2 - Review &amp; Retrospective",
+      "space": "Team Stark",
+      "last_modified": "2024-08-13T10:47:07.000Z",
+      "url": "/spaces/TS/pages/409043238/Cake+Altair+-+2024+PI+3.2+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint\nAltair - 2024 PI 3.2\nDuration\n2024-07-31  \u00a0 -\u00a02024-08-13\nSprint Retrospect Meeting\n2024-08-13  \nMain Theme of Sprint\nPre Auth Initial Development Work Completion\nGoals\nPre Auth Initial"
+    },
+    {
+      "title": "Castor 2024 PI 3.2 - Review &amp; Retrospective",
+      "space": "Optimo",
+      "last_modified": "2024-10-01T12:36:55.000Z",
+      "url": "/spaces/CP2/pages/409042948/Castor+2024+PI+3.2+-+Review+Retrospective",
+      "excerpt": "1.5\nOverview\nSprint: \nCASTOR 2024 PI 3.2\nDuration:\n2024-07-31 \u00a0-\u00a02024-08-13 \u00a0\nSprint Retrospect Meeting:\n2024-08-13 \u00a0\nMain Theme of Sprint\nReports Phase 2.3 Release 01 - Production Release\nSprint Goal"
+    },
+    {
+      "title": "LEO 2024 PI 3.2 - Review &amp; Retrospective",
+      "space": "Leapset Platform",
+      "last_modified": "2024-10-01T12:26:19.000Z",
+      "url": "/spaces/LP/pages/408846340/LEO+2024+PI+3.2+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nLEO 2024 PI 3.2\nDuration:\n2024-07-31 \u00a0-\u00a02024-08-13 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-08-13 \u00a0\u00a0\nMain Theme of Sprint\nMySQL upgrades\nSprint Goals:\nContinuation of the remaining MySQL d"
+    },
+    {
+      "title": "Castor 2024 PI 3.1 - Review &amp; Retrospective",
+      "space": "Optimo",
+      "last_modified": "2024-10-01T12:37:28.000Z",
+      "url": "/spaces/CP2/pages/383680544/Castor+2024+PI+3.1+-+Review+Retrospective",
+      "excerpt": "1.5\nOverview\nSprint: \nCASTOR 2024 PI 2.6\nDuration:\n2024-07-17 \u00a0-\u00a02024-07-30 \u00a0\nSprint Retrospect Meeting:\n2024-07-31 \u00a0\nMain Theme of Sprint\nReports Phase 2.3 Release 01 - Development &amp; QE\nSprint Go"
+    },
+    {
+      "title": "Cake Altair -  2024 PI 3.1 - Review &amp; Retrospective",
+      "space": "Team Stark",
+      "last_modified": "2024-07-30T16:16:30.000Z",
+      "url": "/spaces/TS/pages/381485057/Cake+Altair+-+2024+PI+3.1+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint\nAltair - 2024 PI 2.6\nDuration\n2024-07-17  \u00a0 -\u00a02024-07-30\nSprint Retrospect Meeting\n2024-07-30  \nMain Theme of Sprint\nMenu Core to EMS 2.0 Migration Verification\nGoals\nMenu Core to EMS "
+    },
+    {
+      "title": "LEO 2024 PI 3.1 - Review &amp; Retrospective",
+      "space": "Leapset Platform",
+      "last_modified": "2024-08-13T10:38:28.000Z",
+      "url": "/spaces/LP/pages/380928001/LEO+2024+PI+3.1+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nLEO 2024 PI 3.1\nDuration:\n2024-07-17 \u00a0-\u00a02024-07-30 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-07-30 \u00a0\u00a0\nMain Theme of Sprint\nMySQL upgrades\nSprint Goals:\nContinuation of the remaining MySQL d"
+    },
+    {
+      "title": "MIRA 2024 PI 3.1 - Review &amp; Retrospective",
+      "space": "Cake GPS",
+      "last_modified": "2024-08-20T12:42:17.000Z",
+      "url": "/spaces/CG/pages/377880642/MIRA+2024+PI+3.1+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint: \nMIRA 2024 PI 3.1\nDuration:\n2024-07-17 \u00a0\u00a0-\u00a02024-07-30 \u00a0\nSprint Retrospect Meeting:\n\u00a02024-07-30 \u00a0\nMain Theme of Sprint\nEdit Loyalty Customer Production Release\nSprint Goals:\nGM Reserva"
+    },
+    {
+      "title": "DIMO Sprint 9 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-12-06T04:14:57.000Z",
+      "url": "/spaces/RAC/pages/359115892/DIMO+Sprint+9+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 9\nDuration:\n2022-11-23  to 2022-12-06\nSprint Retrospect Meeting:\n2022-12-06 \nMain Theme of Sprint\n DIMO for Cake Spikes, DIMO for CAKE initial implementations\nSprint Goals"
+    },
+    {
+      "title": "DIMO Sprint 8 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-11-22T06:28:38.000Z",
+      "url": "/spaces/RAC/pages/359112283/DIMO+Sprint+8+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 8\nDuration:\n2022-11-09  to 2022-11-22\nSprint Retrospect Meeting:\n2022-11-22 \nMain Theme of Sprint\n Nested Modifiers, DIMO for Cake Spikes\nSprint Goals:\nNested Modifiers, D"
+    },
+    {
+      "title": "DIMO Sprint 7 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-11-08T07:09:20.000Z",
+      "url": "/spaces/RAC/pages/359101838/DIMO+Sprint+7+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 7\nDuration:\n2022-10-26  to 2022-11-08 \nSprint Retrospect Meeting:\n2022-11-08 \nMain Theme of Sprint\n Nested Modifiers, Support handover\nSprint Goals:\nDIMO for cake, Nested "
+    },
+    {
+      "title": "DIMO Sprint 6 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-10-25T05:31:44.000Z",
+      "url": "/spaces/RAC/pages/359087399/DIMO+Sprint+6+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 6\nDuration:\n2022-10-12  to 2022-10-25 \nSprint Retrospect Meeting:\n2022-10-25 \nMain Theme of Sprint\nDIMP feature , Nested Modifiers, Perf test (round 2)\nSprint Goals:\nFeatu"
+    },
+    {
+      "title": "DIMO Sprint 5 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-10-11T06:13:27.000Z",
+      "url": "/spaces/RAC/pages/359083544/DIMO+Sprint+5+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 5\nDuration:\n2022-09-28  to 2022-10-11 \nSprint Retrospect Meeting:\n2022-10-11 \nMain Theme of Sprint\nDIMP feature, Nested Modifiers, Bug Fixing\nSprint Goals:\nAnalyzing DIMP "
+    },
+    {
+      "title": "DIMO Sprint 4 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-09-30T06:46:43.000Z",
+      "url": "/spaces/RAC/pages/359082542/DIMO+Sprint+4+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 4\nDuration:\n2022-09-14  to 2022-09-27 \nSprint Retrospect Meeting:\n2022-09-30 \nMain Theme of Sprint\nMenu Management Release and Merchant On boarding.\nSprint Goals:\nTo push "
+    },
+    {
+      "title": "DIMO Sprint 3 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-09-13T06:48:49.000Z",
+      "url": "/spaces/RAC/pages/359080932/DIMO+Sprint+3+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 3\nDuration:\n2022-08-31  to 2022-09-13 \nSprint Retrospect Meeting:\n2022-09-13 \nMain Theme of Sprint\nSprint Goals:\nMenu Management Feature Development, Alpha Merchant Onboar"
+    },
+    {
+      "title": "DIMO Sprint 2 - Review &amp; Retrospective",
+      "space": "Restaurant Accelerator",
+      "last_modified": "2022-08-30T05:23:50.000Z",
+      "url": "/spaces/RAC/pages/359074895/DIMO+Sprint+2+-+Review+Retrospective",
+      "excerpt": "Overview\nSprint:\nDIMO Sprint 2\nDuration:\n2022-08-22  to 2022-08-30 \nSprint Retrospect Meeting:\n2022-08-30 \nMain Theme of Sprint\nMenu Management\nItem\nSub Menus\nPlatfrom API integration\nAPI Fixes\nSprint"
+    },
+    {
+      "title": "Sprint Retrospective - CC 2023.10",
+      "space": "Concierge Connect",
+      "last_modified": "2023-04-27T15:52:20.000Z",
+      "url": "/spaces/CC/pages/358614711/Sprint+Retrospective+-+CC+2023.10",
+      "excerpt": ""
+    },
+    {
+      "title": "Retrospectives",
+      "space": "Concierge Connect",
+      "last_modified": "2022-05-09T14:43:35.000Z",
+      "url": "/spaces/CC/pages/358614570/Retrospectives",
+      "excerpt": "blueprint-index-page"
+    },
+    {
+      "title": "screencapture-madmobile-eng-atlassian-net-jira-software-c-projects-MP-boards-2-reports-sprint-retrospective-2022-11-01-20_24_56.pdf",
+      "space": "MenuPad",
+      "last_modified": "2022-11-02T00:26:37.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358001604&preview=%2F358001604%2F358021577%2Fscreencapture-madmobile-eng-atlassian-net-jira-software-c-projects-MP-boards-2-reports-sprint-retrospective-2022-11-01-20_24_56.pdf",
+      "excerpt": ""
+    },
+    {
+      "title": "MP 2023.02 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2023-01-18T16:39:49.000Z",
+      "url": "/spaces/MP/pages/358017246/MP+2023.02+-+Review+Retrospective",
+      "excerpt": "MP vX.X.X Release\nOverview\nSprint:\nMP vX.X.X Release\nDuration:\n2023-01-04  - 2023-01-17 \nSprint Review / Retrospect Meeting:\n2023-01-17 \nMain Theme of Sprint\nComps feature\nSprint Goals:\n(Tasks to achi"
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2023-02-22T20:03:32.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358014451&preview=%2F358014451%2F358015957%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "MP 2023.07 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2023-04-03T20:17:52.000Z",
+      "url": "/spaces/MP/pages/358014451/MP+2023.07+-+Review+Retrospective",
+      "excerpt": "MP vX.X.X Release\nOverview\nSprint:\nMP vX.X.X Release\nDuration:\nSprint Review / Retrospect Meeting:\nMain Theme of Sprint\nComps / Refactor\nSprint Goals:\n(Tasks to achieve within the sprint)\nComps / Refa"
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-09-21T14:49:14.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358004376&preview=%2F358004376%2F358014095%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-07-13T17:22:45.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358005625&preview=%2F358005625%2F358013052%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "Sprint 8 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-10-18T20:12:48.000Z",
+      "url": "/spaces/MP/pages/358011943/Sprint+8+-+Review+Retrospective",
+      "excerpt": "MP v4.18.3 Release\nOverview\nSprint:\nMP v4.18.3 Release\nDuration:\n2022-10-05  - 2022-10-18 \nSprint Retrospect Meeting:\n2022-10-18 \nMain Theme of Sprint\nStability / Bug fixes / Minor enhancements\nSprint"
+    },
+    {
+      "title": "Sprint 5 Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-05-06T20:18:47.000Z",
+      "url": "/spaces/MP/pages/358010551/Sprint+5+Retrospective",
+      "excerpt": "Overview\nSprint:\nSprint 5 (MP v4.18)\nDuration:\n2022-04-22  - 2022-05-06 \nSprint Retrospect Meeting:\n2022-05-06 \nMain Theme of Sprint\nStability, enhancements &amp; Paytronix gift cards, Item Voids, Man"
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-10-18T20:06:30.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=357970200&preview=%2F357970200%2F358010364%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-07-25T16:45:58.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358001433&preview=%2F358001433%2F358007632%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "Sprint 2 - Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-07-27T22:57:15.000Z",
+      "url": "/spaces/MP/pages/358005625/Sprint+2+-+Retrospective",
+      "excerpt": "MP hotfix/v4.17.6 Release\nMP v4.17.7 Release\nOverview\nSprint:\nMP hotfix/v4.17.6 Release\nMP v4.17.7 Release (Internal)\nDuration:\n2022-07-13  - 2022-07-26 \nSprint Retrospect Meeting:\n2022-07-26 \nMain Th"
+    },
+    {
+      "title": "Sprint 1 - Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-07-27T22:53:15.000Z",
+      "url": "/spaces/MP/pages/358005495/Sprint+1+-+Retrospective",
+      "excerpt": "MP v4.17.5\nOverview\nSprint:\nMP v4.17.5 Release\nDuration:\n2022-06-29  - 2022-07-12 \nSprint Retrospect Meeting:\n2022-07-12 \nMain Theme of Sprint\nStability\nSprint Goals:\n(Tasks to achieve within the spri"
+    },
+    {
+      "title": "Sprint 10 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-11-08T20:37:13.000Z",
+      "url": "/spaces/MP/pages/358004376/Sprint+10+-+Review+Retrospective",
+      "excerpt": "MP v4.18.X Release\nNOTE: One week sprint\nOverview\nSprint:\nMP v4.18.X Release\nDuration:\n2022-11-02  - 2022-11-08 \nSprint Review / Retrospect Meeting:\n2022-11-08 \nMain Theme of Sprint\nStability / Bug fi"
+    },
+    {
+      "title": "MP 2023.03 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2023-01-31T21:43:54.000Z",
+      "url": "/spaces/MP/pages/358004012/MP+2023.03+-+Review+Retrospective",
+      "excerpt": "MP vX.X.X Release\nOverview\nSprint:\nMP vX.X.X Release\nDuration:\n2023-01-18  - 2023-01-31 \nSprint Review / Retrospect Meeting:\n2023-01-31 \nMain Theme of Sprint\nComps feature\nSprint Goals:\n(Tasks to achi"
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-09-07T15:04:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=357988505&preview=%2F357988505%2F358002342%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "Sprint 9 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-11-02T00:26:40.000Z",
+      "url": "/spaces/MP/pages/358001604/Sprint+9+-+Review+Retrospective",
+      "excerpt": "MP v4.18.X Release\nOverview\nSprint:\nMP v4.18.X Release\nDuration:\n2022-10-19  - 2022-11-01 \nSprint Review / Retrospect Meeting:\n2022-11-01 \nMain Theme of Sprint\nStability / Bug fixes / Minor enhancemen"
+    },
+    {
+      "title": "Sprint 3 - Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-08-09T20:15:06.000Z",
+      "url": "/spaces/MP/pages/358001433/Sprint+3+-+Retrospective",
+      "excerpt": "MP v4.17.8 Release\nPA hotfix/716\nOverview\nSprint:\nMP v4.17.8 Release\nDuration:\n2022-07-27  - 2022-08-09 \nSprint Retrospect Meeting:\n2022-08-09 \nMain Theme of Sprint\nStability / Bug fixes / Guest Count"
+    },
+    {
+      "title": "Sprint 6 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-09-20T20:46:41.000Z",
+      "url": "/spaces/MP/pages/358000699/Sprint+6+-+Review+Retrospective",
+      "excerpt": "MP v4.18.X Release\nOverview\nSprint:\nMP v4.18.X Release\nDuration:\n2022-09-07  - 2022-09-13 \nSprint Retrospect Meeting:\n2022-09-13 \nMain Theme of Sprint\nStability / Bug fixes / Sync Refactor\nSprint Goal"
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-12-06T19:50:26.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358004012&preview=%2F358004012%2F357999660%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "MP 2023.06 - Review / Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2023-03-15T13:00:21.000Z",
+      "url": "/spaces/MP/pages/357998106/MP+2023.06+-+Review+Retrospective",
+      "excerpt": "MP vX.X.X Release\nOverview\nSprint:\nMP vX.X.X Release\nDuration:\n2023-03-01  - 2023-03-14 \nSprint Review / Retrospect Meeting:\n2023-03-14 \nMain Theme of Sprint\nBug fixes / Paytronix loyalty features\nSpr"
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220809_153346-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-08-09T20:09:01.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358001433&preview=%2F358001433%2F357997668%2FMenuPad+Sprint+Retrospective-20220809_153346-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "MenuPad Sprint Retrospective-20220712_150243-Meeting Recording.mp4",
+      "space": "MenuPad",
+      "last_modified": "2022-09-07T15:16:14.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=358011943&preview=%2F358011943%2F357997093%2FMenuPad+Sprint+Retrospective-20220712_150243-Meeting+Recording.mp4",
+      "excerpt": ""
+    },
+    {
+      "title": "MP v4.17.4 Release Retrospective",
+      "space": "MenuPad",
+      "last_modified": "2022-06-28T21:05:57.000Z",
+      "url": "/spaces/MP/pages/357996756/MP+v4.17.4+Release+Retrospective",
+      "excerpt": "Overview\nSprint:\nMP v4.17.4 Release\nDuration:\n2022-06-15  - 2022-06-28 \nSprint Retrospect Meeting:\n2022-06-28 \nMain Theme of Sprint\nStability\nSprint Goals:\n(Tasks to achieve within the sprint)\nStabili"
+    }
+  ],
+  "total_unique": 169
+}

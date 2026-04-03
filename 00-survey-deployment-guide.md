@@ -14,7 +14,7 @@ The coordination brief already tells Chathura and Kennedy that survey deployment
 |---|---|---|---|---|
 | DORA Quick Check | Engineering leads/managers (1 per team) | ~3 min | 9 | Software delivery performance: deploy frequency, lead time, change failure rate, recovery time |
 | Westrum Culture | All eng leads, managers, senior ICs, PMs | ~2 min | 7 | Organizational culture type: pathological → bureaucratic → generative |
-| DevEx (DX Core 4) | Individual contributors only (engineers, QE) | ~5 min | 18 | Developer experience: feedback loops, cognitive load, flow state, satisfaction |
+| DevEx (DX Core 4) | Individual contributors only (engineers, QE) | ~7 min | 23 | Developer experience: feedback loops, cognitive load, flow state, satisfaction + 5 MM-specific context questions |
 | Pragmatic Engineer Test | 3–5 engineering leads or senior engineers | ~2 min | 15 | Engineering culture maturity: 12 yes/no + 3 context |
 
 **Total time per person: under 15 minutes.** Most people take only 2 of the 4 based on their role.
@@ -101,7 +101,21 @@ This should come from Don, not from me. It positions the surveys as part of his 
 ### Onsite (April 13–15)
 - Reference survey data during interviews: "The survey data suggests X — does that resonate?"
 - Use Westrum culture scores to gauge which teams may be more or less candid
-- Cross-reference DORA self-reported metrics against actual system data from source control and project management tools
+- Cross-reference DORA self-reported metrics against actual system data (see Cross-Reference Plan below)
+
+### Cross-Reference Plan: DORA Self-Reports vs. Actual System Data
+
+The pre-work inventory produced actual system metrics that can be compared against DORA self-reports:
+
+| DORA Self-Report | Actual System Metric | Source |
+|---|---|---|
+| Deploy frequency | Bitbucket merge frequency to default branch; deployment tag frequency per repo | `inventory/bitbucket/metrics.json`, `inventory/bitbucket/deploy_tags.json` |
+| Lead time for changes | PR cycle time: ranges from 0.6h (cloud-shared-development) to 235h (concierge-associate) | `inventory/bitbucket/metrics.json` |
+| Change failure rate | Jira bug creation rate: 11,985 total bugs, ~916 issues created/month, bug-to-story ratio | `inventory/jira/issue_distribution.json` |
+| Recovery time | Grafana MTTR dashboards (pending access) | Awaiting Grafana viewer access |
+| Reliability | CloudWatch alarms (pending permission), SLA data from interviews | Awaiting cloudwatch:DescribeAlarms |
+
+If a lead self-reports "weekly deploys" but their repos show biweekly merge cadence, that gap becomes a specific follow-up question in the interview.
 
 ### Post-Engagement Deliverable
 - Package all four surveys with Mad Mobile-specific instructions, baseline scores, and comparison guidance

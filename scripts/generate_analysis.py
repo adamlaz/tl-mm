@@ -189,7 +189,7 @@ def generate_bitbucket_analysis():
 # ─── JIRA ───────────────────────────────────────────────────────────────
 
 def generate_jira_analysis():
-    print("\n=== Jira Analysis ===", flush=True)
+    print("\n=== Jira Analysis (Segmented) ===", flush=True)
 
     projects = load_json('inventory/jira/projects.json') or []
     issue_dist = load_json('inventory/jira/issue_distribution.json') or {}
@@ -197,26 +197,47 @@ def generate_jira_analysis():
     velocity_full = load_json('inventory/jira/velocity_full.json')
     velocity_v1 = load_json('inventory/jira/velocity.json') or {}
     velocity = velocity_full or velocity_v1
-    backlog_age = load_json('inventory/jira/backlog_age.json')
-    created_resolved = load_json('inventory/jira/created_vs_resolved.json')
+    backlog_age = load_json('inventory/jira/backlog_age.json') or {}
+    created_resolved = load_json('inventory/jira/created_vs_resolved.json') or {}
     cycle_time = load_json('inventory/jira/cycle_time.json')
 
     if projects:
         for p in projects:
-            p['issue_count'] = project_counts.get(p['key'], 'unknown')
+            pc_entry = project_counts.get(p['key'], {})
+            if isinstance(pc_entry, dict):
+                p['issue_count'] = pc_entry.get('count', 'unknown')
+                p['classification'] = pc_entry.get('classification', 'unclassified')
+            else:
+                p['issue_count'] = pc_entry
+                p['classification'] = 'unclassified'
         df_proj = pd.DataFrame(projects)
         df_proj.to_csv(f'{CSV_DIR}/jira_projects.csv', index=False)
-        print(f"  -> {CSV_DIR}/jira_projects.csv ({len(df_proj)} rows)")
+        df_proj.to_csv(f'{CSV_DIR}/jira_project_classification.csv', index=False)
+        print(f"  -> {CSV_DIR}/jira_project_classification.csv ({len(df_proj)} rows)")
 
-    numeric_dist = {k: v for k, v in issue_dist.items() if isinstance(v, (int, float))}
-    if numeric_dist:
-        type_counts = {k: v for k, v in numeric_dist.items()
-                       if k in ('bugs', 'stories', 'tasks', 'epics', 'subtasks')}
+    # Org-wide overview: issue volume by segment
+    seg_totals = {}
+    for seg in ['engineering', 'customer_success', 'operations']:
+        seg_data = issue_dist.get(seg, {})
+        total = sum(v for k, v in seg_data.items()
+                    if isinstance(v, (int, float)) and k in ('bugs', 'stories', 'tasks', 'epics', 'subtasks'))
+        seg_totals[seg] = total
+    if seg_totals:
+        fig_overview = px.pie(names=list(seg_totals.keys()), values=list(seg_totals.values()),
+                              title='Jira: Issue Volume by Org Segment')
+        fig_overview.update_layout(height=400)
+        fig_overview.write_html(f'{CHARTS_DIR}/jira_org_overview.html')
+
+    # Issue distribution: engineering vs overall
+    for seg_name in ['overall', 'engineering']:
+        seg_data = issue_dist.get(seg_name, {})
+        type_counts = {k: v for k, v in seg_data.items()
+                       if isinstance(v, (int, float)) and k in ('bugs', 'stories', 'tasks', 'epics', 'subtasks')}
         if type_counts:
-            fig = px.pie(names=list(type_counts.keys()), values=list(type_counts.values()),
-                         title='Jira Issue Distribution by Type')
+            title = f'Issue Distribution by Type ({seg_name.replace("_", " ").title()})'
+            fig = px.pie(names=list(type_counts.keys()), values=list(type_counts.values()), title=title)
             fig.update_layout(height=400)
-            fig.write_html(f'{CHARTS_DIR}/jira_issue_distribution.html')
+            fig.write_html(f'{CHARTS_DIR}/jira_issue_distribution_{seg_name}.html')
 
     if velocity:
         sprint_rows = []
@@ -245,32 +266,47 @@ def generate_jira_analysis():
             df_top['complete_date'] = pd.to_datetime(df_top['complete_date'], errors='coerce')
             df_top = df_top.sort_values('complete_date')
             fig2 = px.line(df_top, x='complete_date', y='done_issues', color='board',
-                           title='Sprint Velocity Trend (Top 10 Active Boards)',
+                           title='Sprint Velocity Trend (Top 10 Active Boards, Engineering)',
                            labels={'done_issues': 'Issues Completed', 'complete_date': 'Sprint End'})
             fig2.update_layout(height=500)
             fig2.write_html(f'{CHARTS_DIR}/jira_velocity_trend.html')
 
-    if backlog_age and all(isinstance(v, (int, float)) for v in backlog_age.values()):
-        fig3 = px.bar(x=list(backlog_age.keys()), y=list(backlog_age.values()),
-                      title='Open Backlog Age Distribution',
-                      labels={'x': 'Age Bucket', 'y': 'Open Issues'})
-        fig3.update_layout(height=400)
-        fig3.write_html(f'{CHARTS_DIR}/jira_backlog_age.html')
+    # Backlog age: side-by-side segments
+    if backlog_age:
+        age_rows = []
+        for seg_name in ['overall', 'engineering', 'operations']:
+            seg_data = backlog_age.get(seg_name, {})
+            if isinstance(seg_data, dict):
+                for bucket, count in seg_data.items():
+                    if isinstance(count, (int, float)):
+                        age_rows.append({'segment': seg_name, 'age_bucket': bucket, 'count': count})
+        if age_rows:
+            df_age = pd.DataFrame(age_rows)
+            fig3 = px.bar(df_age, x='age_bucket', y='count', color='segment', barmode='group',
+                          title='Open Backlog Age Distribution (by Segment)',
+                          labels={'age_bucket': 'Age Bucket', 'count': 'Open Issues'})
+            fig3.update_layout(height=450)
+            fig3.write_html(f'{CHARTS_DIR}/jira_backlog_age.html')
 
-    if created_resolved:
-        valid = [w for w in created_resolved if 'error' not in w]
-        if valid:
-            df_cr = pd.DataFrame(valid)
-            fig4 = make_subplots(specs=[[{"secondary_y": True}]])
-            fig4.add_trace(go.Scatter(x=df_cr['week_start'], y=df_cr['created'],
-                                      name='Created', mode='lines+markers'), secondary_y=False)
-            fig4.add_trace(go.Scatter(x=df_cr['week_start'], y=df_cr['resolved'],
-                                      name='Resolved', mode='lines+markers'), secondary_y=False)
-            fig4.add_trace(go.Bar(x=df_cr['week_start'], y=df_cr['net'],
-                                  name='Net (Resolved-Created)', opacity=0.3), secondary_y=True)
-            fig4.update_layout(title='Jira Created vs Resolved (Weekly, 6 months)',
-                               height=500, xaxis_tickangle=-45)
-            fig4.write_html(f'{CHARTS_DIR}/jira_created_vs_resolved.html')
+    # Created vs resolved: overall + engineering on same chart
+    if created_resolved and isinstance(created_resolved, dict):
+        fig4 = make_subplots(specs=[[{"secondary_y": True}]])
+        for seg_name in ['overall', 'engineering']:
+            seg_data = created_resolved.get(seg_name, [])
+            valid = [w for w in seg_data if isinstance(w, dict) and 'error' not in w]
+            if valid:
+                df_cr = pd.DataFrame(valid)
+                suffix = '' if seg_name == 'overall' else ' (Eng)'
+                dash = None if seg_name == 'overall' else 'dash'
+                fig4.add_trace(go.Scatter(x=df_cr['week_start'], y=df_cr['created'],
+                                          name=f'Created{suffix}', mode='lines+markers',
+                                          line=dict(dash=dash)), secondary_y=False)
+                fig4.add_trace(go.Scatter(x=df_cr['week_start'], y=df_cr['resolved'],
+                                          name=f'Resolved{suffix}', mode='lines+markers',
+                                          line=dict(dash=dash)), secondary_y=False)
+        fig4.update_layout(title='Created vs Resolved: Overall and Engineering (Weekly, 6 months)',
+                           height=500, xaxis_tickangle=-45)
+        fig4.write_html(f'{CHARTS_DIR}/jira_created_vs_resolved.html')
 
     if cycle_time:
         df_ct = pd.DataFrame(cycle_time)
@@ -324,6 +360,90 @@ def generate_confluence_analysis():
     print(f"  -> {CHARTS_DIR}/confluence_*.html charts generated")
 
 
+# ─── V3 DATA ────────────────────────────────────────────────────────────
+
+def generate_v3_analysis():
+    print("\n=== V3 Analysis ===", flush=True)
+
+    reviewer = load_json('inventory/bitbucket/reviewer_concentration.json')
+    if reviewer and reviewer.get('global_top_20_reviewers'):
+        top20 = reviewer['global_top_20_reviewers']
+        df_rev = pd.DataFrame(top20)
+        df_rev.to_csv(f'{CSV_DIR}/bb_reviewer_concentration.csv', index=False)
+        print(f"  -> {CSV_DIR}/bb_reviewer_concentration.csv ({len(df_rev)} rows)")
+        fig = px.bar(df_rev.sort_values('total_reviews'), x='total_reviews', y='name',
+                     orientation='h', title='Top 20 PR Reviewers (Cross-Repo)')
+        fig.update_layout(height=500, margin=dict(l=200))
+        fig.write_html(f'{CHARTS_DIR}/bb_reviewer_concentration.html')
+
+    scope = load_json('inventory/jira/scope_change.json')
+    if scope:
+        df_scope = pd.DataFrame(scope)
+        df_scope.to_csv(f'{CSV_DIR}/jira_scope_change.csv', index=False)
+        print(f"  -> {CSV_DIR}/jira_scope_change.csv ({len(df_scope)} rows)")
+        if not df_scope.empty and 'scope_change_pct' in df_scope.columns:
+            fig = go.Figure()
+            fig.add_trace(go.Bar(name='Original Scope', x=df_scope['sprint'], y=df_scope['original_scope']))
+            fig.add_trace(go.Bar(name='Added Mid-Sprint', x=df_scope['sprint'], y=df_scope['added_mid_sprint']))
+            fig.update_layout(barmode='stack', title='Sprint Scope Change: Original vs Added Mid-Sprint',
+                              height=500, xaxis_tickangle=-45, margin=dict(b=150))
+            fig.write_html(f'{CHARTS_DIR}/jira_scope_change.html')
+
+    flow = load_json('inventory/jira/flow_distribution.json')
+    if flow:
+        for seg_name in ['overall', 'engineering']:
+            seg_data = flow.get(seg_name, {})
+            resolved = seg_data.get('resolved_90d', {})
+            numeric = {k: v for k, v in resolved.items() if isinstance(v, (int, float)) and v > 0}
+            if numeric:
+                label = seg_name.replace('_', ' ').title()
+                fig = px.pie(names=list(numeric.keys()), values=list(numeric.values()),
+                             title=f'Flow Distribution: Resolved Work, {label} (Last 90 Days)')
+                fig.update_layout(height=400)
+                suffix = f'_{seg_name}' if seg_name != 'overall' else ''
+                fig.write_html(f'{CHARTS_DIR}/jira_flow_distribution{suffix}.html')
+
+    assignee = load_json('inventory/jira/assignee_concentration.json')
+    if assignee and assignee.get('top_30_assignees'):
+        df_assign = pd.DataFrame(assignee['top_30_assignees'])
+        df_assign.to_csv(f'{CSV_DIR}/jira_assignee_load.csv', index=False)
+        print(f"  -> {CSV_DIR}/jira_assignee_load.csv ({len(df_assign)} rows)")
+        role_col = 'role_classification' if 'role_classification' in df_assign.columns else 'is_overloaded'
+        fig = px.bar(df_assign.sort_values('open_issues').tail(20),
+                     x='open_issues', y='name', orientation='h',
+                     title='Top 20 Assignees by Open Issue Count (by Role)',
+                     color=role_col)
+        fig.update_layout(height=500, margin=dict(l=200))
+        fig.write_html(f'{CHARTS_DIR}/jira_assignee_load.html')
+
+    tags = load_json('inventory/bitbucket/deploy_tags.json')
+    if tags and tags.get('repos'):
+        repos_with = [r for r in tags['repos'] if r.get('has_releases')]
+        if repos_with:
+            tag_rows = []
+            for r in repos_with:
+                for month, count in r.get('monthly_tags', {}).items():
+                    tag_rows.append({'repo': f"{r['workspace']}/{r['repo']}", 'month': month, 'tags': count})
+            if tag_rows:
+                df_tags = pd.DataFrame(tag_rows)
+                fig = px.bar(df_tags, x='month', y='tags', color='repo',
+                             title='Deployment Tag Frequency by Repo (6 months)')
+                fig.update_layout(height=500, xaxis_tickangle=-45)
+                fig.write_html(f'{CHARTS_DIR}/bb_deploy_tags.html')
+
+    creation = load_json('inventory/confluence/creation_trend.json')
+    if creation:
+        valid = [c for c in creation if 'error' not in c]
+        if valid:
+            df_create = pd.DataFrame(valid)
+            fig = px.bar(df_create, x='week_start', y='pages_created',
+                         title='Confluence Page Creation Trend (26 Weeks)')
+            fig.update_layout(height=400, xaxis_tickangle=-45)
+            fig.write_html(f'{CHARTS_DIR}/confluence_creation_trend.html')
+
+    print(f"  -> {CHARTS_DIR}/v3 charts generated")
+
+
 # ─── MAIN ───────────────────────────────────────────────────────────────
 
 if __name__ == '__main__':
@@ -331,6 +451,7 @@ if __name__ == '__main__':
     generate_bitbucket_analysis()
     generate_jira_analysis()
     generate_confluence_analysis()
+    generate_v3_analysis()
 
     charts = glob.glob(f'{CHARTS_DIR}/*.html')
     csvs = glob.glob(f'{CSV_DIR}/*.csv')

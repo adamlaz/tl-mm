@@ -1,0 +1,246 @@
+{
+  "per_repo": [
+    {
+      "total_prs": 3,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "cinco-workspace"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "react-cinco"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "moxy"
+    },
+    {
+      "total_prs": 41,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "neo-workspace"
+    },
+    {
+      "total_prs": 25,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madpayments",
+      "repo": "madpayments-devices-idtech-neo"
+    },
+    {
+      "total_prs": 41,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madpayments",
+      "repo": "mad-payments-vp3350"
+    },
+    {
+      "total_prs": 153,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madpayments",
+      "repo": "gitops-payments"
+    },
+    {
+      "total_prs": 0,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "seao"
+    },
+    {
+      "total_prs": 2,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "cakekiosk-kdsapplauncher"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "gm"
+    },
+    {
+      "total_prs": 68,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "gitops-cake"
+    },
+    {
+      "total_prs": 11,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "restaurant-admin-v2"
+    },
+    {
+      "total_prs": 24,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "mad-services-xstore24eu-rl"
+    },
+    {
+      "total_prs": 11,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madpayments",
+      "repo": "rs2-bankworks-parser-service"
+    },
+    {
+      "total_prs": 0,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "ditto-sync-agent"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "impl-urban"
+    },
+    {
+      "total_prs": 17,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "kds-v2"
+    },
+    {
+      "total_prs": 70,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madpayments",
+      "repo": "merchant-service"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "olo"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "impl-rl"
+    },
+    {
+      "total_prs": 17,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus"
+    },
+    {
+      "total_prs": 73,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "cake-pop-automation"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "concierge-associate"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "cake-ecs-configs"
+    },
+    {
+      "total_prs": 250,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabs",
+      "repo": "cake-payment-gateway"
+    },
+    {
+      "total_prs": 227,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "cloud-shared-services"
+    },
+    {
+      "total_prs": 0,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madpayments",
+      "repo": "cybersource-bin-service"
+    },
+    {
+      "total_prs": 163,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "madmobile",
+      "repo": "cloud-shared-development"
+    },
+    {
+      "total_prs": 31,
+      "top_reviewers": [],
+      "top_reviewer_pct": 0,
+      "is_bottleneck": false,
+      "workspace": "syscolabsconf",
+      "repo": "menu-sync-agent"
+    }
+  ],
+  "global_top_20_reviewers": [],
+  "bottleneck_repos": []
+}
