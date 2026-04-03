@@ -1,0 +1,654 @@
+id,title,author,created,merged,cycle_hours,workspace,repo
+4854,feat: REST-18175 prompt signature for manual entry,Cory Renard,2026-04-02T16:46:50.911325+00:00,2026-04-02T21:20:08.588981+00:00,4.6,syscolabs,react-cinco
+4856,REST-18319 fix: ctd total after loyalty lookup cancel,Cory Renard,2026-04-02T17:53:14.393542+00:00,2026-04-02T21:19:51.102312+00:00,3.4,syscolabs,react-cinco
+4855,REST-18335 pre-auth wording change,Cory Renard,2026-04-02T17:12:17.606198+00:00,2026-04-02T21:19:09.956600+00:00,4.1,syscolabs,react-cinco
+4852,REST-18483,Harrison Minchew,2026-03-31T15:31:29.399366+00:00,2026-03-31T21:23:33.440513+00:00,5.9,syscolabs,react-cinco
+4853,REST-18626 fix loyalty & discount cancel for GC payment,Holly Culver,2026-03-31T18:38:47.756618+00:00,2026-03-31T18:51:24.675639+00:00,0.2,syscolabs,react-cinco
+4795,Release 7.43.0.0,Matthew Crumley,2026-02-12T21:02:26.666193+00:00,2026-03-31T18:49:24.953722+00:00,1125.8,syscolabs,react-cinco
+4851,REST-18530,Harrison Minchew,2026-03-31T14:08:03.229750+00:00,2026-03-31T16:09:23.681141+00:00,2.0,syscolabs,react-cinco
+4849,REST-18200 fix for loyalty for offline,Holly Culver,2026-03-27T19:49:48.432862+00:00,2026-03-27T20:18:28.303687+00:00,0.5,syscolabs,react-cinco
+4847,REST-18021 when empty card number,Holly Culver,2026-03-26T15:23:11.271126+00:00,2026-03-26T16:19:31.114412+00:00,0.9,syscolabs,react-cinco
+4846,REST-18471,Harrison Minchew,2026-03-25T20:18:19.804292+00:00,2026-03-25T20:26:05.534331+00:00,0.1,syscolabs,react-cinco
+4845,REST-18471,Harrison Minchew,2026-03-25T17:05:07.958051+00:00,2026-03-25T18:21:50.719106+00:00,1.3,syscolabs,react-cinco
+4843,REST-18200 do check for offline before printing loyalty QR code,Holly Culver,2026-03-24T15:02:40.725590+00:00,2026-03-25T16:47:13.925812+00:00,25.7,syscolabs,react-cinco
+4844, REST-18334  restart madpay service endpoints + REST-18450 device info fix,Cory Renard,2026-03-25T16:02:59.331531+00:00,2026-03-25T16:44:30.652560+00:00,0.7,syscolabs,react-cinco
+4839,REST-18329 add card status messages for refund,Holly Culver,2026-03-16T15:05:48.389872+00:00,2026-03-19T20:31:06.696539+00:00,77.4,syscolabs,react-cinco
+4838,Fix/REST-18179 gift card loyalty,Cory Renard,2026-03-13T21:21:30.769946+00:00,2026-03-19T20:30:45.364693+00:00,143.2,syscolabs,react-cinco
+4841,REST-18201,Harrison Minchew,2026-03-18T20:29:39.263354+00:00,2026-03-19T15:38:17.427933+00:00,19.1,syscolabs,react-cinco
+4837,feat: error message for 0x000A,Cory Renard,2026-03-13T01:57:51.552861+00:00,2026-03-16T11:25:08.627964+00:00,81.5,syscolabs,react-cinco
+4836,loyalty ctd amount,Cory Renard,2026-03-11T15:14:01.535007+00:00,2026-03-11T17:00:02.103120+00:00,1.8,syscolabs,react-cinco
+4835,auth args,Cory Renard,2026-03-10T20:51:43.463498+00:00,2026-03-10T21:46:24.067422+00:00,0.9,syscolabs,react-cinco
+4834,ctd loyalty total,Cory Renard,2026-03-10T19:12:12.301644+00:00,2026-03-10T21:45:38.424597+00:00,2.6,syscolabs,react-cinco
+4833,Fix/REST-17349 split pay,Cory Renard,2026-03-10T15:43:37.812111+00:00,2026-03-10T16:46:30.957405+00:00,1.0,syscolabs,react-cinco
+4831,REST-18172 fix slow cancel button,Holly Culver,2026-03-05T19:39:54.849590+00:00,2026-03-06T19:11:33.164803+00:00,23.5,syscolabs,react-cinco
+4830,REST-18213 split pay loyalty,Cory Renard,2026-03-05T17:04:12.586798+00:00,2026-03-05T18:43:18.947531+00:00,1.7,syscolabs,react-cinco
+4829,REST-18212 show cancel button,Holly Culver,2026-03-05T16:35:39.985277+00:00,2026-03-05T18:41:45.299777+00:00,2.1,syscolabs,react-cinco
+4827,"show header while payment processing, reset card error msg on retry",Cory Renard,2026-03-04T19:15:40.658370+00:00,2026-03-05T15:34:23.401111+00:00,20.3,syscolabs,react-cinco
+4826,REST-18184 split payments and card feedback fixes,Cory Renard,2026-03-04T14:37:40.331447+00:00,2026-03-04T15:13:57.904166+00:00,0.6,syscolabs,react-cinco
+4825,REST_18184 Fix split payment receipt and pre-auth cancel crash,Cory Renard,2026-03-03T17:48:53.266698+00:00,2026-03-03T18:38:22.746523+00:00,0.8,syscolabs,react-cinco
+4824,REST-18177 fix missing loyalty QR code for gift cards,Holly Culver,2026-03-03T17:04:03.644065+00:00,2026-03-03T18:37:36.020561+00:00,1.6,syscolabs,react-cinco
+4823,REST-18161 fix missing card number for 3300,Holly Culver,2026-03-03T15:34:47.399199+00:00,2026-03-03T18:36:45.329607+00:00,3.0,syscolabs,react-cinco
+4822,REST-18171 fix to send reauth after retruning to gc screen,Holly Culver,2026-03-02T18:03:10.167923+00:00,2026-03-03T18:36:26.720218+00:00,24.6,syscolabs,react-cinco
+4821,fix: REST-18166-holder-name-exception,Cory Renard,2026-03-02T15:42:27.246212+00:00,2026-03-02T17:21:36.700493+00:00,1.7,syscolabs,react-cinco
+4820,fix: REST-18166 no tip sync fix,Cory Renard,2026-03-02T15:16:01.604344+00:00,2026-03-02T17:21:21.377142+00:00,2.1,syscolabs,react-cinco
+4819,Receipt Update with pathname,Alexander Baine,2026-02-27T16:52:54.621673+00:00,2026-02-27T18:39:30.124500+00:00,1.8,syscolabs,react-cinco
+4818,REST-18130: CTD Rewards,Alexander Baine,2026-02-27T14:25:12.283741+00:00,2026-02-27T18:38:50.272648+00:00,4.2,syscolabs,react-cinco
+4817,REST-17329,Harrison Minchew,2026-02-27T12:51:12.797856+00:00,2026-02-27T18:37:06.855869+00:00,5.8,syscolabs,react-cinco
+4816,Task/REST-15774 GC issues,Holly Culver,2026-02-26T16:48:51.786379+00:00,2026-02-26T19:02:05.020490+00:00,2.2,syscolabs,react-cinco
+4815,REST-18132: Split Payment Charges,Alexander Baine,2026-02-26T16:11:36.223549+00:00,2026-02-26T16:33:13.904709+00:00,0.4,syscolabs,react-cinco
+4814,REST-18123,Harrison Minchew,2026-02-26T14:22:24.923985+00:00,2026-02-26T15:14:10.714795+00:00,0.9,syscolabs,react-cinco
+4813,Task/REST-15774 retry additions,Holly Culver,2026-02-25T16:09:17.505584+00:00,2026-02-25T17:00:49.729684+00:00,0.9,syscolabs,react-cinco
+4812,fix: REST-18130 loyalty ctd sequence,Cory Renard,2026-02-25T15:56:37.141360+00:00,2026-02-25T15:58:15.727161+00:00,0.0,syscolabs,react-cinco
+4811,REST-16245 prevent signature skip if tip is added,Cory Renard,2026-02-25T15:10:34.643483+00:00,2026-02-25T15:13:23.171786+00:00,0.0,syscolabs,react-cinco
+4810,Feat/REST-17329 offline disable,Cory Renard,2026-02-23T20:50:36.968280+00:00,2026-02-24T15:05:31.422145+00:00,18.2,syscolabs,react-cinco
+4803,Feat/REST-18055 activation wait,Cory Renard,2026-02-18T18:40:08.708017+00:00,2026-02-20T19:19:29.406306+00:00,48.7,syscolabs,react-cinco
+4809,style: justify offline text,Cory Renard,2026-02-20T18:25:10.336142+00:00,2026-02-20T19:19:18.010199+00:00,0.9,syscolabs,react-cinco
+4808,fix: split payment amount to ctd,Cory Renard,2026-02-20T16:54:23.734253+00:00,2026-02-20T19:19:09.136243+00:00,2.4,syscolabs,react-cinco
+4807,Update main line 7.41.0.0 with 7.41.0.X,Matthew Crumley,2026-02-20T15:33:53.483684+00:00,2026-02-20T15:47:38.818080+00:00,0.2,syscolabs,react-cinco
+4806,fix: kiosk refunds,Cory Renard,2026-02-19T21:47:38.994339+00:00,2026-02-20T14:22:41.465119+00:00,16.6,syscolabs,react-cinco
+4804,Fix Split Check Error,Alexander Baine,2026-02-19T17:10:38.517595+00:00,2026-02-19T17:13:29.550950+00:00,0.0,syscolabs,react-cinco
+4802,fix: offline auth pass ticket id instead of order id,Cory Renard,2026-02-18T14:34:07.760672+00:00,2026-02-18T14:54:11.304404+00:00,0.3,syscolabs,react-cinco
+4800,fix: 3300 split payment card style false exception,Cory Renard,2026-02-17T19:09:15.271886+00:00,2026-02-18T14:43:18.815546+00:00,19.6,syscolabs,react-cinco
+4801,REST-17567,Harrison Minchew,2026-02-17T21:47:54.129836+00:00,2026-02-18T14:25:04.050324+00:00,16.6,syscolabs,react-cinco
+4798,"fix: ctd sync, error messages, dark mode colors, payment method switch",Cory Renard,2026-02-13T20:00:15.691761+00:00,2026-02-13T20:27:48.015061+00:00,0.5,syscolabs,react-cinco
+4797,Task/REST-15774 gift card refund,Holly Culver,2026-02-13T19:26:53.199877+00:00,2026-02-13T19:34:38.704222+00:00,0.1,syscolabs,react-cinco
+4796,fix: additional duplicate error call sites,Cory Renard,2026-02-12T21:59:02.901677+00:00,2026-02-13T14:40:02.381531+00:00,16.7,syscolabs,react-cinco
+4794,fix: gift card debounce silence,Cory Renard,2026-02-12T18:18:55.273759+00:00,2026-02-12T19:02:07.589620+00:00,0.7,syscolabs,react-cinco
+4792,Feat/REST-17975 activation wait,Cory Renard,2026-02-12T12:47:28.132809+00:00,2026-02-12T15:34:22.386474+00:00,2.8,syscolabs,react-cinco
+4791,fix: rm active auth madpay loop,Cory Renard,2026-02-11T20:16:48.353953+00:00,2026-02-11T20:23:48.369230+00:00,0.1,syscolabs,react-cinco
+4790,"madpay timeout text, auth source logging, concurrent auth guard",Cory Renard,2026-02-11T15:27:01.139095+00:00,2026-02-11T15:59:59.843191+00:00,0.5,syscolabs,react-cinco
+4788,"Gift Card, Cash, Comp, Check toggles for extra fees",Alexander Baine,2026-02-10T16:18:36.461656+00:00,2026-02-10T19:50:49.369347+00:00,3.5,syscolabs,react-cinco
+4789,fix: REST-17973 init card payment race,Cory Renard,2026-02-10T19:03:25.504339+00:00,2026-02-10T19:09:17.888883+00:00,0.1,syscolabs,react-cinco
+4787,REST-15774 fix remaining bugs and update params for auth,Holly Culver,2026-02-10T15:25:57.019589+00:00,2026-02-10T15:36:26.089218+00:00,0.2,syscolabs,react-cinco
+4786,Fix/REST-17973 split pay cancel,Cory Renard,2026-02-10T13:50:42.920132+00:00,2026-02-10T15:36:07.238890+00:00,1.8,syscolabs,react-cinco
+4785,feat: madpay response human readable mapping,Cory Renard,2026-02-09T20:39:42.804048+00:00,2026-02-10T15:35:41.245203+00:00,18.9,syscolabs,react-cinco
+4783,Feat/REST-17881 3350 swipe animation,Cory Renard,2026-02-09T16:23:53.477261+00:00,2026-02-09T18:02:19.427782+00:00,1.6,syscolabs,react-cinco
+4784,Task/REST-15774 gift card updates,Holly Culver,2026-02-09T16:47:54.162088+00:00,2026-02-09T17:55:50.233137+00:00,1.1,syscolabs,react-cinco
+4782,Task/REST-17961 fixing issues in printers screen,Raveen Panditha,2026-02-09T12:15:14.616070+00:00,2026-02-09T13:32:47.900607+00:00,1.3,syscolabs,react-cinco
+4776,Fix: REST-17373 - Fixing issues in email domain validation,Raveen Panditha,2026-02-09T07:39:55.893115+00:00,2026-02-09T13:32:44.381303+00:00,5.9,syscolabs,react-cinco
+4767,fix: REST-17363 - Adding fixes for the card payment flow,Raveen Panditha,2026-02-04T13:00:21.921999+00:00,2026-02-09T13:17:27.439119+00:00,120.3,syscolabs,react-cinco
+4780,Temp/bugfixes printers domain and lrs,Raveen Panditha,2026-02-09T09:36:28.526284+00:00,2026-02-09T09:36:41.410920+00:00,0.0,syscolabs,react-cinco
+4779,Fix: REST-17373 - Fixing issues in email domain validation and printers,Raveen Panditha,2026-02-09T09:29:48.269116+00:00,2026-02-09T09:30:14.087271+00:00,0.0,syscolabs,react-cinco
+4778,Logic correction for skipping the table tracker overlay,Raveen Panditha,2026-02-09T09:28:44.422004+00:00,2026-02-09T09:29:16.345804+00:00,0.0,syscolabs,react-cinco
+4773,Split Payments Update,Alexander Baine,2026-02-06T17:05:03.992554+00:00,2026-02-06T19:52:25.547334+00:00,2.8,syscolabs,react-cinco
+4774,REST-17958 fix: rm store forward mode from auth,Cory Renard,2026-02-06T18:38:06.255221+00:00,2026-02-06T19:48:08.748205+00:00,1.2,syscolabs,react-cinco
+4772,copy: REST-16441 - offline copy,Cory Renard,2026-02-05T23:11:41.919636+00:00,2026-02-06T14:17:01.092687+00:00,15.1,syscolabs,react-cinco
+4771,REST-15774 fix parameter issue,Holly Culver,2026-02-05T16:38:45.654699+00:00,2026-02-05T17:29:11.793499+00:00,0.8,syscolabs,react-cinco
+4769,Task/REST-15774 gc functionality for VP3350,Holly Culver,2026-02-04T18:12:59.161336+00:00,2026-02-05T14:34:51.691185+00:00,20.4,syscolabs,react-cinco
+4770,REST-17903,Harrison Minchew,2026-02-04T21:28:57.811644+00:00,2026-02-05T14:26:27.225831+00:00,17.0,syscolabs,react-cinco
+4760,Feature/REST-16524 offline payments,Cory Renard,2026-01-28T19:50:40.981477+00:00,2026-02-04T17:58:14.440312+00:00,166.1,syscolabs,react-cinco
+4768,bugfix: REST-17861 payment device detection SSE-driven,Matthew Crumley,2026-02-04T15:38:40.878560+00:00,2026-02-04T17:57:18.389622+00:00,2.3,syscolabs,react-cinco
+4766,split payment race condition,Alexander Baine,2026-02-03T20:12:26.299719+00:00,2026-02-04T12:22:53.767787+00:00,16.2,syscolabs,react-cinco
+4765,disable extra fee checkbox in flight,Cory Renard,2026-02-03T18:56:32.278939+00:00,2026-02-03T19:05:01.630637+00:00,0.1,syscolabs,react-cinco
+4764,Hotfix/REST-17458 disable cancel in flight,Cory Renard,2026-02-02T20:59:32.010353+00:00,2026-02-03T17:10:29.355115+00:00,20.2,syscolabs,react-cinco
+4763,hotfix: sidecheck ticketid against madpay response,Cory Renard,2026-02-02T18:49:07.390697+00:00,2026-02-03T17:08:37.616747+00:00,22.3,syscolabs,react-cinco
+4762,REST-17301,Harrison Minchew,2026-01-30T20:32:41.334521+00:00,2026-01-30T20:35:02.518188+00:00,0.0,syscolabs,react-cinco
+4761,REST-17301,Harrison Minchew,2026-01-30T18:40:09.221235+00:00,2026-01-30T18:40:38.032274+00:00,0.0,syscolabs,react-cinco
+4759,Split Payments Integration VP3350,Alexander Baine,2026-01-26T20:53:03.175968+00:00,2026-01-29T14:22:12.633844+00:00,65.5,syscolabs,react-cinco
+4749,Task/REST-17301 3350 preauth,Harrison Minchew,2026-01-13T20:02:23.748485+00:00,2026-01-28T21:19:34.448046+00:00,361.3,syscolabs,react-cinco
+4750,Release 7.42.0.0,Matthew Crumley,2026-01-13T20:51:01.201431+00:00,2026-01-28T19:42:45.351461+00:00,358.9,syscolabs,react-cinco
+4758,fix: manual entry after merge,Cory Renard,2026-01-23T17:07:46.555595+00:00,2026-01-23T17:14:55.683916+00:00,0.1,syscolabs,react-cinco
+4757,Fix/REST-17568,Cory Renard,2026-01-23T15:05:13.542830+00:00,2026-01-23T16:19:33.796449+00:00,1.2,syscolabs,react-cinco
+4755,REST-17254 close cash issues related to cake pop,Thiwanka Wimalasuriya,2026-01-22T03:29:54.136753+00:00,2026-01-23T16:12:23.967234+00:00,36.7,syscolabs,react-cinco
+4756,Fix/3350 manual entry keyboard,Cory Renard,2026-01-23T14:19:13.500520+00:00,2026-01-23T16:03:37.017588+00:00,1.7,syscolabs,react-cinco
+4754,feat: payment manual card entry,Cory Renard,2026-01-21T15:42:57.124712+00:00,2026-01-21T21:10:10.458369+00:00,5.5,syscolabs,react-cinco
+4753,fix: madpay logging invalid json,Cory Renard,2026-01-20T13:52:16.963680+00:00,2026-01-20T13:54:57.717341+00:00,0.0,syscolabs,react-cinco
+4751,fix: order type check for kiosk refunds,Cory Renard,2026-01-16T17:41:55.056316+00:00,2026-01-16T20:15:01.546760+00:00,2.6,syscolabs,react-cinco
+4748,Feat/madpay activate logging,Cory Renard,2026-01-13T17:39:47.888117+00:00,2026-01-13T20:13:04.095619+00:00,2.6,syscolabs,react-cinco
+4747,loyalty update fix,Alexander Baine,2026-01-13T17:38:51.583188+00:00,2026-01-13T19:43:22.342487+00:00,2.1,syscolabs,react-cinco
+4745,Feat/madpay logging,Cory Renard,2026-01-09T21:06:04.027378+00:00,2026-01-13T02:08:35.082286+00:00,77.0,syscolabs,react-cinco
+4746,Loyalty from Order Fix & Tip Screen CTD fix REST-17459,Alexander Baine,2026-01-12T20:04:33.216757+00:00,2026-01-12T20:14:49.603323+00:00,0.2,syscolabs,react-cinco
+4743,"Loyalty, Discount, Retry mechanisms, and Terminal In Use",Alexander Baine,2026-01-07T22:05:45.908262+00:00,2026-01-08T20:40:15.847227+00:00,22.6,syscolabs,react-cinco
+4742,Task/REST-17301 3350 preauth,Harrison Minchew,2026-01-06T15:45:50.527873+00:00,2026-01-06T15:56:22.669234+00:00,0.2,syscolabs,react-cinco
+4741,Loyalty | Discount| Extra Fee & misc bug fixes,Alexander Baine,2026-01-05T21:17:34.112208+00:00,2026-01-06T15:37:09.576017+00:00,18.3,syscolabs,react-cinco
+1358,REST-17855,Thiwanka Wimalasuriya,2026-03-30T10:42:50.989349+00:00,2026-04-02T20:42:32.267634+00:00,82.0,syscolabs,moxy
+1361,REST-18574 REST-18595,Harrison Minchew,2026-04-01T22:34:05.322874+00:00,2026-04-02T15:03:31.876176+00:00,16.5,syscolabs,moxy
+1360,Task/REST-15907 pin token reuse,Harrison Minchew,2026-03-31T15:33:11.971093+00:00,2026-03-31T21:23:46.880889+00:00,5.8,syscolabs,moxy
+1339,Fix: REST-17373 - Fixing 86ing issues reported by Mia's table,Raveen Panditha,2026-02-06T12:38:33.660904+00:00,2026-03-31T18:46:48.287349+00:00,1278.1,syscolabs,moxy
+1341,Release 7.43.0.0,Matthew Crumley,2026-02-12T21:01:46.419876+00:00,2026-03-31T18:46:46.168906+00:00,1125.7,syscolabs,moxy
+1356,REST-18334,Harrison Minchew,2026-03-24T20:02:38.860010+00:00,2026-03-26T14:19:34.123397+00:00,42.3,syscolabs,moxy
+1354,REST-18354,Harrison Minchew,2026-03-18T19:33:13.029801+00:00,2026-03-18T21:19:55.023200+00:00,1.8,syscolabs,moxy
+1353,REST-16264,Harrison Minchew,2026-03-11T21:56:34.798882+00:00,2026-03-13T15:08:45.318919+00:00,41.2,syscolabs,moxy
+1352,REST-16264,Harrison Minchew,2026-03-11T21:25:12.835429+00:00,2026-03-11T21:32:16.024350+00:00,0.1,syscolabs,moxy
+1351,REST-15119,Harrison Minchew,2026-03-06T20:28:14.088253+00:00,2026-03-06T20:28:41.943739+00:00,0.0,syscolabs,moxy
+1350,REST-15119,Harrison Minchew,2026-03-06T19:51:13.828196+00:00,2026-03-06T20:28:14.470921+00:00,0.6,syscolabs,moxy
+1344,Fix: REST-10998 - empty string kiosk tip assignment fallback,Cory Renard,2026-03-02T13:32:11.241061+00:00,2026-03-05T15:42:16.145113+00:00,74.2,syscolabs,moxy
+1347,REST-16264 REST-14521,Harrison Minchew,2026-03-04T14:00:21.947011+00:00,2026-03-05T14:31:57.450115+00:00,24.5,syscolabs,moxy
+1346,REST-16264 REST-14521,Harrison Minchew,2026-03-04T13:48:12.817464+00:00,2026-03-04T16:57:55.561478+00:00,3.2,syscolabs,moxy
+1345,REST-16514,Harrison Minchew,2026-03-02T16:17:23.935652+00:00,2026-03-02T16:24:40.715667+00:00,0.1,syscolabs,moxy
+1343,Update main line 7.41.0.0 with 7.41.0.X,Matthew Crumley,2026-02-20T15:33:03.763294+00:00,2026-02-20T15:47:31.701481+00:00,0.2,syscolabs,moxy
+1342,Merge/release 7.41.0.X 17024 17323,Harrison Minchew,2026-02-17T21:20:43.946348+00:00,2026-02-18T14:23:56.410124+00:00,17.1,syscolabs,moxy
+1340,[86ing]-Fixing 86ing issues reported by Mia's table,Raveen Panditha,2026-02-09T06:19:56.771580+00:00,2026-02-09T13:32:53.120148+00:00,7.2,syscolabs,moxy
+1334,Release 7.42.0.0,Matthew Crumley,2026-01-13T20:50:00.129441+00:00,2026-01-28T19:43:58.400124+00:00,358.9,syscolabs,moxy
+1338,REST-16524: fix update payment transaction id,Cory Renard,2026-01-27T19:30:15.795553+00:00,2026-01-27T20:11:34.825109+00:00,0.7,syscolabs,moxy
+1335,REST-16514,Harrison Minchew,2026-01-15T22:35:06.180475+00:00,2026-01-16T00:43:41.800973+00:00,2.1,syscolabs,moxy
+1333,Task/REST-17323 sanni direct exe,Harrison Minchew,2026-01-05T22:14:50.892583+00:00,2026-01-06T15:53:38.354080+00:00,17.6,syscolabs,moxy
+49,feat(retail-pos): enhance API endpoints and transaction handling,Antonio Benjamim Mussi Schmidt,2026-04-01T17:50:29.836718+00:00,2026-04-02T20:18:11.526429+00:00,26.5,madmobile,neo-workspace
+47,Feature/distribution provisioning and mobile runtime,Jack Kennedy,2026-03-31T13:53:39.903062+00:00,2026-03-31T15:11:20.914962+00:00,1.3,madmobile,neo-workspace
+46,add 112 retail POS implementation layer tests,Jeff Pena,2026-03-25T21:07:39.605091+00:00,2026-03-27T20:13:32.452669+00:00,47.1,madmobile,neo-workspace
+39,Add Tender Epic (WM-695) E2E/unit test coverage and demo video,Jeff Pena,2026-03-19T17:07:41.021713+00:00,2026-03-19T22:46:18.264447+00:00,5.6,madmobile,neo-workspace
+38,[WM-995] Client feedback - Revisions Round 2,Rusty Clark,2026-03-17T15:11:46.069515+00:00,2026-03-17T17:36:18.345655+00:00,2.4,madmobile,neo-workspace
+37,CashmgmtTestUpdates,Jeff Pena,2026-03-13T18:00:08.106932+00:00,2026-03-13T21:01:14.329714+00:00,3.0,madmobile,neo-workspace
+36,[WM-995] front end feedback,Rusty Clark,2026-03-11T19:26:08.519124+00:00,2026-03-13T20:55:29.416291+00:00,49.5,madmobile,neo-workspace
+35,[WM-745] feat(store-credit): implement store credit functionality in TenderDialog and service layers,Antonio Benjamim Mussi Schmidt,2026-03-11T01:52:51.807396+00:00,2026-03-13T17:44:50.877406+00:00,63.9,madmobile,neo-workspace
+30,"test(WM-690): validate Purchasing epic test coverage — 9 stories, 78 tests",Jeff Pena,2026-03-09T19:05:42.479441+00:00,2026-03-11T15:11:26.556276+00:00,44.1,madmobile,neo-workspace
+33,Main to develop,Jeremy Diggins,2026-03-10T21:15:16.242887+00:00,2026-03-10T21:18:01.087320+00:00,0.0,madmobile,neo-workspace
+28,Remaining buy Epic stories ,Jeff Pena,2026-03-06T16:03:58.646148+00:00,2026-03-10T20:10:33.044168+00:00,100.1,madmobile,neo-workspace
+32,[WM-XXX] Demo Video Improvements (and Tile Fix),Rusty Clark,2026-03-09T23:19:23.065126+00:00,2026-03-10T19:38:59.222426+00:00,20.3,madmobile,neo-workspace
+31,[WM-742] - Implement gift card functionality in TenderDialog and service layers,Antonio Benjamim Mussi Schmidt,2026-03-09T19:56:25.038083+00:00,2026-03-10T04:11:24.625527+00:00,8.2,madmobile,neo-workspace
+29,[WM-741] feat(tender): add coupon code support in TenderDialog and MockPOSService,Antonio Benjamim Mussi Schmidt,2026-03-09T17:26:39.157740+00:00,2026-03-10T03:51:09.082287+00:00,10.4,madmobile,neo-workspace
+26,[WM-739] refactor(tender): enhance payment processing and UI updates,Antonio Benjamim Mussi Schmidt,2026-03-05T17:59:25.978888+00:00,2026-03-09T03:25:56.457063+00:00,81.4,madmobile,neo-workspace
+27,[WM-740] Enhance TenderDialog and Cash Change Due functionality,Antonio Benjamim Mussi Schmidt,2026-03-05T19:06:03.655532+00:00,2026-03-06T02:09:59.016416+00:00,7.1,madmobile,neo-workspace
+25,[WM-XXX] Align function key assignments to legacy DRS,Rusty Clark,2026-03-05T03:16:55.052191+00:00,2026-03-06T01:37:23.108017+00:00,22.3,madmobile,neo-workspace
+20,[WM-966] Display full item attributes on buy item cards,Rusty Clark,2026-03-03T01:13:31.839829+00:00,2026-03-05T01:11:47.069164+00:00,48.0,madmobile,neo-workspace
+24,[WM-737] feat(tender): add computer check payment option,Antonio Benjamim Mussi Schmidt,2026-03-03T20:18:29.588204+00:00,2026-03-04T19:41:09.607263+00:00,23.4,madmobile,neo-workspace
+19,"fix(e2e): resolve all E2E test failures — 99 passing, 0 failed",Jeff Pena,2026-03-02T21:31:47.989409+00:00,2026-03-03T20:00:44.590104+00:00,22.5,madmobile,neo-workspace
+23,[WM-736] feat(buy): add off-site tender support in MockBuyService and MockPOSService,Antonio Benjamim Mussi Schmidt,2026-03-03T19:30:35.124931+00:00,2026-03-03T19:47:09.062045+00:00,0.3,madmobile,neo-workspace
+18,[WM-733]: cancel tender resets transaction status and add demo E2E test,Antonio Benjamim Mussi Schmidt,2026-02-28T06:30:36.844347+00:00,2026-03-03T19:41:34.030871+00:00,85.2,madmobile,neo-workspace
+21,[WM-734] feat(tender): implement split payment tender management,Antonio Benjamim Mussi Schmidt,2026-03-03T01:21:06.075672+00:00,2026-03-03T19:41:06.818652+00:00,18.3,madmobile,neo-workspace
+22,[WM-735] Feature/cash change due,Antonio Benjamim Mussi Schmidt,2026-03-03T02:36:34.542128+00:00,2026-03-03T19:40:55.633249+00:00,17.1,madmobile,neo-workspace
+17,[WM-965] Edit buy items in-place,Rusty Clark,2026-02-27T19:53:21.460455+00:00,2026-03-02T20:18:44.687064+00:00,72.4,madmobile,neo-workspace
+16,fix(receiving): wire View PO button in On-Order Items tab,Antonio Benjamim Mussi Schmidt,2026-02-27T18:51:22.855536+00:00,2026-02-27T19:31:11.165548+00:00,0.7,madmobile,neo-workspace
+15,[WM-964] Buy flow integration,Rusty Clark,2026-02-27T18:36:29.809220+00:00,2026-02-27T19:11:01.452652+00:00,0.6,madmobile,neo-workspace
+14,[WM-963] attribute picker,Rusty Clark,2026-02-26T22:05:44.419027+00:00,2026-02-26T23:36:23.274173+00:00,1.5,madmobile,neo-workspace
+13,[WM-962] Shared E2E test infrastructure for buy attribute flow,Rusty Clark,2026-02-26T19:55:33.835497+00:00,2026-02-26T22:06:29.973094+00:00,2.2,madmobile,neo-workspace
+11,[WM-710] Add Vendor Purchase History tab with KPI summary and PO detail view,Antonio Benjamim Mussi Schmidt,2026-02-26T03:37:58.039611+00:00,2026-02-26T21:21:37.233030+00:00,17.7,madmobile,neo-workspace
+12,[WM-702] Add Create Purchase Order dialog with vendor selection and item management,Antonio Benjamim Mussi Schmidt,2026-02-26T18:46:55.737800+00:00,2026-02-26T21:08:02.235356+00:00,2.4,madmobile,neo-workspace
+10,[WM-709 ] Feature/reorder list po,Antonio Benjamim Mussi Schmidt,2026-02-26T03:18:21.052469+00:00,2026-02-26T21:07:32.145752+00:00,17.8,madmobile,neo-workspace
+9,[WM-961] Extend buy matrix data pipeline for attribute collections,Rusty Clark,2026-02-25T23:42:46.187028+00:00,2026-02-26T19:20:01.491962+00:00,19.6,madmobile,neo-workspace
+8,[WM-960] Fix buy item card to show human-readable descriptions instead of raw codes,Rusty Clark,2026-02-25T20:20:32.531471+00:00,2026-02-26T18:36:25.829518+00:00,22.3,madmobile,neo-workspace
+7,[WM-708] Feature/receive items po,Antonio Benjamim Mussi Schmidt,2026-02-25T03:47:28.775474+00:00,2026-02-26T02:14:06.180533+00:00,22.4,madmobile,neo-workspace
+6,[WM-707 ] Feature/receive items no po,Antonio Benjamim Mussi Schmidt,2026-02-25T03:20:03.417139+00:00,2026-02-26T02:09:07.365089+00:00,22.8,madmobile,neo-workspace
+4,Add List Received Items feature to Receiving page,Antonio Benjamim Mussi Schmidt,2026-02-23T05:39:07.914929+00:00,2026-02-24T20:38:02.639299+00:00,39.0,madmobile,neo-workspace
+5,[WM-706] Add PO edit and cancel functionality,Antonio Benjamim Mussi Schmidt,2026-02-24T19:57:43.134347+00:00,2026-02-24T20:37:49.245662+00:00,0.7,madmobile,neo-workspace
+2,chore: update .nvmrc from Node 20 to Node 24,Rusty Clark,2026-02-19T20:44:41.868801+00:00,2026-02-23T14:18:30.776076+00:00,89.6,madmobile,neo-workspace
+3,Consolidate platform docs from proto-commerce-services and update runtime/retail-pos,Jack Kennedy,2026-02-21T01:23:05.768698+00:00,2026-02-23T14:18:01.305397+00:00,60.9,madmobile,neo-workspace
+1,chore: migrate retail-pos PRs #41-#46 into neo-workspace,Rusty Clark,2026-02-19T18:09:38.170256+00:00,2026-02-19T18:18:52.921360+00:00,0.2,madmobile,neo-workspace
+28,reload native sdk on device replug,paul.roberts,2026-03-27T15:52:04.914071+00:00,2026-03-30T15:02:59.478517+00:00,71.2,madpayments,madpayments-devices-idtech-neo
+27,Fix for msr_cancel on swipe-only gift card reads. Move CLAUDE.md to project root.,paul.roberts,2026-03-27T11:00:40.271620+00:00,2026-03-27T12:35:28.568017+00:00,1.6,madpayments,madpayments-devices-idtech-neo
+26,Bug/REST-17974,paul.roberts,2026-03-13T18:54:04.704946+00:00,2026-03-13T19:19:03.695058+00:00,0.4,madpayments,madpayments-devices-idtech-neo
+24,logic to detect when gift card not allowed and payment card,paul.roberts,2026-03-09T14:47:55.969298+00:00,2026-03-09T16:45:53.334712+00:00,2.0,madpayments,madpayments-devices-idtech-neo
+25,handle maskedCard for swipe and special case for visa tap,paul.roberts,2026-03-09T15:55:09.781431+00:00,2026-03-09T16:03:21.662301+00:00,0.1,madpayments,madpayments-devices-idtech-neo
+23,"build(REST-18122): upgrade Kotlin to 2.3.0, Gradle to 9.3.1, bump version to 1.2.27",Trenton Kress,2026-02-24T19:10:02.177150+00:00,2026-02-25T15:02:14.068562+00:00,19.9,madpayments,madpayments-devices-idtech-neo
+22,fix: use l3-core v1.2.24 to compile,Matthew Crumley,2026-02-20T15:19:12.641331+00:00,2026-02-20T15:35:15.600481+00:00,0.3,madpayments,madpayments-devices-idtech-neo
+21,"masked card number, brand, entry method for stored payments",paul.roberts,2026-02-19T21:58:31.576357+00:00,2026-02-20T14:39:42.879588+00:00,16.7,madpayments,madpayments-devices-idtech-neo
+20,terminal SSE events,paul.roberts,2026-02-11T15:37:33.016489+00:00,2026-02-11T15:48:20.132398+00:00,0.2,madpayments,madpayments-devices-idtech-neo
+18,Feature/multi track gift,paul.roberts,2026-01-28T20:56:47.440285+00:00,2026-02-10T16:53:22.252014+00:00,307.9,madpayments,madpayments-devices-idtech-neo
+19,sdk return code handling in emvcallback,paul.roberts,2026-02-04T19:31:09.280009+00:00,2026-02-04T19:55:04.610545+00:00,0.4,madpayments,madpayments-devices-idtech-neo
+17,"log sdk response string, log UniversalSDK events, uppercase MSR KSN",paul.roberts,2026-01-21T19:48:31.048899+00:00,2026-01-21T20:00:17.040614+00:00,0.2,madpayments,madpayments-devices-idtech-neo
+15,Feature/REST-17387,paul.roberts,2026-01-07T16:52:45.239659+00:00,2026-01-08T12:32:09.775089+00:00,19.7,madpayments,madpayments-devices-idtech-neo
+14,REST-17388,paul.roberts,2026-01-05T20:25:43.211877+00:00,2026-01-05T22:34:47.775302+00:00,2.2,madpayments,madpayments-devices-idtech-neo
+44,reload sdk on replug,paul.roberts,2026-03-27T15:51:39.110484+00:00,2026-03-30T16:14:13.526794+00:00,72.4,madpayments,mad-payments-vp3350
+42,Bug/REST-18505,paul.roberts,2026-03-26T18:20:00.347942+00:00,2026-03-27T15:21:20.790114+00:00,21.0,madpayments,mad-payments-vp3350
+43,Adjust timeout. Consume changes in madpayments-devices-idtech-neo project. Move CLAUDE.md file to project root.,paul.roberts,2026-03-27T11:03:19.142852+00:00,2026-03-27T12:41:06.088448+00:00,1.6,madpayments,mad-payments-vp3350
+41,Consume fix for latency in SaF mode,paul.roberts,2026-03-19T18:50:37.198781+00:00,2026-03-19T20:25:42.895567+00:00,1.6,madpayments,mad-payments-vp3350
+40,CLOUD-996: Update build.gradle.kts to publish both thin and fat jars for trycake,Mike Nunez,2026-03-19T14:36:09.122544+00:00,2026-03-19T16:49:02.794198+00:00,2.2,madpayments,mad-payments-vp3350
+38,CLOUD-996: allow publish to trycake as well,Mike Nunez,2026-03-10T19:34:09.700509+00:00,2026-03-18T21:16:19.837317+00:00,193.7,madpayments,mad-payments-vp3350
+39,consume device and bump versions,paul.roberts,2026-03-13T18:56:02.403461+00:00,2026-03-13T19:22:46.711037+00:00,0.4,madpayments,mad-payments-vp3350
+37,"version bump, consume fix for SaF",paul.roberts,2026-03-09T20:43:31.921750+00:00,2026-03-10T14:26:57.838133+00:00,17.7,madpayments,mad-payments-vp3350
+35,store and forward check interval and prop file write fix,paul.roberts,2026-03-09T15:08:33.199493+00:00,2026-03-09T16:34:23.353311+00:00,1.4,madpayments,mad-payments-vp3350
+34,impl for gift card not allowed,paul.roberts,2026-03-09T14:48:08.949489+00:00,2026-03-09T16:34:11.737193+00:00,1.8,madpayments,mad-payments-vp3350
+36,map truncatedCard and consume changes to device service,paul.roberts,2026-03-09T15:55:20.875276+00:00,2026-03-09T16:31:55.043684+00:00,0.6,madpayments,mad-payments-vp3350
+33,limit mock payment id to 8 digits in length for stored payments,paul.roberts,2026-03-04T20:28:48.095735+00:00,2026-03-05T15:52:00.873294+00:00,19.4,madpayments,mad-payments-vp3350
+31,Bug/REST-18044,paul.roberts,2026-02-24T21:29:51.287413+00:00,2026-02-25T14:02:25.980476+00:00,16.5,madpayments,mad-payments-vp3350
+30,feat(REST-18122): replace GNOME Keyring with Java KeyStore for encrypted preferences,Trenton Kress,2026-02-24T19:15:10.509807+00:00,2026-02-24T19:47:31.560138+00:00,0.5,madpayments,mad-payments-vp3350
+29,Event logger persist SaF,paul.roberts,2026-02-23T17:13:28.355250+00:00,2026-02-24T15:00:04.061872+00:00,21.8,madpayments,mad-payments-vp3350
+28,Explicitly enable and disable Store and Forward,paul.roberts,2026-02-20T18:38:41.014951+00:00,2026-02-20T19:14:20.553701+00:00,0.6,madpayments,mad-payments-vp3350
+27,"store and forward capture masked pan, card brand, entry method",paul.roberts,2026-02-19T21:58:44.933833+00:00,2026-02-20T15:38:39.139505+00:00,17.7,madpayments,mad-payments-vp3350
+26,SSE device events,paul.roberts,2026-02-11T15:37:16.634839+00:00,2026-02-11T15:59:26.659495+00:00,0.4,madpayments,mad-payments-vp3350
+25,Bug/REST-17898,paul.roberts,2026-02-10T20:55:01.708084+00:00,2026-02-11T12:13:15.604224+00:00,15.3,madpayments,mad-payments-vp3350
+24,consume updated l3 module,paul.roberts,2026-02-04T19:31:39.130212+00:00,2026-02-04T20:03:50.143561+00:00,0.5,madpayments,mad-payments-vp3350
+23,REST-17861 re/start SSE welcome data,Matthew Crumley,2026-02-04T15:31:37.620518+00:00,2026-02-04T17:36:30.929034+00:00,2.1,madpayments,mad-payments-vp3350
+22,Feature/multi track gift,paul.roberts,2026-01-28T20:56:57.584973+00:00,2026-01-29T13:07:08.788550+00:00,16.2,madpayments,mad-payments-vp3350
+21,"bump version, consume updated core and vp3350",paul.roberts,2026-01-21T19:49:37.549093+00:00,2026-01-21T20:11:26.389741+00:00,0.4,madpayments,mad-payments-vp3350
+20,bugfix: REST-17526 use fixed Core; bump version 1.1.27 -> 1.1.28,Matthew Crumley,2026-01-20T16:36:56.350731+00:00,2026-01-20T16:45:38.307960+00:00,0.1,madpayments,mad-payments-vp3350
+19,handle encrypted Paytronix and unencrypted gift cards,paul.roberts,2026-01-15T19:01:27.502387+00:00,2026-01-16T16:42:25.066579+00:00,21.7,madpayments,mad-payments-vp3350
+18,TERM IN USE,paul.roberts,2026-01-07T19:56:47.583562+00:00,2026-01-08T12:44:05.160429+00:00,16.8,madpayments,mad-payments-vp3350
+16,REST-17388,paul.roberts,2026-01-05T20:25:58.268660+00:00,2026-01-05T22:42:19.224440+00:00,2.3,madpayments,mad-payments-vp3350
+155,[QA/Hybrid] visa-cybersource-transaction-service updated to v1.0.64-main-357,Gayan Karunarathna,2026-03-17T08:59:30.573405+00:00,2026-03-19T05:57:28.650808+00:00,45.0,madpayments,gitops-payments
+154,UP-4310: visa-cybersource-service updated to v1.0.64-feature-UP-4310-cybs-legacy-sync-355,Gayan Karunarathna,2026-03-16T13:23:08.344827+00:00,2026-03-16T13:40:29.726226+00:00,0.3,madpayments,gitops-payments
+153,UP-4310: updated qa visa-cybs-transaction-service to v1.0.64-feature-UP-4310-cybs-legacy-sync-354,Gayan Karunarathna,2026-03-10T13:18:51.165802+00:00,2026-03-11T10:22:47.202595+00:00,21.1,madpayments,gitops-payments
+152,[Stag] Updated Stag wp-express-boarding-service to 1.0.7-main-35,Gayan Karunarathna,2026-02-20T17:18:22.220003+00:00,2026-02-23T05:38:29.801900+00:00,60.3,madpayments,gitops-payments
+151,Updated QA wp-express-boarding-service to 1.0.7-main-35,Gayan Karunarathna,2026-02-20T17:01:50.772891+00:00,2026-02-23T04:34:14.624324+00:00,59.5,madpayments,gitops-payments
+150,chore: bump device service to 1.0.51 for unstock,Trenton Kress,2026-02-20T16:35:10.052845+00:00,2026-02-20T20:08:33.663677+00:00,3.6,madpayments,gitops-payments
+148,chore: bump device service to 1.0.50 for new vp3350 default config,Trenton Kress,2026-01-13T16:12:59.806877+00:00,2026-01-13T19:51:50.462571+00:00,3.6,madpayments,gitops-payments
+147,chore: bump sardine to 1.0.5,Trenton Kress,2026-01-07T19:35:21.746830+00:00,2026-01-07T19:35:35.876296+00:00,0.0,madpayments,gitops-payments
+2,Release/0.1.0,Cory Renard,2026-01-22T15:42:37.406623+00:00,2026-02-13T19:32:24.469239+00:00,531.8,syscolabs,cakekiosk-kdsapplauncher
+1,feat: initial microtouch api integration,Cory Renard,2026-01-21T17:31:45.758064+00:00,2026-01-21T17:54:26.973222+00:00,0.4,syscolabs,cakekiosk-kdsapplauncher
+461,[WIP] Resolve deb format issues with old version of dpkg-deb (1.17.5),Mike Nunez,2026-03-27T19:27:33.960671+00:00,2026-03-27T21:41:26.409038+00:00,2.2,syscolabs,pos-os-upgrades
+458,CLOUD-996: use codeartifact,Mike Nunez,2026-03-10T20:01:19.170405+00:00,2026-03-27T15:52:57.895128+00:00,403.9,syscolabs,pos-os-upgrades
+460,REST-18334,Harrison Minchew,2026-03-24T20:03:21.867420+00:00,2026-03-25T00:51:40.289555+00:00,4.8,syscolabs,pos-os-upgrades
+454,REST-16264 switching to new bissa keys. Remove obsolete leapset autoinstall versions,Thiwanka Wimalasuriya,2026-03-05T12:14:53.648649+00:00,2026-03-05T14:41:59.711281+00:00,2.5,syscolabs,pos-os-upgrades
+456,Fix REST-16264 new-bissa-keys,Matthew Crumley,2026-03-05T14:20:23.974779+00:00,2026-03-05T14:27:15.758058+00:00,0.1,syscolabs,pos-os-upgrades
+455,Fix REST-16264 new-bissa-keys,Matthew Crumley,2026-03-05T14:19:49.749918+00:00,2026-03-05T14:26:56.498571+00:00,0.1,syscolabs,pos-os-upgrades
+453,Fix REST-16264 new-bissa-keys,Thiwanka Wimalasuriya,2026-03-04T10:17:28.377907+00:00,2026-03-05T11:10:23.453281+00:00,24.9,syscolabs,pos-os-upgrades
+452,Update main line 7.41.0.0 with 7.41.0.X,Matthew Crumley,2026-02-20T16:27:05.655762+00:00,2026-02-20T16:27:45.721376+00:00,0.0,syscolabs,pos-os-upgrades
+450,merge 7.42.0.0 to master,Thiwanka Wimalasuriya,2026-01-16T01:56:08.991707+00:00,2026-01-26T15:05:22.214735+00:00,253.2,syscolabs,pos-os-upgrades
+1000,Update expired credentials,James Oliver,2026-01-18T02:00:39.316066+00:00,2026-04-02T11:24:04.002740+00:00,1785.4,syscolabs,gm
+1001,REST-4468 updated to quickCharts,Sriharshith Akula,2026-02-11T14:18:33.072936+00:00,2026-03-18T13:44:18.011636+00:00,839.4,syscolabs,gm
+1002,CLOUD-977: Bitbucket Pipeline,Mike Nunez,2026-02-17T19:20:30.459190+00:00,2026-02-20T14:58:36.276735+00:00,67.6,syscolabs,gm
+70,chore: RA 2.0,Kyle Budd,2026-04-02T19:57:53.397471+00:00,2026-04-02T19:58:23.788867+00:00,0.0,madmobile,gitops-cake
+68,REST-18514 | TST1 Deploy,Kyle Budd,2026-04-01T13:36:41.877337+00:00,2026-04-01T17:46:04.457218+00:00,4.2,madmobile,gitops-cake
+55,CM-346: Release OLO v2 (reskin) to prod,Benjamin Roedell,2026-02-24T17:42:21.587171+00:00,2026-03-20T17:42:52.867069+00:00,576.0,madmobile,gitops-cake
+67,chore(REST-18457): TST1 EMSv2 to v1.10.1,Matthew Crumley,2026-03-20T14:34:48.232188+00:00,2026-03-20T15:44:32.327489+00:00,1.2,madmobile,gitops-cake
+66,Remove redis and menu-migrator,Benjamin Roedell,2026-03-18T21:35:57.867330+00:00,2026-03-19T19:46:46.955273+00:00,22.2,madmobile,gitops-cake
+65,"Revert ""Remove redis and menu-migrator (pull request #64)""",Benjamin Roedell,2026-03-18T21:34:35.455505+00:00,2026-03-18T21:34:47.078099+00:00,0.0,madmobile,gitops-cake
+64,Remove redis and menu-migrator,Benjamin Roedell,2026-03-18T20:45:23.745497+00:00,2026-03-18T21:17:50.717362+00:00,0.5,madmobile,gitops-cake
+63,add pos4 namespace and emsv2/connector,Orlando Jimenez,2026-03-16T15:19:15.546830+00:00,2026-03-16T15:35:56.681838+00:00,0.3,madmobile,gitops-cake
+62,REST-18106 | Variant visibility (backed EMS),Kyle Budd,2026-03-10T00:18:44.154005+00:00,2026-03-10T00:19:05.691494+00:00,0.0,madmobile,gitops-cake
+61,chore: RA V2,Kyle Budd,2026-02-27T16:58:14.701164+00:00,2026-02-27T16:58:21.283049+00:00,0.0,madmobile,gitops-cake
+60,chore: RA V2,Kyle Budd,2026-02-27T16:56:57.305631+00:00,2026-02-27T16:57:03.036746+00:00,0.0,madmobile,gitops-cake
+59,chore: RA V2,Kyle Budd,2026-02-27T16:49:27.976742+00:00,2026-02-27T16:49:34.072852+00:00,0.0,madmobile,gitops-cake
+58,chore: RA V2,Kyle Budd,2026-02-27T16:43:41.801338+00:00,2026-02-27T16:43:48.865284+00:00,0.0,madmobile,gitops-cake
+57,chore: RA V2,Kyle Budd,2026-02-27T15:32:07.971920+00:00,2026-02-27T15:32:16.169822+00:00,0.0,madmobile,gitops-cake
+56,chore: adding SERVICE_NAME,Kyle Budd,2026-02-27T13:59:12.900239+00:00,2026-02-27T14:27:26.242905+00:00,0.5,madmobile,gitops-cake
+54,chore: EMS update (TST1),Kyle Budd,2026-02-23T20:14:30.201916+00:00,2026-02-23T20:17:37.887796+00:00,0.1,madmobile,gitops-cake
+53,Enable auto deploy for TST1,Benjamin Roedell,2026-02-23T16:59:53.102455+00:00,2026-02-23T17:01:20.398526+00:00,0.0,madmobile,gitops-cake
+52,OLO deployment automation,Benjamin Roedell,2026-02-23T16:10:43.205518+00:00,2026-02-23T16:21:14.813337+00:00,0.2,madmobile,gitops-cake
+51,update olo to build 91,Ryan Mercado,2026-02-18T19:16:35.548277+00:00,2026-02-18T19:16:47.069199+00:00,0.0,madmobile,gitops-cake
+50,OLO: Deploy reskin branch to TST1,Benjamin Roedell,2026-02-18T01:59:40.389734+00:00,2026-02-18T02:09:35.807570+00:00,0.2,madmobile,gitops-cake
+49,Troubleshoot auth,Benjamin Roedell,2026-02-18T00:50:22.340570+00:00,2026-02-18T00:52:51.143927+00:00,0.0,madmobile,gitops-cake
+48,Troubleshooting auth,Benjamin Roedell,2026-02-17T23:58:18.383129+00:00,2026-02-18T00:02:24.774617+00:00,0.1,madmobile,gitops-cake
+47,OLO - TST1 - Troubleshoot auth,Benjamin Roedell,2026-02-17T23:31:58.328933+00:00,2026-02-17T23:36:52.040510+00:00,0.1,madmobile,gitops-cake
+46,"update olo to build 87 (stag, tst1)",Ryan Mercado,2026-02-17T21:48:33.763781+00:00,2026-02-17T21:48:49.967270+00:00,0.0,madmobile,gitops-cake
+45,use CONFIG_SERVER_RESPONSE,Benjamin Roedell,2026-02-13T20:53:07.959177+00:00,2026-02-13T21:25:34.556659+00:00,0.5,madmobile,gitops-cake
+44,Fix server side search and replace so that percent signs won't be left in the index file,Benjamin Roedell,2026-02-13T16:55:44.218461+00:00,2026-02-13T17:01:54.795189+00:00,0.1,madmobile,gitops-cake
+43,Use CONFIG_SERVER_RESPONSE,Benjamin Roedell,2026-02-13T15:55:08.100722+00:00,2026-02-13T16:06:56.964594+00:00,0.2,madmobile,gitops-cake
+42,More verbose error when parsing JSON_CONFIG,Benjamin Roedell,2026-02-13T14:40:56.348362+00:00,2026-02-13T14:41:11.236471+00:00,0.0,madmobile,gitops-cake
+41,Check for JSON_CONFIG first,Benjamin Roedell,2026-02-13T14:25:34.461245+00:00,2026-02-13T14:27:59.677053+00:00,0.0,madmobile,gitops-cake
+40,Troubleshooting config,Benjamin Roedell,2026-02-13T00:57:55.440311+00:00,2026-02-13T00:59:36.786220+00:00,0.0,madmobile,gitops-cake
+39,Troubleshooting in TST1,Benjamin Roedell,2026-02-12T23:32:56.175594+00:00,2026-02-12T23:33:54.100638+00:00,0.0,madmobile,gitops-cake
+38,chore: revert OLO to qa_65_48b58e3,Matthew Crumley,2026-02-12T19:38:12.650853+00:00,2026-02-12T19:42:22.602335+00:00,0.1,madmobile,gitops-cake
+37,add rp mongo connector for emsv2,Orlando Jimenez,2026-02-11T15:36:35.025995+00:00,2026-02-11T16:05:20.620100+00:00,0.5,madmobile,gitops-cake
+36,deploy olo qa_67_2bfe10c to stag,Ryan Mercado,2026-02-10T19:47:50.336599+00:00,2026-02-10T19:48:27.000996+00:00,0.0,madmobile,gitops-cake
+35,deploy olo qa_65_48b58e3 to stag,Ryan Mercado,2026-02-06T18:00:04.446098+00:00,2026-02-06T18:01:35.316656+00:00,0.0,madmobile,gitops-cake
+34,add stag namespace,Orlando Jimenez,2026-02-04T20:06:52.687353+00:00,2026-02-04T20:56:51.952047+00:00,0.8,madmobile,gitops-cake
+33,"bugfix: env update for OLO TST1, getConfigs",Matthew Crumley,2026-02-03T15:15:00.404187+00:00,2026-02-03T15:15:31.764048+00:00,0.0,madmobile,gitops-cake
+32,bugfix: env update for OLO TST1,Matthew Crumley,2026-02-03T14:52:38.325487+00:00,2026-02-03T14:53:47.709032+00:00,0.0,madmobile,gitops-cake
+14,Design/menu port,Kyle Budd,2026-04-02T18:27:37.423132+00:00,2026-04-02T19:53:21.183764+00:00,1.4,madmobile,restaurant-admin-v2
+13,Feature/REST-18516,siva.golla,2026-04-02T17:03:49.615203+00:00,2026-04-02T18:24:07.808215+00:00,1.3,madmobile,restaurant-admin-v2
+9,Feature/REST-18514,siva.golla,2026-03-26T13:45:41.217224+00:00,2026-03-30T12:39:22.870918+00:00,94.9,madmobile,restaurant-admin-v2
+11,Feature/REST-18516,siva.golla,2026-03-27T11:59:23.025422+00:00,2026-03-30T12:15:13.504533+00:00,72.3,madmobile,restaurant-admin-v2
+8,REST-18513 add audit trail flow and backend support,Ryan Mercado,2026-03-25T16:41:34.547131+00:00,2026-03-25T16:52:26.475810+00:00,0.2,madmobile,restaurant-admin-v2
+7,REST-18327 Setup split component arch,Ryan Mercado,2026-03-17T17:15:12.468448+00:00,2026-03-17T21:06:03.565694+00:00,3.8,madmobile,restaurant-admin-v2
+6,Kds integration,Kyle Budd,2026-02-27T20:47:14.094738+00:00,2026-02-27T20:47:57.778558+00:00,0.0,madmobile,restaurant-admin-v2
+5,chore: pipeline update,Kyle Budd,2026-02-27T16:53:15.767098+00:00,2026-02-27T16:54:11.303799+00:00,0.0,madmobile,restaurant-admin-v2
+4,Auth init,Kyle Budd,2026-01-12T20:29:41.044647+00:00,2026-01-14T13:27:21.967653+00:00,41.0,madmobile,restaurant-admin-v2
+26,RL-4234 add scripts,Matt Cooke,2026-04-01T17:45:10.732498+00:00,2026-04-02T19:26:12.056095+00:00,25.7,madmobile,mad-services-xstore24eu-rl
+25,RL-3829 properties updates,Matt Cooke,2026-03-30T22:28:47.489761+00:00,2026-04-01T12:27:19.773044+00:00,38.0,madmobile,mad-services-xstore24eu-rl
+23,RL-3829 Added printer config property validator,Sunil Pandey,2026-03-25T04:18:00.891601+00:00,2026-03-27T13:37:06.904975+00:00,57.3,madmobile,mad-services-xstore24eu-rl
+19,RL-4072 Add validations for payment authorization and implemented process lock for payment auth,Sunil Pandey,2026-03-02T13:03:45.570624+00:00,2026-03-23T15:38:06.974644+00:00,506.6,madmobile,mad-services-xstore24eu-rl
+20,RL-4154-uk-runlocal,Matt Cooke,2026-03-03T19:57:41.299386+00:00,2026-03-17T11:15:58.669463+00:00,327.3,madmobile,mad-services-xstore24eu-rl
+21,RL-4184 apply null check on ship adderess city,Sunil Pandey,2026-03-05T12:06:11.605603+00:00,2026-03-12T15:06:21.734572+00:00,171.0,madmobile,mad-services-xstore24eu-rl
+17,RL-4115 fix issue with deserializing  IRetailTransaction,Sunil Pandey,2026-02-20T08:42:49.194424+00:00,2026-02-25T18:22:37.412645+00:00,129.7,madmobile,mad-services-xstore24eu-rl
+13,RL-3941 customer id missing from eftlink response,Matt Cooke,2026-02-02T19:44:41.607139+00:00,2026-02-25T14:50:14.118231+00:00,547.1,madmobile,mad-services-xstore24eu-rl
+18,RL-4154 france v24 run locally,Matt Cooke,2026-02-20T22:03:19.910801+00:00,2026-02-23T14:49:49.747637+00:00,64.8,madmobile,mad-services-xstore24eu-rl
+16,RL-4112 RL-4100 add com_translations,Matt Cooke,2026-02-18T16:55:26.288902+00:00,2026-02-18T16:58:55.377581+00:00,0.1,madmobile,mad-services-xstore24eu-rl
+15,RL-4097 database updates,Matt Cooke,2026-02-09T21:19:23.835746+00:00,2026-02-11T20:35:09.270342+00:00,47.3,madmobile,mad-services-xstore24eu-rl
+14,RL-4063 initial checkin uk,Matt Cooke,2026-02-04T22:22:34.984743+00:00,2026-02-05T19:32:40.507308+00:00,21.2,madmobile,mad-services-xstore24eu-rl
+12,RL-4066,Matt Cooke,2026-01-30T21:15:41.057642+00:00,2026-02-02T16:47:28.377319+00:00,67.5,madmobile,mad-services-xstore24eu-rl
+11,RL-4023 Fix v24 complete transaction issue,Sunil Pandey,2026-01-23T12:39:06.719610+00:00,2026-01-23T12:53:52.542909+00:00,0.2,madmobile,mad-services-xstore24eu-rl
+9,RL-4012 v24 refactor,Matt Cooke,2026-01-21T11:59:20.371694+00:00,2026-01-22T19:06:45.919532+00:00,31.1,madmobile,mad-services-xstore24eu-rl
+10,rl-3972-france v24 determine if a new method must be implemented for MadServices,Matt Cooke,2026-01-21T14:04:10.315728+00:00,2026-01-21T18:02:18.751129+00:00,4.0,madmobile,mad-services-xstore24eu-rl
+8,"RL-3972, RL-4006 Fix v24 compilation issues",Sunil Pandey,2026-01-20T12:24:48.431482+00:00,2026-01-21T10:06:04.586314+00:00,21.7,madmobile,mad-services-xstore24eu-rl
+7,rl-3972-france v24 compile issues to resolve,Matt Cooke,2026-01-16T21:20:38.828948+00:00,2026-01-16T21:27:27.736386+00:00,0.1,madmobile,mad-services-xstore24eu-rl
+6,rl-3972-france v24 compile issues to resolve,Matt Cooke,2026-01-16T20:23:22.431719+00:00,2026-01-16T20:29:24.213587+00:00,0.1,madmobile,mad-services-xstore24eu-rl
+5,"RL-3972, RL-4002 Fix apply transaction and lineitem discount issues",Sunil Pandey,2026-01-15T12:29:44.472161+00:00,2026-01-15T14:33:02.949087+00:00,2.1,madmobile,mad-services-xstore24eu-rl
+4,"RL-3966, RL-3997 Fix xstore24 compilation/runtime errors for start transaction and add item flow",Sunil Pandey,2026-01-14T11:47:13.758528+00:00,2026-01-14T15:05:05.154524+00:00,3.3,madmobile,mad-services-xstore24eu-rl
+3,rl-3972-france v24 compile issues to resolve,Matt Cooke,2026-01-12T21:50:18.403779+00:00,2026-01-12T22:23:31.937190+00:00,0.6,madmobile,mad-services-xstore24eu-rl
+2,RL-3972 compile issues to resolve,Matt Cooke,2026-01-12T20:34:55.682069+00:00,2026-01-12T20:40:30.537405+00:00,0.1,madmobile,mad-services-xstore24eu-rl
+1,rl-3972-france v24 initial commit,Matt Cooke,2026-01-09T18:28:23.860219+00:00,2026-01-09T18:28:40.638165+00:00,0.0,madmobile,mad-services-xstore24eu-rl
+16,Dev to Main,Susampath Madarasinghe,2026-03-30T04:59:04.970895+00:00,2026-03-30T13:09:42.790922+00:00,8.2,madpayments,rs2-bankworks-parser-service
+15,UP-4364 : use mad-pipelines shared definitions for Bitbucket Pipelines,Susampath Madarasinghe,2026-03-24T18:56:34.892901+00:00,2026-03-30T04:56:27.506487+00:00,130.0,madpayments,rs2-bankworks-parser-service
+13,transaction parser implementation,Gayan Karunarathna,2026-02-27T04:59:52.799757+00:00,2026-03-24T13:49:00.152273+00:00,608.8,madpayments,rs2-bankworks-parser-service
+14,UP-4289: RS2 parser related implementation,Susampath Madarasinghe,2026-03-17T19:06:03.624491+00:00,2026-03-24T13:48:59.487076+00:00,162.7,madpayments,rs2-bankworks-parser-service
+11,UP-4275: Define EMAF reporting data models for RS2 interoperability layer,Susampath Madarasinghe,2026-02-18T14:13:52.446297+00:00,2026-02-19T15:41:06.108059+00:00,25.5,madpayments,rs2-bankworks-parser-service
+10,UP-4274: sftp integration,Gayan Karunarathna,2026-02-16T09:54:53.494518+00:00,2026-02-19T15:40:49.741281+00:00,77.8,madpayments,rs2-bankworks-parser-service
+9,UP-4268: Version upgrade (Node & Nest),Susampath Madarasinghe,2026-02-13T14:52:29.375805+00:00,2026-02-16T07:00:12.134813+00:00,64.1,madpayments,rs2-bankworks-parser-service
+785,UR-567/UR-568: Fix for Zebra scanner,James Oliver,2026-04-01T14:53:36.040296+00:00,2026-04-02T11:28:49.649366+00:00,20.6,madmobile,impl-urban
+784,UR-571 Error when accessing Anthro Picklist for kmurphy@urbn.com,John Harre,2026-03-26T14:59:00.619354+00:00,2026-03-30T14:23:28.119895+00:00,95.4,madmobile,impl-urban
+782,UR-543 [MCS-4261*] URBN: Buy Links are not sharing customized attributes,John Harre,2026-03-24T11:18:30.431235+00:00,2026-03-24T18:25:04.015886+00:00,7.1,madmobile,impl-urban
+776,"UR-547, UR-554, UR-558: A15 Poolless changes and inventory refactor",James Oliver,2026-02-02T15:04:38.017752+00:00,2026-03-17T12:09:54.074319+00:00,1029.1,madmobile,impl-urban
+780,UR-552 Add new language keys for image context menu,Eugenio Gonzalez,2026-02-26T19:06:31.822588+00:00,2026-03-09T13:43:11.370055+00:00,258.6,madmobile,impl-urban
+778,UR-546 JRNI Appointment Booking In Concierge - Add Flag to Disable SMS Messages,John Harre,2026-02-19T13:30:25.434896+00:00,2026-02-26T16:39:27.210851+00:00,171.2,madmobile,impl-urban
+777,Debug context utils,John Harre,2026-02-19T13:29:46.351693+00:00,2026-02-26T16:29:20.057743+00:00,171.0,madmobile,impl-urban
+779,UR-511 fix wishlist add product quantity from pdp,Eugenio Gonzalez,2026-02-23T12:42:04.445640+00:00,2026-02-26T16:25:32.048252+00:00,75.7,madmobile,impl-urban
+18,feat: enhance ticket handling for voided items,Anderson Lavor,2026-04-02T17:09:56.911944+00:00,2026-04-02T17:25:57.030476+00:00,0.3,syscolabs,kds-v2
+17,"Reapply ""feat: integrate Epson printer support and enhance settings management""",Anderson Lavor,2026-03-30T19:53:51.050978+00:00,2026-03-30T20:55:47.176236+00:00,1.0,syscolabs,kds-v2
+16,Pos ticket actions,Anderson Lavor,2026-03-27T21:58:20.665856+00:00,2026-03-30T14:51:12.766058+00:00,64.9,syscolabs,kds-v2
+15,Feature fix dpi,Randy Brown,2026-03-19T15:29:29.084729+00:00,2026-03-19T15:37:08.659851+00:00,0.1,syscolabs,kds-v2
+14,feat: add test print functionality and enhance logging,Anderson Lavor,2026-03-13T15:23:31.381366+00:00,2026-03-13T15:47:28.103214+00:00,0.4,syscolabs,kds-v2
+13,Printers work,Anderson Lavor,2026-03-12T00:06:02.903077+00:00,2026-03-12T00:25:36.259711+00:00,0.3,syscolabs,kds-v2
+12,Feature add microtouch device mgmt,Randy Brown,2026-02-20T16:05:28.145219+00:00,2026-02-23T16:42:44.724526+00:00,72.6,syscolabs,kds-v2
+11,Feature udp listener,Randy Brown,2026-02-06T18:00:22.371223+00:00,2026-02-18T03:33:04.099555+00:00,273.5,syscolabs,kds-v2
+10,Refactor KDS to support new routing architecture and Ditto integration,Anderson Lavor,2026-02-04T21:31:31.703018+00:00,2026-02-04T21:32:57.283459+00:00,0.0,syscolabs,kds-v2
+9,Feature in app upsates,Randy Brown,2026-02-03T00:27:42.085339+00:00,2026-02-03T18:10:10.867449+00:00,17.7,syscolabs,kds-v2
+8,refactor: Update TickerHeader and TicketItem logic for Expo and fallback modes,Anderson Lavor,2026-02-02T16:47:46.789962+00:00,2026-02-02T16:50:29.002856+00:00,0.0,syscolabs,kds-v2
+7,chore: Add artifacts configuration for build.gradle.kts in CI pipeline,Anderson Lavor,2026-01-27T23:05:48.004767+00:00,2026-01-27T23:05:57.093290+00:00,0.0,syscolabs,kds-v2
+6,Fire time,Anderson Lavor,2026-01-27T22:47:40.352837+00:00,2026-01-27T22:50:06.749292+00:00,0.0,syscolabs,kds-v2
+103,feat(rs2-boarding): propagate merchant updates to RS2 via PATCH [UP-4355],Trenton Kress,2026-03-26T14:28:12.465176+00:00,2026-04-02T15:56:30.624958+00:00,169.5,madpayments,merchant-service
+102,Feature/UP-4362 card brand exclusivity,Trenton Kress,2026-03-24T14:53:16.501280+00:00,2026-03-31T14:08:26.888106+00:00,167.3,madpayments,merchant-service
+101,feat: add RS2 boarding integration for VISA_CYBERSOURCE merchants [UP-4277],Trenton Kress,2026-03-03T16:03:51.775154+00:00,2026-03-17T19:06:12.762737+00:00,339.0,madpayments,merchant-service
+1252,REST-15925 Fix delivery address handling in checkout and confirmation,Ryan Mercado,2026-03-30T18:27:20.726338+00:00,2026-03-30T18:57:00.177699+00:00,0.5,syscolabs,olo
+1251,REST-18234 Align session validation behavior w/ existing app,Ryan Mercado,2026-03-20T16:51:07.163801+00:00,2026-03-20T17:47:45.884386+00:00,0.9,syscolabs,olo
+1250,Enable auth for Redis,Benjamin Roedell,2026-03-19T19:33:33.637983+00:00,2026-03-20T15:25:18.972025+00:00,19.9,syscolabs,olo
+1247,REST-18236 Remove incomplete receipt flow from profile and routing,Ryan Mercado,2026-03-18T15:24:37.682246+00:00,2026-03-19T15:06:31.908263+00:00,23.7,syscolabs,olo
+1249,REST-18228 Add constrained header logo handling,Ryan Mercado,2026-03-18T18:27:52.724924+00:00,2026-03-19T13:19:30.403045+00:00,18.9,syscolabs,olo
+1248,REST-18227 Move date & time selector to left on mobile; overflow ellipses,Ryan Mercado,2026-03-18T16:11:47.012639+00:00,2026-03-18T16:27:20.678258+00:00,0.3,syscolabs,olo
+1246,REST-18235 Add pickup checkout options and refresh delivery icons,Ryan Mercado,2026-03-11T16:05:12.974587+00:00,2026-03-11T16:28:02.443906+00:00,0.4,syscolabs,olo
+1245,REST-18226 / REST-18227 Update mobile header layout; move footer content into the user dropdown,Ryan Mercado,2026-03-10T17:40:29.733106+00:00,2026-03-10T17:53:03.041453+00:00,0.2,syscolabs,olo
+1244,"REST-18229 Mobile place order footer, mobile quantity selector",Ryan Mercado,2026-03-09T20:11:17.816843+00:00,2026-03-10T15:10:03.555033+00:00,19.0,syscolabs,olo
+1243,REST-158225 Fix captcha toggle handling and gate recaptcha validation across frontend/backend,Ryan Mercado,2026-03-05T21:59:20.284666+00:00,2026-03-06T14:39:01.255740+00:00,16.7,syscolabs,olo
+1242,REST-15931 receipt screen,Ryan Mercado,2026-03-02T17:44:48.026724+00:00,2026-03-02T21:22:07.698183+00:00,3.6,syscolabs,olo
+1241,REST-15921 Wire in deals & gift card handling,Ryan Mercado,2026-02-27T20:56:11.344312+00:00,2026-03-02T16:13:12.891418+00:00,67.3,syscolabs,olo
+1240,REST-15923 Add rewards selection flow to checkout,Ryan Mercado,2026-02-26T18:59:55.329548+00:00,2026-03-02T16:12:53.078086+00:00,93.2,syscolabs,olo
+1239,REST-15930 New Order History page,Ryan Mercado,2026-02-25T18:54:31.691153+00:00,2026-02-26T19:18:07.963306+00:00,24.4,syscolabs,olo
+1238,"REST-15925, REST-15922 New Order Confirmation Page",Ryan Mercado,2026-02-25T15:59:05.729123+00:00,2026-02-26T19:17:45.739069+00:00,27.3,syscolabs,olo
+1237,Automate deployment,Benjamin Roedell,2026-02-23T17:04:28.744169+00:00,2026-02-23T20:11:01.032895+00:00,3.1,syscolabs,olo
+1236,REST-15929 Remove rewards section from MyInfo page,Ryan Mercado,2026-02-19T21:03:51.999472+00:00,2026-02-23T17:57:34.252822+00:00,92.9,syscolabs,olo
+1234,Simplify stored-card flow and align one-time card fields,Ryan Mercado,2026-02-19T17:55:01.759982+00:00,2026-02-19T19:11:11.797031+00:00,1.3,syscolabs,olo
+1233,REST-15931 Wire checkout place-order validation and add react-input-enhancements typing,Ryan Mercado,2026-02-19T16:27:40.924176+00:00,2026-02-19T17:08:06.073323+00:00,0.7,syscolabs,olo
+1232,REST-15924 Allow one-time payment for logged-in accounts,Ryan Mercado,2026-02-18T21:24:42.757421+00:00,2026-02-18T21:28:37.825583+00:00,0.1,syscolabs,olo
+1231,Misc fixes,Ryan Mercado,2026-02-18T20:32:09.100171+00:00,2026-02-18T20:33:01.266924+00:00,0.0,syscolabs,olo
+1226,"Add checkout saved-card add flow with selection, toasts, and logo-based UI",Ryan Mercado,2026-02-11T23:01:28.049781+00:00,2026-02-17T21:31:11.620091+00:00,142.5,syscolabs,olo
+1227,Profile reskin polish and payment methods UX improvements,Ryan Mercado,2026-02-11T23:32:47.753361+00:00,2026-02-17T19:46:07.708533+00:00,140.2,syscolabs,olo
+1230,Merge Release 8.884.58.0 into master,Benjamin Roedell,2026-02-17T16:30:57.035863+00:00,2026-02-17T16:39:21.217528+00:00,0.1,syscolabs,olo
+1229,Reskin fix serverside,Benjamin Roedell,2026-02-13T19:35:01.451234+00:00,2026-02-13T19:56:13.876622+00:00,0.4,syscolabs,olo
+1224,Fix login link construction to not include null values,Ryan Mercado,2026-02-10T19:24:09.088203+00:00,2026-02-10T19:26:56.541530+00:00,0.0,syscolabs,olo
+1223,allow CORS origin config,Ryan Mercado,2026-02-05T16:29:06.606585+00:00,2026-02-05T17:26:27.125359+00:00,1.0,syscolabs,olo
+1222,revert back to file server,Mike Nunez,2026-02-03T15:04:39.454805+00:00,2026-02-03T15:08:21.327049+00:00,0.1,syscolabs,olo
+1221,env updates,Mike Nunez,2026-02-03T14:42:11.406706+00:00,2026-02-03T14:49:33.115081+00:00,0.1,syscolabs,olo
+4338,"RL-4201 [MCS-4350] search for customer via email, then create new customer but email not saved in email section",John Harre,2026-03-20T12:42:04.647154+00:00,2026-03-25T16:57:54.528707+00:00,124.3,madmobile,impl-rl
+4337,RL-4202 Gift Card alignment is NOT as expected in the build - uat-2026-1,Sunil Pandey,2026-03-19T12:31:08.428250+00:00,2026-03-25T16:57:24.548105+00:00,148.4,madmobile,impl-rl
+4335,"RL-4197, RL-3498: Enable CE for APAC",James Oliver,2026-03-17T15:44:18.392045+00:00,2026-03-19T12:15:01.740316+00:00,44.5,madmobile,impl-rl
+4334,"RL-3970, RL-3985: Sweden changes for swedish language",James Oliver,2026-03-17T15:41:35.992616+00:00,2026-03-19T12:14:48.970626+00:00,44.6,madmobile,impl-rl
+4333,APAC CE Credentials,James Oliver,2026-03-10T16:57:34.281351+00:00,2026-03-10T16:58:59.836625+00:00,0.0,madmobile,impl-rl
+4330,RL-4176 France Xstore v24 Upgrade - Hostname Update,John Harre,2026-03-04T17:32:55.022199+00:00,2026-03-05T14:10:35.107897+00:00,20.6,madmobile,impl-rl
+4328,RL-4165: Make alternate languages selectable in RLS Switzerland,James Oliver,2026-02-26T12:59:00.974453+00:00,2026-02-26T18:30:35.983542+00:00,5.5,madmobile,impl-rl
+4325,RL-4067 Japan gift message print on A5,Sunil Pandey,2026-02-09T12:59:00.145871+00:00,2026-02-25T18:33:48.916670+00:00,389.6,madmobile,impl-rl
+4326,RL-4089 Assigned Tasks fail to load on first attempt due to caching issue on impl endpoint,John Harre,2026-02-09T20:05:33.476256+00:00,2026-02-25T18:26:56.737151+00:00,382.4,madmobile,impl-rl
+4324,RL-4040 fix EU fulfillment gift message css,Sunil Pandey,2026-02-02T12:58:30.844525+00:00,2026-02-02T16:49:43.673218+00:00,3.9,madmobile,impl-rl
+4323,RL-4036  Appy fix to develop as well,Sunil Pandey,2026-01-29T14:42:11.997786+00:00,2026-01-29T15:27:05.960491+00:00,0.7,madmobile,impl-rl
+4317,RL-3938/RL-3932: (RL-3920) Assigned Tasks Detailed View & High-Volume Handling,John Harre,2026-01-08T17:10:49.227018+00:00,2026-01-21T15:14:42.346163+00:00,310.1,madmobile,impl-rl
+4315,RL-3956 add tags to customer search query selector,Sunil Pandey,2026-01-07T12:27:48.838018+00:00,2026-01-21T15:13:30.631186+00:00,338.8,madmobile,impl-rl
+4321,CM-222: Yomato shipping release,James Oliver,2026-01-16T12:31:17.730343+00:00,2026-01-20T18:35:16.887570+00:00,102.1,madmobile,impl-rl
+4320,RL-3993: Assigned task - Changing the associate triggers a message: ‘There are no tasks’ inconsistent behavior,John Harre,2026-01-15T12:29:47.258999+00:00,2026-01-16T12:56:59.942062+00:00,24.5,madmobile,impl-rl
+4319,RL-3992: Assigned task - Count of completed task is incorrect,John Harre,2026-01-14T16:16:30.420481+00:00,2026-01-16T12:54:20.688355+00:00,44.6,madmobile,impl-rl
+4318,RL-4001,James Oliver,2026-01-13T19:58:08.031583+00:00,2026-01-16T12:28:54.657898+00:00,64.5,madmobile,impl-rl
+4314,RL-3975 Fix activity log value filter options for EU,Sunil Pandey,2026-01-05T14:04:27.812714+00:00,2026-01-12T15:10:32.879445+00:00,169.1,madmobile,impl-rl
+4316,RL-3938/RL-3932: Add debug context utilities and unit tests,John Harre,2026-01-08T17:07:18.777852+00:00,2026-01-09T19:11:03.453052+00:00,26.1,madmobile,impl-rl
+73,Feat/QA Automation/ENV update,Bill Fenley,2026-04-02T12:28:10.428037+00:00,2026-04-02T12:28:18.226955+00:00,0.0,madmobile,cake-pop-automation
+72,created payment regression suite to run against each card type,Bill Fenley,2026-02-04T15:02:13.518975+00:00,2026-02-04T15:02:21.111808+00:00,0.0,madmobile,cake-pop-automation
+71,Feat/QA Automation/SplitCheck test fix,Bill Fenley,2026-01-28T14:20:16.756321+00:00,2026-01-28T14:20:27.695509+00:00,0.0,madmobile,cake-pop-automation
+70,Feat/QA Automation/Config based tests,Bill Fenley,2026-01-27T20:26:38.504539+00:00,2026-01-27T20:26:49.395786+00:00,0.0,madmobile,cake-pop-automation
+8077,UR-567 / UR-568 Add QR Scan (URL) support,Eugenio Gonzalez,2026-03-20T13:21:11.409587+00:00,2026-04-02T11:27:20.921327+00:00,310.1,madmobile,concierge-associate
+8072,"UR-552 Use custom plugin ImageClipboard for android image copy/paste, add copy icon ",Eugenio Gonzalez,2026-03-11T13:27:14.456131+00:00,2026-03-30T12:51:29.353168+00:00,455.4,madmobile,concierge-associate
+8071,"RRS-402: Update Subtotal Calculation to Reflect Post-Discount Amount | Subtotal post-discount (CloudPos, MadServicesPos, XServicesPos) and doc/tests",John Harre,2026-03-11T11:25:46.892629+00:00,2026-03-27T17:51:08.224541+00:00,390.4,madmobile,concierge-associate
+8078,"RL-4201 [MCS-4350] search for customer via email, then create new customer but email not saved in email section",John Harre,2026-03-20T13:51:51.695362+00:00,2026-03-25T16:57:43.275319+00:00,123.1,madmobile,concierge-associate
+8075,SNUS-830 fix address values after clicking address in CaptureShipping,Eugenio Gonzalez,2026-03-18T14:22:37.572203+00:00,2026-03-24T13:19:13.969611+00:00,142.9,madmobile,concierge-associate
+8073,"RL-4147: Catalog - Pagination - When scrolling to the bottom on PLP, navigating away and returning to PLP, the scroll position is not preserved",Sunil Pandey,2026-03-13T07:24:13.749190+00:00,2026-03-23T13:02:09.953365+00:00,245.6,madmobile,concierge-associate
+8060,SNUS-728 Checkout - Unexpected Error when selecting a non-US address and US State during customer creation | Show Create Customer error toast once on mobile/tablet,John Harre,2026-02-18T17:06:41.011780+00:00,2026-03-11T15:59:45.417618+00:00,502.9,madmobile,concierge-associate
+8068,SNUS-816 validate combined discounts instead of individual discounts,Eugenio Gonzalez,2026-03-06T00:20:40.203266+00:00,2026-03-11T15:44:59.504956+00:00,135.4,madmobile,concierge-associate
+8066,RRS-401 Unable to Add Item to Cart; SNUS-814 Unable to remove applied discounts; RRS-402 Update Subtotal Calculation to Reflect Post-Discount Amount,John Harre,2026-02-26T11:10:49.062528+00:00,2026-03-11T15:13:13.019382+00:00,316.0,madmobile,concierge-associate
+8070,SNUS-814 Unable to remove applied discounts,John Harre,2026-03-10T15:18:27.438215+00:00,2026-03-11T14:36:16.589089+00:00,23.3,madmobile,concierge-associate
+8054,UR-552 Copy/Paste Image from PDP,Eugenio Gonzalez,2026-02-04T19:32:29.152825+00:00,2026-03-09T13:43:01.132063+00:00,786.2,madmobile,concierge-associate
+8067,"SNUS-798 A zero‑dollar payment displays a success toast, clears the outstanding balance, and completes the transaction.",John Harre,2026-03-05T13:40:35.854657+00:00,2026-03-06T12:34:35.808442+00:00,22.9,madmobile,concierge-associate
+8042,SNUS-754 add coupon discount options in Item Discount action,Eugenio Gonzalez,2026-01-09T18:13:16.763711+00:00,2026-03-04T13:47:51.339803+00:00,1291.6,madmobile,concierge-associate
+8064,UR-511 Add pdpQuantity to customer-collection-add-product call,Eugenio Gonzalez,2026-02-20T20:30:42.417949+00:00,2026-02-26T16:25:11.770438+00:00,139.9,madmobile,concierge-associate
+8063,RL-4149: Ensure orders is array before filter; add tests; suppress act() in tests,John Harre,2026-02-20T17:07:38.532004+00:00,2026-02-25T18:24:07.538248+00:00,121.3,madmobile,concierge-associate
+8053,SNUS-787 RRS-373 Enforce 1:1 Register and PED Mapping via MDM Device Name Suffix; RRS-399 Ped not connected message on UI,John Harre,2026-02-04T13:05:58.648130+00:00,2026-02-12T16:43:08.256323+00:00,195.6,madmobile,concierge-associate
+8047,SNUS-721 Checkout - Edit Customer / SNUS-728 Checkout  - Unexpected Error when selecting a non-US address and US State during customer creation,John Harre,2026-01-22T16:00:21.470057+00:00,2026-02-09T18:29:11.429989+00:00,434.5,madmobile,concierge-associate
+8056,"RRS-397  ""combined Returns"" should not be avaiable in order summary",John Harre,2026-02-05T14:56:46.701188+00:00,2026-02-05T16:45:38.628268+00:00,1.8,madmobile,concierge-associate
+8055,Fix AuthService TS2306 (useAuthService re-export and module marker),John Harre,2026-02-05T14:55:14.411935+00:00,2026-02-05T16:32:47.364132+00:00,1.6,madmobile,concierge-associate
+8050,RRS-396: Display products in mad-services response order,John Harre,2026-01-27T12:57:21.043018+00:00,2026-02-04T15:04:07.525432+00:00,194.1,madmobile,concierge-associate
+8051,RRS-390 Item action screen is missing discount,John Harre,2026-01-28T13:11:56.315573+00:00,2026-02-04T14:49:30.974726+00:00,169.6,madmobile,concierge-associate
+8052,RRS-391 Order Summary screen is missing discounts,John Harre,2026-01-29T13:52:55.395520+00:00,2026-02-04T14:22:03.410315+00:00,144.5,madmobile,concierge-associate
+8046,SNUS-758 Skip the receipt wizard step if no receiptActions are set,Eugenio Gonzalez,2026-01-21T15:24:58.689989+00:00,2026-01-26T12:18:13.045123+00:00,116.9,madmobile,concierge-associate
+8049,Fix publish for ci/cd,Mike Nunez,2026-01-22T17:53:33.495766+00:00,2026-01-22T18:09:48.481500+00:00,0.3,madmobile,concierge-associate
+8048,CLOUD-954: fix publish for npm package,Mike Nunez,2026-01-22T17:17:17.613544+00:00,2026-01-22T17:29:36.853579+00:00,0.2,madmobile,concierge-associate
+8041,RL-3938/RL-3932: (RL-3920) Assigned Tasks Detailed View & High-Volume Handling,John Harre,2026-01-08T17:13:48.269234+00:00,2026-01-21T15:14:25.532660+00:00,310.0,madmobile,concierge-associate
+8043,RL-3993: Assigned task - Changing the associate triggers a message: ‘There are no tasks’ inconsistent behavior,John Harre,2026-01-15T12:25:33.083766+00:00,2026-01-16T12:56:49.131311+00:00,24.5,madmobile,concierge-associate
+8040,Update build to use codeartifact,Mike Nunez,2026-01-08T15:26:11.072644+00:00,2026-01-08T17:38:19.697026+00:00,2.2,madmobile,concierge-associate
+2754,Release/CCL 8.885.1.5 CM-417,Hashan Prabodhaka Jalath,2026-04-02T07:07:27.774655+00:00,2026-04-02T08:23:37.542511+00:00,1.3,madmobile,cake-ecs-configs
+2752,chore: STAG UA Menu Admin -> 8.884.104.0_f366e6d,Matthew Crumley,2026-03-30T19:16:37.093043+00:00,2026-03-31T15:36:41.703220+00:00,20.3,madmobile,cake-ecs-configs
+2751,chore: TST1 UA Menu Admin with npm fix,Matthew Crumley,2026-03-30T16:59:53.319054+00:00,2026-03-30T17:00:03.584853+00:00,0.0,madmobile,cake-ecs-configs
+2745,chore: CCL_8.884.104.0 release,Kyle Budd,2026-03-27T19:20:38.801293+00:00,2026-03-30T16:20:36.423293+00:00,69.0,madmobile,cake-ecs-configs
+2750,chore: TST1 UA Menu Admin package-lock update,Matthew Crumley,2026-03-30T15:09:03.769298+00:00,2026-03-30T15:27:24.055300+00:00,0.3,madmobile,cake-ecs-configs
+2749,"chore: TST1 UA Menu Admin, dev_8.884.104.0_pr1991_34bc2a9a",Matthew Crumley,2026-03-30T14:29:03.294551+00:00,2026-03-30T15:07:43.101373+00:00,0.6,madmobile,cake-ecs-configs
+2748,chore: TST1 UA Menu update,Matthew Crumley,2026-03-30T14:06:44.997868+00:00,2026-03-30T14:06:56.740838+00:00,0.0,madmobile,cake-ecs-configs
+2747,chore: TST1 UA Menu Admin package-lock retest,Matthew Crumley,2026-03-30T13:04:11.480938+00:00,2026-03-30T13:06:29.746014+00:00,0.0,madmobile,cake-ecs-configs
+2746,chore: deploy UA-Menu for TST1; fix package-lock,Matthew Crumley,2026-03-27T20:41:50.741013+00:00,2026-03-27T20:45:28.927481+00:00,0.1,madmobile,cake-ecs-configs
+2744,chore: CCL_8.884.104.0 release (TST1),Kyle Budd,2026-03-27T19:20:25.812443+00:00,2026-03-27T19:21:50.687825+00:00,0.0,madmobile,cake-ecs-configs
+2741,add external redis config,Facundo,2026-03-26T16:46:44.172482+00:00,2026-03-27T12:28:42.319667+00:00,19.7,madmobile,cake-ecs-configs
+2743,"Revert ""chore(REST-18396): Universal Admin 8.885.1.0_3b2a39c to PROD (pull request #2729)""",Matthew Griffin,2026-03-26T23:41:03.322978+00:00,2026-03-27T12:27:55.817954+00:00,12.8,madmobile,cake-ecs-configs
+2742,chore: CCL_8.884.104.0 release,Kyle Budd,2026-03-26T18:28:42.292267+00:00,2026-03-26T18:34:41.679924+00:00,0.1,madmobile,cake-ecs-configs
+2740,STAG UA deploy 230930891673.dkr.ecr.us-east-1.amazonaws.com/src-ua-menu-admin:8.884.104.0_361446f,Kyle Budd,2026-03-26T15:14:25.109464+00:00,2026-03-26T16:27:33.049523+00:00,1.2,madmobile,cake-ecs-configs
+2737,"[PROD] CAKE Release CCL_8.885.1.3 - Logging Enhancements Across OLO Aggregator API, Leapset API, & Merchant API",Poorna Manujaya Amarasingha,2026-03-26T06:02:58.808669+00:00,2026-03-26T14:23:44.134933+00:00,8.3,madmobile,cake-ecs-configs
+2729,chore(REST-18396): Universal Admin 8.885.1.0_3b2a39c to PROD,Matthew Crumley,2026-03-24T17:30:38.119602+00:00,2026-03-26T11:08:14.958852+00:00,41.6,madmobile,cake-ecs-configs
+2739,Stag release 8.885.1.5,Raveen Panditha,2026-03-26T10:06:07.350287+00:00,2026-03-26T10:19:25.796115+00:00,0.2,madmobile,cake-ecs-configs
+2738,stag-ecs/stag_universal-admin-reports_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-26T07:56:41.430714+00:00,2026-03-26T07:58:58.650238+00:00,0.0,madmobile,cake-ecs-configs
+2730,PAC Roles & Permissions release to Prod,Richard Meitzler,2026-03-24T19:01:53.887155+00:00,2026-03-25T12:38:30.543328+00:00,17.6,madmobile,cake-ecs-configs
+2736,stag-ecs/stag_ua-reports-payments_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-25T10:22:08.202481+00:00,2026-03-25T11:25:38.984036+00:00,1.1,madmobile,cake-ecs-configs
+2735,"CAKE Release CCL_8.885.1.3 - Logging Enhancements Across OLO Aggregator API, Leapset API, & Merchant API",Poorna Manujaya Amarasingha,2026-03-25T07:40:04.787349+00:00,2026-03-25T07:42:44.483948+00:00,0.0,madmobile,cake-ecs-configs
+2734,"CAKE Release CCL_8.885.1.3 - Logging Enhancements Across OLO Aggregator API, Leapset API, & Merchant API",Poorna Manujaya Amarasingha,2026-03-25T07:29:49.227418+00:00,2026-03-25T07:32:24.901424+00:00,0.0,madmobile,cake-ecs-configs
+2733,Cake Release - 8.885.1.5 - Fix for Transaction Fee mismatch - IR-1,Poorna Manujaya Amarasingha,2026-03-25T06:59:12.131435+00:00,2026-03-25T07:00:44.987563+00:00,0.0,madmobile,cake-ecs-configs
+2732,Cake Release - 8.885.1.5 - Fix for Transaction Fee mismatch - IR-1,Poorna Manujaya Amarasingha,2026-03-25T06:35:11.025793+00:00,2026-03-25T06:53:36.342828+00:00,0.3,madmobile,cake-ecs-configs
+2731,"[REST-17318] Deploying OLO Aggregator API, Leapset API & Merchant API",Nishen Peiris,2026-03-25T04:44:16.343330+00:00,2026-03-25T04:51:17.099340+00:00,0.1,madmobile,cake-ecs-configs
+2728,chore(REST-18396): Universal Admin STAG to 8.885.1.0_3b2a39c,Matthew Crumley,2026-03-24T13:16:42.984526+00:00,2026-03-24T16:59:03.772034+00:00,3.7,madmobile,cake-ecs-configs
+2727,"[REST-17318] Deploying OLO Aggregator API, Leapset API & Merchant API",Nishen Peiris,2026-03-24T11:12:13.859977+00:00,2026-03-24T11:14:01.068491+00:00,0.0,madmobile,cake-ecs-configs
+2726,"[REST-17318] Deploying OLO Aggregator API, Leapset API & Merchant API",Nishen Peiris,2026-03-24T07:33:55.770484+00:00,2026-03-24T08:07:28.865149+00:00,0.6,madmobile,cake-ecs-configs
+2724,[REST-18326] Deploying Merchant API with updated EMS v2 URL,Nishen Peiris,2026-03-23T10:55:03.939199+00:00,2026-03-23T10:56:43.454507+00:00,0.0,madmobile,cake-ecs-configs
+2723,[REST-16939] Reverting to previous version as Prod version is failing due to missing configurations,Nishen Peiris,2026-03-23T06:13:10.560675+00:00,2026-03-23T06:15:47.166674+00:00,0.0,madmobile,cake-ecs-configs
+2722,[REST-16939] Deploying Menu API by Prod version with the updated EMS v2 URL,Nishen Peiris,2026-03-23T05:45:30.295327+00:00,2026-03-23T05:50:52.545616+00:00,0.1,madmobile,cake-ecs-configs
+2719,QA fixes for PAC Roles release,Richard Meitzler,2026-03-18T18:27:33.943395+00:00,2026-03-19T15:12:36.008441+00:00,20.8,madmobile,cake-ecs-configs
+2721,chore: set TST1 universal-admin to dev_8.885.1.0_bbc7e72,Matthew Crumley,2026-03-19T13:40:25.062111+00:00,2026-03-19T13:47:23.005496+00:00,0.1,madmobile,cake-ecs-configs
+2720,chore: set TST1 universal-admin to dev_8.885.1.0_fa0369b,Matthew Crumley,2026-03-18T19:33:42.920381+00:00,2026-03-18T19:46:55.224684+00:00,0.2,madmobile,cake-ecs-configs
+2718,Cleanup dev branch,Matias Lopez Riglos,2026-03-17T12:42:45.536561+00:00,2026-03-17T13:32:23.663596+00:00,0.8,madmobile,cake-ecs-configs
+2717,[PROD] CAKE Release CCL_8.884.103.0 - Custom Employee PINs in UA Staff,Poorna Manujaya Amarasingha,2026-03-17T06:27:42.636483+00:00,2026-03-17T08:25:52.892697+00:00,2.0,madmobile,cake-ecs-configs
+2715,payroll api,Poorna Manujaya Amarasingha,2026-03-17T05:00:24.686306+00:00,2026-03-17T05:00:38.260664+00:00,0.0,madmobile,cake-ecs-configs
+2695,prod-ecs/prod_src-mm-loyalty-microsite_service_td.json edited online with Bitbucket,Anderson Lavor,2026-03-05T23:34:20.315159+00:00,2026-03-16T20:03:30.761906+00:00,260.5,madmobile,cake-ecs-configs
+2714,[REST-16939] Deploying Menu Sync Agent,Nishen Peiris,2026-03-13T09:22:59.756735+00:00,2026-03-13T09:26:37.508048+00:00,0.1,madmobile,cake-ecs-configs
+2713,[REST-16939] Deploying Menu Sync Agent,Nishen Peiris,2026-03-12T11:38:56.700530+00:00,2026-03-12T11:40:32.581939+00:00,0.0,madmobile,cake-ecs-configs
+2712,[REST-16939] Deploying Menu Sync Agent,Nishen Peiris,2026-03-12T11:07:20.575411+00:00,2026-03-12T11:08:19.175130+00:00,0.0,madmobile,cake-ecs-configs
+2711,[REST-16939] Deploying Menu Sync Agent,Nishen Peiris,2026-03-12T10:16:32.554845+00:00,2026-03-12T10:28:09.190229+00:00,0.2,madmobile,cake-ecs-configs
+2710,[REST-16939] Deploying Menu Sync Agent,Nishen Peiris,2026-03-12T08:11:43.839667+00:00,2026-03-12T09:37:28.555941+00:00,1.4,madmobile,cake-ecs-configs
+2709,chore: fix UA verification failure,Kyle Budd,2026-03-10T16:13:34.077611+00:00,2026-03-10T19:23:55.429540+00:00,3.2,madmobile,cake-ecs-configs
+2708,[STAG] CAKE Release CCL_8.884.103.0 - Custom Employee PINs in UA Staff,Poorna Manujaya Amarasingha,2026-03-10T10:15:59.043534+00:00,2026-03-10T10:20:48.829718+00:00,0.1,madmobile,cake-ecs-configs
+2707,pos4-ecs/merchant_api_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-10T08:48:42.866162+00:00,2026-03-10T08:49:16.370226+00:00,0.0,madmobile,cake-ecs-configs
+2706,Release 8.884.103.0,Raveen Panditha,2026-03-10T08:44:05.150197+00:00,2026-03-10T08:45:09.840494+00:00,0.0,madmobile,cake-ecs-configs
+2704,tst1-ecs/menu_sync_agent_service_td.json edited online with Bitbucket,Anderson Lavor,2026-03-10T06:05:28.634234+00:00,2026-03-10T06:05:44.823279+00:00,0.0,madmobile,cake-ecs-configs
+2703,chore: REST-18107,Kyle Budd,2026-03-10T00:29:53.427427+00:00,2026-03-10T00:29:59.830168+00:00,0.0,madmobile,cake-ecs-configs
+2694,stag-ecs/src-mm-loyalty-microsite_service_td.json release_8.884.92.0_18397eea,Anderson Lavor,2026-03-05T23:33:07.982724+00:00,2026-03-09T15:44:58.125758+00:00,88.2,madmobile,cake-ecs-configs
+2702,[REST-18001] Deploying Merchant API,Nishen Peiris,2026-03-06T13:51:05.633802+00:00,2026-03-06T14:12:12.626552+00:00,0.4,madmobile,cake-ecs-configs
+2701,[REST-18001] Deploying Merchant API,Nishen Peiris,2026-03-06T13:16:20.506223+00:00,2026-03-06T13:17:42.037973+00:00,0.0,madmobile,cake-ecs-configs
+2700,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-06T10:06:04.835851+00:00,2026-03-06T10:06:34.025873+00:00,0.0,madmobile,cake-ecs-configs
+2699,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-06T09:38:17.809503+00:00,2026-03-06T09:39:08.037317+00:00,0.0,madmobile,cake-ecs-configs
+2698,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-06T08:58:57.433076+00:00,2026-03-06T08:59:32.431017+00:00,0.0,madmobile,cake-ecs-configs
+2697,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-06T08:29:14.196068+00:00,2026-03-06T08:29:46.480752+00:00,0.0,madmobile,cake-ecs-configs
+2696,REST-18001 bug fixes,Nishen Peiris,2026-03-06T04:34:02.971847+00:00,2026-03-06T04:40:31.374659+00:00,0.1,madmobile,cake-ecs-configs
+2692,[REST-18001] Deploying Merchant API,Nishen Peiris,2026-03-05T18:58:09.853429+00:00,2026-03-06T03:54:40.661203+00:00,8.9,madmobile,cake-ecs-configs
+2693,tst1-ecs/src-mm-loyalty-microsite_service_td.json release_8.884.92.0_18397eea,Anderson Lavor,2026-03-05T23:30:53.975406+00:00,2026-03-05T23:31:13.799792+00:00,0.0,madmobile,cake-ecs-configs
+2691,feat: redeploying to prod,Matias Lopez Riglos,2026-03-05T18:46:46.817897+00:00,2026-03-05T20:00:12.571996+00:00,1.2,madmobile,cake-ecs-configs
+2690,[REST-18001] Deploying Merchant API,Nishen Peiris,2026-03-05T17:00:21.708256+00:00,2026-03-05T17:01:14.854757+00:00,0.0,madmobile,cake-ecs-configs
+2689,[REST-18001] Deploying Merchant API,Nishen Peiris,2026-03-05T16:38:48.457579+00:00,2026-03-05T16:40:06.651638+00:00,0.0,madmobile,cake-ecs-configs
+2688,[REST-18001] Deploying Merchant API,Nishen Peiris,2026-03-05T15:43:15.072866+00:00,2026-03-05T16:06:18.171972+00:00,0.4,madmobile,cake-ecs-configs
+2687,[REST-18001] Deploying Merchant API,Nishen Peiris,2026-03-05T12:57:01.777193+00:00,2026-03-05T13:00:12.876158+00:00,0.1,madmobile,cake-ecs-configs
+2684,prod-ecs/prod_src-mm-loyalty-microsite_service_td.json release_8.884.92.0_34491366,Anderson Lavor,2026-03-03T23:22:02.059802+00:00,2026-03-04T19:35:06.460947+00:00,20.2,madmobile,cake-ecs-configs
+2686,stag cm-345,Ryan Mercado,2026-03-04T16:26:35.980226+00:00,2026-03-04T17:18:11.469624+00:00,0.9,madmobile,cake-ecs-configs
+2683,stag-ecs/src-mm-loyalty-microsite_service_td.json release_8.884.92.0_34491366,Anderson Lavor,2026-03-03T22:57:32.269357+00:00,2026-03-04T14:01:38.542124+00:00,15.1,madmobile,cake-ecs-configs
+2685,REST-18136 enabling custom pin for users,Raveen Panditha,2026-03-04T08:55:15.707966+00:00,2026-03-04T08:55:40.691990+00:00,0.0,madmobile,cake-ecs-configs
+2682,tst1-ecs/src-mm-loyalty-microsite_service_td.json develop_8.884.92.0_c5d3911a,Anderson Lavor,2026-03-03T22:40:18.431734+00:00,2026-03-03T22:40:33.059313+00:00,0.0,madmobile,cake-ecs-configs
+2676,stag-ecs/src-mm-loyalty-microsite_service_td.json release_8.884.92.0_5f63ffe7,Anderson Lavor,2026-03-03T07:48:30.562366+00:00,2026-03-03T16:55:08.861412+00:00,9.1,madmobile,cake-ecs-configs
+2670,PAC changes to Stage,Richard Meitzler,2026-03-02T20:47:23.993180+00:00,2026-03-03T16:10:50.324731+00:00,19.4,madmobile,cake-ecs-configs
+2680,pos4-ecs/src-ua-staff-container_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-03T15:31:07.947266+00:00,2026-03-03T15:32:01.240860+00:00,0.0,madmobile,cake-ecs-configs
+2679,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-03T10:15:35.898089+00:00,2026-03-03T11:15:41.986342+00:00,1.0,madmobile,cake-ecs-configs
+2678,pos4-ecs/merchant_api_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-03T08:03:13.694061+00:00,2026-03-03T08:39:15.188045+00:00,0.6,madmobile,cake-ecs-configs
+2675,tst1-ecs/src-mm-loyalty-microsite_service_td.json develop_8.884.92.0_48c98b39,Anderson Lavor,2026-03-03T07:37:12.036542+00:00,2026-03-03T07:37:26.276610+00:00,0.0,madmobile,cake-ecs-configs
+2674,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-03T07:14:56.002277+00:00,2026-03-03T07:15:05.902226+00:00,0.0,madmobile,cake-ecs-configs
+2673,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-03T05:48:35.783289+00:00,2026-03-03T05:48:50.623791+00:00,0.0,madmobile,cake-ecs-configs
+2672,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-03T05:05:39.068012+00:00,2026-03-03T05:05:55.578031+00:00,0.0,madmobile,cake-ecs-configs
+2671,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-03-03T03:25:05.360244+00:00,2026-03-03T03:25:35.209396+00:00,0.0,madmobile,cake-ecs-configs
+2669,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-27T10:58:37.946049+00:00,2026-02-27T10:59:47.272375+00:00,0.0,madmobile,cake-ecs-configs
+2668,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-27T10:34:16.685142+00:00,2026-02-27T10:35:00.847915+00:00,0.0,madmobile,cake-ecs-configs
+2667,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-27T08:13:03.921592+00:00,2026-02-27T08:53:27.035826+00:00,0.7,madmobile,cake-ecs-configs
+2666,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-27T07:21:03.339147+00:00,2026-02-27T07:31:00.160328+00:00,0.2,madmobile,cake-ecs-configs
+2665,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-26T15:00:09.120260+00:00,2026-02-26T15:01:23.521772+00:00,0.0,madmobile,cake-ecs-configs
+2664,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-26T14:51:19.203619+00:00,2026-02-26T14:52:44.742789+00:00,0.0,madmobile,cake-ecs-configs
+2663,pos4-ecs/gum_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-26T08:22:25.407400+00:00,2026-02-26T08:30:45.324635+00:00,0.1,madmobile,cake-ecs-configs
+2662,REST-18001,Poorna Manujaya Amarasingha,2026-02-25T05:57:19.119001+00:00,2026-02-25T05:57:30.579113+00:00,0.0,madmobile,cake-ecs-configs
+2661,REST-18001,Poorna Manujaya Amarasingha,2026-02-25T04:52:12.220868+00:00,2026-02-25T04:52:28.841937+00:00,0.0,madmobile,cake-ecs-configs
+2660,tst2-ecs/merchant_api_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-25T04:10:39.547865+00:00,2026-02-25T04:27:40.842218+00:00,0.3,madmobile,cake-ecs-configs
+2659,updating operator and ldp-api for kiosk video updates,Beau Bruderer,2026-02-24T16:30:31.028735+00:00,2026-02-24T20:22:52.301268+00:00,3.9,madmobile,cake-ecs-configs
+2658,CM-345,Benjamin Roedell,2026-02-24T03:41:10.160835+00:00,2026-02-24T03:44:25.457060+00:00,0.1,madmobile,cake-ecs-configs
+2657,CM-345,Benjamin Roedell,2026-02-24T02:21:03.855033+00:00,2026-02-24T02:22:08.972315+00:00,0.0,madmobile,cake-ecs-configs
+2655,prod-ecs/prod_src-mm-loyalty-microsite_service_td.json release_8.884.92.0_09e97ae6,Anderson Lavor,2026-02-23T17:40:17.853118+00:00,2026-02-23T18:13:50.845043+00:00,0.6,madmobile,cake-ecs-configs
+2656,UA publish release_CM-212,Ryan Mercado,2026-02-23T17:56:19.503722+00:00,2026-02-23T17:56:40.362835+00:00,0.0,madmobile,cake-ecs-configs
+2654,UA publish release_CM-212,Ryan Mercado,2026-02-20T21:56:53.181504+00:00,2026-02-20T21:57:20.791825+00:00,0.0,madmobile,cake-ecs-configs
+2653,"Revert ""Release CM-212 Ops - New Webpage to save payment methods (pull request #2652)""",Benjamin Roedell,2026-02-20T03:21:55.574317+00:00,2026-02-20T03:26:53.549384+00:00,0.1,madmobile,cake-ecs-configs
+2652,Release CM-212 Ops - New Webpage to save payment methods,Benjamin Roedell,2026-02-20T02:10:18.784509+00:00,2026-02-20T02:11:42.128151+00:00,0.0,madmobile,cake-ecs-configs
+2651,Cake Release CCL_8.884.96.0 - Enhancements for Paytronix 86ing,Poorna Manujaya Amarasingha,2026-02-19T06:47:38.593504+00:00,2026-02-19T07:58:59.688339+00:00,1.2,madmobile,cake-ecs-configs
+2650,stag-ecs/src-mm-loyalty-microsite_service_td.json release_8.884.92.0_09e97ae6,Anderson Lavor,2026-02-18T17:32:45.338689+00:00,2026-02-18T18:28:09.056638+00:00,0.9,madmobile,cake-ecs-configs
+2649,tst1-ecs/src-mm-loyalty-microsite_service_td.json develop_8.884.92.0_d7491b47,Anderson Lavor,2026-02-18T17:30:50.047972+00:00,2026-02-18T17:31:11.318579+00:00,0.0,madmobile,cake-ecs-configs
+2648,Cake Release CCL_8.884.96.0 - Enhancements for Paytronix 86ing,Poorna Manujaya Amarasingha,2026-02-18T09:09:40.798341+00:00,2026-02-18T09:11:49.879785+00:00,0.0,madmobile,cake-ecs-configs
+2647,tst2-ecs/menu_sync_agent_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-18T06:30:06.311117+00:00,2026-02-18T06:38:44.456614+00:00,0.1,madmobile,cake-ecs-configs
+2646,stag-ecs/src-mm-loyalty-microsite_service_td.json release_8.884.92.0_3d3c9a5d,Anderson Lavor,2026-02-17T20:10:26.869276+00:00,2026-02-17T20:31:01.375253+00:00,0.3,madmobile,cake-ecs-configs
+2645,tst1-ecs/src-mm-loyalty-microsite_service_td.json 8.884.92.0_3d3c9a5d,Anderson Lavor,2026-02-17T19:59:41.512187+00:00,2026-02-17T20:00:08.748095+00:00,0.0,madmobile,cake-ecs-configs
+2644,stag-ecs/src-mm-loyalty-microsite_service release_8.884.92.0_da3c681d,Anderson Lavor,2026-02-13T16:15:56.491699+00:00,2026-02-13T16:22:06.420757+00:00,0.1,madmobile,cake-ecs-configs
+2643,stag-ecs/src-mm-loyalty-microsite_service_td.json 8.884.92.0_da3c681d,Anderson Lavor,2026-02-13T15:50:02.852080+00:00,2026-02-13T16:02:57.544313+00:00,0.2,madmobile,cake-ecs-configs
+2642,tst1-ecs/src-mm-loyalty-microsite_service_td.json develop_8.884.92.0_bd0d8ff1,Anderson Lavor,2026-02-13T01:54:11.578065+00:00,2026-02-13T01:55:11.856972+00:00,0.0,madmobile,cake-ecs-configs
+2641,PAC Roles & Permissions to Stage,Richard Meitzler,2026-02-12T14:36:01.276826+00:00,2026-02-12T20:07:13.498221+00:00,5.5,madmobile,cake-ecs-configs
+2640,chore: add logging for DP integration api,Kyle Budd,2026-02-11T19:50:25.680630+00:00,2026-02-11T19:54:09.838566+00:00,0.1,madmobile,cake-ecs-configs
+2639,chore: fix pompe with no command block,Kyle Budd,2026-02-11T19:15:28.661586+00:00,2026-02-11T19:18:02.576121+00:00,0.0,madmobile,cake-ecs-configs
+2638,chore: fix pompe with correct repo ref,Kyle Budd,2026-02-11T19:08:33.707377+00:00,2026-02-11T19:09:41.898710+00:00,0.0,madmobile,cake-ecs-configs
+2637,Chore: REST-18002 - menu_sync_agent_service_td.json edited online with Bitbucket,Raveen Panditha,2026-02-11T11:38:58.790926+00:00,2026-02-11T12:02:23.514273+00:00,0.4,madmobile,cake-ecs-configs
+2636,UA publish os-8530-tp3-followup,Ryan Mercado,2026-02-10T21:09:19.400864+00:00,2026-02-10T21:09:39.839019+00:00,0.0,madmobile,cake-ecs-configs
+2635,UA publish os-8530-tp3-followup,Ryan Mercado,2026-02-10T18:59:07.991303+00:00,2026-02-10T19:01:52.641661+00:00,0.0,madmobile,cake-ecs-configs
+2634,src-mm-loyalty-microsite_service_td.json develop_8.884.92.0_e447bb46,Anderson Lavor,2026-02-10T18:34:45.665579+00:00,2026-02-10T18:35:04.086274+00:00,0.0,madmobile,cake-ecs-configs
+2633,src-mm-loyalty-microsite_service_td.json develop_8.884.92.0_a689b331,Anderson Lavor,2026-02-10T16:50:18.341760+00:00,2026-02-10T16:50:58.918421+00:00,0.0,madmobile,cake-ecs-configs
+2632,UA publish os-8530-tp3-followup,Ryan Mercado,2026-02-09T17:31:36.946988+00:00,2026-02-09T17:46:44.693881+00:00,0.3,madmobile,cake-ecs-configs
+2630,"chore: remove ""command"" from ecs config",Kyle Budd,2026-02-05T15:24:10.517624+00:00,2026-02-05T19:33:53.186936+00:00,4.2,madmobile,cake-ecs-configs
+2631,UA publish os-8530-tp3-followup,Ryan Mercado,2026-02-05T17:26:37.205284+00:00,2026-02-05T17:30:13.503249+00:00,0.1,madmobile,cake-ecs-configs
+2629,UA publish os-8530-tp3-followup,Ryan Mercado,2026-02-03T14:28:46.713903+00:00,2026-02-03T14:39:16.142867+00:00,0.2,madmobile,cake-ecs-configs
+2628,UA publish os-8530-tp3-followup,Ryan Mercado,2026-02-02T20:55:24.669515+00:00,2026-02-02T20:57:34.208450+00:00,0.0,madmobile,cake-ecs-configs
+2627,chore: src-ua-menu-admin deploy (PROD),Kyle Budd,2026-02-02T12:55:47.115121+00:00,2026-02-02T13:24:58.970058+00:00,0.5,madmobile,cake-ecs-configs
+2626,prod_universal-admin-settings_service_td.json edited online with Bitbucket,Beau Bruderer,2026-02-02T11:21:46.670170+00:00,2026-02-02T11:25:50.871314+00:00,0.1,madmobile,cake-ecs-configs
+2619,prod_universal-admin-reports_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-29T16:27:32.922190+00:00,2026-02-02T11:25:46.099088+00:00,91.0,madmobile,cake-ecs-configs
+2625,stag_universal-admin-reports_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-30T18:15:02.128752+00:00,2026-01-30T18:28:26.835325+00:00,0.2,madmobile,cake-ecs-configs
+2624,CM-294 deploy ua 1.3.8,Ryan Mercado,2026-01-30T02:13:34.007842+00:00,2026-01-30T02:16:09.427289+00:00,0.0,madmobile,cake-ecs-configs
+2623,UA publish os-8530-tp3-followup,Ryan Mercado,2026-01-29T22:15:32.898821+00:00,2026-01-29T22:21:53.209863+00:00,0.1,madmobile,cake-ecs-configs
+2622,universal-admin-reports_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-29T18:47:54.820771+00:00,2026-01-29T18:50:46.752803+00:00,0.0,madmobile,cake-ecs-configs
+2621,stag_universal-admin-reports_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-29T17:38:24.629677+00:00,2026-01-29T18:06:55.563280+00:00,0.5,madmobile,cake-ecs-configs
+2620,deploy make-them-pay hotfix to stag,Ryan Mercado,2026-01-29T17:32:15.350065+00:00,2026-01-29T17:34:48.625338+00:00,0.0,madmobile,cake-ecs-configs
+2618,Cake Release - CCL_8.884.84.0 - UA-Reports+UA-reports-payments Transactions issue fix,Poorna Manujaya Amarasingha,2026-01-29T09:57:08.802040+00:00,2026-01-29T13:04:45.501015+00:00,3.1,madmobile,cake-ecs-configs
+2614,chore: deploy src-menu-api (EMS 1.0) (PROD),Kyle Budd,2026-01-28T19:14:02.261757+00:00,2026-01-29T11:24:58.876344+00:00,16.2,madmobile,cake-ecs-configs
+2617,Cake Release - CCL_8.884.84.0 - UA-Reports+UA-reports-payments Transactions issue fix,Poorna Manujaya Amarasingha,2026-01-29T09:35:02.526017+00:00,2026-01-29T09:42:43.469235+00:00,0.1,madmobile,cake-ecs-configs
+2616,fix: REST-17429 - ua-reports-payments_service_td.json edited online with Bitbucket,Raveen Panditha,2026-01-29T08:47:40.889582+00:00,2026-01-29T08:49:06.859460+00:00,0.0,madmobile,cake-ecs-configs
+2615,fix: REST-17429 - universal-admin-reports_service_td.json edited online with Bitbucket,Raveen Panditha,2026-01-29T08:43:25.246912+00:00,2026-01-29T08:44:46.130878+00:00,0.0,madmobile,cake-ecs-configs
+2613,CM-289 | CCL_8.884.83.6 | STAG Deploy,Kyle Budd,2026-01-28T19:12:55.427463+00:00,2026-01-28T19:15:23.860624+00:00,0.0,madmobile,cake-ecs-configs
+2612,CM-289 | CCL_8.884.83.6 | DEV Deploy,Kyle Budd,2026-01-28T19:12:30.506514+00:00,2026-01-28T19:15:07.330393+00:00,0.0,madmobile,cake-ecs-configs
+2611,REST-17429 - universal-admin-reports_service_td.json edited online with Bitbucket,Raveen Panditha,2026-01-28T12:58:10.867902+00:00,2026-01-28T13:06:20.200325+00:00,0.1,madmobile,cake-ecs-configs
+2610,tst1: deploy ua-reports image dev_os-8530-tp3-followup_128cf14,Ryan Mercado,2026-01-27T17:44:53.692505+00:00,2026-01-27T20:39:10.694613+00:00,2.9,madmobile,cake-ecs-configs
+2609,PAC bugfixes to Stage,Richard Meitzler,2026-01-26T15:41:02.294274+00:00,2026-01-27T14:58:57.180093+00:00,23.3,madmobile,cake-ecs-configs
+2597,universal-admin-reports_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-22T15:01:06.253618+00:00,2026-01-26T15:44:27.598863+00:00,96.7,madmobile,cake-ecs-configs
+2607,bugfix: EMS1 health path fixed,Matthew Crumley,2026-01-23T16:05:40.923943+00:00,2026-01-23T16:07:49.529285+00:00,0.0,madmobile,cake-ecs-configs
+2606,bugfix: ignore EMS1 Janus shard checks,Matthew Crumley,2026-01-23T15:35:22.450192+00:00,2026-01-23T15:47:03.453045+00:00,0.2,madmobile,cake-ecs-configs
+2596,CM-268 | CCL_8.884.83.5 [EMS 1.0]: Increase heap & update logging,Matthew Crumley,2026-01-22T14:24:35.432840+00:00,2026-01-23T13:03:42.264401+00:00,22.7,madmobile,cake-ecs-configs
+2605,UA publish os-8530-tp3-followup,Ryan Mercado,2026-01-22T17:18:30.862176+00:00,2026-01-22T17:20:42.925466+00:00,0.0,madmobile,cake-ecs-configs
+2603,stag_universal-admin-reports_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-22T15:28:42.393250+00:00,2026-01-22T15:46:31.859239+00:00,0.3,madmobile,cake-ecs-configs
+2601,CM-268 | CCL_8.884.83.5 [EMS 1.0]: Increase heap & update logging (STAG),Kyle Budd,2026-01-22T15:12:52.684667+00:00,2026-01-22T15:46:13.305228+00:00,0.6,madmobile,cake-ecs-configs
+2602,update UA to os-8530-tp3-followup,Ryan Mercado,2026-01-22T15:18:44.042555+00:00,2026-01-22T15:40:42.947199+00:00,0.4,madmobile,cake-ecs-configs
+2604,chore: deploy src-menu-api (EMS 1.0) (DEV),Kyle Budd,2026-01-22T15:34:17.698757+00:00,2026-01-22T15:34:57.148627+00:00,0.0,madmobile,cake-ecs-configs
+2599,stag_universal-admin-settings_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-22T15:11:58.984070+00:00,2026-01-22T15:19:41.855049+00:00,0.1,madmobile,cake-ecs-configs
+2600,CM-268 | CCL_8.884.83.5 [EMS 1.0]: Increase heap & update logging (DEV),Kyle Budd,2026-01-22T15:12:28.349280+00:00,2026-01-22T15:13:59.535461+00:00,0.0,madmobile,cake-ecs-configs
+2598,universal-admin-settings_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-22T15:09:24.887800+00:00,2026-01-22T15:11:43.029892+00:00,0.0,madmobile,cake-ecs-configs
+2595,Cake Release 8.884.83.0 - Gift Card Transaction Report Shows Duplicate Entries for Current Day Issue Fix,Poorna Manujaya Amarasingha,2026-01-22T07:44:43.220162+00:00,2026-01-22T07:52:20.244468+00:00,0.1,madmobile,cake-ecs-configs
+2594,deploying 8.884.83.0 to staging,Hashan Prabodhaka Jalath,2026-01-22T05:54:18.318112+00:00,2026-01-22T06:07:05.152504+00:00,0.2,madmobile,cake-ecs-configs
+2593,chore: align TST1 MAPI to STAG config,Matthew Crumley,2026-01-21T19:54:15.100482+00:00,2026-01-21T20:08:45.376771+00:00,0.2,madmobile,cake-ecs-configs
+2592,IR 1 DP issue REST-17522,Chalaka Sudusinghe,2026-01-21T10:25:13.385029+00:00,2026-01-21T10:25:26.043369+00:00,0.0,madmobile,cake-ecs-configs
+2591,IR 1 DP issue REST-17522,Chalaka Sudusinghe,2026-01-21T10:04:55.501783+00:00,2026-01-21T10:05:06.530112+00:00,0.0,madmobile,cake-ecs-configs
+2584,CCL_8.884.90.0 | (EMS 1.0) (STAG),Kyle Budd,2026-01-20T14:33:13.846966+00:00,2026-01-20T20:51:47.058581+00:00,6.3,madmobile,cake-ecs-configs
+2585,CCL_8.884.90.0 | (EMS 1.0) (DEV),Kyle Budd,2026-01-20T14:33:28.515119+00:00,2026-01-20T20:50:55.097251+00:00,6.3,madmobile,cake-ecs-configs
+2587,universal-admin-settings_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-20T19:55:44.395502+00:00,2026-01-20T20:11:45.087228+00:00,0.3,madmobile,cake-ecs-configs
+2582,pac_service_td.json Hotfix to Production,Richard Meitzler,2026-01-15T16:58:06.000837+00:00,2026-01-15T17:01:52.470754+00:00,0.1,madmobile,cake-ecs-configs
+2581,Deploy 8.884.79.1 to PROD CM-224,Benjamin Roedell,2026-01-15T01:58:22.721838+00:00,2026-01-15T02:03:53.689345+00:00,0.1,madmobile,cake-ecs-configs
+2580,Deploy 8.884.79.1 to TST1,Benjamin Roedell,2026-01-14T18:41:17.419390+00:00,2026-01-14T18:51:24.360046+00:00,0.2,madmobile,cake-ecs-configs
+2574,Cake Release - CCL_8.884.60.0 - VP3350 for POS,Poorna Manujaya Amarasingha,2026-01-14T08:46:26.288519+00:00,2026-01-14T08:49:27.955034+00:00,0.1,madmobile,cake-ecs-configs
+2573,Cake Release - CCL_8.884.80.0 - Fix for the Discount report not available for Year to Date Issue,Poorna Manujaya Amarasingha,2026-01-14T04:44:28.313922+00:00,2026-01-14T08:04:28.319603+00:00,3.3,madmobile,cake-ecs-configs
+2572,Deploy 8.884.79.0 for CM-236 'Logging for New Webpage',Benjamin Roedell,2026-01-14T02:04:31.472704+00:00,2026-01-14T02:09:30.379325+00:00,0.1,madmobile,cake-ecs-configs
+2571,universal-admin-settings_service_td.json edited online with Bitbucket,siva.golla,2026-01-13T19:19:45.597199+00:00,2026-01-13T19:22:44.700962+00:00,0.0,madmobile,cake-ecs-configs
+2570,Cake Release - CCL_8.884.80.0 - Fix for the Discount report not available for Year to Date Issue,Poorna Manujaya Amarasingha,2026-01-13T08:43:32.458649+00:00,2026-01-13T08:46:36.402400+00:00,0.1,madmobile,cake-ecs-configs
+2567,pac_service_td.json edited online with Bitbucket,Richard Meitzler,2026-01-12T20:30:43.496754+00:00,2026-01-13T02:10:25.186798+00:00,5.7,madmobile,cake-ecs-configs
+2568,Deploy logging fix for new billing page to TST1,Benjamin Roedell,2026-01-12T22:03:18.080651+00:00,2026-01-12T22:05:45.589325+00:00,0.0,madmobile,cake-ecs-configs
+2566,Deploy logging fix for new billing page to TST1,Benjamin Roedell,2026-01-12T20:28:08.047950+00:00,2026-01-12T20:44:29.137139+00:00,0.3,madmobile,cake-ecs-configs
+2565,Deploy 8.884.79.0 to TST1,Benjamin Roedell,2026-01-12T18:42:37.294504+00:00,2026-01-12T18:47:07.673046+00:00,0.1,madmobile,cake-ecs-configs
+2564,Deploy latest new billing page to TST1,Benjamin Roedell,2026-01-12T17:53:35.141338+00:00,2026-01-12T17:55:53.465714+00:00,0.0,madmobile,cake-ecs-configs
+2563,Deploy latest operator API to STAG,Benjamin Roedell,2026-01-09T22:24:23.206454+00:00,2026-01-12T13:46:37.090134+00:00,63.4,madmobile,cake-ecs-configs
+2556,Push PAC dev_8.873.30.0_pr586_2a6ba53e to Prod,Richard Meitzler,2026-01-08T17:11:01.334000+00:00,2026-01-12T13:05:48.113244+00:00,91.9,madmobile,cake-ecs-configs
+2562,Deploy latest 8.884.79.0 to STAG,Benjamin Roedell,2026-01-09T21:47:52.501990+00:00,2026-01-09T21:53:44.611622+00:00,0.1,madmobile,cake-ecs-configs
+2561,Deploy latest 8.884.79.0 to STAG,Benjamin Roedell,2026-01-09T20:54:32.818908+00:00,2026-01-09T21:03:24.615468+00:00,0.1,madmobile,cake-ecs-configs
+2559,src-ua-menu-admin_service_td.json edited online with Bitbucket,Beau Bruderer,2026-01-09T17:52:25.195919+00:00,2026-01-09T19:03:15.499562+00:00,1.2,madmobile,cake-ecs-configs
+2560,Run image built in Bitbucket instead of one built in Jenkins,Benjamin Roedell,2026-01-09T18:24:03.495284+00:00,2026-01-09T18:40:15.352354+00:00,0.3,madmobile,cake-ecs-configs
+2558,IR 1 DP issue REST-16188,Chalaka Sudusinghe,2026-01-09T08:01:59.951482+00:00,2026-01-09T08:02:21.034081+00:00,0.0,madmobile,cake-ecs-configs
+2557,ua 1.3.7,Ryan Mercado,2026-01-08T19:57:47.840218+00:00,2026-01-08T20:36:37.591100+00:00,0.6,madmobile,cake-ecs-configs
+2553,CM-235 | CCL_8.884.78.0 | PROD DEPLOY,Kyle Budd,2026-01-08T15:00:51.588266+00:00,2026-01-08T20:34:14.832656+00:00,5.6,madmobile,cake-ecs-configs
+2554,CM-235 | CCL_8.884.78.0 | STAG DEPLOY,Kyle Budd,2026-01-08T15:01:33.378108+00:00,2026-01-08T18:04:23.571933+00:00,3.0,madmobile,cake-ecs-configs
+2555,CM-235 | CCL_8.884.78.0 | DEV DEPLOY,Kyle Budd,2026-01-08T15:02:01.617834+00:00,2026-01-08T15:18:15.411728+00:00,0.3,madmobile,cake-ecs-configs
+2549,fix: new ejection time // alow prod deploys using this repo,Matias Lopez Riglos,2026-01-07T19:47:26.290550+00:00,2026-01-08T12:13:28.444999+00:00,16.4,madmobile,cake-ecs-configs
+2552,ua-menu-admin,Hashan Maduwantha,2026-01-08T06:41:02.557307+00:00,2026-01-08T06:47:17.271734+00:00,0.1,madmobile,cake-ecs-configs
+2551,ua-menu-admin,Hashan Maduwantha,2026-01-08T06:28:48.115288+00:00,2026-01-08T06:29:41.416803+00:00,0.0,madmobile,cake-ecs-configs
+2550,ua-menu-admin,Hashan Maduwantha,2026-01-08T06:00:54.345914+00:00,2026-01-08T06:01:58.551154+00:00,0.0,madmobile,cake-ecs-configs
+2548,chore: deploy operator-api to STAG,Kyle Budd,2026-01-06T16:55:07.730220+00:00,2026-01-06T17:15:23.875945+00:00,0.3,madmobile,cake-ecs-configs
+2547,Cake Release - CCL_8.884.78.0 - Consumer Api & ESB Enhancements + DoorDash Platform Level Fixes + Production Issue Fixes,Poorna Manujaya Amarasingha,2026-01-06T10:21:25.815984+00:00,2026-01-06T12:23:03.638057+00:00,2.0,madmobile,cake-ecs-configs
+2546,Development 8.884.78.0 test,Raveen Panditha,2026-01-05T08:27:28.763427+00:00,2026-01-05T08:30:50.053802+00:00,0.1,madmobile,cake-ecs-configs
+1250,Release 8.877.4.0,Gayan Karunarathna,2026-03-20T12:28:16.911088+00:00,2026-04-02T03:50:59.967404+00:00,303.4,syscolabs,cake-payment-gateway
+1249,UP-4273: moved merchantCategoryCode to backgroundCheckFields in legalEntityUpdateRequest,Gayan Karunarathna,2026-03-20T05:11:37.281704+00:00,2026-03-20T06:24:00.190331+00:00,1.2,syscolabs,cake-payment-gateway
+1248,UP-4273: added merchantCategoryCode to legal entity create/update requests,Gayan Karunarathna,2026-03-18T08:00:55.054915+00:00,2026-03-19T12:44:20.096204+00:00,28.7,syscolabs,cake-payment-gateway
+1247,UP-4310: code refactored. dev test errors fixed,Gayan Karunarathna,2026-03-16T14:39:48.115834+00:00,2026-03-17T05:33:55.024373+00:00,14.9,syscolabs,cake-payment-gateway
+1246,UP-4309: fixed: payment.last_update timestamp not getting updated in void flow,Gayan Karunarathna,2026-03-11T08:26:47.355417+00:00,2026-03-12T05:51:16.389815+00:00,21.4,syscolabs,cake-payment-gateway
+1245,Feature/UP-4310 visa cybs tx sync,Gayan Karunarathna,2026-03-04T12:05:05.865441+00:00,2026-03-11T12:13:20.033161+00:00,168.1,syscolabs,cake-payment-gateway
+1244,UP-4303: Updated mysql table names and fields related to modern legacy sync payments,Susampath Madarasinghe,2026-02-26T05:05:08.667834+00:00,2026-02-26T17:00:11.717467+00:00,11.9,syscolabs,cake-payment-gateway
+1243,UP-4300: Changed the modern payment id from provider transaction id to Transaction.ReferenceNumber,Susampath Madarasinghe,2026-02-25T07:36:30.880396+00:00,2026-02-25T07:40:03.655051+00:00,0.1,syscolabs,cake-payment-gateway
+1242,EMAF reconciliation mapping added for modern and legacy,Susampath Madarasinghe,2026-02-13T14:23:18.558560+00:00,2026-02-16T04:36:33.794380+00:00,62.2,syscolabs,cake-payment-gateway
+1241,UP-4223: Add modern_legacy_payment_mapping for EMAF reconciliation (links legacy payment_id to provider transaction ID on CREDIT/SALE/AUTHORIZATION).,Susampath Madarasinghe,2026-02-03T06:04:00.315258+00:00,2026-02-10T05:48:49.103093+00:00,167.7,syscolabs,cake-payment-gateway
+235,CLOUD-1035 cluster upgrade,Matthew Griffin,2026-04-01T19:22:04.767082+00:00,2026-04-01T21:24:08.460707+00:00,2.0,madmobile,cloud-shared-services
+232,feat: new repo,Matias Lopez Riglos,2026-03-26T12:09:10.539146+00:00,2026-04-01T14:35:23.918592+00:00,146.4,madmobile,cloud-shared-services
+234,CLOUD-1037: add rs2-bankworks-parser-service to payments microservices variable,Mike Nunez,2026-03-30T17:46:56.295433+00:00,2026-03-30T17:51:43.836594+00:00,0.1,madmobile,cloud-shared-services
+233,feat: upgrade shared-services cluster to 1.33,Matthew Griffin,2026-03-27T18:03:12.386525+00:00,2026-03-27T18:52:26.482242+00:00,0.8,madmobile,cloud-shared-services
+231,fix: repo name,Matias Lopez Riglos,2026-03-18T15:00:21.922863+00:00,2026-03-18T15:03:27.396780+00:00,0.1,madmobile,cloud-shared-services
+230,fix: missing repo,Matias Lopez Riglos,2026-03-13T18:59:22.821287+00:00,2026-03-13T19:06:12.813575+00:00,0.1,madmobile,cloud-shared-services
+229,CLOUD-996: more updates to fix permission for madmobile write of CA to trycake,Mike Nunez,2026-03-10T17:16:11.429903+00:00,2026-03-10T18:23:22.935996+00:00,1.1,madmobile,cloud-shared-services
+228,CLOUD-996: add allow back for madpayments,Mike Nunez,2026-03-10T15:54:49.953177+00:00,2026-03-10T16:49:28.511305+00:00,0.9,madmobile,cloud-shared-services
+227,CLOUD-996: revert permissions and put in policy-runner,Mike Nunez,2026-03-10T15:25:58.819261+00:00,2026-03-10T15:35:02.185266+00:00,0.2,madmobile,cloud-shared-services
+226,CLOUD-996: enhance trycake repository policy for CI/CD access,Mike Nunez,2026-03-10T14:46:35.240270+00:00,2026-03-10T15:10:36.623317+00:00,0.4,madmobile,cloud-shared-services
+225,feat: new cf tunnel for IT,Matias Lopez Riglos,2026-03-05T16:42:47.132506+00:00,2026-03-05T17:06:07.826320+00:00,0.4,madmobile,cloud-shared-services
+224,add cake-device-management ECR repository,Orlando Jimenez,2026-02-18T20:37:27.044178+00:00,2026-02-18T20:40:07.149208+00:00,0.0,madmobile,cloud-shared-services
+223,add cronjobs to the helm ecr,Orlando Jimenez,2026-02-18T14:02:28.514176+00:00,2026-02-18T14:18:40.451788+00:00,0.3,madmobile,cloud-shared-services
+222,CLOUD-977: Implement GM Management pipeline and Terraform configurations,Mike Nunez,2026-02-13T13:54:09.383902+00:00,2026-02-17T15:34:46.798559+00:00,97.7,madmobile,cloud-shared-services
+221,add more allowable ecr repos for dual ecr updates,Mike Nunez,2026-02-04T17:45:30.977812+00:00,2026-02-04T17:55:15.829500+00:00,0.2,madmobile,cloud-shared-services
+220,CM-279 add toastique.madmobile.ai dns delegation,Orlando Jimenez,2026-02-03T20:30:06.256823+00:00,2026-02-03T20:35:08.736681+00:00,0.1,madmobile,cloud-shared-services
+219,fix: pin modules at 3.1.0,Matthew Griffin,2026-01-14T16:15:43.886925+00:00,2026-01-14T16:21:16.028272+00:00,0.1,madmobile,cloud-shared-services
+218,fix: add a repository policy for trycake,Matthew Griffin,2026-01-13T20:11:24.309023+00:00,2026-01-14T16:01:50.170337+00:00,19.8,madmobile,cloud-shared-services
+217,CM-226 give restaurant's ECR access to the shared prod cluster,Orlando Jimenez,2026-01-07T17:33:32.957099+00:00,2026-01-07T17:58:51.166228+00:00,0.4,madmobile,cloud-shared-services
+216,add shop-fan-out ECR repository,Orlando Jimenez,2026-01-05T18:54:04.590777+00:00,2026-01-05T18:57:26.057078+00:00,0.1,madmobile,cloud-shared-services
+163,upgrade cluster to 1.34,Matthew Griffin,2026-04-01T19:22:12.032336+00:00,2026-04-01T20:59:58.826346+00:00,1.6,madmobile,cloud-shared-development
+162,CLOUD-1034 cluster upgrade,Matthew Griffin,2026-03-27T17:55:09.924615+00:00,2026-03-27T20:25:50.039347+00:00,2.5,madmobile,cloud-shared-development
+161,CM-346 add 6380 ingress rule for redis replicas,Orlando Jimenez,2026-03-19T23:12:14.271102+00:00,2026-03-19T23:48:52.543415+00:00,0.6,madmobile,cloud-shared-development
+160,CM-346 add redis for cake services,Orlando Jimenez,2026-03-19T13:50:31.400304+00:00,2026-03-19T14:15:14.770691+00:00,0.4,madmobile,cloud-shared-development
+159,update karpenter sa namespace,Orlando Jimenez,2026-03-06T00:02:52.370175+00:00,2026-03-06T00:09:14.665936+00:00,0.1,madmobile,cloud-shared-development
+158,update karpenter tags,Orlando Jimenez,2026-03-05T22:58:06.042745+00:00,2026-03-05T23:02:44.864006+00:00,0.1,madmobile,cloud-shared-development
+157,fix: missing subnets for rs2,Matias Lopez Riglos,2026-03-05T21:09:33.557712+00:00,2026-03-05T21:12:13.443689+00:00,0.0,madmobile,cloud-shared-development
+156,fix: revert back to tcp,Matias Lopez Riglos,2026-03-04T20:51:40.757657+00:00,2026-03-04T21:42:52.980720+00:00,0.9,madmobile,cloud-shared-development
+155,fix: stale tcp connections,Matias Lopez Riglos,2026-03-03T18:00:15.974900+00:00,2026-03-03T18:15:05.335056+00:00,0.2,madmobile,cloud-shared-development
+154,fix: removing unneded routes,Matias Lopez Riglos,2026-02-27T18:23:56.649128+00:00,2026-02-27T18:28:45.751187+00:00,0.1,madmobile,cloud-shared-development
+153,feat: small node for services hitting RS2 sftp using the client vpn,Matias Lopez Riglos,2026-02-27T15:48:34.454977+00:00,2026-02-27T17:27:08.432362+00:00,1.6,madmobile,cloud-shared-development
+152,fix: add missing routes for rs2,Matias Lopez Riglos,2026-02-27T13:15:14.830080+00:00,2026-02-27T14:28:51.077123+00:00,1.2,madmobile,cloud-shared-development
+151,add karpenter tag to all the private subnets,Orlando Jimenez,2026-02-24T18:10:18.082622+00:00,2026-02-24T18:33:08.237788+00:00,0.4,madmobile,cloud-shared-development
+150,adjust values based on the real state of the nodegroups,Orlando Jimenez,2026-02-24T17:42:47.817683+00:00,2026-02-24T17:51:20.631045+00:00,0.1,madmobile,cloud-shared-development
+149,add missing karpenter tags,Orlando Jimenez,2026-02-24T16:17:45.996869+00:00,2026-02-24T17:29:46.371925+00:00,1.2,madmobile,cloud-shared-development
+148,fix: add the routes to all associated subnets.,Matthew Griffin,2026-01-16T20:00:45.911220+00:00,2026-01-16T20:04:43.659857+00:00,0.1,madmobile,cloud-shared-development
+147,feat: add route and authorization for list of target IPs,Matthew Griffin,2026-01-16T19:26:04.093165+00:00,2026-01-16T19:28:10.900993+00:00,0.0,madmobile,cloud-shared-development
+146,feat: add custom security group,Matthew Griffin,2026-01-16T16:16:34.032415+00:00,2026-01-16T16:30:54.500259+00:00,0.2,madmobile,cloud-shared-development
+145,fix: remove client certificate-authentication,Matthew Griffin,2026-01-15T22:53:37.110131+00:00,2026-01-15T22:53:50.763335+00:00,0.0,madmobile,cloud-shared-development
+144,Rs2 client vpn and routing,Matias Lopez Riglos,2026-01-15T13:41:33.414821+00:00,2026-01-15T13:49:11.912036+00:00,0.1,madmobile,cloud-shared-development
+143,feat: test RS2 vpn tunnel,Matias Lopez Riglos,2026-01-06T19:17:12.744108+00:00,2026-01-06T19:35:46.281297+00:00,0.3,madmobile,cloud-shared-development
+32,chore: DD update needed for REST-17452,Matthew Crumley,2026-04-01T11:24:35.366706+00:00,2026-04-01T17:45:13.130252+00:00,6.3,syscolabsconf,menu-sync-agent

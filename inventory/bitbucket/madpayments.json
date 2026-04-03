@@ -1,0 +1,1238 @@
+{
+  "workspace": "madpayments",
+  "timestamp": "2026-04-03T03:17:29.530873+00:00",
+  "total_repos": 80,
+  "active_repos": 52,
+  "stale_repos": 28,
+  "languages": {
+    "unknown": 53,
+    "typescript": 22,
+    "javascript": 1,
+    "java": 1,
+    "c#": 1,
+    "swift": 1,
+    "kotlin": 1
+  },
+  "projects": {
+    "Domain Services": 29,
+    "Supporting Resources": 15,
+    "Integrations": 12,
+    "Front-End": 3,
+    "Libraries": 9,
+    "Infrastructure": 8,
+    "Applications": 4
+  },
+  "pipeline_count_in_active": 45,
+  "repos": [
+    {
+      "slug": "merchant-service",
+      "name": "merchant-service",
+      "language": "",
+      "size": 15269232,
+      "updated_on": "2026-04-02T15:56:30.662152+00:00",
+      "created_on": "2022-06-28T16:13:42.418007+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 23,
+        "merged_last_30d": 3
+      }
+    },
+    {
+      "slug": "bin-service-java",
+      "name": "bin-service-java",
+      "language": "",
+      "size": 827040,
+      "updated_on": "2024-10-02T16:45:25.987856+00:00",
+      "created_on": "2022-06-28T16:15:12.260384+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Domain Services",
+      "has_pipelines": null
+    },
+    {
+      "slug": "payment-docs",
+      "name": "payment-docs",
+      "language": "",
+      "size": 23013721,
+      "updated_on": "2025-09-10T19:47:42.394774+00:00",
+      "created_on": "2022-06-29T18:05:33.624922+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "crypto-service",
+      "name": "crypto-service",
+      "language": "",
+      "size": 2476053,
+      "updated_on": "2026-01-21T20:35:34.016882+00:00",
+      "created_on": "2022-08-09T16:56:01.166110+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 0,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "boarding-portal",
+      "name": "boarding-portal",
+      "language": "",
+      "size": 9674248,
+      "updated_on": "2026-02-15T23:14:56.400039+00:00",
+      "created_on": "2022-08-30T19:18:50.874466+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 19,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "boarding-service",
+      "name": "boarding-service",
+      "language": "typescript",
+      "size": 1889400,
+      "updated_on": "2026-02-20T06:40:00.725102+00:00",
+      "created_on": "2022-10-03T17:43:01.071208+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 24,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "mastercard-cloud-service",
+      "name": "mastercard-cloud-service",
+      "language": "",
+      "size": 8796307,
+      "updated_on": "2026-02-20T08:35:32.110789+00:00",
+      "created_on": "2022-11-08T15:35:32.801986+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 23,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "descriptor-service",
+      "name": "descriptor-service",
+      "language": "",
+      "size": 5181150,
+      "updated_on": "2026-02-11T03:09:45.368737+00:00",
+      "created_on": "2022-12-01T18:59:22.062664+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 24,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "threshold-service",
+      "name": "threshold-service",
+      "language": "",
+      "size": 6718905,
+      "updated_on": "2026-02-10T19:05:04.446524+00:00",
+      "created_on": "2022-12-12T21:01:40.485169+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 24,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "jwt-service",
+      "name": "jwt-service",
+      "language": "",
+      "size": 5102719,
+      "updated_on": "2026-02-20T08:02:08.480951+00:00",
+      "created_on": "2023-01-10T18:20:36.620128+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 18,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "emaf-parsing-service",
+      "name": "emaf-parsing-service",
+      "language": "",
+      "size": 3116798,
+      "updated_on": "2026-02-19T16:44:19.782886+00:00",
+      "created_on": "2023-02-07T19:17:56.139083+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 22,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "fee-service",
+      "name": "fee-service",
+      "language": "typescript",
+      "size": 9694804,
+      "updated_on": "2026-02-20T06:45:43.269467+00:00",
+      "created_on": "2023-03-29T20:02:43.564040+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 24,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "unified-payments-portal",
+      "name": "unified-payments-portal",
+      "language": "",
+      "size": 11739572,
+      "updated_on": "2026-02-11T01:16:27.362215+00:00",
+      "created_on": "2023-04-05T15:20:20.654049+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Front-End",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 19,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "unified-payments-portal-service",
+      "name": "unified-payments-portal-service",
+      "language": "",
+      "size": 20729879,
+      "updated_on": "2026-02-20T08:52:38.101764+00:00",
+      "created_on": "2023-04-05T15:22:06.137459+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Front-End",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 30,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "portal-summary-service",
+      "name": "portal-summary-service",
+      "language": "",
+      "size": 11069691,
+      "updated_on": "2025-10-27T15:33:21.936673+00:00",
+      "created_on": "2023-04-25T17:22:22.796927+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Domain Services",
+      "has_pipelines": null
+    },
+    {
+      "slug": "settlement-service",
+      "name": "settlement-service",
+      "language": "",
+      "size": 2901138,
+      "updated_on": "2026-02-20T08:07:52.289712+00:00",
+      "created_on": "2023-05-25T22:23:12.384532+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 23,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "payment-common-lib",
+      "name": "payment-common-lib",
+      "language": "typescript",
+      "size": 39733876,
+      "updated_on": "2026-02-07T14:54:51.113332+00:00",
+      "created_on": "2023-05-26T19:33:28.127987+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Libraries",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "log-storage-service",
+      "name": "log-storage-service",
+      "language": "typescript",
+      "size": 4675698,
+      "updated_on": "2026-02-10T22:15:25.643614+00:00",
+      "created_on": "2023-07-06T18:02:07.775526+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 24,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "payments-non-prod",
+      "name": "payments-non-prod",
+      "language": "",
+      "size": 1579089,
+      "updated_on": "2023-11-24T20:48:25.330446+00:00",
+      "created_on": "2023-08-31T14:55:00.439058+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Infrastructure",
+      "has_pipelines": null
+    },
+    {
+      "slug": "payment-switch",
+      "name": "payment-switch",
+      "language": "",
+      "size": 21346853,
+      "updated_on": "2026-02-20T07:49:21.427727+00:00",
+      "created_on": "2023-09-07T17:21:00.635271+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 6,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "nestjs-common-lib",
+      "name": "nestjs-common-lib",
+      "language": "typescript",
+      "size": 3931346,
+      "updated_on": "2026-02-12T17:27:11.413588+00:00",
+      "created_on": "2023-09-15T18:56:09.640541+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Libraries",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 13,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "helm",
+      "name": "helm",
+      "language": "",
+      "size": 2084649,
+      "updated_on": "2024-02-09T21:23:45.928332+00:00",
+      "created_on": "2023-09-19T15:21:22.966349+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "testing-pipeline",
+      "name": "testing-pipeline",
+      "language": "",
+      "size": 130195,
+      "updated_on": "2024-10-08T21:05:17.343047+00:00",
+      "created_on": "2023-09-19T20:00:53.896941+00:00",
+      "default_branch": "master",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "visa-cybersource-transaction-service",
+      "name": "visa-cybersource-transaction-service",
+      "language": "",
+      "size": 12423038,
+      "updated_on": "2026-03-17T05:33:30.980924+00:00",
+      "created_on": "2023-09-20T16:52:36.463318+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 31,
+        "merged_last_30d": 1
+      }
+    },
+    {
+      "slug": "visa-cybersource-boarding-service",
+      "name": "visa-cybersource-boarding-service",
+      "language": "typescript",
+      "size": 5826535,
+      "updated_on": "2026-03-13T15:45:17.294026+00:00",
+      "created_on": "2023-10-02T23:57:06.020124+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 26,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "nestjs-event-sourcing",
+      "name": "nestjs-event-sourcing",
+      "language": "",
+      "size": 2112992,
+      "updated_on": "2024-08-01T19:06:08.989198+00:00",
+      "created_on": "2023-10-03T16:57:52.604409+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Libraries",
+      "has_pipelines": null
+    },
+    {
+      "slug": "accounting-service",
+      "name": "accounting-service",
+      "language": "",
+      "size": 8873770,
+      "updated_on": "2026-02-11T01:43:17.204774+00:00",
+      "created_on": "2023-10-11T20:22:55.935546+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 26,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "openapi-typescript-generator",
+      "name": "openapi-typescript-generator",
+      "language": "",
+      "size": 1431806,
+      "updated_on": "2025-06-04T23:06:46.072384+00:00",
+      "created_on": "2023-11-20T19:05:50.500230+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "billing-service",
+      "name": "billing-service",
+      "language": "typescript",
+      "size": 4345504,
+      "updated_on": "2026-02-10T21:58:30.172742+00:00",
+      "created_on": "2023-11-27T09:08:24.221713+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "gitops",
+      "name": "gitOps",
+      "language": "",
+      "size": 7072678,
+      "updated_on": "2026-02-23T14:35:24.490828+00:00",
+      "created_on": "2023-11-28T21:30:42.085398+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Infrastructure",
+      "has_pipelines": null,
+      "has_pipeline_config": false,
+      "pr_summary": {
+        "open_count": 1,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "receipt-view-generator-lib",
+      "name": "receipt-view-generator-lib",
+      "language": "",
+      "size": 1264491,
+      "updated_on": "2024-11-14T16:33:27.807086+00:00",
+      "created_on": "2023-12-04T15:30:51.481764+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Libraries",
+      "has_pipelines": null
+    },
+    {
+      "slug": "rp-mongo-connector",
+      "name": "rp-mongo-connector",
+      "language": "",
+      "size": 50454,
+      "updated_on": "2023-12-07T21:45:53.435365+00:00",
+      "created_on": "2023-12-07T21:45:50.959017+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "mad-payments-elo-m60",
+      "name": "mad-payments-elo-m60",
+      "language": "",
+      "size": 81517308,
+      "updated_on": "2026-03-20T14:05:11.131347+00:00",
+      "created_on": "2023-12-10T21:03:33.895968+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Applications",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 6,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "timer-service",
+      "name": "timer-service",
+      "language": "typescript",
+      "size": 3806789,
+      "updated_on": "2026-02-11T01:23:26.773199+00:00",
+      "created_on": "2023-12-12T21:14:25.759800+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 18,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "payments-portal-prod",
+      "name": "payments-portal-prod",
+      "language": "",
+      "size": 195020,
+      "updated_on": "2026-03-25T20:04:41.863574+00:00",
+      "created_on": "2023-12-15T20:36:47.696408+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Infrastructure",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 0,
+        "merged_last_30d": 4
+      }
+    },
+    {
+      "slug": "test-event-emitter",
+      "name": "test-event-emitter",
+      "language": "",
+      "size": 1509386,
+      "updated_on": "2026-02-20T09:05:13.616784+00:00",
+      "created_on": "2024-01-23T09:11:55.674613+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Supporting Resources",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 4,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "payout-service",
+      "name": "payout-service",
+      "language": "typescript",
+      "size": 6211003,
+      "updated_on": "2026-02-10T23:09:30.499242+00:00",
+      "created_on": "2024-02-21T22:42:56.385464+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "giftcard-service",
+      "name": "giftcard-service",
+      "language": "javascript",
+      "size": 641199,
+      "updated_on": "2025-12-31T02:15:54.628860+00:00",
+      "created_on": "2024-03-08T03:16:33.094608+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Integrations",
+      "has_pipelines": null
+    },
+    {
+      "slug": "payments-docker-compose",
+      "name": "payments-docker-compose",
+      "language": "",
+      "size": 7747690,
+      "updated_on": "2026-02-02T23:52:05.240442+00:00",
+      "created_on": "2024-03-26T02:30:43.476248+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Supporting Resources",
+      "has_pipelines": null,
+      "has_pipeline_config": false,
+      "pr_summary": {
+        "open_count": 4,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "legacy-gateway-service",
+      "name": "legacy-gateway-service",
+      "language": "typescript",
+      "size": 1558539,
+      "updated_on": "2025-12-30T23:08:45.056181+00:00",
+      "created_on": "2024-04-05T05:59:30.527582+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Integrations",
+      "has_pipelines": null
+    },
+    {
+      "slug": "svs-giftcard-transaction-service",
+      "name": "svs-giftcard-transaction-service",
+      "language": "typescript",
+      "size": 871928,
+      "updated_on": "2026-02-11T01:33:46.060368+00:00",
+      "created_on": "2024-04-11T18:23:31.255095+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 3,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "money-transfer-service",
+      "name": "money-transfer-service",
+      "language": "typescript",
+      "size": 3670213,
+      "updated_on": "2026-02-11T17:58:36.650294+00:00",
+      "created_on": "2024-04-18T09:02:41.621271+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "wp-money-transfer-service",
+      "name": "wp-money-transfer-service",
+      "language": "typescript",
+      "size": 3284973,
+      "updated_on": "2026-02-18T18:01:16.702826+00:00",
+      "created_on": "2024-04-20T18:32:42.364889+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 3,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "rs2-bankworks-parser-service",
+      "name": "rs2-bankworks-parser-service",
+      "language": "",
+      "size": 1069283,
+      "updated_on": "2026-04-02T19:15:11.078176+00:00",
+      "created_on": "2024-05-17T00:27:30.258707+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 5,
+        "merged_last_30d": 4
+      }
+    },
+    {
+      "slug": "payment-sdk",
+      "name": "payment-sdk",
+      "language": "",
+      "size": 771730,
+      "updated_on": "2025-11-13T14:45:08.005130+00:00",
+      "created_on": "2024-06-06T13:16:15.399664+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Libraries",
+      "has_pipelines": null
+    },
+    {
+      "slug": "wp-express-service",
+      "name": "wp-express-service",
+      "language": "typescript",
+      "size": 11798245,
+      "updated_on": "2026-02-18T14:37:22.622224+00:00",
+      "created_on": "2024-06-19T11:11:54.744269+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 4,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "mad-payment-docs",
+      "name": "mad-payment-docs",
+      "language": "",
+      "size": 54628,
+      "updated_on": "2024-07-19T12:43:27.715417+00:00",
+      "created_on": "2024-07-19T12:43:25.394547+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "device-service",
+      "name": "device-service",
+      "language": "typescript",
+      "size": 10230365,
+      "updated_on": "2026-02-26T17:00:15.603101+00:00",
+      "created_on": "2024-07-31T16:58:01.900240+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 3,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "merchant-migration-tool",
+      "name": "Merchant Migration Tool",
+      "language": "",
+      "size": 232471,
+      "updated_on": "2025-10-07T18:17:54.657664+00:00",
+      "created_on": "2024-08-02T18:17:45.125876+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Applications",
+      "has_pipelines": null
+    },
+    {
+      "slug": "configuration-service",
+      "name": "configuration-service",
+      "language": "typescript",
+      "size": 3056185,
+      "updated_on": "2026-02-10T20:21:31.525675+00:00",
+      "created_on": "2024-08-12T16:25:23.179334+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "wp-express-boarding-service",
+      "name": "wp-express-boarding-service",
+      "language": "typescript",
+      "size": 1922366,
+      "updated_on": "2026-02-19T17:34:07.342315+00:00",
+      "created_on": "2024-08-22T09:48:28.700942+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 6,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "terminal-service",
+      "name": "terminal-service",
+      "language": "",
+      "size": 2177551,
+      "updated_on": "2025-10-27T15:49:28.025268+00:00",
+      "created_on": "2024-08-23T06:05:00.844253+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Domain Services",
+      "has_pipelines": null
+    },
+    {
+      "slug": "spec",
+      "name": "spec",
+      "language": "",
+      "size": 233172,
+      "updated_on": "2025-11-13T16:31:10.908845+00:00",
+      "created_on": "2024-08-23T20:25:59.922821+00:00",
+      "default_branch": "master",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "v1-gateway-proxy-v2",
+      "name": "v1-gateway-proxy-v2",
+      "language": "",
+      "size": 409196,
+      "updated_on": "2026-02-10T20:21:14.617005+00:00",
+      "created_on": "2024-08-28T01:32:23.126107+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Infrastructure",
+      "has_pipelines": null,
+      "has_pipeline_config": false,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "bin-service",
+      "name": "bin-service",
+      "language": "typescript",
+      "size": 1139431,
+      "updated_on": "2026-02-11T03:48:28.730420+00:00",
+      "created_on": "2024-10-03T14:49:38.521042+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 3,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "merchant-data-migration-tool",
+      "name": "merchant-data-migration-tool",
+      "language": "java",
+      "size": 393114,
+      "updated_on": "2026-04-01T15:55:43.643769+00:00",
+      "created_on": "2024-11-05T21:40:19.915759+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Supporting Resources",
+      "has_pipelines": null,
+      "has_pipeline_config": false,
+      "pr_summary": {
+        "open_count": 1,
+        "merged_last_30d": 2
+      }
+    },
+    {
+      "slug": "test-automation",
+      "name": "test-automation",
+      "language": "",
+      "size": 2722559,
+      "updated_on": "2025-11-13T22:04:09.128582+00:00",
+      "created_on": "2024-11-19T15:21:08.344144+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "gitops-payments",
+      "name": "gitops-payments",
+      "language": "",
+      "size": 1855422,
+      "updated_on": "2026-04-02T21:26:10.958668+00:00",
+      "created_on": "2024-11-21T20:13:06.157103+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Infrastructure",
+      "has_pipelines": null,
+      "has_pipeline_config": false,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 5
+      }
+    },
+    {
+      "slug": "qa-automation-kustomization",
+      "name": "qa-automation-kustomization",
+      "language": "",
+      "size": 366691,
+      "updated_on": "2025-07-01T15:55:27.091097+00:00",
+      "created_on": "2024-12-12T23:37:14.920765+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Infrastructure",
+      "has_pipelines": null
+    },
+    {
+      "slug": "key-rotation-tool",
+      "name": "key-rotation-tool",
+      "language": "c#",
+      "size": 1017094,
+      "updated_on": "2025-03-05T11:13:44.076121+00:00",
+      "created_on": "2024-12-16T07:29:55.735901+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "payments-prod-us",
+      "name": "payments-prod-us",
+      "language": "",
+      "size": 323295,
+      "updated_on": "2026-03-18T21:22:25.367587+00:00",
+      "created_on": "2025-01-08T19:50:27.034597+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Infrastructure",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 0,
+        "merged_last_30d": 3
+      }
+    },
+    {
+      "slug": "gitops-sandbox",
+      "name": "gitops-sandbox",
+      "language": "",
+      "size": 1816282,
+      "updated_on": "2025-03-28T14:27:06.675209+00:00",
+      "created_on": "2025-01-30T14:21:34.178052+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Infrastructure",
+      "has_pipelines": null
+    },
+    {
+      "slug": "virtual-terminal",
+      "name": "virtual-terminal",
+      "language": "",
+      "size": 2694568,
+      "updated_on": "2026-02-04T02:32:30.798766+00:00",
+      "created_on": "2025-02-07T21:14:12.494064+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Front-End",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 3,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "payments-integration-jests",
+      "name": "payments-integration-jests",
+      "language": "",
+      "size": 888167,
+      "updated_on": "2025-03-13T19:38:56.534442+00:00",
+      "created_on": "2025-02-28T19:01:33.538938+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "payment-common-lib-swift",
+      "name": "payment-common-lib-swift",
+      "language": "swift",
+      "size": 3826477,
+      "updated_on": "2025-08-04T09:37:11.907831+00:00",
+      "created_on": "2025-04-21T15:42:17.907101+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Libraries",
+      "has_pipelines": null
+    },
+    {
+      "slug": "wp-bin-service",
+      "name": "wp-bin-service",
+      "language": "kotlin",
+      "size": 1372892,
+      "updated_on": "2025-11-30T23:01:16.907850+00:00",
+      "created_on": "2025-05-06T17:29:53.177486+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Domain Services",
+      "has_pipelines": null
+    },
+    {
+      "slug": "cryptography-service",
+      "name": "cryptography-service",
+      "language": "",
+      "size": 1843566,
+      "updated_on": "2026-01-21T18:51:57.754317+00:00",
+      "created_on": "2025-05-14T21:46:01.135540+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "factor4-service",
+      "name": "factor4-service",
+      "language": "typescript",
+      "size": 1474057,
+      "updated_on": "2026-02-18T09:16:08.343307+00:00",
+      "created_on": "2025-05-27T18:03:03.526243+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 4,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "qualys-agent",
+      "name": "qualys-agent",
+      "language": "",
+      "size": 12051078,
+      "updated_on": "2025-06-17T18:40:58.068096+00:00",
+      "created_on": "2025-06-11T20:07:05.967716+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Supporting Resources",
+      "has_pipelines": null
+    },
+    {
+      "slug": "factor4-boarding-service",
+      "name": "factor4-boarding-service",
+      "language": "typescript",
+      "size": 257741,
+      "updated_on": "2026-02-18T08:49:56.968435+00:00",
+      "created_on": "2025-06-17T16:40:03.636404+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Integrations",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 4,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "rs2-boarding-service",
+      "name": "rs2-boarding-service",
+      "language": "typescript",
+      "size": 3172292,
+      "updated_on": "2026-03-31T14:08:08.298078+00:00",
+      "created_on": "2025-07-28T09:27:58.428459+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 1,
+        "merged_last_30d": 3
+      }
+    },
+    {
+      "slug": "woocommerce-cake-plugin",
+      "name": "woocommerce-cake-plugin",
+      "language": "",
+      "size": 152141,
+      "updated_on": "2025-08-20T13:53:45.895549+00:00",
+      "created_on": "2025-08-04T19:28:24.946527+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Integrations",
+      "has_pipelines": null
+    },
+    {
+      "slug": "l3-core-lib",
+      "name": "l3-core-lib",
+      "language": "",
+      "size": 889065,
+      "updated_on": "2026-03-19T20:21:33.998966+00:00",
+      "created_on": "2025-08-28T15:09:14.048316+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Libraries",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 0,
+        "merged_last_30d": 5
+      }
+    },
+    {
+      "slug": "l3-android-lib",
+      "name": "l3-android-lib",
+      "language": "",
+      "size": 467048,
+      "updated_on": "2025-10-16T18:09:22.417686+00:00",
+      "created_on": "2025-08-28T15:09:39.587954+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Libraries",
+      "has_pipelines": null
+    },
+    {
+      "slug": "idtechsdkwrapperpoc",
+      "name": "IDTechSDKWrapperPOC",
+      "language": "",
+      "size": 33348,
+      "updated_on": "2025-09-19T16:07:47.163367+00:00",
+      "created_on": "2025-09-19T16:07:47.008950+00:00",
+      "default_branch": "main",
+      "is_active": false,
+      "project": "Applications",
+      "has_pipelines": null
+    },
+    {
+      "slug": "mad-payments-vp3350",
+      "name": "mad-payments-vp3350",
+      "language": "",
+      "size": 9997523,
+      "updated_on": "2026-04-02T21:27:13.601418+00:00",
+      "created_on": "2025-10-07T18:15:54.359534+00:00",
+      "default_branch": "dev",
+      "is_active": true,
+      "project": "Applications",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 2,
+        "merged_last_30d": 13
+      }
+    },
+    {
+      "slug": "madpayments-devices-idtech-neo",
+      "name": "madpayments-devices-idtech-neo",
+      "language": "",
+      "size": 45553639,
+      "updated_on": "2026-04-02T21:30:22.245657+00:00",
+      "created_on": "2025-10-15T14:20:05.514919+00:00",
+      "default_branch": "develop",
+      "is_active": true,
+      "project": "Libraries",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 1,
+        "merged_last_30d": 6
+      }
+    },
+    {
+      "slug": "mad-pipelines",
+      "name": "mad-pipelines",
+      "language": "",
+      "size": 30310,
+      "updated_on": "2026-04-01T15:09:37.320329+00:00",
+      "created_on": "2025-10-24T18:56:53.497145+00:00",
+      "default_branch": "main",
+      "is_active": true,
+      "project": "Supporting Resources",
+      "has_pipelines": null,
+      "has_pipeline_config": true,
+      "pr_summary": {
+        "open_count": 0,
+        "merged_last_30d": 0
+      }
+    },
+    {
+      "slug": "sardine-service",
+      "name": "Sardine Service",
+      "language": "",
+      "size": 576840,
+      "updated_on": "2026-03-26T14:30:22.890279+00:00",
+      "created_on": "2025-12-02T18:32:47.112724+00:00",
+      "default_branch": "dev",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null
+    },
+    {
+      "slug": "cybersource-bin-service",
+      "name": "cybersource-bin-service",
+      "language": "typescript",
+      "size": 14727367,
+      "updated_on": "2026-04-01T21:13:22.010199+00:00",
+      "created_on": "2026-04-01T20:59:04.517035+00:00",
+      "default_branch": "feature/support-visa-bin-file",
+      "is_active": true,
+      "project": "Domain Services",
+      "has_pipelines": null
+    }
+  ]
+}

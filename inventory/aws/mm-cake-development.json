@@ -1,0 +1,5325 @@
+{
+  "profile": "mm-cake-development",
+  "account_id": "230930891673",
+  "arn": "arn:aws:sts::230930891673:assumed-role/AWSReservedSSO_Global-Audit-RO_5b67334952002b8e/adam.lazarus@madmobile.com",
+  "timestamp": "2026-04-03T03:13:32.407509+00:00",
+  "regions": {
+    "us-east-1": {
+      "ec2_instances": [
+        {
+          "id": "i-0c1fb9c48a0b437dd",
+          "type": "t3a.medium",
+          "state": "running",
+          "name": "dev-qa-payment-jenkins"
+        },
+        {
+          "id": "i-03cdb560a7b83cc66",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "qa-payment-web-us-east-1a-v1"
+        },
+        {
+          "id": "i-03d3718637d9d4390",
+          "type": "t2.small",
+          "state": "running",
+          "name": "dev-qa-payment-manage-bastion"
+        },
+        {
+          "id": "i-0707dbd2893628fa4",
+          "type": "t3.large",
+          "state": "running",
+          "name": "dev-qa-payment-monitor"
+        },
+        {
+          "id": "i-0935d6c9ce7ba4709",
+          "type": "m5.large",
+          "state": "running",
+          "name": "QE-Automation-New"
+        },
+        {
+          "id": "i-08a1ee8b00c89beba",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "neo4j-2"
+        },
+        {
+          "id": "i-0db15fa3cf26fd81a",
+          "type": "t2.small",
+          "state": "running",
+          "name": "dev-payment-gateway-ecs-bastion"
+        },
+        {
+          "id": "i-00a289a4b0a960b63",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "dev-payment-web-us-east-1b-jumpbox"
+        },
+        {
+          "id": "i-05004f4238ce6d8ee",
+          "type": "i3.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastc-data1"
+        },
+        {
+          "id": "i-090f717ab825fde63",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "qa-data-platform-kafka2"
+        },
+        {
+          "id": "i-047553914737dffc9",
+          "type": "i3.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastic-data4"
+        },
+        {
+          "id": "i-0faaafc2f76132923",
+          "type": "t2.small",
+          "state": "running",
+          "name": "dev-KeycloakServer-1"
+        },
+        {
+          "id": "i-0f838c4afbf1b5cd2",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "dev-perf-UAReportsAPI-2"
+        },
+        {
+          "id": "i-09f36673baea48545",
+          "type": "t2.micro",
+          "state": "running",
+          "name": "release-tracker"
+        },
+        {
+          "id": "i-06500bc3385af0948",
+          "type": "t2.large",
+          "state": "running",
+          "name": "Dev-Jenkins-ZAP"
+        },
+        {
+          "id": "i-00f932a2a7fda9933",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "pos4-esb-v2"
+        },
+        {
+          "id": "i-095c9e7e822b72e48",
+          "type": "m3.2xlarge",
+          "state": "running",
+          "name": "pos4-db (couch)"
+        },
+        {
+          "id": "i-058a66ef65e0f93de",
+          "type": "m1.medium",
+          "state": "running",
+          "name": "pos4-order"
+        },
+        {
+          "id": "i-09a7fe2c0baa88192",
+          "type": "t2.large",
+          "state": "running",
+          "name": "pos4-menucore-db"
+        },
+        {
+          "id": "i-061a981fd9cfc80e4",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "pos4-menucore-api"
+        },
+        {
+          "id": "i-0bc67386221dc7eaf",
+          "type": "t3.xlarge",
+          "state": "running",
+          "name": "prometheus"
+        },
+        {
+          "id": "i-096155d886e53b128",
+          "type": "r4.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastc-master1"
+        },
+        {
+          "id": "i-063e93685c97f625f",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "qa-data-platform-kafka1"
+        },
+        {
+          "id": "i-0a0f8f64e877363c6",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "qa-data-platform-spark1"
+        },
+        {
+          "id": "i-0f300cf2e6cfd2708",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "qa-data-platform-spark2"
+        },
+        {
+          "id": "i-0fae4febbc423d0ec",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "qa-data-platform-spark3"
+        },
+        {
+          "id": "i-0017a41ddb5163bfa",
+          "type": "m4.large",
+          "state": "running",
+          "name": "dev-qa-build-slave"
+        },
+        {
+          "id": "i-027d91f275f3f550a",
+          "type": "m3.large",
+          "state": "running",
+          "name": "tst1-db (couch)"
+        },
+        {
+          "id": "i-065b819d605d16f8e",
+          "type": "m1.medium",
+          "state": "running",
+          "name": "tst1-order"
+        },
+        {
+          "id": "i-047c8ddf05a4b4aab",
+          "type": "t3a.medium",
+          "state": "running",
+          "name": "tst1-menucore-db"
+        },
+        {
+          "id": "i-0842e38c539b76039",
+          "type": "t3a.medium",
+          "state": "running",
+          "name": "tst1-menucore-api"
+        },
+        {
+          "id": "i-039e6ceb2802ba742",
+          "type": "i3.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastic-data3"
+        },
+        {
+          "id": "i-0a2bd84bb6e321705",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "qa-data-platform-spark4"
+        },
+        {
+          "id": "i-0f6353b76da10f285",
+          "type": "t3.small",
+          "state": "running",
+          "name": "ua-payments-bff-perf"
+        },
+        {
+          "id": "i-01b1eced882d6cfb9",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "tst1-fim-server"
+        },
+        {
+          "id": "i-0896a25a88b51cc37",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "tst1-replicator"
+        },
+        {
+          "id": "i-071cefd502275c0b1",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "tst1-esb-harden-os"
+        },
+        {
+          "id": "i-0240e25208fc5edfd",
+          "type": "t3a.small",
+          "state": "running",
+          "name": "pos4-replicator"
+        },
+        {
+          "id": "i-07449058a40785eb0",
+          "type": "m3.xlarge",
+          "state": "stopped",
+          "name": "tst1-api-new (ha-proxy)"
+        },
+        {
+          "id": "i-0642db1d319192386",
+          "type": "m5.large",
+          "state": "running",
+          "name": "pos4-janus-db-cluster"
+        },
+        {
+          "id": "i-0e1ed85df90e442f5",
+          "type": "t3a.medium",
+          "state": "stopped",
+          "name": "pos-esb-ansible"
+        },
+        {
+          "id": "i-0d888a9512334ca89",
+          "type": "r7a.medium",
+          "state": "running",
+          "name": "tst1-cassandra-node-1"
+        },
+        {
+          "id": "i-041dd246e7e99defa",
+          "type": "r7a.medium",
+          "state": "running",
+          "name": "tst1-cassandra-node-2"
+        },
+        {
+          "id": "i-0fe6db12a95f74391",
+          "type": "r7a.medium",
+          "state": "running",
+          "name": "tst1-cassandra-node-3"
+        },
+        {
+          "id": "i-0c84fa06138bf2b6f",
+          "type": "m4.large",
+          "state": "running",
+          "name": "Qcenter-Prod"
+        },
+        {
+          "id": "i-06fc6bc96bb0a9c50",
+          "type": "t3a.small",
+          "state": "running",
+          "name": "pos-db-jenkins"
+        },
+        {
+          "id": "i-09808d932b045d3b4",
+          "type": "t3.large",
+          "state": "running",
+          "name": "PX-giftcard-certification"
+        },
+        {
+          "id": "i-054d37d9662e7da61",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "Cake_QualysScaner_DEV"
+        },
+        {
+          "id": "i-08f7ff29441af6934",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "couchdb-server-1"
+        },
+        {
+          "id": "i-0a686076e3d809bc2",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "couchdb-server-3"
+        },
+        {
+          "id": "i-0dbf3a1cf3d228e50",
+          "type": "t3a.medium",
+          "state": "stopped",
+          "name": "pos2-esb-v2"
+        },
+        {
+          "id": "i-063486afcda3416d5",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": "pos-bvt2"
+        },
+        {
+          "id": "i-0a643b9f5caecddbc",
+          "type": "t3.large",
+          "state": "running",
+          "name": "pos-bvt1"
+        },
+        {
+          "id": "i-08a6bed2066ea9bd6",
+          "type": "t3.large",
+          "state": "running",
+          "name": "pos-bvt3"
+        },
+        {
+          "id": "i-06f269bf3b8a56c1f",
+          "type": "r7i.large",
+          "state": "running",
+          "name": "qa-jenkins-node"
+        },
+        {
+          "id": "i-0d164351ee1c15747",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "prod-cake-use1-ci-sonar-10.4.1"
+        },
+        {
+          "id": "i-0282938f5894059de",
+          "type": "t3.small",
+          "state": "running",
+          "name": "tst1-kds-couchdb-n2"
+        },
+        {
+          "id": "i-083484d2e9606ceba",
+          "type": "t3.small",
+          "state": "running",
+          "name": "tst1-kds-couchdb-n1"
+        },
+        {
+          "id": "i-027c140e6618f5bb3",
+          "type": "t3.small",
+          "state": "running",
+          "name": "tst1-kds-couchdb-n3"
+        },
+        {
+          "id": "i-00507ef76cac8b44f",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-rabbitmq-core02"
+        },
+        {
+          "id": "i-00d55c3c42a7441f6",
+          "type": "m5.large",
+          "state": "running",
+          "name": "dev-api-gateway-ecs-instances"
+        },
+        {
+          "id": "i-0fa51f25d248c9b49",
+          "type": "m5.large",
+          "state": "running",
+          "name": "dev-api-gateway-ecs-instances"
+        },
+        {
+          "id": "i-00d8560f2ab81e03e",
+          "type": "t2.large",
+          "state": "running",
+          "name": "qa-jenkins-slave-01"
+        },
+        {
+          "id": "i-0a61ac1d70baedf02",
+          "type": "t3a.medium",
+          "state": "running",
+          "name": "dev-payment-use1-jenkins-n1"
+        },
+        {
+          "id": "i-01afd0e1704a70f97",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-qa-db-migrate-3"
+        },
+        {
+          "id": "i-0fd867b6123d1b268",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "pos-bvt4"
+        },
+        {
+          "id": "i-0bea9145430c963bc",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "pos-bvt5"
+        },
+        {
+          "id": "i-00f051ed16e2f674f",
+          "type": "m5.large",
+          "state": "running",
+          "name": "dev-api-gateway-ecs-instances"
+        },
+        {
+          "id": "i-0a2c58291445796d5",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": "qe-payments-communicator"
+        },
+        {
+          "id": "i-0d4e8f05c4a4b6b3b",
+          "type": "t2.large",
+          "state": "running",
+          "name": "qa-jenkins-slave-01-new"
+        },
+        {
+          "id": "i-03b130b8abf793bdb",
+          "type": "m5a.large",
+          "state": "running",
+          "name": "dev-cake-use1-bitbucket-runner-instance"
+        },
+        {
+          "id": "i-08eeee207f03c2a50",
+          "type": "m4.large",
+          "state": "running",
+          "name": "pos4-mq-ecs"
+        },
+        {
+          "id": "i-092f0a2c81ac80a20",
+          "type": "c5a.xlarge",
+          "state": "running",
+          "name": "pos4-cassandra-node-new2"
+        },
+        {
+          "id": "i-00de2c775f893cc8e",
+          "type": "c5.xlarge",
+          "state": "running",
+          "name": "qa-api-gateway-ecs-instances"
+        },
+        {
+          "id": "i-01b254a767c780199",
+          "type": "t3a.small",
+          "state": "running",
+          "name": "pos4-kds-couchdb"
+        },
+        {
+          "id": "i-0859152b6493a0295",
+          "type": "r6i.xlarge",
+          "state": "running",
+          "name": "dev-graylog-master"
+        },
+        {
+          "id": "i-0478de270a7a76aca",
+          "type": "m4.large",
+          "state": "running",
+          "name": "ECS Instance - EC2ContainerService-qa-data-platform-ecs"
+        },
+        {
+          "id": "i-0e19d68fe3253737a",
+          "type": "m5a.xlarge",
+          "state": "running",
+          "name": "qa-payment-user1-web-1b-new"
+        },
+        {
+          "id": "i-0d3bd297da292e6d2",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "dev-graylog-data"
+        },
+        {
+          "id": "i-09a4b2946ad218727",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "minuteman-build-server"
+        },
+        {
+          "id": "i-099b47e62bfe17fa1",
+          "type": "i3.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastic-data5"
+        },
+        {
+          "id": "i-00e03dfd0d6f6f6cf",
+          "type": "i3.xlarge",
+          "state": "running",
+          "name": "qa-data-platform-elastc-data6"
+        },
+        {
+          "id": "i-0fa29493b8968d995",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "minuteman-build-node-slave"
+        },
+        {
+          "id": "i-0c4b354dfb3ee00d2",
+          "type": "m6a.large",
+          "state": "running",
+          "name": "qa-payment-web-us-east-1a-v2"
+        },
+        {
+          "id": "i-0a87ee8e977a6dee2",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0dbbfc432a8b33f03",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-029efc04782d48da1",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-005d785a2370e555a",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-019f88f500b5edc5d",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-09a0a45a23ffb78de",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-063e5a5514b813617",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0bb39bbd0202900a4",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "dev-cake-use1-api-ecs-asg"
+        },
+        {
+          "id": "i-061bbd45c3cb7c278",
+          "type": "t4g.nano",
+          "state": "running",
+          "name": "rds-bastion"
+        },
+        {
+          "id": "i-01d49393f14edd9c1",
+          "type": "t2.large",
+          "state": "running",
+          "name": "qa-jenkins-master"
+        },
+        {
+          "id": "i-070d942410d20cdd9",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-ecs-instances"
+        },
+        {
+          "id": "i-091112f93ea81b7b0",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": ""
+        },
+        {
+          "id": "i-0ecc5ad755bd99543",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": ""
+        },
+        {
+          "id": "i-06346cf327ade0365",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": ""
+        },
+        {
+          "id": "i-0d3dcd4c5e70e3c6b",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": "qe-payments-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-05cb75d6427301d10",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": "qe-payments-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0a540924dc4b17000",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": "qe-payments-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0d06b17c33ad3c4cb",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": "qe-payments-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0d7943e6083ec1e7e",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": ""
+        },
+        {
+          "id": "i-01d8230743b497617",
+          "type": "t3a.small",
+          "state": "running",
+          "name": "CTD-logo-Vulnerablity-Assessment"
+        },
+        {
+          "id": "i-0a77b35146f45a32a",
+          "type": "t3a.small",
+          "state": "running",
+          "name": "qe-payments-scheduler-1a-new"
+        },
+        {
+          "id": "i-0ce41ae03fe963751",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "qa-api-gateway-ecs-instances"
+        },
+        {
+          "id": "i-08e2c3a349ad583c3",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "qa-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0ac01b6be71f86b2b",
+          "type": "r7a.medium",
+          "state": "running",
+          "name": "prod-cassandra-node-2-backup"
+        },
+        {
+          "id": "i-083c0370708b6b7bc",
+          "type": "r7a.medium",
+          "state": "running",
+          "name": "prod-cassandra-node-3-backup"
+        },
+        {
+          "id": "i-020aa4ec11dbcda26",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-ecs-instances"
+        },
+        {
+          "id": "i-0f62a1ee399f8ee3c",
+          "type": "m4.large",
+          "state": "running",
+          "name": "Report-Portal-Prod"
+        },
+        {
+          "id": "i-007b184c0d5faf9f3",
+          "type": "m4.large",
+          "state": "running",
+          "name": "Qcenter-Test"
+        },
+        {
+          "id": "i-0fc8aa203c321618a",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0986e1dcd48c66f2e",
+          "type": "t4g.small",
+          "state": "running",
+          "name": "qa-dp-promtheus-graphana"
+        },
+        {
+          "id": "i-09f0b59ee7bb35ead",
+          "type": "r7a.medium",
+          "state": "running",
+          "name": "prod-cassandra-node-1-backup"
+        },
+        {
+          "id": "i-05116783bbea7ac1c",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-026a71e009794bf03",
+          "type": "t3a.medium",
+          "state": "running",
+          "name": ""
+        },
+        {
+          "id": "i-0cbc0cfdd38aac823",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-040765b9be500671f",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-payments-gateway-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0fddb8391cc456550",
+          "type": "t3a.xlarge",
+          "state": "running",
+          "name": ""
+        },
+        {
+          "id": "i-04179598d42fadf43",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-021f5badd6c917192",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0cd8bc18848cda81b",
+          "type": "c6i.xlarge",
+          "state": "running",
+          "name": "tst1-janus-shard-ecs-instances"
+        },
+        {
+          "id": "i-0fb3d5ca5db163078",
+          "type": "c5.4xlarge",
+          "state": "running",
+          "name": "ECS Instance - EC2ContainerService-pos4-janus-cluster-new"
+        },
+        {
+          "id": "i-04994f349d7fd9b69",
+          "type": "m6a.large",
+          "state": "running",
+          "name": "qa-data-platform-elastic-new-3"
+        },
+        {
+          "id": "i-096f37f0b324a0ce1",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-08cc8444f0e8e7a4c",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0af4e65db827b2af6",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0b39143b6f3a76b71",
+          "type": "c3.large",
+          "state": "stopped",
+          "name": "pos-4-couchDB-TEST"
+        },
+        {
+          "id": "i-069ec0aaf3ebe9358",
+          "type": "c3.large",
+          "state": "running",
+          "name": "pos4-couchDB-TEST-failover"
+        },
+        {
+          "id": "i-0f296c62ac9c36cb8",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-026fc847bf626639d",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-06e1045df1c0e10d6",
+          "type": "m6a.large",
+          "state": "running",
+          "name": "qa-data-platform-elastic-new-1"
+        },
+        {
+          "id": "i-02010cfd0726087fa",
+          "type": "m6a.large",
+          "state": "running",
+          "name": "qa-data-platform-elastic-new-2"
+        },
+        {
+          "id": "i-09b200e45d262e550",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0ff8f83450e8d7a39",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-01fc466b30a8bb295",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-07093e0c2cab9f848",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0aae7f22870b1e583",
+          "type": "c3.large",
+          "state": "running",
+          "name": "pos4-couchDB-TEST-Master"
+        },
+        {
+          "id": "i-00a99b1ae5bc97041",
+          "type": "c5.4xlarge",
+          "state": "running",
+          "name": "ECS Instance - EC2ContainerService-pos4-janus-cluster-new"
+        },
+        {
+          "id": "i-0e5f2ced729b5c64a",
+          "type": "t3a.2xlarge",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0fa4eee2ab4095e67",
+          "type": "t3.small",
+          "state": "running",
+          "name": "qe-payment-gateway-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-02452825e3877e434",
+          "type": "m4.large",
+          "state": "running",
+          "name": "ECS Instance - EC2ContainerService-qa-data-platform-ecs"
+        },
+        {
+          "id": "i-08ab8faa5634f33c1",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "qa-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0095ad4e6d010759c",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "tst1-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-064863aadf91da2ab",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0a090033d127fee53",
+          "type": "t2.small",
+          "state": "running",
+          "name": "test-amazon-linux"
+        },
+        {
+          "id": "i-0e5080da8b773616a",
+          "type": "t3a.large",
+          "state": "running",
+          "name": "qa-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-014f6a55a2fe277cb",
+          "type": "m5.large",
+          "state": "running",
+          "name": "tst1-mq-ecs-instances"
+        },
+        {
+          "id": "i-019ce5c7ce4eb298c",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "pos4-cake-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-074621c060ff9edfd",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-payments-applications-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0124c129048629391",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-payments-applications-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0d6a9f381e204243a",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-payments-applications-use1-apps-ecs-asg"
+        },
+        {
+          "id": "i-0283012b4b6d6fe9e",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-payments-applications-use1-apps-ecs-asg"
+        }
+      ],
+      "vpcs": [
+        {
+          "id": "vpc-0c059b629fead41fc",
+          "cidr": "192.168.64.0/20",
+          "default": false
+        },
+        {
+          "id": "vpc-07f9319fb3d2fb2aa",
+          "cidr": "182.168.16.0/20",
+          "default": false
+        },
+        {
+          "id": "vpc-0e4f6c7f1da297ece",
+          "cidr": "192.168.16.0/20",
+          "default": false
+        },
+        {
+          "id": "vpc-a75a4adc",
+          "cidr": "172.31.0.0/16",
+          "default": true
+        },
+        {
+          "id": "vpc-00d0d78917a4d7089",
+          "cidr": "192.168.82.0/24",
+          "default": false
+        },
+        {
+          "id": "vpc-0b4556d0c545f7508",
+          "cidr": "10.0.0.0/16",
+          "default": false
+        },
+        {
+          "id": "vpc-075743e02a5532613",
+          "cidr": "10.1.0.0/24",
+          "default": false
+        },
+        {
+          "id": "vpc-0f2ff4aafc649940a",
+          "cidr": "192.168.80.0/21",
+          "default": false
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "dev-cake-use1-ami-deprecation-deregister-expired-amis",
+          "runtime": "python3.10",
+          "memory": 128,
+          "last_modified": "2025-11-24T06:08:59.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-dp-elastic-m1-hb-d3440037-fb27-43ad-840b-15ccce9347b6",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-08-19T10:42:02.000+0000"
+        },
+        {
+          "name": "dev-cake-use1-ami-deprecation-tag-expired-amis",
+          "runtime": "python3.9",
+          "memory": 128,
+          "last_modified": "2023-06-14T05:06:26.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-spark3-datanode-44c583b7-f3ff-4d92-88f9-9ae929d49f8a",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-08-19T10:42:15.000+0000"
+        },
+        {
+          "name": "cwsyn-tst1-couch-heartbeat2-62b88cad-4343-4698-8d56-e7763dc17ff7",
+          "runtime": "python3.11",
+          "memory": 1000,
+          "last_modified": "2025-12-15T05:19:09.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-dp-elastic-status-eaca5622-a2ab-4a74-b2e3-c37a6f030768",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T11:54:29.000+0000"
+        },
+        {
+          "name": "CloudwatchCapacityProviderDashboard",
+          "runtime": "python3.9",
+          "memory": 128,
+          "last_modified": "2023-03-09T06:07:43.150+0000"
+        },
+        {
+          "name": "UserPermissionChange",
+          "runtime": "python2.7",
+          "memory": 128,
+          "last_modified": "2020-01-20T06:24:07.313+0000"
+        },
+        {
+          "name": "mm-ai-detoxify-v2",
+          "runtime": "N/A",
+          "memory": 4096,
+          "last_modified": "2023-09-05T08:10:14.250+0000"
+        },
+        {
+          "name": "cwsyn-pos4-couch-heartbeat-d57efb08-4ab1-488e-a049-c2ac0c54ab21",
+          "runtime": "python3.11",
+          "memory": 1000,
+          "last_modified": "2025-12-15T05:13:19.000+0000"
+        },
+        {
+          "name": "cloud-custodian-mailer",
+          "runtime": "python2.7",
+          "memory": 1024,
+          "last_modified": "2020-04-17T13:41:15.424+0000"
+        },
+        {
+          "name": "pos4-src-schedular-lambda-contentSchedulerFunction-q1WXFba2Vawe",
+          "runtime": "nodejs22.x",
+          "memory": 128,
+          "last_modified": "2025-05-15T06:19:05.000+0000"
+        },
+        {
+          "name": "tst2-src-content-garbage--contentGarbageCleanerFun-7UyVPkzeVBgi",
+          "runtime": "nodejs22.x",
+          "memory": 128,
+          "last_modified": "2025-09-15T04:54:22.000+0000"
+        },
+        {
+          "name": "check_IAM-CONSOLE-ACCESS",
+          "runtime": "python2.7",
+          "memory": 128,
+          "last_modified": "2018-10-03T12:10:15.284+0000"
+        },
+        {
+          "name": "start-hourly-process-notebook",
+          "runtime": "python3.9",
+          "memory": 128,
+          "last_modified": "2022-06-30T15:32:26.000+0000"
+        },
+        {
+          "name": "cwsyn-dev_config_monitoring-dd6847ab-7ca2-4b03-94f5-e9b8d973be8a",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T11:52:14.000+0000"
+        },
+        {
+          "name": "demo-sls-python-dev-hello",
+          "runtime": "python3.8",
+          "memory": 1024,
+          "last_modified": "2023-03-26T07:02:30.436+0000"
+        },
+        {
+          "name": "deliveryProviderStatusManager-tst2-function",
+          "runtime": "nodejs14.x",
+          "memory": 1024,
+          "last_modified": "2023-03-13T09:49:33.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-spark2-nodemanager-6c4c8bf1-c329-4d0d-b751-dcc99f3974c2",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T09:48:40.000+0000"
+        },
+        {
+          "name": "dead_letter_queue",
+          "runtime": "python3.12",
+          "memory": 128,
+          "last_modified": "2024-07-11T06:26:38.000+0000"
+        },
+        {
+          "name": "QEPaymentsSQSFunction",
+          "runtime": "nodejs14.x",
+          "memory": 128,
+          "last_modified": "2022-02-16T19:32:44.993+0000"
+        },
+        {
+          "name": "cwsyn-qa-dp-elastic-d1-hb-87c12af4-262e-4e8d-a4a5-3202af3d7979",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T11:50:30.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-spark-job-hist-olo-8fae4a0c-235a-47f7-b85b-13d3bd9053e0",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T09:36:07.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-spark-job-cst-tst1-c53d7a90-9af3-4cea-b5a0-600ce7f01ddd",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-08-04T09:11:11.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-spark2-rscmanager-adbc3c0b-c010-410c-94d3-8230c6d98e63",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T09:40:19.000+0000"
+        },
+        {
+          "name": "lambda-s3-sync-test",
+          "runtime": "python2.7",
+          "memory": 128,
+          "last_modified": "2019-06-21T06:10:46.197+0000"
+        },
+        {
+          "name": "cwsyn-stag-couch-heartbeat-768fb41d-7b67-40ca-8810-41e9b0abb241",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-08-19T10:41:45.000+0000"
+        },
+        {
+          "name": "check_iamConsoleUserCreate",
+          "runtime": "python3.7",
+          "memory": 128,
+          "last_modified": "2021-07-06T08:40:26.454+0000"
+        },
+        {
+          "name": "cwsyn-stag-couch-c60-hb-01c52ff4-9d19-44e2-8d5e-102cc2296671",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T11:54:33.000+0000"
+        },
+        {
+          "name": "pos4-src-video-transcoder-ContentFlowVideoTranscod-pewvfNepa7Rl",
+          "runtime": "nodejs22.x",
+          "memory": 128,
+          "last_modified": "2025-05-18T08:40:26.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-dp-elastic-d6-hb-839f9d6b-2e3c-4cf1-b7c0-37c34d356fc0",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-08-04T09:22:12.000+0000"
+        },
+        {
+          "name": "pos4-src-image-optimizer--ContentFlowOptimizerFunc-QYrtzdbAkKtl",
+          "runtime": "nodejs22.x",
+          "memory": 128,
+          "last_modified": "2025-06-17T04:40:20.000+0000"
+        },
+        {
+          "name": "CWPSConnectionStack-vir9-UpdateProvisioningStatusS-1C9H8FDK1ASLS",
+          "runtime": "python2.7",
+          "memory": 128,
+          "last_modified": "2020-01-20T14:56:15.309+0000"
+        },
+        {
+          "name": "cwsyn-qa-spark1-datanode-f3287884-c03b-48d9-8e87-efca9d9c9a9c",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T11:49:24.000+0000"
+        },
+        {
+          "name": "cwsyn-tst2-couch-c20-hb-41bcdb61-1e82-48b1-921c-55d3997795f7",
+          "runtime": "python3.11",
+          "memory": 1000,
+          "last_modified": "2025-12-15T05:34:22.000+0000"
+        },
+        {
+          "name": "devtest123",
+          "runtime": "nodejs20.x",
+          "memory": 128,
+          "last_modified": "2024-03-20T12:54:28.000+0000"
+        },
+        {
+          "name": "pos4-shard-redis-reload-part2",
+          "runtime": "N/A",
+          "memory": 128,
+          "last_modified": "2025-01-26T15:35:04.000+0000"
+        },
+        {
+          "name": "GuardDutytoACL-PruneOldEntriesLambda-VST5BNEQE1LH",
+          "runtime": "python3.6",
+          "memory": 1024,
+          "last_modified": "2019-07-08T13:49:51.440+0000"
+        },
+        {
+          "name": "start-monthly-process-sharepoint-notebook",
+          "runtime": "python3.9",
+          "memory": 128,
+          "last_modified": "2023-04-11T13:12:27.018+0000"
+        },
+        {
+          "name": "test-ecs-events",
+          "runtime": "nodejs18.x",
+          "memory": 128,
+          "last_modified": "2022-12-01T15:09:57.000+0000"
+        },
+        {
+          "name": "cwsyn-qa-spark2-datanode-8c7daafb-fc6d-47ca-9e98-d4e345c60b9e",
+          "runtime": "nodejs20.x",
+          "memory": 1000,
+          "last_modified": "2025-07-11T09:43:58.000+0000"
+        },
+        {
+          "name": "pos4-content-api-content-flow-initializer",
+          "runtime": "nodejs22.x",
+          "memory": 128,
+          "last_modified": "2025-01-21T05:45:21.000+0000"
+        },
+        {
+          "name": "tst2-src-content-flow-init-ContentFlowInitFunction-1h3fFqczDK8s",
+          "runtime": "nodejs22.x",
+          "memory": 2048,
+          "last_modified": "2025-07-02T07:06:29.000+0000"
+        },
+        {
+          "name": "dev-notification-service",
+          "runtime": "java11",
+          "memory": 512,
+          "last_modified": "2024-08-26T22:51:33.393+0000"
+        },
+        {
+          "name": "security-group-ingress-notifier",
+          "runtime": "nodejs12.x",
+          "memory": 128,
+          "last_modified": "2020-01-22T07:21:02.102+0000"
+        },
+        {
+          "name": "cwsyn-tst2-couch-c30-hb-4e19efba-e76b-4350-a4b0-f2f11bdb0459",
+          "runtime": "python3.11",
+          "memory": 1000,
+          "last_modified": "2025-12-15T06:25:54.000+0000"
+        },
+        {
+          "name": "check_SecureEC2",
+          "runtime": "python3.7",
+          "memory": 128,
+          "last_modified": "2018-11-27T06:21:39.518+0000"
+        },
+        {
+          "name": "kioskScheduler-tst2-function",
+          "runtime": "nodejs14.x",
+          "memory": 1024,
+          "last_modified": "2023-01-13T07:27:36.000+0000"
+        },
+        {
+          "name": "Dev-securitygroup-rule-watcher",
+          "runtime": "python3.8",
+          "memory": 128,
+          "last_modified": "2021-10-06T12:23:10.414+0000"
+        },
+        {
+          "name": "dev-cake-use1-call-menucore",
+          "runtime": "python3.10",
+          "memory": 128,
+          "last_modified": "2023-07-06T04:40:41.000+0000"
+        }
+      ],
+      "ecs_clusters": [
+        "arn:aws:ecs:us-east-1:230930891673:cluster/minuteman-tst1",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/dev-configapi",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/cakecore-dev-cloud-services",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/pos4-janus-cluster-new",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/pos4-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/ua-reports",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/qa-data-platform-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/tst1-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/payments-ua",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/beacon-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/dev-test",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/qa-payments-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/dev-api-gateway-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/dev-payment-gateway-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/tst1-mq-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/pci-scans-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/rnd-janus-shard-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/dev-payments-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/qa-api-gateway-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/qa-perf-cake-payment-gateway-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/qa-payment-gateway-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/dev-feature-flag-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/default",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/pos4-mq-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/tst1-janus-cluster",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/tst1-dimo-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/pos4-marvel-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/marvel-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/tst1-janus-shard-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/pos4-janus-perf-ecs",
+        "arn:aws:ecs:us-east-1:230930891673:cluster/tst1-marvel-ecs"
+      ],
+      "ecs_services": {
+        "minuteman-tst1": [
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/ua-jobassignment_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/payment-admin-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/payment_api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/src-scat_tool_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/cake_shop_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/ua-timesheet_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/src-ua-staff-container_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/scat_tool_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/src-payroll-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/minuteman-tst1/menu-core-admin-v2_service"
+        ],
+        "dev-configapi": [
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-configapi/config-api_service"
+        ],
+        "cakecore-dev-cloud-services": [],
+        "pos4-janus-cluster-new": [
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-janus-cluster-new/replica-pos4-janus-service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-janus-cluster-new/pos4-janus-service"
+        ],
+        "pos4-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/src-day-part-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/src-daypart-mediator_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/src-scat_tool_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/src-mm-marketing-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/operator_api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/payment_api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/src-mm-content-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/src-menu-api-perf_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/src-order-proxy_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-ecs/wallet_data_pumper_service"
+        ],
+        "ua-reports": [
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/tyk_mock2_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/ua_reports_service_one_per_host",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/tyk_mock3_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/ua_reports_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/ua_reports_bff",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/tyk_mock4_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/tyk_mock1_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/loyalty_api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/rabbitmq_service_2",
+          "arn:aws:ecs:us-east-1:230930891673:service/ua-reports/rabbitmq_service_3"
+        ],
+        "qa-data-platform-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-data-platform-ecs/qa-data-platform-integration-api-ecs-service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-data-platform-ecs/qa-data-platform-query-api-ecs-service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-data-platform-ecs/qa_otel_collector_service"
+        ],
+        "tst1-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-printer-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/ua_reports_api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-template-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/email_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-onboarding-fe_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-capital-proxy-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-ua-jobassignment_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-mm-customer-profile-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-day-part-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-ecs/src-ua-menu-admin_service"
+        ],
+        "payments-ua": [
+          "arn:aws:ecs:us-east-1:230930891673:service/payments-ua/ua-reports-payments-bff-service"
+        ],
+        "beacon-ecs": [],
+        "dev-test": [],
+        "qa-payments-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/pos4_payment-config-portal_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/petl_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/pos4_payments-admin-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/echeck-core_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/pac_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/chargeback-merchant-admin_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/tst3_payments-onboarding-v3_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/tst2_payments-admin-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/payment-control-center_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payments-ecs/emaf-core_service"
+        ],
+        "dev-api-gateway-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-api-gateway-ecs/tyk_pump_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-api-gateway-ecs/tyk_dashboard_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-api-gateway-ecs/tyk_gateway_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-api-gateway-ecs/tyk_identity_broker_service"
+        ],
+        "dev-payment-gateway-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payment-gateway-ecs/dev_pg_nginx",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payment-gateway-ecs/cake-payment-nginx_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payment-gateway-ecs/dev_vpc_nginx",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payment-gateway-ecs/cake-payment-gateway_service"
+        ],
+        "tst1-mq-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-mq-ecs/rabbitmq_service"
+        ],
+        "pci-scans-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/pci-scans-ecs/leapset_api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pci-scans-ecs/src-keycloak_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pci-scans-ecs/idm-api_service"
+        ],
+        "rnd-janus-shard-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/rnd-janus-shard-ecs/rnd-janus100-ems-shard-1_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/rnd-janus-shard-ecs/rnd-janus-ems-shard-1_service"
+        ],
+        "dev-payments-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/pac_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/payment-mock-service_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/bc-worker_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/dummy-task-wallet",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/echeck-core_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/payment-config-portal_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/sfp-v2_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/petl_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/payment-client-proxy_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-payments-ecs/temp-payment-mock-spot-testing"
+        ],
+        "qa-api-gateway-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-api-gateway-ecs/tyk_gateway_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-api-gateway-ecs/tyk_dashboard_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-api-gateway-ecs/tyk_identity_broker_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-api-gateway-ecs/tyk_pump_service"
+        ],
+        "qa-perf-cake-payment-gateway-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-perf-cake-payment-gateway-ecs/bc-worker_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-perf-cake-payment-gateway-ecs/cake-payment-gateway_service"
+        ],
+        "qa-payment-gateway-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payment-gateway-ecs/madmobile-payment-gateway",
+          "arn:aws:ecs:us-east-1:230930891673:service/qa-payment-gateway-ecs/cake-payment-gateway_service"
+        ],
+        "dev-feature-flag-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/dev-feature-flag-ecs/src-mm-feature-flag_service"
+        ],
+        "default": [],
+        "pos4-mq-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-mq-ecs/rabbitmq_service"
+        ],
+        "tst1-janus-cluster": [
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-janus-cluster/tst1-janus-service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-janus-cluster/test-tst1-janus-db-ecs",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-janus-cluster/src_janus_server_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-janus-cluster/oneagent_service"
+        ],
+        "tst1-dimo-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-dimo-ecs/src-mobile-ordering-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-dimo-ecs/platform-menu-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-dimo-ecs/src-mobile-ordering-menu-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-dimo-ecs/src-mobile-ordering-fe_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-dimo-ecs/src-mobile-ordering-menu-admin_service"
+        ],
+        "pos4-marvel-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-marvel-ecs/src-mobile-ordering-fe_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-marvel-ecs/src-mobile-ordering-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-marvel-ecs/src-mobile-ordering-menu-admin_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-marvel-ecs/src-mobile-ordering-menu-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-marvel-ecs/src-marvel-menu-api_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-marvel-ecs/menu-service-wrapper-api_service"
+        ],
+        "marvel-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/marvel-ecs/src-marvel-menu-api_service"
+        ],
+        "tst1-janus-shard-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/tst1-janus-shard-ecs/tst1-janus-ems-shard-1_service"
+        ],
+        "pos4-janus-perf-ecs": [
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-janus-perf-ecs/pos4-perf-janus-ems-shard-3_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-janus-perf-ecs/pos4-perf-janus-ems-shard-1_service",
+          "arn:aws:ecs:us-east-1:230930891673:service/pos4-janus-perf-ecs/pos4-perf-janus-ems-shard-2_service"
+        ],
+        "tst1-marvel-ecs": []
+      },
+      "eks_clusters": [],
+      "rds_instances": [
+        {
+          "id": "dev-cake-use1-ci-sonar",
+          "engine": "postgres",
+          "class": "db.t3.small",
+          "status": "available",
+          "multi_az": false
+        },
+        {
+          "id": "dev-flipt-db",
+          "engine": "postgres",
+          "class": "db.t3.small",
+          "status": "available",
+          "multi_az": false
+        },
+        {
+          "id": "dev-payment-db-master",
+          "engine": "mysql",
+          "class": "db.t3.micro",
+          "status": "available",
+          "multi_az": false
+        },
+        {
+          "id": "dev-payment-db-master-v2",
+          "engine": "mysql",
+          "class": "db.t3.micro",
+          "status": "available",
+          "multi_az": false
+        },
+        {
+          "id": "pos4-shrd-use1-r-mydb80-p1",
+          "engine": "mysql",
+          "class": "db.t3.large",
+          "status": "backing-up",
+          "multi_az": false
+        },
+        {
+          "id": "qa-data-platform-metastoredb-old1",
+          "engine": "mysql",
+          "class": "db.t3.medium",
+          "status": "available",
+          "multi_az": false
+        },
+        {
+          "id": "qa-payment-gateway-db",
+          "engine": "mysql",
+          "class": "db.t3.medium",
+          "status": "available",
+          "multi_az": false
+        },
+        {
+          "id": "tst1-db-clone-mysql8",
+          "engine": "mysql",
+          "class": "db.t3.large",
+          "status": "available",
+          "multi_az": false
+        }
+      ],
+      "dynamodb_tables": [
+        "CWPForStorage.MeteringData",
+        "CWPForStorage.asset",
+        "CWPForStorage.command",
+        "CWPForStorage.controller_schedule",
+        "CWPForStorage.discovered_assets",
+        "CWPForStorage.job",
+        "CWPForStorage.properties",
+        "CWPForStorage.remediation_details",
+        "CWPForStorage.remediation_exception",
+        "CWPForStorage.role_arns",
+        "CWPForStorage.settings",
+        "CWPForStorage.sync_object_stats",
+        "CWPForStorage.user_schedule",
+        "ECSTaskStatus",
+        "GuardDutytoACL-GuardDutytoACLDDBTable-PH9SIQSCZ8CR",
+        "UnsuccessfulLoginAttempts",
+        "cake-dev-tf-state",
+        "dev-cake-use1-dev-environment-ecs-services",
+        "dev-terraform-use1-state-lock-table",
+        "tf-state-cake-platform-dev-core-vpc-use1",
+        "tf-state-cake-platform-dev-pos2-core-infra-use1",
+        "tf-us-east-1-network"
+      ],
+      "s3_buckets": [
+        {
+          "name": "ach-instructions",
+          "created": "2022-07-18T13:00:34+00:00"
+        },
+        {
+          "name": "alb-access-logs-230930891673",
+          "created": "2023-12-11T17:30:40+00:00"
+        },
+        {
+          "name": "amplify-emce-dev-172431-deployment",
+          "created": "2023-09-15T11:54:45+00:00"
+        },
+        {
+          "name": "ansible-ssm-cake-dev",
+          "created": "2024-09-24T19:53:12+00:00"
+        },
+        {
+          "name": "apig-dp-artifact",
+          "created": "2019-09-09T09:10:46+00:00"
+        },
+        {
+          "name": "archived-ach-instructions",
+          "created": "2024-03-14T08:54:31+00:00"
+        },
+        {
+          "name": "aws-athena-query-results-230930891673-us-east-1",
+          "created": "2019-10-08T07:58:24+00:00"
+        },
+        {
+          "name": "aws-logs-230930891673-ap-south-1",
+          "created": "2019-11-14T07:06:18+00:00"
+        },
+        {
+          "name": "aws-logs-230930891673-us-east-1",
+          "created": "2019-10-22T06:26:34+00:00"
+        },
+        {
+          "name": "aws-logs-230930891673-us-east-1.s3.amazonaws.com",
+          "created": "2019-11-19T09:11:18+00:00"
+        },
+        {
+          "name": "aws-sam-cli-managed-default-samclisourcebucket-utrmtqvzdyjd",
+          "created": "2025-01-16T04:09:57+00:00"
+        },
+        {
+          "name": "aws-waf-logs-qa-data-platform-internal-api",
+          "created": "2023-08-24T09:04:19+00:00"
+        },
+        {
+          "name": "aws-waf-migration-dev-cake-useast-1",
+          "created": "2022-11-28T09:19:14+00:00"
+        },
+        {
+          "name": "b2b-mapping-bff-v1-qe-serverlessdeploymentbucket-5jy8vr4b9bia",
+          "created": "2018-12-13T05:51:34+00:00"
+        },
+        {
+          "name": "cake-beacon-dashboard-configurations",
+          "created": "2020-08-26T14:24:15+00:00"
+        },
+        {
+          "name": "cake-dev-cur-uswest1",
+          "created": "2022-11-16T05:14:09+00:00"
+        },
+        {
+          "name": "cake-dev-tf-state",
+          "created": "2024-04-11T02:08:09+00:00"
+        },
+        {
+          "name": "cake-eum-dummy-data",
+          "created": "2019-09-24T13:15:51+00:00"
+        },
+        {
+          "name": "cake-menu-db-backup",
+          "created": "2022-01-03T13:07:04+00:00"
+        },
+        {
+          "name": "cake-olo-testing",
+          "created": "2020-04-08T08:24:40+00:00"
+        },
+        {
+          "name": "cake-payment-nginx",
+          "created": "2020-01-16T06:49:34+00:00"
+        },
+        {
+          "name": "cake-sam",
+          "created": "2021-08-24T21:55:41+00:00"
+        },
+        {
+          "name": "cake-ui-storybooks",
+          "created": "2024-09-05T06:58:08+00:00"
+        },
+        {
+          "name": "cake.dev.crls",
+          "created": "2020-03-03T19:30:43+00:00"
+        },
+        {
+          "name": "cakecore-dev-cloudtrail-write",
+          "created": "2019-06-12T13:26:23+00:00"
+        },
+        {
+          "name": "cakecore-dev-kinesis-firehose-delivery-bucket",
+          "created": "2020-03-04T04:29:52+00:00"
+        },
+        {
+          "name": "cakecore-dev-terraform-state",
+          "created": "2018-12-26T05:20:56+00:00"
+        },
+        {
+          "name": "cf-templates--1qr1ieb58lcy-us-east-1",
+          "created": "2024-07-10T04:35:31+00:00"
+        },
+        {
+          "name": "cf-templates-1qr1ieb58lcyp-ca-central-1",
+          "created": "2018-10-18T09:03:05+00:00"
+        },
+        {
+          "name": "cf-templates-1qr1ieb58lcyp-us-east-1",
+          "created": "2018-07-04T06:43:39+00:00"
+        },
+        {
+          "name": "cft-configs",
+          "created": "2018-08-07T11:58:15+00:00"
+        },
+        {
+          "name": "cloud-portal-database-backups",
+          "created": "2020-01-30T13:35:35+00:00"
+        },
+        {
+          "name": "cloud-services-portal",
+          "created": "2019-11-25T08:44:29+00:00"
+        },
+        {
+          "name": "cloudservicesauditbucket",
+          "created": "2018-10-20T05:13:21+00:00"
+        },
+        {
+          "name": "cloudservicesmfabucket",
+          "created": "2023-04-12T09:14:28+00:00"
+        },
+        {
+          "name": "code-deploy-use1-artefact-bucket",
+          "created": "2025-03-27T11:16:59+00:00"
+        },
+        {
+          "name": "config-bucket-230930891673",
+          "created": "2022-04-12T11:13:12+00:00"
+        },
+        {
+          "name": "content-bucket-ctd-logo",
+          "created": "2024-12-26T11:20:07+00:00"
+        },
+        {
+          "name": "customer-profile-migration",
+          "created": "2023-11-02T07:50:45+00:00"
+        },
+        {
+          "name": "cw-agent-status",
+          "created": "2022-12-08T08:12:47+00:00"
+        },
+        {
+          "name": "cw-syn-results-230930891673-us-east-1",
+          "created": "2024-02-11T17:01:23+00:00"
+        },
+        {
+          "name": "dataplatform-cross-acc-shared-snapshots",
+          "created": "2025-12-16T05:56:34+00:00"
+        },
+        {
+          "name": "dayparts-dms-migration-task",
+          "created": "2024-04-29T10:51:44+00:00"
+        },
+        {
+          "name": "demo-sls-python-dev-serverlessdeploymentbucket-ctzxfpp4z1ya",
+          "created": "2023-03-26T07:01:15+00:00"
+        },
+        {
+          "name": "dev-account-themes.cake.net",
+          "created": "2021-01-01T07:17:19+00:00"
+        },
+        {
+          "name": "dev-ansible-users",
+          "created": "2019-10-17T12:54:25+00:00"
+        },
+        {
+          "name": "dev-cake-ase1-serverless-artifacts",
+          "created": "2023-06-14T04:43:26+00:00"
+        },
+        {
+          "name": "dev-cake-config-log",
+          "created": "2022-05-05T18:31:26+00:00"
+        },
+        {
+          "name": "dev-cake-menu-uploads",
+          "created": "2020-11-19T11:13:24+00:00"
+        },
+        {
+          "name": "dev-cake-payment-gateway-assets",
+          "created": "2020-10-19T04:56:15+00:00"
+        },
+        {
+          "name": "dev-cake-pg-logos",
+          "created": "2021-04-21T17:42:32+00:00"
+        },
+        {
+          "name": "dev-cake-temp-log-bucket",
+          "created": "2024-03-18T08:54:52+00:00"
+        },
+        {
+          "name": "dev-cake-use1-apigw-alb-access-log",
+          "created": "2023-07-20T08:44:09+00:00"
+        },
+        {
+          "name": "dev-cake-use1-ec2-expire-notification",
+          "created": "2023-06-29T06:02:02+00:00"
+        },
+        {
+          "name": "dev-cake-use1-fe-demo1-bucket",
+          "created": "2024-05-14T02:24:49+00:00"
+        },
+        {
+          "name": "dev-cake-use1-imdschecklogs-s3",
+          "created": "2023-06-06T07:27:45+00:00"
+        },
+        {
+          "name": "dev-cake-use1-serverless-artifacts",
+          "created": "2023-06-01T08:30:38+00:00"
+        },
+        {
+          "name": "dev-cake-use1-ssm-logs",
+          "created": "2023-04-11T08:46:41+00:00"
+        },
+        {
+          "name": "dev-cake-use1-tst1-esb-alb-access-log",
+          "created": "2024-05-14T17:37:51+00:00"
+        },
+        {
+          "name": "dev-cake-use1-tst2-esb-alb-access-log",
+          "created": "2024-05-14T15:56:04+00:00"
+        },
+        {
+          "name": "dev-cloud-use1-s3-object-encryption",
+          "created": "2023-04-26T04:46:39+00:00"
+        },
+        {
+          "name": "dev-cloud-use1-s3-object-s3batchreportsdestinatio-dhq3hwchqs9h",
+          "created": "2023-04-26T05:43:29+00:00"
+        },
+        {
+          "name": "dev-cloud-use1-s3-object-s3inventoryreportsdestin-1eb2r7ygqr206",
+          "created": "2023-04-26T05:43:28+00:00"
+        },
+        {
+          "name": "dev-codepipeline-artifacts-s3-230930891673",
+          "created": "2025-06-18T11:36:15+00:00"
+        },
+        {
+          "name": "dev-datalake.trycake.net",
+          "created": "2019-04-30T06:59:55+00:00"
+        },
+        {
+          "name": "dev-fbo-balance",
+          "created": "2021-09-07T14:54:14+00:00"
+        },
+        {
+          "name": "dev-five9-use2-snowflake-bucket",
+          "created": "2023-11-22T11:06:35+00:00"
+        },
+        {
+          "name": "dev-graylog-migration",
+          "created": "2024-03-13T07:17:43+00:00"
+        },
+        {
+          "name": "dev-lambda-scheduler-deployment-bucket",
+          "created": "2022-07-11T08:55:20+00:00"
+        },
+        {
+          "name": "dev-payment-artifacts",
+          "created": "2022-08-16T04:30:10+00:00"
+        },
+        {
+          "name": "dev-payment-onboarding-pci-matrix",
+          "created": "2021-01-08T07:25:11+00:00"
+        },
+        {
+          "name": "dev-payments-sftp-data",
+          "created": "2020-05-11T07:25:41+00:00"
+        },
+        {
+          "name": "dev-pg-av",
+          "created": "2020-01-07T15:04:55+00:00"
+        },
+        {
+          "name": "dev-pg-av-temp",
+          "created": "2020-01-07T14:58:17+00:00"
+        },
+        {
+          "name": "dev-qa-cake-use1-general-access-bucket",
+          "created": "2024-10-23T04:55:29+00:00"
+        },
+        {
+          "name": "dev-qa-gralogs-elb",
+          "created": "2019-03-26T12:02:28+00:00"
+        },
+        {
+          "name": "dev-qa-payment-onboarding",
+          "created": "2020-01-08T07:24:47+00:00"
+        },
+        {
+          "name": "dev-qa-payment-onboarding-scan",
+          "created": "2020-01-08T07:24:27+00:00"
+        },
+        {
+          "name": "dev-qa-pg-mechant-documents",
+          "created": "2021-03-15T05:13:48+00:00"
+        },
+        {
+          "name": "dev-rabbitmqbackup",
+          "created": "2019-09-26T09:52:49+00:00"
+        },
+        {
+          "name": "dev-rs2-bankworks",
+          "created": "2026-03-20T05:00:52+00:00"
+        },
+        {
+          "name": "dev-sagemaker-datalake",
+          "created": "2021-07-07T13:49:29+00:00"
+        },
+        {
+          "name": "dev-sqlpad-configs",
+          "created": "2022-10-05T04:15:05+00:00"
+        },
+        {
+          "name": "dev-ssm-patching-output",
+          "created": "2020-02-27T07:47:44+00:00"
+        },
+        {
+          "name": "dev-terraform-use1-state-bucket",
+          "created": "2023-02-15T07:40:37+00:00"
+        },
+        {
+          "name": "dev-ttt-prediction-results",
+          "created": "2019-09-06T04:42:33+00:00"
+        },
+        {
+          "name": "dev-ua-reports.cake.net",
+          "created": "2024-02-19T04:49:29+00:00"
+        },
+        {
+          "name": "dev-us-east-1-sentinel-installation-packages",
+          "created": "2024-07-08T09:00:44+00:00"
+        },
+        {
+          "name": "dev-use1-qe-payment-gateway-alb-logs",
+          "created": "2023-11-30T05:44:55+00:00"
+        },
+        {
+          "name": "devtest-cma-hr",
+          "created": "2018-09-04T04:11:08+00:00"
+        },
+        {
+          "name": "devtest-cvmanager-bucket",
+          "created": "2018-10-29T11:35:14+00:00"
+        },
+        {
+          "name": "elasticbeanstalk-ap-southeast-1-230930891673",
+          "created": "2018-08-21T12:50:20+00:00"
+        },
+        {
+          "name": "elasticbeanstalk-ap-southeast-1-7580504583129",
+          "created": "2018-07-31T10:42:41+00:00"
+        },
+        {
+          "name": "elasticbeanstalk-us-east-1-230930891673",
+          "created": "2018-07-30T10:14:07+00:00"
+        },
+        {
+          "name": "elasticbeanstalk-us-east-2-230930891673",
+          "created": "2018-10-04T05:44:53+00:00"
+        },
+        {
+          "name": "elasticbeanstalk-us-west-1-230930891673",
+          "created": "2018-10-26T22:00:29+00:00"
+        },
+        {
+          "name": "email-marketing-1",
+          "created": "2023-10-03T06:45:16+00:00"
+        },
+        {
+          "name": "emce-marketing",
+          "created": "2023-10-03T12:21:42+00:00"
+        },
+        {
+          "name": "emr-applications.trycake.net",
+          "created": "2019-11-20T05:17:11+00:00"
+        },
+        {
+          "name": "emr-logs.trycake.net",
+          "created": "2019-11-20T05:17:31+00:00"
+        },
+        {
+          "name": "emr-test-20191114",
+          "created": "2019-11-14T07:03:06+00:00"
+        },
+        {
+          "name": "emr-test-replication-bucket",
+          "created": "2020-02-28T02:11:30+00:00"
+        },
+        {
+          "name": "esb-logs",
+          "created": "2021-02-01T11:20:44+00:00"
+        },
+        {
+          "name": "fsapi-store-internal-v2.cake.net",
+          "created": "2020-07-22T05:39:39+00:00"
+        },
+        {
+          "name": "fsapi-store-internal.cake.net",
+          "created": "2020-07-22T05:37:58+00:00"
+        },
+        {
+          "name": "glaze-proto-ui",
+          "created": "2024-08-21T04:17:12+00:00"
+        },
+        {
+          "name": "glaze-ui",
+          "created": "2024-08-16T04:40:15+00:00"
+        },
+        {
+          "name": "jt-mm-test",
+          "created": "2024-05-07T13:55:15+00:00"
+        },
+        {
+          "name": "l2-access-bucket",
+          "created": "2025-05-22T07:50:27+00:00"
+        },
+        {
+          "name": "lookup-bulk-process-dev-serverlessdeploymentbucke-xxx15as38fsz",
+          "created": "2019-03-14T11:39:22+00:00"
+        },
+        {
+          "name": "lower-env-terraform-states-dev-230930891673",
+          "created": "2025-06-18T11:45:01+00:00"
+        },
+        {
+          "name": "malware-bucket-ctd-logo",
+          "created": "2024-12-26T11:07:15+00:00"
+        },
+        {
+          "name": "malware-scan-bucket-ctd-logo",
+          "created": "2024-12-23T09:12:38+00:00"
+        },
+        {
+          "name": "mbp-menu-assets",
+          "created": "2021-12-29T08:55:09+00:00"
+        },
+        {
+          "name": "menu-sync-agent",
+          "created": "2020-11-17T04:50:05+00:00"
+        },
+        {
+          "name": "meta-data-removal-bucket-ctd-logo",
+          "created": "2024-12-23T09:13:55+00:00"
+        },
+        {
+          "name": "mira-ctd-poc-bucket1",
+          "created": "2024-12-11T11:28:58+00:00"
+        },
+        {
+          "name": "mira-ctd-poc-bucket2",
+          "created": "2024-12-11T11:30:19+00:00"
+        },
+        {
+          "name": "mysql-schema-dump",
+          "created": "2024-05-17T09:11:24+00:00"
+        },
+        {
+          "name": "navjson-test",
+          "created": "2019-11-29T11:07:34+00:00"
+        },
+        {
+          "name": "olo-assets",
+          "created": "2020-04-02T14:47:30+00:00"
+        },
+        {
+          "name": "olo-email-assets",
+          "created": "2020-04-02T14:53:56+00:00"
+        },
+        {
+          "name": "operatorapielb",
+          "created": "2020-01-22T08:43:15+00:00"
+        },
+        {
+          "name": "patch-json",
+          "created": "2019-07-04T08:48:15+00:00"
+        },
+        {
+          "name": "patch-lambda",
+          "created": "2019-07-04T08:01:16+00:00"
+        },
+        {
+          "name": "payments-onboarding-secure-storage",
+          "created": "2019-11-26T04:41:26+00:00"
+        },
+        {
+          "name": "pos-bash-history",
+          "created": "2019-07-03T06:03:33+00:00"
+        },
+        {
+          "name": "pos-bvt-s3-bucket",
+          "created": "2024-01-29T06:12:52+00:00"
+        },
+        {
+          "name": "pos1-aws-sam-artefacts-bucket",
+          "created": "2025-03-11T10:31:40+00:00"
+        },
+        {
+          "name": "pos1-cake-use1-content-api-input-bucket",
+          "created": "2025-03-11T10:23:32+00:00"
+        },
+        {
+          "name": "pos1-cake-use1-content-api-optimization-bucket",
+          "created": "2025-03-11T10:25:51+00:00"
+        },
+        {
+          "name": "pos1-cake-use1-content-api-output-bucket",
+          "created": "2025-03-11T10:28:25+00:00"
+        },
+        {
+          "name": "pos1-data-migration-data",
+          "created": "2025-02-25T04:53:37+00:00"
+        },
+        {
+          "name": "pos1-ecs-load-balancer-alb-access-logs",
+          "created": "2023-12-20T11:46:26+00:00"
+        },
+        {
+          "name": "pos1-ems1-ems2-sl-migration-data",
+          "created": "2025-02-25T05:20:45+00:00"
+        },
+        {
+          "name": "pos1-images.cake.net",
+          "created": "2020-07-21T08:52:11+00:00"
+        },
+        {
+          "name": "pos1-leapset-helpcenter-s3.leapset.com",
+          "created": "2018-07-06T07:45:08+00:00"
+        },
+        {
+          "name": "pos1-leapset-menuadmin-s3.leapset.com",
+          "created": "2018-07-06T07:47:45+00:00"
+        },
+        {
+          "name": "pos1-leapset-reports-s3.leapset.com",
+          "created": "2018-07-06T07:46:27+00:00"
+        },
+        {
+          "name": "pos1-leapset-superadmin-s3.leapset.com",
+          "created": "2018-07-06T07:45:41+00:00"
+        },
+        {
+          "name": "pos1-moxy-plugin-bucket",
+          "created": "2023-12-11T06:49:55+00:00"
+        },
+        {
+          "name": "pos1-pos-plugin",
+          "created": "2023-09-12T12:03:47+00:00"
+        },
+        {
+          "name": "pos2-esb-alb-logs",
+          "created": "2019-08-30T05:18:43+00:00"
+        },
+        {
+          "name": "pos2-images.cake.net",
+          "created": "2020-08-06T12:52:49+00:00"
+        },
+        {
+          "name": "pos2-moxy-plugin-bucket",
+          "created": "2023-11-29T11:37:21+00:00"
+        },
+        {
+          "name": "pos4-aws-sam-artefact-bucket",
+          "created": "2025-01-22T05:27:14+00:00"
+        },
+        {
+          "name": "pos4-aws-sam-artefacts-bucket",
+          "created": "2025-02-13T07:53:50+00:00"
+        },
+        {
+          "name": "pos4-cake-use1-content-api-input-bucket",
+          "created": "2025-01-03T10:42:46+00:00"
+        },
+        {
+          "name": "pos4-cake-use1-content-api-large-media-temporary-upload-bucket",
+          "created": "2025-05-05T07:50:36+00:00"
+        },
+        {
+          "name": "pos4-cake-use1-content-api-optimization-bucket",
+          "created": "2025-01-03T10:44:05+00:00"
+        },
+        {
+          "name": "pos4-cake-use1-content-api-output-bucket",
+          "created": "2025-01-03T10:45:03+00:00"
+        },
+        {
+          "name": "pos4-cake-use1-temp-large-content-bucket",
+          "created": "2025-04-23T05:04:48+00:00"
+        },
+        {
+          "name": "pos4-data-migration-data",
+          "created": "2022-01-11T04:39:55+00:00"
+        },
+        {
+          "name": "pos4-ecs-load-balancer-logs",
+          "created": "2022-06-22T06:54:36+00:00"
+        },
+        {
+          "name": "pos4-ems1-ems2-sl-migration-data",
+          "created": "2025-01-17T08:18:34+00:00"
+        },
+        {
+          "name": "pos4-images.cake.net",
+          "created": "2020-08-06T12:53:15+00:00"
+        },
+        {
+          "name": "pos4-leapset-superadmin-s3.leapset.com",
+          "created": "2021-04-06T05:08:23+00:00"
+        },
+        {
+          "name": "pos4-mc-ems2-ml-migration-data",
+          "created": "2025-01-09T08:43:48+00:00"
+        },
+        {
+          "name": "pos4-moxy-plugin-bucket",
+          "created": "2023-10-19T09:29:52+00:00"
+        },
+        {
+          "name": "pos4-perf-rabbitmq-elb-logs",
+          "created": "2022-06-22T06:43:35+00:00"
+        },
+        {
+          "name": "prod-pulse-fe-alb-usw1-accesslogs",
+          "created": "2023-04-19T10:30:32+00:00"
+        },
+        {
+          "name": "prod-ua-report-api",
+          "created": "2021-06-04T10:23:36+00:00"
+        },
+        {
+          "name": "proto-ui",
+          "created": "2024-08-15T06:41:04+00:00"
+        },
+        {
+          "name": "ptst1",
+          "created": "2020-05-26T08:21:03+00:00"
+        },
+        {
+          "name": "qa-ach-instructions",
+          "created": "2022-07-20T07:48:27+00:00"
+        },
+        {
+          "name": "qa-ach-instructions-v2",
+          "created": "2024-04-01T08:46:36+00:00"
+        },
+        {
+          "name": "qa-chargeback-documents",
+          "created": "2022-02-10T06:10:13+00:00"
+        },
+        {
+          "name": "qa-data-platform-spark3",
+          "created": "2023-12-19T01:20:37+00:00"
+        },
+        {
+          "name": "qa-datalake.leapset.com",
+          "created": "2021-07-07T14:36:28+00:00"
+        },
+        {
+          "name": "qa-datalake.trycake.net",
+          "created": "2019-04-30T07:00:24+00:00"
+        },
+        {
+          "name": "qa-dataplatform-alb-access-logs",
+          "created": "2019-03-20T05:57:58+00:00"
+        },
+        {
+          "name": "qa-payment-web-s3",
+          "created": "2023-04-27T04:27:53+00:00"
+        },
+        {
+          "name": "qa-payments-gateway-elb",
+          "created": "2022-04-21T06:07:17+00:00"
+        },
+        {
+          "name": "qa-payments-sftp-data",
+          "created": "2020-06-03T09:37:38+00:00"
+        },
+        {
+          "name": "qa-perf-cake-payment-gateway-alb-log",
+          "created": "2021-05-14T06:46:30+00:00"
+        },
+        {
+          "name": "qa-perf-cpg-ecs-load-balancer",
+          "created": "2020-02-28T10:05:45+00:00"
+        },
+        {
+          "name": "qa-rs2-bankworks",
+          "created": "2026-03-20T05:07:56+00:00"
+        },
+        {
+          "name": "rapid7-agent-s3",
+          "created": "2023-02-06T11:14:23+00:00"
+        },
+        {
+          "name": "reportsng-dev",
+          "created": "2019-08-06T11:37:14+00:00"
+        },
+        {
+          "name": "sagemaker-studio-230930891673-b5xppj985ei",
+          "created": "2023-07-22T07:23:42+00:00"
+        },
+        {
+          "name": "sagemaker-us-east-1-230930891673",
+          "created": "2021-09-29T20:07:56+00:00"
+        },
+        {
+          "name": "sec-config-reports-pci",
+          "created": "2019-03-21T11:57:03+00:00"
+        },
+        {
+          "name": "src-mm-marketing-contact-upload",
+          "created": "2024-03-19T12:34:20+00:00"
+        },
+        {
+          "name": "syscolab-lk-site-temp",
+          "created": "2020-09-28T06:26:41+00:00"
+        },
+        {
+          "name": "terraform-ansible-s3",
+          "created": "2024-01-01T08:17:37+00:00"
+        },
+        {
+          "name": "test-bin-service-files",
+          "created": "2023-04-21T08:40:44+00:00"
+        },
+        {
+          "name": "test-chargeback-documents",
+          "created": "2022-01-25T06:47:37+00:00"
+        },
+        {
+          "name": "test-pg",
+          "created": "2021-03-22T11:37:57+00:00"
+        },
+        {
+          "name": "test-pg-documents-rollback-option",
+          "created": "2025-05-06T06:07:31+00:00"
+        },
+        {
+          "name": "testapp-dev-serverlessdeploymentbucket-ordxwnhqz3sn",
+          "created": "2019-01-11T13:27:06+00:00"
+        },
+        {
+          "name": "testbucketsajeeva",
+          "created": "2019-01-01T07:50:09+00:00"
+        },
+        {
+          "name": "testexpress-dev-serverlessdeploymentbucket-1a0es7tss2xmm",
+          "created": "2018-10-22T04:39:33+00:00"
+        },
+        {
+          "name": "tf-state-cake-platform-dev-core-vpc-use1",
+          "created": "2024-08-20T13:03:42+00:00"
+        },
+        {
+          "name": "tf-state-cake-platform-dev-pos2-core-infra-use1",
+          "created": "2024-07-15T10:23:40+00:00"
+        },
+        {
+          "name": "tst1-aws-sam-artefacts-bucket",
+          "created": "2025-02-25T09:38:17+00:00"
+        },
+        {
+          "name": "tst1-cake-superadmin-s3.cake.net",
+          "created": "2021-06-25T07:20:26+00:00"
+        },
+        {
+          "name": "tst1-cake-use1-content-api-input-bucket",
+          "created": "2025-02-25T09:29:55+00:00"
+        },
+        {
+          "name": "tst1-cake-use1-content-api-optimization-bucket",
+          "created": "2025-02-25T09:32:21+00:00"
+        },
+        {
+          "name": "tst1-cake-use1-content-api-output-bucket",
+          "created": "2025-02-25T09:34:29+00:00"
+        },
+        {
+          "name": "tst1-data-migration-data",
+          "created": "2022-02-03T07:40:37+00:00"
+        },
+        {
+          "name": "tst1-ems1-ems2-sl-migration-data",
+          "created": "2025-02-25T05:20:37+00:00"
+        },
+        {
+          "name": "tst1-esb-access-logs",
+          "created": "2019-08-16T05:51:02+00:00"
+        },
+        {
+          "name": "tst1-images.cake.net",
+          "created": "2020-07-23T07:40:06+00:00"
+        },
+        {
+          "name": "tst1-leapset-insights-s3",
+          "created": "2025-04-04T17:24:10+00:00"
+        },
+        {
+          "name": "tst1-moxy-plugin-bucket",
+          "created": "2023-09-26T10:57:42+00:00"
+        },
+        {
+          "name": "tst1-qa-leapset-superadmin-s3.leapset.com",
+          "created": "2025-12-09T12:25:22+00:00"
+        },
+        {
+          "name": "tst1-rabbitmq-elb",
+          "created": "2019-09-25T13:34:42+00:00"
+        },
+        {
+          "name": "tst1-replicator-alb-logs",
+          "created": "2019-07-01T13:45:14+00:00"
+        },
+        {
+          "name": "tst2-aws-sam-artefact-bucket",
+          "created": "2025-02-06T10:15:06+00:00"
+        },
+        {
+          "name": "tst2-aws-sam-artefacts-bucket",
+          "created": "2025-02-13T07:54:11+00:00"
+        },
+        {
+          "name": "tst2-cake-use1-content-api-input-bucket",
+          "created": "2025-02-06T10:15:22+00:00"
+        },
+        {
+          "name": "tst2-cake-use1-content-api-large-media-temporary-upload-bucket",
+          "created": "2025-06-05T10:28:04+00:00"
+        },
+        {
+          "name": "tst2-cake-use1-content-api-optimization-bucket",
+          "created": "2025-02-06T10:15:33+00:00"
+        },
+        {
+          "name": "tst2-cake-use1-content-api-output-bucket",
+          "created": "2025-02-06T10:15:45+00:00"
+        },
+        {
+          "name": "tst2-data-migration-data",
+          "created": "2022-02-03T07:42:13+00:00"
+        },
+        {
+          "name": "tst2-ecs-load-balancer",
+          "created": "2019-10-10T11:51:48+00:00"
+        },
+        {
+          "name": "tst2-ems1-ems2-sl-migration-data",
+          "created": "2025-02-25T05:20:30+00:00"
+        },
+        {
+          "name": "tst2-images.cake.net",
+          "created": "2020-08-06T12:54:07+00:00"
+        },
+        {
+          "name": "tst2-images.trycake.net",
+          "created": "2021-02-17T05:29:02+00:00"
+        },
+        {
+          "name": "tst2-moxy-plugin-bucket",
+          "created": "2023-10-19T09:26:45+00:00"
+        },
+        {
+          "name": "tst2-qa-leapset-superadmin-s3.leapset.com",
+          "created": "2024-07-09T05:33:02+00:00"
+        },
+        {
+          "name": "tst3-images.cake.net",
+          "created": "2021-06-17T07:18:22+00:00"
+        },
+        {
+          "name": "tst3-moxy-plugin-bucket",
+          "created": "2023-12-27T10:36:18+00:00"
+        },
+        {
+          "name": "ua-layout-assets",
+          "created": "2018-11-15T05:25:00+00:00"
+        },
+        {
+          "name": "ua-layout-assets-dev",
+          "created": "2019-11-22T09:06:43+00:00"
+        },
+        {
+          "name": "ua-reports-exported-docs-tst2",
+          "created": "2019-03-15T06:41:10+00:00"
+        },
+        {
+          "name": "ua-reports-load-balancer",
+          "created": "2019-03-11T13:26:29+00:00"
+        },
+        {
+          "name": "ultraesb-binaries",
+          "created": "2024-06-24T09:04:28+00:00"
+        },
+        {
+          "name": "university.cake.net",
+          "created": "2022-10-11T10:49:48+00:00"
+        }
+      ],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [
+        "CAKE-ElastiCache-Dashboard",
+        "CapacityProviderReservation",
+        "DMS-DEV",
+        "Dev-Couchdb",
+        "Dev-Payments",
+        "DevUltraESB",
+        "POS4-ESB-Perf",
+        "QA-Dataplaform",
+        "QA-Payment-Gateway",
+        "QA-Payments",
+        "QA-Perf-Payment-Gateway",
+        "RabbitMQ-Perf",
+        "SpotCapacityProviderReservations",
+        "TST2-OLOCOM-Peformance-Dashboard",
+        "TST2-REPLICATOR-NEW",
+        "TST2-Replicator",
+        "cake-ec2-tagging-dashboard",
+        "cake-rds-custom-metrix-dashboard",
+        "cake-rds-tagging-dashboard",
+        "cake-rg-dashboard",
+        "cake-test-2",
+        "cake-test",
+        "labour_api_service",
+        "mm-tst4-graylog",
+        "serve-api",
+        "tst2-esb-v3",
+        "tst2-replicator-1",
+        "ua-reports-perf-stats"
+      ],
+      "cloudformation_stacks": [
+        {
+          "name": "pos4-src-content-garbage-cleaner-lambda-stack",
+          "status": "ROLLBACK_FAILED",
+          "created": "2025-06-30T10:25:42.924000+00:00"
+        },
+        {
+          "name": "tst2-src-content-garbage-cleaner-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-06-18T09:52:07.028000+00:00"
+        },
+        {
+          "name": "Infra-ECS-Cluster-dev-feature-flag-ecs-8d747c99",
+          "status": "CREATE_COMPLETE",
+          "created": "2025-06-17T09:03:58.047000+00:00"
+        },
+        {
+          "name": "tst2-src-content-flow-initializer-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-06-05T06:15:01.316000+00:00"
+        },
+        {
+          "name": "tst2-src-schedular-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-06-05T05:54:25.937000+00:00"
+        },
+        {
+          "name": "tst2-src-content-flow-finalizer-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-06-05T05:51:46.623000+00:00"
+        },
+        {
+          "name": "tst2-src-video-transcoder-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-06-05T05:48:55.462000+00:00"
+        },
+        {
+          "name": "tst2-src-image-optimizer-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-06-05T04:50:12.042000+00:00"
+        },
+        {
+          "name": "pos4-src-image-optimizer-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-05-23T05:00:51.771000+00:00"
+        },
+        {
+          "name": "pos4-src-schedular-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-05-05T03:44:23.043000+00:00"
+        },
+        {
+          "name": "pos4-src-video-transcoder-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-04-23T09:31:15.201000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-qaotelcollectorservice-qa-data-platform-ecs-db0a9ed6",
+          "status": "CREATE_FAILED",
+          "created": "2025-03-20T09:02:40.385000+00:00"
+        },
+        {
+          "name": "tst1-src-content-flow-finalizer-lambda-stack",
+          "status": "CREATE_COMPLETE",
+          "created": "2025-02-25T10:07:04.343000+00:00"
+        },
+        {
+          "name": "tst1-src-image-optimizer-lambda-stack",
+          "status": "CREATE_COMPLETE",
+          "created": "2025-02-25T09:59:00.726000+00:00"
+        },
+        {
+          "name": "tst1-src-content-flow-initializer-lambda-stack",
+          "status": "CREATE_COMPLETE",
+          "created": "2025-02-25T09:46:35.870000+00:00"
+        },
+        {
+          "name": "pos4-src-content-flow-finalizer-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-02-11T09:30:35.879000+00:00"
+        },
+        {
+          "name": "pos4-src-content-flow-initializer-lambda-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2025-02-11T09:23:31.399000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-qa-crypto-service-qa-payments-ecs-dad162d6",
+          "status": "CREATE_FAILED",
+          "created": "2025-01-20T00:53:44.035000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-qacryptoservice-qa-payments-ecs-0566fa7b",
+          "status": "CREATE_FAILED",
+          "created": "2025-01-17T21:20:09.671000+00:00"
+        },
+        {
+          "name": "aws-sam-cli-managed-default",
+          "status": "CREATE_COMPLETE",
+          "created": "2025-01-16T04:09:34.386000+00:00"
+        },
+        {
+          "name": "StackSet-wiz-io-b50f36dc-9deb-4629-8b4a-441fc9af64ef",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-10-18T16:32:07.344000+00:00"
+        },
+        {
+          "name": "StackSet-SC-230930891673-pp-noojf2lvk3f76-21e61e2d-9bb6-42c8-b858-b22bf7ec1e71",
+          "status": "CREATE_COMPLETE",
+          "created": "2024-08-13T21:08:44.386000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-shrd-test-pub-nginx-shared-ecs-use1-2cfca43e",
+          "status": "CREATE_FAILED",
+          "created": "2024-08-08T10:59:44.307000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-rabbitmqservicetest2-tst3-mq-ecs-test2-a4f6b26c",
+          "status": "DELETE_FAILED",
+          "created": "2024-07-21T06:58:57.474000+00:00"
+        },
+        {
+          "name": "Infra-ECS-Cluster-tst3-mq-ecs-test2-2150e2a3",
+          "status": "DELETE_FAILED",
+          "created": "2024-07-21T06:45:41.197000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-rabbitmqservicetest-tst3-mq-ecs-test-6d146bbb",
+          "status": "DELETE_FAILED",
+          "created": "2024-07-20T14:38:15.980000+00:00"
+        },
+        {
+          "name": "Infra-ECS-Cluster-tst3-mq-ecs-test-b12f0a87",
+          "status": "DELETE_FAILED",
+          "created": "2024-07-20T14:06:27.053000+00:00"
+        },
+        {
+          "name": "dlm-policy-ami",
+          "status": "CREATE_COMPLETE",
+          "created": "2024-07-11T06:26:45.724000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-madmobile-payment-gateway-qa-payment-gateway-ecs-8acf7119",
+          "status": "CREATE_COMPLETE",
+          "created": "2024-01-04T06:08:40.870000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-madmobile-payment-client-proxyservice-v3-qa-payments-ecs-96f8acd2",
+          "status": "CREATE_COMPLETE",
+          "created": "2024-01-03T11:52:35.698000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-madmobile-payment-client-proxy-v2service-qa-payments-ecs-c186da41",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2024-01-03T11:15:55.309000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-madmobile-payment-client-proxyservice-qa-payments-ecs-d84487b6",
+          "status": "ROLLBACK_FAILED",
+          "created": "2024-01-03T10:27:21.966000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-madmobile-payment-gateway-v2service-qa-payment-gateway-ecs-48ade3a6",
+          "status": "DELETE_FAILED",
+          "created": "2024-01-03T09:02:13.890000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-rnd-janus100-ems-shard-1service-rnd-janus-shard-ecs-3b8acfe1",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-11-22T08:58:38.421000+00:00"
+        },
+        {
+          "name": "Infra-ECS-CapacityProvider-rnd-janus1-capacity-provider-rnd-janus-shard-ecs-d303b96d",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-11-20T16:44:44.718000+00:00"
+        },
+        {
+          "name": "Infra-ECS-CapacityProvider-tst1-cake-use1-src-menu-api-service-tst1-ecs-c9fa6605",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-10-10T07:31:22.470000+00:00"
+        },
+        {
+          "name": "Infra-ECS-CapacityProvider-tst2-mq-ecs-capacity-provider-tst2-mq-ecs-12a3f182",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-10-04T09:21:00.292000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-65fc9131-29c6-4b24-a261-2403140b2316",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-10-03T16:44:30.759000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-1f85ec87-103f-4c05-98d2-ddb6ffb1cc61",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-10-03T16:44:30.536000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-5d4de49c-6a62-42a4-bf3f-c2f665a70cfd",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-10-03T16:43:00.462000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-0486c4d5-1182-4ccb-bc39-7241b6d50ffe",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-10-03T16:43:00.406000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-ROLES-2ed35349-6042-4aff-9742-bb02c7f81dc3",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-10-03T16:43:00.208000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerExecutionRole-381b082d-c496-4e48-a9c2-c10c4f007621",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-09-26T00:40:36.898000+00:00"
+        },
+        {
+          "name": "amplify-emce-dev-172431-authemce-1RX0GAZ2DXPQF",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-09-15T12:15:35.800000+00:00"
+        },
+        {
+          "name": "amplify-emce-dev-172431-hostingamplifyhosting-18IRTT8FWUN0O",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-09-15T12:15:35.581000+00:00"
+        },
+        {
+          "name": "amplify-emce-dev-172431",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-09-15T11:54:40.919000+00:00"
+        },
+        {
+          "name": "dev-use1-trendmicro-stack",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-08-25T08:52:26.433000+00:00"
+        },
+        {
+          "name": "AWS-Development",
+          "status": "DELETE_FAILED",
+          "created": "2023-08-25T08:20:37.760000+00:00"
+        },
+        {
+          "name": "Infra-ECS-CapacityProvider-tst2-use1-lahirutest-capacity-provider-tst2-ecs-08f738fb",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-07-13T10:57:13.604000+00:00"
+        },
+        {
+          "name": "Infra-ECS-CapacityProvider-dev-cake-use1-tst2-ecs-MAPI-prod-tst2-ecs-c9e43883",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-06-27T07:12:18.040000+00:00"
+        },
+        {
+          "name": "dev-cake-use1-ami-deprecation-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-06-08T09:09:04.542000+00:00"
+        },
+        {
+          "name": "dev-cake-use1-ebs-snapshot-deprecation-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-06-02T08:48:58.266000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-vantiv-report-captureservice-dev-payments-ecs-d08e55c5",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-05-30T13:30:28.704000+00:00"
+        },
+        {
+          "name": "dev-cloud-use1-s3-object-encryption-stack",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-04-26T05:43:22.268000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-dummy-task-wallet-dev-payments-ecs-c6624fc0",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-04-06T13:26:47.503000+00:00"
+        },
+        {
+          "name": "demo-sls-python-dev",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-03-26T07:01:00.625000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-temp-payment-mock-spot-testing-dev-payments-ecs-92f813ea",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-03-16T14:27:22.671000+00:00"
+        },
+        {
+          "name": "api-gateway-sqs-integration",
+          "status": "UPDATE_ROLLBACK_COMPLETE",
+          "created": "2023-03-13T07:39:35.581000+00:00"
+        },
+        {
+          "name": "deliveryProviderStatusManager-tst2",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-03-13T06:34:54.252000+00:00"
+        },
+        {
+          "name": "deliveryProviderStatusManager-pos1",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-03-13T06:17:13.070000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-b536a848-51c3-4238-8822-0c69b03dbade",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-02-15T10:06:23.220000+00:00"
+        },
+        {
+          "name": "StackSet-CloudHealth-permission-017916ce-874f-4069-9da4-c0c2fe962f25",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-25T13:48:33.532000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-00ed605f-caa5-4d41-88ce-80ba19689a8b",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-10T10:13:42.657000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-11351400-40af-440e-9d64-02181ff94b0d",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-10T10:11:10.633000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-c7b81176-1a8e-4b5a-9686-a6899613f9a0",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-10T05:49:20.177000+00:00"
+        },
+        {
+          "name": "dev-finops-instance-scheduler-remote",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-04T07:23:39.924000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-66510658-a1f5-4b1c-a130-88f5e84e457d",
+          "status": "UPDATE_COMPLETE",
+          "created": "2022-12-27T09:07:32.196000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-dbb421c2-cc40-43a7-a586-875bca18d146",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-12-01T13:59:47.129000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-c28e5388-33af-4087-8e1b-d032c6dda35f",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-30T05:01:48.045000+00:00"
+        },
+        {
+          "name": "QA-payment-gateway-ecs-alb-waf-CF-stack",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-28T09:25:24.375000+00:00"
+        },
+        {
+          "name": "Infra-ECS-Cluster-03e7b688-5135-4b95-94d2-158a7bdc4334",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-24T09:04:33.085000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-bed9a5e9-7acf-41f3-89a0-c1eee1fa47bc",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T08:52:29.293000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-41c42f01-0a6b-476d-b305-5c2ceb38602c",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T08:50:43.986000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-7789a6a6-e908-4af2-9311-24c8a351c051",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-23T08:49:52.423000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-ac29a926-a696-4403-92b0-a1bf6c2ad6b9",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T08:46:27.880000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-6e6c77d7-2158-40ff-99c3-07e517b5af86",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T08:37:20.055000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-68064b84-0e6d-42f2-960c-8821a07a87d2",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T06:43:56.006000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-989f0890-db5a-477b-86d0-a3339121d2eb",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T06:35:44.353000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-54435a33-a53f-4156-a742-932236111cfb",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T05:56:46.605000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-8af9f5b7-51c1-4203-8979-eaf0c55b932f",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T05:50:44.953000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-6bdddef9-5f0a-48f7-a287-e6855e876124",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T05:37:18.429000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-b95128d6-2af8-4419-ab71-bcab9884e715",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-23T05:30:59.657000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-5c93fb41-8280-4c3c-b823-a17f0e5ee44e",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-23T03:36:25.416000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-d422bed1-fe87-477a-bd01-d0850b25288e",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-23T03:30:28.974000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-1f3a5535-c423-41ec-8544-fc9d0fcf680b",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-21T12:00:36.359000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-25511bdd-658e-430b-a525-53f5f626f1a1",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-21T04:53:39.446000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-890d034f-a61c-4f66-a709-366633f9c0ad",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-14T10:01:04.434000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-85be4ff9-3708-476b-8f54-818bd342e2e2",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-14T08:17:03.089000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-0021c7c8-2cb4-4ff0-a323-25f84aaf15ce",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-11T09:28:22.458000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-f84165be-48b1-4150-9bcb-643943667a0f",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-11T08:33:42.174000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-dbf96d99-4fe3-4136-957d-35561f5139aa",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-11T08:12:10.389000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-dc3a58fd-6c7a-45e9-876a-fe6ba4301745",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-11T07:53:28.445000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-628058d7-4578-4c82-b015-e6e1796c607d",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-11T07:43:10.969000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-Service-0de6d4a4-df08-40fa-9536-b992a585c079",
+          "status": "ROLLBACK_COMPLETE",
+          "created": "2022-11-11T07:34:16.987000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-8a00d649-c94d-4051-ab21-16277ed6581f",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-09T03:14:01.630000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-1faf0bfd-27d3-4267-a846-3ade691bd93c",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-03T06:37:44.345000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-81d538c3-f828-4ec0-8100-43e6c0073a22",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-03T06:14:25.878000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-632619dc-ef25-4074-b049-9573179e5eae",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-11-01T10:08:41.054000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-11fa30bf-8cb0-4c9e-af4f-efac19d94e09",
+          "status": "UPDATE_COMPLETE",
+          "created": "2022-10-28T05:21:04.127000+00:00"
+        },
+        {
+          "name": "ECS-Console-V2-TaskDefinition-0f13f211-9827-47fc-9c8e-a0a782dee95d",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-10-24T12:20:34.109000+00:00"
+        }
+      ],
+      "sns_topics": 31,
+      "sqs_queues": 163,
+      "ecr_repositories": [
+        "test-ecr001",
+        "cakedocker/node",
+        "ua-staff-container",
+        "cake_shop_api",
+        "tomcat",
+        "eyecandy",
+        "ua-jobassignment",
+        "listing",
+        "jobs-api",
+        "src-cincoapi",
+        "src-menu-preview",
+        "src-scat_tool",
+        "ua-timesheet",
+        "universal-admin",
+        "ua-reports-payments-bff",
+        "wallet_data_pumper",
+        "tyk_apig",
+        "rabbitmq",
+        "olo-mediary-api",
+        "rag",
+        "olo_mediary_api",
+        "tyk_dashboard",
+        "hardened-golang",
+        "tyk_identity_broker",
+        "src-serve-api",
+        "cake-payments-finance",
+        "dependency-monitor",
+        "beacon-sonar",
+        "beacon-group-rag-values",
+        "beacon-tech-assessment-score",
+        "src-ua-promotions",
+        "emaf-core",
+        "src-menu-bulk-processor",
+        "src-mobile-ordering-menu-admin",
+        "bc-worker",
+        "src-third-party-integrator-api",
+        "src-onboarding-api",
+        "payment-config-portal",
+        "sample-checkout-app",
+        "datadog-trial",
+        "src-kds-fe",
+        "src-pos-api",
+        "src-mm-customer-profile-api",
+        "src-mm-cake-pos-app-server",
+        "src-kent-job",
+        "src-mm-marketing-api",
+        "sentence-transformer-base",
+        "src-qr-service",
+        "src-ua-finance",
+        "aws-fluentbit",
+        "rdsmysqlclient",
+        "alert-testing",
+        "sam-base-image",
+        "feature_flag_api",
+        "ecrtest-nodeapi",
+        "hub-api",
+        "src-menu-core-api",
+        "golang",
+        "scat_tool",
+        "communicator",
+        "menu-preview",
+        "cakedocker/tomcat",
+        "src-hub-api",
+        "wallet_api",
+        "src-superadmin",
+        "merchant_api",
+        "operator_api",
+        "payment_api",
+        "profile_api",
+        "src-cake_shop_api",
+        "src-ua-jobassignment",
+        "doc-gen-api",
+        "universal-admin-reports",
+        "ua-reports-payments",
+        "tinyurl_api",
+        "src-doc-gen-api",
+        "src-data-platform-query-api",
+        "test_base",
+        "hardened-node",
+        "nginx_echo_proxy",
+        "admin_api",
+        "echeck-core",
+        "net-settlement-processor",
+        "dependency-monitor-server",
+        "cake-payment-gateway-hardened-base",
+        "cake-payment-nginx-base",
+        "payment-gateway-base-image",
+        "src-menu-api",
+        "src-ua-menu-admin",
+        "cake-payment-gateway",
+        "sales_api",
+        "loyalty_api",
+        "chargeback-merchant-admin",
+        "src-cake-direct-olo",
+        "src_ticket_pumper",
+        "src-serve-fe",
+        "promotion-api",
+        "ua-promotions",
+        "menu_sync_agent",
+        "payments-onboarding-v3"
+      ],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    },
+    "us-west-2": {
+      "ec2_instances": [],
+      "vpcs": [
+        {
+          "id": "vpc-c32d33ba",
+          "cidr": "172.31.0.0/16",
+          "default": true
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "aws-controltower-NotificationForwarder",
+          "runtime": "python3.13",
+          "memory": 128,
+          "last_modified": "2026-01-08T16:05:34.000+0000"
+        }
+      ],
+      "ecs_clusters": [],
+      "eks_clusters": [],
+      "rds_instances": [],
+      "dynamodb_tables": [],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [
+        "CAKE-ElastiCache-Dashboard",
+        "CapacityProviderReservation",
+        "DMS-DEV",
+        "Dev-Couchdb",
+        "Dev-Payments",
+        "DevUltraESB",
+        "POS4-ESB-Perf",
+        "QA-Dataplaform",
+        "QA-Payment-Gateway",
+        "QA-Payments",
+        "QA-Perf-Payment-Gateway",
+        "RabbitMQ-Perf",
+        "SpotCapacityProviderReservations",
+        "TST2-OLOCOM-Peformance-Dashboard",
+        "TST2-REPLICATOR-NEW",
+        "TST2-Replicator",
+        "cake-ec2-tagging-dashboard",
+        "cake-rds-custom-metrix-dashboard",
+        "cake-rds-tagging-dashboard",
+        "cake-rg-dashboard",
+        "cake-test-2",
+        "cake-test",
+        "labour_api_service",
+        "mm-tst4-graylog",
+        "serve-api",
+        "tst2-esb-v3",
+        "tst2-replicator-1",
+        "ua-reports-perf-stats"
+      ],
+      "cloudformation_stacks": [
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-13af13a5-61db-4713-b18d-6ffbb005e435",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-12-01T19:07:49.868000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-a24cf146-2d18-4648-94e7-50df65a1366f",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-12-01T19:07:49.189000+00:00"
+        },
+        {
+          "name": "Compliance2W",
+          "status": "CREATE_COMPLETE",
+          "created": "2019-02-06T19:35:42.089000+00:00"
+        },
+        {
+          "name": "AssetManagement",
+          "status": "CREATE_COMPLETE",
+          "created": "2019-01-09T16:09:41.477000+00:00"
+        },
+        {
+          "name": "insight2W",
+          "status": "CREATE_COMPLETE",
+          "created": "2018-06-22T15:29:43.106000+00:00"
+        }
+      ],
+      "sns_topics": 1,
+      "sqs_queues": 0,
+      "ecr_repositories": [],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    },
+    "eu-west-1": {
+      "ec2_instances": [],
+      "vpcs": [
+        {
+          "id": "vpc-a67538c0",
+          "cidr": "172.31.0.0/16",
+          "default": true
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "aws-controltower-NotificationForwarder",
+          "runtime": "python3.13",
+          "memory": 128,
+          "last_modified": "2026-01-08T16:05:32.000+0000"
+        }
+      ],
+      "ecs_clusters": [],
+      "eks_clusters": [],
+      "rds_instances": [],
+      "dynamodb_tables": [],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [
+        "CAKE-ElastiCache-Dashboard",
+        "CapacityProviderReservation",
+        "DMS-DEV",
+        "Dev-Couchdb",
+        "Dev-Payments",
+        "DevUltraESB",
+        "POS4-ESB-Perf",
+        "QA-Dataplaform",
+        "QA-Payment-Gateway",
+        "QA-Payments",
+        "QA-Perf-Payment-Gateway",
+        "RabbitMQ-Perf",
+        "SpotCapacityProviderReservations",
+        "TST2-OLOCOM-Peformance-Dashboard",
+        "TST2-REPLICATOR-NEW",
+        "TST2-Replicator",
+        "cake-ec2-tagging-dashboard",
+        "cake-rds-custom-metrix-dashboard",
+        "cake-rds-tagging-dashboard",
+        "cake-rg-dashboard",
+        "cake-test-2",
+        "cake-test",
+        "labour_api_service",
+        "mm-tst4-graylog",
+        "serve-api",
+        "tst2-esb-v3",
+        "tst2-replicator-1",
+        "ua-reports-perf-stats"
+      ],
+      "cloudformation_stacks": [
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-0e7b83d9-82c1-4b2d-a3ed-069a16aa292e",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T19:01:06.369000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-29973ed1-b0d0-4e7a-8169-ae940f85c589",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T19:01:05.709000+00:00"
+        }
+      ],
+      "sns_topics": 1,
+      "sqs_queues": 0,
+      "ecr_repositories": [],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    },
+    "ap-southeast-1": {
+      "ec2_instances": [],
+      "vpcs": [
+        {
+          "id": "vpc-d56024b2",
+          "cidr": "172.31.0.0/16",
+          "default": true
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "dev-cake-ase1-ebs-snapshot-deprecation-tag-expired-snapshots",
+          "runtime": "python3.9",
+          "memory": 1024,
+          "last_modified": "2023-06-14T04:59:05.230+0000"
+        },
+        {
+          "name": "dev-cake-ase1-ebs-snapshot-deprecation-delete-expired-snapshots",
+          "runtime": "python3.9",
+          "memory": 1024,
+          "last_modified": "2023-06-14T04:59:05.028+0000"
+        },
+        {
+          "name": "aws-controltower-NotificationForwarder",
+          "runtime": "python3.13",
+          "memory": 128,
+          "last_modified": "2026-01-08T16:05:34.000+0000"
+        },
+        {
+          "name": "dev-cake-ase1-ami-deprecation-deregister-expired-amis",
+          "runtime": "python3.9",
+          "memory": 128,
+          "last_modified": "2023-06-14T04:52:42.000+0000"
+        },
+        {
+          "name": "dev-cake-ase1-ami-deprecation-tag-expired-amis",
+          "runtime": "python3.9",
+          "memory": 128,
+          "last_modified": "2023-06-14T04:52:41.000+0000"
+        }
+      ],
+      "ecs_clusters": [],
+      "eks_clusters": [],
+      "rds_instances": [],
+      "dynamodb_tables": [],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [
+        "CAKE-ElastiCache-Dashboard",
+        "CapacityProviderReservation",
+        "DMS-DEV",
+        "Dev-Couchdb",
+        "Dev-Payments",
+        "DevUltraESB",
+        "POS4-ESB-Perf",
+        "QA-Dataplaform",
+        "QA-Payment-Gateway",
+        "QA-Payments",
+        "QA-Perf-Payment-Gateway",
+        "RabbitMQ-Perf",
+        "SpotCapacityProviderReservations",
+        "TST2-OLOCOM-Peformance-Dashboard",
+        "TST2-REPLICATOR-NEW",
+        "TST2-Replicator",
+        "cake-ec2-tagging-dashboard",
+        "cake-rds-custom-metrix-dashboard",
+        "cake-rds-tagging-dashboard",
+        "cake-rg-dashboard",
+        "cake-test-2",
+        "cake-test",
+        "labour_api_service",
+        "mm-tst4-graylog",
+        "serve-api",
+        "tst2-esb-v3",
+        "tst2-replicator-1",
+        "ua-reports-perf-stats"
+      ],
+      "cloudformation_stacks": [
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-389f201b-626c-4a40-a7b3-a7e1db33697b",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T19:01:08.584000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-632b69b4-63b5-472e-9476-578abec9026f",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T19:01:08.079000+00:00"
+        },
+        {
+          "name": "dev-cake-ase1-ebs-snapshot-deprecation-stack",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-06-14T04:57:20.758000+00:00"
+        },
+        {
+          "name": "dev-cake-ase1-ami-deprecation-stack",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-06-14T04:45:56.252000+00:00"
+        }
+      ],
+      "sns_topics": 1,
+      "sqs_queues": 0,
+      "ecr_repositories": [],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    }
+  },
+  "global": {
+    "iam_users": 10,
+    "iam_roles": 100,
+    "iam_policies": 100,
+    "organization": {
+      "_error": "Access denied: AccessDeniedException"
+    }
+  },
+  "cost": [
+    {
+      "TimePeriod": {
+        "Start": "2026-01-03",
+        "End": "2026-02-01"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Amplify"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.000154948",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Backup"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.1499557578",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudFormation"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudShell"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000001917",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1.22007937",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CodeArtifact"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "426.350025",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0011407836",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "23.3874805851",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "143.8285352938",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "86.7870764608",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000025589",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Systems Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0647290313",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Transfer Family"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "377.9378030233",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS WAF"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "109.7021715156",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS X-Ray"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.476030225",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0061637675",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "36.1562047884",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "402.2715796822",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon ElastiCache"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1009.8256201025",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "3144.1743162175",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "360.6858695604",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Container Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.9069621387",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0605203744",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1768.0274587323",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015267",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "242.3332106799",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Kinesis"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "18.8964",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Location Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.011052765",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Neptune"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0570413064",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon OpenSearch Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "787.6417698137",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "846.3823020401",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.687342882",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0071147409",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "6.402219529",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "197.1344660181",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015309",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1212.3409165238",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2226.9031546025",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "CloudWatch Events"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.030240575",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "TrendAI\u2122 Cloud One"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1454.359",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": false
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-02-01",
+        "End": "2026-03-01"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Amplify"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0001636376",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Backup"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.160297536",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CodeArtifact"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000002185",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "394.32479",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Cost Explorer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.02715",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0010321369",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "24.4607259228",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "108.1153204821",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "90.845582423",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000014041",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Systems Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.063800323",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Transfer Family"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "364.9020513337",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS WAF"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "116.2201828366",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS X-Ray"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.227218575",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0069132054",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "31.7852719884",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "431.9351129519",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon ElastiCache"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1113.3894285712",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "3287.0250186497",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "405.553411015",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Container Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.7047530037",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0646943808",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1701.1824700892",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015002",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "224.5056169418",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Kinesis"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "18.2448",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Neptune"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0609751296",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon OpenSearch Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "700.4338534222",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Registrar"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "17",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "829.6451739008",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.026233164",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0067729991",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "6.1540150515",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "208.6792264216",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015066",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1168.6878355217",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2304.8425413636",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "CloudWatch Events"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.02706855",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Tax"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "TrendAI\u2122 Cloud One"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1437.678",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": false
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-03-01",
+        "End": "2026-04-01"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Amplify"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0001709513",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Backup"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.1602975342",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudFormation"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CodeArtifact"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000002674",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "327.335335",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Cost Explorer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.06335",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0012494292",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "25.0547007512",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "100.6328056296",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "90.7236323262",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000022794",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Systems Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0753981257",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Transfer Family"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "403.9986948113",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS WAF"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "116.8422973994",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS X-Ray"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.490754575",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0066909384",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "36.1025563884",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "433.2963435578",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon ElastiCache"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1028.3761907292",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "3405.6005707667",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "70.1565722089",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Container Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0031123122",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0646943608",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1577.1464617556",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000016689",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "198.0176508467",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Kinesis"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "20.1996",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Neptune"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0609751896",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon OpenSearch Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "750.7258219244",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1100.3317962904",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "6.93456612",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0074856994",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.9997069414",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "210.6031472812",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000016767",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1201.3803245666",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2251.2816779577",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "CloudWatch Events"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.00137922",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Tax"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "TrendAI\u2122 Cloud One"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1368.028",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": false
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-04-01",
+        "End": "2026-04-03"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Amplify"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000055852",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Backup"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0053432511",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CodeArtifact"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "20.68468",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Cost Explorer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.00905",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000543229",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1.360171293",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.6701752904",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.2839859994",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000494",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Systems Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0055739809",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Transfer Family"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "22.2634320465",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS WAF"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "6.8447720843",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS X-Ray"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0003239083",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "23.991397064",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon ElastiCache"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "58.618595898",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "138.8857114185",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.3561117182",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Container Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0001831475",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.003680299",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "85.680574745",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.000000072",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "11.1869062904",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Kinesis"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1.1403",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Neptune"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0033232554",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon OpenSearch Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "41.8258837478",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "63.2732292463",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.777461608",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000016556",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.2818036816",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "14.1840816251",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000729",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "61.3930048394",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "123.0812438698",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "CloudWatch Events"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Tax"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "TrendAI\u2122 Cloud One"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "33.306",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": true
+    }
+  ]
+}

@@ -1,0 +1,7800 @@
+[
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS Backup",
+    "cost": 0.15
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 1.22
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 426.35
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 23.39
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 143.83
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS Secrets Manager",
+    "cost": 86.79
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS Systems Manager",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS Transfer Family",
+    "cost": 377.94
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS WAF",
+    "cost": 109.7
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AWS X-Ray",
+    "cost": 2.48
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon DynamoDB",
+    "cost": 36.16
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 402.27
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon ElastiCache",
+    "cost": 1009.83
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 3144.17
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 360.69
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service",
+    "cost": 0.91
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic File System",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 1768.03
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 242.33
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Kinesis",
+    "cost": 18.9
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Neptune",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon OpenSearch Service",
+    "cost": 787.64
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Relational Database Service",
+    "cost": 846.38
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 4.69
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Queue Service",
+    "cost": 6.4
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 197.13
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 1212.34
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 2226.9
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "CloudWatch Events",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-01-03",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 1454.36
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Backup",
+    "cost": 0.16
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 394.32
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 24.46
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 108.12
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Secrets Manager",
+    "cost": 90.85
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Systems Manager",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS Transfer Family",
+    "cost": 364.9
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS WAF",
+    "cost": 116.22
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AWS X-Ray",
+    "cost": 2.23
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon DynamoDB",
+    "cost": 31.79
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 431.94
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon ElastiCache",
+    "cost": 1113.39
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 3287.03
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 405.55
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service",
+    "cost": 0.7
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 1701.18
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 224.51
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Kinesis",
+    "cost": 18.24
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Neptune",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon OpenSearch Service",
+    "cost": 700.43
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Registrar",
+    "cost": 17.0
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 829.65
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 5.03
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 6.15
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 208.68
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 1168.69
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 2304.84
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "CloudWatch Events",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-02-01",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 1437.68
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Backup",
+    "cost": 0.16
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 327.34
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 25.05
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 100.63
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Secrets Manager",
+    "cost": 90.72
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Systems Manager",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS Transfer Family",
+    "cost": 404.0
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS WAF",
+    "cost": 116.84
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AWS X-Ray",
+    "cost": 2.49
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon DynamoDB",
+    "cost": 36.1
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 433.3
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon ElastiCache",
+    "cost": 1028.38
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 3405.6
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 70.16
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 1577.15
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 198.02
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Kinesis",
+    "cost": 20.2
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Neptune",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon OpenSearch Service",
+    "cost": 750.73
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 1100.33
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 6.93
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 5.0
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 210.6
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 1201.38
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 2251.28
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-03-01",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 1368.03
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 20.68
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 1.36
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "AWS Lambda",
+    "cost": 0.67
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "AWS Secrets Manager",
+    "cost": 5.28
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "AWS Transfer Family",
+    "cost": 22.26
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "AWS WAF",
+    "cost": 6.84
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 23.99
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon ElastiCache",
+    "cost": 58.62
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 138.89
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 4.36
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 85.68
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 11.19
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Kinesis",
+    "cost": 1.14
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon OpenSearch Service",
+    "cost": 41.83
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 63.27
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.78
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.28
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 14.18
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 61.39
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 123.08
+  },
+  {
+    "profile": "mm-cake-development",
+    "account_id": "230930891673",
+    "month": "2026-04-01",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 33.31
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 0.1
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 2.17
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS Directory Service",
+    "cost": 62.92
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 14.46
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 2.56
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS Secrets Manager",
+    "cost": 3.07
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS Security Hub",
+    "cost": 17.96
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AWS WAF",
+    "cost": 10.6
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon DynamoDB",
+    "cost": 8.42
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 474.33
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 9.77
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic File System",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 58.15
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 11.03
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 7.08
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 525.97
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 25.08
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 2.45
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AWS Directory Service",
+    "cost": 60.83
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 15.5
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 2.41
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AWS Secrets Manager",
+    "cost": 3.27
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AWS Security Hub",
+    "cost": 14.64
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AWS WAF",
+    "cost": 11.86
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon DynamoDB",
+    "cost": 7.4
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 461.24
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 1.66
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 56.03
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 10.68
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 0.36
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 7.81
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 507.83
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 25.07
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 2.22
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AWS Directory Service",
+    "cost": 67.4
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 15.67
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 2.65
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AWS Secrets Manager",
+    "cost": 3.27
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AWS Security Hub",
+    "cost": 10.64
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AWS WAF",
+    "cost": 11.81
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon DynamoDB",
+    "cost": 8.47
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 493.44
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.23
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 62.04
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 10.57
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 0.36
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 8.22
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 562.24
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 25.88
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.09
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AWS Directory Service",
+    "cost": 3.76
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.91
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AWS Lambda",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.19
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AWS Security Hub",
+    "cost": 0.57
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AWS WAF",
+    "cost": 0.67
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 24.65
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 3.43
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.63
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.36
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.57
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 31.24
+  },
+  {
+    "profile": "mm-cake-r-and-d",
+    "account_id": "464176945335",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 1.37
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.53
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 2.4
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 0.39
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.32
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.58
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-customer-analytics",
+    "account_id": "024848459322",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.11
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.35
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 2.28
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 0.23
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 0.39
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.22
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 3.85
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.47
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-03-01",
+    "service": "Amazon Registrar",
+    "cost": 258.0
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 0.98
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.11
+  },
+  {
+    "profile": "mm-dns-management",
+    "account_id": "381491928564",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 3.63
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 3.11
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 0.24
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 28.32
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 0.31
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 1.95
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 30.41
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.49
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 33.67
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.1
+  },
+  {
+    "profile": "mm-forensics",
+    "account_id": "040591922250",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 1.86
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Backup",
+    "cost": 0.16
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 267.64
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS CodeArtifact",
+    "cost": 14.83
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 824.32
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Cost Explorer",
+    "cost": 25.25
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Data Pipeline",
+    "cost": 0.85
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Directory Service",
+    "cost": 94.49
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Elemental MediaConvert",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Global Accelerator",
+    "cost": 62.9
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Glue",
+    "cost": 2.54
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS HealthImaging",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 189.02
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 373.68
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Secrets Manager",
+    "cost": 160.97
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Security Hub",
+    "cost": 124.93
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Systems Manager",
+    "cost": 0.09
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS Transfer Family",
+    "cost": 377.94
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS WAF",
+    "cost": 654.33
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AWS X-Ray",
+    "cost": 4.66
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon API Gateway",
+    "cost": 5.51
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Athena",
+    "cost": 32.41
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon CloudFront",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon DocumentDB (with MongoDB compatibility)",
+    "cost": 351.74
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon DynamoDB",
+    "cost": 60.83
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 569.91
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon ElastiCache",
+    "cost": 7789.24
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 40106.1
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 50055.3
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service",
+    "cost": 465.66
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 2393.54
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic File System",
+    "cost": 0.23
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 9735.39
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 2043.76
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Kinesis",
+    "cost": 56.69
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Lightsail",
+    "cost": 101.16
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 243.49
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon MQ",
+    "cost": 6146.78
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "cost": 1412.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Neptune",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon OpenSearch Service",
+    "cost": 7068.46
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon QuickSight",
+    "cost": 30.79
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Redshift",
+    "cost": 3.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Relational Database Service",
+    "cost": 29855.53
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 142.26
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Email Service",
+    "cost": 1.54
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Notification Service",
+    "cost": 2.55
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Queue Service",
+    "cost": 134.07
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 7361.55
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 5785.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 7557.12
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "CloudWatch Events",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 32679.91
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Snowflake Capacity",
+    "cost": 18750.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Snyk: Developer Security Platform",
+    "cost": 3208.31
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 1454.36
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "Vanta",
+    "cost": 3333.33
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-01-03",
+    "service": "[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6)",
+    "cost": 4218.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Backup",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Certificate Manager",
+    "cost": 1449.36
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS CloudTrail",
+    "cost": 143.39
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS CodeArtifact",
+    "cost": 12.71
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 744.02
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Cost Explorer",
+    "cost": 26.45
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Data Pipeline",
+    "cost": 0.91
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Directory Service",
+    "cost": 91.24
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Elemental MediaConvert",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Global Accelerator",
+    "cost": 60.82
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Glue",
+    "cost": 1.92
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS HealthImaging",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 205.47
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 328.64
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Secrets Manager",
+    "cost": 169.97
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Security Hub",
+    "cost": 122.06
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Support (Enterprise)",
+    "cost": 17019.89
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Systems Manager",
+    "cost": 0.09
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS Transfer Family",
+    "cost": 364.9
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS WAF",
+    "cost": 774.71
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AWS X-Ray",
+    "cost": 4.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon API Gateway",
+    "cost": 5.95
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Athena",
+    "cost": 31.99
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon CloudFront",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon DocumentDB (with MongoDB compatibility)",
+    "cost": 339.62
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon DynamoDB",
+    "cost": 52.59
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 611.84
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon ElastiCache",
+    "cost": 10111.13
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 42343.33
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 19499.17
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service",
+    "cost": 118.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 2318.73
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.23
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 9518.21
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2016.39
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Kinesis",
+    "cost": 54.73
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Lightsail",
+    "cost": 99.37
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Location Service",
+    "cost": 182.19
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon MQ",
+    "cost": 5919.91
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "cost": 1503.46
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Neptune",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon OpenSearch Service",
+    "cost": 6908.06
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon QuickSight",
+    "cost": 37.13
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Redshift",
+    "cost": 3.24
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Registrar",
+    "cost": 101.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 30492.25
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 155.7
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Email Service",
+    "cost": 4.6
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 2.04
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 127.17
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 8010.49
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 5718.25
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 7653.28
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "CloudWatch Events",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "OCBLateFee",
+    "cost": 3682.02
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 58384.74
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Snyk: Developer Security Platform",
+    "cost": 3208.31
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 1437.68
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "Vanta",
+    "cost": 3333.33
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-02-01",
+    "service": "[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6)",
+    "cost": 4259.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Backup",
+    "cost": 0.17
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Certificate Manager",
+    "cost": 1448.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS CloudTrail",
+    "cost": 141.74
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS CodeArtifact",
+    "cost": 14.6
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 751.04
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 28.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Data Pipeline",
+    "cost": 0.9
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Directory Service",
+    "cost": 101.1
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Elemental MediaConvert",
+    "cost": 0.13
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS End User Messaging",
+    "cost": 0.88
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Global Accelerator",
+    "cost": 63.98
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Glue",
+    "cost": 2.49
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS HealthImaging",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 219.93
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 345.85
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Secrets Manager",
+    "cost": 170.01
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Security Hub",
+    "cost": 128.99
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Support (Enterprise)",
+    "cost": 17774.79
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Systems Manager",
+    "cost": 0.1
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS Transfer Family",
+    "cost": 404.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS WAF",
+    "cost": 809.68
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AWS X-Ray",
+    "cost": 4.75
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon API Gateway",
+    "cost": 6.29
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Athena",
+    "cost": 35.82
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon CloudFront",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon DocumentDB (with MongoDB compatibility)",
+    "cost": 376.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon DynamoDB",
+    "cost": 61.04
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 614.84
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon ElastiCache",
+    "cost": 10998.27
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 42099.84
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 9297.4
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service",
+    "cost": 1.86
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 2945.84
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.23
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 10110.07
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2192.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Kinesis",
+    "cost": 60.6
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Lightsail",
+    "cost": 108.19
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Location Service",
+    "cost": 226.29
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon MQ",
+    "cost": 6585.01
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "cost": 1509.41
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Neptune",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon OpenSearch Service",
+    "cost": 7074.19
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon QuickSight",
+    "cost": 37.23
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Redshift",
+    "cost": 3.24
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Registrar",
+    "cost": 288.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 35696.53
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 170.26
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Email Service",
+    "cost": 4.41
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 2.33
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 146.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 8339.95
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 6128.01
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 7977.87
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Cursor",
+    "cost": 38160.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Native Cloud Data Warehouse Analytics & Business Intelligence Software",
+    "cost": 7500.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "OCBLateFee",
+    "cost": 3701.6
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 71701.17
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Snyk: Developer Security Platform",
+    "cost": 3208.31
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 1368.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "Vanta",
+    "cost": 3333.33
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-03-01",
+    "service": "[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6)",
+    "cost": 4756.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Certificate Manager",
+    "cost": 1448.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS CloudTrail",
+    "cost": 7.09
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS CodeArtifact",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 52.04
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.88
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Data Pipeline",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Directory Service",
+    "cost": 5.64
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Elemental MediaConvert",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Global Accelerator",
+    "cost": 2.78
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Glue",
+    "cost": 0.15
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 10.84
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Lambda",
+    "cost": 11.79
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Secrets Manager",
+    "cost": 9.79
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Security Hub",
+    "cost": 8.14
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Support (Enterprise)",
+    "cost": 6975.07
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS Transfer Family",
+    "cost": 22.26
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AWS WAF",
+    "cost": 46.0
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon API Gateway",
+    "cost": 0.25
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Athena",
+    "cost": 2.35
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon DocumentDB (with MongoDB compatibility)",
+    "cost": 20.22
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon DynamoDB",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 34.69
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon ElastiCache",
+    "cost": 618.19
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 1957.35
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 406.96
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 144.29
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 540.64
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 123.81
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Kinesis",
+    "cost": 3.42
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Lightsail",
+    "cost": 5.57
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Location Service",
+    "cost": 14.44
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon MQ",
+    "cost": 363.59
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "cost": 85.84
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon OpenSearch Service",
+    "cost": 358.64
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon QuickSight",
+    "cost": 2.11
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Redshift",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 1885.91
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 27.19
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Email Service",
+    "cost": 0.31
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 6.86
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 534.39
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 318.87
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 431.03
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 4625.88
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "TrendAI\u2122 Cloud One",
+    "cost": 33.31
+  },
+  {
+    "profile": "mm-madmobile-mgmt",
+    "account_id": "302042158767",
+    "month": "2026-04-01",
+    "service": "[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6)",
+    "cost": 114.0
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.35
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 2.56
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.19
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 0.42
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.43
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.19
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.51
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.21
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.12
+  },
+  {
+    "profile": "mm-marketplace-seller",
+    "account_id": "026090514637",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 1.12
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 5.85
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon API Gateway",
+    "cost": 0.88
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon CloudFront",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon ElastiCache",
+    "cost": 196.52
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 69.25
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 167.91
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 47.36
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 3.48
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon Relational Database Service",
+    "cost": 1262.51
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 0.28
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 110.46
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 28.36
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 13.96
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.41
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 4.74
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon API Gateway",
+    "cost": 0.81
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon CloudFront",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon ElastiCache",
+    "cost": 265.65
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 71.06
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 162.12
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 45.67
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 3.29
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 1221.5
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 0.4
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 118.27
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 27.38
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 14.4
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 0.41
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 5.79
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon API Gateway",
+    "cost": 1.01
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon CloudFront",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon ElastiCache",
+    "cost": 226.31
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 74.03
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 201.87
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 50.55
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 3.54
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon Registrar",
+    "cost": 15.0
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 1294.84
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 0.41
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 118.17
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 31.15
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 14.39
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "AWS Lambda",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon ElastiCache",
+    "cost": 6.86
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 3.48
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 13.76
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 2.79
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.15
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 72.22
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.36
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 8.13
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 1.7
+  },
+  {
+    "profile": "mm-menupad-prod-metro",
+    "account_id": "622065827965",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.72
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.8
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 5.1
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 0.2
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "AWS Secrets Manager",
+    "cost": 0.35
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon API Gateway",
+    "cost": 1.5
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.15
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 199.64
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 374.78
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic File System",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 109.01
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 4.58
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Lightsail",
+    "cost": 72.39
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Relational Database Service",
+    "cost": 4.83
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 71.91
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 53.58
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 2.35
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.38
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 5.45
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 0.25
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.37
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon API Gateway",
+    "cost": 1.59
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.16
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 207.58
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 361.87
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 105.13
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 4.44
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Lightsail",
+    "cost": 70.04
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 5.16
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 0.45
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 76.91
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 51.71
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 2.12
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 0.57
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 5.46
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 0.28
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.37
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon API Gateway",
+    "cost": 1.38
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.16
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 213.4
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 400.64
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 116.61
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 4.74
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Lightsail",
+    "cost": 77.45
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 5.16
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 2.26
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 77.0
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 57.27
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 2.32
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.3
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "AWS Lambda",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon API Gateway",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 10.93
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 20.6
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 6.46
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.2
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon Lightsail",
+    "cost": 4.24
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 0.28
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.45
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 5.29
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 2.94
+  },
+  {
+    "profile": "mm-mm-archive",
+    "account_id": "673260261206",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.12
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 1.74
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.79
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "AWS Glue",
+    "cost": 2.54
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 2.73
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "AWS X-Ray",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon Athena",
+    "cost": 32.41
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 222.23
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 12.92
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon QuickSight",
+    "cost": 10.3
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 314.66
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 3.15
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 9.18
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-01-03",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 23557.51
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 1.43
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "AWS Glue",
+    "cost": 1.92
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 2.79
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "AWS X-Ray",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Amazon Athena",
+    "cost": 31.73
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 237.57
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.46
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 12.86
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Amazon QuickSight",
+    "cost": 10.99
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 345.49
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 3.04
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 9.08
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-02-01",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 22745.18
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 1.51
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "AWS Glue",
+    "cost": 2.49
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 2.8
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "AWS X-Ray",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Amazon Athena",
+    "cost": 35.82
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 237.58
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 5.58
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 13.7
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Amazon QuickSight",
+    "cost": 11.09
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 353.69
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 3.37
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 9.17
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-03-01",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 25182.17
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.09
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "AWS Glue",
+    "cost": 0.15
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.16
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "Amazon Athena",
+    "cost": 2.35
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 11.02
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.88
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "Amazon QuickSight",
+    "cost": 0.62
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 24.8
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 0.17
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-monvia",
+    "account_id": "219788358213",
+    "month": "2026-04-01",
+    "service": "Savings Plans for AWS Compute usage",
+    "cost": 1624.66
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 0.27
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.88
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 13.21
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "AWS Secrets Manager",
+    "cost": 0.35
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 439.72
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 544.56
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 62.99
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 27.43
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 36.53
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Relational Database Service",
+    "cost": 95.61
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 0.34
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 37.05
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 47.43
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 175.36
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "AWS Certificate Manager",
+    "cost": 724.68
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 1.22
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 18.11
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.37
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 445.02
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 518.98
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 60.82
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 27.83
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 34.5
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 92.82
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 0.45
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 43.79
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 45.88
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 176.07
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "AWS Certificate Manager",
+    "cost": 724.0
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 1.1
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 34.05
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.37
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 512.73
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 44.12
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 165.07
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 39.3
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 51.06
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 102.35
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 0.61
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 144.69
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 50.79
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 197.98
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "AWS Certificate Manager",
+    "cost": 724.0
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 1.37
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 30.16
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 22.26
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 3.18
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.38
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "Amazon Relational Database Service",
+    "cost": 5.5
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.5
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 4.56
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 2.8
+  },
+  {
+    "profile": "mm-payments-prod-us",
+    "account_id": "491085393358",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 12.06
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 15.13
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "AWS Global Accelerator",
+    "cost": 15.73
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 3.42
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 181.49
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon API Gateway",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 7.09
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon ElastiCache",
+    "cost": 150.54
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 600.27
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 500.85
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service",
+    "cost": 10.68
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 440.92
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 181.88
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 134.81
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon MQ",
+    "cost": 1127.7
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 0.99
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 13.14
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 75.59
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 11.87
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 6.13
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "AWS Global Accelerator",
+    "cost": 15.21
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 3.65
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 175.23
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon API Gateway",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 7.67
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon ElastiCache",
+    "cost": 261.34
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 607.59
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 338.14
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service",
+    "cost": 8.42
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 425.71
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 175.65
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 131.53
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon MQ",
+    "cost": 1106.21
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 1.44
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 15.54
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 72.99
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 11.91
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 20.0
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "AWS Global Accelerator",
+    "cost": 16.84
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 3.65
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 194.01
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon API Gateway",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 7.73
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon ElastiCache",
+    "cost": 289.53
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 653.0
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 567.59
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 194.43
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 148.45
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon MQ",
+    "cost": 1210.28
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 3.43
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 16.13
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 80.81
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 12.43
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 3.14
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "AWS Global Accelerator",
+    "cost": 0.93
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.21
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "AWS Lambda",
+    "cost": 9.91
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.98
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon ElastiCache",
+    "cost": 16.3
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 44.77
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 14.42
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 10.74
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 8.56
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon MQ",
+    "cost": 68.95
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.52
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 1.09
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 4.45
+  },
+  {
+    "profile": "mm-retail-prod-apac",
+    "account_id": "357856625432",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.61
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 24.02
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "AWS Global Accelerator",
+    "cost": 15.73
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 5.11
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 7.13
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon ElastiCache",
+    "cost": 270.85
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 1532.98
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 1917.16
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service",
+    "cost": 8.94
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 440.92
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 228.39
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 45.63
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon MQ",
+    "cost": 1848.83
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 1.12
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 67.47
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 53.55
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 21.16
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 6.28
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "AWS Global Accelerator",
+    "cost": 15.21
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 5.46
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 7.71
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon ElastiCache",
+    "cost": 345.31
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 1575.86
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 1283.13
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service",
+    "cost": 8.63
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 425.71
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 215.75
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 39.86
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon MQ",
+    "cost": 1693.94
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 1.68
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 72.29
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 51.7
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 21.22
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 1.59
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "AWS Global Accelerator",
+    "cost": 16.84
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 5.45
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 7.75
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon ElastiCache",
+    "cost": 382.45
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 1639.86
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 75.23
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service",
+    "cost": 1.55
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 569.06
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 240.8
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 45.86
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon MQ",
+    "cost": 1853.98
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 1.82
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 71.89
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 57.24
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 22.02
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.2
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "AWS Global Accelerator",
+    "cost": 0.93
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.3
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.45
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon ElastiCache",
+    "cost": 21.08
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 82.62
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 44.53
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 12.07
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 3.05
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon MQ",
+    "cost": 100.44
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.71
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 4.78
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 3.15
+  },
+  {
+    "profile": "mm-retail-prod-eu",
+    "account_id": "266315811211",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 1.06
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 1.82
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "AWS Global Accelerator",
+    "cost": 15.73
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 7.62
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.5
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon ElastiCache",
+    "cost": 56.69
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 1049.43
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 1309.7
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 125.98
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 160.47
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 29.45
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 3.83
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 63.01
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 1.7
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 1.21
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "AWS Global Accelerator",
+    "cost": 15.2
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 8.15
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.53
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon ElastiCache",
+    "cost": 65.66
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 1164.88
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 1213.1
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 121.63
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 154.9
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 27.91
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 4.08
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 60.84
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 1.32
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 1.72
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "AWS Global Accelerator",
+    "cost": 16.83
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 8.14
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.54
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon ElastiCache",
+    "cost": 72.72
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 1227.1
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 1289.5
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 274.12
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 171.55
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 29.48
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 4.11
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 68.48
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 1.42
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.12
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "AWS Global Accelerator",
+    "cost": 0.93
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.45
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon ElastiCache",
+    "cost": 4.03
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 65.39
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 52.57
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 25.97
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 9.46
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 1.25
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.28
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 3.9
+  },
+  {
+    "profile": "mm-retail-prod-us-dr",
+    "account_id": "542575560358",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS Backup",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 156.76
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 3.37
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS Data Pipeline",
+    "cost": 0.85
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 3.42
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS Lambda",
+    "cost": 25.4
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS Secrets Manager",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS WAF",
+    "cost": 44.02
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AWS X-Ray",
+    "cost": 0.32
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon API Gateway",
+    "cost": 2.76
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 32.96
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon ElastiCache",
+    "cost": 511.46
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 6087.89
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 5.76
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service",
+    "cost": 15.55
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 377.93
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic File System",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 185.63
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 92.6
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon MQ",
+    "cost": 2953.43
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 1051.78
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 211.02
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 57.11
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS Backup",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS CloudTrail",
+    "cost": 143.39
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 4.41
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS Data Pipeline",
+    "cost": 0.91
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 3.66
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS Lambda",
+    "cost": 24.84
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS WAF",
+    "cost": 47.06
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AWS X-Ray",
+    "cost": 0.27
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon API Gateway",
+    "cost": 3.17
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 35.35
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon ElastiCache",
+    "cost": 493.83
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 6570.25
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 6.42
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service",
+    "cost": 11.69
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 364.9
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 217.17
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 96.18
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon MQ",
+    "cost": 2908.56
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 1180.48
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 208.56
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 61.79
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS Backup",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS CloudTrail",
+    "cost": 141.74
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 4.33
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS Data Pipeline",
+    "cost": 0.9
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 3.66
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS Lambda",
+    "cost": 27.76
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS Secrets Manager",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS WAF",
+    "cost": 47.06
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AWS X-Ray",
+    "cost": 0.39
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon API Gateway",
+    "cost": 2.68
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 35.4
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon ElastiCache",
+    "cost": 546.74
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 6597.61
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 6.12
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 403.99
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic File System",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 260.5
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 125.39
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon MQ",
+    "cost": 3288.98
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.03
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 1183.99
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 232.31
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 58.67
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "AWS CloudTrail",
+    "cost": 7.09
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 0.33
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "AWS Data Pipeline",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.2
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "AWS Lambda",
+    "cost": 1.06
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "AWS WAF",
+    "cost": 2.68
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon API Gateway",
+    "cost": 0.11
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 1.98
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon ElastiCache",
+    "cost": 29.9
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 293.85
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.28
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 22.26
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 12.83
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 6.56
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon MQ",
+    "cost": 181.36
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.91
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 78.59
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 12.57
+  },
+  {
+    "profile": "mm-retail-prod-us",
+    "account_id": "125062011444",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 2.79
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.74
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 1.71
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 2.97
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.2
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.75
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 0.4
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 1.83
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 2.78
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.08
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.9
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 1.83
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 3.1
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Notification Service",
+    "cost": 0.07
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.97
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.1
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.16
+  },
+  {
+    "profile": "mm-security",
+    "account_id": "155215164482",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "AWS CodeArtifact",
+    "cost": 14.83
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.39
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 0.87
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 15.15
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 0.41
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 10.44
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.2
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 0.41
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "AWS CodeArtifact",
+    "cost": 12.71
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.09
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.93
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 16.53
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 0.44
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 9.08
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.19
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "AWS CodeArtifact",
+    "cost": 14.6
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.93
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 18.03
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 0.44
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 10.92
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.22
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 0.06
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-04-01",
+    "service": "AWS CodeArtifact",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-04-01",
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "cost": 1.01
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 0.44
+  },
+  {
+    "profile": "mm-shared-artifact-registry",
+    "account_id": "278608866843",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "AWS CloudTrail",
+    "cost": 0.99
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "AWS Config",
+    "cost": 0.56
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "AWS Key Management Service",
+    "cost": 8.5
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "EC2 - Other",
+    "cost": 762.4
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 10.08
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 62.99
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 329.25
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon GuardDuty",
+    "cost": 65.09
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Location Service",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Route 53",
+    "cost": 0.01
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Simple Storage Service",
+    "cost": 277.42
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 91.75
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-01-03",
+    "service": "AmazonCloudWatch",
+    "cost": 45.31
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "AWS Config",
+    "cost": 0.34
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "AWS Key Management Service",
+    "cost": 9.05
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "EC2 - Other",
+    "cost": 762.27
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 66.22
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 60.82
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 335.54
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon GuardDuty",
+    "cost": 62.43
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon Route 53",
+    "cost": 0.19
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 383.54
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 88.6
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-02-01",
+    "service": "AmazonCloudWatch",
+    "cost": 44.11
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "AWS Config",
+    "cost": 1.84
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "AWS Cost Explorer",
+    "cost": 0.02
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "AWS Key Management Service",
+    "cost": 9.08
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "EC2 - Other",
+    "cost": 750.2
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Compute Cloud - Compute",
+    "cost": 0.04
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 119.4
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 246.0
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon GuardDuty",
+    "cost": 72.29
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon Route 53",
+    "cost": 0.19
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Queue Service",
+    "cost": 0.05
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 474.49
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 97.91
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-03-01",
+    "service": "AmazonCloudWatch",
+    "cost": 48.12
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "AWS Config",
+    "cost": 1.07
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "AWS Key Management Service",
+    "cost": 0.5
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "EC2 - Other",
+    "cost": 34.64
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Container Service for Kubernetes",
+    "cost": 3.71
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "Amazon Elastic Load Balancing",
+    "cost": 5.17
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "Amazon GuardDuty",
+    "cost": 5.04
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "Amazon Route 53",
+    "cost": 0.18
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "Amazon Simple Storage Service",
+    "cost": 33.04
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "Amazon Virtual Private Cloud",
+    "cost": 5.49
+  },
+  {
+    "profile": "mm-shared-services",
+    "account_id": "654654350563",
+    "month": "2026-04-01",
+    "service": "AmazonCloudWatch",
+    "cost": 2.65
+  }
+]

@@ -1,0 +1,166 @@
+key,name,type,status,page_count,recent_pages_count
+DO,DevOps,global,current,68,0
+ISDT,IT Service Desk Test,global,current,0,0
+TO,App Support,global,current,0,0
+TSKN,Tech Support Knowledge Nexus,global,current,0,0
+PM,Program Management,global,current,82,1
+Incubation,Incubation,global,current,4,0
+AI,AI,global,current,14,0
+CPG,Cake Payment Gateway,global,current,1838,5
+MCAE,MM Cake - Aramark Engagement,global,current,530,1
+DRAWIOCONFIG,draw.io Configuration,global,current,5,0
+LQ,Leapset QA,global,current,922,0
+CIN,Cinco,global,current,1593,1
+CR,Cake Reports,global,current,1359,5
+DEL,Delivery,global,current,40,0
+MUT,Menu Universe Tracker,global,current,305,0
+BT,Guest Manager,global,current,827,0
+DIS,Discovery,global,current,538,0
+mobile,Mobile Practice,global,current,264,0
+MC,Giants,global,current,888,0
+API,API,global,current,165,0
+POAI,CAKE Payments,global,current,2203,5
+CAKENET,CAKE Connect,global,current,233,0
+CQ,Cakecore QE,global,current,1519,5
+CP,CAKE Process,global,current,79,0
+LP,Leapset Platform,global,current,6445,5
+CP1,Catalysts,global,current,493,5
+LOYAL,Loyalty and Online Order,global,current,36,0
+CPS,CINCO POS 3,global,current,37,0
+EMV,EMV,global,current,17,0
+OLO,OLO,global,current,32,0
+OIT,ON-BOARDING & IMPLEMENTATION TEAMS,global,current,36,0
+MF,Ministry of Fun,global,current,25,0
+NH,New Hardware,global,current,11,0
+DES,Design,global,current,7,0
+CPCI,CAKE PCI,global,current,62,0
+CD,CAKE Delivery,global,current,6,0
+CA,Cake Apps,global,current,325,2
+CG,Cake GPS,global,current,667,0
+ES,CAKE Engineering Excellence,global,current,1238,5
+CCE,Cloud Engineering,global,current,1752,5
+DB,Data & Analytics,global,current,2056,5
+SWAT,SWAT,global,current,963,4
+OE,OPS Engineering,global,current,1266,0
+PMG,POS Menu Group,global,current,119,2
+DEP,Cloud Services Home,global,current,1036,3
+UX,User Experience,global,current,264,0
+QE,Quality Engineering,global,current,161,0
+PG,Payment Gateway,global,current,260,0
+QCEN,QCenter,global,current,89,0
+THUL,Thulya,global,current,263,0
+PS,Taurus,global,current,686,1
+partnerships,Partnerships,global,current,530,1
+POS,POS,global,current,3024,0
+CP2,Optimo,global,current,417,0
+TECOP,Tech Ops,global,current,222,0
+CST1,Customer Support Tier 1.,global,current,56,0
+TIT,Titans,global,current,201,0
+PROD,Product,global,current,560,5
+PHOENIX,Phoenix,global,current,405,0
+UL,Ultrons,global,current,364,0
+ONP,Ortego National Parks,global,current,42,0
+SEAOA,Service Excellence and Operational Architecture,global,current,112,3
+TD1,Team Castor,global,current,298,1
+SMHGP,Hasitha Gamage,global,current,165,0
+SMSPP,Shavin Pieris,global,current,34,0
+SMKWP,Kevin Wu,global,current,37,0
+SMADNP,Aruna Dissanayake,global,current,68,0
+TS,Team Stark,global,current,755,0
+SMHMP,Hafeez Marzuk,global,current,6,0
+SMALP,Asiri Liyanage,global,current,36,0
+SMTWP,Thiwanka Wimalasuriya,global,current,121,5
+SMMSP,Mirunaaliny S Iyer,global,current,68,5
+SMSJP,Sineth Jayasinghe,global,current,34,0
+SMJCP,Jeremy Carvalho,global,current,45,0
+SMEFP,Eric Fleming,global,current,81,0
+SMADP,Aruna Dissanayake ,global,current,31,0
+SMDWP,Dulanjan Wengappuliarachchi,global,current,21,0
+P,Payments,global,current,968,5
+~5d5a705bc6318a0d6cd67485,Lahiru Yapa,personal,archived,0,0
+~712020d5a7c29b99cb4a5fa6559495558aec17,Manoj Madushanka,personal,archived,0,0
+~624abd7e8678e900705d157b,Dileesha Gamage,personal,archived,0,0
+~62835f95cc1d15006fa9eee6,Chalaka Sudusinghe,personal,current,32,0
+~636b953e0ef20a5c40a3e0b9,Dushyantha Rubasinghe,personal,archived,0,0
+TD,TT Dummy,global,current,6,0
+~62cc0b68dcf59ca4ad00e128,Pavini Weerasinghe,personal,archived,0,0
+TT,Team Tesla,global,current,306,5
+~852674961,Wasantha Herath,personal,archived,0,0
+~635652da76b91b62562d2db6,Pradeep Sanjaya,personal,archived,0,0
+~6356391efc0cc7a600ae2b77,Dinesh De Silva,personal,archived,0,0
+~63f90f4bce6f37e5ed951f7a,Zubair Syed,personal,current,6,0
+SET,Implementations and Operations Team,global,current,362,0
+OPS,IT & Dev Ops,global,current,225,1
+ST,Sysco Team,global,current,47,0
+PT,Concierge Team,global,current,1022,4
+QT,QA Team,global,current,86,0
+MCS,Mad Mobile Production Support,global,current,12,0
+CM,Change Management,global,current,261,0
+CS,Customer Success,global,current,27,0
+MC2,Concierge Cloud Portal,global,current,82,0
+IMPT,Concierge Customer Space Template,global,current,67,0
+PO,Product Organization,global,current,511,0
+NRF18,NRF-19,global,current,43,0
+SKB,Support Knowledge Base,global,current,392,1
+PRO,Program Management,global,current,12,0
+MP,MenuPad,global,current,1014,0
+POSNG,Marvel,global,current,330,0
+VSD,vNext Sales Demo,global,current,19,0
+CSS,Customer Success (CAKE),global,current,27,0
+CC,Concierge Connect,global,current,64,0
+GLOB,Globant,global,current,86,0
+SC,Security & Compliance,global,archived,0,0
+RAC,Restaurant Accelerator,global,current,330,0
+MMCPM,Mad Mobile Customer Portal (Mid-Market),global,current,18,0
+MI,Restaurant LOB,global,current,48,0
+NFR2022,NRF - 2022,global,current,13,0
+SE,Sales Engineering,global,current,29,0
+MMPO,Mad Mobile People Operations,global,current,31,0
+SFDC,Salesforce,global,current,335,5
+ACSD,Apple Communications and Shared Documentation,global,current,25,0
+PRP,Salesforce POS Playbook,global,current,21,0
+NRF2023,NRF - 2023,global,current,18,0
+EN,Engineering,global,current,22,0
+EHR,Elo Hardware Refresh,global,current,10,0
+MMA,Mad Mobile Architecture,global,current,554,5
+PI,Platform Initiative,global,current,18,0
+SEC,Security Operations,global,current,2,2
+AIMM,AI at Mad Mobile,global,current,14,0
+CX,Customer Experience,global,current,31,0
+PMKT,Product Marketing,global,current,13,0
+~779738120,James Fugedy,personal,archived,0,0
+~206752333,Anthony Ayco,personal,archived,0,0
+~458229491,Shiyanka Dezylva,personal,archived,0,0
+~854871293,Mad Ops,personal,archived,0,0
+~479218535,Zachary Brady,personal,archived,0,0
+~730977308,Matt Cooke,personal,current,226,5
+~284626019,Bhanuka Withana,personal,archived,0,0
+~60dcad96285656006a8397e5,Cliff Griffith,personal,archived,0,0
+~62278f3e59c0740069db10c8,Matthew Kranak,personal,archived,0,0
+~5570587593d64990df48ccb96e2861c0f9f573,Aaron Feldmeyer,personal,archived,0,0
+~5dc2c122ffc8c10df0edb418,Vanessa,personal,current,17,0
+~607105372b469c00706ef4ee,Jeremy Diggins,personal,archived,0,0
+~5570582a94a16ee16a4617994d80bd6a127a0c,Qaiser Pannu,personal,current,6,0
+~557058e2f97df0c02b4dc792987f9b57a577ee,John Harre,personal,current,10,0
+~5ede9cff5c943e0abb7e7fe6,Sunil Pandey,personal,archived,0,0
+~6258a0f1eee0a9006ab96985,Anthony Silvas,personal,archived,0,0
+~629775af9bc7150068ce2bca,Holly Culver,personal,current,8,0
+~625f1d41f70c3a006f1c971f,Vincent Sposato,personal,archived,0,0
+~63289d8e3ac41ebde76838ad,Das DeSilva,personal,current,11,0
+~633a3d27fedc6169aed8dbdb,Jonathon Burroughs,personal,archived,0,0
+~632b7bf08b75455be453fad8,Zachary Davies,personal,archived,0,0
+~63b49a204bc858b303ce81ac,Tommy Coppick,personal,archived,0,0
+~628b590cab91fe007097279d,Madhawi De Mel,personal,archived,0,0
+~5b4f02c727c98e2ce5158ab9,Ananda Subasighe,personal,archived,0,0
+~712020ede2f447be8f45de89393c992732af14,Laura Nsang,personal,archived,0,0
+~7120203f2e1539aa9b41e9932eda18afc0c6ee,Mike Box,personal,archived,0,0
+PMME,Project Management - ME,global,current,48,0
+OSME,Operations Solutions,global,current,611,5
+~185425964,jake linder,personal,current,6,0
+~5bb8592506b3786d0a0312a6,Fayaz Abdul,personal,archived,0,0
+CLD,Cloud Platform,global,current,3,0
+TSSSG,Tech Support Self Service Guides,knowledge_base,current,8,0
+SI,System Integrators,global,current,42,0
+TESTROSEN,TESTROSEN,knowledge_base,current,0,0
+~712020d15b9157713e4acfac8a43ced56fbb84,Irshad Jaffoor,personal,archived,0,0
+~60e6f8e70dd4f60076b2f3a5,Ana Chambers,personal,current,2,3

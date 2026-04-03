@@ -1,0 +1,191 @@
+[
+  {
+    "week_start": "2025-09-26",
+    "week_end": "2025-10-03",
+    "created": 224,
+    "resolved": 194,
+    "net": -30
+  },
+  {
+    "week_start": "2025-10-03",
+    "week_end": "2025-10-10",
+    "created": 218,
+    "resolved": 261,
+    "net": 43
+  },
+  {
+    "week_start": "2025-10-10",
+    "week_end": "2025-10-17",
+    "created": 209,
+    "resolved": 160,
+    "net": -49
+  },
+  {
+    "week_start": "2025-10-17",
+    "week_end": "2025-10-24",
+    "created": 226,
+    "resolved": 170,
+    "net": -56
+  },
+  {
+    "week_start": "2025-10-24",
+    "week_end": "2025-10-31",
+    "created": 166,
+    "resolved": 179,
+    "net": 13
+  },
+  {
+    "week_start": "2025-10-31",
+    "week_end": "2025-11-07",
+    "created": 191,
+    "resolved": 142,
+    "net": -49
+  },
+  {
+    "week_start": "2025-11-07",
+    "week_end": "2025-11-14",
+    "created": 274,
+    "resolved": 117,
+    "net": -157
+  },
+  {
+    "week_start": "2025-11-14",
+    "week_end": "2025-11-21",
+    "created": 588,
+    "resolved": 123,
+    "net": -465
+  },
+  {
+    "week_start": "2025-11-21",
+    "week_end": "2025-11-28",
+    "created": 147,
+    "resolved": 232,
+    "net": 85
+  },
+  {
+    "week_start": "2025-11-28",
+    "week_end": "2025-12-05",
+    "created": 141,
+    "resolved": 250,
+    "net": 109
+  },
+  {
+    "week_start": "2025-12-05",
+    "week_end": "2025-12-12",
+    "created": 176,
+    "resolved": 129,
+    "net": -47
+  },
+  {
+    "week_start": "2025-12-12",
+    "week_end": "2025-12-19",
+    "created": 171,
+    "resolved": 128,
+    "net": -43
+  },
+  {
+    "week_start": "2025-12-19",
+    "week_end": "2025-12-26",
+    "created": 77,
+    "resolved": 51,
+    "net": -26
+  },
+  {
+    "week_start": "2025-12-26",
+    "week_end": "2026-01-02",
+    "created": 62,
+    "resolved": 24,
+    "net": -38
+  },
+  {
+    "week_start": "2026-01-02",
+    "week_end": "2026-01-09",
+    "created": 208,
+    "resolved": 230,
+    "net": 22
+  },
+  {
+    "week_start": "2026-01-09",
+    "week_end": "2026-01-16",
+    "created": 206,
+    "resolved": 114,
+    "net": -92
+  },
+  {
+    "week_start": "2026-01-16",
+    "week_end": "2026-01-23",
+    "created": 497,
+    "resolved": 108,
+    "net": -389
+  },
+  {
+    "week_start": "2026-01-23",
+    "week_end": "2026-01-30",
+    "created": 312,
+    "resolved": 788,
+    "net": 476
+  },
+  {
+    "week_start": "2026-01-30",
+    "week_end": "2026-02-06",
+    "created": 165,
+    "resolved": 677,
+    "net": 512
+  },
+  {
+    "week_start": "2026-02-06",
+    "week_end": "2026-02-13",
+    "created": 162,
+    "resolved": 102,
+    "net": -60
+  },
+  {
+    "week_start": "2026-02-13",
+    "week_end": "2026-02-20",
+    "created": 164,
+    "resolved": 129,
+    "net": -35
+  },
+  {
+    "week_start": "2026-02-20",
+    "week_end": "2026-02-27",
+    "created": 197,
+    "resolved": 160,
+    "net": -37
+  },
+  {
+    "week_start": "2026-02-27",
+    "week_end": "2026-03-06",
+    "created": 181,
+    "resolved": 132,
+    "net": -49
+  },
+  {
+    "week_start": "2026-03-06",
+    "week_end": "2026-03-13",
+    "created": 197,
+    "resolved": 143,
+    "net": -54
+  },
+  {
+    "week_start": "2026-03-13",
+    "week_end": "2026-03-20",
+    "created": 246,
+    "resolved": 104,
+    "net": -142
+  },
+  {
+    "week_start": "2026-03-20",
+    "week_end": "2026-03-27",
+    "created": 233,
+    "resolved": 221,
+    "net": -12
+  },
+  {
+    "week_start": "2026-03-27",
+    "week_end": "2026-04-03",
+    "created": 152,
+    "resolved": 144,
+    "net": -8
+  }
+]

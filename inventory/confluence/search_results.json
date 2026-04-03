@@ -1,0 +1,1451 @@
+{
+  "architecture": [
+    {
+      "title": "Complete Test Cases - Cake Release 8.877.3.0 - Resolve                 Unassociated EMAF Transactions",
+      "space": "Payments",
+      "last_modified": "2026-04-02T11:15:38.000Z",
+      "url": "/spaces/P/pages/1730674692/Complete+Test+Cases+-+Cake+Release+8.877.3.0+-+Resolve+Unassociated+EMAF+Transactions",
+      "excerpt": "Problem Statement\nWP Express service is unable to send the legacy payment_id with Worldpay requests due to the architecture of the Modern-Legacy integration. When these transactions appear in EMAF rec"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - Accelerated Funding Fix - IR 01",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:20:03.000Z",
+      "url": "/spaces/POAI/pages/1907884033/Cake+Release+8.877.5.0+-+Accelerated+Funding+Fix+-+IR+01",
+      "excerpt": "STAG Date\n2026-03-31 \nPROD Date\n2026-04-08 \nRelease Owner\nKevin Reyes \n\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nResolved Incorrect Accelerated Funding Billing Fee L"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - Accelerated Funding Fix",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:18:48.000Z",
+      "url": "/spaces/POAI/pages/1890123777/Cake+Release+8.877.5.0+-+Accelerated+Funding+Fix",
+      "excerpt": "STAG Date\n2026-03-31 \nPROD Date\n2026-04-08 \nRelease Owner\nKevin Reyes \n\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nResolved Incorrect Accelerated Funding Billing Fee L"
+    },
+    {
+      "title": "Unified KPI &amp; Chart Functional Contract",
+      "space": "Cake Reports",
+      "last_modified": "2026-03-30T12:15:02.000Z",
+      "url": "/spaces/CR/pages/1583644673/Unified+KPI+Chart+Functional+Contract",
+      "excerpt": "MLR KPI &amp; CHART FUNCTIONAL CONTRACT \u2014 v1.0 (Authoritative Spec)\n(Final, consolidated, complete \u2014 for Product, DB, BE, FE, QA, Architecture, and Ike\u2019s stakeholders)\n1. PURPOSE OF THIS DOCUMENT\nThis"
+    },
+    {
+      "title": "05 - SMS Token Onboarding - Software Architecture",
+      "space": "CAKE Engineering Excellence",
+      "last_modified": "2026-03-27T21:32:01.000Z",
+      "url": "/spaces/ES/pages/1306624001/05+-+SMS+Token+Onboarding+-+Software+Architecture",
+      "excerpt": "Description of Architecture\nThis document outlines a strategy to enhance the CAKE POS device PIN and token retrieval procedure.  The architecture aims to streamline device onboarding, minimize support"
+    },
+    {
+      "title": "Brainstorming Architecture Developer Prototypes to Improve Processes (BAD-PIP) skunkworks",
+      "space": "Matt Cooke",
+      "last_modified": "2026-03-27T12:32:01.000Z",
+      "url": "/spaces/~730977308/pages/1826586625/Brainstorming+Architecture+Developer+Prototypes+to+Improve+Processes+BAD-PIP+skunkworks",
+      "excerpt": "Purpose: provide a collection of future projects to arrange into future implementations\nBackground\nAvailable developers with QA resources constrained\nProcess Flow\nBrainstorm without filtering\nPeer inv"
+    },
+    {
+      "title": "MLR Project Automation Test Strategy",
+      "space": "Cake Reports",
+      "last_modified": "2026-03-26T15:41:05.000Z",
+      "url": "/spaces/CR/pages/1888223242/MLR+Project+Automation+Test+Strategy",
+      "excerpt": "Purpose: Document the automation test cases for the MLR project, including scope, architecture, test design, execution strategy, traceability, and maintenance practices. Use this as a living reference"
+    },
+    {
+      "title": "Cake Release 8.877.4.0 (2.5.8.4) - Include MCC in WP Legal Entity Requests",
+      "space": "CAKE Payments",
+      "last_modified": "2026-03-25T05:43:14.000Z",
+      "url": "/spaces/POAI/pages/1866268673/Cake+Release+8.877.4.0+2.5.8.4+-+Include+MCC+in+WP+Legal+Entity+Requests",
+      "excerpt": "STAG Date\n2026-03-25 \nPROD Date\n2026-03-26 \nRelease Owner\nAkshay Bhasin \n\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nEMAF-Core\nEnhancement\nInclude the MCC (Merchant Ca"
+    },
+    {
+      "title": "Curated Cake",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-24T17:09:43.000Z",
+      "url": "/spaces/TT/pages/1431076954/Curated+Cake",
+      "excerpt": "The Very Best of Confluence is right here. Find something valuable and worth saving?\nOn the Confluence page you\u2019d like to highlight add the label curated and a specific label for the domain, for examp"
+    },
+    {
+      "title": "Agentic Lovable Dev Flow",
+      "space": "Cake Apps",
+      "last_modified": "2026-03-24T17:05:54.000Z",
+      "url": "/spaces/CA/pages/1883045889/Agentic+Lovable+Dev+Flow",
+      "excerpt": "Building a New Screen from a Prototype with Cursor + Chrome DevTools MCP\nThis guide documents the flow we used to build Security &gt; Audit Log from an external Lovable prototype while keeping the imp"
+    },
+    {
+      "title": "NEO MLR Engineering Walkthrough",
+      "space": "Cake Reports",
+      "last_modified": "2026-03-16T12:57:19.000Z",
+      "url": "/spaces/CR/pages/1852178439/NEO+MLR+Engineering+Walkthrough",
+      "excerpt": "Recommended Agenda Order (Improved)\nObjective: Confirm reporting architecture, ticket structure, and engineering execution plan for MLR Menu Management.\n1\ufe0f\u20e3 Initiative Overview (REST-18100)\nBusiness g"
+    },
+    {
+      "title": "MadPayments Roadmap",
+      "space": "Payments",
+      "last_modified": "2026-03-13T13:39:15.000Z",
+      "url": "/spaces/P/pages/1810366495/MadPayments+Roadmap",
+      "excerpt": "Roadmap Objectives\nStandardize repository branches\nShare common code\nOrganize for Linux &amp; Android platforms\nOrganize for IDTech VP3350 &amp; Elo M60 hardware profiles\nThe roadmap is split into mul"
+    },
+    {
+      "title": "Storage Decision: Mongo vs Snowflake",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-13T13:23:00.000Z",
+      "url": "/spaces/TT/pages/1845100546/Storage+Decision+Mongo+vs+Snowflake",
+      "excerpt": "TL;DR\nFor KDSv2 reporting, we need a low-latency, event-replayable store that supports real-time materialization in the @madmobile/restaurant-admin-v2/ NestJS backend. MongoDB is a better fit than Sno"
+    },
+    {
+      "title": "NEO AI Insights Standard Story Structure",
+      "space": "Cake Reports",
+      "last_modified": "2026-03-12T20:36:41.000Z",
+      "url": "/spaces/CR/pages/1846411268/NEO+AI+Insights+Standard+Story+Structure",
+      "excerpt": "NEO AI Foundations MVP \u2013 MLR Sales\nEpic Delivery Matrix (Engineering + PM Alignment)\nInitiative:\nREST-18100 \u2014 NEO AI Foundations MVP for MLR Sales\nThis initiative includes several Beta 2 workstreams.\n"
+    },
+    {
+      "title": "NEO MLR Standard Story Structure",
+      "space": "Cake Reports",
+      "last_modified": "2026-03-12T13:40:30.000Z",
+      "url": "/spaces/CR/pages/1702363171/NEO+MLR+Standard+Story+Structure",
+      "excerpt": "MLR Menu Management \u2014 Story Decomposition Summary (Updated)\nAll original dense stories have been decomposed into the standard five-story MLR delivery pattern to improve clarity, parallel development, "
+    }
+  ],
+  "runbook": [
+    {
+      "title": "RA 2.0 Portal - Technical Plan",
+      "space": "Team Tesla",
+      "last_modified": "2026-02-24T20:43:53.000Z",
+      "url": "/spaces/TT/pages/1791361035/RA+2.0+Portal+-+Technical+Plan",
+      "excerpt": "High-Level Overview\nDocument Version: 1.0  \nLast Updated: February 2026  \nStatus: Draft (ARB-ready overview)\nExecutive Summary\nRA 2.0 Portal is the next-generation Restaurant Admin web portal built fr"
+    },
+    {
+      "title": "RUNBOOK: Using Athena For Querying AWS Load Balancer Access Logs, WAF Logs, VPC Flow Logs and CloudTrail Logs",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-02-03T12:01:20.000Z",
+      "url": "/spaces/CCE/pages/257214256/RUNBOOK+Using+Athena+For+Querying+AWS+Load+Balancer+Access+Logs+WAF+Logs+VPC+Flow+Logs+and+CloudTrail+Logs",
+      "excerpt": "Based on general AWS guide for querying service logs in Athena:  \nQuerying Access Logs\nStep\nLoad balancer\nVPC\nCloudTrail\nWAF\nGo to Athena\nAmazon Athena  &gt; Query editor tabs\nSelect Data Source\nAWSDa"
+    },
+    {
+      "title": "Runbook: Resolving Disk Usage Issue on EBS Partition for cloud-sales-demo",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-01-16T07:28:00.000Z",
+      "url": "/spaces/CCE/pages/962691089/Runbook+Resolving+Disk+Usage+Issue+on+EBS+Partition+for+cloud-sales-demo",
+      "excerpt": "Overview\nThis runbook provides step-by-step instructions to resolve disk space issues on the EBS partition of the cloud-sales-demo instance.\nAffected Instance Details\nInstance ID: i-072671c1fc85ccae7\n"
+    },
+    {
+      "title": "Combined JIRA Initiatives, Epics and Stories",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-06T17:39:15.000Z",
+      "url": "/spaces/TT/pages/1636008021/Combined+JIRA+Initiatives+Epics+and+Stories",
+      "excerpt": "Initiative\nEpic\nStory Title\nJira Key\nAction\nNotes\nStatus\nKDS v2 \u2014 Core Architecture &amp; Routing\nEpic 1 \u2014 Routing Engine (Router App)\nRouter App: manage Stations and Assembly Lines\nCreate\nNew canonic"
+    },
+    {
+      "title": "Epic #5: Deployment &amp; Operations",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-02T22:20:35.000Z",
+      "url": "/spaces/TT/pages/1636007957/Epic+5+Deployment+Operations",
+      "excerpt": "Story Title / Section\nDescription\nAcceptance Criteria\nStatus\nDeployment Architecture &amp; Standards\nDefine supported deployment topologies\nDocument supported POS, KDS, and network layouts\nTopologies "
+    },
+    {
+      "title": "Epic #4: Offline, Sync &amp; Reliability",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-02T21:51:21.000Z",
+      "url": "/spaces/TT/pages/1635221545/Epic+4+Offline+Sync+Reliability",
+      "excerpt": "Story Title / Section\nDescription\nAcceptance Criteria\nStatus\nOffline-First Architecture Guarantees\nDefine offline-first guarantees for KDS v2\nDocument and codify expected offline behavior\nGuarantees d"
+    },
+    {
+      "title": "New JIRA Epics &amp; Stories",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-01T17:45:11.000Z",
+      "url": "/spaces/TT/pages/1634107429/New+JIRA+Epics+Stories",
+      "excerpt": "Epic #\nEpic Name\nSubtopics / Scope Areas Included in This Epic\nEpic 1\nRouter App &amp; Routing Configuration\nRouter-config JSON schema\nStation definitions- Assembly lines + step sequencing\nRouting pol"
+    },
+    {
+      "title": "Sardine Notifications Implementation Analysis for Payments-Admin-API Integration",
+      "space": "Payments",
+      "last_modified": "2025-12-22T12:31:01.000Z",
+      "url": "/spaces/P/pages/1617428481/Sardine+Notifications+Implementation+Analysis+for+Payments-Admin-API+Integration",
+      "excerpt": "Overview\nThis document analyzes the requirements for implementing Sardine notification handling in the payments-admin-api application. The analysis focuses exclusively on the payments-admin-api side o"
+    },
+    {
+      "title": "RS2 Boarding Research",
+      "space": "Payments",
+      "last_modified": "2025-12-17T20:14:02.000Z",
+      "url": "/spaces/P/pages/1615265796/RS2+Boarding+Research",
+      "excerpt": "User Story: UP-4087-Merchant_Onboarding-RS2  \nVersion: 1.0  \nDate: December 2025\nTable of Contents\nExecutive Summary\nBusiness Context\nCurrent Source Code State\nRS2 Platform Overview\nMerchant Hierarchy"
+    },
+    {
+      "title": "RUNBOOK: Restarting a CouchDB Instance for Maintenance",
+      "space": "Data & Analytics",
+      "last_modified": "2025-12-15T10:14:17.000Z",
+      "url": "/spaces/DB/pages/258099432/RUNBOOK+Restarting+a+CouchDB+Instance+for+Maintenance",
+      "excerpt": "Before the maintenance, AMI should be taken. For the AMI backup, it will take around 1 hour.\nFor the maintenance activity (stop and start), approximately 30mins downtime should be communicated.\nMaster"
+    },
+    {
+      "title": "RUNBOOK: ECS Service Graceful Restart using Force New Deployment",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-12-09T11:42:06.000Z",
+      "url": "/spaces/CCE/pages/389480707/RUNBOOK+ECS+Service+Graceful+Restart+using+Force+New+Deployment",
+      "excerpt": "Min 100% Max 200% Method\nMin 100% Max &gt;100% Method!--https://madmobile-eng.atlassian.net/wiki/spaces/CCE/pages/389480707/RUNBOOK+ECS+Service+Graceful+Restart+using+Force+New+Deployment#Min-100%25"
+    },
+    {
+      "title": "RUNBOOK: Restart Graylog Service",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-11-24T06:03:57.000Z",
+      "url": "/spaces/CCE/pages/1477148673/RUNBOOK+Restart+Graylog+Service",
+      "excerpt": "The Graylog service should be restarted under any of the following conditions:\nThe alert prod-graylog-migration-alb_5XX_responses_from_the_graylog_backend is in the Alarm state.\nThe Production Graylog"
+    },
+    {
+      "title": "MLR Menu Management Release Breakdown",
+      "space": "Cake Reports",
+      "last_modified": "2025-11-18T04:53:24.000Z",
+      "url": "/spaces/CR/pages/1529872413/MLR+Menu+Management+Release+Breakdown",
+      "excerpt": "\u2705 REST-14247 \u2013 Release Breakdown (Based on Epic)\n\ufffd\ufffd BETA 1 \u2013 Minimum Viable Multi-Location Menu Reporting\nBeta 1 focuses on getting the reports functional, with basic filtering and the first export fo"
+    },
+    {
+      "title": "Cloud Operations Continuity",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-09-17T07:45:29.000Z",
+      "url": "/spaces/CCE/pages/1416560679/Cloud+Operations+Continuity",
+      "excerpt": "Creating this page as a part of Cloud Operations handover from MM-LK office to MM-US Office. This page provides an overview to Cake Cloud Operations Function.\nOn-Call rotation\nOn-Call function would b"
+    },
+    {
+      "title": "Popularity Score ETL DAG Documentation",
+      "space": "Product",
+      "last_modified": "2025-08-01T12:50:22.000Z",
+      "url": "/spaces/PROD/pages/1344897287/Popularity+Score+ETL+DAG+Documentation",
+      "excerpt": "Overview\nThe Popularity Score ETL DAG (popularity_score_etl_v1) calculates time-decayed popularity scores for restaurant menu items based on transaction interaction data. This DAG processes user inter"
+    }
+  ],
+  "post-mortem": [
+    {
+      "title": "Best Practices for Managing an IT Project",
+      "space": "Vanessa",
+      "last_modified": "2025-02-21T14:13:34.000Z",
+      "url": "/spaces/~5dc2c122ffc8c10df0edb418/pages/885227522/Best+Practices+for+Managing+an+IT+Project",
+      "excerpt": "By adhering to these best practices and following a structured timeline, IT projects can be managed efficiently, reducing risks and improving success rates.\n1. Project Planning\nDefine project scope, o"
+    },
+    {
+      "title": "SUPPORT + Engineering Sync - ACTION ITEMS",
+      "space": "Program Management",
+      "last_modified": "2024-08-13T10:52:35.000Z",
+      "url": "/spaces/PM/pages/371720482/SUPPORT+Engineering+Sync+-+ACTION+ITEMS",
+      "excerpt": "#\nADDED DATE\nDUE DATE\nStatus\nDEPTARTMENT\nTASK\nOWNER\nDEPENDENCY\nDEPENDENCY RESOLTUION DATE\nCOMMENTS\n1\n2024-07-22 \nOngoing\nIN PROGRESS\n\nSupport\nReview P3 Cases for Severity - Use Mahesh to look at aging"
+    },
+    {
+      "title": "Handling CodeReds (Documentation)",
+      "space": "Taurus",
+      "last_modified": "2024-05-22T07:40:20.000Z",
+      "url": "/spaces/PS/pages/260252499/Handling+CodeReds+Documentation",
+      "excerpt": "Author\nAngelo Senaratne \nOwner\nAngelo Senaratne  Shanil Jayamaha \nStatus\npending review\nReviewed By\nAsiri Liyanage  Aruna Dissanayake \nIntroduction\nThis document is to provide guidelines on how to pre"
+    },
+    {
+      "title": "Server Maintenance Policy for Applications on AWS ECS and EKS",
+      "space": "Cloud Engineering",
+      "last_modified": "2023-05-08T17:17:12.000Z",
+      "url": "/spaces/CCE/pages/257139080/Server+Maintenance+Policy+for+Applications+on+AWS+ECS+and+EKS",
+      "excerpt": "Version\nDescription of Changes\nAuthor/s\nReviewer/s\nDate\n1.0\nInitial creation of the policy\nTharindu Nanayakkara \n2023-03-17 \nOverview\nThe Server Maintenance Policy for Applications on Amazon Web Servi"
+    },
+    {
+      "title": "Server Maintenance Policy for Legacy Application Servers on AWS EC2",
+      "space": "Cloud Engineering",
+      "last_modified": "2023-03-17T11:01:45.000Z",
+      "url": "/spaces/CCE/pages/257138842/Server+Maintenance+Policy+for+Legacy+Application+Servers+on+AWS+EC2",
+      "excerpt": "Version\nDescription of Changes\nAuthor/s\nReviewer/s\nDate\n1.0\nInitial creation of the policy\nTharindu Nanayakkara \n2023-03-17 \nOverview\nThe Server Maintenance Policy for Legacy Application Servers on AW"
+    },
+    {
+      "title": "Incident Response Plan",
+      "space": "Cloud Engineering",
+      "last_modified": "2022-11-10T18:28:27.000Z",
+      "url": "/spaces/CCE/pages/257099402/Incident+Response+Plan",
+      "excerpt": "Name of the Policy\nIncident Response Plan\nProcess Owner\n\u00a0Cloud Services / App Support / Prod Support\u00a0\nPlan Purpose\nPrepared to respond immediately to a system breach\nPlan Scope\nAll the business critic"
+    },
+    {
+      "title": "Process of handling Post Mortem RCAs",
+      "space": "Taurus",
+      "last_modified": "2022-03-22T06:15:18.000Z",
+      "url": "/spaces/PS/pages/260256687/Process+of+handling+Post+Mortem+RCAs",
+      "excerpt": "This is effective as of 2022-03-18 \nThe following format needs to be maintained for all RCAs for outages and service interruptions\nTicket Id\nTeam Assigned\nRCA Completed by\nIncident Start Date &amp; Ti"
+    },
+    {
+      "title": "DE-98428 POST MORTEM Discussion - PX online orders not received by customers",
+      "space": "Taurus",
+      "last_modified": "2022-03-18T11:41:11.000Z",
+      "url": "/spaces/PS/pages/260256665/DE-98428+POST+MORTEM+Discussion+-+PX+online+orders+not+received+by+customers",
+      "excerpt": "Attendees: \n\nApprox. Start Time\n10/03/2022 IST 01:30 AM (IST)\nApprox. End Time\n10/03/2022 03:43 AM (IST)\nElapsed Time\n127M\nThe PX online order issue was affecting all PX O&amp;D operators. The Inciden"
+    },
+    {
+      "title": "DE-98425 POST MORTEM Discussion - Unable to access Cloud components",
+      "space": "Taurus",
+      "last_modified": "2022-03-13T11:35:40.000Z",
+      "url": "/spaces/PS/pages/260256632/DE-98425+POST+MORTEM+Discussion+-+Unable+to+access+Cloud+components",
+      "excerpt": "Attendees:  Angelo Senaratne   Nuwan Koggalahewa  Mahesh  Anton.Ferdinandez  Prasanna Karunanayaka  Randika Munasinghe  Ishara.Pathirage \n \nApprox. Start Time\n26/02/2022 IST 10:57 PM (IST)\nApprox. End"
+    },
+    {
+      "title": "DE-98356 POST MORTEM Discussion : Payments platform service outage (Vantiv Express)",
+      "space": "Taurus",
+      "last_modified": "2021-12-15T14:53:28.000Z",
+      "url": "/spaces/PS/pages/260255089/DE-98356+POST+MORTEM+Discussion+Payments+platform+service+outage+Vantiv+Express",
+      "excerpt": "Attendees: Altaaf Anver  Angelo Senaratne   Aarthika Arunthavanathan  Dulan Ratnayake  Shanil Jayamaha  Shoba  Anton.Ferdinandez  Theekshana Jayasekera  Vidura Jayasekera  Mahesh Rajapakse  !-@5b12363"
+    },
+    {
+      "title": "DE-98399 POST MORTEM Discussion - PX Order fails to push down to the CAKE POS TBS/IKE&#39;s",
+      "space": "Taurus",
+      "last_modified": "2021-11-17T04:24:19.000Z",
+      "url": "/spaces/PS/pages/260256317/DE-98399+POST+MORTEM+Discussion+-+PX+Order+fails+to+push+down+to+the+CAKE+POS+TBS+IKE+s",
+      "excerpt": "Attendees:  Nuwan Koggalahewa  Mahesh Rajapakse  Wishwa Hettige  Angelo Senaratne  Shanil Jayamaha  Anton.Ferdinandez \n\nApprox. Start Time\n12/11/2021 IST 1:10 AM (IST)\nApprox. End Time\n12/11/2021 IST "
+    },
+    {
+      "title": "DE-98386 POST MORTEM Discussion - Large number of Infrastructure alerts and data syncing delay in UA reports",
+      "space": "Taurus",
+      "last_modified": "2021-10-07T09:22:24.000Z",
+      "url": "/spaces/PS/pages/260256225/DE-98386+POST+MORTEM+Discussion+-+Large+number+of+Infrastructure+alerts+and+data+syncing+delay+in+UA+reports",
+      "excerpt": "Attendees:  Raj Miandad Azhar Ali  Mahesh Rajapakse   Prasanna Karunanayaka   Angelo Senaratne   Anton.Ferdinandez  Shanil Jayamaha  Angelo Senaratne  Dulan Ratnayake  Vidura Jayasekera \n\nApprox. Star"
+    },
+    {
+      "title": "POST MORTEMS",
+      "space": "Taurus",
+      "last_modified": "2021-09-21T09:32:52.000Z",
+      "url": "/spaces/PS/pages/260251417/POST+MORTEMS",
+      "excerpt": "Month/Year\nIssue\nReference\nSeptember 2021\n\n\nAugust 2021\n\n\nJuly 2021\nDE-98368 Payment Funding Delay for Regular Merchants\n\n\n\nJune 2021\nDE-98356 POST MORTEM Discussion : Payments platform service outage"
+    },
+    {
+      "title": "DE-98380 POST MORTEM Discussion - NDF/ SDF Payout delay due to error in submitting the ACH instructions",
+      "space": "Taurus",
+      "last_modified": "2021-09-21T09:28:42.000Z",
+      "url": "/spaces/PS/pages/260256120/DE-98380+POST+MORTEM+Discussion+-+NDF+SDF+Payout+delay+due+to+error+in+submitting+the+ACH+instructions",
+      "excerpt": "Attendees : Altaaf Anver  Aarthika Arunthavanathan  Anton.Ferdinandez  Angelo Senaratne  Vidura Jayasekera  Dulan Ratnayake  Darshana Buddhika  Geethanga Amarasinghe  Mahesh Rajapakse  Nathiesha Madda"
+    },
+    {
+      "title": "DE-98370 POST MORTEM Discussion - Regular ACH Failure due to failure in renaming the ACH file",
+      "space": "Taurus",
+      "last_modified": "2021-09-17T01:07:26.000Z",
+      "url": "/spaces/PS/pages/260255852/DE-98370+POST+MORTEM+Discussion+-+Regular+ACH+Failure+due+to+failure+in+renaming+the+ACH+file",
+      "excerpt": "Attendees : Aarthika Arunthavanathan  Mahesh Rajapakse  Altaaf Anver  Anoma Perera  Angelo Senaratne  Buddhi De Silva  Shoba  Darshana Buddhika  Dulan Ratnayake  Nathiesha Maddage \nTicket : \nRegular A"
+    }
+  ],
+  "postmortem": [
+    {
+      "title": "Payment Operations - March 2022",
+      "space": "Cake Payment Gateway",
+      "last_modified": "2024-05-31T10:09:44.000Z",
+      "url": "/spaces/CPG/pages/257612936/Payment+Operations+-+March+2022",
+      "excerpt": "Following Stats are taken as of 01st of April 2022\nPayment Code Red/Service Interruption - March 2022\nDate\nTicket\nIncident\nRCA\nPostmortem/Notes\n2022-03-16 \n\nNDF Failed because there weren&#39;t suffic"
+    },
+    {
+      "title": "Scope / Release Management",
+      "space": "Mirunaaliny S Iyer",
+      "last_modified": "2024-05-16T10:55:19.000Z",
+      "url": "/spaces/SMMSP/pages/264701120/Scope+Release+Management",
+      "excerpt": "Introduction\nThis document is written as a learning from my end on handling huge projects such as 6.24 or UA-Beta (from Product and Project perspective) so that I can correct my own flaws and can pass"
+    },
+    {
+      "title": "Hardware Investigations with Reverse Logistics",
+      "space": "Eric Fleming",
+      "last_modified": "2024-05-16T10:39:25.000Z",
+      "url": "/spaces/SMEFP/pages/265094396/Hardware+Investigations+with+Reverse+Logistics",
+      "excerpt": "Target release\n6.XX\nDocument status\nFINAL\nDocument owner\nEric Fleming Eric Fleming\nDev Lead\nRandika Munasinghe \nThi Lam\nDev Team\nQA\nYou will not find it difficult to prove that battles, campaigns, and"
+    },
+    {
+      "title": "DevOps, SRE, CloudOps vs. Platform Engineering: A Comparative Analysis",
+      "space": "DevOps",
+      "last_modified": "2023-10-26T09:01:50.000Z",
+      "url": "/spaces/DO/pages/39583762/DevOps+SRE+CloudOps+vs.+Platform+Engineering+A+Comparative+Analysis",
+      "excerpt": "Introduction\nThis article explores DevOps, SRE, CloudOps, and Platform Engineering, comparing and contrasting them to underscore why Platform Engineering stands out as the best approach.\nDevOps\nConcep"
+    },
+    {
+      "title": "query results (Autosaved).csv",
+      "space": "Cloud Services Home",
+      "last_modified": "2018-10-30T08:54:36.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=259097007&preview=%2F259097007%2F259101642%2Fquery+results+%28Autosaved%29.csv",
+      "excerpt": "contentid,contenttype,title,spacekey,spacename\n1736706,PAGE,Test,TEST,Test\n1802241,PAGE,Test3,TEST,Test\n17531366,PAGE,Test page,TEST,Test\n7274652,PAGE,Salesforce,SFDC,Salesforce\n7274670,PAGE,How-To Ar"
+    },
+    {
+      "title": "07-05-2016 - Meeting Notes - Postmortem of CRM Phase I",
+      "space": "Data & Analytics",
+      "last_modified": "2016-07-11T07:58:11.000Z",
+      "url": "/spaces/DB/pages/258106294/07-05-2016+-+Meeting+Notes+-+Postmortem+of+CRM+Phase+I",
+      "excerpt": "Subject:\u00a0Postmortem of CRM Phase I\nDate: 5-July-2016\nTime: 3.00 pm - 4.00 pm\nAttendees:\u00a0Yasanka Horawalavithana (X) , \u00a0Nipuna Perera (X) ,\u00a0Danula Eranjith ,\u00a0Ruvini Shanika ,\u00a0Aruna Dissanayake\n\u00a0\nDiscus"
+    },
+    {
+      "title": "2016-04-06 - Meeting Notes - Customer Profiling Postmortem Q1",
+      "space": "Data & Analytics",
+      "last_modified": "2016-04-19T06:16:05.000Z",
+      "url": "/spaces/DB/pages/258106148/2016-04-06+-+Meeting+Notes+-+Customer+Profiling+Postmortem+Q1",
+      "excerpt": "Subject:\u00a0Customer Profiling Postmortem Q1\nDate: 6 April, 2016\nTime: 3.15 pm - 4.30 pm\nAttendees:\u00a0Nipuna Perera (X) ,\u00a0Yasanka Horawalavithana (X) ,\u00a0Malith Jayaweera (X) ,\u00a0Nilupulie Devasurendra\n\u00a0\nDiscu"
+    },
+    {
+      "title": "DBA_2016 Sprint 11",
+      "space": "Data & Analytics",
+      "last_modified": "2016-04-07T05:41:46.000Z",
+      "url": "/spaces/DB/pages/258106142/DBA_2016+Sprint+11",
+      "excerpt": "Overview\n \n\nSprint\nDBA_2016 Sprint 09\nSprint Start Date\n31 Mar 2016\nSprint End Date\n07 Apr Feb 2016\nSprint Planning Meeting\n31 Mar 2016, Morning\nSprint Review &amp; Retro Meeting\n07 Apr 2016, Evening\n"
+    }
+  ],
+  "incident": [
+    {
+      "title": "UA EMS 502 Incident Analysis \u2014 Socket.IO Reconnection Storm (Mar 17\u201318, 2026)",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-18T17:01:09.000Z",
+      "url": "/spaces/TT/pages/1863647233/UA+EMS+502+Incident+Analysis+Socket.IO+Reconnection+Storm+Mar+17+18+2026",
+      "excerpt": "Service: prod_universal-admin_service\nEnvironment: Production (ECS, us-west-1)\nALB: prod-ecs-universal-admin-alb\nPeriod: March 17\u201318, 2026\nAuthor: M. Crumley\nDate: March 18, 2026\nTL;DR\n98.7% of all 50"
+    },
+    {
+      "title": "Active Paging for High Critical Infrastructure Alerts.",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-09T08:39:56.000Z",
+      "url": "/spaces/CCE/pages/1831731201/Active+Paging+for+High+Critical+Infrastructure+Alerts.",
+      "excerpt": "Table of Content\n1. Current Alerting System (Passive)\nThe current flow works as follows:\nCloudWatch Alarm\n\u2192\nSNS Topic\n\u2192\nMS Teams Channel\n\u2192\nSomeone must see it\nThis is a passive alerting system. The al"
+    },
+    {
+      "title": "Jumpdrive Remote Access to RL Network Instructions Prototype",
+      "space": "Matt Cooke",
+      "last_modified": "2026-02-24T20:38:44.000Z",
+      "url": "/spaces/~730977308/pages/1595834388/Jumpdrive+Remote+Access+to+RL+Network+Instructions+Prototype",
+      "excerpt": "Purpose: document the jumpdrive process\nLinks\nRl-3875 France XStore23 EU jumpdrive access to RL POS computers (originally 3438)\n\nKnowledge Sharing Session Richard and Rosen (R&amp;R)\n2\n3\n4\n5\nHigh Leve"
+    },
+    {
+      "title": "Comparison of GIACT and Sardine",
+      "space": "Payments",
+      "last_modified": "2026-02-10T13:37:40.000Z",
+      "url": "/spaces/P/pages/1748467737/Comparison+of+GIACT+and+Sardine",
+      "excerpt": "This page provides the evidence of strategic decision making between Sardine and GIACT.\nThe analysis clearly showcases Sardine as a winner compared to GIACT in order to support the PayFac Model that M"
+    },
+    {
+      "title": "CAKEpop In-App Updates &amp; Managed Configuration",
+      "space": "Product",
+      "last_modified": "2026-02-05T21:33:53.000Z",
+      "url": "/spaces/PROD/pages/1740439575/CAKEpop+In-App+Updates+Managed+Configuration",
+      "excerpt": "Document Metadata\nProduct: CAKEpop (Mobile Handhelds)\nRelated Products: KDS, Kiosk, POS\nPlatform: Android (Android Enterprise)\nDocument Version: 1.0\nLast Updated: February 2026\n1. Problem Statement\nCA"
+    },
+    {
+      "title": "Data Platform Sync Halt - Investigation &amp; Resolution",
+      "space": "Team Tesla",
+      "last_modified": "2026-02-04T14:12:10.000Z",
+      "url": "/spaces/TT/pages/1739653123/Data+Platform+Sync+Halt+-+Investigation+Resolution",
+      "excerpt": "Environment: STAG  \nImpact: 22+ merchants stopped syncing to Data Platform  \nData Gap: December 1, 2025 - February 3, 2026  \nRoot Cause: HTTP 500 errors from Data Platform API (employees stream)  \nSer"
+    },
+    {
+      "title": "visa-ecosystem-risk-programs-guide-vars.pdf",
+      "space": "Payments",
+      "last_modified": "2026-02-03T15:21:56.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1735294977&preview=%2F1735294977%2F1735098370%2Fvisa-ecosystem-risk-programs-guide-vars.pdf",
+      "excerpt": "Visa Ecosystem\nRisk Programs\nGuide\n\nOctober 2024\n\nVisa Confidential\n\nV I S A E C O SYS T E M R I S K P R O G R A M S G U I D E\n\nIntroduction\nAs a global leader in digital payments, Visa connects consu"
+    },
+    {
+      "title": "2.11 Usage of the On Call Bot",
+      "space": "Service Excellence and Operational Architecture",
+      "last_modified": "2026-01-23T05:56:59.000Z",
+      "url": "/spaces/SEAOA/pages/1696366593/2.11+Usage+of+the+On+Call+Bot",
+      "excerpt": "On-Call Calling System - L1 Team User Guide\n Overview\nThis system automatically calls on-call engineers when you post a command in the designated Teams channel. The system:\n\u2705 Automatically finds who i"
+    },
+    {
+      "title": "INT-prod-olo-cakeshop_api-olo_nike-25012020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-12-08T11:06:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1584892186&preview=%2F1584892186%2F1584892285%2FINT-prod-olo-cakeshop_api-olo_nike-25012020.pdf",
+      "excerpt": "Scan Results\nFebruary 03, 2021\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n"
+    },
+    {
+      "title": "Restoring RabbitMQ data - recurring tasks",
+      "space": "Leapset Platform",
+      "last_modified": "2025-12-02T05:52:38.000Z",
+      "url": "/spaces/LP/pages/253750817/Restoring+RabbitMQ+data+-+recurring+tasks",
+      "excerpt": "Table of contents\nIntroduction\nThis document intends to cover the steps to follow in order to recover a data loss in RabbitMQ. The steps are for Dev / QE environments only.\nSymptoms\nApplications (OLO "
+    },
+    {
+      "title": "Sardine.ai Security Review Report.pdf",
+      "space": "Payments",
+      "last_modified": "2025-11-20T12:47:47.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1538228242&preview=%2F1538228242%2F1538818052%2FSardine.ai+Security+Review+Report.pdf",
+      "excerpt": "Security Review Summary for Sardine.ai\nVendor name: Sardine.ai\n\nDecision: Approved\n\nDecision made on: Oct 15, 2025\n\nAnalysis\nDecision Summary\nDecision\n\nApproved\n\nScope of approval\n\n\u2014\n\nSummary of findi"
+    },
+    {
+      "title": "security-review-questionnaire-export.csv",
+      "space": "Payments",
+      "last_modified": "2025-11-20T12:47:47.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1538228242&preview=%2F1538228242%2F1537835158%2Fsecurity-review-questionnaire-export.csv",
+      "excerpt": "&quot;Question&quot;,&quot;Answer&quot;\n&quot;What does Sardine.ai do?&quot;,&quot;&#39;- Provides fraud detection and prevention services using device intelligence, behavior biometrics, and analytics"
+    },
+    {
+      "title": "INT-prod-olo-cakeshop_api-olo_nike-25012020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-11-20T04:18:55.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1537345747&preview=%2F1537345747%2F1537345816%2FINT-prod-olo-cakeshop_api-olo_nike-25012020.pdf",
+      "excerpt": "Scan Results\nFebruary 03, 2021\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n"
+    },
+    {
+      "title": "XStore23 Upgrade - Email Journal Tracking Questions",
+      "space": "Matt Cooke",
+      "last_modified": "2025-11-13T18:58:32.000Z",
+      "url": "/spaces/~730977308/pages/362555160/XStore23+Upgrade+-+Email+Journal+Tracking+Questions",
+      "excerpt": "Purpose of the Document\nThis document collects and organizes questions, issues, and decisions related to the\u00a0email journal tracking\u00a0functionality in the\u00a0XStore23 upgrade. It serves as a reference for "
+    },
+    {
+      "title": "Nov - 2025",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-11-10T04:59:04.000Z",
+      "url": "/spaces/CCE/pages/1507983375/Nov+-+2025",
+      "excerpt": "This is the Cloud Services On Call Roster for November 2025.\nCloud Services Team on-call support is available 24x7 for Live Production Environment Incidents and Issues only.\nPoorna: +94 70 464 2741\nHa"
+    }
+  ],
+  "deployment": [
+    {
+      "title": "Cake Release - KIOSK_1.2.12",
+      "space": "Team Tesla",
+      "last_modified": "2026-04-02T18:57:06.000Z",
+      "url": "/spaces/TT/pages/1909456905/Cake+Release+-+KIOSK_1.2.12",
+      "excerpt": "Release Type\u00a0\nKiosk V2 Release\nRelease Owner\u00a0\nQaiser Pannu \nEngineering Go - No Go\nStag Date\n2026-04-03\nTime\n5PM\nManagement Go - No Go\nProd Date\n2026-04-03\nTime\n5PM\n1.\u00a0 Release Overview\n1.1 High-level"
+    },
+    {
+      "title": "Versions and Deployment Automation",
+      "space": "Mad Mobile Architecture",
+      "last_modified": "2026-04-02T18:52:47.000Z",
+      "url": "/spaces/MMA/pages/1909129218/Versions+and+Deployment+Automation",
+      "excerpt": "Related ticket \nThis page discusses how applications should be versioned and deployed as part of the automated pipeline."
+    },
+    {
+      "title": "Version Deployment Automation.png",
+      "space": "Mad Mobile Architecture",
+      "last_modified": "2026-04-02T18:13:59.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1909129218&preview=%2F1909129218%2F1908834307%2FVersion+Deployment+Automation.png",
+      "excerpt": ""
+    },
+    {
+      "title": "Version Deployment Automation.svg",
+      "space": "Mad Mobile Architecture",
+      "last_modified": "2026-04-02T18:13:58.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1909129218&preview=%2F1909129218%2F1908375559%2FVersion+Deployment+Automation.svg",
+      "excerpt": ""
+    },
+    {
+      "title": "Root Cause Analysis: Account 11607728 SQS Retry Storm",
+      "space": "Team Tesla",
+      "last_modified": "2026-04-02T18:10:54.000Z",
+      "url": "/spaces/TT/pages/1627357218/Root+Cause+Analysis+Account+11607728+SQS+Retry+Storm",
+      "excerpt": "Executive Summary\nBetween 2025-12-19  and 2025-12-22 , account 1607728 experienced 40,681 failed API requests due to a cascading failure caused by missing product configuration in Operator API combine"
+    },
+    {
+      "title": "Java Developers Problem/Solution",
+      "space": "Matt Cooke",
+      "last_modified": "2026-04-02T16:53:42.000Z",
+      "url": "/spaces/~730977308/pages/362556101/Java+Developers+Problem+Solution",
+      "excerpt": "Purpose of This Document\nThis document serves as a centralized knowledge base for resolving common and complex issues encountered during development, testing, and deployment of MadMobile POS systems a"
+    },
+    {
+      "title": "POS_7.43.0.37 - Fixed POS | VP3350 Integration Enhancements",
+      "space": "Team Tesla",
+      "last_modified": "2026-04-02T11:28:36.000Z",
+      "url": "/spaces/TT/pages/1908998145/POS_7.43.0.37+-+Fixed+POS+VP3350+Integration+Enhancements",
+      "excerpt": "Release Type\u00a0\nBug Fixes\nRelease Owner\u00a0\nMark Guilarte \nEngineering Go - No Go\nSTAG Date\n2026-04-02 \nTime\n11:00 AM EST\nManagement Go - No Go\nPROD Date\n2026-04-02 \nTime\n3:00 PM EST\n1.\u00a0 Release Overview\n1"
+    },
+    {
+      "title": "POS_7.43.0.36 - Fixed POS | VP3350 Integration Enhancements",
+      "space": "Team Tesla",
+      "last_modified": "2026-04-02T11:25:22.000Z",
+      "url": "/spaces/TT/pages/1898774529/POS_7.43.0.36+-+Fixed+POS+VP3350+Integration+Enhancements",
+      "excerpt": "Release Type\u00a0\nBug Fixes\nRelease Owner\u00a0\nMark Guilarte \nEngineering Go - No Go\nSTAG Date\n2026-03-27  TBD\nTime\n11:00 AM EST\nManagement Go - No Go\nPROD Date\n2026-03-27  TBD\nTime\n3:00 PM EST\n1.\u00a0 Release Ov"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - Accelerated Funding Fix - IR 01",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:20:03.000Z",
+      "url": "/spaces/POAI/pages/1907884033/Cake+Release+8.877.5.0+-+Accelerated+Funding+Fix+-+IR+01",
+      "excerpt": "STAG Date\n2026-03-31 \nPROD Date\n2026-04-08 \nRelease Owner\nKevin Reyes \n\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nResolved Incorrect Accelerated Funding Billing Fee L"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - Accelerated Funding Fix",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:18:48.000Z",
+      "url": "/spaces/POAI/pages/1890123777/Cake+Release+8.877.5.0+-+Accelerated+Funding+Fix",
+      "excerpt": "STAG Date\n2026-03-31 \nPROD Date\n2026-04-08 \nRelease Owner\nKevin Reyes \n\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nResolved Incorrect Accelerated Funding Billing Fee L"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - SoE QE, STAG &amp; PROD3",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:15:19.000Z",
+      "url": "/spaces/POAI/pages/1907425290/Cake+Release+8.877.5.0+-+SoE+QE+STAG+PROD3",
+      "excerpt": "Deployment Window\nTBD\nRelease Point of Contact\nSusampath Madarasinghe \nTeams Engaged\nPaymentOps, Payments\nReviewers\n Altaaf Anver    \n1.0 Deployment Steps\n1.1 Pre-Deployment Tasks\nNot Applicable\nStep "
+    },
+    {
+      "title": "POS_7.43.0.32 - Fixed POS | VP3350 Integration Enhancements",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-31T12:42:52.000Z",
+      "url": "/spaces/TT/pages/1859059713/POS_7.43.0.32+-+Fixed+POS+VP3350+Integration+Enhancements",
+      "excerpt": "Release Type\u00a0\nEnhancements\nRelease Owner\u00a0\nMark Guilarte \nEngineering Go - No Go\nSTAG Date\n2026-03-20  TBD\nTime\n11:00 AM EST\nManagement Go - No Go\nPROD Date\n2026-03-20  TBD\nTime\n3:00 PM EST\n1.\u00a0 Release"
+    },
+    {
+      "title": "Remove unwanted queues from RabbitMQ - ALB log analysis - ESB CPU spikes",
+      "space": "Leapset Platform",
+      "last_modified": "2026-03-31T11:41:02.000Z",
+      "url": "/spaces/LP/pages/1605369857/Remove+unwanted+queues+from+RabbitMQ+-+ALB+log+analysis+-+ESB+CPU+spikes",
+      "excerpt": "Table of contents\nIntroduction\nWe identified that the update-queue-consumer-count endpoint in the Consumer API is experiencing increased response times. Further analysis revealed that there are approx"
+    },
+    {
+      "title": "Cake Release - CCL_8.885.1.5 - Fix Transaction Fee Discrepancy in Credit Card Deposit Report.",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-31T11:25:12.000Z",
+      "url": "/spaces/TT/pages/1874591745/Cake+Release+-+CCL_8.885.1.5+-+Fix+Transaction+Fee+Discrepancy+in+Credit+Card+Deposit+Report.",
+      "excerpt": "Note - Any and all releases to production MUST include the management go - no go approvals from Product, Engineering, Customer Success and Product / Global Support\nRelease Type\u00a0\n8.885.1.5\nPATCH\nReleas"
+    },
+    {
+      "title": "SOE - UA-Reports-Payments Deployment Steps",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-31T10:54:55.000Z",
+      "url": "/spaces/TT/pages/1874788353/SOE+-+UA-Reports-Payments+Deployment+Steps",
+      "excerpt": "Authors\nRaveen Panditha \nStatus\nto-do\n\nRelease Co-coordinator\n Nishen Peiris  Wenushka Dikowita \nTeams Engaged\nMIRA\nReview Meeting Date\nParticipants for the Review Meeting\nTBA\nDeployment Window\nTBA\nIn"
+    }
+  ],
+  "CI/CD": [
+    {
+      "title": "RA 2.0 Portal - Technical Plan",
+      "space": "Team Tesla",
+      "last_modified": "2026-02-24T20:43:53.000Z",
+      "url": "/spaces/TT/pages/1791361035/RA+2.0+Portal+-+Technical+Plan",
+      "excerpt": "High-Level Overview\nDocument Version: 1.0  \nLast Updated: February 2026  \nStatus: Draft (ARB-ready overview)\nExecutive Summary\nRA 2.0 Portal is the next-generation Restaurant Admin web portal built fr"
+    },
+    {
+      "title": "In-App Updates &amp; Managed Configuration",
+      "space": "Team Tesla",
+      "last_modified": "2026-02-03T00:16:34.000Z",
+      "url": "/spaces/TT/pages/1724940344/In-App+Updates+Managed+Configuration",
+      "excerpt": "KDS In-App Updates &amp; Managed Configuration\nHigh-Level Overview\nDocument Version: 1.1\nLast Updated: February 2026\nStatus: \u2705 Production Ready\nExecutive Summary\nThe KDS Android application has been e"
+    },
+    {
+      "title": "Legacy Jenkins CI/CD Automation",
+      "space": "CAKE Engineering Excellence",
+      "last_modified": "2025-12-30T16:11:50.000Z",
+      "url": "/spaces/ES/pages/256409874/Legacy+Jenkins+CI+CD+Automation",
+      "excerpt": "1.0 Introduction\nIt has been identified that currently our team members are spending considerable effort on code deployment (on dev, tst and prod environments), troubleshooting environmental issues an"
+    },
+    {
+      "title": "Dependency Matrix",
+      "space": "CAKE Engineering Excellence",
+      "last_modified": "2025-11-25T14:24:48.000Z",
+      "url": "/spaces/ES/pages/256773685/Dependency+Matrix",
+      "excerpt": "This is a checklist of all potential components, feature and team dependencies that any new development or change must be checked at the beginning to understand the dependencies, ownership, contact po"
+    },
+    {
+      "title": "Virtual Terminal - Complete Project Documentation",
+      "space": "Payments",
+      "last_modified": "2025-11-10T17:50:23.000Z",
+      "url": "/spaces/P/pages/1510473734/Virtual+Terminal+-+Complete+Project+Documentation",
+      "excerpt": "Table of Contents\n1. Project Overview\n1.1 Introduction\n1.2 Key Feat"
+    },
+    {
+      "title": "Cloud Release - CCL_8.8876.40.0 - Add Fisherman to Integrations Marketplace",
+      "space": "Leapset Platform",
+      "last_modified": "2025-10-10T05:13:58.000Z",
+      "url": "/spaces/LP/pages/1443627009/Cloud+Release+-+CCL_8.8876.40.0+-+Add+Fisherman+to+Integrations+Marketplace",
+      "excerpt": "Note - Any and all releases to production MUST include the management go - no go approvals from Product, Engineering, Customer Success and Product / Global Support\nRelease Type\u00a0\n(Ground Breaking / Maj"
+    },
+    {
+      "title": "CAKE Payments",
+      "space": "Payments",
+      "last_modified": "2025-09-18T01:37:59.000Z",
+      "url": "/spaces/P/pages/257591520/CAKE+Payments",
+      "excerpt": "Cake Payments Applications Summary\u00a0\nApplication\nDetail Description\nTech Stack\nStats\nPayment Gateway\nMain functions of the Gateway are\u00a0\nTransaction processing\nMerchant Onboarding\u00a0\nThe gateway supports "
+    },
+    {
+      "title": "CAKEMPA.2025.3.0 - VP3350 EMV Reader Launch &amp; Foundations for Modern FOH Operations",
+      "space": "MenuPad",
+      "last_modified": "2025-09-05T20:54:46.000Z",
+      "url": "/spaces/MP/pages/1038647297/CAKEMPA.2025.3.0+-+VP3350+EMV+Reader+Launch+Foundations+for+Modern+FOH+Operations",
+      "excerpt": "UAT Lab Release\nAugust 4, 2025 (est\u2019d) (Monday)\nPROD Date\n September 5, 2025  (Friday)\nRelease Owner\nJeremy Diggins  Thaddeus Fox \nApprovals\nQE Sign off Kaelon Lucas \nProduct approval @Dulanjan Wengap"
+    },
+    {
+      "title": "MadMobile rlnetwork export mmdevenv import notes",
+      "space": "Matt Cooke",
+      "last_modified": "2025-09-04T18:58:32.000Z",
+      "url": "/spaces/~730977308/pages/605093985/MadMobile+rlnetwork+export+mmdevenv+import+notes",
+      "excerpt": "Purpose of This Document\nThis document explains how to safely transfer data and configurations between two environments used at MadMobile:\nRLNetwork\u00a0\u2013 the QA testing environment.\nMMDevEnv\u00a0\u2013 the develo"
+    },
+    {
+      "title": "Java dev notes -&gt; converting from JDK 8 to JDK 11",
+      "space": "Matt Cooke",
+      "last_modified": "2025-09-02T13:22:39.000Z",
+      "url": "/spaces/~730977308/pages/362546131/Java+dev+notes+-+converting+from+JDK+8+to+JDK+11",
+      "excerpt": "1.Purpose of this document\nTo guide developers through the transition from JDK 8 to JDK 11, ensuring compatibility across development tools, build systems, and runtime environments. This upgrade is ne"
+    },
+    {
+      "title": "Cloud Release - CCL_8.873.25.0 - OLO.com OPS API removal release",
+      "space": "Leapset Platform",
+      "last_modified": "2025-08-14T10:06:45.000Z",
+      "url": "/spaces/LP/pages/1378975745/Cloud+Release+-+CCL_8.873.25.0+-+OLO.com+OPS+API+removal+release",
+      "excerpt": "Note - Any and all releases to production MUST include the management go - no go approvals from Product, Engineering, Customer Success and Product / Global Support\nRelease Type\u00a0\n(Ground Breaking / Maj"
+    },
+    {
+      "title": "NestJS POC",
+      "space": "Concierge Team",
+      "last_modified": "2025-07-18T15:12:43.000Z",
+      "url": "/spaces/PT/pages/1281785914/NestJS+POC",
+      "excerpt": "Goals /Objectives\nThe goal of this initiative is to define a standard/opinionated methodology for achieving customer implementations through the usage of NestJS. By creating this standard, we believe "
+    },
+    {
+      "title": "How to Locally Build and Debug Concierge Connect On Android Device",
+      "space": "IT & Dev Ops",
+      "last_modified": "2025-07-15T18:38:28.000Z",
+      "url": "/spaces/OPS/pages/1300693162/How+to+Locally+Build+and+Debug+Concierge+Connect+On+Android+Device",
+      "excerpt": "Environment Setup\nInstall Android Studio on macOS\nMake sure you add the ANDROID_SDK_ROOT to your path, i.e. :\n ~/.zshrc\nexport ANDROID_HOME=/Users/$USER/Library/Android/sdk\nexport PATH=&quot;$PATH:$AN"
+    },
+    {
+      "title": "Concierge Associate App - CI/CD",
+      "space": "IT & Dev Ops",
+      "last_modified": "2025-07-15T18:33:39.000Z",
+      "url": "/spaces/OPS/pages/1300693137/Concierge+Associate+App+-+CI+CD",
+      "excerpt": ""
+    },
+    {
+      "title": "How to Create Retail Build Server for Mac",
+      "space": "Concierge Team",
+      "last_modified": "2025-07-15T18:27:40.000Z",
+      "url": "/spaces/PT/pages/1299120647/How+to+Create+Retail+Build+Server+for+Mac",
+      "excerpt": "This guide will cover the process of creating a Mac Bitbucket pipelines build runner for Retail projects; App-Shell iOS and Android builds.\nRequirements:\nAtlassian Admin for Bitbucket\nMac running Appl"
+    }
+  ],
+  "onboarding": [
+    {
+      "title": "EzCater (WIP)",
+      "space": "Product",
+      "last_modified": "2026-04-02T06:24:09.000Z",
+      "url": "/spaces/PROD/pages/1159037016/EzCater+WIP",
+      "excerpt": "Executive Summary\nIntegration with EzCater to support restaurants ability to fulfil catering needs.\nInitiative or Epic\n\nScope of Changes\nOpportunity / Validation\nThere\u2019s high demand from merchants wit"
+    },
+    {
+      "title": "[UP-4360] Incorrect Accelerated Funding Billing Fee Logic",
+      "space": "Payments",
+      "last_modified": "2026-03-31T14:34:37.000Z",
+      "url": "/spaces/P/pages/1896546313/UP-4360+Incorrect+Accelerated+Funding+Billing+Fee+Logic",
+      "excerpt": "ID\nTest Title\nTest Steps\nExpected Result\nPass / Fail\nReference\nTC_AF_001\nVerify AF fee is not charged before first qualifying transaction\nOnboard merchant with AF enabled and monthly fee configured.\n "
+    },
+    {
+      "title": "Untitled Diagram-1774965490228.drawio",
+      "space": "Payments",
+      "last_modified": "2026-03-31T14:33:52.000Z",
+      "url": "/plugins/servlet/ac/com.mxgraph.confluence.plugins.diagramly/customContentViewer?content.plugin=ac%3Acom.mxgraph.confluence.plugins.diagramly%3Adrawio-diagram&space.key=P&content.id=1901658137&content.version=2&space.id=268042355&content.type=custom",
+      "excerpt": "%7B%22pageId%22%3A%221896546313%22%2C%22type%22%3A%22page%22%2C%22diagramName%22%3A%22Untitled%20Diagram-1774965490228.drawio%22%2C%22version%22%3A2%2C%22inComment%22%3Afalse%2C%22comments%22%3A%5B%5D"
+    },
+    {
+      "title": "EzCater Tech Design - Phase 1 - Onboarding",
+      "space": "Product",
+      "last_modified": "2026-03-30T17:02:35.000Z",
+      "url": "/spaces/PROD/pages/1874001924/EzCater+Tech+Design+-+Phase+1+-+Onboarding",
+      "excerpt": "Follow a pattern similar to how Door Dash  was implemented within the .\nInitial Setup\nThe creation of an EzCater subscriber object will be done manually since it only has to be done once per environme"
+    },
+    {
+      "title": "05 - SMS Token Onboarding - Software Architecture",
+      "space": "CAKE Engineering Excellence",
+      "last_modified": "2026-03-27T21:32:01.000Z",
+      "url": "/spaces/ES/pages/1306624001/05+-+SMS+Token+Onboarding+-+Software+Architecture",
+      "excerpt": "Description of Architecture\nThis document outlines a strategy to enhance the CAKE POS device PIN and token retrieval procedure.  The architecture aims to streamline device onboarding, minimize support"
+    },
+    {
+      "title": "[QA] Verification of Merchant Category Code in Legal Entity API Requests",
+      "space": "Payments",
+      "last_modified": "2026-03-27T14:49:11.000Z",
+      "url": "/spaces/P/pages/1892974594/QA+Verification+of+Merchant+Category+Code+in+Legal+Entity+API+Requests",
+      "excerpt": "STAG\nTC ID\nScenario\nTest Steps\nExpected Result\nActual Result\nPass/Fail\nReference\nMCC-WP-01\nVerify merchantCategoryCode is accepted in LegalEntityCreateRequest\nSend POST /legalentity to Worldpay PreLiv"
+    },
+    {
+      "title": "Payments Release Version 1.1.37 - WP | Update Mastercard MCC",
+      "space": "Payments",
+      "last_modified": "2026-03-27T14:05:25.000Z",
+      "url": "/spaces/P/pages/1858830337/Payments+Release+Version+1.1.37+-+WP+Update+Mastercard+MCC",
+      "excerpt": "Release Type\u00a0\nEnhancements\nRelease Owner\u00a0\nKevin Reyes \nEngineering Go - No Go\nSTAG Date\n2026-03-25 \nTime\n1:00 PM ET\nManagement Go - No Go\nPROD Date\n2026-03-30 \nTime\n5:00 AM ET\n1.\u00a0 Release Overview\n1.1"
+    },
+    {
+      "title": "Pointing merchant to cert Environment - Onboarding",
+      "space": "Cake Payment Gateway",
+      "last_modified": "2026-03-27T04:14:16.000Z",
+      "url": "/spaces/CPG/pages/529301548/Pointing+merchant+to+cert+Environment+-+Onboarding",
+      "excerpt": "Save the existing secrets\nExpress (v3 API)\nUpdate cake_payment_gateway system_credentials secret as following\npayfacBoardingUrl  = https://apis.cert.worldpay.com/payfac/merchant/provisioning/boarding/"
+    },
+    {
+      "title": "Role Based Access: Payment Admin Console (PAC)",
+      "space": "Payments",
+      "last_modified": "2026-03-26T19:39:01.000Z",
+      "url": "/spaces/P/pages/1711505426/Role+Based+Access+Payment+Admin+Console+PAC",
+      "excerpt": "This page captures the access to specific components for Payment Admin Console as detailed below.\nTHIS PAGE IS UNDER CONSTRUCTION 2026-01-27 \nPermission Level Mapping\nCSMs use PAC to:\nnote: CSMs only "
+    },
+    {
+      "title": "Functional Test Cases Phase1\u2013 Merchant Onboarding: Sardine, Payment Admin API, PAC, RS2, CyberSource Onboarding",
+      "space": "Payments",
+      "last_modified": "2026-03-26T19:26:54.000Z",
+      "url": "/spaces/P/pages/1887338497/Functional+Test+Cases+Phase1+Merchant+Onboarding+Sardine+Payment+Admin+API+PAC+RS2+CyberSource+Onboarding",
+      "excerpt": "1. Scope\nTo validate that functional test scenarios for the modern onboarding flow  :\nShopCPQ \u2192 Payment Admin API \u2192 Sardine \u2192 Merchant Service \u2192 RS2 Boarding &amp; CyberSource/Worldpay  with switchabl"
+    },
+    {
+      "title": "Test Plan \u2013 CYBS, Sardine &amp; RS2 Integration \u00a0",
+      "space": "Payments",
+      "last_modified": "2026-03-26T19:00:02.000Z",
+      "url": "/spaces/P/pages/1871216667/Test+Plan+CYBS+Sardine+RS2+Integration",
+      "excerpt": "\u00a0Version 0.1 | March 2026\u00a0\n1. Objective\nThis test plan outlines the validation approach for the modernization of the Payment Gateway ecosystem. The platform is undergoing a hybrid transition where:\nNe"
+    },
+    {
+      "title": "MLR Project Automation Test Strategy",
+      "space": "Cake Reports",
+      "last_modified": "2026-03-26T15:41:05.000Z",
+      "url": "/spaces/CR/pages/1888223242/MLR+Project+Automation+Test+Strategy",
+      "excerpt": "Purpose: Document the automation test cases for the MLR project, including scope, architecture, test design, execution strategy, traceability, and maintenance practices. Use this as a living reference"
+    },
+    {
+      "title": "EzCater Onboarding Guide",
+      "space": "Product",
+      "last_modified": "2026-03-25T11:22:07.000Z",
+      "url": "/spaces/PROD/pages/1873707009/EzCater+Onboarding+Guide",
+      "excerpt": "List down the technical steps required to remove an integration from a customer location.\u00a0\nRecommendation from EzCater if there are more than one location requested the the customer to activate the in"
+    },
+    {
+      "title": "Curated Cake",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-24T17:09:43.000Z",
+      "url": "/spaces/TT/pages/1431076954/Curated+Cake",
+      "excerpt": "The Very Best of Confluence is right here. Find something valuable and worth saving?\nOn the Confluence page you\u2019d like to highlight add the label curated and a specific label for the domain, for examp"
+    },
+    {
+      "title": "Access Controls By Level (Text)",
+      "space": "Payments",
+      "last_modified": "2026-03-24T17:05:33.000Z",
+      "url": "/spaces/P/pages/1757478926/Access+Controls+By+Level+Text",
+      "excerpt": "Level L1 \u2013 Read\nHigh\u2011level:\nIntended primarily for visibility only (CSMs, L1 support).\nNo edits to sensitive or transactional data.\nGlobal / Navigation\nCan log in (if in DB with required permissions)."
+    }
+  ],
+  "infrastructure": [
+    {
+      "title": "Java Developers Problem/Solution",
+      "space": "Matt Cooke",
+      "last_modified": "2026-04-02T16:53:42.000Z",
+      "url": "/spaces/~730977308/pages/362556101/Java+Developers+Problem+Solution",
+      "excerpt": "Purpose of This Document\nThis document serves as a centralized knowledge base for resolving common and complex issues encountered during development, testing, and deployment of MadMobile POS systems a"
+    },
+    {
+      "title": "26-Q1 payments-config-portal EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:40:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1901199410%2F26-Q1+payments-config-portal+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Keycloak Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:39:44.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460830&preview=%2F1903460830%2F1902379050%2F26-Q1+Keycloak+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Kiosk Vulnerability Assesment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:39:08.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903100235&preview=%2F1903100235%2F1900609594%2F26-Q1+Kiosk+Vulnerability+Assesment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Salesforce - GO Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:38:09.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460681&preview=%2F1903460681%2F1901199402%2F26-Q1+Salesforce+-+GO+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Payments Gateway Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:37:23.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903428072&preview=%2F1903428072%2F1901101083%2F26-Q1+Payments+Gateway+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Payments Application Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:36:29.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903427843&preview=%2F1903427843%2F1901428754%2F26-Q1+Payments+Application+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 ESB Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:35:39.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903427714&preview=%2F1903427714%2F1900970014%2F26-Q1+ESB+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Leapset Vulneraility Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:34:37.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903099936&preview=%2F1903099936%2F1900904514%2F26-Q1+Leapset+Vulneraility+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Pulse Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:33:08.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460353&preview=%2F1903460353%2F1901199395%2F26-Q1+Pulse+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "26-Q1 Online Ordering Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:31:38.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903427585&preview=%2F1903427585%2F1900937238%2F26-Q1+Online+Ordering+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "25-Q2-EXT-sqlpad-52.9.155.213.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:22.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461083%2F25-Q2-EXT-sqlpad-52.9.155.213.pdf",
+      "excerpt": "Scan Results\nApril 29, 2025\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip:\n\n"
+    },
+    {
+      "title": "25-Q3-EXT-payments-config-portal-18.144.141.26.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:22.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461080%2F25-Q3-EXT-payments-config-portal-18.144.141.26.pdf",
+      "excerpt": "Scan Results\nSeptember 03, 2025\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZi"
+    },
+    {
+      "title": "25-Q2-EXT-sf-go-13.56.127.210.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:22.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461077%2F25-Q2-EXT-sf-go-13.56.127.210.pdf",
+      "excerpt": "Scan Results\nApril 29, 2025\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip:\n\n"
+    },
+    {
+      "title": "24-Q4-EXT-SalesForceGO-54.219.42.107.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:22.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461074%2F24-Q4-EXT-SalesForceGO-54.219.42.107.pdf",
+      "excerpt": "Scan Results\nDecember 04, 2024\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip"
+    }
+  ],
+  "SLA": [
+    {
+      "title": "Payments Team Deliverables- 2026",
+      "space": "Payments",
+      "last_modified": "2026-02-13T20:55:19.000Z",
+      "url": "/spaces/P/pages/1644789802/Payments+Team+Deliverables-+2026",
+      "excerpt": "Phase 1 Deliverables:\nFocus: Delivery of Modern Payments Platform- Compliance/Risk, Interchange and Disputes\nFeatures\nList\nMust Have\nNice to Have\nNotes\nPricing Structure\n1.1 Pricing Model Catalog View"
+    },
+    {
+      "title": "SouthState Bank Primary Transaction Monitoring Requirements.txt",
+      "space": "Payments",
+      "last_modified": "2026-02-02T16:24:53.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1729527809&preview=%2F1729527809%2F1730707458%2FSouthState+Bank+Primary+Transaction+Monitoring+Requirements.txt",
+      "excerpt": "================================================================================\nSOUTHSTATE BANK - PRIMARY TRANSACTION MONITORING REQUIREMENTS\nPayment Facilitator Risk-Based Monitoring Framework for C"
+    },
+    {
+      "title": "Toast POS Competitive Deep Dive (January 2026)",
+      "space": "Product",
+      "last_modified": "2026-01-23T14:59:38.000Z",
+      "url": "/spaces/PROD/pages/1697054723/Toast+POS+Competitive+Deep+Dive+January+2026",
+      "excerpt": "Toast POS Competitive Threat Assessment:\n**Strategic Pivot for Enterprise Retention in the SMB-to-Mid-Market Restaurant Segment\nExecutive Summary\nToast POS represents a clear and escalating threat to "
+    },
+    {
+      "title": "Combined JIRA Initiatives, Epics and Stories",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-06T17:39:15.000Z",
+      "url": "/spaces/TT/pages/1636008021/Combined+JIRA+Initiatives+Epics+and+Stories",
+      "excerpt": "Initiative\nEpic\nStory Title\nJira Key\nAction\nNotes\nStatus\nKDS v2 \u2014 Core Architecture &amp; Routing\nEpic 1 \u2014 Routing Engine (Router App)\nRouter App: manage Stations and Assembly Lines\nCreate\nNew canonic"
+    },
+    {
+      "title": "Epic #8: Analytics &amp; Reporting (Kitchen Performance Insights)",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-02T23:36:36.000Z",
+      "url": "/spaces/TT/pages/1636007968/Epic+8+Analytics+Reporting+Kitchen+Performance+Insights",
+      "excerpt": "Story Title / Section\nDescription\nAcceptance Criteria\nStatus\nAnalytics Vision &amp; Scope\nDefine analytics goals for KDS v2\nEstablish what questions analytics should answer\nGoals documented and approv"
+    },
+    {
+      "title": "Epic #7: QA, Hardening &amp; Release Readiness",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-02T23:24:21.000Z",
+      "url": "/spaces/TT/pages/1635450915/Epic+7+QA+Hardening+Release+Readiness",
+      "excerpt": "Story Title / Section\nDescription\nAcceptance Criteria\nStatus\nQuality Strategy &amp; Release Gates\nDefine KDS v2 quality strategy\nEstablish overall QA approach\nStrategy approved by Eng and QA\nQA task\nD"
+    },
+    {
+      "title": "New JIRA Epics &amp; Stories",
+      "space": "Team Tesla",
+      "last_modified": "2026-01-01T17:45:11.000Z",
+      "url": "/spaces/TT/pages/1634107429/New+JIRA+Epics+Stories",
+      "excerpt": "Epic #\nEpic Name\nSubtopics / Scope Areas Included in This Epic\nEpic 1\nRouter App &amp; Routing Configuration\nRouter-config JSON schema\nStation definitions- Assembly lines + step sequencing\nRouting pol"
+    },
+    {
+      "title": "PCI CAKE Vulnerability Assessment Report Second Quarter 2022 - Technical.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-12-08T11:06:01.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1584889869&preview=%2F1584889869%2F1584889935%2FPCI+CAKE+Vulnerability+Assessment+Report+Second+Quarter+2022+-+Technical.pdf",
+      "excerpt": "Payment Card Industry (PCI) Technical Report\n07/11/2022\n\nASV Scan Report Attestation of Scan Compliance\nA1. Scan Customer Information\n\nA2. Approved Scanning Vendor Information\n\nCompany:\n\ncake-quarter2"
+    },
+    {
+      "title": "PCI CAKE Vulnerability Assessment Report Second Quarter 2022 - Executive.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-12-08T11:06:00.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1584889869&preview=%2F1584889869%2F1584889926%2FPCI+CAKE+Vulnerability+Assessment+Report+Second+Quarter+2022+-+Executive.pdf",
+      "excerpt": "Payment Card Industry (PCI) Executive Report\n07/11/2022\n\nASV Scan Report Attestation of Scan Compliance\nA1. Scan Customer Information\n\nA2. Approved Scanning Vendor Information\n\nCompany:\n\ncake-quarter2"
+    },
+    {
+      "title": "Modern Payments Platform",
+      "space": "Payments",
+      "last_modified": "2025-11-21T13:54:43.000Z",
+      "url": "/spaces/P/pages/1416855648/Modern+Payments+Platform",
+      "excerpt": "Theme Ticket PS-74\nThere are two types of payfac solutions:\nMM Current :\nMore modern, technology-first payfac solution from a commerce provider like WorldPay. WorldPay provides a way for you to whitel"
+    },
+    {
+      "title": "PCI CAKE Vulnerability Assessment Report Second Quarter 2022 - Executive.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-11-20T04:18:15.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1537343507&preview=%2F1537343507%2F1537343573%2FPCI+CAKE+Vulnerability+Assessment+Report+Second+Quarter+2022+-+Executive.pdf",
+      "excerpt": "Payment Card Industry (PCI) Executive Report\n07/11/2022\n\nASV Scan Report Attestation of Scan Compliance\nA1. Scan Customer Information\n\nA2. Approved Scanning Vendor Information\n\nCompany:\n\ncake-quarter2"
+    },
+    {
+      "title": "PCI CAKE Vulnerability Assessment Report Second Quarter 2022 - Technical.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-11-20T04:18:15.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1537343507&preview=%2F1537343507%2F1537343570%2FPCI+CAKE+Vulnerability+Assessment+Report+Second+Quarter+2022+-+Technical.pdf",
+      "excerpt": "Payment Card Industry (PCI) Technical Report\n07/11/2022\n\nASV Scan Report Attestation of Scan Compliance\nA1. Scan Customer Information\n\nA2. Approved Scanning Vendor Information\n\nCompany:\n\ncake-quarter2"
+    },
+    {
+      "title": "MLR Menu Management Release Breakdown",
+      "space": "Cake Reports",
+      "last_modified": "2025-11-18T04:53:24.000Z",
+      "url": "/spaces/CR/pages/1529872413/MLR+Menu+Management+Release+Breakdown",
+      "excerpt": "\u2705 REST-14247 \u2013 Release Breakdown (Based on Epic)\n\ufffd\ufffd BETA 1 \u2013 Minimum Viable Multi-Location Menu Reporting\nBeta 1 focuses on getting the reports functional, with basic filtering and the first export fo"
+    },
+    {
+      "title": "API Management, Identity, and Developer Experience",
+      "space": "CAKE Engineering Excellence",
+      "last_modified": "2025-11-12T06:42:40.000Z",
+      "url": "/spaces/ES/pages/1459781642/API+Management+Identity+and+Developer+Experience",
+      "excerpt": "Head-to-head feature comparison\n\u2705 = included in OSS or base platform \u2022 PAID = enterprise / SaaS tier feature\nCapability\nTyk\n3scale (Red Hat)\nWSO2 API Manager\nKong (Gateway &amp; Konnect)\nFusio (apioo/"
+    },
+    {
+      "title": "CAKE OLO UI (REST-11342)",
+      "space": "Product",
+      "last_modified": "2025-11-10T14:54:22.000Z",
+      "url": "/spaces/PROD/pages/1510080514/CAKE+OLO+UI+REST-11342",
+      "excerpt": "2\ufe0f\u20e3 CONFLUENCE DOCUMENT (Ready to paste)\nCAKE OLO Phase 0 \u2014 UI Revamp Alignment Brief\nObjective\nModernize OLO UI while preserving 100% functional parity of current ordering, cart, payment, fulfillment"
+    }
+  ],
+  "disaster recovery": [
+    {
+      "title": "visa-ecosystem-risk-programs-guide-vars.pdf",
+      "space": "Payments",
+      "last_modified": "2026-02-03T15:21:56.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1735294977&preview=%2F1735294977%2F1735098370%2Fvisa-ecosystem-risk-programs-guide-vars.pdf",
+      "excerpt": "Visa Ecosystem\nRisk Programs\nGuide\n\nOctober 2024\n\nVisa Confidential\n\nV I S A E C O SYS T E M R I S K P R O G R A M S G U I D E\n\nIntroduction\nAs a global leader in digital payments, Visa connects consu"
+    },
+    {
+      "title": "\ufffd\ufffd Deployment &amp; Operations",
+      "space": "Team Tesla",
+      "last_modified": "2025-12-09T04:02:02.000Z",
+      "url": "/spaces/TT/pages/1587150904/Deployment+Operations",
+      "excerpt": ".Introduction\nDeploying KDS v2 involves provisioning the necessary components inside the restaurant, ensuring they can communicate reliably, and configuring the environment to support routing, Workset"
+    },
+    {
+      "title": "Modern Payments Platform",
+      "space": "Payments",
+      "last_modified": "2025-11-21T13:54:43.000Z",
+      "url": "/spaces/P/pages/1416855648/Modern+Payments+Platform",
+      "excerpt": "Theme Ticket PS-74\nThere are two types of payfac solutions:\nMM Current :\nMore modern, technology-first payfac solution from a commerce provider like WorldPay. WorldPay provides a way for you to whitel"
+    },
+    {
+      "title": "Sardine.ai Security Review Report.pdf",
+      "space": "Payments",
+      "last_modified": "2025-11-20T12:47:47.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1538228242&preview=%2F1538228242%2F1538818052%2FSardine.ai+Security+Review+Report.pdf",
+      "excerpt": "Security Review Summary for Sardine.ai\nVendor name: Sardine.ai\n\nDecision: Approved\n\nDecision made on: Oct 15, 2025\n\nAnalysis\nDecision Summary\nDecision\n\nApproved\n\nScope of approval\n\n\u2014\n\nSummary of findi"
+    },
+    {
+      "title": "security-review-questionnaire-export.csv",
+      "space": "Payments",
+      "last_modified": "2025-11-20T12:47:47.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1538228242&preview=%2F1538228242%2F1537835158%2Fsecurity-review-questionnaire-export.csv",
+      "excerpt": "&quot;Question&quot;,&quot;Answer&quot;\n&quot;What does Sardine.ai do?&quot;,&quot;&#39;- Provides fraud detection and prevention services using device intelligence, behavior biometrics, and analytics"
+    },
+    {
+      "title": "VPN Proposal Form - Bankworks&amp;SFTP-V0.0.xlsx",
+      "space": "Payments",
+      "last_modified": "2025-11-13T17:57:32.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1518239775&preview=%2F1518239775%2F1518141456%2FVPN+Proposal+Form+-+Bankworks%26SFTP-V0.0.xlsx",
+      "excerpt": "GERMANY\n\nDate\n\ndd/mm/yyyy\n\nBW-SP\nGermany Gateway\n\nProduction\n\nPeer IP ADDRESS\n18.197.2.182\nPHASE 2 SAs\nLocal Proxy IDs\n\nFQDN\n\nSFTP Server\n\nsftp.bw-sp.com\n\nBankWorks WebGui\nCrystal Reports\n\nbankworks.b"
+    },
+    {
+      "title": "KT Session - Legacy Gateway.docx",
+      "space": "Payments",
+      "last_modified": "2025-10-23T12:36:57.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1460502621&preview=%2F1460502621%2F1461518375%2FKT+Session+-+Legacy+Gateway.docx",
+      "excerpt": "KT Session - Legacy Gateway-20250917_210730Meeting Recording\nSeptember 17, 2025, 2:07AM\n2h 6m 20s\n\nAkshay Bhasin started transcription\nMadhawi De Mel 0:04\nOther payment related and also related activi"
+    },
+    {
+      "title": "Strategic Vendor Evaluation Framework for Risk_20250411.pdf",
+      "space": "Payments",
+      "last_modified": "2025-08-19T15:35:39.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1387134995&preview=%2F1387134995%2F1387167760%2FStrategic+Vendor+Evaluation+Framework+for+Risk_20250411.pdf",
+      "excerpt": "Payments Risk Tools Evaluation Framework and Recommendations\nStrategic Vendor Evaluation Framework for Risk &amp; Compliance Tools ....................................................................."
+    },
+    {
+      "title": "Strategic Vendor Evaluation Framework for Risk_20250411.pdf",
+      "space": "Mirunaaliny S Iyer",
+      "last_modified": "2025-08-18T17:43:39.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1384906754&preview=%2F1384906754%2F1385496643%2FStrategic+Vendor+Evaluation+Framework+for+Risk_20250411.pdf",
+      "excerpt": "Payments Risk Tools Evaluation Framework and Recommendations\nStrategic Vendor Evaluation Framework for Risk &amp; Compliance Tools ....................................................................."
+    },
+    {
+      "title": "cinco POS giftcard overview",
+      "space": "Cake Payment Gateway",
+      "last_modified": "2025-08-13T21:10:15.000Z",
+      "url": "/spaces/CPG/pages/1376780290/cinco+POS+giftcard+overview",
+      "excerpt": "Gift Card Functionality Documentation\nTable of Contents\nExecutive Summary\nHigh-Level Functionality Overview!--http://localhost:63342/markdownPreview/434243628/markdown-preview-index-1745380818.html?_i"
+    },
+    {
+      "title": "Multi-Tenant Client-Managed AI-Ready Platform",
+      "space": "Mad Mobile Architecture",
+      "last_modified": "2025-05-15T14:01:14.000Z",
+      "url": "/spaces/MMA/pages/1131610146/Multi-Tenant+Client-Managed+AI-Ready+Platform",
+      "excerpt": "This platform is intended to be built on top of the infrastructure described here \nThe sections below are intended to stimulate discussion and gather requirements that this platform must meet.\nThe sec"
+    },
+    {
+      "title": "Payment RDS 5.7.X AWS Extended Support Minor Version Upgrade",
+      "space": "Cloud Engineering",
+      "last_modified": "2025-03-20T15:31:14.000Z",
+      "url": "/spaces/CCE/pages/950337549/Payment+RDS+5.7.X+AWS+Extended+Support+Minor+Version+Upgrade",
+      "excerpt": "Overview\nThis document outlines our approach and plan for upgrading the production Payment RDS instances mentioned below from 5.7.44 to AWS Extended Support enabled minor version 5.7.44-rds.20250213 ."
+    },
+    {
+      "title": "CAKE Release - 8.779.0.0 - MySQL Upgrade OAUTH2 DB - SoE",
+      "space": "Leapset Platform",
+      "last_modified": "2024-11-04T08:40:33.000Z",
+      "url": "/spaces/LP/pages/329810080/CAKE+Release+-+8.779.0.0+-+MySQL+Upgrade+OAUTH2+DB+-+SoE",
+      "excerpt": "Authors\nVinod Madubashana \u00a0 Hashan Maduwantha \u00a0 Navoda Edirisinghe\nStatus\nREVIEWED\nRelease Co-coordinator\nNishen Peiris\nTeams Engaged\nLEO, Could Engineering\nReview Meeting Date\n18th of September 2024\n"
+    },
+    {
+      "title": "6.0 Master Device Management",
+      "space": "Service Excellence and Operational Architecture",
+      "last_modified": "2024-09-24T08:24:11.000Z",
+      "url": "/spaces/SEAOA/pages/504988065/6.0+Master+Device+Management",
+      "excerpt": "MDM Requirement\nDetails\nCentralized Device Management        \nUnified Dashboard: Provide a centralized dashboard to manage and monitor all devices (POS systems, printers, routers, etc.) from a single "
+    },
+    {
+      "title": "Kafka &amp; Spark Upgrade Method",
+      "space": "Data & Analytics",
+      "last_modified": "2024-09-05T14:32:37.000Z",
+      "url": "/spaces/DB/pages/444039170/Kafka+Spark+Upgrade+Method",
+      "excerpt": "Why Upgrade Kafka?\nKafka is to be updated to a latest version to support Snowflake: \nSpark also needs to be upgraded due to its dependency on Kafka\nWhats been done so far?\nInitial proposal was for a r"
+    }
+  ],
+  "monitoring": [
+    {
+      "title": "Root Cause Analysis: Account 11607728 SQS Retry Storm",
+      "space": "Team Tesla",
+      "last_modified": "2026-04-02T18:10:54.000Z",
+      "url": "/spaces/TT/pages/1627357218/Root+Cause+Analysis+Account+11607728+SQS+Retry+Storm",
+      "excerpt": "Executive Summary\nBetween 2025-12-19  and 2025-12-22 , account 1607728 experienced 40,681 failed API requests due to a cascading failure caused by missing product configuration in Operator API combine"
+    },
+    {
+      "title": "Java Developers Problem/Solution",
+      "space": "Matt Cooke",
+      "last_modified": "2026-04-02T16:53:42.000Z",
+      "url": "/spaces/~730977308/pages/362556101/Java+Developers+Problem+Solution",
+      "excerpt": "Purpose of This Document\nThis document serves as a centralized knowledge base for resolving common and complex issues encountered during development, testing, and deployment of MadMobile POS systems a"
+    },
+    {
+      "title": "EXT-prod-sf-go-alb-21072020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:22.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461056%2FEXT-prod-sf-go-alb-21072020.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    },
+    {
+      "title": "EXT-prod-sf-go-alb-25012021.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461050%2FEXT-prod-sf-go-alb-25012021.pdf",
+      "excerpt": "Scan Results\nFebruary 03, 2021\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n"
+    },
+    {
+      "title": "EXT-prod-esbserver-alb-21072020-2.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461047%2FEXT-prod-esbserver-alb-21072020-2.pdf",
+      "excerpt": "Scan Results\nAugust 07, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n0"
+    },
+    {
+      "title": "EXT-prod-cakeshop-api-20072020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461044%2FEXT-prod-cakeshop-api-20072020.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    },
+    {
+      "title": "EXT-prod-cakeshop-20072020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461041%2FEXT-prod-cakeshop-20072020.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    },
+    {
+      "title": "EXT-prod-scat-20072020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461038%2FEXT-prod-scat-20072020.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    },
+    {
+      "title": "EXT-prod-payment-applications-alb-21072020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461035%2FEXT-prod-payment-applications-alb-21072020.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    },
+    {
+      "title": "EXT-prod-cake-payment-gateway-alb-20200723.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461032%2FEXT-prod-cake-payment-gateway-alb-20200723.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    },
+    {
+      "title": "EXT-prod-sf-go-alb-22102020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:30:21.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1903461029%2FEXT-prod-sf-go-alb-22102020.pdf",
+      "excerpt": "Scan Results\nOctober 26, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n"
+    },
+    {
+      "title": "EXT-prod-sf-go-alb-21072020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:29:36.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460830&preview=%2F1903460830%2F1903460896%2FEXT-prod-sf-go-alb-21072020.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    },
+    {
+      "title": "EXT-prod-sf-go-alb-25012021.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:29:36.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460830&preview=%2F1903460830%2F1903460893%2FEXT-prod-sf-go-alb-25012021.pdf",
+      "excerpt": "Scan Results\nFebruary 03, 2021\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n"
+    },
+    {
+      "title": "EXT-prod-esbserver-alb-21072020-2.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:29:36.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460830&preview=%2F1903460830%2F1903460890%2FEXT-prod-esbserver-alb-21072020-2.pdf",
+      "excerpt": "Scan Results\nAugust 07, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n0"
+    },
+    {
+      "title": "EXT-prod-cakeshop-api-20072020.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:29:36.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460830&preview=%2F1903460830%2F1903460887%2FEXT-prod-cakeshop-api-20072020.pdf",
+      "excerpt": "Scan Results\nJuly 27, 2020\nReport Summary\nUser Name:\n\nViraj Premaratne\n\nLogin Name:\n\neapse2vp\n\nCompany:\n\nLeapset\n\nUser Role:\n\nManager\n\nAddress:\n\n55A Dharmapala Mw Colombo 03\n\nCity:\n\nColombo\n\nZip:\n\n094"
+    }
+  ],
+  "alerting": [
+    {
+      "title": "Root Cause Analysis: Account 11607728 SQS Retry Storm",
+      "space": "Team Tesla",
+      "last_modified": "2026-04-02T18:10:54.000Z",
+      "url": "/spaces/TT/pages/1627357218/Root+Cause+Analysis+Account+11607728+SQS+Retry+Storm",
+      "excerpt": "Executive Summary\nBetween 2025-12-19  and 2025-12-22 , account 1607728 experienced 40,681 failed API requests due to a cascading failure caused by missing product configuration in Operator API combine"
+    },
+    {
+      "title": "EzCater (WIP)",
+      "space": "Product",
+      "last_modified": "2026-04-02T06:24:09.000Z",
+      "url": "/spaces/PROD/pages/1159037016/EzCater+WIP",
+      "excerpt": "Executive Summary\nIntegration with EzCater to support restaurants ability to fulfil catering needs.\nInitiative or Epic\n\nScope of Changes\nOpportunity / Validation\nThere\u2019s high demand from merchants wit"
+    },
+    {
+      "title": "Role Based Access for PAC -Test Cases",
+      "space": "Payments",
+      "last_modified": "2026-03-24T16:37:29.000Z",
+      "url": "/spaces/P/pages/1744273411/Role+Based+Access+for+PAC+-Test+Cases",
+      "excerpt": "Feature Summary\nDetailed requirement : \nJIRA Ticket :  \nEnvironment: STAGING  ,       Date: 2026-03-24\nRoles: L5 - Super Admin, L4 -Admin, L3 - Modifier(CSM), L2: Limited, L1 - Read Only\nRole\nEmail\nPa"
+    },
+    {
+      "title": "Cybersource Legacy Sync E2E Testing",
+      "space": "Payments",
+      "last_modified": "2026-03-18T15:11:09.000Z",
+      "url": "/spaces/P/pages/1856241665/Cybersource+Legacy+Sync+E2E+Testing",
+      "excerpt": "AUTHENTICATION\nID\nTest Title\nStep Execution\nTest Data\nExpected Result\nPass / Fail\nReason\nTC_CS_001\nVerify sync with valid credentials\nSend POST /api/payment_sync/cybersource\nInclude valid x-email, x-p"
+    },
+    {
+      "title": "NEO AI Insights Standard Story Structure",
+      "space": "Cake Reports",
+      "last_modified": "2026-03-12T20:36:41.000Z",
+      "url": "/spaces/CR/pages/1846411268/NEO+AI+Insights+Standard+Story+Structure",
+      "excerpt": "NEO AI Foundations MVP \u2013 MLR Sales\nEpic Delivery Matrix (Engineering + PM Alignment)\nInitiative:\nREST-18100 \u2014 NEO AI Foundations MVP for MLR Sales\nThis initiative includes several Beta 2 workstreams.\n"
+    },
+    {
+      "title": "Active Paging for High Critical Infrastructure Alerts.",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-09T08:39:56.000Z",
+      "url": "/spaces/CCE/pages/1831731201/Active+Paging+for+High+Critical+Infrastructure+Alerts.",
+      "excerpt": "Table of Content\n1. Current Alerting System (Passive)\nThe current flow works as follows:\nCloudWatch Alarm\n\u2192\nSNS Topic\n\u2192\nMS Teams Channel\n\u2192\nSomeone must see it\nThis is a passive alerting system. The al"
+    },
+    {
+      "title": "Tracker",
+      "space": "Leapset Platform",
+      "last_modified": "2026-03-04T05:56:34.000Z",
+      "url": "/spaces/LP/pages/1815576577/Tracker",
+      "excerpt": "Introduction\nThis document is created to track and monitor violations in order failure rate for DoorDash. Maintaining a structured record will help us take corrective or preventive actions in a timely"
+    },
+    {
+      "title": "Draft: SF Alerts",
+      "space": "Payments",
+      "last_modified": "2026-02-25T19:14:56.000Z",
+      "url": "/spaces/P/pages/1603731478/Draft+SF+Alerts",
+      "excerpt": "payments-risk@madmobile.com \nThis distribution list to set up to receive all alerts for payments and risk.\nThe emails are also sent to:\nslsfalerts@madmobile.com\nUpon Receipt of the email:\nA new Salesf"
+    },
+    {
+      "title": "RA 2.0 Portal - Technical Plan",
+      "space": "Team Tesla",
+      "last_modified": "2026-02-24T20:43:53.000Z",
+      "url": "/spaces/TT/pages/1791361035/RA+2.0+Portal+-+Technical+Plan",
+      "excerpt": "High-Level Overview\nDocument Version: 1.0  \nLast Updated: February 2026  \nStatus: Draft (ARB-ready overview)\nExecutive Summary\nRA 2.0 Portal is the next-generation Restaurant Admin web portal built fr"
+    },
+    {
+      "title": "Alert tracker",
+      "space": "Leapset Platform",
+      "last_modified": "2026-02-20T04:43:12.000Z",
+      "url": "/spaces/LP/pages/1777532932/Alert+tracker",
+      "excerpt": "Introduction\nThis document is created to track and monitor alerts received from DoorDash. Maintaining a structured record will help us take corrective or preventive actions in a timely manner. The fol"
+    },
+    {
+      "title": "API request: ITEM_ACTIVATION_STATUS &amp; ITEM_OPTION_ACTIVATION_STATUS",
+      "space": "Leapset Platform",
+      "last_modified": "2026-02-19T07:09:10.000Z",
+      "url": "/spaces/LP/pages/1775796226/API+request+ITEM_ACTIVATION_STATUS+ITEM_OPTION_ACTIVATION_STATUS",
+      "excerpt": "Introduction\nThis automated alert from DD notifies you of an elevated number of errors currently being observed. Please refer to  for further details."
+    },
+    {
+      "title": "Re: EzCater (WIP)",
+      "space": "Product",
+      "last_modified": "2026-02-19T06:41:04.000Z",
+      "url": "/spaces/PROD/pages/1159037016/EzCater+WIP?focusedCommentId=1777598477",
+      "excerpt": "Dulanjan Wengappuliarachchi  I didn\u2019t goto use the marketplace because we are not using the self onboarding approach (EzCater doesn\u2019t support it either) + the Marketplace is positioned to mainly use f"
+    },
+    {
+      "title": "Alerts from DD: Automated Notification: Elevated Errors on Your DoorDash Integration",
+      "space": "Leapset Platform",
+      "last_modified": "2026-02-19T05:39:51.000Z",
+      "url": "/spaces/LP/folder/1777565733",
+      "excerpt": ""
+    },
+    {
+      "title": "API request: STORE_ACTIVATION_STATUS",
+      "space": "Leapset Platform",
+      "last_modified": "2026-02-19T05:38:45.000Z",
+      "url": "/spaces/LP/pages/253815345/API+request+STORE_ACTIVATION_STATUS",
+      "excerpt": "Introduction\nThis automated alert from DD notifies you of an elevated number of errors currently being observed. Please refer to  for further details.\nImpact\nThe errors primarily pertain to the store\u2019"
+    },
+    {
+      "title": "MPP: Requirements from South State Bank for Transaction Monitoring",
+      "space": "Payments",
+      "last_modified": "2026-02-17T12:10:20.000Z",
+      "url": "/spaces/P/pages/1735294977/MPP+Requirements+from+South+State+Bank+for+Transaction+Monitoring",
+      "excerpt": "This is the best document to reference and is a \u00a0&quot;Risk Control Framework Guide\u201d from Visa.\n\nAACQ.C5 \u2014 Underwriting Requirements\nMerchant requirement: You must have a defined underwriting process "
+    }
+  ],
+  "release process": [
+    {
+      "title": "Java Developers Problem/Solution",
+      "space": "Matt Cooke",
+      "last_modified": "2026-04-02T16:53:42.000Z",
+      "url": "/spaces/~730977308/pages/362556101/Java+Developers+Problem+Solution",
+      "excerpt": "Purpose of This Document\nThis document serves as a centralized knowledge base for resolving common and complex issues encountered during development, testing, and deployment of MadMobile POS systems a"
+    },
+    {
+      "title": "Register and Transaction Sequence Documentation XStore24",
+      "space": "Matt Cooke",
+      "last_modified": "2026-04-02T15:48:37.000Z",
+      "url": "/spaces/~730977308/pages/1846902803/Register+and+Transaction+Sequence+Documentation+XStore24",
+      "excerpt": "Purpose: describe MadMobile transaction sequence files\nLinks\n\nClient Communications 20260324\n\n\nRegister Transaction Sequence Number Not Incrementing Issue\nThe issue surfaced in an external system down"
+    },
+    {
+      "title": "Complete Test Cases - Cake Release 8.877.3.0 - Resolve                 Unassociated EMAF Transactions",
+      "space": "Payments",
+      "last_modified": "2026-04-02T11:15:38.000Z",
+      "url": "/spaces/P/pages/1730674692/Complete+Test+Cases+-+Cake+Release+8.877.3.0+-+Resolve+Unassociated+EMAF+Transactions",
+      "excerpt": "Problem Statement\nWP Express service is unable to send the legacy payment_id with Worldpay requests due to the architecture of the Modern-Legacy integration. When these transactions appear in EMAF rec"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - Accelerated Funding Fix - IR 01",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:20:03.000Z",
+      "url": "/spaces/POAI/pages/1907884033/Cake+Release+8.877.5.0+-+Accelerated+Funding+Fix+-+IR+01",
+      "excerpt": "STAG Date\n2026-03-31 \nPROD Date\n2026-04-08 \nRelease Owner\nKevin Reyes \n\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nResolved Incorrect Accelerated Funding Billing Fee L"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - Accelerated Funding Fix",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:18:48.000Z",
+      "url": "/spaces/POAI/pages/1890123777/Cake+Release+8.877.5.0+-+Accelerated+Funding+Fix",
+      "excerpt": "STAG Date\n2026-03-31 \nPROD Date\n2026-04-08 \nRelease Owner\nKevin Reyes \n\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nResolved Incorrect Accelerated Funding Billing Fee L"
+    },
+    {
+      "title": "Cake Release 8.877.5.0 - SoE QE, STAG &amp; PROD3",
+      "space": "CAKE Payments",
+      "last_modified": "2026-04-02T05:15:19.000Z",
+      "url": "/spaces/POAI/pages/1907425290/Cake+Release+8.877.5.0+-+SoE+QE+STAG+PROD3",
+      "excerpt": "Deployment Window\nTBD\nRelease Point of Contact\nSusampath Madarasinghe \nTeams Engaged\nPaymentOps, Payments\nReviewers\n Altaaf Anver    \n1.0 Deployment Steps\n1.1 Pre-Deployment Tasks\nNot Applicable\nStep "
+    },
+    {
+      "title": "26-Q1 Pulse Vulnerability Assessment - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:33:08.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460353&preview=%2F1903460353%2F1901199395%2F26-Q1+Pulse+Vulnerability+Assessment+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "25-Q1-EXT-PULSE.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:25:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460353&preview=%2F1903460353%2F1903460541%2F25-Q1-EXT-PULSE.pdf",
+      "excerpt": "Scan Results\nJanuary 29, 2025\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip:"
+    },
+    {
+      "title": "24-Q1-EXT-Pulse-13.52.29.116.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:25:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460353&preview=%2F1903460353%2F1903460535%2F24-Q1-EXT-Pulse-13.52.29.116.pdf",
+      "excerpt": "Scan Results\nJanuary 12, 2024\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip:"
+    },
+    {
+      "title": "24-Q2-EXT-Pulse-13.52.29.116.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:25:29.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460353&preview=%2F1903460353%2F1903460382%2F24-Q2-EXT-Pulse-13.52.29.116.pdf",
+      "excerpt": "Scan Results\nApril 01, 2024\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip:\n\n"
+    },
+    {
+      "title": "24-Q4-EXT-PULSE.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:25:29.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460353&preview=%2F1903460353%2F1903460373%2F24-Q4-EXT-PULSE.pdf",
+      "excerpt": "Scan Results\nDecember 04, 2024\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip"
+    },
+    {
+      "title": "25-Q4-EXT-pulse-ssh-tunnel-prod-13.52.29.116.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:25:28.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903460353&preview=%2F1903460353%2F1903460367%2F25-Q4-EXT-pulse-ssh-tunnel-prod-13.52.29.116.pdf",
+      "excerpt": "Scan Results\nDecember 08, 2025\nReport Summary\nUser Name:\n\nPriyankara Bandara\n\nLogin Name:\n\nmadmb2pb\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nZip"
+    },
+    {
+      "title": "26-Q1 Concierge Vulnerability Scan - EXT.pdf",
+      "space": "Cloud Engineering",
+      "last_modified": "2026-03-31T16:21:53.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1903067141&preview=%2F1903067141%2F1901821988%2F26-Q1+Concierge+Vulnerability+Scan+-+EXT.pdf",
+      "excerpt": "Scan Results\nMarch 31, 2026\nReport Summary\nUser Name:\n\nMark Freid\n\nLogin Name:\n\nmadmb2mf1\n\nCompany:\n\nMadmobile\n\nUser Role:\n\nManager\n\nAddress:\n\n201 N Franklin ST Suite 1000\n\nCity:\n\nTampa\n\nState:\n\nFlori"
+    },
+    {
+      "title": "SOE - UA-Reports-Payments Deployment Steps",
+      "space": "Team Tesla",
+      "last_modified": "2026-03-31T10:54:55.000Z",
+      "url": "/spaces/TT/pages/1874788353/SOE+-+UA-Reports-Payments+Deployment+Steps",
+      "excerpt": "Authors\nRaveen Panditha \nStatus\nto-do\n\nRelease Co-coordinator\n Nishen Peiris  Wenushka Dikowita \nTeams Engaged\nMIRA\nReview Meeting Date\nParticipants for the Review Meeting\nTBA\nDeployment Window\nTBA\nIn"
+    },
+    {
+      "title": "Payments Release Version 1.1.37 - WP | Update Mastercard MCC",
+      "space": "Payments",
+      "last_modified": "2026-03-27T14:05:25.000Z",
+      "url": "/spaces/P/pages/1858830337/Payments+Release+Version+1.1.37+-+WP+Update+Mastercard+MCC",
+      "excerpt": "Release Type\u00a0\nEnhancements\nRelease Owner\u00a0\nKevin Reyes \nEngineering Go - No Go\nSTAG Date\n2026-03-25 \nTime\n1:00 PM ET\nManagement Go - No Go\nPROD Date\n2026-03-30 \nTime\n5:00 AM ET\n1.\u00a0 Release Overview\n1.1"
+    }
+  ]
+}

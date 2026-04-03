@@ -1,0 +1,1949 @@
+{
+  "profile": "mm-mm-archive",
+  "account_id": "673260261206",
+  "arn": "arn:aws:sts::673260261206:assumed-role/AWSReservedSSO_Global-Audit-RO_312085dcd0a13caf/adam.lazarus@madmobile.com",
+  "timestamp": "2026-04-03T03:20:45.610290+00:00",
+  "regions": {
+    "us-east-1": {
+      "ec2_instances": [
+        {
+          "id": "i-0968a3528dd96c212",
+          "type": "t2.xlarge",
+          "state": "stopped",
+          "name": "Relate1"
+        },
+        {
+          "id": "i-05e3f9bf7ff69845c",
+          "type": "m5n.large",
+          "state": "running",
+          "name": "Mad-Ftp2"
+        },
+        {
+          "id": "i-0231a6def893b2053",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "Relate2"
+        },
+        {
+          "id": "i-0e90471e86b7c53b7",
+          "type": "t2.micro",
+          "state": "stopped",
+          "name": "servicesim-node-staging"
+        }
+      ],
+      "vpcs": [
+        {
+          "id": "vpc-0e12e801cabd594d5",
+          "cidr": "192.168.0.0/16",
+          "default": false
+        },
+        {
+          "id": "vpc-0d8e2e8b7c3723e1d",
+          "cidr": "10.0.0.0/16",
+          "default": false
+        },
+        {
+          "id": "vpc-0e91889458e62b945",
+          "cidr": "10.0.0.0/16",
+          "default": false
+        },
+        {
+          "id": "vpc-0bc9b4a460e39b25a",
+          "cidr": "192.168.0.0/16",
+          "default": false
+        },
+        {
+          "id": "vpc-036047ca22cf12850",
+          "cidr": "172.30.0.0/16",
+          "default": false
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "webhook-activities-rl",
+          "runtime": "nodejs14.x",
+          "memory": 128,
+          "last_modified": "2026-02-06T13:27:18.000+0000"
+        },
+        {
+          "name": "talbots-biww-sso-dev",
+          "runtime": "java11",
+          "memory": 512,
+          "last_modified": "2023-09-19T13:41:43.091+0000"
+        },
+        {
+          "name": "connect-microsite-customer-auth-rl",
+          "runtime": "nodejs14.x",
+          "memory": 128,
+          "last_modified": "2023-09-01T14:32:00.022+0000"
+        },
+        {
+          "name": "webhook-fulfillment-rl",
+          "runtime": "nodejs14.x",
+          "memory": 128,
+          "last_modified": "2026-02-06T13:27:26.000+0000"
+        },
+        {
+          "name": "webhook-fulfillment-wm",
+          "runtime": "nodejs14.x",
+          "memory": 128,
+          "last_modified": "2024-04-24T00:25:12.000+0000"
+        },
+        {
+          "name": "webhook-fulfillment-signet",
+          "runtime": "nodejs14.x",
+          "memory": 128,
+          "last_modified": "2025-10-21T01:57:10.000+0000"
+        },
+        {
+          "name": "Pdfmerge",
+          "runtime": "nodejs14.x",
+          "memory": 128,
+          "last_modified": "2023-10-06T13:51:16.000+0000"
+        },
+        {
+          "name": "pdfGenerator",
+          "runtime": "java8.al2",
+          "memory": 3000,
+          "last_modified": "2023-09-15T18:11:45.000+0000"
+        },
+        {
+          "name": "send_bb_analytics_report_by_email",
+          "runtime": "python3.8",
+          "memory": 128,
+          "last_modified": "2023-09-05T17:22:45.000+0000"
+        },
+        {
+          "name": "aws-controltower-NotificationForwarder",
+          "runtime": "python3.13",
+          "memory": 128,
+          "last_modified": "2026-01-08T00:09:27.000+0000"
+        },
+        {
+          "name": "point-array-to-image",
+          "runtime": "java8.al2",
+          "memory": 128,
+          "last_modified": "2023-08-31T20:19:19.000+0000"
+        }
+      ],
+      "ecs_clusters": [],
+      "eks_clusters": [],
+      "rds_instances": [],
+      "dynamodb_tables": [
+        "bitbucket-oidc-mm-archive",
+        "concierge-connect-microsite-locks"
+      ],
+      "s3_buckets": [
+        {
+          "name": "amplify-jkmobile-staging-174215-deployment-new",
+          "created": "2023-09-07T20:44:55+00:00"
+        },
+        {
+          "name": "appxassets-new",
+          "created": "2023-09-08T13:32:39+00:00"
+        },
+        {
+          "name": "bitbucket-oidc-mm-archive-state-bucket",
+          "created": "2023-11-30T19:47:04+00:00"
+        },
+        {
+          "name": "concierge-associate-internet-verification-new",
+          "created": "2023-09-08T13:32:40+00:00"
+        },
+        {
+          "name": "concierge-brooksbrothers-new",
+          "created": "2023-09-08T13:32:41+00:00"
+        },
+        {
+          "name": "concierge-connect-microsite-state-bucket",
+          "created": "2024-07-17T14:46:05+00:00"
+        },
+        {
+          "name": "concierge-connect-new",
+          "created": "2023-09-08T13:32:43+00:00"
+        },
+        {
+          "name": "concierge-eu-analytics-vf-new",
+          "created": "2023-09-08T13:32:44+00:00"
+        },
+        {
+          "name": "concierge-helzberg-new",
+          "created": "2023-09-08T13:32:45+00:00"
+        },
+        {
+          "name": "concierge-steinmart-new",
+          "created": "2023-09-08T13:32:47+00:00"
+        },
+        {
+          "name": "core-services-can-archived-logs",
+          "created": "2019-07-26T00:42:29+00:00"
+        },
+        {
+          "name": "dumps-mongodb-can",
+          "created": "2019-07-26T00:42:30+00:00"
+        },
+        {
+          "name": "food-and-beverage-new",
+          "created": "2023-09-08T13:32:48+00:00"
+        },
+        {
+          "name": "kidozen-prod",
+          "created": "2013-11-21T02:34:57+00:00"
+        },
+        {
+          "name": "mad-docs",
+          "created": "2023-10-18T19:26:49+00:00"
+        },
+        {
+          "name": "mad-docs-new",
+          "created": "2023-09-08T13:32:49+00:00"
+        },
+        {
+          "name": "mad-io-new",
+          "created": "2023-09-08T13:32:50+00:00"
+        },
+        {
+          "name": "mad-reports-new",
+          "created": "2023-09-08T13:32:52+00:00"
+        },
+        {
+          "name": "mad-src-new",
+          "created": "2023-09-08T13:32:53+00:00"
+        },
+        {
+          "name": "madarchives-new",
+          "created": "2023-09-08T13:32:55+00:00"
+        },
+        {
+          "name": "madassets-automated-tests-new",
+          "created": "2023-09-08T13:32:57+00:00"
+        },
+        {
+          "name": "madassets-jenkins-new",
+          "created": "2023-09-08T13:32:59+00:00"
+        },
+        {
+          "name": "madassets-new",
+          "created": "2023-09-08T13:32:56+00:00"
+        },
+        {
+          "name": "madassets-qa",
+          "created": "2023-10-05T17:29:37+00:00"
+        },
+        {
+          "name": "madassets-qa-new",
+          "created": "2023-09-08T13:33:00+00:00"
+        },
+        {
+          "name": "madcms-new",
+          "created": "2023-09-08T13:33:01+00:00"
+        },
+        {
+          "name": "madcms-staging-new",
+          "created": "2023-09-08T13:33:02+00:00"
+        },
+        {
+          "name": "madmobile-new",
+          "created": "2023-09-08T13:33:04+00:00"
+        },
+        {
+          "name": "madmobile.com-new",
+          "created": "2023-09-08T13:33:05+00:00"
+        },
+        {
+          "name": "menupad-qa-new",
+          "created": "2023-09-08T13:33:06+00:00"
+        },
+        {
+          "name": "microsite-builds-new",
+          "created": "2023-09-08T13:33:07+00:00"
+        },
+        {
+          "name": "mm-dev-codedeploy-new",
+          "created": "2023-09-08T13:33:08+00:00"
+        },
+        {
+          "name": "mm-micro-frontends-new",
+          "created": "2023-09-08T13:33:10+00:00"
+        },
+        {
+          "name": "mm-pst-new",
+          "created": "2023-09-08T13:33:11+00:00"
+        },
+        {
+          "name": "mm-puml-themes-new",
+          "created": "2023-09-08T13:33:12+00:00"
+        },
+        {
+          "name": "mm-receipt-new",
+          "created": "2023-09-08T13:33:13+00:00"
+        },
+        {
+          "name": "mmbill-new",
+          "created": "2023-09-08T13:33:15+00:00"
+        },
+        {
+          "name": "mmfileshare-new",
+          "created": "2023-09-08T13:33:16+00:00"
+        },
+        {
+          "name": "mmftp-new",
+          "created": "2023-09-08T13:33:17+00:00"
+        },
+        {
+          "name": "mmproofpoint-new",
+          "created": "2023-09-08T13:33:19+00:00"
+        },
+        {
+          "name": "mmuploadvm-new",
+          "created": "2023-09-08T13:33:20+00:00"
+        },
+        {
+          "name": "pdf-generator-s3-new",
+          "created": "2023-09-08T13:33:21+00:00"
+        },
+        {
+          "name": "prod-core-backup-new",
+          "created": "2023-09-08T13:33:23+00:00"
+        },
+        {
+          "name": "ralph-lauren-micro-new",
+          "created": "2023-09-08T13:33:24+00:00"
+        },
+        {
+          "name": "ralph-microsite-dev-new",
+          "created": "2024-07-17T19:07:03+00:00"
+        },
+        {
+          "name": "ralph-microsite-eu-dev-new",
+          "created": "2024-07-17T19:36:25+00:00"
+        },
+        {
+          "name": "ralph-microsite-eu-new",
+          "created": "2024-07-17T19:54:55+00:00"
+        },
+        {
+          "name": "ralph-microsite-eu-uat-new",
+          "created": "2024-07-17T19:44:00+00:00"
+        },
+        {
+          "name": "ralph-microsite-new",
+          "created": "2024-07-17T20:00:23+00:00"
+        },
+        {
+          "name": "ralph-microsite-staging-new",
+          "created": "2024-07-17T19:28:58+00:00"
+        },
+        {
+          "name": "ralph-microsite-uat-new",
+          "created": "2024-07-17T20:15:33+00:00"
+        },
+        {
+          "name": "ralph-microsite-v2-new",
+          "created": "2024-07-17T20:09:20+00:00"
+        },
+        {
+          "name": "tablesafe-archives",
+          "created": "2023-09-06T17:03:07+00:00"
+        }
+      ],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [],
+      "cloudformation_stacks": [
+        {
+          "name": "StackSet-wiz-io-d2faef79-0af3-40a0-9999-f354750210b6",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-10-18T16:31:25.113000+00:00"
+        },
+        {
+          "name": "StackSet-SC-673260261206-pp-epebpye24bbww-aed5573c-5233-47e8-80aa-784a97d3d7d8",
+          "status": "CREATE_COMPLETE",
+          "created": "2024-08-13T21:27:20.990000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-65e517b6-b6ed-4f60-8f46-15825a11d382",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-09-22T17:59:22.958000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-bf5a146b-871e-4fc7-a59f-d491397b984c",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-09-22T17:59:22.793000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-164d3ff5-332d-4249-bf97-e268ce687a21",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-09-22T17:57:00.156000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-87e2bd32-4f31-4cd3-a53b-99b426074b01",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-09-22T17:56:59.046000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-ROLES-218db517-7495-43f5-b25a-6c0df134939c",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-09-22T17:56:58.300000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerExecutionRole-60c81ab0-2b33-4787-b036-b260fb5d8e69",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-09-22T17:53:58.164000+00:00"
+        },
+        {
+          "name": "eksctl-pipeline-dev-1-nodegroup-workers",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-25T21:01:19.779000+00:00"
+        },
+        {
+          "name": "eksctl-pipeline-dev-1-cluster",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-25T20:49:14.311000+00:00"
+        },
+        {
+          "name": "StackSet-CloudHealth-permission-e56f4e63-1d68-4b20-8ce1-6c45d143aa66",
+          "status": "CREATE_COMPLETE",
+          "created": "2023-01-25T13:55:41.642000+00:00"
+        },
+        {
+          "name": "eksctl-corp-devesecops-dev-addon-iamserviceaccount-kube-system-aws-load-balancer-controller",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-06-03T15:26:15.644000+00:00"
+        },
+        {
+          "name": "eksctl-corp-devesecops-dev-nodegroup-corp-devsecops-dev-worker",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-06-01T18:47:01.322000+00:00"
+        },
+        {
+          "name": "eksctl-corp-devesecops-dev-cluster",
+          "status": "CREATE_COMPLETE",
+          "created": "2022-06-01T18:34:49.895000+00:00"
+        },
+        {
+          "name": "cms-evaluation-worker-nodes",
+          "status": "DELETE_FAILED",
+          "created": "2018-09-21T18:33:31.605000+00:00"
+        }
+      ],
+      "sns_topics": 4,
+      "sqs_queues": 33,
+      "ecr_repositories": [
+        "mss-shopping-mobile-bff",
+        "smoke-test",
+        "mss-sysfaux-auth",
+        "integration-tests",
+        "mysysco-shopping-mobile-coverage-report",
+        "mss-sysfaux-error",
+        "integration-tests-response-server"
+      ],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    },
+    "us-west-2": {
+      "ec2_instances": [],
+      "vpcs": [
+        {
+          "id": "vpc-03bc15c6e96b1c6a2",
+          "cidr": "10.0.0.0/16",
+          "default": false
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "aws-controltower-NotificationForwarder",
+          "runtime": "python3.13",
+          "memory": 128,
+          "last_modified": "2026-01-08T00:09:28.000+0000"
+        }
+      ],
+      "ecs_clusters": [],
+      "eks_clusters": [],
+      "rds_instances": [],
+      "dynamodb_tables": [],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [],
+      "cloudformation_stacks": [
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-b07afc76-489d-4994-8691-40984bc2f512",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-11-30T17:08:54.356000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-79c4f879-916c-45b6-b3c2-294cfe845144",
+          "status": "UPDATE_COMPLETE",
+          "created": "2023-11-30T17:08:54.243000+00:00"
+        }
+      ],
+      "sns_topics": 1,
+      "sqs_queues": 0,
+      "ecr_repositories": [],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    },
+    "eu-west-1": {
+      "ec2_instances": [],
+      "vpcs": [
+        {
+          "id": "vpc-04a388074730cf5ea",
+          "cidr": "172.31.0.0/16",
+          "default": true
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "aws-controltower-NotificationForwarder",
+          "runtime": "python3.13",
+          "memory": 128,
+          "last_modified": "2026-01-08T00:09:27.000+0000"
+        }
+      ],
+      "ecs_clusters": [],
+      "eks_clusters": [],
+      "rds_instances": [],
+      "dynamodb_tables": [],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [],
+      "cloudformation_stacks": [
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-b7926e90-ef94-4809-bbfc-db258c16e869",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T16:21:45.338000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-8433575e-52f2-4dae-94af-8c5ac7aec4d8",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T16:21:44.307000+00:00"
+        }
+      ],
+      "sns_topics": 1,
+      "sqs_queues": 0,
+      "ecr_repositories": [],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    },
+    "ap-southeast-1": {
+      "ec2_instances": [],
+      "vpcs": [
+        {
+          "id": "vpc-0a4b5ee29c333eb13",
+          "cidr": "172.31.0.0/16",
+          "default": true
+        }
+      ],
+      "lambda_functions": [
+        {
+          "name": "aws-controltower-NotificationForwarder",
+          "runtime": "python3.13",
+          "memory": 128,
+          "last_modified": "2026-01-08T00:09:29.000+0000"
+        }
+      ],
+      "ecs_clusters": [],
+      "eks_clusters": [],
+      "rds_instances": [],
+      "dynamodb_tables": [],
+      "cloudwatch_alarms": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "cloudwatch_dashboards": [],
+      "cloudformation_stacks": [
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-15556ae6-8b85-4690-9789-2f0002d20ae2",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T16:21:46.956000+00:00"
+        },
+        {
+          "name": "StackSet-AWSControlTowerBP-BASELINE-CONFIG-5e9fc8b6-66ed-4bdf-9d73-7aad61c95b58",
+          "status": "UPDATE_COMPLETE",
+          "created": "2024-01-11T16:21:46.541000+00:00"
+        }
+      ],
+      "sns_topics": 1,
+      "sqs_queues": 0,
+      "ecr_repositories": [],
+      "secrets_count": {
+        "_error": "Access denied: AccessDeniedException"
+      }
+    }
+  },
+  "global": {
+    "iam_users": 1,
+    "iam_roles": 100,
+    "iam_policies": 57,
+    "organization": {
+      "_error": "Access denied: AccessDeniedException"
+    }
+  },
+  "cost": [
+    {
+      "TimePeriod": {
+        "Start": "2026-01-03",
+        "End": "2026-02-01"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS CloudFormation"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.00229508",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.795495",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0011407836",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.09818606",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.2025209338",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.3482879086",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000010476",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1.5047181916",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000018096",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.154008096",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "199.6406303365",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "374.7805202705",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0286516221",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "109.0055784854",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015267",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.5812324992",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Lightsail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "72.3877373187",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Location Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0110984675",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Redshift"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0041414784",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.8271542269",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0003937019",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0036979566",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "71.9111584522",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015309",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "53.5789550869",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.3497689817",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": false
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-02-01",
+        "End": "2026-03-01"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Certificate Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.3801",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0010321369",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.4546534018",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.2471493138",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.367900616",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000010288",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1.5933769025",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000199",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000018096",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.1646294496",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "207.5801308835",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "361.8717887376",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0119778436",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "105.1328520678",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015002",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.4426740468",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Lightsail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "70.0359469238",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Location Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.00000905",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Redshift"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0044243808",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.1588849788",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.4525",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0003267453",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.003623258",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "76.9067761954",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000015066",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "51.7119639701",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.1222905574",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Tax"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": false
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-03-01",
+        "End": "2026-04-01"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Certificate Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.565175",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Cost Explorer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0181",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0012494292",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.4599582482",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.2770059086",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.3685612204",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000011433",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1.3798037519",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000018096",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.164629344",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "213.404445838",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "400.6400834603",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0167912518",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "116.6091852092",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000016689",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.7410559661",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Lightsail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "77.4475956308",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Redshift"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0044270976",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.1588850105",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.2625",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0003555406",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0040112043",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "76.9971296157",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000016767",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "57.2724423309",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.3177178251",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Tax"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": false
+    },
+    {
+      "TimePeriod": {
+        "Start": "2026-04-01",
+        "End": "2026-04-03"
+      },
+      "Total": {},
+      "Groups": [
+        {
+          "Keys": [
+            "AWS CloudTrail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Config"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.08145",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Glue"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS HealthImaging"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000543229",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.3005293965",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0101307017",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Secrets Manager"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0208989648",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Step Functions"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000494",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0424479668",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon CloudFront"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.009146072",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "10.9316479812",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "20.6029261886",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic File System"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0016867045",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Elastic Load Balancing"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "6.4580924959",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Glacier"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.000000072",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon GuardDuty"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.2027538219",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Lightsail"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4.2375305968",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Redshift"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0002513874",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.2773073719",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Route 53"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.4525",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000001506",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0001629",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "5.2924779425",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Workflow Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000729",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Virtual Private Cloud"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "2.9444979454",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.1191386264",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Tax"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            }
+          }
+        }
+      ],
+      "Estimated": true
+    }
+  ]
+}

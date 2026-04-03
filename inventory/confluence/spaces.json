@@ -1,0 +1,2126 @@
+[
+  {
+    "id": "1802246",
+    "key": "DO",
+    "name": "DevOps",
+    "type": "global",
+    "status": "current",
+    "page_count": 68,
+    "recent_pages": []
+  },
+  {
+    "id": "58818565",
+    "key": "ISDT",
+    "name": "IT Service Desk Test",
+    "type": "global",
+    "status": "current",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "97222797",
+    "key": "TO",
+    "name": "App Support",
+    "type": "global",
+    "status": "current",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "131661829",
+    "key": "TSKN",
+    "name": "Tech Support Knowledge Nexus",
+    "type": "global",
+    "status": "current",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "163643497",
+    "key": "PM",
+    "name": "Program Management",
+    "type": "global",
+    "status": "current",
+    "page_count": 82,
+    "recent_pages": [
+      {
+        "title": "Production Release Calendar",
+        "last_modified": "2026-02-18T20:24:55.000Z",
+        "url": "/spaces/PM/pages/249497827/Production+Release+Calendar"
+      }
+    ]
+  },
+  {
+    "id": "174260235",
+    "key": "Incubation",
+    "name": "Incubation",
+    "type": "global",
+    "status": "current",
+    "page_count": 4,
+    "recent_pages": []
+  },
+  {
+    "id": "246251520",
+    "key": "AI",
+    "name": "AI",
+    "type": "global",
+    "status": "current",
+    "page_count": 14,
+    "recent_pages": []
+  },
+  {
+    "id": "247564350",
+    "key": "CPG",
+    "name": "Cake Payment Gateway",
+    "type": "global",
+    "status": "current",
+    "page_count": 1838,
+    "recent_pages": [
+      {
+        "title": "Merchant Cut-Offs &amp; Worldpay Funding (Next-Day vs Same-Day)",
+        "last_modified": "2026-03-31T12:56:18.000Z",
+        "url": "/spaces/CPG/pages/1902477329/Merchant+Cut-Offs+Worldpay+Funding+Next-Day+vs+Same-Day"
+      },
+      {
+        "title": "How to Stock a M60 device to Modern Gateway",
+        "last_modified": "2026-03-30T16:08:19.000Z",
+        "url": "/spaces/CPG/pages/1438842883/How+to+Stock+a+M60+device+to+Modern+Gateway"
+      },
+      {
+        "title": "Pointing merchant to cert Environment - Onboarding",
+        "last_modified": "2026-03-27T04:14:16.000Z",
+        "url": "/spaces/CPG/pages/529301548/Pointing+merchant+to+cert+Environment+-+Onboarding"
+      },
+      {
+        "title": "Mapping PAC Functionality to RS2 API Endpoints",
+        "last_modified": "2026-03-09T17:15:54.000Z",
+        "url": "/spaces/CPG/pages/1831469059/Mapping+PAC+Functionality+to+RS2+API+Endpoints"
+      },
+      {
+        "title": "Payment Architecture (ECS and EC2 Components) - Legacy",
+        "last_modified": "2026-02-20T03:22:40.000Z",
+        "url": "/spaces/CPG/pages/1445953586/Payment+Architecture+ECS+and+EC2+Components+-+Legacy"
+      }
+    ]
+  },
+  {
+    "id": "247693320",
+    "key": "MCAE",
+    "name": "MM Cake - Aramark Engagement",
+    "type": "global",
+    "status": "current",
+    "page_count": 530,
+    "recent_pages": [
+      {
+        "title": "UI Enhancements",
+        "last_modified": "2026-03-16T17:07:23.000Z",
+        "url": "/spaces/MCAE/pages/247136714/UI+Enhancements"
+      }
+    ]
+  },
+  {
+    "id": "247791624",
+    "key": "DRAWIOCONFIG",
+    "name": "draw.io Configuration",
+    "type": "global",
+    "status": "current",
+    "page_count": 5,
+    "recent_pages": []
+  },
+  {
+    "id": "249921577",
+    "key": "LQ",
+    "name": "Leapset QA",
+    "type": "global",
+    "status": "current",
+    "page_count": 922,
+    "recent_pages": []
+  },
+  {
+    "id": "250216547",
+    "key": "CIN",
+    "name": "Cinco",
+    "type": "global",
+    "status": "current",
+    "page_count": 1593,
+    "recent_pages": [
+      {
+        "title": "How to add a new script",
+        "last_modified": "2026-03-04T10:56:48.000Z",
+        "url": "/spaces/CIN/pages/250216866/How+to+add+a+new+script"
+      }
+    ]
+  },
+  {
+    "id": "250445896",
+    "key": "CR",
+    "name": "Cake Reports",
+    "type": "global",
+    "status": "current",
+    "page_count": 1359,
+    "recent_pages": [
+      {
+        "title": "Unified KPI &amp; Chart Functional Contract",
+        "last_modified": "2026-03-30T12:15:02.000Z",
+        "url": "/spaces/CR/pages/1583644673/Unified+KPI+Chart+Functional+Contract"
+      },
+      {
+        "title": "ONP Listing of Available/Active Locations",
+        "last_modified": "2026-03-26T16:11:21.000Z",
+        "url": "/spaces/CR/pages/1891958785/ONP+Listing+of+Available+Active+Locations"
+      },
+      {
+        "title": "MLR Project Automation Test Strategy",
+        "last_modified": "2026-03-26T15:41:05.000Z",
+        "url": "/spaces/CR/pages/1888223242/MLR+Project+Automation+Test+Strategy"
+      },
+      {
+        "title": "opencode.jsonc",
+        "last_modified": "2026-03-26T15:22:10.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1888223242&preview=%2F1888223242%2F1890516993%2Fopencode.jsonc"
+      },
+      {
+        "title": ".gitignore",
+        "last_modified": "2026-03-26T15:22:10.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1888223242&preview=%2F1888223242%2F1890484225%2F.gitignore"
+      }
+    ]
+  },
+  {
+    "id": "250871809",
+    "key": "DEL",
+    "name": "Delivery",
+    "type": "global",
+    "status": "current",
+    "page_count": 40,
+    "recent_pages": []
+  },
+  {
+    "id": "251035653",
+    "key": "MUT",
+    "name": "Menu Universe Tracker",
+    "type": "global",
+    "status": "current",
+    "page_count": 305,
+    "recent_pages": []
+  },
+  {
+    "id": "251166738",
+    "key": "BT",
+    "name": "Guest Manager",
+    "type": "global",
+    "status": "current",
+    "page_count": 827,
+    "recent_pages": []
+  },
+  {
+    "id": "251428883",
+    "key": "DIS",
+    "name": "Discovery",
+    "type": "global",
+    "status": "current",
+    "page_count": 538,
+    "recent_pages": []
+  },
+  {
+    "id": "251592706",
+    "key": "mobile",
+    "name": "Mobile Practice",
+    "type": "global",
+    "status": "current",
+    "page_count": 264,
+    "recent_pages": []
+  },
+  {
+    "id": "251723796",
+    "key": "MC",
+    "name": "Giants",
+    "type": "global",
+    "status": "current",
+    "page_count": 888,
+    "recent_pages": []
+  },
+  {
+    "id": "252117028",
+    "key": "API",
+    "name": "API",
+    "type": "global",
+    "status": "current",
+    "page_count": 165,
+    "recent_pages": []
+  },
+  {
+    "id": "252248104",
+    "key": "POAI",
+    "name": "CAKE Payments",
+    "type": "global",
+    "status": "current",
+    "page_count": 2203,
+    "recent_pages": [
+      {
+        "title": "Cake Release 8.877.5.0 - Accelerated Funding Fix - IR 01",
+        "last_modified": "2026-04-02T05:20:03.000Z",
+        "url": "/spaces/POAI/pages/1907884033/Cake+Release+8.877.5.0+-+Accelerated+Funding+Fix+-+IR+01"
+      },
+      {
+        "title": "image-20250508-110020.png",
+        "last_modified": "2026-04-02T05:19:05.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1907884033&preview=%2F1907884033%2F1907884170%2Fimage-20250508-110020.png"
+      },
+      {
+        "title": "image-20250508-110015.png",
+        "last_modified": "2026-04-02T05:19:05.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1907884033&preview=%2F1907884033%2F1907884167%2Fimage-20250508-110015.png"
+      },
+      {
+        "title": "image-20250428-111713.png",
+        "last_modified": "2026-04-02T05:19:05.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1907884033&preview=%2F1907884033%2F1907884164%2Fimage-20250428-111713.png"
+      },
+      {
+        "title": "Screenshot from 2025-04-30 12-06-30.png",
+        "last_modified": "2026-04-02T05:19:05.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1907884033&preview=%2F1907884033%2F1907884161%2FScreenshot+from+2025-04-30+12-06-30.png"
+      }
+    ]
+  },
+  {
+    "id": "252641284",
+    "key": "CAKENET",
+    "name": "CAKE Connect",
+    "type": "global",
+    "status": "current",
+    "page_count": 233,
+    "recent_pages": []
+  },
+  {
+    "id": "252772367",
+    "key": "CQ",
+    "name": "Cakecore QE",
+    "type": "global",
+    "status": "current",
+    "page_count": 1519,
+    "recent_pages": [
+      {
+        "title": "How to add custom moxy and FE to POS",
+        "last_modified": "2026-03-24T09:20:55.000Z",
+        "url": "/spaces/CQ/pages/252827158/How+to+add+custom+moxy+and+FE+to+POS"
+      },
+      {
+        "title": "Testing scope for PX Modifier Option 86ing",
+        "last_modified": "2026-02-18T07:33:59.000Z",
+        "url": "/spaces/CQ/pages/1764196353/Testing+scope+for+PX+Modifier+Option+86ing"
+      },
+      {
+        "title": "Screenshot 2024-04-30 at 10.41.41 AM.png?version=1&amp;modificationDate=1714453913714&amp;cacheVersion=1&amp;api=v2",
+        "last_modified": "2026-02-12T10:15:15.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1764196353&preview=%2F1764196353%2F1764196409%2FScreenshot+2024-04-30+at+10.41.41+AM.png%3Fversion%3D1%26modificationDate%3D1714453913714%26cacheVersion%3D1%26api%3Dv2"
+      },
+      {
+        "title": "Screenshot 2024-04-30 at 10.43.02 AM.png?version=1&amp;modificationDate=1714453997178&amp;cacheVersion=1&amp;api=v2",
+        "last_modified": "2026-02-12T10:15:15.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1764196353&preview=%2F1764196353%2F1764196406%2FScreenshot+2024-04-30+at+10.43.02+AM.png%3Fversion%3D1%26modificationDate%3D1714453997178%26cacheVersion%3D1%26api%3Dv2"
+      },
+      {
+        "title": "image (12)-20241002-051006.png",
+        "last_modified": "2026-02-12T10:15:15.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1764196353&preview=%2F1764196353%2F1764196403%2Fimage+%2812%29-20241002-051006.png"
+      }
+    ]
+  },
+  {
+    "id": "253100035",
+    "key": "CP",
+    "name": "CAKE Process",
+    "type": "global",
+    "status": "current",
+    "page_count": 79,
+    "recent_pages": []
+  },
+  {
+    "id": "253231158",
+    "key": "LP",
+    "name": "Leapset Platform",
+    "type": "global",
+    "status": "current",
+    "page_count": 6445,
+    "recent_pages": [
+      {
+        "title": "Known-Exploited Scan Traffic - ALB log analysis - ESB CPU spikes",
+        "last_modified": "2026-03-31T12:10:38.000Z",
+        "url": "/spaces/LP/pages/1649508353/Known-Exploited+Scan+Traffic+-+ALB+log+analysis+-+ESB+CPU+spikes"
+      },
+      {
+        "title": "Remove unwanted queues from RabbitMQ - ALB log analysis - ESB CPU spikes",
+        "last_modified": "2026-03-31T11:41:02.000Z",
+        "url": "/spaces/LP/pages/1605369857/Remove+unwanted+queues+from+RabbitMQ+-+ALB+log+analysis+-+ESB+CPU+spikes"
+      },
+      {
+        "title": "Task breakdown - Hardening LRS Connectivity",
+        "last_modified": "2026-03-26T11:54:06.000Z",
+        "url": "/spaces/LP/pages/1887993857/Task+breakdown+-+Hardening+LRS+Connectivity"
+      },
+      {
+        "title": "CAKE Release CCL_8.885.1.3 - Logging Enhancements Across OLO Aggregator API, Leapset API, &amp; Merchant API - SOE",
+        "last_modified": "2026-03-26T10:34:47.000Z",
+        "url": "/spaces/LP/pages/1879375952/CAKE+Release+CCL_8.885.1.3+-+Logging+Enhancements+Across+OLO+Aggregator+API+Leapset+API+Merchant+API+-+SOE"
+      },
+      {
+        "title": "CAKE Release CCL_8.885.1.3 - Logging Enhancements Across OLO Aggregator API, Leapset API, &amp; Merchant API",
+        "last_modified": "2026-03-26T05:31:31.000Z",
+        "url": "/spaces/LP/pages/1879375873/CAKE+Release+CCL_8.885.1.3+-+Logging+Enhancements+Across+OLO+Aggregator+API+Leapset+API+Merchant+API"
+      }
+    ]
+  },
+  {
+    "id": "254345221",
+    "key": "CP1",
+    "name": "Catalysts",
+    "type": "global",
+    "status": "current",
+    "page_count": 493,
+    "recent_pages": [
+      {
+        "title": "Payroll KT 1: Overall Architecture and Data Generation",
+        "last_modified": "2026-01-20T08:00:12.000Z",
+        "url": "/spaces/CP1/pages/254374382/Payroll+KT+1+Overall+Architecture+and+Data+Generation"
+      },
+      {
+        "title": "payroll-kt-clock-in-flow.png",
+        "last_modified": "2026-01-20T08:00:07.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=254374382&preview=%2F254374382%2F254376212%2Fpayroll-kt-clock-in-flow.png"
+      },
+      {
+        "title": "payroll-kt-clock-in-flow",
+        "last_modified": "2026-01-20T08:00:07.000Z",
+        "url": "/plugins/servlet/ac/com.mxgraph.confluence.plugins.diagramly/customContentViewer?content.plugin=ac%3Acom.mxgraph.confluence.plugins.diagramly%3Adrawio-diagram&space.key=CP1&content.id=1684602923&content.version=1&space.id=254345221&content.type=custom"
+      },
+      {
+        "title": "payroll-kt-clock-in-flow",
+        "last_modified": "2026-01-20T08:00:06.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=254374382&preview=%2F254374382%2F254375963%2Fpayroll-kt-clock-in-flow"
+      },
+      {
+        "title": "~payroll-kt-clock-in-flow.tmp",
+        "last_modified": "2026-01-20T07:59:53.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=254374382&preview=%2F254374382%2F254375831%2F~payroll-kt-clock-in-flow.tmp"
+      }
+    ]
+  },
+  {
+    "id": "254574594",
+    "key": "LOYAL",
+    "name": "Loyalty and Online Order",
+    "type": "global",
+    "status": "current",
+    "page_count": 36,
+    "recent_pages": []
+  },
+  {
+    "id": "254705665",
+    "key": "CPS",
+    "name": "CINCO POS 3",
+    "type": "global",
+    "status": "current",
+    "page_count": 37,
+    "recent_pages": []
+  },
+  {
+    "id": "254869505",
+    "key": "EMV",
+    "name": "EMV",
+    "type": "global",
+    "status": "current",
+    "page_count": 17,
+    "recent_pages": []
+  },
+  {
+    "id": "255000576",
+    "key": "OLO",
+    "name": "OLO",
+    "type": "global",
+    "status": "current",
+    "page_count": 32,
+    "recent_pages": []
+  },
+  {
+    "id": "255131661",
+    "key": "OIT",
+    "name": "ON-BOARDING & IMPLEMENTATION TEAMS",
+    "type": "global",
+    "status": "current",
+    "page_count": 36,
+    "recent_pages": []
+  },
+  {
+    "id": "255262720",
+    "key": "MF",
+    "name": "Ministry of Fun",
+    "type": "global",
+    "status": "current",
+    "page_count": 25,
+    "recent_pages": []
+  },
+  {
+    "id": "255393794",
+    "key": "NH",
+    "name": "New Hardware",
+    "type": "global",
+    "status": "current",
+    "page_count": 11,
+    "recent_pages": []
+  },
+  {
+    "id": "255524864",
+    "key": "DES",
+    "name": "Design",
+    "type": "global",
+    "status": "current",
+    "page_count": 7,
+    "recent_pages": []
+  },
+  {
+    "id": "255655943",
+    "key": "CPCI",
+    "name": "CAKE PCI",
+    "type": "global",
+    "status": "current",
+    "page_count": 62,
+    "recent_pages": []
+  },
+  {
+    "id": "255787010",
+    "key": "CD",
+    "name": "CAKE Delivery",
+    "type": "global",
+    "status": "current",
+    "page_count": 6,
+    "recent_pages": []
+  },
+  {
+    "id": "255918088",
+    "key": "CA",
+    "name": "Cake Apps",
+    "type": "global",
+    "status": "current",
+    "page_count": 325,
+    "recent_pages": [
+      {
+        "title": "Agentic Lovable Dev Flow",
+        "last_modified": "2026-03-24T17:05:54.000Z",
+        "url": "/spaces/CA/pages/1883045889/Agentic+Lovable+Dev+Flow"
+      },
+      {
+        "title": "Restaurant Admin 2.0",
+        "last_modified": "2026-03-24T16:43:54.000Z",
+        "url": "/spaces/CA/folder/1882947586"
+      }
+    ]
+  },
+  {
+    "id": "256114694",
+    "key": "CG",
+    "name": "Cake GPS",
+    "type": "global",
+    "status": "current",
+    "page_count": 667,
+    "recent_pages": []
+  },
+  {
+    "id": "256409634",
+    "key": "ES",
+    "name": "CAKE Engineering Excellence",
+    "type": "global",
+    "status": "current",
+    "page_count": 1238,
+    "recent_pages": [
+      {
+        "title": "05 - SMS Token Onboarding - Software Architecture",
+        "last_modified": "2026-03-27T21:32:01.000Z",
+        "url": "/spaces/ES/pages/1306624001/05+-+SMS+Token+Onboarding+-+Software+Architecture"
+      },
+      {
+        "title": "Seveval Locations Test Accounts",
+        "last_modified": "2026-03-19T18:24:02.000Z",
+        "url": "/spaces/ES/pages/1867546627/Seveval+Locations+Test+Accounts"
+      },
+      {
+        "title": "Shop &amp; Intacct loop calls",
+        "last_modified": "2026-03-13T17:08:21.000Z",
+        "url": "/spaces/ES/pages/1847066634/Shop+Intacct+loop+calls"
+      },
+      {
+        "title": "Screenshot 2026-03-13 at 1.16.38\u202fPM.png",
+        "last_modified": "2026-03-13T16:54:24.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1847066634&preview=%2F1847066634%2F1847230492%2FScreenshot+2026-03-13+at+1.16.38%E2%80%AFPM.png"
+      },
+      {
+        "title": "Screenshot 2026-03-13 at 12.52.22\u202fPM.png",
+        "last_modified": "2026-03-13T16:53:23.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1847066634&preview=%2F1847066634%2F1846935579%2FScreenshot+2026-03-13+at+12.52.22%E2%80%AFPM.png"
+      }
+    ]
+  },
+  {
+    "id": "257097754",
+    "key": "CCE",
+    "name": "Cloud Engineering",
+    "type": "global",
+    "status": "current",
+    "page_count": 1752,
+    "recent_pages": [
+      {
+        "title": "26-Q1 Internal Vulnerability Assessments",
+        "last_modified": "2026-03-31T16:41:12.000Z",
+        "url": "/spaces/CCE/pages/1901854769/26-Q1+Internal+Vulnerability+Assessments"
+      },
+      {
+        "title": "26-Q1  payments-config-portal Vulnerability Assessment - External",
+        "last_modified": "2026-03-31T16:40:37.000Z",
+        "url": "/spaces/CCE/pages/1903460984/26-Q1+payments-config-portal+Vulnerability+Assessment+-+External"
+      },
+      {
+        "title": "26-Q1 payments-config-portal EXT.pdf",
+        "last_modified": "2026-03-31T16:40:33.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1903460984&preview=%2F1903460984%2F1901199410%2F26-Q1+payments-config-portal+EXT.pdf"
+      },
+      {
+        "title": "26-Q1  Keycloak Vulnerability Assessment - External",
+        "last_modified": "2026-03-31T16:39:49.000Z",
+        "url": "/spaces/CCE/pages/1903460830/26-Q1+Keycloak+Vulnerability+Assessment+-+External"
+      },
+      {
+        "title": "26-Q1 Keycloak Vulnerability Assessment - EXT.pdf",
+        "last_modified": "2026-03-31T16:39:44.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1903460830&preview=%2F1903460830%2F1902379050%2F26-Q1+Keycloak+Vulnerability+Assessment+-+EXT.pdf"
+      }
+    ]
+  },
+  {
+    "id": "257949740",
+    "key": "DB",
+    "name": "Data & Analytics",
+    "type": "global",
+    "status": "current",
+    "page_count": 2056,
+    "recent_pages": [
+      {
+        "title": "Multi-Location Reporting Auth",
+        "last_modified": "2026-03-31T21:18:18.000Z",
+        "url": "/spaces/DB/pages/1901822017/Multi-Location+Reporting+Auth"
+      },
+      {
+        "title": "Multi-Location Reporting Architecture and Design",
+        "last_modified": "2026-03-11T12:04:44.000Z",
+        "url": "/spaces/DB/pages/1840676865/Multi-Location+Reporting+Architecture+and+Design"
+      },
+      {
+        "title": "1739438361074-data-platform-architecture.png",
+        "last_modified": "2026-03-11T12:00:23.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1840676865&preview=%2F1840676865%2F1840676873%2F1739438361074-data-platform-architecture.png"
+      },
+      {
+        "title": "data-platform-architecture-updated",
+        "last_modified": "2026-03-11T12:00:22.000Z",
+        "url": "/plugins/servlet/ac/com.mxgraph.confluence.plugins.diagramly/customContentViewer?content.plugin=ac%3Acom.mxgraph.confluence.plugins.diagramly%3Adrawio-diagram&space.key=DB&content.id=1838972937&content.version=1&space.id=257949740&content.type=custom"
+      },
+      {
+        "title": "1739438361074-data-platform-architecture",
+        "last_modified": "2026-03-11T12:00:21.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1840676865&preview=%2F1840676865%2F1840676876%2F1739438361074-data-platform-architecture"
+      }
+    ]
+  },
+  {
+    "id": "258310182",
+    "key": "SWAT",
+    "name": "SWAT",
+    "type": "global",
+    "status": "current",
+    "page_count": 963,
+    "recent_pages": [
+      {
+        "title": "Bissa Server list",
+        "last_modified": "2026-03-18T11:43:38.000Z",
+        "url": "/spaces/SWAT/pages/258386555/Bissa+Server+list"
+      },
+      {
+        "title": "REV31 Image",
+        "last_modified": "2026-03-14T04:08:23.000Z",
+        "url": "/spaces/SWAT/pages/1849491469/REV31+Image"
+      },
+      {
+        "title": "REV32 Image",
+        "last_modified": "2026-03-14T04:06:58.000Z",
+        "url": "/spaces/SWAT/pages/1822654481/REV32+Image"
+      },
+      {
+        "title": "Re: REV32 Image",
+        "last_modified": "2026-03-07T01:50:23.000Z",
+        "url": "/spaces/SWAT/pages/1822654481/REV32+Image?focusedCommentId=1828847626"
+      }
+    ]
+  },
+  {
+    "id": "258605077",
+    "key": "OE",
+    "name": "OPS Engineering",
+    "type": "global",
+    "status": "current",
+    "page_count": 1266,
+    "recent_pages": []
+  },
+  {
+    "id": "258932750",
+    "key": "PMG",
+    "name": "POS Menu Group",
+    "type": "global",
+    "status": "current",
+    "page_count": 119,
+    "recent_pages": [
+      {
+        "title": "Diner Menu Modifers",
+        "last_modified": "2026-02-20T06:04:22.000Z",
+        "url": "/spaces/PMG/pages/258932905/Diner+Menu+Modifers"
+      },
+      {
+        "title": "ENCODING GUIDELINES",
+        "last_modified": "2026-01-26T12:09:09.000Z",
+        "url": "/spaces/PMG/pages/258932784/ENCODING+GUIDELINES"
+      }
+    ]
+  },
+  {
+    "id": "259096608",
+    "key": "DEP",
+    "name": "Cloud Services Home",
+    "type": "global",
+    "status": "current",
+    "page_count": 1036,
+    "recent_pages": [
+      {
+        "title": "Duplicate of Minuteman Build Flow",
+        "last_modified": "2026-01-26T10:00:39.000Z",
+        "url": "/spaces/DEP/pages/1702297603/Duplicate+of+Minuteman+Build+Flow"
+      },
+      {
+        "title": "ecs.png",
+        "last_modified": "2026-01-26T09:58:42.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1702297603&preview=%2F1702297603%2F1702297612%2Fecs.png"
+      },
+      {
+        "title": "Minuteman Build Flow",
+        "last_modified": "2026-01-26T09:57:49.000Z",
+        "url": "/spaces/DEP/pages/259165889/Minuteman+Build+Flow"
+      }
+    ]
+  },
+  {
+    "id": "259522570",
+    "key": "UX",
+    "name": "User Experience",
+    "type": "global",
+    "status": "current",
+    "page_count": 264,
+    "recent_pages": []
+  },
+  {
+    "id": "259653638",
+    "key": "QE",
+    "name": "Quality Engineering",
+    "type": "global",
+    "status": "current",
+    "page_count": 161,
+    "recent_pages": []
+  },
+  {
+    "id": "259784730",
+    "key": "PG",
+    "name": "Payment Gateway",
+    "type": "global",
+    "status": "current",
+    "page_count": 260,
+    "recent_pages": []
+  },
+  {
+    "id": "259948545",
+    "key": "QCEN",
+    "name": "QCenter",
+    "type": "global",
+    "status": "current",
+    "page_count": 89,
+    "recent_pages": []
+  },
+  {
+    "id": "260079624",
+    "key": "THUL",
+    "name": "Thulya",
+    "type": "global",
+    "status": "current",
+    "page_count": 263,
+    "recent_pages": []
+  },
+  {
+    "id": "260243459",
+    "key": "PS",
+    "name": "Taurus",
+    "type": "global",
+    "status": "current",
+    "page_count": 686,
+    "recent_pages": [
+      {
+        "title": "Disable/Enable Pulse",
+        "last_modified": "2026-03-13T15:27:03.000Z",
+        "url": "/spaces/PS/pages/260275806/Disable+Enable+Pulse"
+      }
+    ]
+  },
+  {
+    "id": "260407303",
+    "key": "partnerships",
+    "name": "Partnerships",
+    "type": "global",
+    "status": "current",
+    "page_count": 530,
+    "recent_pages": [
+      {
+        "title": "3rd Party Integration Onboarding Process",
+        "last_modified": "2026-02-10T05:24:53.000Z",
+        "url": "/spaces/partnerships/pages/260427689/3rd+Party+Integration+Onboarding+Process"
+      }
+    ]
+  },
+  {
+    "id": "260669515",
+    "key": "POS",
+    "name": "POS",
+    "type": "global",
+    "status": "current",
+    "page_count": 3024,
+    "recent_pages": []
+  },
+  {
+    "id": "261586946",
+    "key": "CP2",
+    "name": "Optimo",
+    "type": "global",
+    "status": "current",
+    "page_count": 417,
+    "recent_pages": []
+  },
+  {
+    "id": "261783592",
+    "key": "TECOP",
+    "name": "Tech Ops",
+    "type": "global",
+    "status": "current",
+    "page_count": 222,
+    "recent_pages": []
+  },
+  {
+    "id": "261947417",
+    "key": "CST1",
+    "name": "Customer Support Tier 1.",
+    "type": "global",
+    "status": "current",
+    "page_count": 56,
+    "recent_pages": []
+  },
+  {
+    "id": "262078464",
+    "key": "TIT",
+    "name": "Titans",
+    "type": "global",
+    "status": "current",
+    "page_count": 201,
+    "recent_pages": []
+  },
+  {
+    "id": "262209550",
+    "key": "PROD",
+    "name": "Product",
+    "type": "global",
+    "status": "current",
+    "page_count": 560,
+    "recent_pages": [
+      {
+        "title": "EzCater (WIP)",
+        "last_modified": "2026-04-02T06:24:09.000Z",
+        "url": "/spaces/PROD/pages/1159037016/EzCater+WIP"
+      },
+      {
+        "title": "RAUserFlow.png",
+        "last_modified": "2026-04-02T06:24:04.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1159037016&preview=%2F1159037016%2F1904115721%2FRAUserFlow.png"
+      },
+      {
+        "title": "OpsAdminFlow.png",
+        "last_modified": "2026-04-02T05:58:56.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1159037016&preview=%2F1159037016%2F1900707848%2FOpsAdminFlow.png"
+      },
+      {
+        "title": "Error Messages with VP3350",
+        "last_modified": "2026-03-31T18:35:31.000Z",
+        "url": "/spaces/PROD/pages/1694859266/Error+Messages+with+VP3350"
+      },
+      {
+        "title": "OnboardingProcess.png",
+        "last_modified": "2026-03-31T08:08:20.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1159037016&preview=%2F1159037016%2F1901723650%2FOnboardingProcess.png"
+      }
+    ]
+  },
+  {
+    "id": "262471680",
+    "key": "PHOENIX",
+    "name": "Phoenix",
+    "type": "global",
+    "status": "current",
+    "page_count": 405,
+    "recent_pages": []
+  },
+  {
+    "id": "262766604",
+    "key": "UL",
+    "name": "Ultrons",
+    "type": "global",
+    "status": "current",
+    "page_count": 364,
+    "recent_pages": []
+  },
+  {
+    "id": "262963200",
+    "key": "ONP",
+    "name": "Ortego National Parks",
+    "type": "global",
+    "status": "current",
+    "page_count": 42,
+    "recent_pages": []
+  },
+  {
+    "id": "263094275",
+    "key": "SEAOA",
+    "name": "Service Excellence and Operational Architecture",
+    "type": "global",
+    "status": "current",
+    "page_count": 112,
+    "recent_pages": [
+      {
+        "title": "2.13 L2 Updating Shifts App \u2013 Draft Instructions",
+        "last_modified": "2026-01-30T12:41:36.000Z",
+        "url": "/spaces/SEAOA/pages/1722384412/2.13+L2+Updating+Shifts+App+Draft+Instructions"
+      },
+      {
+        "title": "2.12 On Call Bot Design and Implementation",
+        "last_modified": "2026-01-30T11:16:22.000Z",
+        "url": "/spaces/SEAOA/pages/1707048968/2.12+On+Call+Bot+Design+and+Implementation"
+      },
+      {
+        "title": "2.11 Usage of the On Call Bot",
+        "last_modified": "2026-01-23T05:56:59.000Z",
+        "url": "/spaces/SEAOA/pages/1696366593/2.11+Usage+of+the+On+Call+Bot"
+      }
+    ]
+  },
+  {
+    "id": "263225344",
+    "key": "TD1",
+    "name": "Team Castor",
+    "type": "global",
+    "status": "current",
+    "page_count": 298,
+    "recent_pages": [
+      {
+        "title": "Display Guest Identifier on KDS Tickets - Backward Compatibility Testing",
+        "last_modified": "2026-01-06T12:51:14.000Z",
+        "url": "/spaces/TD1/pages/459571349/Display+Guest+Identifier+on+KDS+Tickets+-+Backward+Compatibility+Testing"
+      }
+    ]
+  },
+  {
+    "id": "263356416",
+    "key": "SMHGP",
+    "name": "Hasitha Gamage",
+    "type": "global",
+    "status": "current",
+    "page_count": 165,
+    "recent_pages": []
+  },
+  {
+    "id": "263487488",
+    "key": "SMSPP",
+    "name": "Shavin Pieris",
+    "type": "global",
+    "status": "current",
+    "page_count": 34,
+    "recent_pages": []
+  },
+  {
+    "id": "263618560",
+    "key": "SMKWP",
+    "name": "Kevin Wu",
+    "type": "global",
+    "status": "current",
+    "page_count": 37,
+    "recent_pages": []
+  },
+  {
+    "id": "263749632",
+    "key": "SMADNP",
+    "name": "Aruna Dissanayake",
+    "type": "global",
+    "status": "current",
+    "page_count": 68,
+    "recent_pages": []
+  },
+  {
+    "id": "263880705",
+    "key": "TS",
+    "name": "Team Stark",
+    "type": "global",
+    "status": "current",
+    "page_count": 755,
+    "recent_pages": []
+  },
+  {
+    "id": "264273920",
+    "key": "SMHMP",
+    "name": "Hafeez Marzuk",
+    "type": "global",
+    "status": "current",
+    "page_count": 6,
+    "recent_pages": []
+  },
+  {
+    "id": "264404992",
+    "key": "SMALP",
+    "name": "Asiri Liyanage",
+    "type": "global",
+    "status": "current",
+    "page_count": 36,
+    "recent_pages": []
+  },
+  {
+    "id": "264536064",
+    "key": "SMTWP",
+    "name": "Thiwanka Wimalasuriya",
+    "type": "global",
+    "status": "current",
+    "page_count": 121,
+    "recent_pages": [
+      {
+        "title": "REST-18448 issue",
+        "last_modified": "2026-03-31T06:14:39.000Z",
+        "url": "/spaces/SMTWP/blog/2026/03/31/1901264897/REST-18448+issue"
+      },
+      {
+        "title": "ELO POS Setup Guide - V5",
+        "last_modified": "2026-03-25T02:40:05.000Z",
+        "url": "/spaces/SMTWP/blog/2024/04/29/264561194/ELO+POS+Setup+Guide+-+V5"
+      },
+      {
+        "title": "Screenshot 2026-03-25 at 08.09.40.png",
+        "last_modified": "2026-03-25T02:39:58.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=264561194&preview=%2F264561194%2F1883996162%2FScreenshot+2026-03-25+at+08.09.40.png"
+      },
+      {
+        "title": "create branch from tag for production support",
+        "last_modified": "2026-03-24T06:45:35.000Z",
+        "url": "/spaces/SMTWP/blog/2026/03/24/1878097922/create+branch+from+tag+for+production+support"
+      },
+      {
+        "title": "Initial documents of a Merchant",
+        "last_modified": "2026-03-17T13:43:27.000Z",
+        "url": "/spaces/SMTWP/blog/2024/12/16/707854857/Initial+documents+of+a+Merchant"
+      }
+    ]
+  },
+  {
+    "id": "264699904",
+    "key": "SMMSP",
+    "name": "Mirunaaliny S Iyer",
+    "type": "global",
+    "status": "current",
+    "page_count": 68,
+    "recent_pages": [
+      {
+        "title": "Tips Screen",
+        "last_modified": "2026-03-12T14:05:48.000Z",
+        "url": "/spaces/SMMSP/whiteboard/1843494920"
+      },
+      {
+        "title": "POS -&gt; Tips Screen",
+        "last_modified": "2026-03-12T14:01:51.000Z",
+        "url": "/spaces/SMMSP/pages/1842708491/POS+-+Tips+Screen"
+      },
+      {
+        "title": "Online Ordering - Issue",
+        "last_modified": "2026-03-11T17:02:46.000Z",
+        "url": "/spaces/SMMSP/pages/1840185356/Online+Ordering+-+Issue"
+      },
+      {
+        "title": "Screenshot 2026-03-11 at 13.01.39.png",
+        "last_modified": "2026-03-11T17:02:06.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1840185356&preview=%2F1840185356%2F1839497245%2FScreenshot+2026-03-11+at+13.01.39.png"
+      },
+      {
+        "title": "Screenshot 2026-03-11 at 13.01.48.png",
+        "last_modified": "2026-03-11T17:02:06.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1840185356&preview=%2F1840185356%2F1838907412%2FScreenshot+2026-03-11+at+13.01.48.png"
+      }
+    ]
+  },
+  {
+    "id": "264830977",
+    "key": "SMSJP",
+    "name": "Sineth Jayasinghe",
+    "type": "global",
+    "status": "current",
+    "page_count": 34,
+    "recent_pages": []
+  },
+  {
+    "id": "264962048",
+    "key": "SMJCP",
+    "name": "Jeremy Carvalho",
+    "type": "global",
+    "status": "current",
+    "page_count": 45,
+    "recent_pages": []
+  },
+  {
+    "id": "265093120",
+    "key": "SMEFP",
+    "name": "Eric Fleming",
+    "type": "global",
+    "status": "current",
+    "page_count": 81,
+    "recent_pages": []
+  },
+  {
+    "id": "265224195",
+    "key": "SMADP",
+    "name": "Aruna Dissanayake\u00a0",
+    "type": "global",
+    "status": "current",
+    "page_count": 31,
+    "recent_pages": []
+  },
+  {
+    "id": "265355264",
+    "key": "SMDWP",
+    "name": "Dulanjan Wengappuliarachchi",
+    "type": "global",
+    "status": "current",
+    "page_count": 21,
+    "recent_pages": []
+  },
+  {
+    "id": "268042355",
+    "key": "P",
+    "name": "Payments",
+    "type": "global",
+    "status": "current",
+    "page_count": 968,
+    "recent_pages": [
+      {
+        "title": "image-20260403-022403.png",
+        "last_modified": "2026-04-03T02:24:06.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1896546313&preview=%2F1896546313%2F1909751818%2Fimage-20260403-022403.png"
+      },
+      {
+        "title": "image-20260403-022326.png",
+        "last_modified": "2026-04-03T02:23:28.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1896546313&preview=%2F1896546313%2F1909653510%2Fimage-20260403-022326.png"
+      },
+      {
+        "title": "image-20260403-022130.png",
+        "last_modified": "2026-04-03T02:21:32.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1896546313&preview=%2F1896546313%2F1909719053%2Fimage-20260403-022130.png"
+      },
+      {
+        "title": "image-20260403-021946.png",
+        "last_modified": "2026-04-03T02:19:51.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1896546313&preview=%2F1896546313%2F1910046721%2Fimage-20260403-021946.png"
+      },
+      {
+        "title": "Complete Test Cases - Cake Release 8.877.3.0 - Resolve                 Unassociated EMAF Transactions",
+        "last_modified": "2026-04-02T11:15:38.000Z",
+        "url": "/spaces/P/pages/1730674692/Complete+Test+Cases+-+Cake+Release+8.877.3.0+-+Resolve+Unassociated+EMAF+Transactions"
+      }
+    ]
+  },
+  {
+    "id": "282099802",
+    "key": "~5d5a705bc6318a0d6cd67485",
+    "name": "Lahiru Yapa",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "282656792",
+    "key": "~712020d5a7c29b99cb4a5fa6559495558aec17",
+    "name": "Manoj Madushanka",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "282658787",
+    "key": "~624abd7e8678e900705d157b",
+    "name": "Dileesha Gamage",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "282724013",
+    "key": "~62835f95cc1d15006fa9eee6",
+    "name": "Chalaka Sudusinghe",
+    "type": "personal",
+    "status": "current",
+    "page_count": 32,
+    "recent_pages": []
+  },
+  {
+    "id": "283051129",
+    "key": "~636b953e0ef20a5c40a3e0b9",
+    "name": "Dushyantha Rubasinghe",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "283116461",
+    "key": "TD",
+    "name": "TT Dummy",
+    "type": "global",
+    "status": "current",
+    "page_count": 6,
+    "recent_pages": []
+  },
+  {
+    "id": "283639945",
+    "key": "~62cc0b68dcf59ca4ad00e128",
+    "name": "Pavini Weerasinghe",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "283803648",
+    "key": "TT",
+    "name": "Team Tesla",
+    "type": "global",
+    "status": "current",
+    "page_count": 306,
+    "recent_pages": [
+      {
+        "title": "Cake Release - KIOSK_1.2.12",
+        "last_modified": "2026-04-02T18:57:06.000Z",
+        "url": "/spaces/TT/pages/1909456905/Cake+Release+-+KIOSK_1.2.12"
+      },
+      {
+        "title": "Component.txt file .png",
+        "last_modified": "2026-04-02T18:55:05.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1909456905&preview=%2F1909456905%2F1909456915%2FComponent.txt+file+.png"
+      },
+      {
+        "title": "Root Cause Analysis: Account 11607728 SQS Retry Storm",
+        "last_modified": "2026-04-02T18:10:54.000Z",
+        "url": "/spaces/TT/pages/1627357218/Root+Cause+Analysis+Account+11607728+SQS+Retry+Storm"
+      },
+      {
+        "title": "POS_7.43.0.37 - Fixed POS | VP3350 Integration Enhancements",
+        "last_modified": "2026-04-02T11:28:36.000Z",
+        "url": "/spaces/TT/pages/1908998145/POS_7.43.0.37+-+Fixed+POS+VP3350+Integration+Enhancements"
+      },
+      {
+        "title": "Component.txt file .png",
+        "last_modified": "2026-04-02T11:25:32.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1908998145&preview=%2F1908998145%2F1908998154%2FComponent.txt+file+.png"
+      }
+    ]
+  },
+  {
+    "id": "287932416",
+    "key": "~852674961",
+    "name": "Wasantha Herath",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "288096256",
+    "key": "~635652da76b91b62562d2db6",
+    "name": "Pradeep Sanjaya",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "292192258",
+    "key": "~6356391efc0cc7a600ae2b77",
+    "name": "Dinesh De Silva",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "354516992",
+    "key": "~63f90f4bce6f37e5ed951f7a",
+    "name": "Zubair Syed",
+    "type": "personal",
+    "status": "current",
+    "page_count": 6,
+    "recent_pages": []
+  },
+  {
+    "id": "355631128",
+    "key": "SET",
+    "name": "Implementations and Operations Team",
+    "type": "global",
+    "status": "current",
+    "page_count": 362,
+    "recent_pages": []
+  },
+  {
+    "id": "355762206",
+    "key": "OPS",
+    "name": "IT & Dev Ops",
+    "type": "global",
+    "status": "current",
+    "page_count": 225,
+    "recent_pages": [
+      {
+        "title": "Re: How to Locally Build and Debug Concierge Associate On Android Device",
+        "last_modified": "2026-02-05T17:26:22.000Z",
+        "url": "/spaces/OPS/pages/355773530/How+to+Locally+Build+and+Debug+Concierge+Associate+On+Android+Device?focusedCommentId=1438253080"
+      }
+    ]
+  },
+  {
+    "id": "355926029",
+    "key": "ST",
+    "name": "Sysco Team",
+    "type": "global",
+    "status": "current",
+    "page_count": 47,
+    "recent_pages": []
+  },
+  {
+    "id": "356253752",
+    "key": "PT",
+    "name": "Concierge Team",
+    "type": "global",
+    "status": "current",
+    "page_count": 1022,
+    "recent_pages": [
+      {
+        "title": "How to NPM CodeArtifact",
+        "last_modified": "2026-03-26T15:44:15.000Z",
+        "url": "/spaces/PT/pages/356276815/How+to+NPM+CodeArtifact"
+      },
+      {
+        "title": "How to Maven CodeArtifact",
+        "last_modified": "2026-03-11T15:39:09.000Z",
+        "url": "/spaces/PT/pages/356284132/How+to+Maven+CodeArtifact"
+      },
+      {
+        "title": "HTML AppShell",
+        "last_modified": "2026-03-09T16:24:46.000Z",
+        "url": "/spaces/PT/pages/1122238725/HTML+AppShell"
+      },
+      {
+        "title": "How to NPM CodeArtifact for System Integration Partners",
+        "last_modified": "2026-01-08T22:32:12.000Z",
+        "url": "/spaces/PT/pages/1651310622/How+to+NPM+CodeArtifact+for+System+Integration+Partners"
+      }
+    ]
+  },
+  {
+    "id": "356450309",
+    "key": "QT",
+    "name": "QA Team",
+    "type": "global",
+    "status": "current",
+    "page_count": 86,
+    "recent_pages": []
+  },
+  {
+    "id": "356614196",
+    "key": "MCS",
+    "name": "Mad Mobile Production Support",
+    "type": "global",
+    "status": "current",
+    "page_count": 12,
+    "recent_pages": []
+  },
+  {
+    "id": "356777984",
+    "key": "CM",
+    "name": "Change Management",
+    "type": "global",
+    "status": "current",
+    "page_count": 261,
+    "recent_pages": []
+  },
+  {
+    "id": "356941826",
+    "key": "CS",
+    "name": "Customer Success",
+    "type": "global",
+    "status": "current",
+    "page_count": 27,
+    "recent_pages": []
+  },
+  {
+    "id": "357072899",
+    "key": "MC2",
+    "name": "Concierge Cloud Portal",
+    "type": "global",
+    "status": "current",
+    "page_count": 82,
+    "recent_pages": []
+  },
+  {
+    "id": "357203970",
+    "key": "IMPT",
+    "name": "Concierge Customer Space Template",
+    "type": "global",
+    "status": "current",
+    "page_count": 67,
+    "recent_pages": []
+  },
+  {
+    "id": "357335062",
+    "key": "PO",
+    "name": "Product Organization",
+    "type": "global",
+    "status": "current",
+    "page_count": 511,
+    "recent_pages": []
+  },
+  {
+    "id": "357498883",
+    "key": "NRF18",
+    "name": "NRF-19",
+    "type": "global",
+    "status": "current",
+    "page_count": 43,
+    "recent_pages": []
+  },
+  {
+    "id": "357630114",
+    "key": "SKB",
+    "name": "Support Knowledge Base",
+    "type": "global",
+    "status": "current",
+    "page_count": 392,
+    "recent_pages": [
+      {
+        "title": "SFCC Credentials",
+        "last_modified": "2026-02-25T12:44:56.000Z",
+        "url": "/spaces/SKB/pages/357648624/SFCC+Credentials"
+      }
+    ]
+  },
+  {
+    "id": "357826560",
+    "key": "PRO",
+    "name": "Program Management",
+    "type": "global",
+    "status": "current",
+    "page_count": 12,
+    "recent_pages": []
+  },
+  {
+    "id": "357957707",
+    "key": "MP",
+    "name": "MenuPad",
+    "type": "global",
+    "status": "current",
+    "page_count": 1014,
+    "recent_pages": []
+  },
+  {
+    "id": "358187024",
+    "key": "POSNG",
+    "name": "Marvel",
+    "type": "global",
+    "status": "current",
+    "page_count": 330,
+    "recent_pages": []
+  },
+  {
+    "id": "358350848",
+    "key": "VSD",
+    "name": "vNext Sales Demo",
+    "type": "global",
+    "status": "current",
+    "page_count": 19,
+    "recent_pages": []
+  },
+  {
+    "id": "358481920",
+    "key": "CSS",
+    "name": "Customer Success (CAKE)",
+    "type": "global",
+    "status": "current",
+    "page_count": 27,
+    "recent_pages": []
+  },
+  {
+    "id": "358612993",
+    "key": "CC",
+    "name": "Concierge Connect",
+    "type": "global",
+    "status": "current",
+    "page_count": 64,
+    "recent_pages": []
+  },
+  {
+    "id": "358744066",
+    "key": "GLOB",
+    "name": "Globant",
+    "type": "global",
+    "status": "current",
+    "page_count": 86,
+    "recent_pages": []
+  },
+  {
+    "id": "358875136",
+    "key": "SC",
+    "name": "Security & Compliance",
+    "type": "global",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "359006214",
+    "key": "RAC",
+    "name": "Restaurant Accelerator",
+    "type": "global",
+    "status": "current",
+    "page_count": 330,
+    "recent_pages": []
+  },
+  {
+    "id": "359301121",
+    "key": "MMCPM",
+    "name": "Mad Mobile Customer Portal (Mid-Market)",
+    "type": "global",
+    "status": "current",
+    "page_count": 18,
+    "recent_pages": []
+  },
+  {
+    "id": "359432193",
+    "key": "MI",
+    "name": "Restaurant LOB",
+    "type": "global",
+    "status": "current",
+    "page_count": 48,
+    "recent_pages": []
+  },
+  {
+    "id": "359563264",
+    "key": "NFR2022",
+    "name": "NRF - 2022",
+    "type": "global",
+    "status": "current",
+    "page_count": 13,
+    "recent_pages": []
+  },
+  {
+    "id": "359694337",
+    "key": "SE",
+    "name": "Sales Engineering",
+    "type": "global",
+    "status": "current",
+    "page_count": 29,
+    "recent_pages": []
+  },
+  {
+    "id": "359825408",
+    "key": "MMPO",
+    "name": "Mad Mobile People Operations",
+    "type": "global",
+    "status": "current",
+    "page_count": 31,
+    "recent_pages": []
+  },
+  {
+    "id": "359956542",
+    "key": "SFDC",
+    "name": "Salesforce",
+    "type": "global",
+    "status": "current",
+    "page_count": 335,
+    "recent_pages": [
+      {
+        "title": "Sysco Lead Integration",
+        "last_modified": "2026-02-04T19:06:04.000Z",
+        "url": "/spaces/SFDC/pages/1478164530/Sysco+Lead+Integration"
+      },
+      {
+        "title": "image-20260204-190559.png",
+        "last_modified": "2026-02-04T19:06:00.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1478164530&preview=%2F1478164530%2F1739718671%2Fimage-20260204-190559.png"
+      },
+      {
+        "title": "Post-Support Case Resolution Sentiment",
+        "last_modified": "2026-02-03T15:23:22.000Z",
+        "url": "/spaces/SFDC/pages/1735327745/Post-Support+Case+Resolution+Sentiment"
+      },
+      {
+        "title": "Integration Guide - Lead data from Sysco to Mad Mobile",
+        "last_modified": "2026-01-27T14:24:27.000Z",
+        "url": "/spaces/SFDC/pages/1499791421/Integration+Guide+-+Lead+data+from+Sysco+to+Mad+Mobile"
+      },
+      {
+        "title": "Sysco Lead Integration V3.postman_collection.json",
+        "last_modified": "2026-01-27T14:24:25.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1499791421&preview=%2F1499791421%2F1709211650%2FSysco+Lead+Integration+V3.postman_collection.json"
+      }
+    ]
+  },
+  {
+    "id": "360120320",
+    "key": "ACSD",
+    "name": "Apple Communications and Shared Documentation",
+    "type": "global",
+    "status": "current",
+    "page_count": 25,
+    "recent_pages": []
+  },
+  {
+    "id": "360251392",
+    "key": "PRP",
+    "name": "Salesforce POS Playbook",
+    "type": "global",
+    "status": "current",
+    "page_count": 21,
+    "recent_pages": []
+  },
+  {
+    "id": "360382465",
+    "key": "NRF2023",
+    "name": "NRF - 2023",
+    "type": "global",
+    "status": "current",
+    "page_count": 18,
+    "recent_pages": []
+  },
+  {
+    "id": "360513536",
+    "key": "EN",
+    "name": "Engineering",
+    "type": "global",
+    "status": "current",
+    "page_count": 22,
+    "recent_pages": []
+  },
+  {
+    "id": "360644608",
+    "key": "EHR",
+    "name": "Elo Hardware Refresh",
+    "type": "global",
+    "status": "current",
+    "page_count": 10,
+    "recent_pages": []
+  },
+  {
+    "id": "360775686",
+    "key": "MMA",
+    "name": "Mad Mobile Architecture",
+    "type": "global",
+    "status": "current",
+    "page_count": 554,
+    "recent_pages": [
+      {
+        "title": "Versions and Deployment Automation",
+        "last_modified": "2026-04-02T18:52:47.000Z",
+        "url": "/spaces/MMA/pages/1909129218/Versions+and+Deployment+Automation"
+      },
+      {
+        "title": "Version Deployment Automation.png",
+        "last_modified": "2026-04-02T18:13:59.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1909129218&preview=%2F1909129218%2F1908834307%2FVersion+Deployment+Automation.png"
+      },
+      {
+        "title": "Version Deployment Automation.svg",
+        "last_modified": "2026-04-02T18:13:58.000Z",
+        "url": "/pages/viewpageattachments.action?pageId=1909129218&preview=%2F1909129218%2F1908375559%2FVersion+Deployment+Automation.svg"
+      },
+      {
+        "title": "Hardware Device Deactivation API Contract",
+        "last_modified": "2026-02-27T16:53:51.000Z",
+        "url": "/spaces/MMA/pages/1644134458/Hardware+Device+Deactivation+API+Contract"
+      },
+      {
+        "title": "Re: Hardware Device Deactivation API Contract",
+        "last_modified": "2026-02-23T18:23:19.000Z",
+        "url": "/spaces/MMA/pages/1644134458/Hardware+Device+Deactivation+API+Contract?focusedCommentId=1789329409"
+      }
+    ]
+  },
+  {
+    "id": "360939520",
+    "key": "PI",
+    "name": "Platform Initiative",
+    "type": "global",
+    "status": "current",
+    "page_count": 18,
+    "recent_pages": []
+  },
+  {
+    "id": "361070592",
+    "key": "SEC",
+    "name": "Security Operations",
+    "type": "global",
+    "status": "current",
+    "page_count": 2,
+    "recent_pages": [
+      {
+        "title": "Security Team",
+        "last_modified": "2026-01-12T18:17:15.000Z",
+        "url": "/spaces/SEC/overview"
+      },
+      {
+        "title": "Security Operations",
+        "last_modified": "2026-01-12T18:13:57.000Z",
+        "url": "/spaces/SEC"
+      }
+    ]
+  },
+  {
+    "id": "361201665",
+    "key": "AIMM",
+    "name": "AI at Mad Mobile",
+    "type": "global",
+    "status": "current",
+    "page_count": 14,
+    "recent_pages": []
+  },
+  {
+    "id": "361398272",
+    "key": "CX",
+    "name": "Customer Experience",
+    "type": "global",
+    "status": "current",
+    "page_count": 31,
+    "recent_pages": []
+  },
+  {
+    "id": "361529344",
+    "key": "PMKT",
+    "name": "Product Marketing",
+    "type": "global",
+    "status": "current",
+    "page_count": 13,
+    "recent_pages": []
+  },
+  {
+    "id": "361824256",
+    "key": "~779738120",
+    "name": "James Fugedy",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "361955329",
+    "key": "~206752333",
+    "name": "Anthony Ayco",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "362086401",
+    "key": "~458229491",
+    "name": "Shiyanka Dezylva",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "362217484",
+    "key": "~854871293",
+    "name": "Mad Ops",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "362414081",
+    "key": "~479218535",
+    "name": "Zachary Brady",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "362545152",
+    "key": "~730977308",
+    "name": "Matt Cooke",
+    "type": "personal",
+    "status": "current",
+    "page_count": 226,
+    "recent_pages": [
+      {
+        "title": "Java Developers Problem/Solution",
+        "last_modified": "2026-04-02T16:53:42.000Z",
+        "url": "/spaces/~730977308/pages/362556101/Java+Developers+Problem+Solution"
+      },
+      {
+        "title": "Register and Transaction Sequence Documentation XStore24",
+        "last_modified": "2026-04-02T15:48:37.000Z",
+        "url": "/spaces/~730977308/pages/1846902803/Register+and+Transaction+Sequence+Documentation+XStore24"
+      },
+      {
+        "title": "Prototype MadServices Receipt Incorrect Business Date",
+        "last_modified": "2026-04-01T19:30:32.000Z",
+        "url": "/spaces/~730977308/pages/1900937247/Prototype+MadServices+Receipt+Incorrect+Business+Date"
+      },
+      {
+        "title": "Implemented Properties Validator",
+        "last_modified": "2026-03-27T13:10:01.000Z",
+        "url": "/spaces/~730977308/pages/1436647436/Implemented+Properties+Validator"
+      },
+      {
+        "title": "Brainstorming Architecture Developer Prototypes to Improve Processes (BAD-PIP) skunkworks",
+        "last_modified": "2026-03-27T12:32:01.000Z",
+        "url": "/spaces/~730977308/pages/1826586625/Brainstorming+Architecture+Developer+Prototypes+to+Improve+Processes+BAD-PIP+skunkworks"
+      }
+    ]
+  },
+  {
+    "id": "362676224",
+    "key": "~284626019",
+    "name": "Bhanuka Withana",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "362807297",
+    "key": "~60dcad96285656006a8397e5",
+    "name": "Cliff Griffith",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "362938374",
+    "key": "~62278f3e59c0740069db10c8",
+    "name": "Matthew Kranak",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "363069440",
+    "key": "~5570587593d64990df48ccb96e2861c0f9f573",
+    "name": "Aaron Feldmeyer",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "363200512",
+    "key": "~5dc2c122ffc8c10df0edb418",
+    "name": "Vanessa",
+    "type": "personal",
+    "status": "current",
+    "page_count": 17,
+    "recent_pages": []
+  },
+  {
+    "id": "363331584",
+    "key": "~607105372b469c00706ef4ee",
+    "name": "Jeremy Diggins",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "363462656",
+    "key": "~5570582a94a16ee16a4617994d80bd6a127a0c",
+    "name": "Qaiser Pannu",
+    "type": "personal",
+    "status": "current",
+    "page_count": 6,
+    "recent_pages": []
+  },
+  {
+    "id": "363593728",
+    "key": "~557058e2f97df0c02b4dc792987f9b57a577ee",
+    "name": "John Harre",
+    "type": "personal",
+    "status": "current",
+    "page_count": 10,
+    "recent_pages": []
+  },
+  {
+    "id": "363724801",
+    "key": "~5ede9cff5c943e0abb7e7fe6",
+    "name": "Sunil Pandey",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "363855872",
+    "key": "~6258a0f1eee0a9006ab96985",
+    "name": "Anthony Silvas",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "363986945",
+    "key": "~629775af9bc7150068ce2bca",
+    "name": "Holly Culver",
+    "type": "personal",
+    "status": "current",
+    "page_count": 8,
+    "recent_pages": []
+  },
+  {
+    "id": "364118016",
+    "key": "~625f1d41f70c3a006f1c971f",
+    "name": "Vincent Sposato",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "364249088",
+    "key": "~63289d8e3ac41ebde76838ad",
+    "name": "Das DeSilva",
+    "type": "personal",
+    "status": "current",
+    "page_count": 11,
+    "recent_pages": []
+  },
+  {
+    "id": "364380160",
+    "key": "~633a3d27fedc6169aed8dbdb",
+    "name": "Jonathon Burroughs",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "364511233",
+    "key": "~632b7bf08b75455be453fad8",
+    "name": "Zachary Davies",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "364642305",
+    "key": "~63b49a204bc858b303ce81ac",
+    "name": "Tommy Coppick",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "364773377",
+    "key": "~628b590cab91fe007097279d",
+    "name": "Madhawi De Mel",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "364904448",
+    "key": "~5b4f02c727c98e2ce5158ab9",
+    "name": "Ananda Subasighe",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "365035521",
+    "key": "~712020ede2f447be8f45de89393c992732af14",
+    "name": "Laura Nsang",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "365166592",
+    "key": "~7120203f2e1539aa9b41e9932eda18afc0c6ee",
+    "name": "Mike Box",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "365494272",
+    "key": "PMME",
+    "name": "Project Management - ME",
+    "type": "global",
+    "status": "current",
+    "page_count": 48,
+    "recent_pages": []
+  },
+  {
+    "id": "365625386",
+    "key": "OSME",
+    "name": "Operations Solutions",
+    "type": "global",
+    "status": "current",
+    "page_count": 611,
+    "recent_pages": [
+      {
+        "title": "Ops - New Fields - New Business / Existing Business",
+        "last_modified": "2026-04-01T13:55:18.000Z",
+        "url": "/spaces/OSME/pages/1905885185/Ops+-+New+Fields+-+New+Business+Existing+Business"
+      },
+      {
+        "title": "Ops - Matrix Order Commit - New Order",
+        "last_modified": "2026-03-23T13:48:55.000Z",
+        "url": "/spaces/OSME/pages/1874886668/Ops+-+Matrix+Order+Commit+-+New+Order"
+      },
+      {
+        "title": "Ops - Reduce calls from ShopCPQ to Intacct",
+        "last_modified": "2026-03-17T13:51:10.000Z",
+        "url": "/spaces/OSME/pages/1857945601/Ops+-+Reduce+calls+from+ShopCPQ+to+Intacct"
+      },
+      {
+        "title": "Ops - Add logging for sales invoices - salesforce and intacct",
+        "last_modified": "2026-03-16T17:08:15.000Z",
+        "url": "/spaces/OSME/pages/1854537729/Ops+-+Add+logging+for+sales+invoices+-+salesforce+and+intacct"
+      },
+      {
+        "title": "Ops - Update admin.cake.net",
+        "last_modified": "2026-03-10T11:44:51.000Z",
+        "url": "/spaces/OSME/pages/1836285953/Ops+-+Update+admin.cake.net"
+      }
+    ]
+  },
+  {
+    "id": "384466945",
+    "key": "~185425964",
+    "name": "jake linder",
+    "type": "personal",
+    "status": "current",
+    "page_count": 6,
+    "recent_pages": []
+  },
+  {
+    "id": "391807068",
+    "key": "~5bb8592506b3786d0a0312a6",
+    "name": "Fayaz Abdul",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "465993958",
+    "key": "CLD",
+    "name": "Cloud Platform",
+    "type": "global",
+    "status": "current",
+    "page_count": 3,
+    "recent_pages": []
+  },
+  {
+    "id": "714539015",
+    "key": "TSSSG",
+    "name": "Tech Support Self Service Guides",
+    "type": "knowledge_base",
+    "status": "current",
+    "page_count": 8,
+    "recent_pages": []
+  },
+  {
+    "id": "988020988",
+    "key": "SI",
+    "name": "System Integrators",
+    "type": "global",
+    "status": "current",
+    "page_count": 42,
+    "recent_pages": []
+  },
+  {
+    "id": "1403682822",
+    "key": "TESTROSEN",
+    "name": "TESTROSEN",
+    "type": "knowledge_base",
+    "status": "current",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "1414234495",
+    "key": "~712020d15b9157713e4acfac8a43ced56fbb84",
+    "name": "Irshad Jaffoor",
+    "type": "personal",
+    "status": "archived",
+    "page_count": 0,
+    "recent_pages": []
+  },
+  {
+    "id": "1800732679",
+    "key": "~60e6f8e70dd4f60076b2f3a5",
+    "name": "Ana Chambers",
+    "type": "personal",
+    "status": "current",
+    "page_count": 2,
+    "recent_pages": [
+      {
+        "title": "Getting started in Confluence",
+        "last_modified": "2026-02-26T18:37:00.000Z",
+        "url": "/spaces/~60e6f8e70dd4f60076b2f3a5/pages/1800733291/Getting+started+in+Confluence"
+      },
+      {
+        "title": "Overview",
+        "last_modified": "2026-02-26T18:37:00.000Z",
+        "url": "/spaces/~60e6f8e70dd4f60076b2f3a5/overview"
+      },
+      {
+        "title": "Ana Chambers",
+        "last_modified": "2026-02-26T18:36:59.000Z",
+        "url": "/spaces/~60e6f8e70dd4f60076b2f3a5"
+      }
+    ]
+  }
+]

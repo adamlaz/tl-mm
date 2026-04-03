@@ -1,0 +1,1115 @@
+profile,account_id,month,service,cost
+mm-cake-development,230930891673,2026-01-03,AWS Backup,0.15
+mm-cake-development,230930891673,2026-01-03,AWS CloudTrail,1.22
+mm-cake-development,230930891673,2026-01-03,AWS Config,426.35
+mm-cake-development,230930891673,2026-01-03,AWS Key Management Service,23.39
+mm-cake-development,230930891673,2026-01-03,AWS Lambda,143.83
+mm-cake-development,230930891673,2026-01-03,AWS Secrets Manager,86.79
+mm-cake-development,230930891673,2026-01-03,AWS Systems Manager,0.06
+mm-cake-development,230930891673,2026-01-03,AWS Transfer Family,377.94
+mm-cake-development,230930891673,2026-01-03,AWS WAF,109.7
+mm-cake-development,230930891673,2026-01-03,AWS X-Ray,2.48
+mm-cake-development,230930891673,2026-01-03,Amazon DynamoDB,36.16
+mm-cake-development,230930891673,2026-01-03,Amazon EC2 Container Registry (ECR),402.27
+mm-cake-development,230930891673,2026-01-03,Amazon ElastiCache,1009.83
+mm-cake-development,230930891673,2026-01-03,EC2 - Other,3144.17
+mm-cake-development,230930891673,2026-01-03,Amazon Elastic Compute Cloud - Compute,360.69
+mm-cake-development,230930891673,2026-01-03,Amazon Elastic Container Service,0.91
+mm-cake-development,230930891673,2026-01-03,Amazon Elastic File System,0.06
+mm-cake-development,230930891673,2026-01-03,Amazon Elastic Load Balancing,1768.03
+mm-cake-development,230930891673,2026-01-03,Amazon GuardDuty,242.33
+mm-cake-development,230930891673,2026-01-03,Amazon Kinesis,18.9
+mm-cake-development,230930891673,2026-01-03,Amazon Location Service,0.01
+mm-cake-development,230930891673,2026-01-03,Amazon Neptune,0.06
+mm-cake-development,230930891673,2026-01-03,Amazon OpenSearch Service,787.64
+mm-cake-development,230930891673,2026-01-03,Amazon Relational Database Service,846.38
+mm-cake-development,230930891673,2026-01-03,Amazon Route 53,4.69
+mm-cake-development,230930891673,2026-01-03,Amazon Simple Queue Service,6.4
+mm-cake-development,230930891673,2026-01-03,Amazon Simple Storage Service,197.13
+mm-cake-development,230930891673,2026-01-03,Amazon Virtual Private Cloud,1212.34
+mm-cake-development,230930891673,2026-01-03,AmazonCloudWatch,2226.9
+mm-cake-development,230930891673,2026-01-03,CloudWatch Events,0.03
+mm-cake-development,230930891673,2026-01-03,TrendAI™ Cloud One,1454.36
+mm-cake-development,230930891673,2026-02-01,AWS Backup,0.16
+mm-cake-development,230930891673,2026-02-01,AWS Config,394.32
+mm-cake-development,230930891673,2026-02-01,AWS Cost Explorer,0.03
+mm-cake-development,230930891673,2026-02-01,AWS Key Management Service,24.46
+mm-cake-development,230930891673,2026-02-01,AWS Lambda,108.12
+mm-cake-development,230930891673,2026-02-01,AWS Secrets Manager,90.85
+mm-cake-development,230930891673,2026-02-01,AWS Systems Manager,0.06
+mm-cake-development,230930891673,2026-02-01,AWS Transfer Family,364.9
+mm-cake-development,230930891673,2026-02-01,AWS WAF,116.22
+mm-cake-development,230930891673,2026-02-01,AWS X-Ray,2.23
+mm-cake-development,230930891673,2026-02-01,Amazon DynamoDB,31.79
+mm-cake-development,230930891673,2026-02-01,Amazon EC2 Container Registry (ECR),431.94
+mm-cake-development,230930891673,2026-02-01,Amazon ElastiCache,1113.39
+mm-cake-development,230930891673,2026-02-01,EC2 - Other,3287.03
+mm-cake-development,230930891673,2026-02-01,Amazon Elastic Compute Cloud - Compute,405.55
+mm-cake-development,230930891673,2026-02-01,Amazon Elastic Container Service,0.7
+mm-cake-development,230930891673,2026-02-01,Amazon Elastic File System,0.06
+mm-cake-development,230930891673,2026-02-01,Amazon Elastic Load Balancing,1701.18
+mm-cake-development,230930891673,2026-02-01,Amazon GuardDuty,224.51
+mm-cake-development,230930891673,2026-02-01,Amazon Kinesis,18.24
+mm-cake-development,230930891673,2026-02-01,Amazon Neptune,0.06
+mm-cake-development,230930891673,2026-02-01,Amazon OpenSearch Service,700.43
+mm-cake-development,230930891673,2026-02-01,Amazon Registrar,17.0
+mm-cake-development,230930891673,2026-02-01,Amazon Relational Database Service,829.65
+mm-cake-development,230930891673,2026-02-01,Amazon Route 53,5.03
+mm-cake-development,230930891673,2026-02-01,Amazon Simple Queue Service,6.15
+mm-cake-development,230930891673,2026-02-01,Amazon Simple Storage Service,208.68
+mm-cake-development,230930891673,2026-02-01,Amazon Virtual Private Cloud,1168.69
+mm-cake-development,230930891673,2026-02-01,AmazonCloudWatch,2304.84
+mm-cake-development,230930891673,2026-02-01,CloudWatch Events,0.03
+mm-cake-development,230930891673,2026-02-01,TrendAI™ Cloud One,1437.68
+mm-cake-development,230930891673,2026-03-01,AWS Backup,0.16
+mm-cake-development,230930891673,2026-03-01,AWS Config,327.34
+mm-cake-development,230930891673,2026-03-01,AWS Cost Explorer,0.06
+mm-cake-development,230930891673,2026-03-01,AWS Key Management Service,25.05
+mm-cake-development,230930891673,2026-03-01,AWS Lambda,100.63
+mm-cake-development,230930891673,2026-03-01,AWS Secrets Manager,90.72
+mm-cake-development,230930891673,2026-03-01,AWS Systems Manager,0.08
+mm-cake-development,230930891673,2026-03-01,AWS Transfer Family,404.0
+mm-cake-development,230930891673,2026-03-01,AWS WAF,116.84
+mm-cake-development,230930891673,2026-03-01,AWS X-Ray,2.49
+mm-cake-development,230930891673,2026-03-01,Amazon DynamoDB,36.1
+mm-cake-development,230930891673,2026-03-01,Amazon EC2 Container Registry (ECR),433.3
+mm-cake-development,230930891673,2026-03-01,Amazon ElastiCache,1028.38
+mm-cake-development,230930891673,2026-03-01,EC2 - Other,3405.6
+mm-cake-development,230930891673,2026-03-01,Amazon Elastic Compute Cloud - Compute,70.16
+mm-cake-development,230930891673,2026-03-01,Amazon Elastic File System,0.06
+mm-cake-development,230930891673,2026-03-01,Amazon Elastic Load Balancing,1577.15
+mm-cake-development,230930891673,2026-03-01,Amazon GuardDuty,198.02
+mm-cake-development,230930891673,2026-03-01,Amazon Kinesis,20.2
+mm-cake-development,230930891673,2026-03-01,Amazon Neptune,0.06
+mm-cake-development,230930891673,2026-03-01,Amazon OpenSearch Service,750.73
+mm-cake-development,230930891673,2026-03-01,Amazon Relational Database Service,1100.33
+mm-cake-development,230930891673,2026-03-01,Amazon Route 53,6.93
+mm-cake-development,230930891673,2026-03-01,Amazon Simple Queue Service,5.0
+mm-cake-development,230930891673,2026-03-01,Amazon Simple Storage Service,210.6
+mm-cake-development,230930891673,2026-03-01,Amazon Virtual Private Cloud,1201.38
+mm-cake-development,230930891673,2026-03-01,AmazonCloudWatch,2251.28
+mm-cake-development,230930891673,2026-03-01,TrendAI™ Cloud One,1368.03
+mm-cake-development,230930891673,2026-04-01,AWS Config,20.68
+mm-cake-development,230930891673,2026-04-01,AWS Key Management Service,1.36
+mm-cake-development,230930891673,2026-04-01,AWS Lambda,0.67
+mm-cake-development,230930891673,2026-04-01,AWS Secrets Manager,5.28
+mm-cake-development,230930891673,2026-04-01,AWS Transfer Family,22.26
+mm-cake-development,230930891673,2026-04-01,AWS WAF,6.84
+mm-cake-development,230930891673,2026-04-01,Amazon EC2 Container Registry (ECR),23.99
+mm-cake-development,230930891673,2026-04-01,Amazon ElastiCache,58.62
+mm-cake-development,230930891673,2026-04-01,EC2 - Other,138.89
+mm-cake-development,230930891673,2026-04-01,Amazon Elastic Compute Cloud - Compute,4.36
+mm-cake-development,230930891673,2026-04-01,Amazon Elastic Load Balancing,85.68
+mm-cake-development,230930891673,2026-04-01,Amazon GuardDuty,11.19
+mm-cake-development,230930891673,2026-04-01,Amazon Kinesis,1.14
+mm-cake-development,230930891673,2026-04-01,Amazon OpenSearch Service,41.83
+mm-cake-development,230930891673,2026-04-01,Amazon Relational Database Service,63.27
+mm-cake-development,230930891673,2026-04-01,Amazon Route 53,0.78
+mm-cake-development,230930891673,2026-04-01,Amazon Simple Queue Service,0.28
+mm-cake-development,230930891673,2026-04-01,Amazon Simple Storage Service,14.18
+mm-cake-development,230930891673,2026-04-01,Amazon Virtual Private Cloud,61.39
+mm-cake-development,230930891673,2026-04-01,AmazonCloudWatch,123.08
+mm-cake-development,230930891673,2026-04-01,TrendAI™ Cloud One,33.31
+mm-cake-r-and-d,464176945335,2026-01-03,AWS CloudTrail,0.1
+mm-cake-r-and-d,464176945335,2026-01-03,AWS Config,2.17
+mm-cake-r-and-d,464176945335,2026-01-03,AWS Directory Service,62.92
+mm-cake-r-and-d,464176945335,2026-01-03,AWS Key Management Service,14.46
+mm-cake-r-and-d,464176945335,2026-01-03,AWS Lambda,2.56
+mm-cake-r-and-d,464176945335,2026-01-03,AWS Secrets Manager,3.07
+mm-cake-r-and-d,464176945335,2026-01-03,AWS Security Hub,17.96
+mm-cake-r-and-d,464176945335,2026-01-03,AWS WAF,10.6
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon DynamoDB,8.42
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon EC2 Container Registry (ECR),0.07
+mm-cake-r-and-d,464176945335,2026-01-03,EC2 - Other,474.33
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon Elastic Compute Cloud - Compute,9.77
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon Elastic File System,0.06
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon Elastic Load Balancing,58.15
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon GuardDuty,11.03
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon Location Service,0.01
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon Simple Storage Service,7.08
+mm-cake-r-and-d,464176945335,2026-01-03,Amazon Virtual Private Cloud,525.97
+mm-cake-r-and-d,464176945335,2026-01-03,AmazonCloudWatch,25.08
+mm-cake-r-and-d,464176945335,2026-02-01,AWS Config,2.45
+mm-cake-r-and-d,464176945335,2026-02-01,AWS Directory Service,60.83
+mm-cake-r-and-d,464176945335,2026-02-01,AWS Key Management Service,15.5
+mm-cake-r-and-d,464176945335,2026-02-01,AWS Lambda,2.41
+mm-cake-r-and-d,464176945335,2026-02-01,AWS Secrets Manager,3.27
+mm-cake-r-and-d,464176945335,2026-02-01,AWS Security Hub,14.64
+mm-cake-r-and-d,464176945335,2026-02-01,AWS WAF,11.86
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon DynamoDB,7.4
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon EC2 Container Registry (ECR),0.08
+mm-cake-r-and-d,464176945335,2026-02-01,EC2 - Other,461.24
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon Elastic Compute Cloud - Compute,1.66
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon Elastic File System,0.06
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon Elastic Load Balancing,56.03
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon GuardDuty,10.68
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon Route 53,0.36
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon Simple Storage Service,7.81
+mm-cake-r-and-d,464176945335,2026-02-01,Amazon Virtual Private Cloud,507.83
+mm-cake-r-and-d,464176945335,2026-02-01,AmazonCloudWatch,25.07
+mm-cake-r-and-d,464176945335,2026-03-01,AWS Config,2.22
+mm-cake-r-and-d,464176945335,2026-03-01,AWS Directory Service,67.4
+mm-cake-r-and-d,464176945335,2026-03-01,AWS Key Management Service,15.67
+mm-cake-r-and-d,464176945335,2026-03-01,AWS Lambda,2.65
+mm-cake-r-and-d,464176945335,2026-03-01,AWS Secrets Manager,3.27
+mm-cake-r-and-d,464176945335,2026-03-01,AWS Security Hub,10.64
+mm-cake-r-and-d,464176945335,2026-03-01,AWS WAF,11.81
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon DynamoDB,8.47
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon EC2 Container Registry (ECR),0.08
+mm-cake-r-and-d,464176945335,2026-03-01,EC2 - Other,493.44
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon Elastic Compute Cloud - Compute,0.23
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon Elastic File System,0.06
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon Elastic Load Balancing,62.04
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon GuardDuty,10.57
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon Route 53,0.36
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon Simple Storage Service,8.22
+mm-cake-r-and-d,464176945335,2026-03-01,Amazon Virtual Private Cloud,562.24
+mm-cake-r-and-d,464176945335,2026-03-01,AmazonCloudWatch,25.88
+mm-cake-r-and-d,464176945335,2026-04-01,AWS Config,0.09
+mm-cake-r-and-d,464176945335,2026-04-01,AWS Directory Service,3.76
+mm-cake-r-and-d,464176945335,2026-04-01,AWS Key Management Service,0.91
+mm-cake-r-and-d,464176945335,2026-04-01,AWS Lambda,0.02
+mm-cake-r-and-d,464176945335,2026-04-01,AWS Secrets Manager,0.19
+mm-cake-r-and-d,464176945335,2026-04-01,AWS Security Hub,0.57
+mm-cake-r-and-d,464176945335,2026-04-01,AWS WAF,0.67
+mm-cake-r-and-d,464176945335,2026-04-01,EC2 - Other,24.65
+mm-cake-r-and-d,464176945335,2026-04-01,Amazon Elastic Compute Cloud - Compute,0.01
+mm-cake-r-and-d,464176945335,2026-04-01,Amazon Elastic Load Balancing,3.43
+mm-cake-r-and-d,464176945335,2026-04-01,Amazon GuardDuty,0.63
+mm-cake-r-and-d,464176945335,2026-04-01,Amazon Route 53,0.36
+mm-cake-r-and-d,464176945335,2026-04-01,Amazon Simple Storage Service,0.57
+mm-cake-r-and-d,464176945335,2026-04-01,Amazon Virtual Private Cloud,31.24
+mm-cake-r-and-d,464176945335,2026-04-01,AmazonCloudWatch,1.37
+mm-customer-analytics,024848459322,2026-01-03,AWS Config,0.53
+mm-customer-analytics,024848459322,2026-01-03,AWS Key Management Service,0.02
+mm-customer-analytics,024848459322,2026-01-03,Amazon GuardDuty,2.4
+mm-customer-analytics,024848459322,2026-01-03,Amazon Location Service,0.01
+mm-customer-analytics,024848459322,2026-01-03,Amazon Simple Storage Service,0.06
+mm-customer-analytics,024848459322,2026-01-03,AmazonCloudWatch,0.39
+mm-customer-analytics,024848459322,2026-02-01,AWS Config,0.07
+mm-customer-analytics,024848459322,2026-02-01,AWS Key Management Service,0.02
+mm-customer-analytics,024848459322,2026-02-01,Amazon GuardDuty,2.32
+mm-customer-analytics,024848459322,2026-02-01,Amazon Simple Storage Service,0.06
+mm-customer-analytics,024848459322,2026-02-01,AmazonCloudWatch,0.04
+mm-customer-analytics,024848459322,2026-03-01,AWS Key Management Service,0.02
+mm-customer-analytics,024848459322,2026-03-01,Amazon GuardDuty,2.58
+mm-customer-analytics,024848459322,2026-03-01,Amazon Simple Storage Service,0.08
+mm-customer-analytics,024848459322,2026-03-01,AmazonCloudWatch,0.04
+mm-customer-analytics,024848459322,2026-04-01,Amazon GuardDuty,0.11
+mm-dns-management,381491928564,2026-01-03,AWS Config,0.35
+mm-dns-management,381491928564,2026-01-03,AWS Key Management Service,0.02
+mm-dns-management,381491928564,2026-01-03,Amazon GuardDuty,2.28
+mm-dns-management,381491928564,2026-01-03,Amazon Location Service,0.01
+mm-dns-management,381491928564,2026-01-03,Amazon Route 53,0.23
+mm-dns-management,381491928564,2026-01-03,Amazon Simple Storage Service,0.06
+mm-dns-management,381491928564,2026-01-03,AmazonCloudWatch,0.39
+mm-dns-management,381491928564,2026-02-01,AWS Config,0.07
+mm-dns-management,381491928564,2026-02-01,AWS Key Management Service,0.02
+mm-dns-management,381491928564,2026-02-01,Amazon GuardDuty,2.22
+mm-dns-management,381491928564,2026-02-01,Amazon Route 53,3.85
+mm-dns-management,381491928564,2026-02-01,Amazon Simple Storage Service,0.06
+mm-dns-management,381491928564,2026-02-01,AmazonCloudWatch,0.04
+mm-dns-management,381491928564,2026-03-01,AWS Key Management Service,0.02
+mm-dns-management,381491928564,2026-03-01,Amazon GuardDuty,2.47
+mm-dns-management,381491928564,2026-03-01,Amazon Registrar,258.0
+mm-dns-management,381491928564,2026-03-01,Amazon Route 53,0.98
+mm-dns-management,381491928564,2026-03-01,Amazon Simple Storage Service,0.07
+mm-dns-management,381491928564,2026-03-01,AmazonCloudWatch,0.04
+mm-dns-management,381491928564,2026-04-01,Amazon GuardDuty,0.11
+mm-dns-management,381491928564,2026-04-01,Amazon Route 53,3.63
+mm-forensics,040591922250,2026-01-03,AWS Config,3.11
+mm-forensics,040591922250,2026-01-03,AWS Key Management Service,0.02
+mm-forensics,040591922250,2026-01-03,EC2 - Other,0.24
+mm-forensics,040591922250,2026-01-03,Amazon Location Service,0.01
+mm-forensics,040591922250,2026-01-03,Amazon Simple Storage Service,0.05
+mm-forensics,040591922250,2026-01-03,Amazon Virtual Private Cloud,28.32
+mm-forensics,040591922250,2026-01-03,AmazonCloudWatch,0.31
+mm-forensics,040591922250,2026-02-01,AWS Config,0.07
+mm-forensics,040591922250,2026-02-01,AWS Key Management Service,0.02
+mm-forensics,040591922250,2026-02-01,Amazon GuardDuty,1.95
+mm-forensics,040591922250,2026-02-01,Amazon Simple Storage Service,0.06
+mm-forensics,040591922250,2026-02-01,Amazon Virtual Private Cloud,30.41
+mm-forensics,040591922250,2026-03-01,AWS Config,0.08
+mm-forensics,040591922250,2026-03-01,AWS Key Management Service,0.02
+mm-forensics,040591922250,2026-03-01,Amazon GuardDuty,2.49
+mm-forensics,040591922250,2026-03-01,Amazon Simple Storage Service,0.07
+mm-forensics,040591922250,2026-03-01,Amazon Virtual Private Cloud,33.67
+mm-forensics,040591922250,2026-03-01,AmazonCloudWatch,0.01
+mm-forensics,040591922250,2026-04-01,Amazon GuardDuty,0.1
+mm-forensics,040591922250,2026-04-01,Amazon Virtual Private Cloud,1.86
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Backup,0.16
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS CloudTrail,267.64
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS CodeArtifact,14.83
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Config,824.32
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Cost Explorer,25.25
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Data Pipeline,0.85
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Directory Service,94.49
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Elemental MediaConvert,0.02
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Global Accelerator,62.9
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Glue,2.54
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS HealthImaging,0.03
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Key Management Service,189.02
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Lambda,373.68
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Secrets Manager,160.97
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Security Hub,124.93
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Systems Manager,0.09
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS Transfer Family,377.94
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS WAF,654.33
+mm-madmobile-mgmt,302042158767,2026-01-03,AWS X-Ray,4.66
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon API Gateway,5.51
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Athena,32.41
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon CloudFront,0.03
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon DocumentDB (with MongoDB compatibility),351.74
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon DynamoDB,60.83
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon EC2 Container Registry (ECR),569.91
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon ElastiCache,7789.24
+mm-madmobile-mgmt,302042158767,2026-01-03,EC2 - Other,40106.1
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Elastic Compute Cloud - Compute,50055.3
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Elastic Container Service,465.66
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Elastic Container Service for Kubernetes,2393.54
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Elastic File System,0.23
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Elastic Load Balancing,9735.39
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon GuardDuty,2043.76
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Kinesis,56.69
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Lightsail,101.16
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Location Service,243.49
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon MQ,6146.78
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Managed Streaming for Apache Kafka,1412.03
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Neptune,0.06
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon OpenSearch Service,7068.46
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon QuickSight,30.79
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Redshift,3.03
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Relational Database Service,29855.53
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Route 53,142.26
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Simple Email Service,1.54
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Simple Notification Service,2.55
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Simple Queue Service,134.07
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Simple Storage Service,7361.55
+mm-madmobile-mgmt,302042158767,2026-01-03,Amazon Virtual Private Cloud,5785.18
+mm-madmobile-mgmt,302042158767,2026-01-03,AmazonCloudWatch,7557.12
+mm-madmobile-mgmt,302042158767,2026-01-03,CloudWatch Events,0.04
+mm-madmobile-mgmt,302042158767,2026-01-03,Savings Plans for AWS Compute usage,32679.91
+mm-madmobile-mgmt,302042158767,2026-01-03,Snowflake Capacity,18750.0
+mm-madmobile-mgmt,302042158767,2026-01-03,Snyk: Developer Security Platform,3208.31
+mm-madmobile-mgmt,302042158767,2026-01-03,TrendAI™ Cloud One,1454.36
+mm-madmobile-mgmt,302042158767,2026-01-03,Vanta,3333.33
+mm-madmobile-mgmt,302042158767,2026-01-03,[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6),4218.0
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Backup,0.18
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Certificate Manager,1449.36
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS CloudTrail,143.39
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS CodeArtifact,12.71
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Config,744.02
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Cost Explorer,26.45
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Data Pipeline,0.91
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Directory Service,91.24
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Elemental MediaConvert,0.03
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Global Accelerator,60.82
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Glue,1.92
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS HealthImaging,0.03
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Key Management Service,205.47
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Lambda,328.64
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Secrets Manager,169.97
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Security Hub,122.06
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Support (Enterprise),17019.89
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Systems Manager,0.09
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS Transfer Family,364.9
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS WAF,774.71
+mm-madmobile-mgmt,302042158767,2026-02-01,AWS X-Ray,4.18
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon API Gateway,5.95
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Athena,31.99
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon CloudFront,0.04
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon DocumentDB (with MongoDB compatibility),339.62
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon DynamoDB,52.59
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon EC2 Container Registry (ECR),611.84
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon ElastiCache,10111.13
+mm-madmobile-mgmt,302042158767,2026-02-01,EC2 - Other,42343.33
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Elastic Compute Cloud - Compute,19499.17
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Elastic Container Service,118.18
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Elastic Container Service for Kubernetes,2318.73
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Elastic File System,0.23
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Elastic Load Balancing,9518.21
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon GuardDuty,2016.39
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Kinesis,54.73
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Lightsail,99.37
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Location Service,182.19
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon MQ,5919.91
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Managed Streaming for Apache Kafka,1503.46
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Neptune,0.07
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon OpenSearch Service,6908.06
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon QuickSight,37.13
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Redshift,3.24
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Registrar,101.0
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Relational Database Service,30492.25
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Route 53,155.7
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Simple Email Service,4.6
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Simple Notification Service,2.04
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Simple Queue Service,127.17
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Simple Storage Service,8010.49
+mm-madmobile-mgmt,302042158767,2026-02-01,Amazon Virtual Private Cloud,5718.25
+mm-madmobile-mgmt,302042158767,2026-02-01,AmazonCloudWatch,7653.28
+mm-madmobile-mgmt,302042158767,2026-02-01,CloudWatch Events,0.03
+mm-madmobile-mgmt,302042158767,2026-02-01,OCBLateFee,3682.02
+mm-madmobile-mgmt,302042158767,2026-02-01,Savings Plans for AWS Compute usage,58384.74
+mm-madmobile-mgmt,302042158767,2026-02-01,Snyk: Developer Security Platform,3208.31
+mm-madmobile-mgmt,302042158767,2026-02-01,TrendAI™ Cloud One,1437.68
+mm-madmobile-mgmt,302042158767,2026-02-01,Vanta,3333.33
+mm-madmobile-mgmt,302042158767,2026-02-01,[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6),4259.0
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Backup,0.17
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Certificate Manager,1448.0
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS CloudTrail,141.74
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS CodeArtifact,14.6
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Config,751.04
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Cost Explorer,28.0
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Data Pipeline,0.9
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Directory Service,101.1
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Elemental MediaConvert,0.13
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS End User Messaging,0.88
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Global Accelerator,63.98
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Glue,2.49
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS HealthImaging,0.03
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Key Management Service,219.93
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Lambda,345.85
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Secrets Manager,170.01
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Security Hub,128.99
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Support (Enterprise),17774.79
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Systems Manager,0.1
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS Transfer Family,404.0
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS WAF,809.68
+mm-madmobile-mgmt,302042158767,2026-03-01,AWS X-Ray,4.75
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon API Gateway,6.29
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Athena,35.82
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon CloudFront,0.05
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon DocumentDB (with MongoDB compatibility),376.0
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon DynamoDB,61.04
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon EC2 Container Registry (ECR),614.84
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon ElastiCache,10998.27
+mm-madmobile-mgmt,302042158767,2026-03-01,EC2 - Other,42099.84
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Elastic Compute Cloud - Compute,9297.4
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Elastic Container Service,1.86
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Elastic Container Service for Kubernetes,2945.84
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Elastic File System,0.23
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Elastic Load Balancing,10110.07
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon GuardDuty,2192.18
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Kinesis,60.6
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Lightsail,108.19
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Location Service,226.29
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon MQ,6585.01
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Managed Streaming for Apache Kafka,1509.41
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Neptune,0.07
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon OpenSearch Service,7074.19
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon QuickSight,37.23
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Redshift,3.24
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Registrar,288.0
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Relational Database Service,35696.53
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Route 53,170.26
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Simple Email Service,4.41
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Simple Notification Service,2.33
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Simple Queue Service,146.18
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Simple Storage Service,8339.95
+mm-madmobile-mgmt,302042158767,2026-03-01,Amazon Virtual Private Cloud,6128.01
+mm-madmobile-mgmt,302042158767,2026-03-01,AmazonCloudWatch,7977.87
+mm-madmobile-mgmt,302042158767,2026-03-01,Cursor,38160.0
+mm-madmobile-mgmt,302042158767,2026-03-01,Native Cloud Data Warehouse Analytics & Business Intelligence Software,7500.0
+mm-madmobile-mgmt,302042158767,2026-03-01,OCBLateFee,3701.6
+mm-madmobile-mgmt,302042158767,2026-03-01,Savings Plans for AWS Compute usage,71701.17
+mm-madmobile-mgmt,302042158767,2026-03-01,Snyk: Developer Security Platform,3208.31
+mm-madmobile-mgmt,302042158767,2026-03-01,TrendAI™ Cloud One,1368.03
+mm-madmobile-mgmt,302042158767,2026-03-01,Vanta,3333.33
+mm-madmobile-mgmt,302042158767,2026-03-01,[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6),4756.0
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Certificate Manager,1448.0
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS CloudTrail,7.09
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS CodeArtifact,0.04
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Config,52.04
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Cost Explorer,0.88
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Data Pipeline,0.05
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Directory Service,5.64
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Elemental MediaConvert,0.01
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Global Accelerator,2.78
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Glue,0.15
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Key Management Service,10.84
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Lambda,11.79
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Secrets Manager,9.79
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Security Hub,8.14
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Support (Enterprise),6975.07
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS Transfer Family,22.26
+mm-madmobile-mgmt,302042158767,2026-04-01,AWS WAF,46.0
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon API Gateway,0.25
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Athena,2.35
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon DocumentDB (with MongoDB compatibility),20.22
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon DynamoDB,0.18
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon EC2 Container Registry (ECR),34.69
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon ElastiCache,618.19
+mm-madmobile-mgmt,302042158767,2026-04-01,EC2 - Other,1957.35
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Elastic Compute Cloud - Compute,406.96
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Elastic Container Service for Kubernetes,144.29
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Elastic File System,0.01
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Elastic Load Balancing,540.64
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon GuardDuty,123.81
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Kinesis,3.42
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Lightsail,5.57
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Location Service,14.44
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon MQ,363.59
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Managed Streaming for Apache Kafka,85.84
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon OpenSearch Service,358.64
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon QuickSight,2.11
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Redshift,0.18
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Relational Database Service,1885.91
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Route 53,27.19
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Simple Email Service,0.31
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Simple Notification Service,0.01
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Simple Queue Service,6.86
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Simple Storage Service,534.39
+mm-madmobile-mgmt,302042158767,2026-04-01,Amazon Virtual Private Cloud,318.87
+mm-madmobile-mgmt,302042158767,2026-04-01,AmazonCloudWatch,431.03
+mm-madmobile-mgmt,302042158767,2026-04-01,Savings Plans for AWS Compute usage,4625.88
+mm-madmobile-mgmt,302042158767,2026-04-01,TrendAI™ Cloud One,33.31
+mm-madmobile-mgmt,302042158767,2026-04-01,[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6),114.0
+mm-marketplace-seller,026090514637,2026-01-03,AWS Config,0.35
+mm-marketplace-seller,026090514637,2026-01-03,AWS Key Management Service,0.02
+mm-marketplace-seller,026090514637,2026-01-03,Amazon GuardDuty,2.56
+mm-marketplace-seller,026090514637,2026-01-03,Amazon Location Service,0.01
+mm-marketplace-seller,026090514637,2026-01-03,Amazon Simple Queue Service,0.19
+mm-marketplace-seller,026090514637,2026-01-03,Amazon Simple Storage Service,0.06
+mm-marketplace-seller,026090514637,2026-01-03,AmazonCloudWatch,0.42
+mm-marketplace-seller,026090514637,2026-02-01,AWS Config,0.08
+mm-marketplace-seller,026090514637,2026-02-01,AWS Key Management Service,0.02
+mm-marketplace-seller,026090514637,2026-02-01,Amazon GuardDuty,2.43
+mm-marketplace-seller,026090514637,2026-02-01,Amazon Simple Queue Service,0.19
+mm-marketplace-seller,026090514637,2026-02-01,Amazon Simple Storage Service,0.06
+mm-marketplace-seller,026090514637,2026-02-01,AmazonCloudWatch,0.07
+mm-marketplace-seller,026090514637,2026-03-01,AWS Key Management Service,0.02
+mm-marketplace-seller,026090514637,2026-03-01,Amazon GuardDuty,2.51
+mm-marketplace-seller,026090514637,2026-03-01,Amazon Simple Queue Service,0.21
+mm-marketplace-seller,026090514637,2026-03-01,Amazon Simple Storage Service,0.08
+mm-marketplace-seller,026090514637,2026-03-01,AmazonCloudWatch,0.08
+mm-marketplace-seller,026090514637,2026-04-01,Amazon GuardDuty,0.12
+mm-marketplace-seller,026090514637,2026-04-01,Amazon Simple Queue Service,0.01
+mm-menupad-prod-metro,622065827965,2026-01-03,AWS Config,1.12
+mm-menupad-prod-metro,622065827965,2026-01-03,AWS Key Management Service,0.02
+mm-menupad-prod-metro,622065827965,2026-01-03,AWS Lambda,5.85
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon API Gateway,0.88
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon CloudFront,0.03
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon ElastiCache,196.52
+mm-menupad-prod-metro,622065827965,2026-01-03,EC2 - Other,69.25
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon Elastic Compute Cloud - Compute,167.91
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon Elastic Load Balancing,47.36
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon GuardDuty,3.48
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon Location Service,0.01
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon Relational Database Service,1262.51
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon Route 53,0.28
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon Simple Storage Service,110.46
+mm-menupad-prod-metro,622065827965,2026-01-03,Amazon Virtual Private Cloud,28.36
+mm-menupad-prod-metro,622065827965,2026-01-03,AmazonCloudWatch,13.96
+mm-menupad-prod-metro,622065827965,2026-02-01,AWS Config,0.41
+mm-menupad-prod-metro,622065827965,2026-02-01,AWS Key Management Service,0.02
+mm-menupad-prod-metro,622065827965,2026-02-01,AWS Lambda,4.74
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon API Gateway,0.81
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon CloudFront,0.04
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon ElastiCache,265.65
+mm-menupad-prod-metro,622065827965,2026-02-01,EC2 - Other,71.06
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon Elastic Compute Cloud - Compute,162.12
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon Elastic Load Balancing,45.67
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon GuardDuty,3.29
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon Relational Database Service,1221.5
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon Route 53,0.4
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon Simple Storage Service,118.27
+mm-menupad-prod-metro,622065827965,2026-02-01,Amazon Virtual Private Cloud,27.38
+mm-menupad-prod-metro,622065827965,2026-02-01,AmazonCloudWatch,14.4
+mm-menupad-prod-metro,622065827965,2026-03-01,AWS Config,0.41
+mm-menupad-prod-metro,622065827965,2026-03-01,AWS Key Management Service,0.03
+mm-menupad-prod-metro,622065827965,2026-03-01,AWS Lambda,5.79
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon API Gateway,1.01
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon CloudFront,0.05
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon ElastiCache,226.31
+mm-menupad-prod-metro,622065827965,2026-03-01,EC2 - Other,74.03
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon Elastic Compute Cloud - Compute,201.87
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon Elastic Load Balancing,50.55
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon GuardDuty,3.54
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon Registrar,15.0
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon Relational Database Service,1294.84
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon Route 53,0.41
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon Simple Storage Service,118.17
+mm-menupad-prod-metro,622065827965,2026-03-01,Amazon Virtual Private Cloud,31.15
+mm-menupad-prod-metro,622065827965,2026-03-01,AmazonCloudWatch,14.39
+mm-menupad-prod-metro,622065827965,2026-04-01,AWS Config,0.06
+mm-menupad-prod-metro,622065827965,2026-04-01,AWS Lambda,0.01
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon ElastiCache,6.86
+mm-menupad-prod-metro,622065827965,2026-04-01,EC2 - Other,3.48
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon Elastic Compute Cloud - Compute,13.76
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon Elastic Load Balancing,2.79
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon GuardDuty,0.15
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon Relational Database Service,72.22
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon Route 53,0.36
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon Simple Storage Service,8.13
+mm-menupad-prod-metro,622065827965,2026-04-01,Amazon Virtual Private Cloud,1.7
+mm-menupad-prod-metro,622065827965,2026-04-01,AmazonCloudWatch,0.72
+mm-mm-archive,673260261206,2026-01-03,AWS Config,0.8
+mm-mm-archive,673260261206,2026-01-03,AWS Key Management Service,5.1
+mm-mm-archive,673260261206,2026-01-03,AWS Lambda,0.2
+mm-mm-archive,673260261206,2026-01-03,AWS Secrets Manager,0.35
+mm-mm-archive,673260261206,2026-01-03,Amazon API Gateway,1.5
+mm-mm-archive,673260261206,2026-01-03,Amazon EC2 Container Registry (ECR),0.15
+mm-mm-archive,673260261206,2026-01-03,EC2 - Other,199.64
+mm-mm-archive,673260261206,2026-01-03,Amazon Elastic Compute Cloud - Compute,374.78
+mm-mm-archive,673260261206,2026-01-03,Amazon Elastic File System,0.03
+mm-mm-archive,673260261206,2026-01-03,Amazon Elastic Load Balancing,109.01
+mm-mm-archive,673260261206,2026-01-03,Amazon GuardDuty,4.58
+mm-mm-archive,673260261206,2026-01-03,Amazon Lightsail,72.39
+mm-mm-archive,673260261206,2026-01-03,Amazon Location Service,0.01
+mm-mm-archive,673260261206,2026-01-03,Amazon Relational Database Service,4.83
+mm-mm-archive,673260261206,2026-01-03,Amazon Simple Storage Service,71.91
+mm-mm-archive,673260261206,2026-01-03,Amazon Virtual Private Cloud,53.58
+mm-mm-archive,673260261206,2026-01-03,AmazonCloudWatch,2.35
+mm-mm-archive,673260261206,2026-02-01,AWS Config,0.38
+mm-mm-archive,673260261206,2026-02-01,AWS Key Management Service,5.45
+mm-mm-archive,673260261206,2026-02-01,AWS Lambda,0.25
+mm-mm-archive,673260261206,2026-02-01,AWS Secrets Manager,0.37
+mm-mm-archive,673260261206,2026-02-01,Amazon API Gateway,1.59
+mm-mm-archive,673260261206,2026-02-01,Amazon EC2 Container Registry (ECR),0.16
+mm-mm-archive,673260261206,2026-02-01,EC2 - Other,207.58
+mm-mm-archive,673260261206,2026-02-01,Amazon Elastic Compute Cloud - Compute,361.87
+mm-mm-archive,673260261206,2026-02-01,Amazon Elastic File System,0.01
+mm-mm-archive,673260261206,2026-02-01,Amazon Elastic Load Balancing,105.13
+mm-mm-archive,673260261206,2026-02-01,Amazon GuardDuty,4.44
+mm-mm-archive,673260261206,2026-02-01,Amazon Lightsail,70.04
+mm-mm-archive,673260261206,2026-02-01,Amazon Relational Database Service,5.16
+mm-mm-archive,673260261206,2026-02-01,Amazon Route 53,0.45
+mm-mm-archive,673260261206,2026-02-01,Amazon Simple Storage Service,76.91
+mm-mm-archive,673260261206,2026-02-01,Amazon Virtual Private Cloud,51.71
+mm-mm-archive,673260261206,2026-02-01,AmazonCloudWatch,2.12
+mm-mm-archive,673260261206,2026-03-01,AWS Config,0.57
+mm-mm-archive,673260261206,2026-03-01,AWS Cost Explorer,0.02
+mm-mm-archive,673260261206,2026-03-01,AWS Key Management Service,5.46
+mm-mm-archive,673260261206,2026-03-01,AWS Lambda,0.28
+mm-mm-archive,673260261206,2026-03-01,AWS Secrets Manager,0.37
+mm-mm-archive,673260261206,2026-03-01,Amazon API Gateway,1.38
+mm-mm-archive,673260261206,2026-03-01,Amazon EC2 Container Registry (ECR),0.16
+mm-mm-archive,673260261206,2026-03-01,EC2 - Other,213.4
+mm-mm-archive,673260261206,2026-03-01,Amazon Elastic Compute Cloud - Compute,400.64
+mm-mm-archive,673260261206,2026-03-01,Amazon Elastic File System,0.02
+mm-mm-archive,673260261206,2026-03-01,Amazon Elastic Load Balancing,116.61
+mm-mm-archive,673260261206,2026-03-01,Amazon GuardDuty,4.74
+mm-mm-archive,673260261206,2026-03-01,Amazon Lightsail,77.45
+mm-mm-archive,673260261206,2026-03-01,Amazon Relational Database Service,5.16
+mm-mm-archive,673260261206,2026-03-01,Amazon Route 53,2.26
+mm-mm-archive,673260261206,2026-03-01,Amazon Simple Storage Service,77.0
+mm-mm-archive,673260261206,2026-03-01,Amazon Virtual Private Cloud,57.27
+mm-mm-archive,673260261206,2026-03-01,AmazonCloudWatch,2.32
+mm-mm-archive,673260261206,2026-04-01,AWS Config,0.08
+mm-mm-archive,673260261206,2026-04-01,AWS Key Management Service,0.3
+mm-mm-archive,673260261206,2026-04-01,AWS Lambda,0.01
+mm-mm-archive,673260261206,2026-04-01,AWS Secrets Manager,0.02
+mm-mm-archive,673260261206,2026-04-01,Amazon API Gateway,0.04
+mm-mm-archive,673260261206,2026-04-01,EC2 - Other,10.93
+mm-mm-archive,673260261206,2026-04-01,Amazon Elastic Compute Cloud - Compute,20.6
+mm-mm-archive,673260261206,2026-04-01,Amazon Elastic Load Balancing,6.46
+mm-mm-archive,673260261206,2026-04-01,Amazon GuardDuty,0.2
+mm-mm-archive,673260261206,2026-04-01,Amazon Lightsail,4.24
+mm-mm-archive,673260261206,2026-04-01,Amazon Relational Database Service,0.28
+mm-mm-archive,673260261206,2026-04-01,Amazon Route 53,0.45
+mm-mm-archive,673260261206,2026-04-01,Amazon Simple Storage Service,5.29
+mm-mm-archive,673260261206,2026-04-01,Amazon Virtual Private Cloud,2.94
+mm-mm-archive,673260261206,2026-04-01,AmazonCloudWatch,0.12
+mm-monvia,219788358213,2026-01-03,AWS CloudTrail,1.74
+mm-monvia,219788358213,2026-01-03,AWS Config,0.79
+mm-monvia,219788358213,2026-01-03,AWS Glue,2.54
+mm-monvia,219788358213,2026-01-03,AWS Key Management Service,2.73
+mm-monvia,219788358213,2026-01-03,AWS X-Ray,0.02
+mm-monvia,219788358213,2026-01-03,Amazon Athena,32.41
+mm-monvia,219788358213,2026-01-03,EC2 - Other,222.23
+mm-monvia,219788358213,2026-01-03,Amazon Elastic Compute Cloud - Compute,0.01
+mm-monvia,219788358213,2026-01-03,Amazon GuardDuty,12.92
+mm-monvia,219788358213,2026-01-03,Amazon Location Service,0.01
+mm-monvia,219788358213,2026-01-03,Amazon QuickSight,10.3
+mm-monvia,219788358213,2026-01-03,Amazon Simple Notification Service,0.02
+mm-monvia,219788358213,2026-01-03,Amazon Simple Storage Service,314.66
+mm-monvia,219788358213,2026-01-03,Amazon Virtual Private Cloud,3.15
+mm-monvia,219788358213,2026-01-03,AmazonCloudWatch,9.18
+mm-monvia,219788358213,2026-01-03,Savings Plans for AWS Compute usage,23557.51
+mm-monvia,219788358213,2026-02-01,AWS Config,1.43
+mm-monvia,219788358213,2026-02-01,AWS Glue,1.92
+mm-monvia,219788358213,2026-02-01,AWS Key Management Service,2.79
+mm-monvia,219788358213,2026-02-01,AWS X-Ray,0.02
+mm-monvia,219788358213,2026-02-01,Amazon Athena,31.73
+mm-monvia,219788358213,2026-02-01,EC2 - Other,237.57
+mm-monvia,219788358213,2026-02-01,Amazon Elastic Compute Cloud - Compute,0.46
+mm-monvia,219788358213,2026-02-01,Amazon GuardDuty,12.86
+mm-monvia,219788358213,2026-02-01,Amazon QuickSight,10.99
+mm-monvia,219788358213,2026-02-01,Amazon Simple Notification Service,0.02
+mm-monvia,219788358213,2026-02-01,Amazon Simple Storage Service,345.49
+mm-monvia,219788358213,2026-02-01,Amazon Virtual Private Cloud,3.04
+mm-monvia,219788358213,2026-02-01,AmazonCloudWatch,9.08
+mm-monvia,219788358213,2026-02-01,Savings Plans for AWS Compute usage,22745.18
+mm-monvia,219788358213,2026-03-01,AWS Config,1.51
+mm-monvia,219788358213,2026-03-01,AWS Cost Explorer,0.04
+mm-monvia,219788358213,2026-03-01,AWS Glue,2.49
+mm-monvia,219788358213,2026-03-01,AWS Key Management Service,2.8
+mm-monvia,219788358213,2026-03-01,AWS X-Ray,0.02
+mm-monvia,219788358213,2026-03-01,Amazon Athena,35.82
+mm-monvia,219788358213,2026-03-01,EC2 - Other,237.58
+mm-monvia,219788358213,2026-03-01,Amazon Elastic Compute Cloud - Compute,5.58
+mm-monvia,219788358213,2026-03-01,Amazon GuardDuty,13.7
+mm-monvia,219788358213,2026-03-01,Amazon QuickSight,11.09
+mm-monvia,219788358213,2026-03-01,Amazon Simple Notification Service,0.02
+mm-monvia,219788358213,2026-03-01,Amazon Simple Storage Service,353.69
+mm-monvia,219788358213,2026-03-01,Amazon Virtual Private Cloud,3.37
+mm-monvia,219788358213,2026-03-01,AmazonCloudWatch,9.17
+mm-monvia,219788358213,2026-03-01,Savings Plans for AWS Compute usage,25182.17
+mm-monvia,219788358213,2026-04-01,AWS Config,0.09
+mm-monvia,219788358213,2026-04-01,AWS Glue,0.15
+mm-monvia,219788358213,2026-04-01,AWS Key Management Service,0.16
+mm-monvia,219788358213,2026-04-01,Amazon Athena,2.35
+mm-monvia,219788358213,2026-04-01,EC2 - Other,11.02
+mm-monvia,219788358213,2026-04-01,Amazon GuardDuty,0.88
+mm-monvia,219788358213,2026-04-01,Amazon QuickSight,0.62
+mm-monvia,219788358213,2026-04-01,Amazon Simple Storage Service,24.8
+mm-monvia,219788358213,2026-04-01,Amazon Virtual Private Cloud,0.17
+mm-monvia,219788358213,2026-04-01,AmazonCloudWatch,0.07
+mm-monvia,219788358213,2026-04-01,Savings Plans for AWS Compute usage,1624.66
+mm-payments-prod-us,491085393358,2026-01-03,AWS CloudTrail,0.27
+mm-payments-prod-us,491085393358,2026-01-03,AWS Config,0.88
+mm-payments-prod-us,491085393358,2026-01-03,AWS Key Management Service,13.21
+mm-payments-prod-us,491085393358,2026-01-03,AWS Secrets Manager,0.35
+mm-payments-prod-us,491085393358,2026-01-03,EC2 - Other,439.72
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Elastic Compute Cloud - Compute,544.56
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Elastic Container Service for Kubernetes,62.99
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Elastic Load Balancing,27.43
+mm-payments-prod-us,491085393358,2026-01-03,Amazon GuardDuty,36.53
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Location Service,0.01
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Relational Database Service,95.61
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Route 53,0.34
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Simple Storage Service,37.05
+mm-payments-prod-us,491085393358,2026-01-03,Amazon Virtual Private Cloud,47.43
+mm-payments-prod-us,491085393358,2026-01-03,AmazonCloudWatch,175.36
+mm-payments-prod-us,491085393358,2026-02-01,AWS Certificate Manager,724.68
+mm-payments-prod-us,491085393358,2026-02-01,AWS Config,1.22
+mm-payments-prod-us,491085393358,2026-02-01,AWS Key Management Service,18.11
+mm-payments-prod-us,491085393358,2026-02-01,AWS Secrets Manager,0.37
+mm-payments-prod-us,491085393358,2026-02-01,EC2 - Other,445.02
+mm-payments-prod-us,491085393358,2026-02-01,Amazon Elastic Compute Cloud - Compute,518.98
+mm-payments-prod-us,491085393358,2026-02-01,Amazon Elastic Container Service for Kubernetes,60.82
+mm-payments-prod-us,491085393358,2026-02-01,Amazon Elastic Load Balancing,27.83
+mm-payments-prod-us,491085393358,2026-02-01,Amazon GuardDuty,34.5
+mm-payments-prod-us,491085393358,2026-02-01,Amazon Relational Database Service,92.82
+mm-payments-prod-us,491085393358,2026-02-01,Amazon Route 53,0.45
+mm-payments-prod-us,491085393358,2026-02-01,Amazon Simple Storage Service,43.79
+mm-payments-prod-us,491085393358,2026-02-01,Amazon Virtual Private Cloud,45.88
+mm-payments-prod-us,491085393358,2026-02-01,AmazonCloudWatch,176.07
+mm-payments-prod-us,491085393358,2026-03-01,AWS Certificate Manager,724.0
+mm-payments-prod-us,491085393358,2026-03-01,AWS Config,1.1
+mm-payments-prod-us,491085393358,2026-03-01,AWS Key Management Service,34.05
+mm-payments-prod-us,491085393358,2026-03-01,AWS Secrets Manager,0.37
+mm-payments-prod-us,491085393358,2026-03-01,EC2 - Other,512.73
+mm-payments-prod-us,491085393358,2026-03-01,Amazon Elastic Compute Cloud - Compute,44.12
+mm-payments-prod-us,491085393358,2026-03-01,Amazon Elastic Container Service for Kubernetes,165.07
+mm-payments-prod-us,491085393358,2026-03-01,Amazon Elastic Load Balancing,39.3
+mm-payments-prod-us,491085393358,2026-03-01,Amazon GuardDuty,51.06
+mm-payments-prod-us,491085393358,2026-03-01,Amazon Relational Database Service,102.35
+mm-payments-prod-us,491085393358,2026-03-01,Amazon Route 53,0.61
+mm-payments-prod-us,491085393358,2026-03-01,Amazon Simple Storage Service,144.69
+mm-payments-prod-us,491085393358,2026-03-01,Amazon Virtual Private Cloud,50.79
+mm-payments-prod-us,491085393358,2026-03-01,AmazonCloudWatch,197.98
+mm-payments-prod-us,491085393358,2026-04-01,AWS Certificate Manager,724.0
+mm-payments-prod-us,491085393358,2026-04-01,AWS Config,0.04
+mm-payments-prod-us,491085393358,2026-04-01,AWS Key Management Service,1.37
+mm-payments-prod-us,491085393358,2026-04-01,AWS Secrets Manager,0.02
+mm-payments-prod-us,491085393358,2026-04-01,EC2 - Other,30.16
+mm-payments-prod-us,491085393358,2026-04-01,Amazon Elastic Container Service for Kubernetes,22.26
+mm-payments-prod-us,491085393358,2026-04-01,Amazon Elastic Load Balancing,3.18
+mm-payments-prod-us,491085393358,2026-04-01,Amazon GuardDuty,2.38
+mm-payments-prod-us,491085393358,2026-04-01,Amazon Relational Database Service,5.5
+mm-payments-prod-us,491085393358,2026-04-01,Amazon Route 53,0.5
+mm-payments-prod-us,491085393358,2026-04-01,Amazon Simple Storage Service,4.56
+mm-payments-prod-us,491085393358,2026-04-01,Amazon Virtual Private Cloud,2.8
+mm-payments-prod-us,491085393358,2026-04-01,AmazonCloudWatch,12.06
+mm-retail-prod-apac,357856625432,2026-01-03,AWS Config,15.13
+mm-retail-prod-apac,357856625432,2026-01-03,AWS Global Accelerator,15.73
+mm-retail-prod-apac,357856625432,2026-01-03,AWS Key Management Service,3.42
+mm-retail-prod-apac,357856625432,2026-01-03,AWS Lambda,181.49
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon API Gateway,0.03
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon EC2 Container Registry (ECR),7.09
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon ElastiCache,150.54
+mm-retail-prod-apac,357856625432,2026-01-03,EC2 - Other,600.27
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Elastic Compute Cloud - Compute,500.85
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Elastic Container Service,10.68
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Elastic Container Service for Kubernetes,440.92
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Elastic Load Balancing,181.88
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon GuardDuty,134.81
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Location Service,0.01
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon MQ,1127.7
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Route 53,0.99
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Simple Storage Service,13.14
+mm-retail-prod-apac,357856625432,2026-01-03,Amazon Virtual Private Cloud,75.59
+mm-retail-prod-apac,357856625432,2026-01-03,AmazonCloudWatch,11.87
+mm-retail-prod-apac,357856625432,2026-02-01,AWS Config,6.13
+mm-retail-prod-apac,357856625432,2026-02-01,AWS Global Accelerator,15.21
+mm-retail-prod-apac,357856625432,2026-02-01,AWS Key Management Service,3.65
+mm-retail-prod-apac,357856625432,2026-02-01,AWS Lambda,175.23
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon API Gateway,0.04
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon EC2 Container Registry (ECR),7.67
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon ElastiCache,261.34
+mm-retail-prod-apac,357856625432,2026-02-01,EC2 - Other,607.59
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon Elastic Compute Cloud - Compute,338.14
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon Elastic Container Service,8.42
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon Elastic Container Service for Kubernetes,425.71
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon Elastic Load Balancing,175.65
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon GuardDuty,131.53
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon MQ,1106.21
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon Route 53,1.44
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon Simple Storage Service,15.54
+mm-retail-prod-apac,357856625432,2026-02-01,Amazon Virtual Private Cloud,72.99
+mm-retail-prod-apac,357856625432,2026-02-01,AmazonCloudWatch,11.91
+mm-retail-prod-apac,357856625432,2026-03-01,AWS Config,20.0
+mm-retail-prod-apac,357856625432,2026-03-01,AWS Cost Explorer,0.02
+mm-retail-prod-apac,357856625432,2026-03-01,AWS Global Accelerator,16.84
+mm-retail-prod-apac,357856625432,2026-03-01,AWS Key Management Service,3.65
+mm-retail-prod-apac,357856625432,2026-03-01,AWS Lambda,194.01
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon API Gateway,0.04
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon EC2 Container Registry (ECR),7.73
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon ElastiCache,289.53
+mm-retail-prod-apac,357856625432,2026-03-01,EC2 - Other,653.0
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon Elastic Compute Cloud - Compute,0.04
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon Elastic Container Service for Kubernetes,567.59
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon Elastic Load Balancing,194.43
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon GuardDuty,148.45
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon MQ,1210.28
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon Route 53,3.43
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon Simple Storage Service,16.13
+mm-retail-prod-apac,357856625432,2026-03-01,Amazon Virtual Private Cloud,80.81
+mm-retail-prod-apac,357856625432,2026-03-01,AmazonCloudWatch,12.43
+mm-retail-prod-apac,357856625432,2026-04-01,AWS Config,3.14
+mm-retail-prod-apac,357856625432,2026-04-01,AWS Global Accelerator,0.93
+mm-retail-prod-apac,357856625432,2026-04-01,AWS Key Management Service,0.21
+mm-retail-prod-apac,357856625432,2026-04-01,AWS Lambda,9.91
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon EC2 Container Registry (ECR),0.98
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon ElastiCache,16.3
+mm-retail-prod-apac,357856625432,2026-04-01,EC2 - Other,44.77
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon Elastic Container Service for Kubernetes,14.42
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon Elastic Load Balancing,10.74
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon GuardDuty,8.56
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon MQ,68.95
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon Route 53,0.52
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon Simple Storage Service,1.09
+mm-retail-prod-apac,357856625432,2026-04-01,Amazon Virtual Private Cloud,4.45
+mm-retail-prod-apac,357856625432,2026-04-01,AmazonCloudWatch,0.61
+mm-retail-prod-eu,266315811211,2026-01-03,AWS CloudTrail,0.02
+mm-retail-prod-eu,266315811211,2026-01-03,AWS Config,24.02
+mm-retail-prod-eu,266315811211,2026-01-03,AWS Global Accelerator,15.73
+mm-retail-prod-eu,266315811211,2026-01-03,AWS Key Management Service,5.11
+mm-retail-prod-eu,266315811211,2026-01-03,AWS Lambda,0.08
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon EC2 Container Registry (ECR),7.13
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon ElastiCache,270.85
+mm-retail-prod-eu,266315811211,2026-01-03,EC2 - Other,1532.98
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Elastic Compute Cloud - Compute,1917.16
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Elastic Container Service,8.94
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Elastic Container Service for Kubernetes,440.92
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Elastic Load Balancing,228.39
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon GuardDuty,45.63
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Location Service,0.01
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon MQ,1848.83
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Route 53,1.12
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Simple Storage Service,67.47
+mm-retail-prod-eu,266315811211,2026-01-03,Amazon Virtual Private Cloud,53.55
+mm-retail-prod-eu,266315811211,2026-01-03,AmazonCloudWatch,21.16
+mm-retail-prod-eu,266315811211,2026-02-01,AWS Config,6.28
+mm-retail-prod-eu,266315811211,2026-02-01,AWS Global Accelerator,15.21
+mm-retail-prod-eu,266315811211,2026-02-01,AWS Key Management Service,5.46
+mm-retail-prod-eu,266315811211,2026-02-01,AWS Lambda,0.06
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon EC2 Container Registry (ECR),7.71
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon ElastiCache,345.31
+mm-retail-prod-eu,266315811211,2026-02-01,EC2 - Other,1575.86
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon Elastic Compute Cloud - Compute,1283.13
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon Elastic Container Service,8.63
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon Elastic Container Service for Kubernetes,425.71
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon Elastic Load Balancing,215.75
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon GuardDuty,39.86
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon MQ,1693.94
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon Route 53,1.68
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon Simple Storage Service,72.29
+mm-retail-prod-eu,266315811211,2026-02-01,Amazon Virtual Private Cloud,51.7
+mm-retail-prod-eu,266315811211,2026-02-01,AmazonCloudWatch,21.22
+mm-retail-prod-eu,266315811211,2026-03-01,AWS Config,1.59
+mm-retail-prod-eu,266315811211,2026-03-01,AWS Cost Explorer,0.02
+mm-retail-prod-eu,266315811211,2026-03-01,AWS Global Accelerator,16.84
+mm-retail-prod-eu,266315811211,2026-03-01,AWS Key Management Service,5.45
+mm-retail-prod-eu,266315811211,2026-03-01,AWS Lambda,0.08
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon EC2 Container Registry (ECR),7.75
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon ElastiCache,382.45
+mm-retail-prod-eu,266315811211,2026-03-01,EC2 - Other,1639.86
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon Elastic Compute Cloud - Compute,75.23
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon Elastic Container Service,1.55
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon Elastic Container Service for Kubernetes,569.06
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon Elastic Load Balancing,240.8
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon GuardDuty,45.86
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon MQ,1853.98
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon Route 53,1.82
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon Simple Storage Service,71.89
+mm-retail-prod-eu,266315811211,2026-03-01,Amazon Virtual Private Cloud,57.24
+mm-retail-prod-eu,266315811211,2026-03-01,AmazonCloudWatch,22.02
+mm-retail-prod-eu,266315811211,2026-04-01,AWS Config,0.2
+mm-retail-prod-eu,266315811211,2026-04-01,AWS Global Accelerator,0.93
+mm-retail-prod-eu,266315811211,2026-04-01,AWS Key Management Service,0.3
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon EC2 Container Registry (ECR),0.45
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon ElastiCache,21.08
+mm-retail-prod-eu,266315811211,2026-04-01,EC2 - Other,82.62
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon Elastic Compute Cloud - Compute,0.08
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon Elastic Container Service for Kubernetes,44.53
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon Elastic Load Balancing,12.07
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon GuardDuty,3.05
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon MQ,100.44
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon Route 53,0.71
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon Simple Storage Service,4.78
+mm-retail-prod-eu,266315811211,2026-04-01,Amazon Virtual Private Cloud,3.15
+mm-retail-prod-eu,266315811211,2026-04-01,AmazonCloudWatch,1.06
+mm-retail-prod-us-dr,542575560358,2026-01-03,AWS Config,1.82
+mm-retail-prod-us-dr,542575560358,2026-01-03,AWS Global Accelerator,15.73
+mm-retail-prod-us-dr,542575560358,2026-01-03,AWS Key Management Service,7.62
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon EC2 Container Registry (ECR),0.5
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon ElastiCache,56.69
+mm-retail-prod-us-dr,542575560358,2026-01-03,EC2 - Other,1049.43
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon Elastic Compute Cloud - Compute,1309.7
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon Elastic Container Service for Kubernetes,125.98
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon Elastic Load Balancing,160.47
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon GuardDuty,29.45
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon Location Service,0.01
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon Simple Storage Service,3.83
+mm-retail-prod-us-dr,542575560358,2026-01-03,Amazon Virtual Private Cloud,63.01
+mm-retail-prod-us-dr,542575560358,2026-01-03,AmazonCloudWatch,1.7
+mm-retail-prod-us-dr,542575560358,2026-02-01,AWS Config,1.21
+mm-retail-prod-us-dr,542575560358,2026-02-01,AWS Global Accelerator,15.2
+mm-retail-prod-us-dr,542575560358,2026-02-01,AWS Key Management Service,8.15
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon EC2 Container Registry (ECR),0.53
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon ElastiCache,65.66
+mm-retail-prod-us-dr,542575560358,2026-02-01,EC2 - Other,1164.88
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon Elastic Compute Cloud - Compute,1213.1
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon Elastic Container Service for Kubernetes,121.63
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon Elastic Load Balancing,154.9
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon GuardDuty,27.91
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon Route 53,0.18
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon Simple Storage Service,4.08
+mm-retail-prod-us-dr,542575560358,2026-02-01,Amazon Virtual Private Cloud,60.84
+mm-retail-prod-us-dr,542575560358,2026-02-01,AmazonCloudWatch,1.32
+mm-retail-prod-us-dr,542575560358,2026-03-01,AWS Config,1.72
+mm-retail-prod-us-dr,542575560358,2026-03-01,AWS Global Accelerator,16.83
+mm-retail-prod-us-dr,542575560358,2026-03-01,AWS Key Management Service,8.14
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon EC2 Container Registry (ECR),0.54
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon ElastiCache,72.72
+mm-retail-prod-us-dr,542575560358,2026-03-01,EC2 - Other,1227.1
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon Elastic Compute Cloud - Compute,1289.5
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon Elastic Container Service for Kubernetes,274.12
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon Elastic Load Balancing,171.55
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon GuardDuty,29.48
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon Route 53,0.18
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon Simple Storage Service,4.11
+mm-retail-prod-us-dr,542575560358,2026-03-01,Amazon Virtual Private Cloud,68.48
+mm-retail-prod-us-dr,542575560358,2026-03-01,AmazonCloudWatch,1.42
+mm-retail-prod-us-dr,542575560358,2026-04-01,AWS Config,0.12
+mm-retail-prod-us-dr,542575560358,2026-04-01,AWS Global Accelerator,0.93
+mm-retail-prod-us-dr,542575560358,2026-04-01,AWS Key Management Service,0.45
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon EC2 Container Registry (ECR),0.03
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon ElastiCache,4.03
+mm-retail-prod-us-dr,542575560358,2026-04-01,EC2 - Other,65.39
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon Elastic Compute Cloud - Compute,52.57
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon Elastic Container Service for Kubernetes,25.97
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon Elastic Load Balancing,9.46
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon GuardDuty,1.25
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon Route 53,0.18
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon Simple Storage Service,0.28
+mm-retail-prod-us-dr,542575560358,2026-04-01,Amazon Virtual Private Cloud,3.9
+mm-retail-prod-us-dr,542575560358,2026-04-01,AmazonCloudWatch,0.06
+mm-retail-prod-us,125062011444,2026-01-03,AWS Backup,0.01
+mm-retail-prod-us,125062011444,2026-01-03,AWS CloudTrail,156.76
+mm-retail-prod-us,125062011444,2026-01-03,AWS Config,3.37
+mm-retail-prod-us,125062011444,2026-01-03,AWS Data Pipeline,0.85
+mm-retail-prod-us,125062011444,2026-01-03,AWS Key Management Service,3.42
+mm-retail-prod-us,125062011444,2026-01-03,AWS Lambda,25.4
+mm-retail-prod-us,125062011444,2026-01-03,AWS Secrets Manager,0.04
+mm-retail-prod-us,125062011444,2026-01-03,AWS WAF,44.02
+mm-retail-prod-us,125062011444,2026-01-03,AWS X-Ray,0.32
+mm-retail-prod-us,125062011444,2026-01-03,Amazon API Gateway,2.76
+mm-retail-prod-us,125062011444,2026-01-03,Amazon EC2 Container Registry (ECR),32.96
+mm-retail-prod-us,125062011444,2026-01-03,Amazon ElastiCache,511.46
+mm-retail-prod-us,125062011444,2026-01-03,EC2 - Other,6087.89
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Elastic Compute Cloud - Compute,5.76
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Elastic Container Service,15.55
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Elastic Container Service for Kubernetes,377.93
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Elastic File System,0.07
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Elastic Load Balancing,185.63
+mm-retail-prod-us,125062011444,2026-01-03,Amazon GuardDuty,92.6
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Location Service,0.01
+mm-retail-prod-us,125062011444,2026-01-03,Amazon MQ,2953.43
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Simple Notification Service,0.03
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Simple Storage Service,1051.78
+mm-retail-prod-us,125062011444,2026-01-03,Amazon Virtual Private Cloud,211.02
+mm-retail-prod-us,125062011444,2026-01-03,AmazonCloudWatch,57.11
+mm-retail-prod-us,125062011444,2026-02-01,AWS Backup,0.02
+mm-retail-prod-us,125062011444,2026-02-01,AWS CloudTrail,143.39
+mm-retail-prod-us,125062011444,2026-02-01,AWS Config,4.41
+mm-retail-prod-us,125062011444,2026-02-01,AWS Data Pipeline,0.91
+mm-retail-prod-us,125062011444,2026-02-01,AWS Key Management Service,3.66
+mm-retail-prod-us,125062011444,2026-02-01,AWS Lambda,24.84
+mm-retail-prod-us,125062011444,2026-02-01,AWS Secrets Manager,0.03
+mm-retail-prod-us,125062011444,2026-02-01,AWS WAF,47.06
+mm-retail-prod-us,125062011444,2026-02-01,AWS X-Ray,0.27
+mm-retail-prod-us,125062011444,2026-02-01,Amazon API Gateway,3.17
+mm-retail-prod-us,125062011444,2026-02-01,Amazon EC2 Container Registry (ECR),35.35
+mm-retail-prod-us,125062011444,2026-02-01,Amazon ElastiCache,493.83
+mm-retail-prod-us,125062011444,2026-02-01,EC2 - Other,6570.25
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Elastic Compute Cloud - Compute,6.42
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Elastic Container Service,11.69
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Elastic Container Service for Kubernetes,364.9
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Elastic File System,0.08
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Elastic Load Balancing,217.17
+mm-retail-prod-us,125062011444,2026-02-01,Amazon GuardDuty,96.18
+mm-retail-prod-us,125062011444,2026-02-01,Amazon MQ,2908.56
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Route 53,0.18
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Simple Notification Service,0.03
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Simple Storage Service,1180.48
+mm-retail-prod-us,125062011444,2026-02-01,Amazon Virtual Private Cloud,208.56
+mm-retail-prod-us,125062011444,2026-02-01,AmazonCloudWatch,61.79
+mm-retail-prod-us,125062011444,2026-03-01,AWS Backup,0.01
+mm-retail-prod-us,125062011444,2026-03-01,AWS CloudTrail,141.74
+mm-retail-prod-us,125062011444,2026-03-01,AWS Config,4.33
+mm-retail-prod-us,125062011444,2026-03-01,AWS Cost Explorer,0.02
+mm-retail-prod-us,125062011444,2026-03-01,AWS Data Pipeline,0.9
+mm-retail-prod-us,125062011444,2026-03-01,AWS Key Management Service,3.66
+mm-retail-prod-us,125062011444,2026-03-01,AWS Lambda,27.76
+mm-retail-prod-us,125062011444,2026-03-01,AWS Secrets Manager,0.03
+mm-retail-prod-us,125062011444,2026-03-01,AWS WAF,47.06
+mm-retail-prod-us,125062011444,2026-03-01,AWS X-Ray,0.39
+mm-retail-prod-us,125062011444,2026-03-01,Amazon API Gateway,2.68
+mm-retail-prod-us,125062011444,2026-03-01,Amazon EC2 Container Registry (ECR),35.4
+mm-retail-prod-us,125062011444,2026-03-01,Amazon ElastiCache,546.74
+mm-retail-prod-us,125062011444,2026-03-01,EC2 - Other,6597.61
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Elastic Compute Cloud - Compute,6.12
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Elastic Container Service for Kubernetes,403.99
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Elastic File System,0.08
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Elastic Load Balancing,260.5
+mm-retail-prod-us,125062011444,2026-03-01,Amazon GuardDuty,125.39
+mm-retail-prod-us,125062011444,2026-03-01,Amazon MQ,3288.98
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Route 53,0.18
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Simple Notification Service,0.03
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Simple Storage Service,1183.99
+mm-retail-prod-us,125062011444,2026-03-01,Amazon Virtual Private Cloud,232.31
+mm-retail-prod-us,125062011444,2026-03-01,AmazonCloudWatch,58.67
+mm-retail-prod-us,125062011444,2026-04-01,AWS CloudTrail,7.09
+mm-retail-prod-us,125062011444,2026-04-01,AWS Config,0.33
+mm-retail-prod-us,125062011444,2026-04-01,AWS Data Pipeline,0.05
+mm-retail-prod-us,125062011444,2026-04-01,AWS Key Management Service,0.2
+mm-retail-prod-us,125062011444,2026-04-01,AWS Lambda,1.06
+mm-retail-prod-us,125062011444,2026-04-01,AWS WAF,2.68
+mm-retail-prod-us,125062011444,2026-04-01,Amazon API Gateway,0.11
+mm-retail-prod-us,125062011444,2026-04-01,Amazon EC2 Container Registry (ECR),1.98
+mm-retail-prod-us,125062011444,2026-04-01,Amazon ElastiCache,29.9
+mm-retail-prod-us,125062011444,2026-04-01,EC2 - Other,293.85
+mm-retail-prod-us,125062011444,2026-04-01,Amazon Elastic Compute Cloud - Compute,0.28
+mm-retail-prod-us,125062011444,2026-04-01,Amazon Elastic Container Service for Kubernetes,22.26
+mm-retail-prod-us,125062011444,2026-04-01,Amazon Elastic Load Balancing,12.83
+mm-retail-prod-us,125062011444,2026-04-01,Amazon GuardDuty,6.56
+mm-retail-prod-us,125062011444,2026-04-01,Amazon MQ,181.36
+mm-retail-prod-us,125062011444,2026-04-01,Amazon Route 53,0.91
+mm-retail-prod-us,125062011444,2026-04-01,Amazon Simple Storage Service,78.59
+mm-retail-prod-us,125062011444,2026-04-01,Amazon Virtual Private Cloud,12.57
+mm-retail-prod-us,125062011444,2026-04-01,AmazonCloudWatch,2.79
+mm-security,155215164482,2026-01-03,AWS Config,0.74
+mm-security,155215164482,2026-01-03,AWS Key Management Service,1.71
+mm-security,155215164482,2026-01-03,Amazon GuardDuty,2.97
+mm-security,155215164482,2026-01-03,Amazon Location Service,0.01
+mm-security,155215164482,2026-01-03,Amazon Simple Notification Service,0.2
+mm-security,155215164482,2026-01-03,Amazon Simple Storage Service,0.75
+mm-security,155215164482,2026-01-03,AmazonCloudWatch,0.4
+mm-security,155215164482,2026-02-01,AWS Config,0.07
+mm-security,155215164482,2026-02-01,AWS Key Management Service,1.83
+mm-security,155215164482,2026-02-01,Amazon GuardDuty,2.78
+mm-security,155215164482,2026-02-01,Amazon Simple Notification Service,0.08
+mm-security,155215164482,2026-02-01,Amazon Simple Storage Service,0.9
+mm-security,155215164482,2026-02-01,AmazonCloudWatch,0.05
+mm-security,155215164482,2026-03-01,AWS Key Management Service,1.83
+mm-security,155215164482,2026-03-01,Amazon GuardDuty,3.1
+mm-security,155215164482,2026-03-01,Amazon Simple Notification Service,0.07
+mm-security,155215164482,2026-03-01,Amazon Simple Storage Service,0.97
+mm-security,155215164482,2026-03-01,AmazonCloudWatch,0.06
+mm-security,155215164482,2026-04-01,AWS Key Management Service,0.1
+mm-security,155215164482,2026-04-01,Amazon GuardDuty,0.16
+mm-security,155215164482,2026-04-01,Amazon Simple Storage Service,0.06
+mm-shared-artifact-registry,278608866843,2026-01-03,AWS CloudTrail,0.06
+mm-shared-artifact-registry,278608866843,2026-01-03,AWS CodeArtifact,14.83
+mm-shared-artifact-registry,278608866843,2026-01-03,AWS Config,0.39
+mm-shared-artifact-registry,278608866843,2026-01-03,AWS Key Management Service,0.87
+mm-shared-artifact-registry,278608866843,2026-01-03,Amazon EC2 Container Registry (ECR),15.15
+mm-shared-artifact-registry,278608866843,2026-01-03,EC2 - Other,0.41
+mm-shared-artifact-registry,278608866843,2026-01-03,Amazon GuardDuty,10.44
+mm-shared-artifact-registry,278608866843,2026-01-03,Amazon Location Service,0.01
+mm-shared-artifact-registry,278608866843,2026-01-03,Amazon Simple Storage Service,0.2
+mm-shared-artifact-registry,278608866843,2026-01-03,AmazonCloudWatch,0.41
+mm-shared-artifact-registry,278608866843,2026-02-01,AWS CodeArtifact,12.71
+mm-shared-artifact-registry,278608866843,2026-02-01,AWS Config,0.09
+mm-shared-artifact-registry,278608866843,2026-02-01,AWS Key Management Service,0.93
+mm-shared-artifact-registry,278608866843,2026-02-01,Amazon EC2 Container Registry (ECR),16.53
+mm-shared-artifact-registry,278608866843,2026-02-01,EC2 - Other,0.44
+mm-shared-artifact-registry,278608866843,2026-02-01,Amazon GuardDuty,9.08
+mm-shared-artifact-registry,278608866843,2026-02-01,Amazon Simple Storage Service,0.19
+mm-shared-artifact-registry,278608866843,2026-02-01,AmazonCloudWatch,0.05
+mm-shared-artifact-registry,278608866843,2026-03-01,AWS CodeArtifact,14.6
+mm-shared-artifact-registry,278608866843,2026-03-01,AWS Config,0.02
+mm-shared-artifact-registry,278608866843,2026-03-01,AWS Key Management Service,0.93
+mm-shared-artifact-registry,278608866843,2026-03-01,Amazon EC2 Container Registry (ECR),18.03
+mm-shared-artifact-registry,278608866843,2026-03-01,EC2 - Other,0.44
+mm-shared-artifact-registry,278608866843,2026-03-01,Amazon GuardDuty,10.92
+mm-shared-artifact-registry,278608866843,2026-03-01,Amazon Simple Storage Service,0.22
+mm-shared-artifact-registry,278608866843,2026-03-01,AmazonCloudWatch,0.06
+mm-shared-artifact-registry,278608866843,2026-04-01,AWS CodeArtifact,0.04
+mm-shared-artifact-registry,278608866843,2026-04-01,AWS Key Management Service,0.05
+mm-shared-artifact-registry,278608866843,2026-04-01,Amazon EC2 Container Registry (ECR),1.01
+mm-shared-artifact-registry,278608866843,2026-04-01,EC2 - Other,0.01
+mm-shared-artifact-registry,278608866843,2026-04-01,Amazon GuardDuty,0.44
+mm-shared-artifact-registry,278608866843,2026-04-01,Amazon Simple Storage Service,0.01
+mm-shared-services,654654350563,2026-01-03,AWS CloudTrail,0.99
+mm-shared-services,654654350563,2026-01-03,AWS Config,0.56
+mm-shared-services,654654350563,2026-01-03,AWS Key Management Service,8.5
+mm-shared-services,654654350563,2026-01-03,EC2 - Other,762.4
+mm-shared-services,654654350563,2026-01-03,Amazon Elastic Compute Cloud - Compute,10.08
+mm-shared-services,654654350563,2026-01-03,Amazon Elastic Container Service for Kubernetes,62.99
+mm-shared-services,654654350563,2026-01-03,Amazon Elastic Load Balancing,329.25
+mm-shared-services,654654350563,2026-01-03,Amazon GuardDuty,65.09
+mm-shared-services,654654350563,2026-01-03,Amazon Location Service,0.01
+mm-shared-services,654654350563,2026-01-03,Amazon Route 53,0.01
+mm-shared-services,654654350563,2026-01-03,Amazon Simple Queue Service,0.05
+mm-shared-services,654654350563,2026-01-03,Amazon Simple Storage Service,277.42
+mm-shared-services,654654350563,2026-01-03,Amazon Virtual Private Cloud,91.75
+mm-shared-services,654654350563,2026-01-03,AmazonCloudWatch,45.31
+mm-shared-services,654654350563,2026-02-01,AWS Config,0.34
+mm-shared-services,654654350563,2026-02-01,AWS Key Management Service,9.05
+mm-shared-services,654654350563,2026-02-01,EC2 - Other,762.27
+mm-shared-services,654654350563,2026-02-01,Amazon Elastic Compute Cloud - Compute,66.22
+mm-shared-services,654654350563,2026-02-01,Amazon Elastic Container Service for Kubernetes,60.82
+mm-shared-services,654654350563,2026-02-01,Amazon Elastic Load Balancing,335.54
+mm-shared-services,654654350563,2026-02-01,Amazon GuardDuty,62.43
+mm-shared-services,654654350563,2026-02-01,Amazon Route 53,0.19
+mm-shared-services,654654350563,2026-02-01,Amazon Simple Queue Service,0.04
+mm-shared-services,654654350563,2026-02-01,Amazon Simple Storage Service,383.54
+mm-shared-services,654654350563,2026-02-01,Amazon Virtual Private Cloud,88.6
+mm-shared-services,654654350563,2026-02-01,AmazonCloudWatch,44.11
+mm-shared-services,654654350563,2026-03-01,AWS Config,1.84
+mm-shared-services,654654350563,2026-03-01,AWS Cost Explorer,0.02
+mm-shared-services,654654350563,2026-03-01,AWS Key Management Service,9.08
+mm-shared-services,654654350563,2026-03-01,EC2 - Other,750.2
+mm-shared-services,654654350563,2026-03-01,Amazon Elastic Compute Cloud - Compute,0.04
+mm-shared-services,654654350563,2026-03-01,Amazon Elastic Container Service for Kubernetes,119.4
+mm-shared-services,654654350563,2026-03-01,Amazon Elastic Load Balancing,246.0
+mm-shared-services,654654350563,2026-03-01,Amazon GuardDuty,72.29
+mm-shared-services,654654350563,2026-03-01,Amazon Route 53,0.19
+mm-shared-services,654654350563,2026-03-01,Amazon Simple Queue Service,0.05
+mm-shared-services,654654350563,2026-03-01,Amazon Simple Storage Service,474.49
+mm-shared-services,654654350563,2026-03-01,Amazon Virtual Private Cloud,97.91
+mm-shared-services,654654350563,2026-03-01,AmazonCloudWatch,48.12
+mm-shared-services,654654350563,2026-04-01,AWS Config,1.07
+mm-shared-services,654654350563,2026-04-01,AWS Key Management Service,0.5
+mm-shared-services,654654350563,2026-04-01,EC2 - Other,34.64
+mm-shared-services,654654350563,2026-04-01,Amazon Elastic Container Service for Kubernetes,3.71
+mm-shared-services,654654350563,2026-04-01,Amazon Elastic Load Balancing,5.17
+mm-shared-services,654654350563,2026-04-01,Amazon GuardDuty,5.04
+mm-shared-services,654654350563,2026-04-01,Amazon Route 53,0.18
+mm-shared-services,654654350563,2026-04-01,Amazon Simple Storage Service,33.04
+mm-shared-services,654654350563,2026-04-01,Amazon Virtual Private Cloud,5.49
+mm-shared-services,654654350563,2026-04-01,AmazonCloudWatch,2.65

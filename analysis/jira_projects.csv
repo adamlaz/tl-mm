@@ -1,0 +1,142 @@
+key,name,style,type_key,lead,category,issue_count
+AAK,AI Agent Kanban,classic,software,,,40
+ACT,Retail Activities Implementation Library,classic,software,,Customer Success Retail,25
+AH,Ahsoka,classic,software,,Team,0
+AHSKREST,Ahsoka - REST,classic,software,,Team,0
+AI,AI Evangelism,classic,software,,,87
+AL,Altair,classic,software,,Team,0
+APOLLO,Apollo,classic,software,,Team,0
+AR,Architecture Review,classic,software,,Test Projects,199
+AUD,Audits,classic,software,,,238
+BB,Brooks Brothers,classic,software,,Customer Success Retail,21
+BBOOK,Retail Blackbook Implementation Library,classic,software,,Customer Success Retail,40
+BO,Back Office,classic,software,,Product Solution Project - Restaurant,4091
+BT,Business Transformation,classic,software,,Project Level,424
+BTP,Business Transformation Program,classic,software,,Product Program,39
+CAKE,Cake Deliverables,classic,software,,,270
+CAS,Castor,classic,software,,Team,1
+CE,Customer Engagement,classic,software,,Product Solution Project - Restaurant,4441
+CHECK,Retail Checkout Implementation Library,classic,software,,Customer Success Retail,error
+CHRC,CAKE Hardware Refresh Commercialization,classic,software,,Product Commercialization,172
+CK,Cake Payments,next-gen,product_discovery,,,0
+CL,Company Level,classic,software,,,2
+CLD,Developer and Cloud Support,classic,service_desk,,DevOps,2422
+CLN,Clienteling,classic,software,,Product Solution Project - Retail,1164
+CLOUD,Cloud Engineering,classic,software,,DevOps,999
+CM,Change Management,classic,software,,DevOps,391
+CONNECT,Retail Connect Implementation Library,classic,software,,Customer Success Retail,error
+CONVO,Retail Conversations Implementation Library,classic,software,,Customer Success Retail,46
+CORE,Core,classic,software,,Product Solution Project - Retail,1554
+CP,Cloud Program,classic,software,,Product Program,19
+CQP,Cake QE Platform,classic,software,,Team,0
+CX,Customer Experience,classic,software,,,59
+DASH,Retail Dashboard Implementation Library,classic,software,,Customer Success Retail,5
+DEV,DevOps Retail,classic,software,,DevOps,214
+DO,Digital Ordering,classic,software,,Product Solution Project - Restaurant,error
+DP,DevOps Payments,classic,software,,DevOps,70
+DR,DevOps Restaurant,classic,software,,DevOps,4218
+DRAC,Draco,classic,software,,Team,0
+DSO,DevSecOps,classic,software,,DevOps,4762
+EA,Retail Endless Aisle Implementation Library,classic,software,,Customer Success Retail,34
+EI,Ellis Island,classic,software,,Team,0
+ELC,Loyalty Commercialization,classic,software,,Product Commercialization,168
+ELCE,Estee,classic,software,,Customer Success Retail,984
+EN,Estee NA,classic,software,,Customer Success Retail,101
+FAS,Knitwell Group - FAS,classic,software,,Customer Success Retail,117
+FASCPY,FASCPY,classic,software,,Customer Success Retail,99
+FUL,Fulfillment,classic,software,,Product Solution Project - Retail,181
+GO,Global Optimization ,classic,software,,Project Level,error
+GRC,"Governance, Risk and Compliance",classic,software,,,468
+GUESS,Guess,classic,software,,Customer Success Retail,18
+HULK,Hulk,classic,software,,Team,0
+IAL,Implementations Analytics Library,classic,software,,Product Solution Project - Retail,44
+ITP,IT Projects,classic,software,,Standard Level,7
+JC, Jira Configuration Tracking ,classic,software,,,881
+KDS,KDS Commercialization,classic,software,,Product Commercialization,175
+KEN,Kenobi,classic,software,,Team,0
+KR,Kiosk Retail,classic,software,,Product Solution Project - Retail,297
+KWG,KnitWell Group,classic,software,,Customer Success Retail,471
+KWGCPY,KWGCPY,classic,software,,Customer Success Retail,233
+L2,L2,classic,software,,Team,0
+LAA,L1 AI Agent,classic,software,,Restaurant,0
+LEO,Leo,classic,software,,Team,0
+LIBRA,Libra,classic,software,,Team,0
+LPC,Label Printer Commercialization,classic,software,,Product Commercialization,150
+M60,M60 Commercialization Plan,classic,software,,Product Commercialization,176
+MAUI,Maui,classic,software,,Team,0
+MCP,Marketing Commercialization Plan,classic,software,,Product Commercialization,178
+MDM,MDM platform selection,classic,software,,,0
+MIRA,Mira,classic,software,,Team,1
+MP,MenuPad,classic,software,,Product Solution Project - Restaurant,2272
+MPOS,Retail MPOS Implementation Library,classic,software,,Customer Success Retail,173
+NEO,Neo,classic,software,,Restaurant,22
+NOVA,Tesla,classic,software,,Team,0
+OP,Ops Prime,classic,software,,Team,4
+OR,Orion,classic,software,,Team,error
+OS,Operations Solutions,classic,software,,Project Level,4794
+PAY,Payments,classic,software,,,174
+PCATALOG,Retail Associate Product Catalog Imp Library,classic,software,,Customer Success Retail,1
+PD,Product Design,classic,software,,,129
+PHOEN,Phoenix,classic,software,,Team,0
+PI,Partner Integrations,classic,software,,Product Solution Project - Restaurant,83
+PLAT,Platform,classic,software,,Project Level,507
+PLTFRM,Platform Restaurant,classic,software,,Product Solution Project - Restaurant,1694
+PLTRTL,Platform Retail,classic,software,,Product Solution Project - Retail,58
+POL,Polaris,classic,software,,Team,0
+POS,POS Retail,classic,software,,Product Solution Project - Retail,894
+PP,Platform Program,classic,software,,Product Program,82
+PR,POS Restaurant,classic,software,,Product Solution Project - Restaurant,846
+PS,Payments Strategy,classic,software,,Product Program,78
+PSTT,Pre-Deployment Testing for Segment Template Project,classic,software,,Test Projects,0
+PTES,Pre-Deployment Testing for Template Project,classic,software,,Test Projects,13
+RE,Restaurant Enablers,classic,software,,Project Level,377
+RES,Restaurant Program,classic,software,,Product Program,40
+REST,Restaurant,classic,software,,Restaurant,17318
+RL,Ralph Lauren,classic,software,,Customer Success Retail,3832
+RM,Release Management,classic,software,,,519
+RP,Retail Program,classic,software,,Product Program,59
+RPT,Retail Projects Template,classic,software,,,0
+RRS,Rack Room Shoes,classic,software,,Customer Success Retail,383
+SE,Taurus-Old,classic,software,,Product Solution Project - Restaurant,621
+SGNT,Signet,classic,software,,Customer Success Retail,606
+SIR,Sirius,classic,software,,Team,unknown
+SM,Spider-Man,classic,software,,Team,unknown
+SNUS,Snipes,classic,software,,Customer Success Retail,unknown
+SSP,Sample Scrum Project,classic,software,,,unknown
+ST,Segment Template ,classic,software,,Product Program,unknown
+TAL,KnitWell Group - Talbots,classic,software,,Customer Success Retail,unknown
+TALCPY,TALCPY,classic,software,,Customer Success Retail,unknown
+TAR,Test Architecture Review,classic,software,,Test Projects,unknown
+TAUR,Taurus,classic,software,,Team,unknown
+TCD,Test-Cake Deliverables,classic,software,,,unknown
+TCSD,Template Customer Success Delivery,classic,software,,Customer Success Retail,unknown
+TD,Template Restaurant Delivery,classic,software,,Team,unknown
+TEA,Test EA,classic,software,,Customer Success Retail,unknown
+TEM,Template,classic,software,,Product Solution Project - Restaurant,unknown
+TESTBO,Test BO,classic,software,,Product Solution Project - Restaurant,unknown
+TESTREST,Test Restaurant,classic,software,,Restaurant,unknown
+TFSR,Testing for Script runner,classic,software,,Customer Success Retail,unknown
+THOR,Thor,classic,software,,Team,unknown
+TMP,Test Menupad,classic,software,,Product Solution Project - Restaurant,unknown
+TOP,Tech Ops Program,classic,software,,Product Program,unknown
+TOS,Test Operations Solutions,classic,software,,Project Level,unknown
+TPR,TESTProductRetail,classic,software,,Product Solution Project - Retail,unknown
+TRD,Template Retail Delivery ,classic,software,,Product Solution Project - Retail,unknown
+TS,tes,classic,software,,Project Level,unknown
+TSC,Tractor Supply,classic,software,,Customer Success Retail,unknown
+TSCTEST,TSCTEST,classic,software,,Customer Success Retail,unknown
+TSR,Test SRE Restaurant,classic,service_desk,,,unknown
+TSTF,TestFA,classic,software,,,unknown
+TSTFNEW,TSTF New,classic,software,,,unknown
+TSTRSN,TESTROSEN,classic,software,,Restaurant,unknown
+TT, Team Template,classic,software,,,unknown
+TTD,Template Team Delivery,classic,software,,Team,unknown
+TUP,Test Unified Payments,classic,software,,,unknown
+UP,Unified Payments,classic,software,,,unknown
+UPK,Unified Payments Kanban,classic,software,,,unknown
+UR,Urban,classic,software,,Customer Success Retail,unknown
+VEGA,Vega,classic,software,,Team,unknown
+WEMA,West Marine,classic,software,,Customer Success Retail,unknown
+WIN,Wineries,classic,software,,Customer Success Retail,unknown
+WM,Winmark,classic,software,,Customer Success Retail,unknown
+WOL,Wolverine,classic,software,,Team,unknown
