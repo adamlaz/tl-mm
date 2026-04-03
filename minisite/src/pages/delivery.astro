@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import DataTable from '../components/DataTable.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
+import { getCollection } from 'astro:content';
+import { num, fmt } from '../lib/parse';
+
+const projects = await getCollection('jiraProjects');
+const velocity = await getCollection('jiraVelocity');
+const cycleTime = await getCollection('jiraCycleTime');
+
+const engProjects = projects.filter((p) => p.data.classification === 'engineering');
+const totalIssues = projects.reduce((s, p) => s + num(p.data.issue_count), 0);
+
+const avgCompletion = velocity.length > 0
+  ? velocity.reduce((s, v) => s + num(v.data.completion_rate), 0) / velocity.length
+  : 0;
+
+const resolvedCycleEntries = cycleTime.filter((c) => num(c.data.cycle_time_days) > 0);
+const medianCycle = (() => {
+  if (resolvedCycleEntries.length === 0) return 0;
+  const sorted = resolvedCycleEntries.map((c) => num(c.data.cycle_time_days)).sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 !== 0 ? sorted[mid]! : ((sorted[mid - 1]! + sorted[mid]!) / 2);
+})();
+
+const byClassification = new Map<string, { count: number; issues: number }>();
+for (const p of projects) {
+  const cls = p.data.classification || 'unclassified';
+  const prev = byClassification.get(cls) ?? { count: 0, issues: 0 };
+  byClassification.set(cls, { count: prev.count + 1, issues: prev.issues + num(p.data.issue_count) });
+}
+
+const classRows = [...byClassification.entries()]
+  .sort((a, b) => b[1].issues - a[1].issues)
+  .map(([cls, { count, issues }]) => ({
+    classification: cls,
+    projects: count,
+    issues: fmt(issues),
+  }));
+
+const velocityRows = velocity
+  .sort((a, b) => b.data.start_date.localeCompare(a.data.start_date))
+  .slice(0, 50)
+  .map((v) => ({
+    board: v.data.board,
+    sprint: v.data.sprint,
+    done: v.data.done_issues,
+    total: v.data.total_issues,
+    rate: `${num(v.data.completion_rate).toFixed(1)}%`,
+  }));
+
+const charts = [
+  { slug: 'jira_org_overview', title: 'Org Overview' },
+  { slug: 'jira_velocity_trend', title: 'Velocity Trend' },
+  { slug: 'jira_cycle_time', title: 'Cycle Time' },
+  { slug: 'jira_scope_change', title: 'Scope Change' },
+  { slug: 'jira_assignee_load', title: 'Assignee Load' },
+  { slug: 'jira_backlog_age', title: 'Backlog Age' },
+  { slug: 'jira_flow_distribution', title: 'Flow Distribution' },
+  { slug: 'jira_flow_distribution_engineering', title: 'Flow Distribution (Engineering)' },
+  { slug: 'jira_created_vs_resolved', title: 'Created vs Resolved' },
+  { slug: 'jira_issue_distribution', title: 'Issue Distribution' },
+  { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)' },
+  { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)' },
+];
+---
+
+<BaseLayout title="Delivery">
+  <SectionHeader
+    title="Delivery"
+    description="Jira execution health across 141 projects and 313 boards."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Jira Projects" value={projects.length.toString()} subtitle={`${engProjects.length} engineering`} />
+    <MetricCard label="Total Issues" value={fmt(totalIssues)} />
+    <MetricCard label="Avg Completion" value={`${avgCompletion.toFixed(1)}%`} subtitle="Sprint completion rate" />
+    <MetricCard label="Median Cycle Time" value={`${medianCycle.toFixed(1)}d`} subtitle="Days to resolve" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-slate-700 mb-3">Projects by Classification</h2>
+      <DataTable
+        columns={[
+          { key: 'classification', label: 'Classification' },
+          { key: 'projects', label: 'Projects', align: 'right' },
+          { key: 'issues', label: 'Issues', align: 'right' },
+        ]}
+        rows={classRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-slate-700 mb-3">Recent Sprints</h2>
+      <DataTable
+        columns={[
+          { key: 'board', label: 'Board' },
+          { key: 'sprint', label: 'Sprint' },
+          { key: 'done', label: 'Done', align: 'right' },
+          { key: 'total', label: 'Total', align: 'right' },
+          { key: 'rate', label: 'Rate', align: 'right' },
+        ]}
+        rows={velocityRows}
+        searchable
+        pageSize={25}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Charts</h2>
+  <div class="grid lg:grid-cols-2 gap-6">
+    {charts.map((c) => (
+      <ChartEmbed slug={c.slug} title={c.title} />
+    ))}
+  </div>
+</BaseLayout>

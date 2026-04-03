@@ -1,0 +1,109 @@
+---
+interface Props {
+  columns: { key: string; label: string; align?: 'left' | 'right' }[];
+  rows: Record<string, string | number>[];
+  searchable?: boolean;
+  pageSize?: number;
+}
+
+const { columns, rows, searchable = false, pageSize = 25 } = Astro.props;
+const tableId = `dt-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden" data-table={tableId}>
+  {searchable && (
+    <div class="px-4 py-3 border-b border-slate-100">
+      <input
+        type="text"
+        placeholder="Search..."
+        class="w-full sm:w-72 px-3 py-1.5 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent"
+        data-search={tableId}
+      />
+      <span class="ml-3 text-xs text-slate-400" data-count={tableId}>{rows.length} rows</span>
+    </div>
+  )}
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="border-b border-slate-100">
+          {columns.map((col) => (
+            <th
+              class:list={[
+                'px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400 whitespace-nowrap',
+                col.align === 'right' ? 'text-right' : 'text-left',
+              ]}
+            >
+              {col.label}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody data-body={tableId}>
+        {rows.map((row, i) => (
+          <tr
+            class:list={['border-b border-slate-50 hover:bg-slate-50/50 transition-colors', i >= pageSize && 'hidden']}
+            data-row={tableId}
+          >
+            {columns.map((col) => (
+              <td
+                class:list={[
+                  'px-4 py-2 text-slate-700 whitespace-nowrap',
+                  col.align === 'right' ? 'text-right font-mono tabular-nums' : '',
+                ]}
+              >
+                {row[col.key] ?? ''}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  {rows.length > pageSize && (
+    <div class="px-4 py-3 border-t border-slate-100 flex items-center justify-between">
+      <span class="text-xs text-slate-400" data-page-info={tableId}>
+        Showing 1-{Math.min(pageSize, rows.length)} of {rows.length}
+      </span>
+      <div class="flex gap-1">
+        <button data-prev={tableId} class="px-3 py-1 text-xs font-medium text-slate-500 border border-slate-200 rounded hover:bg-slate-50 disabled:opacity-40" disabled>Prev</button>
+        <button data-next={tableId} class="px-3 py-1 text-xs font-medium text-slate-500 border border-slate-200 rounded hover:bg-slate-50 disabled:opacity-40">Next</button>
+      </div>
+    </div>
+  )}
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-table]').forEach((container) => {
+    const id = container.dataset.table!;
+    const searchInput = container.querySelector<HTMLInputElement>(`[data-search="${id}"]`);
+    const rows = Array.from(container.querySelectorAll<HTMLElement>(`[data-row="${id}"]`));
+    const countEl = container.querySelector<HTMLElement>(`[data-count="${id}"]`);
+    const pageInfoEl = container.querySelector<HTMLElement>(`[data-page-info="${id}"]`);
+    const prevBtn = container.querySelector<HTMLButtonElement>(`[data-prev="${id}"]`);
+    const nextBtn = container.querySelector<HTMLButtonElement>(`[data-next="${id}"]`);
+    const pageSize = 25;
+    let page = 0;
+    let filtered = rows;
+
+    function render() {
+      const start = page * pageSize;
+      const end = start + pageSize;
+      rows.forEach((r) => r.classList.add('hidden'));
+      filtered.slice(start, end).forEach((r) => r.classList.remove('hidden'));
+      if (pageInfoEl) pageInfoEl.textContent = `Showing ${start + 1}-${Math.min(end, filtered.length)} of ${filtered.length}`;
+      if (prevBtn) prevBtn.disabled = page === 0;
+      if (nextBtn) nextBtn.disabled = end >= filtered.length;
+    }
+
+    searchInput?.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase();
+      filtered = q ? rows.filter((r) => r.textContent?.toLowerCase().includes(q)) : rows;
+      page = 0;
+      if (countEl) countEl.textContent = `${filtered.length} rows`;
+      render();
+    });
+
+    prevBtn?.addEventListener('click', () => { page--; render(); });
+    nextBtn?.addEventListener('click', () => { page++; render(); });
+  });
+</script>

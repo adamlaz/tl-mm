@@ -1,0 +1,80 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const links = [
+  { href: '/', label: 'Dashboard', icon: 'grid' },
+  { href: '/aws', label: 'AWS', icon: 'cloud' },
+  { href: '/engineering', label: 'Engineering', icon: 'code' },
+  { href: '/delivery', label: 'Delivery', icon: 'activity' },
+  { href: '/documentation', label: 'Documentation', icon: 'file-text' },
+  { href: '/people', label: 'People', icon: 'users' },
+  { href: '/tooling', label: 'Tooling', icon: 'tool' },
+  { href: '/charts', label: 'Charts', icon: 'bar-chart' },
+] as const;
+
+const iconPaths: Record<string, string> = {
+  users: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75',
+  grid: 'M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z',
+  cloud: 'M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z',
+  code: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
+  activity: 'M22 12h-4l-3 9L9 3l-3 9H2',
+  'file-text': 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8',
+  tool: 'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z',
+  'bar-chart': 'M12 20V10M18 20V4M6 20v-4',
+};
+---
+
+<nav class="hidden lg:flex flex-col w-56 border-r border-slate-200 bg-white min-h-screen pt-6 pb-8 px-3 flex-shrink-0">
+  <div class="px-3 mb-8">
+    <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400">Navigation</h2>
+  </div>
+  <ul class="space-y-1 flex-1">
+    {links.map(({ href, label, icon }) => {
+      const isActive = currentPath === href || (href !== '/' && currentPath.startsWith(href));
+      return (
+        <li>
+          <a
+            href={href}
+            class:list={[
+              'flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+              isActive
+                ? 'bg-brand-50 text-brand-700'
+                : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900',
+            ]}
+          >
+            <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d={iconPaths[icon]} />
+            </svg>
+            {label}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</nav>
+
+<div class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 z-50 px-2 py-1">
+  <div class="flex justify-around">
+    {links.map(({ href, label, icon }) => {
+      const isActive = currentPath === href || (href !== '/' && currentPath.startsWith(href));
+      return (
+        <a
+          href={href}
+          class:list={[
+            'flex flex-col items-center gap-0.5 px-2 py-1.5 text-[10px] font-medium rounded transition-colors',
+            isActive ? 'text-brand-600' : 'text-slate-400',
+          ]}
+        >
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d={iconPaths[icon]} />
+          </svg>
+          {label}
+        </a>
+      );
+    })}
+  </div>
+</div>

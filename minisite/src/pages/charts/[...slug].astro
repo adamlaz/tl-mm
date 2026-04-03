@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = () => {
+  const charts = [
+    { slug: 'aws_cost_by_account', title: 'Cost by Account', domain: 'AWS' },
+    { slug: 'aws_cost_by_service', title: 'Cost by Service', domain: 'AWS' },
+    { slug: 'aws_cost_trend', title: 'Cost Trend', domain: 'AWS' },
+    { slug: 'aws_resource_inventory', title: 'Resource Inventory', domain: 'AWS' },
+    { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes', domain: 'AWS' },
+    { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency', domain: 'Bitbucket' },
+    { slug: 'bitbucket_languages', title: 'Language Distribution', domain: 'Bitbucket' },
+    { slug: 'bitbucket_pipeline_coverage', title: 'Pipeline Coverage', domain: 'Bitbucket' },
+    { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time', domain: 'Bitbucket' },
+    { slug: 'bitbucket_repo_health', title: 'Repo Health', domain: 'Bitbucket' },
+    { slug: 'bb_deploy_tags', title: 'Deploy Tags', domain: 'Bitbucket' },
+    { slug: 'jira_org_overview', title: 'Org Overview', domain: 'Jira' },
+    { slug: 'jira_velocity_trend', title: 'Velocity Trend', domain: 'Jira' },
+    { slug: 'jira_cycle_time', title: 'Cycle Time', domain: 'Jira' },
+    { slug: 'jira_scope_change', title: 'Scope Change', domain: 'Jira' },
+    { slug: 'jira_assignee_load', title: 'Assignee Load', domain: 'Jira' },
+    { slug: 'jira_backlog_age', title: 'Backlog Age', domain: 'Jira' },
+    { slug: 'jira_flow_distribution', title: 'Flow Distribution', domain: 'Jira' },
+    { slug: 'jira_flow_distribution_engineering', title: 'Flow Distribution (Engineering)', domain: 'Jira' },
+    { slug: 'jira_created_vs_resolved', title: 'Created vs Resolved', domain: 'Jira' },
+    { slug: 'jira_issue_distribution', title: 'Issue Distribution', domain: 'Jira' },
+    { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)', domain: 'Jira' },
+    { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)', domain: 'Jira' },
+    { slug: 'confluence_creation_trend', title: 'Page Creation Trend', domain: 'Confluence' },
+    { slug: 'confluence_page_density', title: 'Page Density by Space', domain: 'Confluence' },
+  ];
+  return charts.map((chart) => ({
+    params: { slug: chart.slug },
+    props: chart,
+  }));
+};
+
+interface Props {
+  slug: string;
+  title: string;
+  domain: string;
+}
+
+const { title, domain, slug } = Astro.props;
+---
+
+<BaseLayout title={`${title} — ${domain}`}>
+  <div class="mb-4">
+    <div class="flex items-center gap-2 text-xs text-slate-400 mb-2">
+      <a href="/charts" class="hover:text-brand-600 transition-colors">Charts</a>
+      <span>/</span>
+      <span>{domain}</span>
+      <span>/</span>
+      <span class="text-slate-600">{title}</span>
+    </div>
+    <h1 class="text-xl font-bold text-slate-900">{title}</h1>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 overflow-hidden" style="height: calc(100vh - 220px);">
+    <iframe
+      src={`/chart-assets/${slug}.html`}
+      title={title}
+      class="w-full h-full border-0"
+    />
+  </div>
+</BaseLayout>

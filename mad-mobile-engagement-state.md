@@ -367,8 +367,9 @@ Four instruments ready. Target deployment: **Monday, April 7** (pending survey t
 - **V5 Confluence content extraction** — 14,111 pages indexed across 15 key spaces, 94 most relevant pages content-extracted to `inventory/confluence/content/` (April 3)
 - **V5 AI tooling analysis** — scanned 30 repos for AI config files (8 have Cursor/Claude/AGENTS.md), cataloged AI docs in Confluence, enumerated SageMaker/Bedrock usage in AWS (April 3)
 - **V5 Tooling catalog** — 28 tools identified across all platforms with cost status (see `inventory/tooling_catalog.json`)
+- **V6 cross-system user audit** — 168 unique users identified across Bitbucket/Jira/Confluence/AWS, per-user activity profiles, cross-system access mapping (April 3)
 - **Vendor spend request drafted** for Don (see `vendor-spend-request.md`)
-- **Quantitative analysis pipeline** — 12 CSV exports, 25+ interactive HTML charts in `analysis/charts/`
+- **Quantitative analysis pipeline** — 15 CSV exports, 29+ interactive HTML charts in `analysis/charts/`
 - **Ana coordination email drafted** — logistics and action items (see `ana-request.md`)
 
 ### In Progress 🔄
@@ -423,15 +424,27 @@ Four instruments ready. Target deployment: **Monday, April 7** (pending survey t
 | Cycle time P50 (engineering) | — | 59 days | Jira changelog |
 | Overloaded assignees (>50 open) | 4 people | — | Jira search |
 | Confluence spaces | 165 | — | Confluence API |
-| Largest Confluence space | Leapset Platform (6,445 pages) | — | Confluence API |
+| Confluence pages indexed | 14,111 across 15 spaces | — | Confluence API |
+| Confluence content extracted | 94 key pages (architecture, RCAs, deployment) | — | Confluence API |
+| Unique users across systems | 168 | — | Cross-system audit |
+| High activity users (90d) | 32 | — | Cross-system audit |
+| Inactive users with access | 65 (39%) | — | Cross-system audit |
+| Bitbucket-only users | 61 | — | Cross-system audit |
+| Users in both BB + Jira | 69 | — | Cross-system audit |
+| Tools identified | 28 | — | Multi-source catalog |
+| AI tooling adoption (repos) | 8/30 (27%) with Cursor/Claude/AGENTS.md | — | Bitbucket source API |
 
 ### Analysis Artifacts (in repo)
-- `inventory/` — Raw JSON inventory data (18 AWS, 4 BB, Jira, Confluence) with segmented Jira output
-- `analysis/*.csv` — 12 spreadsheet-ready CSV exports (including `jira_project_classification.csv`)
-- `analysis/charts/*.html` — 25 interactive plotly charts (open in browser), including segmented Jira views
+- `inventory/` — Raw JSON inventory data (18 AWS, 4 BB, Jira, Confluence, users) with segmented Jira output
+- `inventory/users/` — Cross-system user audit (168 users with per-user activity profiles)
+- `inventory/confluence/content/` — 94 extracted Confluence pages (architecture, RCAs, deployment docs)
+- `inventory/tooling_catalog.json` — 28 identified tools with vendor, category, cost status
+- `analysis/*.csv` — 15 spreadsheet-ready CSV exports
+- `analysis/charts/*.html` — 29 interactive plotly charts
 - `interview-prep-with-data.md` — Per-interviewee data-backed questions organized by interview day
-- `ana-request.md` — Ready-to-send email for Ana
-- `scripts/` — Reusable inventory and analysis scripts with `jira_config.py` project classification
+- `vendor-spend-request.md` — Ready for Don: SaaS/tooling spend request
+- `ana-request.md` — Ready-to-send coordination email for Ana
+- `scripts/` — Reusable inventory and analysis scripts
 
 ---
 

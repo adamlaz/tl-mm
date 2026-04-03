@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import DataTable from '../components/DataTable.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
+import { getCollection } from 'astro:content';
+import { num, fmt } from '../lib/parse';
+
+const repos = await getCollection('bitbucketRepos');
+const prs = await getCollection('bitbucketPRs');
+const commits = await getCollection('bitbucketCommits');
+
+const activeRepos = repos.filter((r) => r.data.is_active === 'True');
+const byWorkspace = new Map<string, number>();
+const byLanguage = new Map<string, number>();
+for (const r of repos) {
+  byWorkspace.set(r.data.workspace, (byWorkspace.get(r.data.workspace) ?? 0) + 1);
+  if (r.data.language && r.data.language !== 'unknown') {
+    byLanguage.set(r.data.language, (byLanguage.get(r.data.language) ?? 0) + 1);
+  }
+}
+
+const validPRs = prs.filter((p) => num(p.data.cycle_hours) > 0);
+const avgCycleHours = validPRs.length > 0
+  ? validPRs.reduce((s, p) => s + num(p.data.cycle_hours), 0) / validPRs.length
+  : 0;
+
+const totalCommits = commits.reduce((s, c) => s + num(c.data.commits), 0);
+
+const wsRows = [...byWorkspace.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([ws, count]) => ({ workspace: ws, repos: count }));
+
+const langRows = [...byLanguage.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 15)
+  .map(([lang, count]) => ({ language: lang, repos: count }));
+
+const repoTableRows = activeRepos
+  .sort((a, b) => b.data.updated_on.localeCompare(a.data.updated_on))
+  .slice(0, 200)
+  .map((r) => ({
+    name: r.data.name,
+    workspace: r.data.workspace,
+    language: r.data.language,
+    project: r.data.project,
+    updated: r.data.updated_on.slice(0, 10),
+  }));
+
+const charts = [
+  { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency' },
+  { slug: 'bitbucket_languages', title: 'Language Distribution' },
+  { slug: 'bitbucket_pipeline_coverage', title: 'Pipeline Coverage' },
+  { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time' },
+  { slug: 'bitbucket_repo_health', title: 'Repo Health' },
+  { slug: 'bb_deploy_tags', title: 'Deploy Tags' },
+];
+---
+
+<BaseLayout title="Engineering">
+  <SectionHeader
+    title="Engineering"
+    description="Bitbucket source control across 4 workspaces: madmobile, syscolabs, madpayments, syscolabsconf."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Total Repos" value={fmt(repos.length)} subtitle={`${activeRepos.length} active`} />
+    <MetricCard label="PRs (30d)" value={prs.length.toString()} />
+    <MetricCard label="Avg PR Cycle" value={`${avgCycleHours.toFixed(1)}h`} subtitle="Hours to merge" />
+    <MetricCard label="Commits (recent)" value={fmt(totalCommits)} />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-slate-700 mb-3">Repos by Workspace</h2>
+      <DataTable
+        columns={[
+          { key: 'workspace', label: 'Workspace' },
+          { key: 'repos', label: 'Repos', align: 'right' },
+        ]}
+        rows={wsRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-slate-700 mb-3">Top Languages</h2>
+      <DataTable
+        columns={[
+          { key: 'language', label: 'Language' },
+          { key: 'repos', label: 'Repos', align: 'right' },
+        ]}
+        rows={langRows}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-sm font-semibold text-slate-700 mb-3">Active Repositories</h2>
+  <div class="mb-8">
+    <DataTable
+      columns={[
+        { key: 'name', label: 'Name' },
+        { key: 'workspace', label: 'Workspace' },
+        { key: 'language', label: 'Language' },
+        { key: 'project', label: 'Project' },
+        { key: 'updated', label: 'Updated' },
+      ]}
+      rows={repoTableRows}
+      searchable
+      pageSize={25}
+    />
+  </div>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Charts</h2>
+  <div class="grid lg:grid-cols-2 gap-6">
+    {charts.map((c) => (
+      <ChartEmbed slug={c.slug} title={c.title} />
+    ))}
+  </div>
+</BaseLayout>

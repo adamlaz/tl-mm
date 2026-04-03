@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import DataTable from '../components/DataTable.astro';
+import { getCollection } from 'astro:content';
+import { num, fmt } from '../lib/parse';
+
+const users = await getCollection('userAudit');
+
+const byActivity = new Map<string, number>();
+const byRole = new Map<string, number>();
+for (const u of users) {
+  const level = u.data.activity_level || 'unknown';
+  byActivity.set(level, (byActivity.get(level) ?? 0) + 1);
+  const role = u.data.jira_role || 'unknown';
+  byRole.set(role, (byRole.get(role) ?? 0) + 1);
+}
+
+const highActivity = byActivity.get('high') ?? 0;
+const medActivity = byActivity.get('medium') ?? 0;
+const lowActivity = byActivity.get('low') ?? 0;
+const inactiveCount = byActivity.get('inactive') ?? 0;
+
+const multiSystem = users.filter((u) => num(u.data.systems_active_90d) >= 2).length;
+
+const activityRows = [...byActivity.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([level, count]) => ({ level, count, pct: `${((count / users.length) * 100).toFixed(1)}%` }));
+
+const roleRows = [...byRole.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([role, count]) => ({ role, count }));
+
+const userTableRows = users
+  .sort((a, b) => num(b.data.total_activity_90d) - num(a.data.total_activity_90d))
+  .map((u) => ({
+    name: u.data.display_name,
+    activity: u.data.activity_level,
+    systems: u.data.systems_active_90d,
+    total: u.data.total_activity_90d,
+    prs: u.data.bb_prs_authored,
+    'jira created': u.data.jira_issues_created_90d,
+    'jira resolved': u.data.jira_issues_resolved_90d,
+    role: u.data.jira_role,
+    'conf pages': u.data.confluence_pages_90d,
+  }));
+---
+
+<BaseLayout title="People">
+  <SectionHeader
+    title="People"
+    description="Cross-system user activity audit — Bitbucket, Jira, Confluence, and AWS IAM (90-day window)."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+    <MetricCard label="Total Users" value={users.length.toString()} />
+    <MetricCard label="High Activity" value={highActivity.toString()} subtitle="Active across systems" />
+    <MetricCard label="Medium" value={medActivity.toString()} />
+    <MetricCard label="Low / Inactive" value={(lowActivity + inactiveCount).toString()} subtitle={`${inactiveCount} fully inactive`} />
+    <MetricCard label="Multi-System" value={multiSystem.toString()} subtitle="2+ systems in 90d" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-slate-700 mb-3">Activity Distribution</h2>
+      <DataTable
+        columns={[
+          { key: 'level', label: 'Activity Level' },
+          { key: 'count', label: 'Users', align: 'right' },
+          { key: 'pct', label: '% Total', align: 'right' },
+        ]}
+        rows={activityRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-slate-700 mb-3">Users by Role</h2>
+      <DataTable
+        columns={[
+          { key: 'role', label: 'Role' },
+          { key: 'count', label: 'Users', align: 'right' },
+        ]}
+        rows={roleRows}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-sm font-semibold text-slate-700 mb-3">All Users</h2>
+  <DataTable
+    columns={[
+      { key: 'name', label: 'Name' },
+      { key: 'activity', label: 'Activity' },
+      { key: 'systems', label: 'Systems', align: 'right' },
+      { key: 'total', label: 'Total (90d)', align: 'right' },
+      { key: 'prs', label: 'PRs', align: 'right' },
+      { key: 'jira created', label: 'Jira Created', align: 'right' },
+      { key: 'jira resolved', label: 'Jira Resolved', align: 'right' },
+      { key: 'role', label: 'Role' },
+      { key: 'conf pages', label: 'Conf (90d)', align: 'right' },
+    ]}
+    rows={userTableRows}
+    searchable
+    pageSize={25}
+  />
+</BaseLayout>

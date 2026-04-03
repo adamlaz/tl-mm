@@ -1,0 +1,131 @@
+{
+  "total_unique_users": 168,
+  "activity_breakdown": {
+    "high": 32,
+    "medium": 39,
+    "low": 32,
+    "inactive": 65
+  },
+  "systems_coverage": {
+    "bb_only": 61,
+    "jira_only": 38,
+    "both": 69
+  },
+  "top_20_contributors": [
+    {
+      "name": "Richard Farber",
+      "activity": 348
+    },
+    {
+      "name": "Roopa Kaukuri",
+      "activity": 340
+    },
+    {
+      "name": "Mark Guilarte",
+      "activity": 306
+    },
+    {
+      "name": "Thaddeus Fox",
+      "activity": 297
+    },
+    {
+      "name": "Mirunaaliny Somasunthara Iyer",
+      "activity": 265
+    },
+    {
+      "name": "Ernst Fantaisy",
+      "activity": 153
+    },
+    {
+      "name": "Shiyanka Dezylva",
+      "activity": 127
+    },
+    {
+      "name": "Vanessa Sotomayor",
+      "activity": 123
+    },
+    {
+      "name": "James Oliver",
+      "activity": 119
+    },
+    {
+      "name": "Sowjanya Akula",
+      "activity": 112
+    },
+    {
+      "name": "Qaiser Pannu",
+      "activity": 101
+    },
+    {
+      "name": "Shavin Pieris",
+      "activity": 98
+    },
+    {
+      "name": "Nishen Peiris",
+      "activity": 96
+    },
+    {
+      "name": "Matias Lopez Riglos",
+      "activity": 90
+    },
+    {
+      "name": "Benjamin Roedell",
+      "activity": 90
+    },
+    {
+      "name": "Wenushka Dikowita",
+      "activity": 90
+    },
+    {
+      "name": "Ana Chambers",
+      "activity": 87
+    },
+    {
+      "name": "Debbie Keye",
+      "activity": 80
+    },
+    {
+      "name": "Raveen Panditha",
+      "activity": 76
+    },
+    {
+      "name": "Dulanjan Wengappuliarachchi",
+      "activity": 72
+    }
+  ],
+  "inactive_with_access": [
+    "AIR",
+    "Adam Mead",
+    "Carlos Latugaye",
+    "Admin Build",
+    "Jenkins",
+    "Core Services BA",
+    "weblate",
+    "Bamboobuild",
+    "ops",
+    "Ryan Crawford",
+    "Juan Manuel Rodriguez",
+    "Sumeet Chawla",
+    "Zohra Bhayani",
+    "Rosen Georgiev",
+    "Adam Hartman",
+    "Alex Domingues da Silva",
+    "chathura.ratnayake",
+    "Daniel Lomsak",
+    "Camilo Souza",
+    "Cake Cloud Admin",
+    "Fernando Zelaya",
+    "Sumnima Shah",
+    "Chathura Lalinda Ranasingha",
+    "Kien Pham",
+    "anil.rathore",
+    "Hema Saini",
+    "Pankaj Goyal",
+    "jason.bitman",
+    "Amol Wairagade",
+    "Jyoti Lokare"
+  ],
+  "multi_system_active": 52,
+  "aws_service_accounts": 52,
+  "aws_human_accounts": 10
+}

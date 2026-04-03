@@ -1,0 +1,4774 @@
+{
+  "Randy Brown": {
+    "display_name": "Randy Brown",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "workspace_count": 4,
+      "prs_authored_90d": 4,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "activity_level": "low"
+  },
+  "AIR": {
+    "display_name": "AIR",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Adam Mead": {
+    "display_name": "Adam Mead",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Mike Nunez": {
+    "display_name": "Mike Nunez",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 17,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "557058:953dfbf4-0efb-43eb-9bdf-f29bb8d62d06",
+      "projects": [
+        "CLOUD"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 35,
+      "issues_resolved_90d": 16,
+      "open_assigned": 19,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 15,
+      "pages_90d": 1,
+      "spaces": [
+        "AIMM",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 69,
+    "activity_level": "high"
+  },
+  "Matthew Crumley": {
+    "display_name": "Matthew Crumley",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "workspace_count": 4,
+      "prs_authored_90d": 33,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "projects": [
+        "OS",
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 10,
+      "open_assigned": 19,
+      "bugs_created_90d": 1,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 63,
+      "pages_90d": 18,
+      "spaces": [
+        "CCE",
+        "ES",
+        "MMA",
+        "P",
+        "PROD",
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 67,
+    "activity_level": "high"
+  },
+  "Facundo": {
+    "display_name": "Facundo",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 1,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "activity_level": "low"
+  },
+  "Carlos Latugaye": {
+    "display_name": "Carlos Latugaye",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Admin Build": {
+    "display_name": "Admin Build",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Jenkins": {
+    "display_name": "Jenkins",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [
+      {
+        "username": "jenkins",
+        "profile": "mm-mm-archive",
+        "created": "2019-07-28T21:47:04+00:00",
+        "is_service_account": false
+      }
+    ],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "John Harre": {
+    "display_name": "John Harre",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 27,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 27,
+    "activity_level": "medium"
+  },
+  "Qaiser Pannu": {
+    "display_name": "Qaiser Pannu",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 49,
+      "issues_resolved_90d": 35,
+      "open_assigned": 51,
+      "bugs_created_90d": 10,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 70,
+      "pages_90d": 17,
+      "spaces": [
+        "LP",
+        "MMA",
+        "PROD",
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 101,
+    "activity_level": "high"
+  },
+  "Core Services BA": {
+    "display_name": "Core Services BA",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "James Oliver": {
+    "display_name": "James Oliver",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 9,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "projects": [
+        "CM"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 34,
+      "issues_resolved_90d": 76,
+      "open_assigned": 26,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 11,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 119,
+    "activity_level": "high"
+  },
+  "Jack Kennedy": {
+    "display_name": "Jack Kennedy",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 2,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 2,
+    "activity_level": "low"
+  },
+  "weblate": {
+    "display_name": "weblate",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Harrison Minchew": {
+    "display_name": "Harrison Minchew",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "workspace_count": 4,
+      "prs_authored_90d": 28,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 10,
+      "open_assigned": 38,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 64,
+      "pages_90d": 1,
+      "spaces": [
+        "ES",
+        "LP",
+        "MMA",
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 41,
+    "activity_level": "medium"
+  },
+  "Bamboobuild": {
+    "display_name": "Bamboobuild",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Nishen Peiris": {
+    "display_name": "Nishen Peiris",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 19,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5b4874c3b84bc45fea95fa45",
+      "projects": [
+        "CM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 26,
+      "open_assigned": 39,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 174,
+      "pages_90d": 24,
+      "spaces": [
+        "CR",
+        "DEP",
+        "ES",
+        "LP",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 96,
+    "activity_level": "high"
+  },
+  "Thiwanka Wimalasuriya": {
+    "display_name": "Thiwanka Wimalasuriya",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 5,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5b51754727c98e2ce515913c",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 12,
+      "issues_resolved_90d": 5,
+      "open_assigned": 61,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 241,
+      "pages_90d": 7,
+      "spaces": [
+        "DB",
+        "DEP",
+        "ES",
+        "LP",
+        "SWAT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 29,
+    "activity_level": "medium"
+  },
+  "Anthony Goad": {
+    "display_name": "Anthony Goad",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5c34e4c5ff324728a1da55e7",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 23,
+      "issues_resolved_90d": 0,
+      "open_assigned": 4,
+      "bugs_created_90d": 23,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 23,
+    "activity_level": "medium"
+  },
+  "Richard Meitzler": {
+    "display_name": "Richard Meitzler",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 8,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5d4c5ac269c71b0d4336e754",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 7,
+      "open_assigned": 16,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 1,
+      "spaces": [
+        "MMA",
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 20,
+    "activity_level": "medium"
+  },
+  "ops": {
+    "display_name": "ops",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "madpayments"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Ryan Crawford": {
+    "display_name": "Ryan Crawford",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5e459754bbb5110c9a66e921",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 34,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Vanessa Sotomayor": {
+    "display_name": "Vanessa Sotomayor",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5dc2c122ffc8c10df0edb418",
+      "projects": [
+        "CM",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 72,
+      "issues_resolved_90d": 28,
+      "open_assigned": 26,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 87,
+      "pages_90d": 23,
+      "spaces": [
+        "P",
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 123,
+    "activity_level": "high"
+  },
+  "Juan Manuel Rodriguez": {
+    "display_name": "Juan Manuel Rodriguez",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Mauro Villaseco": {
+    "display_name": "Mauro Villaseco",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5fb2788cd670b8006e5928f3",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 11,
+      "issues_resolved_90d": 6,
+      "open_assigned": 30,
+      "bugs_created_90d": 4,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 10,
+      "pages_90d": 7,
+      "spaces": [
+        "ES",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 24,
+    "activity_level": "medium"
+  },
+  "Matias Lopez Riglos": {
+    "display_name": "Matias Lopez Riglos",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "workspace_count": 4,
+      "prs_authored_90d": 15,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "557058:0ab36cae-cce5-4c8d-91a1-ac29e576b2ec",
+      "projects": [
+        "CLD",
+        "CM"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 31,
+      "issues_resolved_90d": 44,
+      "open_assigned": 173,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "DB",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 90,
+    "activity_level": "high"
+  },
+  "Sumeet Chawla": {
+    "display_name": "Sumeet Chawla",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Gayan Karunarathna": {
+    "display_name": "Gayan Karunarathna",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 13,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "60b5d55d367bda00715daaa2",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 16,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 43,
+      "pages_90d": 15,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 49,
+    "activity_level": "medium"
+  },
+  "Zohra Bhayani": {
+    "display_name": "Zohra Bhayani",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Chip O'Connell": {
+    "display_name": "Chip O'Connell",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5f89b023bd30210069fe0b7f",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 60,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 3,
+    "activity_level": "low"
+  },
+  "Ana Chambers": {
+    "display_name": "Ana Chambers",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "60e6f8e70dd4f60076b2f3a5",
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 56,
+      "issues_resolved_90d": 31,
+      "open_assigned": 186,
+      "bugs_created_90d": 1,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 121,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 87,
+    "activity_level": "high"
+  },
+  "Trenton Kress": {
+    "display_name": "Trenton Kress",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 8,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "6155b3fb07ac3c0068cdefb9",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 8,
+      "issues_resolved_90d": 4,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "MMA",
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 20,
+    "activity_level": "medium"
+  },
+  "Kyle Budd": {
+    "display_name": "Kyle Budd",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 37,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "6155d39d289a54006ad552ce",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 8,
+      "open_assigned": 27,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 28,
+      "pages_90d": 7,
+      "spaces": [
+        "ES",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 56,
+    "activity_level": "high"
+  },
+  "Matthew Griffin": {
+    "display_name": "Matthew Griffin",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "workspace_count": 4,
+      "prs_authored_90d": 11,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "6155b3fb198b4f00682edde9",
+      "projects": [
+        "CLD",
+        "CLOUD",
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 9,
+      "issues_resolved_90d": 41,
+      "open_assigned": 53,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 4,
+      "pages_90d": 3,
+      "spaces": [
+        "CCE",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 64,
+    "activity_level": "high"
+  },
+  "Wing Hung Peter Wu": {
+    "display_name": "Wing Hung Peter Wu",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "615758f77a6be40071c6e53e",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 15,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 20,
+    "activity_level": "medium"
+  },
+  "Matt Cooke": {
+    "display_name": "Matt Cooke",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 16,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 16,
+    "activity_level": "medium"
+  },
+  "Darren Blackwell": {
+    "display_name": "Darren Blackwell",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "618bd920785cb2006a044679",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 28,
+      "issues_resolved_90d": 1,
+      "open_assigned": 26,
+      "bugs_created_90d": 28,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 3,
+      "pages_90d": 3,
+      "spaces": [
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 32,
+    "activity_level": "medium"
+  },
+  "Orlando Jimenez": {
+    "display_name": "Orlando Jimenez",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 15,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "619d0149977c5b0072ab8936",
+      "projects": [
+        "CLOUD"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 9,
+      "open_assigned": 20,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 27,
+    "activity_level": "medium"
+  },
+  "Rosen Georgiev": {
+    "display_name": "Rosen Georgiev",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Mirunaaliny Somasunthara Iyer": {
+    "display_name": "Mirunaaliny Somasunthara Iyer",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5ba0dea046a75c66f1183c4f",
+      "projects": [
+        "BO",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 100,
+      "issues_resolved_90d": 155,
+      "open_assigned": 103,
+      "bugs_created_90d": 10,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 232,
+      "pages_90d": 10,
+      "spaces": [
+        "CR",
+        "DB",
+        "ES",
+        "LP",
+        "P",
+        "PROD",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 265,
+    "activity_level": "high"
+  },
+  "Adam Hartman": {
+    "display_name": "Adam Hartman",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Kevin Reyes": {
+    "display_name": "Kevin Reyes",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "6231defd1dcf800070e95c38",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 11,
+      "open_assigned": 32,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 13,
+      "pages_90d": 4,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 18,
+    "activity_level": "medium"
+  },
+  "Ashen": {
+    "display_name": "Ashen",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "624190af2e101c006a8c5e3d",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 9,
+      "issues_resolved_90d": 20,
+      "open_assigned": 24,
+      "bugs_created_90d": 3,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 47,
+      "pages_90d": 6,
+      "spaces": [
+        "CA",
+        "ES",
+        "LP",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 35,
+    "activity_level": "medium"
+  },
+  "Alex Domingues da Silva": {
+    "display_name": "Alex Domingues da Silva",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Ryan Mercado": {
+    "display_name": "Ryan Mercado",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 45,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "626a9847bae0c1006fad5969",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 3,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 10,
+      "pages_90d": 1,
+      "spaces": [
+        "CA",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 51,
+    "activity_level": "high"
+  },
+  "Hashan Maduwantha": {
+    "display_name": "Hashan Maduwantha",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 3,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 3,
+    "activity_level": "low"
+  },
+  "Chalaka Sudusinghe": {
+    "display_name": "Chalaka Sudusinghe",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 3,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 3,
+    "activity_level": "low"
+  },
+  "Holly Culver": {
+    "display_name": "Holly Culver",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 17,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "629775af9bc7150068ce2bca",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 2,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 19,
+    "activity_level": "medium"
+  },
+  "Kaelon Lucas": {
+    "display_name": "Kaelon Lucas",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "62c83119efb17d6ce630234e",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 23,
+      "issues_resolved_90d": 23,
+      "open_assigned": 40,
+      "bugs_created_90d": 22,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 46,
+    "activity_level": "medium"
+  },
+  "chathura.ratnayake": {
+    "display_name": "chathura.ratnayake",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Daniel Lomsak": {
+    "display_name": "Daniel Lomsak",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Camilo Souza": {
+    "display_name": "Camilo Souza",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Cake Cloud Admin": {
+    "display_name": "Cake Cloud Admin",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Bill Fenley": {
+    "display_name": "Bill Fenley",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 4,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "634042bb14c6b4b22110a197",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 18,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 7,
+      "pages_90d": 0,
+      "spaces": [
+        "AIMM",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 5,
+    "activity_level": "low"
+  },
+  "Jeremy Diggins": {
+    "display_name": "Jeremy Diggins",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "madpayments"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 1,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "activity_level": "low"
+  },
+  "Fernando Zelaya": {
+    "display_name": "Fernando Zelaya",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Anderson Lavor": {
+    "display_name": "Anderson Lavor",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "workspace_count": 4,
+      "prs_authored_90d": 28,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "6387819a489de2f7f46657a1",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 10,
+      "open_assigned": 32,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "ES",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 40,
+    "activity_level": "medium"
+  },
+  "Patrycja Stevenson": {
+    "display_name": "Patrycja Stevenson",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "6387b52b213a315af349ec2f",
+      "projects": [
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 32,
+      "issues_resolved_90d": 9,
+      "open_assigned": 5,
+      "bugs_created_90d": 21,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 12,
+      "pages_90d": 3,
+      "spaces": [
+        "P",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 44,
+    "activity_level": "medium"
+  },
+  "Dulana Dharmaratne": {
+    "display_name": "Dulana Dharmaratne",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "62da52247654479e0609b5c4",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 13,
+      "issues_resolved_90d": 0,
+      "open_assigned": 23,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 13,
+    "activity_level": "medium"
+  },
+  "Das DeSilva": {
+    "display_name": "Das DeSilva",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "63289d8e3ac41ebde76838ad",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 14,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "activity_level": "low"
+  },
+  "Dilruwan Madubashitha": {
+    "display_name": "Dilruwan Madubashitha",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "62e8a5cda41ecbd0ba1755fc",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 32,
+      "issues_resolved_90d": 29,
+      "open_assigned": 47,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "DB",
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 61,
+    "activity_level": "high"
+  },
+  "Pramodi Fernando": {
+    "display_name": "Pramodi Fernando",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "63f5a9973ec8aa51d3d27521",
+      "projects": [
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 8,
+      "issues_resolved_90d": 3,
+      "open_assigned": 20,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 11,
+    "activity_level": "medium"
+  },
+  "Zubair Syed": {
+    "display_name": "Zubair Syed",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "63f90f4bce6f37e5ed951f7a",
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 1,
+      "open_assigned": 25,
+      "bugs_created_90d": 1,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 14,
+      "pages_90d": 0,
+      "spaces": [
+        "MMA",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 7,
+    "activity_level": "low"
+  },
+  "Sowjanya Akula": {
+    "display_name": "Sowjanya Akula",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "62e3e8abbc2c449f3d94c970",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 66,
+      "issues_resolved_90d": 45,
+      "open_assigned": 14,
+      "bugs_created_90d": 65,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 7,
+      "pages_90d": 1,
+      "spaces": [
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 112,
+    "activity_level": "high"
+  },
+  "Benjamin Roedell": {
+    "display_name": "Benjamin Roedell",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 36,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "projects": [
+        "CM",
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 16,
+      "issues_resolved_90d": 27,
+      "open_assigned": 38,
+      "bugs_created_90d": 3,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 72,
+      "pages_90d": 11,
+      "spaces": [
+        "DB",
+        "ES",
+        "MMA",
+        "PROD",
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 90,
+    "activity_level": "high"
+  },
+  "Roopa Kaukuri": {
+    "display_name": "Roopa Kaukuri",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "62618666f698310070a93d23",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 287,
+      "issues_resolved_90d": 53,
+      "open_assigned": 136,
+      "bugs_created_90d": 7,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 340,
+    "activity_level": "high"
+  },
+  "Mark Freid": {
+    "display_name": "Mark Freid",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5fa559a89494af006eef50e5",
+      "projects": [
+        "CM"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 16,
+      "pages_90d": 16,
+      "spaces": [
+        "CCE"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 19,
+    "activity_level": "medium"
+  },
+  "Debbie Keye": {
+    "display_name": "Debbie Keye",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:00bf153b-544a-4ef1-a5f9-9d0afba9a758",
+      "projects": [
+        "CM",
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 53,
+      "issues_resolved_90d": 26,
+      "open_assigned": 4,
+      "bugs_created_90d": 1,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 1,
+      "spaces": [
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 80,
+    "activity_level": "high"
+  },
+  "Alexander Baine": {
+    "display_name": "Alexander Baine",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 12,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 12,
+      "open_assigned": 21,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 28,
+    "activity_level": "medium"
+  },
+  "Poorna Manujaya Amarasingha": {
+    "display_name": "Poorna Manujaya Amarasingha",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 19,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 19,
+    "activity_level": "medium"
+  },
+  "Sumnima Shah": {
+    "display_name": "Sumnima Shah",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Raveen Panditha": {
+    "display_name": "Raveen Panditha",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 39,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 16,
+      "issues_resolved_90d": 12,
+      "open_assigned": 26,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 12,
+      "pages_90d": 9,
+      "spaces": [
+        "DB",
+        "LP",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 76,
+    "activity_level": "high"
+  },
+  "Hashan Prabodhaka Jalath": {
+    "display_name": "Hashan Prabodhaka Jalath",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 2,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 2,
+    "activity_level": "low"
+  },
+  "Nishani Peiris": {
+    "display_name": "Nishani Peiris",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+      "projects": [
+        "CLD",
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 5,
+      "open_assigned": 40,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 11,
+    "activity_level": "medium"
+  },
+  "Rusiru Perera": {
+    "display_name": "Rusiru Perera",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabsconf"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 11,
+      "issues_resolved_90d": 0,
+      "open_assigned": 15,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 1,
+      "pages_90d": 1,
+      "spaces": [
+        "DB"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 12,
+    "activity_level": "medium"
+  },
+  "Suneth De Soyza": {
+    "display_name": "Suneth De Soyza",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 3,
+      "open_assigned": 33,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 30,
+      "pages_90d": 0,
+      "spaces": [
+        "MMA",
+        "PROD",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "activity_level": "low"
+  },
+  "Richard Farber": {
+    "display_name": "Richard Farber",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 247,
+      "issues_resolved_90d": 100,
+      "open_assigned": 36,
+      "bugs_created_90d": 26,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 4,
+      "pages_90d": 1,
+      "spaces": [
+        "PROD",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 348,
+    "activity_level": "high"
+  },
+  "Chathura Lalinda Ranasingha": {
+    "display_name": "Chathura Lalinda Ranasingha",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Brew Lamb": {
+    "display_name": "Brew Lamb",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 57,
+      "issues_resolved_90d": 2,
+      "open_assigned": 3,
+      "bugs_created_90d": 39,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 1,
+      "pages_90d": 1,
+      "spaces": [
+        "CR"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 60,
+    "activity_level": "high"
+  },
+  "Danika Munasinghe": {
+    "display_name": "Danika Munasinghe",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:6d276070-95b6-4af3-8d2a-1b7d34219c49",
+      "projects": [
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 28,
+      "open_assigned": 22,
+      "bugs_created_90d": 15,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 66,
+      "pages_90d": 13,
+      "spaces": [
+        "CCE",
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 68,
+    "activity_level": "high"
+  },
+  "Ian Bennett": {
+    "display_name": "Ian Bennett",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:27dd3052-a01a-4c70-96f1-eb76f8984d02",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "AI"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "activity_level": "low"
+  },
+  "Wenushka Dikowita": {
+    "display_name": "Wenushka Dikowita",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 66,
+      "issues_resolved_90d": 20,
+      "open_assigned": 43,
+      "bugs_created_90d": 3,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 17,
+      "pages_90d": 4,
+      "spaces": [
+        "ES",
+        "LP",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 90,
+    "activity_level": "high"
+  },
+  "Inushi Gunathilake": {
+    "display_name": "Inushi Gunathilake",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 17,
+      "issues_resolved_90d": 3,
+      "open_assigned": 11,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 20,
+    "activity_level": "medium"
+  },
+  "Sanduni Dissanayaka": {
+    "display_name": "Sanduni Dissanayaka",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 17,
+      "issues_resolved_90d": 2,
+      "open_assigned": 14,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 19,
+    "activity_level": "medium"
+  },
+  "Susampath Madarasinghe": {
+    "display_name": "Susampath Madarasinghe",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 9,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:1207530a-94a2-45eb-8535-9756a34fc9b5",
+      "projects": [
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 29,
+      "issues_resolved_90d": 0,
+      "open_assigned": 36,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 45,
+      "pages_90d": 14,
+      "spaces": [
+        "MMA",
+        "P",
+        "PROD",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 52,
+    "activity_level": "high"
+  },
+  "Kien Pham": {
+    "display_name": "Kien Pham",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "paul.roberts": {
+    "display_name": "paul.roberts",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "madpayments"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 34,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 11,
+      "open_assigned": 14,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 6,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 45,
+    "activity_level": "medium"
+  },
+  "Sriharshith Akula": {
+    "display_name": "Sriharshith Akula",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 1,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 25,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 2,
+    "activity_level": "low"
+  },
+  "anil.rathore": {
+    "display_name": "anil.rathore",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Cory Renard": {
+    "display_name": "Cory Renard",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 53,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 8,
+      "open_assigned": 25,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "ES",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 62,
+    "activity_level": "high"
+  },
+  "Austin.Spreadbury": {
+    "display_name": "Austin.Spreadbury",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 2,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 7,
+    "activity_level": "low"
+  },
+  "Malinda Lamahewa": {
+    "display_name": "Malinda Lamahewa",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:a5b6c6ae-8d0b-46c1-b982-b4bf7b4c538f",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 10,
+      "issues_resolved_90d": 4,
+      "open_assigned": 151,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 14,
+    "activity_level": "medium"
+  },
+  "Hema Saini": {
+    "display_name": "Hema Saini",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Pankaj Goyal": {
+    "display_name": "Pankaj Goyal",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "jason.bitman": {
+    "display_name": "jason.bitman",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Amol Wairagade": {
+    "display_name": "Amol Wairagade",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Jyoti Lokare": {
+    "display_name": "Jyoti Lokare",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Reji Sivaraman": {
+    "display_name": "Reji Sivaraman",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Rob Quin": {
+    "display_name": "Rob Quin",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 4,
+      "open_assigned": 19,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 1,
+      "pages_90d": 1,
+      "spaces": [
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 7,
+    "activity_level": "low"
+  },
+  "Beau Bruderer": {
+    "display_name": "Beau Bruderer",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 12,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:2b95db1e-2a61-41f4-a556-8e00c91e7652",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 6,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 20,
+    "activity_level": "medium"
+  },
+  "Chris Gomersall": {
+    "display_name": "Chris Gomersall",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Karen Licker": {
+    "display_name": "Karen Licker",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Brent Baltzer": {
+    "display_name": "Brent Baltzer",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "DevOps Integration": {
+    "display_name": "DevOps Integration",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Akshay Bhasin": {
+    "display_name": "Akshay Bhasin",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 5,
+      "open_assigned": 2,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 77,
+      "pages_90d": 27,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 36,
+    "activity_level": "medium"
+  },
+  "Rusty Clark": {
+    "display_name": "Rusty Clark",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 13,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 13,
+    "activity_level": "medium"
+  },
+  "Gregory Ladgin": {
+    "display_name": "Gregory Ladgin",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:60873b62-4213-4072-82c6-ee27c49a245a",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 7,
+      "issues_resolved_90d": 0,
+      "open_assigned": 2,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 7,
+    "activity_level": "low"
+  },
+  "Jessica Conn": {
+    "display_name": "Jessica Conn",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 2,
+      "open_assigned": 2,
+      "bugs_created_90d": 8,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 29,
+    "activity_level": "medium"
+  },
+  "Rekha Mohanan": {
+    "display_name": "Rekha Mohanan",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "workspace_count": 3,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "projects": [
+        "OS",
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 38,
+      "issues_resolved_90d": 12,
+      "open_assigned": 15,
+      "bugs_created_90d": 30,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 20,
+      "pages_90d": 19,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 69,
+    "activity_level": "high"
+  },
+  "siva.golla": {
+    "display_name": "siva.golla",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 4,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 5,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 2,
+      "spaces": [
+        "ES",
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 3,
+    "total_activity_90d": 10,
+    "activity_level": "low"
+  },
+  "Antonio Benjamim Mussi Schmidt": {
+    "display_name": "Antonio Benjamim Mussi Schmidt",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 19,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 19,
+    "activity_level": "medium"
+  },
+  "Jeff Pena": {
+    "display_name": "Jeff Pena",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 6,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 6,
+    "activity_level": "low"
+  },
+  "chalaka.thushara": {
+    "display_name": "chalaka.thushara",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 8,
+      "open_assigned": 113,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 12,
+    "activity_level": "medium"
+  },
+  "Adam Lazarus": {
+    "display_name": "Adam Lazarus",
+    "bitbucket": {
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "workspace_count": 4,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Reportsng Checkout": {
+    "display_name": "Reportsng Checkout",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "DB Checkout": {
+    "display_name": "DB Checkout",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Altaaf Anver": {
+    "display_name": "Altaaf Anver",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "5b517587ce51f259edf232c6",
+      "projects": [
+        "OS",
+        "UP"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 14,
+      "issues_resolved_90d": 13,
+      "open_assigned": 14,
+      "bugs_created_90d": 6,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 21,
+      "pages_90d": 2,
+      "spaces": [
+        "CCE",
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 29,
+    "activity_level": "medium"
+  },
+  "slcloudservices": {
+    "display_name": "slcloudservices",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Kanchana Amarathunga": {
+    "display_name": "Kanchana Amarathunga",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Ops Eng Checkout": {
+    "display_name": "Ops Eng Checkout",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "deployguy": {
+    "display_name": "deployguy",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Sumeera Perera": {
+    "display_name": "Sumeera Perera",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "workspace_count": 2,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": {
+      "account_id": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 34,
+      "issues_resolved_90d": 2,
+      "open_assigned": 53,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 36,
+    "activity_level": "medium"
+  },
+  "Bitbucket Test User": {
+    "display_name": "Bitbucket Test User",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabs"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Ashley Achin": {
+    "display_name": "Ashley Achin",
+    "bitbucket": {
+      "workspaces": [
+        "madpayments"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "James Van Buskirk": {
+    "display_name": "James Van Buskirk",
+    "bitbucket": {
+      "workspaces": [
+        "madpayments"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Lorne Malec": {
+    "display_name": "Lorne Malec",
+    "bitbucket": {
+      "workspaces": [
+        "madpayments"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Pratikchha Khadka": {
+    "display_name": "Pratikchha Khadka",
+    "bitbucket": {
+      "workspaces": [
+        "madpayments"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Janinda Induwara Kirindigoda": {
+    "display_name": "Janinda Induwara Kirindigoda",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabsconf"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Samadhi Perera": {
+    "display_name": "Samadhi Perera",
+    "bitbucket": {
+      "workspaces": [
+        "syscolabsconf"
+      ],
+      "workspace_count": 1,
+      "prs_authored_90d": 0,
+      "prs_reviewed_90d": 0
+    },
+    "jira": null,
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Thaddeus Fox": {
+    "display_name": "Thaddeus Fox",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 159,
+      "issues_resolved_90d": 126,
+      "open_assigned": 145,
+      "bugs_created_90d": 15,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 83,
+      "pages_90d": 12,
+      "spaces": [
+        "CR",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 297,
+    "activity_level": "high"
+  },
+  "Hansika Weligamage": {
+    "display_name": "Hansika Weligamage",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:b6179fa3-9c26-4993-a5a4-92fdaaf941e5",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Shanika Wickramasinghe": {
+    "display_name": "Shanika Wickramasinghe",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "602cd6ae39ed51006a4cdafd",
+      "projects": [
+        "BO",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 47,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 13,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB",
+        "LP",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Amila Chathuranga": {
+    "display_name": "Amila Chathuranga",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "63be568a98bf50328c689f50",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "opsgenie": {
+    "display_name": "opsgenie",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:3d6a0847-1a5e-40b4-a064-e50b9dc6a91c",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 2,
+    "activity_level": "low"
+  },
+  "Janani Dissanayke": {
+    "display_name": "Janani Dissanayke",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "63624e90c97f5473af71e49d",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 65,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "CCE"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Dave Bandara": {
+    "display_name": "Dave Bandara",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:6f6c517f-0104-4c65-bcd3-8672b1bc3ecb",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 8,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "activity_level": "low"
+  },
+  "Dulanjan Wengappuliarachchi": {
+    "display_name": "Dulanjan Wengappuliarachchi",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "62ba9e97018dea0d4073bcf1",
+      "projects": [
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 60,
+      "issues_resolved_90d": 11,
+      "open_assigned": 106,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 82,
+      "pages_90d": 1,
+      "spaces": [
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 72,
+    "activity_level": "high"
+  },
+  "Shavin Pieris": {
+    "display_name": "Shavin Pieris",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "629dbfc79248fe006910be48",
+      "projects": [
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 81,
+      "issues_resolved_90d": 6,
+      "open_assigned": 33,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 122,
+      "pages_90d": 11,
+      "spaces": [
+        "CA",
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 98,
+    "activity_level": "high"
+  },
+  "Kevin O'Haugherty": {
+    "display_name": "Kevin O'Haugherty",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:500aacce-6497-44dd-9bc8-74f08b8e327c",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 30,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 30,
+    "activity_level": "medium"
+  },
+  "Mark Guilarte": {
+    "display_name": "Mark Guilarte",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "63bc76fa49a31f95b8734464",
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 264,
+      "issues_resolved_90d": 32,
+      "open_assigned": 104,
+      "bugs_created_90d": 4,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 21,
+      "pages_90d": 10,
+      "spaces": [
+        "ES",
+        "LP",
+        "P",
+        "PROD",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 306,
+    "activity_level": "high"
+  },
+  "jake linder": {
+    "display_name": "jake linder",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5fa477a662584c006b1e8286",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 36,
+      "issues_resolved_90d": 27,
+      "open_assigned": 13,
+      "bugs_created_90d": 9,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 4,
+      "pages_90d": 2,
+      "spaces": [
+        "PROD",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 65,
+    "activity_level": "high"
+  },
+  "Emily Stineman": {
+    "display_name": "Emily Stineman",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:496d0f2b-e93c-48a0-8a58-cf05fa5c6677",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 3,
+    "activity_level": "low"
+  },
+  "Ernst Fantaisy": {
+    "display_name": "Ernst Fantaisy",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:d3a38897-fff3-4df8-a7a3-32ab06d049a8",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 104,
+      "issues_resolved_90d": 48,
+      "open_assigned": 1,
+      "bugs_created_90d": 4,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 3,
+      "pages_90d": 1,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 2,
+    "total_activity_90d": 153,
+    "activity_level": "high"
+  },
+  "Michael Lee": {
+    "display_name": "Michael Lee",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "projects": [
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 6,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 3,
+    "activity_level": "low"
+  },
+  "Mike Box": {
+    "display_name": "Mike Box",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:3f2e1539-aa9b-41e9-932e-da18afc0c6ee",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 31,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "activity_level": "low"
+  },
+  "slino": {
+    "display_name": "slino",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5b196aae64666649ccb91b35",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 31,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Malinda Praneeth": {
+    "display_name": "Malinda Praneeth",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "61667484289a54006a8d83c2",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 45,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 31,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "ES",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Aha": {
+    "display_name": "Aha",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5fb4316a9592df0076910cb2",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Shiyanka Dezylva": {
+    "display_name": "Shiyanka Dezylva",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5f6c2af91d34a50077d6defb",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 127,
+      "open_assigned": 114,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 43,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 127,
+    "activity_level": "high"
+  },
+  "zachary.honnold": {
+    "display_name": "zachary.honnold",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+      "projects": [
+        "OS",
+        "UP"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 19,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "activity_level": "low"
+  },
+  "Caroline Coffey": {
+    "display_name": "Caroline Coffey",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "557058:f1b38960-b9a8-4c39-bca1-4838120a86f1",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 9,
+      "open_assigned": 75,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 24,
+      "pages_90d": 0,
+      "spaces": [
+        "PROD",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 9,
+    "activity_level": "low"
+  },
+  "camilo.souza@c.jfwmail.com": {
+    "display_name": "camilo.souza@c.jfwmail.com",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "qm:9b2c23ec-2f8d-4b98-9f24-6592b33f2a9a:de306801-e84c-49ad-a09c-0854e3b0fd51",
+      "projects": [
+        "CLD"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "activity_level": "low"
+  },
+  "William Yen": {
+    "display_name": "William Yen",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5cab341d6d462664988e8b75",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "activity_level": "low"
+  },
+  "Megan Messmore": {
+    "display_name": "Megan Messmore",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:4c7b2734-3159-4fd1-b52d-61fd77c0f980",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 0,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 5,
+    "activity_level": "low"
+  },
+  "Hansani Thiloka": {
+    "display_name": "Hansani Thiloka",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:8094241c-88dd-472f-ad8e-29827946ab9d",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 11,
+      "pages_90d": 0,
+      "spaces": [
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Hashan Rathnayake": {
+    "display_name": "Hashan Rathnayake",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "63c79fe54ea03a3b2f2efcc6",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 68,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 59,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "DB",
+        "ES",
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Mujahid Thoufeek": {
+    "display_name": "Mujahid Thoufeek",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "6356549e1cc605b1fd15b457",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 43,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 51,
+      "pages_90d": 0,
+      "spaces": [
+        "DB",
+        "ES",
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Sarala Vidarshi Padmaperuma": {
+    "display_name": "Sarala Vidarshi Padmaperuma",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:4db22962-d1b6-4273-afea-f0af0f538a88",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Adheesha Jithendree": {
+    "display_name": "Adheesha Jithendree",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "61d2b72ce67ea2006bb8b34c",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 3,
+      "open_assigned": 113,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 8,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "CCE"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 3,
+    "activity_level": "low"
+  },
+  "Renuja Wanigasooriya": {
+    "display_name": "Renuja Wanigasooriya",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:96b6e586-84c8-4845-bcd9-5e55dd5354ba",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 5,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Jeewantha Lekamwasam": {
+    "display_name": "Jeewantha Lekamwasam",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "62beb603f53d91673869e919",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 72,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 74,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB",
+        "ES",
+        "LP"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Sineth Jayasinghe": {
+    "display_name": "Sineth Jayasinghe",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5ad2603b4553632a76983cc1",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 18,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 103,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB",
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Yasas Nandasena": {
+    "display_name": "Yasas Nandasena",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5b4de500bcd2112c07029cae",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 36,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 86,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "CR",
+        "DB",
+        "ES",
+        "LP",
+        "PROD",
+        "PT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 36,
+    "activity_level": "medium"
+  },
+  "Lahiru Yapa": {
+    "display_name": "Lahiru Yapa",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "5d5a705bc6318a0d6cd67485",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 112,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 30,
+      "pages_90d": 0,
+      "spaces": [
+        "DB",
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "activity_level": "low"
+  },
+  "Laura Nsang": {
+    "display_name": "Laura Nsang",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "712020:ede2f447-be8f-45de-8939-3c992732af14",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "PT",
+        "TT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Danura Jayakody": {
+    "display_name": "Danura Jayakody",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "62720f477de1ec0069595695",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": null,
+    "aws_iam": [],
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "activity_level": "inactive"
+  },
+  "Samitha Kalpana": {
+    "display_name": "Samitha Kalpana",
+    "bitbucket": null,
+    "jira": {
+      "account_id": "612476d43ef46a007053d921",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 2,
+      "open_assigned": 56,
+      "bugs_created_90d": 0,
+      "role_classification": "engineering_ic"
+    },
+    "confluence": {
+      "pages_total": 23,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "CR",
+        "LP",
+        "SWAT"
+      ]
+    },
+    "aws_iam": [],
+    "systems_active_90d": 1,
+    "total_activity_90d": 2,
+    "activity_level": "low"
+  }
+}

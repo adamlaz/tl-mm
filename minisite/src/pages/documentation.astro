@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import DataTable from '../components/DataTable.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
+import { getCollection } from 'astro:content';
+import { num, fmt } from '../lib/parse';
+
+const spaces = await getCollection('confluenceSpaces');
+const pages = await getCollection('confluencePages');
+
+const totalPages = pages.length;
+const totalSpaces = spaces.length;
+const activeSpaces = spaces.filter((s) => s.data.status === 'current').length;
+const spacesWithContent = spaces.filter((s) => num(s.data.page_count) > 0).length;
+const recentPages = spaces.reduce((s, sp) => s + num(sp.data.recent_pages_count), 0);
+
+const spaceRows = spaces
+  .sort((a, b) => num(b.data.page_count) - num(a.data.page_count))
+  .map((s) => ({
+    key: s.data.key,
+    name: s.data.name,
+    type: s.data.type,
+    status: s.data.status,
+    pages: s.data.page_count,
+    recent: s.data.recent_pages_count,
+  }));
+
+const pageRows = pages
+  .sort((a, b) => b.data.version_created_at.localeCompare(a.data.version_created_at))
+  .slice(0, 500)
+  .map((p) => ({
+    title: p.data.title.slice(0, 80),
+    space: p.data.space_key,
+    version: p.data.version_number,
+    updated: p.data.version_created_at.slice(0, 10),
+  }));
+
+const charts = [
+  { slug: 'confluence_creation_trend', title: 'Page Creation Trend' },
+  { slug: 'confluence_page_density', title: 'Page Density by Space' },
+];
+---
+
+<BaseLayout title="Documentation">
+  <SectionHeader
+    title="Documentation"
+    description="Confluence documentation landscape across all spaces."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Total Pages" value={fmt(totalPages)} />
+    <MetricCard label="Spaces" value={totalSpaces.toString()} subtitle={`${activeSpaces} current`} />
+    <MetricCard label="With Content" value={spacesWithContent.toString()} subtitle="Spaces with pages" />
+    <MetricCard label="Recent Activity" value={recentPages.toString()} subtitle="Recently updated pages" />
+  </dl>
+
+  <h2 class="text-sm font-semibold text-slate-700 mb-3">Spaces</h2>
+  <div class="mb-8">
+    <DataTable
+      columns={[
+        { key: 'key', label: 'Key' },
+        { key: 'name', label: 'Name' },
+        { key: 'type', label: 'Type' },
+        { key: 'status', label: 'Status' },
+        { key: 'pages', label: 'Pages', align: 'right' },
+        { key: 'recent', label: 'Recent', align: 'right' },
+      ]}
+      rows={spaceRows}
+      searchable
+      pageSize={25}
+    />
+  </div>
+
+  <h2 class="text-sm font-semibold text-slate-700 mb-3">Recent Pages</h2>
+  <div class="mb-8">
+    <DataTable
+      columns={[
+        { key: 'title', label: 'Title' },
+        { key: 'space', label: 'Space' },
+        { key: 'version', label: 'Version', align: 'right' },
+        { key: 'updated', label: 'Updated' },
+      ]}
+      rows={pageRows}
+      searchable
+      pageSize={25}
+    />
+  </div>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Charts</h2>
+  <div class="grid lg:grid-cols-2 gap-6">
+    {charts.map((c) => (
+      <ChartEmbed slug={c.slug} title={c.title} />
+    ))}
+  </div>
+</BaseLayout>

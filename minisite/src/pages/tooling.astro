@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import StatusBadge from '../components/StatusBadge.astro';
+import { getCollection } from 'astro:content';
+
+const tools = await getCollection('toolingCatalog');
+
+const byCategory = new Map<string, typeof tools>();
+for (const t of tools) {
+  const cat = t.data.category;
+  const list = byCategory.get(cat) ?? [];
+  list.push(t);
+  byCategory.set(cat, list);
+}
+
+const categories = [...byCategory.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+const activeCount = tools.filter((t) => t.data.status === 'confirmed_active').length;
+const inferredCount = tools.filter((t) => t.data.status === 'inferred').length;
+const categoryCount = byCategory.size;
+---
+
+<BaseLayout title="Tooling">
+  <SectionHeader
+    title="Vendor & Tool Catalog"
+    description="Identified tools across the Mad Mobile technology stack, sourced from direct access, AWS inventory, Confluence docs, and Bitbucket analysis."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Total Tools" value={tools.length.toString()} />
+    <MetricCard label="Confirmed Active" value={activeCount.toString()} />
+    <MetricCard label="Inferred" value={inferredCount.toString()} />
+    <MetricCard label="Categories" value={categoryCount.toString()} />
+  </dl>
+
+  <div class="space-y-8">
+    {categories.map(([category, categoryTools]) => (
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">{category}</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {categoryTools.map((t) => (
+            <div class="bg-white rounded-xl border border-slate-200 p-4">
+              <div class="flex items-start justify-between mb-2">
+                <div>
+                  <h3 class="text-sm font-semibold text-slate-900">{t.data.name}</h3>
+                  <p class="text-xs text-slate-500">{t.data.vendor}</p>
+                </div>
+                <StatusBadge status={t.data.status} />
+              </div>
+              {t.data.notes && (
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">{t.data.notes}</p>
+              )}
+              <div class="flex items-center gap-3 mt-3 pt-2 border-t border-slate-100">
+                <span class="text-[10px] uppercase tracking-wider text-slate-400">Cost</span>
+                <span class="text-xs text-slate-600">{t.data.cost_detail ?? t.data.cost_status}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</BaseLayout>

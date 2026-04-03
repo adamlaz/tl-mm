@@ -1,0 +1,374 @@
+[
+  {
+    "username": "CakeLab-fsapi-store-internal-user",
+    "profile": "mm-cake-development",
+    "created": "2020-07-22T05:51:22+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "dev-five9-s3access-user",
+    "profile": "mm-cake-development",
+    "created": "2023-11-22T10:10:02+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "dev_prometheus_monitoring_user",
+    "profile": "mm-cake-development",
+    "created": "2019-10-18T04:46:27+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "doc-gen-api",
+    "profile": "mm-cake-development",
+    "created": "2019-03-15T06:44:33+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "gitlab-pipeline",
+    "profile": "mm-cake-development",
+    "created": "2024-03-15T13:46:01+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "insight2W-2Winsight-MM2KK3HJIPIR",
+    "profile": "mm-cake-development",
+    "created": "2018-06-22T15:29:46+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "leapset-dev-bucket-user",
+    "profile": "mm-cake-development",
+    "created": "2021-04-07T10:33:32+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "menu_api_sync_user",
+    "profile": "mm-cake-development",
+    "created": "2021-05-31T06:41:39+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "minuteman-service-user",
+    "profile": "mm-cake-development",
+    "created": "2019-06-24T06:09:13+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "pos-s3-user",
+    "profile": "mm-cake-development",
+    "created": "2019-07-04T06:04:53+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "analytics-madmobile",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-06-26T18:00:00+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "analytics-s3-churnzero",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-01-18T18:24:11+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "analytics-s3-rabbitmq",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-01-14T17:53:36+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "bitbucket-ecr",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-01-14T17:10:34+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "bitbucket-vnext",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-02-15T21:03:31+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "cake-analytics-ikes",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-08-31T14:05:29+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "cake-analytics-onp",
+    "profile": "mm-retail-prod-us",
+    "created": "2023-06-12T14:29:38+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "chandon-edge",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-10-18T19:21:23+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "concierge-analytics-ascena",
+    "profile": "mm-retail-prod-us",
+    "created": "2023-04-28T12:37:55+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-belk",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-08-10T15:02:21+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-brooks-brothers",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-06-12T19:58:58+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-burlington",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-10-20T19:30:12+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-estee-lauder",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-06-12T21:10:39+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-estee-lauder-aveda",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-10-20T18:08:36+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-esteelauder",
+    "profile": "mm-retail-prod-us",
+    "created": "2023-09-08T17:21:03+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-esteelauder-ccs",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-10-20T18:10:01+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-esteelauder-jml",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-10-20T18:10:53+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-esteelauder-origins",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-10-20T18:11:36+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-guess",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-06-26T20:40:42+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-helzberg",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-11-02T14:52:47+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-jfw",
+    "profile": "mm-retail-prod-us",
+    "created": "2023-07-12T13:15:21+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-kings-hawaiian",
+    "profile": "mm-retail-prod-us",
+    "created": "2023-01-23T13:51:28+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-pacsun",
+    "profile": "mm-retail-prod-us",
+    "created": "2021-07-23T15:12:40+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-pandora",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-10-31T17:09:19+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-ralph-lauren",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-05-28T21:21:18+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-signet",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-10-01T19:36:41+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-talbots-v2",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-06-11T15:33:53+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-tractor-supply",
+    "profile": "mm-retail-prod-us",
+    "created": "2021-07-23T15:18:01+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-urban",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-05-26T20:27:01+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-connect-assets-deploy",
+    "profile": "mm-retail-prod-us",
+    "created": "2021-12-20T19:22:39+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-print",
+    "profile": "mm-retail-prod-us",
+    "created": "2020-09-16T17:17:52+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "cs-analytics",
+    "profile": "mm-retail-prod-us",
+    "created": "2024-09-05T18:13:55+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "dbi-ecr",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-07-25T15:23:35+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "foley-ecr",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-07-18T14:08:20+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "jacksonfw-edge",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-10-17T19:21:37+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "marvel-us-document-service",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-06-08T14:23:43+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "menupad-logstash-s3-cs-analytics-data",
+    "profile": "mm-retail-prod-us",
+    "created": "2022-08-10T19:54:47+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "openai-assistant",
+    "profile": "mm-retail-prod-us",
+    "created": "2024-07-11T17:59:25+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "s3fileuserprod",
+    "profile": "mm-retail-prod-us",
+    "created": "2018-05-18T17:00:59+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "analytics-rabbitmq-s3",
+    "profile": "mm-retail-prod-eu",
+    "created": "2022-01-24T18:55:13+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "bitbucket-ecr",
+    "profile": "mm-retail-prod-eu",
+    "created": "2022-01-24T18:49:19+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-eu-domo",
+    "profile": "mm-retail-prod-eu",
+    "created": "2021-03-31T19:35:36+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-eu-ralph-lauren",
+    "profile": "mm-retail-prod-eu",
+    "created": "2020-05-28T21:27:45+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "analytics-s3-rabbitmq",
+    "profile": "mm-retail-prod-apac",
+    "created": "2022-01-24T20:33:54+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "bitbucket-ecr",
+    "profile": "mm-retail-prod-apac",
+    "created": "2022-01-24T20:30:34+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "concierge-analytics-apac-domo",
+    "profile": "mm-retail-prod-apac",
+    "created": "2021-05-14T16:02:49+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "eks-tmp-user",
+    "profile": "mm-retail-prod-apac",
+    "created": "2022-03-04T19:55:41+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "S3-concierge-analytics-rl-apac-RO",
+    "profile": "mm-retail-prod-apac",
+    "created": "2023-09-18T21:26:55+00:00",
+    "is_service_account": true
+  },
+  {
+    "username": "readonly-user-chefs-grille",
+    "profile": "mm-customer-analytics",
+    "created": "2024-08-15T00:47:00+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "jenkins",
+    "profile": "mm-mm-archive",
+    "created": "2019-07-28T21:47:04+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "greymatter-guardduty-integration",
+    "profile": "mm-security",
+    "created": "2025-04-09T15:42:15+00:00",
+    "is_service_account": false
+  },
+  {
+    "username": "rapid7-guardduty-logs",
+    "profile": "mm-security",
+    "created": "2024-04-11T16:54:38+00:00",
+    "is_service_account": true
+  }
+]

@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MetricCard from '../components/MetricCard.astro';
+import { getCollection } from 'astro:content';
+import { num, fmt } from '../lib/parse';
+
+const awsCosts = await getCollection('awsCosts');
+const repos = await getCollection('bitbucketRepos');
+const projects = await getCollection('jiraProjects');
+const pages = await getCollection('confluencePages');
+const tools = await getCollection('toolingCatalog');
+const users = await getCollection('userAudit');
+
+const totalAwsCost = awsCosts
+  .filter((e) => e.data.month.startsWith('2026-03'))
+  .reduce((sum, e) => sum + num(e.data.cost), 0);
+
+const activeRepos = repos.filter((r) => r.data.is_active === 'True').length;
+const engProjects = projects.filter((p) => p.data.classification === 'engineering').length;
+const activeTools = tools.filter((t) => t.data.status === 'confirmed_active').length;
+
+const costDisplay = totalAwsCost > 0
+  ? `$${Math.round(totalAwsCost / 1000)}K`
+  : '$383K';
+
+const sections = [
+  { href: '/aws', title: 'AWS Infrastructure', desc: '18 accounts, cost analysis, resource inventory, and runtime audit.', metric: costDisplay, metricLabel: '/month' },
+  { href: '/engineering', title: 'Engineering', desc: 'Bitbucket repos, PR cycle times, commit frequency, and pipeline coverage.', metric: fmt(repos.length), metricLabel: 'repos' },
+  { href: '/delivery', title: 'Delivery', desc: 'Jira velocity, cycle time, scope change, backlog age, and flow distribution.', metric: projects.length.toString(), metricLabel: 'projects' },
+  { href: '/documentation', title: 'Documentation', desc: 'Confluence spaces, page index, and creation trends.', metric: fmt(pages.length), metricLabel: 'pages' },
+  { href: '/people', title: 'People', desc: 'Cross-system user activity audit — Bitbucket, Jira, Confluence, and AWS IAM.', metric: users.length.toString(), metricLabel: 'users' },
+  { href: '/tooling', title: 'Tooling', desc: 'Vendor and tool catalog across CI/CD, observability, security, and more.', metric: tools.length.toString(), metricLabel: 'tools' },
+  { href: '/charts', title: 'Charts', desc: 'Interactive Plotly visualizations across all domains.', metric: '25', metricLabel: 'charts' },
+];
+---
+
+<BaseLayout title="Dashboard">
+  <div class="mb-10">
+    <h1 class="text-3xl font-bold text-slate-900">Technology & Operations Review</h1>
+    <p class="mt-2 text-sm text-slate-500 max-w-xl">
+      Diagnostic sprint for Mad Mobile, Inc. — a compressed technology and operations assessment covering infrastructure, engineering practices, delivery health, documentation, and tooling.
+    </p>
+  </div>
+
+  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+    <MetricCard label="AWS Monthly Spend" value={costDisplay} subtitle="March 2026 (18 accounts)" />
+    <MetricCard label="Repositories" value={fmt(repos.length)} subtitle={`${activeRepos} active`} />
+    <MetricCard label="Jira Projects" value={projects.length.toString()} subtitle={`${engProjects} engineering`} />
+    <MetricCard label="Confluence Pages" value={fmt(pages.length)} subtitle="Indexed" />
+    <MetricCard label="Tools Identified" value={tools.length.toString()} subtitle={`${activeTools} confirmed active`} />
+  </dl>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Explore</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {sections.map(({ href, title, desc, metric, metricLabel }) => (
+      <a href={href} class="group bg-white rounded-xl border border-slate-200 p-5 hover:border-brand-400 hover:shadow-sm transition-all">
+        <div class="flex items-start justify-between mb-2">
+          <h3 class="text-base font-semibold text-slate-900 group-hover:text-brand-600 transition-colors">{title}</h3>
+          <span class="text-lg font-mono font-semibold text-brand-600 tabular-nums">{metric}</span>
+        </div>
+        <p class="text-xs text-slate-500">{desc}</p>
+        <p class="text-[10px] text-slate-400 mt-1 uppercase tracking-wider">{metricLabel}</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

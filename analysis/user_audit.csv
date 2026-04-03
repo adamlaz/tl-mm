@@ -1,0 +1,169 @@
+display_name,activity_level,systems_active_90d,total_activity_90d,bb_workspaces,bb_workspace_count,bb_prs_authored,bb_prs_reviewed,jira_issues_created_90d,jira_issues_resolved_90d,jira_open_assigned,jira_bugs_created_90d,jira_role,jira_projects,confluence_pages_total,confluence_pages_90d
+Richard Farber,high,2,348,madmobile,1,0,0,247,100,36,26,engineering_ic,OS,4,1
+Roopa Kaukuri,high,1,340,"madmobile,syscolabs",2,0,0,287,53,136,7,engineering_ic,OS,1,0
+Mark Guilarte,high,2,306,,0,0,0,264,32,104,4,engineering_ic,"CM,REST",21,10
+Thaddeus Fox,high,2,297,,0,0,0,159,126,145,15,engineering_ic,REST,83,12
+Mirunaaliny Somasunthara Iyer,high,2,265,madmobile,1,0,0,100,155,103,10,engineering_ic,"BO,REST",232,10
+Ernst Fantaisy,high,2,153,,0,0,0,104,48,1,4,engineering_ic,UP,3,1
+Shiyanka Dezylva,high,1,127,,0,0,0,0,127,114,0,engineering_ic,REST,43,0
+Vanessa Sotomayor,high,2,123,"madmobile,syscolabs",2,0,0,72,28,26,0,engineering_ic,"CM,UP",87,23
+James Oliver,high,2,119,"madmobile,syscolabs",2,9,0,34,76,26,0,engineering_ic,CM,11,0
+Sowjanya Akula,high,2,112,"madmobile,syscolabs,madpayments",3,0,0,66,45,14,65,engineering_ic,REST,7,1
+Qaiser Pannu,high,2,101,"madmobile,syscolabs",2,0,0,49,35,51,10,engineering_ic,"CM,REST",70,17
+Shavin Pieris,high,2,98,,0,0,0,81,6,33,0,engineering_ic,"OS,REST",122,11
+Nishen Peiris,high,3,96,"madmobile,syscolabs",2,19,0,27,26,39,0,engineering_ic,CM,174,24
+Benjamin Roedell,high,3,90,"madmobile,syscolabs,syscolabsconf",3,36,0,16,27,38,3,engineering_ic,"CM,OS,REST",72,11
+Wenushka Dikowita,high,2,90,"madmobile,syscolabs,syscolabsconf",3,0,0,66,20,43,3,engineering_ic,"CM,REST",17,4
+Matias Lopez Riglos,high,2,90,"madmobile,syscolabs,madpayments,syscolabsconf",4,15,0,31,44,173,0,engineering_ic,"CLD,CM",4,0
+Ana Chambers,high,1,87,madmobile,1,0,0,56,31,186,1,engineering_ic,"CM,REST",121,0
+Debbie Keye,high,2,80,madmobile,1,0,0,53,26,4,1,engineering_ic,"CM,OS,REST",2,1
+Raveen Panditha,high,3,76,"madmobile,syscolabs",2,39,0,16,12,26,0,engineering_ic,REST,12,9
+Dulanjan Wengappuliarachchi,high,2,72,,0,0,0,60,11,106,0,engineering_ic,"REST,UP",82,1
+Rekha Mohanan,high,2,69,"madmobile,syscolabs,madpayments",3,0,0,38,12,15,30,engineering_ic,"OS,REST,UP",20,19
+Mike Nunez,high,3,69,"madmobile,syscolabs,madpayments",3,17,0,35,16,19,0,engineering_ic,CLOUD,15,1
+Danika Munasinghe,high,2,68,"madmobile,syscolabs,madpayments",3,0,0,27,28,22,15,engineering_ic,"REST,UP",66,13
+Matthew Crumley,high,3,67,"madmobile,syscolabs,madpayments,syscolabsconf",4,33,0,6,10,19,1,engineering_ic,"OS,REST,UP",63,18
+jake linder,high,2,65,,0,0,0,36,27,13,9,engineering_ic,REST,4,2
+Matthew Griffin,high,3,64,"madmobile,syscolabs,madpayments,syscolabsconf",4,11,0,9,41,53,0,engineering_ic,"CLD,CLOUD,UP",4,3
+Cory Renard,high,2,62,"madmobile,syscolabs",2,53,0,1,8,25,0,engineering_ic,REST,5,0
+Dilruwan Madubashitha,high,1,61,"madmobile,syscolabs",2,0,0,32,29,47,0,engineering_ic,REST,4,0
+Brew Lamb,high,2,60,"madmobile,syscolabs",2,0,0,57,2,3,39,engineering_ic,REST,1,1
+Kyle Budd,high,3,56,"madmobile,syscolabs,syscolabsconf",3,37,0,4,8,27,0,engineering_ic,REST,28,7
+Susampath Madarasinghe,high,3,52,"madmobile,syscolabs,madpayments",3,9,0,29,0,36,0,engineering_ic,"REST,UP",45,14
+Ryan Mercado,high,3,51,"madmobile,syscolabs",2,45,0,2,3,7,0,engineering_ic,REST,10,1
+Gayan Karunarathna,medium,3,49,"madmobile,syscolabs,madpayments",3,13,0,5,16,9,0,engineering_ic,UP,43,15
+Kaelon Lucas,medium,1,46,"madmobile,syscolabs,madpayments",3,0,0,23,23,40,22,engineering_ic,REST,0,0
+paul.roberts,medium,2,45,"madmobile,madpayments",2,34,0,0,11,14,0,engineering_ic,REST,6,0
+Patrycja Stevenson,medium,2,44,"madmobile,syscolabs,madpayments",3,0,0,32,9,5,21,engineering_ic,"REST,UP",12,3
+Harrison Minchew,medium,3,41,"madmobile,syscolabs,madpayments,syscolabsconf",4,28,0,2,10,38,0,engineering_ic,REST,64,1
+Anderson Lavor,medium,2,40,"madmobile,syscolabs,madpayments,syscolabsconf",4,28,0,2,10,32,0,engineering_ic,REST,5,0
+Akshay Bhasin,medium,2,36,"madmobile,syscolabs",2,0,0,4,5,2,0,engineering_ic,UP,77,27
+Yasas Nandasena,medium,1,36,,0,0,0,0,36,7,0,engineering_ic,REST,86,0
+Sumeera Perera,medium,1,36,"syscolabs,syscolabsconf",2,0,0,34,2,53,0,engineering_ic,REST,0,0
+Ashen,medium,2,35,"madmobile,syscolabs",2,0,0,9,20,24,3,engineering_ic,REST,47,6
+Darren Blackwell,medium,2,32,madmobile,1,0,0,28,1,26,28,engineering_ic,REST,3,3
+Kevin O'Haugherty,medium,1,30,,0,0,0,30,0,0,0,engineering_ic,OS,0,0
+Altaaf Anver,medium,2,29,syscolabs,1,0,0,14,13,14,6,engineering_ic,"OS,UP",21,2
+Thiwanka Wimalasuriya,medium,3,29,"madmobile,syscolabs,madpayments",3,5,0,12,5,61,0,engineering_ic,REST,241,7
+Jessica Conn,medium,1,29,madmobile,1,0,0,27,2,2,8,engineering_ic,REST,0,0
+Alexander Baine,medium,2,28,"madmobile,syscolabs",2,12,0,4,12,21,0,engineering_ic,REST,5,0
+Orlando Jimenez,medium,2,27,"madmobile,syscolabs,madpayments",3,15,0,3,9,20,0,engineering_ic,CLOUD,0,0
+John Harre,medium,1,27,madmobile,1,27,0,0,0,0,0,,,0,0
+Mauro Villaseco,medium,2,24,"madmobile,syscolabs",2,0,0,11,6,30,4,engineering_ic,OS,10,7
+Anthony Goad,medium,1,23,"madmobile,syscolabs",2,0,0,23,0,4,23,engineering_ic,OS,2,0
+Inushi Gunathilake,medium,1,20,"madmobile,syscolabs,syscolabsconf",3,0,0,17,3,11,0,engineering_ic,REST,0,0
+Richard Meitzler,medium,3,20,"madmobile,syscolabs,madpayments",3,8,0,4,7,16,0,engineering_ic,UP,2,1
+Trenton Kress,medium,2,20,"madmobile,syscolabs,madpayments",3,8,0,8,4,4,0,engineering_ic,UP,2,0
+Beau Bruderer,medium,2,20,"madmobile,syscolabs",2,12,0,2,6,9,0,engineering_ic,REST,0,0
+Wing Hung Peter Wu,medium,1,20,"madmobile,syscolabs,madpayments",3,0,0,5,15,7,0,engineering_ic,UP,5,0
+Mark Freid,medium,2,19,syscolabs,1,0,0,3,0,9,0,engineering_ic,CM,16,16
+Holly Culver,medium,2,19,"madmobile,syscolabs",2,17,0,0,2,9,0,engineering_ic,REST,0,0
+Antonio Benjamim Mussi Schmidt,medium,1,19,madmobile,1,19,0,0,0,0,0,,,0,0
+Poorna Manujaya Amarasingha,medium,1,19,"madmobile,syscolabs,syscolabsconf",3,19,0,0,0,0,0,,,0,0
+Sanduni Dissanayaka,medium,1,19,"madmobile,syscolabs,syscolabsconf",3,0,0,17,2,14,0,engineering_ic,REST,2,0
+Kevin Reyes,medium,2,18,"madmobile,syscolabs,madpayments",3,0,0,3,11,32,0,engineering_ic,UP,13,4
+Matt Cooke,medium,1,16,madmobile,1,16,0,0,0,0,0,,,0,0
+Malinda Lamahewa,medium,1,14,madmobile,1,0,0,10,4,151,0,engineering_ic,OS,0,0
+Dulana Dharmaratne,medium,1,13,"madmobile,syscolabs",2,0,0,13,0,23,0,engineering_ic,REST,0,0
+Rusty Clark,medium,1,13,madmobile,1,13,0,0,0,0,0,,,0,0
+chalaka.thushara,medium,1,12,madmobile,1,0,0,4,8,113,0,engineering_ic,OS,0,0
+Rusiru Perera,medium,2,12,"madmobile,syscolabsconf",2,0,0,11,0,15,0,engineering_ic,REST,1,1
+Nishani Peiris,medium,1,11,"madmobile,syscolabs",2,0,0,6,5,40,0,engineering_ic,"CLD,OS",0,0
+Pramodi Fernando,medium,1,11,"madmobile,syscolabs,syscolabsconf",3,0,0,8,3,20,0,engineering_ic,"OS,REST",0,0
+siva.golla,low,3,10,"madmobile,syscolabs",2,4,0,3,1,5,0,engineering_ic,REST,2,2
+Caroline Coffey,low,1,9,,0,0,0,0,9,75,0,engineering_ic,REST,24,0
+Zubair Syed,low,1,7,"madmobile,syscolabs",2,0,0,6,1,25,1,engineering_ic,"CM,REST",14,0
+Austin.Spreadbury,low,1,7,"madmobile,syscolabs",2,0,0,5,2,4,0,engineering_ic,REST,1,0
+Rob Quin,low,2,7,"madmobile,syscolabs",2,0,0,2,4,19,0,engineering_ic,REST,1,1
+Gregory Ladgin,low,1,7,"madmobile,syscolabs",2,0,0,7,0,2,0,engineering_ic,REST,0,0
+Jeff Pena,low,1,6,madmobile,1,6,0,0,0,0,0,,,0,0
+Megan Messmore,low,1,5,,0,0,0,5,0,1,0,engineering_ic,OS,0,0
+Bill Fenley,low,2,5,"madmobile,syscolabs,madpayments",3,4,0,0,1,18,0,engineering_ic,REST,7,0
+zachary.honnold,low,1,4,,0,0,0,3,1,19,0,engineering_ic,"OS,UP",0,0
+Randy Brown,low,1,4,"madmobile,syscolabs,madpayments,syscolabsconf",4,4,0,0,0,0,0,,,0,0
+Ian Bennett,low,1,4,"madmobile,syscolabs",2,0,0,3,1,4,0,engineering_ic,REST,4,0
+Suneth De Soyza,low,1,4,madmobile,1,0,0,1,3,33,0,engineering_ic,REST,30,0
+Das DeSilva,low,1,4,madmobile,1,0,0,3,1,14,0,engineering_ic,OS,3,0
+Chalaka Sudusinghe,low,1,3,"madmobile,syscolabs,madpayments",3,3,0,0,0,0,0,,,0,0
+Adheesha Jithendree,low,1,3,,0,0,0,0,3,113,0,engineering_ic,REST,8,0
+Michael Lee,low,1,3,,0,0,0,3,0,6,0,engineering_ic,"OS,REST",0,0
+Emily Stineman,low,1,3,,0,0,0,3,0,0,0,engineering_ic,OS,0,0
+Chip O'Connell,low,1,3,madmobile,1,0,0,3,0,60,0,engineering_ic,OS,2,0
+Hashan Maduwantha,low,1,3,"madmobile,syscolabs",2,3,0,0,0,0,0,,,0,0
+Jack Kennedy,low,1,2,"madmobile,syscolabs",2,2,0,0,0,0,0,,,0,0
+opsgenie,low,1,2,,0,0,0,2,0,0,0,engineering_ic,REST,0,0
+Samitha Kalpana,low,1,2,,0,0,0,0,2,56,0,engineering_ic,REST,23,0
+Sriharshith Akula,low,2,2,"madmobile,syscolabs",2,1,0,0,1,25,0,engineering_ic,REST,0,0
+Hashan Prabodhaka Jalath,low,1,2,"madmobile,syscolabs,syscolabsconf",3,2,0,0,0,0,0,,,0,0
+Mike Box,low,1,1,,0,0,0,0,1,31,0,engineering_ic,REST,2,0
+Lahiru Yapa,low,1,1,,0,0,0,0,1,112,0,engineering_ic,REST,30,0
+Jeremy Diggins,low,1,1,"madmobile,madpayments",2,1,0,0,0,0,0,,,0,0
+Dave Bandara,low,1,1,,0,0,0,0,1,8,0,engineering_ic,REST,0,0
+camilo.souza@c.jfwmail.com,low,1,1,,0,0,0,1,0,0,0,engineering_ic,CLD,0,0
+William Yen,low,1,1,,0,0,0,0,1,1,0,engineering_ic,OS,5,0
+Facundo,low,1,1,"madmobile,syscolabs",2,1,0,0,0,0,0,,,0,0
+Pankaj Goyal,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Core Services BA,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+slino,inactive,0,0,,0,0,0,0,0,31,0,engineering_ic,OS,0,0
+Kien Pham,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+weblate,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Aha,inactive,0,0,,0,0,0,0,0,0,0,engineering_ic,REST,0,0
+Bamboobuild,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+ops,inactive,0,0,"madmobile,madpayments",2,0,0,0,0,0,0,,,0,0
+Ryan Crawford,inactive,0,0,"madmobile,syscolabs",2,0,0,0,0,34,0,engineering_ic,OS,1,0
+Janani Dissanayke,inactive,0,0,,0,0,0,0,0,4,0,engineering_ic,REST,65,0
+anil.rathore,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Malinda Praneeth,inactive,0,0,,0,0,0,0,0,45,0,engineering_ic,REST,31,0
+Carlos Latugaye,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Jenkins,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Admin Build,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Shanika Wickramasinghe,inactive,0,0,,0,0,0,0,0,47,0,engineering_ic,"BO,REST",13,0
+Hansani Thiloka,inactive,0,0,,0,0,0,0,0,7,0,engineering_ic,REST,11,0
+Hashan Rathnayake,inactive,0,0,,0,0,0,0,0,68,0,engineering_ic,REST,59,0
+Mujahid Thoufeek,inactive,0,0,,0,0,0,0,0,43,0,engineering_ic,REST,51,0
+Sarala Vidarshi Padmaperuma,inactive,0,0,,0,0,0,0,0,9,0,engineering_ic,REST,0,0
+AIR,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Renuja Wanigasooriya,inactive,0,0,,0,0,0,0,0,5,0,engineering_ic,REST,2,0
+Jeewantha Lekamwasam,inactive,0,0,,0,0,0,0,0,72,0,engineering_ic,REST,74,0
+Sineth Jayasinghe,inactive,0,0,,0,0,0,0,0,18,0,engineering_ic,REST,103,0
+Adam Mead,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Laura Nsang,inactive,0,0,,0,0,0,0,0,1,0,engineering_ic,REST,2,0
+Danura Jayakody,inactive,0,0,,0,0,0,0,0,9,0,engineering_ic,REST,0,0
+Amila Chathuranga,inactive,0,0,,0,0,0,0,0,7,0,engineering_ic,REST,0,0
+Hansika Weligamage,inactive,0,0,,0,0,0,0,0,7,0,engineering_ic,REST,0,0
+jason.bitman,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Juan Manuel Rodriguez,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Adam Hartman,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Alex Domingues da Silva,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Fernando Zelaya,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Hema Saini,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+chathura.ratnayake,inactive,0,0,"madmobile,syscolabs",2,0,0,0,0,0,0,,,0,0
+Daniel Lomsak,inactive,0,0,"madmobile,syscolabs",2,0,0,0,0,0,0,,,0,0
+Camilo Souza,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+DevOps Integration,inactive,0,0,"madmobile,syscolabs,madpayments",3,0,0,0,0,0,0,,,0,0
+Brent Baltzer,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Karen Licker,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Chris Gomersall,inactive,0,0,"madmobile,syscolabs",2,0,0,0,0,0,0,,,0,0
+Cake Cloud Admin,inactive,0,0,"madmobile,syscolabs,syscolabsconf",3,0,0,0,0,0,0,,,0,0
+Reji Sivaraman,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Jyoti Lokare,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Amol Wairagade,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Rosen Georgiev,inactive,0,0,"madmobile,syscolabs",2,0,0,0,0,0,0,,,0,0
+Sumnima Shah,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Adam Lazarus,inactive,0,0,"madmobile,syscolabs,madpayments,syscolabsconf",4,0,0,0,0,0,0,,,0,0
+Bitbucket Test User,inactive,0,0,syscolabs,1,0,0,0,0,0,0,,,0,0
+Samadhi Perera,inactive,0,0,syscolabsconf,1,0,0,0,0,0,0,,,0,0
+Janinda Induwara Kirindigoda,inactive,0,0,syscolabsconf,1,0,0,0,0,0,0,,,0,0
+Pratikchha Khadka,inactive,0,0,madpayments,1,0,0,0,0,0,0,,,0,0
+Lorne Malec,inactive,0,0,madpayments,1,0,0,0,0,0,0,,,0,0
+Chathura Lalinda Ranasingha,inactive,0,0,"madmobile,syscolabs,syscolabsconf",3,0,0,0,0,0,0,,,0,0
+Ashley Achin,inactive,0,0,madpayments,1,0,0,0,0,0,0,,,0,0
+Sumeet Chawla,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+Reportsng Checkout,inactive,0,0,syscolabs,1,0,0,0,0,0,0,,,0,0
+deployguy,inactive,0,0,syscolabs,1,0,0,0,0,0,0,,,0,0
+Ops Eng Checkout,inactive,0,0,syscolabs,1,0,0,0,0,0,0,,,0,0
+Kanchana Amarathunga,inactive,0,0,syscolabs,1,0,0,0,0,0,0,,,0,0
+slcloudservices,inactive,0,0,syscolabs,1,0,0,0,0,0,0,,,0,0
+Zohra Bhayani,inactive,0,0,madmobile,1,0,0,0,0,0,0,,,0,0
+DB Checkout,inactive,0,0,syscolabs,1,0,0,0,0,0,0,,,0,0
+James Van Buskirk,inactive,0,0,madpayments,1,0,0,0,0,0,0,,,0,0

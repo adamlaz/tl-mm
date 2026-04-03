@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+
+const chartGroups = [
+  {
+    domain: 'AWS',
+    charts: [
+      { slug: 'aws_cost_by_account', title: 'Cost by Account' },
+      { slug: 'aws_cost_by_service', title: 'Cost by Service' },
+      { slug: 'aws_cost_trend', title: 'Cost Trend' },
+      { slug: 'aws_resource_inventory', title: 'Resource Inventory' },
+      { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes' },
+    ],
+  },
+  {
+    domain: 'Bitbucket',
+    charts: [
+      { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency' },
+      { slug: 'bitbucket_languages', title: 'Language Distribution' },
+      { slug: 'bitbucket_pipeline_coverage', title: 'Pipeline Coverage' },
+      { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time' },
+      { slug: 'bitbucket_repo_health', title: 'Repo Health' },
+      { slug: 'bb_deploy_tags', title: 'Deploy Tags' },
+    ],
+  },
+  {
+    domain: 'Jira',
+    charts: [
+      { slug: 'jira_org_overview', title: 'Org Overview' },
+      { slug: 'jira_velocity_trend', title: 'Velocity Trend' },
+      { slug: 'jira_cycle_time', title: 'Cycle Time' },
+      { slug: 'jira_scope_change', title: 'Scope Change' },
+      { slug: 'jira_assignee_load', title: 'Assignee Load' },
+      { slug: 'jira_backlog_age', title: 'Backlog Age' },
+      { slug: 'jira_flow_distribution', title: 'Flow Distribution' },
+      { slug: 'jira_flow_distribution_engineering', title: 'Flow Distribution (Engineering)' },
+      { slug: 'jira_created_vs_resolved', title: 'Created vs Resolved' },
+      { slug: 'jira_issue_distribution', title: 'Issue Distribution' },
+      { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)' },
+      { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)' },
+    ],
+  },
+  {
+    domain: 'Confluence',
+    charts: [
+      { slug: 'confluence_creation_trend', title: 'Page Creation Trend' },
+      { slug: 'confluence_page_density', title: 'Page Density by Space' },
+    ],
+  },
+];
+
+const totalCharts = chartGroups.reduce((s, g) => s + g.charts.length, 0);
+---
+
+<BaseLayout title="Charts">
+  <SectionHeader
+    title="Chart Gallery"
+    description={`${totalCharts} interactive Plotly visualizations across all domains.`}
+  />
+
+  <div class="space-y-8">
+    {chartGroups.map(({ domain, charts }) => (
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">{domain}</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {charts.map(({ slug, title }) => (
+            <a
+              href={`/charts/${slug}`}
+              class="group bg-white rounded-xl border border-slate-200 px-4 py-3 hover:border-brand-400 hover:shadow-sm transition-all flex items-center gap-3"
+            >
+              <svg class="w-5 h-5 text-slate-400 group-hover:text-brand-500 transition-colors flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20V10M18 20V4M6 20v-4" />
+              </svg>
+              <span class="text-sm font-medium text-slate-700 group-hover:text-brand-600 transition-colors">{title}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</BaseLayout>
