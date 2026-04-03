@@ -1,0 +1,281 @@
+{
+  "repos_scanned": 30,
+  "repos_with_ai_tooling": 8,
+  "adoption_rate": 26.7,
+  "repos": [
+    {
+      "workspace": "syscolabs",
+      "repo": "cinco-workspace",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "react-cinco",
+      "language": "javascript",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "moxy",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "neo-workspace",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "madpayments-devices-idtech-neo",
+      "language": "",
+      "ai_files_found": [
+        "CLAUDE.md"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "claude"
+      ]
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "mad-payments-vp3350",
+      "language": "",
+      "ai_files_found": [
+        "CLAUDE.md"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "claude"
+      ]
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "gitops-payments",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "seao",
+      "language": "",
+      "ai_files_found": [
+        ".cursor/rules"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "cursor"
+      ]
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cakekiosk-kdsapplauncher",
+      "language": "",
+      "ai_files_found": [
+        "AGENTS.md"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "claude"
+      ]
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "gm",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "gitops-cake",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "restaurant-admin-v2",
+      "language": "",
+      "ai_files_found": [
+        ".cursor/rules",
+        "AGENTS.md"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "claude",
+        "cursor"
+      ]
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "mad-services-xstore24eu-rl",
+      "language": "java",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "rs2-bankworks-parser-service",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "ditto-sync-agent",
+      "language": "",
+      "ai_files_found": [
+        "AGENTS.md"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "claude"
+      ]
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-urban",
+      "language": "javascript",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "kds-v2",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "merchant-service",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "olo",
+      "language": "javascript",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-rl",
+      "language": "javascript",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cake-pop-automation",
+      "language": "javascript",
+      "ai_files_found": [
+        "AGENTS.md"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "claude"
+      ]
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "concierge-associate",
+      "language": "javascript",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cake-ecs-configs",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cake-payment-gateway",
+      "language": "c#",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-services",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "cybersource-bin-service",
+      "language": "typescript",
+      "ai_files_found": [
+        "CLAUDE.md"
+      ],
+      "has_ai_tooling": true,
+      "tools_detected": [
+        "claude"
+      ]
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-development",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "menu-sync-agent",
+      "language": "",
+      "ai_files_found": [],
+      "has_ai_tooling": false,
+      "tools_detected": []
+    }
+  ]
+}

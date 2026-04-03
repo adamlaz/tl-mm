@@ -1,0 +1,1202 @@
+{
+  "tool_inventory": [
+    {
+      "title": "Engineering Software and Tools",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2024-08-14T06:24:05.000Z",
+      "url": "/spaces/ES/pages/394231819/Engineering+Software+and+Tools",
+      "excerpt": "This page lists all the software and tools we need installed on Developer and QE laptops.\nDeveloper Laptops\n Outlook\nTeams\nSlack\nIntelliJ\nAndroid studio (using toolbox)\nVSCode\nPostman / Insomnia\nWAMP\nSublime\nGoogle Chrome\nFirefox\nGit\nDocker\nVPN\nkazam - for screen recording purposes\nMySQL workbench /",
+      "content_id": "394231819"
+    },
+    {
+      "title": "Oracle Retail Xstore PoS Software - Shipping, Receiving, and Inventory Guide - Release 16.0.pdf",
+      "space": "Project Management - ME",
+      "space_key": "",
+      "last_modified": "2023-04-21T18:18:16.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=365494770&preview=%2F365494770%2F365494828%2FOracle+Retail+Xstore+PoS+Software+-+Shipping%2C+Receiving%2C+and+Inventory+Guide+-+Release+16.0.pdf",
+      "excerpt": "Oracle Retail Xstore Point-of-Service Software\nShipping, Receiving, and Inventory Guide\nRelease 16.0\nE78664-01\n\nDecember 2016\n\nOracle\u00ae Retail Xstore Point-of-Service Software Shipping, Receiving, and Inventory Guide,\nRelease 16.0\nE78664-01\nCopyright \u00a9 2016, Oracle and/or its affiliates. All rights r",
+      "content_id": "att365494828"
+    },
+    {
+      "title": "Perform a POC with the security tools given by Engineering team to integrate it with the CI/CD pipeline",
+      "space": "Cloud Services Home",
+      "space_key": "",
+      "last_modified": "2019-07-12T12:11:38.000Z",
+      "url": "/spaces/DEP/pages/259158873/Perform+a+POC+with+the+security+tools+given+by+Engineering+team+to+integrate+it+with+the+CI+CD+pipeline",
+      "excerpt": "Task List\nTask Number\u00a0\nTask\nEstimation in hours\nDescription\nJira ticket\n1\nInitial Discussion with\u00a0Engineering team and finalized\u00a0the Security Tools\n2\nEvaluate the Security Tools\n3\nImplement the Security Tools in DEV Environment\n4\nDocumentation &amp; Presentation\u00a0\n5\nShortlist the\u00a0 Security Tools acco",
+      "content_id": "259158873"
+    },
+    {
+      "title": "Cake Engineering Tools",
+      "space": "Cloud Services Home",
+      "space_key": "",
+      "last_modified": "2021-05-12T14:37:14.000Z",
+      "url": "/spaces/DEP/pages/259096688/Cake+Engineering+Tools",
+      "excerpt": "CAKE Engineering\nApplications\nThere are many applications that are already being used at Sysco Labs having multiple types of access controls.\nSome of them are identified as below.\nApplications (Internal / External)\nCentral Onboarding related items\nItem\nLevel of Criticality\nOn-B handled by\nOff-B hand",
+      "content_id": "259096688"
+    },
+    {
+      "title": "OPS Engineering Tools with Sharding",
+      "space": "OPS Engineering",
+      "space_key": "",
+      "last_modified": "2017-05-21T07:23:04.000Z",
+      "url": "/spaces/OE/pages/258605773/OPS+Engineering+Tools+with+Sharding",
+      "excerpt": "Document Status\ncompleted\nDocument Ownder\nFormer user\n\u00a0\nIntroduction\nThis page has the details of impact analysis for the OPS Engineering tools with the implementation of proposed sharding approach.\nScope\nHere we basically check the impact for Pulse and DB Ops Tool applications respectively.\nPulse\nN",
+      "content_id": "258605773"
+    },
+    {
+      "title": "DB Ops Tool - Engineering",
+      "space": "OPS Engineering",
+      "space_key": "",
+      "last_modified": "2017-06-16T05:07:41.000Z",
+      "url": "/spaces/OE/pages/258605351/DB+Ops+Tool+-+Engineering",
+      "excerpt": "",
+      "content_id": "258605351"
+    },
+    {
+      "title": "Phase Approach Check List - Chargeback Tool v2",
+      "space": "CAKE Payments",
+      "space_key": "",
+      "last_modified": "2018-11-30T11:23:46.000Z",
+      "url": "/spaces/POAI/pages/252249221/Phase+Approach+Check+List+-+Chargeback+Tool+v2",
+      "excerpt": "Audience\nFormer user\nGeethanga Amarasinghe\nFormer user\nFormer user\nFormer user\nAarthika Arunthavanathan\nKasun de Silva\nNathiesha Maddage\nLakeesha Jayasinghe\nCC -\u00a0Former user\n\nChecklist to enter phase 0\n\u00a0\nChecklist\nAnswer",
+      "content_id": "252249221"
+    }
+  ],
+  "licenses": [
+    {
+      "title": "Subscription Feature",
+      "space": "Marvel",
+      "space_key": "",
+      "last_modified": "2022-09-09T11:29:32.000Z",
+      "url": "/spaces/POSNG/pages/358221981/Subscription+Feature",
+      "excerpt": "",
+      "content_id": "358221981"
+    },
+    {
+      "title": "[STAG] Test Execution Results - [ACH Update Form]Remove the Field Validation for Driver License Field on the ACH update form",
+      "space": "Cake Payment Gateway",
+      "space_key": "",
+      "last_modified": "2024-06-01T10:01:28.000Z",
+      "url": "/spaces/CPG/pages/265771806/STAG+Test+Execution+Results+-+ACH+Update+Form+Remove+the+Field+Validation+for+Driver+License+Field+on+the+ACH+update+form",
+      "excerpt": "Payments Admin API - https://qcenter.cake.net/report/feature/build/83346/module/1460\nPayments Onboarding -\ntest scenario\nreferences\nstatus\nExisting Merchant\n(GIACT) Review flow - 25 Alpha Numeric Characters\nafter- no change\npass\n\nsuccess flow - 24 only alpha\nAfter update\npass\nNew merchant\nre",
+      "content_id": "265771806"
+    },
+    {
+      "title": "Test Execution Results - [ACH Update Form]Remove the Field Validation for Driver License Field on the ACH update form",
+      "space": "Cake Payment Gateway",
+      "space_key": "",
+      "last_modified": "2024-06-01T10:00:47.000Z",
+      "url": "/spaces/CPG/pages/265771546/Test+Execution+Results+-+ACH+Update+Form+Remove+the+Field+Validation+for+Driver+License+Field+on+the+ACH+update+form",
+      "excerpt": "ACs\nCheck that only alphanumeric is allowed in the driver\u2019s license field.\nLimit the number of characters to ~25 etc.\nReferences\nTest Scenario\nTest Steps\nApplication\nExpected Results\nActual Results(Admin API)\nActual Results (POB)\nStatus\nVerify 24 characters can be included driver\u2019s license field. an",
+      "content_id": "265771546"
+    },
+    {
+      "title": "API GW License Upgrade maintainance- 2022",
+      "space": "Ultrons",
+      "space_key": "",
+      "last_modified": "2022-11-13T04:38:30.000Z",
+      "url": "/spaces/UL/pages/262811805/API+GW+License+Upgrade+maintainance-+2022",
+      "excerpt": "Release Info\nUnder this release, we will be upgrading tyk gateway license\nStag Release Date:\u00a02022-11-14  \nProd Release Date:\u00a0\u00a02022-11-14 \nFix Version:\u00a08.75.20.40\nTickets\nhttps://jira.leapset.com/browse/PLAT-18752\nComponent Versions\nApplications\n#\nComponent\nBitbucket URL\nBranch\nCommit Id\nDep. Status\n",
+      "content_id": "262811805"
+    },
+    {
+      "title": "Cake Release - 8.75.20.40 - ( API Gateway License upgrade)",
+      "space": "Ultrons",
+      "space_key": "",
+      "last_modified": "2020-11-12T05:49:13.000Z",
+      "url": "/spaces/UL/pages/262811672/Cake+Release+-+8.75.20.40+-+API+Gateway+License+upgrade",
+      "excerpt": "Release Info\nUnder this release, we will be upgrading tyk gateway license\nStag Release Date:\u00a02020-11-12  \nProd Release Date:\u00a0\u00a02020-11-12 \nFix Version:\u00a08.75.20.40\nTickets\nhttps://jira.leapset.com/browse/PLAT-18752\nComponent Versions\nApplications\n#\nComponent\nBitbucket URL\nBranch\nCommit Id\nDep. Status\n",
+      "content_id": "262811672"
+    },
+    {
+      "title": "POS Licensing",
+      "space": "POS",
+      "space_key": "",
+      "last_modified": "2019-04-02T11:31:54.000Z",
+      "url": "/spaces/POS/pages/260836837/POS+Licensing",
+      "excerpt": "Phase 0 Status\n\nTarget release\n6.XX.X.X\nDocument status\nin progress\nDocument owner\nFormer user\n\n\nObjective\nAs CAKE Corporation, I want to only allow a specific devices to be used by each merchant for POS. Only the number of licenses purchased and active in SFDC should be allowed to be used at any gi",
+      "content_id": "260836837"
+    },
+    {
+      "title": "LICENSE AGREEMENT.pdf",
+      "space": "SWAT",
+      "space_key": "",
+      "last_modified": "2018-08-28T06:26:12.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=258310412&preview=%2F258310412%2F258325409%2FLICENSE+AGREEMENT.pdf",
+      "excerpt": "END USER LICENSE AGREEMENT FOR DIGITALPERSONA\u00ae SOFTWARE DEVELOPER KIT (SDK) PRODUCTS\nSECURE EIKON\u00ae SDK\nSECURE TOUCHCHIP\u00ae MODULE SDK\n\nIMPORTANT \u2013 READ CAREFULLY\nYOU MAY NOT INSTALL OR USE THIS DIGITALPERSONA SOFTWARE PRODUCT UNLESS YOU HAVE\nCAREFULLY READ THE TERMS AND CONDITIONS SET FORTH BELOW AND ",
+      "content_id": "att258325409"
+    },
+    {
+      "title": "Update Worldpay FIS Production License for CAKE",
+      "space": "Cake Payment Gateway",
+      "space_key": "",
+      "last_modified": "2024-05-31T11:24:31.000Z",
+      "url": "/spaces/CPG/pages/257601328/Update+Worldpay+FIS+Production+License+for+CAKE",
+      "excerpt": "When onboarding or updating merchants to Worldpay express platform we need to use a license (token) in the API request headers. This license is provided by Worldpay and it is valid for only one year. Each year before the expiration of the old license WP sends the new license via email.\nWe need to up",
+      "content_id": "257601328"
+    },
+    {
+      "title": "Retrieve License Info.png",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2023-03-01T07:12:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=256619728&preview=%2F256619728%2F256619928%2FRetrieve+License+Info.png",
+      "excerpt": "",
+      "content_id": "att256619928"
+    },
+    {
+      "title": "Retrieve License Info",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2023-03-01T07:12:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=256619728&preview=%2F256619728%2F256619925%2FRetrieve+License+Info",
+      "excerpt": "",
+      "content_id": "att256619925"
+    },
+    {
+      "title": "Retrieve License Info",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2022-11-16T05:50:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=256515980&preview=%2F256515980%2F256517021%2FRetrieve+License+Info",
+      "excerpt": "",
+      "content_id": "att256517021"
+    },
+    {
+      "title": "Retrieve License Info.png",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2022-11-16T05:50:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=256515980&preview=%2F256515980%2F256517018%2FRetrieve+License+Info.png",
+      "excerpt": "",
+      "content_id": "att256517018"
+    },
+    {
+      "title": "Retrieve License Info",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2022-08-05T10:09:55.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=256490978&preview=%2F256490978%2F256492843%2FRetrieve+License+Info",
+      "excerpt": "",
+      "content_id": "att256492843"
+    },
+    {
+      "title": "Retrieve License Info",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2022-08-05T10:09:56.000Z",
+      "url": "/plugins/servlet/ac/com.mxgraph.confluence.plugins.diagramly/customContentViewer?content.plugin=ac%3Acom.mxgraph.confluence.plugins.diagramly%3Adrawio-diagram&space.key=ES&content.id=256492506&content.version=1&space.id=256409634&content.type=custom",
+      "excerpt": "%7B%22pageId%22%3A%222607087942%22%2C%22diagramName%22%3A%22Retrieve%20License%20Info%22%2C%22version%22%3A1%2C%22inComment%22%3Afalse%2C%22comments%22%3A%5B%5D%2C%22isSketch%22%3A0%7D",
+      "content_id": "256492506"
+    },
+    {
+      "title": "Retrieve License Info.png",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2022-08-05T10:09:57.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=256490978&preview=%2F256490978%2F256491398%2FRetrieve+License+Info.png",
+      "excerpt": "",
+      "content_id": "att256491398"
+    },
+    {
+      "title": "Cake Release 8.741.30.0 - Tyk API Gateway - License renewals",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2023-11-06T06:26:40.000Z",
+      "url": "/spaces/LP/pages/253778652/Cake+Release+8.741.30.0+-+Tyk+API+Gateway+-+License+renewals",
+      "excerpt": "STAG Date\n2023-11-03 \u00a0\nPROD Date\n\u00a02023-11-06 \u00a0\nRelease Owner\nBuddhika Karunatilleke\nApprovals\nArchitect -\u00a0Bhanuka Withana\nTable of Contents\n1.\u00a0 Release Overview\n1.1 High-level Summary of the Release\nThe aim of this release was to renew the TYK API Gateway license for the upcoming year (2024). The cu",
+      "content_id": "253778652"
+    },
+    {
+      "title": "Cake Release 8.741.30.0 - Tyk API Gateway - License renewals - SOE",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2023-11-06T08:29:19.000Z",
+      "url": "/spaces/LP/pages/253776616/Cake+Release+8.741.30.0+-+Tyk+API+Gateway+-+License+renewals+-+SOE",
+      "excerpt": "Authors\nBuddhika Karunatilleke  Hashan Maduwantha \nStatus\nCompleted\nRelease Co-ordinator\nNishen Peiris \nTeams Engaged\nVega, CS\nReview Meeting Date\n2023-10-23 \nParticipants for the Review Meeting\nBuddhika Karunatilleke  Ishara.Pathirage  Nishen Peiris  !-@712020:fafcf342-6861-4a4e-ba36-17f",
+      "content_id": "253776616"
+    },
+    {
+      "title": "Cake Release - 8.741.30.0 - Tyk API Gateway - License renewals - IR-1",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2023-11-02T05:41:48.000Z",
+      "url": "/spaces/LP/pages/253776491/Cake+Release+-+8.741.30.0+-+Tyk+API+Gateway+-+License+renewals+-+IR-1",
+      "excerpt": "Release Info\nTST environment: QA cluster\nDate:\u00a0\u00a02023-11-01 \nFix Version:\u00a08.741.30.0\nFixed Tickets List\u00a0\nComponent Versions\nComponent\nGit URL (Branch)\nBranch\nCommit Id\nNotes\nDashboard\n\nrelease_8.741.30.0\n726209d\nGateway\n\nrelease_8.741.30.0\n8b4590e\nPump\n\nrelease_8.741.30.0\n77ae71d\nIdentity Broker\n\nrel",
+      "content_id": "253776491"
+    },
+    {
+      "title": "Tyk API GW - License renewal - 2023",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2023-10-31T15:35:27.000Z",
+      "url": "/spaces/LP/pages/253775680/Tyk+API+GW+-+License+renewal+-+2023",
+      "excerpt": "Please refer to .",
+      "content_id": "253775680"
+    },
+    {
+      "title": "Tyk API Gateway - License renewals",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2023-07-05T15:29:11.000Z",
+      "url": "/spaces/LP/pages/253682323/Tyk+API+Gateway+-+License+renewals",
+      "excerpt": "",
+      "content_id": "253682323"
+    },
+    {
+      "title": "License renewals",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2022-11-14T04:23:43.000Z",
+      "url": "/spaces/LP/pages/253670548/License+renewals",
+      "excerpt": "",
+      "content_id": "253670548"
+    },
+    {
+      "title": "Tyk API GW - License renewal - 2022",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2022-11-14T08:56:14.000Z",
+      "url": "/spaces/LP/pages/253669000/Tyk+API+GW+-+License+renewal+-+2022",
+      "excerpt": "This document intends to cover the steps included in renewing the license of the Tyk API GW nodes.\nClusters\nTyk API GW services are running on the following ECS clusters.\ndev-api-gateway-ecs\nqa-api-gateway-ecs\nstag-api-gateway-ecs\nprod-api-gateway-ecsss\nCurrent release version\nTyk API GW services ar",
+      "content_id": "253669000"
+    },
+    {
+      "title": "UltraESB license update - 2022- SoE",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2022-09-06T04:27:39.000Z",
+      "url": "/spaces/LP/pages/253647113/UltraESB+license+update+-+2022-+SoE",
+      "excerpt": "",
+      "content_id": "253647113"
+    },
+    {
+      "title": "License updates",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2022-09-06T04:32:05.000Z",
+      "url": "/spaces/LP/pages/253646580/License+updates",
+      "excerpt": "This document will track all the license updates performed on the AdroidLogic ESB servers.",
+      "content_id": "253646580"
+    },
+    {
+      "title": "UltraESB license update - 2020- SoE",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2022-09-05T15:49:03.000Z",
+      "url": "/spaces/LP/pages/253442531/UltraESB+license+update+-+2020-+SoE",
+      "excerpt": "",
+      "content_id": "253442531"
+    }
+  ],
+  "vendors": [
+    {
+      "title": "Feature testing on key rotation tool for different vendors and different Card types - PCI 4.0",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-02-10T05:32:49.000Z",
+      "url": "/spaces/P/pages/828702741/Feature+testing+on+key+rotation+tool+for+different+vendors+and+different+Card+types+-+PCI+4.0",
+      "excerpt": "Test Scenario\nRequest and response - before\nPostman get call - before\nPostman get call - after\n[but after the script]\nSQL pad select query  - before\nSQL pad select query - after [but after the script]\nDifferent vendors - Magtek\nREQUEST_URL\nhttps://qa-madmobile-payments.cake.net/api/authorization\n***",
+      "content_id": "828702741"
+    },
+    {
+      "title": "Gusto Payroll SaaS Integration Requirements",
+      "space": "Partnerships",
+      "space_key": "",
+      "last_modified": "2024-08-30T04:23:00.000Z",
+      "url": "/spaces/partnerships/pages/450232337/Gusto+Payroll+SaaS+Integration+Requirements",
+      "excerpt": "Company Onboarding",
+      "content_id": "450232337"
+    },
+    {
+      "title": "Restaurant Platform Services from External Vendors",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2024-09-30T04:49:56.000Z",
+      "url": "/spaces/CCE/pages/395640845/Restaurant+Platform+Services+from+External+Vendors",
+      "excerpt": "Following services are being handed over to Cloud team from Leo\nService\nKT Link and  Participants\nMain Tasks Covered\nDocumentation\nHands-on\nTyk\n\n\nTo be summarised\n todo\n\n  todo\n\nESB\n\n \nIntroducing a new route\nIntroducing a new security filter\nLicence Renewal \nOS Patch Upgrade\n\n\n\nIntroducing a new ro",
+      "content_id": "395640845"
+    },
+    {
+      "title": "KDS CPQ Shop Product and Saas",
+      "space": "Operations Solutions",
+      "space_key": "",
+      "last_modified": "2023-02-07T03:46:20.000Z",
+      "url": "/spaces/OSME/pages/365655522/KDS+CPQ+Shop+Product+and+Saas",
+      "excerpt": "This documentation is related to the: \n\nREMINDER, make sure to add the sales tax code on every new item added.",
+      "content_id": "365655522"
+    },
+    {
+      "title": "Loyalty CPQ Shop Product and Saas",
+      "space": "Operations Solutions",
+      "space_key": "",
+      "last_modified": "2023-02-07T03:46:04.000Z",
+      "url": "/spaces/OSME/pages/365654898/Loyalty+CPQ+Shop+Product+and+Saas",
+      "excerpt": "Documentation place holder\nREMINDER, make sure to add the sales tax code on every new item added.",
+      "content_id": "365654898"
+    },
+    {
+      "title": "POS Agreement - SaaS Renewal.docx",
+      "space": "Operations Solutions",
+      "space_key": "",
+      "last_modified": "2022-02-16T08:45:55.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=365660412&preview=%2F365660412%2F365644747%2FPOS+Agreement+-+SaaS+Renewal.docx",
+      "excerpt": "POS Agreement\nHello &lt;# &lt;Content Select=&quot;/Opportunity/matrix_dlc__Contact__r.Name&quot;/&gt; #&gt;,\nHere is your CAKE POS 2-year contract renewal agreement for &lt;# &lt;Content Select=&quot;/Opportunity/Account.Name&quot;/&gt; #&gt;. If you are\ncurrently signed up for our Gift Card servic",
+      "content_id": "att365644747"
+    },
+    {
+      "title": "COO - POS Agreement - SaaS Renewal.docx",
+      "space": "Operations Solutions",
+      "space_key": "",
+      "last_modified": "2022-02-16T08:42:44.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=365660412&preview=%2F365660412%2F365628976%2FCOO+-+POS+Agreement+-+SaaS+Renewal.docx",
+      "excerpt": "Assignment of CAKE Agreements\nChange of Ownership requested date of change: XXXX\n\nASSIGNOR RESTAURANT INFORMATION\nRestaurant Name (DBA)\n\nLegal Business Name\n\n\\casecooassignorrestname2\\\n\n\\casecooassignorlegalname2\\\n\nRestaurant Address\n\nCity, State, Zip\n\n\\casecooassignorstreet2\\\n\n\\casecooassignorcitys",
+      "content_id": "att365628976"
+    },
+    {
+      "title": "Existing Software (SaaS) Contracts",
+      "space": "Salesforce",
+      "space_key": "",
+      "last_modified": "2017-09-29T07:23:30.000Z",
+      "url": "/spaces/SFDC/pages/359962418/Existing+Software+SaaS+Contracts",
+      "excerpt": "\u00a0\nExisting Software Contracts are the base lines for the Entitlement Processes\u00a0\nPlease find below active service contract types.\n\u00a0\nContract (Agreement) Name\nProduct Code\nContract Line Items (Products/Assets/Services)\nContract Length (or Term)\nReminder before\nEntitlement Process name\nEntitlement\nMile",
+      "content_id": "359962418"
+    },
+    {
+      "title": "Approved Staff Augmentation Vendors",
+      "space": "Mad Mobile People Operations",
+      "space_key": "",
+      "last_modified": "2022-03-07T16:26:35.000Z",
+      "url": "/spaces/MMPO/pages/359826065/Approved+Staff+Augmentation+Vendors",
+      "excerpt": "Staffing Vendor\nDate Approved\nNDA Signed on",
+      "content_id": "359826065"
+    },
+    {
+      "title": "POS &amp; Third Party Vendor Documentation",
+      "space": "Restaurant LOB",
+      "space_key": "",
+      "last_modified": "2022-06-09T18:05:33.000Z",
+      "url": "/spaces/MI/pages/359433202/POS+Third+Party+Vendor+Documentation",
+      "excerpt": "NCR Aloha Table Service Manager Guide\nNCR Aloha Table Service Point-of-Sale Report Guide\nNCR Aloha Table Service v15.1 Reference Guide",
+      "content_id": "359433202"
+    },
+    {
+      "title": "Partnerships / Vendors Contracts Tracker",
+      "space": "Restaurant LOB",
+      "space_key": "",
+      "last_modified": "2022-03-02T16:09:01.000Z",
+      "url": "/spaces/MI/pages/359432790/Partnerships+Vendors+Contracts+Tracker",
+      "excerpt": "Vendor / Partnership\nPurpose of\nMM Point Person\nPartner / Vendor POC\nStatus\nSLA\nContract Terms\nComments\nWorldPay\nAcquiring Processor\nKellie Goodwin \nReed Spalding\nReed.Spalding@fisglobal.com\nJerry Silverwood\nJerry.Silverwood@fisglobal.com\nExecuted\nEnding: 12.31.22",
+      "content_id": "359432790"
+    },
+    {
+      "title": "Additional Vendors and Contacts",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2018-06-18T13:40:53.000Z",
+      "url": "/spaces/PT/pages/356266643/Additional+Vendors+and+Contacts",
+      "excerpt": "Adyen\nyReceipts",
+      "content_id": "356266643"
+    },
+    {
+      "title": "Vendor Docs",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2016-11-07T21:18:51.000Z",
+      "url": "/spaces/PT/pages/356257289/Vendor+Docs",
+      "excerpt": "",
+      "content_id": "356257289"
+    },
+    {
+      "title": "Managing Vendor Defaults",
+      "space": "IT & Dev Ops",
+      "space_key": "",
+      "last_modified": "2016-12-12T18:01:03.000Z",
+      "url": "/spaces/OPS/pages/355778775/Managing+Vendor+Defaults",
+      "excerpt": "This applies to ALL default passwords, including but not limited to those used by operating systems, security software, applications, system accounts, Simple Network Messaging Protocol (SNMP) community strings, etc.\nIn addition to changing default passwords, we recommend that you do not use any defa",
+      "content_id": "355778775"
+    },
+    {
+      "title": "SaaS VPN Documentation - OpenVPN",
+      "space": "IT & Dev Ops",
+      "space_key": "",
+      "last_modified": "2021-09-14T15:01:48.000Z",
+      "url": "/spaces/OPS/pages/355778513/SaaS+VPN+Documentation+-+OpenVPN",
+      "excerpt": "Knowledge Transfer Session Recording\nAdding Networks to the OpenVPN cloud.\nPlease read the documentation and watch the tutorial video as necessary to understand how to add a network in the OpenVPN admin console.  \nInstalling the Connector and configuring connection to OpenVPN cloud.\nAfter configurin",
+      "content_id": "355778513"
+    },
+    {
+      "title": "Vendor Screening Process",
+      "space": "IT & Dev Ops",
+      "space_key": "",
+      "last_modified": "2016-11-16T15:48:19.000Z",
+      "url": "/spaces/OPS/pages/355764187/Vendor+Screening+Process",
+      "excerpt": "Purpose\nTo mitigate the risks and/or uncover potential vulnerabilities posed by third-party vendors to determine vendor candidacy for contract.\n\u00a0\n\u00a0\n\u00a0\nVendor Vetting Process\nThe documentation of the following information must be obtained during a preliminary screening prior to contracting.\nReview the",
+      "content_id": "355764187"
+    },
+    {
+      "title": "Software Procurement Process",
+      "space": "IT & Dev Ops",
+      "space_key": "",
+      "last_modified": "2017-01-17T18:27:45.000Z",
+      "url": "/spaces/OPS/pages/355763969/Software+Procurement+Process",
+      "excerpt": "As an employee, requesting new software on the company\u2019s computing device operated within the company\u2019s network, seek approval from manager or a sponsor by presenting a business case\nIf approved by manager or sponsor, fill out all fields of the Software Procurement Request Form - https://docs.google",
+      "content_id": "355763969"
+    },
+    {
+      "title": "Stale: Payments Partnerships / Vendors Contracts Tracker",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-10-24T12:26:11.000Z",
+      "url": "/spaces/P/pages/268042370/Stale+Payments+Partnerships+Vendors+Contracts+Tracker",
+      "excerpt": "Vendor / Partnership\nPurpose of\nMM Point Person\nPartner / Vendor POC\nStatus\nSLA\nContract Terms\nComments\nWorldPay\nAcquiring Processor\nKellie Goodwin \nExecuted\nEnding: Dec 2022\nImproving Relationship\nSwipeSum\nMerchant Statement Analysis\nKellie Goodwin \nAccessing Vendor\nIngenico\nGateway Switching / Mob",
+      "content_id": "268042370"
+    },
+    {
+      "title": "Network Hardware Management Systems - Procurement Procedures",
+      "space": "Tech Ops",
+      "space_key": "",
+      "last_modified": "2020-03-24T22:42:51.000Z",
+      "url": "/spaces/TECOP/pages/261797255/Network+Hardware+Management+Systems+-+Procurement+Procedures",
+      "excerpt": "This page documents the processes used to assign and configure devices that are remotely managed through various cloud based management tools.\nCustomer Orders: EOD Device Configuring Procedures  (Routers/APs)\nAccess Point Configurat",
+      "content_id": "261797255"
+    },
+    {
+      "title": "OrderPad SaaS - Price Change $29/mo --&gt; $49/mo",
+      "space": "Tech Ops",
+      "space_key": "",
+      "last_modified": "2019-07-15T22:52:10.000Z",
+      "url": "/spaces/TECOP/pages/261793610/OrderPad+SaaS+-+Price+Change+29+mo+--+49+mo",
+      "excerpt": "This page is for documentation of the change of price for the OrderPad Service that began July 1st, 2019\nOrderPad SaaS customer expectations",
+      "content_id": "261793610"
+    },
+    {
+      "title": "Hardware Return Period Process &amp; SaaS Cancellation Process",
+      "space": "Tech Ops",
+      "space_key": "",
+      "last_modified": "2020-10-23T17:19:08.000Z",
+      "url": "/spaces/TECOP/pages/261783869/Hardware+Return+Period+Process+SaaS+Cancellation+Process",
+      "excerpt": "When is this processes used?\nThis process is designed to handle the event where an Account purchases hardware and are within the Hardware Return Period (10 days from date of delivery) and request to return the items for a refund. \nNOTE:\u00a0 Refund is subject to 30% restocking fee, and other applicable ",
+      "content_id": "261783869"
+    },
+    {
+      "title": "Mongo Changes Related to POS/OrderPad SAAS Discount Addition",
+      "space": "OPS Engineering",
+      "space_key": "",
+      "last_modified": "2019-08-16T06:01:44.000Z",
+      "url": "/spaces/OE/pages/258649528/Mongo+Changes+Related+to+POS+OrderPad+SAAS+Discount+Addition",
+      "excerpt": "Devpro2 &amp; Production\nMake SAAS discount configurable\nadding discounts\ndb.productDiscount.insert({&quot;product&quot; : ObjectId(&quot;58258b9412f7cb3f66fcc4e5&quot;),&quot;is_active&quot; : true,&quot;discount&quot; : [{&quot;_id&quot;:ObjectId(), is_Active: true, amount: -1}],&quot;created_at&q",
+      "content_id": "258649528"
+    },
+    {
+      "title": "POS SAAS",
+      "space": "OPS Engineering",
+      "space_key": "",
+      "last_modified": "2019-09-26T07:03:12.000Z",
+      "url": "/spaces/OE/pages/258648098/POS+SAAS",
+      "excerpt": "Requested By: Sales\nEpic :\u00a0\nRequirement: Sales wants to add discounts for Subscription fees for POS and Orderpad\nStatus:\u00a0\nMapping of Parent Kits with SAAS\nParent Kit\nMatrix Code (Prod)\nRelevant SAAS\n1st Unit\nRelevant SAAS\n(2 &gt; = ) Units\nPOS Station KIT Purchase - CAKE V3 - white\nPSK13004\nPOS SAAS",
+      "content_id": "258648098"
+    },
+    {
+      "title": "Orderpad SAAS",
+      "space": "OPS Engineering",
+      "space_key": "",
+      "last_modified": "2019-06-28T04:15:14.000Z",
+      "url": "/spaces/OE/pages/258643197/Orderpad+SAAS",
+      "excerpt": "Requirement:\u00a0Change the price of Orderpad SAAS\nRequested By:\u00a0Thi Lam\nRelevant Tickets :\u00a0\nField\nName to appear in CAKE Shop\nOrderPad Software Service\nPrice\n$49\nProduct Code\nDSS10001\nGo live date\n2019-07-01 \u00a0\nSF Product link- Production\nSF Product link- Dev Pro 2\n01t3900000RyMv1\nPrice Book link-produc",
+      "content_id": "258643197"
+    },
+    {
+      "title": "UoM IoT Challenge : Instruction to the hardware component vendor",
+      "space": "SWAT",
+      "space_key": "",
+      "last_modified": "2016-11-07T12:05:33.000Z",
+      "url": "/spaces/SWAT/blog/2016/10/10/258393039/UoM+IoT+Challenge+Instruction+to+the+hardware+component+vendor",
+      "excerpt": "Suitable vendors\nLankaTronics :\u00a0http://www.lankatronics.com/ \u00a0\nMagnateLanka -\u00a0http://www.magnatelanka.com/ \u00a0\n\u00a0\nOther Requirements\nRouters for testing\nUSB cables\nSmart phones/tablets\nSoldering Irons, Paste, Sucker, lead\u00a0\nTool Kit - cutters, ..\n\u00a0\nAt the screening\nGet the list of hardware compone",
+      "content_id": "258393039"
+    }
+  ],
+  "budget_cost": [
+    {
+      "title": "Cloud Ops Security &amp; Cost Savings_2023-06-14.docx",
+      "space": "DevOps",
+      "space_key": "",
+      "last_modified": "2023-06-21T11:58:07.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=8650753&preview=%2F8650753%2F8650765%2FCloud+Ops+Security+%26+Cost+Savings_2023-06-14.docx",
+      "excerpt": "0:0:0.0 --&gt; 0:0:1.30\nSeshan Gunatilaka\nI don&#39;t want to join early.\n0:0:2.370 --&gt; 0:0:3.110\nRobert Burcham\nUh, just a little.\n0:0:4.300 --&gt; 0:0:7.580\nSeshan Gunatilaka\nSo deltoid, mother call, we suddenly thought, you know, meeting has started.\n0:0:13.440 --&gt; 0:0:13.620\nRobert Burcham",
+      "content_id": "att8650765"
+    },
+    {
+      "title": "Potential AWS Cost Savings 2025",
+      "space": "DevOps",
+      "space_key": "",
+      "last_modified": "2025-01-10T14:29:13.000Z",
+      "url": "/spaces/DO/pages/750977029/Potential+AWS+Cost+Savings+2025",
+      "excerpt": "This document outlines the potential cost savings and actions identified for the AWS environment in 2025. The analysis leverages data from the following AWS Quicksight Dashboards:\nCORA Dashboard - Cost Optimization Recommended Actions (auto-updated)\nhttps://us-east-1.quicksight.aws.amazon.com/sn/acc",
+      "content_id": "750977029"
+    },
+    {
+      "title": "Phase 3 - RDS Instances Removal and Cost Savings",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2025-01-28T05:03:05.000Z",
+      "url": "/spaces/CCE/pages/676626434/Phase+3+-+RDS+Instances+Removal+and+Cost+Savings",
+      "excerpt": "Overview\nThis document outlines the process for identifying and removing idle RDS instances to optimize cost savings. By checking active connections, validating endpoint usage in Route 53 (R53) and Bitbucket repositories, and applying an expiration tag, we ensure that idle instances are efficiently ",
+      "content_id": "676626434"
+    },
+    {
+      "title": "Staging v5.7 RDS Instance Removal and Cost Saving",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2025-01-15T11:34:51.000Z",
+      "url": "/spaces/CCE/pages/665420076/Staging+v5.7+RDS+Instance+Removal+and+Cost+Saving",
+      "excerpt": "RDS Instance\nEngine Version\nStatus\nActual Cost Saving per Month (USD)\nSnapshot\nNote\nTags\nstag-shard1-old1-old1\n\u00a05.7.44\n\u00a0Deleted\n\n358.30\nstag-shard1-old1-old1-6-jan-2024\nStop - 18/12/2024\nDelete - 06/01/2024\nDeleted stag-shard1-o",
+      "content_id": "665420076"
+    },
+    {
+      "title": "Production v5.7 RDS Instance Removal and Cost Saving",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2025-01-15T11:43:59.000Z",
+      "url": "/spaces/CCE/pages/665420066/Production+v5.7+RDS+Instance+Removal+and+Cost+Saving",
+      "excerpt": "RDS Instance\nEngine Version\nStatus\nActual Cost Saving per Month (USD)\nCM Ticket\nSnapshot\nNote\nTags\nprod-oauth2-db-old1\n\u00a05.7.44\n\u00a0deleted\n\n943.53\n\u00a0\n\u00a0prod-oauth2-db-old1-12-12-2024\nDeleted prod-oauth2-db-bg-instance blue/green deployment instance.\noauth2 Cost Link!--https://us-east-1.console.aws.amazon",
+      "content_id": "665420066"
+    },
+    {
+      "title": "Phase 1 and Phase 2 - RDS Instances Removal and Cost Savings",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2025-01-22T07:39:23.000Z",
+      "url": "/spaces/CCE/pages/616169584/Phase+1+and+Phase+2+-+RDS+Instances+Removal+and+Cost+Savings",
+      "excerpt": "Overview\nThis document outlines the process for identifying and removing idle RDS instances to optimize cost savings. By checking active connections, validating endpoint usage in Route 53 (R53) and Bitbucket repositories, and applying an expiration tag, we ensure that idle instances are efficiently ",
+      "content_id": "616169584"
+    },
+    {
+      "title": "Cake Release 8.768.10.0 - FBO Funding Optimisation for Cost-Efficient Settlements - Phase 3 \u2013 Move all batch jobs to new batch processor and decommission the old",
+      "space": "CAKE Payments",
+      "space_key": "",
+      "last_modified": "2024-12-12T14:14:39.000Z",
+      "url": "/spaces/POAI/pages/536969228/Cake+Release+8.768.10.0+-+FBO+Funding+Optimisation+for+Cost-Efficient+Settlements+-+Phase+3+Move+all+batch+jobs+to+new+batch+processor+and+decommission+the+old",
+      "excerpt": "STAG Date\nPROD Date\nRelease Owner\nMichael Gibaldi \nApprovals\nSTAG Go/No Go\nEngineering - Michael Gibaldi\nArchitect -\u00a0Emmanuel Koutsourais\nQuality Engineering\u00a0Michael Gibaldi\nProduct Manager Ashley Achin\nPMOMark Guilarte  / !-@712020:7bf62677-7b4c-4b65-a716-",
+      "content_id": "536969228"
+    },
+    {
+      "title": "Account Name and Cost Center Mapping - Quicksight",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2024-09-23T08:58:32.000Z",
+      "url": "/spaces/CCE/pages/503545918/Account+Name+and+Cost+Center+Mapping+-+Quicksight",
+      "excerpt": "The current CUR (Cost and Usage Report) dataset does not directly include cost center information or account name mapping required for the QuickSight dashboard. Therefore, it is necessary to manually implement the mapping for cost center information and account names in the QuickSight dashboard.\nArc",
+      "content_id": "503545918"
+    },
+    {
+      "title": "Cost Intelligence, KPI and CUDOS Dashbaords",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2024-09-23T08:56:56.000Z",
+      "url": "/spaces/CCE/pages/502760096/Cost+Intelligence+KPI+and+CUDOS+Dashbaords",
+      "excerpt": "The Cost Intelligence, KPI, and CUDOS dashboards in AWS QuickSight provide comprehensive insights into cloud cost management. The Cost Intelligence Dashboard offers detailed analysis of spending patterns and cost drivers, while the KPI Dashboard tracks key performance metrics related to resource eff",
+      "content_id": "502760096"
+    },
+    {
+      "title": "Cake Release 8.761.0.0 - FBO Funding Optimisation for Cost-Efficient Settlements - Phase 2 - STAG patch",
+      "space": "CAKE Payments",
+      "space_key": "",
+      "last_modified": "2024-09-10T10:17:42.000Z",
+      "url": "/spaces/POAI/pages/471597257/Cake+Release+8.761.0.0+-+FBO+Funding+Optimisation+for+Cost-Efficient+Settlements+-+Phase+2+-+STAG+patch",
+      "excerpt": "STAG Date\n 2024-07-25 \nPROD Date\n 2024-09-10 \nRelease Owner\nMiftha Idroos \nApprovals\nPROD Go/No Go\nProduct\u00a0- Ashley Achin  \u00a0Chethana Senadeera \nEngineering - Michael Gibaldi\nArchitect -\u00a0Emmanuel Koutsourais  \u00a0\nQuality Engineering\u00a0!-@615774fc048360006a18f0",
+      "content_id": "471597257"
+    },
+    {
+      "title": "[PROD] Sanity for FBO Funding Optimisation for Cost-Efficient Settlements - Phase 2",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2024-09-13T14:49:06.000Z",
+      "url": "/spaces/P/pages/471498845/PROD+Sanity+for+FBO+Funding+Optimisation+for+Cost-Efficient+Settlements+-+Phase+2",
+      "excerpt": "Testing Status : COMPLETED\n\nReviewed by :\nLinda Sikes  9/13/24\nComments : \nStart Date - 2024-09-12 \nEnd Date - 2024-09-13 \nComponent\nReferences\nCompletion Status\nCake payment gateway\nCompleted\nPAC\nCompleted\nBatch Processor\nCompleted\nLitle Capture\nCompleted\nLitle ledger\nCompleted\nLitle billing\nComple",
+      "content_id": "471498845"
+    },
+    {
+      "title": "Cake Release 8.761.0.0 - FBO Funding Optimisation for Cost-Efficient Settlements - Phase 2",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2024-09-10T08:16:30.000Z",
+      "url": "/spaces/P/pages/471269576/Cake+Release+8.761.0.0+-+FBO+Funding+Optimisation+for+Cost-Efficient+Settlements+-+Phase+2",
+      "excerpt": "",
+      "content_id": "471269576"
+    },
+    {
+      "title": "11 - CR - Costing",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2023-12-21T07:51:43.000Z",
+      "url": "/spaces/MMA/pages/360776087/11+-+CR+-+Costing",
+      "excerpt": "11.1 Large Language Model\nThe following Amazon Bedrock Foundation models are available. It was decided to use Claude 2.1 after comparing a few models, as it provided better text generation for the intended purpose.\nAI21 Labs\nJurassic-2 Mid\nJurassic-2 Ultra\nAmazon\nTitan Text Lite\nTitan Text Express\nT",
+      "content_id": "360776087"
+    },
+    {
+      "title": "Cake Release 8.761.0.0 - FBO Funding Optimisation for Cost-Efficient Settlements - Phase 2 - IR 6",
+      "space": "CAKE Payments",
+      "space_key": "",
+      "last_modified": "2024-06-05T06:06:05.000Z",
+      "url": "/spaces/POAI/pages/272891905/Cake+Release+8.761.0.0+-+FBO+Funding+Optimisation+for+Cost-Efficient+Settlements+-+Phase+2+-+IR+6",
+      "excerpt": "STAG Date\n\nPROD Date\n\nRelease Owner\nMiftha Idroos \nApprovals\nTable of Contents\n1.\u00a0 Release Summary\n1.1 High-level Summary of the Release\nPAC\nBatch Jobs ACH section is updated as below,\nNew upload option added as  - Direct transfer to WP FTP\nIf this option is selected, ACH file will be created and tr",
+      "content_id": "272891905"
+    },
+    {
+      "title": "FBO Funding Optimization for Cost-Efficient Settlements",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2024-03-15T08:12:57.000Z",
+      "url": "/spaces/P/pages/268083348/FBO+Funding+Optimization+for+Cost-Efficient+Settlements",
+      "excerpt": "Executive Summary\nThe current process for Regular Day Funding (RDF) merchants involves creating a single settlement instruction file and waiting for the FBO account to accumulate enough funds over a 2-day period. Afterwards, all RDF instructions are sent with a &quot;SameDay flag,&quot; resulting in",
+      "content_id": "268083348"
+    },
+    {
+      "title": "[QA] Testing on modified API on FBO Funding Optimization for Cost-Efficient Settlements",
+      "space": "Cake Payment Gateway",
+      "space_key": "",
+      "last_modified": "2024-06-01T10:32:48.000Z",
+      "url": "/spaces/CPG/pages/265783834/QA+Testing+on+modified+API+on+FBO+Funding+Optimization+for+Cost-Efficient+Settlements",
+      "excerpt": "Endpoint\n/api/batch/ibf/ach/regular_funding\nRequest Body\nwhen strategy is match_fbo_balance\n{\n  &quot;transfer_to_processor&quot;: false,\n  &quot;merchants_selection_strategy&quot;: {\n    &quot;strategy&quot;: &quot;match_fbo_balance&quot;,\n    &quot;config&quot;: {\n      &quot;same_day_flagging&quo",
+      "content_id": "265783834"
+    },
+    {
+      "title": "Test Plan- FBO Funding Optimization for Cost-Efficient Settlements",
+      "space": "Cake Payment Gateway",
+      "space_key": "",
+      "last_modified": "2024-06-01T10:32:24.000Z",
+      "url": "/spaces/CPG/pages/265783667/Test+Plan-+FBO+Funding+Optimization+for+Cost-Efficient+Settlements",
+      "excerpt": "Target Release\n FBO Funding Optimization for Cost-Efficient Settlements\nVersion\nV1\nAuthor(s)\nKalpani Ariyarathne  \nReviewer\nLinda Sikes  Lakeesha Jayasinghe\nStatus\ndone\n \nTeam QA Lead\nLakeesha Jayasinghe \nEPIC\n\n1.0. Feature / Release Overview\nThe current RDF batch process waits for our FBO account t",
+      "content_id": "265783667"
+    },
+    {
+      "title": "Test Plan - FBO Funding Optimization for Cost-Efficient Settlements",
+      "space": "Cake Payment Gateway",
+      "space_key": "",
+      "last_modified": "2024-06-01T10:32:24.000Z",
+      "url": "/spaces/CPG/pages/265783659/Test+Plan+-+FBO+Funding+Optimization+for+Cost-Efficient+Settlements",
+      "excerpt": "",
+      "content_id": "265783659"
+    },
+    {
+      "title": "Release - FBO Funding Optimization for Cost-Efficient Settlements",
+      "space": "Cake Payment Gateway",
+      "space_key": "",
+      "last_modified": "2024-06-01T10:32:19.000Z",
+      "url": "/spaces/CPG/pages/265783627/Release+-+FBO+Funding+Optimization+for+Cost-Efficient+Settlements",
+      "excerpt": "Test Scope\nTest Reference\nFBO Funding Optimization - Batch Process\n\nFBO Funding Optimization - Beta Feature Testing\n\nFBO Funding Optimization - Error Scenarios\n\nFBO Funding Optimization - Beta Testing on the scheduler\nNA\n\nFBO Funding Optimization - Move ACH File after submission to S3 archived bucke",
+      "content_id": "265783627"
+    },
+    {
+      "title": "Report  Component Cost",
+      "space": "Aruna Dissanayake\u00a0",
+      "space_key": "",
+      "last_modified": "2024-05-16T09:16:50.000Z",
+      "url": "/spaces/SMADP/pages/265224525/Report+Component+Cost",
+      "excerpt": "Component\nServer Size\nCost\nprod_universal-admin-reports_service\nt3.small\n$ 15.23\nreplica-ua_reports_api_service\nt2.micro\n$ 8.50\nprod_wallet_data_pumper_service\nt3.small\n$ 15.23\nreplica-universal-admin-reports_service\nt3.small\n$ 15.23\nprod_ua-reports-payments_service\nt2.micro\n$ 8.50\nreplica-src-doc-g",
+      "content_id": "265224525"
+    },
+    {
+      "title": "Cost of Tech Debts",
+      "space": "Asiri Liyanage",
+      "space_key": "",
+      "last_modified": "2024-05-16T09:30:31.000Z",
+      "url": "/spaces/SMALP/pages/264405149/Cost+of+Tech+Debts",
+      "excerpt": "Paying off technical debts is arguably the most challenging piece of work to be prioritized in a delivery pipeline. Product team, along with sales team, and also business wants features to go out. The repercussions of not paying tech debt is not very well known or visible, hence getting engineering ",
+      "content_id": "264405149"
+    },
+    {
+      "title": "DP Cost",
+      "space": "Aruna Dissanayake",
+      "space_key": "",
+      "last_modified": "2024-05-16T09:23:28.000Z",
+      "url": "/spaces/SMADNP/pages/263750541/DP+Cost",
+      "excerpt": "Total Cost: $6955\nStorage + Processing Cost: ~$5000 (Without API, Kafka, Metadata DB mostly won\u2019t have to scale with the growth)\nTickets: 612994207\nPayroll: 721447107\nPayments (From PG): 208359750\nBatch 6637981\nCategories 412728\nDevices 19643\nEmployees 501030\nItems 4431842\nJobs 88821\nMerchants 10621",
+      "content_id": "263750541"
+    },
+    {
+      "title": "2019-09-04 Meeting Notes - Feature and Cost Comparison",
+      "space": "Ultrons",
+      "space_key": "",
+      "last_modified": "2019-09-25T04:34:35.000Z",
+      "url": "/spaces/UL/pages/262773472/2019-09-04+Meeting+Notes+-+Feature+and+Cost+Comparison",
+      "excerpt": "Date\n2019-09-04\nParticipants\nAruna Dissanayake \nAsiri Liyanage \nAsanga Nugawela \nKalinga Dissanayake \nJanith Bandara \nPavith Gunasekara \nSivaram Rasathurai  \nFormer user \nShoba \nFormer user \nGoals\nPurpose of thi",
+      "content_id": "262773472"
+    },
+    {
+      "title": "API Gateway Cost Comparison - TYK | AWS | KONG",
+      "space": "Ultrons",
+      "space_key": "",
+      "last_modified": "2019-09-02T05:10:35.000Z",
+      "url": "/spaces/UL/pages/262772482/API+Gateway+Cost+Comparison+-+TYK+AWS+KONG",
+      "excerpt": "Author\nPavith Gunasekara\nFormer user\nReviewers\nKalinga Dissanayake\nJanith Bandara\nDocument Status\nCOMPLETE\nAssumptions and\u00a0Constraints\nTyk\n&#39;Pro Unlimited&#39; is the license considered for the cost calculation.\nOnly three dev/test environments are considered for the cost calculation.\nECS (AWS Fa",
+      "content_id": "262772482"
+    },
+    {
+      "title": "TYK API Gateway Cost Breakdown",
+      "space": "Ultrons",
+      "space_key": "",
+      "last_modified": "2019-08-29T08:34:54.000Z",
+      "url": "/spaces/UL/pages/262772320/TYK+API+Gateway+Cost+Breakdown",
+      "excerpt": "Licensing Cost\u00a0\nPro Unlimited \u00a325,000 ($30,631.62) per annum. An important point to note is that as per their response, we can set up any of the components in HA (even the dashboard) and have an unlimited number of gateways in a single region.\nDev and test environment pricing - \u00a31,500 ($1837.90) per",
+      "content_id": "262772320"
+    }
+  ],
+  "per_seat": [
+    {
+      "title": "Loyalty Reports.pdf",
+      "space": "Cakecore QE",
+      "space_key": "",
+      "last_modified": "2025-03-26T06:17:13.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=985399297&preview=%2F985399297%2F985399343%2FLoyalty+Reports.pdf",
+      "excerpt": "\u200e OS FE backward compatibility with existing\nP\n\u200ereports\n\n\u200eBackward Compatibility\n\n\u200e ut of\nO\n\u200eScope\n\n\u200eVoid\n\n\u200e ut Of\nO\n\u200eScope\n\n\u200eRefund\n\n\u200eMobile Phone\n\u200eTab\n\n\u200eMobile Responsiveness\n\n\u200eiPad\n\u200eChrome\n\u200eFirefox\n\n\u200eNon Functional\n\n\u200eBrowser Compatibility\n\u200eInternet Explore\n\u200eSafari\n\u200eData Purging\n\n\u200e tarting and end",
+      "content_id": "att985399343"
+    },
+    {
+      "title": "HLS - (HTTP Live Streaming).",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2025-03-18T06:46:26.000Z",
+      "url": "/spaces/ES/pages/961741035/HLS+-+HTTP+Live+Streaming+.",
+      "excerpt": "Logical View\nVideo Constraints\nVideo resolution\n1920 x 1080\nMax Size\n300 MB\nLength\n8 mins\nTime in minutes per day\n24 * 60\n1440 minutes / day\nVideo duration\n8 mins\nNumber of cycles\n1440 / 8\n180 cycles / day\n1. S3 Upload and Storage Costs\nEach customer uploads one video of 300 MB.\nTotal video uploads:",
+      "content_id": "961741035"
+    },
+    {
+      "title": "AI ETL Workflows - n8n",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-27T12:14:38.000Z",
+      "url": "/spaces/PT/pages/904200241/AI+ETL+Workflows+-+n8n",
+      "excerpt": "Table of Content\nETL n8n - Overview\n\nn8n is an open-source (fair-code licensed) automation tool that allows you to connect different systems, services, and APIs without extensive coding. It\u2019s often used for ETL (Extract, Transform, Load) workflows, meaning you can:\nExtract data from one or more sour",
+      "content_id": "904200241"
+    },
+    {
+      "title": "Loyalty Reports.pdf",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-02-26T03:35:40.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=897777677&preview=%2F897777677%2F897777696%2FLoyalty+Reports.pdf",
+      "excerpt": "\u200e OS FE backward compatibility with existing\nP\n\u200ereports\n\n\u200eBackward Compatibility\n\n\u200e ut of\nO\n\u200eScope\n\n\u200eVoid\n\n\u200e ut Of\nO\n\u200eScope\n\n\u200eRefund\n\n\u200eMobile Phone\n\u200eTab\n\n\u200eMobile Responsiveness\n\n\u200eiPad\n\u200eChrome\n\u200eFirefox\n\n\u200eNon Functional\n\n\u200eBrowser Compatibility\n\u200eInternet Explore\n\u200eSafari\n\u200eData Purging\n\n\u200e tarting and end",
+      "content_id": "att897777696"
+    },
+    {
+      "title": "Developer Portal - Blueprint",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2025-05-22T18:26:58.000Z",
+      "url": "/spaces/PROD/pages/894173202/Developer+Portal+-+Blueprint",
+      "excerpt": "Executive Summary\nA fully fledged developer portal catering from API discovery to publishing partner solutions to be listed on CAKE marketplace.\nResearch\nPartner Integration Process Checkpoints\nThis included several problems to be tackled in phases:\nExternal developers not having an API directory to",
+      "content_id": "894173202"
+    },
+    {
+      "title": "Advance Properties",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-02-24T21:10:36.000Z",
+      "url": "/spaces/MP/pages/881852417/Advance+Properties",
+      "excerpt": "Please see  for how to configure properties in Mad Cloud and fnb-adapter.properties file.\nProperties\nDescription\nDefault Value\naloha.data.path\n(Optional) Aloha data folder, same machine for POS adapter is installed on.\nnull\naws.accessKey\nAccess to log storage\nnull\naws.accessSecret\nAccess to log stor",
+      "content_id": "881852417"
+    },
+    {
+      "title": "Overview (Archived 2-18-2025)",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-02-18T14:17:56.000Z",
+      "url": "/spaces/MP/pages/871890945/Overview+Archived+2-18-2025",
+      "excerpt": "These are all of the available configurations for MenuPad.\nCloud Config\nLocal Config (fnb.properties file)\nDescription\nDefault Value\nFNB POS Adapter Settings\napnTopic\nmm.apnTopic\nThe APN topic name specific to the current bundle\ncom.madmobile.menupad\nappMode\nmm.appMode\nThe ordering view based on cli",
+      "content_id": "871890945"
+    },
+    {
+      "title": "Loyalty Reports.pdf",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-02-14T03:43:54.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=860028929&preview=%2F860028929%2F860028965%2FLoyalty+Reports.pdf",
+      "excerpt": "\u200e OS FE backward compatibility with existing\nP\n\u200ereports\n\n\u200eBackward Compatibility\n\n\u200e ut of\nO\n\u200eScope\n\n\u200eVoid\n\n\u200e ut Of\nO\n\u200eScope\n\n\u200eRefund\n\n\u200eMobile Phone\n\u200eTab\n\n\u200eMobile Responsiveness\n\n\u200eiPad\n\u200eChrome\n\u200eFirefox\n\n\u200eNon Functional\n\n\u200eBrowser Compatibility\n\u200eInternet Explore\n\u200eSafari\n\u200eData Purging\n\n\u200e tarting and end",
+      "content_id": "att860028965"
+    },
+    {
+      "title": "Loyalty Reports.pdf",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-01-21T10:52:58.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=779288742&preview=%2F779288742%2F779288770%2FLoyalty+Reports.pdf",
+      "excerpt": "\u200e OS FE backward compatibility with existing\nP\n\u200ereports\n\n\u200eBackward Compatibility\n\n\u200e ut of\nO\n\u200eScope\n\n\u200eVoid\n\n\u200e ut Of\nO\n\u200eScope\n\n\u200eRefund\n\n\u200eMobile Phone\n\u200eTab\n\n\u200eMobile Responsiveness\n\n\u200eiPad\n\u200eChrome\n\u200eFirefox\n\n\u200eNon Functional\n\n\u200eBrowser Compatibility\n\u200eInternet Explore\n\u200eSafari\n\u200eData Purging\n\n\u200e tarting and end",
+      "content_id": "att779288770"
+    },
+    {
+      "title": "Potential AWS Cost Savings 2025",
+      "space": "DevOps",
+      "space_key": "",
+      "last_modified": "2025-01-10T14:29:13.000Z",
+      "url": "/spaces/DO/pages/750977029/Potential+AWS+Cost+Savings+2025",
+      "excerpt": "This document outlines the potential cost savings and actions identified for the AWS environment in 2025. The analysis leverages data from the following AWS Quicksight Dashboards:\nCORA Dashboard - Cost Optimization Recommended Actions (auto-updated)\nhttps://us-east-1.quicksight.aws.amazon.com/sn/acc",
+      "content_id": "750977029"
+    },
+    {
+      "title": "Downgraded Merchants (UI) (1).xlsx",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2025-01-09T10:35:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=746520581&preview=%2F746520581%2F746684472%2FDowngraded+Merchants+%28UI%29+%281%29.xlsx",
+      "excerpt": "1104\n731\n3394\n\n7/22/2024\n\n7/15/2024\n\n1559\n\n7/8/2024\n\nGOLD\nGold Total Upgraded\nPLATINUM\nPlatinum Total Upgraded\nDIAMOND\nDiamond Total Upgraded\nTotal Upgrades Per Week\n\n6/24/2024\n\nTotal\nEligible\n\nVI\n\nP\n\nTi\n\ner\n\nWeek\n\n50\n\n0\n\n100 500\n\n50\n\n50\n\n150 650\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n50\n\n",
+      "content_id": "att746684472"
+    },
+    {
+      "title": "Downgraded Merchants (UI).xlsx",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2025-01-09T10:29:50.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=746520581&preview=%2F746520581%2F746520593%2FDowngraded+Merchants+%28UI%29.xlsx",
+      "excerpt": "1104\n731\n3394\n\n7/22/2024\n\n7/15/2024\n\n1559\n\n7/8/2024\n\nGOLD\nGold Total Upgraded\nPLATINUM\nPlatinum Total Upgraded\nDIAMOND\nDiamond Total Upgraded\nTotal Upgrades Per Week\n\n6/24/2024\n\nTotal\nEligible\n\nVI\n\nP\n\nTi\n\ner\n\nWeek\n\n50\n\n0\n\n100 500\n\n50\n\n50\n\n150 650\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n50\n\n",
+      "content_id": "att746520593"
+    },
+    {
+      "title": "Shopify Store Performance Metrics and Data Sources",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2025-01-02T22:58:03.000Z",
+      "url": "/spaces/MMA/pages/730759214/Shopify+Store+Performance+Metrics+and+Data+Sources",
+      "excerpt": "This document outlines the key performance metrics for Shopify stores and the corresponding API endpoints or data sources to retrieve the relevant information. These metrics are essential for understanding store behavior and performance across various dimensions such as sales, client engagement, and",
+      "content_id": "730759214"
+    },
+    {
+      "title": "MenuPad Road Map for Equal Pay MVP to GA",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2024-12-20T16:22:01.000Z",
+      "url": "/spaces/MP/pages/719224842/MenuPad+Road+Map+for+Equal+Pay+MVP+to+GA",
+      "excerpt": "Check and Payment Functions Allowed While in Equal Pay Mode on POS Terminal\nFunction\nBehavior\nAllowed on POS\nAllowed on MenuPad\nIn Equal Pay MVP\nIssues\nWorking in IBERFUNC24\u00a0 \u00a0COM Libraries\nAdd to Road Map\nAdding Items\nItems can be added; the total is recalculated.\nYes\nNo\nNo\nMVP focuses on the compl",
+      "content_id": "719224842"
+    },
+    {
+      "title": "Overview - Deprecated",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2024-11-22T16:29:14.000Z",
+      "url": "/spaces/MP/pages/664240129/Overview+-+Deprecated",
+      "excerpt": "These are all of the available configurations for MenuPad.\nCloud Config\nLocal Config (fnb.properties file)\nDescription\nDefault Value\nFNB POS Adapter Settings\nanalyticsUrl\nmm.analyticsUrl\nObtain analytics which can be used for Domo\nnull\napnTopic\nmm.apnTopic\nThe APN topic name specific to the current ",
+      "content_id": "664240129"
+    },
+    {
+      "title": "Label Printer Phase 2 - Delivery Labels",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2024-12-02T17:08:49.000Z",
+      "url": "/spaces/PROD/pages/654704653/Label+Printer+Phase+2+-+Delivery+Labels",
+      "excerpt": "Executive Summary\nLabel printer as of today supports printing  item-wise label\nFurther extending this feature to print labels for delivery/ take out orders in different market segments\nInitiative or Epic\n\n\nResearch\nProblem/Opportunity\nCurrently, CAKE POS integrates with a label printer, to print ite",
+      "content_id": "654704653"
+    },
+    {
+      "title": "Welcome to the CAKE Hub",
+      "space": "Product Marketing",
+      "space_key": "",
+      "last_modified": "2025-08-28T16:39:29.000Z",
+      "url": "/spaces/PMKT/pages/578650200/Welcome+to+the+CAKE+Hub",
+      "excerpt": "Product Updates\nProduct Launches In Progress\nJump to PMO Weekly Updates\nEA Dates\n(Early Adopter)\nGA Dates\n(General Audience)\nDescription\nCAKEpop\nLIVE\nGA w/payments started 7.8\nEasily take orders and payments from table side (si",
+      "content_id": "578650200"
+    },
+    {
+      "title": "Quicksight Dashboards",
+      "space": "DevOps",
+      "space_key": "",
+      "last_modified": "2025-01-10T14:52:32.000Z",
+      "url": "/spaces/DO/pages/573636624/Quicksight+Dashboards",
+      "excerpt": "This section provides an overview of the existing Quicksight Dashboards.\nFinance Reporting Dashboard\nFinance-Reporting-Dashboard  Provides a comprehensive overview of the monthly cost breakdown across MadMobile&#39;s cost centers, offering insights into expenditure",
+      "content_id": "573636624"
+    },
+    {
+      "title": "AI ETL Workflows - n8n",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2025-02-27T11:26:30.000Z",
+      "url": "/spaces/MMA/pages/542998622/AI+ETL+Workflows+-+n8n",
+      "excerpt": "Table of Content\nETL n8n - Overview\n\nn8n is an open-source (fair-code licensed) automation tool that allows you to connect different systems, services, and APIs without extensive coding. It\u2019s often used for ETL (Extract, Transform, Load) workflows, meaning you can:\nExtract data from one or more sour",
+      "content_id": "542998622"
+    },
+    {
+      "title": "Downgraded Merchants (UI).xlsx",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2024-10-07T10:51:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=539787643&preview=%2F539787643%2F539820320%2FDowngraded+Merchants+%28UI%29.xlsx",
+      "excerpt": "1104\n731\n3394\n\n7/22/2024\n\n7/15/2024\n\n1559\n\n7/8/2024\n\nGOLD\nGold Total Upgraded\nPLATINUM\nPlatinum Total Upgraded\nDIAMOND\nDiamond Total Upgraded\nTotal Upgrades Per Week\n\n6/24/2024\n\nTotal\nEligible\n\nVI\n\nP\n\nTi\n\ner\n\nWeek\n\n50\n\n0\n\n100 500\n\n50\n\n50\n\n150 650\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n50\n\n",
+      "content_id": "att539820320"
+    },
+    {
+      "title": "Loyalty Reports.pdf",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2024-09-26T07:05:26.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=513540225&preview=%2F513540225%2F513540253%2FLoyalty+Reports.pdf",
+      "excerpt": "\u200e OS FE backward compatibility with existing\nP\n\u200ereports\n\n\u200eBackward Compatibility\n\n\u200e ut of\nO\n\u200eScope\n\n\u200eVoid\n\n\u200e ut Of\nO\n\u200eScope\n\n\u200eRefund\n\n\u200eMobile Phone\n\u200eTab\n\n\u200eMobile Responsiveness\n\n\u200eiPad\n\u200eChrome\n\u200eFirefox\n\n\u200eNon Functional\n\n\u200eBrowser Compatibility\n\u200eInternet Explore\n\u200eSafari\n\u200eData Purging\n\n\u200e tarting and end",
+      "content_id": "att513540253"
+    },
+    {
+      "title": "HLS - (HTTP Live Streaming)",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2024-09-05T13:22:41.000Z",
+      "url": "/spaces/ES/pages/460423182/HLS+-+HTTP+Live+Streaming",
+      "excerpt": "Logical View\nVideo Constraints\nVideo resolution\n1920 x 1080\nMax Size\n300 MB\nLength\n8 mins\nTime in minutes per day\n24 * 60\n1440 minutes / day\nVideo duration\n8 mins\nNumber of cycles\n1440 / 8\n180 cycles / day\n1. S3 Upload and Storage Costs\nEach customer uploads one video of 300 MB.\nTotal video uploads:",
+      "content_id": "460423182"
+    },
+    {
+      "title": "Cloud Engineering Standards",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2024-09-06T19:02:11.000Z",
+      "url": "/spaces/CCE/pages/459571797/Cloud+Engineering+Standards",
+      "excerpt": "Requests for New Infrastructure\n\ufffd\ufffd\n  Submission\nRequests for new infrastructure offerings must come to the Cloud Engineering team via the Architecture Governance Board.  These requests would typically be the result of incoming Product initiatives.\nAfter a request has been submitted to Architecture a",
+      "content_id": "459571797"
+    },
+    {
+      "title": "MMLK - Employee Handbook V1.1 .pdf",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2024-08-30T07:31:55.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=256606966&preview=%2F256606966%2F450494652%2FMMLK+-+Employee+Handbook+V1.1+.pdf",
+      "excerpt": "Employee Handbook\nMad Mobile Lanka\n01st January 2024\n\nDear Mad Mobiler,\nWe at Mad Mobile make it our aim is to build an ambitious, flexible and caring culture.\nWe believe in the power of teamwork and independent initiative. We believe that great things\ncan be achieved when talented groups of individ",
+      "content_id": "att450494652"
+    },
+    {
+      "title": "Pre Auth Test cases.xls",
+      "space": "Cakecore QE",
+      "space_key": "",
+      "last_modified": "2024-08-30T07:04:38.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=450199870&preview=%2F450199870%2F450232668%2FPre+Auth+Test+cases.xls",
+      "excerpt": "Test Case Summary Report\nThis report displays all of the test cases defined for the current project in the order they appear in the\n\nProduct33:POS Restaurant\nPOS , Orderpad etc\u2026\nTest # Name\n\n0 Root\n##### (backward compatibality) in a legacy version do a pre auth and then upgrade the pos to new versi",
+      "content_id": "att450232668"
+    }
+  ],
+  "specific_tools": [
+    {
+      "title": "DRAFT- Release Notes for CAKEMPA.2025.2.0",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-03-10T14:13:07.000Z",
+      "url": "/spaces/MP/pages/940277772/DRAFT-+Release+Notes+for+CAKEMPA.2025.2.0",
+      "excerpt": "Release Notes\nEnhancements &amp; Refactoring\nREST-5969, PA: Remove Payment Code References\nLegacy payment code references, including PED, Ingenico, Patronix, and FreedomPay, have been removed.\nCodebase is now aligned with the current solution for better readability and maintainability.\nREST-6015, PA",
+      "content_id": "940277772"
+    },
+    {
+      "title": "Analysis on POINT Tool Logs and Metric Collection",
+      "space": "Data & Analytics",
+      "space_key": "",
+      "last_modified": "2025-03-04T09:00:28.000Z",
+      "url": "/spaces/DB/pages/903086098/Analysis+on+POINT+Tool+Logs+and+Metric+Collection",
+      "excerpt": "Summary\nThis document outlines an observability strategy for the data-platform POINT Tool to enhance logging, monitoring, and reporting. The goal is to ensure centralized log collection, real-time metrics tracking, and automated reporting for improved visibility, faster debugging, and proactive issu",
+      "content_id": "903086098"
+    },
+    {
+      "title": "CAKEMPA.2025.2.0 \u2013 Resolved Terminal Lockouts, Enhanced PA Security, Endpoint Updates, and Continued Improvements to Close Check Requirements",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-05-12T14:58:10.000Z",
+      "url": "/spaces/MP/pages/885719041/CAKEMPA.2025.2.0+Resolved+Terminal+Lockouts+Enhanced+PA+Security+Endpoint+Updates+and+Continued+Improvements+to+Close+Check+Requirements",
+      "excerpt": "UAT Lab Release\nTargeted date: Friday, March 28, 2025\nPROD Date\nTargeted: TBD\nRelease Owner\n  Thaddeus Fox  Daniel Lomsak \nApprovals\nQE Sign off Sowjanya Akula \nProduct approval Heather Jordan  via email\nEngineering Approval chathura.ratnayake  via",
+      "content_id": "885719041"
+    },
+    {
+      "title": "[Development] Automation - AWS RDS Manual Snapshot Cleanup",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2025-01-24T11:18:43.000Z",
+      "url": "/spaces/CCE/pages/793903105/Development+Automation+-+AWS+RDS+Manual+Snapshot+Cleanup",
+      "excerpt": "This document describes the functionality and purpose of the AWS Lambda function designed for managing manual RDS snapshots.\nTicket: \nFunctionality Overview\nThe Lambda function automates the management of AWS RDS manual snapshots by performing the following tasks:\nFetches Manual Snapshots: Retrieves",
+      "content_id": "793903105"
+    },
+    {
+      "title": "Legacy CDE - Scope",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2025-04-11T05:10:38.000Z",
+      "url": "/spaces/CCE/pages/769916997/Legacy+CDE+-+Scope",
+      "excerpt": "Legacy Card Holder Data Environment includes,\nCake Payments Gateway\nCake Payments Supporting Applications\nCake Platform components used for\nOnline ordering\nAuthentication and Authorization\nNetwork Structure before 31st March 2025\n\nCard Data Flow Diagrams\nLegacy Payments\nKiosk Flow\nIncluded Resources",
+      "content_id": "769916997"
+    },
+    {
+      "title": "Downgraded Merchants (UI) (1).xlsx",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2025-01-09T10:35:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=746520581&preview=%2F746520581%2F746684472%2FDowngraded+Merchants+%28UI%29+%281%29.xlsx",
+      "excerpt": "1104\n731\n3394\n\n7/22/2024\n\n7/15/2024\n\n1559\n\n7/8/2024\n\nGOLD\nGold Total Upgraded\nPLATINUM\nPlatinum Total Upgraded\nDIAMOND\nDiamond Total Upgraded\nTotal Upgrades Per Week\n\n6/24/2024\n\nTotal\nEligible\n\nVI\n\nP\n\nTi\n\ner\n\nWeek\n\n50\n\n0\n\n100 500\n\n50\n\n50\n\n150 650\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n50\n\n",
+      "content_id": "att746684472"
+    },
+    {
+      "title": "Downgraded Merchants (UI).xlsx",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2025-01-09T10:29:50.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=746520581&preview=%2F746520581%2F746520593%2FDowngraded+Merchants+%28UI%29.xlsx",
+      "excerpt": "1104\n731\n3394\n\n7/22/2024\n\n7/15/2024\n\n1559\n\n7/8/2024\n\nGOLD\nGold Total Upgraded\nPLATINUM\nPlatinum Total Upgraded\nDIAMOND\nDiamond Total Upgraded\nTotal Upgrades Per Week\n\n6/24/2024\n\nTotal\nEligible\n\nVI\n\nP\n\nTi\n\ner\n\nWeek\n\n50\n\n0\n\n100 500\n\n50\n\n50\n\n150 650\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n50\n\n",
+      "content_id": "att746520593"
+    },
+    {
+      "title": "Real User Monitoring (RUM)",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2024-12-30T21:01:42.000Z",
+      "url": "/spaces/PT/pages/726173761/Real+User+Monitoring+RUM",
+      "excerpt": "How do you fix an error you can\u2019t reproduce?\nHow are users interacting with the software? \n\nReal User Monitoring provides insight into exactly what users are doing in our software and is great for debugging error cases and seeing how real users flow through the app. \n\nIt\u2019s plugged into app/src/App.t",
+      "content_id": "726173761"
+    },
+    {
+      "title": "Shop-CPQ System Architecture",
+      "space": "Operations Solutions",
+      "space_key": "",
+      "last_modified": "2024-12-19T16:16:33.000Z",
+      "url": "/spaces/OSME/pages/678494830/Shop-CPQ+System+Architecture",
+      "excerpt": "Below is a representation of the current and proposed architecture in support of the new CPQ deployment.  The information is divided by the following sections:\nCurrent System\nPhase 1\nKnown Issues\nRisks\nProposed Changes\nProposed System Future State\nCurrent System\nThe current system is a monolith serv",
+      "content_id": "678494830"
+    },
+    {
+      "title": "Datadog Reference",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2024-11-11T18:22:09.000Z",
+      "url": "/spaces/MP/pages/626065488/Datadog+Reference",
+      "excerpt": "You can access Datadog via the following link. https://app.datadoghq.com/help/quick_start\nDatadog has a lot of tools, but there are two main areas where you will find logs.\nReal User Monitoring explorer\nLog explor",
+      "content_id": "626065488"
+    },
+    {
+      "title": "2024 PI1 - PI3 - Mira On-Hold Releases",
+      "space": "Program Management",
+      "space_key": "",
+      "last_modified": "2024-11-04T05:47:28.000Z",
+      "url": "/spaces/PM/pages/607617066/2024+PI1+-+PI3+-+Mira+On-Hold+Releases",
+      "excerpt": "Release No\nRelease Type\nTeam(s)\nName\nRelease Page\nInitiative\nFeature\nIP\nStag \nGo/ No Go\nProd \nGo/ No Go\nStaging Release\nProd Release\nEA\nGA\nComments\nCCL_8.762.0.78\nPatch\nMira\nParafin Wallet Integration\nCCL_8.762.0.78 - Cake capital wallet UA integration. - Cake GPS - Confluence (atlassian.net)!--http",
+      "content_id": "607617066"
+    },
+    {
+      "title": "Downgraded Merchants (UI).xlsx",
+      "space": "Product",
+      "space_key": "",
+      "last_modified": "2024-10-07T10:51:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=539787643&preview=%2F539787643%2F539820320%2FDowngraded+Merchants+%28UI%29.xlsx",
+      "excerpt": "1104\n731\n3394\n\n7/22/2024\n\n7/15/2024\n\n1559\n\n7/8/2024\n\nGOLD\nGold Total Upgraded\nPLATINUM\nPlatinum Total Upgraded\nDIAMOND\nDiamond Total Upgraded\nTotal Upgrades Per Week\n\n6/24/2024\n\nTotal\nEligible\n\nVI\n\nP\n\nTi\n\ner\n\nWeek\n\n50\n\n0\n\n100 500\n\n50\n\n50\n\n150 650\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n50\n\n",
+      "content_id": "att539820320"
+    },
+    {
+      "title": "Concierge Core -- Datadog Integration Effort",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2024-10-04T14:44:04.000Z",
+      "url": "/spaces/PT/pages/537198965/Concierge+Core+--+Datadog+Integration+Effort",
+      "excerpt": "Setup\nAppShell:\nApp Shell integration will be relatively limited in scope; the application\u2019s lifecycle is managed by concierge-core after bootstrap.\nWe might have an interest in setting up the Log Collection SDK .\nLogs here would be constrained to the bootstrap process (e.g, reading MDM, fetc",
+      "content_id": "537198965"
+    },
+    {
+      "title": "5.0 Device/End User Premises Monitoring and Alerting",
+      "space": "Service Excellence and Operational Architecture",
+      "space_key": "",
+      "last_modified": "2024-09-24T08:25:09.000Z",
+      "url": "/spaces/SEAOA/pages/505970728/5.0+Device+End+User+Premises+Monitoring+and+Alerting",
+      "excerpt": "Requirement\nDetails\nMonitoring Key Hardware/Software Features\nHardware Status: Monitor Up time, CPU usage, memory usage, disk space, and temperature for POS systems, routers, printers.\n Peripheral Status: Status of connected devices (e.g., receipt printers, barcode scanners, credit card readers).\nNe",
+      "content_id": "505970728"
+    },
+    {
+      "title": "2024-08-26_CE-5036_Enable to search loyalty customer from merchant identifier",
+      "space": "Program Management",
+      "space_key": "",
+      "last_modified": "2024-08-29T19:54:28.000Z",
+      "url": "/spaces/PM/pages/426475521/2024-08-26_CE-5036_Enable+to+search+loyalty+customer+from+merchant+identifier",
+      "excerpt": "CHANGE REQUEST APPROVAL \nDate\n2024-08-27 \nChange Request Category\nEnable to search loyalty customer from merchant identifier\nProject/Feature\n[CE-5036] Enable to search loyalty customer from merchant identifier - Jira (atlassian.net)\nTeam Name\nMIRA / Tesla\nScrum Master\nWikum Wijeysooriya  \nProd",
+      "content_id": "426475521"
+    },
+    {
+      "title": "Naming &amp; Tagging Convention",
+      "space": "DevOps",
+      "space_key": "",
+      "last_modified": "2023-10-30T14:19:56.000Z",
+      "url": "/spaces/DO/pages/42565633/Naming+Tagging+Convention",
+      "excerpt": "Almost all the resources can be named and tagged in AWS. Hence we should be following a consistent pattern to clearly identify the resources and its context with looking at naming and tagging.\nBelow we are describing the naming conventions and tagging practices which should be used in all the resour",
+      "content_id": "42565633"
+    },
+    {
+      "title": "[DRAFT] Cake Release 8.762.0.95 - Wiz Critical high bug fixes.",
+      "space": "Cake GPS",
+      "space_key": "",
+      "last_modified": "2024-08-09T09:10:09.000Z",
+      "url": "/spaces/CG/pages/407306241/DRAFT+Cake+Release+8.762.0.95+-+Wiz+Critical+high+bug+fixes.",
+      "excerpt": "STAG Date\n2024-09-03 \u00a0\nPROD Date\n2024-09-10 \u00a0\nRelease Owner\nWikum Wijeysooriya\nApprovals\nProduct\u00a0Jehan Wijesinghe\nArchitect\u00a0Pradeep Sanjaya \u00a0,\u00a0Charith De Silva\nEngineering\u00a0Chamayne Fernando\nEngineering Manager\u00a0Wenushka Dikowita",
+      "content_id": "407306241"
+    },
+    {
+      "title": "Cake Release 8.762.0.95 - Wiz Critical high bug fixes - IR -1",
+      "space": "Cake GPS",
+      "space_key": "",
+      "last_modified": "2024-08-12T09:41:43.000Z",
+      "url": "/spaces/CG/pages/406749187/Cake+Release+8.762.0.95+-+Wiz+Critical+high+bug+fixes+-+IR+-1",
+      "excerpt": "IR Date\n2024-08-12 \u00a0\nRelease Owner\nDineth Samarakkody\nIR Owner\nRuwinda Ranganayake\nApprovals\nHarsha Kosala \u00a0Commit ids\nHarsha Kosala \u00a0Ticket list\nHarsha Kosala \u00a0Sonar &amp; Unit Tests\n!-@712020:737a29a2-3eab-40b1-b356-2",
+      "content_id": "406749187"
+    },
+    {
+      "title": "2024-07-30_PR-847 Ability to Pre Auth Customized Amounts ( Cloud /POS )",
+      "space": "Program Management",
+      "space_key": "",
+      "last_modified": "2024-08-09T13:43:53.000Z",
+      "url": "/spaces/PM/pages/380698626/2024-07-30_PR-847+Ability+to+Pre+Auth+Customized+Amounts+Cloud+POS",
+      "excerpt": "CHANGE REQUEST APPROVAL \nDate\n2024-07-31 \nChange Request Category\nAbility to Pre Auth-Customized Amounts - Mira ( POS )\nAbility to Pre Auth-Customized Amounts - Altair ( Cloud )\nProject/Feature\n[PR-847] Ability to pre-auth customized amounts - Mira (POS Work) - Jira (atlassian.net)\n[PR-764] Ability ",
+      "content_id": "380698626"
+    },
+    {
+      "title": "Concierge/Cake Support Cases Portal",
+      "space": "Operations Solutions",
+      "space_key": "",
+      "last_modified": "2022-09-27T14:56:29.000Z",
+      "url": "/spaces/OSME/pages/365642189/Concierge+Cake+Support+Cases+Portal",
+      "excerpt": "This page will be used to document everything related to the Support cases Portal, requirements, scope, information useful for development.\nJira\u2019s Epic: \nThe Portal\nThe portal will be used to replace Help Desk for Concierge clients and replace Salesforce Communities for Cake clients, to achieve this",
+      "content_id": "365642189"
+    },
+    {
+      "title": "Snyk Implementation and Training",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2023-03-31T18:03:40.000Z",
+      "url": "/spaces/MMA/pages/360803312/Snyk+Implementation+and+Training",
+      "excerpt": "Overview\nSnyk is the main security scanning tool for Mad Mobile. This page contains all essential onboarding and training documentation that was delivered by a Snyk representative.\nKickoff\nRecording: https://snyk.zoom.us/rec/share/f3sNkOzNeQlofORSn3FpLsCfeJLBHNhVyUddAUUkeL3F9672TYA94PaAVv_Uu-PP.0bLw",
+      "content_id": "360803312"
+    },
+    {
+      "title": "Tooling Evaluation",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2023-10-25T14:11:35.000Z",
+      "url": "/spaces/MMA/pages/360801807/Tooling+Evaluation",
+      "excerpt": "Evaluate the tooling we will look to utilize going forward for build pipelines.  Deployment pipelines will be owned by DevOps.  To start, we will look primarily at Gitlab and Bitbucket for our repository hosting.  The building can be encompassed by those two tools or we can consider standalone build",
+      "content_id": "360801807"
+    },
+    {
+      "title": "HyperMarket Development Onboarding",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2023-03-31T18:03:41.000Z",
+      "url": "/spaces/MMA/pages/360801301/HyperMarket+Development+Onboarding",
+      "excerpt": "Welcome to the HyperMarket Team.\u00a0 This onboarding will\nFamiliarize you with our tools &amp; processes\u00a0\nStart running Self Checkout and Lane Assist Locally\nProvide a high-level overview of our team agreement/process\nOur goal is to make you a successful developer at Mad Mobile. Please utilize Confluen",
+      "content_id": "360801301"
+    },
+    {
+      "title": "Mad Mobile __ Synk - Deployment Workshop - 1_4_23.pdf",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2023-03-31T18:03:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=360803312&preview=%2F360803312%2F360800366%2FMad+Mobile+__+Synk+-+Deployment+Workshop+-+1_4_23.pdf",
+      "excerpt": "Mad Mobile + Snyk\nDeployment Workshop\n1/4/2023\n\nReview Account Settings\n\u25cf\n\u25cf\n\nAgenda\n\nItems from kicko\ufb00\nProduct settings\n\nIntegration Best Practices\n\u25cf\n\u25cf\n\u25cf\n\nImport Strategy\nLanguage + Package Manager Best\nPractices\nIntegration Settings\n\nPolicies and Tagging\n\u25cf\n\u25cf\n\nPolicy Con\ufb01guration\nTagging Strategy\n\nN",
+      "content_id": "att360800366"
+    },
+    {
+      "title": "MadMobile __ Snyk - Kickoff - 12.9.22  (1).pdf",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2023-03-31T18:03:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=360803312&preview=%2F360803312%2F360794789%2FMadMobile+__+Snyk+-+Kickoff+-+12.9.22++%281%29.pdf",
+      "excerpt": "Mad Mobile\nOnboarding\nAlexis Green | Implementation Consultant | alexis.green@snyk.io\n\nCurrent state\n\nAgenda\n\nImplementation strategy\nSetting up your account &amp; organizations\nNext steps\n\nStakeholders\n\nEnsure all relevant stakeholders for success\nDifferent companies are organized in different ways",
+      "content_id": "att360794789"
+    }
+  ]
+}

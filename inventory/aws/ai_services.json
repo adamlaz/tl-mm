@@ -1,0 +1,282 @@
+{
+  "mm-cake-development": {
+    "sagemaker": {
+      "notebooks": [
+        {
+          "name": "emne-stable-diffusion",
+          "status": "Stopped",
+          "instance_type": "ml.g5.xlarge",
+          "created": "2023-07-23T03:46:29.078000-04:00"
+        },
+        {
+          "name": "monthly-process",
+          "status": "Stopped",
+          "instance_type": "ml.t2.medium",
+          "created": "2022-11-03T08:56:09.478000-04:00"
+        },
+        {
+          "name": "hourly-process",
+          "status": "Stopped",
+          "instance_type": "ml.t2.medium",
+          "created": "2022-05-27T14:42:54.759000-04:00"
+        },
+        {
+          "name": "daily-process",
+          "status": "Stopped",
+          "instance_type": "ml.t2.medium",
+          "created": "2022-01-13T09:52:23.987000-05:00"
+        },
+        {
+          "name": "train-montly-models",
+          "status": "Stopped",
+          "instance_type": "ml.t3.xlarge",
+          "created": "2022-01-11T10:13:07.998000-05:00"
+        },
+        {
+          "name": "train-finance-models",
+          "status": "Stopped",
+          "instance_type": "ml.t3.xlarge",
+          "created": "2021-11-09T14:01:55.454000-05:00"
+        },
+        {
+          "name": "finance-conciliation",
+          "status": "Stopped",
+          "instance_type": "ml.t3.xlarge",
+          "created": "2021-10-12T10:38:34.832000-04:00"
+        },
+        {
+          "name": "process-json",
+          "status": "Stopped",
+          "instance_type": "ml.t3.medium",
+          "created": "2021-10-01T14:23:02.539000-04:00"
+        },
+        {
+          "name": "test",
+          "status": "Stopped",
+          "instance_type": "ml.t3.xlarge",
+          "created": "2021-07-13T07:33:10.763000-04:00"
+        }
+      ],
+      "endpoints": [],
+      "domains": [
+        {
+          "id": "d-hosonwuz8qgn",
+          "name": "cake-sagemaker",
+          "status": "InService"
+        }
+      ]
+    },
+    "bedrock": {
+      "available_models_sample": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "bedrock_accessible": true
+    },
+    "ai_lambdas": [
+      {
+        "name": "mm-ai-detoxify-v2",
+        "runtime": "N/A",
+        "description": "",
+        "memory": 4096,
+        "last_modified": "2023-09-05T08:10:14.250+0000"
+      },
+      {
+        "name": "cloud-custodian-mailer",
+        "runtime": "python2.7",
+        "description": "Cloud Custodian Mailer",
+        "memory": 1024,
+        "last_modified": "2020-04-17T13:41:15.424+0000"
+      }
+    ]
+  },
+  "mm-cake-r-and-d": {
+    "sagemaker": {
+      "notebooks": [
+        {
+          "name": "mm-ai-emce-v1",
+          "status": "Stopped",
+          "instance_type": "ml.m5.4xlarge",
+          "created": "2023-09-11T04:34:22.401000-04:00"
+        },
+        {
+          "name": "dev-pgw-data-processing",
+          "status": "Stopped",
+          "instance_type": "ml.t2.medium",
+          "created": "2019-09-04T02:53:38.102000-04:00"
+        }
+      ],
+      "endpoints": [],
+      "domains": []
+    },
+    "bedrock": {
+      "available_models_sample": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "bedrock_accessible": true
+    },
+    "ai_lambdas": [
+      {
+        "name": "serverlessrepo-api-gatewa-CognitoUserPoolDomainBac-U9UMA340Q1Q1",
+        "runtime": "nodejs8.10",
+        "description": "",
+        "memory": 128,
+        "last_modified": "2019-09-16T09:16:09.260+0000"
+      }
+    ]
+  },
+  "mm-madmobile-mgmt": {
+    "sagemaker": {
+      "notebooks": [],
+      "endpoints": [],
+      "domains": []
+    },
+    "bedrock": {
+      "available_models_sample": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "bedrock_accessible": true
+    },
+    "ai_lambdas": [
+      {
+        "name": "bedrock_sagemaker_iam_policy_remover",
+        "runtime": "python3.11",
+        "description": "",
+        "memory": 128,
+        "last_modified": "2023-07-31T21:45:43.000+0000"
+      },
+      {
+        "name": "send_bb_analytics_report_by_email",
+        "runtime": "python3.7",
+        "description": "",
+        "memory": 256,
+        "last_modified": "2024-08-09T19:22:08.000+0000"
+      }
+    ]
+  },
+  "ai_s3_buckets": [
+    {
+      "profile": "mm-cake-development",
+      "name": "cakecore-dev-cloudtrail-write"
+    },
+    {
+      "profile": "mm-cake-development",
+      "name": "dev-sagemaker-datalake"
+    },
+    {
+      "profile": "mm-cake-development",
+      "name": "email-marketing-1"
+    },
+    {
+      "profile": "mm-cake-development",
+      "name": "olo-email-assets"
+    },
+    {
+      "profile": "mm-cake-development",
+      "name": "pos4-mc-ems2-ml-migration-data"
+    },
+    {
+      "profile": "mm-cake-development",
+      "name": "sagemaker-studio-230930891673-b5xppj985ei"
+    },
+    {
+      "profile": "mm-cake-development",
+      "name": "sagemaker-us-east-1-230930891673"
+    },
+    {
+      "profile": "mm-cake-r-and-d",
+      "name": "docker-pos-lightsail"
+    },
+    {
+      "profile": "mm-cake-r-and-d",
+      "name": "pgw-sagemaker-bucket"
+    },
+    {
+      "profile": "mm-cake-r-and-d",
+      "name": "sagemaker-us-east-1-464176945335"
+    },
+    {
+      "profile": "mm-madmobile-mgmt",
+      "name": "mm-puml-themes"
+    },
+    {
+      "profile": "mm-mm-archive",
+      "name": "mm-puml-themes-new"
+    },
+    {
+      "profile": "mm-retail-prod-apac",
+      "name": "apac-download-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-apac",
+      "name": "apac-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-apac",
+      "name": "aws-cloudtrail-logs-357856625432-1bd003a9"
+    },
+    {
+      "profile": "mm-retail-prod-apac",
+      "name": "mail-attachments-apac"
+    },
+    {
+      "profile": "mm-retail-prod-eu",
+      "name": "aws-cloudtrail-logs-266315811211-e1530574"
+    },
+    {
+      "profile": "mm-retail-prod-eu",
+      "name": "concierge-eu-analytics-esteelauder-jml"
+    },
+    {
+      "profile": "mm-retail-prod-eu",
+      "name": "prod-eu-download-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-eu",
+      "name": "prod-eu-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-us-dr",
+      "name": "dr-download-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-us-dr",
+      "name": "dr-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-us-dr",
+      "name": "dr-mail-attachments"
+    },
+    {
+      "profile": "mm-retail-prod-us-dr",
+      "name": "shared-infra-retail-restaurant-state-bucket"
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "name": "cake-ai-assistant-data"
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "name": "cake-analytics-kings-hawaiian"
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "name": "concierge-analytics-esteelauder-jml"
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "name": "mail-attachments-production"
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "name": "prod-download-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "name": "prod-emailclient-service"
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "name": "w.u.urban.impl-urban-html-appshell"
+    }
+  ]
+}

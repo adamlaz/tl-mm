@@ -1,0 +1,5 @@
+# Cake Release- CCL_8.884.83.0 - REST-17522 issue Fix-IR - 1
+# Space: TT
+# Page ID: 1688797239
+
+IR Date Environment POS4 Release Owner IR Owner Approvals Table of Contents 1 Table of Contents Ticket List System Jira key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution 20 key in (REST-17522) f496ff7d-738c-3ddd-a9cd-8b868d553dc0 Component Versions Component Git URL Branch Commit Id PR / Notes universal-admin-reports https://bitbucket.org/syscolabs/universal-admin-reports/src/master/ https://bitbucket.org/syscolabs/universal-admin-reports/branch/release_8.884.83.0 bbf0f8932a17468ba7a798998bec55017e8645b1 Databases Component Git URL Branch Commit Id Path Sign off Configurations (test environments) Component Git URL Branch Commit Id Path Sign off Beans (Do not deploy - for reference only) Component Git URL Branch Commit ID Libraries (Do not deploy) Not Applicable Notes to QA Not Applicable

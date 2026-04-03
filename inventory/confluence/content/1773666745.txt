@@ -1,0 +1,5 @@
+# Cake Release CCL_8.884.96.0 - Enhancements for Paytronix 86ing - IR-1
+# Space: LP
+# Page ID: 1773666745
+
+Release Info TST environment: TST2 Date: Fix Version: 8.884.96.0 Fixed Tickets List https://madmobile-eng.atlassian.net/issues/?jql=text%20~%20%22REST-18002*%22%20or%20summary%20~%20%22REST-18002*%22%20or%20key%20%3D%20REST-18002%20ORDER%20BY%20created%20DESC Component Versions Component Git URL Branch Commit ID 1 Menu Sync Agent https://bitbucket.org/syscolabs/menu_sync_agent/src/master/ release_8.884.96.0 67f80db Configurations (DEV/QE) Not Applicable Configurations (Stag/Prod) Not Applicable QA Sign-Off Environment QE Lead Sign Off TST2 Deployment Notes SoE: CAKE Release CCL_8.884.20.0 - Enhancements for Paytronix 86ing - SOE

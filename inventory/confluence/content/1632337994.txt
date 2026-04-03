@@ -1,0 +1,5 @@
+# Cake Release - CCL_8.884.78.0 -  Fix for Error loading modifier data in MA Modifiers - Reccurring issue (REST-12347) - IR - 1
+# Space: TT
+# Page ID: 1632337994
+
+IR Date Environment POS4 Release Owner IR Owner Approvals Table of Contents 1 Table of Contents Ticket List TicketID; REST-12347 f496ff7d-738c-3ddd-a9cd-8b868d553dc0 System Jira https://madmobile-eng.atlassian.net/issues/?jql=(text%20~%20%22REST-12347*%22%20or%20summary%20~%20%22REST-12347*%22%20or%20key%20%3D%20REST-12347)%20and%20assignee%20in%20(712020%3A24c80284-89a1-4193-8c8b-494b855950cf)%20ORDER%20BY%20created%20DESC Component Versions Component Git URL Branch Commit Id 1 UA-Menu-Admin https://bitbucket.org/syscolabs/src-ua-menu-admin/src/master-ems/ release_8.884.78.0 8ffe363 Databases Not Applicable Configurations (test environments) Not Applicable Beans (Do not deploy - for reference only) Not Applicable Libraries (Do not deploy) Not Applicable Notes to QA Not Applicable Master PRs -

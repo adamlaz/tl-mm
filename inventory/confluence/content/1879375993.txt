@@ -1,0 +1,5 @@
+# CAKE Release CCL_8.885.1.3 - Logging Enhancements Across OLO Aggregator API, Leapset API, & Merchant API - IR-1
+# Space: LP
+# Page ID: 1879375993
+
+Release Info TST environment: POS4 Date: Fix Version: 8.885.1.8 Fixed Tickets List https://madmobile-eng.atlassian.net/issues/?jql=fixVersion%20%3D%20%22CCL_8.885.1.3%22 Component Versions Component Git URL Branch Commit ID 1 OLO Aggregator API https://bitbucket.org/syscolabs/olo_aggregator_api/src/master/ release_8.885.1.8 ba90d6a 2 Leapset API https://bitbucket.org/syscolabs/leapset_api/src/master/ release_8.885.1.8 6a669d1 3 Merchant API https://bitbucket.org/syscolabs/merchant_api/src/master/ release_8.885.1.8 2867bb8 Configurations (DEV/QE) Not Available QA Sign-Off Environment QE Lead Sign Off TST2 Deployment Notes SoE: https://madmobile-eng.atlassian.net/wiki/x/UAAFc

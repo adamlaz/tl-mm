@@ -1,0 +1,5 @@
+# Cake Release - 8.885.1.5 - Fix for Transaction Fee mismatch - IR-1
+# Space: TT
+# Page ID: 1874788367
+
+IR Date Environment POS4 Release Owner IR Owner Approvals Table of Contents 1 Table of Contents Ticket List https://madmobile-eng.atlassian.net/issues/?jql=(text%20~%20%22REST-17429*%22%20or%20summary%20~%20%22REST-17429*%22%20or%20key%20%3D%20REST-17429)%20and%20assignee%20in%20(712020%3A24c80284-89a1-4193-8c8b-494b855950cf)%20ORDER%20BY%20created%20DESC Component Versions Component Git URL Branch Commit Id PR / Notes universal-admin-reports https://bitbucket.org/syscolabs/universal-admin-reports/src/master/ release_8.885.1.5 7963c19 ua-reports-payments https://bitbucket.org/syscolabs/ua-reports-payments/src/master/ release_8.885.1.5 9a2a13f Databases Component Git URL Branch Commit Id Path Sign off Configurations (test environments) Component Git URL Branch Commit Id Path Sign off Beans (Do not deploy - for reference only) Component Git URL Branch Commit ID Libraries (Do not deploy) Component Git URL Branch Commit ID Not Applicable Notes to QA Not Applicable

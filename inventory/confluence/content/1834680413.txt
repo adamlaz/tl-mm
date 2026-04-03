@@ -1,0 +1,5 @@
+# CAKE Release CCL_8.884.103.0 - Custom Employee PINs in UA Staff - IR-1
+# Space: LP
+# Page ID: 1834680413
+
+Release Info TST environment: TST2 Date: Fix Version: 8.884.103.0 Fixed Tickets List https://madmobile-eng.atlassian.net/issues/?jql=fixVersion%20%3D%20%22CCL_8.884.103.0%22 Component Versions Component Git URL Branch Commit ID 1 UA Staff https://bitbucket.org/syscolabs/src-ua-staff-container/src/master/ release_8.884.103.0 13a694d 2 GUM https://bitbucket.org/syscolabs/gum/src/master/ release_8.884.103.0 f99d0ce 3 Merchant API https://bitbucket.org/syscolabs/merchant_api/src/master/ release_8.884.103.0 3925c65 Configurations (DEV/QE) Component Git URL Branch Commit ID 1 Merchant API https://bitbucket.org/syscolabs/mapi/src/master/ release_8.884.103.0 3a44d2e QA Sign-Off Environment QE Lead Sign Off TST2 Deployment Notes SoE: https://madmobile-eng.atlassian.net/wiki/x/NABbbQ

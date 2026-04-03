@@ -1,0 +1,755 @@
+{
+  "cursor_title": [
+    {
+      "title": "How to enable the Mouse curser in the Virtual Machine",
+      "space": "Cake GPS",
+      "space_key": "",
+      "last_modified": "2024-10-09T11:01:17.000Z",
+      "url": "/spaces/CG/pages/544702583/How+to+enable+the+Mouse+curser+in+the+Virtual+Machine",
+      "excerpt": "",
+      "content_id": "544702583"
+    },
+    {
+      "title": "Design Integration with Cursor",
+      "space": "Team Tesla",
+      "space_key": "",
+      "last_modified": "2025-08-13T14:40:11.000Z",
+      "url": "/spaces/TT/pages/1376092215/Design+Integration+with+Cursor",
+      "excerpt": "Figma MCP Server Setup\nThis project integrates with Figma for design collaboration and real-time updates. To set up the Figma MCP (Model Context Protocol) server:\nPrerequisites\nFigma Desktop App: Download the latest version from \nCursor IDE: Ensure you have Cursor with MCP support enabled\nConfigurat",
+      "content_id": "1376092215"
+    },
+    {
+      "title": "API Automation using Cursor",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-06-12T08:28:32.000Z",
+      "url": "/spaces/TD1/pages/1190690840/API+Automation+using+Cursor",
+      "excerpt": "1. Overview:\nThis page documents the results of the Proof of Concept (POC) for API Automation using Cursor as the development environment. The POC demonstrates the feasibility of automating the testing of various RESTful APIs with the help of Cursor&#39;s features combined with tools like Rest Assur",
+      "content_id": "1190690840"
+    },
+    {
+      "title": "Test Automation with Cursor Tool",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-06-05T09:55:12.000Z",
+      "url": "/spaces/TD1/pages/1172078594/Test+Automation+with+Cursor+Tool",
+      "excerpt": "1. Overview:\nThis page documents the results of the Proof of Concept (POC) for API Automation using Cursor as the development environment. The POC demonstrates the feasibility of automating the testing of various RESTful APIs with the help of Cursor&#39;s features combined with tools like Rest Assur",
+      "content_id": "1172078594"
+    }
+  ],
+  "cursor_text": [
+    {
+      "title": "Developer Machine Setup - Impl &amp; Product",
+      "space": "System Integrators",
+      "space_key": "",
+      "last_modified": "2025-03-27T13:27:30.000Z",
+      "url": "/spaces/SI/pages/988414238/Developer+Machine+Setup+-+Impl+Product",
+      "excerpt": "This article will walk you through the steps of setting up your machine for local Concierge development. It is assumed that you are using a MacOS machine with at least Sonoma or higher.\nCreate an AppleID using your MadMobile email address\nDownload and install Xcode from the App Store\nNote: Once inst",
+      "content_id": "988414238"
+    },
+    {
+      "title": "[POC] &quot;AI&quot; Automation Framework with Nest.js",
+      "space": "QA Team",
+      "space_key": "",
+      "last_modified": "2025-03-04T06:43:46.000Z",
+      "url": "/spaces/QT/pages/828964907/POC+AI+Automation+Framework+with+Nest.js",
+      "excerpt": "Objective\nInitially, we have developed a test automation approach on AI-related use cases with the use of N8N. However, with the plans on integrating streaming for AI features with Nest.js and WebSockets, N8N is no longer a viable option, as it does not support WebSocket streaming.\nTo address this l",
+      "content_id": "828964907"
+    },
+    {
+      "title": "[WIP] Concierge Core Internationalization (i18n) Implementation",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-01-20T16:40:28.000Z",
+      "url": "/spaces/PT/pages/745799766/WIP+Concierge+Core+Internationalization+i18n+Implementation",
+      "excerpt": "This document outlines the strategy for implementing multilingual support in the Concierge Core Application. The solution is divided into two main parts:\nUI/Frontend (FE) Translations\nAI/Chat Translations\n\\uD83D\\uDCD8\n\u00a0UI/FE Translations\nFor frontend translations, the react-i18next library will be u",
+      "content_id": "745799766"
+    },
+    {
+      "title": "Developer Machine Setup",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2024-12-27T19:39:04.000Z",
+      "url": "/spaces/PT/pages/623117068/Developer+Machine+Setup",
+      "excerpt": "This article will walk you through the steps of setting up your machine for local Concierge development. It is assumed that you are using a MacOS machine with at least Sonoma or higher.\nCreate an AppleID using your MadMobile email address\nDownload and install Xcode from the App Store\nNote: Once inst",
+      "content_id": "623117068"
+    },
+    {
+      "title": "layout.min.js",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2024-10-29T07:25:20.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=588644373&preview=%2F588644373%2F593199122%2Flayout.min.js",
+      "excerpt": "var UALayout=function(e){function t(r){if(n[r])return n[r].exports;var\na=n[r]={i:r,l:!1,exports:{}};return e[r].call(a.exports,a,a.exports,t),a.l=!\n0,a.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return\ne},t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!\n1,enumerable:!",
+      "content_id": "att593199122"
+    },
+    {
+      "title": "UI Overview",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2024-09-05T16:25:44.000Z",
+      "url": "/spaces/PT/pages/463077464/UI+Overview",
+      "excerpt": "Key Highlights:\nImproved Look and feel - it has dark mode and theming built in\u00a0.\u00a0\nEnables standard UI framework coupled with full stack development framework\nImproved developer experience, quality, time to deliver and time to innovate\nUI Extensibility built in the app\nLive Demo\nStartup - Showing sid",
+      "content_id": "463077464"
+    },
+    {
+      "title": "Aloha POS - QS Reference Guide (v6.2).pdf",
+      "space": "Project Management - ME",
+      "space_key": "",
+      "last_modified": "2021-02-23T16:56:11.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=365495734&preview=%2F365495734%2F365494980%2FAloha+POS+-+QS+Reference+Guide+%28v6.2%29.pdf",
+      "excerpt": "QuickService v6.2\n\nReference Guide\n\nCopyright\nCopyright \u00a92007, Radiant Systems, Inc. The information contained in this publication is confidential\nand proprietary. No part of this document may be reproduced, disclosed to others, transmitted, stored\nin a retrieval system, or translated into any langu",
+      "content_id": "att365494980"
+    },
+    {
+      "title": "Aloha POS - QS Reference Guide - v6.2.pdf",
+      "space": "Project Management - ME",
+      "space_key": "",
+      "last_modified": "2021-02-23T15:17:18.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=365495734&preview=%2F365495734%2F365494570%2FAloha+POS+-+QS+Reference+Guide+-+v6.2.pdf",
+      "excerpt": "QuickService v6.2\n\nReference Guide\n\nCopyright\nCopyright \u00a92007, Radiant Systems, Inc. The information contained in this publication is confidential\nand proprietary. No part of this document may be reproduced, disclosed to others, transmitted, stored\nin a retrieval system, or translated into any langu",
+      "content_id": "att365494570"
+    },
+    {
+      "title": "Re: Getting to live local debugging",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2024-06-14T10:36:09.000Z",
+      "url": "/spaces/PT/pages/356288893/Getting+to+live+local+debugging?focusedCommentId=356267133",
+      "excerpt": "JB Burroughs  i was able to get impl-urban develop and CA develop to work with the local debugger. it\u2019s a WIP, but it allows other devs to use it by manually copying the code over to their local env. here are my branches:\n\nhere\u2019s the launch.json for vscode: \n\nyou can update the node_modules/@madmobi",
+      "content_id": "356267133"
+    },
+    {
+      "title": "Tools",
+      "space": "AI",
+      "space_key": "",
+      "last_modified": "2024-05-29T13:11:04.000Z",
+      "url": "/spaces/AI/pages/246251848/Tools",
+      "excerpt": "Tracking which tools are AI enabled and which are not, shifting to replace those that are not.\nDiscipline\nTool\nOwners\nAI Enabled\nAdoption\nAnnual Cost\nGeneral Corporate\nOpen AI\nyes\nProduct Management\nJira, Confluence\nDevelopment\nVSCode\nCodium , Cursor\n&lt;5\nQA/QE\nJohn\nDocumentation\nCI/CD\nCharles\nHost",
+      "content_id": "246251848"
+    },
+    {
+      "title": "Brainstorming Architecture Developer Prototypes to Improve Processes (BAD-PIP) skunkworks",
+      "space": "Matt Cooke",
+      "space_key": "",
+      "last_modified": "2026-03-27T12:32:01.000Z",
+      "url": "/spaces/~730977308/pages/1826586625/Brainstorming+Architecture+Developer+Prototypes+to+Improve+Processes+BAD-PIP+skunkworks",
+      "excerpt": "Purpose: provide a collection of future projects to arrange into future implementations\nBackground\nAvailable developers with QA resources constrained\nProcess Flow\nBrainstorm without filtering\nPeer involvement\nOrganize, rate and filter\nidentify costs\nidentify benefits\nRank high impact low cost first,",
+      "content_id": "1826586625"
+    },
+    {
+      "title": "Sardine AI API Specification Summary",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-10-31T15:34:26.000Z",
+      "url": "/spaces/P/pages/1478000669/Sardine+AI+API+Specification+Summary",
+      "excerpt": "Sardine API Endpoints Summary\nThis document provides a comprehensive overview of all Sardine API endpoints with their top-level request and response data structures.\nAPI Endpoints Overview\nEndpoint\nMethod\nSummary\nTop-Level Request Properties\nTop-Level Response Properties\n/v1/customers\nPOST\nEvaluate ",
+      "content_id": "1478000669"
+    },
+    {
+      "title": "Design Integration with Cursor",
+      "space": "Team Tesla",
+      "space_key": "",
+      "last_modified": "2025-08-13T14:40:11.000Z",
+      "url": "/spaces/TT/pages/1376092215/Design+Integration+with+Cursor",
+      "excerpt": "Figma MCP Server Setup\nThis project integrates with Figma for design collaboration and real-time updates. To set up the Figma MCP (Model Context Protocol) server:\nPrerequisites\nFigma Desktop App: Download the latest version from \nCursor IDE: Ensure you have Cursor with MCP support enabled\nConfigurat",
+      "content_id": "1376092215"
+    },
+    {
+      "title": "Leveraging AI for Enhanced Quality Engineering Practices",
+      "space": "Cakecore QE",
+      "space_key": "",
+      "last_modified": "2025-06-24T06:00:13.000Z",
+      "url": "/spaces/CQ/pages/1217921032/Leveraging+AI+for+Enhanced+Quality+Engineering+Practices",
+      "excerpt": "Gathering AI Usage Insights from the QE Team\nWe will be engaging with the Quality Engineering (QE) team to gather insights on how they currently utilize AI in their day-to-day activities. The goal is to identify practical, real-world applications of AI within QE workflows. Based on this input, we ai",
+      "content_id": "1217921032"
+    },
+    {
+      "title": "Spira - SUTAF Integration Guide",
+      "space": "Cakecore QE",
+      "space_key": "",
+      "last_modified": "2025-07-18T05:42:04.000Z",
+      "url": "/spaces/CQ/pages/1212874786/Spira+-+SUTAF+Integration+Guide",
+      "excerpt": "Step No\nSteps\nArtifacts\nComments\n1\nSeparate out a branch from the master (Or the updated branch)\n2\nAdd the dependency to the pom.xml file\n&lt;dependency&gt;\n    &lt;groupId&gt;com.cake.qe&lt;/groupId&gt;\n    &lt;artifactId&gt;cake_test_results_reporter&lt;/artifactId&gt;\n     &lt;version&gt;1.0.0-SN",
+      "content_id": "1212874786"
+    },
+    {
+      "title": "API Automation using Cursor",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-06-12T08:28:32.000Z",
+      "url": "/spaces/TD1/pages/1190690840/API+Automation+using+Cursor",
+      "excerpt": "1. Overview:\nThis page documents the results of the Proof of Concept (POC) for API Automation using Cursor as the development environment. The POC demonstrates the feasibility of automating the testing of various RESTful APIs with the help of Cursor&#39;s features combined with tools like Rest Assur",
+      "content_id": "1190690840"
+    },
+    {
+      "title": "Test Automation with Cursor Tool",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-06-05T09:55:12.000Z",
+      "url": "/spaces/TD1/pages/1172078594/Test+Automation+with+Cursor+Tool",
+      "excerpt": "1. Overview:\nThis page documents the results of the Proof of Concept (POC) for API Automation using Cursor as the development environment. The POC demonstrates the feasibility of automating the testing of various RESTful APIs with the help of Cursor&#39;s features combined with tools like Rest Assur",
+      "content_id": "1172078594"
+    },
+    {
+      "title": "Retail Demo Readiness - KT.docx",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-05-19T04:22:05.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1134985613&preview=%2F1134985613%2F1136394253%2FRetail+Demo+Readiness+-+KT.docx",
+      "excerpt": "Retail Demo Readiness - KT-20250515_083233Meeting Recording\nMay 15, 2025, 2:32PM\n35m 6s\n\nJeremy Diggins started transcription\nSusampath Madarasinghe 0:10\nHope you guys can see my screen.\nBenjamin Roedell 0:14\nYep, we can see it.\nSusampath Madarasinghe 0:16\nFirst of all, like we we have documented al",
+      "content_id": "att1136394253"
+    },
+    {
+      "title": "Retail Demo Readiness KT",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-05-19T04:26:53.000Z",
+      "url": "/spaces/PT/pages/1134985613/Retail+Demo+Readiness+KT",
+      "excerpt": "This KT document outlines the key information required to maintain the current version of Concierge AI, primarily for use in the demo regiment.\nFollowing is a summary of the Demo content.\nSystem Architecture Overview\nThe Concierge AI system consists of three primary layers:\nFrontend\nWeb-based user i",
+      "content_id": "1134985613"
+    }
+  ],
+  "copilot": [],
+  "ai_tooling": [
+    {
+      "title": "AI ETL Workflows - n8n",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-27T12:14:38.000Z",
+      "url": "/spaces/PT/pages/904200241/AI+ETL+Workflows+-+n8n",
+      "excerpt": "Table of Content\nETL n8n - Overview\n\nn8n is an open-source (fair-code licensed) automation tool that allows you to connect different systems, services, and APIs without extensive coding. It\u2019s often used for ETL (Extract, Transform, Load) workflows, meaning you can:\nExtract data from one or more sour",
+      "content_id": "904200241"
+    },
+    {
+      "title": "[AI] Smart Prompt Validation - N8N Workflow using &quot;OpenAI&quot;",
+      "space": "QA Team",
+      "space_key": "",
+      "last_modified": "2024-10-25T09:02:59.000Z",
+      "url": "/spaces/QT/pages/544604191/AI+Smart+Prompt+Validation+-+N8N+Workflow+using+OpenAI",
+      "excerpt": "Introduction\nThis document outlines how AI-generated smart prompts can be verified for relevance and accuracy, ensuring they align with the desired outcomes. Concierge application leverages customer profiles and their chat histories in generating smart prompts tailored to individual customers. \nTest",
+      "content_id": "544604191"
+    },
+    {
+      "title": "AI ETL Workflows - n8n",
+      "space": "Mad Mobile Architecture",
+      "space_key": "",
+      "last_modified": "2025-02-27T11:26:30.000Z",
+      "url": "/spaces/MMA/pages/542998622/AI+ETL+Workflows+-+n8n",
+      "excerpt": "Table of Content\nETL n8n - Overview\n\nn8n is an open-source (fair-code licensed) automation tool that allows you to connect different systems, services, and APIs without extensive coding. It\u2019s often used for ETL (Extract, Transform, Load) workflows, meaning you can:\nExtract data from one or more sour",
+      "content_id": "542998622"
+    },
+    {
+      "title": "[POC] AI Summary Validation - N8N Workflow using OpenAI",
+      "space": "QA Team",
+      "space_key": "",
+      "last_modified": "2024-10-21T09:59:48.000Z",
+      "url": "/spaces/QT/pages/433389721/POC+AI+Summary+Validation+-+N8N+Workflow+using+OpenAI",
+      "excerpt": "Introduction\u00a0\nThis is the 2nd POC document related to validating AI related use cases in Concierge Associate. Specifically for Customer Summarization. In our testing approach, we aimed to assess the relevance of the AI-generated customer summary in relation to the customer profile.\u00a0\nPotential approa",
+      "content_id": "433389721"
+    }
+  ],
+  "agentic": [
+    {
+      "title": "stagonboarding.txt",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-31T02:24:56.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=991658286&preview=%2F991658286%2F994738443%2Fstagonboarding.txt",
+      "excerpt": "}\n\t\n\t\n  &quot;status&quot;: &quot;up&quot;\n\t\n\t\n  &quot;upTime&quot;: &quot;3 days 8 hours 4 minutes 18 seconds&quot;,\n\t\n\t\n  &quot;startTime&quot;: &quot;2025-03-27T18:16:09.385Z&quot;,\n\t\n\t\n  &quot;version&quot;: &quot;1.0.40&quot;,\n\t\n\t\n  &quot;description&quot;: &quot;The merchant service endpoints ",
+      "content_id": "att994738443"
+    },
+    {
+      "title": "2.7.8 Best Practices in De-bugging",
+      "space": "Service Excellence and Operational Architecture",
+      "space_key": "",
+      "last_modified": "2025-03-25T07:41:42.000Z",
+      "url": "/spaces/SEAOA/pages/982024219/2.7.8+Best+Practices+in+De-bugging",
+      "excerpt": "Perform Debugging Steps (Isolate and Identify Root Cause)\nReproduce the issue:\nSimulate the user flow where the issue was observed (e.g., checkout with loyalty, login failure, order sync).\nIf you can\u2019t reproduce, gather as much contextual info (time, terminal ID, store, error screenshot) as possible",
+      "content_id": "982024219"
+    },
+    {
+      "title": "blob",
+      "space": "CAKE PCI",
+      "space_key": "",
+      "last_modified": "2025-03-24T09:32:28.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=978255934&preview=%2F978255934%2F978255959%2Fblob",
+      "excerpt": "&lt;mxfile modified=&quot;2019-04-16T07:09:38.385Z&quot; host=&quot;confluence.draw.io&quot;\nagent=&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)\nChrome/73.0.3683.103 Safari/537.36&quot; etag=&quot;fPkc599_lMUPOdbni_b2&quot;\nversion=&quot;10.6.2&quot;&gt;&lt;diagram id=",
+      "content_id": "att978255959"
+    },
+    {
+      "title": "log-events-viewer-result(13).csv",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-24T10:06:54.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=976126457&preview=%2F976126457%2F976126526%2Flog-events-viewer-result%2813%29.csv",
+      "excerpt": "timestamp,message,logStreamName\n1738049938788,gateway Debug: 12 thread 12 10.0.5.230:36800 172.17.0.2:9090 POST /api/authorization,ecs/cake-payment-gateway-container/becf709e60484d7da53211d6cf17786d\n1738049938789,gateway Warn: 12 string_remove null value for str_to_remove supplied,ecs/cake-payment-g",
+      "content_id": "att976126526"
+    },
+    {
+      "title": "log-events-viewer-result(18).csv",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-24T10:06:53.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=976126457&preview=%2F976126457%2F976126514%2Flog-events-viewer-result%2818%29.csv",
+      "excerpt": "timestamp,message,logStreamName\n1738143792032,gateway Info: 49268 HsmService.cs response received from hsm service for decrypt pan request,ecs/cake-payment-gateway-container/eb21d010393f47bd817ab8fdb5dafa64\n1738143792032,gateway Info: 49268 BaseRestClient.cs 200 response received from request https:",
+      "content_id": "att976126514"
+    },
+    {
+      "title": "log-events-viewer-result(19).csv",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-24T10:06:53.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=976126457&preview=%2F976126457%2F976126505%2Flog-events-viewer-result%2819%29.csv",
+      "excerpt": "timestamp,message,logStreamName\n1738149920000,gateway Debug: 54783     X-Amzn-Trace-Id: Root=1-679a101f-788644b644d46f7711e425ce,ecs/cake-payment-gateway-container/eb21d010393f47bd817ab8fdb5dafa64\n1738149920000,gateway Debug: 54783     content-md5: d41d8cd98f00b204e9800998ecf8427e,ecs/cake-payment-g",
+      "content_id": "att976126505"
+    },
+    {
+      "title": "log-events-viewer-result(20).csv",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-24T10:06:52.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=976126457&preview=%2F976126457%2F976126496%2Flog-events-viewer-result%2820%29.csv",
+      "excerpt": "timestamp,message,logStreamName\n1738212662597,gateway Debug: 2069 thread 2069 10.0.4.105:39460 172.17.0.2:9090 GET /api/login,ecs/cake-payment-gateway-container/c5c09c5676c545978558acf9ff7badba\n1738212662598,gateway Warn: 2069 string_remove null value for str_to_remove supplied,ecs/cake-payment-gate",
+      "content_id": "att976126496"
+    },
+    {
+      "title": "log-events-viewer-result(21).csv",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-24T10:06:52.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=976126457&preview=%2F976126457%2F976126487%2Flog-events-viewer-result%2821%29.csv",
+      "excerpt": "timestamp,message,logStreamName\n1738228039447,gateway Debug: 7 thread 7 10.0.5.230:14018 172.17.0.4:9090 GET /api/login,ecs/cake-payment-gateway-container/cc272c6b3ca64547916eef132723c565\n1738228039447,gateway Warn: 7 string_remove null value for str_to_remove supplied,ecs/cake-payment-gateway-conta",
+      "content_id": "att976126487"
+    },
+    {
+      "title": "log-events-viewer-result(23).csv",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-24T10:06:51.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=976126457&preview=%2F976126457%2F976126475%2Flog-events-viewer-result%2823%29.csv",
+      "excerpt": "timestamp,message,logStreamName\n1739264790091,gateway Debug: 2179 thread 2179 10.0.5.144:34536 172.17.0.2:9090 GET /api/login,ecs/cake-payment-gateway-container/243ab442a53840dba8b9fa595aae483a\n1739264790096,gateway Warn: 2179 string_remove null value for str_to_remove supplied,ecs/cake-payment-gate",
+      "content_id": "att976126475"
+    },
+    {
+      "title": "Cloud Release - CCL_8.842.20.0 - Data platform observability improvements - SOE",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2025-04-01T12:12:22.000Z",
+      "url": "/spaces/LP/pages/972062724/Cloud+Release+-+CCL_8.842.20.0+-+Data+platform+observability+improvements+-+SOE",
+      "excerpt": "Authors\n Lahiru Yapa \nStatus\nIn Progress\n \nRelease Co-ordinator\nLahiru Yapa  Hashan Rathnayake \nTeams Engaged\nTeam Castor\nReview Meeting Date\n2025-03-28 \nParticipants for the Review Meeting\nDeployment Window\nInstruction Verification\nInfra related things - CS\nPre Deployment\nTask\nOwner\nDependent\nOn (S",
+      "content_id": "972062724"
+    },
+    {
+      "title": "Test Approach - Cake Release CCL_8.842.0.10 - Enhancements to Bulk Upgrader Tool",
+      "space": "Taurus",
+      "space_key": "",
+      "last_modified": "2025-03-24T03:21:04.000Z",
+      "url": "/spaces/PS/pages/969015780/Test+Approach+-+Cake+Release+CCL_8.842.0.10+-+Enhancements+to+Bulk+Upgrader+Tool",
+      "excerpt": "Target Release\nCCL_8.842.0.10\nVersion\nAuthor(s)\nSasitha Babaranda \nReviewer\nRuvini Shanika \nStatus\nQE Approval\nRuvini Shanika \nEpic\n\n\n1.0. Feature / Release Overview\nThis fix is to enhance the POS API logs to track the ghost upgrade requests happened frequently for the production merchants and also",
+      "content_id": "969015780"
+    },
+    {
+      "title": "2024-09-09-active-devices.csv",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2025-03-18T06:31:03.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=961741369&preview=%2F961741369%2F961741395%2F2024-09-09-active-devices.csv",
+      "excerpt": "Name,Merchant Id,Register No,CINCO Version,Last Active Time,Online Status,Device Type,Couch DB Version,MAC Address,HD Model,HD Total up time,Kernel Version,XORG Version,Image Version,JAVA Version,Python Version,Agent Version,Serial Number,Host Name,Network Interface,Public IP,ISP Name,Local IP,Subne",
+      "content_id": "att961741395"
+    },
+    {
+      "title": "Cloud Release - CCL_8.842.0.0 - Cake Marketplace With Doordash SSIO - IR-21",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2025-03-17T13:48:57.000Z",
+      "url": "/spaces/LP/pages/959217686/Cloud+Release+-+CCL_8.842.0.0+-+Cake+Marketplace+With+Doordash+SSIO+-+IR-21",
+      "excerpt": "Release Info\nTST environment:\u00a0TST2\nIR date:  2025-02-17 \nFix version: 8.842.0.0\nFixed Tickets List\u00a0\nComponents\nComponent\nGit URL\nBranch\nCommit Id\nNotes\nOperator API\n\nrelease_8.842.0.0\na50f6de\nOLO Aggregator API\n\nrelease_8.842.0.0\n096dd1e\nuniversal-admin-reports\n\nrelease_8.842.0.0\nc68f36e8e\nMerchant ",
+      "content_id": "959217686"
+    },
+    {
+      "title": "Bulk Upgrader V2.03",
+      "space": "OPS Engineering",
+      "space_key": "",
+      "last_modified": "2025-09-25T06:17:27.000Z",
+      "url": "/spaces/OE/pages/952172642/Bulk+Upgrader+V2.03",
+      "excerpt": "Whats new ?\nSend username and agent name to pos api for upgrade tracking\nDownload\nbulkupgrader.zip",
+      "content_id": "952172642"
+    },
+    {
+      "title": "Testing Scope - Cake Release CCL_8.842.0.10 - Enhancements to Bulk Upgrader Tool",
+      "space": "Taurus",
+      "space_key": "",
+      "last_modified": "2025-03-24T03:39:01.000Z",
+      "url": "/spaces/PS/pages/951975986/Testing+Scope+-+Cake+Release+CCL_8.842.0.10+-+Enhancements+to+Bulk+Upgrader+Tool",
+      "excerpt": "Author\nSasitha Babaranda \nDocument Status\nAPI Version\nDate\n2025-03-14 \nReviewed By\n\u00a0Ruvini Shanika \n\n \nTesting scenario\nStatus\nComment\nPOS API\nPush an upgrade for a single merchant from super admin and verify agentName (super admin) and userName (super admin user name) gets reflected into the POS AP",
+      "content_id": "951975986"
+    },
+    {
+      "title": "DP Kafka Cluster Metric Exporting using JMX and Open Telemetry",
+      "space": "Data & Analytics",
+      "space_key": "",
+      "last_modified": "2025-03-17T05:22:09.000Z",
+      "url": "/spaces/DB/pages/951615563/DP+Kafka+Cluster+Metric+Exporting+using+JMX+and+Open+Telemetry",
+      "excerpt": "Authors\nDiluksha Madushan \nSankha Jayalath \nDocument Status\nWIP\n\nReviewers\nTBA\n1.0 Introduction\nObservability is crucial for monitoring and troubleshooting distributed systems like Apache Kafka. This document outlines the steps to integrate JMX Exporter and OpenTelemetry (OTel) Collector into an exi",
+      "content_id": "951615563"
+    },
+    {
+      "title": "OLD - SMS Token Onboarding - Software Architecture",
+      "space": "CAKE Engineering Excellence",
+      "space_key": "",
+      "last_modified": "2025-07-22T13:42:03.000Z",
+      "url": "/spaces/ES/pages/951222352/OLD+-+SMS+Token+Onboarding+-+Software+Architecture",
+      "excerpt": "Current Implementation\n1. Imported Designs\nFigma   \n3. Description of Architecture\nThe architecture is designed to reduce friction in the device onboarding process, decrease support calls related to PIN and Token retrieval, enable self-service for merc",
+      "content_id": "951222352"
+    },
+    {
+      "title": "CCL_8.838.10.5 - Approval.pdf",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2025-03-12T09:15:15.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=919732245&preview=%2F919732245%2F946012390%2FCCL_8.838.10.5+-+Approval.pdf",
+      "excerpt": "Wednesday,\nWednesday, March\nMarch 12,\n12, 2025\n2025 at\nat 14:44:28\n14:44:28 India\nIndia Standard\nStandard Time\nTime\nSubject:\nSubject:\nDate:\nDate:\n\nRe: Cake Releases - CCL_8.838.5.15 &amp; CCL_8.838.10.5 - Increasing Time Frame for Retrieving Report Data for Shogo &amp; Revert the Release\nWednesday, ",
+      "content_id": "att946012390"
+    },
+    {
+      "title": "Regression Impact - 8.842.0.0 - Cake Marketplace with Doordash SSIO",
+      "space": "Team Castor",
+      "space_key": "",
+      "last_modified": "2025-03-18T06:57:54.000Z",
+      "url": "/spaces/TD1/pages/942637068/Regression+Impact+-+8.842.0.0+-+Cake+Marketplace+with+Doordash+SSIO",
+      "excerpt": "Overview\n1.0 Test Environment Specification\nThe tests will be conducted on the TST2 environment.\n2.0 Impacted Components\nMAPI\nOLO-AGGREGATOR-API\nMENU-SYNC-AGENT\nOPERATOR-API\nUNIVERSAL-ADMIN-REPORTS\n3.0  Functional Testing\nComponent\nAutomation\nManual\nTest Result Spira/Qcenter\nTotal  Test Case Count\nT",
+      "content_id": "942637068"
+    },
+    {
+      "title": "25-Q1 - CCL_8.842.20.40 - AMI upgrade on EC2 - (Payment Scheduler)  for PCI - Patch version-SOE",
+      "space": "Cloud Engineering",
+      "space_key": "",
+      "last_modified": "2025-06-20T04:51:28.000Z",
+      "url": "/spaces/CCE/pages/942604484/25-Q1+-+CCL_8.842.20.40+-+AMI+upgrade+on+EC2+-+Payment+Scheduler+for+PCI+-+Patch+version-SOE",
+      "excerpt": "Authors\nPriyankara Bandara  Navoda Edirisinghe \nStatus\nRelease Co-ordinator\nPriyankara Bandara  Navoda Edirisinghe \nTeams Engaged\nSecurity, Cloud Services, Payments\nReview Meeting Date\nParticipants for the Review Meeting\nDeployment Window\n1.0 Deployment Steps\n1.1 Pre-Deployment Window\nTask\n\u00a0Owner\nAp",
+      "content_id": "942604484"
+    },
+    {
+      "title": "Cloud Release - CCL_8.842.0.0 - Cake Marketplace With Doordash SSIO - IR-20",
+      "space": "Leapset Platform",
+      "space_key": "",
+      "last_modified": "2025-03-18T06:30:38.000Z",
+      "url": "/spaces/LP/pages/941621512/Cloud+Release+-+CCL_8.842.0.0+-+Cake+Marketplace+With+Doordash+SSIO+-+IR-20",
+      "excerpt": "Release Info\nTST environment:\u00a0TST2\nIR date:  2025-02-05 \nFix version: 8.842.0.0\nFixed Tickets List\u00a0\nComponents\nComponent\nGit URL\nBranch\nCommit Id\nNotes\nOperator API\n\nrelease_8.842.0.0\na50f6de\nOLO Aggregator API\n\nrelease_8.842.0.0\n096dd1e\nuniversal-admin-reports\n\nrelease_8.842.0.0\n3e2e5d56c\nMerchant ",
+      "content_id": "941621512"
+    },
+    {
+      "title": "CCL_8.838.5.20 - REST-7881 - Test Scenarios",
+      "space": "Cakecore QE",
+      "space_key": "",
+      "last_modified": "2025-03-10T09:50:48.000Z",
+      "url": "/spaces/CQ/pages/925172060/CCL_8.838.5.20+-+REST-7881+-+Test+Scenarios",
+      "excerpt": "This test approach document is to verify the Bug Fix done for the UE order cancelling issue. \n1. Test Approach\n2. Test Scenarios\n3. Regression Test Results!--https://m",
+      "content_id": "925172060"
+    },
+    {
+      "title": "Functional and Regression Impact - Cake Release CCL_8.838.5.20 - Bug fixes from Taurus",
+      "space": "Cakecore QE",
+      "space_key": "",
+      "last_modified": "2025-03-07T07:00:31.000Z",
+      "url": "/spaces/CQ/pages/925171713/Functional+and+Regression+Impact+-+Cake+Release+CCL_8.838.5.20+-+Bug+fixes+from+Taurus",
+      "excerpt": "Overview\n1.0 Test Environment Specification\nThis document is prepared to identify the regression impact and to document the results of the Cake Release CCL_8.838.5.20 - Bug fixes from Taurus\n2.0 Impacted Components\nMAPI\nEMS Menu\nMenucore Menu\nLeapset API\nOLO Aggregator\n3.0  Functional/Regression Tes",
+      "content_id": "925171713"
+    },
+    {
+      "title": "merchantservicelogs.txt",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-03-05T08:48:30.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=914948102&preview=%2F914948102%2F924221618%2Fmerchantservicelogs.txt",
+      "excerpt": "[Nest] 1  - 03/05/2025, 8:30:03 AM   DEBUG [CompanyStream] CompanyEntity 7d6f90b9-f7b1-4a71-a227-f2f2e0c8f7fd is created\n\t\n\t\n\t\n\t\n}\n\t\n\t\n  &quot;__v&quot;: 0\n\t\n\t\n  },\n\t\n\t\n    }\n\t\n\t\n      &quot;$oid&quot;: &quot;67c80b8a83e1b2d887403070&quot;\n\t\n\t\n    &quot;_id&quot;: {\n\t\n\t\n    ],\n\t\n\t\n      }\n\t\n\t\n      ",
+      "content_id": "att924221618"
+    },
+    {
+      "title": "Redis Integration with an AI Chat Agent POC",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-03-04T16:46:27.000Z",
+      "url": "/spaces/PT/pages/922615888/Redis+Integration+with+an+AI+Chat+Agent+POC",
+      "excerpt": "User Story\n\nOverview\nThis documentation outlines the proof of concept (POC) requirements for the Jira ticket mentioned above. It provides information on integrating the Redis cache with the n8n AI chat agent for maintaining chat context. The chat context will be used to process NLP queries entered b",
+      "content_id": "922615888"
+    }
+  ],
+  "lovable": [
+    {
+      "title": "Agentic Lovable Dev Flow",
+      "space": "Cake Apps",
+      "space_key": "",
+      "last_modified": "2026-03-24T17:05:54.000Z",
+      "url": "/spaces/CA/pages/1883045889/Agentic+Lovable+Dev+Flow",
+      "excerpt": "Building a New Screen from a Prototype with Cursor + Chrome DevTools MCP\nThis guide documents the flow we used to build Security &gt; Audit Log from an external Lovable prototype while keeping the implementation aligned with this repo&#39;s presentational split.\nIt is written for engineers and desig",
+      "content_id": "1883045889"
+    },
+    {
+      "title": "Sales_Summary_Mapping_Template_BAM.xlsx",
+      "space": "Cake Reports",
+      "space_key": "",
+      "last_modified": "2025-10-29T21:12:38.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=1475346505&preview=%2F1475346505%2F1474986033%2FSales_Summary_Mapping_Template_BAM.xlsx",
+      "excerpt": "#\n\nColumn Name\nColumn Definition /RA &amp; Prototype\nValue per RA\n1 Location\nStore location, region, or enterprise total\n2 Item Sales\nTotal revenue from menu items before discounts and refunds $3,138.54\n3 Discounts &amp; CompsTotal value of % or $ discounts, free items, or rewards\n$0.00\n4 Refunds\nTo",
+      "content_id": "att1474986033"
+    },
+    {
+      "title": "Product Requirements Document - Payments Portal 2.0",
+      "space": "Payments",
+      "space_key": "",
+      "last_modified": "2025-08-19T15:45:08.000Z",
+      "url": "/spaces/P/pages/1387102239/Product+Requirements+Document+-+Payments+Portal+2.0",
+      "excerpt": "Perfect \u2014 thanks for sharing the epic details! I\u2019ve taken what you provided and formatted it into a PRD-style Confluence page that you can paste directly.\nHere\u2019s the ready-to-use version:\nProduct Requirements Document (PRD)\nEpic: Unified Payments Portal Enhancements\nJIRA Key: \n1. Overview\nThis epic ",
+      "content_id": "1387102239"
+    },
+    {
+      "title": "Lovable Puls report components",
+      "space": "Cake Reports",
+      "space_key": "",
+      "last_modified": "2025-04-27T19:46:28.000Z",
+      "url": "/spaces/CR/whiteboard/1076724049",
+      "excerpt": "",
+      "content_id": "1076724049"
+    }
+  ],
+  "llm_prompt": [
+    {
+      "title": "AI Smart Prompts POC",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-03-04T15:18:50.000Z",
+      "url": "/spaces/PT/pages/921731122/AI+Smart+Prompts+POC",
+      "excerpt": "Overview\nThis documentation outlines the process and resources used to generate personalized and smart prompts for sales associates. The process leverages customer profiles, sales associate profiles, and market trends to create insightful and actionable prompts.\nSchemas\nCustomers\n{\n  &quot;id&quot;:",
+      "content_id": "921731122"
+    },
+    {
+      "title": "Customer Analyzer Smart Prompts Flow.drawio",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T15:20:42.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=908001392&preview=%2F908001392%2F910000163%2FCustomer+Analyzer+Smart+Prompts+Flow.drawio",
+      "excerpt": "",
+      "content_id": "att910000163"
+    },
+    {
+      "title": "Virtual Assistant Smart Prompt Generation.drawio.png",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T15:20:43.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=908001392&preview=%2F908001392%2F909770778%2FVirtual+Assistant+Smart+Prompt+Generation.drawio.png",
+      "excerpt": "",
+      "content_id": "att909770778"
+    },
+    {
+      "title": "Virtual Assistant Smart Prompt Generation.drawio",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T15:20:42.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=908001392&preview=%2F908001392%2F909770772%2FVirtual+Assistant+Smart+Prompt+Generation.drawio",
+      "excerpt": "",
+      "content_id": "att909770772"
+    },
+    {
+      "title": "Customer Analyzer Smart Prompts Flow.drawio.png",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T15:20:43.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=908001392&preview=%2F908001392%2F909606964%2FCustomer+Analyzer+Smart+Prompts+Flow.drawio.png",
+      "excerpt": "",
+      "content_id": "att909606964"
+    },
+    {
+      "title": "Customer Analyzer Smart Prompts Flow.drawio",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T13:17:39.000Z",
+      "url": "/plugins/servlet/ac/com.mxgraph.confluence.plugins.diagramly/customContentViewer?content.plugin=ac%3Acom.mxgraph.confluence.plugins.diagramly%3Adrawio-diagram&space.key=PT&content.id=908656700&content.version=1&space.id=356253752&content.type=custom",
+      "excerpt": "%7B%22pageId%22%3A%22902168865%22%2C%22type%22%3A%22page%22%2C%22diagramName%22%3A%22Customer%20Analyzer%20Smart%20Prompts%20Flow.drawio%22%2C%22version%22%3A1%2C%22inComment%22%3Afalse%2C%22comments%22%3A%5B%5D%2C%22isSketch%22%3A0%7D\nCustomer Analyzer Smart Prompts Flow.drawio Page-1 Retrieve cust",
+      "content_id": "908656700"
+    },
+    {
+      "title": "Virtual Assistant Smart Prompt Generation.drawio.png",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T13:22:20.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=902168865&preview=%2F902168865%2F908263591%2FVirtual+Assistant+Smart+Prompt+Generation.drawio.png",
+      "excerpt": "",
+      "content_id": "att908263591"
+    },
+    {
+      "title": "Virtual Assistant Smart Prompt Generation.drawio",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T13:22:19.000Z",
+      "url": "/plugins/servlet/ac/com.mxgraph.confluence.plugins.diagramly/customContentViewer?content.plugin=ac%3Acom.mxgraph.confluence.plugins.diagramly%3Adrawio-diagram&space.key=PT&content.id=908263588&content.version=1&space.id=356253752&content.type=custom",
+      "excerpt": "%7B%22pageId%22%3A%22902168865%22%2C%22type%22%3A%22page%22%2C%22diagramName%22%3A%22Virtual%20Assistant%20Smart%20Prompt%20Generation.drawio%22%2C%22version%22%3A1%2C%22inComment%22%3Afalse%2C%22comments%22%3A%5B%5D%2C%22isSketch%22%3A0%7D\nVirtual Assistant Smart Prompt Generation.drawio Page-1 Ret",
+      "content_id": "908263588"
+    },
+    {
+      "title": "Customer Analyzer Smart Prompts Flow.drawio",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T13:17:38.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=902168865&preview=%2F902168865%2F908263579%2FCustomer+Analyzer+Smart+Prompts+Flow.drawio",
+      "excerpt": "",
+      "content_id": "att908263579"
+    },
+    {
+      "title": "Customer Analyzer Smart Prompts Flow.drawio.png",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T13:17:40.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=902168865&preview=%2F902168865%2F908001440%2FCustomer+Analyzer+Smart+Prompts+Flow.drawio.png",
+      "excerpt": "",
+      "content_id": "att908001440"
+    },
+    {
+      "title": "Smart Prompts Generation - n8n",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T15:20:37.000Z",
+      "url": "/spaces/PT/pages/908001392/Smart+Prompts+Generation+-+n8n",
+      "excerpt": "Table of Contents\nOverview\nSmart Prompts are dynamically generated AI-powered prompts that enhance chat responses by incorporating the current chat context. These prompts are created in real-time for each response, ensuring that the conversation remains context-aware, relevant, and personalized.\nBy ",
+      "content_id": "908001392"
+    },
+    {
+      "title": "Virtual Assistant Smart Prompt Generation.drawio",
+      "space": "Concierge Team",
+      "space_key": "",
+      "last_modified": "2025-02-28T13:22:18.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=902168865&preview=%2F902168865%2F907739370%2FVirtual+Assistant+Smart+Prompt+Generation.drawio",
+      "excerpt": "",
+      "content_id": "att907739370"
+    },
+    {
+      "title": "service-prompts-scripts-millers-prod-v7.json",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-02-21T16:01:36.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=885719041&preview=%2F885719041%2F885719057%2Fservice-prompts-scripts-millers-prod-v7.json",
+      "excerpt": "",
+      "content_id": "att885719057"
+    },
+    {
+      "title": "MenuPad Service Prompts API Guide and Reference (1).pdf",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-02-21T16:01:36.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=885719041&preview=%2F885719041%2F885719054%2FMenuPad+Service+Prompts+API+Guide+and+Reference+%281%29.pdf",
+      "excerpt": "\ufffc\n\nCAKE MenuPad Service\nPrompts\nAPI Guide and Reference\n\n1\n\nUPDATED: 10/22/24\n\nVersioning the scripts le is important so that you always have the option to roll back to a known\nstate. The API does not save old versions of your script le.\n\nRisks\nUse of this API can result in a malformed script le whi",
+      "content_id": "att885719054"
+    },
+    {
+      "title": "service-prompts-scripts-millers-prod-v7.json",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-02-03T20:32:03.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=823263233&preview=%2F823263233%2F823263247%2Fservice-prompts-scripts-millers-prod-v7.json",
+      "excerpt": "",
+      "content_id": "att823263247"
+    },
+    {
+      "title": "MenuPad Service Prompts API Guide and Reference (1).pdf",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-02-03T20:32:02.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=823263233&preview=%2F823263233%2F823263244%2FMenuPad+Service+Prompts+API+Guide+and+Reference+%281%29.pdf",
+      "excerpt": "\ufffc\n\nCAKE MenuPad Service\nPrompts\nAPI Guide and Reference\n\n1\n\nUPDATED: 10/22/24\n\nVersioning the scripts le is important so that you always have the option to roll back to a known\nstate. The API does not save old versions of your script le.\n\nRisks\nUse of this API can result in a malformed script le whi",
+      "content_id": "att823263244"
+    },
+    {
+      "title": "MenuPad Service Prompts API Guide and Reference (1).pdf",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-01-30T17:29:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=813596676&preview=%2F813596676%2F813596700%2FMenuPad+Service+Prompts+API+Guide+and+Reference+%281%29.pdf",
+      "excerpt": "\ufffc\n\nCAKE MenuPad Service\nPrompts\nAPI Guide and Reference\n\n1\n\nUPDATED: 10/22/24\n\nVersioning the scripts le is important so that you always have the option to roll back to a known\nstate. The API does not save old versions of your script le.\n\nRisks\nUse of this API can result in a malformed script le whi",
+      "content_id": "att813596700"
+    },
+    {
+      "title": "service-prompts-scripts-millers-prod-v7.json",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-01-30T17:29:33.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=813596676&preview=%2F813596676%2F813596697%2Fservice-prompts-scripts-millers-prod-v7.json",
+      "excerpt": "",
+      "content_id": "att813596697"
+    },
+    {
+      "title": "service-prompts-scripts-millers-prod-v7.json",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-01-06T17:42:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=736035889&preview=%2F736035889%2F736035904%2Fservice-prompts-scripts-millers-prod-v7.json",
+      "excerpt": "",
+      "content_id": "att736035904"
+    },
+    {
+      "title": "MenuPad Service Prompts API Guide and Reference (1).pdf",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2025-01-06T17:42:41.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=736035889&preview=%2F736035889%2F736035901%2FMenuPad+Service+Prompts+API+Guide+and+Reference+%281%29.pdf",
+      "excerpt": "\ufffc\n\nCAKE MenuPad Service\nPrompts\nAPI Guide and Reference\n\n1\n\nUPDATED: 10/22/24\n\nVersioning the scripts le is important so that you always have the option to roll back to a known\nstate. The API does not save old versions of your script le.\n\nRisks\nUse of this API can result in a malformed script le whi",
+      "content_id": "att736035901"
+    },
+    {
+      "title": "MenuPad Service Prompts API Guide and Reference (1).pdf",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2024-12-12T17:29:20.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=695271432&preview=%2F695271432%2F705953912%2FMenuPad+Service+Prompts+API+Guide+and+Reference+%281%29.pdf",
+      "excerpt": "\ufffc\n\nCAKE MenuPad Service\nPrompts\nAPI Guide and Reference\n\n1\n\nUPDATED: 10/22/24\n\nVersioning the scripts le is important so that you always have the option to roll back to a known\nstate. The API does not save old versions of your script le.\n\nRisks\nUse of this API can result in a malformed script le whi",
+      "content_id": "att705953912"
+    },
+    {
+      "title": "service-prompts-scripts-millers-prod-v7.json",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2024-12-12T17:27:42.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=695271432&preview=%2F695271432%2F705527937%2Fservice-prompts-scripts-millers-prod-v7.json",
+      "excerpt": "",
+      "content_id": "att705527937"
+    },
+    {
+      "title": "MenuPad Service Prompts API Guide and Reference.pdf",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2024-12-11T17:55:13.000Z",
+      "url": "/pages/viewpageattachments.action?pageId=357973896&preview=%2F357973896%2F701923400%2FMenuPad+Service+Prompts+API+Guide+and+Reference.pdf",
+      "excerpt": "\ufffc\n\nCAKE MenuPad Service\nPrompts\nAPI Guide and Reference\n\n1\n\nUPDATED: 10/22/24\n\nVersioning the scripts le is important so that you always have the option to roll back to a known\nstate. The API does not save old versions of your script le.\n\nRisks\nUse of this API can result in a malformed script le whi",
+      "content_id": "att701923400"
+    },
+    {
+      "title": "CAKE MenuPad Service Prompts API Guide and Reference- Editable format",
+      "space": "MenuPad",
+      "space_key": "",
+      "last_modified": "2024-12-10T15:54:01.000Z",
+      "url": "/spaces/MP/pages/698351647/CAKE+MenuPad+Service+Prompts+API+Guide+and+Reference-+Editable+format",
+      "excerpt": "CAKE MenuPad Service Prompts API Guide and Reference\nVersioning\nVersioning the scripts file is important to ensure you always have the option to roll back to a known state. The API does not save old versions of your script file.\nRisks\nModifying the Service Prompts script file requires attention to d",
+      "content_id": "698351647"
+    },
+    {
+      "title": "Recover from tinycore prompt",
+      "space": "Thiwanka Wimalasuriya",
+      "space_key": "",
+      "last_modified": "2024-11-29T19:54:33.000Z",
+      "url": "/spaces/SMTWP/blog/2024/11/27/674922499/Recover+from+tinycore+prompt",
+      "excerpt": "Connect a keyboard\ntype below and press enter\ntce-load -wi openssh\nsudo cp /usr/local/ssh/sshd_config.orig /usr/local/ssh/sshd_config\nsudo /usr/local/etc/init.d/openssh start\nsudo passwd tc ( use abc123 as password)\nNow we can ssh from another device on the same neywork and recover the pos\nssh tc@10",
+      "content_id": "674922499"
+    }
+  ],
+  "ai_strategy": [
+    {
+      "title": "AI Embedding Strategy",
+      "space": "Product Organization",
+      "space_key": "",
+      "last_modified": "2024-08-22T18:06:54.000Z",
+      "url": "/spaces/PO/pages/434241644/AI+Embedding+Strategy",
+      "excerpt": "",
+      "content_id": "434241644"
+    }
+  ]
+}

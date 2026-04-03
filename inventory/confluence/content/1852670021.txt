@@ -1,0 +1,5 @@
+# Cake Release - 8.885.0.3 - Fix for Sync failure in POINT - IR - 1
+# Space: TT
+# Page ID: 1852670021
+
+IR Date Environment POS4 Release Owner IR Owner Approvals Table of Contents 1 Table of Contents Ticket List https://madmobile-eng.atlassian.net/issues/?jql=(text%20~%20%22REST-17243*%22%20or%20summary%20~%20%22REST-17243*%22%20or%20key%20%3D%20REST-17243)%20and%20assignee%20in%20(712020%3A24c80284-89a1-4193-8c8b-494b855950cf)%20ORDER%20BY%20created%20DESC Component Versions Component Git URL Branch Commit Id PR / Notes src-point https://bitbucket.org/syscolabs/src-point/pull-requests/41 release_8.885.0.3 2154d4a Databases Component Git URL Branch Commit Id Path Sign off Configurations (test environments) Component Git URL Branch Commit Id Path Sign off Beans (Do not deploy - for reference only) Component Git URL Branch Commit ID Libraries (Do not deploy) Component Git URL Branch Commit ID Not Applicable Notes to QA Not Applicable

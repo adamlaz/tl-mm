@@ -1,0 +1,5 @@
+# Cake Release POS_7.42.0.12 - IR 1
+# Space: TT
+# Page ID: 1532657665
+
+Release Info TST environment: IR date: Fix version: 7.42.0.12 Fixed Tickets List Component Versions Component Git URL Branch Commit Id Notes 1 2 3 Configurations (dev / tst) Git URL Branch Commit Id Path 1 Libraries Component Git URL Branch Commit Id Notes 1 Plugins Component Git URL Branch Commit Id Notes 1 DB Changes Component Git URL Branch Commit Id Path Notes 1 QE Notes Deployment Notes Upgrade Curl GA version

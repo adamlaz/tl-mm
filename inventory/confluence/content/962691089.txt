@@ -1,0 +1,5 @@
+# Runbook: Resolving Disk Usage Issue on EBS Partition for cloud-sales-demo
+# Space: CCE
+# Page ID: 962691089
+
+Overview This runbook provides step-by-step instructions to resolve disk space issues on the EBS partition of the cloud-sales-demo instance. Affected Instance Details Instance ID: i-072671c1fc85ccae7 Instance Name: cloud-sales-demo IP Address: 54.176.178.117 Issue Description A disk usage alert has been received from Nagios indicating that the EBS partition has critically low free space. The sample alert details: wide 760 Resolution Steps Log into the Instance: Connect to the instance via SSM via the AWS Cloud Console. Navigate to the Instances Directory: Change to the required directory where the cleanup script is located: Execute the Cleanup Script: Run the following script to clean up old Docker instances and free up disk space: Verify the Disk Usage: Check the available disk space to confirm that the cleanup was successful: Check Nagios for Alert Clearance: Monitor the Nagios dashboard to ensure that the disk usage alert is cleared.

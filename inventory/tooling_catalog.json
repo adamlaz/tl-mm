@@ -1,0 +1,260 @@
+{
+  "generated": "2026-04-03",
+  "total_tools_identified": 28,
+  "tools": [
+    {
+      "name": "Jira",
+      "vendor": "Atlassian",
+      "category": "Project Management",
+      "status": "confirmed_active",
+      "source": "Direct access — 141 projects, 313 boards",
+      "cost_status": "unknown",
+      "notes": "Universal work system — engineering, CS, operations, governance all run through Jira"
+    },
+    {
+      "name": "Confluence",
+      "vendor": "Atlassian",
+      "category": "Documentation",
+      "status": "confirmed_active",
+      "source": "Direct access — 165 spaces, 14,111+ pages indexed",
+      "cost_status": "unknown",
+      "notes": "Active documentation culture. Bundled with Jira licensing."
+    },
+    {
+      "name": "Bitbucket Cloud",
+      "vendor": "Atlassian",
+      "category": "Source Control",
+      "status": "confirmed_active",
+      "source": "Direct access — 4 workspaces, 3,191 repos",
+      "cost_status": "unknown",
+      "notes": "Four separate workspaces (madmobile, syscolabs, madpayments, syscolabsconf). Bundled with Atlassian."
+    },
+    {
+      "name": "AWS",
+      "vendor": "Amazon",
+      "category": "Cloud Infrastructure",
+      "status": "confirmed_active",
+      "source": "SSO access — 18 accounts, ~$383K/month",
+      "cost_status": "known",
+      "cost_detail": "~$383K/month (March 2026). $309K in Mgmt (likely consolidated billing).",
+      "notes": "Multi-account org with ControlTower governance"
+    },
+    {
+      "name": "Grafana (self-hosted)",
+      "vendor": "Grafana Labs (OSS)",
+      "category": "Observability",
+      "status": "confirmed_active",
+      "source": "AWS inventory — Shared Services EKS cluster with Mimir/Loki/Tempo S3 buckets",
+      "cost_status": "included_in_aws",
+      "notes": "Self-hosted on EKS. Mimir (metrics), Loki (logs), Tempo (traces). Separate instance for Payments."
+    },
+    {
+      "name": "Jenkins",
+      "vendor": "Open Source",
+      "category": "CI/CD",
+      "status": "confirmed_active",
+      "source": "AWS inventory — Jenkins EC2 instances in CAKE Development account",
+      "cost_status": "included_in_aws",
+      "notes": "Used for CAKE/restaurant CI/CD. EC2-hosted. Confluence doc: 'Legacy Jenkins CI/CD Automation'"
+    },
+    {
+      "name": "Bitbucket Pipelines",
+      "vendor": "Atlassian",
+      "category": "CI/CD",
+      "status": "confirmed_active",
+      "source": "Bitbucket inventory — pipeline configs in repos, 87% coverage in madpayments",
+      "cost_status": "unknown",
+      "notes": "Used for Retail and Payments CI/CD. Included in Bitbucket licensing but build minutes may be separate."
+    },
+    {
+      "name": "Terraform",
+      "vendor": "HashiCorp",
+      "category": "IaC",
+      "status": "confirmed_active",
+      "source": "AWS inventory — state buckets across multiple accounts",
+      "cost_status": "unknown",
+      "notes": "IaC standard. Check if using OSS or Terraform Cloud/Enterprise (licensing implications)."
+    },
+    {
+      "name": "Cursor",
+      "vendor": "Anysphere",
+      "category": "AI Dev Tooling",
+      "status": "confirmed_active",
+      "source": "Bitbucket — .cursor/rules in 2 repos. Confluence — 'Design Integration with Cursor', 'API Automation using Cursor', 'Agentic Lovable Dev Flow'. Restaurant Update deck mentions heavy Cursor use.",
+      "cost_status": "unknown",
+      "notes": "Per-seat subscription ($20-40/month/seat). Unknown how many seats. Key interview question."
+    },
+    {
+      "name": "Claude / Anthropic",
+      "vendor": "Anthropic",
+      "category": "AI Dev Tooling",
+      "status": "confirmed_active",
+      "source": "Bitbucket — CLAUDE.md in 3 madpayments repos (devices-idtech-neo, vp3350, cybersource-bin-service)",
+      "cost_status": "unknown",
+      "notes": "Payments team using Claude for development. API costs or via Cursor integration?"
+    },
+    {
+      "name": "Wiz.io",
+      "vendor": "Wiz",
+      "category": "Cloud Security",
+      "status": "confirmed_active",
+      "source": "AWS inventory — CloudFormation stacks for Wiz deployment across accounts",
+      "cost_status": "unknown",
+      "notes": "CSPM/CWPP. Enterprise SaaS pricing — typically significant annual contract."
+    },
+    {
+      "name": "AWS GuardDuty",
+      "vendor": "Amazon",
+      "category": "Cloud Security",
+      "status": "confirmed_active",
+      "source": "AWS inventory — active across all 18 accounts",
+      "cost_status": "included_in_aws",
+      "notes": "Usage-based pricing within AWS bill"
+    },
+    {
+      "name": "AWS Security Hub",
+      "vendor": "Amazon",
+      "category": "Cloud Security",
+      "status": "confirmed_active",
+      "source": "AWS inventory — enabled in CAKE R&D ($11/month)",
+      "cost_status": "included_in_aws",
+      "notes": "May not be enabled across all accounts"
+    },
+    {
+      "name": "SageMaker",
+      "vendor": "Amazon",
+      "category": "ML/AI Platform",
+      "status": "confirmed_active",
+      "source": "AWS AI scan — 9 notebooks in CAKE Dev, 2 in R&D, 1 Studio domain, 31 AI-related S3 buckets",
+      "cost_status": "included_in_aws",
+      "notes": "Active ML infrastructure. Notebooks suggest data science experimentation."
+    },
+    {
+      "name": "AWS Bedrock",
+      "vendor": "Amazon",
+      "category": "AI/LLM Platform",
+      "status": "confirmed_active",
+      "source": "AWS AI scan — accessible in CAKE Dev, R&D, and Mgmt accounts. IAM cleanup Lambda exists in Mgmt.",
+      "cost_status": "included_in_aws",
+      "notes": "LLM API access. Usage-based pricing. Check if this is where Neo/AI platform connects."
+    },
+    {
+      "name": "Snyk",
+      "vendor": "Snyk",
+      "category": "DevSecOps",
+      "status": "suspected",
+      "source": "AWS inventory — Snyk-related Lambda in CAKE R&D",
+      "cost_status": "unknown",
+      "notes": "Developer security platform. Per-developer or per-repo pricing."
+    },
+    {
+      "name": "Guru",
+      "vendor": "Guru",
+      "category": "Knowledge Management",
+      "status": "suspected",
+      "source": "Restaurant Update deck mentions AI-produced documentation via Guru. Access not confirmed.",
+      "cost_status": "unknown",
+      "notes": "Per-user pricing. May overlap with Confluence."
+    },
+    {
+      "name": "Microsoft Teams",
+      "vendor": "Microsoft",
+      "category": "Communication",
+      "status": "confirmed_active",
+      "source": "Direct access — active, multiple channels including system monitoring alerts",
+      "cost_status": "unknown",
+      "notes": "Part of Microsoft 365 licensing"
+    },
+    {
+      "name": "Microsoft Forms",
+      "vendor": "Microsoft",
+      "category": "Survey / Forms",
+      "status": "confirmed_active",
+      "source": "Direct use — Adam building surveys in MS Forms on MM account",
+      "cost_status": "included_in_m365",
+      "notes": "Part of Microsoft 365 licensing"
+    },
+    {
+      "name": "Keycloak",
+      "vendor": "Red Hat (OSS)",
+      "category": "Identity / Auth",
+      "status": "confirmed_active",
+      "source": "AWS inventory — Keycloak EC2 instance in CAKE Dev. Confluence — Keycloak VA assessment.",
+      "cost_status": "included_in_aws",
+      "notes": "Self-hosted identity provider. Open source."
+    },
+    {
+      "name": "Neo4j",
+      "vendor": "Neo4j",
+      "category": "Database",
+      "status": "suspected",
+      "source": "AWS inventory — neo4j EC2 instance in CAKE Development",
+      "cost_status": "unknown",
+      "notes": "Graph database. Community vs Enterprise edition unclear."
+    },
+    {
+      "name": "Kafka",
+      "vendor": "Apache (OSS)",
+      "category": "Data Platform",
+      "status": "confirmed_active",
+      "source": "AWS inventory — Kafka EC2 instances in CAKE Development data platform",
+      "cost_status": "included_in_aws",
+      "notes": "Self-hosted on EC2. Check if using Confluent (paid) or Apache Kafka (OSS)."
+    },
+    {
+      "name": "Elasticsearch",
+      "vendor": "Elastic",
+      "category": "Search / Analytics",
+      "status": "confirmed_active",
+      "source": "AWS inventory — Elasticsearch EC2 instances in CAKE Development data platform",
+      "cost_status": "unknown",
+      "notes": "Self-hosted. Check if OSS or Elastic subscription."
+    },
+    {
+      "name": "Backstage / TechDocs",
+      "vendor": "Spotify (OSS)",
+      "category": "Developer Portal",
+      "status": "suspected",
+      "source": "AWS inventory — mm-techdocs-storage S3 bucket in Shared Artifact Registry",
+      "cost_status": "included_in_aws",
+      "notes": "Developer portal. If in use, indicates dev experience investment."
+    },
+    {
+      "name": "n8n",
+      "vendor": "n8n.io",
+      "category": "Workflow Automation",
+      "status": "confirmed_active",
+      "source": "Confluence — 'AI ETL Workflows - n8n' in Concierge Team and Mad Mobile Architecture spaces",
+      "cost_status": "unknown",
+      "notes": "Workflow automation. Self-hosted or cloud. Used for AI ETL workflows."
+    },
+    {
+      "name": "Amazon MQ (RabbitMQ)",
+      "vendor": "Amazon",
+      "category": "Message Broker",
+      "status": "confirmed_active",
+      "source": "AWS inventory — $3,289/month in Retail Prod US. Largest single line item in that account.",
+      "cost_status": "known",
+      "cost_detail": "$3,289/month",
+      "notes": "Managed RabbitMQ. Potential modernization opportunity."
+    },
+    {
+      "name": "AWS CodeArtifact",
+      "vendor": "Amazon",
+      "category": "Artifact Registry",
+      "status": "confirmed_active",
+      "source": "AWS inventory — Shared Artifact Registry account. Confluence — NPM and Maven CodeArtifact docs.",
+      "cost_status": "included_in_aws",
+      "notes": "Centralized package registry for NPM and Maven artifacts"
+    },
+    {
+      "name": "Figma",
+      "vendor": "Figma",
+      "category": "Design",
+      "status": "suspected",
+      "source": "Restaurant Update deck mentions 'Figma for design assets'",
+      "cost_status": "unknown",
+      "notes": "Per-seat design tool. Used by product design team."
+    }
+  ]
+}

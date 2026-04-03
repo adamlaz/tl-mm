@@ -1,0 +1,5 @@
+# Cake Release - CCL_8.884.84.0 -  Payment Transaction Fees Report Issue Fix - IR-2
+# Space: TT
+# Page ID: 1717993473
+
+IR Date Environment TST2 Release Owner IR Owner Approvals Table of Contents 1 Table of Contents Ticket List TicketID; REST-17429 f496ff7d-738c-3ddd-a9cd-8b868d553dc0 System Jira https://madmobile-eng.atlassian.net/issues/?jql=text%20~%20%22REST-17429*%22%20or%20summary%20~%20%22REST-17429*%22%20or%20key%20%3D%20REST-17429%20ORDER%20BY%20created%20DESC Component Versions Component Git URL Branch Commit Id 1 ua-reports-payments https://bitbucket.org/syscolabs/ua-reports-payments/src release_8.884.84.0 f3e83fd 2 universal-admin-reports https://bitbucket.org/syscolabs/universal-admin-reports/src/master/ release_8.884.84.0 d5e0c54 Databases Not Applicable Configurations (test environments) Not Applicable Beans (Do not deploy - for reference only) Not Applicable Libraries (Do not deploy) Not Applicable Notes to QA Please verify the existing functionality in the TST2 environment and confirm whether the current flow remains intact. Due to limitations with payment data, testing the bug will be challenging in TST2. Master PRs -

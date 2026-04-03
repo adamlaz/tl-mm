@@ -1,0 +1,5 @@
+# Multi-Location Reporting Architecture and Design
+# Space: DB
+# Page ID: 1840676865
+
+Component/Data Flow Architecture 0 1 0 1840676865 1838972937 data-platform-architecture-updated true 1 2 https://madmobile-eng.atlassian.net/wiki 1739438361074-data-platform-architecture 0 1441 auto top 800.5

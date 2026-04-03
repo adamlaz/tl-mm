@@ -364,26 +364,31 @@ Four instruments ready. Target deployment: **Monday, April 7** (pending survey t
 - **V2 enhanced inventory** — fixed Jira API issues, expanded velocity coverage, corrected Confluence page counts, added DORA-adjacent metrics (April 3)
 - **V3 targeted data collection** — PR reviewer concentration, sprint scope change, flow distribution, assignee analysis, deploy tags, Confluence trends, post-mortem catalog, AWS ECS/Route53 deep (April 3)
 - **V4 Jira segmentation** — classified all 141 projects into engineering/CS/operations, re-ran all Jira queries with segmented output, role-classified assignees (April 3)
-- **Quantitative analysis pipeline** — 12 CSV exports, 25 interactive HTML charts in `analysis/charts/`
-- **Ana request email drafted** with findings and follow-up access requests (see `ana-request.md`)
+- **V5 Confluence content extraction** — 14,111 pages indexed across 15 key spaces, 94 most relevant pages content-extracted to `inventory/confluence/content/` (April 3)
+- **V5 AI tooling analysis** — scanned 30 repos for AI config files (8 have Cursor/Claude/AGENTS.md), cataloged AI docs in Confluence, enumerated SageMaker/Bedrock usage in AWS (April 3)
+- **V5 Tooling catalog** — 28 tools identified across all platforms with cost status (see `inventory/tooling_catalog.json`)
+- **Vendor spend request drafted** for Don (see `vendor-spend-request.md`)
+- **Quantitative analysis pipeline** — 12 CSV exports, 25+ interactive HTML charts in `analysis/charts/`
+- **Ana coordination email drafted** — logistics and action items (see `ana-request.md`)
 
 ### In Progress 🔄
-- Waiting on Ana: internal survey tool info from HR
-- Waiting on Ana: document gathering folder
-- Waiting on Ana: Grafana viewer access (requested)
-- Waiting on Ana: answers to Monvia ($25.9K/month!), MenuPad, Relate, Neo/AI infra questions
-- Don's intro message for surveys (not yet discussed internally — template ready)
+- Building surveys in Microsoft Forms on MM account (DevEx survey: https://forms.cloud.microsoft/r/021mP98Sf9)
+- Working with Don on survey introduction message and distribution plan
+- Waiting on Ana: pre-read items not in Confluence (roadmaps as decks, revenue breakdown by product line)
+- Waiting on Ana: Grafana viewer access (route to Matias/cloud team)
+- Waiting on Ana: routing questions on Monvia, MenuPad, Relate, Neo/AI
+- Waiting on Ana: interview calendar blocks + conference room (April 13–15)
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
 ### Next Steps (This Week)
-1. **Send Ana request email** — `ana-request.md` is ready to send
-2. **Build surveys** — have Google Forms ready as fallback regardless of what MM's tool is
-3. **Finalize interview schedule** — send to Ana for calendar booking
-4. **Nudge Don** on the survey intro message timing (target: ahead of Monday deployment)
+1. **Send Ana coordination email** — `ana-request.md` is ready to send
+2. **Finish building surveys in Microsoft Forms** — all four instruments (DORA, Westrum, DevEx, Pragmatic Engineer)
+3. **Finalize interview schedule grid** — send to Ana for calendar booking
+4. **Work with Don** on survey intro message and deployment timing (target: April 7)
 5. **Collect pre-read docs** as Ana's folder becomes available
 6. **Review analysis charts** — open `analysis/charts/*.html` in browser, identify top findings to lead with onsite
-7. **Prep interview questions** — update with specific data points from inventory (e.g., "Your PR cycle time averages X hours — walk me through why")
+7. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine
 
 ### System Exploration — Completed (Key Answers)
 - **Where does Neo/AI live?** No dedicated account. SageMaker in CAKE R&D. Jira projects exist (NEO, AAK, LAA). Confluence docs exist. But no production AI infrastructure found. **This is a key onsite question for Jack/Chathura.**
