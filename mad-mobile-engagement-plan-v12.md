@@ -27,6 +27,10 @@ CONFIDENTIAL — March 2026
 - **Sensitive observations tagged.** Items marked `[PRIVATE]` stay between Adam and Don — they don't go into any materials shared with MM leadership.
 - **Deliverables tiered.** Core vs. expected vs. stretch, so we're honest about what's guaranteed.
 - **Voice tightened throughout.** Less consulting-speak, more engineer-who-gives-a-damn.
+- **April 3 reorg reflected throughout.** Siegel (COO) and Lodes (CRO) exited. Chathura promoted to CDO with formal authority over all engineering, product, design, PMO, and customer support. Kennedy narrowed to AI/innovation only. New execs added (Garcia/CFO, Shatney/VP HR). Interview schedule restructured.
+- **Hypothesis D resolved.** Kennedy/Chathura authority misalignment confirmed and resolved by structural org change. `[PRIVATE]` tags removed — this is now a confirmed finding, not a sensitive hypothesis.
+- **5th survey added.** AI Adoption & Tooling survey (16 questions) added for all engineering, product, design, and QE.
+- **Pre-work system reconnaissance completed.** V1–V6 automated inventory across all platforms: 29+ interactive charts, 15 CSV exports, 168-user cross-system audit, 94 extracted Confluence pages, engagement minisite built in Astro.
 
 ---
 
@@ -60,13 +64,13 @@ Mad Mobile ($75M revenue, ~370 people, $70M funded) has real assets — Sysco, V
 
 | Phase | Timeline | What Happens |
 |---|---|---|
-| Pre-Work | Now → April 11 | AI-driven system scanning, engineering health surveys (DORA, Westrum, DevEx), pre-read analysis, alignment sessions with Don |
-| Onsite | April 13–15 (Mon–Wed) | 3-day sprint in Tampa: 15+ interviews, architecture walkthroughs, value stream mapping, decision-rights mapping, real case tracing |
+| Pre-Work | Now → April 11 | AI-driven system scanning, engineering health surveys (DORA, Westrum, DevEx, AI Adoption & Tooling), pre-read analysis, alignment sessions with Don |
+| Onsite | April 13–15 (Mon–Wed) | 3-day sprint in Tampa: 18–21 interviews, architecture walkthroughs, value stream mapping, decision-rights mapping, real case tracing |
 | Deliverables | April 16–25 | CEO operating brief, friction register, hypothesis scorecard, 30/60/90-day plan, board-ready presentation, baseline survey package |
 
 **Five questions this answers:** (1) How does Mad Mobile actually build and ship? (2) Where does execution break down — with evidence? (3) Which problems are structural vs. process vs. technical debt? (4) What should Don engage in during his first 30/60/90 days? (5) What should be left alone?
 
-**Nine hypotheses to test** — named execution-failure patterns scored with evidence onsite. Details in [Section 7](#7-hypothesis-library-patterns-to-prove-or-disprove).
+**Nine hypotheses to test** — named execution-failure patterns scored with evidence onsite. Details in [Section 7](#7-hypothesis-library-patterns-to-prove-or-disprove). **Hypothesis D (Unclear Ownership) confirmed and resolved pre-onsite** by the April 3, 2026 reorg.
 
 **The deliverable:** A CEO Operating Brief that serves as the technology chapter of Don's transition playbook — plus a board-ready presentation Don can take directly to Morgan Stanley. Credibility comes from the methodology (DORA benchmarks, Watkins STARS, PE DD pillar scoring), not opinion.
 
@@ -84,7 +88,7 @@ Mad Mobile ($75M revenue, ~370 people, $70M funded) has real assets — Sysco, V
 
 **Non-goals:** Individual performance reviews, staffing recommendations, exhaustive code-level audits, forensic blame analysis, or retrospectives on outgoing leadership decisions.
 
-**Outputs:** CEO operating brief, execution system map, friction register, 30/60/90-day plan (with an explicit "leave alone" list), board-ready presentation, baseline survey package (repeatable at 30/60 days), vendor/tool utilization assessment.
+**Outputs:** CEO operating brief, execution system map, friction register, 30/60/90-day plan (with an explicit "leave alone" list), board-ready presentation, baseline survey package (repeatable at 30/60 days), vendor/tool utilization assessment, AI adoption & tooling assessment.
 
 **Timeline:** 3 weeks. Pre-work: now through April 11. Onsite: April 13–15. Deliverables: April 16–25.
 
@@ -235,65 +239,75 @@ The onsite should validate whether this process is actually followed or gets ove
 
 ### 5.5 Organizational Structure
 
-*Source: Official org chart provided by Don, March 2026.*
+*Source: Official org chart provided by Don, April 3, 2026 (post-reorg). Replaces March 2026 version.*
 
-#### L1 — Executive Leadership (Report to Bruce Bennett, CEO & Co-Founder)
+#### L1 — Executive Leadership (Report to Don Salama, Co-CEO)
 
-| Name | Title | Assessment Focus |
+| Name | Title | Scope | Assessment Focus |
+|---|---|---|---|
+| Manuel Garcia | Interim CFO | Finance, Revenue Operations | New to exec team. Absorbed RevOps from Siegel. |
+| Greg Schmitzer | President & Head of Sales & Marketing | Field sales, inbound sales, marketing strategy | Expanded — absorbed Lodes' sales org. What is his day-to-day operational role? |
+| David Strainick | COO *(was Chief People Officer)* | Account Management, Customer Onboarding, Customer Delivery, IT | Lane change from HR to operations. Validate whether this is a "promote to fit" or "promote to move." |
+| Chathura Ratnayake | **CDO** *(was SVP Global Software Engineering)* | ALL engineering, product, design, platform, PMO, ALL customer support | **Primary engineering leader — now with formal authority.** Single largest org (~94+ people). Most important interview of the engagement. |
+| Jack Kennedy | CTO | AI capabilities and platform innovation only | Operational engineering scope removed. Very small direct team (Jeremy Diggins + Holly Bobal). Handle with care in interviews — focus on what he's building, not what he lost. |
+| Bailey Shatney | VP of Human Resources | HR, recruiting, L&D | New to exec team. Took over People functions from Strainick. Stepping into HR at a 2.4 Glassdoor company. |
+| Ana Chambers | Chief of Staff, Strategic Programs | Cross-company execution, initiative alignment | Formally announced in the reorg. Don's operational right hand. |
+
+**Departed (April 3, 2026):**
+- **Steven Siegel** — Former COO. Exited. Payments strategy, data/analytics, revenue ops redistributed.
+- **Bill Lodes** — Former CRO. Exited. Staying in consulting capacity on payments strategy transition.
+
+#### L2 — Key Reports Under CDO (Chathura Ratnayake)
+
+| Name | Title | Notes |
 |---|---|---|
-| Don Salama | Co-CEO & Acting CFO | Strategic oversight, M&A, lender relationships, financial reporting. 1099 via Turn 3 Ventures (not W-2). |
-| Greg Schmitzer | President & Co-Founder | Has one direct report (Karen Licker, Sr. Director Marketing). What is his day-to-day operational role? |
-| Bill Lodes | Chief Revenue Officer | Owns sales, partner enablement, customer success, customer onboarding, program management, and tech support. Large org (~50+ people). |
-| Steven Seigel | Chief Operating Officer | Owns payments strategy, data strategy & analytics, revenue ops. Small org (~5 people). |
-| David Strainick | Chief People Officer | Owns HR/People & Culture, Sri Lanka country operations, IT, technical training. |
-| Jack Kennedy | Chief Technology Officer | Owns software engineering, product management, enterprise technology, product design. **`[PRIVATE]`** Per Don: CTO in title — Chathura runs most of tech operationally. |
+| Mark Guilarte | PMO (4 people) | New under Chathura. Runs GTM tracker and release coordination. |
+| Akshay Bhasin | Payments (18 people) | Previously QE Lead with ~7 people — scope appears expanded or relabeled. Clarify onsite. The Payments codebase (madpayments) is architecturally the cleanest in the company. |
+| Zubair Syed | VP Eng, Enterprise Solutions (58 people) | Largest eng org by headcount. Direct reports: Daniel Lomsak, Matias Riglos, James Oliver, Anthony Goad, Ana Chambers, Nagaswaroopa Kaukuri. |
+| Randy Brown | VP Eng, CAKE Tech (8 people) | Restaurant engineering. ~8 engineers for 15+ live systems. This ratio is a primary investigation target. |
+| Dulanjan Wengappuliarachchi | Sr. Director, Product & Design (6 people) | Scope broader than title suggests: PM, Product Design, Product Marketing (open headcount), L&D/Training. **Open roles: Payments PM (TBD), Product Marketing Manager (TBD).** |
+| Customer Support | All levels (headcount TBD) | Unified under CDO — previously under Lodes (CRO). Full build-to-support chain now under one executive. |
 
 #### L2 — Key Reports Under CTO (Jack Kennedy)
 
 | Name | Title | Notes |
 |---|---|---|
-| **Chathura Ratnayake** | SVP Global Software Engineering | **Primary engineering leader.** **`[PRIVATE]`** Per Don, basically runs most of tech even though much of it doesn't formally report to him. Key engagement contact. Direct reports: Akshay Bhasin (QE lead), Randy Brown (VP Engineering, Restaurant), Matthew Crumley. |
-| **Randy Brown** | VP Engineering, Restaurant | Runs the entire restaurant/CAKE engineering team: front end (CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty) and backend (Cloud/EMS). ~10 engineers. Reports to Chathura. **Key interview target — owns the product line where CAKE outages originate.** |
-| Akshay Bhasin | QE Lead | Owns Restaurant QE team (~7 engineers). Reports to Chathura. |
-| Zubair Syed | VP Software Engineering | Direct reports: Daniel Lomsak, Matias Riglos, James Oliver, Anthony Goad, Ana Chambers, Nagaswaroopa Kaukuri. |
-| Dulanjan Wengappuliarachchi | Sr. Director, Product & GTM | Scope broader than title suggests: owns Product Management, Product Design, Product Marketing (open headcount), and L&D/Training. Reports: Mirunaaliny Somasunthara Iyer, Thaddeus Fox, Richard Farber, Jake L. (Restaurant PM), Shavin P. (Ops Eng PM). **Open roles: Payments PM (TBD), Product Marketing Manager (TBD).** |
 | Jeremy Diggins | Director Enterprise Technology | |
-| Chris Gomersall | Director Product Design | |
+| Holly Bobal | TBD | New name on org chart. |
 
 #### L2 — Key Reports Under Other Executives
 
 | Name | Title | Reports To | Notes |
 |---|---|---|---|
-| Karen Licker | Sr. Director Marketing | Greg Schmitzer | Only direct report to the President. |
-| Peter Vu | Sr. Sales Manager - Tampa | Bill Lodes | |
-| Robert Jaklitsch | VP Partner Enablement | Bill Lodes | |
-| Dasunmi Nayakakorala | Director Customer Onboarding | Bill Lodes | |
-| Taylor Butto | Director Customer Success | Bill Lodes | |
-| Thomas O'Connell III | CE Onboarding Manager | Bill Lodes | |
-| Fiddniel Guilarte | Sr. Director Program Management | Bill Lodes | |
-| Mark Guilarte | PMO | Bill Lodes | Runs GTM tracker and release coordination. |
-| Joel Maldonado | Tech Support Supervisor | Bill Lodes | Tech support reports to Revenue, not Engineering. |
-| Michael Lee | Tech Support Supervisor | Bill Lodes | |
-| Andrew Honnold | Sr. Dir. Payments Strategy | Steven Seigel | Payments — relevant to CAKE/Visa assessment. |
-| Eric Breland | VP Data Strategy & Analytics | Steven Seigel | |
-| Zachary Honnold | Sr. Revenue Ops Analyst | Steven Seigel | |
-| **Rajik Gunatilaka** | VP & LK Country Head | David Strainick | **Sri Lanka operations report to People, not CTO.** |
-| Bailey Shatney | Director People & Culture | David Strainick | |
-| Jorge Maltes | Director Information Technology | David Strainick | **IT reports to People, not CTO.** |
-| Adriana Zuniga-Aragon | Technical Training Specialist | David Strainick | |
+| Mark Do | Assistant Controller | Manuel Garcia (CFO) | |
+| Zachary Honnold | RevOps (1) | Manuel Garcia (CFO) | Previously under Siegel (COO). |
+| Andrew Honnold | Payments Strategy (1) | Manuel Garcia (CFO) | Previously under Siegel (COO). |
+| Bobby Jaklitsch | Field Sales (4) | Greg Schmitzer | |
+| Peter Vu | Inbound Sales (3) | Greg Schmitzer | |
+| Karen Licker | Sr. Director Marketing | Greg Schmitzer | |
+| Das DeSilva | Onboarding (10) | David Strainick (COO) | |
+| Dir. Account Management | Account Mgmt (9) | David Strainick (COO) | Name TBD on org chart. |
+| Rosen Georgiev | IT | David Strainick (COO) | Previously identified as Jira/Confluence admin. March chart listed Jorge Maltes as IT Director — clarify. |
+| Chip O'Connell | Onboarding Delivery (3) | David Strainick (COO) | |
+| **Rajik Gunatilaka** | VP & LK Country Head | David Strainick (COO) | **Sri Lanka operations report to COO, not CDO.** Engineering resources have dotted-line to Chathura/Zubair. |
+| Renee Pauley | Recruiting | Bailey Shatney (VP HR) | |
+| Ayodele Lawal | L&D | Bailey Shatney (VP HR) | |
+| Adriana Zuniga | L&D | Bailey Shatney (VP HR) | |
 
-#### Organizational Structure Observations
+#### Organizational Structure Observations (Post-Reorg)
 
-1. **No dedicated product executive.** Product management and product design both report to the CTO. No separate product leader at the exec level. Does the CTO make product decisions, or does PM operate with autonomy?
-2. **`[PRIVATE]`** **Formal vs. informal authority in engineering.** The CTO holds the title, but Chathura Ratnayake drives operational execution. This divergence directly impacts decision-making speed, accountability, and team clarity — primary investigation target.
-3. **Sri Lanka country head reports to CPO, not CTO.** Engineering resources in Sri Lanka may have dotted-line relationships to Chathura/Zubair, but the formal reporting runs through People/HR. Unusual structure worth understanding.
-4. **IT reports to CPO.** Internal IT infrastructure is organizationally separated from product engineering.
-5. **Tech support reports to CRO, not engineering.** 15+ people in tech support report through the revenue org. Customer-facing technical support and engineering are organizationally separated.
-6. **President has minimal direct org.** Greg Schmitzer has exactly one direct report. Small org for a President title.
-7. **COO org is very lean.** Steven Seigel's ~5 people cover payments strategy, data/analytics, and revenue ops — significantly smaller than the CRO org.
-8. **Restaurant engineering team is small relative to system surface area.** Randy Brown's ~10 engineers + ~7 QE maintain 15+ live systems while simultaneously developing 6+ new products. This ratio is a primary candidate for execution friction.
-9. **Product org is broader than it appears.** Dulanjan owns PM, Product Design, Product Marketing, AND L&D/Training — four functions. Two roles are open (Payments PM, Product Marketing Manager). A lot of scope for one Sr. Director.
-10. **A documented prioritization process exists.** Multi-department scoring, executive alignment on top 5, PMO-run release cadence. Whether this actually gets followed or routinely overridden is a critical onsite question.
+1. **Kennedy/Chathura authority misalignment: RESOLVED.** The April 3 reorg gave Chathura formal CDO authority over all engineering, product, design, PMO, and customer support. Kennedy retains CTO title but is narrowed to AI/innovation. This confirms Hypothesis D and resolves it structurally. The onsite validates whether operational reality has caught up.
+2. **Chathura's scope is massive.** ~94+ people across all engineering verticals, product, design, PMO, and customer support. This is the single largest org in the company. Capacity and prioritization under this structure is a primary onsite question.
+3. **No dedicated product executive.** Product management and design report to the CDO (Chathura), not a separate product leader. Does the CDO make product decisions, or does PM operate with autonomy?
+4. **Customer support unified under engineering.** Previously under Lodes (CRO). Now under Chathura (CDO). This puts the full build-to-support chain under one executive — a positive structural change.
+5. **Sri Lanka country head reports to COO, not CDO.** Engineering resources in Sri Lanka have dotted-line relationships to Chathura/Zubair, but formal reporting runs through Strainick (COO). Unusual structure worth understanding.
+6. **IT reports to COO.** IT (Rosen Georgiev) now reports through Strainick (COO), not CTO. IT Director may have changed from Jorge Maltes — clarify.
+7. **Strainick's lane change.** Moved from Chief People Officer to COO. Now owns Account Management, Onboarding, Delivery, and IT — the entire customer operations chain. Validate whether this is a durable appointment.
+8. **Bailey Shatney — new and unproven in a hard seat.** VP HR stepping into a company with 2.4 Glassdoor, culture erosion, and post-reorg turbulence. If she's still ramping, Adam's survey baseline and interview themes become her onboarding gift.
+9. **President has expanded scope.** Greg Schmitzer absorbed Lodes' sales org. Now President & Head of Sales & Marketing.
+10. **Two C-suite exits create transition risk.** Siegel (COO) and Lodes (CRO) both exited the same day. Multiple responsibilities redistributed simultaneously. Execution continuity during transition is a new variable to monitor.
+11. **Restaurant engineering team is small relative to system surface area.** Randy Brown's ~8 engineers maintain 15+ live systems while simultaneously developing 6+ new products. This ratio is a primary candidate for execution friction.
+12. **A documented prioritization process exists.** Multi-department scoring, executive alignment on top 5, PMO-run release cadence. Whether this actually gets followed or routinely overridden is a critical onsite question.
 
 ### 5.6 Known Challenges (Pre-Engagement Signal)
 
@@ -302,8 +316,9 @@ Glassdoor: 2.4/5, 31% recommend, 32% positive outlook. Combined with customer re
 - **Execution velocity:** Multiple people describe "trouble executing."
 - **AI gap:** Heavy marketing around Neo/agentic commerce; flagship AI products reportedly not production-ready.
 - **Architectural polarity:** AI-native building AND legacy POS firefighting simultaneously.
-- **`[PRIVATE]`** **Formal vs. informal authority:** CTO holds the title; SVP Global Software Engineering drives operational execution.
+- **Formal vs. informal authority: RESOLVED.** April 3 reorg gave Chathura formal CDO authority over all engineering, product, design, PMO, and customer support. Kennedy narrowed to AI/innovation. No longer a live variable.
 - **Offshore coordination:** Sri Lanka engineering with timezone challenges, reporting through People rather than Engineering.
+- **Post-reorg transition risk:** Multiple executives in new roles simultaneously (Strainick as COO, Shatney as VP HR, Garcia as Interim CFO). Two C-suite exits (Siegel, Lodes) on the same day. Execution continuity during transition is a new variable.
 - **Priority whiplash:** Constantly shifting priorities mid-sprint.
 - **CAKE reliability:** System-wide payment outages, degraded support, customer churn.
 - **Culture erosion:** Layoffs, shifting bonuses, forced RTO, Houston shutdown. "Toxic culture," "broken promises."
@@ -378,7 +393,7 @@ Nine named hypotheses to validate or rule out onsite. These convert time from op
 | A | **Portfolio Sprawl** | Too many products, no shared platform discipline | Count active codebases. Teams on >1 product? Shared services vs. duplication? |
 | B | **Sales-Led Chaos** | Revenue promises create roadmap churn and tech debt | Ask sales what they promise. Ask eng what surprises them mid-sprint. Ask product who overrides. |
 | C | **Fake Platforming** | Leadership talks "platform"; teams maintain customer-specific patchwork | Show me the shared platform layer. What does Neo actually consist of in production? |
-| D | **Unclear Ownership** | Formal authority and operational authority are misaligned | Map who actually decides on architecture, staffing, priorities. **`[PRIVATE]`** Trace the Kennedy/Chathura dynamic. |
+| D | **Unclear Ownership** | Formal authority and operational authority are misaligned — **CONFIRMED and resolved by April 3 reorg.** Chathura now CDO with formal authority; Kennedy narrowed to AI/innovation. Onsite validates whether operational reality has caught up to the structural change. | Map who actually decides on architecture, staffing, priorities. Trace whether teams have fully transitioned to Chathura's chain or residual Kennedy-era routing persists. |
 | E | **Dependency Drag** | A few people/teams are routing bottlenecks | Whose approval do you need? Who do you wait on? Map the dependency graph. |
 | F | **Legacy Gravity** | CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate | What constraint costs the most velocity? Ratio of maintenance vs. new feature hours? |
 | G | **Missing Cadence** | No consistent execution inspection; leadership discovers reality through fire drills | What's the weekly rhythm? What metrics are reviewed? How does bad news travel? |
@@ -401,19 +416,20 @@ Nine named hypotheses to validate or rule out onsite. These convert time from op
 
 ### 8.2 Concrete Pre-Work Timeline
 
-| Date | Milestone |
-|---|---|
-| March 24–28 | Don briefs Chathura and Kennedy; shares coordination brief + NotebookLM materials |
-| March 28–April 1 | System access requests initiated; pre-read collection begins |
-| April 1–3 | Don sends survey introduction message to engineering |
-| April 3–4 | Surveys go live |
-| April 4–7 | I begin system reconnaissance as access comes online |
-| April 7 | Pre-read package target from MM side |
-| April 7–9 | Adam-Don Session 2 (Political Landscape) and Session 3 (Pre-Onsite Briefing) |
-| April 10 | Survey reminder; surveys close April 11 |
-| April 11–12 | Final prep: survey analysis, hypothesis scorecard update, interview schedule confirmed |
-| April 13–15 | **Onsite diagnostic sprint** |
-| April 16–25 | Deliverables |
+| Date | Milestone | Status |
+|---|---|---|
+| March 24–28 | Don briefs Chathura and Kennedy; shares coordination brief + NotebookLM materials | ✅ Done |
+| March 28–April 1 | System access requests initiated; pre-read collection begins | ✅ Done |
+| April 1–3 | System reconnaissance V1–V6 completed (all platforms scanned, 29+ charts, 168-user audit, minisite built) | ✅ Done |
+| April 3 | **April 3 reorg:** Siegel/Lodes exit, Chathura promoted to CDO, Kennedy narrowed. Org chart remapped. Don call guide prepared. Survey 5 (AI Adoption & Tooling) designed. | ✅ Done |
+| April 3–4 | Don call (reorg alignment, board deliverable, onsite prep) | 🔄 In progress |
+| April 7 | Chathura sends survey intro (as CDO); 5 surveys go live via Microsoft Forms | Upcoming |
+| April 7 | Pre-read package target from MM side | Upcoming |
+| April 7–9 | Adam-Don Session 2 (Political Landscape) and Session 3 (Pre-Onsite Briefing) | Upcoming |
+| April 10 | Survey reminder; surveys close April 11 | Upcoming |
+| April 11–12 | Final prep: survey analysis, hypothesis scorecard update, interview schedule confirmed | Upcoming |
+| April 13–15 | **Onsite diagnostic sprint** | Upcoming |
+| April 16–25 | Deliverables | Upcoming |
 
 ### 8.3 Scope Discipline & Triage Protocol
 
@@ -425,8 +441,9 @@ Scope creep is the biggest risk to this engagement. Nine hypotheses, six systems
 
 | Tier | People | Rationale |
 |---|---|---|
-| **Tier 1 — Must happen onsite** | Chathura, Kennedy, Randy Brown, Dulanjan, Zubair, Bill Lodes, Steven Seigel, 2–3 senior ICs | Core hypothesis owners. Face-to-face is irreplaceable for reading dynamics. |
-| **Tier 2 — Can go async/video** | Greg Schmitzer, Chris Gomersall, David Strainick, Rajik Gunatilaka (already video), Joel Maldonado/Michael Lee | Important but information can be gathered remotely. |
+| **Tier 1 — Must happen onsite** | Chathura (CDO), Kennedy, Randy Brown, Dulanjan, Zubair, Akshay Bhasin, Strainick (COO), 2–3 EMs, 2–3 senior ICs | Core hypothesis owners. Face-to-face is irreplaceable for reading dynamics. |
+| **Tier 2 — Can go async/video** | Greg Schmitzer, Chris Gomersall, Mark Guilarte, Bailey Shatney, Rajik Gunatilaka (already video), Jeremy Diggins, Customer Support Lead (TBD) | Important but information can be gathered remotely. |
+| **Optional** | Bill Lodes (consulting) | Former CRO. Only if available and Don thinks it's valuable. |
 
 **Hypothesis convergence.** By end of Day 1, I narrow from 9 hypotheses to 4–5 with the strongest signal. Days 2 and 3 focus investigation on those. The rest get scored as "Insufficient Evidence" or "Not Present" — I don't force-validate everything.
 
@@ -447,7 +464,7 @@ Every hour invested here multiplies the value of onsite face time. By the time I
 
 ### 9.1 AI-Augmented System Reconnaissance (~6 hrs async)
 
-With access credentials arranged through Don and Chathura, I'll run automated analysis across Mad Mobile's development and infrastructure systems — including but not limited to source control, project management, cloud infrastructure, monitoring, and documentation platforms. Specific tooling inventory to be confirmed during coordination with Chathura.
+With access credentials arranged through Don and Chathura, I've completed six rounds (V1–V6) of automated analysis across Mad Mobile's development and infrastructure systems — including but not limited to source control, project management, cloud infrastructure, monitoring, and documentation platforms. Specific tooling inventory to be confirmed during coordination with Chathura.
 
 - **Source Control (GitHub or equivalent):** Repo inventory, commit frequency, PR review cycle times, branch strategy, testing coverage, CI/CD pipeline config. Identify dead repos vs. high-churn repos.
 - **Cloud Infrastructure (AWS or equivalent):** Service inventory, resource utilization, cost allocation by product, deployment architecture, monitoring/alerting config, disaster recovery posture, single points of failure.
@@ -455,20 +472,31 @@ With access credentials arranged through Don and Chathura, I'll run automated an
 - **Documentation / Wiki:** Coverage audit — what's documented vs. tribal knowledge. Architecture diagram currency. Runbook inventory. Post-mortem history.
 - **Vendor & Tool Utilization:** Inventory all engineering and ops tools. Identify what's paid for but unused, underutilized, or redundant. This is about effectiveness, not contract pricing — I'm looking at whether the tooling supports or hinders execution.
 
-This turns every interview from "tell me about your process" into "I can see your average PR review time is X and deployment frequency is Y — walk me through why."
+**Pre-work reconnaissance: COMPLETE.** As of April 3, 2026:
+- 29+ interactive Plotly charts across all platforms (`analysis/charts/`)
+- 15 CSV exports for spreadsheet analysis (`analysis/*.csv`)
+- 168-user cross-system audit with per-user activity profiles (`inventory/users/`)
+- 94 key Confluence pages content-extracted (`inventory/confluence/content/`)
+- 28 tools cataloged with vendor, category, and cost status (`inventory/tooling_catalog.json`)
+- Engagement minisite built in Astro with 8 domain pages and 25+ embedded charts (`minisite/`)
+
+This has already turned every interview from "tell me about your process" into "I can see your average PR review time is X and deployment frequency is Y — walk me through why."
 
 ### 9.2 Deployable Assessments (~3 hrs async)
 
-Four lightweight assessments deployed to engineering leads and ICs before the onsite. Under 15 minutes per person. Nobody wants to do surveys, so these are short by design.
+Five assessments deployed to engineering leads and ICs before the onsite. Under 20 minutes per person. Nobody wants to do surveys, so these are short by design.
 
 A positioning note: many people at Mad Mobile have felt their voices were unheard. These surveys aren't just data collection — they're a concrete signal that new leadership is listening. When introduced with the right framing from Don, the act of asking is as valuable as the answers.
 
 These are also designed to be **repeatable** — Mad Mobile can re-run them at 30 and 60 days without my involvement to track whether changes are working.
 
+**Deployment:** Building in Microsoft Forms on MM account. Chathura (now CDO) sends the intro message. Draft sent to Ana (April 3).
+
 - **DORA Quick Check** (dora.dev/quickcheck): Self-assessed delivery performance per team. Classified as Elite/High/Medium/Low against Google's research benchmarks.
 - **Westrum Culture Survey** (7 questions, Likert scale): Organizational culture type — pathological, bureaucratic, or generative. 2 minutes per person.
 - **DevEx Survey** (DX Core 4, ~18 items): Developer experience across feedback loops, cognitive load, and flow state.
 - **Pragmatic Engineer Test** (15 yes/no questions): Modern engineering culture maturity check. Administered to 3–5 engineering leads.
+- **AI Adoption & Tooling** (16 questions): Maps actual AI tool adoption vs. perception, identifies tooling sprawl and gaps, captures readiness for AI-driven strategy. Administered to all engineering, product, design, and QE. Results feed into the board/investor AI strategy assessment, vendor/tool rationalization, and 30/60/90-day plan.
 
 ### 9.3 Pre-Read Package Ingestion (~4 hrs async)
 
@@ -517,7 +545,7 @@ Two to three sessions with Don across pre-work. Don's two years of operational c
 #### Session 2: Political Landscape & Hypotheses (~90 min)
 
 - Map the political landscape: who Don trusts, who the org trusts, Bruce-era commitments, investor distortions
-- **`[PRIVATE]`** Kennedy/Chathura dynamic — how does it actually work? Where does it break?
+- Kennedy/Chathura dynamic — resolved by the April 3 reorg. Validate onsite whether operational reality matches the new structure.
 - Greg Schmitzer's role going forward
 - Don's hypotheses: suspected bottlenecks, sensitive zones, what he fears discovering
 - Review initial system reconnaissance findings
@@ -534,22 +562,24 @@ Two to three sessions with Don across pre-work. Don's two years of operational c
 
 | Person / Role | Day | Duration | Focus | Tier |
 |---|---|---|---|---|
-| Don Salama (Co-CEO/Acting CFO) | Daily | 30 min/day | Morning sync + EOD debrief | — |
-| **Jack Kennedy (CTO)** | Mon | 90 min | Architecture, Neo, AI strategy, tech debt, decision-making authority | 1 |
-| **Chathura Ratnayake (SVP Global Software Eng)** | Mon | 90 min | Day-to-day execution, team health, sprint reality, Sri Lanka coordination | 1 |
-| Dulanjan Wengappuliarachchi (Sr. Dir, Product & GTM) | Mon | 60 min | Roadmap, client promises, how product decisions get made, open headcount impact | 1 |
-| Steven Seigel (COO) | Mon | 45 min | Payments strategy, data/analytics, revenue ops | 1 |
-| **Randy Brown (VP Engineering, Restaurant)** | Tue | 60 min | CAKE team capacity vs. system surface area, outage patterns, POS V3/V4 coexistence | 1 |
-| Zubair Syed (VP Software Engineering) | Tue | 45 min | Engineering execution, team allocation, CAKE vs. Neo split | 1 |
-| Bill Lodes (CRO) | Tue | 45 min | Sales pipeline, feature promises, deal blockers, tech support escalation | 1 |
-| Engineering Managers / Tech Leads (2–3) | Tue | 45 min each | Sprint reality, blockers, ground-level perspective | 1 |
-| Senior ICs (2–3) | Tue | 30 min each | Unfiltered ground-level perspective | 1 |
-| Jeremy Diggins (Dir Enterprise Technology) | Tue | 45 min | Enterprise tech landscape, integrations | 2 |
-| Rajik Gunatilaka (VP & LK Country Head) | Wed | 45 min (video) | Sri Lanka workflow, communication, quality | 2 |
-| Joel Maldonado or Michael Lee (Tech Support) | Wed | 30 min | CAKE outage response, escalation loop, ticket patterns | 2 |
-| David Strainick (Chief People Officer) | Wed | 30 min | HR perspective, Sri Lanka management, IT, culture | 2 |
-| Greg Schmitzer (President) | Wed | 30 min | Partnerships, GTM, his operating role | 2 |
+| Don Salama (Co-CEO) | Daily | 30 min/day | Morning sync + EOD debrief | — |
+| **Chathura Ratnayake (CDO)** | Mon | 90–120 min | Full org ownership, execution model, team health, support unification, PMO integration, sprint reality, AI strategy from build side | 1 |
+| **Jack Kennedy (CTO)** | Mon | 60 min *(reduced from 90)* | AI/innovation roadmap, Neo platform vision, infrastructure plans, his view of the path forward. **Handle with care — focus on what he's building, not what he lost.** | 1 |
+| Dulanjan Wengappuliarachchi (Sr. Dir, Product & Design) | Mon | 60 min | Roadmap, client promises, how product decisions get made, transition to reporting under CDO | 1 |
+| David Strainick (COO, was CPO) | Mon | 45 min | Account management, onboarding, delivery execution, IT operations, customer experience. **Completely different interview than planned — was 30 min on HR/culture.** Validate whether he's in the seat to stay. | 1 |
+| **Randy Brown (VP Engineering, CAKE Tech)** | Tue | 60 min | CAKE team capacity vs. system surface area, outage patterns, POS V3/V4 coexistence | 1 |
+| Zubair Syed (VP Eng, Enterprise Solutions) | Tue | 60 min | Concierge/Retail execution, enterprise customer projects, team structure, offshore coordination. Largest eng org (58). | 1 |
+| Akshay Bhasin (Payments, 18) | Tue | 45 min | Payments engineering, architecture (cleanest codebase), scaling, how this team operates differently. Scope expanded from QE Lead — clarify. | 1 |
+| Mark Guilarte (PMO, 4) | Tue | 30 min | Project management process, cross-team coordination, execution discipline. New under Chathura. | 2 |
+| Engineering Managers / Tech Leads (2–3) | Tue | 45 min each | Sprint reality, blockers, ground-level perspective. Target: one from CAKE, one from Enterprise, one from Payments. | 1 |
+| Senior ICs (2–3) | Tue | 30 min each | Day-to-day delivery, tooling, AI usage, what slows them down | 1 |
+| Rajik Gunatilaka (VP & LK Country Head) | Wed | 45 min (video) | Sri Lanka workflow, communication, quality. Reports to Strainick (COO), dotted line to Chathura. | 2 |
+| Greg Schmitzer (President & Head of Sales & Marketing) | Wed | 30 min | Sales/marketing strategy, revenue story, feature promise pipeline. Expanded role — absorbed CRO scope. | 2 |
+| Jeremy Diggins (Dir Enterprise Technology) | Wed | 30 min | Enterprise tech landscape, integrations. Reports to Kennedy. | 2 |
+| Bailey Shatney (VP Human Resources) | Wed | 30 min | Culture, hiring, retention, L&D, team health. New to exec team. Position Adam's deliverables as onboarding resource. | 2 |
+| Customer Support Lead (TBD) | Wed | 30 min | Escalation paths, support→engineering handoff. Now under Chathura (CDO). | 2 |
 | Chris Gomersall (Dir Product Design) | Wed or async | 30 min | Design process, collaboration with product/eng | 2 |
+| Bill Lodes (Former CRO, optional) | Wed or async | 30 min | Payments strategy context, transition items. Only if available and Don thinks it's valuable. Low priority. | — |
 
 ### 9.6 Pre-Select Real Cases to Trace
 
@@ -574,13 +604,13 @@ What Chathura and Kennedy need to action. See the companion **MM Coordination Br
 
 | Action | Owner | Deadline | Notes |
 |---|---|---|---|
-| Read-only system access (source control, PM tool, cloud, monitoring, docs) | Chathura / IT (Jorge Maltes) | April 1 | Longest lead time. See `system-access-request.md`. |
-| Pre-read document collection (roadmaps, arch diagrams, incident reports) | Chathura / Dulanjan | April 7 | See `pre-read-package-request.md`. Raw/outdated is fine. |
-| Interview calendar blocks (15+ sessions, April 13–15) | Chathura / Kennedy | April 7 | I'll send the schedule; they book the people. |
-| Survey deployment or distribution assistance | Chathura | April 3 | 4 surveys, under 15 min per person. Don introduces, team distributes. |
-| Conference room + workspace reserved (April 13–15) | Kennedy or admin | April 7 | Needs to support private 1:1 conversations. |
-| Slack/Teams guest account for Adam | IT (Jorge Maltes) | April 1 | Dedicated channel for coordination. |
-| Communicate engagement to their teams | Chathura / Kennedy | After Don's intro | Use Don's messaging from Section 4.2. |
+| Read-only system access (source control, PM tool, cloud, monitoring, docs) | Chathura (CDO) / IT (Rosen Georgiev or Jorge Maltes — clarify) | April 1 | ✅ Complete. All access provisioned. |
+| Pre-read document collection (roadmaps, arch diagrams, incident reports) | Chathura (CDO) / Dulanjan | April 7 | See `pre-read-package-request.md`. Raw/outdated is fine. Concierge/Retail and Neo/AI roadmaps still pending. |
+| Interview calendar blocks (18–21 sessions, April 13–15) | Ana (Chief of Staff) / Chathura (CDO) | April 7 | Schedule restructured post-reorg. Ana coordinates all booking. |
+| Survey deployment or distribution assistance | Chathura (CDO) | April 7 | 5 surveys, under 20 min per person. Chathura sends intro as CDO. Building in Microsoft Forms. |
+| Conference room + workspace reserved (April 13–15) | Ana (Chief of Staff) | April 7 | Needs to support private 1:1 conversations. |
+| Slack/Teams guest account for Adam | IT (Rosen Georgiev) | April 1 | ✅ Complete. Teams access active. |
+| Communicate engagement to their teams | Chathura (CDO) | After Don's intro | Use Don's messaging from Section 4.2. Kennedy's scope is narrowed — Chathura leads communication. |
 
 ---
 
@@ -607,9 +637,11 @@ Evening work (Mon & Tue, ~1.5 hrs): AI-assisted synthesis of interview notes, cr
 - Architecture review with Kennedy and Chathura — whiteboard the infrastructure using C4 notation, map CAKE-to-Neo communication, where AI API calls occur in transaction flow.
 - Begin Wardley Mapping workshop with tech leadership — plot components on the evolution axis to spot build-vs-buy misalignment.
 - Product direction session with Dulanjan — how product decisions get made under the CTO. Explore his scope (PM, design, product marketing, L&D). Does the multi-department scoring process actually work? Does exec alignment override it?
-- COO session (Steven Seigel) — payments strategy, data, revenue ops.
+- **Chathura Ratnayake — most important interview of the engagement.** Full org walkthrough: engineering across all verticals, product, design, PMO integration, customer support unification, sprint reality. May need two sessions.
+- COO session (David Strainick) — account management, onboarding, delivery execution, IT operations. Completely different interview than originally planned — was 30 min on HR/culture, now 45 min on operational execution.
+- Kennedy session (60 min, reduced from 90) — focus on AI/innovation vision, Neo platform. Handle with care: operational scope just removed. Don't probe the reorg dynamics directly.
 - McKinsey 7S lens across all leadership interviews.
-- **Goal: build the first-pass map and understand the "official story."**
+- **Goal: build the first-pass map, understand the post-reorg operating model, validate Chathura's capacity assessment.**
 
 **Tuesday — Engineering Deep Dive, Cross-Functional Tracing & Decision Rights.**
 - Bypass the C-suite. Interview engineering managers using PACE model (Planning, Alignment, Communication, Execution).
@@ -620,20 +652,23 @@ Evening work (Mon & Tue, ~1.5 hrs): AI-assisted synthesis of interview notes, cr
 - Zubair Syed, senior ICs, enterprise technology.
 - Trace 1–2 real customer promises from sale to production using Value Stream Mapping — capture lead time, process time, wait time, %Complete-and-Accurate at each step.
 - Map decision rights for the 10–15 most critical recurring decisions using RAPID.
-- CRO session (Bill Lodes) — sales pipeline, feature promises, tech support escalation path.
+- Akshay Bhasin — Payments org (18 people), scope clarification (was QE Lead with 7 in March). Architecture review of the cleanest codebase.
+- Mark Guilarte — PMO (4 people, new under Chathura). How does PMO integrate with engineering sprints? Cross-team coordination model.
 - **Goal: find where reality deviates from the official story. Move from anecdote to pattern.**
 
 **Wednesday — Validation, Gaps, Sri Lanka & Wrap.**
 - Follow up on surprises from Monday and Tuesday.
 - Sri Lanka team video call with Rajik Gunatilaka — explore the reporting-through-People structure.
-- Tech support synthesis — how do issues flow from tech support (under CRO) to engineering (under CTO)?
-- Greg Schmitzer — understand his operating role. David Strainick — HR, Sri Lanka, IT, culture.
+- Customer support synthesis — support is now unified under Chathura (CDO). How do issues flow from support to engineering within the same org? Interview the Customer Support Lead (TBD).
+- Bailey Shatney (VP HR, 30 min) — culture, hiring, retention, L&D. New to exec team. Position Adam's deliverables as a potential onboarding resource for her.
+- Greg Schmitzer — expanded role (President + Head of Sales & Marketing, absorbed CRO scope). Revenue story, feature promise pipeline.
+- Bill Lodes (optional, consulting) — only if available and Don thinks it's valuable. Payments strategy transition context.
 - Classify technical debt using Fowler's Quadrant.
 - Review Westrum culture survey results by team.
 - Watkins STARS framework — diagnose which situation Don is stepping into.
-- Vendor/tool utilization review — walk the engineering toolchain with Chathura or a senior engineer. Flag unused, redundant, or underused tools. Assess whether AI tooling (Cursor, AI for tests, AI for RCA) is producing measurable gains.
+- Vendor/tool utilization review — walk the engineering toolchain with Chathura or a senior engineer. Flag unused, redundant, or underused tools. Assess whether AI tooling (Cursor, AI for tests, AI for RCA) is producing measurable gains. Cross-reference with AI Adoption & Tooling survey results.
 - Afternoon: final debrief with Don. Review hypothesis scorecard, friction register draft, STARS diagnosis. Score PE DD 9 Pillars on a preliminary maturity scale. Identify gaps to fill async.
-- **Goal: validate patterns, fill gaps, transition to deliverable production.**
+- **Goal: validate patterns, fill gaps, assess post-reorg transition risk, transition to deliverable production.**
 
 Lower-priority interviews (product design, enterprise tech details) can go to video in the days following the onsite if time runs short.
 
@@ -773,8 +808,8 @@ AI-generated first drafts from accumulated notes, data, and artifacts. My hours 
 
 ### 13.3 The 30/60/90-Day Plan
 
-- **First 30 Days — Stabilize & Establish Truth:** Formally acknowledge CAKE technical debt to engineering (builds credibility). Clarify the CTO role — resolve the gap between formal authority and operational authority. Establish one company operating cadence for delivery visibility. Clarify decision rights for roadmap, customer commitments, and architecture. Halt non-revenue-essential feature churn to reallocate capacity to core POS stability. Assess whether forced RTO is driving attrition.
-- **Next 60 Days — Optimize Interfaces:** Restructure sales/product/engineering interface with mandatory weekly alignment. Move from output metrics to outcome metrics ("CAKE downtime reduction," "support ticket resolution time"). Evaluate whether product management needs its own executive leader. Address the tech support → engineering escalation path (crosses CRO → CTO boundary). Launch architecture debt triage. Evaluate AI strategy ROI.
+- **First 30 Days — Stabilize & Establish Truth:** Formally acknowledge CAKE technical debt to engineering (builds credibility). Validate that the CDO/CTO reorg is operationally effective — are teams actually routing through Chathura's chain, or is there residual Kennedy-era routing? Establish one company operating cadence for delivery visibility. Clarify decision rights for roadmap, customer commitments, and architecture. Halt non-revenue-essential feature churn to reallocate capacity to core POS stability. Assess whether forced RTO is driving attrition.
+- **Next 60 Days — Optimize Interfaces:** Restructure sales/product/engineering interface with mandatory weekly alignment. Move from output metrics to outcome metrics ("CAKE downtime reduction," "support ticket resolution time"). Evaluate whether product management needs its own executive leader (currently under CDO). Assess whether the three new executive appointments (Strainick/COO, Shatney/VP HR, Garcia/CFO) are stabilizing or creating additional turbulence. Address the tech support → engineering escalation path (crosses CRO → CTO boundary). Launch architecture debt triage. Evaluate AI strategy ROI.
 - **Next 90 Days — Strategic Alignment:** Align portfolio and resourcing to priorities. Make org/accountability adjustments based on evidence. Evaluate Sri Lanka reporting structure. Publish modernization thesis. Present realistic roadmap to board with empirical data.
 - **Leave Alone (for now):** Cosmetic rebranding, reorganizing functioning teams, relitigating historical comp changes, wading into Bruce-era grievances. The CEO's attention is the scarcest resource.
 

@@ -1,0 +1,84 @@
+%% Mad Mobile — New Operating Model (April 2026)
+%% Usage: paste into any Mermaid renderer (mermaid.live, GitHub, Notion, etc.)
+%% To add nodes: follow the naming convention [dept]_[name] and add a link from the parent
+
+flowchart TD
+    %% ──────────────────────────────────
+    %% CEO + Chief of Staff
+    %% ──────────────────────────────────
+    don["<b>Don Salama</b><br/>Co-CEO"]
+    ana["Ana Chambers<br/><i>Chief of Staff, Strategic Programs</i>"]
+    don -.- ana
+
+    %% ──────────────────────────────────
+    %% C-Suite Direct Reports
+    %% ──────────────────────────────────
+    don --> garcia["<b>Manuel Garcia</b><br/>Interim CFO"]
+    don --> greg["<b>Greg Schmitzer</b><br/>President &amp; Head of<br/>Sales &amp; Marketing"]
+    don --> strainick["<b>David Strainick</b><br/>COO"]
+    don --> chathura["<b>Chathura Ratnayake</b><br/>Chief Digital Officer"]
+    don --> kennedy["<b>Jack Kennedy</b><br/>CTO"]
+    don --> shatney["<b>Bailey Shatney</b><br/>VP of Human Resources"]
+
+    %% ──────────────────────────────────
+    %% Finance (Garcia)
+    %% ──────────────────────────────────
+    garcia --> fin_do["Mark Do<br/><i>Ass't Controller</i>"]
+    garcia --> fin_zhonnold["Zach Honnold<br/><i>RevOps</i> · 1"]
+    garcia --> fin_ahonnold["Andy Honnold<br/><i>Payments Strategy</i> · 1"]
+
+    %% ──────────────────────────────────
+    %% Sales & Marketing (Schmitzer)
+    %% ──────────────────────────────────
+    greg --> sales_bobby["Bobby Jaklitsch<br/><i>Field Sales</i> · 4"]
+    greg --> sales_peter["Peter Vu<br/><i>Inbound</i> · 3"]
+    greg --> sales_karen["Karen Licker<br/><i>Marketing</i> · 1"]
+
+    %% ──────────────────────────────────
+    %% Operations (Strainick)
+    %% ──────────────────────────────────
+    strainick --> ops_das["Das DeSilva<br/><i>Onboarding</i> · 10"]
+    strainick --> ops_acctmgmt["Dir. Account Mgmt<br/>· 9"]
+    strainick --> ops_rosen["Rosen Georgiev<br/><i>IT</i>"]
+    strainick --> ops_chip["Chip O'Connell<br/><i>Onboarding Delivery</i> · 3"]
+
+    %% ──────────────────────────────────
+    %% Digital / Engineering (Chathura)
+    %% ──────────────────────────────────
+    chathura --> eng_guilarte["Mark Guilarte<br/><i>PMO</i> · 4"]
+    chathura --> eng_akshay["Akshay Bhasin<br/><i>Payments</i> · 18"]
+    chathura --> eng_zubair["Zubair Syed<br/><i>Enterprise Solutions</i> · 58"]
+    chathura --> eng_randy["Randy Brown<br/><i>CAKE Tech</i> · 8"]
+    chathura --> eng_dulanjan["Dulanjan W.<br/><i>Product &amp; Design</i> · 6"]
+    chathura --> eng_support["Customer Support<br/><i>All levels</i>"]
+
+    %% ──────────────────────────────────
+    %% Technology / AI (Kennedy)
+    %% ──────────────────────────────────
+    kennedy --> tech_diggins["Jeremy Diggins"]
+    kennedy --> tech_bobal["Holly Bobal"]
+
+    %% ──────────────────────────────────
+    %% Human Resources (Shatney)
+    %% ──────────────────────────────────
+    shatney --> hr_renee["Renee Pauley<br/><i>Recruiting</i>"]
+    shatney --> hr_ayodele["Ayodele Lawal<br/><i>L&amp;D</i>"]
+    shatney --> hr_adriana["Adriana Zuniga<br/><i>L&amp;D</i>"]
+
+    %% ──────────────────────────────────
+    %% Styles
+    %% ──────────────────────────────────
+    classDef ceo fill:#1a2744,stroke:#1a2744,color:#fff,font-size:14px
+    classDef csuite fill:#2c4a7c,stroke:#2c4a7c,color:#fff,font-size:12px
+    classDef staff fill:#f0f4f8,stroke:#94a3b8,color:#1e293b,font-size:11px
+    classDef chief_of_staff fill:#e2e8f0,stroke:#64748b,color:#334155,font-size:11px
+
+    class don ceo
+    class garcia,greg,strainick,chathura,kennedy,shatney csuite
+    class ana chief_of_staff
+    class fin_do,fin_zhonnold,fin_ahonnold staff
+    class sales_bobby,sales_peter,sales_karen staff
+    class ops_das,ops_acctmgmt,ops_rosen,ops_chip staff
+    class eng_guilarte,eng_akshay,eng_zubair,eng_randy,eng_dulanjan,eng_support staff
+    class tech_diggins,tech_bobal staff
+    class hr_renee,hr_ayodele,hr_adriana staff
