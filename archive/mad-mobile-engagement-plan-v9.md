@@ -218,9 +218,9 @@ Acquired from Sysco in 2020, bringing ~4,500+ restaurant locations but also seve
 | Bill Lodes | Chief Revenue Officer | Owns sales, partner enablement, customer success, customer onboarding, program management, and tech support. Large org (~50+ people). |
 | Steven Seigel | Chief Operating Officer | Owns payments strategy, data strategy & analytics, revenue ops. Small org (~5 people). |
 | David Strainick | Chief People Officer | Owns HR/People & Culture, Sri Lanka country operations, IT, technical training. |
-| John Kennedy | Chief Technology Officer | Owns software engineering, product management, enterprise technology, product design. Per Don: CTO in title — Chathura runs most of tech operationally. |
+| Jack Kennedy | Chief Technology Officer | Owns software engineering, product management, enterprise technology, product design. Per Don: CTO in title — Chathura runs most of tech operationally. |
 
-#### L2 — Key Reports Under CTO (John Kennedy)
+#### L2 — Key Reports Under CTO (Jack Kennedy)
 
 | Name | Title | Notes |
 |---|---|---|
@@ -256,7 +256,7 @@ Acquired from Sysco in 2020, bringing ~4,500+ restaurant locations but also seve
 The org chart reveals several structural choices worth probing during the onsite:
 
 1. **No dedicated product executive.** Product management (Dulanjan Wengappuliarachchi) and product design (Chris Gomersall) both report to the CTO. There is no separate product leader at the executive level. Does the CTO make product decisions, or does product management operate with autonomy?
-2. **Formal vs. informal authority in engineering.** The CTO (John Kennedy) holds the title, but per Don, Chathura Ratnayake (SVP Global Software Engineering) "basically runs most of tech." This divergence between formal authority and operational authority is a primary investigation target — it directly impacts decision-making speed, accountability, and team clarity.
+2. **Formal vs. informal authority in engineering.** The CTO (Jack Kennedy) holds the title, but per Don, Chathura Ratnayake (SVP Global Software Engineering) "basically runs most of tech." This divergence between formal authority and operational authority is a primary investigation target — it directly impacts decision-making speed, accountability, and team clarity.
 3. **Sri Lanka country head reports to Chief People Officer, not CTO.** Rajik Gunatilaka is under David Strainick. The engineering resources in Sri Lanka may have dotted-line relationships to Chathura/Zubair, but the formal reporting runs through People/HR. This is an unusual structure worth understanding.
 4. **IT reports to Chief People Officer.** Jorge Maltes (Director IT) reports to Strainick, not Kennedy. Internal IT infrastructure is organizationally separated from product engineering.
 5. **Tech support reports to CRO, not engineering.** Two tech support supervisors with 15+ people report up through the revenue org (Bill Lodes). Customer-facing technical support and engineering are organizationally separated.
@@ -456,7 +456,7 @@ Pre-schedule every interview so the onsite week is fully utilized. Priority targ
 | Person / Role | Day | Duration | Focus |
 |---|---|---|---|
 | Don Salama (Co-CEO/Acting CFO) | Mon AM | 30 min/day | Daily morning sync + EOD debrief |
-| **John Kennedy (CTO)** | Mon | 90 min | Architecture, Neo, AI strategy, tech debt, decision-making authority |
+| **Jack Kennedy (CTO)** | Mon | 90 min | Architecture, Neo, AI strategy, tech debt, decision-making authority |
 | **Chathura Ratnayake (SVP Global Software Eng)** | Mon | 90 min | Day-to-day execution, team health, sprint reality, Sri Lanka coordination, operational authority |
 | Dulanjan Wengappuliarachchi (Sr. Dir Product Mgmt) | Mon | 60 min | Roadmap, client promises, how product decisions get made under CTO |
 | Steven Seigel (COO) | Tue | 45 min | Payments strategy, data/analytics, revenue ops |
@@ -512,7 +512,7 @@ Async evening work (~2 hrs/night): AI-assisted synthesis of interview notes, cro
 
 - **Monday — Leadership & System Framing.**
   - Executive briefing with Don (board dynamics, investor expectations).
-  - Architecture review with CTO (John Kennedy) and SVP Global Software Engineering (Chathura Ratnayake) — whiteboard the infrastructure using C4 Model notation (Context and Container levels), map CAKE-to-Neo communication, where AI API calls occur in transaction flow.
+  - Architecture review with CTO (Jack Kennedy) and SVP Global Software Engineering (Chathura Ratnayake) — whiteboard the infrastructure using C4 Model notation (Context and Container levels), map CAKE-to-Neo communication, where AI API calls occur in transaction flow.
   - Begin Wardley Mapping workshop with tech leadership — plot key components on the evolution axis to identify build-vs-buy misalignment.
   - Product direction session with Dulanjan Wengappuliarachchi (Sr. Director Product Management) — how product decisions get made when product reports to the CTO.
   - Apply McKinsey 7S lens across all leadership interviews.

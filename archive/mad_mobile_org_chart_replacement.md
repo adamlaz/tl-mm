@@ -16,7 +16,7 @@ flowchart TD
     BL["Bill Lodes<br/>Chief Revenue Officer"]
     SS["Steven Seigel<br/>Chief Operating Officer"]
     DST["David Strainick<br/>Chief People Officer"]
-    JK["John Kennedy<br/>Chief Technology Officer"]
+    JK["Jack Kennedy<br/>Chief Technology Officer"]
 
     BB --> DS
     BB --> GS
@@ -216,11 +216,11 @@ flowchart TD
 
 ---
 
-## John Kennedy — Chief Technology Officer
+## Jack Kennedy — Chief Technology Officer
 
 ```mermaid
 flowchart TD
-    JK["John Kennedy<br/>Chief Technology Officer"]
+    JK["Jack Kennedy<br/>Chief Technology Officer"]
     CR["Chathura Ratnayake<br/>SVP Global Software Engineering"]
     ZS["Zubair Syed<br/>VP Software Engineering"]
     DW["Dulanjan Wengappuliarachchi<br/>Sr. Director Product Management"]

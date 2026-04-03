@@ -246,9 +246,9 @@ The onsite should validate whether this process is actually followed or gets ove
 | Bill Lodes | Chief Revenue Officer | Owns sales, partner enablement, customer success, customer onboarding, program management, and tech support. Large org (~50+ people). |
 | Steven Seigel | Chief Operating Officer | Owns payments strategy, data strategy & analytics, revenue ops. Small org (~5 people). |
 | David Strainick | Chief People Officer | Owns HR/People & Culture, Sri Lanka country operations, IT, technical training. |
-| John Kennedy | Chief Technology Officer | Owns software engineering, product management, enterprise technology, product design. **`[PRIVATE]`** Per Don: CTO in title — Chathura runs most of tech operationally. |
+| Jack Kennedy | Chief Technology Officer | Owns software engineering, product management, enterprise technology, product design. **`[PRIVATE]`** Per Don: CTO in title — Chathura runs most of tech operationally. |
 
-#### L2 — Key Reports Under CTO (John Kennedy)
+#### L2 — Key Reports Under CTO (Jack Kennedy)
 
 | Name | Title | Notes |
 |---|---|---|
@@ -535,7 +535,7 @@ Two to three sessions with Don across pre-work. Don's two years of operational c
 | Person / Role | Day | Duration | Focus | Tier |
 |---|---|---|---|---|
 | Don Salama (Co-CEO/Acting CFO) | Daily | 30 min/day | Morning sync + EOD debrief | — |
-| **John Kennedy (CTO)** | Mon | 90 min | Architecture, Neo, AI strategy, tech debt, decision-making authority | 1 |
+| **Jack Kennedy (CTO)** | Mon | 90 min | Architecture, Neo, AI strategy, tech debt, decision-making authority | 1 |
 | **Chathura Ratnayake (SVP Global Software Eng)** | Mon | 90 min | Day-to-day execution, team health, sprint reality, Sri Lanka coordination | 1 |
 | Dulanjan Wengappuliarachchi (Sr. Dir, Product & GTM) | Mon | 60 min | Roadmap, client promises, how product decisions get made, open headcount impact | 1 |
 | Steven Seigel (COO) | Mon | 45 min | Payments strategy, data/analytics, revenue ops | 1 |

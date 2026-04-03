@@ -1,10 +1,10 @@
 # Mad Mobile — Technology Operations Review  
-## Coordination brief for Chathura Ratnayake & John Kennedy
+## Coordination brief for Chathura Ratnayake & Jack Kennedy
 
 **From:** Adam Lazarus  
 **Systems & Software Engineering | Ecommerce | Enterprise Platforms | AI Strategy**
 
-**Audience:** Chathura Ratnayake (SVP, Global Software Engineering), John Kennedy (CTO)  
+**Audience:** Chathura Ratnayake (SVP, Global Software Engineering), Jack Kennedy (CTO)  
 **Purpose:** Prep for an upcoming technology operations review — what it is, why it matters, and what you need to do, with dates.
 
 ---
@@ -130,7 +130,7 @@ Names and focus only — **no sensitive commentary** in the brief. Times may shi
 
 | Who | Duration | Focus |
 |-----|----------|--------|
-| John Kennedy | 90 min | Architecture, AI strategy, tech debt |
+| Jack Kennedy | 90 min | Architecture, AI strategy, tech debt |
 | Chathura Ratnayake | 90 min | Execution, team health, sprint reality |
 | Dulanjan | 60 min | Roadmap / product decisions |
 | Seigel | 45 min | Payments, data, revenue ops |

@@ -2,7 +2,7 @@
 
 ## Context for NotebookLM
 
-This document describes a technology operations review engagement at Mad Mobile, Inc. The podcast should explain the engagement to Chathura Ratnayake and John Kennedy — two senior technology leaders at Mad Mobile who will be coordinating logistics on the company side. Focus on: what this engagement is, why Don is doing it, what Adam's approach looks like, what the onsite experience will be, how interviews work, and what the deliverables are. Do **not** speculate about what the diagnostic will find — that's the whole point of doing it. Keep the tone collaborative and peer-level.
+This document describes a technology operations review engagement at Mad Mobile, Inc. The podcast should explain the engagement to Chathura Ratnayake and Jack Kennedy — two senior technology leaders at Mad Mobile who will be coordinating logistics on the company side. Focus on: what this engagement is, why Don is doing it, what Adam's approach looks like, what the onsite experience will be, how interviews work, and what the deliverables are. Do **not** speculate about what the diagnostic will find — that's the whole point of doing it. Keep the tone collaborative and peer-level.
 
 ---
 

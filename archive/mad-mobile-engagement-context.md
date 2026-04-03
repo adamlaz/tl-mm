@@ -393,7 +393,7 @@ Full catalog of named frameworks used in the engagement, organized by assessment
 - [ ] Leadership table corrections: **Pending — Don's HR producing updated org chart**
 - [ ] CFO status confirmed: _____
 - [ ] CRO confirmed as Brandan Rabdau: **Superseded — org chart from Don shows Bill Lodes as CRO**
-- [ ] Mike Jackson COO vs. Jack Kennedy COO — clarified: **Superseded — org chart shows Steven Seigel as COO, John Kennedy as CTO**
+- [ ] Mike Jackson COO vs. Jack Kennedy COO — clarified: **Superseded — org chart shows Steven Seigel as COO, Jack Kennedy as CTO**
 - [ ] David Strainick CPO — role/scope: **Confirmed from org chart — owns HR/People & Culture, Sri Lanka country ops, IT, technical training**
 - [ ] Thomas Lichtwerch — role/scope: **Not on current org chart — may have departed**
 - [ ] Bruce's ongoing role: _____
