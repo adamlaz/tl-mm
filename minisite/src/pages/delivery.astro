@@ -14,16 +14,15 @@ const cycleTime = await getCollection('jiraCycleTime');
 const engProjects = projects.filter((p) => p.data.classification === 'engineering');
 const totalIssues = projects.reduce((s, p) => s + num(p.data.issue_count), 0);
 
-const avgCompletion = velocity.length > 0
-  ? velocity.reduce((s, v) => s + num(v.data.completion_rate), 0) / velocity.length
-  : 0;
+const avgCompletion =
+  velocity.length > 0 ? velocity.reduce((s, v) => s + num(v.data.completion_rate), 0) / velocity.length : 0;
 
 const resolvedCycleEntries = cycleTime.filter((c) => num(c.data.cycle_time_days) > 0);
 const medianCycle = (() => {
   if (resolvedCycleEntries.length === 0) return 0;
   const sorted = resolvedCycleEntries.map((c) => num(c.data.cycle_time_days)).sort((a, b) => a - b);
   const mid = Math.floor(sorted.length / 2);
-  return sorted.length % 2 !== 0 ? sorted[mid]! : ((sorted[mid - 1]! + sorted[mid]!) / 2);
+  return sorted.length % 2 !== 0 ? sorted[mid]! : (sorted[mid - 1]! + sorted[mid]!) / 2;
 })();
 
 const byClassification = new Map<string, { count: number; issues: number }>();
@@ -69,21 +68,22 @@ const charts = [
 ---
 
 <BaseLayout title="Delivery">
-  <SectionHeader
-    title="Delivery"
-    description="Jira execution health across 141 projects and 313 boards."
-  />
+  <SectionHeader title="Delivery" description={`Jira delivery health across ${projects.length} projects.`} />
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Jira Projects" value={projects.length.toString()} subtitle={`${engProjects.length} engineering`} />
+    <MetricCard
+      label="Jira Projects"
+      value={projects.length.toString()}
+      subtitle={`${engProjects.length} engineering`}
+    />
     <MetricCard label="Total Issues" value={fmt(totalIssues)} />
-    <MetricCard label="Avg Completion" value={`${avgCompletion.toFixed(1)}%`} subtitle="Sprint completion rate" />
+    <MetricCard label="Sprint Completion" value={`${avgCompletion.toFixed(1)}%`} subtitle="Average across sprints" />
     <MetricCard label="Median Cycle Time" value={`${medianCycle.toFixed(1)}d`} subtitle="Days to resolve" />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
-      <h2 class="text-sm font-semibold text-slate-700 mb-3">Projects by Classification</h2>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Projects by Classification</h2>
       <DataTable
         columns={[
           { key: 'classification', label: 'Classification' },
@@ -94,7 +94,7 @@ const charts = [
       />
     </div>
     <div>
-      <h2 class="text-sm font-semibold text-slate-700 mb-3">Recent Sprints</h2>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Recent Sprints</h2>
       <DataTable
         columns={[
           { key: 'board', label: 'Board' },
@@ -110,7 +110,7 @@ const charts = [
     </div>
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Charts</h2>
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />

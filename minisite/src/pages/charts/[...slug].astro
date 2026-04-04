@@ -47,21 +47,20 @@ const { title, domain, slug } = Astro.props;
 
 <BaseLayout title={`${title} — ${domain}`}>
   <div class="mb-4">
-    <div class="flex items-center gap-2 text-xs text-slate-400 mb-2">
-      <a href="/charts" class="hover:text-brand-600 transition-colors">Charts</a>
+    <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+      <a href="/charts" class="hover:text-[var(--accent)] transition-colors">Charts</a>
       <span>/</span>
       <span>{domain}</span>
       <span>/</span>
-      <span class="text-slate-600">{title}</span>
+      <span class="text-[var(--text-secondary)]">{title}</span>
     </div>
-    <h1 class="text-xl font-bold text-slate-900">{title}</h1>
+    <h1 class="text-lg font-bold text-[var(--text)]">{title}</h1>
   </div>
 
-  <div class="bg-white rounded-xl border border-slate-200 overflow-hidden" style="height: calc(100vh - 220px);">
-    <iframe
-      src={`/chart-assets/${slug}.html`}
-      title={title}
-      class="w-full h-full border-0"
-    />
+  <div
+    class="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden"
+    style="height: calc(100vh - 220px);"
+  >
+    <iframe src={`/chart-assets/${slug}.html`} title={title} class="w-full h-full border-0" />
   </div>
 </BaseLayout>

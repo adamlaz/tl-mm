@@ -24,7 +24,7 @@ const categoryCount = byCategory.size;
 <BaseLayout title="Tooling">
   <SectionHeader
     title="Vendor & Tool Catalog"
-    description="Identified tools across the Mad Mobile technology stack, sourced from direct access, AWS inventory, Confluence docs, and Bitbucket analysis."
+    description="All identified tools and vendors in the Mad Mobile technology stack."
   />
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -37,23 +37,21 @@ const categoryCount = byCategory.size;
   <div class="space-y-8">
     {categories.map(([category, categoryTools]) => (
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">{category}</h2>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">{category}</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {categoryTools.map((t) => (
-            <div class="bg-white rounded-xl border border-slate-200 p-4">
+            <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
               <div class="flex items-start justify-between mb-2">
                 <div>
-                  <h3 class="text-sm font-semibold text-slate-900">{t.data.name}</h3>
-                  <p class="text-xs text-slate-500">{t.data.vendor}</p>
+                  <h3 class="text-sm font-semibold text-[var(--text)]">{t.data.name}</h3>
+                  <p class="text-xs text-[var(--text-secondary)]">{t.data.vendor}</p>
                 </div>
                 <StatusBadge status={t.data.status} />
               </div>
-              {t.data.notes && (
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">{t.data.notes}</p>
-              )}
-              <div class="flex items-center gap-3 mt-3 pt-2 border-t border-slate-100">
-                <span class="text-[10px] uppercase tracking-wider text-slate-400">Cost</span>
-                <span class="text-xs text-slate-600">{t.data.cost_detail ?? t.data.cost_status}</span>
+              {t.data.notes && <p class="text-xs text-[var(--text-secondary)] mt-2 leading-relaxed">{t.data.notes}</p>}
+              <div class="flex items-center gap-3 mt-3 pt-2 border-t border-[var(--border-subtle)]">
+                <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">Cost</span>
+                <span class="text-xs text-[var(--text-secondary)]">{t.data.cost_detail ?? t.data.cost_status}</span>
               </div>
             </div>
           ))}

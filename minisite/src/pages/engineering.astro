@@ -22,9 +22,8 @@ for (const r of repos) {
 }
 
 const validPRs = prs.filter((p) => num(p.data.cycle_hours) > 0);
-const avgCycleHours = validPRs.length > 0
-  ? validPRs.reduce((s, p) => s + num(p.data.cycle_hours), 0) / validPRs.length
-  : 0;
+const avgCycleHours =
+  validPRs.length > 0 ? validPRs.reduce((s, p) => s + num(p.data.cycle_hours), 0) / validPRs.length : 0;
 
 const totalCommits = commits.reduce((s, c) => s + num(c.data.commits), 0);
 
@@ -61,19 +60,19 @@ const charts = [
 <BaseLayout title="Engineering">
   <SectionHeader
     title="Engineering"
-    description="Bitbucket source control across 4 workspaces: madmobile, syscolabs, madpayments, syscolabsconf."
+    description="Source control health across 4 Bitbucket workspaces."
   />
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Total Repos" value={fmt(repos.length)} subtitle={`${activeRepos.length} active`} />
-    <MetricCard label="PRs (30d)" value={prs.length.toString()} />
-    <MetricCard label="Avg PR Cycle" value={`${avgCycleHours.toFixed(1)}h`} subtitle="Hours to merge" />
-    <MetricCard label="Commits (recent)" value={fmt(totalCommits)} />
+    <MetricCard label="Total Repos" value={fmt(repos.length)} subtitle={`${activeRepos.length} active, ${Math.round((1 - activeRepos.length / repos.length) * 100)}% stale`} />
+    <MetricCard label="Pull Requests" value={prs.length.toString()} subtitle="Last 30 days" />
+    <MetricCard label="Avg Review Time" value={`${avgCycleHours.toFixed(1)}h`} subtitle="Hours to merge" />
+    <MetricCard label="Recent Commits" value={fmt(totalCommits)} subtitle="Last 30 days" />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
-      <h2 class="text-sm font-semibold text-slate-700 mb-3">Repos by Workspace</h2>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Repos by Workspace</h2>
       <DataTable
         columns={[
           { key: 'workspace', label: 'Workspace' },
@@ -83,7 +82,7 @@ const charts = [
       />
     </div>
     <div>
-      <h2 class="text-sm font-semibold text-slate-700 mb-3">Top Languages</h2>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Top Languages</h2>
       <DataTable
         columns={[
           { key: 'language', label: 'Language' },
@@ -94,7 +93,7 @@ const charts = [
     </div>
   </div>
 
-  <h2 class="text-sm font-semibold text-slate-700 mb-3">Active Repositories</h2>
+  <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Active Repositories</h2>
   <div class="mb-8">
     <DataTable
       columns={[
@@ -110,7 +109,7 @@ const charts = [
     />
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Charts</h2>
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />

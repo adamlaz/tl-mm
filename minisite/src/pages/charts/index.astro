@@ -56,23 +56,33 @@ const totalCharts = chartGroups.reduce((s, g) => s + g.charts.length, 0);
 <BaseLayout title="Charts">
   <SectionHeader
     title="Chart Gallery"
-    description={`${totalCharts} interactive Plotly visualizations across all domains.`}
+    description={`${totalCharts} interactive visualizations across infrastructure, engineering, delivery, and documentation.`}
   />
 
   <div class="space-y-8">
     {chartGroups.map(({ domain, charts }) => (
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">{domain}</h2>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">{domain}</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {charts.map(({ slug, title }) => (
             <a
               href={`/charts/${slug}`}
-              class="group bg-white rounded-xl border border-slate-200 px-4 py-3 hover:border-brand-400 hover:shadow-sm transition-all flex items-center gap-3"
+              class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] px-4 py-3 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-center gap-3"
             >
-              <svg class="w-5 h-5 text-slate-400 group-hover:text-brand-500 transition-colors flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] transition-colors flex-shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M12 20V10M18 20V4M6 20v-4" />
               </svg>
-              <span class="text-sm font-medium text-slate-700 group-hover:text-brand-600 transition-colors">{title}</span>
+              <span class="text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--accent)] transition-colors">
+                {title}
+              </span>
             </a>
           ))}
         </div>
