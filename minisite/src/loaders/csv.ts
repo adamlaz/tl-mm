@@ -4,10 +4,16 @@ import { resolve } from 'node:path';
 import type { Loader } from 'astro/loaders';
 
 export interface CsvLoaderOptions {
+  /** Path to the CSV file, resolved relative to the minisite root. */
   path: string;
+  /** Column to use as the entry ID. Falls back to row index when omitted. */
   idColumn?: string;
 }
 
+/**
+ * Astro content loader that reads a CSV file at build time and yields
+ * one collection entry per row.
+ */
 export function csvLoader(opts: CsvLoaderOptions): Loader {
   return {
     name: 'csv-loader',

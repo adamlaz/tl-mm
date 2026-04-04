@@ -1,3 +1,10 @@
+/**
+ * Content collection registry for the Mad Mobile engagement minisite.
+ *
+ * Each collection maps to a CSV or JSON file in the parent repo's `analysis/`
+ * or `inventory/` directory. Schemas are intentionally loose (`z.string().default('')`)
+ * because upstream data quality varies — validation happens at the page level.
+ */
 import { defineCollection } from 'astro:content';
 import { z } from 'astro/zod';
 import { csvLoader } from './loaders/csv';
@@ -82,6 +89,18 @@ const bitbucketCommits = defineCollection({
   }),
 });
 
+const bbAiTooling = defineCollection({
+  loader: csvLoader({ path: '../analysis/bb_ai_tooling.csv' }),
+  schema: z.object({
+    workspace: str,
+    repo: str,
+    language: str,
+    ai_files_found: str,
+    has_ai_tooling: str,
+    tools_detected: str,
+  }),
+});
+
 const jiraProjects = defineCollection({
   loader: csvLoader({ path: '../analysis/jira_project_classification.csv', idColumn: 'key' }),
   schema: z.object({
@@ -120,6 +139,44 @@ const jiraCycleTime = defineCollection({
     resolved: str,
     total_lead_time_days: str,
     cycle_time_days: str,
+  }),
+});
+
+const jiraAssigneeLoad = defineCollection({
+  loader: csvLoader({ path: '../analysis/jira_assignee_load.csv', idColumn: 'name' }),
+  schema: z.object({
+    name: str,
+    open_issues: str,
+    bugs: str,
+    stories: str,
+    tasks: str,
+    epics: str,
+    other: str,
+    project_count: str,
+    projects: str,
+    role_classification: str,
+    primary_category: str,
+    engineering_projects: str,
+    customer_success_projects: str,
+    operations_projects: str,
+    is_overloaded: str,
+  }),
+});
+
+const jiraScopeChange = defineCollection({
+  loader: csvLoader({ path: '../analysis/jira_scope_change.csv' }),
+  schema: z.object({
+    board: str,
+    sprint: str,
+    sprint_id: str,
+    start_date: str,
+    total_issues: str,
+    sampled: str,
+    original_scope: str,
+    added_mid_sprint: str,
+    unknown: str,
+    scope_change_pct: str,
+    done_issues: str,
   }),
 });
 
@@ -195,9 +252,12 @@ export const collections = {
   bitbucketRepos,
   bitbucketPRs,
   bitbucketCommits,
+  bbAiTooling,
   jiraProjects,
   jiraVelocity,
   jiraCycleTime,
+  jiraAssigneeLoad,
+  jiraScopeChange,
   confluenceSpaces,
   confluencePages,
   userAudit,
