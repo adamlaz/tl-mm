@@ -12,36 +12,124 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
 ---
 
 <!doctype html>
-<html lang="en" class="bg-surface">
+<html lang="en" class="bg-[var(--bg)]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | Mad Mobile Engagement</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      (function () {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
     <ClientRouter />
   </head>
-  <body class="min-h-screen font-sans text-slate-800 antialiased">
+  <body class="min-h-screen font-sans text-[var(--text)] antialiased">
     <div class="flex min-h-screen">
       <Sidebar currentPath={currentPath} />
       <div class="flex-1 flex flex-col min-w-0">
-        <header class="border-b border-slate-200 bg-white px-6 py-3 flex items-center justify-between flex-shrink-0">
+        <header
+          class="border-b border-[var(--border)] bg-[var(--surface)] px-6 py-3 flex items-center justify-between flex-shrink-0"
+        >
           <div class="flex items-center gap-3">
-            <span class="text-sm font-semibold text-slate-900">Mad Mobile</span>
-            <span class="text-slate-300">|</span>
-            <span class="text-sm text-slate-500">Technology & Operations Review</span>
+            <span class="text-sm font-bold text-[var(--text)]">Mad Mobile</span>
+            <span class="text-[var(--border)]">|</span>
+            <span class="text-sm text-[var(--text-muted)]">Technology & Operations Review</span>
           </div>
-          <span class="text-xs text-slate-400">April 2026</span>
+          <div class="flex items-center gap-4">
+            <span class="text-xs text-[var(--text-muted)]">April 2026</span>
+            <button
+              id="theme-toggle"
+              type="button"
+              class="p-1.5 rounded-lg text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-alt)] transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              <svg
+                class="w-4 h-4 block dark:hidden"
+                data-icon="sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="w-4 h-4 hidden dark:block"
+                data-icon="moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+          </div>
         </header>
         <main class="flex-1 p-6 lg:p-8 pb-20 lg:pb-8" transition:animate="fade">
           <slot />
         </main>
-        <footer class="border-t border-slate-200 bg-white px-6 py-3 text-xs text-slate-400 flex items-center justify-between flex-shrink-0">
-          <span>Prepared by Translation Layer LLC</span>
+        <footer
+          class="border-t border-[var(--border-subtle)] px-6 py-2.5 text-[11px] text-[var(--text-muted)] flex items-center justify-between flex-shrink-0"
+        >
+          <span>Prepared by <span class="font-medium">Translation Layer</span></span>
           <span>Confidential</span>
         </footer>
       </div>
     </div>
+
+    <script is:inline>
+      document.addEventListener('astro:page-load', function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+
+        function isDark() {
+          return document.documentElement.getAttribute('data-theme') === 'dark';
+        }
+
+        function updateIcons() {
+          var sunIcon = btn.querySelector('[data-icon="sun"]');
+          var moonIcon = btn.querySelector('[data-icon="moon"]');
+          if (isDark()) {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+          } else {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+          }
+        }
+
+        btn.addEventListener('click', function () {
+          var next = isDark() ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          updateIcons();
+        });
+
+        updateIcons();
+      });
+    </script>
   </body>
 </html>

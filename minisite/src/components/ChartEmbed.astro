@@ -8,17 +8,12 @@ interface Props {
 const { slug, title, description } = Astro.props;
 ---
 
-<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+<div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden">
   <div class="px-5 pt-4 pb-2">
-    <h3 class="text-sm font-semibold text-slate-800">{title}</h3>
-    {description && <p class="text-xs text-slate-500 mt-0.5">{description}</p>}
+    <h3 class="text-sm font-semibold text-[var(--text)]">{title}</h3>
+    {description && <p class="text-xs text-[var(--text-secondary)] mt-0.5">{description}</p>}
   </div>
   <div class="aspect-[16/10] w-full">
-    <iframe
-      src={`/chart-assets/${slug}.html`}
-      title={title}
-      class="w-full h-full border-0"
-      loading="lazy"
-    />
+    <iframe src={`/chart-assets/${slug}.html`} title={title} class="w-full h-full border-0" loading="lazy" />
   </div>
 </div>
