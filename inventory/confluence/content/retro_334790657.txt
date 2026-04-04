@@ -1,0 +1,222 @@
+Title: Castor 2024 PI 2.6 - Review & Retrospective
+Space: Optimo
+Modified: 2024-10-02T09:47:27.690Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CP2/pages/334790657/Castor+2024+PI+2.6+-+Review+Retrospective
+============================================================
+
+1.5
+
+Overview
+
+Sprint:  
+CASTOR 2024 PI 2.6
+
+Duration: -  
+
+Sprint Retrospect Meeting: 
+
+Main Theme of Sprint
+  • Reports Phase 2.3 Release 01 - Development & QE
+
+Sprint Goals:
+  • Deploy KDS Issue Fixes release 2 to production
+
+  • Complete the development of ONP feature requirement epic
+
+  • Feature development and testing of Employee Wise PDF Report
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.6" and type not in (subTaskIssueTypes()) and status in (Closed,Resolved, Accepted)                         f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.6" and type not in (subTaskIssueTypes()) and status not in (Closed,Resolved, Accepted)                          f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Bug Analysis
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.6"  AND type in ("Bug - Production","Bug")                      f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+  • Total Working days:  10
+
+  • Scrum Ceremonies time : 1 day (Planning : 0.5 day, Review/Retro : 0.5 day)
+
+  • Holidays : 0
+
+  • Development days for the Sprint: 9
+
+ 
+
+Total Days
+
+Planned Day Off
+
+Unplanned Day Offs
+Holidays
+
+Allocation to Ceremonies
+Actual Days
+Comments
+
+152.50.501.510.5
+
+150001.513.5
+
+150001.513.5
+
+151001.511.5
+
+15
+1101.512.5
+
+15
+1
+101.511.5
+
+15
+1.5
+1.501.510.5
+
+151101.511.5
+
+151001.512.5
+
+151001.512.5
+
+000000
+
+151001.512.5
+
+150001.513.5
+
+ (Intern)151001.512.5
+
+151101.511.5
+
+Total 
+
+Added to Sprint (Mid Sprint Injections)
+
+Jira #SPComment
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-36175
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-36861
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-36902
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-46233
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37181
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37491
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37653
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37665
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37672
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37525
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-46391
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37511
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-46415
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37531
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37813
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37941
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37805
+
+Total54
+
+Reasons for the deviation in Delivery Success % (Spillovers)
+
+TicketStory PointsReason for Spillover
+
+BO-3360 [Employee Wise PDF] Performance Test Execution5
+
+Note: Team has added new tickets to cover the above spillovers capacity.
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (Without 20% Buffer)
+
+240
+
+Not started (Open)-
+
+Incomplete (In progress / Dev completed)5
+
+20% Buffer61
+
+Added to Sprint54
+
+Removed from Sprint-
+
+Completed (Resolved Stories)280
+
+Velocity of the Sprint : 
+
+Delivery Success (resolved story points * 100 / committed story points) =      (289/ 240*100%) =  120%
+
+Reports
+
+  • Velocity over Time
+
+  • Burn Down Chart
+
+Follow-up action items from the previous sprint. 
+
+Sprint Highlights
+
+  • Deploy KDS Issue Fixes release 2 to production
+
+  • Successfully completed ONP feature requirement epic
+
+  • Completed feature development and testing of Employee Wise PDF Report
+
+  • Completed the analysis related snowflake production issue
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing / What went well?
+
+  • Successfully deployed KDS Release 2 to production
+
+  • Completed ONP feature requirement epic which was part of PI3
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Need to prfioritize and complete complex tasks and bugs first, as testing these might introduce additional bugs.
+
+#d04437#fff8f7
+What should we stop doing / what went wrong?
+
+  • Need to avoid avoid releasing complex reports towards the end of sprint planning and prfioritize closing them earlier.
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+  • Team : Need access to merge PRs for developers and QEs (Note : Repo access is there for developers)
+
+  • : Need to come up with a plan for performance testing bug resolution

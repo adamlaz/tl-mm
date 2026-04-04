@@ -1,0 +1,1777 @@
+{
+  "total_services_analyzed": 68,
+  "total_containers": 68,
+  "containers_without_health_check": 61,
+  "unique_images": 49,
+  "errors": [],
+  "services": [
+    {
+      "profile": "mm-cake-r-and-d",
+      "region": "us-east-1",
+      "cluster": "rnd-cde-secure-ecs",
+      "service": "nginx-test-service-epu08bwf",
+      "task_definition": "nginx-test:3",
+      "launch_type": "unknown",
+      "desired_count": 2,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "nginx",
+          "image": "nginx:latest",
+          "cpu": 0,
+          "memory": 0,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 0,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-configapi",
+      "service": "config-api_service",
+      "task_definition": "config-server_task:17",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "config-api-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/config-server:dev_8.692.0.0_9709dc7",
+          "cpu": 0,
+          "memory": 0,
+          "memory_reservation": 3000,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-janus-cluster-new",
+      "service": "replica-pos4-janus-service",
+      "task_definition": "src_janus_server_task:146",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "janus_server-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src_janus_server:8.138.5.0_28c8923",
+          "cpu": 16384,
+          "memory": 28672,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": true,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-janus-cluster-new",
+      "service": "pos4-janus-service",
+      "task_definition": "src_janus_server_task:145",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "janus_server-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src_janus_server:8.138.5.0_28c8923",
+          "cpu": 16384,
+          "memory": 28672,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": true,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "src-day-part-api_service",
+      "task_definition": "src-day-part-api_task:75",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-day-part-api-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-day-part-api:8.0.0.0_038c42f",
+          "cpu": 512,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 2,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "src-daypart-mediator_service",
+      "task_definition": "src-daypart-mediator_task:54",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-daypart-mediator-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-daypart-mediator:7.108.5.10_2a07ab9",
+          "cpu": 128,
+          "memory": 128,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 2,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "src-scat_tool_service",
+      "task_definition": "src-scat_tool_task:191",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "scat_tool",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-scat_tool:8.285.0.5_b52e2c0",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "src-mm-marketing-api_service",
+      "task_definition": "src-mm-marketing-api_task:147",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-mm-marketing-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-mm-marketing-api:8.829.0.5_ff08a26",
+          "cpu": 2048,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "operator_api_service",
+      "task_definition": "operator_api_task:767",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "operator_api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/operator_api:dev_8.884.78.0_525cbb4",
+          "cpu": 512,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 2,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "payment_api_service",
+      "task_definition": "payment_api_task:631",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "payment_api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payment_api:8.751.0.0_f2db3a2",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "src-mm-content-api_service",
+      "task_definition": "pos4-src-mm-content-api_task:52",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-mm-content-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-mm-content-api:8.838.0.0_93bc031",
+          "cpu": 512,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "src-menu-api-perf_service",
+      "task_definition": "src-menu-api_task:2036",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-menu-api-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-menu-api:dev_0.0.170.1_e783108",
+          "cpu": 2048,
+          "memory": 6144,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "src-order-proxy_service",
+      "task_definition": "src-order-proxy_task:54",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-order-proxy",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-order-proxy:dev_8.660.0.0_0650c24",
+          "cpu": 1024,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-ecs",
+      "service": "wallet_data_pumper_service",
+      "task_definition": "wallet_data_pumper_task:90",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "wallet_data_pumper-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/wallet_data_pumper:7.87.0.0_cb35056",
+          "cpu": 256,
+          "memory": 256,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": true,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "ua-reports",
+      "service": "tyk_mock2_service",
+      "task_definition": "tyk_mock_task:1",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_gateway",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/nginx_echo_proxy:1.0",
+          "cpu": 2048,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 1,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "ua-reports",
+      "service": "tyk_mock3_service",
+      "task_definition": "tyk_mock_task:1",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_gateway",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/nginx_echo_proxy:1.0",
+          "cpu": 2048,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 1,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "ua-reports",
+      "service": "tyk_mock4_service",
+      "task_definition": "tyk_mock_task:1",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_gateway",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/nginx_echo_proxy:1.0",
+          "cpu": 2048,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 1,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "ua-reports",
+      "service": "tyk_mock1_service",
+      "task_definition": "tyk_mock_task:1",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_gateway",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/nginx_echo_proxy:1.0",
+          "cpu": 2048,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 1,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "ua-reports",
+      "service": "loyalty_api_service",
+      "task_definition": "loyalty_api_task:72",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "loyalty_api-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/loyalty_api:8.4.0.0_61196ef",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 4,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-data-platform-ecs",
+      "service": "qa-data-platform-integration-api-ecs-service",
+      "task_definition": "qa-data-platform-integration-api-ecs:96",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "qa-data-platform-integration-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-data-platform-integration-api:dev_1.0.0.0_e4e4e0f",
+          "cpu": 1024,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 6,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-data-platform-ecs",
+      "service": "qa-data-platform-query-api-ecs-service",
+      "task_definition": "qa-data-platform-query-api-ecs:82",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "qa-data-platform-query-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-data-platform-query-api:8.884.80.0_0c2cb35",
+          "cpu": 1024,
+          "memory": 4096,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-data-platform-ecs",
+      "service": "qa_otel_collector_service",
+      "task_definition": "qa_otel_collector_task:12",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "qa_otel_collector_container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/otel-collector:latest",
+          "cpu": 1024,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 2,
+          "has_health_check": false,
+          "env_var_count": 0,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-printer-api_service",
+      "task_definition": "tst1-src-printer-api_task:4",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-printer-api-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-printer-api:8.734.15.0_3129428",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "ua_reports_api_service",
+      "task_definition": "ua_reports_api_task:885",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 2,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "ua-reports-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/ua_reports_api:8.873.20.18_d8868cb",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 3,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-template-api_service",
+      "task_definition": "tst1-src-template-api_task:3",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-template-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-template-api:8.786.0.0_90e6af1",
+          "cpu": 512,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "email_service",
+      "task_definition": "tst1-email_task:5",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "email",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/email:8.75.0.1_841f4e3",
+          "cpu": 2048,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-onboarding-fe_service",
+      "task_definition": "tst1-src-onboarding-fe_task:4",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-onboarding-fe-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-onboarding-fe:8.650.0.5_34817d0",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-capital-proxy-api_service",
+      "task_definition": "tst1-src-capital-proxy-api_task:4",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tst1_src-capital-proxy-api_container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-capital-proxy-api:8.747.0.0_50bbbe4",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-ua-jobassignment_service",
+      "task_definition": "tst1-src-ua-jobassignment_task:3",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "ua-jobassignment",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-ua-jobassignment:8.825.0.0_db8f78c",
+          "cpu": 512,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "gelf"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-mm-customer-profile-api_service",
+      "task_definition": "tst1-src-mm-customer-profile-api_task:11",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-mm-customer-profile-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-mm-customer-profile-api:8.870.0.50_cc00e39",
+          "cpu": 512,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-day-part-api_service",
+      "task_definition": "tst1-src-day-part-api_task:5",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-day-part-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-day-part-api:8.0.0.0_038c42f",
+          "cpu": 512,
+          "memory": 256,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 2,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-ecs",
+      "service": "src-ua-menu-admin_service",
+      "task_definition": "tst1-src-ua-menu-admin_task:81",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-ua-menu-admin-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-ua-menu-admin:dev_mn_revert_884_lock_f366e6d",
+          "cpu": 2048,
+          "memory": 1536,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "payments-ua",
+      "service": "ua-reports-payments-bff-service",
+      "task_definition": "ua-reports-payments-bff-task:9",
+      "launch_type": "EC2",
+      "desired_count": 2,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "ua-reports-payments-bff-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/ua-reports-payments-bff:release-1.0.1",
+          "cpu": 0,
+          "memory": 0,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "pos4_payment-config-portal_service",
+      "task_definition": "pos4_payment-config-portal_task:10",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "payment-config-portal",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payment-config-portal:8.735.10.0_452181e",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "petl_service",
+      "task_definition": "qa_petl_task:81",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "petl-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/petl:8.877.3.0_bf6ffbe",
+          "cpu": 512,
+          "memory": 1536,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "pos4_payments-admin-api_service",
+      "task_definition": "pos4_payments-admin-api_task:25",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "pos4_payments-admin-api-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payments-admin-api:8.875.0.0_025e74b4",
+          "cpu": 512,
+          "memory": 768,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "echeck-core_service",
+      "task_definition": "qa_echeck-core_task:28",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "echeck-core-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/echeck-core:8.757.0.0_3dc5286",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "pac_service",
+      "task_definition": "qa_pac_task:140",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "pac-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/pac:dev_8.873.30.0_pr586_2a6ba53e",
+          "cpu": 512,
+          "memory": 768,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "chargeback-merchant-admin_service",
+      "task_definition": "qa_chargeback-merchant-admin_task:43",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "chargeback_merchant_admin",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/chargeback-merchant-admin:4.4.4.4_0339ce2",
+          "cpu": 256,
+          "memory": 350,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "tst3_payments-onboarding-v3_service",
+      "task_definition": "tst3_payments-onboarding-v3_task:17",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "payments-onboarding-v3-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payments-onboarding-v3:8.749.10.20_7132b1d",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "tst2_payments-admin-api_service",
+      "task_definition": "tst2_payments-admin-api_task:225",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tst2_payments-admin-api-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payments-admin-api:8.875.0.0_025e74b4",
+          "cpu": 512,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "payment-control-center_service",
+      "task_definition": "qa_payment-control-center_task:18",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "payment-control-center",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payment-control-center:dev_1.5.6.7_2c4b53c",
+          "cpu": 1024,
+          "memory": 256,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payments-ecs",
+      "service": "emaf-core_service",
+      "task_definition": "qa_emaf-core_task:69",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "emaf-core-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/emaf-core:8.877.2.0_20c34a1",
+          "cpu": 2048,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-api-gateway-ecs",
+      "service": "tyk_pump_service",
+      "task_definition": "tyk_pump_task:58",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_pump",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/tyk_pump:dev_8.751.0.0_450c9fa",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 0,
+          "has_health_check": true,
+          "env_var_count": 6,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-api-gateway-ecs",
+      "service": "tyk_dashboard_service",
+      "task_definition": "tyk_dashboard_task:118",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_dashboard",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/tyk_dashboard:dev_8.751.0.0_9a82920",
+          "cpu": 1024,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 6,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-api-gateway-ecs",
+      "service": "tyk_gateway_service",
+      "task_definition": "tyk_gateway_task:70",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_gateway",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/tyk_gateway:dev_8.751.0.0_450c9fa",
+          "cpu": 2048,
+          "memory": 4096,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 6,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-payment-gateway-ecs",
+      "service": "cake-payment-gateway_service",
+      "task_definition": "dev_cake-payment-gateway_task:270",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "cake-payment-gateway-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/cake-payment-gateway:8.875.0.0_705d5aa46",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-mq-ecs",
+      "service": "rabbitmq_service",
+      "task_definition": "rabbitmq_task_definition:113",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "rabbitmq",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/rabbitmq:3.7.17-management-0.0.255",
+          "cpu": 2048,
+          "memory": 4096,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 4,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pci-scans-ecs",
+      "service": "leapset_api_service",
+      "task_definition": "leapset_api_task:260",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "leapset_api_container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/leapset_api:dev_8.1.0.0_51178cd",
+          "cpu": 0,
+          "memory": 4096,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 3,
+          "has_health_check": false,
+          "env_var_count": 4,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pci-scans-ecs",
+      "service": "src-keycloak_service",
+      "task_definition": "src-keycloak_task:11",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-keycloak",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src-keycloak:8.5.0.0_27727c2",
+          "cpu": 1024,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 3,
+          "has_health_check": false,
+          "env_var_count": 4,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pci-scans-ecs",
+      "service": "idm-api_service",
+      "task_definition": "idm-api_task:11",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "idm-api",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/idm_api:latest",
+          "cpu": 1024,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 4,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-payments-ecs",
+      "service": "pac_service",
+      "task_definition": "dev_pac_task:81",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "pac-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/pac:1.1.1.9_668b3bdf",
+          "cpu": 512,
+          "memory": 768,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-payments-ecs",
+      "service": "payment-mock-service_service",
+      "task_definition": "dev_payment-mock-service_task:29",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "payment-mock-service-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payment-mock-service:dev_1.2.3.4_87cb18f",
+          "cpu": 1024,
+          "memory": 768,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-payments-ecs",
+      "service": "echeck-core_service",
+      "task_definition": "dev_echeck-core_task:7",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "echeck-core-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/echeck-core:dev_8.36.10.0_5521c31",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-payments-ecs",
+      "service": "payment-config-portal_service",
+      "task_definition": "dev_payment-config-portal_task:14",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "payment_config_portal",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payment-config-portal:dev_8.602.5.0_dcb2bf8",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-payments-ecs",
+      "service": "petl_service",
+      "task_definition": "dev_petl_task:35",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "petl-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/petl:dev_0.0.1.3_7533c08",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-payments-ecs",
+      "service": "payment-client-proxy_service",
+      "task_definition": "dev_payment-client-proxy_task:23",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "payment-client-proxy-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/payment-client-proxy:dev_1.2.4.9_2a83ce0",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-api-gateway-ecs",
+      "service": "tyk_gateway_service",
+      "task_definition": "tyk_gateway_task:78",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_gateway",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/tyk_gateway:8.751.0.0_450c9fa",
+          "cpu": 2048,
+          "memory": 4096,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 6,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-api-gateway-ecs",
+      "service": "tyk_dashboard_service",
+      "task_definition": "tyk_dashboard_task:119",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_dashboard",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/tyk_dashboard:8.751.0.0_584b394",
+          "cpu": 1024,
+          "memory": 2048,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 6,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-api-gateway-ecs",
+      "service": "tyk_pump_service",
+      "task_definition": "tyk_pump_task:64",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "tyk_pump",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/tyk_pump:8.751.0.0_0c55937",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 0,
+          "has_health_check": true,
+          "env_var_count": 6,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payment-gateway-ecs",
+      "service": "madmobile-payment-gateway",
+      "task_definition": "qa_madmobile-payment-gateway_task:116",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "madmobile-payment-gateway-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/cake-payment-gateway:8.877.4.0_b8fbdc0fc",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 7,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "qa-payment-gateway-ecs",
+      "service": "cake-payment-gateway_service",
+      "task_definition": "qa_cake-payment-gateway_task:402",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "cake-payment-gateway-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/cake-payment-gateway:8.877.4.0_b8fbdc0fc",
+          "cpu": 256,
+          "memory": 512,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "dev-feature-flag-ecs",
+      "service": "src-mm-feature-flag_service",
+      "task_definition": "src-mm-feature-flag_task:8",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "src-mm-feature-flag-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/feature_flag_api:dev_0.0.0.1_046b2d26",
+          "cpu": 1000,
+          "memory": 1024,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 5,
+          "secrets_count": 3,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-mq-ecs",
+      "service": "rabbitmq_service",
+      "task_definition": "rabbitmq_task_definition:138",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "rabbitmq",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/rabbitmq:3.7.17-management-0.0.255",
+          "cpu": 1024,
+          "memory": 3096,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 4,
+          "has_health_check": false,
+          "env_var_count": 8,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "tst1-janus-shard-ecs",
+      "service": "tst1-janus-ems-shard-1_service",
+      "task_definition": "src_janus_server_task:148",
+      "launch_type": "unknown",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "janus_server-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src_janus_server:8.5.33.10_aa0246c",
+          "cpu": 4096,
+          "memory": 7196,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": true,
+          "env_var_count": 5,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-cake-development",
+      "region": "us-east-1",
+      "cluster": "pos4-janus-perf-ecs",
+      "service": "pos4-perf-janus-ems-shard-1_service",
+      "task_definition": "pos4-perf-janus-ems_task:15",
+      "launch_type": "EC2",
+      "desired_count": 1,
+      "running_count": 0,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "janus_server-container",
+          "image": "230930891673.dkr.ecr.us-east-1.amazonaws.com/src_janus_server:8.138.5.0_28c8923",
+          "cpu": 8192,
+          "memory": 14336,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": true,
+          "env_var_count": 4,
+          "secrets_count": 0,
+          "log_driver": "none"
+        }
+      ]
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "region": "us-east-1",
+      "cluster": "redirector-us",
+      "service": "master",
+      "task_definition": "redirector-service-master-tf:4",
+      "launch_type": "FARGATE",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "redirector-service-master",
+          "image": "125062011444.dkr.ecr.us-east-1.amazonaws.com/redirector-service:master-e2b9fba247a64429e63e2c3fdc0dbbcb8039215c",
+          "cpu": 0,
+          "memory": 0,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 0,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    },
+    {
+      "profile": "mm-retail-prod-us",
+      "region": "us-east-1",
+      "cluster": "redirector-us",
+      "service": "prod-us",
+      "task_definition": "redirector-service-prod-us-tf:14",
+      "launch_type": "FARGATE",
+      "desired_count": 1,
+      "running_count": 1,
+      "container_count": 1,
+      "containers": [
+        {
+          "name": "redirector-service-prod-us",
+          "image": "125062011444.dkr.ecr.us-east-1.amazonaws.com/redirector-service:prod-us-eac321ff2e39fd9ff14ce7b5d38e8f11480c65f7",
+          "cpu": 0,
+          "memory": 0,
+          "memory_reservation": 0,
+          "essential": true,
+          "port_mappings": 1,
+          "has_health_check": false,
+          "env_var_count": 0,
+          "secrets_count": 0,
+          "log_driver": "awslogs"
+        }
+      ]
+    }
+  ]
+}

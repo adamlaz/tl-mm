@@ -1,0 +1,413 @@
+{
+  "total_repos_analyzed": 30,
+  "repos_with_pipeline_data": 18,
+  "repos_with_deploy_tags": 0,
+  "overall_median_build_seconds": null,
+  "overall_median_deploy_frequency_days": null,
+  "fastest_deployers": [],
+  "slowest_deployers": [],
+  "worst_build_reliability": [
+    {
+      "repo": "madpayments/merchant-service",
+      "workspace": "madpayments",
+      "pipeline_runs": 100,
+      "success_rate_pct": 18.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madpayments/mad-payments-vp3350",
+      "workspace": "madpayments",
+      "pipeline_runs": 100,
+      "success_rate_pct": 22.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madpayments/madpayments-devices-idtech-neo",
+      "workspace": "madpayments",
+      "pipeline_runs": 98,
+      "success_rate_pct": 32.7,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/neo-workspace",
+      "workspace": "madmobile",
+      "pipeline_runs": 69,
+      "success_rate_pct": 39.1,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/pos-os-upgrades",
+      "workspace": "syscolabs",
+      "pipeline_runs": 100,
+      "success_rate_pct": 40.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/restaurant-admin-v2",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 51.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/concierge-associate",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 52.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/mad-services-xstore24eu-rl",
+      "workspace": "madmobile",
+      "pipeline_runs": 88,
+      "success_rate_pct": 63.6,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/kds-v2",
+      "workspace": "syscolabs",
+      "pipeline_runs": 65,
+      "success_rate_pct": 67.7,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/marvel-payment-aurus",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 69.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    }
+  ],
+  "per_repo": [
+    {
+      "repo": "madpayments/rs2-bankworks-parser-service",
+      "workspace": "madpayments",
+      "pipeline_runs": 5,
+      "success_rate_pct": 100.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/impl-urban",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 96.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madpayments/gitops-payments",
+      "workspace": "madpayments",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/mad-services-xstore24eu-rl",
+      "workspace": "madmobile",
+      "pipeline_runs": 88,
+      "success_rate_pct": 63.6,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/gitops-cake",
+      "workspace": "madmobile",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madpayments/madpayments-devices-idtech-neo",
+      "workspace": "madpayments",
+      "pipeline_runs": 98,
+      "success_rate_pct": 32.7,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/impl-rl",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 88.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/pos-os-upgrades",
+      "workspace": "syscolabs",
+      "pipeline_runs": 100,
+      "success_rate_pct": 40.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/cakekiosk-kdsapplauncher",
+      "workspace": "syscolabs",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/cake-payment-gateway",
+      "workspace": "syscolabs",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madpayments/merchant-service",
+      "workspace": "madpayments",
+      "pipeline_runs": 100,
+      "success_rate_pct": 18.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madpayments/cybersource-bin-service",
+      "workspace": "madpayments",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/ditto-sync-agent",
+      "workspace": "syscolabs",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madpayments/mad-payments-vp3350",
+      "workspace": "madpayments",
+      "pipeline_runs": 100,
+      "success_rate_pct": 22.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/neo-workspace",
+      "workspace": "madmobile",
+      "pipeline_runs": 69,
+      "success_rate_pct": 39.1,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/concierge-associate",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 52.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/react-cinco",
+      "workspace": "syscolabs",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/cinco-workspace",
+      "workspace": "syscolabs",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/gm",
+      "workspace": "syscolabs",
+      "pipeline_runs": 38,
+      "success_rate_pct": 81.6,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/kds-v2",
+      "workspace": "syscolabs",
+      "pipeline_runs": 65,
+      "success_rate_pct": 67.7,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/cloud-shared-services",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 79.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/cake-ecs-configs",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 89.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/seao",
+      "workspace": "madmobile",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/marvel-payment-aurus",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 69.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/cake-pop-automation",
+      "workspace": "madmobile",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/cloud-shared-development",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 70.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/moxy",
+      "workspace": "syscolabs",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "madmobile/restaurant-admin-v2",
+      "workspace": "madmobile",
+      "pipeline_runs": 100,
+      "success_rate_pct": 51.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabsconf/menu-sync-agent",
+      "workspace": "syscolabsconf",
+      "pipeline_runs": 0,
+      "success_rate_pct": 0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    },
+    {
+      "repo": "syscolabs/olo",
+      "workspace": "syscolabs",
+      "pipeline_runs": 100,
+      "success_rate_pct": 79.0,
+      "median_build_seconds": 0,
+      "p95_build_seconds": 0,
+      "avg_pr_hours": 0,
+      "total_commits_90d": 0
+    }
+  ]
+}

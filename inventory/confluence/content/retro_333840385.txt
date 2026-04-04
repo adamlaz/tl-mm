@@ -1,0 +1,245 @@
+Title: LEO 2024 PI 2.6 - Review & Retrospective
+Space: Leapset Platform
+Modified: 2024-07-11T09:33:43.421Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/LP/pages/333840385/LEO+2024+PI+2.6+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+LEO 2024 PI 2.6
+
+Duration: -  
+
+Sprint Retrospect Meeting:
+
+   
+
+Main Theme of Sprint
+  • POS DB - SOE execution completion, functional testing completion
+
+  • OAUTH2 DB - MySQL upgrade analysis and component changes development completion
+
+  • RDS certification upgrade analysis
+
+Sprint Goals:
+
+  • POS DB - SOE execution completion, functional testing completion​
+
+  • OAUTH2 DB Growth - Initiated implementing immediate solution​
+
+  • OAUTH2 DB - MySQL upgrade analysis and component changes development completion​
+
+  • RDS certificate upgrade analysis
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 2.6" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                  f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 2.6" and status NOT IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                       f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+15201.5011.5
+
+15101.5210.5
+
+15101.5012.5
+
+ 000000Resigned in 2.5
+
+15201.529.5
+
+15101.5012.5
+
+15401.518.5
+
+15201.5011.5
+
+15101.539.5
+
+Total 12014
+
+886
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment
+133
+
+Not started (Open)
+0
+
+Incomplete (In progress / Dev completed/On hold)
+0
+
+Added to Sprint
+31
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+164
+
+Delivery Success (resolved story points * 100 / committed story points) =  (166/133 * 100) =  125%
+
+Reasons for the deviation in Delivery Success %: 
+
+N/A
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0DR-41791
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14341
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14372
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14391
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14462
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14542
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14572
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14695
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14721
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14965
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-1499
+
+5
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-15023
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-15031
+
+Total31
+
+Spillovers:
+
+N/A
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+  • Team : Update proper acceptance criteria 
+
+  • Team : Update proper issue description
+
+  •  : How to early identify production issues
+
+  • Team : Need to consider learning curve and risk factor when we work on/ estimate issues. Keep the latest converstation/ status up to date in the issue
+
+Sprint Highlights
+#d04437#ffff00
+
+  • POS DB - SOE execution completion, functional testing completion
+
+  • OAUTH2 DB Growth - Initiated implementing immediate solution
+
+  • OAUTH2 DB - MySql upgrade analysis and component changes development completion
+
+  • Notification DB - SOE plan and test plan preparation
+
+  • Email DB - SOE plan preparation
+
+  • Analysis on paytronics and doordash integrations
+
+  • ESB CPU spikes analysis
+
+  • RDS certificate upgrade analysis
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?/ What went well? 
+
+  • Assigning a dedicated person every sprint to handle environment issues
+
+  • Prioritise queries which needs support from Cloud Team
+
+  • Completed all the PI commitments and all the issues that were taken into sprints
+
+  • Once the PI2 commitments are completed, team pulled tasks from PI3 commitments
+
+  • Initiated Tech Talks so that team will get to know what they don't know ultimately leading to broader knowledge
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Update proper acceptance criteria 
+
+  • Update proper issue description
+
+  • Need to follow the discussed issue handling process
+
+  • Need to do the RCA for all the bugs, environment , BVT issues and update the ticket
+
+  • In case there is a change of directions, need to re-visit all the epics
+
+#d04437#fff8f7
+What should we stop doing?/ What went wrong?
+
+  • Sporadic BVT issues - Root cause unknown
+
+  • Step being missed during the analysing stage which resulted in incorrect estimation of the story
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+21
+incomplete
+- Create a documentation for hub API integration
+
+22
+incomplete
+Team : Need to do the RCA for all the bugs, environment , BVT issues and update the ticket
+
+23
+incomplete
+- Try on getting IR deployment access for one more QA member.  to raise a ticket
+
+24
+incomplete
+- Check why logs are not logged to grey log. e.g., MAPI
+
+25
+incomplete
+Team : Stabilize POS 1 environment

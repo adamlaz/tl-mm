@@ -16,21 +16,31 @@ Congrats on the reorg — big moves, clean execution. Friday announcement, all-h
 
 **Systems access:** Everything is working. Ana and the team turned it around fast — Bitbucket, Jira, Confluence, 18 AWS accounts, all with API access.
 
-**Automated inventory (V1–V6):** I've already run six rounds of programmatic analysis across every system. Here's what I have:
+**Automated inventory (V1–V7):** Seven rounds of programmatic analysis, including a "sponge mode" deep collection. 94 JSON inventory files, 124 extracted documents, 31 interactive charts, 44 scripts. Here's what I have:
 
 - **3,191 repos** across 4 Bitbucket orgs. 75% are stale. Four distinct code lineages — confirms the CAKE acquisition integration was never completed.
-- **141 Jira projects**, 18,583 open issues, 72% over a year old. Median cycle time for engineering is **59 days** from In Progress to Done. Sprint velocity is declining on multiple boards.
+- **141 Jira projects**, 18,583 open issues, 72% over a year old. Median cycle time for engineering is **59 days** from In Progress to Done. Sprint velocity declining on multiple boards.
+- **Epic completion rate: 27.7%.** 481 engineering epics in the last 12 months, only 133 resolved. The REST project (CAKE Restaurant) has 260 epics and an 18.5% completion rate. NEO project: 12.5%.
+- **Priority is meaningless.** 89.4% of open engineering issues are "High." No other priority level in active use. They can't triage because everything looks the same.
+- **Estimation discipline: 9%.** Only 27 of 300 resolved stories have Story Points. Root Cause Category field exists in Jira but is populated on 0% of bugs — the process is documented but not followed.
 - **18 AWS accounts**, ~$383K/month. 201 running EC2 instances, 83% on pre-Graviton hardware. 21% of Lambda functions on end-of-life runtimes.
+- **90% of ECS containers have no health checks.** 61 of 68 production services can be unhealthy without detection. This is a reliability finding for the board deck.
+- **2 EKS clusters** running K8s 1.30/1.32 (modern). 8 RDS instances — MySQL 5.7 still running in 3 of them.
+- **Incident timeline reconstructed.** 50 post-mortems parsed from Confluence. Peak incident year: **2022 (26 incidents)**. Top system: Payments (19), Reports (11), Menu (10). Root causes split between app bugs, infrastructure, payment providers, and database issues.
+- **Pipeline success rate: 60.7%.** Nearly 40% of builds fail across 30 active repos. 1,563 pipeline runs analyzed.
+- **Code review bottlenecks identified.** 1,464 reviewer relationships mapped across 217 people. **John Harre alone handles 581 code reviews.** 57 people have 100+ reviews. 17 repos have a single reviewer handling >50% of all PRs.
+- **Branch protection: zero repos.** None of the 30 active repos checked have required approvals or passing builds. 201 open PRs, 175 older than 30 days, 167 with zero comments.
 - **168 unique users** across all systems. 39% are inactive but still have access.
 - **No production AI infrastructure.** SageMaker artifacts in R&D only. No dedicated Neo/AI account.
-- **Self-hosted Grafana** for monitoring — not Datadog or New Relic.
-- **$25.9K/month on Monvia** — a legacy account nobody seems to own. MenuPad and Relate also running with no clear ownership.
+- **30 sprint retrospectives extracted** from 6 teams — teams are documenting what's broken in their own words. Ready for theme analysis.
 
 **Surveys:** Building 5 surveys in Microsoft Forms on my MM account right now. Chathura sending the intro Monday. Closing April 11.
 
 **Pre-reads:** Got org chart and restaurant update deck. Pulled 94 key pages from Confluence directly. Still waiting on Concierge/Retail and Neo/AI roadmaps, revenue breakdown.
 
-**29 interactive charts** ready — backlog trends, velocity, cycle time distributions, repo activity, AWS spend breakdowns, user access patterns.
+**31 interactive charts** ready — including a PR review network graph and updated analysis — backlog trends, velocity, cycle time distributions, repo activity, AWS spend breakdowns, user access patterns.
+
+**One gap to flag:** The incident/RCA documentation in Confluence largely stops after 2023. I have 50 structured post-mortems, but the formal RCA process in the Taurus space ran 2020–2023, then mostly died. Team Tesla wrote two RCAs in 2025 (SQS Retry Storm, Menu Core Retry Loop), but there's a clear gap in 2024. Either they stopped doing post-mortems, the practice moved to Teams/Slack/Guru, or incidents genuinely dropped. **I'll be asking Chathura and Randy about this onsite.** Also: the AWS audit role doesn't include CloudTrail, so I can't measure deployment frequency from the AWS side — only from Bitbucket pipelines.
 
 ---
 
@@ -84,7 +94,7 @@ Congrats on the reorg — big moves, clean execution. Friday announcement, all-h
 - **Listen for:** What makes Don uncomfortable when investors ask about technology
 
 **9. "How transparent do you want the board deck to be?"**
-- I now have quantitative evidence of significant issues: 59-day cycle time, 72% stale backlog, no AI production infra, $25.9K/month on a mystery legacy account, 83% pre-Graviton EC2
+- I now have quantitative evidence of significant issues: 27.7% epic completion, 89.4% priority inflation, 9% estimation discipline, 60.7% pipeline success rate, 90% of containers with no health checks, 59-day cycle time, 72% stale backlog, zero branch protection, 201 stale open PRs, no AI production infra, $25.9K/month on a mystery legacy account, 83% pre-Graviton EC2
 - Options: (a) Full transparency — the data is the data, (b) Selective transparency — lead with strengths and frame gaps as "investment opportunities", (c) Two versions — one for internal action, one for external audiences
 - **Recommendation:** Full transparency with Don's internal brief, calibrated framing for the board deck. Investors respect honesty more than spin, and they'll find the gaps anyway in diligence.
 

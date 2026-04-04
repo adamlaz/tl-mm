@@ -1,0 +1,298 @@
+Title: LEO 2024 PI 2.4 - Review & Retrospective
+Space: Leapset Platform
+Modified: 2024-06-04T11:10:14.855Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/LP/pages/267059719/LEO+2024+PI+2.4+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+LEO 2024 PI 2.4
+
+Duration: -  
+
+Sprint Retrospect Meeting:
+
+   
+
+Main Theme of Sprint
+  • MySql Upgrade - LDP, POS, EMAIL, & OAUTH2
+
+  • MySql Upgrade - Dayparts Prod deployment
+
+  • Doordash webhook enhancements - Stag release
+
+Sprint Goals:
+
+MySQL Upgrade - LDP
+
+  • Finalize and execute SoE
+
+  • Release page preparation
+
+  • Functional and automation testing
+
+MySQL Upgrade - POS
+
+  • SOE and release page finalization and review
+
+  • Downtime business impact identification
+
+MySQL Upgrade - EMAIL
+
+  • Initiate SOE page
+
+  • Finalized migration and rollback plan
+
+  • Identify impacted endpoints in the email API related to the EMAIL DB
+
+MySQL Upgrade - OAUTH2
+
+  • Identify test scope and endpoints impacted by the database upgrade
+  • ESB, Operator API, MAPI, Leapset API
+
+  • Verify existing connector compatible with MySQL 8
+  • ESB, Operator API, MAPI, Leapset API
+
+  • Identify Other components connected to OAUTH2 db
+  • payment api, replicator
+
+MySQL Upgrade - DAYPARTS
+
+  • Production release.
+
+Doordash webhook enhancements
+
+  • STAG release.
+
+Investigate High CPU Utilization on ESB Servers
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 2.4" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 2.4" and status NOT IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                      f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1012106
+
+100
+2
+107
+
+1002116
+
+ 1002116
+
+101.52105.5
+
+1012106
+
+1012007
+
+1012106
+
+1002107
+
+Total 905.5188256.5
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment
+86
+
+Not started (Open)
+0
+
+Incomplete (In progress / Dev completed/On hold)
+0
+
+Added to Sprint
+15
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+101
+
+Delivery Success (resolved story points * 100 / committed story points) =  (101/86 * 100) = 117%
+
+Reasons for the deviation in Delivery Success %: 
+
+N/A
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+Jira IDSPComment
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0DSO-11441
+[TST2] UA Menu is not loading
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13002Ticket for PLTFRM-1273, PLTFRM-1230, DSO-1111, DSO-1112
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13011Ticket for PLTFRM-1231, PLTFRM-1274, PLTFRM-1294
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-12991[POS4] Getting inconsistencies while deploying leapset_api with ACCESS_REFUSED
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13091[TST2][BVT]Unable to create merchant in TST2 Operator API
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13101Ticket for DSO-1233, DSO-1236, & DSO-1215
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13212Investigate High CPU Utilization on ESB Servers in Production
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13222QE] [Support] [STAG/PROD] Support CS Team QEs for Prod Maintenance Testing (RDS Instance Type Upgrade)
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13241Ticket for DSO-1262
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13251Ticket for DR-5684, & CE-4496
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13332[QE] - DD store-provision enhancements (Review comments) Testing
+
+Total15
+
+Spillovers:
+
+None
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+  •   /  to come up with a permanent resolution for environment issues mentioned here:  CE-3917 - [LEO 2024 PI 2.2] Team Blocked ACCEPTED .
+
+Sprint Highlights
+#d04437#ffff00
+  • : Completed the DAYPARTS DB upgrade in production environment.
+
+  • : Doordash feature release deployed in STAG.
+
+  • : Able to continue PI3 related works such as OAuth2.
+
+  • : Blocked LDP IR due to TST2 environment issues.
+
+  •  Identified POS DB downtime business impact.
+
+  • : Identified anomalies in the production related to resource utilization (CPU) in the ESB.
+
+  • : Working on stabilizing the Operator API - automation suite
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?
+
+  • : Collaboratively and actively involved in review processes.
+
+  • : Monitor the LeanerB stats by following best practices.
+
+  • : Good collaboration between QE and DEV.
+
+  • : Document identified environment issues.
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  •  stop deploying unstable changes to our QA env to from other teams.
+
+  • : For architectural changes first come up with a design and approve it before implementation.
+
+  • : When the task uncertainty is high include the risk factor in estimation.
+
+  • : Take the tickets associate/create with environment issues immediately to the sprint.
+
+  • : Consider QE effort when estimate for environment issues.
+
+  • : Discuss design or complex issues with the team.
+
+#d04437#fff8f7
+What should we stop doing?
+
+  • : Stop doing hacks to manipulate LeanerB stats.
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+6
+incomplete
+/  /  need a plan to get access for the dev environment, specially AWS.
+
+10
+incomplete
+: Get access to ecs-config repository to create PRs for whole team.
+
+11
+incomplete
+: Request to optimize the deployment process for dev environment.
+
+8
+incomplete
+ unstable internet was faced at office.
+
+Perfection game:
+
+Name RatingComment
+
+-
+
+7
+  • Environment issues
+
+8
+  • Completion of complex ESB related tasks
+
+7
+
+7
+
+7
+
+ 
+7
+
+-
+
+ 
+8
+
+ 
+7
+
+7
+
+ 
+-
+
+Average:

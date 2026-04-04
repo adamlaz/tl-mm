@@ -22,6 +22,8 @@ const chartGroups = [
       { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time' },
       { slug: 'bitbucket_repo_health', title: 'Repo Health' },
       { slug: 'bb_deploy_tags', title: 'Deploy Tags' },
+      { slug: 'review_network', title: 'Review Network' },
+      { slug: 'bb_reviewer_concentration', title: 'Reviewer Concentration' },
     ],
   },
   {
@@ -39,6 +41,7 @@ const chartGroups = [
       { slug: 'jira_issue_distribution', title: 'Issue Distribution' },
       { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)' },
       { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)' },
+      { slug: 'user_workload_distribution', title: 'User Workload Distribution' },
     ],
   },
   {
@@ -46,6 +49,14 @@ const chartGroups = [
     charts: [
       { slug: 'confluence_creation_trend', title: 'Page Creation Trend' },
       { slug: 'confluence_page_density', title: 'Page Density by Space' },
+    ],
+  },
+  {
+    domain: 'Cross-System',
+    charts: [
+      { slug: 'user_activity_levels', title: 'User Activity Levels' },
+      { slug: 'user_contribution_top20', title: 'Top 20 Contributors' },
+      { slug: 'user_cross_system', title: 'Cross-System Users' },
     ],
   },
 ];

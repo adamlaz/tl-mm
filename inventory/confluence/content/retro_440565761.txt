@@ -1,0 +1,183 @@
+Title: Castor 2024 PI 3.3 - Review & Retrospective
+Space: Optimo
+Modified: 2024-10-01T12:31:34.997Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CP2/pages/440565761/Castor+2024+PI+3.3+-+Review+Retrospective
+============================================================
+
+1.5
+
+Overview
+
+Sprint:  
+CASTOR 2024 PI 3.3
+
+Duration: -  
+
+Sprint Retrospect Meeting: 
+
+Main Theme of Sprint
+Data Platform Kafka upgrade approach finalisation
+
+Development and testing completion of KDS Release 03 
+
+Sprint Goals:
+Analysis for transaction receipt download time
+
+Data Platform Kafka upgrade approach discussions
+
+Development and feature testing completion of KDS Release 03
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.3" and type not in (subTaskIssueTypes()) and status in (Closed,Resolved, Accepted)                              f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.3" and type not in (subTaskIssueTypes()) and status not in (Closed,Resolved, Accepted)                               f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Bug Analysis
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.3"  AND type in ("Bug - Production","Bug")                           f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Day Off
+
+Unplanned Day Offs
+Holidays
+
+Allocation to Ceremonies
+Actual Days
+Comments
+
+Resigned in Sprint 3.2. Did not plan for 3.3
+
+1010117
+
+1010117
+
+1010117
+
+1010117
+
+1010117
+
+1010117
+
+10
+10117
+
+1011116
+
+1020116
+
+1020116
+
+      1010117
+
+10
+40114
+
+ (Intern)1010117
+
+Total 
+
+Added to Sprint (Mid Sprint Injections)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("CE-5064")     f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (Without 20% Buffer)
+
+129.5
+
+Not started (Open)-
+
+Incomplete (In progress / Dev completed)-
+
+20% Buffer22.5
+
+Added to Sprint39.75
+
+Removed from Sprint-
+
+Completed (Resolved Stories)160.75
+
+Delivery Success (resolved story points * 100 / committed story points) =  (129.5/129.5*100) =  100%
+
+Net Delivery Success Rate (total delivered/ capacity * 100) = (160.75/152) = 105.6%
+
+Reports
+
+  • Velocity over Time
+
+  • Burn Down Chart
+
+Follow-up action items from the previous sprint. 
+
+7
+incomplete
+ : Need to decide how to track time for unplanned meetings 
+
+8
+incomplete
+ : Need to check the effort for "Code Reviews" during the planning stage
+
+9
+incomplete
+ : Arrange a discussion to decide whether to add the release version to component artifact
+
+Sprint Highlights
+
+  • Resolution of payment captures not reflected in Snowflake (internal reports) production issue
+
+  • Resolution of receipt transaction - missing production issue
+
+  • Analysis for transaction receipt download time
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing / What went well?
+
+  • Managed to resolve 2 prod issues within the sprint [System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-4880 , System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-4980]
+
+  • Less interruptions from environment issues (Only 4 SPs)
+
+  • Identified spill-overs in advance and took injections to cover them 
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Joining the discussions on time
+
+  • Request CS team to inform required support during the sprint planning stage (E.g., RDS Certificate Upgrade)
+
+  • Take approval from Chamayne/ Ahesh before attending to environment if the 20% buffer is exceeded and if there is any spillover risk
+
+#d04437#fff8f7
+What should we stop doing / what went wrong?
+
+  • Attended environment issues after 20% buffer is exceeded
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+10
+incomplete
+ - Follow up IDE developer licenses

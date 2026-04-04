@@ -1,0 +1,235 @@
+Title: MIRA 2024 PI 2.5 - Review & Retrospective
+Space: Cake GPS
+Modified: 2024-06-18T06:47:33.958Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CG/pages/293601388/MIRA+2024+PI+2.5+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+MIRA 2024 PI 2.5
+
+Duration:  -  
+
+Sprint Retrospect Meeting:
+
+  
+
+Main Theme of Sprint
+OLO Loyalty updated flow DEV/ Testing completion, staging/ prod release
+
+Sprint Goals:
+  • POS freezing production issue workaround DEV completion, staging and prod release 
+
+  • OLO Loyalty updated flow DEV/ Testing completion, staging/ prod release 
+
+  • Edit loyalty customer DEV/ QA work 
+
+  • EMS 2.0 testing
+
+  • Sporadic production issue fixes
+
+Participants:
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 2.5" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()  f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 2.5" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                          f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1000109
+
+1000109
+
+1000109
+
+1000109
+
+1000109
+
+1000109
+
+1000109
+
+1000109
+
+1000109
+
+Total 
+
+ 
+
+81
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment - 100% Utilization
+158
+
+Sprint Commitment - 20 % Utilization40
+
+Sprint Commitment with 80%
+139
+
+Incomplete (In progress / Dev completed/On hold)
+9
+
+Added to Sprint
+22
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+115.5
+
+Net Delivery Success (resolved story points * 100 / committed story points) =  (151* 100) / 139 = 108.63%
+
+Delivery Success Rate : ( 130/139 ) * 100 = 93.52 %
+
+Reasons for the deviation in Delivery Success %:
+
+  • Team blocked due to support the production issues
+
+  • Release got blocked due to the dependency and the entire QA task got spilled over to the next sprint 2.6.
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+TicketSPComment
+
+[CE-4640] [TST1 & STAG] Error when attempting to create a customer on the POS when the identifier is set to Email - Jira (atlassian.net)
+1
+
+[CE-4574] [Customer-profile-API] Hub event changes to update loyalty customer in MM-Loyalty-API - Jira (atlassian.net)
+5
+
+[CE-4631] prevent perform multiple HOLD, RELEASE for same transactionId - Jira (atlassian.net)
+2
+
+[CE-4625] Ids shown in reports instead of item names intermittently - Jira (atlassian.net)
+3
+
+[BO-3779] Merchant & Data setup for MC to EMS 2.0 single location migration - Jira (atlassian.net)
+5
+
+[CE-4654] Environment issue investigation and fixing
+3
+
+[CE-4655][UA-Report] EARN and REDEEM amount show incorrectly
+3
+
+Total22 SP
+
+Spillovers:
+
+https://madmobile-eng.atlassian.net/browse/CE-4519 - 5 SP
+
+https://madmobile-eng.atlassian.net/browse/CE-3897 - 1 SP
+
+https://madmobile-eng.atlassian.net/browse/CE-3896 - 3 SP
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+None
+
+Sprint Highlights
+#d04437#ffff00
+  • POS freezing production issue workaround DEV completion, staging and prod release 
+
+  • OLO Loyalty updated flow DEV/ Testing completion, staging/ prod release 
+
+  • Edit loyalty customer DEV/ QA work 
+
+  • EMS 2.0 testing
+
+  • Sporadic production issue fixes
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?
+
+  • We need to focus on the burn down chart and the way that we chunk the items in order to reflect the deliverables.
+
+  • Start, End dates need to be in the user stories
+
+  • Frequently analyse the Linear B Metrics.
+
+  • We need to check the environment stability prior to start the development / release work.
+
+  • Consider the time taken to new lower environment deployment process while estimate the tasks story points
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • If there are dependencies with other teams for the PI commitments, We need to make sure proper communication of them and assign tickets to them to prevent potential spill overs. 
+
+  • Properly plan the staging/ prod releases by communicate with cloud team
+
+#d04437#fff8f7
+What should we stop doing?
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+Perfection Game
+
+MemberRate

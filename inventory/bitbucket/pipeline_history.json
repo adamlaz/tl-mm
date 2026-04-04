@@ -1,0 +1,471 @@
+{
+  "generated_at": "2026-04-04T00:48:10.089084Z",
+  "repos_checked": 30,
+  "repos_with_pipelines": 30,
+  "repos_no_pipelines": [],
+  "total_pipeline_runs": 1563,
+  "overall_success_rate_pct": 60.7,
+  "per_repo": [
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "syscolabs",
+      "repo": "cinco-workspace"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "syscolabs",
+      "repo": "react-cinco"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "syscolabs",
+      "repo": "moxy"
+    },
+    {
+      "total_runs": 69,
+      "success": 27,
+      "failed": 42,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 39.1,
+      "median_build_s": 157,
+      "p95_build_s": 235.3,
+      "workspace": "madmobile",
+      "repo": "neo-workspace"
+    },
+    {
+      "total_runs": 98,
+      "success": 32,
+      "failed": 24,
+      "error": 0,
+      "stopped": 2,
+      "success_rate_pct": 32.7,
+      "median_build_s": 209.0,
+      "p95_build_s": 297,
+      "workspace": "madpayments",
+      "repo": "madpayments-devices-idtech-neo"
+    },
+    {
+      "total_runs": 100,
+      "success": 22,
+      "failed": 32,
+      "error": 0,
+      "stopped": 6,
+      "success_rate_pct": 22.0,
+      "median_build_s": 216.0,
+      "p95_build_s": 259,
+      "workspace": "madpayments",
+      "repo": "mad-payments-vp3350"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "madpayments",
+      "repo": "gitops-payments"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "madmobile",
+      "repo": "seao"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "syscolabs",
+      "repo": "cakekiosk-kdsapplauncher"
+    },
+    {
+      "total_runs": 100,
+      "success": 40,
+      "failed": 51,
+      "error": 0,
+      "stopped": 5,
+      "success_rate_pct": 40.0,
+      "median_build_s": 85.0,
+      "p95_build_s": 3082,
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades"
+    },
+    {
+      "total_runs": 38,
+      "success": 31,
+      "failed": 7,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 81.6,
+      "median_build_s": 64,
+      "p95_build_s": 111,
+      "workspace": "syscolabs",
+      "repo": "gm"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "madmobile",
+      "repo": "gitops-cake"
+    },
+    {
+      "total_runs": 100,
+      "success": 51,
+      "failed": 44,
+      "error": 2,
+      "stopped": 3,
+      "success_rate_pct": 51.0,
+      "median_build_s": 392,
+      "p95_build_s": 1188,
+      "workspace": "madmobile",
+      "repo": "restaurant-admin-v2"
+    },
+    {
+      "total_runs": 88,
+      "success": 56,
+      "failed": 20,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 63.6,
+      "median_build_s": 196.0,
+      "p95_build_s": 213,
+      "workspace": "madmobile",
+      "repo": "mad-services-xstore24eu-rl"
+    },
+    {
+      "total_runs": 5,
+      "success": 5,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 100.0,
+      "median_build_s": 338,
+      "p95_build_s": 446,
+      "workspace": "madpayments",
+      "repo": "rs2-bankworks-parser-service"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "syscolabs",
+      "repo": "ditto-sync-agent"
+    },
+    {
+      "total_runs": 100,
+      "success": 96,
+      "failed": 4,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 96.0,
+      "median_build_s": 101.5,
+      "p95_build_s": 215,
+      "workspace": "madmobile",
+      "repo": "impl-urban"
+    },
+    {
+      "total_runs": 65,
+      "success": 44,
+      "failed": 15,
+      "error": 0,
+      "stopped": 6,
+      "success_rate_pct": 67.7,
+      "median_build_s": 1353.5,
+      "p95_build_s": 1760,
+      "workspace": "syscolabs",
+      "repo": "kds-v2"
+    },
+    {
+      "total_runs": 100,
+      "success": 18,
+      "failed": 28,
+      "error": 0,
+      "stopped": 1,
+      "success_rate_pct": 18.0,
+      "median_build_s": 73.5,
+      "p95_build_s": 6538.8,
+      "workspace": "madpayments",
+      "repo": "merchant-service"
+    },
+    {
+      "total_runs": 100,
+      "success": 79,
+      "failed": 17,
+      "error": 0,
+      "stopped": 2,
+      "success_rate_pct": 79.0,
+      "median_build_s": 924,
+      "p95_build_s": 1410,
+      "workspace": "syscolabs",
+      "repo": "olo"
+    },
+    {
+      "total_runs": 100,
+      "success": 88,
+      "failed": 7,
+      "error": 0,
+      "stopped": 3,
+      "success_rate_pct": 88.0,
+      "median_build_s": 87.5,
+      "p95_build_s": 441,
+      "workspace": "madmobile",
+      "repo": "impl-rl"
+    },
+    {
+      "total_runs": 100,
+      "success": 69,
+      "failed": 28,
+      "error": 0,
+      "stopped": 3,
+      "success_rate_pct": 69.0,
+      "median_build_s": 63,
+      "p95_build_s": 205,
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "madmobile",
+      "repo": "cake-pop-automation"
+    },
+    {
+      "total_runs": 100,
+      "success": 52,
+      "failed": 44,
+      "error": 0,
+      "stopped": 4,
+      "success_rate_pct": 52.0,
+      "median_build_s": 1616.0,
+      "p95_build_s": 3260,
+      "workspace": "madmobile",
+      "repo": "concierge-associate"
+    },
+    {
+      "total_runs": 100,
+      "success": 89,
+      "failed": 9,
+      "error": 0,
+      "stopped": 2,
+      "success_rate_pct": 89.0,
+      "median_build_s": 25,
+      "p95_build_s": 35,
+      "workspace": "madmobile",
+      "repo": "cake-ecs-configs"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "syscolabs",
+      "repo": "cake-payment-gateway"
+    },
+    {
+      "total_runs": 100,
+      "success": 79,
+      "failed": 19,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 79.0,
+      "median_build_s": 80,
+      "p95_build_s": 175,
+      "workspace": "madmobile",
+      "repo": "cloud-shared-services"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "madpayments",
+      "repo": "cybersource-bin-service"
+    },
+    {
+      "total_runs": 100,
+      "success": 70,
+      "failed": 25,
+      "error": 0,
+      "stopped": 3,
+      "success_rate_pct": 70.0,
+      "median_build_s": 96.0,
+      "p95_build_s": 860,
+      "workspace": "madmobile",
+      "repo": "cloud-shared-development"
+    },
+    {
+      "total_runs": 0,
+      "success": 0,
+      "failed": 0,
+      "error": 0,
+      "stopped": 0,
+      "success_rate_pct": 0,
+      "median_build_s": null,
+      "p95_build_s": null,
+      "workspace": "syscolabsconf",
+      "repo": "menu-sync-agent"
+    }
+  ],
+  "per_workspace": {
+    "syscolabs": {
+      "total_runs": 303,
+      "success_rate_pct": 64.0
+    },
+    "madmobile": {
+      "total_runs": 957,
+      "success_rate_pct": 70.7
+    },
+    "madpayments": {
+      "total_runs": 303,
+      "success_rate_pct": 25.4
+    },
+    "syscolabsconf": {
+      "total_runs": 0,
+      "success_rate_pct": 0
+    }
+  },
+  "worst_10_by_failure_rate": [
+    {
+      "workspace": "madpayments",
+      "repo": "merchant-service",
+      "total_runs": 100,
+      "success_rate_pct": 18.0,
+      "failed": 28,
+      "error": 0
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "mad-payments-vp3350",
+      "total_runs": 100,
+      "success_rate_pct": 22.0,
+      "failed": 32,
+      "error": 0
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "madpayments-devices-idtech-neo",
+      "total_runs": 98,
+      "success_rate_pct": 32.7,
+      "failed": 24,
+      "error": 0
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "neo-workspace",
+      "total_runs": 69,
+      "success_rate_pct": 39.1,
+      "failed": 42,
+      "error": 0
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades",
+      "total_runs": 100,
+      "success_rate_pct": 40.0,
+      "failed": 51,
+      "error": 0
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "restaurant-admin-v2",
+      "total_runs": 100,
+      "success_rate_pct": 51.0,
+      "failed": 44,
+      "error": 2
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "concierge-associate",
+      "total_runs": 100,
+      "success_rate_pct": 52.0,
+      "failed": 44,
+      "error": 0
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "mad-services-xstore24eu-rl",
+      "total_runs": 88,
+      "success_rate_pct": 63.6,
+      "failed": 20,
+      "error": 0
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "kds-v2",
+      "total_runs": 65,
+      "success_rate_pct": 67.7,
+      "failed": 15,
+      "error": 0
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus",
+      "total_runs": 100,
+      "success_rate_pct": 69.0,
+      "failed": 28,
+      "error": 0
+    }
+  ],
+  "errors": []
+}

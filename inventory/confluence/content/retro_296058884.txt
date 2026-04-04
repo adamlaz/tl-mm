@@ -1,0 +1,221 @@
+Title: Castor 2024 PI 2.5 - Review & Retrospective
+Space: Optimo
+Modified: 2024-10-02T09:43:53.625Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CP2/pages/296058884/Castor+2024+PI+2.5+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+CASTOR 2024 PI 2.5
+
+Duration: -  
+
+Sprint Retrospect Meeting: 
+
+Main Theme of Sprint
+  • Reports Phase 2.3 Release 01 - Development & QE
+
+Sprint Goals:
+  • Employee Wise PDF Report - Development & Testing Completion
+
+  • KDS Performance Improvements and Critical Issue Fixes 
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.5" and type not in (subTaskIssueTypes()) and status in (Closed,Resolved, Accepted)                        f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.5" and type not in (subTaskIssueTypes()) and status not in (Closed,Resolved, Accepted)                         f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Bug Analysis
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.3"  AND type in ("Bug - Production","Bug")                     f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+  • Total Working days:  10
+
+  • Scrum Ceremonies time : 1 day (Planning : 0.5 day, Review/Retro : 0.5 day)
+
+  • Holidays : 0
+
+  • Development days for the Sprint: 9
+
+ 
+
+Total Days
+
+Planned Day Off
+
+Unplanned Day Offs
+Holidays
+
+Allocation to Ceremonies
+Actual Days
+Comments
+
+1010018
+
+1010018
+
+1010018
+
+1010018
+
+1000019
+
+10
+1
+0018
+
+10
+1.5
+0017.5
+
+1010018
+
+1010018
+
+1010018
+
+1070012
+
+1010018
+
+1000019
+
+ (Intern)1000019
+
+1030016
+
+Total 
+
+Added to Sprint (Mid Sprint Injections)
+
+Jira #SPComment
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-36175
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-36861
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-36902
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-46233
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37181
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37491
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37653
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37665
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37672
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37525
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-46391
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37511
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-46415
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37531
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37813
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37941
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-37805
+
+Total45
+
+Reasons for the deviation in Delivery Success % (Spillovers)
+
+TicketStory PointsReason for Spillover
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-33605KDS Performance Improvements and 4 Critical Issue fixes
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-35012KDS Performance Improvements and 4 Critical Issue fixes
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-45572KDS Performance Improvements and 4 Critical Issue fixes
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-24953KDS Performance Improvements and 4 Critical Issue fixes
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-36445KDS Performance Improvements and 4 Critical Issue fixes
+
+Total17
+
+Note: Team has added new tickets to cover the above spillovers capacity.
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (Without 20% Buffer)
+
+168
+
+Not started (Open)-
+
+Incomplete (In progress / Dev completed)17
+
+20% Buffer41
+
+Added to Sprint45
+
+Removed from Sprint-
+
+Completed (Resolved Stories)200
+
+Delivery Success (resolved story points * 100 / committed story points) =   (200/168*100) = 119 %
+
+Reports
+
+  • Velocity over Time
+
+  • Burn Down Chart
+
+Follow-up action items from the previous sprint. 
+
+Sprint Highlights
+
+  • KDS Performance Improvement Stag & Prod Release
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing / What went well?
+
+  •  : Team was able to successfully complete the KDS Performance Improvement release along with critical issues 
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  •  : Close / change the status of tickets before the R&R
+
+  •  : Need to document engineering suggestions and enhacements
+
+  •  : Need to have a bandwidth for unplanned engineering improvements. Earlier PIs, there was a 10% buffer
+
+#d04437#fff8f7
+What should we stop doing / what went wrong?
+
+  •  : Shouldn't take integration testing related to releases of other teams 
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+  • Team : Close / change the status of tickets before the R&R
+
+  • Team : Need to document engineering suggestions and enhancements

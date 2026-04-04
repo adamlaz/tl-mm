@@ -1,0 +1,224 @@
+Title: LEO 2024 PI 3.3 - Review & Retrospective
+Space: Leapset Platform
+Modified: 2024-10-01T12:24:02.123Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/LP/pages/436666370/LEO+2024+PI+3.3+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+LEO 2024 PI 3.3
+
+Duration: -  
+
+Sprint Retrospect Meeting:
+
+   
+
+Main Theme of Sprint
+MySQL upgrades
+
+Sprint Goals:
+Continuation of the remaining MySQL database upgrades to complete the initiative
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.3" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                       f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.2" and status NOT IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                           f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1011107
+
+10
+11134
+
+1011116
+
+1001108
+
+1001108
+
+1011116
+
+1021106
+
+1001108
+
+1011107
+
+Total 90
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment Without 20% buffer]
+93
+
+20% Buffer17
+
+Not started (Open)
+
+Incomplete (In progress / Dev completed/On hold)
+2
+
+Added to Sprint
+16
+
+Removed from Sprint
+-
+
+Completed (Resolved Stories)
+107
+
+Delivery Success (resolved story points * 100 / committed story points) =  (91/93*100%) = 97.8%
+
+Net Delivery Success (total delivered / capacity) 100 % = (107/110*100%) = 97.2%
+
+Reasons for the deviation in Delivery Success %: 
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-1914 - The team was waiting for architecture walkthrough. After the meeting happened on 26th Aug, there was discussion to do more refinements. This can be taken up after the next architecture walkthrough
+
+N/A
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("PLTFRM-1930")    f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Spillovers:
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-1914 - The team was waiting for architecture walkthrough. After the meeting happened on 26th Aug, there was discussion to do more refinements. This can be taken up after the next architecture walkthrough
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+31
+incomplete
+ - Come up with a checklist for performance testing
+
+34
+complete
+Team - Stabilise POS1 dev environment
+
+35
+incomplete
+Team - Set up a local dev environment
+
+Sprint Highlights
+#d04437#ffff00
+  • Continuation of remaining MySQL DB upgrade initiative.​
+  • EMAIL DB – Staging & Production Done​
+
+  • POS DB​
+
+  • NOTIFICATION DB​
+
+  • HELP CENTER DB​
+
+  • Data Platform
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?/ What went well? 
+
+  • Successful completion of Help Center developments
+
+  • Combining POS and Notification DB
+
+  • Successful release of Email App
+
+  • Proactively identifying the OLO database latency issue 
+
+  • Verified the data platform data flow
+
+  • Was able to reflect the CS workflow to the CS team (Good support from CS Team in the absence of Navoda)
+
+  • Retriable support is available for integration
+
+  • Moving help center secrets to the secret manager
+
+  • Successful execution of notification DB
+
+  • Getting px tip logic
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Proper information about data platform components
+
+  • Awareness about data platform usages and items that are being discontinued
+
+  • Proper environment configurations needs to be available in environment specific DBS. Ensure no cross environment references
+
+  • Update mysql upgrade URLs to SOE post deployment
+
+  • Add proper comments/ descriptions in Jira tickets
+
+  • Before moving tickets to review, ensure that every required documentation and links added
+
+  • If we clone a ticket, ensure the cloned ticket only has the required information and the ticket is upto date
+
+  • Before sending a ticket to another team, make sure to update required details and review the ticket by ourselves
+
+  • We need to have proper test functionality for sms in lower environments
+
+#d04437#fff8f7
+What should we stop doing?/ What went wrong?
+
+  • Merchants configuration for third party integrations not working
+
+  • Loose focus on Auth2 DB config
+
+  • We couldn't work on 86ing due to requirement not being available
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+39
+incomplete
+/  - Investigate and enable real environment like configurations for test merchants
+
+40
+incomplete
+  - To find a solution for how to handle bugs  without blocking stories (Specific to LEO Project)
+
+41
+complete
+Update DB URLs of the Mysql DB 
+
+42
+complete
+Team : Agree on timelines at planning

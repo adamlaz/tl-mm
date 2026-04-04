@@ -1,0 +1,208 @@
+Title: LEO 2024 PI 3.4 - Review & Retrospective
+Space: Leapset Platform
+Modified: 2024-10-01T12:20:20.264Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/LP/pages/471597057/LEO+2024+PI+3.4+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+LEO 2024 PI 3.4
+
+Duration: -  
+
+Sprint Retrospect Meeting:
+
+   
+
+Main Theme of Sprint
+MySQL upgrades
+
+Sprint Goals:
+Continuation of the remaining MySQL database upgrades to complete the initiative
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.4" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                         f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.4" and status NOT IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                             f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1021124
+
+10
+21106
+
+1011107
+
+1001108
+
+1071109
+
+1011107
+
+1021106
+
+100110.57.5
+
+1011107
+
+Total 90
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment Without 20% buffer]
+97
+
+20% Buffer24
+
+Not started (Open)
+
+Incomplete (In progress / Dev completed/On hold)
+10
+
+Added to Sprint
+39
+
+Removed from Sprint
+-
+
+Completed (Resolved Stories)
+125
+
+Delivery Success (resolved story points * 100 / committed story points) =  (87/97*100) = 90%
+
+Net Delivery Success (total delivered / velocity) 100 % = (125/121*100) = 103%
+
+Reasons for the deviation in Delivery Success %: 
+
+  • 
+The Door Dash injection took longer than expected.
+
+  • 
+Unforeseen issues arose during the OAuth SOE execution, which required additional time for planning and rectification.
+
+N/A
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("PLTFRM-1995")     f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Spillovers:
+
+ 1. System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-1621
+
+2. System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-1627
+
+3. System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-1743 
+
+4. System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-1997
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+43
+incomplete
+/  - Investigate and enable real environment like configurations for test merchants
+
+44
+incomplete
+  - To find a solution for how to handle bugs  without blocking stories (Specific to LEO Project)
+
+Sprint Highlights
+#d04437#ffff00
+  • Continuation of remaining MySQL DB upgrade initiative.​
+  • EMAIL DB – Staging & Production Done​
+
+  • POS DB​
+
+  • NOTIFICATION DB​
+
+  • HELP CENTER DB​
+
+  • Data Platform
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?/ What went well? 
+
+  • Prod release of Door Dash Failure Fix
+
+  • Prod Release of POS DB
+
+  • Prod release of Notification DB
+
+  • Prod release of Introducing indices to OLO.TP_ORDERS table → to reduce grey log alerts
+
+  • Staging deployment of Help Center
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Need to do proper code review
+
+  • Need to do proper dev tests (Create a local proper dev environment by engineers)
+
+#d04437#fff8f7
+What should we stop doing?/ What went wrong?
+
+  • OAuth DB - Didn't finalize the SOE properly
+
+  • Door Dash - Didn't do proper dev testing
+
+  • Staging merchant clean up was not completed
+
+  • EC2 instance index creator deleted by cloud
+
+  • Help center - Incorrect pre-deployment estimation by CS team 
+
+  • OAuth DB - SOE plan was not done properly
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+45
+incomplete
+  : Need to have reviewed plan before sprint planning
+
+46
+incomplete
+Need to improve quality of code review
+
+47
+incomplete
+/  : Need to stable POS1 environment and run a BVT suit

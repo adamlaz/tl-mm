@@ -1,0 +1,67 @@
+---
+title: Mad Mobile - C4 Context Diagram
+---
+flowchart TB
+
+    %% External Actors
+    Customers["🏪 Retail Customers<br/><i>POS, ordering, payments</i>"]
+    Retailers["🏬 Retail Brands<br/><i>Ascena, Belk, Brooks Brothers, Burlington, Esteelauder, Esteelauder Aveda, Esteelauder Ccs, Esteelauder Jml...</i>"]
+    Sysco["🍽️ Sysco / Restaurant Chains<br/><i>CAKE POS deployments</i>"]
+    PayProc["💳 Payment Processors<br/><i>Aurus, RS2 Bankworks,<br/>Card Networks</i>"]
+    AppleBB["📱 Apple / Best Buy<br/><i>Concierge deployments</i>"]
+
+    %% Mad Mobile Systems
+    subgraph MM["<b>Mad Mobile Platform</b>"]
+        direction TB
+        CAKE["🍰 CAKE POS<br/><i>Restaurant POS, Menu Mgmt,<br/>Kitchen Display, Orders</i>"]
+        CONC["👔 Concierge<br/><i>Clienteling, Appointments,<br/>Curbside, Analytics</i>"]
+        PAY["💰 Mad Payments<br/><i>Payment Gateway, Merchant<br/>Onboarding, Chargeback</i>"]
+        NEO["🤖 Neo AI / Marvel Cloud<br/><i>AI Assistant, Data Platform</i>"]
+        PLAT["⚙️ Platform Services<br/><i>Config, Admin, API Gateway,<br/>Notifications</i>"]
+    end
+
+    %% Internal Systems
+    subgraph INFRA["<b>Infrastructure</b>"]
+        direction TB
+        AWS["☁️ AWS<br/><i>ECS, EKS, DynamoDB,<br/>S3, Lambda, ElastiCache</i>"]
+        MON["📊 Monitoring<br/><i>Prometheus, Elasticsearch,<br/>OpenTelemetry, CloudWatch</i>"]
+        CICD["🔧 CI/CD<br/><i>Bitbucket Pipelines,<br/>GitOps, CodePipeline</i>"]
+    end
+
+    %% DNS
+    subgraph DNS["<b>DNS / Domains</b>"]
+        direction LR
+        madmobile_ai["madmobile.ai"]
+        make_cake_com["make-cake.com"]
+        take_cake_io["take-cake.io"]
+        madpayments_com["madpayments.com"]
+        take_cake_com["take-cake.com"]
+        bake_cake_io["bake-cake.io"]
+        bake_cake_com["bake-cake.com"]
+        make_cake_io["make-cake.io"]
+    end
+
+    %% Relationships
+    Customers --> CAKE
+    Customers --> CONC
+    Customers --> PAY
+    Retailers --> CONC
+    Sysco --> CAKE
+    AppleBB --> CONC
+    PayProc <--> PAY
+    CAKE --> PAY
+    CONC --> PAY
+    CAKE --> PLAT
+    CONC --> PLAT
+    PAY --> PLAT
+    NEO --> PLAT
+    MM --> INFRA
+    MM --> DNS
+
+    %% Styling
+    classDef external fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
+    classDef mmSystem fill:#DCFCE7,stroke:#22C55E,color:#166534
+    classDef infra fill:#FEF3C7,stroke:#F59E0B,color:#92400E
+    class Customers,Retailers,Sysco,PayProc,AppleBB external
+    class CAKE,CONC,PAY,NEO,PLAT mmSystem
+    class AWS,MON,CICD infra

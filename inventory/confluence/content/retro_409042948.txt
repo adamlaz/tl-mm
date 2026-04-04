@@ -1,0 +1,199 @@
+Title: Castor 2024 PI 3.2 - Review & Retrospective
+Space: Optimo
+Modified: 2024-10-01T12:36:55.477Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CP2/pages/409042948/Castor+2024+PI+3.2+-+Review+Retrospective
+============================================================
+
+1.5
+
+Overview
+
+Sprint:  
+CASTOR 2024 PI 3.2
+
+Duration: -  
+
+Sprint Retrospect Meeting: 
+
+Main Theme of Sprint
+Reports Phase 2.3 Release 01 - Production Release
+
+Sprint Goals:
+Reports Phase 2.3 Release 01 - Production Release
+
+Onboarding API upgrade (from Mongo 5.0 to Mongo 7.0)
+
+KDS Usability improvements
+
+Kafka upgrade related design finalization and dev infrastructure setup
+
+Transaction report receipt download
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.2" and type not in (subTaskIssueTypes()) and status in (Closed,Resolved, Accepted)                             f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.2" and type not in (subTaskIssueTypes()) and status not in (Closed,Resolved, Accepted)                              f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Bug Analysis
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.2"  AND type in ("Bug - Production","Bug")                          f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Day Off
+
+Unplanned Day Offs
+Holidays
+
+Allocation to Ceremonies
+Actual Days
+Comments
+
+1020017
+
+1010017
+
+1010017
+
+1010017
+
+1010017
+
+1020016
+
+1010017
+
+10
+10017
+
+1010017
+
+1010017
+
+1010017
+
+      1010017
+
+10
+10017
+
+ (Intern)1010017
+
+Total 
+
+Added to Sprint (Mid Sprint Injections)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("CE-5064")     f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (Without 20% Buffer)
+
+159.5
+
+Not started (Open)-
+
+Incomplete (In progress / Dev completed)-
+
+20% Buffer25.5
+
+Added to Sprint34
+
+Removed from Sprint-
+
+Completed (Resolved Stories)193.5
+
+Delivery Success (resolved story points * 100 / committed story points) =  (159.5/159.5*100%) =  100%
+
+Net Delivery Success Rate (total delivered/ capacity * 100) = (193.5 / 185 *100) = 104.5%
+
+Reports
+
+  • Velocity over Time
+
+  • Burn Down Chart
+
+Follow-up action items from the previous sprint. 
+
+1
+incomplete
+ : Check existing vulnerabilities during planning 
+
+3
+incomplete
+ : Need to have a dev environment
+
+6
+incomplete
+ : Need to come up with a common mechanism to document environment issues
+
+Sprint Highlights
+
+  • Production release of Reports 2.3 - Release 1
+
+  • Onboarding API upgrade (from Mongo 5.0 to Mongo 7.0)
+
+  • KDS Usability improvements
+
+  • Kafka upgrade related design finalization and dev infrastructure setup
+
+  • Transaction report receipt download
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing / What went well?
+
+  • Successfully deployed Phase 2.3 Report Release 1 to production
+
+  • Successfully deployed the Onboarding API release to production
+
+  • Team managed to complete all the stories planned for the sprint without any spillover
+
+  • Started tracking the tech debts 
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Need to plan the design discussions during the planning
+
+  • Need to take perf testing related decisions as early as possible
+
+  • Need to consider code review effort during estimations
+
+#d04437#fff8f7
+What should we stop doing / what went wrong?
+
+  • Some technical debts were identified in the initial Kafka Plan
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+0
+incomplete
+ : Need to decide how to track time for unplanned meetings 
+
+2
+incomplete
+Team : Need to check the effort for "Code Reviews" during the planning stage
+
+4
+incomplete
+ : Arrange a discussion to decide whether to add the release version to component artifact

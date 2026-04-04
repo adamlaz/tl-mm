@@ -6,6 +6,17 @@ import DataTable from '../components/DataTable.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
+import { readFileSync } from 'node:fs';
+
+let rcaData: any = {};
+let retroData: any = {};
+let diagramData: any = {};
+try { rcaData = JSON.parse(readFileSync('../inventory/confluence/rca_timeline.json', 'utf-8')); } catch {}
+try { retroData = JSON.parse(readFileSync('../inventory/confluence/retrospectives.json', 'utf-8')); } catch {}
+try { diagramData = JSON.parse(readFileSync('../inventory/confluence/architecture_diagrams.json', 'utf-8')); } catch {}
+
+const incidentsBySystem = Object.entries(rcaData.incidents_by_system ?? {}) as [string, number][];
+const retroCount = retroData.total_retros ?? retroData.retros?.length ?? 30;
 
 const spaces = await getCollection('confluenceSpaces');
 const pages = await getCollection('confluencePages');
@@ -83,6 +94,37 @@ const charts = [
       searchable
       pageSize={25}
     />
+  </div>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">V7 Deep Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Incidents Parsed" value={(rcaData.total_incidents_parsed ?? 0).toString()} subtitle="from RCA/post-mortem docs" />
+    <MetricCard label="Peak Incident Year" value="2022" subtitle="26 incidents" />
+    <MetricCard label="Retrospectives" value={retroCount.toString()} subtitle="sprint retros extracted" />
+    <MetricCard label="Arch Diagrams" value={(diagramData.total_results ?? diagramData.pages?.length ?? 0).toString()} subtitle="pages with diagrams" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Incidents by System</h2>
+      <DataTable
+        columns={[
+          { key: 'system', label: 'System' },
+          { key: 'count', label: 'Incidents', align: 'right' },
+        ]}
+        rows={incidentsBySystem.sort((a: any, b: any) => (b[1] as number) - (a[1] as number)).map(([sys, cnt]: [string, number]) => ({ system: sys, count: cnt }))}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Incidents by Year</h2>
+      <DataTable
+        columns={[
+          { key: 'year', label: 'Year' },
+          { key: 'count', label: 'Incidents', align: 'right' },
+        ]}
+        rows={Object.entries(rcaData.incidents_by_year ?? {}).sort((a: any, b: any) => b[0].localeCompare(a[0])).map(([year, cnt]: [string, any]) => ({ year, count: cnt }))}
+      />
+    </div>
   </div>
 
   <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>

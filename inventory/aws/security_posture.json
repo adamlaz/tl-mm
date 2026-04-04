@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-04-04T00:55:14.592461+00:00",
+  "region": "us-east-1",
+  "accounts_scanned": 7,
+  "accounts": {
+    "mm-retail-prod-us": {
+      "profile": "mm-retail-prod-us",
+      "guardduty": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "acm": {
+        "total": 0,
+        "certificates": []
+      },
+      "iam": {
+        "account_summary": {
+          "users": 39,
+          "groups": 48,
+          "roles": 260,
+          "policies": 174,
+          "mfa_devices": 0,
+          "access_keys_active": 2
+        },
+        "password_policy": {
+          "min_length": 12,
+          "require_uppercase": true,
+          "require_lowercase": true,
+          "require_numbers": true,
+          "require_symbols": true,
+          "max_age_days": 90,
+          "password_reuse_prevention": 24
+        },
+        "credential_report": {
+          "_error": "Access denied: AccessDenied"
+        }
+      },
+      "s3_public_access_block": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "config_compliance": {
+        "_note": "AWS Config not enabled or no rules configured"
+      },
+      "secrets_manager": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "blocked_apis": [
+        "GuardDuty: Access denied: AccessDeniedException",
+        "IAM credential report: Access denied: AccessDenied",
+        "S3 control: Access denied: AccessDenied",
+        "Secrets Manager: Access denied: AccessDeniedException"
+      ]
+    },
+    "mm-payments-prod-us": {
+      "profile": "mm-payments-prod-us",
+      "guardduty": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "acm": {
+        "total": 0,
+        "certificates": []
+      },
+      "iam": {
+        "account_summary": {
+          "users": 0,
+          "groups": 0,
+          "roles": 61,
+          "policies": 26,
+          "mfa_devices": 0,
+          "access_keys_active": 2
+        },
+        "password_policy": {
+          "min_length": 15,
+          "require_uppercase": true,
+          "require_lowercase": true,
+          "require_numbers": true,
+          "require_symbols": true,
+          "max_age_days": 90,
+          "password_reuse_prevention": 24
+        },
+        "credential_report": {
+          "_error": "Access denied: AccessDenied"
+        }
+      },
+      "s3_public_access_block": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "config_compliance": {
+        "_note": "AWS Config not enabled or no rules configured"
+      },
+      "secrets_manager": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "blocked_apis": [
+        "GuardDuty: Access denied: AccessDeniedException",
+        "IAM credential report: Access denied: AccessDenied",
+        "S3 control: Access denied: AccessDenied",
+        "Secrets Manager: Access denied: AccessDeniedException"
+      ]
+    },
+    "mm-cake-development": {
+      "profile": "mm-cake-development",
+      "guardduty": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "acm": {
+        "total": 0,
+        "certificates": []
+      },
+      "iam": {
+        "account_summary": {
+          "users": 10,
+          "groups": 51,
+          "roles": 583,
+          "policies": 673,
+          "mfa_devices": 0,
+          "access_keys_active": 2
+        },
+        "password_policy": {
+          "min_length": 8,
+          "require_uppercase": true,
+          "require_lowercase": true,
+          "require_numbers": true,
+          "require_symbols": true,
+          "max_age_days": 90,
+          "password_reuse_prevention": 2
+        },
+        "credential_report": {
+          "_error": "Access denied: AccessDenied"
+        }
+      },
+      "s3_public_access_block": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "config_compliance": {
+        "total_rules": 4,
+        "summary": {
+          "compliant": 0,
+          "non_compliant": 4,
+          "not_applicable": 0,
+          "insufficient_data": 0
+        },
+        "non_compliant_rules": [
+          "cake-dev-use1-sg-restricted-ssh",
+          "cake-vpc-sg-open-only-to-authorized-ports",
+          "dev-cake--use1-iam-policy-no-statements-with-admin-access",
+          "rds-automatic-minor-version-upgrade-enabled-custom-rule"
+        ]
+      },
+      "secrets_manager": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "blocked_apis": [
+        "GuardDuty: Access denied: AccessDeniedException",
+        "IAM credential report: Access denied: AccessDenied",
+        "S3 control: Access denied: AccessDenied",
+        "Secrets Manager: Access denied: AccessDeniedException"
+      ]
+    },
+    "mm-cake-r-and-d": {
+      "profile": "mm-cake-r-and-d",
+      "guardduty": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "acm": {
+        "total": 0,
+        "certificates": []
+      },
+      "iam": {
+        "account_summary": {
+          "users": 0,
+          "groups": 24,
+          "roles": 211,
+          "policies": 139,
+          "mfa_devices": 0,
+          "access_keys_active": 2
+        },
+        "password_policy": {
+          "min_length": 15,
+          "require_uppercase": true,
+          "require_lowercase": true,
+          "require_numbers": true,
+          "require_symbols": true,
+          "max_age_days": 90,
+          "password_reuse_prevention": 5
+        },
+        "credential_report": {
+          "_error": "Access denied: AccessDenied"
+        }
+      },
+      "s3_public_access_block": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "config_compliance": {
+        "total_rules": 25,
+        "summary": {
+          "compliant": 13,
+          "non_compliant": 5,
+          "not_applicable": 0,
+          "insufficient_data": 7
+        },
+        "non_compliant_rules": [
+          "2ndwatch-required-tags",
+          "securityhub-cloud-trail-cloud-watch-logs-enabled-5dcaee0c",
+          "securityhub-cloud-trail-encryption-enabled-ac540168",
+          "securityhub-cmk-backing-key-rotation-enabled-e7f326d5",
+          "securityhub-iam-password-policy-prevent-reuse-check-0ceb1766"
+        ]
+      },
+      "secrets_manager": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "blocked_apis": [
+        "GuardDuty: Access denied: AccessDeniedException",
+        "IAM credential report: Access denied: AccessDenied",
+        "S3 control: Access denied: AccessDenied",
+        "Secrets Manager: Access denied: AccessDeniedException"
+      ]
+    },
+    "mm-shared-services": {
+      "profile": "mm-shared-services",
+      "guardduty": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "acm": {
+        "total": 0,
+        "certificates": []
+      },
+      "iam": {
+        "account_summary": {
+          "users": 0,
+          "groups": 0,
+          "roles": 64,
+          "policies": 24,
+          "mfa_devices": 0,
+          "access_keys_active": 2
+        },
+        "password_policy": {
+          "_error": "Access denied: AccessDenied"
+        },
+        "credential_report": {
+          "_error": "Access denied: AccessDenied"
+        }
+      },
+      "s3_public_access_block": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "config_compliance": {
+        "_note": "AWS Config not enabled or no rules configured"
+      },
+      "secrets_manager": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "blocked_apis": [
+        "GuardDuty: Access denied: AccessDeniedException",
+        "IAM credential report: Access denied: AccessDenied",
+        "S3 control: Access denied: AccessDenied",
+        "Secrets Manager: Access denied: AccessDeniedException"
+      ]
+    },
+    "mm-security": {
+      "profile": "mm-security",
+      "guardduty": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "acm": {
+        "total": 0,
+        "certificates": []
+      },
+      "iam": {
+        "account_summary": {
+          "users": 2,
+          "groups": 0,
+          "roles": 30,
+          "policies": 10,
+          "mfa_devices": 0,
+          "access_keys_active": 2
+        },
+        "password_policy": {
+          "_error": "Access denied: AccessDenied"
+        },
+        "credential_report": {
+          "_error": "Access denied: AccessDenied"
+        }
+      },
+      "s3_public_access_block": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "config_compliance": {
+        "_note": "AWS Config not enabled or no rules configured"
+      },
+      "secrets_manager": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "blocked_apis": [
+        "GuardDuty: Access denied: AccessDeniedException",
+        "IAM credential report: Access denied: AccessDenied",
+        "S3 control: Access denied: AccessDenied",
+        "Secrets Manager: Access denied: AccessDeniedException"
+      ]
+    },
+    "mm-madmobile-mgmt": {
+      "profile": "mm-madmobile-mgmt",
+      "guardduty": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "acm": {
+        "total": 0,
+        "certificates": []
+      },
+      "iam": {
+        "account_summary": {
+          "users": 0,
+          "groups": 1,
+          "roles": 172,
+          "policies": 76,
+          "mfa_devices": 2,
+          "access_keys_active": 2
+        },
+        "password_policy": {
+          "_error": "Access denied: AccessDenied"
+        },
+        "credential_report": {
+          "_error": "Access denied: AccessDenied"
+        }
+      },
+      "s3_public_access_block": {
+        "_error": "Access denied: AccessDenied"
+      },
+      "config_compliance": {
+        "_note": "AWS Config not enabled or no rules configured"
+      },
+      "secrets_manager": {
+        "_error": "Access denied: AccessDeniedException"
+      },
+      "blocked_apis": [
+        "GuardDuty: Access denied: AccessDeniedException",
+        "IAM credential report: Access denied: AccessDenied",
+        "S3 control: Access denied: AccessDenied",
+        "Secrets Manager: Access denied: AccessDeniedException"
+      ]
+    }
+  }
+}

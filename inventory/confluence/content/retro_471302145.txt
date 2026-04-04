@@ -1,0 +1,238 @@
+Title: Castor 2024 PI 3.4 - Review & Retrospective
+Space: Optimo
+Modified: 2024-09-11T17:47:29.531Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CP2/pages/471302145/Castor+2024+PI+3.4+-+Review+Retrospective
+============================================================
+
+1.5
+
+Overview
+
+Sprint:  
+CASTOR 2024 PI 3.3
+
+Duration: -  
+
+Sprint Retrospect Meeting: 
+
+Main Theme of Sprint
+  • PI3 Critical Support Fixes production release
+
+  • KDS Guest Identifier development completion
+
+Sprint Goals:
+  • PI3 Critical Support Fixes production release
+
+  • KDS Guest Identifier development completion
+
+  • KDS Usability and Performance development and testing completion
+
+  • Export Overlay development completion
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.4" and type not in (subTaskIssueTypes()) and status in (Closed,Resolved, Accepted)                               f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.3" and type not in (subTaskIssueTypes()) and status not in (Closed,Resolved, Accepted)                                f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Bug Analysis
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.4"  AND type in ("Bug - Production","Bug")                            f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Day Off
+
+Unplanned Day Offs
+Holidays
+
+Allocation to Ceremonies
+Actual Days
+Comments
+
+101
+
+117
+
+101
+
+117
+
+101
+0.5
+116.5
+
+102
+
+116
+
+101
+2
+115
+
+101
+
+117
+
+10
+1
+
+117
+
+102
+
+116
+
+101
+
+117
+
+101
+
+117
+
+      101
+
+117
+
+10
+2
+
+116
+
+ (Intern)101
+
+117
+
+Total 
+
+Added to Sprint (Mid Sprint Injections)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("CE-5064")      f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Spill Overs 
+
+  • System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-5071
+
+  • System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-5072
+
+  • System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-5073
+
+  • System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-5076
+
+  • System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-5121
+
+  • System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5163
+
+  • System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5164
+
+Note: Team has added new tickets to cover the above spillovers capacity.
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (Without 20% Buffer)
+
+152
+
+Not started (Open)-
+
+Incomplete (In progress / Dev completed)20
+
+20% Buffer27
+
+Added to Sprint64
+
+Removed from Sprint-
+
+Estimation reduced
+20
+
+Completed (Resolved Stories)178
+
+Delivery Success (resolved story points * 100 / committed story points) =  (132/152 *100) = 86.8%
+
+Net Delivery Success Rate (total delivered/ capacity * 100) = (178/ 179*100) = 99.4%
+
+Reasons for Deviation of the Delivery Success :
+
+  • Kafka Version Upgrade epic got de-prioritized as there is a change of direction in the dev infrastructure set up. Hence, 20 story points got spilled over. But took injections to cover the capacity of 20 SPs
+
+Reports
+
+  • Velocity over Time
+
+  • Burn Down Chart
+
+Follow-up action items from the previous sprint. 
+
+7
+complete
+ : Need to decide how to track time for unplanned meetings 
+
+8
+complete
+ : Need to check the effort for "Code Reviews" during the planning stage
+
+9
+incomplete
+ : Arrange a discussion to decide whether to add the release version to component artifact
+
+11
+incomplete
+ - Follow up IDE developer licenses
+
+Sprint Highlights
+
+  • PI3 Critical Support Fixes production release
+
+  • KDS Guest Identifier development completion
+
+  • KDS Usability and Performance development and testing completion
+
+  • Kakfa Version Upgrade deprioritised from PI3 
+
+  • Export Overlay development completion
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing / What went well?
+
+  • Expedited the Export Overlay development which was suppose to complete in upcoming sprints
+
+  • KDS Guest Identifier IRs were given on time
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • QE team will share the test cases with the development team
+
+#d04437#fff8f7
+What should we stop doing / what went wrong?
+
+  • Was unable to complete KDS Guest Identifier testing as we had to re-onboard KDS into POS environment
+
+  • Identified that one bug was not fixed during the PI3 Critical Support Fixes production deployment as the test data set was not properly populated
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+12
+incomplete
+ - Share the test cases with the development team

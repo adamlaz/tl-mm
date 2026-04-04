@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 3, 2026 (updated from April 2 with automated inventory findings)
+**Date:** April 4, 2026 (updated April 4 with V7 "sponge mode" deep collection — 25 enrichment items across all platforms)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -285,6 +285,25 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 - Offshore coordination: Sri Lanka timezone challenges, reporting through People not Engineering
 - **Legacy infrastructure debt**: 83% pre-Graviton EC2, 21% EOL Lambda runtimes, running instances on m1-generation hardware from 2012, CloudFormation stacks from 2016
 - **Backlog debt**: 72% of 18,583 open issues are older than 1 year
+- **Epic completion rate: 27.7%** — 481 engineering epics in last 12 months, only 133 resolved. REST project worst at 18.5% (260 epics, 48 resolved). NEO project: 12.5% (8 epics, 1 resolved).
+- **Priority system is broken**: 89.4% of open engineering issues are marked "High", 10.6% are "None". No other priority levels in use. Priority is meaningless as a triage signal.
+- **Estimation discipline near zero**: Story Points field populated on only 9% of resolved stories (27 of 300 sampled)
+- **Root Cause Category process not followed**: Jira field "Probable/Actual Root Cause Category" exists but is populated on 0% of resolved bugs. Process documented in Confluence but not enforced.
+- **90% of ECS containers have no health checks**: 61 of 68 active ECS services have no container health check configured — services can be unhealthy without detection
+- **Incident timeline**: 50 structured post-mortems parsed from Confluence. Peak year: 2022 (26 incidents). Top system: Payments (19), Reports (11), Menu (10). Root causes: application bugs (8), infrastructure/cloud (8), payment provider failures (7), database/RDS (7). **DATA GAP NOTE:** The Taurus space structured RCA process (DE-xxxxx POST MORTEM format) ran 2020–2023, then largely stopped. Team Tesla picked up RCA writing in 2025 (SQS Retry Storm, Menu Core Retry Loop). Only 5 incidents from 2024, 2 from 2025. This could mean: (a) the RCA process died, (b) it migrated to Teams/Slack/Guru, (c) incidents genuinely decreased, or (d) the team changed and the new people don't use the same space. This is a key onsite question — "where do incident reviews happen now?"
+- **Reviewer bottlenecks**: 57 people handle 100+ code reviews each. Top 5: John Harre (581), Holly Culver (508), Wenushka Dikowita (481), Dan McCune (471), Matias Lopez Riglos (463). 17 repos have a single reviewer handling >50% of all PRs.
+- **Branch protection absent**: 0 of 30 checked repos have required approvals or passing build checks. No branch restrictions enforced.
+- **201 open PRs, 95% stale**: 191 older than 7 days, 175 older than 30 days. 66 (33%) have zero reviewers assigned. 167 (83%) have zero comments.
+- **Pipeline success rate: 60.7%** — 1,563 pipeline runs across 30 repos. Nearly 40% of builds fail.
+
+### Known Data Gaps & Caveats (V7)
+- **Incident timeline gap (2024–2026)**: Structured RCA docs in Confluence largely stop after 2023. Either the process lapsed, moved to another tool, or incidents decreased. Only 5 docs from 2024, 2 from 2025 (both in Team Tesla, not Taurus). **Needs onsite clarification: where do incident reviews happen now?** May also need to query Jira for "Incident" or "Code Red" issue types from 2024–2026.
+- **CloudTrail access denied**: The `Global-Audit-RO` role does not include `cloudtrail:LookupEvents`. Zero deployment frequency data from AWS. Only deploy signal is Bitbucket pipeline timestamps and git tags.
+- **Branch protection data may undercount**: 0 of 30 repos showed restrictions via the Bitbucket API. Could mean genuine absence or the API endpoint handles restrictions differently (e.g., project-level vs. repo-level restrictions). Validate onsite.
+- **Pipeline history covers 30 of 789 active repos**: The 60.7% success rate is from the top 30 most active repos — may not represent the full fleet. Could be better or worse for less-active repos.
+- **Grafana still inaccessible**: The actual monitoring dashboards, alert rules, and on-call configuration remain invisible. CloudWatch dashboards captured are a proxy, not the primary observability layer.
+- **No Jira incident query**: Searched Confluence for RCAs but did not query Jira for issue type "Incident" or "Code Red" in 2024–2026. This could fill the incident timeline gap.
+- **Root Cause Category field empty may mean wrong field**: The field "Probable/Actual Root Cause Category" (customfield_10382) showed 0% population. There's also "Root Cause Category" (customfield_10590, type: array) that wasn't queried — may be the active one.
 
 ---
 
@@ -439,6 +458,11 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 - **Don call guide prepared** (see `don-call-guide-april3.md`, 13 questions across reorg, board deliverable, onsite prep)
 - **Mermaid.js org chart diagram created** (see `mad-mobile-org-chart.mmd`) for graphical use
 - **Engagement minisite built** — Astro-based dashboard with 8 pages (Dashboard, AWS, Engineering, Delivery, Documentation, People, Tooling, Charts), 25+ embedded Plotly charts, data tables, metric cards (see `minisite/`)
+- **V7 "sponge mode" deep collection** — 25 enrichment items across all tiers (April 4):
+  - **Tier 1**: CloudTrail (access denied — audit role limitation), Bitbucket pipeline history (30 repos, 1,563 runs, 60.7% success), AWS EKS/RDS/ElastiCache deep (EKS K8s 1.30, 8 RDS instances, ElastiCache clusters), Jira epic completion (27.7%) + priority distribution (89.4% High) + blocking chains + status transitions, Bitbucket branch protection (0 repos protected) + open PR aging (201 open, 95% stale), incident/RCA timeline (50 incidents parsed, Payments #1), reviewer concentration FIXED (1,464 edges, 217 nodes), sprint retrospective extraction (30 retros from 6 teams)
+  - **Tier 2**: AWS cost optimization, security posture scan (GuardDuty, ACM, IAM, S3), Confluence architecture diagram catalog (321KB), cross-system deploy correlation, bus factor analysis (57 heavy reviewers, 17 bottleneck repos), dependency/package analysis (Node 12, Java 4, TypeScript 8, React 5), CloudWatch dashboard content (6 dashboards), ECS task definition analysis (68 services, 90% no health checks, 49 images), AWS tagging compliance audit, Jira custom fields (Root Cause 0% populated, Story Points 9%)
+  - **Tier 3**: AWS network topology, Jira workflow audit, Confluence labels/blog posts, AWS backup/DR assessment, PR review network visualization (interactive HTML), auto-generated C4 context + container diagrams
+- **Engagement minisite updated** — V7 findings added to all pages (Dashboard, Engineering, Delivery, AWS, Documentation). 31 charts, 17 CSVs, 94 JSON inventory files, 124 content text files, 3 Mermaid diagrams.
 
 ### In Progress 🔄
 - Building all 5 surveys in Microsoft Forms on MM account (DevEx draft live: https://forms.cloud.microsoft/r/021mP98Sf9)
@@ -501,19 +525,52 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 | Users in both BB + Jira | 69 | — | Cross-system audit |
 | Tools identified | 28 | — | Multi-source catalog |
 | AI tooling adoption (repos) | 8/30 (27%) with Cursor/Claude/AGENTS.md | — | Bitbucket source API |
+| Epic completion rate (12mo) | — | 27.7% (133 of 481) | Jira search |
+| REST project epic completion | — | 18.5% (48 of 260) | Jira search |
+| NEO project epic completion | — | 12.5% (1 of 8) | Jira search |
+| Priority distribution (eng) | — | 89.4% High, 10.6% None | Jira search |
+| Story Points coverage | — | 9% of stories estimated | Jira search |
+| Root Cause Category populated | — | 0% of resolved bugs | Jira field analysis |
+| Pipeline success rate | — | 60.7% (1,563 runs, 30 repos) | Bitbucket Pipelines API |
+| ECS containers without health check | 90% (61/68) | — | ECS task definitions |
+| ECS unique container images | 49 | — | ECS task definitions |
+| EKS clusters | 2 (K8s 1.30, 1.32) | — | EKS API |
+| RDS instances (dev) | 8 (MySQL 5.7×3, 8.0×3, PG 15+17) | — | RDS API |
+| Reviewer network nodes/edges | 217 / 1,464 | — | Bitbucket PR API |
+| Top reviewer (John Harre) | 581 reviews given | — | Bitbucket PR API |
+| Reviewer bottleneck repos | 17 (>50% single reviewer) | — | Bitbucket PR API |
+| Branch protection (active repos) | 0 of 30 have restrictions | — | Bitbucket API |
+| Open PRs | 201 total, 175 >30 days old | — | Bitbucket API |
+| Open PRs with 0 comments | 167 (83%) | — | Bitbucket API |
+| Incident/RCA documents parsed | 50 (peak year 2022: 26) | — | Confluence API |
+| Top incident system | Payments (19), Reports (11), Menu (10) | — | Confluence RCA analysis |
+| Sprint retrospectives extracted | 30 across 6 teams | — | Confluence API |
+| Heavy reviewers (>100 reviews) | 57 people | — | Bitbucket PR API |
+| Tech stack (top 30 repos) | Node(12), Java(4), TS(8), React(5), NestJS(3) | — | Bitbucket source API |
 
 ### Analysis Artifacts (in repo)
 - `inventory/` — Raw JSON inventory data (18 AWS, 4 BB, Jira, Confluence, users) with segmented Jira output
 - `inventory/users/` — Cross-system user audit (168 users with per-user activity profiles)
 - `inventory/confluence/content/` — 94 extracted Confluence pages (architecture, RCAs, deployment docs)
 - `inventory/tooling_catalog.json` — 28 identified tools with vendor, category, cost status
-- `analysis/*.csv` — 15 spreadsheet-ready CSV exports
-- `analysis/charts/*.html` — 29 interactive plotly charts
+- `analysis/*.csv` — 17 spreadsheet-ready CSV exports
+- `analysis/charts/*.html` — 31 interactive Plotly charts (including review network graph)
 - `interview-prep-with-data.md` — Per-interviewee data-backed questions organized by interview day
 - `vendor-spend-request.md` — Ready for Don: SaaS/tooling spend request
 - `ana-request.md` — Ready-to-send coordination email for Ana
-- `scripts/` — Reusable inventory and analysis scripts
-- `minisite/` — Astro-based engagement dashboard (8 pages, 25+ charts, data tables, Vercel deploy)
+- `scripts/` — 44 reusable inventory and analysis scripts
+- `minisite/` — Astro-based engagement dashboard (10 pages, 31 charts, V7 deep analysis sections, Vercel deploy)
+- `inventory/cross_system/` — Cross-system correlation data (deploy lead time, bus factor analysis)
+- `inventory/confluence/rca_structured.json` — 50 structured incident records with systems, teams, resolution times
+- `inventory/confluence/retrospectives.json` — 30 sprint retrospective extractions
+- `inventory/aws/ecs_task_definitions.json` — 68 ECS service microservice architecture map
+- `inventory/aws/eks_clusters.json` — EKS cluster deep data (K8s versions, node groups, add-ons)
+- `inventory/aws/rds_instances.json` — 8 RDS instances with engine versions, encryption, Multi-AZ
+- `inventory/aws/security_posture.json` — GuardDuty, ACM, IAM, S3 security data
+- `inventory/aws/network_topology.json` — VPC peering, NAT gateways, security groups
+- `inventory/aws/backup_dr.json` — Backup plans, snapshot policies
+- `inventory/mad-mobile-c4-context.mmd` — Auto-generated C4 Context diagram
+- `inventory/mad-mobile-c4-container.mmd` — Auto-generated C4 Container diagram
 - `mad-mobile-org-chart.mmd` — Mermaid.js org chart (post-reorg, April 3)
 - `don-call-guide-april3.md` — Structured call guide for Don (13 questions)
 - `05-ai-tooling-survey.md` — AI Adoption & Tooling survey instrument (16 questions)

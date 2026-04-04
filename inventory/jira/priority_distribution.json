@@ -1,0 +1,18 @@
+{
+  "total_open_approx": 13728,
+  "sample_size": 1000,
+  "distribution": [
+    {
+      "priority": "High",
+      "count": 894,
+      "pct_of_sample": 89.4
+    },
+    {
+      "priority": "None",
+      "count": 106,
+      "pct_of_sample": 10.6
+    }
+  ],
+  "critical_or_higher_pct": 0.0,
+  "priority_inflation_flag": false
+}

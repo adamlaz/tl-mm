@@ -31,6 +31,7 @@ CONFIDENTIAL — March 2026
 - **Hypothesis D resolved.** Kennedy/Chathura authority misalignment confirmed and resolved by structural org change. `[PRIVATE]` tags removed — this is now a confirmed finding, not a sensitive hypothesis.
 - **5th survey added.** AI Adoption & Tooling survey (16 questions) added for all engineering, product, design, and QE.
 - **Pre-work system reconnaissance completed.** V1–V6 automated inventory across all platforms: 29+ interactive charts, 15 CSV exports, 168-user cross-system audit, 94 extracted Confluence pages, engagement minisite built in Astro.
+- **V7 deep collection completed (April 4).** 25 enrichment items across all tiers: epic completion analysis (27.7%), incident timeline (50 RCAs), reviewer network (1,464 edges), pipeline reliability (60.7% success), ECS health check audit (90% missing), priority distribution (89.4% "High"), branch protection (0 repos), open PR aging (201 stale), dependency analysis, security posture, tagging compliance, sprint retrospective extraction, C4 diagram auto-generation.
 
 ---
 
@@ -70,7 +71,7 @@ Mad Mobile ($75M revenue, ~370 people, $70M funded) has real assets — Sysco, V
 
 **Five questions this answers:** (1) How does Mad Mobile actually build and ship? (2) Where does execution break down — with evidence? (3) Which problems are structural vs. process vs. technical debt? (4) What should Don engage in during his first 30/60/90 days? (5) What should be left alone?
 
-**Nine hypotheses to test** — named execution-failure patterns scored with evidence onsite. Details in [Section 7](#7-hypothesis-library-patterns-to-prove-or-disprove). **Hypothesis D (Unclear Ownership) confirmed and resolved pre-onsite** by the April 3, 2026 reorg.
+**Nine hypotheses to test** — named execution-failure patterns scored with evidence onsite. **Hypothesis A (Portfolio Sprawl) now has strong quantitative pre-evidence**: 27.7% epic completion rate, 89.4% priority inflation, REST project alone has 260 open epics. Details in [Section 7](#7-hypothesis-library-patterns-to-prove-or-disprove). **Hypothesis D (Unclear Ownership) confirmed and resolved pre-onsite** by the April 3, 2026 reorg.
 
 **The deliverable:** A CEO Operating Brief that serves as the technology chapter of Don's transition playbook — plus a board-ready presentation Don can take directly to Morgan Stanley. Credibility comes from the methodology (DORA benchmarks, Watkins STARS, PE DD pillar scoring), not opinion.
 
@@ -472,13 +473,20 @@ With access credentials arranged through Don and Chathura, I've completed six ro
 - **Documentation / Wiki:** Coverage audit — what's documented vs. tribal knowledge. Architecture diagram currency. Runbook inventory. Post-mortem history.
 - **Vendor & Tool Utilization:** Inventory all engineering and ops tools. Identify what's paid for but unused, underutilized, or redundant. This is about effectiveness, not contract pricing — I'm looking at whether the tooling supports or hinders execution.
 
-**Pre-work reconnaissance: COMPLETE.** As of April 3, 2026:
-- 29+ interactive Plotly charts across all platforms (`analysis/charts/`)
-- 15 CSV exports for spreadsheet analysis (`analysis/*.csv`)
+**Pre-work reconnaissance: COMPLETE (V7 deep collection added April 4, 2026).** As of April 4, 2026:
+- 31 interactive Plotly charts across all platforms (including review network graph) (`analysis/charts/`)
+- 17 CSV exports for spreadsheet analysis (`analysis/*.csv`)
 - 168-user cross-system audit with per-user activity profiles (`inventory/users/`)
 - 94 key Confluence pages content-extracted (`inventory/confluence/content/`)
 - 28 tools cataloged with vendor, category, and cost status (`inventory/tooling_catalog.json`)
-- Engagement minisite built in Astro with 8 domain pages and 25+ embedded charts (`minisite/`)
+- 50 structured incident records with resolution times, root cause distribution
+- 30 sprint retrospective extractions across 6 teams
+- 68 ECS service microservice architecture map with health check audit
+- EKS cluster details (K8s 1.30/1.32), 8 RDS instances, ElastiCache
+- PR review network graph (1,464 reviewer relationships, 217 people)
+- Pipeline reliability data (60.7% success rate, 1,563 runs)
+- Auto-generated C4 Context and Container diagrams
+- Engagement minisite built in Astro with 10 domain pages, 31 embedded charts, and V7 deep analysis sections (`minisite/`)
 
 This has already turned every interview from "tell me about your process" into "I can see your average PR review time is X and deployment frequency is Y — walk me through why."
 
@@ -642,6 +650,10 @@ Evening work (Mon & Tue, ~1.5 hrs): AI-assisted synthesis of interview notes, cr
 - Kennedy session (60 min, reduced from 90) — focus on AI/innovation vision, Neo platform. Handle with care: operational scope just removed. Don't probe the reorg dynamics directly.
 - McKinsey 7S lens across all leadership interviews.
 - **Goal: build the first-pass map, understand the post-reorg operating model, validate Chathura's capacity assessment.**
+
+**Data to lead with on Day 1:** Epic completion rate is 27.7% (481 epics, 133 resolved). Payments had 19 incidents in the RCA catalog — peak year was 2022. One reviewer (John Harre) handles 581 code reviews. 90% of ECS services have no health checks. 89.4% of Jira issues are "High" priority. Zero repos have branch protection. Story Points estimated on only 9% of stories.
+
+**Known data gaps to probe on Day 1:** The incident/RCA documentation in Confluence largely stops after 2023 — the structured Taurus space post-mortem process ran 2020–2023, then only Team Tesla wrote RCAs in 2025. Ask Chathura and Randy Brown: "I can see structured post-mortems through 2023, then they stop. The SQS Retry Storm RCA from December 2025 is in a different space with a different team. Where do incident reviews happen now? Did the process move to Teams/Slack, or did it just stop?" This probes both RCA process health (Hypothesis G: Missing Cadence) and whether reliability improved or documentation lapsed. Also: CloudTrail access was denied — cannot measure deployment frequency from AWS. Ask about deploy cadence directly and cross-reference with Bitbucket pipeline data (60.7% success rate across 30 repos).
 
 **Tuesday — Engineering Deep Dive, Cross-Functional Tracing & Decision Rights.**
 - Bypass the C-suite. Interview engineering managers using PACE model (Planning, Alignment, Communication, Execution).

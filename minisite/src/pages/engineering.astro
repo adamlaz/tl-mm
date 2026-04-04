@@ -6,6 +6,24 @@ import DataTable from '../components/DataTable.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
+import { readFileSync } from 'node:fs';
+
+let pipelineData: any = {};
+let branchData: any = {};
+let openPRData: any = {};
+let depData: any = {};
+let reviewSummary: any = {};
+try { pipelineData = JSON.parse(readFileSync('../inventory/bitbucket/pipeline_history.json', 'utf-8')); } catch {}
+try { branchData = JSON.parse(readFileSync('../inventory/bitbucket/branch_restrictions.json', 'utf-8')); } catch {}
+try { openPRData = JSON.parse(readFileSync('../inventory/bitbucket/open_prs.json', 'utf-8')); } catch {}
+try { depData = JSON.parse(readFileSync('../inventory/bitbucket/dependency_analysis.json', 'utf-8')); } catch {}
+try { reviewSummary = JSON.parse(readFileSync('../inventory/bitbucket/review_network_summary.json', 'utf-8')); } catch {}
+
+const pipeSuccessRate = pipelineData.overall_success_rate_pct ?? 'N/A';
+const openPRCount = openPRData.total_open_prs ?? openPRData.summary?.total ?? 0;
+const oldPRCount = openPRData.summary?.older_than_7d ?? 0;
+const reposWithRestrictions = branchData.summary?.repos_with_restrictions ?? branchData.repos_with_restrictions ?? 0;
+const reposChecked = branchData.summary?.repos_checked ?? branchData.repos_checked ?? 0;
 
 const repos = await getCollection('bitbucketRepos');
 const prs = await getCollection('bitbucketPRs');
@@ -54,6 +72,8 @@ const charts = [
   { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time' },
   { slug: 'bitbucket_repo_health', title: 'Repo Health' },
   { slug: 'bb_deploy_tags', title: 'Deploy Tags' },
+  { slug: 'review_network', title: 'Review Network' },
+  { slug: 'bb_reviewer_concentration', title: 'Reviewer Concentration' },
 ];
 ---
 
@@ -68,6 +88,14 @@ const charts = [
     <MetricCard label="Pull Requests" value={prs.length.toString()} subtitle="Last 30 days" />
     <MetricCard label="Avg Review Time" value={`${avgCycleHours.toFixed(1)}h`} subtitle="Hours to merge" />
     <MetricCard label="Recent Commits" value={fmt(totalCommits)} subtitle="Last 30 days" />
+  </dl>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Pipeline Success" value={`${pipeSuccessRate}%`} subtitle={`${pipelineData.repos_with_pipelines ?? 0} repos with pipelines`} />
+    <MetricCard label="Open PRs" value={openPRCount.toString()} subtitle={`${oldPRCount} older than 7 days`} />
+    <MetricCard label="Branch Protection" value={`${reposWithRestrictions}/${reposChecked}`} subtitle="repos with restrictions" />
+    <MetricCard label="Review Network" value={reviewSummary.total_nodes?.toString() ?? '217'} subtitle={`${reviewSummary.total_edges ?? 1464} review relationships`} />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">

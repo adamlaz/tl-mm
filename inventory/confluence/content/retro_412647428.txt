@@ -1,0 +1,269 @@
+Title: MIRA 2024 PI 3.2 - Review & Retrospective
+Space: Cake GPS
+Modified: 2024-08-20T12:52:27.664Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CG/pages/412647428/MIRA+2024+PI+3.2+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+MIRA 2024 PI 3.2
+
+Duration:  -  
+
+Sprint Retrospect Meeting:
+
+  
+
+Main Theme of Sprint
+Utensil Display the PX order Attribute in POS Receipt and Enable to Search loyalty customer from merchant identifier
+
+Sprint Goals:
+  • 
+  • Utensil display the PX order attributes in POS receipt print dev completion and testing
+
+  • Guest manager RDS certification Upgrade and testing
+
+  • Orders Paid Via QR - Fix the online payment not receiving to POS issue technical discussions.
+
+  • Enable to search loyalty customer from merchant identifier Dev/Testing completion and stag release.
+
+  • POS new UI - Un Collapse Seat views (Seat Assignments) UI Work.
+
+Participants:
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 3.2" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()      f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 3.2" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()  f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1010108
+
+1010108
+
+1010108
+
+1010108
+
+1010108
+
+1010108
+
+1000109
+
+1010108
+
+1000109
+
+Total 
+
+ 
+
+76
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment - 100% Utilization
+116 
+
+Sprint Commitment - 20 % Utilization28
+
+Sprint Commitment with 80%
+88 [ Loaded 128] Planned 101
+
+Incomplete (In progress / Dev completed/On hold)
+32
+
+Added to Sprint
+27
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+128
+
+Net Delivery Success (resolved story points * 100 / committed story points) =  (128* 100) / 101 =126%
+
+Delivery Success Rate : ( 101/128 ) * 100 = 78%
+
+Reasons for the deviation in Delivery Success %:
+
+  • Spilled over from the sprint 3.1 to 3.2 , 26 SP
+
+  • Spilled over from the Sprint 3.2 to Sprint 3.3 due to Loyalty Release got on hold 
+
+  • GM Release shifted from Sprint 3.2 to Sprint 3.3
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+Jira ID and Summary
+
+Description
+
+SP
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5071
+
+1
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5077
+
+3
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5078
+
+2
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5079
+
+3
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5082
+
+2
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5087
+
+2
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5093
+
+3
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5094
+
+5
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5100
+
+1
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5101
+
+5
+
+Spillovers:
+
+[CE-4825] - Jira (atlassian.net).  = 8 SP
+
+[CE-4829] [Couch order stuck] Analyse the issue and find the root cause - Jira (atlassian.net) = 8 SP
+
+[CE-4969] Bottom Row of Global Modifiers Cut Off on V3 - 7.10.0.70 - Jira (atlassian.net) = 2 SP
+
+[CE-4998] - Jira (atlassian.net) = 2 SP
+
+[CE-4999] [Parafin Wallet] PROD Verification - Jira (atlassian.net) = 1 SP
+
+[PR-841] Provide Expanded Seat Views for POS New UI - Jira (atlassian.net) = 5 SP
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+None
+
+Sprint Highlights
+#d04437#ffff00
+  • Utensil display the PX order attributes in POS receipt print dev completion and testing
+
+  • Guest manager RDS certification Upgrade and testing
+
+  • Orders Paid Via QR - Fix the online payment not receiving to POS issue technical discussions.
+
+  • Enable to search loyalty customer from merchant identifier Dev/Testing completion and stag release.
+
+  • POS new UI - Un Collapse Seat views (Seat Assignments) UI Work.
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?
+
+  • Team collaboration up to the standard keep the same momentum.
+
+  • PR Review process now improved; we can keep the same on going.
+
+  • Be in office during the sprint retro, planning time. 
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • When the request comes via the other teams asked them to create the ticket and assigned it to PM so he can work to allocate it to the sprint based on the availability.
+
+  • Release pages have to be review upfront from the team members and provide space to the team to proceed with the release
+
+  • We need to plan based on the allocation, like 80% and strict to that, as the team mira getting more injections.
+
+#d04437#fff8f7
+What should we stop doing?
+
+  • Team injections are impacting to the current deliverables, context switching impacting to the quality.
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+QA team asking to access the TST 2 environment to access via home
+
+Team needs to take the approval upfront in terms of the releases so the team will not block due to that. (Meeting Scheduled to facilitate)
+
+Perfection Game
+
+MemberRate

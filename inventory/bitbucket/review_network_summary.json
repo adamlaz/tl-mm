@@ -1,0 +1,734 @@
+{
+  "total_nodes": 216,
+  "total_edges": 668,
+  "clusters": {
+    "madmobile": {
+      "count": 94,
+      "members": [
+        "John Harre",
+        "James Oliver",
+        "Dinura Imesh",
+        "Holly Culver",
+        "Benjamin Roedell",
+        "Sunil Pandey",
+        "Inod Wagachchi",
+        "Orlando Jimenez",
+        "Dan McCune",
+        "Matthew Griffin",
+        "Mike Nunez",
+        "Zachary Davies",
+        "Dhanushka_K",
+        "Ryan Mercado",
+        "Eugenio Gonzalez",
+        "Brian Smith",
+        "Simon",
+        "Matt Cooke",
+        "Mohammed Moufakkir",
+        "Poorna Manujaya Amarasingha",
+        "Jeffery Fulton",
+        "Archit Biala",
+        "AIR",
+        "Chamith Jayathilaka",
+        "Marruf Mihal",
+        "Mauro Villaseco",
+        "Cliff Griffith",
+        "Hashan Prabodhaka Jalath",
+        "Abdul Haady",
+        "Jacob Hansil",
+        "Jeremy Diggins",
+        "Shreshth Agarwal",
+        "JB Burroughs",
+        "Eric Wicinski",
+        "Jeremy Price",
+        "Rusty Clark",
+        "Juan Pablo Mart\u00ednez",
+        "Martin Huber",
+        "Juan Carlos Solis Ulloa",
+        "Antonio Benjamim Mussi Schmidt",
+        "Jamie Hemond ",
+        "Vijay Sukhadeve",
+        "Andres Ijelman",
+        "Jack Kennedy",
+        "Jeff Pena",
+        "Matias Rondan",
+        "Juan Manuel Rodriguez",
+        "siva.golla",
+        "Francisco Martinez",
+        "Brian Wheeler",
+        "Vikrant",
+        "Camilo Souza",
+        "carlos.ps",
+        "anil.rathore",
+        "Facundo",
+        "Kien Pham",
+        "Arvind Gupta",
+        "Bill Fenley",
+        "Berk Guzeyer",
+        "daniel.sanchez",
+        "Matthew Ligon",
+        "Zachary Brady",
+        "Thomas Campbell",
+        "Julio Cesar Paez Castro",
+        "Nick Delaney",
+        "David Aieta",
+        "Daniel Lomsak",
+        "Alex Domingues da Silva",
+        "Fernando Zelaya",
+        "Kasun Lokuliyana",
+        "Rajesh",
+        "Vincent Sposato",
+        "Patrycja Stevenson",
+        "Tharindu Nanayakkara",
+        "Kesara Weerathunga",
+        "Upendra Kumarage",
+        "Chris Gomersall",
+        "Andrew Boza",
+        "Mario S",
+        "shailabmm",
+        "Mahesh",
+        "jason.bitman",
+        "Effren Anthony Pena Sanchez",
+        "Jim Tsai",
+        "joseangel.garcia",
+        "Erick Roberto Alonso Alonso",
+        "Alejandro Mengana",
+        "Pablo Wolff",
+        "Tyler Watts",
+        "Ana Chambers",
+        "Zubair Syed",
+        "Akshay Bhasin",
+        "Priyankara Bandara",
+        "Suneth De Soyza"
+      ]
+    },
+    "syscolabs": {
+      "count": 96,
+      "members": [
+        "Thiwanka Wimalasuriya",
+        "Dineth Samarakkody",
+        "manthi ariyasinghe",
+        "Harsha Kosala",
+        "Wenushka Dikowita",
+        "Ruwinda Ranganayake",
+        "Chula De Silva",
+        "Buddhika Lakshan",
+        "Faizul Hasan",
+        "Lakshan Pinto",
+        "Muditha Sumanathunga",
+        "Maleesha Wijeratne",
+        "Cory Renard",
+        "Ananda Subasinghe",
+        "Hashan Maduwantha",
+        "Raveen Panditha",
+        "Hafeez Marzuk",
+        "Sankha Jayalath",
+        "Nishen Peiris",
+        "Geethanga Amarasinghe",
+        "Jeff Lerman",
+        "Pradeep Sanjaya",
+        "Anderson Lavor",
+        "Chalaka Sudusinghe",
+        "Lahiru Yapa",
+        "Angelo Senaratne",
+        "Jeewantha Lekamwasam",
+        "Diluksha Madushan",
+        "Ishara.Pathirage",
+        "Raj Miandad Azhar Ali",
+        "Ahesh Perera",
+        "Kusal Kalhara",
+        "Isuru Mohottala",
+        "Hashan Rathnayake",
+        "Tyler Steiman",
+        "Isuru Weerarathna",
+        "arham.ahamed",
+        "Charith De Silva",
+        "Rajith konara",
+        "Pasan Nissanka",
+        "Malinda Wijegunawardene",
+        "Randy Brown",
+        "Nuwan Koggalahewa",
+        "Yohan Nayanajith",
+        "Lochana Vishwajith",
+        "Anoma Perera",
+        "Chanika Dissanayake",
+        "Qusai Sadikot",
+        "Rajitha Rajasooriya",
+        "James Van Buskirk",
+        "Manoj De Silva",
+        "Rob Quin",
+        "Hasitha Gamage",
+        "Uditha Dissanayake",
+        "Tharindu Munasinghe",
+        "Nemal Peiris",
+        "Bhanuka Withana",
+        "Wishwa Hettige",
+        "Chamara Liyanage",
+        "Sineth Jayasinghe",
+        "Firzadh Farook",
+        "Buddhika Karunatilleke",
+        "Danura Jayakody",
+        "Dhanuja Dabare",
+        "Pavini Weerasinghe",
+        "Udara Bibile",
+        "Ashan Dhananjaya",
+        "Daham Pathiraja",
+        "Qaiser Pannu",
+        "Sahan Sumanaratne",
+        "Manoj Fernando",
+        "Dulan Ratnayake",
+        "Aruna Dissanayake",
+        "Tharuka Jayalath",
+        "Achintha Reemal",
+        "Kasun Kumarasinghe",
+        "Chamil Jeewantha",
+        "Sadik Johnston",
+        "Kalinga Dissanayake",
+        "Vinod Madubashana",
+        "Rivindu Wanniachchi",
+        "Avishka Perera",
+        "Chamodya Dias",
+        "Aeshana Udadeniya",
+        "Sriharshith Akula",
+        "Dinesh De Silva",
+        "Mujahid Thoufeek",
+        "Wasantha Herath",
+        "Nathiesha Maddage",
+        "Abhiman Ranaweera",
+        "Eshan Sudharaka",
+        "Nipun Amarasena",
+        "Sathira Liyanapathirana",
+        "Dushyantha Rubasinghe",
+        "Aarthika Arunthavanathan",
+        "Dinuksha Ishwari"
+      ]
+    },
+    "mixed": {
+      "count": 13,
+      "members": [
+        "Matias Lopez Riglos",
+        "Kyle Budd",
+        "Matthew Crumley",
+        "Charles Boice",
+        "Alexander Baine",
+        "Harrison Minchew",
+        "John Thompson",
+        "Richard Meitzler",
+        "Miftha Idroos",
+        "Beau Bruderer",
+        "Susampath Madarasinghe",
+        "Nipuna Perera",
+        "Dustin Baker"
+      ]
+    },
+    "madpayments": {
+      "count": 13,
+      "members": [
+        "Gayan Karunarathna",
+        "Madhawi De Mel",
+        "Darshana Buddhika",
+        "Wing Hung Peter Wu",
+        "Trenton Kress",
+        "Kevin Reyes",
+        "Pasindu Gunasekara",
+        "Michael Gibaldi",
+        "paul.roberts",
+        "Emmanuel Koutsourais",
+        "Lorne Malec",
+        "Bo Yuan",
+        "Lakeesha Jayasinghe"
+      ]
+    }
+  },
+  "bridge_nodes": {
+    "count": 45,
+    "people": [
+      {
+        "name": "Alexander Baine",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Ananda Subasinghe",
+        "workspaces": [
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Anderson Lavor",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Beau Bruderer",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Benjamin Roedell",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Chalaka Sudusinghe",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Chamith Jayathilaka",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Charles Boice",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Chris Gomersall",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Cory Renard",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Darshana Buddhika",
+        "workspaces": [
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Dustin Baker",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Emmanuel Koutsourais",
+        "workspaces": [
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Gayan Karunarathna",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Harrison Minchew",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Hashan Maduwantha",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Holly Culver",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "James Oliver",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "John Thompson",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Kevin Reyes",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Kyle Budd",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Madhawi De Mel",
+        "workspaces": [
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Matias Lopez Riglos",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Matthew Crumley",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Matthew Griffin",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Mauro Villaseco",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Michael Gibaldi",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Miftha Idroos",
+        "workspaces": [
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Mike Nunez",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Nipuna Perera",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Nishen Peiris",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Orlando Jimenez",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Pasindu Gunasekara",
+        "workspaces": [
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Qaiser Pannu",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Randy Brown",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Raveen Panditha",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Richard Meitzler",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Rob Quin",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Ryan Mercado",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Simon",
+        "workspaces": [
+          "madmobile",
+          "madpayments"
+        ]
+      },
+      {
+        "name": "Susampath Madarasinghe",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Thiwanka Wimalasuriya",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Trenton Kress",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Wenushka Dikowita",
+        "workspaces": [
+          "madmobile",
+          "syscolabs"
+        ]
+      },
+      {
+        "name": "Wing Hung Peter Wu",
+        "workspaces": [
+          "madmobile",
+          "madpayments",
+          "syscolabs"
+        ]
+      }
+    ]
+  },
+  "top_reviewers": [
+    {
+      "name": "John Harre",
+      "reviews_given": 581,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Holly Culver",
+      "reviews_given": 508,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Wenushka Dikowita",
+      "reviews_given": 481,
+      "workspace": "syscolabs"
+    },
+    {
+      "name": "Dan McCune",
+      "reviews_given": 471,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Matias Lopez Riglos",
+      "reviews_given": 463,
+      "workspace": "mixed"
+    },
+    {
+      "name": "Matthew Griffin",
+      "reviews_given": 453,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Dhanushka_K",
+      "reviews_given": 420,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "James Oliver",
+      "reviews_given": 389,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Dineth Samarakkody",
+      "reviews_given": 366,
+      "workspace": "syscolabs"
+    },
+    {
+      "name": "Orlando Jimenez",
+      "reviews_given": 357,
+      "workspace": "madmobile"
+    }
+  ],
+  "top_review_recipients": [
+    {
+      "name": "James Oliver",
+      "reviews_received": 1064,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "John Harre",
+      "reviews_received": 952,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Thiwanka Wimalasuriya",
+      "reviews_received": 885,
+      "workspace": "syscolabs"
+    },
+    {
+      "name": "Dinura Imesh",
+      "reviews_received": 740,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Kyle Budd",
+      "reviews_received": 655,
+      "workspace": "mixed"
+    },
+    {
+      "name": "Inod Wagachchi",
+      "reviews_received": 564,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Sunil Pandey",
+      "reviews_received": 554,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "manthi ariyasinghe",
+      "reviews_received": 452,
+      "workspace": "syscolabs"
+    },
+    {
+      "name": "Benjamin Roedell",
+      "reviews_received": 448,
+      "workspace": "madmobile"
+    },
+    {
+      "name": "Gayan Karunarathna",
+      "reviews_received": 387,
+      "workspace": "madpayments"
+    }
+  ],
+  "strongest_review_pairs": [
+    {
+      "author": "James Oliver",
+      "reviewer": "John Harre",
+      "count": 141
+    },
+    {
+      "author": "John Harre",
+      "reviewer": "James Oliver",
+      "count": 126
+    },
+    {
+      "author": "Madhawi De Mel",
+      "reviewer": "Darshana Buddhika",
+      "count": 117
+    },
+    {
+      "author": "Thiwanka Wimalasuriya",
+      "reviewer": "Ananda Subasinghe",
+      "count": 114
+    },
+    {
+      "author": "Madhawi De Mel",
+      "reviewer": "Gayan Karunarathna",
+      "count": 113
+    },
+    {
+      "author": "Thiwanka Wimalasuriya",
+      "reviewer": "Faizul Hasan",
+      "count": 110
+    },
+    {
+      "author": "Charles Boice",
+      "reviewer": "Matias Lopez Riglos",
+      "count": 102
+    },
+    {
+      "author": "James Oliver",
+      "reviewer": "Dan McCune",
+      "count": 97
+    },
+    {
+      "author": "Matias Lopez Riglos",
+      "reviewer": "Matthew Griffin",
+      "count": 92
+    },
+    {
+      "author": "Gayan Karunarathna",
+      "reviewer": "Darshana Buddhika",
+      "count": 91
+    }
+  ]
+}

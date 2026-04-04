@@ -1,0 +1,249 @@
+Title: MIRA 2024 PI 3.3 - Review & Retrospective
+Space: Cake GPS
+Modified: 2024-08-27T13:11:20.183Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CG/pages/438567100/MIRA+2024+PI+3.3+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+MIRA 2024 PI 3.3
+
+Duration:  -  
+
+Sprint Retrospect Meeting:
+
+  
+
+Main Theme of Sprint
+  • Enable to search Loyalty Customer from merchant identifier DEV/ testing completion and prod release
+
+  • POS Release for bug fixes + Utensil Feature Release
+
+  • Menu Core OLO order intermittent cancellation issue fix, testing and release
+
+  • Pre Auth Initial Development 
+
+Sprint Goals:
+  • Pre-auth development start
+
+  • Label printer development start
+
+  • POS 7.10.10.0 DEV/ Testing completion and prod release
+
+  • Menu Core OLO order intermittent cancellation issue fix, testing and release
+
+  • Enable to search loyalty customer from merchant identifier DEV/ testing completion and prod release
+
+Participants:
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 3.3" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()       f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 3.3" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()   f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1001108
+
+1011107
+
+10111.56.5
+
+1011107
+
+1011107
+
+1011107
+
+100.51107.5
+
+1001108
+
+1001108
+
+Total 
+
+ 
+
+66
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment - 100% Utilization
+
+ 133 SP
+
+( 9 SP From the 3.2 )
+
+Sprint Commitment - 20 % Utilization21 
+
+Sprint Commitment with 80%
+
+108  [ Loaded With Spill Overs 9  ]
+
+Completed 97
+
+Incomplete (In progress / Dev completed/On hold)
+11
+
+Added to Sprint
+15
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+113
+
+Net Delivery Success (resolved story points * 100 / committed story points) =  (113* 100) / 108 =104%
+
+Delivery Success Rate : ( 97/108) * 100 = 90%
+
+Reasons for the deviation in Delivery Success %:
+
+  • Spilled over from the sprint 3.3 to Sprint 3.4 - ( CE-5115 / CE-5117 ) 11 SP
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+Jira ID and Summary
+
+Description
+
+SP
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-4859
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5138
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5150
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5144
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5145
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5149
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5152
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5146
+
+1
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5153
+
+5
+
+13
+
+Spillovers:
+
+[CE-5115] Performance issue fix for user creation from ops admin - Jira (atlassian.net) - 8 SP
+[CE-5117] [86ing] Technical Design & Estimation - Jira (atlassian.net) - 3 SP
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+None
+
+Sprint Highlights
+#d04437#ffff00
+  • TBD
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?
+
+  • Team mentioned that take a user story to Release Related tasks and SOE
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • To mitigate estimation goes wrong, team request to add a spike and validate the estimations properly
+
+#d04437#fff8f7
+What should we stop doing?
+
+  • Team mentioned that sudden request of estimation might goes wrong , meaning there might be a potential impact of estimation wrong. 
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+  • Improve the process Scrum Master/ EM need to have a timely communication with the external parties when it comes to a combined release.
+
+  • Improvement of Test Case Creation, Execution, review process to minimize the release burden. [ Dev + QE Effort and Involvement to be utilized ]
+
+Perfection Game
+
+MemberRate

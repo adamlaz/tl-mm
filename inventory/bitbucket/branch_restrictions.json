@@ -1,0 +1,192 @@
+{
+  "scanned_repos": 30,
+  "summary": {
+    "repos_with_no_restrictions": 30,
+    "repos_requiring_approvals": 0,
+    "repos_requiring_passing_builds": 0,
+    "avg_min_approvals": null
+  },
+  "repos": [
+    {
+      "workspace": "madmobile",
+      "repo": "cake-ecs-configs",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "react-cinco",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "olo",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "neo-workspace",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-rl",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "gitops-cake",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "moxy",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "mad-payments-vp3350",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-development",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "restaurant-admin-v2",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "concierge-associate",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cake-pop-automation",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "seao",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "gitops-payments",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "madpayments-devices-idtech-neo",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "kds-v2",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cinco-workspace",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-urban",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "mad-services-xstore24eu-rl",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-services",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cake-payment-gateway",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "rs2-bankworks-parser-service",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cakekiosk-kdsapplauncher",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "ditto-sync-agent",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "gm",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "merchant-service",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "menu-sync-agent",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "cybersource-bin-service",
+      "status": "no_restrictions_found",
+      "restrictions": []
+    }
+  ],
+  "errors": []
+}

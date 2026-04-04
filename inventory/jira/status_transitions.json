@@ -1,0 +1,120 @@
+{
+  "issues_analyzed": 100,
+  "changelog_errors": 0,
+  "status_durations": [
+    {
+      "status": "Dev in Progress",
+      "sample_count": 77,
+      "median_hours": 0.1,
+      "median_days": 0.0
+    },
+    {
+      "status": "Ready for Development",
+      "sample_count": 69,
+      "median_hours": 0.0,
+      "median_days": 0.0
+    },
+    {
+      "status": "Ready for QA",
+      "sample_count": 60,
+      "median_hours": 13.3,
+      "median_days": 0.6
+    },
+    {
+      "status": "Code Review",
+      "sample_count": 59,
+      "median_hours": 0.0,
+      "median_days": 0.0
+    },
+    {
+      "status": "QA in Progress",
+      "sample_count": 47,
+      "median_hours": 0.0,
+      "median_days": 0.0
+    },
+    {
+      "status": "Review",
+      "sample_count": 36,
+      "median_hours": 119.1,
+      "median_days": 5.0
+    },
+    {
+      "status": "Blocked",
+      "sample_count": 14,
+      "median_hours": 0.0,
+      "median_days": 0.0
+    },
+    {
+      "status": "First CAB Approval",
+      "sample_count": 13,
+      "median_hours": 3.4,
+      "median_days": 0.1
+    },
+    {
+      "status": "Second CAB Approval",
+      "sample_count": 12,
+      "median_hours": 0.0,
+      "median_days": 0.0
+    },
+    {
+      "status": "Awaiting Change",
+      "sample_count": 12,
+      "median_hours": 11.6,
+      "median_days": 0.5
+    },
+    {
+      "status": "MONITORING CHANGE",
+      "sample_count": 12,
+      "median_hours": 0.0,
+      "median_days": 0.0
+    },
+    {
+      "status": "Product Planned",
+      "sample_count": 11,
+      "median_hours": 333.8,
+      "median_days": 13.9
+    },
+    {
+      "status": "On Hold",
+      "sample_count": 10,
+      "median_hours": 8.4,
+      "median_days": 0.4
+    },
+    {
+      "status": "Open",
+      "sample_count": 6,
+      "median_hours": 113.6,
+      "median_days": 4.7
+    },
+    {
+      "status": "In Progress",
+      "sample_count": 3,
+      "median_hours": 782.7,
+      "median_days": 32.6
+    },
+    {
+      "status": "Accepted",
+      "sample_count": 2,
+      "median_hours": 942.7,
+      "median_days": 39.3
+    },
+    {
+      "status": "Blocked - External",
+      "sample_count": 1,
+      "median_hours": 839.3,
+      "median_days": 35.0
+    },
+    {
+      "status": "Ready",
+      "sample_count": 1,
+      "median_hours": 130.2,
+      "median_days": 5.4
+    }
+  ],
+  "bottleneck": {
+    "status": "Accepted",
+    "sample_count": 2,
+    "median_hours": 942.7,
+    "median_days": 39.3
+  }
+}

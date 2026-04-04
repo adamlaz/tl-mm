@@ -1,0 +1,165 @@
+{
+  "period": "2025-04-04 to today",
+  "total_epics": 481,
+  "resolved": 133,
+  "unresolved": 348,
+  "overall_resolution_rate_pct": 27.7,
+  "top_10_by_count": [
+    {
+      "project": "REST",
+      "total_epics": 260,
+      "resolved": 48,
+      "unresolved": 212,
+      "resolution_rate_pct": 18.5
+    },
+    {
+      "project": "UP",
+      "total_epics": 76,
+      "resolved": 37,
+      "unresolved": 39,
+      "resolution_rate_pct": 48.7
+    },
+    {
+      "project": "OS",
+      "total_epics": 65,
+      "resolved": 19,
+      "unresolved": 46,
+      "resolution_rate_pct": 29.2
+    },
+    {
+      "project": "CLOUD",
+      "total_epics": 20,
+      "resolved": 2,
+      "unresolved": 18,
+      "resolution_rate_pct": 10.0
+    },
+    {
+      "project": "DSO",
+      "total_epics": 19,
+      "resolved": 17,
+      "unresolved": 2,
+      "resolution_rate_pct": 89.5
+    },
+    {
+      "project": "AAK",
+      "total_epics": 15,
+      "resolved": 7,
+      "unresolved": 8,
+      "resolution_rate_pct": 46.7
+    },
+    {
+      "project": "AI",
+      "total_epics": 9,
+      "resolved": 2,
+      "unresolved": 7,
+      "resolution_rate_pct": 22.2
+    },
+    {
+      "project": "NEO",
+      "total_epics": 8,
+      "resolved": 1,
+      "unresolved": 7,
+      "resolution_rate_pct": 12.5
+    },
+    {
+      "project": "PLTRTL",
+      "total_epics": 3,
+      "resolved": 0,
+      "unresolved": 3,
+      "resolution_rate_pct": 0.0
+    },
+    {
+      "project": "TESTREST",
+      "total_epics": 3,
+      "resolved": 0,
+      "unresolved": 3,
+      "resolution_rate_pct": 0.0
+    }
+  ],
+  "all_projects": [
+    {
+      "project": "REST",
+      "total_epics": 260,
+      "resolved": 48,
+      "unresolved": 212,
+      "resolution_rate_pct": 18.5
+    },
+    {
+      "project": "UP",
+      "total_epics": 76,
+      "resolved": 37,
+      "unresolved": 39,
+      "resolution_rate_pct": 48.7
+    },
+    {
+      "project": "OS",
+      "total_epics": 65,
+      "resolved": 19,
+      "unresolved": 46,
+      "resolution_rate_pct": 29.2
+    },
+    {
+      "project": "CLOUD",
+      "total_epics": 20,
+      "resolved": 2,
+      "unresolved": 18,
+      "resolution_rate_pct": 10.0
+    },
+    {
+      "project": "DSO",
+      "total_epics": 19,
+      "resolved": 17,
+      "unresolved": 2,
+      "resolution_rate_pct": 89.5
+    },
+    {
+      "project": "AAK",
+      "total_epics": 15,
+      "resolved": 7,
+      "unresolved": 8,
+      "resolution_rate_pct": 46.7
+    },
+    {
+      "project": "AI",
+      "total_epics": 9,
+      "resolved": 2,
+      "unresolved": 7,
+      "resolution_rate_pct": 22.2
+    },
+    {
+      "project": "NEO",
+      "total_epics": 8,
+      "resolved": 1,
+      "unresolved": 7,
+      "resolution_rate_pct": 12.5
+    },
+    {
+      "project": "PLTRTL",
+      "total_epics": 3,
+      "resolved": 0,
+      "unresolved": 3,
+      "resolution_rate_pct": 0.0
+    },
+    {
+      "project": "TESTREST",
+      "total_epics": 3,
+      "resolved": 0,
+      "unresolved": 3,
+      "resolution_rate_pct": 0.0
+    },
+    {
+      "project": "CLN",
+      "total_epics": 2,
+      "resolved": 0,
+      "unresolved": 2,
+      "resolution_rate_pct": 0.0
+    },
+    {
+      "project": "RE",
+      "total_epics": 1,
+      "resolved": 0,
+      "unresolved": 1,
+      "resolution_rate_pct": 0.0
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-04-04T01:08:56.436134+00:00",
+  "region": "us-east-1",
+  "accounts_scanned": 3,
+  "accounts": {
+    "mm-retail-prod-us": {
+      "profile": "mm-retail-prod-us",
+      "backup_plans": [
+        {
+          "id": "aws/efs/73d922fb-9312-3a70-99c3-e69367f9fdad",
+          "name": "aws/efs/automatic-backup-plan",
+          "version": "ZjhiNmVlMTktMmFjMy00ZGI1LTk5NDEtMjM5Y2NjMGFiMzkw",
+          "created": "2022-09-06 14:56:50.416000-04:00",
+          "last_execution": "2026-04-03 01:50:48.331000-04:00",
+          "rules": []
+        },
+        {
+          "id": "185adecd-5567-4887-857b-e87b5453b981",
+          "name": "kafka-prod-us-backup",
+          "version": "MTdiODc5NzgtYmE3Yi00MmYyLWE5MTgtZjI3OWYxZTNmNDkz",
+          "created": "2023-06-21 15:41:42.833000-04:00",
+          "last_execution": "2026-04-03 01:03:23.471000-04:00",
+          "rules": []
+        }
+      ],
+      "backup_vaults": [
+        {
+          "name": "aws/efs/automatic-backup-vault",
+          "recovery_points": 35,
+          "encrypted": false,
+          "created": "2022-09-06 14:56:50.302000-04:00",
+          "latest_recovery_point": {
+            "arn": "arn:aws:backup:us-east-1:125062011444:recovery-point:dc64b2ea-0899-4f6c-bbf3-70a69451538f",
+            "status": "COMPLETED",
+            "created": "2026-04-03 01:00:00-04:00"
+          }
+        },
+        {
+          "name": "kafka-prod-us-backup",
+          "recovery_points": 60,
+          "encrypted": false,
+          "created": "2023-06-21 15:41:05.843000-04:00",
+          "latest_recovery_point": {
+            "arn": "arn:aws:ec2:us-east-1::snapshot/snap-03c1b0c7a244e6e41",
+            "status": "COMPLETED",
+            "created": "2026-04-03 01:00:00-04:00"
+          }
+        }
+      ],
+      "rds_snapshots": {
+        "automated_count": 0,
+        "manual_count": 0,
+        "most_recent_automated": "none",
+        "most_recent_manual": "none",
+        "automated_by_db": {}
+      },
+      "s3_replication": [
+        {
+          "bucket": "07-11-2024-omni-backup",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        },
+        {
+          "bucket": "analytics-accounting-reports",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        },
+        {
+          "bucket": "bitbucket-oidc-prod-us-state-bucket",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        }
+      ],
+      "blocked_apis": []
+    },
+    "mm-payments-prod-us": {
+      "profile": "mm-payments-prod-us",
+      "backup_plans": [],
+      "backup_vaults": [],
+      "rds_snapshots": {
+        "automated_count": 0,
+        "manual_count": 0,
+        "most_recent_automated": "none",
+        "most_recent_manual": "none",
+        "automated_by_db": {}
+      },
+      "s3_replication": [
+        {
+          "bucket": "pay-eks-backend-mimir",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        },
+        {
+          "bucket": "tf-payments-prod-us-state",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        },
+        {
+          "bucket": "pay-elb-access-logs-east2",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        }
+      ],
+      "blocked_apis": []
+    },
+    "mm-cake-development": {
+      "profile": "mm-cake-development",
+      "backup_plans": [
+        {
+          "id": "aws/efs/73d922fb-9312-3a70-99c3-e69367f9fdad",
+          "name": "aws/efs/automatic-backup-plan",
+          "version": "MzRhN2RkNGItOWFlNi00NzQ1LWE5MDMtZjM4YzYzZWJiNDZh",
+          "created": "2023-07-13 03:54:12.200000-04:00",
+          "last_execution": "2026-04-03 02:05:20.434000-04:00",
+          "rules": []
+        }
+      ],
+      "backup_vaults": [
+        {
+          "name": "Default",
+          "recovery_points": 0,
+          "encrypted": false,
+          "created": "2020-12-03 02:55:31.110000-05:00",
+          "latest_recovery_point": null
+        },
+        {
+          "name": "aws/efs/automatic-backup-vault",
+          "recovery_points": 70,
+          "encrypted": false,
+          "created": "2023-07-13 03:54:12.070000-04:00",
+          "latest_recovery_point": {
+            "arn": "arn:aws:backup:us-east-1:230930891673:recovery-point:716518de-4c36-4fd0-a853-355e87e78ebb",
+            "status": "COMPLETED",
+            "created": "2026-04-03 01:00:00-04:00"
+          }
+        }
+      ],
+      "rds_snapshots": {
+        "automated_count": 29,
+        "manual_count": 8,
+        "most_recent_automated": "2026-04-03T08:30:47.170000+00:00",
+        "most_recent_manual": "2026-04-03T14:00:50.688000+00:00",
+        "automated_by_db": {
+          "dev-cake-use1-ci-sonar": 3,
+          "dev-flipt-db": 9,
+          "dev-payment-db-master": 3,
+          "dev-payment-db-master-v2": 3,
+          "pos4-shrd-use1-r-mydb80-p1": 3,
+          "qa-data-platform-metastoredb-old1": 2,
+          "qa-payment-gateway-db": 3,
+          "tst1-db-clone-mysql8": 3
+        }
+      },
+      "s3_replication": [
+        {
+          "bucket": "ach-instructions",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        },
+        {
+          "bucket": "archived-ach-instructions",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        },
+        {
+          "bucket": "apig-dp-artifact",
+          "replication_enabled": false,
+          "versioning": "unknown",
+          "_note": "Access denied: AccessDenied"
+        }
+      ],
+      "blocked_apis": []
+    }
+  }
+}

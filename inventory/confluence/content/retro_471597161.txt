@@ -1,0 +1,411 @@
+Title: Cake Altair -  2024 PI 3.4 - Review & Retrospective
+Space: Team Stark
+Modified: 2024-09-11T10:19:43.496Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/TS/pages/471597161/Cake+Altair+-+2024+PI+3.4+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint
+
+Altair - 2024 PI 3.4
+
+Duration
+
+   - 
+
+Sprint Retrospect Meeting
+
+  
+
+Main Theme of Sprint
+
+EMS 2.0 Integration Testing
+
+Goals
+
+  • 
+EMS 2.0 Integration Testing
+
+  • 
+Printer Assignment
+
+  • 
+Cross Sales
+
+  • 
+Report Sync
+
+  • 
+Pre-Auth Feature
+
+  • 
+Dev Completion of Pre Auth Operator Property Updater Tool
+
+  • 
+Investigation of Fixes for Security Hotspots Operator-API
+
+  • 
+QE Completion of
+
+  • 
+Merging Payments and Payments Transactions Tab
+
+  • 
+Pre Auth Tab (Default Value Validations and UI Elements)
+
+  • 
+EMS V2.0 Support
+
+  • 
+Bug Identification and Verification
+
+  • 
+Anomaly Verification of Merchants who has attrited.
+
+  • 
+Ability to 86ing Feature
+
+  • 
+API Spec Finalization
+
+  • 
+Initial UI Implementation of Items Section Grid View
+
+  • 
+Code-Red Support
+
+  • 
+SE-622f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira  
+
+  • 
+SE-627f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira 
+
+  • 
+Production Issues Support
+
+  • 
+SE-626f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira 
+
+Participants 
+
+           
+
+Work Accepted 
+
+Stories Completed
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20in%20(CE%2C%20BO)%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Accepted%2C%20Approved%2C%20%22ARB%20Review%22%2C%20Closed%2C%20Review)%20AND%20sprint%3D%22ALTAIR%202024%20PI%203.4%22%20order%20by%20created%20DESC
+
+Stories Not Completed
+
+Open
+https://madmobile-eng.atlassian.net/issues/?jql=project%20in%20(CE%2C%20BO)%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Discovery%2C%20Open%2C%20%22Product%20Planned%22%2C%20%22Ready%20for%20Development%22%2C%20%22Tech%20Design%22%2C%20BLOCKED%2C%20%22Dev%20in%20Progress%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%203.4%22%20order%20by%20created%20DESC%20%20%20%20%20%20
+In-complete
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20in%20(CE%2C%20BO)%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(%22Dev%20in%20Progress%22%2C%20%22In%20Progress%22%2C%20%22QA%20in%20Progress%22%2C%20%22Code%20Review%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%203.4%22%20order%20by%20created%20DESC%20%20%20%20%20%20%20
+
+Demo Items
+
+Demo Line Up: 
+
+  • 
+
+Sprint Report
+
+Sprint Report 
+
+Team Availability
+
+  • 
+Total Days:  10 days
+
+  • 
+Scrum Ceremonies Time: 1 day (Planning + Review/Retro)
+
+  • 
+Holidays: 0
+
+ 
+
+Estimated Man-days
+
+Planned Days-off
+
+Unplanned Days-off
+
+Actual Days
+
+Comments
+
+1
+  
+
+9
+
+0
+
+0
+
+4.5
+
+2
+ 
+
+9
+
+0.5
+
+0
+
+8.5
+
+3
+  
+
+9
+
+0
+
+0
+
+9
+
+4
+ 
+
+9
+
+1
+
+0
+
+8
+
+5
+  
+
+9
+
+1
+
+0
+
+8
+
+6
+  
+
+9
+
+1
+
+0
+
+8
+
+7
+ 
+
+9
+
+1
+
+0
+
+8
+
+8
+ 
+
+9
+
+4
+
+0
+
+5
+
+9
+ (Intern)
+
+9
+
+0
+
+-
+
+-
+
+10
+ 
+
+9
+
+1
+
+0
+
+8
+
+11
+Total 
+
+67
+
+Added to Sprint (Mid Sprint Injections)
+
+Please refer to the placeholder tickets:
+
+  • 
+BO-5288f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira 
+
+Team Velocity
+
+Item
+
+Story Points
+
+100% Capacity
+
+132
+
+80% Capacity
+
+106
+
+Sprint Commitment (80%)
+
+107
+
+Un-Planned Work Placeholder Value (20%)
+
+25
+
+In-Complete
+
+15
+
+Added to Sprint (Total Un-Planned Work Completed)
+
+55
+
+Removed from Sprint
+
+-
+
+Completed (Resolved Stories)
+
+147
+
+Delivery Success Rate =   147 / 132 = 113%
+
+Follow-up action items from the previous sprint
+
+  • 
+N/A
+
+Sprint Highlights
+
+  • 
+Completed all the sprint goals
+
+Sprint Report: report
+
+Burn-down Report: report
+
+Retrospective
+
+What can we continue doing?
+
+  • 
+  KT Sessions for the Team
+
+  • 
+ need to discuss on how to streamline the ad-hoc environment issues
+
+What can we start doing?
+
+  • 
+ Identify the new components for Altair and get the knowledge of those
+
+  • 
+ Fill the template document for components assigned to Altair Team
+
+  • 
+It is consuming more time to deploy a release which the team has not worked in recent past (email marketing). We should re-asses the effort of the deployment during planning stage.
+
+What should we stop doing?
+
+  • 
+
+Action Items for the next sprint 
+
+  • 
+
+What should we improve?
+
+  • 
+
+Perfection Game
+
+1-10
+
+Member
+
+Rate
+
+Remarks
+
+1
+  
+
+-
+
+2
+ 
+
+7
+
+3
+  
+
+5
+
+4
+ 
+
+5
+  
+
+-
+
+6
+  
+
+7
+
+7
+ 
+
+6
+
+8
+ 
+
+7
+
+9
+ (Intern)
+
+7
+
+10
+ 
+
+7
+
+11
+Average
+
+7

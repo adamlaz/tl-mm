@@ -15,6 +15,8 @@ export const getStaticPaths: GetStaticPaths = () => {
     { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time', domain: 'Bitbucket' },
     { slug: 'bitbucket_repo_health', title: 'Repo Health', domain: 'Bitbucket' },
     { slug: 'bb_deploy_tags', title: 'Deploy Tags', domain: 'Bitbucket' },
+    { slug: 'review_network', title: 'Review Network', domain: 'Bitbucket' },
+    { slug: 'bb_reviewer_concentration', title: 'Reviewer Concentration', domain: 'Bitbucket' },
     { slug: 'jira_org_overview', title: 'Org Overview', domain: 'Jira' },
     { slug: 'jira_velocity_trend', title: 'Velocity Trend', domain: 'Jira' },
     { slug: 'jira_cycle_time', title: 'Cycle Time', domain: 'Jira' },
@@ -29,6 +31,10 @@ export const getStaticPaths: GetStaticPaths = () => {
     { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)', domain: 'Jira' },
     { slug: 'confluence_creation_trend', title: 'Page Creation Trend', domain: 'Confluence' },
     { slug: 'confluence_page_density', title: 'Page Density by Space', domain: 'Confluence' },
+    { slug: 'user_workload_distribution', title: 'User Workload Distribution', domain: 'People' },
+    { slug: 'user_activity_levels', title: 'User Activity Levels', domain: 'People' },
+    { slug: 'user_contribution_top20', title: 'Top 20 Contributors', domain: 'People' },
+    { slug: 'user_cross_system', title: 'Cross-System Users', domain: 'People' },
   ];
   return charts.map((chart) => ({
     params: { slug: chart.slug },

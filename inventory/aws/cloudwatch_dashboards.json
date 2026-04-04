@@ -1,0 +1,369 @@
+{
+  "extracted_at": "2026-04-03T21:01:34.214096",
+  "summary": {
+    "total_dashboards": 11,
+    "total_widgets": 67,
+    "total_alarm_references": 0,
+    "all_metric_namespaces": [
+      ".",
+      "...",
+      "AWS/AmazonMQ",
+      "AWS/EC2",
+      "AWS/ECS",
+      "prod-support01"
+    ],
+    "dashboards_by_profile": {
+      "mm-retail-prod-us": [
+        "CPU-Credit",
+        "CPU-Usage-ASGs",
+        "MM-Node",
+        "mongodb_backups",
+        "rabbitmq-mem",
+        "CPU-Credit",
+        "CPU-Usage-ASGs",
+        "MM-Node",
+        "mongodb_backups",
+        "rabbitmq-mem"
+      ],
+      "mm-cake-r-and-d": [
+        "Phoenix"
+      ]
+    }
+  },
+  "dashboards": [
+    {
+      "name": "CPU-Credit",
+      "profile": "mm-retail-prod-us",
+      "region": "us-east-1",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/CPU-Credit",
+      "size": 2099,
+      "last_modified": "2017-11-14 11:09:52-05:00",
+      "widget_count": 2,
+      "widget_types": {
+        "metric": 2
+      },
+      "metric_namespaces": [
+        "...",
+        "AWS/EC2"
+      ],
+      "metric_names": [
+        "CPUCreditBalance",
+        "agentservice-v001",
+        "analyticsservice-v001",
+        "apigateway-v001",
+        "appconfigservice-v001",
+        "applicationservice-v001",
+        "configurationservice-v001",
+        "connectorsrunnerexch-v001",
+        "connectorsrunnerhtml-v001",
+        "connectorsrunnerhttp-v001",
+        "connectorsrunnersoap-v001",
+        "definitionservice-v001",
+        "emailservice-v001",
+        "endpointgateway-v001",
+        "endpointservice-v001",
+        "ewsexchangeconnector-v001",
+        "fpservice-v001",
+        "housekeepingrunner-v001",
+        "integrationrunner-v001",
+        "jsrunner-v001",
+        "logsservice-v002",
+        "monitoringservice-v001",
+        "rsaservice-v001",
+        "sqlconnector-v001",
+        "storageservice-v001",
+        "tenantservice-v001",
+        "workflowrunner-v002"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "CPU-Usage-ASGs",
+      "profile": "mm-retail-prod-us",
+      "region": "us-east-1",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/CPU-Usage-ASGs",
+      "size": 7828,
+      "last_modified": "2017-11-24 10:53:28-05:00",
+      "widget_count": 28,
+      "widget_types": {
+        "metric": 28
+      },
+      "metric_namespaces": [
+        "...",
+        "AWS/EC2"
+      ],
+      "metric_names": [
+        "CPUUtilization",
+        "agentservice-v002",
+        "analyticsservice-v002",
+        "apigateway-v002",
+        "appconfigservice-v002",
+        "applicationservice-v002",
+        "configurationservice-v002",
+        "connectorsrunnerexch-v002",
+        "connectorsrunnerhtml-v002",
+        "connectorsrunnerhttp-v002",
+        "connectorsrunnersoap-v002",
+        "definitionservice-v002",
+        "emailservice-v002",
+        "endpointgateway-v002",
+        "endpointservice-v002",
+        "ewsexchangeconnector-v002",
+        "fpservice-v002",
+        "housekeepingrunner-v002",
+        "integrationrunner-v002",
+        "jsrunner-v002",
+        "logsservice-v003",
+        "monitoringservice-v002",
+        "rsaservice-v002",
+        "sqlconnector-v002",
+        "storageservice-v002",
+        "tenantservice-v002",
+        "workflowrunner-v003"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "MM-Node",
+      "profile": "mm-retail-prod-us",
+      "region": "us-east-1",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/MM-Node",
+      "size": 14,
+      "last_modified": "2017-05-19 16:22:18-04:00",
+      "widget_count": 0,
+      "widget_types": {},
+      "metric_namespaces": [],
+      "metric_names": [],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "mongodb_backups",
+      "profile": "mm-retail-prod-us",
+      "region": "us-east-1",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/mongodb_backups",
+      "size": 407,
+      "last_modified": "2017-11-22 08:03:28-05:00",
+      "widget_count": 2,
+      "widget_types": {
+        "metric": 2
+      },
+      "metric_namespaces": [
+        "prod-support01"
+      ],
+      "metric_names": [
+        "mongodb_backup_error",
+        "mongodb_backup_size"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "rabbitmq-mem",
+      "profile": "mm-retail-prod-us",
+      "region": "us-east-1",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/rabbitmq-mem",
+      "size": 643,
+      "last_modified": "2024-12-03 12:06:14-05:00",
+      "widget_count": 1,
+      "widget_types": {
+        "metric": 1
+      },
+      "metric_namespaces": [
+        ".",
+        "...",
+        "AWS/AmazonMQ"
+      ],
+      "metric_names": [
+        "RabbitMQMemLimit",
+        "RabbitMQMemUsed",
+        "rabbit@ip-10-0-30-89.ec2.internal",
+        "rabbit@ip-10-0-47-91.ec2.internal"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "CPU-Credit",
+      "profile": "mm-retail-prod-us",
+      "region": "us-west-2",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/CPU-Credit",
+      "size": 2099,
+      "last_modified": "2017-11-14 11:09:52-05:00",
+      "widget_count": 2,
+      "widget_types": {
+        "metric": 2
+      },
+      "metric_namespaces": [
+        "...",
+        "AWS/EC2"
+      ],
+      "metric_names": [
+        "CPUCreditBalance",
+        "agentservice-v001",
+        "analyticsservice-v001",
+        "apigateway-v001",
+        "appconfigservice-v001",
+        "applicationservice-v001",
+        "configurationservice-v001",
+        "connectorsrunnerexch-v001",
+        "connectorsrunnerhtml-v001",
+        "connectorsrunnerhttp-v001",
+        "connectorsrunnersoap-v001",
+        "definitionservice-v001",
+        "emailservice-v001",
+        "endpointgateway-v001",
+        "endpointservice-v001",
+        "ewsexchangeconnector-v001",
+        "fpservice-v001",
+        "housekeepingrunner-v001",
+        "integrationrunner-v001",
+        "jsrunner-v001",
+        "logsservice-v002",
+        "monitoringservice-v001",
+        "rsaservice-v001",
+        "sqlconnector-v001",
+        "storageservice-v001",
+        "tenantservice-v001",
+        "workflowrunner-v002"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "CPU-Usage-ASGs",
+      "profile": "mm-retail-prod-us",
+      "region": "us-west-2",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/CPU-Usage-ASGs",
+      "size": 7828,
+      "last_modified": "2017-11-24 10:53:28-05:00",
+      "widget_count": 28,
+      "widget_types": {
+        "metric": 28
+      },
+      "metric_namespaces": [
+        "...",
+        "AWS/EC2"
+      ],
+      "metric_names": [
+        "CPUUtilization",
+        "agentservice-v002",
+        "analyticsservice-v002",
+        "apigateway-v002",
+        "appconfigservice-v002",
+        "applicationservice-v002",
+        "configurationservice-v002",
+        "connectorsrunnerexch-v002",
+        "connectorsrunnerhtml-v002",
+        "connectorsrunnerhttp-v002",
+        "connectorsrunnersoap-v002",
+        "definitionservice-v002",
+        "emailservice-v002",
+        "endpointgateway-v002",
+        "endpointservice-v002",
+        "ewsexchangeconnector-v002",
+        "fpservice-v002",
+        "housekeepingrunner-v002",
+        "integrationrunner-v002",
+        "jsrunner-v002",
+        "logsservice-v003",
+        "monitoringservice-v002",
+        "rsaservice-v002",
+        "sqlconnector-v002",
+        "storageservice-v002",
+        "tenantservice-v002",
+        "workflowrunner-v003"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "MM-Node",
+      "profile": "mm-retail-prod-us",
+      "region": "us-west-2",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/MM-Node",
+      "size": 14,
+      "last_modified": "2017-05-19 16:22:18-04:00",
+      "widget_count": 0,
+      "widget_types": {},
+      "metric_namespaces": [],
+      "metric_names": [],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "mongodb_backups",
+      "profile": "mm-retail-prod-us",
+      "region": "us-west-2",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/mongodb_backups",
+      "size": 407,
+      "last_modified": "2017-11-22 08:03:28-05:00",
+      "widget_count": 2,
+      "widget_types": {
+        "metric": 2
+      },
+      "metric_namespaces": [
+        "prod-support01"
+      ],
+      "metric_names": [
+        "mongodb_backup_error",
+        "mongodb_backup_size"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "rabbitmq-mem",
+      "profile": "mm-retail-prod-us",
+      "region": "us-west-2",
+      "arn": "arn:aws:cloudwatch::125062011444:dashboard/rabbitmq-mem",
+      "size": 643,
+      "last_modified": "2024-12-03 12:06:14-05:00",
+      "widget_count": 1,
+      "widget_types": {
+        "metric": 1
+      },
+      "metric_namespaces": [
+        ".",
+        "...",
+        "AWS/AmazonMQ"
+      ],
+      "metric_names": [
+        "RabbitMQMemLimit",
+        "RabbitMQMemUsed",
+        "rabbit@ip-10-0-30-89.ec2.internal",
+        "rabbit@ip-10-0-47-91.ec2.internal"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    },
+    {
+      "name": "Phoenix",
+      "profile": "mm-cake-r-and-d",
+      "region": "us-east-1",
+      "arn": "arn:aws:cloudwatch::464176945335:dashboard/Phoenix",
+      "size": 452,
+      "last_modified": "2018-08-17 05:23:34-04:00",
+      "widget_count": 1,
+      "widget_types": {
+        "metric": 1
+      },
+      "metric_namespaces": [
+        ".",
+        "...",
+        "AWS/ECS"
+      ],
+      "metric_names": [
+        ".",
+        "CPUUtilization",
+        "api-1-service",
+        "api-2-service"
+      ],
+      "alarm_arns": [],
+      "alarm_count": 0
+    }
+  ],
+  "errors": []
+}

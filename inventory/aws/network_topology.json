@@ -1,0 +1,2219 @@
+{
+  "generated_at": "2026-04-04T01:08:42.225705+00:00",
+  "region": "us-east-1",
+  "accounts_scanned": 4,
+  "accounts": {
+    "mm-retail-prod-us": {
+      "profile": "mm-retail-prod-us",
+      "vpc_peering": [
+        {
+          "id": "pcx-0194da31e4f889122",
+          "status": "active",
+          "requester_vpc": "vpc-02eebf94eb3865a49",
+          "requester_owner": "628419826385",
+          "accepter_vpc": "vpc-0ce7b79b81348a5d0",
+          "accepter_owner": "125062011444"
+        },
+        {
+          "id": "pcx-03f2208b1151be90d",
+          "status": "active",
+          "requester_vpc": "vpc-06dcc08b6152b6626",
+          "requester_owner": "542575560358",
+          "accepter_vpc": "vpc-8717bce0",
+          "accepter_owner": "125062011444"
+        }
+      ],
+      "nat_gateways": {
+        "total": 3,
+        "by_state": {
+          "available": 3
+        }
+      },
+      "transit_gateway_attachments": [],
+      "security_groups": {
+        "total_security_groups": 154,
+        "wide_open_rules": [
+          {
+            "sg_id": "sg-09dfab8fce2a023d6",
+            "sg_name": "rabbitmq_prod_2xlarge",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-09dfab8fce2a023d6",
+            "sg_name": "rabbitmq_prod_2xlarge",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 5671",
+            "protocol": "tcp",
+            "ports": "5671"
+          },
+          {
+            "sg_id": "sg-03760e994b2c4bd20",
+            "sg_name": "Office LTSC Professional Plus-1.12-AutogenByAWSMP--1",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-3cd6a14d",
+            "sg_name": "OpenVPN Access Server-2.1.9-AutogenByAWSMP-",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 1194",
+            "protocol": "udp",
+            "ports": "1194"
+          },
+          {
+            "sg_id": "sg-3cd6a14d",
+            "sg_name": "OpenVPN Access Server-2.1.9-AutogenByAWSMP-",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-3cd6a14d",
+            "sg_name": "OpenVPN Access Server-2.1.9-AutogenByAWSMP-",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 943",
+            "protocol": "tcp",
+            "ports": "943"
+          },
+          {
+            "sg_id": "sg-866480cf",
+            "sg_name": "MM-Wazuh-ec2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 5601",
+            "protocol": "tcp",
+            "ports": "5601"
+          },
+          {
+            "sg_id": "sg-866480cf",
+            "sg_name": "MM-Wazuh-ec2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 5601",
+            "protocol": "tcp",
+            "ports": "5601"
+          },
+          {
+            "sg_id": "sg-c406f6bb",
+            "sg_name": "spinnaker-sg",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 9000",
+            "protocol": "tcp",
+            "ports": "9000"
+          },
+          {
+            "sg_id": "sg-c406f6bb",
+            "sg_name": "spinnaker-sg",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-03b9bbf5288e50863",
+            "sg_name": "launch-wizard-18",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-b49a70cb",
+            "sg_name": "image-opt-sg",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-094f8e2a3900e4b25",
+            "sg_name": "launch-wizard-22",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-09f1406a8549d406f",
+            "sg_name": "launch-wizard-14",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-13947e6c",
+            "sg_name": "image-opt-sg2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-13947e6c",
+            "sg_name": "image-opt-sg2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-7951b904",
+            "sg_name": "launch-wizard-3",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-850ce9cc",
+            "sg_name": "launch-wizard-10",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-5498ea2f",
+            "sg_name": "MadMobile-UbuntuASG-1E9IJOB94UJT8-InstanceSecurityGroup-81KZ1PQXWLIH",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "ALL TRAFFIC from 0.0.0.0/0",
+            "protocol": "all",
+            "ports": "all"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8000",
+            "protocol": "tcp",
+            "ports": "8000"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8000",
+            "protocol": "tcp",
+            "ports": "8000"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 9997",
+            "protocol": "tcp",
+            "ports": "9997"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 9997",
+            "protocol": "tcp",
+            "ports": "9997"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8172",
+            "protocol": "tcp",
+            "ports": "8172"
+          },
+          {
+            "sg_id": "sg-3b599d46",
+            "sg_name": "MM-OLD-Sites-Inbound",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8172",
+            "protocol": "tcp",
+            "ports": "8172"
+          },
+          {
+            "sg_id": "sg-099b8c5c18a83e699",
+            "sg_name": "MM-IIS-2019-Org",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-099b8c5c18a83e699",
+            "sg_name": "MM-IIS-2019-Org",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-827374f9",
+            "sg_name": "rps-prod-elb",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8007",
+            "protocol": "tcp",
+            "ports": "8007"
+          },
+          {
+            "sg_id": "sg-b2bfcdc3",
+            "sg_name": "launch-wizard-8",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-092d407cb7402aa83",
+            "sg_name": "k8s-elb-aff16b9e371564a79a852a15d0940cb8",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8007",
+            "protocol": "tcp",
+            "ports": "8007"
+          },
+          {
+            "sg_id": "sg-092d407cb7402aa83",
+            "sg_name": "k8s-elb-aff16b9e371564a79a852a15d0940cb8",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3-4",
+            "protocol": "icmp",
+            "ports": "3-4"
+          },
+          {
+            "sg_id": "sg-ebb81597",
+            "sg_name": "MM-Php",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-077a2e7d",
+            "sg_name": "launch-wizard-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-08cd67a148fa59b39",
+            "sg_name": "launch-wizard-19",
+            "vpc_id": "vpc-0ce7b79b81348a5d0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-08cd67a148fa59b39",
+            "sg_name": "launch-wizard-19",
+            "vpc_id": "vpc-0ce7b79b81348a5d0",
+            "rule": "0.0.0.0/0 on port(s) 27017",
+            "protocol": "tcp",
+            "ports": "27017"
+          },
+          {
+            "sg_id": "sg-8cf997c4",
+            "sg_name": "MM-Nessus",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-05e7446c55c8c0653",
+            "sg_name": "redirector-us-alb-sg",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8888",
+            "protocol": "tcp",
+            "ports": "8888"
+          },
+          {
+            "sg_id": "sg-7e6c9600",
+            "sg_name": "Qualys Virtual Scanner Appliance -Pre-Authorized Scanning- HVM-2-2-27-2-PA-AutogenByAWSMP-",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-e1915b9f",
+            "sg_name": "live-bastion-mfa-production",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-0cd3f8d012d3f9053",
+            "sg_name": "launch-wizard-17",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-f481458b",
+            "sg_name": "MM-Ocecs",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-f481458b",
+            "sg_name": "MM-Ocecs",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-066abb70e936ce26e",
+            "sg_name": "launch-wizard-15",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-3e793a42",
+            "sg_name": "Node-Prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-3e793a42",
+            "sg_name": "Node-Prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-3e793a42",
+            "sg_name": "Node-Prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-3e793a42",
+            "sg_name": "Node-Prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-015d78428c2e5a404",
+            "sg_name": "testbastion",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-967374ed",
+            "sg_name": "rp-prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8007",
+            "protocol": "tcp",
+            "ports": "8007"
+          },
+          {
+            "sg_id": "sg-967374ed",
+            "sg_name": "rp-prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) -1",
+            "protocol": "icmp",
+            "ports": "-1"
+          },
+          {
+            "sg_id": "sg-7317c10c",
+            "sg_name": "MM-Payless-upload",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-7317c10c",
+            "sg_name": "MM-Payless-upload",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-01f840300f0cdb410",
+            "sg_name": "k8s-elb-a892150a2ba8d4bd6b2ebee9f08a70ab",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 4000",
+            "protocol": "tcp",
+            "ports": "4000"
+          },
+          {
+            "sg_id": "sg-01f840300f0cdb410",
+            "sg_name": "k8s-elb-a892150a2ba8d4bd6b2ebee9f08a70ab",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3-4",
+            "protocol": "icmp",
+            "ports": "3-4"
+          },
+          {
+            "sg_id": "sg-342c5549",
+            "sg_name": "Madcloud-exchange-2007-test",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "ALL TRAFFIC from 0.0.0.0/0",
+            "protocol": "all",
+            "ports": "all"
+          },
+          {
+            "sg_id": "sg-4336133d",
+            "sg_name": "launch-wizard-7",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-0e37240a7b3f6661b",
+            "sg_name": "launch-wizard-16",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-0c1b7fabecd2174dd",
+            "sg_name": "Kali Linux-Outside-Ven",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-b4bf44c9",
+            "sg_name": "MM-IIS",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-64aa3018",
+            "sg_name": "Aws-Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8000",
+            "protocol": "tcp",
+            "ports": "8000"
+          },
+          {
+            "sg_id": "sg-64aa3018",
+            "sg_name": "Aws-Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8000",
+            "protocol": "tcp",
+            "ports": "8000"
+          },
+          {
+            "sg_id": "sg-64aa3018",
+            "sg_name": "Aws-Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-011b6d3daabe63079",
+            "sg_name": "launch-wizard-21",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-4198ea3a",
+            "sg_name": "MadMobile-WindowsASG-1QDABBQTH7C4H-ELBSecurityGroup-1O4WQYP8BZSKU",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-0058d05237e0db3b1",
+            "sg_name": "launch-wizard-12",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-94d61feb",
+            "sg_name": "Rack-RDPGateway-ClientSecurityGroup-14YUNX06VBS53",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-94d61feb",
+            "sg_name": "Rack-RDPGateway-ClientSecurityGroup-14YUNX06VBS53",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-94d61feb",
+            "sg_name": "Rack-RDPGateway-ClientSecurityGroup-14YUNX06VBS53",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-94d61feb",
+            "sg_name": "Rack-RDPGateway-ClientSecurityGroup-14YUNX06VBS53",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-6c1c7710",
+            "sg_name": "prod-errors",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-25b89f5f",
+            "sg_name": "Madmobile-Small-ASG",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-25b89f5f",
+            "sg_name": "Madmobile-Small-ASG",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3333",
+            "protocol": "tcp",
+            "ports": "3333"
+          },
+          {
+            "sg_id": "sg-25b89f5f",
+            "sg_name": "Madmobile-Small-ASG",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-0c837a70617fa7f62",
+            "sg_name": "launch-wizard-23",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-cf6028b2",
+            "sg_name": "Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8000",
+            "protocol": "tcp",
+            "ports": "8000"
+          },
+          {
+            "sg_id": "sg-cf6028b2",
+            "sg_name": "Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8000",
+            "protocol": "tcp",
+            "ports": "8000"
+          },
+          {
+            "sg_id": "sg-cf6028b2",
+            "sg_name": "Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8089",
+            "protocol": "tcp",
+            "ports": "8089"
+          },
+          {
+            "sg_id": "sg-cf6028b2",
+            "sg_name": "Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8089",
+            "protocol": "tcp",
+            "ports": "8089"
+          },
+          {
+            "sg_id": "sg-cf6028b2",
+            "sg_name": "Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 9997",
+            "protocol": "tcp",
+            "ports": "9997"
+          },
+          {
+            "sg_id": "sg-cf6028b2",
+            "sg_name": "Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 9997",
+            "protocol": "tcp",
+            "ports": "9997"
+          },
+          {
+            "sg_id": "sg-cf6028b2",
+            "sg_name": "Splunk",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-2b7ac654",
+            "sg_name": "Madserv-template",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-2b7ac654",
+            "sg_name": "Madserv-template",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-2b7ac654",
+            "sg_name": "Madserv-template",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-2b7ac654",
+            "sg_name": "Madserv-template",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-2b7ac654",
+            "sg_name": "Madserv-template",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8172",
+            "protocol": "tcp",
+            "ports": "8172"
+          },
+          {
+            "sg_id": "sg-2b7ac654",
+            "sg_name": "Madserv-template",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8172",
+            "protocol": "tcp",
+            "ports": "8172"
+          },
+          {
+            "sg_id": "sg-0870130ed084d7bbc",
+            "sg_name": "win-temp",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-8b3499f6",
+            "sg_name": "MM Icinga",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-0781438bdab680bf0",
+            "sg_name": "k8s-elb-aa6448541017f4eeabbc2d2d2a0ad0f1",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3-4",
+            "protocol": "icmp",
+            "ports": "3-4"
+          },
+          {
+            "sg_id": "sg-9eb62be2",
+            "sg_name": "Prod_image",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-4798ea3c",
+            "sg_name": "MadMobile-WindowsASG-1QDABBQTH7C4H-InstanceSecurityGroup-2D1WM4ZXQFKH",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-d6d4d0ac",
+            "sg_name": "MadMobile-SecurityGroups-VBXURQC4MH43-UbuntuASGSG-12ANGMTHGLCBR",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-d6d4d0ac",
+            "sg_name": "MadMobile-SecurityGroups-VBXURQC4MH43-UbuntuASGSG-12ANGMTHGLCBR",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-d6d4d0ac",
+            "sg_name": "MadMobile-SecurityGroups-VBXURQC4MH43-UbuntuASGSG-12ANGMTHGLCBR",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-d6d4d0ac",
+            "sg_name": "MadMobile-SecurityGroups-VBXURQC4MH43-UbuntuASGSG-12ANGMTHGLCBR",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-d6d4d0ac",
+            "sg_name": "MadMobile-SecurityGroups-VBXURQC4MH43-UbuntuASGSG-12ANGMTHGLCBR",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-d6d4d0ac",
+            "sg_name": "MadMobile-SecurityGroups-VBXURQC4MH43-UbuntuASGSG-12ANGMTHGLCBR",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3333",
+            "protocol": "tcp",
+            "ports": "3333"
+          },
+          {
+            "sg_id": "sg-d6d4d0ac",
+            "sg_name": "MadMobile-SecurityGroups-VBXURQC4MH43-UbuntuASGSG-12ANGMTHGLCBR",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 3333",
+            "protocol": "tcp",
+            "ports": "3333"
+          },
+          {
+            "sg_id": "sg-0efd5b8a288cc0423",
+            "sg_name": "Kali Linux-Kali Linux 2022.2-AutogenByAWSMP--1",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-01180b803cf370c99",
+            "sg_name": "launch-wizard-11",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-5dadbf23",
+            "sg_name": "Sysco-Sms",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3001",
+            "protocol": "tcp",
+            "ports": "3001"
+          },
+          {
+            "sg_id": "sg-038cf98ef0f925338",
+            "sg_name": "rabbitmq_prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-038cf98ef0f925338",
+            "sg_name": "rabbitmq_prod",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 5671",
+            "protocol": "tcp",
+            "ports": "5671"
+          },
+          {
+            "sg_id": "sg-03c9709ac120f2796",
+            "sg_name": "efs_copy",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "ALL TRAFFIC from 0.0.0.0/0",
+            "protocol": "all",
+            "ports": "all"
+          },
+          {
+            "sg_id": "sg-0cfe0df9a1d3e5071",
+            "sg_name": "eks-cluster-sg-marvel-cloud-prod-us-1425497746",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 32067",
+            "protocol": "tcp",
+            "ports": "32067"
+          },
+          {
+            "sg_id": "sg-0cfe0df9a1d3e5071",
+            "sg_name": "eks-cluster-sg-marvel-cloud-prod-us-1425497746",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 30871",
+            "protocol": "tcp",
+            "ports": "30871"
+          },
+          {
+            "sg_id": "sg-0cfe0df9a1d3e5071",
+            "sg_name": "eks-cluster-sg-marvel-cloud-prod-us-1425497746",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3-4",
+            "protocol": "icmp",
+            "ports": "3-4"
+          },
+          {
+            "sg_id": "sg-0cfe0df9a1d3e5071",
+            "sg_name": "eks-cluster-sg-marvel-cloud-prod-us-1425497746",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 30372",
+            "protocol": "tcp",
+            "ports": "30372"
+          },
+          {
+            "sg_id": "sg-0cfe0df9a1d3e5071",
+            "sg_name": "eks-cluster-sg-marvel-cloud-prod-us-1425497746",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 30692",
+            "protocol": "tcp",
+            "ports": "30692"
+          },
+          {
+            "sg_id": "sg-79621209",
+            "sg_name": "launch-wizard-9",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-0a274b75",
+            "sg_name": "Pingdom Web testing",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-bfa6f0c5",
+            "sg_name": "Pem-Testing",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-0abe9970",
+            "sg_name": "Ubuntu-Small-ASG",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 5439",
+            "protocol": "tcp",
+            "ports": "5439"
+          },
+          {
+            "sg_id": "sg-0abe9970",
+            "sg_name": "Ubuntu-Small-ASG",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-0abe9970",
+            "sg_name": "Ubuntu-Small-ASG",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-bbd3d9c4",
+            "sg_name": "launch-wizard-6",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-9c2abae6",
+            "sg_name": "MadMobile-RDPBastion-15TXXUE30M5ZC-ClientSecurityGroup-14R1JFRA514JA",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-9c2abae6",
+            "sg_name": "MadMobile-RDPBastion-15TXXUE30M5ZC-ClientSecurityGroup-14R1JFRA514JA",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-9c2abae6",
+            "sg_name": "MadMobile-RDPBastion-15TXXUE30M5ZC-ClientSecurityGroup-14R1JFRA514JA",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 488",
+            "protocol": "tcp",
+            "ports": "488"
+          },
+          {
+            "sg_id": "sg-9c2abae6",
+            "sg_name": "MadMobile-RDPBastion-15TXXUE30M5ZC-ClientSecurityGroup-14R1JFRA514JA",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8172",
+            "protocol": "tcp",
+            "ports": "8172"
+          },
+          {
+            "sg_id": "sg-9c2abae6",
+            "sg_name": "MadMobile-RDPBastion-15TXXUE30M5ZC-ClientSecurityGroup-14R1JFRA514JA",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 489",
+            "protocol": "tcp",
+            "ports": "489"
+          },
+          {
+            "sg_id": "sg-9c2abae6",
+            "sg_name": "MadMobile-RDPBastion-15TXXUE30M5ZC-ClientSecurityGroup-14R1JFRA514JA",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 100",
+            "protocol": "tcp",
+            "ports": "100"
+          },
+          {
+            "sg_id": "sg-9c2abae6",
+            "sg_name": "MadMobile-RDPBastion-15TXXUE30M5ZC-ClientSecurityGroup-14R1JFRA514JA",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 100",
+            "protocol": "tcp",
+            "ports": "100"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 514",
+            "protocol": "tcp",
+            "ports": "514"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 514",
+            "protocol": "tcp",
+            "ports": "514"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-6c976b13",
+            "sg_name": "MM-osecac",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 5601",
+            "protocol": "udp",
+            "ports": "5601"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 5601",
+            "protocol": "udp",
+            "ports": "5601"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "udp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 5601",
+            "protocol": "tcp",
+            "ports": "5601"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 5601",
+            "protocol": "tcp",
+            "ports": "5601"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-51af5218",
+            "sg_name": "MM-Ossec-2",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 1514",
+            "protocol": "tcp",
+            "ports": "1514"
+          },
+          {
+            "sg_id": "sg-8c12e8f2",
+            "sg_name": "Qualys Virtual Scanner Appliance HVM-2-2-27-2-AutogenByAWSMP-",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-b420a5fc",
+            "sg_name": "MM-Node-PCI",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-b3e592c5",
+            "sg_name": "MM-IIS-2016-test",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-b3e592c5",
+            "sg_name": "MM-IIS-2016-test",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-b3e592c5",
+            "sg_name": "MM-IIS-2016-test",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-b3e592c5",
+            "sg_name": "MM-IIS-2016-test",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-b3e592c5",
+            "sg_name": "MM-IIS-2016-test",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-b3e592c5",
+            "sg_name": "MM-IIS-2016-test",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-f97bc288",
+            "sg_name": "Zales-test-node-wireshark",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-f97bc288",
+            "sg_name": "Zales-test-node-wireshark",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-f97bc288",
+            "sg_name": "Zales-test-node-wireshark",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-f97bc288",
+            "sg_name": "Zales-test-node-wireshark",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-007d8fa16a14bb617",
+            "sg_name": "Kali Linux-Kali Linux 2022.2-AutogenByAWSMP--2",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-dd52aaa0",
+            "sg_name": "Old_IIS",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          },
+          {
+            "sg_id": "sg-dd52aaa0",
+            "sg_name": "Old_IIS",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-dd52aaa0",
+            "sg_name": "Old_IIS",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-dd52aaa0",
+            "sg_name": "Old_IIS",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 8172",
+            "protocol": "tcp",
+            "ports": "8172"
+          },
+          {
+            "sg_id": "sg-dd52aaa0",
+            "sg_name": "Old_IIS",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "::/0 on port(s) 8172",
+            "protocol": "tcp",
+            "ports": "8172"
+          },
+          {
+            "sg_id": "sg-577e2a2d",
+            "sg_name": "launch-wizard-1",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-083902abed342b396",
+            "sg_name": "launch-wizard-13",
+            "vpc_id": "vpc-24c21140",
+            "rule": "0.0.0.0/0 on port(s) 3389",
+            "protocol": "tcp",
+            "ports": "3389"
+          },
+          {
+            "sg_id": "sg-ecbefa90",
+            "sg_name": "Peoples-elb",
+            "vpc_id": "vpc-8717bce0",
+            "rule": "0.0.0.0/0 on port(s) 81",
+            "protocol": "tcp",
+            "ports": "81"
+          }
+        ],
+        "wide_open_count": 169
+      },
+      "blocked_apis": []
+    },
+    "mm-payments-prod-us": {
+      "profile": "mm-payments-prod-us",
+      "vpc_peering": [],
+      "nat_gateways": {
+        "total": 0,
+        "by_state": {}
+      },
+      "transit_gateway_attachments": [],
+      "security_groups": {
+        "total_security_groups": 0,
+        "wide_open_rules": [],
+        "wide_open_count": 0
+      },
+      "blocked_apis": []
+    },
+    "mm-cake-development": {
+      "profile": "mm-cake-development",
+      "vpc_peering": [
+        {
+          "id": "pcx-0512b5d779094c920",
+          "status": "active",
+          "requester_vpc": "vpc-bfc026da",
+          "requester_owner": "758050458312",
+          "accepter_vpc": "vpc-0e4f6c7f1da297ece",
+          "accepter_owner": "230930891673"
+        },
+        {
+          "id": "pcx-0298398e4ef57b68d",
+          "status": "active",
+          "requester_vpc": "vpc-07b70094d0bfa31c5",
+          "requester_owner": "230930891673",
+          "accepter_vpc": "vpc-0e4f6c7f1da297ece",
+          "accepter_owner": "230930891673"
+        },
+        {
+          "id": "pcx-05cf256be20def680",
+          "status": "active",
+          "requester_vpc": "vpc-0b4556d0c545f7508",
+          "requester_owner": "230930891673",
+          "accepter_vpc": "vpc-07f9319fb3d2fb2aa",
+          "accepter_owner": "230930891673"
+        },
+        {
+          "id": "pcx-0e6eac27a763c6dfb",
+          "status": "active",
+          "requester_vpc": "vpc-0e4f6c7f1da297ece",
+          "requester_owner": "230930891673",
+          "accepter_vpc": "vpc-075743e02a5532613",
+          "accepter_owner": "230930891673"
+        },
+        {
+          "id": "pcx-05ad5c185a7eed03c",
+          "status": "active",
+          "requester_vpc": "vpc-0b4556d0c545f7508",
+          "requester_owner": "230930891673",
+          "accepter_vpc": "vpc-0e4f6c7f1da297ece",
+          "accepter_owner": "230930891673"
+        },
+        {
+          "id": "pcx-0642a1e00da0ba3e0",
+          "status": "active",
+          "requester_vpc": "vpc-a93a94cc",
+          "requester_owner": "758050458312",
+          "accepter_vpc": "vpc-0e4f6c7f1da297ece",
+          "accepter_owner": "230930891673"
+        },
+        {
+          "id": "pcx-0918bc002978e8ab9",
+          "status": "active",
+          "requester_vpc": "vpc-07f9319fb3d2fb2aa",
+          "requester_owner": "230930891673",
+          "accepter_vpc": "vpc-0e4f6c7f1da297ece",
+          "accepter_owner": "230930891673"
+        },
+        {
+          "id": "pcx-00582dbf9b810b4b6",
+          "status": "active",
+          "requester_vpc": "vpc-1155c368",
+          "requester_owner": "758050458312",
+          "accepter_vpc": "vpc-0e4f6c7f1da297ece",
+          "accepter_owner": "230930891673"
+        }
+      ],
+      "nat_gateways": {
+        "total": 6,
+        "by_state": {
+          "available": 6
+        }
+      },
+      "transit_gateway_attachments": [],
+      "security_groups": {
+        "total_security_groups": 529,
+        "wide_open_rules": [
+          {
+            "sg_id": "sg-0519b522cda59d050",
+            "sg_name": "qa-qcenter-ec2-alb-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 3000",
+            "protocol": "tcp",
+            "ports": "3000"
+          },
+          {
+            "sg_id": "sg-0688f3610c0409b5d",
+            "sg_name": "pos2-messag",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0688f3610c0409b5d",
+            "sg_name": "pos2-messag",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0688f3610c0409b5d",
+            "sg_name": "pos2-messag",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0611cdf3f9cc9b2d7",
+            "sg_name": "mm-tst4-message",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0611cdf3f9cc9b2d7",
+            "sg_name": "mm-tst4-message",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0611cdf3f9cc9b2d7",
+            "sg_name": "mm-tst4-message",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0448432afc15e432a",
+            "sg_name": "pos4-cake-use1-janus-ecs-asg-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0448432afc15e432a",
+            "sg_name": "pos4-cake-use1-janus-ecs-asg-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0448432afc15e432a",
+            "sg_name": "pos4-cake-use1-janus-ecs-asg-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-027cce93e5824f688",
+            "sg_name": "tst1-load-balancer",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-0e1821277488f414b",
+            "sg_name": "pos4-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0e1821277488f414b",
+            "sg_name": "pos4-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0e1821277488f414b",
+            "sg_name": "pos4-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0e1821277488f414b",
+            "sg_name": "pos4-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-0e1821277488f414b",
+            "sg_name": "pos4-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0e1821277488f414b",
+            "sg_name": "pos4-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0a544e6bee2d3a30c",
+            "sg_name": "tst2-load-balancer",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-0a544e6bee2d3a30c",
+            "sg_name": "tst2-load-balancer",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8446",
+            "protocol": "tcp",
+            "ports": "8446"
+          },
+          {
+            "sg_id": "sg-0a544e6bee2d3a30c",
+            "sg_name": "tst2-load-balancer",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8281",
+            "protocol": "tcp",
+            "ports": "8281"
+          },
+          {
+            "sg_id": "sg-01c80585ea778b506",
+            "sg_name": "mm-tst4-rabbitmq-elb-sg",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-01c80585ea778b506",
+            "sg_name": "mm-tst4-rabbitmq-elb-sg",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-01c80585ea778b506",
+            "sg_name": "mm-tst4-rabbitmq-elb-sg",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0203d7cdb4b07f3d8",
+            "sg_name": "pos3-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0203d7cdb4b07f3d8",
+            "sg_name": "pos3-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0203d7cdb4b07f3d8",
+            "sg_name": "pos3-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0eeb917c4b4b2353a",
+            "sg_name": "tst1-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0eeb917c4b4b2353a",
+            "sg_name": "tst1-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0eeb917c4b4b2353a",
+            "sg_name": "tst1-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-02dd570d43ceee8c0",
+            "sg_name": "tst1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-02dd570d43ceee8c0",
+            "sg_name": "tst1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-02dd570d43ceee8c0",
+            "sg_name": "tst1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-02dd570d43ceee8c0",
+            "sg_name": "tst1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-02dd570d43ceee8c0",
+            "sg_name": "tst1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-02dd570d43ceee8c0",
+            "sg_name": "tst1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-079acfa0a1af4ed35",
+            "sg_name": "pos1-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 3000",
+            "protocol": "tcp",
+            "ports": "3000"
+          },
+          {
+            "sg_id": "sg-079acfa0a1af4ed35",
+            "sg_name": "pos1-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 2462",
+            "protocol": "tcp",
+            "ports": "2462"
+          },
+          {
+            "sg_id": "sg-03d32a6207063e51e",
+            "sg_name": "pos1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-03d32a6207063e51e",
+            "sg_name": "pos1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-03d32a6207063e51e",
+            "sg_name": "pos1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-03d32a6207063e51e",
+            "sg_name": "pos1-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-005cefa34883ea377",
+            "sg_name": "pos2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-005cefa34883ea377",
+            "sg_name": "pos2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-005cefa34883ea377",
+            "sg_name": "pos2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-005cefa34883ea377",
+            "sg_name": "pos2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0498060058a2d4eb2",
+            "sg_name": "tst1-haproxy-use1-public-alb-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 7070",
+            "protocol": "tcp",
+            "ports": "7070"
+          },
+          {
+            "sg_id": "sg-0498060058a2d4eb2",
+            "sg_name": "tst1-haproxy-use1-public-alb-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 7070",
+            "protocol": "tcp",
+            "ports": "7070"
+          },
+          {
+            "sg_id": "sg-046ca9115e01737b0",
+            "sg_name": "tst2-message",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-046ca9115e01737b0",
+            "sg_name": "tst2-message",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-046ca9115e01737b0",
+            "sg_name": "tst2-message",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0959050118b4cbb8d",
+            "sg_name": "rmq-efs-instance-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 22",
+            "protocol": "tcp",
+            "ports": "22"
+          },
+          {
+            "sg_id": "sg-049872e7f6d07ccfa",
+            "sg_name": "pos2-load-balancer",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8080",
+            "protocol": "tcp",
+            "ports": "8080"
+          },
+          {
+            "sg_id": "sg-049872e7f6d07ccfa",
+            "sg_name": "pos2-load-balancer",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-00187bec1c5e761a1",
+            "sg_name": "qa-data-platform-ecs",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 3001",
+            "protocol": "tcp",
+            "ports": "3001"
+          },
+          {
+            "sg_id": "sg-00187bec1c5e761a1",
+            "sg_name": "qa-data-platform-ecs",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8090",
+            "protocol": "tcp",
+            "ports": "8090"
+          },
+          {
+            "sg_id": "sg-04c8535aec7d18137",
+            "sg_name": "pos1-message",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-04c8535aec7d18137",
+            "sg_name": "pos1-message",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-04c8535aec7d18137",
+            "sg_name": "pos1-message",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0a0c15e87d8c01c2f",
+            "sg_name": "ua-reports-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0512b40437d1561e9",
+            "sg_name": "tst2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0512b40437d1561e9",
+            "sg_name": "tst2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0512b40437d1561e9",
+            "sg_name": "tst2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0512b40437d1561e9",
+            "sg_name": "tst2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0512b40437d1561e9",
+            "sg_name": "tst2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0512b40437d1561e9",
+            "sg_name": "tst2-mq-ecs-ec2-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-05ed90f7b3467a439",
+            "sg_name": "minuteman-tst1-api",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-05ed90f7b3467a439",
+            "sg_name": "minuteman-tst1-api",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-05ed90f7b3467a439",
+            "sg_name": "minuteman-tst1-api",
+            "vpc_id": "vpc-0c059b629fead41fc",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-03b418499867f147e",
+            "sg_name": "pos1-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-03b418499867f147e",
+            "sg_name": "pos1-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-03b418499867f147e",
+            "sg_name": "pos1-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-078d25f2bb76722d7",
+            "sg_name": "pos4-messag",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-078d25f2bb76722d7",
+            "sg_name": "pos4-messag",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-078d25f2bb76722d7",
+            "sg_name": "pos4-messag",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-0f67963fcaa771efa",
+            "sg_name": "pos4-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-0f67963fcaa771efa",
+            "sg_name": "pos4-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 5672",
+            "protocol": "tcp",
+            "ports": "5672"
+          },
+          {
+            "sg_id": "sg-0f67963fcaa771efa",
+            "sg_name": "pos4-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-01e78f0e0ffabe2a3",
+            "sg_name": "pos4-esb-alb-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-0ec9800adb4e9b00b",
+            "sg_name": "pos1-load-balancer",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-01110e2f785764892",
+            "sg_name": "qa-jenkins-sec",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 53694",
+            "protocol": "tcp",
+            "ports": "53694"
+          },
+          {
+            "sg_id": "sg-05bcb9ba700957431",
+            "sg_name": "vpn-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 1194",
+            "protocol": "tcp",
+            "ports": "1194"
+          },
+          {
+            "sg_id": "sg-05bcb9ba700957431",
+            "sg_name": "vpn-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 1194",
+            "protocol": "tcp",
+            "ports": "1194"
+          },
+          {
+            "sg_id": "sg-0eb04d8053f0d5a65",
+            "sg_name": "dev-payments-manage-vpn-sg",
+            "vpc_id": "vpc-07f9319fb3d2fb2aa",
+            "rule": "::/0 on port(s) 1194",
+            "protocol": "tcp",
+            "ports": "1194"
+          },
+          {
+            "sg_id": "sg-06102e95c2ba302fc",
+            "sg_name": "tst2-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55672",
+            "protocol": "tcp",
+            "ports": "55672"
+          },
+          {
+            "sg_id": "sg-06102e95c2ba302fc",
+            "sg_name": "tst2-api",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 55670",
+            "protocol": "tcp",
+            "ports": "55670"
+          },
+          {
+            "sg_id": "sg-06e858b75b87a8ff3",
+            "sg_name": "cakecore-dev-cloud-service-jenkins-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 53694",
+            "protocol": "tcp",
+            "ports": "53694"
+          },
+          {
+            "sg_id": "sg-04e634c0d8b27be6e",
+            "sg_name": "pos2-esb",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 8443",
+            "protocol": "tcp",
+            "ports": "8443"
+          },
+          {
+            "sg_id": "sg-0d4d5167bfe8f7ff9",
+            "sg_name": "POS4-Order-LoadBalancer-vpc-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "0.0.0.0/0 on port(s) 3000",
+            "protocol": "tcp",
+            "ports": "3000"
+          },
+          {
+            "sg_id": "sg-0d4d5167bfe8f7ff9",
+            "sg_name": "POS4-Order-LoadBalancer-vpc-sg",
+            "vpc_id": "vpc-0e4f6c7f1da297ece",
+            "rule": "::/0 on port(s) 3000",
+            "protocol": "tcp",
+            "ports": "3000"
+          }
+        ],
+        "wide_open_count": 89
+      },
+      "blocked_apis": []
+    },
+    "mm-shared-services": {
+      "profile": "mm-shared-services",
+      "vpc_peering": [],
+      "nat_gateways": {
+        "total": 0,
+        "by_state": {}
+      },
+      "transit_gateway_attachments": [],
+      "security_groups": {
+        "total_security_groups": 0,
+        "wide_open_rules": [],
+        "wide_open_count": 0
+      },
+      "blocked_apis": []
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "sample_size": 500,
+  "issues_blocking_others": 5,
+  "issues_blocked": 9,
+  "link_type_distribution": {
+    "Relates": 90,
+    "Cloners": 15,
+    "Depends": 20,
+    "Blocks": 15,
+    "Action item": 4,
+    "Polaris work item link": 2,
+    "Duplicate": 1,
+    "Discovery - Connected": 1,
+    "Child issues": 45,
+    "Must be done": 2
+  },
+  "top_blockers": [
+    {
+      "key": "REST-9060",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Dev in Progress",
+      "summary": " Popular Item Recommendations",
+      "link_count": 11
+    },
+    {
+      "key": "REST-9059",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Open",
+      "summary": "Personalized Recommendations Based on Order History",
+      "link_count": 5
+    },
+    {
+      "key": "REST-18258",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Ready for Development",
+      "summary": "Refunds Fail in Offline Mode",
+      "link_count": 1
+    },
+    {
+      "key": "OS-9120",
+      "project": "OS",
+      "priority": "Unprioritized",
+      "status": "Ready for Development",
+      "summary": "SF - Implement Account Inactivity Fields (3 Slots)",
+      "link_count": 1
+    },
+    {
+      "key": "REST-13811",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Review",
+      "summary": " Context Management  For Recommendations",
+      "link_count": 1
+    }
+  ],
+  "top_blocked": [
+    {
+      "key": "REST-9060",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Dev in Progress",
+      "summary": " Popular Item Recommendations",
+      "link_count": 11
+    },
+    {
+      "key": "UP-4355",
+      "project": "UP",
+      "priority": "Unprioritized",
+      "status": "Ready for QA",
+      "summary": "Propagate Merchant Updates from merchant-service to rs2-boarding-service",
+      "link_count": 2
+    },
+    {
+      "key": "REST-552",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "In Progress",
+      "summary": "Label printer for Delivery - KDS Changes to Trigger Print",
+      "link_count": 2
+    },
+    {
+      "key": "REST-13222",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Open",
+      "summary": "Personalized Recommendations Based on Order History",
+      "link_count": 2
+    },
+    {
+      "key": "REST-13766",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Product Planned",
+      "summary": "KDS v2: Improve KDS onboarding",
+      "link_count": 1
+    },
+    {
+      "key": "UP-4309",
+      "project": "UP",
+      "priority": "Unprioritized",
+      "status": "Ready for QA",
+      "summary": "Some Void Transactions Showing as ReadyForCapture in Snowflake",
+      "link_count": 1
+    },
+    {
+      "key": "REST-879",
+      "project": "REST",
+      "priority": "Medium",
+      "status": "Open",
+      "summary": "[KDS] [Improvement] Invoke a sound when completing major activities",
+      "link_count": 1
+    },
+    {
+      "key": "REST-13229",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Open",
+      "summary": "Implement Recommendation Traceability",
+      "link_count": 1
+    },
+    {
+      "key": "REST-13225",
+      "project": "REST",
+      "priority": "Unprioritized",
+      "status": "Open",
+      "summary": "ETL: Sync Embeddings from MongoDB to VectorDB",
+      "link_count": 1
+    }
+  ]
+}

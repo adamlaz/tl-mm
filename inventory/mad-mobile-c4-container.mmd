@@ -1,0 +1,88 @@
+---
+title: Mad Mobile - C4 Container Diagram
+---
+flowchart TB
+
+    subgraph CAKE["🍰 <b>CAKE POS</b>"]
+        direction TB
+        CAKE_MENU["Menu API<br/><i>11 services</i>"]
+        CAKE_ORDER["Order Management<br/><i>order-proxy, order-api</i>"]
+        CAKE_KDS["Kitchen Display<br/><i>KDS, daypart, modifiers</i>"]
+        CAKE_ADMIN["Restaurant Admin<br/><i>admin portal v2</i>"]
+    end
+
+    subgraph CONC["👔 <b>Concierge</b>"]
+        direction TB
+        CONC_CLIENT["Clienteling App<br/><i>concierge-associate</i>"]
+        CONC_CURB["Curbside Pickup<br/><i>microsites, webhooks</i>"]
+        CONC_ANALYTICS["Analytics Engine<br/><i>16 Lambda functions</i>"]
+    end
+
+    subgraph PAY["💰 <b>Mad Payments</b>"]
+        direction TB
+        PAY_GW["Payment Gateway<br/><i>cake-payment-gateway</i>"]
+        PAY_ADMIN["Payments Admin<br/><i>admin-api, config-portal</i>"]
+        PAY_ONBOARD["Merchant Onboarding<br/><i>onboarding-v3</i>"]
+        PAY_PROC["Processing<br/><i>PETL, EMAF, eCheck,<br/>chargeback</i>"]
+        PAY_PCC["Payment Control Center<br/><i>PCC dashboard</i>"]
+    end
+
+    subgraph NEO["🤖 <b>Neo AI / Marvel Cloud</b>"]
+        direction TB
+        EKS_marvel_cloud_prod_us["EKS: marvel-cloud-prod-us<br/><i>k8s 1.30, 31 nodes</i>"]
+        EKS_marvel_cloud_us_dr["EKS: marvel-cloud-us-dr<br/><i>k8s 1.32, 3 nodes</i>"]
+        NEO_AI["AI Assistant<br/><i>cake-ai-assistant-data</i>"]
+    end
+
+    subgraph PLAT["⚙️ <b>Platform Services</b>"]
+        direction TB
+        PLAT_CONFIG["Config Server<br/><i>config-api</i>"]
+        PLAT_GW["API Gateway<br/><i>Janus, Tyk<br/>23 instances</i>"]
+        PLAT_ADMIN["Operator Admin<br/><i>operator-api, SCAT tool</i>"]
+        PLAT_NOTIF["Notifications<br/><i>email service</i>"]
+    end
+
+    subgraph INFRA["☁️ <b>AWS Infrastructure</b>"]
+        direction TB
+        ECS["ECS Clusters<br/><i>38 clusters<br/>prod: 2 svcs, dev: 355 svcs</i>"]
+        DYNAMO["DynamoDB<br/><i>4 tables<br/>bitbucket-oidc-prod-us, marvel-cloud-prod, marvel-cloud-prod-eu, marvel-cloud-prod-us...</i>"]
+        S3["S3<br/><i>110 buckets (prod-us)</i>"]
+        LAMBDA["Lambda<br/><i>44 functions</i>"]
+        PROM["Prometheus + Elasticsearch<br/><i>prod-prometheus, prod-elasticsearch x3</i>"]
+        OTEL["OpenTelemetry Collector<br/><i>distributed tracing</i>"]
+    end
+
+    %% Inter-system relationships
+    CAKE_ORDER --> PAY_GW
+    CAKE_MENU --> PLAT_CONFIG
+    CONC_CLIENT --> PAY_GW
+    CONC_ANALYTICS --> S3
+    CONC_ANALYTICS --> LAMBDA
+    PAY_GW --> PAY_PROC
+    PAY_ADMIN --> PAY_ONBOARD
+    PLAT_GW --> CAKE
+    PLAT_GW --> CONC
+    PLAT_GW --> PAY
+    NEO_AI --> S3
+    EKS_marvel_cloud_prod_us --> DYNAMO
+    EKS_marvel_cloud_us_dr --> DYNAMO
+    CAKE --> ECS
+    PAY --> ECS
+    CONC --> ECS
+    PLAT --> ECS
+    INFRA --> PROM
+    INFRA --> OTEL
+
+    %% Styling
+    classDef cakeStyle fill:#FEF3C7,stroke:#F59E0B,color:#92400E
+    classDef concStyle fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
+    classDef payStyle fill:#FCE7F3,stroke:#EC4899,color:#9D174D
+    classDef neoStyle fill:#E0E7FF,stroke:#6366F1,color:#3730A3
+    classDef platStyle fill:#F3F4F6,stroke:#6B7280,color:#374151
+    classDef infraStyle fill:#DCFCE7,stroke:#22C55E,color:#166534
+    class CAKE_MENU,CAKE_ORDER,CAKE_KDS,CAKE_ADMIN cakeStyle
+    class CONC_CLIENT,CONC_CURB,CONC_ANALYTICS concStyle
+    class PAY_GW,PAY_ADMIN,PAY_ONBOARD,PAY_PROC,PAY_PCC payStyle
+    class EKS_marvel_cloud_prod_us,EKS_marvel_cloud_us_dr,NEO_AI neoStyle
+    class PLAT_CONFIG,PLAT_GW,PLAT_ADMIN,PLAT_NOTIF platStyle
+    class ECS,DYNAMO,S3,LAMBDA,PROM,OTEL infraStyle

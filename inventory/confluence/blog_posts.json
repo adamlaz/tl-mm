@@ -1,0 +1,413 @@
+{
+  "extracted_at": "2026-04-03T21:10:20.856992",
+  "cql": "type=blogpost AND created >= \"2024-01-01\"",
+  "total": 50,
+  "by_space": {
+    "SMTWP": 41,
+    "SMHMP": 8,
+    "UL": 1
+  },
+  "label_frequency": {},
+  "posts": [
+    {
+      "id": "946569217",
+      "title": "Guest Manager - Adding tags to the requested customer Olo.com items",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2025-03-12T08:12:11.879Z",
+      "labels": []
+    },
+    {
+      "id": "873824258",
+      "title": "DBOps tool",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2025-02-19T04:36:57.271Z",
+      "labels": []
+    },
+    {
+      "id": "862552079",
+      "title": "v1 v2 v3 and ELO comparison",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-03-31T00:47:12.474Z",
+      "labels": []
+    },
+    {
+      "id": "785907717",
+      "title": "converting getMerchantInitializedDocs to a whitelist",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-01-24T04:24:16.342Z",
+      "labels": []
+    },
+    {
+      "id": "783974401",
+      "title": "How to lock a merchant to specific pos software version",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-01-22T02:28:00.191Z",
+      "labels": []
+    },
+    {
+      "id": "778567753",
+      "title": "How to remove fallout merchant from pulse",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-01-28T16:10:47.862Z",
+      "labels": []
+    },
+    {
+      "id": "774799528",
+      "title": "fix bissa Certificate verification failed issue",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-01-20T07:48:52.044Z",
+      "labels": []
+    },
+    {
+      "id": "769720507",
+      "title": "Steps to rollback XA transactions",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2025-05-27T05:38:56.446Z",
+      "labels": []
+    },
+    {
+      "id": "764739957",
+      "title": "SQL query to check if a string available in any table any column",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2025-01-16T06:30:29.186Z",
+      "labels": []
+    },
+    {
+      "id": "751436059",
+      "title": "How to downgrade merchant from 7.12.10.14 to 6.49.0.50",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-03-31T00:53:15.269Z",
+      "labels": []
+    },
+    {
+      "id": "726173191",
+      "title": "Manually onboarding a merchant",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-03-31T00:52:21.113Z",
+      "labels": []
+    },
+    {
+      "id": "707887363",
+      "title": "CLOVER BAR- c0040-10208921",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-12-15T04:08:15.117Z",
+      "labels": []
+    },
+    {
+      "id": "707854857",
+      "title": "Initial documents of a Merchant",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2026-03-17T13:43:27.422Z",
+      "labels": []
+    },
+    {
+      "id": "704380934",
+      "title": "Couchdb view Get receipts by id",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2024-12-12T07:28:34.676Z",
+      "labels": []
+    },
+    {
+      "id": "702218292",
+      "title": "Duplicated MAC of ELO POS devices",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-12-11T17:28:26.447Z",
+      "labels": []
+    },
+    {
+      "id": "687767568",
+      "title": "Menu Catalogs",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2024-12-20T11:01:28.712Z",
+      "labels": []
+    },
+    {
+      "id": "679379465",
+      "title": "ninja one evaluation",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2025-01-09T01:22:11.617Z",
+      "labels": []
+    },
+    {
+      "id": "674922499",
+      "title": "Recover from tinycore prompt",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-11-29T19:54:33.216Z",
+      "labels": []
+    },
+    {
+      "id": "669253662",
+      "title": "Fixing REV27 devices with invalid partition table POC",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-11-27T04:09:48.797Z",
+      "labels": []
+    },
+    {
+      "id": "658767972",
+      "title": "[WIP] - REST-5702 - Discrepancy in 7shift reports due to breaks",
+      "space_key": "UL",
+      "space_name": "Ultrons",
+      "created": "2024-11-21T06:56:56.603Z",
+      "labels": []
+    },
+    {
+      "id": "627343389",
+      "title": "Building couchdb 2.3.x on REV29/REV30",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-11-10T23:16:02.344Z",
+      "labels": []
+    },
+    {
+      "id": "606273584",
+      "title": "timesheet sync issue of c0060-10919375",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-11-27T15:17:31.261Z",
+      "labels": []
+    },
+    {
+      "id": "601161759",
+      "title": "POS network connections",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-11-01T05:34:59.522Z",
+      "labels": []
+    },
+    {
+      "id": "573833232",
+      "title": "[REST-4485] - Bare minimal network connectivity needed by cake pos with bare minimal functions",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-11-06T09:50:33.488Z",
+      "labels": []
+    },
+    {
+      "id": "565411850",
+      "title": "ELO device is unresponsive to touch. (Register 3) - c0020-11505426",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-17T23:54:14.391Z",
+      "labels": []
+    },
+    {
+      "id": "559841286",
+      "title": "How to take front end from a internal release and put to a internal production merchant",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-16T04:37:32.812Z",
+      "labels": []
+    },
+    {
+      "id": "556171426",
+      "title": "Replacing v1,v2,v3 with ELO if v1 and v2 are prohibited on new UI (7.x)",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-15T07:09:55.938Z",
+      "labels": []
+    },
+    {
+      "id": "555614231",
+      "title": "Replacing v1,v2,v3 with ELO",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-15T07:16:21.532Z",
+      "labels": []
+    },
+    {
+      "id": "551583751",
+      "title": "Restore couchdb document from older revision",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-22T01:08:00.102Z",
+      "labels": []
+    },
+    {
+      "id": "542474687",
+      "title": "How pulse keycloak account is created with proper permissions",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-08T07:10:17.706Z",
+      "labels": []
+    },
+    {
+      "id": "535298050",
+      "title": "Pulse data as at 2024 October 4",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-04T03:46:17.784Z",
+      "labels": []
+    },
+    {
+      "id": "528547955",
+      "title": "How to restore previously removed dbs on stag",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-10-02T08:52:47.519Z",
+      "labels": []
+    },
+    {
+      "id": "517111914",
+      "title": "comy sync issue of heavenslittle96150",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-09-27T08:16:31.478Z",
+      "labels": []
+    },
+    {
+      "id": "480477187",
+      "title": "Re-sync dashboard reports data - Data platform",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2024-09-12T15:51:44.176Z",
+      "labels": []
+    },
+    {
+      "id": "474710419",
+      "title": "Sprint review 11th September 2024",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-09-11T12:51:13.872Z",
+      "labels": []
+    },
+    {
+      "id": "467632605",
+      "title": "Cleaning 18Gb couchdb database of c0100-11211256",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-09-08T07:53:12.349Z",
+      "labels": []
+    },
+    {
+      "id": "465371464",
+      "title": "SE-603 - for loyalty orders, receipts do not show customer name",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-09-06T06:29:34.236Z",
+      "labels": []
+    },
+    {
+      "id": "444203280",
+      "title": "Sprint review 28th August 2024",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-28T12:26:27.396Z",
+      "labels": []
+    },
+    {
+      "id": "438010126",
+      "title": "c0100-11485965 - Kitchen printer printing an extra copy intermittently",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-26T10:44:39.340Z",
+      "labels": []
+    },
+    {
+      "id": "429260815",
+      "title": "Janus Clear Cache",
+      "space_key": "SMHMP",
+      "space_name": "Hafeez Marzuk",
+      "created": "2024-08-21T05:02:47.627Z",
+      "labels": []
+    },
+    {
+      "id": "418414958",
+      "title": "pulse tunnel open process ( August 2024 )",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-15T06:41:48.364Z",
+      "labels": []
+    },
+    {
+      "id": "418283521",
+      "title": "Sales demo docker pos instances ( August 2024 )",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-15T02:04:54.332Z",
+      "labels": []
+    },
+    {
+      "id": "416514103",
+      "title": "El Charro Restaurant- elcharro93286 - ELO CTD issue",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-14T11:10:36.073Z",
+      "labels": []
+    },
+    {
+      "id": "404062271",
+      "title": "open ports on pulse servers",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-08T10:17:47.985Z",
+      "labels": []
+    },
+    {
+      "id": "396034050",
+      "title": "Build PAM module and NSS on ubuntu 22.04",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-06T12:38:40.106Z",
+      "labels": []
+    },
+    {
+      "id": "386367547",
+      "title": "Pete's Pizza & Tap House not on pulse",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-08-01T11:45:26.678Z",
+      "labels": []
+    },
+    {
+      "id": "383287508",
+      "title": "copy a large file from macos to pos",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-07-31T04:08:21.351Z",
+      "labels": []
+    },
+    {
+      "id": "380797201",
+      "title": "Installing pulse locally ( 2024 )",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-11-13T10:21:04.133Z",
+      "labels": []
+    },
+    {
+      "id": "377553444",
+      "title": "REV27 7.10.0.70 Touch issue reported devices",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-07-28T16:31:39.470Z",
+      "labels": []
+    },
+    {
+      "id": "370344071",
+      "title": "Upgrading ubuntu 18.04 to 18.04 pro",
+      "space_key": "SMTWP",
+      "space_name": "Thiwanka Wimalasuriya",
+      "created": "2024-07-24T01:58:36.246Z",
+      "labels": []
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "total_custom_fields": 425,
+  "interesting_fields": [
+    {
+      "id": "customfield_10625",
+      "name": "CAKE-Category",
+      "type": "option-with-child",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+    },
+    {
+      "id": "customfield_10626",
+      "name": "Release Page Link",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:url"
+    },
+    {
+      "id": "customfield_10627",
+      "name": "Release Version",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10507",
+      "name": "Parent Root Cause",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10614",
+      "name": "Impact Statement",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textarea"
+    },
+    {
+      "id": "customfield_10618",
+      "name": "Root Cause Analysis - 5 Why's",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textarea"
+    },
+    {
+      "id": "customfield_10619",
+      "name": "Root Cause Statement",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textarea"
+    },
+    {
+      "id": "customfield_10820",
+      "name": "PROD Release Date",
+      "type": "date",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker"
+    },
+    {
+      "id": "customfield_10821",
+      "name": "PROD Release Date and Time",
+      "type": "datetime",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:datetime"
+    },
+    {
+      "id": "customfield_10822",
+      "name": "Release Category",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10824",
+      "name": "Release Owner",
+      "type": "user",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker"
+    },
+    {
+      "id": "customfield_10825",
+      "name": "Services and Components",
+      "type": "option-with-child",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+    },
+    {
+      "id": "customfield_10818",
+      "name": "STAG Release Date and Time",
+      "type": "datetime",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:datetime"
+    },
+    {
+      "id": "customfield_10590",
+      "name": "Root Cause Category",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+    },
+    {
+      "id": "customfield_10470",
+      "name": "TISD-SR-Sub Category (Microsoft)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10471",
+      "name": "TISD-SR-Sub Category (Mad Mobile Lab)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10472",
+      "name": "TISD-SR-Sub Category (Jira/Confluence)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10473",
+      "name": "TISD-SR-Sub Category (Network)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10474",
+      "name": "TISD-SR-Sub Category (Five9)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10234",
+      "name": "Release Page",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10476",
+      "name": "TISD-SR-Sub Category (Office Facilities)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10114",
+      "name": "Root cause",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textarea"
+    },
+    {
+      "id": "customfield_10477",
+      "name": "TISD-SR-Sub Category (Software - General)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10467",
+      "name": "TISD-SR-Category",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10469",
+      "name": "TISD-SR-Sub Category (Slack)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10451",
+      "name": "Impacted Asset",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10683",
+      "name": "Root Cause Identified",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+    },
+    {
+      "id": "customfield_10685",
+      "name": "Requesting Team",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10565",
+      "name": "Customer Outreach",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10436",
+      "name": "Scrum Team",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10438",
+      "name": "Secondary Root Cause",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10553",
+      "name": "Is customer a suspect or victim",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10308",
+      "name": "Root Cause Categorization",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+    },
+    {
+      "id": "customfield_10412",
+      "name": "Sub Category",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10410",
+      "name": "Category",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10402",
+      "name": "Root Cause Identified",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textarea"
+    },
+    {
+      "id": "customfield_10405",
+      "name": "Problem Root Cause Category",
+      "type": "option-with-child",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+    },
+    {
+      "id": "customfield_10406",
+      "name": "RCA Key",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10407",
+      "name": "Impacted Entities",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+    },
+    {
+      "id": "customfield_10063",
+      "name": "Configuration Impact",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10064",
+      "name": "Shell Impact",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10066",
+      "name": "Root Cause Category",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10067",
+      "name": "Customers",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+    },
+    {
+      "id": "customfield_10068",
+      "name": "Work category",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugins.work-category-field:work-category-field-cftype"
+    },
+    {
+      "id": "customfield_10296",
+      "name": "Root Cause Category (migrated)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10057",
+      "name": "Category",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:jwm-category"
+    },
+    {
+      "id": "customfield_11130",
+      "name": "Expected Impact",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_11131",
+      "name": "Deployment Owner",
+      "type": "user",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker"
+    },
+    {
+      "id": "customfield_11132",
+      "name": "Release Notes Link",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:url"
+    },
+    {
+      "id": "customfield_10391",
+      "name": "Incident Team",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker"
+    },
+    {
+      "id": "customfield_10393",
+      "name": "Primary Root Cause",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10153",
+      "name": "Team",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10034",
+      "name": "MenuPad Customers",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+    },
+    {
+      "id": "customfield_10036",
+      "name": "Severity",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10158",
+      "name": "Root Cause Analysis",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textarea"
+    },
+    {
+      "id": "customfield_10382",
+      "name": "Probable/Actual Root Cause Category",
+      "type": "option-with-child",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+    },
+    {
+      "id": "customfield_10020",
+      "name": "Sprint",
+      "type": "array",
+      "custom_type": "com.pyxis.greenhopper.jira:gh-sprint"
+    },
+    {
+      "id": "customfield_10266",
+      "name": "Severityy",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10388",
+      "name": "RCA (POS)",
+      "type": "string",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    {
+      "id": "customfield_10026",
+      "name": "Story Points",
+      "type": "number",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:float"
+    },
+    {
+      "id": "customfield_10011",
+      "name": "Epic Name",
+      "type": "string",
+      "custom_type": "com.pyxis.greenhopper.jira:gh-epic-label"
+    },
+    {
+      "id": "customfield_10012",
+      "name": "Epic Status",
+      "type": "option",
+      "custom_type": "com.pyxis.greenhopper.jira:gh-epic-status"
+    },
+    {
+      "id": "customfield_10013",
+      "name": "Epic Color",
+      "type": "string",
+      "custom_type": "com.pyxis.greenhopper.jira:gh-epic-color"
+    },
+    {
+      "id": "customfield_10014",
+      "name": "Epic Link",
+      "type": "any",
+      "custom_type": "com.pyxis.greenhopper.jira:gh-epic-link"
+    },
+    {
+      "id": "customfield_10377",
+      "name": "Services Component",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10484",
+      "name": "TISD-IR-Category",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10001",
+      "name": "Team",
+      "type": "team",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:atlassian-team"
+    },
+    {
+      "id": "customfield_10244",
+      "name": "Release Type",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10245",
+      "name": "Teams Involved",
+      "type": "array",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+    },
+    {
+      "id": "customfield_10004",
+      "name": "Impact",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    },
+    {
+      "id": "customfield_10478",
+      "name": "TISD-SR-Sub Category (Hardware - General)",
+      "type": "option",
+      "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:select"
+    }
+  ],
+  "root_cause_field": {
+    "id": "customfield_10382",
+    "name": "Probable/Actual Root Cause Category",
+    "type": "option-with-child",
+    "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+  },
+  "story_points_field": {
+    "id": "customfield_10026",
+    "name": "Story Points",
+    "type": "number",
+    "custom_type": "com.atlassian.jira.plugin.system.customfieldtypes:float"
+  },
+  "story_points_coverage": {
+    "field_id": "customfield_10026",
+    "total_stories_sampled": 300,
+    "with_points": 27,
+    "coverage_pct": 9.0
+  }
+}

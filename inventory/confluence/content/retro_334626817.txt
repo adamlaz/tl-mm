@@ -1,0 +1,393 @@
+Title: Cake Altair -  2024 PI 2.6 - Review & Retrospective
+Space: Team Stark
+Modified: 2024-07-09T18:38:14.652Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/TS/pages/334626817/Cake+Altair+-+2024+PI+2.6+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint
+
+Altair - 2024 PI 2.6
+
+Duration
+
+   - 
+
+Sprint Retrospect Meeting
+
+  
+
+Main Theme of Sprint
+
+Activity Logs Both Slide-outs Dev Completion & TST1 Deployment
+
+Goals
+
+  • 
+Activity Logs
+
+  • 
+Activity Logs Both Slide-outs Dev Completion & TST1 Deployment
+
+  • 
+Single Location Migration
+
+  • 
+MC to EMS v2.0 Migration Script Development and Initial Execution
+
+  • 
+Multi Location Migration
+
+  • 
+MC to EMS v2.0 Migration Script Development and Initial Execution
+
+Participants 
+
+            
+
+Work Accepted 
+
+Stories Completed
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20%3D%20CE%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Accepted%2C%20Approved%2C%20%22ARB%20Review%22%2C%20Closed%2C%20Review)%20AND%20sprint%3D%22ALTAIR%202024%20PI%202.6%22%20order%20by%20created%20DESC
+
+Stories Not Completed
+
+Open
+https://madmobile-eng.atlassian.net/issues/?jql=project%20%3D%20CE%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Discovery%2C%20Open%2C%20%22Product%20Planned%22%2C%20%22Ready%20for%20Development%22%2C%20%22Tech%20Design%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%202.6%22%20order%20by%20created%20DESC%20%20%20%20%20%20
+In-complete
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20%3D%20CE%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(%22Dev%20in%20Progress%22%2C%20%22In%20Progress%22%2C%20%22QA%20in%20Progress%22%2C%20%22Code%20Review%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%202.6%22%20order%20by%20created%20DESC%20%20%20%20%20%20%20
+
+Demo Items
+
+Demo Line Up: 
+
+  • 
+
+Recording: 
+
+  • 
+Recording link: 
+
+Sprint Report
+
+Sprint Report 
+
+Team Availability
+
+  • 
+Total days:  10 days
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Estimated Man-days
+
+Planned Days-off
+
+Unplanned Days-off
+
+Actual Days
+
+Comments
+
+1
+  
+
+9
+
+1
+
+0
+
+6
+
+2
+ 
+
+9
+
+1.5
+
+0
+
+11.5
+
+3
+  
+
+9
+
+1
+
+0
+
+12
+
+4
+ 
+
+9
+
+1
+
+0
+
+12
+
+5
+  
+
+9
+
+0
+
+0
+
+13
+
+6
+ (Intern)
+
+9
+
+0
+
+7
+  
+
+9
+
+1
+
+0
+
+12
+
+8
+ 
+
+9
+
+0
+
+0
+
+13
+
+9
+ 
+
+9
+
+0.5
+
+0
+
+12.5
+
+10
+ (Intern)
+
+9
+
+0
+
+11
+ 
+
+9
+
+0
+
+0
+
+13
+
+12
+Total 
+
+81
+
+6
+
+0
+
+99
+
+Added to Sprint (Mid Sprint Injections)
+
+Please refer to the placeholder ticket: CE-4054f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira 
+
+Team Velocity
+
+Item
+
+Story Points
+
+80% Capacity
+
+161
+
+Sprint Commitment (80%)
+
+164
+
+Un-Planned Work Placeholder Value
+
+37
+
+Not started (Open)
+
+-
+
+Incomplete (In progress / Dev completed)
+
+66
+
+Added to Sprint (Total Un-Planned Work)
+
+62
+
+Removed from Sprint
+
+-
+
+Completed (Resolved Stories)
+
+166
+
+Delivery Success Rate =   166 / 164  = 101%
+
+Reasons for the Deviation in Delivery Success / Spillovers %: 
+
+  • 
+EMS 2.0 bugs blocking the tickets got spilled over. Ticket links contains the blocked tickets.
+
+Follow-up action items from the previous sprint
+
+  • 
+N/A
+
+Sprint Highlights
+
+  • 
+Completed all the sprint goals
+
+Sprint Report: report
+
+Burn-down Report: report
+
+Retrospective
+
+What can we continue doing?
+
+  • 
+  KT Sessions for the Team
+
+  • 
+ need to discuss on how to streamline the ad-hoc environment issues
+
+What can we start doing?
+
+  • 
+ Identify the new components for Altair and get the knowledge of those
+
+  • 
+ Fill the template document for components assigned to Altair Team
+
+What should we stop doing?
+
+  • 
+
+Action Items for the next sprint 
+
+  • 
+ ,  - Speak with Ahesh about the new lower environment deployment process
+
+  • 
+ Check the status of Reported Environment Issues before starting the sprint 3.1
+
+What should we improve?
+
+  • 
+
+Perfection Game
+
+1-10
+
+Member
+
+Rate
+
+Remarks
+
+1
+  
+
+6
+
+2
+ 
+
+4
+
+3
+  
+
+2
+
+4
+ 
+
+5
+
+5
+  
+
+4
+
+6
+  (Intern)
+
+-
+
+7
+  
+
+3
+
+8
+ 
+
+-
+
+9
+ 
+
+5
+
+10
+ (Intern)
+
+-
+
+11
+ 
+
+5
+
+12
+Average
+
+4.25

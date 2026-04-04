@@ -1,0 +1,866 @@
+{
+  "heavy_reviewers_100plus": [
+    {
+      "name": "John Harre",
+      "reviews_given": 581,
+      "reviews_received": 952,
+      "prs_authored": 127,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "madmobile/mad-services-xstore24eu-rl"
+      ]
+    },
+    {
+      "name": "Holly Culver",
+      "reviews_given": 508,
+      "reviews_received": 280,
+      "prs_authored": 37,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "syscolabs/moxy",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Wenushka Dikowita",
+      "reviews_given": 481,
+      "reviews_received": 8,
+      "prs_authored": 7,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco",
+        "syscolabsconf/menu-sync-agent"
+      ]
+    },
+    {
+      "name": "Dan McCune",
+      "reviews_given": 471,
+      "reviews_received": 134,
+      "prs_authored": 13,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban"
+      ]
+    },
+    {
+      "name": "Matias Lopez Riglos",
+      "reviews_given": 463,
+      "reviews_received": 374,
+      "prs_authored": 104,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-development",
+        "madmobile/cloud-shared-services",
+        "madmobile/gitops-cake",
+        "madmobile/impl-rl",
+        "madmobile/restaurant-admin-v2",
+        "madpayments/gitops-payments",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/merchant-service",
+        "syscolabs/gm",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades"
+      ]
+    },
+    {
+      "name": "Matthew Griffin",
+      "reviews_given": 453,
+      "reviews_received": 135,
+      "prs_authored": 40,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-development",
+        "madmobile/cloud-shared-services",
+        "madmobile/gitops-cake",
+        "madpayments/gitops-payments",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Dhanushka_K",
+      "reviews_given": 420,
+      "reviews_received": 55,
+      "prs_authored": 9,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl"
+      ]
+    },
+    {
+      "name": "James Oliver",
+      "reviews_given": 389,
+      "reviews_received": 1064,
+      "prs_authored": 144,
+      "repos": [
+        "madmobile/cloud-shared-services",
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "madmobile/mad-services-xstore24eu-rl",
+        "syscolabs/gm"
+      ]
+    },
+    {
+      "name": "Dineth Samarakkody",
+      "reviews_given": 366,
+      "reviews_received": 311,
+      "prs_authored": 88,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Orlando Jimenez",
+      "reviews_given": 357,
+      "reviews_received": 267,
+      "prs_authored": 85,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-development",
+        "madmobile/cloud-shared-services",
+        "madmobile/gitops-cake",
+        "madmobile/impl-urban",
+        "madmobile/marvel-payment-aurus",
+        "madmobile/restaurant-admin-v2",
+        "madpayments/gitops-payments",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/merchant-service",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Alexander Baine",
+      "reviews_given": 356,
+      "reviews_received": 66,
+      "prs_authored": 15,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/gitops-cake",
+        "madmobile/impl-urban",
+        "madmobile/restaurant-admin-v2",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Brian Smith",
+      "reviews_given": 349,
+      "reviews_received": 86,
+      "prs_authored": 13,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl"
+      ]
+    },
+    {
+      "name": "Mike Nunez",
+      "reviews_given": 330,
+      "reviews_received": 256,
+      "prs_authored": 46,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-development",
+        "madmobile/cloud-shared-services",
+        "madmobile/concierge-associate",
+        "madmobile/gitops-cake",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "madmobile/marvel-payment-aurus",
+        "madmobile/restaurant-admin-v2",
+        "madpayments/gitops-payments",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/merchant-service",
+        "syscolabs/gm",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades"
+      ]
+    },
+    {
+      "name": "Ryan Mercado",
+      "reviews_given": 321,
+      "reviews_received": 127,
+      "prs_authored": 64,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/concierge-associate",
+        "madmobile/gitops-cake",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "madmobile/restaurant-admin-v2",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Matthew Crumley",
+      "reviews_given": 299,
+      "reviews_received": 315,
+      "prs_authored": 61,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-services",
+        "madmobile/gitops-cake",
+        "madmobile/restaurant-admin-v2",
+        "madpayments/gitops-payments",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "madpayments/rs2-bankworks-parser-service",
+        "syscolabs/cake-payment-gateway",
+        "syscolabs/cinco-workspace",
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco",
+        "syscolabsconf/menu-sync-agent"
+      ]
+    },
+    {
+      "name": "Benjamin Roedell",
+      "reviews_given": 275,
+      "reviews_received": 448,
+      "prs_authored": 69,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-services",
+        "madmobile/concierge-associate",
+        "madmobile/gitops-cake",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "madmobile/restaurant-admin-v2",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Simon",
+      "reviews_given": 274,
+      "reviews_received": 120,
+      "prs_authored": 37,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-development",
+        "madmobile/cloud-shared-services",
+        "madmobile/gitops-cake",
+        "madmobile/impl-rl",
+        "madpayments/merchant-service"
+      ]
+    },
+    {
+      "name": "Eugenio Gonzalez",
+      "reviews_given": 265,
+      "reviews_received": 173,
+      "prs_authored": 17,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban"
+      ]
+    },
+    {
+      "name": "Matt Cooke",
+      "reviews_given": 257,
+      "reviews_received": 49,
+      "prs_authored": 20,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "madmobile/mad-services-xstore24eu-rl"
+      ]
+    },
+    {
+      "name": "Faizul Hasan",
+      "reviews_given": 243,
+      "reviews_received": 25,
+      "prs_authored": 10,
+      "repos": [
+        "syscolabs/moxy",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "AIR",
+      "reviews_given": 236,
+      "reviews_received": 0,
+      "prs_authored": 0,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban"
+      ]
+    },
+    {
+      "name": "Mohammed Moufakkir",
+      "reviews_given": 223,
+      "reviews_received": 74,
+      "prs_authored": 8,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-urban"
+      ]
+    },
+    {
+      "name": "Darshana Buddhika",
+      "reviews_given": 215,
+      "reviews_received": 211,
+      "prs_authored": 59,
+      "repos": [
+        "madpayments/gitops-payments",
+        "madpayments/merchant-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Ananda Subasinghe",
+      "reviews_given": 213,
+      "reviews_received": 27,
+      "prs_authored": 12,
+      "repos": [
+        "madpayments/merchant-service",
+        "syscolabs/cake-payment-gateway",
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Mauro Villaseco",
+      "reviews_given": 211,
+      "reviews_received": 0,
+      "prs_authored": 0,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/concierge-associate",
+        "madmobile/impl-urban",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Jeffery Fulton",
+      "reviews_given": 208,
+      "reviews_received": 56,
+      "prs_authored": 8,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban"
+      ]
+    },
+    {
+      "name": "Harsha Kosala",
+      "reviews_given": 205,
+      "reviews_received": 291,
+      "prs_authored": 36,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "John Thompson",
+      "reviews_given": 192,
+      "reviews_received": 3,
+      "prs_authored": 2,
+      "repos": [
+        "madmobile/impl-urban",
+        "madpayments/merchant-service",
+        "syscolabs/gm",
+        "syscolabs/moxy"
+      ]
+    },
+    {
+      "name": "Gayan Karunarathna",
+      "reviews_given": 190,
+      "reviews_received": 387,
+      "prs_authored": 111,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madpayments/gitops-payments",
+        "madpayments/merchant-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Zachary Davies",
+      "reviews_given": 189,
+      "reviews_received": 292,
+      "prs_authored": 27,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl"
+      ]
+    },
+    {
+      "name": "Thiwanka Wimalasuriya",
+      "reviews_given": 187,
+      "reviews_received": 885,
+      "prs_authored": 180,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-development",
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Cliff Griffith",
+      "reviews_given": 185,
+      "reviews_received": 15,
+      "prs_authored": 1,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-urban"
+      ]
+    },
+    {
+      "name": "Pasindu Gunasekara",
+      "reviews_given": 180,
+      "reviews_received": 18,
+      "prs_authored": 5,
+      "repos": [
+        "madpayments/gitops-payments",
+        "madpayments/merchant-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Muditha Sumanathunga",
+      "reviews_given": 167,
+      "reviews_received": 95,
+      "prs_authored": 28,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Geethanga Amarasinghe",
+      "reviews_given": 164,
+      "reviews_received": 0,
+      "prs_authored": 0,
+      "repos": [
+        "syscolabs/cake-payment-gateway",
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "manthi ariyasinghe",
+      "reviews_given": 162,
+      "reviews_received": 452,
+      "prs_authored": 70,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Kevin Reyes",
+      "reviews_given": 159,
+      "reviews_received": 43,
+      "prs_authored": 45,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madpayments/gitops-payments",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "madpayments/merchant-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Madhawi De Mel",
+      "reviews_given": 148,
+      "reviews_received": 380,
+      "prs_authored": 118,
+      "repos": [
+        "madpayments/gitops-payments",
+        "madpayments/merchant-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Buddhika Lakshan",
+      "reviews_given": 144,
+      "reviews_received": 135,
+      "prs_authored": 26,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Jeff Lerman",
+      "reviews_given": 143,
+      "reviews_received": 8,
+      "prs_authored": 7,
+      "repos": [
+        "syscolabs/gm"
+      ]
+    },
+    {
+      "name": "Archit Biala",
+      "reviews_given": 142,
+      "reviews_received": 122,
+      "prs_authored": 13,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl"
+      ]
+    },
+    {
+      "name": "Hashan Prabodhaka Jalath",
+      "reviews_given": 140,
+      "reviews_received": 25,
+      "prs_authored": 3,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-services"
+      ]
+    },
+    {
+      "name": "Wing Hung Peter Wu",
+      "reviews_given": 139,
+      "reviews_received": 169,
+      "prs_authored": 70,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-services",
+        "madpayments/gitops-payments",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "madpayments/merchant-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Kyle Budd",
+      "reviews_given": 138,
+      "reviews_received": 655,
+      "prs_authored": 87,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-services",
+        "madmobile/gitops-cake",
+        "madmobile/impl-urban",
+        "madmobile/restaurant-admin-v2",
+        "syscolabs/cinco-workspace",
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco",
+        "syscolabsconf/menu-sync-agent"
+      ]
+    },
+    {
+      "name": "Pradeep Sanjaya",
+      "reviews_given": 135,
+      "reviews_received": 0,
+      "prs_authored": 0,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades"
+      ]
+    },
+    {
+      "name": "Harrison Minchew",
+      "reviews_given": 134,
+      "reviews_received": 117,
+      "prs_authored": 58,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-urban",
+        "madmobile/marvel-payment-aurus",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "syscolabs/cake-payment-gateway",
+        "syscolabs/cinco-workspace",
+        "syscolabs/moxy",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Maleesha Wijeratne",
+      "reviews_given": 130,
+      "reviews_received": 132,
+      "prs_authored": 16,
+      "repos": [
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco",
+        "syscolabsconf/menu-sync-agent"
+      ]
+    },
+    {
+      "name": "Poorna Manujaya Amarasingha",
+      "reviews_given": 124,
+      "reviews_received": 173,
+      "prs_authored": 23,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madmobile/cloud-shared-services"
+      ]
+    },
+    {
+      "name": "Ruwinda Ranganayake",
+      "reviews_given": 123,
+      "reviews_received": 250,
+      "prs_authored": 46,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Chamith Jayathilaka",
+      "reviews_given": 122,
+      "reviews_received": 111,
+      "prs_authored": 12,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-urban",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Sunil Pandey",
+      "reviews_given": 120,
+      "reviews_received": 554,
+      "prs_authored": 62,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/impl-urban",
+        "madmobile/mad-services-xstore24eu-rl"
+      ]
+    },
+    {
+      "name": "Trenton Kress",
+      "reviews_given": 118,
+      "reviews_received": 132,
+      "prs_authored": 57,
+      "repos": [
+        "madmobile/cake-ecs-configs",
+        "madpayments/gitops-payments",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "madpayments/merchant-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Sankha Jayalath",
+      "reviews_given": 117,
+      "reviews_received": 56,
+      "prs_authored": 7,
+      "repos": [
+        "syscolabs/moxy",
+        "syscolabs/olo"
+      ]
+    },
+    {
+      "name": "Hafeez Marzuk",
+      "reviews_given": 116,
+      "reviews_received": 67,
+      "prs_authored": 15,
+      "repos": [
+        "syscolabs/gm",
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco"
+      ]
+    },
+    {
+      "name": "Lahiru Yapa",
+      "reviews_given": 108,
+      "reviews_received": 19,
+      "prs_authored": 7,
+      "repos": [
+        "syscolabs/moxy",
+        "syscolabs/olo",
+        "syscolabs/pos-os-upgrades",
+        "syscolabs/react-cinco",
+        "syscolabsconf/menu-sync-agent"
+      ]
+    },
+    {
+      "name": "Charles Boice",
+      "reviews_given": 107,
+      "reviews_received": 322,
+      "prs_authored": 128,
+      "repos": [
+        "madmobile/cloud-shared-development",
+        "madmobile/cloud-shared-services",
+        "madpayments/gitops-payments",
+        "madpayments/merchant-service",
+        "syscolabs/cake-payment-gateway"
+      ]
+    },
+    {
+      "name": "Abdul Haady",
+      "reviews_given": 103,
+      "reviews_received": 16,
+      "prs_authored": 2,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-urban"
+      ]
+    }
+  ],
+  "reviewer_bottleneck_repos": [
+    {
+      "repo": "syscolabs/cinco-workspace",
+      "top_reviewer": "Rob Quin",
+      "pct": 66.7,
+      "total_prs": 3
+    },
+    {
+      "repo": "syscolabs/moxy",
+      "top_reviewer": "Dineth Samarakkody",
+      "pct": 74.0,
+      "total_prs": 250
+    },
+    {
+      "repo": "madmobile/neo-workspace",
+      "top_reviewer": "Rusty Clark",
+      "pct": 64.4,
+      "total_prs": 45
+    },
+    {
+      "repo": "madpayments/gitops-payments",
+      "top_reviewer": "Kevin Reyes",
+      "pct": 57.8,
+      "total_prs": 154
+    },
+    {
+      "repo": "syscolabs/pos-os-upgrades",
+      "top_reviewer": "Ananda Subasinghe",
+      "pct": 65.2,
+      "total_prs": 250
+    },
+    {
+      "repo": "syscolabs/gm",
+      "top_reviewer": "Jeff Lerman",
+      "pct": 57.2,
+      "total_prs": 250
+    },
+    {
+      "repo": "madmobile/gitops-cake",
+      "top_reviewer": "Mike Nunez",
+      "pct": 87.5,
+      "total_prs": 72
+    },
+    {
+      "repo": "madpayments/rs2-bankworks-parser-service",
+      "top_reviewer": "Wing Hung Peter Wu",
+      "pct": 81.8,
+      "total_prs": 11
+    },
+    {
+      "repo": "madmobile/impl-urban",
+      "top_reviewer": "Eugenio Gonzalez",
+      "pct": 90.8,
+      "total_prs": 250
+    },
+    {
+      "repo": "madpayments/merchant-service",
+      "top_reviewer": "Michael Gibaldi",
+      "pct": 52.9,
+      "total_prs": 70
+    },
+    {
+      "repo": "madmobile/impl-rl",
+      "top_reviewer": "Matt Cooke",
+      "pct": 92.8,
+      "total_prs": 250
+    },
+    {
+      "repo": "madmobile/marvel-payment-aurus",
+      "top_reviewer": "Shreshth Agarwal",
+      "pct": 100.0,
+      "total_prs": 17
+    },
+    {
+      "repo": "madmobile/concierge-associate",
+      "top_reviewer": "James Oliver",
+      "pct": 82.8,
+      "total_prs": 250
+    },
+    {
+      "repo": "madmobile/cake-ecs-configs",
+      "top_reviewer": "Wenushka Dikowita",
+      "pct": 66.0,
+      "total_prs": 250
+    },
+    {
+      "repo": "syscolabs/cake-payment-gateway",
+      "top_reviewer": "Darshana Buddhika",
+      "pct": 73.2,
+      "total_prs": 250
+    },
+    {
+      "repo": "madmobile/cloud-shared-services",
+      "top_reviewer": "Matias Lopez Riglos",
+      "pct": 72.7,
+      "total_prs": 227
+    },
+    {
+      "repo": "madmobile/cloud-shared-development",
+      "top_reviewer": "Matthew Griffin",
+      "pct": 81.0,
+      "total_prs": 163
+    }
+  ],
+  "overloaded_assignees_50plus": [],
+  "key_person_risks": [],
+  "summary": {
+    "heavy_reviewers": 57,
+    "bottleneck_repos": 17,
+    "overloaded_assignees": 0,
+    "dual_risk_individuals": 0
+  }
+}

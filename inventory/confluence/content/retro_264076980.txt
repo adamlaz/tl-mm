@@ -1,0 +1,426 @@
+Title: Cake Altair -  2024 PI 2.3 - Review & Retrospective
+Space: Team Stark
+Modified: 2024-05-21T13:29:03.047Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/TS/pages/264076980/Cake+Altair+-+2024+PI+2.3+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint
+
+Altair - 2024 PI 2.3 
+
+Duration
+
+   - 
+
+Sprint Retrospect Meeting
+
+  
+
+Main Theme of Sprint
+
+Contact Upload - Stop Gap solution - Feature completion
+
+Goals
+
+  • 
+Contact upload 
+
+  • 
+Performance test completion
+
+  • 
+Feature verification
+
+  • 
+Migration execution
+
+  • 
+Activity Log
+
+  • 
+Grid view UI integration
+
+  • 
+Filter section UI integration
+
+  • 
+Date picker UI integration
+
+  • 
+UA Menu Admin malware removal - Production release
+
+Participants 
+
+            
+
+Work Accepted 
+
+Stories Completed
+
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution50project = CE AND issuetype in standardIssueTypes() AND status in (Accepted, Approved, "ARB Review", Closed, Review) AND sprint="ALTAIR 2024 PI 2.3" order by created DESC                      9ba74c23-a7c9-34fe-8d42-7757acdf82db
+Stories Not Completed
+
+Open
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution20project = CE AND issuetype in standardIssueTypes() AND status in (Discovery, Open, "Product Planned", "Ready for Development", "Tech Design") AND sprint="ALTAIR 2024 PI 2.3" order by created DESC                 9ba74c23-a7c9-34fe-8d42-7757acdf82db
+In-complete
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution20project = CE AND issuetype in standardIssueTypes() AND status in ("Dev in Progress", "In Progress", "QA in Progress", "Code Review") AND sprint="ALTAIR 2024 PI 2.3" order by created DESC                 9ba74c23-a7c9-34fe-8d42-7757acdf82db
+Demo Items
+
+Demo Line Up: 
+
+  • 
+Activity Log - Grid view UI implementation  
+
+Recording: 
+
+  • 
+Recording link: 
+
+Sprint Report
+
+Sprint Report 
+
+Team Availability
+
+  • 
+Total Working days:  10 days
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays:0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Estimated Man-days
+
+Planned Days-off
+
+Unplanned Days-off
+
+Actual Man-days
+
+Comments
+
+1
+  
+
+9
+
+0
+
+0
+
+4.5
+
+2
+ 
+
+9
+
+0
+
+0
+
+9
+
+3
+  
+
+9
+
+0
+
+0
+
+9
+
+4
+ 
+
+9
+
+1
+
+0
+
+8
+
+5
+  
+
+9
+
+0
+
+0
+
+9
+
+6
+ (Intern)
+
+7
+  
+
+9
+
+1
+
+0
+
+8
+
+8
+ 
+
+9
+
+0
+
+0
+
+9
+
+9
+ 
+
+9
+
+0
+
+0
+
+9
+
+10
+ (Intern)
+
+11
+ 
+
+9
+
+2
+
+0
+
+7
+
+12
+Total 
+
+81
+
+4
+
+0
+
+72.5
+
+Added to Sprint (Mid Sprint Injections)
+
+Please refer to placeholder ticket: CE-40519ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+Spillovers (Not Completed)
+
+N/A
+
+Ad-Hoc (Unplanned) Tasks Analysis
+
+Task
+
+Ticket
+
+Time (Hours) Entered in Placeholder Ticket
+
+Comments
+
+Adhoc Tasks in the Sprint
+
+  • 
+PR Review - Non Roadmap Items:
+
+Placeholder Ticket: CE-39799ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+0
+
+  • 
+Unplanned Meetings:
+
+Placeholder Ticket:  CE-39699ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+0
+
+Total Ad-Hoc Task Hours
+
+0 Hours
+
+Unplanned Leaves
+
+None
+
+ 0 Hours
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (80%)
+
+109
+
+20% Buffer Placeholder Value
+
+27
+
+Not started (Open)
+
+0
+
+Incomplete (In progress / Dev completed)
+
+0
+
+Added to Sprint
+
+16
+
+Removed from Sprint
+
+0
+
+Completed (Resolved Stories)
+
+125
+
+Delivery Success Rate = 125 / 109 = 114.7%
+
+Reasons for the deviation in Delivery Success %: 
+
+No Spillovers
+
+ 
+
+Follow-up action items from the previous sprint
+
+  • 
+N/A
+
+Sprint Highlights
+
+  • 
+Completed all the sprint goals
+
+Sprint Report: report
+
+Burn-down Report: report
+
+Retrospective
+
+What can we continue doing?
+
+  • 
+  KT Sessions for the Team: 
+
+  • 
+ To have the tasks pre-planned and communicated, as we did in this sprint for dependent tasks with the other teams.
+
+ex: Performance test , Integration testing
+
+What can we start doing?
+
+  • 
+ Identify the new components for Altair and get the knowledge of those
+
+What should we stop doing?
+
+  • 
+
+Action Items for next sprint 
+
+  • 
+
+What should we improve?
+
+  • 
+   The new deployment process to lower environment is not flexible and it is overhead for dev deployment, access given only two team members.
+
+  • 
+ Current environment collaboration is working when deploying to lower environment where multiple teams are working, but moving forward we need to establish on a proper lower environment so we can meet the expected delivery timelines without delay.
+
+Perfection Game
+
+1-10
+
+Member
+
+Rate
+
+Remarks
+
+1
+  
+
+8
+
+2
+ 
+
+8
+
+3
+  
+
+8
+
+4
+ 
+
+8
+
+5
+  
+
+8
+
+6
+  (Intern)
+
+8
+
+7
+  
+
+7
+
+8
+ 
+
+8
+
+9
+ 
+
+8
+
+10
+ (Intern)
+
+6
+
+11
+ 
+
+12
+Average
+
+8

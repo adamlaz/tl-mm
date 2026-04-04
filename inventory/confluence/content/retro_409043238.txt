@@ -1,0 +1,394 @@
+Title: Cake Altair -  2024 PI 3.2 - Review & Retrospective
+Space: Team Stark
+Modified: 2024-08-13T10:47:07.344Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/TS/pages/409043238/Cake+Altair+-+2024+PI+3.2+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint
+
+Altair - 2024 PI 3.2
+
+Duration
+
+   - 
+
+Sprint Retrospect Meeting
+
+  
+
+Main Theme of Sprint
+
+Pre Auth Initial Development Work Completion
+
+Goals
+
+  • 
+Pre Auth Initial Development Work Completion
+
+  • 
+EMS V2.0 Testing, Bug Identification, & Verification
+
+  • 
+ Production Pointed Accounts Migration to TST1 EMS V2.0
+
+  • 
+Single Location Migration - Anomaly Script Improvements and Execution
+
+  • 
+Loyalty API Suite - Automation Rewrite
+
+Participants 
+
+           
+
+Work Accepted 
+
+Stories Completed
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20in%20(CE%2C%20BO)%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Accepted%2C%20Approved%2C%20%22ARB%20Review%22%2C%20Closed%2C%20Review)%20AND%20sprint%3D%22ALTAIR%202024%20PI%203.2%22%20order%20by%20created%20DESC
+
+Stories Not Completed
+
+Open
+https://madmobile-eng.atlassian.net/issues/?jql=project%20in%20(CE%2C%20BO)%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Discovery%2C%20Open%2C%20%22Product%20Planned%22%2C%20%22Ready%20for%20Development%22%2C%20%22Tech%20Design%22%2C%20BLOCKED%2C%20%22Dev%20in%20Progress%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%203.2%22%20order%20by%20created%20DESC%20%20%20%20%20%20
+In-complete
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20in%20(CE%2C%20BO)%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(%22Dev%20in%20Progress%22%2C%20%22In%20Progress%22%2C%20%22QA%20in%20Progress%22%2C%20%22Code%20Review%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%203.2%22%20order%20by%20created%20DESC%20%20%20%20%20%20%20
+
+Demo Items
+
+Demo Line Up: 
+
+  • 
+
+Recording: 
+
+  • 
+Recording link: 
+
+Sprint Report
+
+Sprint Report 
+
+Team Availability
+
+  • 
+Total days:  10 days
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Estimated Man-days
+
+Planned Days-off
+
+Unplanned Days-off
+
+Actual Days
+
+Comments
+
+1
+  
+
+10
+
+0
+
+0
+
+4.5
+
+2
+ 
+
+10
+
+1
+
+0
+
+8
+
+3
+  
+
+10
+
+2
+
+0
+
+7
+
+4
+ 
+
+10
+
+2
+
+0
+
+7
+
+5
+  
+
+10
+
+0
+
+0
+
+9
+
+6
+ (Intern)
+
+10
+
+0
+
+-
+
+-
+
+7
+  
+
+10
+
+1
+
+0
+
+8
+
+8
+ 
+
+10
+
+0
+
+0
+
+9
+
+9
+ 
+
+10
+
+0
+
+0
+
+9
+
+10
+ (Intern)
+
+10
+
+0
+
+-
+
+-
+
+11
+ 
+
+10
+
+0
+
+0
+
+9
+
+12
+Total 
+
+70.5
+
+Added to Sprint (Mid Sprint Injections)
+
+Please refer to the placeholder tickets:
+
+  • 
+CE-4882f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira 
+
+  • 
+CE-4883f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira 
+
+Team Velocity
+
+Item
+
+Story Points
+
+100% Capacity
+
+136
+
+70% Capacity
+
+95
+
+Sprint Commitment (70%)
+
+95
+
+Un-Planned Work Placeholder Value (30%)
+
+43
+
+Incomplete
+
+11
+
+Added to Sprint (Total Un-Planned Work Completed)
+
+49
+
+Removed from Sprint
+
+-
+
+Completed (Resolved Stories)
+
+133
+
+Delivery Success Rate =   133 / 95  = 140%
+
+Follow-up action items from the previous sprint
+
+  • 
+N/A
+
+Sprint Highlights
+
+  • 
+Completed all the sprint goals
+
+Sprint Report: report
+
+Burn-down Report: report
+
+Retrospective
+
+What can we continue doing?
+
+  • 
+  KT Sessions for the Team
+
+  • 
+ need to discuss on how to streamline the ad-hoc environment issues
+
+What can we start doing?
+
+  • 
+ Identify the new components for Altair and get the knowledge of those
+
+  • 
+ Fill the template document for components assigned to Altair Team
+
+  • 
+It is consuming more time to deploy a release which the team has not worked in recent past (email marketing). We should re-asses the effort of the deployment during planning stage.
+
+What should we stop doing?
+
+  • 
+
+Action Items for the next sprint 
+
+  • 
+ ,  - Speak with Ahesh about the new lower environment deployment process
+
+What should we improve?
+
+  • 
+ need to have a team dedicated environment for the work, without choosing an environment then and there for the ongoing work
+
+Perfection Game
+
+1-10
+
+Member
+
+Rate
+
+Remarks
+
+1
+  
+
+6
+
+2
+ 
+
+6
+
+3
+  
+
+5
+
+4
+ 
+
+7
+
+5
+  
+
+8
+
+6
+  (Intern)
+
+-
+
+7
+  
+
+6
+
+8
+ 
+
+8
+
+9
+ 
+
+8
+
+10
+ (Intern)
+
+8
+
+11
+ 
+
+8
+
+12
+Average
+
+7

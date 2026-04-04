@@ -6,6 +6,20 @@ import DataTable from '../components/DataTable.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
+import { readFileSync } from 'node:fs';
+
+let epicData: any = {};
+let priorityData: any = {};
+let blockingData: any = {};
+let statusData: any = {};
+try { epicData = JSON.parse(readFileSync('../inventory/jira/epic_completion.json', 'utf-8')); } catch {}
+try { priorityData = JSON.parse(readFileSync('../inventory/jira/priority_distribution.json', 'utf-8')); } catch {}
+try { blockingData = JSON.parse(readFileSync('../inventory/jira/blocking_chains.json', 'utf-8')); } catch {}
+try { statusData = JSON.parse(readFileSync('../inventory/jira/status_transitions.json', 'utf-8')); } catch {}
+
+const epicResRate = epicData.overall_resolution_rate_pct ?? 0;
+const priorityDist = (priorityData.distribution ?? []) as Array<{priority: string; count: number; pct_of_sample: number}>;
+const highPct = priorityDist.find((d: any) => d.priority === 'High')?.pct_of_sample ?? 89;
 
 const projects = await getCollection('jiraProjects');
 const velocity = await getCollection('jiraVelocity');
@@ -80,6 +94,40 @@ const charts = [
     <MetricCard label="Sprint Completion" value={`${avgCompletion.toFixed(1)}%`} subtitle="Average across sprints" />
     <MetricCard label="Median Cycle Time" value={`${medianCycle.toFixed(1)}d`} subtitle="Days to resolve" />
   </dl>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Epic Completion" value={`${epicResRate}%`} subtitle={`${epicData.resolved ?? 0} of ${epicData.total_epics ?? 0} epics resolved (12mo)`} />
+    <MetricCard label="Priority Inflation" value={`${highPct}%`} subtitle="of open issues are 'High'" />
+    <MetricCard label="Blocking Issues" value={(blockingData.issues_blocked ?? 0).toString()} subtitle={`${blockingData.issues_blocking_others ?? 0} blocking others`} />
+    <MetricCard label="Story Points Coverage" value="9%" subtitle="of stories have estimates" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Priority Distribution</h2>
+      <DataTable
+        columns={[
+          { key: 'priority', label: 'Priority' },
+          { key: 'count', label: 'Count', align: 'right' },
+          { key: 'pct', label: '%', align: 'right' },
+        ]}
+        rows={priorityDist.map((d: any) => ({ priority: d.priority, count: d.count, pct: `${d.pct_of_sample}%` }))}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Top Epics by Project</h2>
+      <DataTable
+        columns={[
+          { key: 'project', label: 'Project' },
+          { key: 'total', label: 'Epics', align: 'right' },
+          { key: 'resolved', label: 'Resolved', align: 'right' },
+          { key: 'rate', label: 'Rate', align: 'right' },
+        ]}
+        rows={(epicData.top_10_by_count ?? []).map((e: any) => ({ project: e.project, total: e.total_epics, resolved: e.resolved, rate: `${e.resolution_rate_pct}%` }))}
+      />
+    </div>
+  </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>

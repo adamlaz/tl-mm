@@ -1,0 +1,405 @@
+Title: Cake Altair -  2024 PI 2.5 - Review & Retrospective
+Space: Team Stark
+Modified: 2024-06-18T06:57:24.643Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/TS/pages/296288257/Cake+Altair+-+2024+PI+2.5+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint
+
+Altair - 2024 PI 2.5
+
+Duration
+
+   - 
+
+Sprint Retrospect Meeting
+
+  
+
+Main Theme of Sprint
+
+Completion of Activity Logs Search and Filter Function
+
+Goals
+
+  • 
+Contact Upload
+
+  • 
+Production Deployment
+
+  • 
+Activity Logs - First Slide Out
+
+  • 
+First slide out populate when the user clicks the data row.
+
+  • 
+Activity Logs - Grid View
+
+  • 
+ Completed features of - Filters, Infinite Scroll Pagination, and Search Bar.
+
+  • 
+Production Issue Fix
+
+  • 
+Data platform customer creation timestamp sync issue fix and production deployment
+
+Participants 
+
+            
+
+Work Accepted 
+
+Stories Completed
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20%3D%20CE%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Accepted%2C%20Approved%2C%20%22ARB%20Review%22%2C%20Closed%2C%20Review)%20AND%20sprint%3D%22ALTAIR%202024%20PI%202.5%22%20order%20by%20created%20DESC
+
+Stories Not Completed
+
+Open
+https://madmobile-eng.atlassian.net/issues/?jql=project%20%3D%20CE%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Discovery%2C%20Open%2C%20%22Product%20Planned%22%2C%20%22Ready%20for%20Development%22%2C%20%22Tech%20Design%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%202.5%22%20order%20by%20created%20DESC%20%20%20%20%20%20
+In-complete
+
+https://madmobile-eng.atlassian.net/issues/?jql=project%20%3D%20CE%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(%22Dev%20in%20Progress%22%2C%20%22In%20Progress%22%2C%20%22QA%20in%20Progress%22%2C%20%22Code%20Review%22)%20AND%20sprint%3D%22ALTAIR%202024%20PI%202.5%22%20order%20by%20created%20DESC%20%20%20%20%20%20%20
+
+Demo Items
+
+Demo Line Up: 
+
+  • 
+Activity Logs - Scroll and Slideout
+
+Recording: 
+
+  • 
+Recording link: 
+
+Sprint Report
+
+Sprint Report 
+
+Team Availability
+
+  • 
+Total days:  10 days
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Estimated Man-days
+
+Planned Days-off
+
+Unplanned Days-off
+
+Actual Days
+
+Comments
+
+1
+  
+
+9
+
+0
+
+0
+
+4.5
+
+2
+ 
+
+9
+
+0
+
+0
+
+9
+
+3
+  
+
+9
+
+0
+
+0
+
+9
+
+4
+ 
+
+9
+
+0
+
+0
+
+9
+
+5
+  
+
+9
+
+1
+
+0
+
+8
+
+6
+ (Intern)
+
+9
+
+0
+
+0
+
+N/A
+
+7
+  
+
+9
+
+0
+
+0
+
+9
+
+8
+ 
+
+9
+
+1
+
+0
+
+8
+
+9
+ 
+
+9
+
+1
+
+0
+
+8
+
+10
+ (Intern)
+
+9
+
+0
+
+0
+
+N/A
+
+11
+ 
+
+9
+
+5
+
+0
+
+4
+
+12
+Total 
+
+81
+
+8
+
+0
+
+68.5
+
+Added to Sprint (Mid Sprint Injections)
+
+Please refer to the placeholder ticket: CE-4053f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira 
+
+Team Velocity
+
+Item
+
+Story Points
+
+80% Capacity
+
+94
+
+Sprint Commitment (80%)
+
+94
+
+Un-Planned Work Placeholder Value
+
+22
+
+Not started (Open)
+
+0
+
+Incomplete (In progress / Dev completed)
+
+5
+
+Added to Sprint (Total Un-Planned Work)
+
+26
+
+Removed from Sprint
+
+0
+
+Completed (Resolved Stories)
+
+115
+
+Delivery Success Rate =  115 / 94  = 122%
+
+Reasons for the Deviation in Delivery Success / Spillovers %: 
+
+  • 
+BO-3655f496ff7d-738c-3ddd-a9cd-8b868d553dc0System Jira  - This ticket is blocked from 14th June 2024 due to the EMS 2.0 Bug which is assigned to the Tesla Team (bug ticket linked to this ticket accordingly).
+
+Follow-up action items from the previous sprint
+
+  • 
+N/A
+
+Sprint Highlights
+
+  • 
+Completed all the sprint goals
+
+Sprint Report: report
+
+Burn-down Report: report
+
+Retrospective
+
+What can we continue doing?
+
+  • 
+  KT Sessions for the Team
+
+What can we start doing?
+
+  • 
+ Identify the new components for Altair and get the knowledge of those
+
+  • 
+ Fill the template document for components assigned to Altair Team
+
+What should we stop doing?
+
+  • 
+
+Action Items for the next sprint 
+
+  • 
+ - Communicate with Carla to migrate the personal confluence spaces
+
+  • 
+ ,  - Speak with Ahesh about the new lower environment deployment process
+
+What should we improve?
+
+  • 
+
+Perfection Game
+
+1-10
+
+Member
+
+Rate
+
+Remarks
+
+1
+  
+
+6
+
+2
+ 
+
+7
+
+3
+  
+
+8
+
+4
+ 
+
+-
+
+5
+  
+
+6
+
+6
+  (Intern)
+
+8
+
+7
+  
+
+6
+
+8
+ 
+
+-
+
+9
+ 
+
+8
+
+10
+ (Intern)
+
+-
+
+11
+ 
+
+7
+
+12
+Average
+
+7

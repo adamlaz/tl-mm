@@ -1,0 +1,410 @@
+Title: Cake Altair -  2024 PI 2.2 - Review & Retrospective
+Space: Team Stark
+Modified: 2024-05-07T07:01:12.265Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/TS/pages/264068254/Cake+Altair+-+2024+PI+2.2+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint
+
+Altair - 2024 PI 2.2
+
+Duration
+
+   - 
+
+Sprint Retrospect Meeting
+
+  
+
+Main Theme of Sprint
+
+Contact upload dev completion
+
+Goals
+
+  • 
+Contact upload dev completion
+
+  • 
+Initiate development on EMS Audit log UI integration
+
+  • 
+Production push on Redis upgrade (QE)
+
+  • 
+Malware fix for ua-menu-admin
+
+Participants 
+
+            
+
+Work Accepted 
+
+Stories Completed
+
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution50project = CE AND issuetype in standardIssueTypes() AND status in (Accepted, Approved, "ARB Review", Closed, Review) AND sprint="ALTAIR 2024 PI 2.2" order by created DESC                     9ba74c23-a7c9-34fe-8d42-7757acdf82db
+Stories Not Completed
+
+Open
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution20project = CE AND issuetype in standardIssueTypes() AND status in (Discovery, Open, "Product Planned", "Ready for Development", "Tech Design") AND sprint="ALTAIR 2024 PI 2.2" order by created DESC               9ba74c23-a7c9-34fe-8d42-7757acdf82db
+In-complete
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution20project = CE AND issuetype in standardIssueTypes() AND status in ("Dev in Progress", "In Progress", "QA in Progress", "Code Review") AND sprint="ALTAIR 2024 PI 2.2" order by created DESC               9ba74c23-a7c9-34fe-8d42-7757acdf82db
+Demo Items
+
+Demo Line Up: 
+
+  • 
+Contact upload output file validations 
+
+  • 
+Loyalty point transfer flow 
+
+Recording: 
+
+  • 
+Recording link: 
+
+Sprint Report
+
+Sprint Report 
+
+Team Availability
+
+  • 
+Total Working days:  10 days
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays:1
+
+  • 
+Development days for the Sprint:  8
+
+ 
+
+Estimated Man-days
+
+Planned Days-off
+
+Unplanned Days-off
+
+Actual Man-days
+
+Comments
+
+1
+  
+
+8
+
+0
+
+0
+
+8
+
+2
+ 
+
+8
+
+0
+
+0
+
+8
+
+3
+  
+
+8
+
+0
+
+0
+
+8
+
+4
+ 
+
+8
+
+1
+
+0
+
+7
+
+5
+  
+
+8
+
+1
+
+0
+
+7
+
+6
+  
+
+8
+
+0
+
+0.5
+
+7.5
+
+7
+ 
+
+8
+
+0
+
+0
+
+8
+
+8
+ 
+
+8
+
+1
+
+0
+
+7
+
+9
+ 
+
+4
+
+0
+
+0
+
+4
+
+10
+Total 
+
+68
+
+3
+
+0.5
+
+64.5
+
+Added to Sprint (Mid Sprint Injections)
+
+Ticket
+
+Story Points
+
+Reason for Addition
+
+CE-41069ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+5
+
+CE-36059ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+2
+
+CE-36029ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+2
+
+Total
+
+9
+
+Spillovers (Not Completed)
+
+N/A
+
+Ad-Hoc (Unplanned) Tasks Analysis
+
+Task
+
+Ticket
+
+Time (Hours) Entered in Placeholder Ticket
+
+Comments
+
+Adhoc Tasks in the Sprint
+
+  • 
+PR Review - Non Roadmap Items:
+
+Placeholder Ticket: CE-39789ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+0
+
+  • 
+Unplanned Meetings:
+
+Placeholder Ticket: CE-39689ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+0
+
+Total Ad-Hoc Task Hours
+
+0 Hours
+
+Unplanned Leaves
+
+None
+
+4 Hours
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (80%)
+
+92.5
+
+20% Buffer Placeholder
+
+19.5
+
+Not started (Open)
+
+0
+
+Incomplete (In progress / Dev completed)
+
+0
+
+Added to Sprint
+
+16.625
+
+Removed from Sprint
+
+0
+
+Completed (Resolved Stories)
+
+109.125
+
+Reasons for the deviation in Delivery Success %: 
+
+No Spillovers
+
+ 
+
+Follow-up action items from the previous sprint
+
+  • 
+N/A
+
+Sprint Highlights
+
+  • 
+Completed all the sprint goals
+
+Sprint Report: report
+
+Burn-down Report: report
+
+Retrospective
+
+What can we continue doing?
+
+  • 
+KT Sessions for the Team - ,  
+
+What can we start doing?
+
+  • 
+Identify the new components for Altair and get the knowledge of those -  
+
+  • 
+Have a dependency check with Mira Team prior to the sprint planning to mitigate the conflict component problems -  
+
+  • 
+Have a KT prior starting regressions -  
+
+  • 
+Have a process to remove automation test data periodically -  
+
+  • 
+Maintain central place all the validations -  
+
+  • 
+
+What should we stop doing?
+
+  • 
+
+Action Items for next sprint 
+
+  • 
+To create a proper documentation with high level flows of contact upload testing -  
+
+What should we improve?
+
+ Proper investigation on full workflow and impact if we going to reuse existing codes
+
+Perfection Game
+
+1-10
+
+Member
+
+Rate
+
+Remarks
+
+1
+  
+
+2
+ 
+
+3
+  
+
+4
+ 
+
+5
+  
+
+6
+  (Intern)
+
+7
+  
+
+8
+ 
+
+9
+ 
+
+10
+ (Intern)
+
+11
+ 
+
+12
+Average

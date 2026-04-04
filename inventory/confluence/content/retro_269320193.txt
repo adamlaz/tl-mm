@@ -1,0 +1,296 @@
+Title: Castor 2024 PI 2.4 - Review & Retrospective
+Space: Optimo
+Modified: 2024-10-02T09:46:46.266Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CP2/pages/269320193/Castor+2024+PI+2.4+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+CASTOR 2024 PI 2.4
+
+Duration: -  
+
+Sprint Retrospect Meeting: 
+
+Main Theme of Sprint
+  • Reports Phase 2.3 Release 01 - Development & QE
+
+Sprint Goals:
+  • PMix - Aggregated spec deployment - Staging and Production
+
+  • Loyalty location (Within enterprise)  level availability - Feature completion
+
+  • PMix Report Info and excel changes
+
+  • Loyalty report improvement initial development
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.3" and type not in (subTaskIssueTypes()) and status in (Closed,Resolved, Accepted)                       f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.3" and type not in (subTaskIssueTypes()) and status not in (Closed,Resolved, Accepted)                        f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Bug Analysis
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 2.3"  AND type in ("Bug - Production","Bug")                     f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+  • Total Working days:  10
+
+  • Scrum Ceremonies time : 1 day (Planning : 0.5 day, Review/Retro : 0.5 day)
+
+  • Holidays : 0
+
+  • Development days for the Sprint: 9
+
+ 
+
+Total Days
+
+Planned Day Off
+
+Unplanned Day Offs
+Holidays
+
+Allocation to Ceremonies
+Actual Days
+Comments
+
+101
+
+213
+
+101
+
+216
+
+101
+
+216
+
+100
+
+217
+
+1013213
+
+100
+
+217
+
+1031213
+
+101
+
+216
+
+1001216
+
+100
+
+217
+
+102
+
+215
+
+100
+
+217
+
+100
+
+213.5
+
+ (Intern)100
+
+21-
+
+101
+
+216
+
+Total 
+
+75.5
+
+Added to Sprint (Mid Sprint Injections)
+
+  • Placeholder Ticket: System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4057
+
+  • Total Story Point Values of Injections:
+
+Jira #SPComment
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3452
+1[Prod] KDS app ticket bumping takes long time production troubleshooting
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3455
+1[PROD] [dev support] CAKE KDS - Cloud Couch tickets purge
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3456
+1Setup PREP, EXPO KDS setup in stag environment and recreate KDS slowness issue
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4387
+2[BVT][TST1] Created modifiers are not getting saved in menucore merchant
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4488
+1[POS4] Loyalty enrollment/Sign in not working in POS
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4495
+2[POS4] OLO is not loading (Getting 500 server error)
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3462
+5[Stag] [Env Issue] Troubleshooting issue BO-3432
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3469
+5[Stag] [Env Issue] Troubleshooting issue BO-3432
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3466
+2KDS Development
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3468
+2KDS Development
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3470
+2KDS Development
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3465
+3[Prod][KDS] KDS Prod Issue - Prepare Document for Routing Status Doc Deletion
+
+Total27
+
+Reasons for the deviation in Delivery Success % (Spillovers)
+
+TicketStory PointsReason for Spillover
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3405 
+
+5Maleesha had to take unplanned leaves 
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-34063
+Maleesha had to take unplanned leaves 
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-30053
+Attended to : System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4387System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4488 System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4495
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4508
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-24955
+
+Attended to :
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3462
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-33863Blocked due to : System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3462
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-34212
+Attended to :
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0BO-3469
+
+Total21
+
+Note: Team has added new tickets to cover the above spillovers capacity.
+
+Ad-Hoc (Unplanned) Tasks Analysis
+
+TaskTicket
+Time (Hours) Entered in Placeholder Ticket
+Comments
+
+Adhoc Tasks in the Sprint
+
+  • PR Review - Non Roadmap Items:
+
+Placeholder Ticket: 
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-3962
+0
+
+  • Unplanned Meetings:
+
+Placeholder Ticket: 
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-3952
+28.5 Hours
+
+Total Ad-Hoc Task Hours
+
+Unplanned LeavesNoneNone
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (Without 20% Buffer)
+
+123
+
+Not started (Open)-
+
+Incomplete (In progress / Dev completed)21
+
+20% Buffer30
+
+Added to Sprint27
+
+Removed from Sprint-
+
+Completed (Resolved Stories)150
+
+Velocity of the Sprint : 
+
+Delivery Success (resolved story points * 100 / committed story points) =     (150/ 123*100) % = 121.9%
+
+Reports
+
+  • Velocity over Time
+
+  • Burn Down Chart
+
+Follow-up action items from the previous sprint. 
+
+Sprint Highlights
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing / What went well?
+
+  • The team has been contributing to the Meet Up which has been successful. Mainly  &  & 
+
+  • As 3 key members were busy with the meet up, the other team members took charge of majority of environment issues
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  •  : Need  to create a ticket before attending to any environment issue or injection
+
+  •   If anybody feels , there are possible spill overs, need to communicate promptly
+
+  •  - Need to assign tickets to Dev and QE properly
+
+  •  - Need to update Root Cause Category Drop Down  and Root Cause Analysis Field for bug tickets
+
+#d04437#fff8f7
+What should we stop doing / what went wrong?
+
+  • : There was a data platform issue , because of which the sprint work got impacted . We believe this could have mitigated if a sanity test has been done after the data platform upgrade
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+  • Need to do a sanity test after data platform upgrades -

@@ -1,0 +1,450 @@
+Title: Cake Altair -  2024 PI 2.1 - Review & Retrospective
+Space: Team Stark
+Modified: 2024-04-22T08:28:20.428Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/TS/pages/264063790/Cake+Altair+-+2024+PI+2.1+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint
+
+Altair - 2024 PI 2.1
+
+Duration
+
+   - 
+
+Sprint Retrospect Meeting
+
+  
+
+Main Theme of Sprint
+
+Initial implementation of Contact Upload - Stop Gap Solution
+
+Goals
+
+  • 
+Contact upload
+
+  • 
+Provide initial jar with file type validation
+
+  • 
+Expose endpoints to add external points
+
+  • 
+Register customer in loyalty through the new import customer endpoint
+
+  • 
+QE STAG sanity on Redis upgrade
+
+  • 
+UI design of Activity Log Main Grid
+
+Participants 
+
+            
+
+Work Accepted 
+
+Stories Completed
+
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution50project = CE AND issuetype in standardIssueTypes() AND status in (Accepted, Approved, "ARB Review", Closed, Review) AND sprint="ALTAIR 2024 PI 2.1" order by created DESC                    9ba74c23-a7c9-34fe-8d42-7757acdf82db
+Stories Not Completed
+
+Open
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution20project = CE AND issuetype in standardIssueTypes() AND status in (Discovery, Open, "Product Planned", "Ready for Development", "Tech Design") AND sprint="ALTAIR 2024 PI 2.1" order by created DESC              9ba74c23-a7c9-34fe-8d42-7757acdf82db
+In-complete
+Jirakey,summary,type,created,updated,due,assignee,reporter,priority,status,resolutionissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution20project = CE AND issuetype in standardIssueTypes() AND status in ("Dev in Progress", "In Progress", "QA in Progress", "Code Review") AND sprint="ALTAIR 2024 PI 2.1" order by created DESC              9ba74c23-a7c9-34fe-8d42-7757acdf82db
+Demo Items
+
+Demo Line Up:
+
+ Create customer and loyalty customer profiles from loyalty-api.
+
+Recording: 
+
+  • 
+Recording link: https://madmobileteam-my.sharepoint.com/:v:/g/personal/dileesha_gamage_madmobile_com/EXP8AkTxD_REoBVDT4uroBwBaRBOBNWtCTqk5ssi34YuIg?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view.view
+
+Sprint Report
+
+Sprint Report 
+
+Team Availability
+
+  • 
+Total Working days:  10 days
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 2.5
+
+  • 
+Development days for the Sprint:  6.5
+
+ 
+
+Estimated Man-days
+
+Planned Days-off
+
+Unplanned Days-off
+
+Actual Man-days
+
+Comments
+
+1
+  
+
+6.5
+
+2
+
+0
+
+2.25
+
+Considering 50% of TL Capacity
+
+2
+ 
+
+6.5
+
+2.5
+
+0
+
+4
+
+3
+  
+
+6.5
+
+1
+
+0
+
+5.5
+
+4
+ 
+
+6.5
+
+0
+
+0
+
+5.5
+
+5
+  
+
+6.5
+
+1
+
+0
+
+5.5
+
+6
+  
+
+6.5
+
+1
+
+0
+
+5.5
+
+7
+ 
+
+6.5
+
+1
+
+0
+
+5.5
+
+8
+ 
+
+6.5
+
+1
+
+0
+
+3
+
+9
+Total 
+
+52
+
+9.5
+
+0
+
+36.75
+
+Added to Sprint (Mid Sprint Injections)
+
+Ticket
+
+Story Points
+
+Reason for Addition
+
+CE-38199ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+2
+
+To cover the leftover capacity of CE-38259ba74c23-a7c9-34fe-8d42-7757acdf82dbJira & CE-37859ba74c23-a7c9-34fe-8d42-7757acdf82dbJira tickets which will spillover from sprint 2.1.
+
+CE-40669ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+0.5
+
+Environment Issue
+
+CE-40679ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+0.5
+
+Supported for the STAG & PROD Sanity of Email Marketing Unsubscription Flow
+
+Total
+
+3
+
+Spillovers (Not Completed)
+
+Ticket
+
+Story Points
+
+Reason for Spillover
+
+CE-38259ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+1
+
+Production push planned for next sprint
+
+CE-37859ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+1
+
+Production push planned for next sprint
+
+Total
+
+ 2
+
+Ad-Hoc (Unplanned) Tasks Analysis
+
+Task
+
+Ticket
+
+Time (Hours) Entered in Placeholder Ticket
+
+Comments
+
+Adhoc Tasks in the Sprint
+
+  • 
+PR Review - Non Roadmap Items:
+
+Placeholder Ticket: CE-39679ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+10 Hours
+
+  • 
+Unplanned Meetings:
+
+Placeholder Ticket: CE-39659ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+1 Hour
+
+Total Ad-Hoc Task Hours
+
+11 Hours
+
+Unplanned Leaves
+
+None
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment
+
+53.5
+
+Not started (Open)
+
+2
+
+Incomplete (In progress / Dev completed)
+
+0
+
+Added to Sprint
+
+3
+
+Removed from Sprint
+
+0
+
+Completed (Resolved Stories)
+
+54.5
+
+Reasons for the deviation in Delivery Success %: 
+
+Production deployment was pushed to next sprint  
+
+CE-38259ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+ CE-37859ba74c23-a7c9-34fe-8d42-7757acdf82dbJira 
+
+ 
+
+Follow-up action items from the previous sprint
+
+  • 
+N/A
+
+Sprint Highlights
+
+  • 
+Completed all the sprint goals
+
+Sprint Report: report
+
+Burn-down Report: report
+
+Retrospective
+
+What can we continue doing?
+
+  • 
+ To continue the support  given by dev members for QEs , to do the initial investigation on  bvt  related issues as soon as possible. 
+
+  • 
+ Let’s continue having a dedicated cloud team member as it helps to unblock from issues quickly. 
+
+  • 
+ Let’s continue to adhere into the existing processes and will make sure to come up with a proper IR plan before starting each sprint.
+
+What can we start doing?
+
+  • 
+ To get finalized dates from the respective teams  for any depending task that we are working on before taking tasks into the sprint
+
+  • 
+ Estimate DB delta deployment tasks, considering the new process and communicate them with stakeholders properly and timely.
+
+What should we stop doing?
+
+  • 
+
+Action Items for next sprint 
+
+  • 
+
+What should we improve?
+
+  • 
+ It is challenging to debug the environment issues when we don’t have proper access to resources which were accessible before. Make sure to verify all accesiblities before starting the task.
+
+  • 
+ Active participation of team discussions so that each individual ideas can contribute to take better decisions. 
+
+  • 
+ Let’s continue to update tickets in a timely manner.
+
+Perfection Game
+
+1-10
+
+Member
+
+Rate
+
+Remarks
+
+1
+  
+
+8
+
+2
+ 
+
+7
+
+3
+  
+
+7
+
+4
+ 
+
+7
+
+5
+  
+
+8
+
+6
+  (Intern)
+
+8
+
+7
+  
+
+8
+
+8
+ 
+
+7
+
+9
+ 
+
+8
+
+10
+ (Intern)
+
+8
+
+11
+ 
+
+12
+Average
+
+8

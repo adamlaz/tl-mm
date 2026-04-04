@@ -1,0 +1,280 @@
+Title: LEO 2024 PI 3.1 - Review & Retrospective
+Space: Leapset Platform
+Modified: 2024-08-13T10:38:28.269Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/LP/pages/380928001/LEO+2024+PI+3.1+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+LEO 2024 PI 3.1
+
+Duration: -  
+
+Sprint Retrospect Meeting:
+
+   
+
+Main Theme of Sprint
+MySQL upgrades
+
+Sprint Goals:
+Continuation of the remaining MySQL database upgrades to complete the initiative
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.1" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                    f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.1" and status NOT IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                         f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+10101
+
+8
+
+10
+1010.57.5
+
+10101
+
+8
+
+ 10101
+
+8
+
+10001
+
+9
+
+10101
+
+8
+
+1010117
+
+10101
+
+8
+
+10001
+
+9
+
+Total 907
+
+91.572.5
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment
+98
+
+Not started (Open)
+0
+
+Incomplete (In progress / Dev completed/On hold)
+0
+
+Added to Sprint
+25
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+123
+
+Delivery Success (resolved story points * 100 / committed story points) =  (123/98 * 100) =  125%
+
+Reasons for the deviation in Delivery Success %: 
+
+N/A
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("CE-4929")  f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Spillovers:
+
+N/A
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+  • Team : Need to consider learning curve and risk factor when we work on/ estimate issues. Keep the latest converstation/ status up to date in the issue
+
+Sprint Highlights
+#d04437#ffff00
+  • MySQL Upgrades
+  • HelpCenter
+  • Development
+
+  • Data Platform
+  • Development
+
+  • Email
+  • SoE Execution
+
+  • Testing
+
+  • OAUTH2
+  • SoE Preparation and Review
+
+  • Planning Performance testing
+
+  • POS
+  • Rollback & Regression Testing
+
+  • Planning Performance testing
+
+  • SUPERADMIN 
+  • Upgrade lower environments
+
+  • OAUTH2 Database Growth
+  • Mitigation plan creation
+
+  • Initiate ESB handover to the Cloud Services team
+
+  • Environment Issues
+  • Online ordering:
+  • Payment failures in multiple environments
+
+  • Menu-core issues
+
+  • Keycloak instabilities due to resouce limitations
+
+  • POS login issues due to missing clients
+
+  • 3rd-party order failures due to Paytronix failures
+
+  • BVT issues
+
+  • Production Issues
+  • Troubleshooting Issues with the Dolce Integration
+
+  • Support for SoE execution
+  • Make Stag publisher-subscriber settings equal to Prod for a given subscriber
+
+  • Created missing subscribers in Stag environment
+
+  • Create a new subscriber as requested
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?/ What went well? 
+
+  • Nice burndown
+
+  • Had KTs from data platform for development practices
+
+  • Involvement of entire team for technical decisions and discussions
+
+  • Initiated the ESB hand over
+
+  • Interactive tech talks
+
+  • Less unplanned leaves
+
+  • QE team received the support from devs to analyze the logs related to perf testing
+
+  • Achieved a better balance between time and quality
+
+  • Kid of the sprint for environment issues
+
+  • Doing a proper a Retrospective
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Find a method for having to raise a ticket for reach and every task for cloud team
+
+  • Improve the way to introduce a new module or a change the infrastructure of an existing module
+
+  • Change the perception that Leo work is different from other teams
+
+  • More control for devs for the development environment
+
+  • Adding the fix version to tickets
+
+  • Create a PLTFRM ticket before attending to environment issues
+
+  • Add a risk for cloud resource concern
+
+#d04437#fff8f7
+What should we stop doing?/ What went wrong?
+
+  • Cloud resource bottleneck
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+22
+complete
+- Verify the visibility of the accesses Firzad has
+
+23
+complete
+- Ensure environment issues are updated in the document
+
+24
+complete
+- How to get more support from cloud team that 1 person to attend cloud queries
+
+25
+complete
+- Support the team to get unblocked for deployments
+
+26
+complete
+- Re-vist the document for couple of sprints
+
+27
+complete
+Team : Adding the fix version to tickets
+
+28
+incomplete
+  - Check the fix version as a acceptance criteria when accepting a ticket
+
+29
+complete
+Team : Create a PLTFRM ticket for every environment issues
+
+30
+complete
+- Off-boarding process for user access for Gateway/ Archiva/ KeyCloak

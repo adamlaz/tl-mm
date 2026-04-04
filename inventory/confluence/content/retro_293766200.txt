@@ -1,0 +1,259 @@
+Title: LEO 2024 PI 2.5 - Review & Retrospective
+Space: Leapset Platform
+Modified: 2024-06-18T12:45:40.485Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/LP/pages/293766200/LEO+2024+PI+2.5+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+LEO 2024 PI 2.5
+
+Duration: -  
+
+Sprint Retrospect Meeting:
+
+   
+
+Main Theme of SprintLDP DB Stag Release
+
+Sprint Goals:
+
+  • LDP DB -> Staging verification, Rollback test completion​
+
+  • POS DB -> Component changes & testing, SoE optimising​
+
+  • EMAIL DB -> Impact analysis, SoE optimisation & Rollback approach finalisation​
+
+  • OAUTH2 DB -> Code/Config changes, Impact analysis​
+
+  • Notification DB -> Component compatibility & Impact analysis
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 2.5" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                 f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 2.4" and status NOT IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                      f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1010108
+
+101
+0
+117
+
+1000109
+
+ 800107
+
+1020107
+
+1010108
+
+1020107
+
+1010108
+
+1010108
+
+Total 909
+
+8169
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment
+102
+
+Not started (Open)
+0
+
+Incomplete (In progress / Dev completed/On hold)
+0
+
+Added to Sprint
+23
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+125
+
+Delivery Success (resolved story points * 100 / committed story points) =  (125/102 * 100) = 123%
+
+Reasons for the deviation in Delivery Success %: 
+
+N/A
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+Jira IDSPComment
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13662
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13685
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13781
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13731
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13701
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13793
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13852
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14001
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14013
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14001
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-14082
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13481
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PLTFRM-13471
+
+Total24
+
+Spillovers:
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0DR-4179  - This is getting spilled as this cannot be verified by Team Altair due to another environment issue
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+Sprint Highlights
+#d04437#ffff00
+  • LDP DB -> Staging verification, Rollback test completion​
+
+  • POS DB -> Component changes & testing, SoE optimising​
+
+  • EMAIL DB -> Impact analysis, SoE optimisation & Rollback approach finalisation​
+
+  • OAUTH2 DB -> Code/Config changes, Impact analysis​
+
+  • Notification DB -> Component compatibility & Impact analysis
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?
+
+  • Successful deployment of LDP to staging environment
+
+  • Documentation for common common environment issues
+
+  • Doordash ID production deployment
+
+  • The team is quick to react to issues
+
+  • Productive retrospective
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Plan the releases based on the environment and the issues of the environment
+
+  • Prioritise the issues
+
+  • Better focus and priority on environment issues
+
+  • How to better handle the queries which need cloud support
+
+  • Prioritise stag issues
+
+  • Reject environment issues if sufficient information is not available in the ticket
+
+  • Work on how to prfioritize our issues which needs to be attended by other teams
+
+  • Completing stories in the current sprint before taking stories from the next sprint
+
+  • Update proper acceptance criteria 
+
+  • Update proper issue description
+
+  • Avoid fixing symptoms but fix the issue when it comes to environment issues
+
+#d04437#fff8f7
+What should we stop doing?
+
+  • Environment issues at the last moment before the stag release
+
+  • Sporadic BVT issues - Root cause unknown
+
+  • Unexpected realisation of POS DB dependencies
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+12
+incomplete
+Team : Update proper acceptance criteria 
+
+13
+incomplete
+Team : Update proper issue description
+
+14
+incomplete
+Team : Completing stories in the current sprint before taking stories from the next sprint
+
+15
+incomplete
+: How to come up with permanent fixes for recurring environment issues
+
+16
+incomplete
+ : How to early identify production issues
+
+17
+incomplete
+Team : Need to consider learning curve and risk factor when we work on/ estimate issues. Keep the latest converstation/ status up to date in the issue
+
+18
+incomplete
+: Need to look at environment issues not having sufficient information and being assigned to the team
+
+19
+incomplete
+: Look at the possibility of unblocking parallel requests
+
+20
+incomplete
+ : Assign one person to prioritise BVT / Environment Issues every sprint.

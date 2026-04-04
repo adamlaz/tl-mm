@@ -1,0 +1,195 @@
+Title: Castor 2024 PI 3.1 - Review & Retrospective
+Space: Optimo
+Modified: 2024-10-01T12:37:28.452Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CP2/pages/383680544/Castor+2024+PI+3.1+-+Review+Retrospective
+============================================================
+
+1.5
+
+Overview
+
+Sprint:  
+CASTOR 2024 PI 2.6
+
+Duration: -  
+
+Sprint Retrospect Meeting: 
+
+Main Theme of Sprint
+  • Reports Phase 2.3 Release 01 - Development & QE
+
+Sprint Goals:
+  • CDE IMDSV2 upgrade - Phase 2 (Kiosk FE & Kiosk API)
+
+  • Accommodate demo feedback for reports phase 2.3 - release 1
+
+  • Improved the ticket syncing mechanism between Prep / Expo KDS
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.1" and type not in (subTaskIssueTypes()) and status in (Closed,Resolved, Accepted)                           f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.1" and type not in (subTaskIssueTypes()) and status not in (Closed,Resolved, Accepted)                            f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Bug Analysis
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20sprint="CASTOR 2024 PI 3.1"  AND type in ("Bug - Production","Bug")                        f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Day Off
+
+Unplanned Day Offs
+Holidays
+
+Allocation to Ceremonies
+Actual Days
+Comments
+
+1010019
+
+1020017
+
+1010018
+
+1020018
+
+1011017
+
+1010018
+
+1020017
+
+1010018
+
+10
+
+       1
+0       0           1         8
+
+1010018
+
+1020017
+
+1010018
+
+      10       10       0           1         8
+
+10
+11017
+
+ (Intern)101
+
+Total 
+
+Added to Sprint (Mid Sprint Injections)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("CE-4924")   f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Note: Team has added new tickets to cover the above spillovers capacity.
+
+Team Velocity
+
+Item
+
+Story Points
+
+Sprint Commitment (Without 20% Buffer)
+
+188
+
+Not started (Open)-
+
+Incomplete (In progress / Dev completed)27.5
+
+20% Buffer25.5
+
+Added to Sprint26
+
+Removed from Sprint-
+
+Completed (Resolved Stories)188.5
+
+Velocity of the Sprint : 
+
+Delivery Success (resolved story points * 100 / committed story points) =      (289/ 240*100%) =  120%
+
+Reports
+
+  • Velocity over Time
+
+  • Burn Down Chart
+
+Follow-up action items from the previous sprint. 
+
+Sprint Highlights
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing / What went well?
+
+  • Team went above and beyond to support the production release (Worked till mid night for 3 days)
+
+  • Collaboration with security team and the approach taken to address security issues commendable
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Need to send releases frequently rather one big release
+
+  • Identify the existing vulnerabilities during the planning stage and before the deployment
+
+  • Need to have a dev environment
+
+  • Need to identify risks and report them then and there
+
+  • Need to take SOE steps to review ECSP
+
+  • Document environment issues
+
+#d04437#fff8f7
+What should we stop doing / what went wrong?
+
+  • Sending 1 release for all the reports in PI1 and PI2
+
+  • To build a release it takes more than 2 hours 
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+1
+incomplete
+ : Check existing vulnerabilities during planning 
+
+2
+complete
+ : Request a process to identify vulnerabilities and code quality issues
+
+3
+incomplete
+ : Need to have a dev environment
+
+4
+complete
+ : Initiate discussions to reduce the build time
+
+5
+complete
+ : Take a step to review ECSP
+
+6
+incomplete
+ : Need to come up with a common mechanism to document environment issues

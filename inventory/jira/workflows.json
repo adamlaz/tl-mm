@@ -1,0 +1,1256 @@
+{
+  "extracted_at": "2026-04-03T21:09:30.530941",
+  "workflows": {
+    "total": 0,
+    "items": []
+  },
+  "workflow_schemes": {
+    "accessible": false,
+    "total": 0,
+    "items": []
+  },
+  "statuses": {
+    "total": 107,
+    "custom_count": 98,
+    "builtin_count": 9,
+    "by_category": {
+      "To Do": 29,
+      "In Progress": 63,
+      "Done": 15
+    },
+    "custom_statuses": [
+      {
+        "name": "Selected for Development",
+        "id": "10001",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Development",
+        "id": "10004",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Dev in Progress",
+        "id": "10005",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Code Review",
+        "id": "10006",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for QA",
+        "id": "10007",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Testing in Progress",
+        "id": "10008",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Regression Needed",
+        "id": "10009",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Product Planned",
+        "id": "10010",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Planning",
+        "id": "10011",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Accepted",
+        "id": "10015",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "QA in Progress",
+        "id": "10044",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Declined",
+        "id": "10047",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Pending",
+        "id": "10048",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Work in progress",
+        "id": "10049",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Blocked",
+        "id": "10051",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Review",
+        "id": "10052",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Testing By MM",
+        "id": "10059",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "ARB Review",
+        "id": "10060",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Escalated",
+        "id": "10061",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Approved",
+        "id": "10062",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Waiting for support",
+        "id": "10063",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Waiting for customer",
+        "id": "10064",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Canceled",
+        "id": "10065",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Waiting for approval",
+        "id": "10066",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Implementing",
+        "id": "10067",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Authorize",
+        "id": "10068",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Completed",
+        "id": "10069",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Failed",
+        "id": "10070",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Awaiting implementation",
+        "id": "10071",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Under investigation",
+        "id": "10072",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Under review",
+        "id": "10073",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "First CAB Approval",
+        "id": "10074",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Draft",
+        "id": "10075",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Published",
+        "id": "10076",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Review",
+        "id": "10077",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Production Review",
+        "id": "10078",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "On Hold",
+        "id": "10079",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Research",
+        "id": "10080",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Discovery",
+        "id": "10081",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Tech Design",
+        "id": "10082",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Tech Design",
+        "id": "10083",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready",
+        "id": "10084",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for UAT",
+        "id": "10103",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Deploy to STAG",
+        "id": "10104",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Deployed",
+        "id": "10105",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Merged to Master Branch",
+        "id": "10106",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Upgraded Internal Env",
+        "id": "10107",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Merge",
+        "id": "10108",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Release Prep",
+        "id": "10109",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Release",
+        "id": "10110",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Released",
+        "id": "10111",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Abandoned",
+        "id": "10112",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Rejected",
+        "id": "10117",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Triage",
+        "id": "10120",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Blocked - External",
+        "id": "10121",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Blocked - Internal",
+        "id": "10122",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Security Review",
+        "id": "10125",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Security Approved",
+        "id": "10126",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "SEND UPDATE",
+        "id": "10127",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "New",
+        "id": "10128",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Retired",
+        "id": "10129",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Assess",
+        "id": "10130",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Root Cause analysis",
+        "id": "10131",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Fix in progress",
+        "id": "10132",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Fulfilled",
+        "id": "10133",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "cancelled",
+        "id": "10134",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Identified",
+        "id": "10135",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Assessing",
+        "id": "10136",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Mitigating",
+        "id": "10137",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Monitoring",
+        "id": "10138",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Planned",
+        "id": "10144",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for ARB",
+        "id": "10161",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "ARB In Progress",
+        "id": "10162",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Rejected by Tech",
+        "id": "10169",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Stage",
+        "id": "10177",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Roll Back",
+        "id": "10178",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Roll Back",
+        "id": "10179",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Deploy In Progress",
+        "id": "10180",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Deployed",
+        "id": "10181",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Sanity",
+        "id": "10182",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Deployment completed",
+        "id": "10183",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for PROD",
+        "id": "10184",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Deploy to PROD",
+        "id": "10185",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Deploy In Progress",
+        "id": "10186",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Sanity",
+        "id": "10187",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Deployment Completed",
+        "id": "10188",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Update Internal Environments",
+        "id": "10189",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Merge to Master",
+        "id": "10190",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "ARB Complete",
+        "id": "10224",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Security Review Approved",
+        "id": "10257",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Awaiting Change",
+        "id": "10323",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "MONITORING CHANGE",
+        "id": "10324",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Second CAB Approval",
+        "id": "10356",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Discovery",
+        "id": "10423",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Parking lot",
+        "id": "10424",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for delivery",
+        "id": "10425",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Delivery",
+        "id": "10426",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Impact",
+        "id": "10427",
+        "category": "In Progress",
+        "is_custom": true
+      }
+    ],
+    "all": [
+      {
+        "name": "Open",
+        "id": "1",
+        "category": "To Do",
+        "is_custom": false
+      },
+      {
+        "name": "In Progress",
+        "id": "3",
+        "category": "In Progress",
+        "is_custom": false
+      },
+      {
+        "name": "Reopened",
+        "id": "4",
+        "category": "To Do",
+        "is_custom": false
+      },
+      {
+        "name": "Resolved",
+        "id": "5",
+        "category": "Done",
+        "is_custom": false
+      },
+      {
+        "name": "Closed",
+        "id": "6",
+        "category": "Done",
+        "is_custom": false
+      },
+      {
+        "name": "Backlog",
+        "id": "10000",
+        "category": "To Do",
+        "is_custom": false
+      },
+      {
+        "name": "Selected for Development",
+        "id": "10001",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Done",
+        "id": "10002",
+        "category": "Done",
+        "is_custom": false
+      },
+      {
+        "name": "To Do",
+        "id": "10003",
+        "category": "To Do",
+        "is_custom": false
+      },
+      {
+        "name": "Ready for Development",
+        "id": "10004",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Dev in Progress",
+        "id": "10005",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Code Review",
+        "id": "10006",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for QA",
+        "id": "10007",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Testing in Progress",
+        "id": "10008",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Regression Needed",
+        "id": "10009",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Product Planned",
+        "id": "10010",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Planning",
+        "id": "10011",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Accepted",
+        "id": "10015",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "QA in Progress",
+        "id": "10044",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Declined",
+        "id": "10047",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Pending",
+        "id": "10048",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Work in progress",
+        "id": "10049",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Blocked",
+        "id": "10051",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Review",
+        "id": "10052",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Testing By MM",
+        "id": "10059",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "ARB Review",
+        "id": "10060",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Escalated",
+        "id": "10061",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Approved",
+        "id": "10062",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Waiting for support",
+        "id": "10063",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Waiting for customer",
+        "id": "10064",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Canceled",
+        "id": "10065",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Waiting for approval",
+        "id": "10066",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Implementing",
+        "id": "10067",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Authorize",
+        "id": "10068",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Completed",
+        "id": "10069",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Failed",
+        "id": "10070",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Awaiting implementation",
+        "id": "10071",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Under investigation",
+        "id": "10072",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Under review",
+        "id": "10073",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "First CAB Approval",
+        "id": "10074",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Draft",
+        "id": "10075",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Published",
+        "id": "10076",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Review",
+        "id": "10077",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Production Review",
+        "id": "10078",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "On Hold",
+        "id": "10079",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Research",
+        "id": "10080",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Discovery",
+        "id": "10081",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Tech Design",
+        "id": "10082",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Tech Design",
+        "id": "10083",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready",
+        "id": "10084",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for UAT",
+        "id": "10103",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Deploy to STAG",
+        "id": "10104",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Deployed",
+        "id": "10105",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Merged to Master Branch",
+        "id": "10106",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Upgraded Internal Env",
+        "id": "10107",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Merge",
+        "id": "10108",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Release Prep",
+        "id": "10109",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Release",
+        "id": "10110",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Released",
+        "id": "10111",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Abandoned",
+        "id": "10112",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Rejected",
+        "id": "10117",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Triage",
+        "id": "10120",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Blocked - External",
+        "id": "10121",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Blocked - Internal",
+        "id": "10122",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Security Review",
+        "id": "10125",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Security Approved",
+        "id": "10126",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "SEND UPDATE",
+        "id": "10127",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "New",
+        "id": "10128",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Retired",
+        "id": "10129",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Assess",
+        "id": "10130",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Root Cause analysis",
+        "id": "10131",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Fix in progress",
+        "id": "10132",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Fulfilled",
+        "id": "10133",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "cancelled",
+        "id": "10134",
+        "category": "Done",
+        "is_custom": true
+      },
+      {
+        "name": "Identified",
+        "id": "10135",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Assessing",
+        "id": "10136",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Mitigating",
+        "id": "10137",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Monitoring",
+        "id": "10138",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Planned",
+        "id": "10144",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for ARB",
+        "id": "10161",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "ARB In Progress",
+        "id": "10162",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Rejected by Tech",
+        "id": "10169",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for Stage",
+        "id": "10177",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Roll Back",
+        "id": "10178",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Roll Back",
+        "id": "10179",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Deploy In Progress",
+        "id": "10180",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Deployed",
+        "id": "10181",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Sanity",
+        "id": "10182",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "STAG Deployment completed",
+        "id": "10183",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for PROD",
+        "id": "10184",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Deploy to PROD",
+        "id": "10185",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Deploy In Progress",
+        "id": "10186",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Sanity",
+        "id": "10187",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "PROD Deployment Completed",
+        "id": "10188",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Update Internal Environments",
+        "id": "10189",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Merge to Master",
+        "id": "10190",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "ARB Complete",
+        "id": "10224",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Security Review Approved",
+        "id": "10257",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Awaiting Change",
+        "id": "10323",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "MONITORING CHANGE",
+        "id": "10324",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Second CAB Approval",
+        "id": "10356",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Done",
+        "id": "10422",
+        "category": "Done",
+        "is_custom": false
+      },
+      {
+        "name": "Discovery",
+        "id": "10423",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Parking lot",
+        "id": "10424",
+        "category": "To Do",
+        "is_custom": true
+      },
+      {
+        "name": "Ready for delivery",
+        "id": "10425",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Delivery",
+        "id": "10426",
+        "category": "In Progress",
+        "is_custom": true
+      },
+      {
+        "name": "Impact",
+        "id": "10427",
+        "category": "In Progress",
+        "is_custom": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+Title: LEO 2024 PI 3.2 - Review & Retrospective
+Space: Leapset Platform
+Modified: 2024-10-01T12:26:19.942Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/LP/pages/408846340/LEO+2024+PI+3.2+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+LEO 2024 PI 3.2
+
+Duration: -  
+
+Sprint Retrospect Meeting:
+
+   
+
+Main Theme of Sprint
+MySQL upgrades
+
+Sprint Goals:
+Continuation of the remaining MySQL database upgrades to complete the initiative
+
+Participants:
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.2" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                     f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "LEO 2024 PI 3.2" and status NOT IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                                          f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1010108
+
+10
+10108
+
+1010108
+
+1010117
+
+1010108
+
+1010108
+
+1010108
+
+1000109
+
+1020107
+
+Total 90
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment Without 20% buffer]
+101
+
+20% Buffer19
+
+Not started (Open)
+-
+
+Incomplete (In progress / Dev completed/On hold)
+-
+
+Added to Sprint
+26
+
+Removed from Sprint
+-
+
+Completed (Resolved Stories)
+127
+
+Delivery Success (resolved story points * 100 / committed story points) =  (101/101*100) = 100%
+
+Net Delivery Success (total delivered / capacity) 100 % = (127/ 120*100) = 105.8 %
+
+Reasons for the deviation in Delivery Success %: 
+
+N/A
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20issue in linkedIssues("PLTFRM-1873")   f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Spillovers:
+
+N/A
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+38
+incomplete
+  - Check the fix version as a acceptance criteria when accepting a ticket
+
+Sprint Highlights
+#d04437#ffff00
+Continuation of remaining MySQL DB upgrade initiative.
+
+  • POS DB
+
+  • OAUTH2 DB
+
+  • EMAIL DB
+
+  • Data Platform
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?/ What went well? 
+
+  • Developers and QEs working together for performance testing
+
+  • The team was able to complete all the tickets without any spillover
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • Better performance planning & maintaining a checklist
+
+  • Setting up local developer environments
+
+#d04437#fff8f7
+What should we stop doing?/ What went wrong?
+
+  • Environment issues were hindering the performance test
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+31
+incomplete
+ - Come up with a checklist for performance testing
+
+32
+complete
+  - Organize a touchdown to check the sprint progress mid-sprint
+
+33
+complete
+ - Check for feasibility of creating mind maps
+
+34
+incomplete
+Team - Stabilise POS1 dev environment
+
+35
+incomplete
+Team - Set up a local dev environment
+
+36
+complete
+Team - Need to come up with a wayforward to smoothen up the review process
+
+37
+complete
+ - Identify the dependent tasks during the planning and prioritise them

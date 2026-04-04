@@ -1,0 +1,350 @@
+Title: MIRA 2024 PI 3.1 - Review & Retrospective
+Space: Cake GPS
+Modified: 2024-08-20T12:42:17.408Z
+URL: https://madmobile-eng.atlassian.net/wiki/spaces/CG/pages/377880642/MIRA+2024+PI+3.1+-+Review+Retrospective
+============================================================
+
+Overview
+
+Sprint:  
+MIRA 2024 PI 3.1
+
+Duration:  -  
+
+Sprint Retrospect Meeting:
+
+  
+
+Main Theme of Sprint
+Edit Loyalty Customer Production Release
+
+Sprint Goals:
+  • 
+  • GM Reservation Widget Bug Fix ( Prod Release )
+
+  • Parafin Wallet Integration ( STG / Prod Release ) Got hold due to client communication
+
+  • Saving correct transaction id to couch ticket and verify the existing couch Properties - Prod Release
+
+  • Production issue / bug fixes
+
+  • Critical Support Fixes ​
+
+Participants:
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Work Accepted
+
+Stories Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 3.1" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()     f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Stories Not Completed
+
+System Jiraissuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolutionkey,summary,type,created,updated,due,assignee,reporter,priority,status,resolution20Sprint = "MIRA 2024 PI 3.1" and status IN (Resolved, Accepted, Closed) and type not in subTaskIssueTypes()                            f496ff7d-738c-3ddd-a9cd-8b868d553dc0
+
+Sprint Report
+
+Team Availability
+
+  • 
+Scrum Ceremonies time: 1 day (Planning + Review/Retro: 1 day)
+
+  • 
+Holidays: 0
+
+  • 
+Development days for the Sprint:  9
+
+ 
+
+Total Days
+
+Planned Leave
+
+Holidays
+
+Allocation to Ceremonies
+
+Unplanned LeaveActual Days
+Comments
+
+1000109
+
+1010108
+
+1000109
+
+1010108
+
+1000109
+
+1010108
+
+1010108
+
+1010108
+
+1000109
+
+Total 
+
+ 
+
+67
+
+Team Velocity
+
+Item
+Story Points
+
+Sprint Commitment - 100% Utilization
+118
+
+Sprint Commitment - 20 % Utilization28
+
+Sprint Commitment with 80%
+90
+
+Incomplete (In progress / Dev completed/On hold)
+26
+
+Added to Sprint
+46
+
+Removed from Sprint
+0
+
+Completed (Resolved Stories)
+120
+
+Net Delivery Success (resolved story points * 100 / committed story points) =  (120* 100) / 90 = 133%
+
+Delivery Success Rate : ( 74/90 ) * 100 = 82 %
+
+Reasons for the deviation in Delivery Success %:
+
+  • Team added additional 57 SP as an additional item to the sprint.
+
+  • Velocity over Time graph 
+
+  • Sprint Report
+
+     
+
+Mid Sprint Injections (Added to Sprint)
+
+Jira ID and Summary
+
+Description
+
+SP
+
+CE-4705] [Reports] Navigates to different page when logging to reports via POS - Jira (atlassian.net)
+
+5
+
+[CE-4969] Bottom Row of Global Modifiers Cut Off on V3 - 7.10.0.70 - Jira (atlassian.net)
+
+2
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4989
+
+1
+
+[CE-5001] Update deployment scripts of Menu Core components - Jira (atlassian.net)
+
+1
+
+[CE-4994] POS 4 menu admin memecache issue and fix (support for castor team for their release) - Jira (atlassian.net)
+
+3
+
+[CE-4995] Pre auth new requirement feasibility analysis discussions and high level estimates - Jira (atlassian.net)
+
+5
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4996
+
+5
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-4992
+
+2
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PR-843
+
+4
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PR-842
+
+3
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0PR-841
+
+5
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5009
+
+1
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5016
+
+1
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5013
+
+2
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5019
+
+3
+
+System Jiraf496ff7d-738c-3ddd-a9cd-8b868d553dc0CE-5022
+
+2
+
+TicketSPComment
+
+[CE-4754] [SR-3490] Menu Core - Items not syncing to POS - Jira (atlassian.net)
+1
+
+[BO-4002] MC to EMS 2.0 Migration Bug fix Verification - Jira (atlassian.net)
+3
+
+[CE-4751] Invalid loyalty point value is displayed on loyalty summery section - Jira (atlassian.net)
+2
+
+[BO-4039] [SR-5975] [PROD] Cannot onboard Paytronix Tax for Toastique Nashville - Jira (atlassian.net)
+1
+
+https://madmobile-eng.atlassian.net/browse/CE-4781https://madmobile-eng.atlassian.net/browse/CE-4781
+1
+
+https://madmobile-eng.atlassian.net/browse/CE-4788
+2
+
+https://madmobile-eng.atlassian.net/browse/CE-4789
+1
+
+[CE-4795] Error in fetching menu core account - Jira (atlassian.net)
+1
+
+[CE-4800] pos freezing issue log analyzis and discussions with Thiwanka - Jira (atlassian.net)
+1
+
+[CE-4799] Data replication was not working - Jira (atlassian.net)
+1
+
+[CE-4798] Loyalty search not working due to db issue - Jira (atlassian.net)
+1
+
+[CE-4797] SQS dl notification discussions and verification with cloud team - Jira (atlassian.net)
+5
+
+[CE-4792] OLO corrected flow release support work - Jira (atlassian.net)
+5
+
+[CE-4794] Can nit create users for universal admin reports fix - Jira (atlassian.net)
+5
+
+[CE-4798] Loyalty search not working due to db issue - Jira (atlassian.net)
+1
+
+[CE-4795] Error in fetching menu core account - Jira (atlassian.net)
+1
+
+[CE-4797] SQS dl notification discussions and verification with cloud team - Jira (atlassian.net)
+5
+
+[CE-4800] pos freezing issue log analyzis and discussions with Thiwanka - Jira (atlassian.net)
+1
+
+[CE-4796] Verify if PX OLO Utensils information gets picked up on the POS - Jira (atlassian.net)
+5
+
+[CE-4793] OLO correction in loyalty order flow release management work and unblock QE by resolving environment issues - Jira (atlassian.net)
+3
+
+[CE-4804] [TST1][BVT] Menu core merchant gives 504 gateway timeout error - Jira (atlassian.net)
+1
+
+[CE-4568] MAPI and Operator API execution - Jira (atlassian.net)
+2
+
+[BO-4166] [EMS2.0] Performance test approch preperation - Jira (atlassian.net)
+2
+
+Total52 SP
+
+Spillovers:
+
+https://madmobile-eng.atlassian.net/browse/CE-4519 - 5 SP
+
+https://madmobile-eng.atlassian.net/browse/CE-3897 - 3 SP
+
+Follow-up action items from the previous sprint
+
+#d04437#ffff00
+Follow up Items
+
+None
+
+Sprint Highlights
+#d04437#ffff00
+  • POS freezing production issue workaround DEV completion, staging and prod release 
+
+  • OLO Loyalty updated flow DEV/ Testing completion, staging/ prod release 
+
+  • Edit loyalty customer DEV/ QA work 
+
+  • EMS 2.0 testing
+
+  • Sporadic production issue fixes
+
+Retrospective
+
+#91c89c#f3f9f4
+What can we continue doing?
+
+  • We need to focus on the burn down chart and the way that we chunk the items in order to reflect the deliverables.
+
+  • Start, End dates need to be in the user stories
+
+  • Frequently analyse the Linear B Metrics.
+
+  • We need to check the environment stability prior to start the development / release work.
+
+  • Consider the time taken to new lower environment deployment process while estimate the tasks story points
+
+#0066FF#E6F0FF
+What can we start doing?
+
+  • If there are dependencies with other teams for the PI commitments, We need to make sure proper communication of them and assign tickets to them to prevent potential spill overs. 
+
+  • Properly plan the staging/ prod releases by communicate with cloud team
+
+#d04437#fff8f7
+What should we stop doing?
+
+#FF6600#FFF0CC
+Action Items for next sprint(s)
+
+Perfection Game
+
+MemberRate

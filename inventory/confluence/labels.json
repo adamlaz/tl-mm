@@ -1,0 +1,11 @@
+{
+  "extracted_at": "2026-04-03T21:10:20.857536",
+  "target_labels": {
+    "architecture": 1,
+    "rca": 0,
+    "release": 1,
+    "deployment": 1
+  },
+  "popular_labels": "not_available",
+  "blog_label_frequency": {}
+}

@@ -1,0 +1,10 @@
+{
+  "field_id": "customfield_10382",
+  "field_name": "Probable/Actual Root Cause Category",
+  "total_bugs_sampled": 500,
+  "populated_count": 0,
+  "population_rate_pct": 0.0,
+  "distribution": {
+    "(not set)": 500
+  }
+}

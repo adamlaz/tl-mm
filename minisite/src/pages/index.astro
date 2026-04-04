@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import MetricCard from '../components/MetricCard.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
+import { readFileSync } from 'node:fs';
 
 const awsCosts = await getCollection('awsCosts');
 const repos = await getCollection('bitbucketRepos');
@@ -10,6 +11,13 @@ const projects = await getCollection('jiraProjects');
 const pages = await getCollection('confluencePages');
 const tools = await getCollection('toolingCatalog');
 const users = await getCollection('userAudit');
+
+const epicData = JSON.parse(readFileSync('../inventory/jira/epic_completion.json', 'utf-8'));
+const rcaData = JSON.parse(readFileSync('../inventory/confluence/rca_timeline.json', 'utf-8'));
+let reviewData = {};
+try { reviewData = JSON.parse(readFileSync('../inventory/bitbucket/review_network_summary.json', 'utf-8')); } catch {}
+const ecsData = JSON.parse(readFileSync('../inventory/aws/ecs_task_definitions.json', 'utf-8'));
+const customFields = JSON.parse(readFileSync('../inventory/jira/custom_fields.json', 'utf-8'));
 
 const totalAwsCost = awsCosts
   .filter((e) => e.data.month.startsWith('2026-03'))
@@ -89,7 +97,7 @@ const sections = [
     href: '/charts',
     title: 'Charts',
     desc: 'Interactive charts spanning infrastructure, engineering, delivery, and documentation.',
-    metric: '25',
+    metric: '31',
     metricLabel: 'charts',
   },
 ];
@@ -112,6 +120,15 @@ const sections = [
     <MetricCard label="Jira Projects" value={projects.length.toString()} subtitle={`${engProjects} engineering`} />
     <MetricCard label="Confluence Pages" value={fmt(pages.length)} subtitle="In Confluence" />
     <MetricCard label="Tools Identified" value={tools.length.toString()} subtitle={`${activeTools} confirmed active`} />
+  </dl>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+    <MetricCard label="Epic Completion" value={`${epicData.overall_resolution_rate_pct}%`} subtitle={`${epicData.resolved} of ${epicData.total_epics} resolved`} />
+    <MetricCard label="Priority Inflation" value="89%" subtitle="of issues marked High" />
+    <MetricCard label="Incidents Parsed" value={rcaData.total_incidents_parsed?.toString() ?? '50'} subtitle="Peak: 2022 (26)" />
+    <MetricCard label="ECS Health Checks" value={`${Math.round((ecsData.containers_without_health_check / ecsData.total_containers) * 100)}%`} subtitle="containers missing" />
+    <MetricCard label="Story Points" value={`${customFields.story_points_coverage?.coverage_pct ?? 9}%`} subtitle="stories estimated" />
   </dl>
 
   <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Explore</h2>

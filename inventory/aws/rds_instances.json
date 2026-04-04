@@ -1,0 +1,194 @@
+[
+  {
+    "db_identifier": "dev-cake-use1-ci-sonar",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "postgres",
+    "engine_version": "15.12",
+    "instance_class": "db.t3.small",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 50,
+    "multi_az": false,
+    "storage_encrypted": true,
+    "backup_retention_days": 1,
+    "parameter_groups": [
+      "default.postgres15"
+    ],
+    "option_groups": [
+      "default:postgres-15"
+    ],
+    "performance_insights_enabled": false,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "available",
+    "endpoint": "dev-cake-use1-ci-sonar.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  },
+  {
+    "db_identifier": "dev-flipt-db",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "postgres",
+    "engine_version": "17.4",
+    "instance_class": "db.t3.small",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 100,
+    "multi_az": false,
+    "storage_encrypted": true,
+    "backup_retention_days": 7,
+    "parameter_groups": [
+      "default.postgres17"
+    ],
+    "option_groups": [
+      "default:postgres-17"
+    ],
+    "performance_insights_enabled": true,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "available",
+    "endpoint": "dev-flipt-db.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  },
+  {
+    "db_identifier": "dev-payment-db-master",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "mysql",
+    "engine_version": "5.7.44-rds.20250213",
+    "instance_class": "db.t3.micro",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 100,
+    "multi_az": false,
+    "storage_encrypted": false,
+    "backup_retention_days": 1,
+    "parameter_groups": [
+      "dev-payment-db-master"
+    ],
+    "option_groups": [
+      "dev-payment-db-master"
+    ],
+    "performance_insights_enabled": false,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "stopped",
+    "endpoint": "dev-payment-db-master.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  },
+  {
+    "db_identifier": "dev-payment-db-master-v2",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "mysql",
+    "engine_version": "5.7.44-rds.20250213",
+    "instance_class": "db.t3.micro",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 50,
+    "multi_az": false,
+    "storage_encrypted": true,
+    "backup_retention_days": 1,
+    "parameter_groups": [
+      "dev-payment-db-master"
+    ],
+    "option_groups": [
+      "dev-payment-db-master"
+    ],
+    "performance_insights_enabled": false,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "available",
+    "endpoint": "dev-payment-db-master-v2.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  },
+  {
+    "db_identifier": "pos4-shrd-use1-r-mydb80-p1",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "mysql",
+    "engine_version": "8.0.41",
+    "instance_class": "db.t3.large",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 100,
+    "multi_az": false,
+    "storage_encrypted": false,
+    "backup_retention_days": 1,
+    "parameter_groups": [
+      "pos4-shrd-use1-r-mydb80-p1-paramter-group"
+    ],
+    "option_groups": [
+      "default:mysql-8-0"
+    ],
+    "performance_insights_enabled": false,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "available",
+    "endpoint": "pos4-shrd-use1-r-mydb80-p1.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  },
+  {
+    "db_identifier": "qa-data-platform-metastoredb-old1",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "mysql",
+    "engine_version": "8.0.41",
+    "instance_class": "db.t3.medium",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 50,
+    "multi_az": false,
+    "storage_encrypted": false,
+    "backup_retention_days": 1,
+    "parameter_groups": [
+      "qa-data-platform-metastoredb"
+    ],
+    "option_groups": [
+      "default:mysql-8-0"
+    ],
+    "performance_insights_enabled": false,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "available",
+    "endpoint": "qa-data-platform-metastoredb-old1.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  },
+  {
+    "db_identifier": "qa-payment-gateway-db",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "mysql",
+    "engine_version": "5.7.44-rds.20250213",
+    "instance_class": "db.t3.medium",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 100,
+    "multi_az": false,
+    "storage_encrypted": false,
+    "backup_retention_days": 1,
+    "parameter_groups": [
+      "payment-db-57"
+    ],
+    "option_groups": [
+      "payment-db-57"
+    ],
+    "performance_insights_enabled": false,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "available",
+    "endpoint": "qa-payment-gateway-db.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  },
+  {
+    "db_identifier": "tst1-db-clone-mysql8",
+    "profile": "mm-cake-development",
+    "region": "us-east-1",
+    "engine": "mysql",
+    "engine_version": "8.0.41",
+    "instance_class": "db.t3.large",
+    "storage_type": "gp3",
+    "allocated_storage_gb": 200,
+    "multi_az": false,
+    "storage_encrypted": false,
+    "backup_retention_days": 1,
+    "parameter_groups": [
+      "dev-costdashboard-parameter-group"
+    ],
+    "option_groups": [
+      "default:mysql-8-0"
+    ],
+    "performance_insights_enabled": false,
+    "read_replica_source": "",
+    "publicly_accessible": false,
+    "status": "available",
+    "endpoint": "tst1-db-clone-mysql8.cf70ugbz3bn1.us-east-1.rds.amazonaws.com"
+  }
+]

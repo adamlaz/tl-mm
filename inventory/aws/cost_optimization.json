@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-04-04T00:54:50.219770+00:00",
+  "management_profile": "mm-madmobile-mgmt",
+  "errors": {},
+  "savings_plans": {
+    "periods": [
+      {
+        "month": "2026-01-01",
+        "utilization_pct": "100",
+        "total_commitment": "38625.6",
+        "used_commitment": "38625.6",
+        "unused_commitment": "0.0",
+        "savings_vs_on_demand_pct": "0"
+      },
+      {
+        "month": "2026-02-01",
+        "utilization_pct": "100",
+        "total_commitment": "64513.53",
+        "used_commitment": "64513.53",
+        "unused_commitment": "0.0",
+        "savings_vs_on_demand_pct": "0"
+      },
+      {
+        "month": "2026-03-01",
+        "utilization_pct": "100",
+        "total_commitment": "79227.816",
+        "used_commitment": "79227.816",
+        "unused_commitment": "0.0",
+        "savings_vs_on_demand_pct": "0"
+      }
+    ],
+    "overall_utilization_pct": "100",
+    "total_commitment": "182366.946",
+    "net_savings": "N/A"
+  },
+  "reserved_instances": {
+    "periods": [],
+    "overall_utilization_pct": "0",
+    "net_savings": "0"
+  },
+  "cost_trends": {
+    "monthly_totals": {
+      "2025-10-01": 472812.21,
+      "2025-11-01": 265089.09,
+      "2025-12-01": 278332.46,
+      "2026-01-01": 284774.26,
+      "2026-02-01": 249766.2,
+      "2026-03-01": 309236.85
+    },
+    "top_services": {
+      "Savings Plans for AWS Compute usage": 269749.86,
+      "EC2 - Other": 252919.37,
+      "Amazon Elastic Compute Cloud - Compute": 244824.51,
+      "Amazon Relational Database Service": 193534.79,
+      "WIZ Cloud Infrastructure Security Platform": 124950.0,
+      "AWS Support (Enterprise)": 106567.81,
+      "Amazon Elastic Load Balancing": 61370.13,
+      "ReliaQuest GreyMatter": 60000.0,
+      "Amazon ElastiCache": 54351.97,
+      "AmazonCloudWatch": 48778.94,
+      "Amazon Simple Storage Service": 47207.04,
+      "Amazon OpenSearch Service": 43887.88,
+      "Amazon MQ": 39148.16,
+      "Cursor": 38160.0,
+      "Snowflake Capacity": 37500.0,
+      "Amazon Virtual Private Cloud": 35763.21,
+      "OCBLateFee": 29349.25,
+      "[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6)": 26549.0,
+      "Vanta": 20000.02,
+      "Snyk: Developer Security Platform": 19249.86,
+      "Amazon Elastic Container Service for Kubernetes": 16356.71,
+      "Native Cloud Data Warehouse Analytics & Business Intelligence Software": 15000.0,
+      "Amazon GuardDuty": 13240.11,
+      "Amazon Managed Streaming for Apache Kafka": 9048.52,
+      "AWS Certificate Manager": 8696.15
+    },
+    "account_totals": {
+      "758050458312": 801710.28,
+      "302042158767": 470252.76,
+      "219788358213": 151797.91,
+      "230930891673": 96088.89,
+      "125062011444": 76027.84,
+      "266315811211": 41134.77,
+      "763638056640": 37319.46,
+      "701373377822": 25608.26,
+      "959479922892": 23792.4,
+      "357856625432": 22240.62,
+      "741991527464": 18184.52,
+      "542575560358": 16933.59,
+      "491085393358": 13410.62,
+      "066812272209": 12135.47,
+      "622065827965": 12075.23,
+      "654654350563": 9748.13,
+      "464176945335": 8449.39,
+      "851725484156": 8362.73,
+      "673260261206": 5746.85,
+      "291271657171": 4976.14,
+      "749801985331": 1792.46,
+      "050752646835": 725.37,
+      "905418170668": 505.08,
+      "381491928564": 286.62,
+      "278608866843": 226.61,
+      "031557234424": 129.44,
+      "040591922250": 100.91,
+      "740116397392": 55.21,
+      "155215164482": 40.84,
+      "312993138736": 31.48,
+      "654654141748": 31.48,
+      "043601487089": 28.74,
+      "026090514637": 20.01,
+      "889603624096": 18.52,
+      "024848459322": 17.95,
+      "473286660551": 3.19,
+      "854802891701": 1.25
+    },
+    "trend": "decreasing",
+    "total_spend": 1860011.07
+  },
+  "forecast": {
+    "period": "2026-04-05 to 2026-05-04",
+    "total_amount": "490329.9668691502",
+    "unit": "USD",
+    "by_period": [
+      {
+        "start": "2026-04-01",
+        "end": "2026-05-01",
+        "mean": "239862.8515928036",
+        "min": "",
+        "max": ""
+      },
+      {
+        "start": "2026-05-01",
+        "end": "2026-06-01",
+        "mean": "250467.11527634657",
+        "min": "",
+        "max": ""
+      }
+    ]
+  }
+}

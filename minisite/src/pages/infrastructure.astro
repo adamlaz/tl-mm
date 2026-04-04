@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import DataTable from '../components/DataTable.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
+import { getCollection } from 'astro:content';
+import { num, fmtCurrency } from '../lib/parse';
+import { readFileSync } from 'node:fs';
+
+let eksData: any[] = [];
+let rdsData: any[] = [];
+let ecsData: any = {};
+let tagData: any = {};
+try { eksData = JSON.parse(readFileSync('../inventory/aws/eks_clusters.json', 'utf-8')); } catch {}
+try { rdsData = JSON.parse(readFileSync('../inventory/aws/rds_instances.json', 'utf-8')); } catch {}
+try { ecsData = JSON.parse(readFileSync('../inventory/aws/ecs_task_definitions.json', 'utf-8')); } catch {}
+try { tagData = JSON.parse(readFileSync('../inventory/aws/tagging_compliance.json', 'utf-8')); } catch {}
+
+const ecsServicesCount = ecsData.total_services_analyzed ?? 0;
+const noHealthCheck = ecsData.containers_without_health_check ?? 0;
+const totalContainers = ecsData.total_containers ?? 1;
+const healthCheckPct = totalContainers > 0 ? Math.round((noHealthCheck / totalContainers) * 100) : 0;
+
+const costs = await getCollection('awsCosts');
+const resources = await getCollection('awsResources');
+
+const marchCosts = costs.filter((c) => c.data.month.startsWith('2026-03'));
+const totalCost = marchCosts.reduce((s, c) => s + num(c.data.cost), 0);
+
+const byAccount = new Map<string, number>();
+const byService = new Map<string, number>();
+for (const c of marchCosts) {
+  const cost = num(c.data.cost);
+  byAccount.set(c.data.profile, (byAccount.get(c.data.profile) ?? 0) + cost);
+  byService.set(c.data.service, (byService.get(c.data.service) ?? 0) + cost);
+}
+
+const accountRows = [...byAccount.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([name, cost]) => ({
+    account: name.replace('mm-', ''),
+    cost: fmtCurrency(cost),
+    pct: `${((cost / totalCost) * 100).toFixed(1)}%`,
+  }));
+
+const serviceRows = [...byService.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 20)
+  .map(([name, cost]) => ({
+    service: name,
+    cost: fmtCurrency(cost),
+    pct: `${((cost / totalCost) * 100).toFixed(1)}%`,
+  }));
+
+const ec2Count = resources.filter((r) => r.data.type === 'EC2').length;
+const lambdaCount = resources.filter((r) => r.data.type === 'Lambda').length;
+const rdsCount = resources.filter((r) => r.data.type === 'RDS').length;
+
+const charts = [
+  { slug: 'aws_cost_by_account', title: 'Cost by Account' },
+  { slug: 'aws_cost_by_service', title: 'Cost by Service' },
+  { slug: 'aws_cost_trend', title: 'Cost Trend' },
+  { slug: 'aws_resource_inventory', title: 'Resource Inventory' },
+  { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes' },
+];
+---
+
+<BaseLayout title="AWS Infrastructure">
+  <SectionHeader
+    title="AWS Infrastructure"
+    description="18 AWS accounts managed under a centralized cloud organization. Cost and resource data from March 2026."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Monthly Spend" value={`$${Math.round(totalCost / 1000)}K`} subtitle="March 2026" />
+    <MetricCard label="EC2 Instances" value={ec2Count.toString()} subtitle="83% pre-Graviton" />
+    <MetricCard label="Lambda Functions" value={lambdaCount.toString()} subtitle="21% on end-of-life runtimes" />
+    <MetricCard label="RDS Instances" value={rdsCount.toString()} />
+  </dl>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="EKS Clusters" value={eksData.length?.toString() ?? '0'} subtitle={eksData[0] ? `K8s ${eksData[0].k8s_version}` : ''} />
+    <MetricCard label="RDS Instances" value={rdsData.length?.toString() ?? '0'} subtitle="Deep: engine versions, Multi-AZ" />
+    <MetricCard label="ECS Services" value={ecsServicesCount.toString()} subtitle={`${healthCheckPct}% missing health checks`} />
+    <MetricCard label="Unique Images" value={(ecsData.unique_images ?? 0).toString()} subtitle="container images deployed" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">EKS Clusters</h2>
+      <DataTable
+        columns={[
+          { key: 'name', label: 'Cluster' },
+          { key: 'profile', label: 'Account' },
+          { key: 'k8s_version', label: 'K8s Version' },
+          { key: 'status', label: 'Status' },
+        ]}
+        rows={eksData.map((e: any) => ({ name: e.name, profile: e.profile?.replace('mm-',''), k8s_version: e.k8s_version, status: e.status }))}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">RDS Instances</h2>
+      <DataTable
+        columns={[
+          { key: 'id', label: 'Instance' },
+          { key: 'engine', label: 'Engine' },
+          { key: 'version', label: 'Version' },
+          { key: 'multi_az', label: 'Multi-AZ' },
+          { key: 'encrypted', label: 'Encrypted' },
+        ]}
+        rows={rdsData.map((r: any) => ({ id: r.db_identifier, engine: r.engine, version: r.engine_version, multi_az: r.multi_az ? 'Yes' : 'No', encrypted: r.storage_encrypted ? 'Yes' : 'No' }))}
+      />
+    </div>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Cost by Account</h2>
+      <DataTable
+        columns={[
+          { key: 'account', label: 'Account' },
+          { key: 'cost', label: 'Cost', align: 'right' },
+          { key: 'pct', label: '% Total', align: 'right' },
+        ]}
+        rows={accountRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Top 20 Services</h2>
+      <DataTable
+        columns={[
+          { key: 'service', label: 'Service' },
+          { key: 'cost', label: 'Cost', align: 'right' },
+          { key: 'pct', label: '% Total', align: 'right' },
+        ]}
+        rows={serviceRows}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
+  <div class="grid lg:grid-cols-2 gap-6">
+    {charts.map((c) => (
+      <ChartEmbed slug={c.slug} title={c.title} />
+    ))}
+  </div>
+</BaseLayout>

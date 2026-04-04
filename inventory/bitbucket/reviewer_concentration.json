@@ -1,246 +1,1048 @@
 {
   "per_repo": [
     {
+      "workspace": "syscolabs",
+      "repo": "cinco-workspace",
       "total_prs": 3,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "syscolabs",
-      "repo": "cinco-workspace"
+      "top_reviewers": [
+        {
+          "name": "Rob Quin",
+          "count": 2,
+          "pct": 66.7
+        },
+        {
+          "name": "Kyle Budd",
+          "count": 2,
+          "pct": 66.7
+        },
+        {
+          "name": "Harrison Minchew",
+          "count": 2,
+          "pct": 66.7
+        },
+        {
+          "name": "James Van Buskirk",
+          "count": 1,
+          "pct": 33.3
+        },
+        {
+          "name": "Anderson Lavor",
+          "count": 1,
+          "pct": 33.3
+        }
+      ],
+      "top_reviewer_pct": 66.7,
+      "is_bottleneck": true
     },
     {
+      "workspace": "syscolabs",
+      "repo": "react-cinco",
       "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "syscolabs",
-      "repo": "react-cinco"
+      "top_reviewers": [
+        {
+          "name": "Wenushka Dikowita",
+          "count": 97,
+          "pct": 38.8
+        },
+        {
+          "name": "Matthew Crumley",
+          "count": 94,
+          "pct": 37.6
+        },
+        {
+          "name": "Harrison Minchew",
+          "count": 89,
+          "pct": 35.6
+        },
+        {
+          "name": "Faizul Hasan",
+          "count": 85,
+          "pct": 34.0
+        },
+        {
+          "name": "Alexander Baine",
+          "count": 77,
+          "pct": 30.8
+        }
+      ],
+      "top_reviewer_pct": 38.8,
+      "is_bottleneck": false
     },
     {
+      "workspace": "syscolabs",
+      "repo": "moxy",
       "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "syscolabs",
-      "repo": "moxy"
+      "top_reviewers": [
+        {
+          "name": "Dineth Samarakkody",
+          "count": 185,
+          "pct": 74.0
+        },
+        {
+          "name": "Harsha Kosala",
+          "count": 160,
+          "pct": 64.0
+        },
+        {
+          "name": "Wenushka Dikowita",
+          "count": 158,
+          "pct": 63.2
+        },
+        {
+          "name": "manthi ariyasinghe",
+          "count": 120,
+          "pct": 48.0
+        },
+        {
+          "name": "Buddhika Lakshan",
+          "count": 106,
+          "pct": 42.4
+        }
+      ],
+      "top_reviewer_pct": 74.0,
+      "is_bottleneck": true
     },
     {
-      "total_prs": 41,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "neo-workspace"
+      "repo": "neo-workspace",
+      "total_prs": 45,
+      "top_reviewers": [
+        {
+          "name": "Rusty Clark",
+          "count": 29,
+          "pct": 64.4
+        },
+        {
+          "name": "Jack Kennedy",
+          "count": 22,
+          "pct": 48.9
+        },
+        {
+          "name": "Jeremy Diggins",
+          "count": 20,
+          "pct": 44.4
+        },
+        {
+          "name": "Antonio Benjamim Mussi Schmidt",
+          "count": 11,
+          "pct": 24.4
+        }
+      ],
+      "top_reviewer_pct": 64.4,
+      "is_bottleneck": true
     },
     {
+      "workspace": "madpayments",
+      "repo": "madpayments-devices-idtech-neo",
       "total_prs": 25,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madpayments",
-      "repo": "madpayments-devices-idtech-neo"
+      "top_reviewers": [
+        {
+          "name": "Matthew Crumley",
+          "count": 11,
+          "pct": 44.0
+        },
+        {
+          "name": "paul.roberts",
+          "count": 8,
+          "pct": 32.0
+        },
+        {
+          "name": "Trenton Kress",
+          "count": 4,
+          "pct": 16.0
+        },
+        {
+          "name": "Wing Hung Peter Wu",
+          "count": 2,
+          "pct": 8.0
+        },
+        {
+          "name": "Harrison Minchew",
+          "count": 2,
+          "pct": 8.0
+        }
+      ],
+      "top_reviewer_pct": 44.0,
+      "is_bottleneck": false
     },
     {
+      "workspace": "madpayments",
+      "repo": "mad-payments-vp3350",
       "total_prs": 41,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madpayments",
-      "repo": "mad-payments-vp3350"
+      "top_reviewers": [
+        {
+          "name": "Matthew Crumley",
+          "count": 15,
+          "pct": 36.6
+        },
+        {
+          "name": "Wing Hung Peter Wu",
+          "count": 12,
+          "pct": 29.3
+        },
+        {
+          "name": "paul.roberts",
+          "count": 9,
+          "pct": 22.0
+        },
+        {
+          "name": "Trenton Kress",
+          "count": 8,
+          "pct": 19.5
+        },
+        {
+          "name": "Kevin Reyes",
+          "count": 6,
+          "pct": 14.6
+        }
+      ],
+      "top_reviewer_pct": 36.6,
+      "is_bottleneck": false
     },
     {
-      "total_prs": 153,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madpayments",
-      "repo": "gitops-payments"
+      "repo": "gitops-payments",
+      "total_prs": 154,
+      "top_reviewers": [
+        {
+          "name": "Kevin Reyes",
+          "count": 89,
+          "pct": 57.8
+        },
+        {
+          "name": "Wing Hung Peter Wu",
+          "count": 65,
+          "pct": 42.2
+        },
+        {
+          "name": "Trenton Kress",
+          "count": 48,
+          "pct": 31.2
+        },
+        {
+          "name": "Michael Gibaldi",
+          "count": 36,
+          "pct": 23.4
+        },
+        {
+          "name": "Darshana Buddhika",
+          "count": 19,
+          "pct": 12.3
+        }
+      ],
+      "top_reviewer_pct": 57.8,
+      "is_bottleneck": false
     },
     {
+      "workspace": "madmobile",
+      "repo": "seao",
       "total_prs": 0,
       "top_reviewers": [],
       "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madmobile",
-      "repo": "seao"
+      "is_bottleneck": false
     },
     {
+      "workspace": "syscolabs",
+      "repo": "cakekiosk-kdsapplauncher",
       "total_prs": 2,
       "top_reviewers": [],
       "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "syscolabs",
-      "repo": "cakekiosk-kdsapplauncher"
+      "is_bottleneck": false
     },
     {
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades",
       "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "syscolabs",
-      "repo": "pos-os-upgrades"
+      "top_reviewers": [
+        {
+          "name": "Ananda Subasinghe",
+          "count": 163,
+          "pct": 65.2
+        },
+        {
+          "name": "Faizul Hasan",
+          "count": 153,
+          "pct": 61.2
+        },
+        {
+          "name": "Muditha Sumanathunga",
+          "count": 95,
+          "pct": 38.0
+        },
+        {
+          "name": "Thiwanka Wimalasuriya",
+          "count": 84,
+          "pct": 33.6
+        },
+        {
+          "name": "Angelo Senaratne",
+          "count": 66,
+          "pct": 26.4
+        }
+      ],
+      "top_reviewer_pct": 65.2,
+      "is_bottleneck": true
     },
     {
+      "workspace": "syscolabs",
+      "repo": "gm",
       "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "syscolabs",
-      "repo": "gm"
+      "top_reviewers": [
+        {
+          "name": "Jeff Lerman",
+          "count": 143,
+          "pct": 57.2
+        },
+        {
+          "name": "Geethanga Amarasinghe",
+          "count": 134,
+          "pct": 53.6
+        },
+        {
+          "name": "Dineth Samarakkody",
+          "count": 73,
+          "pct": 29.2
+        },
+        {
+          "name": "Isuru Mohottala",
+          "count": 54,
+          "pct": 21.6
+        },
+        {
+          "name": "Rajith konara",
+          "count": 54,
+          "pct": 21.6
+        }
+      ],
+      "top_reviewer_pct": 57.2,
+      "is_bottleneck": false
     },
     {
-      "total_prs": 68,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "gitops-cake"
+      "repo": "gitops-cake",
+      "total_prs": 72,
+      "top_reviewers": [
+        {
+          "name": "Mike Nunez",
+          "count": 63,
+          "pct": 87.5
+        },
+        {
+          "name": "Matias Lopez Riglos",
+          "count": 59,
+          "pct": 81.9
+        },
+        {
+          "name": "Matthew Griffin",
+          "count": 58,
+          "pct": 80.6
+        },
+        {
+          "name": "Orlando Jimenez",
+          "count": 53,
+          "pct": 73.6
+        },
+        {
+          "name": "Matthew Crumley",
+          "count": 20,
+          "pct": 27.8
+        }
+      ],
+      "top_reviewer_pct": 87.5,
+      "is_bottleneck": true
     },
     {
-      "total_prs": 11,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "restaurant-admin-v2"
+      "repo": "restaurant-admin-v2",
+      "total_prs": 12,
+      "top_reviewers": [
+        {
+          "name": "Kyle Budd",
+          "count": 6,
+          "pct": 50.0
+        },
+        {
+          "name": "Matthew Crumley",
+          "count": 6,
+          "pct": 50.0
+        },
+        {
+          "name": "Ryan Mercado",
+          "count": 5,
+          "pct": 41.7
+        },
+        {
+          "name": "Alexander Baine",
+          "count": 3,
+          "pct": 25.0
+        },
+        {
+          "name": "Benjamin Roedell",
+          "count": 3,
+          "pct": 25.0
+        }
+      ],
+      "top_reviewer_pct": 50.0,
+      "is_bottleneck": false
     },
     {
+      "workspace": "madmobile",
+      "repo": "mad-services-xstore24eu-rl",
       "total_prs": 24,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madmobile",
-      "repo": "mad-services-xstore24eu-rl"
+      "top_reviewers": [
+        {
+          "name": "Matt Cooke",
+          "count": 7,
+          "pct": 29.2
+        },
+        {
+          "name": "James Oliver",
+          "count": 7,
+          "pct": 29.2
+        },
+        {
+          "name": "Sunil Pandey",
+          "count": 7,
+          "pct": 29.2
+        },
+        {
+          "name": "John Harre",
+          "count": 6,
+          "pct": 25.0
+        },
+        {
+          "name": "Kien Pham",
+          "count": 6,
+          "pct": 25.0
+        }
+      ],
+      "top_reviewer_pct": 29.2,
+      "is_bottleneck": false
     },
     {
+      "workspace": "madpayments",
+      "repo": "rs2-bankworks-parser-service",
       "total_prs": 11,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madpayments",
-      "repo": "rs2-bankworks-parser-service"
+      "top_reviewers": [
+        {
+          "name": "Wing Hung Peter Wu",
+          "count": 9,
+          "pct": 81.8
+        },
+        {
+          "name": "Trenton Kress",
+          "count": 8,
+          "pct": 72.7
+        },
+        {
+          "name": "Kevin Reyes",
+          "count": 8,
+          "pct": 72.7
+        },
+        {
+          "name": "Gayan Karunarathna",
+          "count": 6,
+          "pct": 54.5
+        },
+        {
+          "name": "Richard Meitzler",
+          "count": 5,
+          "pct": 45.5
+        }
+      ],
+      "top_reviewer_pct": 81.8,
+      "is_bottleneck": true
     },
     {
+      "workspace": "syscolabs",
+      "repo": "ditto-sync-agent",
       "total_prs": 0,
       "top_reviewers": [],
       "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "syscolabs",
-      "repo": "ditto-sync-agent"
+      "is_bottleneck": false
     },
     {
-      "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "impl-urban"
+      "repo": "impl-urban",
+      "total_prs": 250,
+      "top_reviewers": [
+        {
+          "name": "Eugenio Gonzalez",
+          "count": 227,
+          "pct": 90.8
+        },
+        {
+          "name": "Dan McCune",
+          "count": 208,
+          "pct": 83.2
+        },
+        {
+          "name": "Cliff Griffith",
+          "count": 185,
+          "pct": 74.0
+        },
+        {
+          "name": "John Thompson",
+          "count": 182,
+          "pct": 72.8
+        },
+        {
+          "name": "John Harre",
+          "count": 181,
+          "pct": 72.4
+        }
+      ],
+      "top_reviewer_pct": 90.8,
+      "is_bottleneck": true
     },
     {
-      "total_prs": 17,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "syscolabs",
-      "repo": "kds-v2"
+      "repo": "kds-v2",
+      "total_prs": 18,
+      "top_reviewers": [
+        {
+          "name": "Randy Brown",
+          "count": 1,
+          "pct": 5.6
+        }
+      ],
+      "top_reviewer_pct": 5.6,
+      "is_bottleneck": false
     },
     {
+      "workspace": "madpayments",
+      "repo": "merchant-service",
       "total_prs": 70,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madpayments",
-      "repo": "merchant-service"
+      "top_reviewers": [
+        {
+          "name": "Michael Gibaldi",
+          "count": 37,
+          "pct": 52.9
+        },
+        {
+          "name": "Trenton Kress",
+          "count": 35,
+          "pct": 50.0
+        },
+        {
+          "name": "Kevin Reyes",
+          "count": 34,
+          "pct": 48.6
+        },
+        {
+          "name": "Wing Hung Peter Wu",
+          "count": 28,
+          "pct": 40.0
+        },
+        {
+          "name": "Darshana Buddhika",
+          "count": 12,
+          "pct": 17.1
+        }
+      ],
+      "top_reviewer_pct": 52.9,
+      "is_bottleneck": false
     },
     {
-      "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "syscolabs",
-      "repo": "olo"
-    },
-    {
+      "repo": "olo",
       "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madmobile",
-      "repo": "impl-rl"
+      "top_reviewers": [
+        {
+          "name": "Maleesha Wijeratne",
+          "count": 115,
+          "pct": 46.0
+        },
+        {
+          "name": "Sankha Jayalath",
+          "count": 110,
+          "pct": 44.0
+        },
+        {
+          "name": "Lahiru Yapa",
+          "count": 93,
+          "pct": 37.2
+        },
+        {
+          "name": "Raj Miandad Azhar Ali",
+          "count": 85,
+          "pct": 34.0
+        },
+        {
+          "name": "Chalaka Sudusinghe",
+          "count": 65,
+          "pct": 26.0
+        }
+      ],
+      "top_reviewer_pct": 46.0,
+      "is_bottleneck": false
     },
     {
+      "workspace": "madmobile",
+      "repo": "impl-rl",
+      "total_prs": 250,
+      "top_reviewers": [
+        {
+          "name": "Matt Cooke",
+          "count": 232,
+          "pct": 92.8
+        },
+        {
+          "name": "John Harre",
+          "count": 232,
+          "pct": 92.8
+        },
+        {
+          "name": "Dhanushka_K",
+          "count": 227,
+          "pct": 90.8
+        },
+        {
+          "name": "Holly Culver",
+          "count": 224,
+          "pct": 89.6
+        },
+        {
+          "name": "Dan McCune",
+          "count": 190,
+          "pct": 76.0
+        }
+      ],
+      "top_reviewer_pct": 92.8,
+      "is_bottleneck": true
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus",
       "total_prs": 17,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madmobile",
-      "repo": "marvel-payment-aurus"
+      "top_reviewers": [
+        {
+          "name": "Shreshth Agarwal",
+          "count": 17,
+          "pct": 100.0
+        },
+        {
+          "name": "Francisco Martinez",
+          "count": 15,
+          "pct": 88.2
+        },
+        {
+          "name": "Vikrant",
+          "count": 13,
+          "pct": 76.5
+        },
+        {
+          "name": "Arvind Gupta",
+          "count": 9,
+          "pct": 52.9
+        },
+        {
+          "name": "Juan Carlos Solis Ulloa",
+          "count": 8,
+          "pct": 47.1
+        }
+      ],
+      "top_reviewer_pct": 100.0,
+      "is_bottleneck": true
     },
     {
+      "workspace": "madmobile",
+      "repo": "cake-pop-automation",
       "total_prs": 73,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madmobile",
-      "repo": "cake-pop-automation"
+      "top_reviewers": [
+        {
+          "name": "Berk Guzeyer",
+          "count": 8,
+          "pct": 11.0
+        },
+        {
+          "name": "Bill Fenley",
+          "count": 1,
+          "pct": 1.4
+        }
+      ],
+      "top_reviewer_pct": 11.0,
+      "is_bottleneck": false
     },
     {
-      "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "concierge-associate"
+      "repo": "concierge-associate",
+      "total_prs": 250,
+      "top_reviewers": [
+        {
+          "name": "James Oliver",
+          "count": 207,
+          "pct": 82.8
+        },
+        {
+          "name": "Mauro Villaseco",
+          "count": 204,
+          "pct": 81.6
+        },
+        {
+          "name": "Ryan Mercado",
+          "count": 200,
+          "pct": 80.0
+        },
+        {
+          "name": "AIR",
+          "count": 193,
+          "pct": 77.2
+        },
+        {
+          "name": "Dhanushka_K",
+          "count": 193,
+          "pct": 77.2
+        }
+      ],
+      "top_reviewer_pct": 82.8,
+      "is_bottleneck": true
     },
     {
-      "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "cake-ecs-configs"
+      "repo": "cake-ecs-configs",
+      "total_prs": 250,
+      "top_reviewers": [
+        {
+          "name": "Wenushka Dikowita",
+          "count": 165,
+          "pct": 66.0
+        },
+        {
+          "name": "Hashan Prabodhaka Jalath",
+          "count": 139,
+          "pct": 55.6
+        },
+        {
+          "name": "Matias Lopez Riglos",
+          "count": 129,
+          "pct": 51.6
+        },
+        {
+          "name": "Mike Nunez",
+          "count": 126,
+          "pct": 50.4
+        },
+        {
+          "name": "Matthew Griffin",
+          "count": 125,
+          "pct": 50.0
+        }
+      ],
+      "top_reviewer_pct": 66.0,
+      "is_bottleneck": true
     },
     {
-      "total_prs": 250,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "syscolabs",
-      "repo": "cake-payment-gateway"
+      "repo": "cake-payment-gateway",
+      "total_prs": 250,
+      "top_reviewers": [
+        {
+          "name": "Darshana Buddhika",
+          "count": 183,
+          "pct": 73.2
+        },
+        {
+          "name": "Pasindu Gunasekara",
+          "count": 165,
+          "pct": 66.0
+        },
+        {
+          "name": "Gayan Karunarathna",
+          "count": 161,
+          "pct": 64.4
+        },
+        {
+          "name": "Madhawi De Mel",
+          "count": 132,
+          "pct": 52.8
+        },
+        {
+          "name": "Miftha Idroos",
+          "count": 70,
+          "pct": 28.0
+        }
+      ],
+      "top_reviewer_pct": 73.2,
+      "is_bottleneck": true
     },
     {
-      "total_prs": 227,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "cloud-shared-services"
+      "repo": "cloud-shared-services",
+      "total_prs": 227,
+      "top_reviewers": [
+        {
+          "name": "Matias Lopez Riglos",
+          "count": 165,
+          "pct": 72.7
+        },
+        {
+          "name": "Matthew Griffin",
+          "count": 134,
+          "pct": 59.0
+        },
+        {
+          "name": "Simon",
+          "count": 124,
+          "pct": 54.6
+        },
+        {
+          "name": "Orlando Jimenez",
+          "count": 84,
+          "pct": 37.0
+        },
+        {
+          "name": "Charles Boice",
+          "count": 74,
+          "pct": 32.6
+        }
+      ],
+      "top_reviewer_pct": 72.7,
+      "is_bottleneck": true
     },
     {
+      "workspace": "madpayments",
+      "repo": "cybersource-bin-service",
       "total_prs": 0,
       "top_reviewers": [],
       "top_reviewer_pct": 0,
-      "is_bottleneck": false,
-      "workspace": "madpayments",
-      "repo": "cybersource-bin-service"
+      "is_bottleneck": false
     },
     {
-      "total_prs": 163,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "madmobile",
-      "repo": "cloud-shared-development"
+      "repo": "cloud-shared-development",
+      "total_prs": 163,
+      "top_reviewers": [
+        {
+          "name": "Matthew Griffin",
+          "count": 132,
+          "pct": 81.0
+        },
+        {
+          "name": "Simon",
+          "count": 101,
+          "pct": 62.0
+        },
+        {
+          "name": "Matias Lopez Riglos",
+          "count": 93,
+          "pct": 57.1
+        },
+        {
+          "name": "Mike Nunez",
+          "count": 87,
+          "pct": 53.4
+        },
+        {
+          "name": "Orlando Jimenez",
+          "count": 78,
+          "pct": 47.9
+        }
+      ],
+      "top_reviewer_pct": 81.0,
+      "is_bottleneck": true
     },
     {
-      "total_prs": 31,
-      "top_reviewers": [],
-      "top_reviewer_pct": 0,
-      "is_bottleneck": false,
       "workspace": "syscolabsconf",
-      "repo": "menu-sync-agent"
+      "repo": "menu-sync-agent",
+      "total_prs": 31,
+      "top_reviewers": [
+        {
+          "name": "Nuwan Koggalahewa",
+          "count": 10,
+          "pct": 32.3
+        },
+        {
+          "name": "Nishen Peiris",
+          "count": 6,
+          "pct": 19.4
+        },
+        {
+          "name": "Wenushka Dikowita",
+          "count": 5,
+          "pct": 16.1
+        },
+        {
+          "name": "Chamil Jeewantha",
+          "count": 4,
+          "pct": 12.9
+        },
+        {
+          "name": "Wishwa Hettige",
+          "count": 4,
+          "pct": 12.9
+        }
+      ],
+      "top_reviewer_pct": 32.3,
+      "is_bottleneck": false
     }
   ],
-  "global_top_20_reviewers": [],
-  "bottleneck_repos": []
+  "global_top_20_reviewers": [
+    {
+      "name": "John Harre",
+      "total_reviews": 581
+    },
+    {
+      "name": "Holly Culver",
+      "total_reviews": 508
+    },
+    {
+      "name": "Wenushka Dikowita",
+      "total_reviews": 481
+    },
+    {
+      "name": "Dan McCune",
+      "total_reviews": 471
+    },
+    {
+      "name": "Matias Lopez Riglos",
+      "total_reviews": 463
+    },
+    {
+      "name": "Matthew Griffin",
+      "total_reviews": 453
+    },
+    {
+      "name": "Dhanushka_K",
+      "total_reviews": 420
+    },
+    {
+      "name": "James Oliver",
+      "total_reviews": 389
+    },
+    {
+      "name": "Dineth Samarakkody",
+      "total_reviews": 366
+    },
+    {
+      "name": "Orlando Jimenez",
+      "total_reviews": 357
+    },
+    {
+      "name": "Alexander Baine",
+      "total_reviews": 356
+    },
+    {
+      "name": "Brian Smith",
+      "total_reviews": 349
+    },
+    {
+      "name": "Mike Nunez",
+      "total_reviews": 330
+    },
+    {
+      "name": "Ryan Mercado",
+      "total_reviews": 321
+    },
+    {
+      "name": "Matthew Crumley",
+      "total_reviews": 299
+    },
+    {
+      "name": "Benjamin Roedell",
+      "total_reviews": 275
+    },
+    {
+      "name": "Simon",
+      "total_reviews": 274
+    },
+    {
+      "name": "Eugenio Gonzalez",
+      "total_reviews": 265
+    },
+    {
+      "name": "Matt Cooke",
+      "total_reviews": 257
+    },
+    {
+      "name": "Faizul Hasan",
+      "total_reviews": 243
+    }
+  ],
+  "bottleneck_repos": [
+    {
+      "workspace": "syscolabs",
+      "repo": "cinco-workspace",
+      "top_reviewer": "Rob Quin",
+      "pct": 66.7
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "moxy",
+      "top_reviewer": "Dineth Samarakkody",
+      "pct": 74.0
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "neo-workspace",
+      "top_reviewer": "Rusty Clark",
+      "pct": 64.4
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades",
+      "top_reviewer": "Ananda Subasinghe",
+      "pct": 65.2
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "gitops-cake",
+      "top_reviewer": "Mike Nunez",
+      "pct": 87.5
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "rs2-bankworks-parser-service",
+      "top_reviewer": "Wing Hung Peter Wu",
+      "pct": 81.8
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-urban",
+      "top_reviewer": "Eugenio Gonzalez",
+      "pct": 90.8
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-rl",
+      "top_reviewer": "Matt Cooke",
+      "pct": 92.8
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus",
+      "top_reviewer": "Shreshth Agarwal",
+      "pct": 100.0
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "concierge-associate",
+      "top_reviewer": "James Oliver",
+      "pct": 82.8
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cake-ecs-configs",
+      "top_reviewer": "Wenushka Dikowita",
+      "pct": 66.0
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cake-payment-gateway",
+      "top_reviewer": "Darshana Buddhika",
+      "pct": 73.2
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-services",
+      "top_reviewer": "Matias Lopez Riglos",
+      "pct": 72.7
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-development",
+      "top_reviewer": "Matthew Griffin",
+      "pct": 81.0
+    }
+  ]
 }

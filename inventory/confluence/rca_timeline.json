@@ -1,0 +1,273 @@
+{
+  "generated_at": "2026-04-03T20:51:22.048959-04:00",
+  "total_incidents_parsed": 50,
+  "total_filtered_docs": 80,
+  "fetch_errors": 0,
+  "incidents_by_year": {
+    "2020": 1,
+    "2021": 10,
+    "2022": 26,
+    "2023": 8,
+    "2024": 3,
+    "2025": 2
+  },
+  "incidents_by_system": {
+    "Payments": 19,
+    "Reports": 11,
+    "Menu": 10,
+    "OLO": 3,
+    "Cloud/Infrastructure": 2,
+    "Pulse": 2,
+    "Guest Manager": 2,
+    "Unknown": 1
+  },
+  "incidents_by_team": {
+    "Unknown": 23,
+    "Payments": 6,
+    "Cloud Services": 5,
+    "CAKEAPP DC": 4,
+    "CAKEAPP GPS": 3,
+    "Platform": 3,
+    "DBE": 3,
+    "CAKEAPP DU": 2,
+    "Stark": 1
+  },
+  "root_cause_themes": {
+    "Other": 12,
+    "Application Bug": 8,
+    "Infrastructure / Cloud": 8,
+    "Payment Provider": 7,
+    "Database / RDS": 7,
+    "Sync / Data Flow": 4,
+    "Deployment / Config": 2,
+    "ACH / Funding": 1,
+    "Third-party / External": 1
+  },
+  "summary_pages": [
+    {
+      "title": "CAKE Payments Outages - 2018",
+      "page_id": "252249860",
+      "text_preview": "Overview Below is the list of CODE RED incidents that occurred due to an issue with the CAKE Payments product in 2018. Incidents # Date(IST) Issue JIRA Ticket Impact Root Cause Immediate Solution Long Term Solution Vantiv IBF Settlement verification failed while processing payout responses from Vantiv. Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff DE-78225 There was no impact to the merchant payouts. The alert triggered falsely because this was due to a US holiday. The alert triggered f",
+      "table_count": 1,
+      "tables": [
+        [
+          [
+            "#",
+            "Date(IST)",
+            "Issue",
+            "JIRA Ticket",
+            "Impact",
+            "Root Cause",
+            "Immediate Solution",
+            "Long Term Solution"
+          ],
+          [
+            "",
+            "",
+            "Vantiv IBF Settlement verification failed while processing payout responses from Vantiv.",
+            "Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff DE-78225",
+            "There was no impact to the merchant payouts. The alert triggered falsely because this was due to a US holiday.",
+            "The alert triggered falsely because this was due to a US holiday.",
+            "Holiday schedule was updated to overcome such issues in future.",
+            ""
+          ],
+          [
+            "",
+            "",
+            "Payment reports not loading up.",
+            "Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff DE-79226 Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff CT-9557",
+            "Payment Reports Unavailability.",
+            "This was due to CDA been down at the time that this affected. CDA was restarted to fix the issue.",
+            "The issue was rectified after restarting the CDA instance.",
+            ""
+          ],
+          [
+            "",
+            "",
+            "Incident ([PROD] Payment Gateway Masterdb-1a Replication Status - pgnat.leapset.com )",
+            "Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff DE-83177",
+            "Close Cash Failure / Failed Transactions",
+            "This issue affected 4 merchants due to a PG DB sync issue which failed to capture some batches when the close cash",
+            "All failed transactions were retried manually and marked as captured.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "CAKE Payments Outages - 2017",
+      "page_id": "252249560",
+      "text_preview": "Overview Below is the list of CODE RED incidents that occurred due to an issue with the CAKE Payments product in 2017. Incidents # Date (IST) Issue JIRA ticket Impact Root Cause Immediate Solution Long Term Solution 1 Scheduler Execution Failure Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff PAY-514 Payout delayed Payments scheduler froze which resulted in none of the scheduled jobs executing. An alert was not triggered since the application was up and running although it did not execute",
+      "table_count": 1,
+      "tables": [
+        [
+          [
+            "#",
+            "Date (IST)",
+            "Issue",
+            "JIRA ticket",
+            "Impact",
+            "Root Cause",
+            "Immediate Solution",
+            "Long Term Solution"
+          ],
+          [
+            "1",
+            "",
+            "Scheduler Execution Failure",
+            "Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff PAY-514",
+            "Payout delayed",
+            "Payments scheduler froze which resulted in none of the scheduled jobs executing. An alert was not triggered since the application was up and running although it did not execute the jobs.",
+            "The scheduler app froze. The scheduler jobs were manually executed by the payments dev team.",
+            "Add a mechanism for the application to send a ping/check every 10 minutes to gateway and trigger an alert in Slack if response is not received - Done"
+          ],
+          [
+            "2",
+            "",
+            "DB Replication Failure",
+            "Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff DE-34016",
+            "Transactions failed",
+            "MySQL native replication failed",
+            "Failed transactions retried by Payments Team",
+            "Move out from multi master setup and write data only to one db server - Done"
+          ],
+          [
+            "3",
+            "",
+            "Payout Delay",
+            "Leapset JIRA Live 4342ca39-ddca-3f46-8b7f-554ba10b0eff PAY-1055",
+            "Payout delayed",
+            "Due to the absence of an automated method to pause the scheduled jobs on bank holidays, Dev team paused the jobs for the 4th July holiday but didn't turn it back on the next week.",
+            "None. Merchants were informed that payouts will occur the next day.",
+            "- Done"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "POST MORTEMS",
+      "page_id": "260251417",
+      "text_preview": "Month/Year Issue Reference September 2021 DE-98380 POST MORTEM Discussion - NDF/ SDF Payout delay due to error in submitting the ACH instructions https://madmobile-engineering.atlassian.net/browse/DE-98380 August 2021 DE-98375 POST MORTEM Discussion - WP/Express/Litle Payment Outage https://madmobile-engineering.atlassian.net/browse/DE-98375 July 2021 DE-98368 Payment Funding Delay for Regular Merchants DE-98370 POST MORTEM Discussion - Regular ACH Failure due to failure in renaming the ACH file",
+      "table_count": 1,
+      "tables": [
+        [
+          [
+            "Month/Year",
+            "Issue",
+            "Reference"
+          ],
+          [
+            "September 2021",
+            "DE-98380 POST MORTEM Discussion - NDF/ SDF Payout delay due to error in submitting the ACH instructions",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98380"
+          ],
+          [
+            "August 2021",
+            "DE-98375 POST MORTEM Discussion - WP/Express/Litle Payment Outage",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98375"
+          ],
+          [
+            "July 2021",
+            "DE-98368 Payment Funding Delay for Regular Merchants DE-98370 POST MORTEM Discussion - Regular ACH Failure due to failure in renaming the ACH file",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98368 https://madmobile-engineering.atlassian.net/browse/DE-98370?oldIssueView=true"
+          ],
+          [
+            "June 2021",
+            "DE-98356 POST MORTEM Discussion : Payments platform service outage (Vantiv Express)",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98356"
+          ],
+          [
+            "May 2021",
+            "DE-98346 POST MORTEM Discussion -Menucore not loading",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98346?oldIssueView=true"
+          ],
+          [
+            "April 2021",
+            "DE-98331 Unable to access buzztable",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98331"
+          ],
+          [
+            "DE-98334 Menu Core not loading",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98334"
+          ],
+          [
+            "DE-98332 and DE-98333 POST MORTEM Discussion: 2CP plugin",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98333 https://madmobile-engineering.atlassian.net/browse/DE-98332"
+          ],
+          [
+            "DE-98339 POST MORTEM Discussion -Menucore not loading",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98339"
+          ],
+          [
+            "March 2021",
+            "DE-98324 Payment Gateway Issue",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98324"
+          ],
+          [
+            "DE-98325 Funding Delays on all schedules",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98325"
+          ],
+          [
+            "DE-98326 Reports/Timesheets not syncing up with daily sales",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98326"
+          ],
+          [
+            "DE-98327 Unable to access admin portal",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98327"
+          ],
+          [
+            "DE-98328 Menu Core Down",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98328"
+          ],
+          [
+            "February 2021",
+            "DE-98318 Timesheet report gives \u201cService is temporarily unavailable. Please try again later.\u201d error",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98318"
+          ],
+          [
+            "DE-98320 Payment Platform service outage (Vantiv/WP)",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98320"
+          ],
+          [
+            "DE-98319 OPs are receiving phone call alerts but not seeing orders in OLO queue",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98319"
+          ],
+          [
+            "January 2021",
+            "DE-98311 Payment Platforms Outage",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98311"
+          ],
+          [
+            "DE-98313 Unable to access https://dashboard.cake.net",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98313"
+          ],
+          [
+            "DE-98314 Payment Platform Outage",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98314"
+          ],
+          [
+            "October 2020",
+            "DE-98298 Cloud Service Outage",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98298"
+          ],
+          [
+            "August 2020",
+            "DE-98293 Cloud Services Outage",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98293"
+          ],
+          [
+            "July 2020",
+            "DE-98290 All Cake Platform Services down",
+            "https://madmobile-engineering.atlassian.net/browse/DE-98290"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    }
+  ],
+  "errors": []
+}
