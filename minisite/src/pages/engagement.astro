@@ -1,0 +1,170 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import DataTable from '../components/DataTable.astro';
+
+const phases = [
+  { phase: 'Pre-Work', timeline: 'Now → Apr 11', status: 'Complete', detail: 'System scanning, surveys, pre-read analysis, alignment sessions' },
+  { phase: 'Onsite', timeline: 'Apr 13–15', status: 'Upcoming', detail: '3-day sprint: 18–21 interviews, architecture walkthroughs, value stream mapping, decision-rights mapping' },
+  { phase: 'Deliverables', timeline: 'Apr 16–25', status: 'Pending', detail: 'CEO operating brief, friction register, hypothesis scorecard, 30/60/90 plan' },
+];
+
+const leadership = [
+  { name: 'Don Salama', role: 'Co-CEO & Acting CFO', scope: 'Overall direction, investor relations' },
+  { name: 'Manuel Garcia', role: 'Interim CFO', scope: 'Finance, RevOps, Payments Strategy' },
+  { name: 'Greg Schmitzer', role: 'President / Head of Sales & Marketing', scope: 'Field Sales, Inbound, Marketing' },
+  { name: 'David Strainick', role: 'COO', scope: 'Onboarding, Account Mgmt, IT, Sri Lanka' },
+  { name: 'Chathura Ratnayake', role: 'Chief Digital Officer', scope: 'Engineering, Product, Design, PMO, Support' },
+  { name: 'Jack Kennedy', role: 'CTO', scope: 'AI / Innovation (narrowed post-reorg)' },
+  { name: 'Bailey Shatney', role: 'VP Human Resources', scope: 'Recruiting, L&D' },
+  { name: 'Ana Chambers', role: 'Chief of Staff, Strategic Programs', scope: 'Cross-company execution, initiative alignment' },
+];
+
+const hypotheses = [
+  { id: 'A', name: 'Portfolio Sprawl', statement: 'Too many products, no shared platform discipline.', test: 'Count active codebases. Teams on >1 product? Shared services vs. duplication?' },
+  { id: 'B', name: 'Sales-Led Chaos', statement: 'Revenue promises create roadmap churn and tech debt.', test: 'Ask sales what they promise. Ask eng what surprises them mid-sprint. Ask product who overrides.' },
+  { id: 'C', name: 'Fake Platforming', statement: "Leadership talks 'platform'; teams maintain customer-specific patchwork.", test: 'Show me the shared platform layer. What does Neo actually consist of in production?' },
+  { id: 'D', name: 'Unclear Ownership', statement: 'Formal authority and operational authority are misaligned — CONFIRMED and resolved by April 3 reorg.', test: 'Map who actually decides on architecture, staffing, priorities. Trace whether teams have fully transitioned to CDO chain.' },
+  { id: 'E', name: 'Dependency Drag', statement: 'A few people or teams are routing bottlenecks.', test: 'Whose approval do you need? Who do you wait on? Map the dependency graph.' },
+  { id: 'F', name: 'Legacy Gravity', statement: 'CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate.', test: 'What constraint costs the most velocity? Ratio of maintenance vs. new feature hours?' },
+  { id: 'G', name: 'Missing Cadence', statement: 'No consistent execution inspection; leadership discovers reality through fire drills.', test: "What's the weekly rhythm? What metrics are reviewed? How does bad news travel?" },
+  { id: 'H', name: 'Biz-Tech Mistranslation', statement: "Business says 'eng is slow'; eng says 'business is chaotic'; real issue is undefined tradeoffs.", test: 'Ask both sides why delivery is slow. Compare answers. Look for structural decision gaps.' },
+  { id: 'I', name: 'Architectural Polarity', statement: 'Simultaneous AI-native building + legacy POS maintenance = irreconcilable engineering split.', test: 'How are teams allocated? Do engineers rotate or get stuck? Is there a migration path?' },
+];
+
+const systems = [
+  { system: 'Business Direction', question: 'What matters most? What gets funded?', focus: 'Portfolio clarity, resource allocation, strategic coherence' },
+  { system: 'Product Decision', question: 'Who owns prioritization? How often do sales/board override product?', focus: 'Roadmap governance, power dynamics, requirement stability' },
+  { system: 'Delivery', question: 'How does work move from idea to shipped value?', focus: 'Cycle time, deploy frequency, WIP, sprint completion' },
+  { system: 'Technical', question: 'Where is coupling high? Where is legacy strangling velocity?', focus: 'Architecture, tech debt ratio, incidents, deploy complexity' },
+  { system: 'Operating Cadence', question: 'What meetings and metrics govern execution?', focus: 'Meeting structure, dashboards, escalation paths' },
+  { system: 'Accountability', question: 'Are teams rewarded for shipping, rescuing, pleasing execs, or avoiding blame?', focus: 'Comp structures, recognition, promotion criteria' },
+];
+
+const deliverables = [
+  { tier: 'Core', items: 'CEO Operating Brief, Friction Register, Hypothesis Scorecard, 30/60/90 Plan, Baseline Survey Package' },
+  { tier: 'Expected', items: 'Board-Ready Presentation, Execution System Map, Vendor/Tool Utilization Assessment' },
+  { tier: 'Stretch', items: 'Stakeholder Communication Draft, STARS Diagnostic' },
+];
+---
+
+<BaseLayout title="Engagement">
+  <SectionHeader
+    title="Engagement Overview"
+    description="CEO Ramp Accelerator — a focused technology and operations assessment (~60 hours over 3 weeks) for Mad Mobile, Inc."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Duration" value="3 wks" subtitle="~60 hours total" />
+    <MetricCard label="Interviews" value="18–21" subtitle="Onsite Apr 13–15" />
+    <MetricCard label="Hypotheses" value="9" subtitle="1 confirmed pre-onsite" />
+    <MetricCard label="Surveys" value="5" subtitle="Deployment, culture, DevEx, practices, AI" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">Phase Timeline</h2>
+    <div class="grid gap-4 sm:grid-cols-3">
+      {phases.map((p) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-sm font-semibold text-[var(--text)]">
+              {p.phase}
+            </span>
+            <span
+              class:list={[
+                'text-[10px] font-medium uppercase tracking-wider px-2 py-0.5 rounded-full',
+                p.status === 'Complete'
+                  ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
+                  : p.status === 'Upcoming'
+                    ? 'bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300'
+                    : 'bg-[var(--surface-alt)] text-[var(--text-muted)]',
+              ]}
+            >
+              {p.status}
+            </span>
+          </div>
+          <p class="text-xs font-mono text-[var(--accent)] mb-2">{p.timeline}</p>
+          <p class="text-xs text-[var(--text-secondary)] leading-relaxed">{p.detail}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">Company Snapshot</h2>
+    <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+        <div>
+          <dt class="text-[var(--text-muted)] text-xs uppercase tracking-wider">Revenue</dt>
+          <dd class="font-mono font-semibold text-[var(--text)]">~$75M</dd>
+        </div>
+        <div>
+          <dt class="text-[var(--text-muted)] text-xs uppercase tracking-wider">Headcount</dt>
+          <dd class="font-mono font-semibold text-[var(--text)]">~370</dd>
+        </div>
+        <div>
+          <dt class="text-[var(--text-muted)] text-xs uppercase tracking-wider">Funding</dt>
+          <dd class="font-mono font-semibold text-[var(--text)]">$70M</dd>
+        </div>
+        <div>
+          <dt class="text-[var(--text-muted)] text-xs uppercase tracking-wider">Locations</dt>
+          <dd class="font-mono font-semibold text-[var(--text)]">21K+</dd>
+        </div>
+      </dl>
+      <p class="text-xs text-[var(--text-secondary)] mt-4 leading-relaxed">
+        Tampa HQ + Sri Lanka engineering. Key partnerships: Sysco, Visa, Best Buy, Apple. Products: CAKE POS
+        (restaurant), Concierge (retail), Neo (AI platform). CAKE acquired from Sysco in 2020.
+      </p>
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Post-Reorg Leadership (April 2026)</h2>
+    <DataTable
+      columns={[
+        { key: 'name', label: 'Name' },
+        { key: 'role', label: 'Role' },
+        { key: 'scope', label: 'Scope' },
+      ]}
+      rows={leadership}
+    />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Nine Hypotheses</h2>
+    <DataTable
+      columns={[
+        { key: 'id', label: 'ID' },
+        { key: 'name', label: 'Name' },
+        { key: 'statement', label: 'Hypothesis' },
+        { key: 'test', label: 'How We Test' },
+      ]}
+      rows={hypotheses}
+    />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Six Systems Framework</h2>
+      <DataTable
+        columns={[
+          { key: 'system', label: 'System' },
+          { key: 'question', label: 'Core Question' },
+          { key: 'focus', label: 'What We Look For' },
+        ]}
+        rows={systems}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Deliverables</h2>
+      <DataTable
+        columns={[
+          { key: 'tier', label: 'Tier' },
+          { key: 'items', label: 'Deliverables' },
+        ]}
+        rows={deliverables}
+      />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import DataTable from '../components/DataTable.astro';
+
+const surveys = [
+  { name: 'DORA Quick Check', questions: 9, time: '~3 min', audience: 'Leads, Managers', measures: 'Deploy frequency, lead time, change failure rate, recovery time, reliability' },
+  { name: 'Westrum Culture', questions: 7, time: '~2 min', audience: 'Leads, Managers, Sr ICs, PMs', measures: 'Information flow, psychological safety, collaboration, failure response' },
+  { name: 'DevEx (DX Core 4)', questions: 23, time: '~7 min', audience: 'All ICs (engineers, QE, designers)', measures: 'Speed, Effectiveness, Quality, Impact (18 core + 5 MM-specific context)' },
+  { name: 'Pragmatic Engineer Test', questions: 15, time: '~3 min', audience: 'Leads, Sr Engineers', measures: '12 yes/no engineering maturity practices + context' },
+  { name: 'AI Tooling & Adoption', questions: 16, time: '~5 min', audience: 'All Eng, Product, Design, QE', measures: 'AI adoption maturity, strategy clarity, tooling health' },
+];
+
+const totalQuestions = surveys.reduce((s, v) => s + v.questions, 0);
+
+const matrix = [
+  { role: 'Engineering Manager / Lead', dora: '✓', westrum: '✓', devex: '', pragmatic: '✓', ai: '✓' },
+  { role: 'Senior IC / Staff Engineer', dora: '', westrum: '✓', devex: '✓', pragmatic: '✓', ai: '✓' },
+  { role: 'Software Engineer', dora: '', westrum: '✓', devex: '✓', pragmatic: '', ai: '✓' },
+  { role: 'QE Engineer', dora: '', westrum: '✓', devex: '✓', pragmatic: '', ai: '✓' },
+  { role: 'Product Manager', dora: '', westrum: '✓', devex: '', pragmatic: '', ai: '✓' },
+  { role: 'Product Designer', dora: '', westrum: '✓', devex: '', pragmatic: '', ai: '✓' },
+];
+
+const timeline = [
+  { date: 'Apr 1–3', milestone: 'Survey instruments finalized, reviewed, Forms built' },
+  { date: 'Apr 7', milestone: 'Deploy via Chathura (CDO) — intro email with survey links' },
+  { date: 'Apr 10', milestone: 'Response deadline (3 business days)' },
+  { date: 'Apr 11', milestone: 'Pre-onsite analysis: score, segment, identify themes' },
+  { date: 'Apr 13–15', milestone: 'Onsite: use survey results to guide interview probes' },
+];
+
+const doraCrosswalk = [
+  { metric: 'Deployment Frequency', selfReport: 'DORA Q1', systemData: 'Bitbucket deploy tags, release branches' },
+  { metric: 'Lead Time for Changes', selfReport: 'DORA Q2', systemData: 'PR cycle time (bitbucket_pr_metrics.csv)' },
+  { metric: 'Change Failure Rate', selfReport: 'DORA Q3', systemData: 'Jira bugs created / deploys ratio' },
+  { metric: 'Time to Restore', selfReport: 'DORA Q4', systemData: 'Grafana MTTR, CloudWatch (if accessible)' },
+  { metric: 'Reliability', selfReport: 'DORA Q5', systemData: 'CloudWatch alarms (access pending)' },
+];
+
+const surveyDetails = [
+  {
+    name: 'DORA Quick Check',
+    source: 'dora.dev/quickcheck',
+    scoring: '4-tier benchmark: Elite / High / Medium / Low for each of 5 core metrics',
+    key: 'Compare self-reported vs. actual system data for calibration gaps',
+  },
+  {
+    name: 'Westrum Culture',
+    source: 'Westrum organizational typology',
+    scoring: 'Average 1–5 Likert: 1.0–2.4 Pathological, 2.5–3.4 Bureaucratic, 3.5–5.0 Generative',
+    key: 'Segment by team and tenure to detect biz-tech mistranslation (Hypothesis H)',
+  },
+  {
+    name: 'DevEx (DX Core 4)',
+    source: 'DX Core 4 framework + MM-specific questions',
+    scoring: 'Four dimensions: Speed, Effectiveness, Quality, Impact — each scored from constituent questions',
+    key: 'Q19–Q23 add Bitbucket workspace, Jira count, priority changes, backlog confidence, CI/CD system',
+  },
+  {
+    name: 'Pragmatic Engineer Test',
+    source: 'Gergely Orosz (pragmaticengineer.com)',
+    scoring: '12 yes/no: 11–12 mature, 8–10 solid, 5–7 gaps, 0–4 urgent. Context questions for frustration mapping.',
+    key: 'Identifies which specific engineering practices are missing or inconsistent across teams',
+  },
+  {
+    name: 'AI Tooling & Adoption',
+    source: 'Custom for this engagement',
+    scoring: '3 dimensions: AI Adoption Maturity (Q1–6), AI Strategy Clarity (Q7, Q12–13), Tooling Health (Q8–11)',
+    key: 'Q7 vs Q12 gap = strategy credibility problem. Segment CAKE vs Retail vs Neo vs Payments.',
+  },
+];
+---
+
+<BaseLayout title="Surveys">
+  <SectionHeader
+    title="Surveys"
+    description="Five diagnostic surveys deployed to Mad Mobile engineering, product, and design teams."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Surveys" value="5" />
+    <MetricCard label="Total Questions" value={totalQuestions.toString()} subtitle="Across all surveys" />
+    <MetricCard label="Est. Total Time" value="~20 min" subtitle="Per respondent (max)" />
+    <MetricCard label="Deadline" value="Apr 10" subtitle="3 business days" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Survey Summary</h2>
+    <DataTable
+      columns={[
+        { key: 'name', label: 'Survey' },
+        { key: 'questions', label: 'Questions', align: 'right' },
+        { key: 'time', label: 'Time' },
+        { key: 'audience', label: 'Audience' },
+        { key: 'measures', label: 'Measures' },
+      ]}
+      rows={surveys}
+    />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Who Takes What</h2>
+    <DataTable
+      columns={[
+        { key: 'role', label: 'Role' },
+        { key: 'dora', label: 'DORA' },
+        { key: 'westrum', label: 'Westrum' },
+        { key: 'devex', label: 'DevEx' },
+        { key: 'pragmatic', label: 'Pragmatic' },
+        { key: 'ai', label: 'AI Tooling' },
+      ]}
+      rows={matrix}
+    />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Deployment Timeline</h2>
+      <DataTable
+        columns={[
+          { key: 'date', label: 'Date' },
+          { key: 'milestone', label: 'Milestone' },
+        ]}
+        rows={timeline}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">DORA Crosswalk</h2>
+      <DataTable
+        columns={[
+          { key: 'metric', label: 'Metric' },
+          { key: 'selfReport', label: 'Self-Report' },
+          { key: 'systemData', label: 'System Data Source' },
+        ]}
+        rows={doraCrosswalk}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Details</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {surveyDetails.map((s) => (
+      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+        <h3 class="text-sm font-semibold text-[var(--text)] mb-2">{s.name}</h3>
+        <dl class="space-y-2 text-xs">
+          <div>
+            <dt class="text-[var(--text-muted)] uppercase tracking-wider">Source</dt>
+            <dd class="text-[var(--text-secondary)]">{s.source}</dd>
+          </div>
+          <div>
+            <dt class="text-[var(--text-muted)] uppercase tracking-wider">Scoring</dt>
+            <dd class="text-[var(--text-secondary)]">{s.scoring}</dd>
+          </div>
+          <div>
+            <dt class="text-[var(--text-muted)] uppercase tracking-wider">Key Signal</dt>
+            <dd class="text-[var(--text-secondary)]">{s.key}</dd>
+          </div>
+        </dl>
+      </div>
+    ))}
+  </div>
+</BaseLayout>
