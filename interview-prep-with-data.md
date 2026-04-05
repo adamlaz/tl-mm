@@ -203,6 +203,58 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 
 ---
 
+## Tooling Deep Dive — Cross-Cutting Questions (V8, April 5)
+
+*These supplement the per-interviewee questions above. Use opportunistically — they build rapport by demonstrating system knowledge and probe for cost/vendor data that feeds the board deliverable.*
+
+### Universal Tooling Probes (ask anyone in engineering)
+
+- "If you could drop one tool from your daily workflow tomorrow, which would it be?"
+- "Is there a centralized process for buying new tools, or do teams purchase independently?"
+- "When was the last time the org did a tool consolidation or sunset review?"
+- "Which tools did you set up yourself vs. ones IT provisioned for you?"
+
+### Specific Observations to Deploy (matched to interviewee)
+
+**Jack Kennedy (CTO):**
+- "Matt Cooke's BAD-PIP skunkworks page in Confluence — brainstorming developer prototypes to improve processes. Where does that fit relative to the formal Neo/AI platform?" *(content_id: 1826586625)*
+- "The AI space Tools page was started but never fully filled in — Discipline, Tool, Owners, AI Enabled, Adoption, Annual Cost. Is there an owner for the full tool inventory, or is it decentralized?"
+
+**Chathura (CDO):**
+- "I found an 'Agentic Lovable Dev Flow' doc from March 2026 showing Cursor + Chrome DevTools MCP + Lovable for rapid UI prototyping. How widespread is this beyond the Tesla team?"
+- "CLAUDE.md is in 3 payments repos and AGENTS.md in 4 others — 8 of 30 repos scanned have AI tooling config. Is that organic adoption or a team decision?"
+- "The tooling evaluation doc from Architecture explicitly compared Jenkins vs Bitbucket Pipelines vs GitLab. Jenkins scored worst on maintenance overhead. Of the 80 most recent repos, 36 use Pipelines and 0 use Jenkins — but 9 Jenkins instances are still running in CAKE Dev. What's the decommission plan?"
+
+**Randy Brown (Restaurant):**
+- "9 Jenkins instances are running in the CAKE Dev account — dev-qa-payment-jenkins, pos-db-jenkins, qa-jenkins-master, and 6 more. That's significant EC2 cost for a CI system the tooling evaluation doc rated lower than Pipelines. Is there a migration timeline?"
+- "The engineering software page lists both Slack and Teams for developer laptops. Which one does your team actually use?"
+
+**Akshay Bhasin (Payments):**
+- "CLAUDE.md in madpayments-devices-idtech-neo, mad-payments-vp3350, and cybersource-bin-service. Your workspace has the highest AI tooling adoption AND the cleanest CI/CD setup. Was that correlated — did AI tools help build better pipelines?"
+
+**Matias / Cloud Infrastructure:**
+- "I count 6 observability tools in the stack: Grafana/Mimir/Loki/Tempo in Shared Services, Datadog for Concierge/MenuPad, Nagios and Munin from the Cake Engineering Tools page, Graylog, and DB Cacti. What's active vs legacy? Is there a consolidation roadmap?"
+- "Trend Micro Cloud One is costing $1,438/month in the CAKE Dev account. Is that intentional alongside Wiz?"
+- "CodeArtifact, NpmJS, Archiva, DockerHub, and ECR — five artifact/registry services. Which are current?"
+
+**Dustin (Security):**
+- "Wiz is deployed via CloudFormation across all 18 accounts — that's serious coverage. What's the annual contract? And Snyk was formally onboarded in Jan 2023 with an implementation consultant — is it actively integrated into CI/CD pipelines, or has it gone quiet?"
+- "SonarQube checks show up in release approval workflows ('Sonar & Unit Tests'). Is that the community edition or a paid tier?"
+
+**QE Teams:**
+- "SpiraTest integration guide, QCenter test results, and Jira — three places tracking test execution. How do those relate? Is there a plan to consolidate?"
+- "The API Automation using Cursor POC from Team Castor — how did that go? Did it change how QE works?"
+
+### Cost Intelligence Probes (for leadership + cloud/infra)
+
+- "Do you know how many Cursor seats the org has? Who approves new seat requests?"
+- "What's the Atlassian licensing tier — Standard, Premium, or Enterprise? How many seats?"
+- "AWS Enterprise Support is $17,020/month. Is that actively used for TAM engagement, or is it insurance?"
+- "Amazon MQ (RabbitMQ) across 3 regions is $5,700/month — $68K/year for a managed message broker. Has modernization been considered?"
+- "The CAKE Dev account has 31 EC2 services totaling ~$15K/month. How much of that is Jenkins, Kafka, Elasticsearch — tool infrastructure vs application workloads?"
+
+---
+
 ## Reference: Hypothesis Key
 
 | Code | Pattern | One-Liner |

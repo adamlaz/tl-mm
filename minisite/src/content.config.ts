@@ -274,6 +274,13 @@ const toolingCatalog = defineCollection({
     cost_status: z.string(),
     notes: z.string().optional(),
     cost_detail: z.string().optional(),
+    estimated_annual_cost: z.string().optional(),
+    pricing_model: z.string().optional(),
+    pricing_notes: z.string().optional(),
+    teams_using: z.array(z.string()).optional(),
+    shared_or_individual: z.string().optional(),
+    overlap_with: z.array(z.string()).optional(),
+    interview_question: z.string().nullable().optional(),
   }),
 });
 

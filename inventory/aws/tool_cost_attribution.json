@@ -1,0 +1,1449 @@
+{
+  "mm-cake-development": {
+    "account_id": "230930891673",
+    "cost_by_service": [
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 3287.03
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 2304.84
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 1701.18
+      },
+      {
+        "service": "TrendAI\u2122 Cloud One",
+        "monthly_cost": 1437.68
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 1168.69
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "monthly_cost": 1113.39
+      },
+      {
+        "service": "Amazon Relational Database Service",
+        "monthly_cost": 829.65
+      },
+      {
+        "service": "Amazon OpenSearch Service",
+        "monthly_cost": 700.43
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 431.94
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 405.55
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 394.32
+      },
+      {
+        "service": "AWS Transfer Family",
+        "monthly_cost": 364.9
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 224.51
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 208.68
+      },
+      {
+        "service": "AWS WAF",
+        "monthly_cost": 116.22
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 108.12
+      },
+      {
+        "service": "AWS Secrets Manager",
+        "monthly_cost": 90.85
+      },
+      {
+        "service": "Amazon DynamoDB",
+        "monthly_cost": 31.79
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 24.46
+      },
+      {
+        "service": "Amazon Kinesis",
+        "monthly_cost": 18.24
+      },
+      {
+        "service": "Amazon Registrar",
+        "monthly_cost": 17.0
+      },
+      {
+        "service": "Amazon Simple Queue Service",
+        "monthly_cost": 6.15
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 5.03
+      },
+      {
+        "service": "AWS X-Ray",
+        "monthly_cost": 2.23
+      },
+      {
+        "service": "Amazon Elastic Container Service",
+        "monthly_cost": 0.7
+      },
+      {
+        "service": "AWS Backup",
+        "monthly_cost": 0.16
+      },
+      {
+        "service": "AWS Systems Manager",
+        "monthly_cost": 0.06
+      },
+      {
+        "service": "Amazon Elastic File System",
+        "monthly_cost": 0.06
+      },
+      {
+        "service": "Amazon Neptune",
+        "monthly_cost": 0.06
+      },
+      {
+        "service": "AWS Cost Explorer",
+        "monthly_cost": 0.03
+      },
+      {
+        "service": "CloudWatch Events",
+        "monthly_cost": 0.03
+      }
+    ],
+    "tool_instances": {
+      "Jenkins": [
+        {
+          "id": "i-0c1fb9c48a0b437dd",
+          "type": "t3a.medium",
+          "state": "running",
+          "name": "dev-qa-payment-jenkins"
+        },
+        {
+          "id": "i-06500bc3385af0948",
+          "type": "t2.large",
+          "state": "running",
+          "name": "Dev-Jenkins-ZAP"
+        },
+        {
+          "id": "i-06fc6bc96bb0a9c50",
+          "type": "t3a.small",
+          "state": "running",
+          "name": "pos-db-jenkins"
+        },
+        {
+          "id": "i-06f269bf3b8a56c1f",
+          "type": "r7i.large",
+          "state": "running",
+          "name": "qa-jenkins-node"
+        },
+        {
+          "id": "i-00d8560f2ab81e03e",
+          "type": "t2.large",
+          "state": "running",
+          "name": "qa-jenkins-slave-01"
+        },
+        {
+          "id": "i-0a61ac1d70baedf02",
+          "type": "t3a.medium",
+          "state": "running",
+          "name": "dev-payment-use1-jenkins-n1"
+        },
+        {
+          "id": "i-0d4e8f05c4a4b6b3b",
+          "type": "t2.large",
+          "state": "running",
+          "name": "qa-jenkins-slave-01-new"
+        },
+        {
+          "id": "i-09a4b2946ad218727",
+          "type": "m4.2xlarge",
+          "state": "running",
+          "name": "minuteman-build-server"
+        },
+        {
+          "id": "i-01d49393f14edd9c1",
+          "type": "t2.large",
+          "state": "running",
+          "name": "qa-jenkins-master"
+        }
+      ],
+      "Neo4j": [
+        {
+          "id": "i-08a1ee8b00c89beba",
+          "type": "t2.medium",
+          "state": "running",
+          "name": "neo4j-2"
+        }
+      ],
+      "Kafka": [
+        {
+          "id": "i-090f717ab825fde63",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "qa-data-platform-kafka2"
+        },
+        {
+          "id": "i-063e93685c97f625f",
+          "type": "m4.xlarge",
+          "state": "running",
+          "name": "qa-data-platform-kafka1"
+        }
+      ],
+      "Elasticsearch": [
+        {
+          "id": "i-047553914737dffc9",
+          "type": "i3.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastic-data4"
+        },
+        {
+          "id": "i-039e6ceb2802ba742",
+          "type": "i3.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastic-data3"
+        },
+        {
+          "id": "i-099b47e62bfe17fa1",
+          "type": "i3.xlarge",
+          "state": "stopped",
+          "name": "qa-data-platform-elastic-data5"
+        },
+        {
+          "id": "i-04994f349d7fd9b69",
+          "type": "m6a.large",
+          "state": "running",
+          "name": "qa-data-platform-elastic-new-3"
+        },
+        {
+          "id": "i-06e1045df1c0e10d6",
+          "type": "m6a.large",
+          "state": "running",
+          "name": "qa-data-platform-elastic-new-1"
+        },
+        {
+          "id": "i-02010cfd0726087fa",
+          "type": "m6a.large",
+          "state": "running",
+          "name": "qa-data-platform-elastic-new-2"
+        }
+      ],
+      "Keycloak": [
+        {
+          "id": "i-0faaafc2f76132923",
+          "type": "t2.small",
+          "state": "running",
+          "name": "dev-KeycloakServer-1"
+        }
+      ],
+      "RabbitMQ": [
+        {
+          "id": "i-00507ef76cac8b44f",
+          "type": "t3.medium",
+          "state": "running",
+          "name": "dev-rabbitmq-core02"
+        }
+      ]
+    }
+  },
+  "mm-cake-r-and-d": {
+    "account_id": "464176945335",
+    "cost_by_service": [
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 507.83
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 461.24
+      },
+      {
+        "service": "AWS Directory Service",
+        "monthly_cost": 60.83
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 56.03
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 25.07
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 15.5
+      },
+      {
+        "service": "AWS Security Hub",
+        "monthly_cost": 14.64
+      },
+      {
+        "service": "AWS WAF",
+        "monthly_cost": 11.86
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 10.68
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 7.81
+      },
+      {
+        "service": "Amazon DynamoDB",
+        "monthly_cost": 7.4
+      },
+      {
+        "service": "AWS Secrets Manager",
+        "monthly_cost": 3.27
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 2.45
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 2.41
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 1.66
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 0.36
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 0.08
+      },
+      {
+        "service": "Amazon Elastic File System",
+        "monthly_cost": 0.06
+      }
+    ],
+    "tool_instances": {
+      "Docker Build": [
+        {
+          "id": "i-0abe385a489944a41",
+          "type": "c6i.12xlarge",
+          "state": "running",
+          "name": "DockerPos"
+        }
+      ]
+    }
+  },
+  "mm-customer-analytics": {
+    "account_id": "024848459322",
+    "cost_by_service": [
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 2.32
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.07
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 0.06
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 0.04
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 0.02
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-dns-management": {
+    "account_id": "381491928564",
+    "cost_by_service": [
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 3.85
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 2.22
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.07
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 0.06
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 0.04
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 0.02
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-forensics": {
+    "account_id": "040591922250",
+    "cost_by_service": [
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 30.41
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 1.95
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.07
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 0.06
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 0.02
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-madmobile-mgmt": {
+    "account_id": "302042158767",
+    "cost_by_service": [
+      {
+        "service": "Savings Plans for AWS Compute usage",
+        "monthly_cost": 58384.74
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 42343.33
+      },
+      {
+        "service": "Amazon Relational Database Service",
+        "monthly_cost": 30492.25
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 19499.17
+      },
+      {
+        "service": "AWS Support (Enterprise)",
+        "monthly_cost": 17019.89
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "monthly_cost": 10111.13
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 9518.21
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 8010.49
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 7653.28
+      },
+      {
+        "service": "Amazon OpenSearch Service",
+        "monthly_cost": 6908.06
+      },
+      {
+        "service": "Amazon MQ",
+        "monthly_cost": 5919.91
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 5718.25
+      },
+      {
+        "service": "[AWS MP Private Offer] - MongoDB Atlas on AWS - Contract with Usage (V6)",
+        "monthly_cost": 4259.0
+      },
+      {
+        "service": "OCBLateFee",
+        "monthly_cost": 3682.02
+      },
+      {
+        "service": "Vanta",
+        "monthly_cost": 3333.33
+      },
+      {
+        "service": "Snyk: Developer Security Platform",
+        "monthly_cost": 3208.31
+      },
+      {
+        "service": "Amazon Elastic Container Service for Kubernetes",
+        "monthly_cost": 2318.73
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 2016.39
+      },
+      {
+        "service": "Amazon Managed Streaming for Apache Kafka",
+        "monthly_cost": 1503.46
+      },
+      {
+        "service": "AWS Certificate Manager",
+        "monthly_cost": 1449.36
+      },
+      {
+        "service": "TrendAI\u2122 Cloud One",
+        "monthly_cost": 1437.68
+      },
+      {
+        "service": "AWS WAF",
+        "monthly_cost": 774.71
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 744.02
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 611.84
+      },
+      {
+        "service": "AWS Transfer Family",
+        "monthly_cost": 364.9
+      },
+      {
+        "service": "Amazon DocumentDB (with MongoDB compatibility)",
+        "monthly_cost": 339.62
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 328.64
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 205.47
+      },
+      {
+        "service": "Amazon Location Service",
+        "monthly_cost": 182.19
+      },
+      {
+        "service": "AWS Secrets Manager",
+        "monthly_cost": 169.97
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 155.7
+      },
+      {
+        "service": "AWS CloudTrail",
+        "monthly_cost": 143.39
+      },
+      {
+        "service": "Amazon Simple Queue Service",
+        "monthly_cost": 127.17
+      },
+      {
+        "service": "AWS Security Hub",
+        "monthly_cost": 122.06
+      },
+      {
+        "service": "Amazon Elastic Container Service",
+        "monthly_cost": 118.18
+      },
+      {
+        "service": "Amazon Registrar",
+        "monthly_cost": 101.0
+      },
+      {
+        "service": "Amazon Lightsail",
+        "monthly_cost": 99.37
+      },
+      {
+        "service": "AWS Directory Service",
+        "monthly_cost": 91.24
+      },
+      {
+        "service": "AWS Global Accelerator",
+        "monthly_cost": 60.82
+      },
+      {
+        "service": "Amazon Kinesis",
+        "monthly_cost": 54.73
+      },
+      {
+        "service": "Amazon DynamoDB",
+        "monthly_cost": 52.59
+      },
+      {
+        "service": "Amazon QuickSight",
+        "monthly_cost": 37.13
+      },
+      {
+        "service": "Amazon Athena",
+        "monthly_cost": 31.99
+      },
+      {
+        "service": "AWS Cost Explorer",
+        "monthly_cost": 26.45
+      },
+      {
+        "service": "AWS CodeArtifact",
+        "monthly_cost": 12.71
+      },
+      {
+        "service": "Amazon API Gateway",
+        "monthly_cost": 5.95
+      },
+      {
+        "service": "Amazon Simple Email Service",
+        "monthly_cost": 4.6
+      },
+      {
+        "service": "AWS X-Ray",
+        "monthly_cost": 4.18
+      },
+      {
+        "service": "Amazon Redshift",
+        "monthly_cost": 3.24
+      },
+      {
+        "service": "Amazon Simple Notification Service",
+        "monthly_cost": 2.04
+      },
+      {
+        "service": "AWS Glue",
+        "monthly_cost": 1.92
+      },
+      {
+        "service": "AWS Data Pipeline",
+        "monthly_cost": 0.91
+      },
+      {
+        "service": "Amazon Elastic File System",
+        "monthly_cost": 0.23
+      },
+      {
+        "service": "AWS Backup",
+        "monthly_cost": 0.18
+      },
+      {
+        "service": "AWS Systems Manager",
+        "monthly_cost": 0.09
+      },
+      {
+        "service": "Amazon Neptune",
+        "monthly_cost": 0.07
+      },
+      {
+        "service": "Amazon CloudFront",
+        "monthly_cost": 0.04
+      },
+      {
+        "service": "AWS Elemental MediaConvert",
+        "monthly_cost": 0.03
+      },
+      {
+        "service": "AWS HealthImaging",
+        "monthly_cost": 0.03
+      },
+      {
+        "service": "CloudWatch Events",
+        "monthly_cost": 0.03
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-marketplace-seller": {
+    "account_id": "026090514637",
+    "cost_by_service": [
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 2.43
+      },
+      {
+        "service": "Amazon Simple Queue Service",
+        "monthly_cost": 0.19
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.08
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 0.07
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 0.06
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 0.02
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-menupad-prod-metro": {
+    "account_id": "622065827965",
+    "cost_by_service": [
+      {
+        "service": "Amazon Relational Database Service",
+        "monthly_cost": 1221.5
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "monthly_cost": 265.65
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 162.12
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 118.27
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 71.06
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 45.67
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 27.38
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 14.4
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 4.74
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 3.29
+      },
+      {
+        "service": "Amazon API Gateway",
+        "monthly_cost": 0.81
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.41
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 0.4
+      },
+      {
+        "service": "Amazon CloudFront",
+        "monthly_cost": 0.04
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 0.02
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-mm-archive": {
+    "account_id": "673260261206",
+    "cost_by_service": [
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 361.87
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 207.58
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 105.13
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 76.91
+      },
+      {
+        "service": "Amazon Lightsail",
+        "monthly_cost": 70.04
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 51.71
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 5.45
+      },
+      {
+        "service": "Amazon Relational Database Service",
+        "monthly_cost": 5.16
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 4.44
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 2.12
+      },
+      {
+        "service": "Amazon API Gateway",
+        "monthly_cost": 1.59
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 0.45
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.38
+      },
+      {
+        "service": "AWS Secrets Manager",
+        "monthly_cost": 0.37
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 0.25
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 0.16
+      },
+      {
+        "service": "Amazon Elastic File System",
+        "monthly_cost": 0.01
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-monvia": {
+    "account_id": "219788358213",
+    "cost_by_service": [
+      {
+        "service": "Savings Plans for AWS Compute usage",
+        "monthly_cost": 22745.18
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 345.49
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 237.57
+      },
+      {
+        "service": "Amazon Athena",
+        "monthly_cost": 31.73
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 12.86
+      },
+      {
+        "service": "Amazon QuickSight",
+        "monthly_cost": 10.99
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 9.08
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 3.04
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 2.79
+      },
+      {
+        "service": "AWS Glue",
+        "monthly_cost": 1.92
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 1.43
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 0.46
+      },
+      {
+        "service": "AWS X-Ray",
+        "monthly_cost": 0.02
+      },
+      {
+        "service": "Amazon Simple Notification Service",
+        "monthly_cost": 0.02
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-payments-prod-us": {
+    "account_id": "491085393358",
+    "cost_by_service": [
+      {
+        "service": "AWS Certificate Manager",
+        "monthly_cost": 724.68
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 518.98
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 445.02
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 176.07
+      },
+      {
+        "service": "Amazon Relational Database Service",
+        "monthly_cost": 92.82
+      },
+      {
+        "service": "Amazon Elastic Container Service for Kubernetes",
+        "monthly_cost": 60.82
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 45.88
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 43.79
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 34.5
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 27.83
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 18.11
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 1.22
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 0.45
+      },
+      {
+        "service": "AWS Secrets Manager",
+        "monthly_cost": 0.37
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-retail-prod-apac": {
+    "account_id": "357856625432",
+    "cost_by_service": [
+      {
+        "service": "Amazon MQ",
+        "monthly_cost": 1106.21
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 607.59
+      },
+      {
+        "service": "Amazon Elastic Container Service for Kubernetes",
+        "monthly_cost": 425.71
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 338.14
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "monthly_cost": 261.34
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 175.65
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 175.23
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 131.53
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 72.99
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 15.54
+      },
+      {
+        "service": "AWS Global Accelerator",
+        "monthly_cost": 15.21
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 11.91
+      },
+      {
+        "service": "Amazon Elastic Container Service",
+        "monthly_cost": 8.42
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 7.67
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 6.13
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 3.65
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 1.44
+      },
+      {
+        "service": "Amazon API Gateway",
+        "monthly_cost": 0.04
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-retail-prod-eu": {
+    "account_id": "266315811211",
+    "cost_by_service": [
+      {
+        "service": "Amazon MQ",
+        "monthly_cost": 1693.94
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 1575.86
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 1283.13
+      },
+      {
+        "service": "Amazon Elastic Container Service for Kubernetes",
+        "monthly_cost": 425.71
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "monthly_cost": 345.31
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 215.75
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 72.29
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 51.7
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 39.86
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 21.22
+      },
+      {
+        "service": "AWS Global Accelerator",
+        "monthly_cost": 15.21
+      },
+      {
+        "service": "Amazon Elastic Container Service",
+        "monthly_cost": 8.63
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 7.71
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 6.28
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 5.46
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 1.68
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 0.06
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-retail-prod-us": {
+    "account_id": "125062011444",
+    "cost_by_service": [
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 6570.25
+      },
+      {
+        "service": "Amazon MQ",
+        "monthly_cost": 2908.56
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 1180.48
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "monthly_cost": 493.83
+      },
+      {
+        "service": "Amazon Elastic Container Service for Kubernetes",
+        "monthly_cost": 364.9
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 217.17
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 208.56
+      },
+      {
+        "service": "AWS CloudTrail",
+        "monthly_cost": 143.39
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 96.18
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 61.79
+      },
+      {
+        "service": "AWS WAF",
+        "monthly_cost": 47.06
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 35.35
+      },
+      {
+        "service": "AWS Lambda",
+        "monthly_cost": 24.84
+      },
+      {
+        "service": "Amazon Elastic Container Service",
+        "monthly_cost": 11.69
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 6.42
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 4.41
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 3.66
+      },
+      {
+        "service": "Amazon API Gateway",
+        "monthly_cost": 3.17
+      },
+      {
+        "service": "AWS Data Pipeline",
+        "monthly_cost": 0.91
+      },
+      {
+        "service": "AWS X-Ray",
+        "monthly_cost": 0.27
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 0.18
+      },
+      {
+        "service": "Amazon Elastic File System",
+        "monthly_cost": 0.08
+      },
+      {
+        "service": "AWS Secrets Manager",
+        "monthly_cost": 0.03
+      },
+      {
+        "service": "Amazon Simple Notification Service",
+        "monthly_cost": 0.03
+      },
+      {
+        "service": "AWS Backup",
+        "monthly_cost": 0.02
+      }
+    ],
+    "tool_instances": {
+      "Elasticsearch": [
+        {
+          "id": "i-ce459451",
+          "type": "m5a.xlarge",
+          "state": "running",
+          "name": "prod-elasticsearch-proxy02"
+        },
+        {
+          "id": "i-a06f1a30",
+          "type": "m5a.xlarge",
+          "state": "running",
+          "name": "prod-elasticsearch-proxy01"
+        },
+        {
+          "id": "i-0ffddcc51687cfa5b",
+          "type": "m5.2xlarge",
+          "state": "running",
+          "name": "prod-elasticsearch03"
+        },
+        {
+          "id": "i-0fab5328bd09c8c07",
+          "type": "m5a.2xlarge",
+          "state": "running",
+          "name": "prod-elasticsearch01"
+        },
+        {
+          "id": "i-0281c2981d6603430",
+          "type": "m5a.2xlarge",
+          "state": "running",
+          "name": "prod-elasticsearch02"
+        }
+      ]
+    }
+  },
+  "mm-retail-prod-us-dr": {
+    "account_id": "542575560358",
+    "cost_by_service": [
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 1213.1
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 1164.88
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 154.9
+      },
+      {
+        "service": "Amazon Elastic Container Service for Kubernetes",
+        "monthly_cost": 121.63
+      },
+      {
+        "service": "Amazon ElastiCache",
+        "monthly_cost": 65.66
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 60.84
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 27.91
+      },
+      {
+        "service": "AWS Global Accelerator",
+        "monthly_cost": 15.2
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 8.15
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 4.08
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 1.32
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 1.21
+      },
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 0.53
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 0.18
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-security": {
+    "account_id": "155215164482",
+    "cost_by_service": [
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 2.78
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 1.83
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 0.9
+      },
+      {
+        "service": "Amazon Simple Notification Service",
+        "monthly_cost": 0.08
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.07
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 0.05
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-shared-artifact-registry": {
+    "account_id": "278608866843",
+    "cost_by_service": [
+      {
+        "service": "Amazon EC2 Container Registry (ECR)",
+        "monthly_cost": 16.53
+      },
+      {
+        "service": "AWS CodeArtifact",
+        "monthly_cost": 12.71
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 9.08
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 0.93
+      },
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 0.44
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 0.19
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.09
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 0.05
+      }
+    ],
+    "tool_instances": {}
+  },
+  "mm-shared-services": {
+    "account_id": "654654350563",
+    "cost_by_service": [
+      {
+        "service": "EC2 - Other",
+        "monthly_cost": 762.27
+      },
+      {
+        "service": "Amazon Simple Storage Service",
+        "monthly_cost": 383.54
+      },
+      {
+        "service": "Amazon Elastic Load Balancing",
+        "monthly_cost": 335.54
+      },
+      {
+        "service": "Amazon Virtual Private Cloud",
+        "monthly_cost": 88.6
+      },
+      {
+        "service": "Amazon Elastic Compute Cloud - Compute",
+        "monthly_cost": 66.22
+      },
+      {
+        "service": "Amazon GuardDuty",
+        "monthly_cost": 62.43
+      },
+      {
+        "service": "Amazon Elastic Container Service for Kubernetes",
+        "monthly_cost": 60.82
+      },
+      {
+        "service": "AmazonCloudWatch",
+        "monthly_cost": 44.11
+      },
+      {
+        "service": "AWS Key Management Service",
+        "monthly_cost": 9.05
+      },
+      {
+        "service": "AWS Config",
+        "monthly_cost": 0.34
+      },
+      {
+        "service": "Amazon Route 53",
+        "monthly_cost": 0.19
+      },
+      {
+        "service": "Amazon Simple Queue Service",
+        "monthly_cost": 0.04
+      }
+    ],
+    "tool_instances": {}
+  }
+}

@@ -21,13 +21,17 @@ Answer based on your actual experience at Mad Mobile over the last 3 months. We'
 ### 1. Which AI tools do you use at least weekly? (select all that apply)
 
 - [ ] Cursor (AI-assisted coding)
-- [ ] GitHub Copilot
+- [ ] Claude (Anthropic) — directly or via Cursor
 - [ ] ChatGPT / OpenAI
-- [ ] Claude (Anthropic)
+- [ ] Lovable (AI prototyping / UI generation)
+- [ ] n8n AI workflows (Smart Prompts, ETL, etc.)
+- [ ] Amazon Bedrock / SageMaker
+- [ ] GitHub Copilot
 - [ ] Gemini (Google)
-- [ ] Guru (AI documentation)
+- [ ] Bland.AI (customer support)
+- [ ] Revenue.io (sales intelligence)
 - [ ] AI features built into existing tools (Jira, Confluence, Bitbucket, etc.)
-- [ ] Amazon CodeWhisperer / Q Developer
+- [ ] Amazon Q Developer / CodeWhisperer
 - [ ] Custom internal AI tools or scripts
 - [ ] None — I don't currently use AI tools
 - [ ] Other: _____________
@@ -83,9 +87,30 @@ Answer based on your actual experience at Mad Mobile over the last 3 months. We'
 
 *Beyond AI — the full set of tools, platforms, and services you rely on to do your work.*
 
-### 8. What are the 3–5 tools most essential to your daily work? (free text)
+### 8. Which of these tools do you use at least weekly? (select all that apply)
 
-_________________________________
+- [ ] Jira
+- [ ] Confluence
+- [ ] Bitbucket
+- [ ] VS Code
+- [ ] IntelliJ IDEA
+- [ ] Postman / Insomnia
+- [ ] Docker
+- [ ] Jenkins
+- [ ] Grafana
+- [ ] Datadog
+- [ ] Slack
+- [ ] Microsoft Teams
+- [ ] Figma
+- [ ] SonarQube
+- [ ] Snyk
+- [ ] SpiraTest / QCenter
+- [ ] Salesforce
+- [ ] Five9
+- [ ] Other: _____________
+
+### 8b. What are the 1–3 tools most essential to your daily work? (free text)
+
 _________________________________
 
 ### 9. Are there tools your team pays for or has access to that you rarely or never use? If so, which ones?

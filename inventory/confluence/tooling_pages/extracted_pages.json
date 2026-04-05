@@ -1,0 +1,1634 @@
+{
+  "ai_tools": {
+    "title": "Tools",
+    "content_id": 246251848,
+    "space_key": "AI",
+    "space_name": "AI",
+    "version": 4,
+    "last_modified": "2024-05-29T13:11:04.252Z",
+    "tables": [
+      [
+        "Discipline",
+        "Tool",
+        "Owners",
+        "AI Enabled",
+        "Adoption",
+        "Annual Cost"
+      ],
+      [
+        "General Corporate",
+        "Open AI",
+        "",
+        "yes",
+        "",
+        ""
+      ],
+      [
+        "Product Management",
+        "Jira, Confluence",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Development",
+        "VSCode",
+        "",
+        "Codium, Cursor",
+        "<5",
+        ""
+      ],
+      [
+        "QA/QE",
+        "",
+        "John",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Documentation",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "CI/CD",
+        "",
+        "Charles",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Hosting / Observability",
+        "",
+        "Matias",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Security",
+        "",
+        "Dustin",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Customer Support",
+        "Five9",
+        "Todd",
+        "Bland.AI",
+        "",
+        ""
+      ],
+      [
+        "Customer Success",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Logistics",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Project Management",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Recruiting",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Sales",
+        "Salesforce",
+        "",
+        "Revenue.io",
+        "",
+        ""
+      ],
+      [
+        "Marketing",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Finance",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Operational Reporting",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "lists": [],
+    "text": "Tracking which tools are AI enabled and which are not, shifting to replace those that are not. Discipline Tool Owners AI Enabled Adoption Annual Cost General Corporate Open AI yes Product Management Jira, Confluence Development VSCode Codium , Cursor &lt;5 QA/QE John Documentation CI/CD Charles Hosting / Observability Matias Security Dustin Customer Support Five9 Todd Bland.AI Customer Success Logistics Project Management Recruiting Sales Salesforce Revenue.io Marketing Finance Operational Reporting"
+  },
+  "engineering_software": {
+    "title": "Engineering Software and Tools",
+    "content_id": 394231819,
+    "space_key": "ES",
+    "space_name": "CAKE Engineering Excellence",
+    "version": 9,
+    "last_modified": "2024-08-14T06:24:05.724Z",
+    "tables": [],
+    "lists": [
+      "Outlook",
+      "Teams",
+      "Slack",
+      "IntelliJ",
+      "Android studio (using toolbox)",
+      "VSCode",
+      "Postman / Insomnia",
+      "WAMP",
+      "Sublime",
+      "Google Chrome",
+      "Firefox",
+      "Git",
+      "Docker",
+      "VPN",
+      "kazam - for screen recording purposes",
+      "MySQL workbench / DBeaver Community",
+      "glogg - https://glogg.bonnefon.org/index.html",
+      "notepad++",
+      "mongoDB compass",
+      "VM Box",
+      "https://meldmerge.org/",
+      "Windows Terminal (https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US )",
+      "Draw io (https://www.drawio.com/ )",
+      "GIT (https://git-scm.com/download/win )",
+      "Docker Desktop (https://docs.docker.com/desktop/install/windows-install/ )/ Rancher Desktop (https://rancherdesktop.io/)",
+      "JDK",
+      "android sdk",
+      "nvm-windows (https://github.com/coreybutler/nvm-windows )",
+      "node js (using nvm-windows)",
+      "Outlook",
+      "Teams",
+      "Slack",
+      "IntelliJ",
+      "Postman",
+      "Sublime",
+      "Google Chrome",
+      "Firefox",
+      "Git",
+      "Docker",
+      "VPN",
+      "JMeter",
+      "XMind",
+      "VM Box",
+      "MongoDB Compass",
+      "notepad ++"
+    ],
+    "text": "This page lists all the software and tools we need installed on Developer and QE laptops. Developer Laptops Outlook Teams Slack IntelliJ Android studio (using toolbox) VSCode Postman / Insomnia WAMP Sublime Google Chrome Firefox Git Docker VPN kazam - for screen recording purposes MySQL workbench / DBeaver Community glogg - https://glogg.bonnefon.org/index.html notepad++ mongoDB compass VM Box https://meldmerge.org/ Windows Terminal ( https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&amp;gl=US ) Draw io ( https://www.drawio.com/ ) GIT ( https://git-scm.com/download/win ) Docker Desktop ( https://docs.docker.com/desktop/install/windows-install/ )/ Rancher Desktop ( https://rancherdesktop.io/ ) JDK android sdk nvm-windows ( https://github.com/coreybutler/nvm-windows ) node js (using nvm-windows) QE Laptops Outlook Teams Slack IntelliJ Postman Sublime Google Chrome Firefox Git Docker VPN JMeter XMind VM Box MongoDB Compass notepad ++"
+  },
+  "cake_engineering_tools": {
+    "title": "Cake Engineering Tools",
+    "content_id": 259096688,
+    "space_key": "DEP",
+    "space_name": "Cloud Services Home",
+    "version": 9,
+    "last_modified": "2021-05-12T14:37:14.804Z",
+    "tables": [
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Office 365",
+        "RedHigh",
+        "IT team",
+        "IT team",
+        "",
+        "ON and OFF - through HR recommendation"
+      ],
+      [
+        "2",
+        "Highfive",
+        "Low",
+        "IT team",
+        "IT team",
+        "",
+        "ON and OFF - through HR recommendation"
+      ],
+      [
+        "3",
+        "HR Leave management system - Cemex",
+        "Low",
+        "HR team",
+        "HR team",
+        "",
+        "HR team (ON/OFF)"
+      ],
+      [
+        "4",
+        "Biostar",
+        "RedHigh",
+        "HR team",
+        "HR team",
+        "",
+        "HR team (ON/OFF)"
+      ],
+      [
+        "5",
+        "JIRA",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "(Cloud services team - through IT)"
+      ],
+      [
+        "6",
+        "Confluence",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "(Cloud services team - through IT)"
+      ],
+      [
+        "7",
+        "Bitbucket",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "(Cloud services team - through IT)"
+      ],
+      [
+        "8",
+        "Slack",
+        "YellowMedium",
+        "IT team",
+        "IT team",
+        "",
+        ""
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes",
+        "Current user groups"
+      ],
+      [
+        "1",
+        "SalesForce",
+        "YellowMedium",
+        "SFDC team/ Cloud services team",
+        "SFDC team/ Cloud services team",
+        "",
+        "ON by\u00a0Cloud services team on the recommendation of dev lead - OFF with JIRA and other account removals if there is an account",
+        ""
+      ],
+      [
+        "2",
+        "DockerHub",
+        "YellowMedium",
+        "Leads /\u00a0Cloud services team",
+        "Cloud services\u00a0team",
+        "",
+        "Cloud services\u00a0team to own SL accounts /  to own US accounts",
+        ""
+      ],
+      [
+        "3",
+        "NpmJS",
+        "YellowMedium",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "",
+        ""
+      ],
+      [
+        "4",
+        "VPN access - Prod core , payments , stag , dev",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "",
+        ""
+      ],
+      [
+        "5",
+        "Archiva - Maven repository",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services\u00a0team",
+        "",
+        "Cloud services\u00a0team to off board",
+        ""
+      ],
+      [
+        "6",
+        "Github",
+        "RedHigh",
+        "Leads",
+        "Cloud services\u00a0team",
+        "",
+        "Can we get rid of this?",
+        ""
+      ],
+      [
+        "7",
+        "Jenkins / Hudson",
+        "RedHigh",
+        "Leads / Cloud services\u00a0team",
+        "Cloud services\u00a0team",
+        "",
+        "",
+        ""
+      ],
+      [
+        "8",
+        "Munin - To monitor servers",
+        "Low",
+        "Cloud services\u00a0team",
+        "Cloud services\u00a0team",
+        "",
+        "Provide individual accounts and do a cleanup",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "10",
+        "DB Cacti - To monitor servers",
+        "Low",
+        "DB Leads",
+        "DB Leads",
+        "",
+        "Provide individual accounts and do a cleanup",
+        ""
+      ],
+      [
+        "11",
+        "Grafana - Monitor AWS servers",
+        "Low",
+        "Cloud services\u00a0team",
+        "Cloud services\u00a0team",
+        "",
+        "Provide individual accounts and do a cleanup",
+        ""
+      ],
+      [
+        "12",
+        "Nagios - Monitor and alert based on threshold values",
+        "Low",
+        "Cloud services team",
+        "Cloud services\u00a0team",
+        "",
+        "Provide individual accounts and do a cleanup11/June - task completed",
+        ""
+      ],
+      [
+        "13",
+        "Cloudportal",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "",
+        ""
+      ],
+      [
+        "14",
+        "AWS Console + programmetic acces",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "Do an audit an see whether there are any invalid accounts",
+        ""
+      ],
+      [
+        "15",
+        "Server instance (EC2) access - SSH",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "",
+        ""
+      ],
+      [
+        "16",
+        "Super Admin",
+        "RedHigh",
+        "Cloud services team",
+        "Cloud services team",
+        "",
+        "We need to come up with a process for this",
+        ""
+      ],
+      [
+        "17",
+        "Team Viewer",
+        "YellowMedium",
+        "Ops team",
+        "Ops team",
+        "",
+        "Used to login to POS. Access is granted via Pulse and should tunnel to get access to POS",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "19",
+        "Graylog servers",
+        "Low",
+        "Leads",
+        "Cloud services\u00a0team",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "CDA - Managed by DB/Reports teams",
+        "YellowMedium",
+        "DB Leads",
+        "DB Leads",
+        "",
+        "Planned to be removed. Only accessible via tunnelingThere is a separate application login that we have to get rid of. Should move CDA into a VPC, until we get rid of CDA completely."
+      ],
+      [
+        "2",
+        "Saiku - Generate reports using Datamart",
+        "Low",
+        "DB team leads",
+        "DB team",
+        "",
+        "Should cleanup invalid accounts. If there are any common accounts, they should be removed"
+      ],
+      [
+        "3",
+        "Solr Console - currently open to public ***",
+        "YellowMedium",
+        "Plat 1 Leads /\u00a0Cloud services team",
+        "Cloud services\u00a0team",
+        "",
+        "remove invalid accounts"
+      ],
+      [
+        "4",
+        "DB Lite",
+        "YellowMedium",
+        "DB team leads",
+        "DB team",
+        "",
+        "Should cleanup invalid accounts. If there are any common accounts, they should be removed"
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Corporate Google Account",
+        "RedHigh",
+        "N/A",
+        "N/A",
+        "",
+        ""
+      ],
+      [
+        "2",
+        "MongoDB Atlas",
+        "RedHigh",
+        "",
+        "N/A",
+        "",
+        ""
+      ],
+      [
+        "3",
+        "Google Cloud Messaging",
+        "YellowMedium",
+        "N/A",
+        "N/A",
+        "",
+        ""
+      ],
+      [
+        "4",
+        "Apple Push Notification Service",
+        "YellowMedium",
+        "N/A",
+        "N/A",
+        "",
+        ""
+      ],
+      [
+        "5",
+        "Google Analytics",
+        "Low",
+        "Leads (Wes Wong)",
+        "",
+        "",
+        ""
+      ],
+      [
+        "6",
+        "Mix Panel",
+        "Low",
+        "Leads",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Corporate Uber Account",
+        "RedHigh",
+        "Brigit Manos",
+        "Brigit Manos",
+        "",
+        "There are active accounts out of US. Rasika to followup"
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Couch Management Console - Futon",
+        "RedHigh",
+        "POS Leads",
+        "N/A",
+        "",
+        "(For production : Should tunnel to a jump server and then login)"
+      ],
+      [
+        "2",
+        "Redis CLI",
+        "RedHigh",
+        "Cloud services\u00a0team",
+        "N/A",
+        "",
+        "(For production :\u00a0via a jump server)"
+      ],
+      [
+        "3",
+        "Ambari - UI to manage HDP (Hortonworks Data Platform)",
+        "YellowMedium",
+        "DB team",
+        "N/A",
+        "",
+        "Only configurations will be managed through this ***. Should remove admin account and create individual accounts."
+      ],
+      [
+        "4",
+        "Spark",
+        "YellowMedium",
+        "DB team",
+        "N/A",
+        "",
+        "(For production :\u00a0through tunneling)"
+      ],
+      [
+        "5",
+        "Storm",
+        "YellowMedium",
+        "DB team",
+        "N/A",
+        "",
+        "(For production :\u00a0through tunneling)"
+      ],
+      [
+        "6",
+        "POS Device login- ***",
+        "RedHigh",
+        "Pulse Team",
+        "N/A",
+        "",
+        ""
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Gateway Servers",
+        "RedHigh",
+        "Cloud Services",
+        "Cloud Services",
+        "",
+        ""
+      ],
+      [
+        "2",
+        "Accounts in Vantive IQ, CNP reports and CNP PSP",
+        "RedHigh",
+        "Gateway team",
+        "Gateway team Lead",
+        "",
+        ""
+      ],
+      [
+        "3",
+        "Mint account",
+        "RedHigh",
+        "Gateway team",
+        "Gateway team Lead",
+        "",
+        ""
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "GM Servers",
+        "RedHigh",
+        "GM team",
+        "GM team",
+        "",
+        "Should come up with a process for this"
+      ],
+      [
+        "2",
+        "GM Databases",
+        "RedHigh",
+        "GM team",
+        "GM team",
+        "",
+        "Should come up with a process for this"
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "cloudflare",
+        "RedHigh",
+        "",
+        "",
+        "",
+        "Administered by Paul"
+      ],
+      [
+        "2",
+        "DigiCert",
+        "RedHigh",
+        "",
+        "",
+        "",
+        "Administered by Paul"
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "IntelliJ Idea - Paul & Rohana - **",
+        "Low",
+        "",
+        "",
+        "",
+        "Validate existing licenses"
+      ],
+      [
+        "2",
+        "Web storm",
+        "Low",
+        "",
+        "",
+        "",
+        "Validate existing licenses"
+      ],
+      [
+        "3",
+        "PHP storm",
+        "Low",
+        "",
+        "",
+        "",
+        "Validate existing licenses"
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Dongles",
+        "YellowMedium",
+        "IT team",
+        "IT team",
+        "",
+        ""
+      ],
+      [
+        "2",
+        "Mac address registrations",
+        "Low",
+        "IT team",
+        "IT team",
+        "",
+        ""
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Confluence / JIRA / Bibucket",
+        "YellowMedium",
+        "Cloud Services",
+        "Cloud Services",
+        "",
+        "Accounts will only be moved to read-only status followed by a regular quarterly audit with the list from HR."
+      ],
+      [
+        "Index",
+        "Item",
+        "Level of Criticality",
+        "On-B handled by",
+        "Off-B handled by",
+        "",
+        "Notes"
+      ],
+      [
+        "1",
+        "Keycloak (Cake Secure Login)",
+        "RedHigh",
+        "Platform Team",
+        "Platform Team",
+        "",
+        ""
+      ],
+      [
+        "2",
+        "Pulse",
+        "YellowMedium",
+        "Pulse team",
+        "Pulse team",
+        "",
+        ""
+      ],
+      [
+        "4",
+        "QCentre",
+        "Low",
+        "QE/Process team",
+        "QE/Process team",
+        "",
+        ""
+      ],
+      [
+        "5",
+        "Fitnesse - To test DB structural changes",
+        "Low",
+        "QE/Process team",
+        "QE/Process team",
+        "",
+        "Uses basic auth"
+      ],
+      [
+        "6",
+        "Bulk upgrade tool",
+        "RedHigh",
+        "App Support",
+        "App Support",
+        "",
+        ""
+      ]
+    ],
+    "lists": [],
+    "text": "CAKE Engineering Applications There are many applications that are already being used at Sysco Labs having multiple types of access controls. Some of them are identified as below. Applications (Internal / External) Central Onboarding related items Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Office 365 Red High IT team IT team ON and OFF - through HR recommendation 2 Highfive Low IT team IT team ON and OFF - through HR recommendation 3 HR Leave management system - Cemex Low HR team HR team HR team (ON/OFF) 4 Biostar Red High HR team HR team HR team (ON/OFF) 5 JIRA Red High Cloud services team Cloud services team (Cloud services team - through IT) 6 Confluence&nbsp; Red High Cloud services team Cloud services team (Cloud services team - through IT) 7 Bitbucket Red High Cloud services team Cloud services team (Cloud services team - through IT) 8 Slack Yellow Medium IT team&nbsp; IT team&nbsp; Items managed by the Cloud Services team Index Item Level of Criticality On-B handled by Off-B handled by Notes Current user groups 1 SalesForce Yellow Medium SFDC team/ Cloud services team SFDC team/ Cloud services team ON by&nbsp;Cloud services team on the recommendation of dev lead - OFF with JIRA and other account removals if there is an account 2 DockerHub Yellow Medium Leads /&nbsp;Cloud services team Cloud services&nbsp;team Cloud services&nbsp;team to own SL accounts / to own US accounts 3 NpmJS Yellow Medium Cloud services team Cloud services team 4 VPN access - Prod core , payments , stag , dev&nbsp; Red High Cloud services team Cloud services team 5 Archiva - Maven repository Red High Cloud services team Cloud services&nbsp;team Cloud services&nbsp;team to off board 6 Github Red High Leads Cloud services&nbsp;team Can we get rid of this? 7 Jenkins / Hudson Red High Leads / Cloud services &nbsp;team Cloud services&nbsp;team 8 Munin - To monitor servers Low Cloud services&nbsp;team Cloud services&nbsp;team Provide individual accounts and do a cleanup 10 DB Cacti - To monitor servers Low DB Leads DB Leads Provide individual accounts and do a cleanup 11 Grafana - Monitor AWS servers Low Cloud services&nbsp;team Cloud services&nbsp;team Provide individual accounts and do a cleanup 12 Nagios - Monitor and alert based on threshold values Low Cloud services team Cloud services&nbsp;team Provide individual accounts and do a cleanup 11/June - task completed 13 Cloudportal&nbsp; Red High Cloud services team Cloud services team 14 AWS Console + programmetic acces&nbsp; Red High Cloud services team Cloud services team Do an audit an see whether there are any invalid accounts 15 Server instance (EC2) access - SSH Red High Cloud services team Cloud services team 16 Super Admin Red High Cloud services team Cloud services team We need to come up with a process for this 17 Team Viewer Yellow Medium Ops team Ops team Used to login to POS. Access is granted via Pulse and should tunnel to get access to POS 19 Graylog servers Low Leads Cloud services&nbsp;team Tools Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 CDA - Managed by DB/Reports teams Yellow Medium DB Leads DB Leads Planned to be removed. Only accessible via tunneling There is a separate application login that we have to get rid of. Should move CDA into a VPC, until we get rid of CDA completely. 2 Saiku - Generate reports using Datamart Low DB team leads DB team Should cleanup invalid accounts. If there are any common accounts, they should be removed 3 Solr Console - currently open to public *** Yellow Medium Plat 1 Leads /&nbsp;Cloud services team Cloud services&nbsp;team remove invalid accounts 4 DB Lite Yellow Medium DB team leads DB team Should cleanup invalid accounts. If there are any common accounts, they should be removed Cloud Platform Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Corporate Google Account&nbsp; Red High N/A N/A 2 MongoDB Atlas Red High N/A 3 Google Cloud Messaging Yellow Medium N/A N/A 4 Apple Push Notification Service Yellow Medium N/A N/A 5 Google Analytics Low Leads (Wes Wong) 6 Mix Panel Low Leads Corporate Accounts Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Corporate Uber Account Red High Brigit Manos Brigit Manos There are active accounts out of US. Rasika to followup Servers/Services Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Couch Management Console - Futon Red High POS Leads N/A (For production : Should tunnel to a jump server and then login) 2 Redis CLI Red High Cloud services&nbsp;team N/A (For production :&nbsp;via a jump server) 3 Ambari - UI to manage HDP (Hortonworks Data Platform) Yellow Medium DB team N/A Only configurations will be managed through this ***. Should remove admin account and create individual accounts. 4 Spark Yellow Medium DB team N/A &nbsp;(For production :&nbsp;through tunneling) 5 Storm Yellow Medium DB team N/A &nbsp;(For production :&nbsp;through tunneling) 6 POS Device login- *** Red High Pulse Team N/A CAKE Payment Gateway Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Gateway Servers Red High Cloud Services&nbsp; Cloud Services&nbsp; 2 Accounts in Vantive IQ, CNP reports and CNP PSP Red High Gateway team Gateway team Lead 3 Mint account Red High Gateway team Gateway team Lead Guest Manager Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 GM Servers Red High GM team GM team Should come up with a process for this 2 GM Databases Red High GM team GM team Should come up with a process for this Domain/Certificate Management Services Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 cloudflare&nbsp; Red High Administered by Paul 2 DigiCert Red High &nbsp; Administered by Paul Software Licences Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 IntelliJ Idea - Paul &amp; Rohana - ** Low &nbsp; &nbsp; Validate existing licenses 2 Web storm Low &nbsp; &nbsp; &nbsp; &nbsp; Validate existing licenses 3 PHP storm Low &nbsp; &nbsp; &nbsp; &nbsp; Validate existing licenses Devices Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Dongles Yellow Medium IT team IT team 2 Mac address registrations Low IT team IT team Access controls of employees in L1 visa category Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Confluence / JIRA / Bibucket&nbsp; Yellow Medium Cloud Services&nbsp; Cloud Services&nbsp; Accounts will only be moved to read-only status followed by a regular quarterly audit with the list from HR. Quality / Process / Utility Applications Index Item Level of Criticality On-B handled by Off-B handled by Notes 1 Keycloak (Cake Secure Login) Red High Platform Team Platform Team 2 Pulse Yellow Medium Pulse team Pulse team 4 QCentre Low QE/Process team QE/Process team 5 Fitnesse - To test DB structural changes Low QE/Process team QE/Process team Uses basic auth 6 Bulk upgrade tool Red High App Support App Support"
+  },
+  "tooling_evaluation": {
+    "title": "Tooling Evaluation",
+    "content_id": 360801807,
+    "space_key": "MMA",
+    "space_name": "Mad Mobile Architecture",
+    "version": 10,
+    "last_modified": "2023-10-25T14:11:35.106Z",
+    "tables": [
+      [
+        "Criteria",
+        "Bitbucket w/ Bitbucket Pipelines",
+        "Bitbucket w/ Jenkins",
+        "GitLab w/ CI",
+        "GitLab w/ Jenkins"
+      ],
+      [
+        "Cost",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cloud vs On-Premise",
+        "",
+        "3On-Premise - Hassle of maintaining Jenkins clusterThe existing runners are not defined per language, which can result in conflicts during the build process, often leading to language/runtime issues.",
+        "",
+        ""
+      ],
+      [
+        "Firewall / Network Connectivity",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Level of Effort",
+        "3Con - Have to define build pipeline per repositoryCon - Migration effort for existing Jenkins pipelines",
+        "4Pro - Gain greater control over organization-defined rules, for example, enforcing the failure to build the artifact if unit test coverage is below 80%.",
+        "4Pro - NPM, Docker, and Maven registries included with community & base versions",
+        ""
+      ],
+      [
+        "Security",
+        "4Pro - Easy integration with supported plugins like snyk",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "lists": [
+      "On-Premise - Hassle of maintaining Jenkins cluster",
+      "The existing runners are not defined per language, which can result in conflicts during the build process, often leading to language/runtime issues.",
+      "Con - Have to define build pipeline per repository",
+      "Con - Migration effort for existing Jenkins pipelines",
+      "Pro - Gain greater control over organization-defined rules, for example, enforcing the failure to build the artifact if unit test coverage is below 80%.",
+      "Pro - NPM, Docker, and Maven registries included with community & base versions",
+      "Pro - Easy integration with supported plugins like snyk"
+    ],
+    "text": "Evaluate the tooling we will look to utilize going forward for build pipelines. Deployment pipelines will be owned by DevOps. To start, we will look primarily at Gitlab and Bitbucket for our repository hosting. The building can be encompassed by those two tools or we can consider standalone build tools like Jenkins. Please consider both SaSS and On-Prem (Our Infrastructure) as options. We need to ensure the tools we select can support Snyk and SonarQube. As it stands today, the preferred approach was going to be Bitbucket with Bitbucket Pipelines . Bitbucket | GitLab overview &amp; comparison Criteria Bitbucket w/ Bitbucket Pipelines Bitbucket w/ Jenkins GitLab w/ CI GitLab w/ Jenkins Cost Cloud vs On-Premise 3 On-Premise - Hassle of maintaining Jenkins cluster The existing runners are not defined per language, which can result in conflicts during the build process, often leading to language/runtime issues. Firewall / Network Connectivity Level of Effort 3 Con - Have to define build pipeline per repository Con - Migration effort for existing Jenkins pipelines 4 Pro - Gain greater control over organization-defined rules, for example, enforcing the failure to build the artifact if unit test coverage is below 80%. 4 Pro - NPM, Docker, and Maven registries included with community &amp; base versions Security 4 Pro - Easy integration with supported plugins like snyk Rating 1 - Poor 2 - Bad 3 - Average 4 - Good 5 - Excellent"
+  },
+  "snyk_implementation": {
+    "title": "Snyk Implementation and Training",
+    "content_id": 360803312,
+    "space_key": "MMA",
+    "space_name": "Mad Mobile Architecture",
+    "version": 1,
+    "last_modified": "2023-03-31T18:03:40.693Z",
+    "tables": [],
+    "lists": [],
+    "text": "Overview Snyk is the main security scanning tool for Mad Mobile. This page contains all essential onboarding and training documentation that was delivered by a Snyk representative. Kickoff Recording: https://snyk.zoom.us/rec/share/f3sNkOzNeQlofORSn3FpLsCfeJLBHNhVyUddAUUkeL3F9672TYA94PaAVv_Uu-PP.0bLwwLWAcldtI8q4?startTime=1670601620000 Passcode: rW!3xEqa Deployment Workshop Recording: https://snyk.zoom.us/rec/share/34_krrJfUgCFyQJ1TQGr8JzVVZn6ZyuogSZpVxsWZDPJ8Pzcu8L5YFeOahWHV-D2.QIL2Q5PlI5wPPW4o?startTime=1672851612000 Passcode: Jd2X*X57 Admin Training Developer Training"
+  },
+  "datadog_reference": {
+    "title": "Datadog Reference",
+    "content_id": 626065488,
+    "space_key": "MP",
+    "space_name": "MenuPad",
+    "version": 14,
+    "last_modified": "2024-11-11T18:22:09.706Z",
+    "tables": [],
+    "lists": [
+      "Real User Monitoring explorer",
+      "Log explorer",
+      "Environment",
+      "Date",
+      "Time",
+      "Customer",
+      "Store ID",
+      "Device Name",
+      "Employee ID / PIN",
+      "Table ID",
+      "Ticket Number",
+      "Transaction ID",
+      "Transaction Amount",
+      "Transaction Total",
+      "Transaction Tip",
+      "debug",
+      "testflight",
+      "production",
+      "env:production",
+      "env:testflight",
+      "Miller\u2019s Ale House \u2192 MAH-PROD",
+      "@usr.customerId:MAH-PROD",
+      "@usr.storeId:55",
+      "@usr.storeId:77",
+      "@usr.deviceName:\"iPad: 3B3597\"",
+      "@usr.id:192824",
+      "@tableId:100",
+      "@context.tableId:100",
+      "@ticketNumber:110056",
+      "@context.ticketNumber:110056",
+      "@transactionId:0B4817D1-B7BE-4B3A-9BBF-F93A8FD17C56",
+      "@transactionAmount:5519",
+      "@transactionTotal:4811",
+      "@transactionTip:1000",
+      "Views",
+      "Actions (i.e. button taps)",
+      "Errors",
+      "Resources (i.e. network requests)",
+      "Long Tasks",
+      "Vitals"
+    ],
+    "text": "You can access Datadog via the following link. https://app.datadoghq.com/help/quick_start Datadog has a lot of tools, but there are two main areas where you will find logs. Real User Monitoring explorer Log explorer Each of these tools provides access to a unique set of logs. Unfortunately, that means you may have to look in both places to find details when troubleshooting an issue. Queries Typically, you will start with some basic information about an incident. Environment Date Time Customer Store ID Device Name Employee ID / PIN Table ID Ticket Number Transaction ID Transaction Amount Transaction Total Transaction Tip This information can be used to build a query to filter logs to only return relevant results. A log does not necessarily contain all the attributes above. Logs only contain attributes that are relevant to the log. Queries go in the &ldquo;Search for&rdquo; text field in the RUM or Logs explorer. Environment This value is determined by the mechanism used to distribute the app to the customer. There are three unique values for the environment. debug testflight production In most customer support circumstances, the environment is going to be production . Sometimes, Apple&rsquo;s TestFlight service may be used to distribute test builds to certain partner clients. These logs will have the value of testflight . The only time logs will come from the debug environment is when the app is run by a Mad Mobile engineer after building the app from source code during the development process. Logs/RUM Example env:production env:testflight Date &amp; Time When a log is recorded it includes the exact date and time the log is recorded. You can use this to filter logs by the date and time to find logs that happened around the same time as an incident. You set the date in time via the UI. Date/Time picker in RUM explorer Date/Time picker in log explorer Start by clicking the picker to select a custom time range. Customer The customer ID uniquely identifies a client of Mad Mobile. Miller&rsquo;s Ale House &rarr; MAH-PROD Logs/RUM Example @usr.customerId:MAH-PROD Store ID Logs/RUM Example @usr.storeId:55 @usr.storeId:77 Device Name The device name can be found at the bottom of the Login view. Logs/RUM Example @usr.deviceName:&quot;iPad: 3B3597&quot; Employee ID / PIN The employee ID is the PIN the user uses to log in to MenuPad. Logs/RUM Example @usr.id:192824 Table ID Logs Example @tableId:100 RUM Example @context.tableId:100 Ticket Number The ticket number for the ticket. ( This is different from the ticket ID.) This is the number that is displayed either on the table in the home view or on the seat row in the order view. Ticket number as seen in the Home view Ticket number as seen in the Order view Logs Example @ticketNumber:110056 RUM Example @context.ticketNumber:110056 Transaction ID The transaction ID can be found in the Transaction Log view. Transaction Log View Logs Example @transactionId:0B4817D1-B7BE-4B3A-9BBF-F93A8FD17C56 Transaction Amount This is the full amount that the customer was charged. (i.e. subtotal + taxes + fees + tip) This value is logged for actions taken related to a transaction. The value logged is in cents. So $10 would be 1000 and $56.78 would be 5678 . Logs Example @transactionAmount:5519 Transaction Total This is the total amount of the ticket. (i.e. subtotal + taxes + fees) This value is logged for actions taken related to a transaction. The value logged is in cents. So $10 would be 1000 and $56.78 would be 5678 . Logs Example @transactionTotal:4811 Transaction Tip This is the amount of the tip the customer chose for the transaction. This value is logged for actions taken related to a transaction. The value logged is in cents. So $10 would be 1000 and $56.78 would be 5678 . Logs Example @transactionTip:1000 Real User Monitoring Real User Monitoring (RUM) captures events during a user &ldquo;session&rdquo;. When you click on a session you can see all the events that took place during the session in chronological order. This helps you to follow the steps the user took during the session. You can access the RUM explorer from the sidebar. Digital Experience &gt; Real User Monitoring &gt; Explorer Event Types The events logged in a RUM session are limited to the following types: Views Actions (i.e. button taps) Errors Resources (i.e. network requests) Long Tasks Vitals The event types in bold generally contain the most helpful information for troubleshooting. Filtering logs by event type You can change the type of RUM log you are searching for in the RUM explorer by clicking the event type field. RUM Explorer - Event Type Selection Log Explorer You can access the Log explorer from the sidebar. Logs &gt; Search &amp; Analytics &gt; Explorer MenuPad uses regular logs to capture information about what the app is doing behind the scenes."
+  },
+  "datadog_concierge": {
+    "title": "Concierge Core -- Datadog Integration Effort",
+    "content_id": 537198965,
+    "space_key": "PT",
+    "space_name": "Concierge Team",
+    "version": 2,
+    "last_modified": "2024-10-04T14:44:04.414Z",
+    "tables": [],
+    "lists": [
+      "App Shell integration will be relatively limited in scope; the application\u2019s lifecycle is managed by concierge-core after bootstrap.",
+      "Logs here would be constrained to the bootstrap process (e.g, reading MDM, fetching/mounting the application bundle).",
+      "We should disable automatic log forwarding (forwardErrorsToLog). AppShell specific logs are already routed through Logger.ts, so we have a lifecycle to hook into for our relevant logs (we can forward calls to Logger.ts through the { datadogLogs } import). We don\u2019t want to forward /every/ log left in the console because this would cross concerns with the in-app monitoring solution, which should be responsible for forwarding concierge-core specific logs/errors.",
+      "We can decide between baking the clientToken into the environment (e.g, managing it through CI), the codebase, or MDM.",
+      "We can decide between baking the clientToken into the environment (e.g, managing it through CI), the codebase, or MDM.",
+      "In terms of abstraction, we should have something like a LogForwarderService interface and a DatadogLogForwarderService class that implements it. The concrete implementation can be responsible for any provider-specific initialization (e.g, calling datadogLogs.init).",
+      "In terms of abstraction, we should have something like a LogForwarderService interface and a DatadogLogForwarderService class that implements it. The concrete implementation can be responsible for any provider-specific initialization (e.g, calling datadogLogs.init).",
+      "We\u2019ll want to integrate the full Real User Monitoring (RUM) SDK here.",
+      "We should integrate behind a layer of abstraction; I propose we write an AnalyticsService interface and a concrete DatadogAnalyticsService implementation.",
+      "Easier to pivot to alternative solutions if we decide to do so. Whatever manual view tracking logic we write should be behind some layer of abstraction that we can swap out implementations for.",
+      "Easier to pivot to alternative solutions if we decide to do so. Whatever manual view tracking logic we write should be behind some layer of abstraction that we can swap out implementations for.",
+      "More code! Have to write an abstracted view events API, a lifecycle hook for tracking route changes, and the bridge between them. Not a huge con; we\u2019re not talking a lot of code here.",
+      "More code! Have to write an abstracted view events API, a lifecycle hook for tracking route changes, and the bridge between them. Not a huge con; we\u2019re not talking a lot of code here.",
+      "More code! Have to write an abstracted view events API, a lifecycle hook for tracking route changes, and the bridge between them. Not a huge con; we\u2019re not talking a lot of code here.",
+      "Less code/configuration. Letting RUM hook into route changes automatically means zero lift/maintenance on our end.",
+      "Less code/configuration. Letting RUM hook into route changes automatically means zero lift/maintenance on our end.",
+      "Harder to pivot to alternative solutions; we can\u2019t build abstraction around an automatic no-code solution. \u201cHarder\u201d here means deferred work; we\u2019re either building our abstractions and lifecycle hook now (taking the manual route) or later (when we move to introduce an alternate solution).",
+      "Harder to pivot to alternative solutions; we can\u2019t build abstraction around an automatic no-code solution. \u201cHarder\u201d here means deferred work; we\u2019re either building our abstractions and lifecycle hook now (taking the manual route) or later (when we move to introduce an alternate solution).",
+      "Harder to pivot to alternative solutions; we can\u2019t build abstraction around an automatic no-code solution. \u201cHarder\u201d here means deferred work; we\u2019re either building our abstractions and lifecycle hook now (taking the manual route) or later (when we move to introduce an alternate solution).",
+      "Harder to pivot to alternative solutions; we can\u2019t build abstraction around an automatic no-code solution. \u201cHarder\u201d here means deferred work; we\u2019re either building our abstractions and lifecycle hook now (taking the manual route) or later (when we move to introduce an alternate solution).",
+      "concierge-core: We can instantiate the application with different application IDs per tenant (i.e, per implementation layer). We\u2019d most likely want the Datadog application ID to be sent with the initial config. These would correspond to distinct Applications in the Datadog Digital Experience dashboard.",
+      "App Shell: for the sake of reducing duplication (having a clientA-app, clientA-shell, clientB-app, clientB-shell \u2026), it might be advisable to have a single application ID shared across client app shells (this depends on how fine-grained our error tracking needs to be for the bootstrap process).",
+      "App Shell: for the sake of reducing duplication (having a clientA-app, clientA-shell, clientB-app, clientB-shell \u2026), it might be advisable to have a single application ID shared across client app shells (this depends on how fine-grained our error tracking needs to be for the bootstrap process).",
+      "We should attach authenticated user data to the RUM context so we can associate users with RUM sessions: https://docs.datadoghq.com/real_user_monitoring/browser/advanced_configuration/?tab=npm#user-session",
+      "Call datadogRum.clearUser() to remove user info from context",
+      "Call datadogRum.clearUser() to remove user info from context",
+      "The above ^ should be handled through the same abstracted API we pass view events through.",
+      "The above ^ should be handled through the same abstracted API we pass view events through.",
+      "Sending custom actions should be abstracted behind the AnalyticsService API!",
+      "Sending custom actions should be abstracted behind the AnalyticsService API!",
+      "This way, we don\u2019t have to write conditional logic through the app. If the feature is disabled (i.e, we\u2019re not sending analytics config in the initial config), we still hit methods like analyticsService.setUser(); they just won\u2019t have any effect under the Null implementation.",
+      "This way, we don\u2019t have to write conditional logic through the app. If the feature is disabled (i.e, we\u2019re not sending analytics config in the initial config), we still hit methods like analyticsService.setUser(); they just won\u2019t have any effect under the Null implementation."
+    ],
+    "text": "Setup AppShell: App Shell integration will be relatively limited in scope; the application&rsquo;s lifecycle is managed by concierge-core after bootstrap. We might have an interest in setting up the Log Collection SDK . Logs here would be constrained to the bootstrap process (e.g, reading MDM, fetching/mounting the application bundle). We should disable automatic log forwarding (forwardErrorsToLog). AppShell specific logs are already routed through Logger.ts, so we have a lifecycle to hook into for our relevant logs (we can forward calls to Logger.ts through the { datadogLogs } import). We don&rsquo;t want to forward /every/ log left in the console because this would cross concerns with the in-app monitoring solution, which should be responsible for forwarding concierge-core specific logs/errors. Initialization is extremely straightforward (although we should set forwardErrorsToLog to false): We can decide between baking the clientToken into the environment (e.g, managing it through CI), the codebase, or MDM. In terms of abstraction, we should have something like a LogForwarderService interface and a DatadogLogForwarderService class that implements it. The concrete implementation can be responsible for any provider-specific initialization (e.g, calling datadogLogs.init). Concierge Core: We&rsquo;ll want to integrate the full Real User Monitoring (RUM) SDK here. Initialization: We should integrate behind a layer of abstraction; I propose we write an AnalyticsService interface and a concrete DatadogAnalyticsService implementation. We&rsquo;ll want to decide between manual view tracking and automatic view tracking. Manual Pros: Easier to pivot to alternative solutions if we decide to do so. Whatever manual view tracking logic we write should be behind some layer of abstraction that we can swap out implementations for. Cons: More code! Have to write an abstracted view events API, a lifecycle hook for tracking route changes, and the bridge between them. Not a huge con; we&rsquo;re not talking a lot of code here. Automatic Pros: Less code/configuration. Letting RUM hook into route changes automatically means zero lift/maintenance on our end. Cons: Harder to pivot to alternative solutions; we can&rsquo;t build abstraction around an automatic no-code solution. &ldquo;Harder&rdquo; here means deferred work; we&rsquo;re either building our abstractions and lifecycle hook now (taking the manual route) or later (when we move to introduce an alternate solution). Segmenting by Implementation/Tenant/User Implementation/Tenant concierge-core: We can instantiate the application with different application IDs per tenant (i.e, per implementation layer). We&rsquo;d most likely want the Datadog application ID to be sent with the initial config. These would correspond to distinct Applications in the Datadog Digital Experience dashboard. App Shell: for the sake of reducing duplication (having a clientA-app, clientA-shell, clientB-app, clientB-shell &hellip;), it might be advisable to have a single application ID shared across client app shells (this depends on how fine-grained our error tracking needs to be for the bootstrap process). User (concierge-core only) We should attach authenticated user data to the RUM context so we can associate users with RUM sessions: https://docs.datadoghq.com/real_user_monitoring/browser/advanced_configuration/?tab=npm#user-session On logout, we should: Call datadogRum.clearUser() to remove user info from context The above ^ should be handled through the same abstracted API we pass view events through. KPIs I recommend we start with the baseline metrics we get from Datadog (route-based analytics, session replay data, user info tracking, click event actions). We can explore the data we&rsquo;re getting from Datadog post-integration and address any missing points with custom actions: https://docs.datadoghq.com/real_user_monitoring/guide/send-rum-custom-actions/?tab=npm Sending custom actions should be abstracted behind the AnalyticsService API! Feature Flagging The cleanest way to do this would be to have a NullAnalyticsService alongside our DatadogAnalyticsService. The NullAnalyticsService should stub out any methods required by the AnalyticsService interface. At runtime, we select the correct AnalyticsService using initial configuration (we should default to the Null service and only use the DatadogAnalyticsService if we have configuration for the service explicitly provided). This way, we don&rsquo;t have to write conditional logic through the app. If the feature is disabled (i.e, we&rsquo;re not sending analytics config in the initial config), we still hit methods like analyticsService.setUser() ; they just won&rsquo;t have any effect under the Null implementation."
+  },
+  "vendor_contracts_restaurant": {
+    "title": "Partnerships / Vendors Contracts Tracker",
+    "content_id": 359432790,
+    "space_key": "MI",
+    "space_name": "Restaurant LOB",
+    "version": 8,
+    "last_modified": "2022-03-02T16:09:01.097Z",
+    "tables": [
+      [
+        "Vendor / Partnership",
+        "Purpose of",
+        "MM Point Person",
+        "Partner / Vendor POC",
+        "Status",
+        "SLA",
+        "Contract Terms",
+        "Comments"
+      ],
+      [
+        "WorldPay",
+        "Acquiring Processor",
+        "",
+        "Reed SpaldingReed.Spalding@fisglobal.comJerry SilverwoodJerry.Silverwood@fisglobal.com",
+        "Executed",
+        "",
+        "Ending: 12.31.22",
+        "Positioning to renegotiate"
+      ],
+      [
+        "Fee Navigator",
+        "Merchant Statement Analysis",
+        "",
+        "Ion Craciunion@feenavigator.com",
+        "Executed 02.07.22",
+        "",
+        "Ending: 02.06.23",
+        "New Relationship; Training Planned"
+      ],
+      [
+        "Ingenico / Worldline",
+        "Gateway Switching / Moby 5500 Devices",
+        "",
+        "Nerino Mayer",
+        "Executed 01.14.22; 3 year with one year auto renewal",
+        "",
+        "",
+        "Jack Stack live 02.15.22; RGS test 02.23.22, go live 03.04.2022"
+      ],
+      [
+        "Infinicept",
+        "Merchant / Admin Portal",
+        "",
+        "Jesse Mauel jesse.mauel@infinicept.com",
+        "Assumed TableSafe Contract 11.04.21; rolling one month renewals",
+        "",
+        "",
+        "Open up discussion to renegotiate, have seen first turn of contract, waiting second turn"
+      ],
+      [
+        "Giact",
+        "KYC",
+        "",
+        "Will Yen",
+        "Amended Contract 02.07.22",
+        "",
+        "",
+        "Added additional OFAC monitoring; MRA"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "lists": [],
+    "text": "Vendor / Partnership Purpose of MM Point Person Partner / Vendor POC Status SLA Contract Terms Comments WorldPay Acquiring Processor Reed Spalding Reed.Spalding@fisglobal.com Jerry Silverwood Jerry.Silverwood@fisglobal.com Executed Ending: 12.31.22 Positioning to renegotiate Fee Navigator Merchant Statement Analysis Ion Craciun ion@feenavigator.com Executed 02.07.22 Ending: 02.06.23 New Relationship; Training Planned Ingenico / Worldline Gateway Switching / Moby 5500 Devices Nerino Mayer Executed 01.14.22; 3 year with one year auto renewal Jack Stack live 02.15.22; RGS test 02.23.22, go live 03.04.2022 Infinicept Merchant / Admin Portal Jesse Mauel jesse.mauel@infinicept.com Assumed TableSafe Contract 11.04.21; rolling one month renewals Open up discussion to renegotiate, have seen first turn of contract, waiting second turn Giact KYC Will Yen Amended Contract 02.07.22 Added additional OFAC monitoring; MRA"
+  },
+  "vendor_contracts_payments": {
+    "title": "Stale: Payments Partnerships / Vendors Contracts Tracker",
+    "content_id": 268042370,
+    "space_key": "P",
+    "space_name": "Payments",
+    "version": 3,
+    "last_modified": "2025-10-24T12:26:11.907Z",
+    "tables": [
+      [
+        "Vendor / Partnership",
+        "Purpose of",
+        "MM Point Person",
+        "Partner / Vendor POC",
+        "Status",
+        "SLA",
+        "Contract Terms",
+        "Comments"
+      ],
+      [
+        "WorldPay",
+        "Acquiring Processor",
+        "",
+        "",
+        "Executed",
+        "",
+        "Ending: Dec 2022",
+        "Improving Relationship"
+      ],
+      [
+        "SwipeSum",
+        "Merchant Statement Analysis",
+        "",
+        "",
+        "Accessing Vendor",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Ingenico",
+        "Gateway Switching / Moby 5500 Devices",
+        "",
+        "",
+        "Pending due to Redlines; to return second redlines to Ingenico 12.28.21",
+        "",
+        "",
+        "Jack Stack go live 1.25.22; 4 testers week of 1.17.22"
+      ]
+    ],
+    "lists": [],
+    "text": "Vendor / Partnership Purpose of MM Point Person Partner / Vendor POC Status SLA Contract Terms Comments WorldPay Acquiring Processor Executed Ending: Dec 2022 Improving Relationship SwipeSum Merchant Statement Analysis Accessing Vendor Ingenico Gateway Switching / Moby 5500 Devices Pending due to Redlines; to return second redlines to Ingenico 12.28.21 Jack Stack go live 1.25.22; 4 testers week of 1.17.22"
+  },
+  "aws_cost_savings_2025": {
+    "title": "Potential AWS Cost Savings 2025",
+    "content_id": 750977029,
+    "space_key": "DO",
+    "space_name": "DevOps",
+    "version": 2,
+    "last_modified": "2025-01-10T14:29:13.907Z",
+    "tables": [
+      [
+        "https://us-east-1.quicksight.aws.amazon.com/sn/accounts/219788358213/dashboards/cora?directory_alias=madmobile-finops"
+      ],
+      [
+        "https://us-east-1.quicksight.aws.amazon.com/sn/accounts/219788358213/dashboards/ta-organizational-view?directory_alias=madmobile-finops"
+      ],
+      [
+        "Description",
+        "Service",
+        "Current Monthly Cost",
+        "Savings",
+        "Effort",
+        "Remarks"
+      ],
+      [
+        "Legacy instance upgrades",
+        "EC2",
+        "",
+        "USD\u00a0\u00a0\u00a0\u00a0 350,00",
+        "High",
+        ""
+      ],
+      [
+        "RDS Graviton migration",
+        "RDS",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 4.510,00",
+        "USD\u00a0\u00a0\u00a0\u00a0 431,00",
+        "Low",
+        ""
+      ],
+      [
+        "RDS Stop Instances",
+        "RDS",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 321,00",
+        "USD\u00a0\u00a0\u00a0\u00a0 321,00",
+        "Low",
+        ""
+      ],
+      [
+        "LCM Policies for S3 buckets",
+        "",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 4.412,00",
+        "",
+        "Medium",
+        "Need support from Dev teams and security team"
+      ],
+      [
+        "Moving S3 buckets to intelligent tiering",
+        "S3",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 4.412,00",
+        "",
+        "Low",
+        "Best to be done post implementing LCM policies and cleaning up unwanted"
+      ],
+      [
+        "Reduce snapshot usage",
+        "EBS",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 9.228,00",
+        "USD 7.000,00",
+        "Low",
+        ""
+      ],
+      [
+        "CPU credits cost",
+        "EC2",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 630,00",
+        "USD\u00a0\u00a0\u00a0\u00a0 600,00",
+        "Low",
+        ""
+      ],
+      [
+        "RNG decomissioning - B/G approach",
+        "RDS",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 8.691,00",
+        "USD 6.000,00",
+        "Medium",
+        "Reducing storage, moving IO1 to GP3"
+      ],
+      [
+        "EC2 rightsizing",
+        "EC2",
+        "USD 12,000",
+        "",
+        "Medium",
+        ""
+      ],
+      [
+        "Redis to Valkey",
+        "Elasticache",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 8.091,00",
+        "USD 1.600,00",
+        "Medium",
+        "20% reduction"
+      ],
+      [
+        "Extended Support",
+        "Support",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 9.529,00",
+        "",
+        "Medium",
+        "75% RDS, 24% EKS"
+      ],
+      [
+        "OpenSearch Graviton",
+        "Opensearch",
+        "",
+        "USD 1.765,00",
+        "Medium",
+        "31% savings"
+      ],
+      [
+        "IO1 volumes to GP3",
+        "EBS",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 5.829,00",
+        "USD 2.900,00",
+        "Medium",
+        "Close to 50% savings can be made"
+      ],
+      [
+        "Reduce MetricMonitor usage",
+        "Cloudwatch",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 2.701,00",
+        "",
+        "Medium",
+        "remove detailed monitoring, evaluate the use of metrics api to understand whats making the requests"
+      ],
+      [
+        "RDS RI Purchase",
+        "RDS",
+        "",
+        "USD 3.300,00",
+        "Very Low",
+        "No upfront - subscribing Savings 29% with ondemand"
+      ],
+      [
+        "Redis RI Purchase",
+        "Elasticache",
+        "",
+        "USD 2.365,00",
+        "Very Low",
+        "32% savings with ondemandNo upfront - subscribing"
+      ],
+      [
+        "EBS volume upgrade GP3",
+        "EBS",
+        "",
+        "USD 1.000,00",
+        "Very Low",
+        ""
+      ],
+      [
+        "Cloudtrail CW logs",
+        "Cloudwatch",
+        "USD\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 1.010,00",
+        "USD 1.010,00",
+        "Very Low",
+        "remove CW logging since S3 is configured already"
+      ],
+      [
+        "LCM policies for CW logs",
+        "Cloudwatch",
+        "",
+        "USD\u00a0\u00a0\u00a0\u00a0 100,00",
+        "Very Low",
+        "e.g olo audit 500GB"
+      ],
+      [
+        "OpenSearch Ris",
+        "Opensearch",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Removing unattached volumes",
+        "EBS",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "lists": [
+      "CORA Dashboard - Cost Optimization Recommended Actions (auto-updated)",
+      "CUDOS Dashboard",
+      "Trusted Advisor - (findings updated manually)",
+      "Review and prioritize actions based on effort and savings.",
+      "Automate repetitive tasks wherever possible (e.g., lifecycle policy implementation).",
+      "Schedule Reserved Instance purchases to align with cost-saving goals.",
+      "Monitor changes using CORA, CUDOS, and Trusted Advisor dashboards."
+    ],
+    "text": "This document outlines the potential cost savings and actions identified for the AWS environment in 2025. The analysis leverages data from the following AWS Quicksight Dashboards: CORA Dashboard - Cost Optimization Recommended Actions (auto-updated) https://us-east-1.quicksight.aws.amazon.com/sn/accounts/219788358213/dashboards/cora?directory_alias=madmobile-finops CUDOS Dashboard Trusted Advisor - (findings updated manually) https://us-east-1.quicksight.aws.amazon.com/sn/accounts/219788358213/dashboards/ta-organizational-view?directory_alias=madmobile-finops Overview of Savings Opportunities Description Service Current Monthly Cost Savings Effort Remarks Legacy instance upgrades EC2 &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp; 350,00 High RDS Graviton migration RDS &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.510,00 &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp; 431,00 Low RDS Stop Instances RDS &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 321,00 &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp; 321,00 Low LCM Policies for S3 buckets USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.412,00 Medium Need support from Dev teams and security team Moving S3 buckets to intelligent tiering S3 &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.412,00 Low Best to be done post implementing LCM policies and cleaning up unwanted Reduce snapshot usage EBS &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.228,00 &nbsp;USD 7.000,00 Low CPU credits cost EC2 &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 630,00 &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp; 600,00 Low RNG decomissioning - B/G approach RDS &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.691,00 &nbsp;USD 6.000,00 Medium Reducing storage, moving IO1 to GP3 EC2 rightsizing EC2 USD 12,000 Medium Redis to Valkey Elasticache &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.091,00 &nbsp;USD 1.600,00 Medium 20% reduction&nbsp; Extended Support Support &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.529,00 Medium 75% RDS, 24% EKS OpenSearch Graviton Opensearch &nbsp;USD 1.765,00 Medium 31% savings IO1 volumes to GP3 EBS &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.829,00 &nbsp;USD 2.900,00 Medium Close to 50% savings can be made Reduce MetricMonitor usage Cloudwatch &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.701,00 Medium remove detailed monitoring, evaluate the use of metrics api to understand whats making the requests RDS RI Purchase RDS &nbsp;USD 3.300,00 Very Low No upfront - subscribing Savings 29% with ondemand Redis RI Purchase Elasticache &nbsp;USD 2.365,00 Very Low 32% savings with ondemand No upfront - subscribing&nbsp; EBS volume upgrade GP3 EBS &nbsp;USD 1.000,00 Very Low Cloudtrail CW logs Cloudwatch &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.010,00 &nbsp;USD 1.010,00 Very Low remove CW logging since S3 is configured already LCM policies for CW logs Cloudwatch &nbsp;USD&nbsp;&nbsp;&nbsp;&nbsp; 100,00 Very Low e.g olo audit 500GB OpenSearch Ris Opensearch Removing unattached volumes EBS S3 Savings Opportunities Current S3 usage in MM Next Steps Review and prioritize actions based on effort and savings. Automate repetitive tasks wherever possible (e.g., lifecycle policy implementation). Schedule Reserved Instance purchases to align with cost-saving goals. Monitor changes using CORA, CUDOS, and Trusted Advisor dashboards."
+  },
+  "quicksight_dashboards": {
+    "title": "Quicksight Dashboards",
+    "content_id": 573636624,
+    "space_key": "DO",
+    "space_name": "DevOps",
+    "version": 4,
+    "last_modified": "2025-01-10T14:52:32.086Z",
+    "tables": [],
+    "lists": [
+      "Login to MGMT account and move to Trusted Advisor service",
+      "Create a report for entire organization and download it",
+      "Extract and upload to S3 bucket \u201cs3://prod-use1-finops-reports/trusted-advisor-reports/\u201d  in  Monvia (219788358213) account",
+      "Dashboard will get updated automatically with the schedule set via QS",
+      "Deploy automated data collector to automatically update the dashboard datasources",
+      "Data collection account - Monvia (219788358213)",
+      "Source account - MM MGMT",
+      "Source account - MM MGMT",
+      "Deploy in the child accounts via stackset to obtain RI purchase information",
+      "Deploy via TF template once its available via the project https://github.com/aws-samples/aws-cudos-framework-deployment"
+    ],
+    "text": "This section provides an overview of the existing Quicksight Dashboards. none Finance Reporting Dashboard Finance-Reporting-Dashboard Provides a comprehensive overview of the monthly cost breakdown across MadMobile's cost centers, offering insights into expenditure patterns. This offers high level overview of billing and cost breakdown to Finance Department. This dashboard can be updated to meet requirements of Finance department if there are no limitations applied from AWS. Trusted Advisor Organization View Trusted Advisor Organization View provides insight into optimisation information offered by AWS Trusted Advisor Reports. This offers insight to Cloud Engineers on optimisation opportunities and so forth. Current this requires manual updates of data sources. Steps are as follows Login to MGMT account and move to Trusted Advisor service Create a report for entire organization and download it Extract and upload to S3 bucket &ldquo;s3://prod-use1-finops-reports/trusted-advisor-reports/&rdquo; in Monvia (219788358213) account Dashboard will get updated automatically with the schedule set via QS Work to be carried out Deploy automated data collector to automatically update the dashboard datasources CUDOS Dashboard Cost Intelligence Dashboard and KPI Dashboard The AWS CUDOS (Cloud Intelligence Dashboards for Optimized Spending) dashboard in QuickSight is a set of pre-built dashboards designed to provide detailed insights into AWS cloud usage, cost management, and optimization opportunities. This allows Cloud Engineers to analyse the spending patterns. KPI dashboard and Cost Intelligence dashboard also provide further granular insight into spending pattern across the organization. These dashboards can be used by the cloud Engineers to do the optimisation in cost across AWS resources. CORA Dashboard based on the data from AWS Cost Optimization Hub providing Rightsizing, Migration to Graviton, Idle resources, Savings Plan and Reserved instances recommendations. This dashboard can help you tracing your Cost Optimization Opportunities over time and group recommendations by owners of workloads. Deployment Deployed via CF template Data collection account - Monvia (219788358213) Source account - MM MGMT Work to be carried out Deploy in the child accounts via stackset to obtain RI purchase information Deploy via TF template once its available via the project https://github.com/aws-samples/aws-cudos-framework-deployment"
+  },
+  "cost_center_mapping": {
+    "title": "Account Name and Cost Center Mapping - Quicksight",
+    "content_id": 503545918,
+    "space_key": "CCE",
+    "space_name": "Cloud Engineering",
+    "version": 1,
+    "last_modified": "2024-09-23T08:58:32.798Z",
+    "tables": [],
+    "lists": [],
+    "text": "The current CUR (Cost and Usage Report) dataset does not directly include cost center information or account name mapping required for the QuickSight dashboard. Therefore, it is necessary to manually implement the mapping for cost center information and account names in the QuickSight dashboard. Architecture"
+  },
+  "bedrock_costing": {
+    "title": "11 - CR - Costing",
+    "content_id": 360776087,
+    "space_key": "MMA",
+    "space_name": "Mad Mobile Architecture",
+    "version": 3,
+    "last_modified": "2023-12-21T07:51:43.892Z",
+    "tables": [
+      [
+        "",
+        ""
+      ],
+      [
+        "AI21 Labs",
+        "Jurassic-2 MidJurassic-2 Ultra"
+      ],
+      [
+        "Amazon",
+        "Titan Text LiteTitan Text ExpressTitan Text EmbeddingsTitan Image GeneratorTitan Image Generator (custom models)Titan Multimodal Embeddings"
+      ],
+      [
+        "Anthropic",
+        "Claude InstantClaude"
+      ],
+      [
+        "Cohere",
+        "CommandCommand-LightEmbed \u2013 EnglishEmbed \u2013 Multilingual"
+      ],
+      [
+        "Meta Llama 2",
+        "Llama 2 Chat (13B)Llama 2 Chat (70B)"
+      ],
+      [
+        "Stability AI",
+        "SDXL 0.8SDXL 1.0"
+      ],
+      [
+        "",
+        "Tokens"
+      ],
+      [
+        "PromptPlease generate an email outreach message. I'm the sender and work as a personal shopper at a retail clothing store. I'm reaching out to one of my customers to wish them happy birthday and thank them for being a valued customer. keep the tone light and friendly and let them know that if there's anything I can do for them to let me know. Do not say personal shopper. Do not offer them a discount",
+        "95"
+      ],
+      [
+        "OutputDear Valued Customer, I hope you're having a wonderful birthday! It's been such a pleasure getting to know you and assist you with your shopping needs over the past year. Your business means so much to us. I'm reaching out to say happy birthday, and to thank you for being such a great customer. I know you have impeccable taste and style, so if there's anything at all I can help you find or anything you need, please don't hesitate to let me know. My goal is to make your shopping experience as enjoyable and stress-free as possible. Wishing you a fabulous birthday filled with laughter, love and maybe a little retail therapy! Here's to another amazing year ahead. Sincerely, [Your Name]",
+        "165"
+      ],
+      [
+        "Cost",
+        "$0.0064"
+      ],
+      [
+        "Anthropic models",
+        "Price per 1,000 input tokens",
+        "Price per 1,000 output tokens"
+      ],
+      [
+        "Claude Instant",
+        "$0.00163",
+        "$0.00551"
+      ],
+      [
+        "Claude",
+        "$0.00800",
+        "$0.02400"
+      ],
+      [
+        "Anthropic models",
+        "Price per hour per model unit for 1-month commitment",
+        "Price per hour per model unit for 6-month commitment"
+      ],
+      [
+        "Claude Instant",
+        "$39.60",
+        "$22.00"
+      ],
+      [
+        "Claude",
+        "$63.00",
+        "$35.00"
+      ],
+      [
+        "Meta models",
+        "Price per 1,000 input tokens",
+        "Price per 1,000 output tokens"
+      ],
+      [
+        "Llama 2 Chat (13B)",
+        "$0.00075",
+        "$0.00100"
+      ],
+      [
+        "Llama 2 Chat (70B)",
+        "$0.00195",
+        "$0.00256"
+      ],
+      [
+        "Meta models",
+        "Price per hour per model unit for 1-month commitment",
+        "Price per hour per model unit for 6-month commitment"
+      ],
+      [
+        "Llama 2 Pre-trained and Chat (13B)",
+        "$21.18",
+        "$13.08"
+      ],
+      [
+        "Llama 2 Pre-trained (70B)",
+        "$21.18",
+        "$13.08"
+      ]
+    ],
+    "lists": [
+      "Number of input tokens in the prompt.",
+      "Number of output tokens in the result."
+    ],
+    "text": "11.1 Large Language Model The following Amazon Bedrock Foundation models are available. It was decided to use Claude 2.1 after comparing a few models, as it provided better text generation for the intended purpose. AI21 Labs Jurassic-2 Mid Jurassic-2 Ultra Amazon Titan Text Lite Titan Text Express Titan Text Embeddings Titan Image Generator Titan Image Generator (custom models) Titan Multimodal Embeddings Anthropic Claude Instant Claude Cohere Command Command-Light Embed &ndash; English Embed &ndash; Multilingual Meta Llama 2 Llama 2 Chat (13B) Llama 2 Chat (70B) Stability AI SDXL 0.8 SDXL 1.0 Bedrock consists of the following components: Number of input tokens in the prompt. Number of output tokens in the result. 11.2 Calculations The following example illustrates a text generation attempt for the given prompt and the resulting response. The prompt comprises 95 tokens , and the generated response consists of 165 tokens . The cost was calculated for the on-demand model. Claude v2.1 Tokens Prompt Please generate an email outreach message. I'm the sender and work as a personal shopper at a retail clothing store. I'm reaching out to one of my customers to wish them happy birthday and thank them for being a valued customer. keep the tone light and friendly and let them know that if there's anything I can do for them to let me know. Do not say personal shopper. Do not offer them a discount 95 Output Dear Valued Customer, I hope you're having a wonderful birthday! It's been such a pleasure getting to know you and assist you with your shopping needs over the past year. Your business means so much to us. I'm reaching out to say happy birthday, and to thank you for being such a great customer. I know you have impeccable taste and style, so if there's anything at all I can help you find or anything you need, please don't hesitate to let me know. My goal is to make your shopping experience as enjoyable and stress-free as possible. Wishing you a fabulous birthday filled with laughter, love and maybe a little retail therapy! Here's to another amazing year ahead. Sincerely, [Your Name] 165 Cost $0.0064 11.3 Reference https://aws.amazon.com/bedrock/pricing/ Anthropic On-demand Anthropic models Price per 1,000 input tokens Price per 1,000 output tokens Claude Instant $0.00163 $0.00551 Claude $0.00800 $0.02400 Provisioned Throughput Anthropic models Price per hour per model unit for 1-month commitment Price per hour per model unit for 6-month commitment Claude Instant $39.60 $22.00 Claude $63.00 $35.00 Meta Llama 2 On-demand Meta models Price per 1,000 input tokens Price per 1,000 output tokens Llama 2 Chat (13B) $0.00075 $0.00100 Llama 2 Chat (70B) $0.00195 $0.00256 Provisioned Throughput Meta models Price per hour per model unit for 1-month commitment Price per hour per model unit for 6-month commitment Llama 2 Pre-trained and Chat (13B) $21.18 $13.08 Llama 2 Pre-trained (70B) $21.18 $13.08"
+  },
+  "software_procurement": {
+    "title": "Software Procurement Process",
+    "content_id": 355763969,
+    "space_key": "OPS",
+    "space_name": "IT & Dev Ops",
+    "version": 1,
+    "last_modified": "2017-01-17T18:27:45.983Z",
+    "tables": [],
+    "lists": [
+      "As an employee, requesting new software on the company\u2019s computing device operated within the company\u2019s network, seek approval from manager or a sponsor by presenting a business case",
+      "Employee\u2019s Name",
+      "Sponsor\u2019s Name",
+      "Name of Application/Software",
+      "Website for Tool",
+      "Which Department would use this?",
+      "Please explain the business value",
+      "Priority- How quickly does this need to be purchased?",
+      "If this is needed ASAP, what\u2019s the due date?",
+      "How much does the software/application cost?",
+      "How is the cost calculated?",
+      "How long of a contract are we entering?",
+      "How is it billed?",
+      "How would this be paid?",
+      "More details",
+      "More details",
+      "More details",
+      "Once request is processed, Robert creates purchase order to be approved or denied by Steve",
+      "Employee will receive communication once request has been finalized"
+    ],
+    "text": "As an employee, requesting new software on the company&rsquo;s computing device operated within the company&rsquo;s network, seek approval from manager or a sponsor by presenting a business case If approved by manager or sponsor, fill out all fields of the Software Procurement Request Form - https://docs.google.com/forms/d/e/1FAIpQLSeZ0lPL0aFLyqMH-f-SfHXRckytncTSvTBA6Vi8ftMI3BHk4w/viewform Fields include: Employee&rsquo;s Name Sponsor&rsquo;s Name Name of Application/Software Website for Tool Which Department would use this? Please explain the business value Priority- How quickly does this need to be purchased? If this is needed ASAP, what&rsquo;s the due date? How much does the software/application cost? How is the cost calculated? How long of a contract are we entering? How is it billed? How would this be paid? More details Once request is processed, Robert creates purchase order to be approved or denied by Steve Employee will receive communication once request has been finalized"
+  }
+}

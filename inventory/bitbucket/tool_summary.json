@@ -1,0 +1,238 @@
+{
+  "tool_counts": {
+    "docker": {
+      "count": 14,
+      "repos": [
+        "madmobile/restaurant-admin-v2",
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/kafka-cdc-service",
+        "madmobile/proto-commerce-services",
+        "madmobile/impl-rack-room",
+        "syscolabs/cinco-workspace",
+        "syscolabs/cake-mobile-pos-v1",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "madpayments/mad-pipelines",
+        "madpayments/sardine-service",
+        "madpayments/l3-core-lib",
+        "madpayments/test-event-emitter"
+      ]
+    },
+    "snyk": {
+      "count": 3,
+      "repos": [
+        "madmobile/restaurant-admin-v2",
+        "madmobile/kafka-cdc-service",
+        "madmobile/proto-commerce-services"
+      ]
+    },
+    "typescript": {
+      "count": 19,
+      "repos": [
+        "madmobile/restaurant-admin-v2",
+        "madmobile/impl-jfw",
+        "madmobile/seao",
+        "madmobile/kiosk-automation",
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/kafka-cdc-service",
+        "madmobile/impl-urban",
+        "madmobile/impl-rack-room",
+        "syscolabs/cake-mobile-pos-v1",
+        "madpayments/merchant-service",
+        "madpayments/payment-common-lib",
+        "madpayments/visa-cybersource-boarding-service",
+        "madpayments/rs2-boarding-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "madpayments/cybersource-bin-service",
+        "madpayments/visa-cybersource-transaction-service",
+        "madpayments/device-service",
+        "madpayments/test-event-emitter"
+      ]
+    },
+    "vite": {
+      "count": 3,
+      "repos": [
+        "madmobile/restaurant-admin-v2",
+        "madmobile/seao",
+        "madmobile/concierge-associate"
+      ]
+    },
+    "mongodb": {
+      "count": 10,
+      "repos": [
+        "madmobile/neo-workspace",
+        "madmobile/kafka-cdc-service",
+        "madpayments/merchant-service",
+        "madpayments/visa-cybersource-boarding-service",
+        "madpayments/rs2-boarding-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "madpayments/cybersource-bin-service",
+        "madpayments/visa-cybersource-transaction-service",
+        "madpayments/device-service",
+        "madpayments/test-event-emitter"
+      ]
+    },
+    "eslint": {
+      "count": 20,
+      "repos": [
+        "madmobile/impl-jfw",
+        "madmobile/kiosk-automation",
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/kafka-cdc-service",
+        "madmobile/impl-urban",
+        "madmobile/impl-rack-room",
+        "syscolabs/react-cinco",
+        "syscolabs/olo",
+        "syscolabs/cake-mobile-pos-v1",
+        "syscolabs/src-ua-menu-admin",
+        "madpayments/merchant-service",
+        "madpayments/payment-common-lib",
+        "madpayments/visa-cybersource-boarding-service",
+        "madpayments/rs2-boarding-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "madpayments/cybersource-bin-service",
+        "madpayments/visa-cybersource-transaction-service",
+        "madpayments/device-service",
+        "madpayments/test-event-emitter"
+      ]
+    },
+    "prettier": {
+      "count": 17,
+      "repos": [
+        "madmobile/impl-jfw",
+        "madmobile/kiosk-automation",
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/kafka-cdc-service",
+        "madmobile/impl-urban",
+        "madmobile/impl-rack-room",
+        "syscolabs/cake-mobile-pos-v1",
+        "madpayments/merchant-service",
+        "madpayments/payment-common-lib",
+        "madpayments/visa-cybersource-boarding-service",
+        "madpayments/rs2-boarding-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "madpayments/cybersource-bin-service",
+        "madpayments/visa-cybersource-transaction-service",
+        "madpayments/device-service",
+        "madpayments/test-event-emitter"
+      ]
+    },
+    "jest": {
+      "count": 16,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/impl-rl",
+        "madmobile/kafka-cdc-service",
+        "madmobile/impl-urban",
+        "madmobile/impl-rack-room",
+        "syscolabs/olo",
+        "syscolabs/src-ua-menu-admin",
+        "madpayments/merchant-service",
+        "madpayments/payment-common-lib",
+        "madpayments/visa-cybersource-boarding-service",
+        "madpayments/rs2-boarding-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "madpayments/cybersource-bin-service",
+        "madpayments/visa-cybersource-transaction-service",
+        "madpayments/device-service",
+        "madpayments/test-event-emitter"
+      ]
+    },
+    "sentry": {
+      "count": 1,
+      "repos": [
+        "madmobile/concierge-associate"
+      ]
+    },
+    "sonarqube": {
+      "count": 7,
+      "repos": [
+        "madmobile/concierge-associate",
+        "madmobile/marvel-payment-aurus",
+        "syscolabs/gm",
+        "syscolabs/menu_sync_agent",
+        "syscolabs/src-ua-menu-admin",
+        "madpayments/mad-pipelines",
+        "madpayments/mad-payments-elo-m60"
+      ]
+    },
+    "maven": {
+      "count": 12,
+      "repos": [
+        "madmobile/mad-services-xstore24eu-rl",
+        "madmobile/marvel-payment-aurus",
+        "syscolabs/moxy",
+        "syscolabs/cinco-workspace",
+        "syscolabs/pos_beans",
+        "syscolabs/moxy-plugin-commons",
+        "syscolabs/src-table-tracker-service",
+        "syscolabs/menu_sync_agent",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "madpayments/mad-pipelines",
+        "madpayments/l3-core-lib"
+      ]
+    },
+    "redis": {
+      "count": 3,
+      "repos": [
+        "madmobile/impl-rl",
+        "syscolabs/olo",
+        "syscolabs/src-ua-menu-admin"
+      ]
+    },
+    "kafka": {
+      "count": 8,
+      "repos": [
+        "madmobile/kafka-cdc-service",
+        "madpayments/merchant-service",
+        "madpayments/visa-cybersource-boarding-service",
+        "madpayments/rs2-boarding-service",
+        "madpayments/rs2-bankworks-parser-service",
+        "madpayments/visa-cybersource-transaction-service",
+        "madpayments/device-service",
+        "madpayments/test-event-emitter"
+      ]
+    },
+    "gradle": {
+      "count": 8,
+      "repos": [
+        "madmobile/marvel-payment-aurus",
+        "syscolabs/cake-mobile-pos-v1",
+        "madpayments/mad-payments-vp3350",
+        "madpayments/madpayments-devices-idtech-neo",
+        "madpayments/mad-pipelines",
+        "madpayments/sardine-service",
+        "madpayments/mad-payments-elo-m60",
+        "madpayments/l3-core-lib"
+      ]
+    },
+    "rabbitmq": {
+      "count": 2,
+      "repos": [
+        "madmobile/devops",
+        "syscolabs/menu_sync_agent"
+      ]
+    },
+    "webpack": {
+      "count": 5,
+      "repos": [
+        "syscolabs/react-cinco",
+        "syscolabs/cinco-workspace",
+        "syscolabs/olo",
+        "syscolabs/cake-mobile-pos-v1",
+        "syscolabs/src-ua-menu-admin"
+      ]
+    }
+  },
+  "ci_summary": {
+    "bitbucket_pipelines": 36,
+    "jenkins": 0,
+    "both": 0,
+    "none": 44
+  }
+}

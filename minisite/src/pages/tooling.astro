@@ -22,9 +22,32 @@ for (const t of tools) {
 }
 
 const categories = [...byCategory.entries()].sort((a, b) => a[0].localeCompare(b[0]));
-const activeCount = tools.filter((t) => t.data.status === 'confirmed_active').length;
-const inferredCount = tools.filter((t) => t.data.status === 'inferred').length;
+const validTools = tools.filter((t) => t.data.notes !== 'Duplicate entry removed — see Grafana above.');
+const activeCount = validTools.filter((t) => t.data.status === 'confirmed_active').length;
+const suspectedCount = validTools.filter((t) => t.data.status === 'suspected').length;
 const categoryCount = byCategory.size;
+
+const withOverlap = validTools.filter((t) => t.data.overlap_with && t.data.overlap_with.length > 0);
+const withCost = validTools.filter((t) => t.data.estimated_annual_cost);
+
+const byVendor = new Map<string, typeof validTools>();
+for (const t of validTools) {
+  const v = t.data.vendor;
+  const list = byVendor.get(v) ?? [];
+  list.push(t);
+  byVendor.set(v, list);
+}
+const vendorGroups = [...byVendor.entries()].sort((a, b) => b[1].length - a[1].length);
+
+const overlapGroups = [
+  { area: 'Observability', tools: ['Grafana (self-hosted)', 'Datadog', 'Nagios', 'Munin', 'Graylog', 'DB Cacti'], severity: 'red' as const, detail: '6 monitoring/observability tools running in parallel. Grafana stack (Mimir/Loki/Tempo) in Shared Services, Datadog for Concierge/MenuPad, plus 4 legacy tools. Consolidation could save $50K–$200K/year (Datadog) and significant operational overhead.' },
+  { area: 'Source Control', tools: ['Bitbucket Cloud', 'GitHub'], severity: 'amber' as const, detail: 'Dual source control. Internal Confluence page already asks "Can we get rid of this?" about GitHub. If still paying, immediate savings opportunity.' },
+  { area: 'CI/CD', tools: ['Jenkins', 'Bitbucket Pipelines'], severity: 'amber' as const, detail: '9 Jenkins instances in CAKE Dev (~$18–30K/year hosting) alongside Bitbucket Pipelines. Internal tooling evaluation scored Jenkins lowest. 0 of top-80 recent repos use Jenkins.' },
+  { area: 'Package Registry', tools: ['AWS CodeArtifact', 'NpmJS', 'Archiva', 'DockerHub', 'Amazon ECR'], severity: 'amber' as const, detail: '5 artifact/registry services. CodeArtifact costs $13/month — consolidating to it from NpmJS and Archiva would simplify operations.' },
+  { area: 'Communication', tools: ['Microsoft Teams', 'Slack'], severity: 'amber' as const, detail: 'Both listed on engineering laptop setup. If both are paid, one should be primary.' },
+  { area: 'BI / Analytics', tools: ['Domo', 'AWS QuickSight'], severity: 'amber' as const, detail: 'Two BI platforms. QuickSight used for FinOps dashboards, Domo for product analytics.' },
+  { area: 'Cloud Security', tools: ['Wiz.io', 'Trend Micro Cloud One'], severity: 'amber' as const, detail: 'Wiz across all 18 accounts + Trend Micro at $1,438/mo in CAKE Dev. Potentially redundant CSPM/CWPP.' },
+];
 
 let aiToolingDocs: Record<string, any[]> | null = null;
 try {
@@ -85,25 +108,35 @@ if (toolingExpenseDocs) {
   <SectionHeader
     eyebrow="TOOLING"
     title="Vendor & Tool Catalog"
-    description="All identified tools and vendors in the Mad Mobile technology stack. Data extracted April 3, 2026 (V5)."
+    description="48 tools identified across Mad Mobile's technology stack. Enriched with Confluence page extraction, AWS cost attribution, Bitbucket dependency scanning, and public pricing estimates. Updated April 5, 2026 (V8)."
   />
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-    <FindingCard severity="amber" title="28 Tools, Utilization Unknown" detail="Tools cataloged across build pipelines, monitoring, security, and documentation. Whether they're used effectively is a key onsite question." evidence="28 tools, 5 categories" />
-    <FindingCard severity="green" title="Self-Hosted Grafana Stack" detail="Mimir + Loki + Tempo in Shared Services. Not Datadog or New Relic. Payments has its own Grafana instance." evidence="Grafana/Mimir/Loki/Tempo, viewer access Apr 7" />
-    <FindingCard severity="amber" title="Dual CI/CD System" detail="Jenkins for CAKE (found in CAKE Dev account). Bitbucket Pipelines for Retail and Payments. Two systems, two workflows." evidence="Jenkins (CAKE), Bitbucket Pipelines (Retail, Payments)" />
+    <FindingCard severity="red" title="6 Observability Tools" detail="Grafana/Mimir/Loki/Tempo, Datadog, Nagios, Munin, Graylog, DB Cacti — running in parallel. Consolidation is the single biggest tooling savings opportunity." evidence="6 tools across Confluence and AWS inventory" />
+    <FindingCard severity="amber" title="75% of Tool Costs Unknown" detail="Only AWS ($3.8M/year) and a few line items have real cost data. Estimated non-AWS SaaS spend: $350K–$800K/year. Finance data needed." evidence="48 tools, 36 with unknown costs" />
+    <FindingCard severity="amber" title="7 Overlap Areas Identified" detail="Dual CI/CD, dual source control, dual communication, dual BI, dual cloud security, 5 package registries, and 6 observability tools." evidence="System scan + Confluence extraction" />
+  </div>
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Total Tools" value={validTools.length.toString()} />
+    <MetricCard label="Confirmed Active" value={activeCount.toString()} />
+    <MetricCard label="Suspected" value={suspectedCount.toString()} />
+    <MetricCard label="Overlap Areas" value="7" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">TOOL OVERLAP & REDUNDANCY</h2>
+    <p class="text-xs text-[var(--text-secondary)] mb-4">Areas where multiple tools serve the same function. Each represents a consolidation opportunity — both cost savings and operational simplification.</p>
+    <div class="grid sm:grid-cols-2 gap-4">
+      {overlapGroups.map((g) => (
+        <FindingCard severity={g.severity} title={`${g.area}: ${g.tools.length} tools`} detail={g.detail} evidence={g.tools.join(', ')} />
+      ))}
+    </div>
   </div>
 
   <div class="mb-10">
     <ChartEmbed slug="workspace_health_radar" title="Workspace Engineering Health" description="Normalized 0–100 scores across 4 Bitbucket workspaces. Quality variance is a tooling and process story." interactive />
   </div>
-
-  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Total Tools" value={tools.length.toString()} />
-    <MetricCard label="Confirmed Active" value={activeCount.toString()} />
-    <MetricCard label="Inferred" value={inferredCount.toString()} />
-    <MetricCard label="Categories" value={categoryCount.toString()} />
-  </dl>
 
   <div class="mb-10">
     <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">DORA Cross-Reference: Self-Report vs System Data</h2>
@@ -123,13 +156,26 @@ if (toolingExpenseDocs) {
     />
   </div>
 
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">TOP VENDORS BY TOOL COUNT</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      {vendorGroups.slice(0, 8).map(([vendor, vTools]) => (
+        <div class="bg-[var(--surface)] rounded-lg border border-[var(--border)] p-3">
+          <p class="text-xs font-semibold text-[var(--text)]">{vendor}</p>
+          <p class="text-2xl font-bold text-[var(--text)] mt-1">{vTools.length}</p>
+          <p class="text-[10px] text-[var(--text-muted)] mt-1">{vTools.map(t => t.data.name).join(', ')}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
   <div class="space-y-8">
     {categories.map(([category, categoryTools]) => (
       <div>
         <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">{category}</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {categoryTools.map((t) => (
-            <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+          {categoryTools.filter(t => t.data.notes !== 'Duplicate entry removed — see Grafana above.').map((t) => (
+            <div class={`bg-[var(--surface)] rounded-xl border p-4 ${t.data.overlap_with && t.data.overlap_with.length > 0 ? 'border-amber-500/40' : 'border-[var(--border)]'}`}>
               <div class="flex items-start justify-between mb-2">
                 <div>
                   <h3 class="text-sm font-semibold text-[var(--text)]">{t.data.name}</h3>
@@ -138,9 +184,37 @@ if (toolingExpenseDocs) {
                 <StatusBadge status={t.data.status} />
               </div>
               {t.data.notes && <p class="text-xs text-[var(--text-secondary)] mt-2 leading-relaxed">{t.data.notes}</p>}
-              <div class="flex items-center gap-3 mt-3 pt-2 border-t border-[var(--border-subtle)]">
-                <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">Cost</span>
-                <span class="text-xs text-[var(--text-secondary)]">{t.data.cost_detail ?? t.data.cost_status}</span>
+              <div class="mt-3 pt-2 border-t border-[var(--border-subtle)] space-y-1">
+                {t.data.estimated_annual_cost && (
+                  <div class="flex items-center gap-2">
+                    <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)] w-16">Est. Cost</span>
+                    <span class="text-xs font-medium text-[var(--text)]">{t.data.estimated_annual_cost}</span>
+                  </div>
+                )}
+                {t.data.pricing_model && (
+                  <div class="flex items-center gap-2">
+                    <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)] w-16">Model</span>
+                    <span class="text-xs text-[var(--text-secondary)]">{t.data.pricing_model.replace(/_/g, ' ')}</span>
+                  </div>
+                )}
+                {t.data.teams_using && t.data.teams_using.length > 0 && (
+                  <div class="flex items-start gap-2">
+                    <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)] w-16 pt-0.5">Teams</span>
+                    <span class="text-xs text-[var(--text-secondary)]">{t.data.teams_using.join(', ')}</span>
+                  </div>
+                )}
+                {t.data.overlap_with && t.data.overlap_with.length > 0 && (
+                  <div class="flex items-start gap-2">
+                    <span class="text-[10px] uppercase tracking-wider text-amber-500 w-16 pt-0.5">Overlap</span>
+                    <span class="text-xs text-amber-400">{t.data.overlap_with.join(', ')}</span>
+                  </div>
+                )}
+                {!t.data.estimated_annual_cost && (
+                  <div class="flex items-center gap-2">
+                    <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)] w-16">Cost</span>
+                    <span class="text-xs text-[var(--text-secondary)]">{t.data.cost_detail ?? t.data.cost_status}</span>
+                  </div>
+                )}
               </div>
             </div>
           ))}

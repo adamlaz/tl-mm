@@ -62,5 +62,35 @@ This is important for the board deliverable — incident response maturity is on
 
 None of this is blocking the onsite — I can work with what I have — but items 2, 6, 7, 8, and 9 would meaningfully improve the depth of the analysis.
 
+---
+
+**10. Vendor / SaaS spend data** — I've now identified **48 tools** across Mad Mobile's technology stack (up from 28 in the initial scan). The vast majority have unknown costs — only AWS and a few line items have real numbers. For the vendor rationalization section of the board deliverable, I need actual spend data.
+
+**What would be most helpful:** An export from finance/procurement showing annual or monthly SaaS vendor spend. Even a rough summary by vendor would be transformative. The tools I'm most interested in are:
+
+- **Atlassian** (Jira, Confluence, Bitbucket) — how many seats? Which tier (Standard/Premium/Enterprise)? Annual contract total?
+- **Wiz.io** — annual contract? This is likely one of the larger non-AWS security line items ($100K–$300K range typical).
+- **Datadog** — confirmed active for Concierge/Retail (app.datadoghq.com). What's the scope and annual cost?
+- **Five9** — cloud contact center for CS. How many agent seats? Annual cost?
+- **Salesforce** — how many licenses? Annual total?
+- **Tyk API Gateway** — last renewal was 2023 at ~$35K/year. Is it current?
+- **Snyk** — onboarded formally in Jan 2023 but adoption seems low. Is the contract still active? Annual cost?
+- **Trend Micro Cloud One** — showing $1,438/month in the CAKE Dev AWS account. Is this intentional alongside Wiz?
+- **Slack** — is the org on a paid plan alongside Microsoft Teams?
+- **Figma** — how many editor seats?
+- **TeamViewer** — annual cost for POS remote access?
+
+I can provide the full 48-tool list with estimated pricing ranges if that helps the conversation with finance. Even partial data on the top 5 vendors would meaningfully strengthen the board deliverable.
+
+**11. GitHub status** — Is the GitHub organization still active, or has everything migrated to Bitbucket? The internal Cake Engineering Tools documentation already flags this with the note "Can we get rid of this?" If Mad Mobile is still paying for GitHub alongside Bitbucket, that's an immediate savings opportunity.
+
+**12. Observability consolidation** — I've identified **6 monitoring/observability tools**: Grafana (Mimir/Loki/Tempo), Datadog, Nagios, Munin, Graylog, and DB Cacti. Has anyone proposed consolidating these? Is there a roadmap? This is likely one of the bigger areas for both cost savings and operational simplification.
+
+**13. Guru status** — Still active? How many users? The Restaurant deck mentions it but I can't confirm whether it's widely used or just a few teams.
+
+---
+
+Items 10–13 are specifically for the vendor/tooling rationalization that Don wants in the board deliverable. The estimated annual SaaS spend (excluding AWS) is somewhere in the **$350K–$800K range** based on public pricing — confirming actuals would let me narrow that to a real number with specific savings recommendations.
+
 Thanks,
 Adam

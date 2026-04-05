@@ -1,0 +1,1536 @@
+{
+  "repos_scanned": 80,
+  "results": [
+    {
+      "workspace": "madmobile",
+      "repo": "restaurant-admin-v2",
+      "language": "",
+      "project": "Cake",
+      "updated_on": "2026-04-05T00:20:59.144030+00:00",
+      "config_files_found": [
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml",
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "snyk",
+        "typescript",
+        "vite"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "docker"
+        ],
+        "Dockerfile": [
+          "vite",
+          "typescript",
+          "docker"
+        ],
+        "docker-compose.yml": [
+          "docker"
+        ],
+        "bitbucket-pipelines.yml": [
+          "snyk",
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "neo-workspace",
+      "language": "",
+      "project": "NEO",
+      "updated_on": "2026-04-04T23:43:39.560986+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "mongodb"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "mongodb"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "gitops-cake",
+      "language": "",
+      "project": "DevOps",
+      "updated_on": "2026-04-03T22:03:46.030002+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-jfw",
+      "language": "",
+      "project": "Jackson",
+      "updated_on": "2026-04-03T22:00:51.504809+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "eslint",
+          "typescript"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "seao",
+      "language": "",
+      "project": "NEO",
+      "updated_on": "2026-04-03T20:54:23.957219+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "typescript",
+        "vite"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "vite",
+          "typescript"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "kiosk-automation",
+      "language": "",
+      "project": "Cake",
+      "updated_on": "2026-04-03T19:55:00.913064+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "eslint",
+          "typescript"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "concierge-associate",
+      "language": "javascript",
+      "project": "vNext",
+      "updated_on": "2026-04-03T19:14:24.555368+00:00",
+      "config_files_found": [
+        "package.json",
+        "Dockerfile",
+        "bitbucket-pipelines.yml",
+        "sonar-project.properties"
+      ],
+      "tools_detected": [
+        "docker",
+        "eslint",
+        "jest",
+        "prettier",
+        "sentry",
+        "sonarqube",
+        "typescript",
+        "vite"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "jest",
+          "vite",
+          "eslint",
+          "sentry",
+          "typescript"
+        ],
+        "Dockerfile": [
+          "docker"
+        ],
+        "bitbucket-pipelines.yml": [
+          "sentry",
+          "docker"
+        ],
+        "sonar-project.properties": [
+          "sonarqube"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "mad-services-xstore24eu-rl",
+      "language": "java",
+      "project": "Retail",
+      "updated_on": "2026-04-03T18:13:34.200125+00:00",
+      "config_files_found": [
+        "bitbucket-pipelines.yml",
+        "pom.xml"
+      ],
+      "tools_detected": [
+        "maven"
+      ],
+      "tools_by_file": {
+        "bitbucket-pipelines.yml": [
+          "maven"
+        ],
+        "pom.xml": [
+          "maven"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cake-pop-automation",
+      "language": "javascript",
+      "project": "Cake",
+      "updated_on": "2026-04-03T18:00:08.034148+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-rl",
+      "language": "javascript",
+      "project": "Concierge Implementations",
+      "updated_on": "2026-04-03T17:02:30.163116+00:00",
+      "config_files_found": [
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml",
+        "bitbucket-pipelines.yml",
+        "jest.config.ts"
+      ],
+      "tools_detected": [
+        "docker",
+        "eslint",
+        "jest",
+        "prettier",
+        "redis",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "typescript",
+          "eslint",
+          "jest"
+        ],
+        "Dockerfile": [
+          "docker"
+        ],
+        "docker-compose.yml": [
+          "redis",
+          "docker"
+        ],
+        "bitbucket-pipelines.yml": [
+          "docker"
+        ],
+        "jest.config.ts": [
+          "jest"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "kafka-cdc-service",
+      "language": "typescript",
+      "project": "Cake",
+      "updated_on": "2026-04-03T15:57:04.671220+00:00",
+      "config_files_found": [
+        "package.json",
+        "Dockerfile",
+        "bitbucket-pipelines.yml",
+        "tsconfig.json"
+      ],
+      "tools_detected": [
+        "docker",
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "snyk",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "docker",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ],
+        "Dockerfile": [
+          "snyk",
+          "docker"
+        ],
+        "bitbucket-pipelines.yml": [
+          "docker"
+        ],
+        "tsconfig.json": [
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "proto-commerce-services",
+      "language": "",
+      "project": "Neo Platform",
+      "updated_on": "2026-04-03T15:26:59.265885+00:00",
+      "config_files_found": [
+        "Dockerfile",
+        "bitbucket-pipelines.yml",
+        ".snyk"
+      ],
+      "tools_detected": [
+        "docker",
+        "snyk"
+      ],
+      "tools_by_file": {
+        "Dockerfile": [
+          "snyk",
+          "docker"
+        ],
+        "bitbucket-pipelines.yml": [
+          "snyk",
+          "docker"
+        ],
+        ".snyk": [
+          "snyk"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "analyze-data",
+      "language": "",
+      "project": "Neo Platform",
+      "updated_on": "2026-04-03T13:49:42.353891+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-urban",
+      "language": "javascript",
+      "project": "Concierge Implementations",
+      "updated_on": "2026-04-03T13:39:35.599322+00:00",
+      "config_files_found": [
+        "package.json",
+        "jest.config.ts"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "typescript",
+          "eslint",
+          "jest"
+        ],
+        "jest.config.ts": [
+          "jest"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "marvel-payment-aurus",
+      "language": "",
+      "project": "marvel",
+      "updated_on": "2026-04-02T14:19:17.370458+00:00",
+      "config_files_found": [
+        "bitbucket-pipelines.yml",
+        "build.gradle"
+      ],
+      "tools_detected": [
+        "gradle",
+        "maven",
+        "sonarqube"
+      ],
+      "tools_by_file": {
+        "bitbucket-pipelines.yml": [
+          "maven",
+          "gradle"
+        ],
+        "build.gradle": [
+          "sonarqube",
+          "maven",
+          "gradle"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cake-ecs-configs",
+      "language": "",
+      "project": "DevOps",
+      "updated_on": "2026-04-02T08:23:37.577121+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-services",
+      "language": "",
+      "project": "DevOps",
+      "updated_on": "2026-04-01T21:24:08.497065+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "cloud-shared-development",
+      "language": "",
+      "project": "DevOps",
+      "updated_on": "2026-04-01T20:59:58.862108+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "devops",
+      "language": "shell",
+      "project": "DevOps",
+      "updated_on": "2026-04-01T17:22:28.955162+00:00",
+      "config_files_found": [
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "rabbitmq"
+      ],
+      "tools_by_file": {
+        "bitbucket-pipelines.yml": [
+          "rabbitmq"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madmobile",
+      "repo": "impl-rack-room",
+      "language": "",
+      "project": "Concierge Implementations",
+      "updated_on": "2026-04-01T17:14:08.556507+00:00",
+      "config_files_found": [
+        "package.json",
+        "Dockerfile",
+        "jest.config.ts"
+      ],
+      "tools_detected": [
+        "docker",
+        "eslint",
+        "jest",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "typescript",
+          "eslint",
+          "jest"
+        ],
+        "Dockerfile": [
+          "docker"
+        ],
+        "jest.config.ts": [
+          "jest"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "payment-gateway-batch-process",
+      "language": "c#",
+      "project": "Payment Gateway",
+      "updated_on": "2026-04-05T10:19:41.502041+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "ditto-sync-agent",
+      "language": "",
+      "project": "Cinco",
+      "updated_on": "2026-04-03T20:34:55.802097+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "kds-v2",
+      "language": "",
+      "project": "Cake POS",
+      "updated_on": "2026-04-03T20:33:19.840618+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "moxy",
+      "language": "",
+      "project": "Cinco",
+      "updated_on": "2026-04-03T19:50:09.198781+00:00",
+      "config_files_found": [
+        "pom.xml"
+      ],
+      "tools_detected": [
+        "maven"
+      ],
+      "tools_by_file": {
+        "pom.xml": [
+          "maven"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "react-cinco",
+      "language": "javascript",
+      "project": "React",
+      "updated_on": "2026-04-03T19:49:10.861251+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "webpack"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "eslint",
+          "webpack"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cinco-workspace",
+      "language": "",
+      "project": "Cinco",
+      "updated_on": "2026-04-03T15:46:28.181436+00:00",
+      "config_files_found": [
+        "docker-compose.yml",
+        "pom.xml"
+      ],
+      "tools_detected": [
+        "docker",
+        "maven",
+        "webpack"
+      ],
+      "tools_by_file": {
+        "docker-compose.yml": [
+          "webpack",
+          "docker"
+        ],
+        "pom.xml": [
+          "maven"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "gm",
+      "language": "",
+      "project": "Guest Manager",
+      "updated_on": "2026-04-03T14:51:31.000990+00:00",
+      "config_files_found": [
+        "sonar-project.properties"
+      ],
+      "tools_detected": [
+        "sonarqube"
+      ],
+      "tools_by_file": {
+        "sonar-project.properties": [
+          "sonarqube"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "ua-reports-aggregate-definitions",
+      "language": "",
+      "project": "ReportsNG",
+      "updated_on": "2026-04-03T10:01:24.122019+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cakekiosk-kdsapplauncher",
+      "language": "",
+      "project": "Cake POS",
+      "updated_on": "2026-04-02T20:56:08.711621+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "pos-os-upgrades",
+      "language": "",
+      "project": "Cinco",
+      "updated_on": "2026-04-02T20:39:29.840679+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "olo",
+      "language": "javascript",
+      "project": "ReportsNG",
+      "updated_on": "2026-04-02T15:56:12.461832+00:00",
+      "config_files_found": [
+        "package.json",
+        ".eslintrc.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "redis",
+        "webpack"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "redis",
+          "eslint",
+          "webpack",
+          "jest"
+        ],
+        ".eslintrc.json": [
+          "eslint",
+          "jest"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cake-payment-gateway",
+      "language": "c#",
+      "project": "Payment Gateway",
+      "updated_on": "2026-04-02T03:50:59.997893+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "cake-mobile-pos-v1",
+      "language": "javascript",
+      "project": "Cake POS",
+      "updated_on": "2026-04-01T13:04:07.771414+00:00",
+      "config_files_found": [
+        "package.json",
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "eslint",
+        "gradle",
+        "prettier",
+        "typescript",
+        "webpack"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "webpack",
+          "eslint",
+          "typescript",
+          "gradle"
+        ],
+        "bitbucket-pipelines.yml": [
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "pos_beans",
+      "language": "",
+      "project": "Cinco",
+      "updated_on": "2026-04-01T12:20:16.888383+00:00",
+      "config_files_found": [
+        "pom.xml"
+      ],
+      "tools_detected": [
+        "maven"
+      ],
+      "tools_by_file": {
+        "pom.xml": [
+          "maven"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "moxy-plugin-commons",
+      "language": "",
+      "project": "SWAT",
+      "updated_on": "2026-04-01T11:19:43.654546+00:00",
+      "config_files_found": [
+        "pom.xml"
+      ],
+      "tools_detected": [
+        "maven"
+      ],
+      "tools_by_file": {
+        "pom.xml": [
+          "maven"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "src-table-tracker-service",
+      "language": "",
+      "project": "pos-plugins",
+      "updated_on": "2026-04-01T08:38:51.287510+00:00",
+      "config_files_found": [
+        "pom.xml"
+      ],
+      "tools_detected": [
+        "maven"
+      ],
+      "tools_by_file": {
+        "pom.xml": [
+          "maven"
+        ]
+      },
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "menu_sync_agent",
+      "language": "",
+      "project": "Platform",
+      "updated_on": "2026-03-31T19:46:00.198078+00:00",
+      "config_files_found": [
+        "Dockerfile",
+        "bitbucket-pipelines.yml",
+        "pom.xml"
+      ],
+      "tools_detected": [
+        "maven",
+        "rabbitmq",
+        "sonarqube"
+      ],
+      "tools_by_file": {
+        "Dockerfile": [
+          "rabbitmq"
+        ],
+        "bitbucket-pipelines.yml": [
+          "sonarqube",
+          "maven"
+        ],
+        "pom.xml": [
+          "maven"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "menu-sync-agent",
+      "language": "",
+      "project": "Environment Configs",
+      "updated_on": "2026-03-31T19:04:08.977605+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "src-ua-menu-admin",
+      "language": "javascript",
+      "project": "Menu Core",
+      "updated_on": "2026-03-31T14:49:59.938065+00:00",
+      "config_files_found": [
+        "package.json",
+        "bitbucket-pipelines.yml",
+        "jest.config.js"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "redis",
+        "sonarqube",
+        "webpack"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "redis",
+          "eslint",
+          "webpack",
+          "jest"
+        ],
+        "bitbucket-pipelines.yml": [
+          "sonarqube"
+        ],
+        "jest.config.js": [
+          "jest"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "syscolabs",
+      "repo": "mm-ua-email-marketing",
+      "language": "",
+      "project": "Environment Configs",
+      "updated_on": "2026-03-31T13:13:02.099908+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "merchant-service",
+      "language": "",
+      "project": "Domain Services",
+      "updated_on": "2026-04-03T17:37:42.518633+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "payment-common-lib",
+      "language": "typescript",
+      "project": "Libraries",
+      "updated_on": "2026-04-03T17:34:28.122696+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "typescript",
+          "eslint",
+          "jest"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "visa-cybersource-boarding-service",
+      "language": "typescript",
+      "project": "Integrations",
+      "updated_on": "2026-04-03T16:58:27.560326+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "gitops-payments",
+      "language": "",
+      "project": "Infrastructure",
+      "updated_on": "2026-04-03T16:52:46.824254+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "rs2-boarding-service",
+      "language": "typescript",
+      "project": "Domain Services",
+      "updated_on": "2026-04-03T16:24:03.303099+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "rs2-bankworks-parser-service",
+      "language": "",
+      "project": "Domain Services",
+      "updated_on": "2026-04-03T14:36:19.885504+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "merchant-data-migration-tool",
+      "language": "java",
+      "project": "Supporting Resources",
+      "updated_on": "2026-04-03T13:59:10.904564+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "mad-payments-vp3350",
+      "language": "",
+      "project": "Applications",
+      "updated_on": "2026-04-03T13:40:01.978186+00:00",
+      "config_files_found": [
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "gradle",
+        "maven"
+      ],
+      "tools_by_file": {
+        "bitbucket-pipelines.yml": [
+          "maven",
+          "gradle",
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "madpayments-devices-idtech-neo",
+      "language": "",
+      "project": "Libraries",
+      "updated_on": "2026-04-03T13:39:03.893481+00:00",
+      "config_files_found": [
+        "Dockerfile",
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "gradle",
+        "maven"
+      ],
+      "tools_by_file": {
+        "Dockerfile": [
+          "gradle",
+          "docker"
+        ],
+        "bitbucket-pipelines.yml": [
+          "maven",
+          "gradle",
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "cybersource-bin-service",
+      "language": "typescript",
+      "project": "Domain Services",
+      "updated_on": "2026-04-01T21:13:22.010199+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "mad-pipelines",
+      "language": "",
+      "project": "Supporting Resources",
+      "updated_on": "2026-04-01T15:09:37.320329+00:00",
+      "config_files_found": [
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "gradle",
+        "maven",
+        "sonarqube"
+      ],
+      "tools_by_file": {
+        "bitbucket-pipelines.yml": [
+          "sonarqube",
+          "maven",
+          "gradle",
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "sardine-service",
+      "language": "",
+      "project": "Domain Services",
+      "updated_on": "2026-03-26T14:30:22.890279+00:00",
+      "config_files_found": [
+        "Dockerfile",
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "gradle"
+      ],
+      "tools_by_file": {
+        "Dockerfile": [
+          "docker"
+        ],
+        "bitbucket-pipelines.yml": [
+          "gradle"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "payments-portal-prod",
+      "language": "",
+      "project": "Infrastructure",
+      "updated_on": "2026-03-25T20:04:41.863574+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "mad-payments-elo-m60",
+      "language": "",
+      "project": "Applications",
+      "updated_on": "2026-03-20T14:05:11.131347+00:00",
+      "config_files_found": [
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "gradle",
+        "sonarqube"
+      ],
+      "tools_by_file": {
+        "bitbucket-pipelines.yml": [
+          "sonarqube",
+          "gradle"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "l3-core-lib",
+      "language": "",
+      "project": "Libraries",
+      "updated_on": "2026-03-19T20:21:33.998966+00:00",
+      "config_files_found": [
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "gradle",
+        "maven"
+      ],
+      "tools_by_file": {
+        "bitbucket-pipelines.yml": [
+          "maven",
+          "gradle",
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "payments-prod-us",
+      "language": "",
+      "project": "Infrastructure",
+      "updated_on": "2026-03-18T21:22:25.367587+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "visa-cybersource-transaction-service",
+      "language": "",
+      "project": "Integrations",
+      "updated_on": "2026-03-17T05:33:30.980924+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "device-service",
+      "language": "typescript",
+      "project": "Domain Services",
+      "updated_on": "2026-02-26T17:00:15.603101+00:00",
+      "config_files_found": [
+        "package.json"
+      ],
+      "tools_detected": [
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "gitops",
+      "language": "",
+      "project": "Infrastructure",
+      "updated_on": "2026-02-23T14:35:24.490828+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "madpayments",
+      "repo": "test-event-emitter",
+      "language": "",
+      "project": "Supporting Resources",
+      "updated_on": "2026-02-20T09:05:13.616784+00:00",
+      "config_files_found": [
+        "package.json",
+        "bitbucket-pipelines.yml"
+      ],
+      "tools_detected": [
+        "docker",
+        "eslint",
+        "jest",
+        "kafka",
+        "mongodb",
+        "prettier",
+        "typescript"
+      ],
+      "tools_by_file": {
+        "package.json": [
+          "prettier",
+          "mongodb",
+          "jest",
+          "eslint",
+          "typescript",
+          "kafka"
+        ],
+        "bitbucket-pipelines.yml": [
+          "docker"
+        ]
+      },
+      "ci_system": "bitbucket_pipelines"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "ua-menu-admin",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2026-04-03T16:39:42.295497+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "menu-sync-agent",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2026-04-01T17:45:13.163036+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "mapi",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2026-03-17T09:44:44.314679+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "superadmin",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2026-03-06T10:05:55.033273+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "menu-api",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2026-01-20T14:51:33.407017+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "sales-api",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2026-01-07T11:02:13.136586+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "mc-ems-migrator",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-12-08T14:46:35.889289+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "ua-reports",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-12-03T10:24:25.590331+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "api-v3",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-12-03T10:23:19.309724+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "platform",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-18T10:30:43.426608+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "ua-reports-api",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-17T10:34:59.060123+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "apigw",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-14T05:42:40.683972+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "operator-api",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-10T14:15:23.046830+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "ua",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-10T12:59:23.073048+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "pompe",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-03T20:05:59.657673+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "mm-loyalty-microsite",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-03T18:54:38.061654+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "daypart-data-mediator",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-03T18:47:31.376403+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "daypart-api",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-11-03T18:32:34.071895+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "ua-settings",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-10-28T20:11:18.364950+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    },
+    {
+      "workspace": "syscolabsconf",
+      "repo": "mm-content-api",
+      "language": "",
+      "project": "ECSP",
+      "updated_on": "2025-10-17T11:06:14.199043+00:00",
+      "config_files_found": [],
+      "tools_detected": [],
+      "tools_by_file": {},
+      "ci_system": "none"
+    }
+  ]
+}
