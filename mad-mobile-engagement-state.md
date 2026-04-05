@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 5, 2026 (updated April 5 with Don touchbase, Ana/Chathura coordination update, engagement minisite expansion, new ECharts charts)
+**Date:** April 5, 2026 (updated April 5 evening with Don April 5 call findings, Bloom Intelligence/Winmark research, file consolidation, hypothesis investigation leads, Ana email updates)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -55,7 +55,7 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 | Greg Schmitzer | President & Head of Sales & Marketing | Field sales, inbound sales, marketing strategy | Bobby Jaklitsch (Field, 4), Peter Vu (Inbound, 3), Karen Licker (Marketing, 1) |
 | David Strainick | **COO** *(was Chief People Officer)* | Account Management, Customer Onboarding, Customer Delivery, IT | Das DeSilva (Onboarding, 10), Dir. Account Mgmt (9), Rosen Georgiev (IT), Chip O'Connell (Onboarding Delivery, 3) |
 | Chathura Ratnayake | **CDO** *(was SVP Global Software Engineering)* | ALL engineering (restaurant, enterprise, payments), product, design, platform, PMO, ALL customer support | Mark Guilarte (PMO, 4), Akshay Bhasin (Payments & Financial Services, 20+), Zubair Syed (Enterprise Solutions, 58), Randy Brown (Restaurant Tech, 10), Dulanjan W. (Product & GTM, 10+) |
-| Jack Kennedy | CTO | **AI capabilities and platform innovation only** *(operational engineering scope removed)* | Jeremy Diggins — very small team |
+| Jack Kennedy | CTO | **AI capabilities and platform innovation only** *(operational engineering scope removed)*. **April 5 update:** Currently full-time on single-client AI delivery — building an AI-developed POS application for **Winmark Corporation** ($5M new client, ~1,265 franchise stores including Play It Again Sports). Agentic programming, year-long delivery. Not currently building Neo or internal platform AI. | Jeremy Diggins — very small team |
 | Bailey Shatney | **VP of Human Resources** *(new to org chart — was David Strainick's domain)* | HR, recruiting | Renee Pauley (Recruiting). **Note:** L&D (Ayodele Lawal, Adriana Zuniga) may report here per Don's chart OR under Dulanjan's Product team per Chathura's chart — discrepancy flagged. |
 | Ana Chambers | Chief of Staff, Strategic Programs | Cross-company execution, initiative alignment | — |
 
@@ -64,7 +64,7 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 1. **Steven Siegel (COO) — EXITED.** Payments strategy, data/analytics, revenue ops responsibilities redistributed.
 2. **Bill Lodes (CRO) — EXITED.** Staying in consulting capacity on payments strategy transition. Sales absorbed by Greg Schmitzer.
 3. **Chathura Ratnayake — PROMOTED to CDO.** Now owns: all engineering across all verticals, product, design, platform, PMO, and ALL customer support. This is the single largest org in the company (~94+ people based on reported counts).
-4. **Jack Kennedy — SCOPE NARROWED.** Retains CTO title but operational engineering authority transferred to Chathura. Now focused on "AI capabilities and innovation across the platform." Direct team is just Jeremy Diggins. (**Correction:** Holly Bobal is under Randy Brown's Restaurant Backend team per Chathura's CDO org chart, not under Kennedy.)
+4. **Jack Kennedy — SCOPE NARROWED.** Retains CTO title but operational engineering authority transferred to Chathura. Officially focused on "AI capabilities and innovation across the platform." Direct team is just Jeremy Diggins. (**Correction:** Holly Bobal is under Randy Brown's Restaurant Backend team per Chathura's CDO org chart, not under Kennedy.) **April 5 update from Don:** Kennedy is currently full-time building an AI-developed POS application for Winmark Corporation (a $5M new client — franchisor of Play It Again Sports and other resale retail brands, ~1,265 stores across US/Canada). This is single-client delivery work, not internal platform or Neo development. Needs further investigation: what is being built, what tech stack, is any of it reusable for MM's platform?
 5. **David Strainick — MOVED from CPO to COO.** Now owns Account Management, Onboarding, Delivery, and IT. IT (Jorge Maltes → Rosen Georgiev) now reports through COO, not CTO.
 6. **Bailey Shatney — NEW to executive team.** VP of HR. Takes over People functions from Strainick.
 7. **Manuel Garcia — NEW to executive team.** Interim CFO. Also absorbed Revenue Operations (previously Siegel).
@@ -287,7 +287,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - **IaC**: Terraform (state buckets in multiple accounts)
 
 ### Not Yet Confirmed
-- Grafana dashboard access — **confirmed for Monday April 7** (Ana: "I can get you access on Monday. Matias is off today for the holiday weekend.")
+- Grafana dashboard access — **confirmed for Monday April 6** (Ana: "I can get you access on Monday. Matias is off today for the holiday weekend.")
 - Guru access (requested from Ana)
 - Internal survey tool (Ana checking with HR)
 
@@ -320,17 +320,25 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 **Next Up / Planned:** EzCater Integration (Design), Tip Auth Flows (Plan), Updates to TIP Reporting for BBBA (Plan), Tax Exempt Delivery Orders (Plan), Kiosk V2 Reporting (Plan), Support Salaried Employees (Plan), Channel Pricing (Backlog), Handling Menu Variations (Backlog), Hardening (Plan), Gateway Enhancement for Provider ID (TBD), Pre-Auth (Backlog), Dual Pricing/Cash Discount (Backlog), Digital Gift Cards (Backlog), Support Extra Fees (Backlog), PCI Compliance Audit Support (TBD), Migration Tools for MPP (TBD), Reporting for MPP (TBD), Re-Do OLO Flows for MPP (TBD), MadPay App Consolidation (TBD), various onboarding/CPQ fixes (Backlog), Post Support Case Sentiment (Backlog), Automate CC Rates from SF to Payments (Backlog).
 
 ### Pending (Ana's team gathering into a shared folder — target: early Monday April 7)
-- Product roadmaps: Concierge/Retail, Neo/AI — **Don confirmed Retail and Neo/AI are in scope** ("with main focus obviously restaurant")
-- Revenue breakdown by product line — Ana working on this
-- Architecture diagrams beyond CAKE ecosystem
-- Engineering team assignments by product line (beyond restaurant)
-- Deployment environments, release cadence, CI/CD documentation
-- Top customer escalations (especially CAKE payment outages)
-- KPI / scorecard / dashboard screenshots
-- Sprint velocity metrics (last 6–12 months)
-- Incident reviews / post-mortems / retrospectives
-- Engineering and operations tool inventory
-- Open strategic initiatives and known problem projects
+
+| # | Document | Priority | Status | Notes |
+|---|---|---|---|---|
+| 1 | Product roadmap: Concierge/Retail | High | Needed | Don confirmed Retail in scope. Completes the product picture alongside restaurant roadmap. |
+| 2 | Product roadmap: Neo/AI | High | Needed | Don confirmed Neo/AI in scope. Critical for AI strategy assessment — but per April 5 call, may not exist in any meaningful form. |
+| 3 | Revenue breakdown by product line (CAKE vs Concierge vs Neo vs Payments) | High | Needed — Ana working on | Even approximate revenue breakdown is useful. Revenue data owner unclear post-Siegel exit — likely Garcia (CFO) or Strainick (Account Mgmt). |
+| 4 | Investor/lender presentation deck | High | Expected from Don directly | Don offered to share on April 5 call. Contains "the problems, the analysis, and the proposed solution" that Morgan Stanley / Western Alliance saw. If routed through Ana, capture it. |
+| 5 | Top 3–5 customer escalations (last 12 months) | High | Needed | Especially CAKE payment outages. Gives specific cases to trace onsite. |
+| 6 | Architecture diagrams beyond CAKE ecosystem | Medium | Partially received | Have CAKE ecosystem diagram. Need Concierge and Neo system-level architecture. |
+| 7 | Engineering team assignments by product line (beyond restaurant) | Medium | Partially received | Have restaurant eng team (Randy) and payments (Akshay). Need Enterprise Solutions (Zubair — 58 people, zero names). |
+| 8 | Deployment environments, release cadence, CI/CD documentation | Medium | Partially self-served | Jenkins (CAKE) + Bitbucket Pipelines (Retail, Payments) identified from systems scan. Still need formal environment documentation. |
+| 9 | KPI / scorecard / dashboard screenshots | Medium | Needed | Whatever metrics leadership reviews. |
+| 10 | Sprint velocity metrics (last 6–12 months) | Medium | Self-served from Jira | Have 19 active scrum boards with velocity data. Multiple declining trends. |
+| 11 | Incident reviews / post-mortems / retrospectives | Medium | Partially self-served | 50 structured RCAs from Confluence (2020–2023). Gap in 2024–2025. Asked Ana about where current process lives. |
+| 12 | Engineering and operations tool inventory | Medium | Self-served | 48 tools identified across all platforms. Cost data still needed (see ana-request.md items 10–13). |
+| 13 | Open strategic initiatives and known problem projects | Medium | Needed | |
+| 14 | Third-party vendor contracts and API dependency inventory | Low | Needed | OpenAI, Anthropic, AWS costs. Visa/Cybersource terms. Major SaaS subscriptions. |
+| 15 | CAKE acquisition integration docs and current state | Low | Needed | Original integration plan from 2020. What's done? What's left? |
+| 16 | Company goals, board goals, CEO goals | Low | Pending Don's deck | Stated priorities for 2026. May be covered by the investor deck Don is sharing. |
 
 ---
 
@@ -406,7 +414,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 ### Known Challenges (Pre-Engagement Signal + System Evidence)
 - Glassdoor: 2.4/5, 31% recommend, 32% positive outlook
 - Execution velocity problems — **now confirmed quantitatively**: declining sprint velocity, 59-day cycle time P50, backlog growing faster than it's being resolved
-- Neo/AI gap: heavy marketing, **no dedicated production infrastructure found** — SageMaker artifacts in R&D only
+- Neo/AI gap: heavy marketing, **no dedicated production infrastructure found in systems scan** — SageMaker artifacts in R&D only. Don's April 5 comments align with this assessment. **OPEN INVESTIGATION ITEM:** Need to search Jira (NEO, AAK, LAA projects), Bitbucket, and Confluence for Neo artifacts in pre-work, and validate onsite with Kennedy and Chathura. Kennedy currently full-time on Winmark client delivery, not Neo.
 - CAKE reliability: system-wide payment outages
 - Priority whiplash: shifting priorities mid-sprint
 - Sales-driven distortion: sales promises overriding product logic
@@ -451,8 +459,8 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 | # | Pattern | What I'm Testing |
 |---|---|---|
 | A | Portfolio Sprawl | Too many products, no shared platform discipline |
-| B | Sales-Led Chaos | Revenue promises create roadmap churn and tech debt |
-| C | Fake Platforming | Leadership talks "platform"; teams maintain customer-specific patchwork |
+| B | Sales-Led Chaos | Revenue promises create roadmap churn and tech debt. **Investigation leads (April 5):** Don described a pattern of priority shifting under previous leadership that aligns. Need independent evidence: Jira epic churn/cancellation data, sprint scope change metrics, roadmap revision history, interview corroboration from multiple sources. Don's description shapes where to look — the data must speak for itself. |
+| C | Fake Platforming | Leadership talks "platform"; teams maintain customer-specific patchwork. **Investigation leads (April 5):** Don pushed back — CAKE/restaurant may be genuinely platformized. Enterprise/Retail may be where the sprawl lives. Legacy systems "can't evolve" and must be replaced. Need to validate with Bitbucket repo analysis (shared codebases vs. per-customer forks), onsite architecture walkthroughs, interviews with Randy (Restaurant) vs. Zubair (Enterprise). More nuanced than initially assumed. |
 | D | Unclear Ownership | Formal authority and operational authority are misaligned — **CONFIRMED and resolved by April 3 reorg.** Chathura now CDO with formal authority; Kennedy narrowed to AI/innovation. Onsite validates whether operational reality matches structural change. |
 | E | Dependency Drag | A few people/teams are routing bottlenecks |
 | F | Legacy Gravity | CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate |
@@ -469,7 +477,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 
 ## 8. Surveys
 
-Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Forms on MM account, intro from Chathura as CDO).
+Five instruments ready. Target deployment: **Monday, April 6** (via Microsoft Forms on MM account, intro from Chathura as CDO).
 
 | Survey | Audience | Time | Questions | Measures |
 |---|---|---|---|---|
@@ -477,7 +485,7 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 | Westrum Culture | All eng leads, managers, senior ICs, PMs | ~2 min | 7 | Organizational culture type |
 | DevEx (DX Core 4) | Individual contributors only | ~5 min | 18 | Developer experience: feedback loops, cognitive load, flow state |
 | Pragmatic Engineer Test | 3–5 engineering leads/senior engineers | ~2 min | 15 | Engineering culture maturity |
-| **AI Adoption & Tooling** | **All engineering, product, design, QE** | **~5 min** | **16** | **AI tool adoption, effectiveness, tooling landscape, AI strategy clarity** |
+| **AI Adoption & Tooling** | **All engineering, product, design, QE** | **~5 min** | **20** | **AI tool adoption, effectiveness, tooling landscape, AI strategy clarity** |
 
 **Total time per person: under 20 minutes.** Most people take 2–3 of the 5 based on their role.
 
@@ -492,11 +500,49 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 | Product Manager | | ✅ | | | ✅ |
 | Product Designer | | ✅ | | | ✅ |
 
-**Deployment:** Building in Microsoft Forms on MM account. Chathura (as CDO) has finalized his own version of the survey intro email.
+**Deployment:** All 5 surveys built in Microsoft Forms on MM account. Ready for Chathura to send. Links below.
 **ISSUE: Chathura's email only references 4 surveys, not 5.** His email mentions: Delivery Performance (leads/managers), Team Culture (everyone), Developer Experience (ICs), Engineering Practices (leads/seniors). He dropped the AI Adoption & Tooling survey. **Action needed:** Follow up with Chathura to either add Survey 5 or understand why he excluded it. The AI survey feeds directly into the board deliverable and vendor rationalization — it's important.
 **Chathura's survey email key changes from Adam's draft:** Added "As mentioned in technology all hands" framing, deadline April 10, message will come directly from Chathura. His version is polished and ready to send.
-**DevEx survey draft live:** https://forms.cloud.microsoft/r/021mP98Sf9
+
+**Microsoft Forms Links (all live):**
+- **DORA Quick Check** (9 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUQU9JNFJJMzg2R1dGUlhWRTYwODc1UURaVi4u
+- **Westrum Culture** (7 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRURjJXR01JU0Q5Tk8xSFNKUVFWMEIxQ1FSMC4u
+- **Pragmatic Engineer Test** (15 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUNUtQWVRMWlZQRExUME1LMjNJM1lER0xaTC4u
+- **AI Adoption & Tooling** (20 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUMDNHRTNRU05KRTdRWDJWTE41UFZEMkUxNi4u
+- **DevEx (DX Core 4)** (23 questions): https://forms.cloud.microsoft/r/021mP98Sf9
+
 **Designed for re-use:** Mad Mobile can re-run at 30/60 days without Adam.
+
+### Survey Analysis Plan
+
+**Pre-Onsite (by April 12):**
+- Score each survey per the scoring guides in the individual survey files
+- Segment by team/product area wherever possible (CAKE/Restaurant vs. Concierge/Retail vs. Neo/AI)
+- Identify top 3 patterns from each survey
+- Flag extreme outliers (very high or very low scores)
+- Build 2–3 data-informed interview questions (e.g., "Your team's DORA lead time self-reports as X — does that match your experience?")
+
+**Onsite (April 13–15):**
+- Reference survey data during interviews: "The survey data suggests X — does that resonate?"
+- Use Westrum culture scores to gauge which teams may be more or less candid
+- Cross-reference DORA self-reported metrics against actual system data (see table below)
+
+**Post-Engagement:**
+- Package all five surveys with Mad Mobile-specific instructions, baseline scores, and comparison guidance
+- Deliver as the "Baseline Survey Package (Repeatable)" — a core deliverable so MM can re-run at 30/60 days
+- Include a simple scoring template so Don's team can interpret results without Adam
+
+### DORA Cross-Reference Plan: Self-Reports vs. Actual System Data
+
+| DORA Self-Report | Actual System Metric | Source |
+|---|---|---|
+| Deploy frequency | Bitbucket merge frequency to default branch; deployment tag frequency per repo | `inventory/bitbucket/metrics.json`, `inventory/bitbucket/deploy_tags.json` |
+| Lead time for changes | PR cycle time: ranges from 0.6h (cloud-shared-development) to 235h (concierge-associate) | `inventory/bitbucket/metrics.json` |
+| Change failure rate | Jira bug creation rate: 11,985 total bugs, ~916 issues created/month, bug-to-story ratio | `inventory/jira/issue_distribution.json` |
+| Recovery time | Grafana MTTR dashboards (pending access) | Awaiting Grafana viewer access |
+| Reliability | CloudWatch alarms (pending permission), SLA data from interviews | Awaiting cloudwatch:DescribeAlarms |
+
+If a lead self-reports "weekly deploys" but their repos show biweekly merge cadence, that gap becomes a specific follow-up question in the interview.
 
 ---
 
@@ -583,7 +629,7 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 - **Quantitative analysis pipeline** — 15 CSV exports, 29+ interactive HTML charts in `analysis/charts/`
 - **Ana coordination email drafted** — logistics and action items (see `ana-request.md`)
 - **April 3 reorg mapped and analyzed** — updated people, interview schedule, hypothesis status
-- **Survey 5 (AI Adoption & Tooling) instrument designed** (see `05-ai-tooling-survey.md`, 16 questions)
+- **Survey 5 (AI Adoption & Tooling) instrument designed** (see `05-ai-tooling-survey.md`, 20 questions)
 - **Chathura survey intro message drafted** and sent to Ana (April 3 email) — needs update to reference 5 surveys instead of 4
 - **Ana email sent** acknowledging reorg, including text-only org chart for working reference
 - **Don call guide prepared** (see `don-call-guide-april3.md`, 13 questions across reorg, board deliverable, onsite prep)
@@ -599,30 +645,70 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 - **Don scope confirmed** (April 3 email): "Retail and Neo/AI in scope please with main focus obviously restaurant."
 
 - **Engagement minisite expanded** — engagement section rebuilt with 6 subpages (timeline, hypotheses, leadership, interviews, deliverables), 3 new components (FindingCard, MilestoneStep, enhanced SectionHeader), 5 new ECharts charts (hypothesis evidence radar, org size treemap, reorg sankey, effort waterfall, methodology heatmap). TL deliverable standards applied throughout (April 5).
-- **Don touchbase** (April 5) — reorg-specific questions: Kennedy's future, Strainick appointment, board deck transparency level. V7 findings briefed.
+- **Don touchbase** (April 5) — casual ~15 min call. Key findings: Kennedy full-time on Winmark client delivery (AI POS app, $5M), Neo has no production infrastructure (Adam's assessment, Don's comments align — still open investigation), Bloom Intelligence partnership evaluation added to scope, Touch Bistro merger context noted (confidential). Don will share investor/lender deck. Onsite timing confirmed: Mon–Wed before Don's LA trip, ~2 hours of Don's time.
+- **All 5 surveys built in Microsoft Forms** (April 5) — DORA Quick Check (9 questions), Westrum Culture (7 questions), Pragmatic Engineer Test (15 questions), AI Adoption & Tooling (20 questions), DevEx/DX Core 4 (23 questions). All live with links. Ready for Chathura to distribute.
+- **Bloom Intelligence research** (April 5) — AI-powered restaurant CDP based in St. Petersburg, FL. Founded 2006, Will Wilson CEO. Platform: WiFi analytics, customer profiles, marketing automation, reputation management. Captures data *outside* the POS (foot traffic, WiFi, reviews, web). Integrates with POS systems. Small company — Don says "a few million dollar revenue, couple people." The MM fit: Bloom's external customer data + MM's internal POS transaction data = complete customer view. Don asked Adam to evaluate at a basic level, not build.
+- **Winmark Corporation research** (April 5) — franchisor of value-oriented retail brands: Play It Again Sports (~280 stores), plus 4 other brands (~1,265 total stores across US/Canada). Has proprietary POS called "Data Recycling System" (DRS) with 20+ years of transaction data. Recently did a digital transformation with Rightpoint (BigCommerce). Kennedy is building an AI-developed POS application for them — this is retail/franchise, not restaurant, so a different vertical from CAKE.
+- **File consolidation** (April 5) — archived 7 standalone files into `archive/`, absorbed content into state doc. State doc is now the single source of truth.
 
 ### In Progress 🔄
-- **Ana + Chathura coordination update** — sending tonight (April 5 evening) with all pending requests, next steps, and pre-onsite logistics
-- Building all 5 surveys in Microsoft Forms on MM account (DevEx draft live: https://forms.cloud.microsoft/r/021mP98Sf9)
-- **ISSUE:** Chathura's survey intro email only references 4 surveys — dropped AI & Tooling (Survey 5). Following up tonight.
+- **Ana + Chathura coordination update** — sending tonight (April 5 evening) with all pending requests, next steps, and pre-onsite logistics. Updated `ana-request.md` with Winmark project visibility, Bloom Intelligence context, and investor deck note.
+- **ISSUE:** Chathura's survey intro email only references 4 surveys — dropped AI & Tooling (Survey 5). Following up tonight with link.
 - Waiting on Ana: pre-read items not in Confluence — **target: early Monday April 7**
 - Waiting on Ana: Grafana viewer access — **confirmed Monday April 7** (Matias off holiday weekend)
 - Waiting on Ana: routing questions on Monvia, MenuPad, Relate, Neo/AI
 - Waiting on Ana: interview calendar blocks + conference room (April 13–15)
+- Waiting on Don: investor/lender deck (offered on April 5 call)
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
 ### Next Steps (This Week)
-1. **Send Ana/Chathura coordination update** — tonight, April 5. Updated `ana-request.md` covers all open items.
-2. **Finish building surveys in Microsoft Forms** — all five instruments (DORA, Westrum, DevEx, Pragmatic Engineer, AI Adoption & Tooling)
-3. **Finalize interview schedule grid** — send to Ana for calendar booking
-4. **Don Sessions 2 and 3** — target April 7–9. Session 2: political landscape. Session 3: pre-onsite briefing.
-5. **Collect pre-read docs** as Ana's folder becomes available Monday
-6. **Grafana capture** — Monday April 7 when access arrives. Dashboard inventory, alert rules, data sources.
-7. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine
+
+**Tonight (April 5):**
+1. **Send Ana/Chathura coordination update** — `ana-request.md` covers all open items including new Winmark and Bloom Intelligence items. Include all 5 survey links.
+
+**Monday–Wednesday (April 7–9):**
+2. **Grafana capture** — Monday April 7 when access arrives. Dashboard inventory, alert rules, data sources.
+3. **Collect pre-read docs** as Ana's folder becomes available Monday.
+4. **Finalize interview schedule grid** — send to Ana for calendar booking.
+5. **Don Sessions 2 and 3** — target April 7–9. Session 2: political landscape. Session 3: pre-onsite briefing.
+6. **Search for Winmark in Jira/Bitbucket/Confluence** — look for project, repo, or space related to Kennedy's client delivery. Evidence of what "AI-developed POS" means.
+7. **Dig deeper on Neo** — search Jira NEO/AAK/LAA projects for actual development artifacts, not just project shells. Search Bitbucket for repos. Search Confluence for technical docs vs. marketing material. This is an open investigation item.
+8. **Update Kennedy interview prep** — reframe from "AI/innovation roadmap" to: what are you building for Winmark, what's the tech stack, is any of it reusable, what does "Neo" actually mean vs. what Winmark is.
+9. **Add Bloom Intelligence to onsite questions for Dulanjan** — he's reportedly already talking to them. What's been discussed? Product fit? Technical integration points?
+10. **Gather independent evidence for Hypothesis B** — Jira epic churn/cancellation data, sprint scope change metrics across boards, roadmap revision history in Confluence.
+
+**Thursday–Friday (April 10–11):**
+11. **Survey analysis** — surveys close April 10. Analyze results same day. Cross-reference DORA self-reports vs. actual system data. Feed into interview questions.
+12. **Pre-onsite briefing with Don** (April 10–11) — final alignment session. Review survey results, confirm interview schedule, identify 5 real cases to trace.
+13. **Final hypothesis scorecard update** — score each hypothesis A–I based on all pre-work evidence.
+14. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine.
+
+**Pre-Onsite (April 11–12):**
+15. **Print/prep onsite materials** — C4 diagrams, org chart, key metrics one-pager, interview question sheets.
+16. **Travel logistics** — Uber from St. Pete to Tampa HQ, confirm room booking with Ana.
+
+### Data Gaps to Close (Before April 11)
+- [ ] **Jira incident query**: Search for issue types "Incident", "Code Red", "Service Interruption" in 2024–2026 to fill the RCA timeline gap.
+- [ ] **Root Cause Category field #2**: Query `customfield_10590` ("Root Cause Category", type: array) — may be the active one vs. the 0%-populated `customfield_10382`.
+- [ ] **CloudTrail access escalation**: Ask Ana/Matias if audit role can get `cloudtrail:LookupEvents` added, or if there's a CloudTrail S3 bucket to read directly.
+- [ ] **Branch protection validation**: Check whether Bitbucket uses project-level branch permissions instead of repo-level.
+- [ ] **Pipeline coverage expansion**: Currently only top 30 repos. Consider running for top 100.
+- [ ] **Theme-analyze the 30 sprint retrospectives** — extract recurring "what didn't go well" themes across teams.
+- [ ] **Deep-read the 2 recent Team Tesla RCAs** — SQS Retry Storm (Dec 2025) and Menu Core API Retry Loop (Sept 2025).
+- [ ] **Map top 5 reviewer bottleneck repos to teams** — who owns the repos where John Harre, Holly Culver, etc. are bottlenecks?
+- [ ] **Review the auto-generated C4 diagrams** — validate accuracy. Print for onsite.
+- [ ] **Scan extracted Confluence architecture pages** — the 94 pages from V5 + the 321KB diagram catalog from V7.
+- [ ] **Map CDO product roadmap to team capacity** — 12+ ongoing CAKE projects vs. Randy's 9 engineers + Akshay's 9 R&D engineers.
+
+### SOW / Business
+- [ ] Mercury banking setup for Translation Layer LLC
+- [ ] EIN pending from Northwest
+- [ ] SOW draft — scope, deliverables, timeline, confidentiality, IP ownership, liability
+- [ ] Invoice structure — $10K deferred, payment terms TBD
 
 ### System Exploration — Completed (Key Answers)
-- **Where does Neo/AI live?** No dedicated account. SageMaker in CAKE R&D. Jira projects exist (NEO, AAK, LAA). Confluence docs exist. But no production AI infrastructure found. **This is a key onsite question for Jack/Chathura.**
+- **Where does Neo/AI live?** No dedicated account. SageMaker in CAKE R&D. Jira projects exist (NEO, AAK, LAA). Confluence docs exist. But no production AI infrastructure found in systems scan. Don's April 5 comments align with this assessment. **OPEN INVESTIGATION:** Need to dig into Jira NEO/AAK/LAA for actual development artifacts (not just project shells), search Bitbucket for repos, and differentiate technical docs from marketing material in Confluence. Kennedy is currently full-time on Winmark client delivery, not Neo. Validate onsite with Kennedy and Chathura.
 - **What are MenuPad-Prod-Metro and Monvia?** Legacy accounts with running instances. Monvia is costing $25.9K/month. **Escalated to Ana.**
 - **What CI/CD tools are in use?** Jenkins (CAKE, found in CAKE Dev account) + Bitbucket Pipelines (Retail, Payments). Dual CI/CD system.
 - **How are the four Bitbucket orgs related?** madmobile = Concierge/Retail core. syscolabs = CAKE/Leapset legacy. madpayments = Modern payments (TypeScript, domain-driven). syscolabsconf = Dead CAKE-era configs.
@@ -694,8 +780,8 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 - `analysis/*.csv` — 17 spreadsheet-ready CSV exports
 - `analysis/charts/*.json` — 31 interactive Plotly charts (including review network graph)
 - `interview-prep-with-data.md` — Per-interviewee data-backed questions organized by interview day
-- `vendor-spend-request.md` — Ready for Don: SaaS/tooling spend request
 - `ana-request.md` — Ready-to-send coordination email for Ana
+- `05-ai-tooling-survey.md` — AI Adoption & Tooling survey instrument (20 questions)
 - `scripts/` — 44 reusable inventory and analysis scripts
 - `minisite/` — Astro-based engagement dashboard (10 pages, 31 charts, V7 deep analysis sections, Vercel deploy)
 - `inventory/cross_system/` — Cross-system correlation data (deploy lead time, bus factor analysis)
@@ -710,9 +796,6 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 - `inventory/mad-mobile-c4-context.mmd` — Auto-generated C4 Context diagram
 - `inventory/mad-mobile-c4-container.mmd` — Auto-generated C4 Container diagram
 - `mad-mobile-org-chart.mmd` — Mermaid.js org chart (post-reorg, April 3)
-- `don-call-guide-april3.md` — Structured call guide for Don (13 questions)
-- `05-ai-tooling-survey.md` — AI Adoption & Tooling survey instrument (16 questions)
-- `state-update-april3-reorg.md` — Reorg change log and update instructions
 
 ### Open Clarifications (Pending Don Call / Onsite)
 
@@ -729,19 +812,125 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 ## 12. Important Engagement Rules
 
 1. **Pre-engagement hypotheses are not findings.** Diagnostic conclusions cannot be synthesized until after the onsite.
-2. **Kennedy/Chathura dynamic is RESOLVED.** The April 3 reorg gave Chathura formal CDO authority over all engineering, product, design, PMO, and customer support. Kennedy narrowed to AI/innovation. Can now be referenced openly in all materials. Onsite validates whether operational reality has caught up to the structural change.
-3. **Board/investor deliverable is a core purpose**, not an afterthought. It shapes framing across the charter, executive summary, deliverables, and success criteria.
-4. **Surveys designed for Mad Mobile's independent re-use** at 30/60 days. Don't create dependency on Adam.
-5. **Friend-to-colleague tone with Don; professional with everyone else.** Careful audience sensitivity in any materials shared with MM leadership.
-6. **Anonymous interviews.** Report themes, not who said what.
-7. **All public-source research on leadership was mostly wrong.** The official org chart from Don is the authoritative source. Validate everything internally before using externally.
-8. **Raw over polished.** For pre-read materials, whatever exists in whatever format is more useful than a curated package.
+2. **Evidence independence.** Don's private comments inform direction and help Adam ask the right questions, but they cannot be attributed as evidence or proof in any deliverable. The entire value of this engagement is that Adam provides independent, outsider findings grounded in quantitative data, surveys, and interviews. Don's quotes are internal context for Adam only — they shape where to look, not what to conclude.
+3. **Kennedy/Chathura dynamic is RESOLVED.** The April 3 reorg gave Chathura formal CDO authority over all engineering, product, design, PMO, and customer support. Kennedy narrowed to AI/innovation (currently full-time on Winmark client delivery). Can now be referenced openly in all materials. Onsite validates whether operational reality has caught up to the structural change.
+4. **Board/investor deliverable is a core purpose**, not an afterthought. It shapes framing across the charter, executive summary, deliverables, and success criteria.
+5. **Surveys designed for Mad Mobile's independent re-use** at 30/60 days. Don't create dependency on Adam.
+6. **Friend-to-colleague tone with Don; professional with everyone else.** Careful audience sensitivity in any materials shared with MM leadership.
+7. **Anonymous interviews.** Report themes, not who said what.
+8. **All public-source research on leadership was mostly wrong.** The official org chart from Don is the authoritative source. Validate everything internally before using externally.
+9. **Raw over polished.** For pre-read materials, whatever exists in whatever format is more useful than a curated package.
+10. **Deliverables must be sharp and concise.** Don explicitly rejected a 687-page AI-generated document from someone else. He will immediately discard anything that feels AI-padded. Evidence-based, no filler.
 
 ---
 
-## 13. Reference Links
+## 13. Don Call Summaries
+
+### April 5 Touchbase (~15 min, casual — both heading to Easter activities)
+
+**Context:** Quick check-in, didn't cover every item from the prepared call guide. Adam's assessment: "didn't miss anything that's actually important/not already known."
+
+**Key facts learned:**
+- **Kennedy/Winmark:** Jack Kennedy is currently full-time building an AI-developed POS application for Winmark Corporation, a $5M new client (franchisor of Play It Again Sports and other resale retail brands, ~1,265 stores). He is "basically agentic programming for this customer delivery this year." His "AI capabilities and platform innovation" role from the reorg is currently single-client delivery, not internal platform or Neo work. He was historically "the guy over retail business tech-wise" — Bruce gave him the CTO title for external credibility. He's been at MM 7–8 years, described as "very strategic thinking and smart" but not an expert on the restaurant business, which is why Chathura was brought in.
+- **Neo/AI:** Adam told Don he has "not found anything that's actually more than marketing slides" behind Neo. Don's comments aligned. Neo is "a branded name for our AI customer-facing AI solution." This remains an open investigation item — Adam's systems scan is the primary evidence; Don's comments are directional context, not proof.
+- **Bloom Intelligence (NEW SCOPE):** Don asked Adam to evaluate Bloom Intelligence (Will Wilson, CEO) as a potential partnership. Bloom is an AI-powered restaurant CDP based in St. Petersburg. The idea: link MM's POS data with Bloom's external customer data (WiFi, web, reviews). Product/Dulanjan already talking to them. Don is skeptical about credibility ("I don't know whether he's real or not") and worried MM is too unprepared. Kickoff meeting being planned for April. Lightweight scope addition: "just evaluate, not build."
+- **Touch Bistro (CONFIDENTIAL):** MM in merger negotiations with Touch Bistro (restaurant-space company, similar size, US/Canada). See Section 14 for details.
+- **Board deck:** Don will share the investor/lender presentation deck. Previous CEO "would never step up to making a plan" — investors saw the problems.
+- **Strategy whiplash direction:** Don described a pattern of priority shifting under previous leadership. This gives Adam a direction to investigate for Hypothesis B, but is NOT evidence for the deliverable. Need independent quantitative proof.
+- **Platform vs. custom direction:** Don pushed back on Adam's probe about per-customer custom code — "not true for restaurant, not true on CAKE." Acknowledged legacy systems that can't evolve. Hypothesis C may be more nuanced than assumed.
+- **Lights-on vs. features:** Don described team spending effort keeping things running rather than building. Existing Jira data shows 67% features / 21% defects (aggregate) — need to segment by team onsite.
+- **Onsite timing:** Don in Tampa this week, leaves for LA Thursday of the following week, back Monday. Onsite dates (Mon–Wed) confirmed. Don estimates ~2 hours of his time over the 3 days.
+- **Flutter:** Confirmed as part of the tech stack — "probably for all our mobile devices."
+- **Deliverable tone:** Don rejected a 687-page AI-generated document from someone else. Deliverables must be sharp and concise. Don spends 8–9 hours refining his own decks because AI output "is always a little bit off."
+
+**Questions NOT covered (better for onsite or already resolved):**
+- Strainick promote-to-fit/move, Bailey Shatney background, Chathura capacity/priorities, Bhasin scope, revenue data owner, Survey 5 approval, interview schedule adds/removes, off-limits topics.
+
+---
+
+## 14. Confidential — Don Only
+
+*This section contains information shared by Don in private that should NOT be included in any materials shared with Ana, Chathura, or anyone at Mad Mobile.*
+
+### Touch Bistro Potential Merger
+- MM is in negotiations to merge with **Touch Bistro**, a restaurant-space company "about our size, all over the US and Canada."
+- Estimated synergies: $30–40M, "probably the first operating area."
+- Merger dynamic: Touch Bistro would take controlling interest because MM's real equity value post-debt is "probably 35% of theirs." Touch Bistro has "a big PE behind them and capital."
+- Touch Bistro is **iOS-based**. MM is Linux/Android/Flutter. "Very different platform design."
+- Don frames Adam's work as potentially extending: do the assessment on MM, then do the same on Touch Bistro, then figure out how to merge into one platform.
+- **Implication for engagement:** The assessment should be framed for maximum reusability. If a second engagement on Touch Bistro follows, the methodology, frameworks, and tooling should transfer directly.
+
+### Cash Situation
+- Cost of capital has increased significantly "because of all our fuckups" plus market conditions.
+- Don says any benefit from Adam's work is "in addition to everything I've already committed to" the lenders — not promising engagement outcomes to the board.
+
+---
+
+## 15. Bloom Intelligence Evaluation (In Scope per Don, April 5)
+
+**Company:** Bloom Intelligence (bloomintelligence.com)
+**CEO:** Will Wilson (Founder)
+**Location:** St. Petersburg, FL (same metro as Mad Mobile in Tampa)
+**Founded:** ~2006
+**Size:** Small — Don says "a few million dollar revenue, couple people"
+
+**What they do:** AI-powered restaurant customer data platform (CDP). Captures guest data through WiFi analytics, online ordering, and website interactions. Features include:
+- Presence analytics (foot traffic, dwell times, conversion rates)
+- Customer profile CRM with dynamic profiles across visits/transactions/sentiment
+- Automated marketing campaigns (welcome, re-engagement, at-risk)
+- AI-powered reputation management (review responses across Google, Yelp, TripAdvisor, OpenTable, Facebook — 5-minute average response time)
+- At-risk guest alerts and churn prediction using ML
+
+**Integration points:** WiFi hardware (Cisco Meraki, Ubiquiti, Aruba, Ruckus), marketing platforms (Mailchimp, Constant Contact), POS systems, social platforms.
+
+**The MM partnership thesis:** Bloom captures data *outside* the POS (foot traffic, WiFi, reviews, web behavior). MM captures data *inside* the POS (transactions, orders, menu, payments). Together = complete customer view. The idea: "use their AI solution connected to ours, charge a fee to reimburse them."
+
+**Connection:** Will Wilson is co-owner of Copper Shaker, a MM client. Partnership idea surfaced when that deal closed.
+
+**Don's concerns:** Skeptical about Bloom's credibility and scale. Worried MM is "so unprepared" that a partnership kickoff would waste everyone's time. Wants Adam to do a basic evaluation before committing to a kickoff.
+
+**Internal contacts already engaged:** Dulanjan (Product) is talking to them. Kickoff meeting being planned for April.
+
+**Adam's assessment scope:** Lightweight — "basic specs, not build." Evaluate what Bloom does vs. what MM has. Assess whether there's a real technical integration path or just a marketing idea. Include in onsite questions for Dulanjan.
+
+---
+
+## 16. Vendor Assessment Questions (For Ana/Finance)
+
+Key questions for the vendor/tooling rationalization section of the board deliverable:
+
+**Spend data needed (top priority vendors):**
+- Atlassian (Jira, Confluence, Bitbucket) — seats, tier, annual total
+- Wiz.io — annual contract ($100K–$300K range typical)
+- Datadog — scope and annual cost (confirmed active for Concierge/Retail)
+- Five9 — cloud contact center, agent seats, annual cost
+- Salesforce — licenses, annual total
+- Tyk API Gateway — last renewal 2023 at ~$35K/year, is it current?
+- Snyk — contract still active? Annual cost?
+- Trend Micro Cloud One — $1,438/month in CAKE Dev AWS, intentional alongside Wiz?
+- Slack — paid plan alongside Microsoft Teams?
+- Figma — editor seats
+- TeamViewer — annual cost for POS remote access
+- GitHub — still active alongside Bitbucket? (internal docs flag "Can we get rid of this?")
+
+**Procurement process questions:**
+- Is there a centralized procurement process, or do teams buy tools independently?
+- Any recent tool consolidation or rationalization efforts?
+- Is there a single view of total tooling spend?
+
+**Observability consolidation:**
+- 6 monitoring/observability tools identified: Grafana (Mimir/Loki/Tempo), Datadog, Nagios, Munin, Graylog, DB Cacti
+- Has anyone proposed consolidating? Is there a roadmap?
+
+**Estimated annual SaaS spend (excluding AWS): $350K–$800K range** based on public pricing. Need actuals to narrow.
+
+---
+
+## 17. Reference Links
 
 - **Engagement Plan (Google Doc):** https://docs.google.com/document/d/1bQeR8VA6-uOQEqNw1FMCoJhX-yBP16UPNtLUal46B9s/edit
 - **Jira / Confluence:** https://madmobile-eng.atlassian.net/
 - **AWS Provisioning Ticket:** https://madmobile-eng.atlassian.net/browse/CLD-2431
 - **Mad Mobile Website:** https://madmobile.com/
+- **Bloom Intelligence:** https://bloomintelligence.com/
+- **Winmark Corporation:** https://www.winmarkfranchises.com/

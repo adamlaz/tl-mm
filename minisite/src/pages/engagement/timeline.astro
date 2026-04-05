@@ -8,18 +8,20 @@ import MilestoneStep from '../../components/MilestoneStep.astro';
 import TabulatorGrid from '../../components/TabulatorGrid.astro';
 
 const openItems = [
-  { item: 'Chathura survey email — only 4 of 5 surveys', owner: 'Adam → Chathura', deadline: 'Apr 7', status: 'Blocked', category: 'Coordination' },
-  { item: 'Enterprise Solutions org detail (Zubair — 58 people, no names)', owner: 'Adam → Chathura', deadline: 'Apr 7', status: 'Blocked', category: 'Data Gap' },
+  { item: 'Chathura survey email — only 4 of 5 surveys (AI Tooling link sent)', owner: 'Adam → Chathura', deadline: 'Apr 6', status: 'In Progress', category: 'Coordination' },
+  { item: 'Enterprise Solutions org detail (Zubair — 58 people, no names)', owner: 'Adam → Chathura', deadline: 'Apr 6', status: 'Blocked', category: 'Data Gap' },
   { item: 'Jira incident query (2024–2026 gap in RCA timeline)', owner: 'Adam', deadline: 'Apr 6', status: 'Pending', category: 'Data Gap' },
   { item: 'Root Cause Category field #2 (customfield_10590)', owner: 'Adam', deadline: 'Apr 6', status: 'Pending', category: 'Data Gap' },
-  { item: 'CloudTrail access escalation (deployment frequency)', owner: 'Adam → Ana', deadline: 'Apr 7', status: 'Pending', category: 'Access' },
-  { item: 'Grafana viewer access', owner: 'Ana → Matias', deadline: 'Apr 7', status: 'Confirmed', category: 'Access' },
-  { item: 'Branch protection validation (project-level vs repo-level)', owner: 'Adam', deadline: 'Apr 8', status: 'Pending', category: 'Data Gap' },
+  { item: 'CloudTrail access escalation (deployment frequency)', owner: 'Adam → Ana', deadline: 'Apr 6', status: 'Pending', category: 'Access' },
+  { item: 'Grafana viewer access', owner: 'Ana → Matias', deadline: 'Apr 6', status: 'Confirmed', category: 'Access' },
+  { item: 'Branch protection validation (project-level vs repo-level)', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Data Gap' },
   { item: 'L&D reporting discrepancy (Dulanjan vs Shatney)', owner: 'Adam', deadline: 'Onsite', status: 'Pending', category: 'Clarification' },
   { item: 'Andy Honnold dual-report (Garcia vs Akshay)', owner: 'Adam', deadline: 'Onsite', status: 'Pending', category: 'Clarification' },
   { item: 'Ana + Chathura coordination update — all requests/next steps', owner: 'Adam', deadline: 'Apr 5 evening', status: 'In Progress', category: 'Coordination' },
-  { item: 'Finish building surveys in Microsoft Forms', owner: 'Adam', deadline: 'Apr 7', status: 'In Progress', category: 'Coordination' },
-  { item: 'Finalize interview schedule grid for Ana', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Coordination' },
+  { item: 'All 5 surveys built in Microsoft Forms', owner: 'Adam', deadline: 'Apr 5', status: 'Complete', category: 'Coordination' },
+  { item: 'Finalize interview schedule grid for Ana', owner: 'Adam', deadline: 'Apr 6', status: 'Pending', category: 'Coordination' },
+  { item: 'Microsoft 365 / Azure AD access (Graph API)', owner: 'Adam → Ana/IT', deadline: 'Apr 6', status: 'Pending', category: 'Access' },
+  { item: 'Vendor/SaaS spend data from finance', owner: 'Adam → Ana', deadline: 'Apr 10', status: 'Pending', category: 'Data Gap' },
 ];
 
 const accessRows = [
@@ -28,7 +30,7 @@ const accessRows = [
   { system: 'Bitbucket (4 orgs)', status: 'Active', confirmed: 'Apr 1', notes: 'MadMobile, Sysco Labs, Mad Payments, Sysco Labs Conf' },
   { system: 'Jira / Confluence', status: 'Active', confirmed: 'Apr 1', notes: 'API tokens working' },
   { system: 'AWS SSO (18 accounts)', status: 'Active', confirmed: 'Apr 2', notes: 'Global-Audit-RO role, CLI configured' },
-  { system: 'Grafana', status: 'Pending', confirmed: 'Apr 7 (confirmed)', notes: 'Matias off for holiday weekend — Monday access' },
+  { system: 'Grafana', status: 'Pending', confirmed: 'Apr 6 (confirmed)', notes: 'Matias off for holiday weekend — Monday access' },
   { system: 'CloudWatch Alarms', status: 'Pending', confirmed: '—', notes: 'cloudwatch:DescribeAlarms not in audit role — escalation needed' },
 ];
 
@@ -59,7 +61,7 @@ const accessColumns = [
     <MetricCard label="Pre-Work" value="7 rounds" subtitle="V1–V7 complete" />
     <MetricCard label="Data Artifacts" value="31 charts, 17 CSVs" subtitle="94 Confluence pages extracted" />
     <MetricCard label="Access" value="5 of 7" subtitle="Grafana + CloudWatch pending" />
-    <MetricCard label="Surveys" value="1 of 5 live" subtitle="DevEx draft, 4 building" />
+    <MetricCard label="Surveys" value="5 of 5 built" subtitle="All links ready for Apr 6 deploy" />
   </dl>
 
   <div class="mb-10">
@@ -108,13 +110,13 @@ const accessColumns = [
         status="active"
       />
       <MilestoneStep
-        date="Apr 7"
+        date="Apr 6"
         title="Surveys go live + Grafana access"
         detail="Chathura sends survey intro as CDO. 5 surveys via Microsoft Forms. Grafana viewer access confirmed for Monday. Pre-read package from Ana."
         status="upcoming"
       />
       <MilestoneStep
-        date="Apr 7–9"
+        date="Apr 6–8"
         title="Don Sessions 2 and 3"
         detail="Session 2: political landscape and hypotheses. Session 3: pre-onsite briefing with synthesized findings."
         status="upcoming"

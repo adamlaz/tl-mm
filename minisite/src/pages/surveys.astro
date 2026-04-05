@@ -13,7 +13,7 @@ const surveys = [
   { name: 'Westrum Culture', questions: 7, time: '~2 min', audience: 'Leads, Managers, Sr ICs, PMs', measures: 'Information flow, psychological safety, collaboration, failure response' },
   { name: 'DevEx (DX Core 4)', questions: 23, time: '~7 min', audience: 'All ICs (engineers, QE, designers)', measures: 'Speed, Effectiveness, Quality, Impact (18 core + 5 MM-specific context)' },
   { name: 'Pragmatic Engineer Test', questions: 15, time: '~3 min', audience: 'Leads, Sr Engineers', measures: '12 yes/no engineering maturity practices + context' },
-  { name: 'AI Tooling & Adoption', questions: 16, time: '~5 min', audience: 'All Eng, Product, Design, QE', measures: 'AI adoption maturity, strategy clarity, tooling health' },
+  { name: 'AI Tooling & Adoption', questions: 20, time: '~5 min', audience: 'All Eng, Product, Design, QE', measures: 'AI adoption maturity, strategy clarity, tooling health' },
 ];
 
 const totalQuestions = surveys.reduce((s, v) => s + v.questions, 0);
@@ -29,7 +29,7 @@ const matrix = [
 
 const timeline = [
   { date: 'Apr 1–3', milestone: 'Survey instruments finalized, reviewed, Forms built' },
-  { date: 'Apr 7', milestone: 'Deploy via Chathura (CDO) — intro email with survey links' },
+  { date: 'Apr 6', milestone: 'Deploy via Chathura (CDO) — intro email with survey links' },
   { date: 'Apr 10', milestone: 'Response deadline (3 business days)' },
   { date: 'Apr 11', milestone: 'Pre-onsite analysis: score, segment, identify themes' },
   { date: 'Apr 13–15', milestone: 'Onsite: use survey results to guide interview probes' },
@@ -71,25 +71,25 @@ const surveyDetails = [
   {
     name: 'AI Tooling & Adoption',
     source: 'Custom for this engagement',
-    scoring: '3 dimensions: AI Adoption Maturity (Q1–6), AI Strategy Clarity (Q7, Q12–13), Tooling Health (Q8–11)',
+    scoring: '3 dimensions: AI Adoption Maturity (Q1–6), AI Strategy Clarity (Q7, Q12–13), Tooling Health (Q8–11). 20 questions total.',
     key: 'Q7 vs Q12 gap = strategy credibility problem. Segment CAKE vs Retail vs Neo vs Payments.',
   },
 ];
 
 const exploreCards = [
-  { href: '/surveys/dora', title: 'DORA Quick Check', desc: '9 questions, ~3 min. Deploy frequency, lead time, change failure rate, recovery time.', metric: '9', metricLabel: 'questions' },
-  { href: '/surveys/culture', title: 'Westrum Culture', desc: '7 questions, ~2 min. Organizational culture type: pathological, bureaucratic, or generative.', metric: '7', metricLabel: 'questions' },
-  { href: '/surveys/devex', title: 'Developer Experience', desc: '23 questions, ~7 min. Feedback loops, cognitive load, flow state, satisfaction (DX Core 4).', metric: '23', metricLabel: 'questions' },
-  { href: '/surveys/engineering', title: 'Pragmatic Engineer Test', desc: '15 questions, ~3 min. 12 yes/no engineering culture maturity checks + 3 context.', metric: '15', metricLabel: 'questions' },
-  { href: '/surveys/ai-tooling', title: 'AI Adoption & Tooling', desc: '16 questions, ~5 min. AI adoption, tooling landscape, strategy clarity.', metric: '16', metricLabel: 'questions' },
+  { href: '/surveys/dora', title: 'DORA Quick Check', desc: '9 questions, ~3 min. Deploy frequency, lead time, change failure rate, recovery time.', metric: '9', metricLabel: 'questions', formsUrl: 'https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUQU9JNFJJMzg2R1dGUlhWRTYwODc1UURaVi4u' },
+  { href: '/surveys/culture', title: 'Westrum Culture', desc: '7 questions, ~2 min. Organizational culture type: pathological, bureaucratic, or generative.', metric: '7', metricLabel: 'questions', formsUrl: 'https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRURjJXR01JU0Q5Tk8xSFNKUVFWMEIxQ1FSMC4u' },
+  { href: '/surveys/devex', title: 'Developer Experience', desc: '23 questions, ~7 min. Feedback loops, cognitive load, flow state, satisfaction (DX Core 4).', metric: '23', metricLabel: 'questions', formsUrl: 'https://forms.cloud.microsoft/r/021mP98Sf9' },
+  { href: '/surveys/engineering', title: 'Pragmatic Engineer Test', desc: '15 questions, ~3 min. 12 yes/no engineering culture maturity checks + 3 context.', metric: '15', metricLabel: 'questions', formsUrl: 'https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUNUtQWVRMWlZQRExUME1LMjNJM1lER0xaTC4u' },
+  { href: '/surveys/ai-tooling', title: 'AI Adoption & Tooling', desc: '20 questions, ~5 min. AI adoption, tooling landscape, strategy clarity.', metric: '20', metricLabel: 'questions', formsUrl: 'https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUMDNHRTNRU05KRTdRWDJWTE41UFZEMkUxNi4u' },
 ];
 
 const milestones = [
   { date: 'Apr 1-3', title: 'Survey instruments finalized', detail: 'All 5 instruments reviewed, question sets locked, scoring guides prepared.', status: 'complete' as const },
   { date: 'Apr 4', title: 'DevEx draft live in Microsoft Forms', detail: 'First survey built. Link: forms.cloud.microsoft/r/021mP98Sf9', status: 'complete' as const },
-  { date: 'Apr 5', title: 'DORA, Westrum, Pragmatic Eng building', detail: 'Remaining core surveys being constructed in Microsoft Forms.', status: 'active' as const },
-  { date: 'Apr 5', title: 'AI Adoption & Tooling pending Chathura', detail: "Survey 5 inclusion follow-up sent. Chathura's email only references 4 surveys.", status: 'blocked' as const },
-  { date: 'Apr 7', title: 'Chathura sends intro as CDO', detail: 'Survey links distributed to all engineering, product, design, and QE via Chathura\'s intro email.', status: 'upcoming' as const },
+  { date: 'Apr 5', title: 'All 5 surveys built in Microsoft Forms', detail: 'DORA (9q), Westrum (7q), Pragmatic Engineer (15q), AI Adoption & Tooling (20q) built. DevEx (23q) was already live. All links ready for distribution.', status: 'complete' as const },
+  { date: 'Apr 5', title: 'AI Adoption & Tooling — follow-up sent', detail: "Survey 5 link sent to Chathura. His intro email only references 4 surveys — pending his confirmation to include the 5th.", status: 'active' as const },
+  { date: 'Apr 6', title: 'Chathura sends intro as CDO', detail: 'Survey links distributed to all engineering, product, design, and QE via Chathura\'s intro email.', status: 'upcoming' as const },
   { date: 'Apr 10', title: 'Response deadline', detail: '3 business days. Reminder sent to incomplete respondents.', status: 'upcoming' as const },
   { date: 'Apr 10-11', title: 'Surveys close + pre-onsite analysis', detail: 'Score all instruments, segment by team/product area, identify top patterns, build interview questions.', status: 'upcoming' as const },
 ];
@@ -105,9 +105,9 @@ const milestones = [
   <div class="grid sm:grid-cols-2 gap-4 mb-8">
     <FindingCard
       severity="amber"
-      title="Survey 5 Inclusion Pending"
-      detail="Chathura's intro email references 4 surveys. AI Adoption & Tooling (Survey 5, 16 questions) feeds the board deliverable and vendor rationalization. Follow-up sent April 5."
-      status="In Progress"
+      title="Survey 5 Inclusion — Link Sent to Chathura"
+      detail="All 5 surveys built. Chathura's intro email references 4 surveys. AI Adoption & Tooling link (20 questions) sent April 5 — pending his confirmation to include as 5th survey."
+      status="Awaiting Response"
     />
     <FindingCard
       severity="green"
@@ -119,7 +119,7 @@ const milestones = [
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Surveys" value="5" subtitle={`${totalQuestions} total questions`} />
     <MetricCard label="Est. Time" value="~20 min" subtitle="per respondent (max)" />
-    <MetricCard label="Deadline" value="Apr 10" subtitle="3 business days" />
+    <MetricCard label="Deadline" value="Apr 10" subtitle="by Friday (per Chathura)" />
     <MetricCard label="Platform" value="MS Forms" subtitle="On MM account" />
   </dl>
 
@@ -200,17 +200,19 @@ const milestones = [
     <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Instruments</h2>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {exploreCards.map((card) => (
-        <a
-          href={card.href}
-          class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] transition-colors"
-        >
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] transition-colors">
           <div class="flex items-start justify-between gap-3 mb-2">
-            <h3 class="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">{card.title}</h3>
+            <a href={card.href} class="group">
+              <h3 class="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">{card.title}</h3>
+            </a>
             <span class="shrink-0 text-2xl font-mono font-semibold text-[var(--accent)] tabular-nums leading-none">{card.metric}</span>
           </div>
           <p class="text-[13px] text-[var(--text-secondary)] leading-relaxed mb-3">{card.desc}</p>
-          <span class="text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">{card.metricLabel}</span>
-        </a>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">{card.metricLabel}</span>
+            <a href={card.formsUrl} target="_blank" rel="noopener noreferrer" class="text-[10px] font-medium uppercase tracking-wider text-[var(--accent)] hover:underline">MS Forms &rarr;</a>
+          </div>
+        </div>
       ))}
     </div>
   </div>
@@ -228,7 +230,7 @@ const milestones = [
         <p>Thanks,<br />Don</p>
       </div>
     </div>
-    <p class="text-xs text-[var(--text-muted)] mt-3 leading-relaxed">Note: Chathura finalized his own version of this message. His version references 4 surveys (dropped AI Adoption & Tooling). Follow-up sent April 5 to add Survey 5.</p>
+    <p class="text-xs text-[var(--text-muted)] mt-3 leading-relaxed">Note: Chathura finalized his own version of this message. His version references 4 surveys (dropped AI Adoption & Tooling). All 5 surveys now built with links. AI Adoption & Tooling link sent to Chathura April 5 — awaiting confirmation to include as 5th survey.</p>
   </div>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Details</h2>

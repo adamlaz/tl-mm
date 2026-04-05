@@ -12,7 +12,7 @@ Quick Sunday evening update with where things stand and what I need before Monda
 
 **2. Enterprise Solutions org** — Still the biggest data gap. Chathura's CDO org chart PDF had Zubair's page mostly blank ("Enterprise Solution Org." with no names). This is the largest org (~58 people) and I currently have zero names below Zubair. **Chathura** — can you share the Enterprise Solutions team structure, or ask Zubair to send one directly? Even a rough list of names and roles would help. This is critical for interview prep and the people analysis.
 
-**3. Pre-read documents** — Looking forward to whatever lands Monday. Retail and Neo/AI roadmaps especially, per Don's scope confirmation.
+**3. Pre-read documents** — Looking forward to whatever lands Monday. Retail and Neo/AI roadmaps especially, per Don's scope confirmation. Also, Don mentioned he'd share the investor/lender presentation deck — if that comes through you, that would be very helpful for framing the board deliverable.
 
 **4. Interview scheduling** — I have the full 3-day grid ready: 18–21 sessions across April 13–15, organized by day (Monday: leadership, Tuesday: engineering deep dive, Wednesday: validation and gaps). I'll send it tomorrow for calendar booking. Updated for the April 3 reorg — Siegel removed, Strainick refocused as COO, Akshay and Guilarte added.
 
@@ -56,11 +56,20 @@ This is important for the board deliverable — incident response maturity is on
 
 ---
 
-**9. Survey 5 — AI Adoption & Tooling** — **Chathura**, your survey intro email references 4 surveys. There's a 5th — AI Adoption & Tooling (16 questions, ~5 minutes, for all engineering, product, design, and QE). This feeds directly into the board deliverable and vendor rationalization assessment. Could you add it as a 5th link in your intro message? I'll have the Microsoft Forms link ready Monday morning. If you'd prefer to keep it at 4, let me know and I'll fold the most critical AI questions into the Engineering Practices survey instead.
+**9. Survey 5 — AI Adoption & Tooling** — **Chathura**, your survey intro email references 4 surveys. There's a 5th — AI Adoption & Tooling (20 questions, ~5 minutes, for all engineering, product, design, and QE). This feeds directly into the board deliverable and vendor rationalization assessment. The survey is built and ready: https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUMDNHRTNRU05KRTdRWDJWTE41UFZEMkUxNi4u
+
+Could you add it as a 5th link in your intro message? If you'd prefer to keep it at 4, let me know and I'll fold the most critical AI questions into the Engineering Practices survey instead.
+
+**All 5 survey links for reference:**
+- DORA Quick Check (9 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUQU9JNFJJMzg2R1dGUlhWRTYwODc1UURaVi4u
+- Westrum Culture (7 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRURjJXR01JU0Q5Tk8xSFNKUVFWMEIxQ1FSMC4u
+- DevEx / DX Core 4 (23 questions): https://forms.cloud.microsoft/r/021mP98Sf9
+- Pragmatic Engineer Test (15 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUNUtQWVRMWlZQRExUME1LMjNJM1lER0xaTC4u
+- AI Adoption & Tooling (20 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUMDNHRTNRU05KRTdRWDJWTE41UFZEMkUxNi4u
 
 ---
 
-None of this is blocking the onsite — I can work with what I have — but items 2, 6, 7, 8, and 9 would meaningfully improve the depth of the analysis.
+None of this is blocking the onsite — I can work with what I have — but items 2, 6, 7, 8, 9, 14, and 15 would meaningfully improve the depth of the analysis.
 
 ---
 
@@ -91,6 +100,14 @@ I can provide the full 48-tool list with estimated pricing ranges if that helps 
 ---
 
 Items 10–13 are specifically for the vendor/tooling rationalization that Don wants in the board deliverable. The estimated annual SaaS spend (excluding AWS) is somewhere in the **$350K–$800K range** based on public pricing — confirming actuals would let me narrow that to a real number with specific savings recommendations.
+
+---
+
+**14. Winmark project visibility** — I want to make sure I have visibility into all active development efforts ahead of the onsite. Don mentioned Jack Kennedy is working on a client delivery for Winmark — is there a Jira project, Confluence space, or Bitbucket repo I should be aware of? Just want to make sure I'm not missing any active workstreams in the analysis.
+
+**15. Bloom Intelligence** — Don mentioned a potential partnership with Bloom Intelligence related to POS analytics and customer data. I'd like to understand what's been discussed so far so I can include it in the technology landscape assessment. **Chathura/Dulanjan** — are there any meeting notes, briefs, or evaluation materials from conversations with Bloom Intelligence (Will Wilson)? Even a quick summary of what's been discussed would be helpful.
+
+---
 
 Thanks,
 Adam
