@@ -107,8 +107,8 @@ export const onRequest = defineMiddleware(async (context, next) => {
     return addSecurityHeaders(await next());
   }
 
-  const user = import.meta.env.SITE_USER;
-  const password = import.meta.env.SITE_PASSWORD;
+  const user = process.env.SITE_USER;
+  const password = process.env.SITE_PASSWORD;
 
   if (!user || !password) {
     return addSecurityHeaders(await next());
