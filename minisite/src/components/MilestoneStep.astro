@@ -1,0 +1,63 @@
+---
+interface Props {
+  date: string;
+  title: string;
+  detail: string;
+  status: 'complete' | 'active' | 'upcoming' | 'blocked';
+  items?: string[];
+  last?: boolean;
+}
+
+const { date, title, detail, status, items, last = false } = Astro.props;
+
+const nodeColorMap: Record<string, string> = {
+  complete: 'var(--status-green)',
+  active: 'var(--accent)',
+  upcoming: 'var(--text-muted)',
+  blocked: 'var(--status-red)',
+};
+
+const nodeColor = nodeColorMap[status] ?? nodeColorMap['upcoming'];
+---
+
+<div class="relative pl-8 pb-8 last:pb-0">
+  {/* Vertical rail */}
+  {!last && (
+    <div
+      class="absolute left-[9px] top-6 bottom-0 w-px"
+      style="background: var(--border-subtle);"
+    />
+  )}
+
+  {/* Node circle */}
+  <div
+    class="absolute left-0 top-1 w-[18px] h-[18px] rounded-full border-2 bg-[var(--surface)]"
+    style={`border-color: ${nodeColor};`}
+  >
+    {status === 'complete' && (
+      <svg class="w-full h-full p-[2px]" viewBox="0 0 16 16" fill="none">
+        <path d="M4 8l3 3 5-6" stroke={nodeColor} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    )}
+    {status === 'active' && (
+      <div class="w-2 h-2 rounded-full m-auto mt-[3px]" style={`background: ${nodeColor};`} />
+    )}
+  </div>
+
+  {/* Content */}
+  <div>
+    <span class="text-xs font-mono font-medium text-[var(--accent)]">{date}</span>
+    <h3 class="text-sm font-semibold text-[var(--text)] mt-0.5">{title}</h3>
+    <p class="text-[13px] text-[var(--text-secondary)] leading-relaxed mt-0.5">{detail}</p>
+    {items && items.length > 0 && (
+      <ul class="mt-2 space-y-1">
+        {items.map((item) => (
+          <li class="text-xs text-[var(--text-muted)] flex items-start gap-1.5">
+            <span class="mt-1.5 w-1 h-1 rounded-full shrink-0" style={`background: ${nodeColor};`} />
+            {item}
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</div>

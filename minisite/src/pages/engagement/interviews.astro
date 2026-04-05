@@ -1,0 +1,135 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+
+const dailyRhythm = [
+  { time: '8:00–8:30', activity: 'Morning sync with Don — review findings, adjust plan, update hypothesis scorecard' },
+  { time: '8:30–12:00', activity: 'Scheduled interviews (2–3 sessions)' },
+  { time: '12:00–1:00', activity: 'Lunch with different team members each day (informal signal collection)' },
+  { time: '1:00–4:00', activity: 'Interviews or system/artifact walkthroughs (2–3 sessions)' },
+  { time: '4:00–5:00', activity: 'Synthesis — update friction register, hypothesis scoring' },
+  { time: '5:00–5:30', activity: 'End-of-day debrief with Don' },
+  { time: 'Evening', activity: 'AI-assisted synthesis of interview notes, cross-referencing against system data' },
+];
+
+const dailyRhythmColumns = [
+  { key: 'time', label: 'Time', width: '120px', sortable: false },
+  { key: 'activity', label: 'Activity', sortable: false },
+];
+
+const mondayRows = [
+  { name: 'Chathura Ratnayake', title: 'CDO', duration: '90–120 min', focus: 'Full org ownership, execution model, team health, support unification, PMO, sprint reality, AI strategy', tier: 'Tier 1', key_question: 'Epic completion is 27.7%. REST has 260 open epics. How do you decide what gets worked on?' },
+  { name: 'Jack Kennedy', title: 'CTO', duration: '60 min', focus: 'AI/innovation roadmap, Neo platform vision, infrastructure plans', tier: 'Tier 1', key_question: 'No dedicated Neo/AI AWS account. Where does AI run in production?' },
+  { name: 'Dulanjan W.', title: 'VP Product & GTM', duration: '60 min', focus: 'Roadmap governance, product decisions, PM/eng handoff, transition under CDO', tier: 'Tier 1', key_question: '12+ ongoing CAKE projects with 6 PMs. Who owns what? Does exec alignment override scoring?' },
+  { name: 'David Strainick', title: 'COO', duration: '45 min', focus: 'Account management, onboarding, delivery execution, IT operations', tier: 'Tier 1', key_question: 'How does customer onboarding handoff work with engineering? What breaks?' },
+];
+
+const tuesdayRows = [
+  { name: 'Randy Brown', title: 'VP Eng, Restaurant', duration: '60 min', focus: 'CAKE team capacity vs. 15+ live systems, outage patterns, V3/V4 coexistence', tier: 'Tier 1', key_question: '9 engineers for 15+ live systems and 6+ in development. How do you allocate across products?' },
+  { name: 'Zubair Syed', title: 'VP Eng, Enterprise', duration: '60 min', focus: 'Concierge/Retail execution, enterprise customers, offshore coordination', tier: 'Tier 1', key_question: 'Largest eng org (58 people). How does US/SL coordination work day-to-day?' },
+  { name: 'Akshay Bhasin', title: 'VP Payments Eng', duration: '45 min', focus: 'Payments architecture (cleanest codebase), QE org, PCI compliance', tier: 'Tier 1', key_question: 'Restaurant QE reports to you, not Randy. How does that work in practice?' },
+  { name: 'Mark Guilarte', title: 'VP PMO', duration: '30 min', focus: 'Cross-team coordination, execution discipline, PMO integration with sprints', tier: 'Tier 2', key_question: 'PMO domain assignments map 1:1 to product lines. Is that working?' },
+  { name: 'Engineering Managers (2–3)', title: 'Various', duration: '45 min each', focus: 'Sprint reality, blockers, ground-level perspective', tier: 'Tier 1', key_question: '90% of ECS services have no health checks. Is that a conscious decision?' },
+  { name: 'Senior ICs (2–3)', title: 'Various', duration: '30 min each', focus: 'Day-to-day delivery, tooling, AI usage, what slows them down', tier: 'Tier 1', key_question: 'Zero repos have branch protection. Pipeline success is 60.7%. What fails most?' },
+];
+
+const wednesdayRows = [
+  { name: 'Rajik Gunatilaka', title: 'VP & LK Country Head', duration: '45 min (video)', focus: 'Sri Lanka engineering ops, timezone coordination, reporting lines', tier: 'Tier 2', key_question: 'You report to COO, not CDO. How do engineering priorities flow to your teams?' },
+  { name: 'Greg Schmitzer', title: 'President', duration: '30 min', focus: 'Sales/marketing strategy, revenue story, feature promise pipeline', tier: 'Tier 2', key_question: 'What do customers get promised that engineering didn\'t plan for?' },
+  { name: 'Jeremy Diggins', title: 'Dir. Enterprise Tech', duration: '30 min', focus: 'Enterprise tech, infrastructure decisions', tier: 'Tier 2', key_question: 'You\'re Kennedy\'s only confirmed direct report. What does your day-to-day look like now?' },
+  { name: 'Bailey Shatney', title: 'VP Human Resources', duration: '30 min', focus: 'Culture, hiring, retention, L&D, team health', tier: 'Tier 2', key_question: '2.4 Glassdoor. What\'s your 90-day plan for culture?' },
+  { name: 'Customer Support Lead', title: 'TBD', duration: '30 min', focus: 'Escalation paths, support → engineering handoff', tier: 'Tier 2', key_question: 'Support moved under CDO. How do issues flow to engineering now?' },
+  { name: 'Chris Gomersall', title: 'Dir. Product Design', duration: '30 min', focus: 'Design process, PM/design/eng collaboration', tier: 'Tier 2', key_question: 'How does design capacity match engineering sprint cadence?' },
+];
+
+const scheduleColumns = [
+  { key: 'name', label: 'Name', type: 'avatar' as const, sortable: false },
+  { key: 'title', label: 'Title', type: 'badge' as const, sortable: false },
+  { key: 'duration', label: 'Duration', sortable: false },
+  { key: 'focus', label: 'Focus', sortable: false },
+  { key: 'tier', label: 'Tier', type: 'badge' as const, sortable: false, badgeMap: { 'Tier 1': 'green', 'Tier 2': 'amber' } },
+  { key: 'key_question', label: 'Key Question', sortable: false },
+];
+---
+
+<BaseLayout title="Interview Plan">
+  <SectionHeader
+    eyebrow="ONSITE INTERVIEW PLAN"
+    title="April 13–15, Tampa HQ"
+    description="18–21 sessions across 3 days. Every interview leads with data the interviewee's own leadership may not have seen."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Sessions" value="18–21" subtitle="3 days onsite" />
+    <MetricCard label="Tier 1" value="12–14" subtitle="Must happen face-to-face" />
+    <MetricCard label="Tier 2" value="5–6" subtitle="Can go async if needed" />
+    <MetricCard label="Cases to Trace" value="5" subtitle="End-to-end process validation" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Daily Rhythm</h2>
+    <TabulatorGrid columns={dailyRhythmColumns} rows={dailyRhythm} />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Monday — Leadership & Strategy</h2>
+    <TabulatorGrid columns={scheduleColumns} rows={mondayRows} />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Tuesday — Engineering Deep Dive</h2>
+    <TabulatorGrid columns={scheduleColumns} rows={tuesdayRows} />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Wednesday — Validation & Gaps</h2>
+    <TabulatorGrid columns={scheduleColumns} rows={wednesdayRows} />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Scope Discipline</h2>
+    <div class="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+      <h3 class="text-sm font-semibold text-[var(--text)] mb-3">What We Will NOT Attempt Onsite</h3>
+      <ul class="space-y-1.5 text-[13px] text-[var(--text-secondary)] leading-relaxed">
+        <li class="flex items-start gap-2"><span class="text-[var(--text-muted)] mt-0.5">•</span>Exhaustive code review</li>
+        <li class="flex items-start gap-2"><span class="text-[var(--text-muted)] mt-0.5">•</span>Contract-level vendor/pricing analysis</li>
+        <li class="flex items-start gap-2"><span class="text-[var(--text-muted)] mt-0.5">•</span>Detailed architecture documentation (C4 Level 3+)</li>
+        <li class="flex items-start gap-2"><span class="text-[var(--text-muted)] mt-0.5">•</span>Historical blame analysis</li>
+        <li class="flex items-start gap-2"><span class="text-[var(--text-muted)] mt-0.5">•</span>Individual performance assessment</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Cases to Trace</h2>
+    <div class="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+      <ol class="space-y-2 text-[13px] text-[var(--text-secondary)] leading-relaxed list-none">
+        <li class="flex items-start gap-3">
+          <span class="shrink-0 w-5 h-5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-xs font-bold flex items-center justify-center">1</span>
+          One CAKE payment processing outage — detection through resolution
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="shrink-0 w-5 h-5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-xs font-bold flex items-center justify-center">2</span>
+          One recent customer escalation — complaint through organizational response
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="shrink-0 w-5 h-5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-xs font-bold flex items-center justify-center">3</span>
+          One delayed strategic initiative — structural factors behind the slip
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="shrink-0 w-5 h-5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-xs font-bold flex items-center justify-center">4</span>
+          One mid-sprint priority change — who requested it, downstream impact
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="shrink-0 w-5 h-5 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-xs font-bold flex items-center justify-center">5</span>
+          One cross-functional success story — what conditions made it work
+        </li>
+      </ol>
+    </div>
+  </div>
+</BaseLayout>

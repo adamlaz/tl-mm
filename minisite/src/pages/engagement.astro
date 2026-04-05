@@ -4,64 +4,57 @@ export const prerender = true;
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import TabulatorGrid from '../components/TabulatorGrid.astro';
 
 const phases = [
-  { phase: 'Pre-Work', timeline: 'Now → Apr 11', status: 'Complete', detail: 'System scanning, surveys, pre-read analysis, alignment sessions' },
-  { phase: 'Onsite', timeline: 'Apr 13–15', status: 'Upcoming', detail: '3-day sprint: 18–21 interviews, architecture walkthroughs, value stream mapping, decision-rights mapping' },
-  { phase: 'Deliverables', timeline: 'Apr 16–25', status: 'Pending', detail: 'CEO operating brief, friction register, hypothesis scorecard, 30/60/90 plan' },
+  { phase: 'Pre-Work', timeline: 'Now → Apr 11', status: 'Complete', detail: 'System scanning, automated surveys, and 7 rounds of AI-driven reconnaissance (V1–V7) across Jira, Bitbucket, Confluence, AWS, and HR data — before the first interview.' },
+  { phase: 'Onsite', timeline: 'Apr 13–15', status: 'Upcoming', detail: '3-day sprint in Tampa: 18–21 structured interviews, architecture walkthroughs, value stream mapping, and decision-rights tracing with data-backed questions.' },
+  { phase: 'Deliverables', timeline: 'Apr 16–25', status: 'Pending', detail: 'CEO operating brief, friction register, hypothesis scorecard, and 30/60/90 execution plan — evidence-based, actionable, no filler.' },
 ];
 
-const leadership = [
-  { name: 'Don Salama', role: 'Co-CEO & Acting CFO', scope: 'Overall direction, investor relations' },
-  { name: 'Manuel Garcia', role: 'Interim CFO', scope: 'Finance, RevOps, Payments Strategy' },
-  { name: 'Greg Schmitzer', role: 'President / Head of Sales & Marketing', scope: 'Field Sales, Inbound, Marketing' },
-  { name: 'David Strainick', role: 'COO', scope: 'Onboarding, Account Mgmt, IT, Sri Lanka' },
-  { name: 'Chathura Ratnayake', role: 'Chief Digital Officer', scope: 'Engineering, Product, Design, PMO, Support' },
-  { name: 'Jack Kennedy', role: 'CTO', scope: 'AI / Innovation (narrowed post-reorg)' },
-  { name: 'Bailey Shatney', role: 'VP Human Resources', scope: 'Recruiting, L&D' },
-  { name: 'Ana Chambers', role: 'Chief of Staff, Strategic Programs', scope: 'Cross-company execution, initiative alignment' },
-];
-
-const hypotheses = [
-  { id: 'A', name: 'Portfolio Sprawl', statement: 'Too many products, no shared platform discipline.', test: 'Count active codebases. Teams on >1 product? Shared services vs. duplication?', link: '/engineering' },
-  { id: 'B', name: 'Sales-Led Chaos', statement: 'Revenue promises create roadmap churn and tech debt.', test: 'Ask sales what they promise. Ask eng what surprises them mid-sprint. Ask product who overrides.', link: '/delivery' },
-  { id: 'C', name: 'Fake Platforming', statement: "Leadership talks 'platform'; teams maintain customer-specific patchwork.", test: 'Show me the shared platform layer. What does Neo actually consist of in production?', link: '/infrastructure' },
-  { id: 'D', name: 'Unclear Ownership', statement: 'Formal authority and operational authority are misaligned — CONFIRMED and resolved by April 3 reorg.', test: 'Map who actually decides on architecture, staffing, priorities. Trace whether teams have fully transitioned to CDO chain.', link: '/people' },
-  { id: 'E', name: 'Dependency Drag', statement: 'A few people or teams are routing bottlenecks.', test: 'Whose approval do you need? Who do you wait on? Map the dependency graph.', link: '/engineering' },
-  { id: 'F', name: 'Legacy Gravity', statement: 'CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate.', test: 'What constraint costs the most velocity? Ratio of maintenance vs. new feature hours?', link: '/infrastructure' },
-  { id: 'G', name: 'Missing Cadence', statement: 'No consistent execution inspection; leadership discovers reality through fire drills.', test: "What's the weekly rhythm? What metrics are reviewed? How does bad news travel?", link: '/delivery' },
-  { id: 'H', name: 'Biz-Tech Mistranslation', statement: "Business says 'eng is slow'; eng says 'business is chaotic'; real issue is undefined tradeoffs.", test: 'Ask both sides why delivery is slow. Compare answers. Look for structural decision gaps.', link: '/delivery' },
-  { id: 'I', name: 'Architectural Polarity', statement: 'Simultaneous AI-native building + legacy POS maintenance = irreconcilable engineering split.', test: 'How are teams allocated? Do engineers rotate or get stuck? Is there a migration path?', link: '/infrastructure' },
-];
-
-const systems = [
-  { system: 'Business Direction', question: 'What matters most? What gets funded?', focus: 'Portfolio clarity, resource allocation, strategic coherence' },
-  { system: 'Product Decision', question: 'Who owns prioritization? How often do sales/board override product?', focus: 'Roadmap governance, power dynamics, requirement stability' },
-  { system: 'Delivery', question: 'How does work move from idea to shipped value?', focus: 'Cycle time, deploy frequency, WIP, sprint completion' },
-  { system: 'Technical', question: 'Where is coupling high? Where is legacy strangling velocity?', focus: 'Architecture, tech debt ratio, incidents, deploy complexity' },
-  { system: 'Operating Cadence', question: 'What meetings and metrics govern execution?', focus: 'Meeting structure, dashboards, escalation paths' },
-  { system: 'Accountability', question: 'Are teams rewarded for shipping, rescuing, pleasing execs, or avoiding blame?', focus: 'Comp structures, recognition, promotion criteria' },
-];
-
-const deliverables = [
-  { tier: 'Core', items: 'CEO Operating Brief, Friction Register, Hypothesis Scorecard, 30/60/90 Plan, Baseline Survey Package' },
-  { tier: 'Expected', items: 'Board-Ready Presentation, Execution System Map, Vendor/Tool Utilization Assessment' },
-  { tier: 'Stretch', items: 'Stakeholder Communication Draft, STARS Diagnostic' },
+const explore = [
+  { href: '/engagement/timeline', title: 'Timeline & Status', desc: 'Pre-work milestones, upcoming dates, open items, and data gaps.', metric: '12', metricLabel: 'milestones' },
+  { href: '/engagement/hypotheses', title: 'Hypotheses', desc: 'Nine execution-failure patterns with quantitative pre-evidence from 7 rounds of system scans.', metric: '9', metricLabel: 'patterns' },
+  { href: '/engagement/leadership', title: 'Leadership', desc: 'Post-reorg org structure: two C-suite exits, CDO promotion, and ~100-person org consolidation.', metric: '8', metricLabel: 'executives' },
+  { href: '/engagement/interviews', title: 'Interviews', desc: 'Three-day onsite schedule with data-driven questions for every session.', metric: '18–21', metricLabel: 'sessions' },
+  { href: '/engagement/deliverables', title: 'Deliverables', desc: 'CEO operating brief, friction register, 30/60/90 plan, and the diagnostic framework.', metric: '5+', metricLabel: 'core outputs' },
 ];
 ---
 
 <BaseLayout title="Engagement">
   <SectionHeader
-    title="Engagement Overview"
-    description="CEO Ramp Accelerator — a focused technology and operations assessment (~60 hours over 3 weeks) for Mad Mobile, Inc."
+    eyebrow="ENGAGEMENT OVERVIEW"
+    title="CEO Ramp Accelerator"
+    description="A ~60-hour compressed technology and operations diagnostic for Mad Mobile, Inc. — automated system reconnaissance, 18–21 onsite interviews, and an evidence-based operating brief."
   />
+
+  <div class="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 mb-8">
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div>
+        <h3 class="text-[10px] font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-2">What this is</h3>
+        <ul class="space-y-1.5 text-xs text-[var(--text-secondary)] leading-relaxed">
+          <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>~60-hour compressed diagnostic across 3 weeks</li>
+          <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>AI-driven system reconnaissance before the first interview</li>
+          <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>18–21 structured interviews with data-backed questions</li>
+          <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>Evidence-based operating brief Don can act on immediately</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-[10px] font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-2">What it isn't</h3>
+        <ul class="space-y-1.5 text-xs text-[var(--text-secondary)] leading-relaxed">
+          <li class="flex gap-2"><span class="text-[var(--text-muted)] shrink-0">○</span>A personnel review or performance evaluation</li>
+          <li class="flex gap-2"><span class="text-[var(--text-muted)] shrink-0">○</span>An exhaustive code audit</li>
+          <li class="flex gap-2"><span class="text-[var(--text-muted)] shrink-0">○</span>A six-month consulting program</li>
+          <li class="flex gap-2"><span class="text-[var(--text-muted)] shrink-0">○</span>Blame-focused — systems-focused, anonymous interviews, only patterns reported</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Duration" value="3 wks" subtitle="~60 hours total" />
     <MetricCard label="Interviews" value="18–21" subtitle="Onsite Apr 13–15" />
     <MetricCard label="Hypotheses" value="9" subtitle="1 confirmed pre-onsite" />
-    <MetricCard label="Surveys" value="5" subtitle="Deployment, culture, DevEx, practices, AI" />
+    <MetricCard label="Pre-Work" value="7 rounds" subtitle="V1–V7 automated scans" />
   </dl>
 
   <div class="mb-10">
@@ -121,59 +114,22 @@ const deliverables = [
     </div>
   </div>
 
-  <div class="mb-10">
-    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Post-Reorg Leadership (April 2026)</h2>
-    <TabulatorGrid
-      columns={[
-        { key: 'name', label: 'Name', sortable: false },
-        { key: 'role', label: 'Role', type: 'badge', sortable: false },
-        { key: 'scope', label: 'Scope', sortable: false },
-      ]}
-      rows={leadership}
-    />
-  </div>
-
-  <div class="mb-10">
-    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Nine Hypotheses</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {hypotheses.map((h) => (
-        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--surface-alt)] px-2 py-0.5 rounded">
-              {h.id}
-            </span>
-            <h3 class="text-sm font-semibold text-[var(--text)]">{h.name}</h3>
-          </div>
-          <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-2">{h.statement}</p>
-          <p class="text-[11px] text-[var(--text-muted)] leading-relaxed">{h.test}</p>
-          <a href={h.link} class="text-xs text-[var(--accent)] hover:underline mt-2 inline-block">View evidence →</a>
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Explore</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {explore.map(({ href, title, desc, metric, metricLabel }) => (
+      <a
+        href={href}
+        class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all"
+      >
+        <div class="flex items-start justify-between mb-2">
+          <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">
+            {title}
+          </h3>
+          <span class="text-lg font-mono font-semibold text-[var(--accent)] tabular-nums">{metric}</span>
         </div>
-      ))}
-    </div>
-  </div>
-
-  <div class="grid lg:grid-cols-2 gap-6 mb-10">
-    <div>
-      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Six Systems Framework</h2>
-      <TabulatorGrid
-        columns={[
-          { key: 'system', label: 'System', type: 'badge', sortable: false },
-          { key: 'question', label: 'Core Question', sortable: false },
-          { key: 'focus', label: 'What We Look For', sortable: false },
-        ]}
-        rows={systems}
-      />
-    </div>
-    <div>
-      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Deliverables</h2>
-      <TabulatorGrid
-        columns={[
-          { key: 'tier', label: 'Tier', type: 'badge', sortable: false, badgeMap: { Core: 'green', Expected: 'amber', Stretch: 'muted' } },
-          { key: 'items', label: 'Deliverables', sortable: false },
-        ]}
-        rows={deliverables}
-        rowFormatter="_tier_style"
-      />
-    </div>
+        <p class="text-xs text-[var(--text-secondary)]">{desc}</p>
+        <p class="text-[10px] text-[var(--text-muted)] mt-1 uppercase tracking-wider">{metricLabel}</p>
+      </a>
+    ))}
   </div>
 </BaseLayout>

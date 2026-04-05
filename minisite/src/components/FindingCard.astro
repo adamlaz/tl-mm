@@ -1,0 +1,66 @@
+---
+interface Props {
+  id?: string;
+  severity: 'green' | 'amber' | 'red' | 'muted';
+  title: string;
+  detail: string;
+  evidence?: string;
+  href?: string;
+  status?: string;
+  hrefLabel?: string;
+}
+
+const { id, severity, title, detail, evidence, href, status, hrefLabel } = Astro.props;
+
+const borderMap: Record<string, string> = {
+  green: 'var(--status-green)',
+  amber: 'var(--status-amber)',
+  red: 'var(--status-red)',
+  muted: 'var(--border)',
+};
+
+const statusColorMap: Record<string, { color: string; bg: string }> = {
+  Confirmed: { color: 'var(--status-green)', bg: 'var(--status-green-bg)' },
+  'Pre-Evidence': { color: 'var(--status-amber)', bg: 'var(--status-amber-bg)' },
+  Untested: { color: 'var(--text-muted)', bg: 'var(--surface-alt)' },
+  Complete: { color: 'var(--status-green)', bg: 'var(--status-green-bg)' },
+  'In Progress': { color: 'var(--status-amber)', bg: 'var(--status-amber-bg)' },
+  Blocked: { color: 'var(--status-red)', bg: 'var(--status-red-bg)' },
+};
+
+const borderColor = borderMap[severity] ?? borderMap['muted'];
+const statusColors = status ? statusColorMap[status] ?? { color: 'var(--text-muted)', bg: 'var(--surface-alt)' } : null;
+---
+
+<div
+  class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 border-l-[3px]"
+  style={`border-left-color: ${borderColor};`}
+>
+  <div class="flex items-start justify-between gap-3 mb-2">
+    <div class="flex items-center gap-2 min-w-0">
+      {id && (
+        <span class="shrink-0 text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">
+          {id}
+        </span>
+      )}
+      <h3 class="text-sm font-semibold text-[var(--text)] truncate">{title}</h3>
+    </div>
+    {statusColors && status && (
+      <span
+        class="shrink-0 inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+        style={`color: ${statusColors.color}; background: ${statusColors.bg};`}
+      >
+        {status}
+      </span>
+    )}
+  </div>
+  <p class="text-[13px] text-[var(--text-secondary)] leading-relaxed mb-2">{detail}</p>
+  {evidence && (
+    <p class="text-xs text-[var(--text-muted)] leading-relaxed font-mono">{evidence}</p>
+  )}
+  {href && (
+    <a href={href} class="text-xs text-[var(--accent)] hover:underline mt-2 inline-block">
+      {hrefLabel ?? 'View evidence'} →
+    </a>
+  )}
+</div>

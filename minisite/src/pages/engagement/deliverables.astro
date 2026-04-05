@@ -1,0 +1,201 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+
+const coreDeliverables = [
+  {
+    title: 'CEO Operating Brief',
+    detail: '2–4 pages. What\u2019s working, what\u2019s breaking, why, biggest risks, top priorities. The main document Don uses. The technology chapter of his transition playbook.',
+  },
+  {
+    title: 'Friction Register',
+    detail: '10–15 prioritized findings organized by PE DD 9-Pillar structure. Issue, evidence, impact, severity, pattern match (A–I), recommended action, owner candidate.',
+  },
+  {
+    title: 'Hypothesis Scorecard',
+    detail: 'Each pattern (A–I) scored Confirmed / Partially Confirmed / Not Present with evidence summary. One page. Pass/fail clarity.',
+  },
+  {
+    title: '30/60/90-Day Action Plan',
+    detail: 'Sequenced actions with an explicit \u2018Leave Alone\u2019 list. Named owners and hard dates. The CEO\u2019s attention is the scarcest resource — this protects it.',
+  },
+  {
+    title: 'Baseline Survey Package',
+    detail: 'DORA, Westrum, DevEx, Pragmatic Engineer, AI Adoption surveys with instructions for re-run at 30/60 days without TL involvement. Mad Mobile owns this permanently.',
+  },
+];
+
+const expectedDeliverables = [
+  {
+    title: 'Board-Ready Presentation',
+    detail: '20–30 slides for Morgan Stanley and the board. PE DD pillar structure with maturity scores. Designed for Don to present directly.',
+  },
+  {
+    title: 'Execution System Map',
+    detail: 'Visual set: org + RAPID decision rights, value stream with bottlenecks, C4 topology, Team Topologies classification, six-system health.',
+  },
+  {
+    title: 'Vendor/Tool Utilization Assessment',
+    detail: '28 tools identified. What\u2019s used, what\u2019s wasted, what\u2019s missing. Effectiveness assessment, not contract review.',
+  },
+];
+
+const stretchDeliverables = [
+  {
+    title: 'Stakeholder Communication Draft',
+    detail: 'Script for Don\u2019s internal messaging post-engagement. Appreciative, candid, no blame. Change will be sequenced.',
+  },
+  {
+    title: 'STARS Diagnostic',
+    detail: 'Watkins framework classification — Start-up, Turnaround, Accelerated Growth, Realignment, or Sustaining Success. May fold into CEO Operating Brief.',
+  },
+];
+
+const sixSystemsRows = [
+  { system: 'Business Direction', question: 'What matters most? What gets funded?', focus: 'Portfolio clarity, resource allocation, strategic coherence' },
+  { system: 'Product Decision', question: 'Who owns prioritization? How often do sales/board override product?', focus: 'Roadmap governance, power dynamics, requirement stability' },
+  { system: 'Delivery', question: 'How does work move from idea to shipped value?', focus: 'Cycle time, deploy frequency, WIP, sprint completion' },
+  { system: 'Technical', question: 'Where is coupling high? Where is legacy strangling velocity?', focus: 'Architecture, tech debt ratio, incidents, deploy complexity' },
+  { system: 'Operating Cadence', question: 'What meetings and metrics govern execution?', focus: 'Meeting structure, dashboards, escalation paths' },
+  { system: 'Accountability', question: 'Are teams rewarded for shipping, rescuing, pleasing execs, or avoiding blame?', focus: 'Comp structures, recognition, promotion criteria' },
+];
+
+const sixSystemsColumns = [
+  { key: 'system', label: 'System', type: 'badge' as const, sortable: false },
+  { key: 'question', label: 'Core Question', sortable: false },
+  { key: 'focus', label: 'What We Look For', sortable: false },
+];
+
+const preworkRows = [
+  { framework: 'DORA Metrics', what: 'Quantitative delivery benchmarks: deploy frequency, lead time, change failure rate, recovery time', source: 'Forsgren/Humble/Kim' },
+  { framework: 'Westrum Culture Model', what: 'Organizational culture type: pathological, bureaucratic, or generative', source: 'DORA/BMJ' },
+  { framework: 'DevEx (DX Core 4)', what: 'Developer experience across feedback loops, cognitive load, and flow state', source: 'Noda et al.' },
+  { framework: 'Pragmatic Engineer Test', what: '15 yes/no engineering culture maturity checks', source: 'Orosz' },
+];
+
+const onsiteRows = [
+  { framework: 'McKinsey 7S', what: 'Holistic org diagnostic — informal vs. formal org misalignment', source: 'McKinsey' },
+  { framework: 'RAPID', what: 'Decision rights mapping: who Recommends, provides Input, Agrees, Decides, Performs', source: 'Rogers/Blenko (HBR 2006)' },
+  { framework: 'Value Stream Mapping', what: 'Visual flow analysis — where work stalls, where handoffs break', source: 'Rother/Shook' },
+  { framework: 'Theory of Constraints', what: 'Find the single biggest bottleneck', source: 'Goldratt' },
+  { framework: 'Team Topologies', what: 'Classify team types and interaction modes; assess cognitive load', source: 'Skelton/Pais' },
+  { framework: 'Wardley Mapping', what: 'Component evolution, innovation portfolio balance, build-vs-buy alignment', source: 'Wardley' },
+];
+
+const deliverableRows = [
+  { framework: 'PE Tech DD 9-Pillar', what: 'Board-ready pillar structure with maturity scores', source: 'Crosslake/West Monroe/EY-Parthenon' },
+  { framework: 'Watkins STARS', what: 'CEO transition situation diagnosis', source: 'HBR First 90 Days' },
+  { framework: 'C4 Model', what: 'Hierarchical architecture documentation (Context and Container levels)', source: 'Brown' },
+  { framework: 'Fowler Debt Quadrant', what: 'Debt classification: deliberate vs. inadvertent, prudent vs. reckless', source: 'Fowler' },
+  { framework: 'Flow Framework', what: 'Work type distribution: features vs. defects vs. risks vs. debt', source: 'Kersten' },
+];
+
+const methodologyColumns = [
+  { key: 'framework', label: 'Framework', type: 'badge' as const, sortable: false },
+  { key: 'what', label: 'What It Does', sortable: false },
+  { key: 'source', label: 'Attribution', sortable: false },
+];
+
+const timelineCards = [
+  { period: 'First 30 Days', label: 'Stabilize & Establish Truth', detail: 'Validate CDO/CTO reorg operationally. Establish one delivery cadence. Clarify decision rights. Halt non-essential feature churn for POS stability.' },
+  { period: 'Next 60 Days', label: 'Optimize Interfaces', detail: 'Restructure sales/product/eng interface. Move to outcome metrics. Evaluate whether product needs its own executive. Launch architecture debt triage.' },
+  { period: 'Next 90 Days', label: 'Strategic Alignment', detail: 'Align portfolio and resourcing. Make org/accountability adjustments. Evaluate Sri Lanka structure. Publish modernization thesis. Present realistic roadmap to board.' },
+  { period: 'Leave Alone', label: 'Protect CEO Attention', detail: 'Cosmetic rebranding. Reorganizing functioning teams. Relitigating historical comp changes. Wading into Bruce-era grievances.' },
+];
+---
+
+<BaseLayout title="Deliverables">
+  <SectionHeader
+    eyebrow="DELIVERABLES & FRAMEWORK"
+    title="What This Engagement Produces"
+    description="Named outputs, the diagnostic framework behind them, and the methodology that makes every finding credible with board-level audiences."
+  />
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text)] mb-3">Core — Guaranteed</h2>
+    <div class="space-y-3">
+      {coreDeliverables.map((d) => (
+        <FindingCard severity="green" title={d.title} detail={d.detail} />
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text)] mb-3">Expected — High Confidence</h2>
+    <div class="space-y-3">
+      {expectedDeliverables.map((d) => (
+        <FindingCard severity="amber" title={d.title} detail={d.detail} />
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text)] mb-3">Stretch — If Time Allows</h2>
+    <div class="space-y-3">
+      {stretchDeliverables.map((d) => (
+        <FindingCard severity="muted" title={d.title} detail={d.detail} />
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Six Systems Framework</h2>
+    <TabulatorGrid columns={sixSystemsColumns} rows={sixSystemsRows} />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Methodology by Phase</h2>
+
+    <div class="mb-6">
+      <h3 class="text-sm font-semibold text-[var(--text)] mb-3">Pre-Work Frameworks</h3>
+      <TabulatorGrid columns={methodologyColumns} rows={preworkRows} />
+    </div>
+
+    <div class="mb-6">
+      <h3 class="text-sm font-semibold text-[var(--text)] mb-3">Onsite Frameworks</h3>
+      <TabulatorGrid columns={methodologyColumns} rows={onsiteRows} />
+    </div>
+
+    <div class="mb-6">
+      <h3 class="text-sm font-semibold text-[var(--text)] mb-3">Deliverable Frameworks</h3>
+      <TabulatorGrid columns={methodologyColumns} rows={deliverableRows} />
+    </div>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <ChartEmbed slug="engagement_effort_waterfall" title="Engagement Effort Allocation" description="~63 hours across 3 weeks. AI handles volume; Adam handles judgment." interactive />
+    <ChartEmbed slug="methodology_heatmap" title="Framework × System Coverage" description="Which frameworks apply to which systems. Darker = stronger applicability." interactive />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">30/60/90 Preview</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {timelineCards.map((card, i) => (
+        <div
+          class:list={[
+            'rounded-xl border p-5',
+            i === 3
+              ? 'bg-[var(--surface-alt)] border-[var(--border-subtle)] opacity-75'
+              : 'bg-[var(--surface)] border-[var(--border)]',
+          ]}
+        >
+          <p class:list={[
+            'text-sm font-semibold mb-1',
+            i === 3 ? 'text-[var(--text-muted)]' : 'text-[var(--text)]',
+          ]}>{card.period}</p>
+          <p class:list={[
+            'text-xs font-medium mb-2',
+            i === 3 ? 'text-[var(--text-muted)]' : 'text-[var(--text-secondary)]',
+          ]}>{card.label}</p>
+          <p class="text-xs text-[var(--text-secondary)] leading-relaxed">{card.detail}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

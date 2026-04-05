@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 4, 2026 (updated April 4 with CDO org chart from Chathura, Don scope expansion, Ana logistics updates, Chathura survey email — multiple corrections to personnel data)
+**Date:** April 5, 2026 (updated April 5 with Don touchbase, Ana/Chathura coordination update, engagement minisite expansion, new ECharts charts)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -598,25 +598,27 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 - **Ana logistics partially confirmed** (April 3 email): Grafana Monday, pre-reads Monday, interview scheduling next week, conference room needs TV/screen response.
 - **Don scope confirmed** (April 3 email): "Retail and Neo/AI in scope please with main focus obviously restaurant."
 
+- **Engagement minisite expanded** — engagement section rebuilt with 6 subpages (timeline, hypotheses, leadership, interviews, deliverables), 3 new components (FindingCard, MilestoneStep, enhanced SectionHeader), 5 new ECharts charts (hypothesis evidence radar, org size treemap, reorg sankey, effort waterfall, methodology heatmap). TL deliverable standards applied throughout (April 5).
+- **Don touchbase** (April 5) — reorg-specific questions: Kennedy's future, Strainick appointment, board deck transparency level. V7 findings briefed.
+
 ### In Progress 🔄
+- **Ana + Chathura coordination update** — sending tonight (April 5 evening) with all pending requests, next steps, and pre-onsite logistics
 - Building all 5 surveys in Microsoft Forms on MM account (DevEx draft live: https://forms.cloud.microsoft/r/021mP98Sf9)
-- **ISSUE:** Chathura's survey intro email only references 4 surveys — dropped AI & Tooling (Survey 5). Need to follow up before Monday send.
-- Working with Don on reorg-specific questions via call guide (Kennedy's future, Strainick appointment, Shatney background, board deck transparency)
+- **ISSUE:** Chathura's survey intro email only references 4 surveys — dropped AI & Tooling (Survey 5). Following up tonight.
 - Waiting on Ana: pre-read items not in Confluence — **target: early Monday April 7**
 - Waiting on Ana: Grafana viewer access — **confirmed Monday April 7** (Matias off holiday weekend)
 - Waiting on Ana: routing questions on Monvia, MenuPad, Relate, Neo/AI
-- Waiting on Ana: interview calendar blocks + conference room (April 13–15) — **Ana will work on early next week.** She asked: "Do you need a TV/screen available in the room?" **→ Reply needed: yes, useful for showing charts/data during interviews.**
-- **Don confirmed scope expansion:** "Retail and Neo/AI in scope please with main focus obviously restaurant." Concierge/Retail and Neo/AI product roadmaps now explicitly requested.
+- Waiting on Ana: interview calendar blocks + conference room (April 13–15)
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
 ### Next Steps (This Week)
-1. **Send Ana coordination email** — `ana-request.md` is ready to send
+1. **Send Ana/Chathura coordination update** — tonight, April 5. Updated `ana-request.md` covers all open items.
 2. **Finish building surveys in Microsoft Forms** — all five instruments (DORA, Westrum, DevEx, Pragmatic Engineer, AI Adoption & Tooling)
 3. **Finalize interview schedule grid** — send to Ana for calendar booking
-4. **Work with Don** on survey intro message and deployment timing (target: April 7)
-5. **Collect pre-read docs** as Ana's folder becomes available
-6. **Review analysis charts** — open `analysis/charts/*.json` in browser, identify top findings to lead with onsite
+4. **Don Sessions 2 and 3** — target April 7–9. Session 2: political landscape. Session 3: pre-onsite briefing.
+5. **Collect pre-read docs** as Ana's folder becomes available Monday
+6. **Grafana capture** — Monday April 7 when access arrives. Dashboard inventory, alert rules, data sources.
 7. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine
 
 ### System Exploration — Completed (Key Answers)

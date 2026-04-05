@@ -1,0 +1,150 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+
+const execTeam = [
+  { name: 'Don Salama', role: 'Co-CEO & Acting CFO', scope: 'Overall direction, investor relations', focus: 'Primary sponsor. Two years of operational visibility.' },
+  { name: 'Manuel Garcia', role: 'Interim CFO', scope: 'Finance, Revenue Operations', focus: 'NEW. Absorbed RevOps from Siegel.' },
+  { name: 'Greg Schmitzer', role: 'President / Head of Sales & Marketing', scope: 'Field Sales, Inbound, Marketing', focus: 'EXPANDED. Absorbed Lodes\' sales org.' },
+  { name: 'David Strainick', role: 'COO (was CPO)', scope: 'Account Mgmt, Onboarding, Delivery, IT', focus: 'LANE CHANGE. Was Chief People Officer. Validate if durable.' },
+  { name: 'Chathura Ratnayake', role: 'CDO (was SVP Engineering)', scope: 'ALL engineering, product, design, PMO, support', focus: 'PROMOTED. Most important interview. ~100+ people.' },
+  { name: 'Jack Kennedy', role: 'CTO', scope: 'AI / Innovation only', focus: 'NARROWED. Operational engineering scope removed.' },
+  { name: 'Bailey Shatney', role: 'VP Human Resources', scope: 'HR, Recruiting, L&D', focus: 'NEW. Stepping into a 2.4 Glassdoor company.' },
+  { name: 'Ana Chambers', role: 'Chief of Staff', scope: 'Cross-company execution, initiative alignment', focus: 'NEW to org chart. Don\'s operational right hand.' },
+];
+
+const cdoOrg = [
+  { name: 'Dulanjan W.', title: 'VP, Product & GTM', size: '10+', teams: '6 PMs (Restaurant, Payments/Ops/Eng), Chris Gomersall (Design), open Marketing, L&D' },
+  { name: 'Randy Brown', title: 'VP Eng, Restaurant Technology', size: '10', teams: 'Frontend (3): Baine, Renard, Quin. Backend (6): Budd, Bruderer, Bobal, Ganesh, Minchew, Lavor.' },
+  { name: 'Zubair Syed', title: 'VP Eng, Enterprise Solutions', size: '58', teams: 'Largest eng org. CDO org chart page was mostly blank — detail still needed.' },
+  { name: 'Akshay Bhasin', title: 'VP Payments Engineering', size: '20+', teams: 'Payments R&D (Kevin Reyes, 9), Restaurant QE (7), Biz Ops (Andy Honnold + 3), PCI counterparts.' },
+  { name: 'Mark Guilarte', title: 'VP Program Management', size: '4', teams: 'Qaiser (Restaurant), Vanessa (Payments), Ian (AI), Debbie (Ops Eng).' },
+  { name: 'Customer Support', title: 'All levels', size: 'TBD', teams: 'Unified under CDO — previously under Lodes (CRO). Headcount not yet confirmed.' },
+];
+
+const openQuestions = [
+  { question: 'L&D reporting: Dulanjan (CDO chart) or Shatney (Don chart)?', source: 'CDO org chart vs executive org chart', target: 'Onsite or email pre-Apr 13' },
+  { question: 'Andy Honnold: Garcia (CFO chart) or Akshay (CDO chart)?', source: 'Executive vs functional org charts', target: 'Onsite' },
+  { question: 'Enterprise Solutions detail — 58 people, no names', source: 'CDO org chart page was blank for Zubair', target: 'Request from Chathura pre-Apr 7' },
+  { question: 'Restaurant QE under Payments VP, not Restaurant VP', source: 'Unusual QE/dev reporting split', target: 'Onsite — Akshay + Randy interviews' },
+];
+---
+
+<BaseLayout title="Leadership">
+  <SectionHeader
+    eyebrow="POST-REORG LEADERSHIP"
+    title="April 3, 2026 Reorg"
+    description="Two C-suite exits, three new executive appointments, one promotion to CDO with authority over ~100 people. The largest structural change in Mad Mobile's recent history."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Executive Reports" value="7" subtitle="Don's direct reports + Ana" />
+    <MetricCard label="CDO Org Size" value="~100+" subtitle="Largest org in the company" />
+    <MetricCard label="Departed" value="2" subtitle="Siegel (COO), Lodes (CRO)" />
+    <MetricCard label="New to Exec Team" value="3" subtitle="Garcia, Shatney, Guilarte" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Executive Team</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'name', label: 'Name', type: 'avatar', subtitleKey: 'role', sortable: false },
+        { key: 'scope', label: 'Scope', sortable: false },
+        { key: 'focus', label: 'Focus', sortable: false },
+      ]}
+      rows={execTeam}
+    />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Key Structural Changes</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard
+        severity="green"
+        title="Chathura Ratnayake promoted to CDO"
+        detail="Now owns ALL engineering across verticals, product, design, PMO, and customer support. Single largest org in the company (~100+ people). Full build-to-support chain under one executive."
+      />
+      <FindingCard
+        severity="green"
+        title="Customer support unified under CDO"
+        detail="Previously under Lodes (CRO). Now under Chathura. The full chain — build, ship, support — reports to one person. Positive structural change."
+      />
+      <FindingCard
+        severity="amber"
+        title="Jack Kennedy scope narrowed to AI/innovation"
+        detail="Retains CTO title. Operational engineering authority transferred to Chathura. Direct team is just Jeremy Diggins. Handle with care in interviews."
+      />
+      <FindingCard
+        severity="amber"
+        title="David Strainick moved from CPO to COO"
+        detail="Now owns Account Management, Onboarding, Delivery, and IT. Lane change from HR to operations. Validate whether this is a durable appointment or a transition step."
+      />
+      <FindingCard
+        severity="red"
+        title="Steven Siegel exited — COO"
+        detail="Payments strategy, data/analytics, revenue ops responsibilities redistributed across Garcia (CFO), Chathura (CDO), and Schmitzer (President)."
+      />
+      <FindingCard
+        severity="red"
+        title="Bill Lodes exited — CRO"
+        detail="Staying in consulting capacity on payments strategy transition. Sales absorbed by Schmitzer. Customer support moved to Chathura."
+      />
+      <FindingCard
+        severity="amber"
+        title="Bailey Shatney — new VP HR in a hard seat"
+        detail="Stepping into a company with 2.4 Glassdoor, culture erosion, post-reorg turbulence. Survey baseline and interview themes become her onboarding resource."
+      />
+      <FindingCard
+        severity="amber"
+        title="Manuel Garcia — new Interim CFO"
+        detail="Absorbed Revenue Operations from Siegel. Mark Do (Controller), Zach Honnold (RevOps), Andy Honnold (Payments Strategy) report to Garcia."
+      />
+      <FindingCard
+        severity="amber"
+        title="Sri Lanka reports to COO, not CDO"
+        detail="Rajik Gunatilaka (VP & LK Country Head) reports to Strainick (COO). Engineering resources have dotted-line to Chathura/Zubair. Unusual structure."
+      />
+      <FindingCard
+        severity="amber"
+        title="IT reports to COO, not CTO"
+        detail="Rosen Georgiev (day-to-day IT) under Strainick. Jorge Maltes (IT governance/compliance) appears under Payments as PCI counterpart."
+      />
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">CDO Organization Detail</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'name', label: 'Name', sortable: false },
+        { key: 'title', label: 'Title', type: 'badge', sortable: false },
+        { key: 'size', label: 'Size', type: 'number', sortable: false },
+        { key: 'teams', label: 'Teams', sortable: false },
+      ]}
+      rows={cdoOrg}
+    />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <ChartEmbed slug="org_size_treemap" title="Organization Size by Executive" description="Area proportional to headcount. Chathura's CDO org dominates at ~100+ people." interactive />
+    <ChartEmbed slug="reorg_sankey" title="Reorg Responsibility Flow" description="How responsibilities moved from old structure (Siegel, Lodes, Kennedy) to new (Chathura, Garcia, Schmitzer)." interactive />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Open Clarifications</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'question', label: 'Question', sortable: false },
+        { key: 'source', label: 'Source of Discrepancy', sortable: false },
+        { key: 'target', label: 'Resolution Target', sortable: false },
+      ]}
+      rows={openQuestions}
+    />
+  </div>
+</BaseLayout>

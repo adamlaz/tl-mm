@@ -1,22 +1,22 @@
-**Subject:** Re: Pre-onsite updates + one new access request
+**Subject:** Re: Pre-onsite updates, requests, and next steps
 
-Hi Ana,
+Hi Ana (cc Chathura),
 
-Hope you're having a good weekend. A few updates and one new request.
+Quick Sunday evening update with where things stand and what I need before Monday.
 
-**Status update:** The pre-work analysis is going well. I've now completed a comprehensive cross-system people map — 499 unique individuals identified across Bitbucket, Jira, Confluence, and AWS, merged with the org chart data from Don and Chathura. I have team assignments, collaboration networks, and risk analysis ready for the onsite. This will make every interview much more targeted.
+**Status update:** Pre-work is in strong shape. Seven rounds of automated system analysis (V1–V7) across AWS, Bitbucket, Jira, and Confluence are complete. The engagement minisite now has 36+ interactive charts, a comprehensive people map (499 individuals across all systems), and detailed pages covering infrastructure, engineering, delivery, people, and the engagement itself — timeline, hypotheses, leadership structure, interview plan, and deliverables. Every onsite interview will lead with data.
 
 ---
 
-**1. Grafana access** — Monday still works great. Looking forward to seeing the monitoring setup.
+**1. Grafana access** — Monday still works great. Looking forward to seeing the monitoring setup. Thank you for confirming with Matias.
 
-**2. Enterprise Solutions org** — Still the biggest gap. Chathura's PDF had Zubair's page mostly blank. This is the largest org (~58 people) and I currently have zero names below Zubair. If there's a version with that team's structure, or if Zubair can send one directly, that would be extremely helpful before the onsite.
+**2. Enterprise Solutions org** — Still the biggest data gap. Chathura's CDO org chart PDF had Zubair's page mostly blank ("Enterprise Solution Org." with no names). This is the largest org (~58 people) and I currently have zero names below Zubair. **Chathura** — can you share the Enterprise Solutions team structure, or ask Zubair to send one directly? Even a rough list of names and roles would help. This is critical for interview prep and the people analysis.
 
 **3. Pre-read documents** — Looking forward to whatever lands Monday. Retail and Neo/AI roadmaps especially, per Don's scope confirmation.
 
-**4. Interview scheduling** — I'll have the full grid to you early this week. Updated for the April 3 reorg — Siegel removed, Strainick refocused as COO, Akshay and Guilarte added.
+**4. Interview scheduling** — I have the full 3-day grid ready: 18–21 sessions across April 13–15, organized by day (Monday: leadership, Tuesday: engineering deep dive, Wednesday: validation and gaps). I'll send it tomorrow for calendar booking. Updated for the April 3 reorg — Siegel removed, Strainick refocused as COO, Akshay and Guilarte added.
 
-**5. Conference room** — Yes, a TV/screen would be very helpful. I'll be showing interactive charts and data during several conversations.
+**5. Conference room** — Yes, a TV/screen would be very helpful. I'll be showing interactive charts and data during several conversations. Thank you for asking.
 
 ---
 
@@ -54,7 +54,13 @@ This is important for the board deliverable — incident response maturity is on
 
 ---
 
-None of this is blocking the onsite — I can work with what I have — but items 6, 7, and 8 would meaningfully improve the depth of the analysis.
+---
+
+**9. Survey 5 — AI Adoption & Tooling** — **Chathura**, your survey intro email references 4 surveys. There's a 5th — AI Adoption & Tooling (16 questions, ~5 minutes, for all engineering, product, design, and QE). This feeds directly into the board deliverable and vendor rationalization assessment. Could you add it as a 5th link in your intro message? I'll have the Microsoft Forms link ready Monday morning. If you'd prefer to keep it at 4, let me know and I'll fold the most critical AI questions into the Engineering Practices survey instead.
+
+---
+
+None of this is blocking the onsite — I can work with what I have — but items 2, 6, 7, 8, and 9 would meaningfully improve the depth of the analysis.
 
 Thanks,
 Adam

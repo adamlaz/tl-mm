@@ -13,7 +13,16 @@ const groups: NavGroup[] = [
     heading: 'Overview',
     items: [
       { href: '/', label: 'Dashboard', icon: 'grid' },
-      { href: '/engagement', label: 'Engagement', icon: 'compass' },
+      {
+        href: '/engagement', label: 'Engagement', icon: 'compass',
+        children: [
+          { href: '/engagement/timeline', label: 'Timeline' },
+          { href: '/engagement/hypotheses', label: 'Hypotheses' },
+          { href: '/engagement/leadership', label: 'Leadership' },
+          { href: '/engagement/interviews', label: 'Interviews' },
+          { href: '/engagement/deliverables', label: 'Deliverables' },
+        ],
+      },
     ],
   },
   {
@@ -51,11 +60,11 @@ const allLinks = groups.flatMap((g) => g.items);
 
 const mobileLinks = [
   { href: '/', label: 'Home', icon: 'grid' },
+  { href: '/engagement', label: 'Engage', icon: 'compass' },
   { href: '/infrastructure', label: 'Infra', icon: 'cloud' },
   { href: '/engineering', label: 'Eng', icon: 'code' },
   { href: '/delivery', label: 'Delivery', icon: 'activity' },
   { href: '/people', label: 'People', icon: 'users' },
-  { href: '/charts', label: 'Charts', icon: 'bar-chart' },
 ];
 
 const iconPaths: Record<string, string> = {

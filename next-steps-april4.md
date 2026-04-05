@@ -1,17 +1,18 @@
-# Next Steps & Open Items — April 4, 2026
+# Next Steps & Open Items — April 5, 2026
 
 **For Adam's eyes only.** Working list of what's left before the onsite.
 
-**Last updated:** April 4, evening — after Chathura CDO org chart, Don scope email, Ana logistics email.
+**Last updated:** April 5 — after Don touchbase, engagement minisite expansion, ECharts chart generation.
 
 ---
 
-## Immediate Actions (This Weekend / Monday Morning)
+## Today — April 5
 
-- [ ] **Reply to Ana** — confirm: Grafana Monday works, org chart received (thank Chathura), pre-reads Monday works, yes TV/screen in conference room is helpful for showing charts/data during interviews.
-- [ ] **Follow up with Chathura re: Survey 5** — his intro email only references 4 surveys (Delivery Performance, Team Culture, Developer Experience, Engineering Practices). He dropped AI Adoption & Tooling. Either: (a) ask him to add it as a 5th link, or (b) merge the most critical AI questions into Survey 4. The AI survey feeds the board deliverable and vendor rationalization — it matters.
-- [ ] **Finish building all surveys in Microsoft Forms** — DevEx draft is live, need DORA, Westrum, Pragmatic Engineer, and AI Adoption & Tooling (pending Chathura resolution). Target: all links ready before Monday morning so Chathura can send.
-- [ ] **Request Enterprise Solutions org detail** — Chathura's PDF had Zubair's page mostly blank ("Enterprise Solution Org." with no names). This is the largest org (58 people) and we have zero personnel data. Ask Chathura or Zubair directly.
+- [x] **Don touchbase** — reorg alignment, V7 findings briefed, key questions on Kennedy/Strainick/board deck.
+- [ ] **Send Ana + Chathura coordination update** — tonight. Updated `ana-request.md` covers all open items: Grafana Monday, Survey 5 inclusion, Enterprise Solutions org detail, interview schedule, conference room TV, pre-reads, CloudTrail access, incident process location.
+- [ ] **Follow up with Chathura re: Survey 5** — his intro email only references 4 surveys. Either: (a) ask him to add the AI Adoption & Tooling survey as a 5th link, or (b) merge critical AI questions into Survey 4. Include in tonight's email.
+- [ ] **Request Enterprise Solutions org detail** — Chathura's PDF had Zubair's page mostly blank. 58 people, zero names. Ask Chathura or Zubair directly. Include in tonight's email.
+- [ ] **Finish building all surveys in Microsoft Forms** — DevEx draft is live, need DORA, Westrum, Pragmatic Engineer, and AI Adoption & Tooling. Target: all links ready before Monday morning so Chathura can send.
 
 ## Data Gaps to Close (Before April 11)
 
@@ -24,9 +25,9 @@
 
 ## Docs to Finalize (Before April 7)
 
-- [x] ~~**Update Chathura survey intro message** — needs to reference 5 surveys instead of 4.~~ **Chathura wrote his own version.** Issue: only 4 surveys. See "Immediate Actions" above.
-- [ ] **Send Ana follow-up reply** — see "Immediate Actions" above. Original `ana-request.md` is now partially answered.
-- [ ] **Finalize interview schedule grid** — send to Ana for calendar booking. Post-reorg schedule is defined in the state doc. Ana will work on this early next week.
+- [x] ~~**Update Chathura survey intro message** — needs to reference 5 surveys instead of 4.~~ **Chathura wrote his own version.** Issue: only 4 surveys. Following up tonight.
+- [x] ~~**Send Ana follow-up reply**~~ Sending tonight (April 5). Updated `ana-request.md` covers all items.
+- [ ] **Finalize interview schedule grid** — send to Ana for calendar booking. Post-reorg schedule is defined in the state doc and on the minisite at `/engagement/interviews`. Ana will work on this early next week.
 - [ ] **Update `interview-prep-with-data.md`** — add V7 data-backed questions, fix titles/durations, remove Siegel, add Akshay/Guilarte sections, add roadmap-based questions from CDO PDF.
 - [ ] **Capture product roadmap data** — the CDO PDF includes a detailed roadmap for CAKE, CAKE+Payments, Payments Ops, and Engineering. Capture into structured format for interview prep and minisite.
 
@@ -46,14 +47,14 @@
 - [ ] **Andy Honnold dual-report** — Don's chart: under Garcia (CFO). Chathura's chart: under Akshay (Payments). Clarify onsite.
 - [ ] **Enterprise Solutions detail gap** — Zubair's page in the PDF was mostly blank. 58 people with no names. Need to request.
 
-## Don Call (April 3 or ASAP)
+## Don Touchbase (April 5) ✅
 
-- [ ] **Call Don** using `don-call-guide-april3.md` — 13 questions across reorg, board deliverable, onsite prep. Updated with V7 data.
-- [ ] Key question: Kennedy's future (shapes board deck framing)
-- [ ] Key question: Strainick — promote-to-fit or promote-to-move?
-- [ ] Key question: Board deck transparency level (we now have significantly more damaging quantitative evidence)
-- [ ] Flag the incident timeline gap — Don may know if RCA practice moved or died
-- [ ] **NEW:** L&D reporting discrepancy — who owns Adriana/Ayodele, Dulanjan or Shatney?
+- [x] **Touchbase with Don** — April 5. Reorg alignment, V7 findings briefed.
+- [x] Key question: Kennedy's future (shapes board deck framing)
+- [x] Key question: Strainick — promote-to-fit or promote-to-move?
+- [x] Key question: Board deck transparency level (we now have significantly more damaging quantitative evidence)
+- [x] Flag the incident timeline gap — Don may know if RCA practice moved or died
+- [x] L&D reporting discrepancy — who owns Adriana/Ayodele, Dulanjan or Shatney?
 
 ## Analysis to Run (Before Onsite)
 

@@ -1,0 +1,173 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+
+const hypotheses = [
+  {
+    id: 'A',
+    name: 'Portfolio Sprawl',
+    severity: 'amber' as const,
+    status: 'Pre-Evidence',
+    statement: 'Too many products, no shared platform discipline.',
+    test: 'Count active codebases. Teams on >1 product? Shared services vs. duplication?',
+    evidence: '3,191 repos (75% stale). 481 epics, 133 resolved (27.7%). REST project: 260 open epics. 15+ live CAKE systems, 9 engineers.',
+    link: '/engineering',
+    charts: ['jira_epic_completion'],
+  },
+  {
+    id: 'B',
+    name: 'Sales-Led Chaos',
+    severity: 'muted' as const,
+    status: 'Untested',
+    statement: 'Revenue promises create roadmap churn and tech debt.',
+    test: 'Ask sales what they promise. Ask eng what surprises them mid-sprint. Ask product who overrides.',
+    evidence: 'Documented prioritization process exists (multi-department scoring). Whether it\'s followed or routinely overridden is a key onsite question.',
+    link: '/delivery',
+    charts: [],
+  },
+  {
+    id: 'C',
+    name: 'Fake Platforming',
+    severity: 'muted' as const,
+    status: 'Untested',
+    statement: 'Leadership talks \'platform\'; teams maintain customer-specific patchwork.',
+    test: 'Show me the shared platform layer. What does Neo actually consist of in production?',
+    evidence: 'No dedicated Neo/AI AWS account. SageMaker artifacts in CAKE R&D only. 32 per-customer Jira projects.',
+    link: '/infrastructure',
+    charts: [],
+  },
+  {
+    id: 'D',
+    name: 'Unclear Ownership',
+    severity: 'green' as const,
+    status: 'Confirmed',
+    statement: 'Formal authority and operational authority were misaligned — CONFIRMED and RESOLVED by April 3 reorg.',
+    test: 'Map who actually decides on architecture, staffing, priorities. Trace whether teams have fully transitioned to CDO chain.',
+    evidence: 'Chathura promoted to CDO with formal authority over all engineering, product, design, PMO, and customer support. Kennedy narrowed to AI/innovation only. Structural resolution, not process fix.',
+    link: '/people',
+    charts: [],
+  },
+  {
+    id: 'E',
+    name: 'Dependency Drag',
+    severity: 'amber' as const,
+    status: 'Pre-Evidence',
+    statement: 'A few people or teams are routing bottlenecks.',
+    test: 'Whose approval do you need? Who do you wait on? Map the dependency graph.',
+    evidence: 'Top reviewer: 581 reviews (John Harre). 17 repos with single reviewer handling >50% of PRs. 57 people handle 100+ reviews each.',
+    link: '/engineering',
+    charts: ['key_person_risk', 'bb_reviewer_concentration'],
+  },
+  {
+    id: 'F',
+    name: 'Legacy Gravity',
+    severity: 'amber' as const,
+    status: 'Pre-Evidence',
+    statement: 'CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate.',
+    test: 'What constraint costs the most velocity? Ratio of maintenance vs. new feature hours?',
+    evidence: '83% pre-Graviton EC2 (167/201). 21% EOL Lambda runtimes (53/248). CloudFormation stacks from 2016. 15+ live CAKE systems, 9 engineers.',
+    link: '/infrastructure',
+    charts: ['aws_lambda_runtimes'],
+  },
+  {
+    id: 'G',
+    name: 'Missing Cadence',
+    severity: 'amber' as const,
+    status: 'Pre-Evidence',
+    statement: 'No consistent execution inspection; leadership discovers reality through fire drills.',
+    test: 'What\'s the weekly rhythm? What metrics are reviewed? How does bad news travel?',
+    evidence: '141 Jira projects. Priority broken: 89.4% High, 10.6% None. Story points on 9% of stories. Root Cause Category populated on 0% of bugs. Structured RCA docs stop after 2023.',
+    link: '/delivery',
+    charts: ['jira_priority_inflation', 'confluence_rca_timeline'],
+  },
+  {
+    id: 'H',
+    name: 'Biz-Tech Mistranslation',
+    severity: 'muted' as const,
+    status: 'Untested',
+    statement: 'Business says \'eng is slow\'; eng says \'business is chaotic\'; real issue is undefined tradeoffs.',
+    test: 'Ask both sides why delivery is slow. Compare answers. Look for structural decision gaps.',
+    evidence: 'Glassdoor 2.4/5, 31% recommend. Cycle time P50 = 59 days. Backlog net growth of 578 issues over 26 weeks.',
+    link: '/delivery',
+    charts: [],
+  },
+  {
+    id: 'I',
+    name: 'Architectural Polarity',
+    severity: 'amber' as const,
+    status: 'Pre-Evidence',
+    statement: 'Simultaneous AI-native building + legacy POS maintenance = irreconcilable engineering split.',
+    test: 'How are teams allocated? Do engineers rotate or get stuck? Is there a migration path?',
+    evidence: '4 Bitbucket workspaces with different quality profiles. madpayments: 87% CI/CD, TypeScript, domain-driven. syscolabs: 76% stale, 1,410 repos with unknown language.',
+    link: '/infrastructure',
+    charts: ['workspace_health_radar'],
+  },
+];
+
+const withCharts = hypotheses.filter((h) => h.charts.length > 0);
+const withoutCharts = hypotheses.filter((h) => h.charts.length === 0);
+---
+
+<BaseLayout title="Hypotheses">
+  <SectionHeader
+    eyebrow="HYPOTHESIS LIBRARY"
+    title="Nine Patterns to Prove or Disprove"
+    description="Pre-engagement hypotheses are not findings. Pre-work evidence provides quantitative signal, not proof. Diagnostic conclusions require the onsite."
+  />
+
+  <div class="grid grid-cols-3 gap-4 mb-10">
+    <MetricCard label="Confirmed" value="1" subtitle="Hypothesis D — resolved by April 3 reorg" />
+    <MetricCard label="Pre-Evidence" value="5" subtitle="Quantitative signal from V1–V7 scans" />
+    <MetricCard label="Untested" value="3" subtitle="Require onsite interviews" />
+  </div>
+
+  <div class="mb-10">
+    <ChartEmbed slug="hypothesis_evidence_radar" title="Hypothesis Evidence Strength — Pre-Onsite" description="Signal strength across all 9 hypotheses from V1–V7 automated scans. 100 = confirmed with quantitative evidence." interactive />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Hypotheses with Pre-Work Evidence</h2>
+  <div class="space-y-4 mb-10">
+    {withCharts.map((h) => (
+      <div>
+        <FindingCard
+          id={h.id}
+          severity={h.severity}
+          title={h.name}
+          detail={h.statement}
+          evidence={h.evidence}
+          href={h.link}
+          status={h.status}
+        />
+        <div class="grid sm:grid-cols-2 gap-4 mt-3 ml-3">
+          {h.charts.map((slug: string) => (
+            <ChartEmbed
+              slug={slug}
+              title={slug.replace(/_/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase())}
+              interactive
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Hypotheses Requiring Onsite Validation</h2>
+  <div class="grid sm:grid-cols-2 gap-4">
+    {withoutCharts.map((h) => (
+      <FindingCard
+        id={h.id}
+        severity={h.severity}
+        title={h.name}
+        detail={h.statement}
+        evidence={h.evidence}
+        href={h.link}
+        status={h.status}
+      />
+    ))}
+  </div>
+</BaseLayout>

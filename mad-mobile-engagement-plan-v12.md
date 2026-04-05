@@ -431,7 +431,8 @@ Nine named hypotheses to validate or rule out onsite. These convert time from op
 | March 28–April 1 | System access requests initiated; pre-read collection begins | ✅ Done |
 | April 1–3 | System reconnaissance V1–V6 completed (all platforms scanned, 29+ charts, 168-user audit, minisite built) | ✅ Done |
 | April 3 | **April 3 reorg:** Siegel/Lodes exit, Chathura promoted to CDO, Kennedy narrowed. Org chart remapped. Don call guide prepared. Survey 5 (AI Adoption & Tooling) designed. | ✅ Done |
-| April 3–4 | Don call (reorg alignment, board deliverable, onsite prep) | 🔄 In progress |
+| April 3–4 | V7 deep collection — 25 enrichment items across all tiers. Engagement minisite expanded with 6 subpages, 5 new ECharts charts. | ✅ Done |
+| April 5 | Don touchbase (reorg alignment, V7 findings briefed). Ana + Chathura coordination update sent. | ✅ Done |
 | April 7 | Chathura sends survey intro (as CDO); 5 surveys go live via Microsoft Forms | Upcoming |
 | April 7 | Pre-read package target from MM side | Upcoming |
 | April 7–9 | Adam-Don Session 2 (Political Landscape) and Session 3 (Pre-Onsite Briefing) | Upcoming |
