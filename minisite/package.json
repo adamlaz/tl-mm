@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/patch-vercel-config.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "generate": "cd .. && python scripts/generate_analysis.py && python scripts/generate_user_charts.py && python scripts/generate_people_charts.py && python scripts/review_network_viz.py && python scripts/generate_showcase_charts.py && python scripts/generate_org_chart.py && python scripts/generate_c4_diagram.py && python scripts/generate_deep_charts.py"
