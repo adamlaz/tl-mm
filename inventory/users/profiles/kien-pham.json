@@ -1,0 +1,52 @@
+{
+  "name": "Kien Pham",
+  "id": "kien-pham",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 16,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:b049aa5d-6c14-497e-b8d3-3081e2f29bd9",
+      "email": "",
+      "projects": [
+        "RRS",
+        "SNUS"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 10,
+      "open_assigned": 8,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:b049aa5d-6c14-497e-b8d3-3081e2f29bd9",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Kien Pham",
+      "prs_authored": 0,
+      "prs_reviewed": 6,
+      "review_cluster": "madmobile"
+    }
+  }
+}

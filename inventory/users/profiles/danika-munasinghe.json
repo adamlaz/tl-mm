@@ -1,0 +1,65 @@
+{
+  "name": "Danika Munasinghe",
+  "id": "danika-munasinghe",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 68,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:6d276070-95b6-4af3-8d2a-1b7d34219c49",
+      "email": "",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 28,
+      "open_assigned": 22,
+      "bugs_created_90d": 15,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:6d276070-95b6-4af3-8d2a-1b7d34219c49",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "Danika Munasinghe",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "712020:6d276070-95b6-4af3-8d2a-1b7d34219c49",
+      "email": "",
+      "pages_total": 66,
+      "pages_90d": 13,
+      "spaces": [
+        "CCE",
+        "P"
+      ]
+    }
+  }
+}

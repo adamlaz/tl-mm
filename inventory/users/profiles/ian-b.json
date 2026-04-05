@@ -1,0 +1,27 @@
+{
+  "name": "Ian B.",
+  "id": "ian-b",
+  "title": "Project Lead",
+  "team": "PMO AI",
+  "manager": "Mark Guilarte",
+  "division": "CDO / PMO",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "quiet",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Chathurika Prabodani (Unlicensed)",
+  "id": "chathurika-prabodani-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:b5e7b8af-5f37-4cfb-ac16-42db351005ee",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "LP"
+      ]
+    }
+  }
+}

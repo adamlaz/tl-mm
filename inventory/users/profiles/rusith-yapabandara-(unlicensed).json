@@ -1,0 +1,36 @@
+{
+  "name": "Rusith Yapabandara (Unlicensed)",
+  "id": "rusith-yapabandara-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:a52ed13b-51a0-4646-a710-a4e6c5688109",
+      "email": "",
+      "pages_total": 86,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "ES",
+        "LP",
+        "PROD",
+        "TT"
+      ]
+    }
+  }
+}

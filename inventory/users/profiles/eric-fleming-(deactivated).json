@@ -1,0 +1,33 @@
+{
+  "name": "Eric Fleming (Deactivated)",
+  "id": "eric-fleming-(deactivated)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b97ea03b5df3d380ed06f7e",
+      "email": "",
+      "pages_total": 13,
+      "pages_90d": 0,
+      "spaces": [
+        "ES",
+        "SWAT"
+      ]
+    }
+  }
+}

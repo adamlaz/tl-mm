@@ -1,0 +1,53 @@
+{
+  "name": "Sumeera Perera",
+  "id": "sumeera-perera",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 36,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 34,
+      "issues_resolved_90d": 2,
+      "open_assigned": 56,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "email": null,
+      "workspaces": [
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "nickname": "Sumeera Perera",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

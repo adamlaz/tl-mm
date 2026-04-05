@@ -1,6 +1,6 @@
 %% Mad Mobile — New Operating Model (April 2026)
+%% Updated April 4 with Chathura's CDO org chart detail
 %% Usage: paste into any Mermaid renderer (mermaid.live, GitHub, Notion, etc.)
-%% To add nodes: follow the naming convention [dept]_[name] and add a link from the parent
 
 flowchart TD
     %% ──────────────────────────────────
@@ -25,7 +25,6 @@ flowchart TD
     %% ──────────────────────────────────
     garcia --> fin_do["Mark Do<br/><i>Ass't Controller</i>"]
     garcia --> fin_zhonnold["Zach Honnold<br/><i>RevOps</i> · 1"]
-    garcia --> fin_ahonnold["Andy Honnold<br/><i>Payments Strategy</i> · 1"]
 
     %% ──────────────────────────────────
     %% Sales & Marketing (Schmitzer)
@@ -39,46 +38,86 @@ flowchart TD
     %% ──────────────────────────────────
     strainick --> ops_das["Das DeSilva<br/><i>Onboarding</i> · 10"]
     strainick --> ops_acctmgmt["Dir. Account Mgmt<br/>· 9"]
-    strainick --> ops_rosen["Rosen Georgiev<br/><i>IT</i>"]
+    strainick --> ops_rosen["Rosen Georgiev<br/><i>IT Ops</i>"]
     strainick --> ops_chip["Chip O'Connell<br/><i>Onboarding Delivery</i> · 3"]
 
     %% ──────────────────────────────────
     %% Digital / Engineering (Chathura)
     %% ──────────────────────────────────
-    chathura --> eng_guilarte["Mark Guilarte<br/><i>PMO</i> · 4"]
-    chathura --> eng_akshay["Akshay Bhasin<br/><i>Payments</i> · 18"]
-    chathura --> eng_zubair["Zubair Syed<br/><i>Enterprise Solutions</i> · 58"]
-    chathura --> eng_randy["Randy Brown<br/><i>CAKE Tech</i> · 8"]
-    chathura --> eng_dulanjan["Dulanjan W.<br/><i>Product &amp; Design</i> · 6"]
+    chathura --> eng_dulanjan["<b>Dulanjan W.</b><br/><i>VP Product &amp; GTM</i> · 10+"]
+    chathura --> eng_randy["<b>Randy Brown</b><br/><i>VP Eng, Restaurant Tech</i> · 10"]
+    chathura --> eng_zubair["<b>Zubair Syed</b><br/><i>VP Eng, Enterprise Solutions</i> · 58"]
+    chathura --> eng_akshay["<b>Akshay Bhasin</b><br/><i>VP Payments Engineering</i> · 20+"]
+    chathura --> eng_guilarte["<b>Mark Guilarte</b><br/><i>VP Program Management</i> · 4"]
     chathura --> eng_support["Customer Support<br/><i>All levels</i>"]
+
+    %% ── Product & GTM (Dulanjan) ──
+    eng_dulanjan --> prod_pm_rest["PM Restaurant<br/><i>Miru S., Jake L., TBD</i>"]
+    eng_dulanjan --> prod_pm_pay["PM Payments/Ops/Eng<br/><i>Shavin P., Richard F., Thaddeus F.</i>"]
+    eng_dulanjan --> prod_design["Chris Gomersall<br/><i>Dir. Product Design</i>"]
+    eng_dulanjan --> prod_mktg["TBD<br/><i>Product Marketing Mgr</i>"]
+    eng_dulanjan --> prod_ld["L&amp;D<br/><i>Adriana Z., Ayodele L.</i>"]
+
+    %% ── Restaurant Technology (Randy Brown) ──
+    eng_randy --> rest_fe["<b>Frontend</b><br/><i>Alexander Baine, Mgr</i>"]
+    eng_randy --> rest_be["<b>Backend</b><br/><i>Kyle Budd, Mgr</i>"]
+    rest_fe --> rest_fe1["Cory Renard<br/><i>Staff Software Eng</i>"]
+    rest_fe --> rest_fe2["Rob Quin<br/><i>Software Eng</i>"]
+    rest_be --> rest_be1["Beau Bruderer<br/><i>Senior Software Eng</i>"]
+    rest_be --> rest_be2["Holly Bobal<br/><i>Senior Software Eng</i>"]
+    rest_be --> rest_be3["Siva Ganesh<br/><i>Software Eng</i>"]
+    rest_be --> rest_be4["Harrison Minchew<br/><i>Lead Software Eng</i>"]
+    rest_be --> rest_be5["Anderson Lavor<br/><i>Lead Software Eng</i>"]
+
+    %% ── Payments & Financial Services (Akshay) ──
+    eng_akshay --> pay_rd["<b>Payments R&amp;D</b><br/><i>Kevin Reyes, Dir.</i> · 9"]
+    eng_akshay --> pay_qe["<b>Restaurant QE</b><br/>· 7"]
+    eng_akshay --> pay_bizops["<b>Biz Operations</b><br/><i>Andy Honnold, Sr Dir</i> · 4"]
+    eng_akshay --> pay_pci["<b>PCI/Compliance</b><br/><i>Mark Freid, Jorge Maltes,<br/>Matias Riglos, Debbie Keye</i>"]
+
+    %% ── PMO (Guilarte) ──
+    eng_guilarte --> pmo_qaiser["Qaiser P.<br/><i>Sr PM — Restaurant</i>"]
+    eng_guilarte --> pmo_vanessa["Vanessa S.<br/><i>PM — Payments</i>"]
+    eng_guilarte --> pmo_ian["Ian B.<br/><i>Project Lead — AI</i>"]
+    eng_guilarte --> pmo_debbie["Debbie K.<br/><i>Sr PM — Ops Eng</i>"]
 
     %% ──────────────────────────────────
     %% Technology / AI (Kennedy)
     %% ──────────────────────────────────
-    kennedy --> tech_diggins["Jeremy Diggins"]
-    kennedy --> tech_bobal["Holly Bobal"]
+    kennedy --> tech_diggins["Jeremy Diggins<br/><i>Dir. Enterprise Technology</i>"]
 
     %% ──────────────────────────────────
     %% Human Resources (Shatney)
     %% ──────────────────────────────────
     shatney --> hr_renee["Renee Pauley<br/><i>Recruiting</i>"]
-    shatney --> hr_ayodele["Ayodele Lawal<br/><i>L&amp;D</i>"]
-    shatney --> hr_adriana["Adriana Zuniga<br/><i>L&amp;D</i>"]
+
+    %% ──────────────────────────────────
+    %% Dual-report / discrepancy notes (dotted lines)
+    %% Andy Honnold: functional under Akshay, admin may be Garcia
+    %% L&D: Chathura chart shows under Dulanjan, Don chart under Shatney
+    %% ──────────────────────────────────
 
     %% ──────────────────────────────────
     %% Styles
     %% ──────────────────────────────────
-    classDef ceo fill:#1a2744,stroke:#1a2744,color:#fff,font-size:14px
-    classDef csuite fill:#2c4a7c,stroke:#2c4a7c,color:#fff,font-size:12px
-    classDef staff fill:#f0f4f8,stroke:#94a3b8,color:#1e293b,font-size:11px
-    classDef chief_of_staff fill:#e2e8f0,stroke:#64748b,color:#334155,font-size:11px
+    classDef ceo fill:#2E2820,stroke:#2E2820,color:#F0EBE1,font-size:14px
+    classDef csuite fill:#4A5FC4,stroke:#4A5FC4,color:#fff,font-size:12px
+    classDef l2 fill:#6B82A0,stroke:#6B82A0,color:#fff,font-size:11px
+    classDef staff fill:#F5F0E6,stroke:#D0C8BA,color:#2E2820,font-size:11px
+    classDef chief_of_staff fill:#E8E4DE,stroke:#B0A890,color:#2E2820,font-size:11px
+    classDef subteam fill:#E0E7FF,stroke:#8A9EC0,color:#2E2820,font-size:10px
 
     class don ceo
     class garcia,greg,strainick,chathura,kennedy,shatney csuite
     class ana chief_of_staff
-    class fin_do,fin_zhonnold,fin_ahonnold staff
+    class fin_do,fin_zhonnold staff
     class sales_bobby,sales_peter,sales_karen staff
     class ops_das,ops_acctmgmt,ops_rosen,ops_chip staff
-    class eng_guilarte,eng_akshay,eng_zubair,eng_randy,eng_dulanjan,eng_support staff
-    class tech_diggins,tech_bobal staff
-    class hr_renee,hr_ayodele,hr_adriana staff
+    class eng_dulanjan,eng_akshay,eng_zubair,eng_randy,eng_guilarte,eng_support l2
+    class tech_diggins staff
+    class hr_renee staff
+    class prod_pm_rest,prod_pm_pay,prod_design,prod_mktg,prod_ld subteam
+    class rest_fe,rest_be subteam
+    class rest_fe1,rest_fe2,rest_be1,rest_be2,rest_be3,rest_be4,rest_be5 staff
+    class pay_rd,pay_qe,pay_bizops,pay_pci subteam
+    class pmo_qaiser,pmo_vanessa,pmo_ian,pmo_debbie staff

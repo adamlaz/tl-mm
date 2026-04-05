@@ -1,0 +1,47 @@
+{
+  "name": "Zachary Honnold",
+  "id": "zachary-honnold",
+  "title": "RevOps",
+  "team": "Finance",
+  "manager": "Manuel Garcia",
+  "division": "Finance",
+  "executive": "Manuel Garcia",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "zachary.honnold"
+  ],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "level": "low"
+  },
+  "systems": [
+    "org_chart",
+    "jira"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+      "email": "",
+      "projects": [
+        "OS",
+        "UP"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 19,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

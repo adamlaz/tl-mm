@@ -1,0 +1,32 @@
+{
+  "name": "Jan Lehnardt (Unlicensed)",
+  "id": "jan-lehnardt-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:82aaaedc-4b7b-4884-8645-62ac6b0c0479",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "DB"
+      ]
+    }
+  }
+}

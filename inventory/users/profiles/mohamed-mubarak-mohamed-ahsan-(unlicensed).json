@@ -1,0 +1,34 @@
+{
+  "name": "Mohamed Mubarak Mohamed Ahsan (Unlicensed)",
+  "id": "mohamed-mubarak-mohamed-ahsan-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Mohamed Yaseen (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:a19bcd0e-e954-4807-80fe-104b29dce630",
+      "email": "",
+      "pages_total": 8,
+      "pages_90d": 0,
+      "spaces": [
+        "CR"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Greg Schmitzer",
+  "id": "greg-schmitzer",
+  "title": "President & Head of Sales & Marketing",
+  "team": null,
+  "manager": "Don Salama",
+  "division": "Sales & Marketing",
+  "executive": "Greg Schmitzer",
+  "geography": "US",
+  "status": "quiet",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

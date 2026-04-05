@@ -1,0 +1,53 @@
+{
+  "name": "Orlando Jimenez",
+  "id": "orlando-jimenez",
+  "title": null,
+  "team": "Enterprise",
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 384,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "619d0149977c5b0072ab8936",
+      "email": "",
+      "projects": [
+        "CLOUD"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 9,
+      "open_assigned": 20,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "619d0149977c5b0072ab8936",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "Orlando Jimenez",
+      "prs_authored": 15,
+      "prs_reviewed": 357,
+      "review_cluster": "madmobile"
+    }
+  }
+}

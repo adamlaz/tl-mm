@@ -1,0 +1,32 @@
+{
+  "name": "Concierge Analytics Ralph Lauren",
+  "id": "concierge-analytics-ralph-lauren",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Concierge Analytics Eu Ralph Lauren"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "aws_iam"
+  ],
+  "sources": {
+    "aws_iam": {
+      "account_id": "concierge-analytics-eu-ralph-lauren",
+      "email": null,
+      "aws_profile": "mm-retail-prod-eu",
+      "created_date": "2020-05-28T21:27:45+00:00",
+      "is_service_account": false
+    }
+  }
+}

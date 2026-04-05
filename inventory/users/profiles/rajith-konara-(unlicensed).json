@@ -1,0 +1,36 @@
+{
+  "name": "Rajith konara (Unlicensed)",
+  "id": "rajith-konara-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Janith Bandara (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b48749eb84bc45fea95fa44",
+      "email": "",
+      "pages_total": 8,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DEP",
+        "ES"
+      ]
+    }
+  }
+}

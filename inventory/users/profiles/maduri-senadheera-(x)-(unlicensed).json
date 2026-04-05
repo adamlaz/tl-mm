@@ -1,0 +1,32 @@
+{
+  "name": "Maduri Senadheera (x) (Unlicensed)",
+  "id": "maduri-senadheera-(x)-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b12321781c3df12acf5354b",
+      "email": "",
+      "pages_total": 7,
+      "pages_90d": 0,
+      "spaces": [
+        "CR"
+      ]
+    }
+  }
+}

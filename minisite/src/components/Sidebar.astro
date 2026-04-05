@@ -5,7 +5,7 @@ interface Props {
 
 const { currentPath } = Astro.props;
 
-type NavItem = { href: string; label: string; icon: string };
+type NavItem = { href: string; label: string; icon: string; children?: { href: string; label: string }[] };
 type NavGroup = { heading: string; items: NavItem[] };
 
 const groups: NavGroup[] = [
@@ -28,7 +28,15 @@ const groups: NavGroup[] = [
   {
     heading: 'Cross-Cutting',
     items: [
-      { href: '/people', label: 'People & Org', icon: 'users' },
+      {
+        href: '/people', label: 'People & Org', icon: 'users',
+        children: [
+          { href: '/people/teams', label: 'Teams' },
+          { href: '/people/risk', label: 'Risk & Bus Factor' },
+          { href: '/people/network', label: 'Network' },
+          { href: '/people/directory', label: 'Directory' },
+        ],
+      },
       { href: '/tooling', label: 'Tooling', icon: 'tool' },
       { href: '/surveys', label: 'Surveys', icon: 'clipboard' },
     ],
@@ -86,7 +94,7 @@ function isActive(href: string): boolean {
           {heading}
         </span>
         <ul class="mt-1.5 space-y-0.5">
-          {items.map(({ href, label, icon }) => (
+          {items.map(({ href, label, icon, children }) => (
             <li>
               <a
                 href={href}
@@ -110,6 +118,25 @@ function isActive(href: string): boolean {
                 </svg>
                 {label}
               </a>
+              {children && isActive(href) && (
+                <ul class="ml-7 mt-0.5 space-y-0.5 border-l border-[var(--border-subtle)] pl-3">
+                  {children.map((child) => (
+                    <li>
+                      <a
+                        href={child.href}
+                        class:list={[
+                          'block px-2 py-1.5 rounded-md text-xs font-medium transition-colors',
+                          currentPath === child.href
+                            ? 'text-[var(--accent)] bg-[var(--accent-subtle)]'
+                            : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-alt)]',
+                        ]}
+                      >
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>

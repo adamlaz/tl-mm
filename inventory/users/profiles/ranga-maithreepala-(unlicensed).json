@@ -1,0 +1,34 @@
+{
+  "name": "Ranga Maithreepala (Unlicensed)",
+  "id": "ranga-maithreepala-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:6c597a23-741a-49b8-afa7-b5c18d884c8d",
+      "email": "",
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "DB",
+        "LP"
+      ]
+    }
+  }
+}

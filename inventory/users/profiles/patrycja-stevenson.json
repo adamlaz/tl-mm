@@ -1,0 +1,71 @@
+{
+  "name": "Patrycja Stevenson",
+  "id": "patrycja-stevenson",
+  "title": "Senior Software Engineer Quality",
+  "team": "Restaurant QE",
+  "manager": "Akshay Bhasin",
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 45,
+    "level": "medium"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "6387b52b213a315af349ec2f",
+      "email": "",
+      "projects": [
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 33,
+      "issues_resolved_90d": 9,
+      "open_assigned": 5,
+      "bugs_created_90d": 22,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "6387b52b213a315af349ec2f",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "Patrycja Stevenson",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "6387b52b213a315af349ec2f",
+      "email": "",
+      "pages_total": 12,
+      "pages_90d": 3,
+      "spaces": [
+        "P",
+        "TT"
+      ]
+    }
+  }
+}

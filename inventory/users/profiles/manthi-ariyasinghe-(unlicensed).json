@@ -1,0 +1,38 @@
+{
+  "name": "manthi ariyasinghe (Unlicensed)",
+  "id": "manthi-ariyasinghe-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Sineth Jayasinghe (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5ad2603b4553632a76983cc1",
+      "email": "",
+      "pages_total": 103,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB",
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    }
+  }
+}

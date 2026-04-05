@@ -1,0 +1,57 @@
+{
+  "name": "Kanchana Amarathunga",
+  "id": "kanchana-amarathunga",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 5,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "616d0136e79ff6006f0eb2d3",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 2,
+      "open_assigned": 17,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "616d0136e79ff6006f0eb2d3",
+      "email": null,
+      "workspaces": [
+        "syscolabs"
+      ],
+      "nickname": "Kanchana Amarathunga",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "616d0136e79ff6006f0eb2d3",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE"
+      ]
+    }
+  }
+}

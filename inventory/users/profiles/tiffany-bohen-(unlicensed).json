@@ -1,0 +1,32 @@
+{
+  "name": "Tiffany Bohen (Unlicensed)",
+  "id": "tiffany-bohen-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:871ea40d-df0e-4cab-a8ee-61f1bc507111",
+      "email": "",
+      "pages_total": 14,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

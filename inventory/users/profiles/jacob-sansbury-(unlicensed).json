@@ -1,0 +1,34 @@
+{
+  "name": "Jacob Sansbury (Unlicensed)",
+  "id": "jacob-sansbury-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Jacob Horn (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:6b1b754f-da31-4a03-96a4-bbe3a3333ef4",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

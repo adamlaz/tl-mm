@@ -1,0 +1,33 @@
+{
+  "name": "Jared Rodriguez (Unlicensed)",
+  "id": "jared-rodriguez-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:4a21ede8-d4bd-4673-89d0-02407393e0ea",
+      "email": "",
+      "pages_total": 54,
+      "pages_90d": 0,
+      "spaces": [
+        "MMA",
+        "PT"
+      ]
+    }
+  }
+}

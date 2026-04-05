@@ -1,0 +1,33 @@
+{
+  "name": "Miftha Idroos (Unlicensed)",
+  "id": "miftha-idroos-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "63feda1115d668edd8ed6aa2",
+      "email": "",
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "ES",
+        "P"
+      ]
+    }
+  }
+}

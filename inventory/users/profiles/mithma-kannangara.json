@@ -1,0 +1,32 @@
+{
+  "name": "Mithma Kannangara",
+  "id": "mithma-kannangara",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "60c83dad18e9f600716b77bb",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "PROD"
+      ]
+    }
+  }
+}

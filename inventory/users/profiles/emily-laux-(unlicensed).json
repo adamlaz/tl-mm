@@ -1,0 +1,32 @@
+{
+  "name": "Emily Laux (Unlicensed)",
+  "id": "emily-laux-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:703afe51-9b57-49eb-b91d-d96af9528332",
+      "email": "",
+      "pages_total": 71,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

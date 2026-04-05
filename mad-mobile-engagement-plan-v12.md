@@ -32,6 +32,9 @@ CONFIDENTIAL — March 2026
 - **5th survey added.** AI Adoption & Tooling survey (16 questions) added for all engineering, product, design, and QE.
 - **Pre-work system reconnaissance completed.** V1–V6 automated inventory across all platforms: 29+ interactive charts, 15 CSV exports, 168-user cross-system audit, 94 extracted Confluence pages, engagement minisite built in Astro.
 - **V7 deep collection completed (April 4).** 25 enrichment items across all tiers: epic completion analysis (27.7%), incident timeline (50 RCAs), reviewer network (1,464 edges), pipeline reliability (60.7% success), ECS health check audit (90% missing), priority distribution (89.4% "High"), branch protection (0 repos), open PR aging (201 stale), dependency analysis, security posture, tagging compliance, sprint retrospective extraction, C4 diagram auto-generation.
+- **CDO org chart received from Chathura (April 3).** Detailed 10-page PDF with full team rosters under CDO. Key corrections: Holly Bobal under Randy Brown (not Kennedy), Akshay Bhasin org is 20+ people (not 18), Randy Brown team is 10 (not 8), Dulanjan title is VP Product & GTM. Product roadmap for CAKE/Payments/Engineering included.
+- **Scope expanded by Don (April 3).** "Retail and Neo/AI in scope please with main focus obviously restaurant." Engagement now explicitly covers Concierge/Retail and Neo/AI in addition to CAKE/restaurant.
+- **Survey status update.** Chathura finalized his survey intro email but only references 4 surveys (dropped AI & Tooling). Follow-up needed before Monday send.
 
 ---
 
@@ -85,7 +88,7 @@ Mad Mobile ($75M revenue, ~370 people, $70M funded) has real assets — Sysco, V
 
 **Purpose:** Give Don an executable map of Mad Mobile's technology operating system — where execution breaks down, why, and what to fix first. Equally important: produce an independent, empirically grounded technology assessment Don can present to the board and investors. Credibility through third-party analysis backed by named frameworks, not internal narratives.
 
-**Scope:** Product decision-making, engineering org and delivery, architecture and platform strategy, cross-functional workflows, operating cadence, business-technology alignment, AI strategy (aspiration vs. reality), vendor and tooling effectiveness, and major systemic blockers.
+**Scope:** Product decision-making, engineering org and delivery, architecture and platform strategy, cross-functional workflows, operating cadence, business-technology alignment, AI strategy (aspiration vs. reality), vendor and tooling effectiveness, and major systemic blockers. **Scope includes all three product lines: CAKE/Restaurant (primary focus), Concierge/Retail, and Neo/AI** (per Don, April 3).
 
 **Non-goals:** Individual performance reviews, staffing recommendations, exhaustive code-level audits, forensic blame analysis, or retrospectives on outgoing leadership decisions.
 
@@ -249,8 +252,8 @@ The onsite should validate whether this process is actually followed or gets ove
 | Manuel Garcia | Interim CFO | Finance, Revenue Operations | New to exec team. Absorbed RevOps from Siegel. |
 | Greg Schmitzer | President & Head of Sales & Marketing | Field sales, inbound sales, marketing strategy | Expanded — absorbed Lodes' sales org. What is his day-to-day operational role? |
 | David Strainick | COO *(was Chief People Officer)* | Account Management, Customer Onboarding, Customer Delivery, IT | Lane change from HR to operations. Validate whether this is a "promote to fit" or "promote to move." |
-| Chathura Ratnayake | **CDO** *(was SVP Global Software Engineering)* | ALL engineering, product, design, platform, PMO, ALL customer support | **Primary engineering leader — now with formal authority.** Single largest org (~94+ people). Most important interview of the engagement. |
-| Jack Kennedy | CTO | AI capabilities and platform innovation only | Operational engineering scope removed. Very small direct team (Jeremy Diggins + Holly Bobal). Handle with care in interviews — focus on what he's building, not what he lost. |
+| Chathura Ratnayake | **CDO** *(was SVP Global Software Engineering)* | ALL engineering, product, design, platform, PMO, ALL customer support | **Primary engineering leader — now with formal authority.** Single largest org (~100+ people based on detailed CDO org chart). Most important interview of the engagement. |
+| Jack Kennedy | CTO | AI capabilities and platform innovation only | Operational engineering scope removed. Direct team is just Jeremy Diggins (Holly Bobal confirmed under Randy Brown per CDO org chart). Handle with care in interviews — focus on what he's building, not what he lost. |
 | Bailey Shatney | VP of Human Resources | HR, recruiting, L&D | New to exec team. Took over People functions from Strainick. Stepping into HR at a 2.4 Glassdoor company. |
 | Ana Chambers | Chief of Staff, Strategic Programs | Cross-company execution, initiative alignment | Formally announced in the reorg. Don's operational right hand. |
 
@@ -260,21 +263,24 @@ The onsite should validate whether this process is actually followed or gets ove
 
 #### L2 — Key Reports Under CDO (Chathura Ratnayake)
 
+*Updated April 4 with Chathura's CDO org chart PDF. Chathura noted title changes are in progress.*
+
 | Name | Title | Notes |
 |---|---|---|
-| Mark Guilarte | PMO (4 people) | New under Chathura. Runs GTM tracker and release coordination. |
-| Akshay Bhasin | Payments (18 people) | Previously QE Lead with ~7 people — scope appears expanded or relabeled. Clarify onsite. The Payments codebase (madpayments) is architecturally the cleanest in the company. |
-| Zubair Syed | VP Eng, Enterprise Solutions (58 people) | Largest eng org by headcount. Direct reports: Daniel Lomsak, Matias Riglos, James Oliver, Anthony Goad, Ana Chambers, Nagaswaroopa Kaukuri. |
-| Randy Brown | VP Eng, CAKE Tech (8 people) | Restaurant engineering. ~8 engineers for 15+ live systems. This ratio is a primary investigation target. |
-| Dulanjan Wengappuliarachchi | Sr. Director, Product & Design (6 people) | Scope broader than title suggests: PM, Product Design, Product Marketing (open headcount), L&D/Training. **Open roles: Payments PM (TBD), Product Marketing Manager (TBD).** |
+| Dulanjan Wengappuliarachchi | VP, Product & GTM (10+ people) | 6 named PMs (Restaurant: Miru S., Jake L., TBD; Payments/Ops/Eng: Shavin P., Richard F., Thaddeus F.), Chris Gomersall (Dir. Design), open Product Marketing Manager, L&D (Adriana Z., Ayodele L. — **note: Don's chart placed L&D under Shatney/HR, discrepancy flagged**). |
+| Randy Brown | VP Eng, Restaurant Technology (10 people) | Frontend (3): Alexander Baine (Mgr), Cory Renard (Staff), Rob Quin. Backend (6): Kyle Budd (Mgr), Beau Bruderer (Sr), Holly Bobal (Sr), Siva Ganesh, Harrison Minchew (Lead), Anderson Lavor (Lead). **Holly Bobal confirmed here, not under Kennedy.** Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS. 9 engineers for 15+ live systems. |
+| Zubair Syed | VP Eng, Enterprise Solutions (58 people) | Largest eng org by headcount. **CDO org chart page was mostly blank** — detail still needed. Operations sub-team transitioned Nov 2025 with 57% L2 reduction and 72% L3 reduction (Oct 2025). |
+| Akshay Bhasin | VP Payments Engineering (20+ people) | **Scope confirmed and larger than originally reported.** Payments R&D (Kevin Reyes as Director, 9 people incl. SL staff), Restaurant QE (7 people), Biz Operations (Andy Honnold as Sr. Dir. + 3), PCI DSS counterparts (Mark Freid, Jorge Maltes, Matias Riglos, Debbie Keye). The Payments codebase (madpayments) is architecturally the cleanest in the company. **Note: Restaurant QE under Payments VP, not Restaurant VP — unusual structure.** |
+| Mark Guilarte | VP Program Management (4 people) | Domain assignments: Qaiser P. (Restaurant), Vanessa S. (Payments), Ian B. (AI), Debbie K. (Ops Engineering). Shows PMO resource allocation maps to the product portfolio. |
 | Customer Support | All levels (headcount TBD) | Unified under CDO — previously under Lodes (CRO). Full build-to-support chain now under one executive. |
 
 #### L2 — Key Reports Under CTO (Jack Kennedy)
 
 | Name | Title | Notes |
 |---|---|---|
-| Jeremy Diggins | Director Enterprise Technology | |
-| Holly Bobal | TBD | New name on org chart. |
+| Jeremy Diggins | Director Enterprise Technology | Kennedy's only confirmed direct report. |
+
+**Correction (April 4):** Holly Bobal is confirmed under Randy Brown's Restaurant Backend team per Chathura's CDO org chart, not under Kennedy. Kennedy's operational team is just Jeremy Diggins.
 
 #### L2 — Key Reports Under Other Executives
 
@@ -298,7 +304,7 @@ The onsite should validate whether this process is actually followed or gets ove
 #### Organizational Structure Observations (Post-Reorg)
 
 1. **Kennedy/Chathura authority misalignment: RESOLVED.** The April 3 reorg gave Chathura formal CDO authority over all engineering, product, design, PMO, and customer support. Kennedy retains CTO title but is narrowed to AI/innovation. This confirms Hypothesis D and resolves it structurally. The onsite validates whether operational reality has caught up.
-2. **Chathura's scope is massive.** ~94+ people across all engineering verticals, product, design, PMO, and customer support. This is the single largest org in the company. Capacity and prioritization under this structure is a primary onsite question.
+2. **Chathura's scope is massive.** ~100+ people across all engineering verticals, product, design, PMO, and customer support (CDO org chart shows more headcount than originally estimated). This is the single largest org in the company. Capacity and prioritization under this structure is a primary onsite question.
 3. **No dedicated product executive.** Product management and design report to the CDO (Chathura), not a separate product leader. Does the CDO make product decisions, or does PM operate with autonomy?
 4. **Customer support unified under engineering.** Previously under Lodes (CRO). Now under Chathura (CDO). This puts the full build-to-support chain under one executive — a positive structural change.
 5. **Sri Lanka country head reports to COO, not CDO.** Engineering resources in Sri Lanka have dotted-line relationships to Chathura/Zubair, but formal reporting runs through Strainick (COO). Unusual structure worth understanding.
@@ -307,8 +313,10 @@ The onsite should validate whether this process is actually followed or gets ove
 8. **Bailey Shatney — new and unproven in a hard seat.** VP HR stepping into a company with 2.4 Glassdoor, culture erosion, and post-reorg turbulence. If she's still ramping, Adam's survey baseline and interview themes become her onboarding gift.
 9. **President has expanded scope.** Greg Schmitzer absorbed Lodes' sales org. Now President & Head of Sales & Marketing.
 10. **Two C-suite exits create transition risk.** Siegel (COO) and Lodes (CRO) both exited the same day. Multiple responsibilities redistributed simultaneously. Execution continuity during transition is a new variable to monitor.
-11. **Restaurant engineering team is small relative to system surface area.** Randy Brown's ~8 engineers maintain 15+ live systems while simultaneously developing 6+ new products. This ratio is a primary candidate for execution friction.
+11. **Restaurant engineering team is small relative to system surface area.** Randy Brown's 9 engineers (Frontend 3, Backend 6) maintain 15+ live systems while simultaneously developing 6+ new products. CDO org chart confirms team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS. This ratio is a primary candidate for execution friction.
 12. **A documented prioritization process exists.** Multi-department scoring, executive alignment on top 5, PMO-run release cadence. Whether this actually gets followed or routinely overridden is a critical onsite question.
+13. **Restaurant QE reports to Payments VP, not Restaurant VP.** Chathura's org chart places the 7-person Restaurant Quality Engineering team under Akshay Bhasin (Payments), not Randy Brown (Restaurant). This is an unusual structure — the people testing restaurant software don't report to the person building it. Worth probing whether this creates coordination friction or is an intentional separation of concerns.
+14. **Product roadmap is now available.** CDO org chart PDF includes a detailed roadmap showing 12+ ongoing CAKE projects, 4+ Payments integration projects, 6+ Payments Ops projects, and 4+ Engineering platform projects. Combined with Randy's 9-person team and Akshay's 9-person R&D team, the ratio of active projects to engineers is high.
 
 ### 5.6 Known Challenges (Pre-Engagement Signal)
 
@@ -498,7 +506,7 @@ A positioning note: many people at Mad Mobile have felt their voices were unhear
 
 These are also designed to be **repeatable** — Mad Mobile can re-run them at 30 and 60 days without my involvement to track whether changes are working.
 
-**Deployment:** Building in Microsoft Forms on MM account. Chathura (now CDO) sends the intro message. Draft sent to Ana (April 3).
+**Deployment:** Building in Microsoft Forms on MM account. Chathura (now CDO) has finalized his own version of the intro message — polished and ready to send Monday. **Issue:** Chathura's email only references 4 surveys (dropped AI & Tooling). Follow-up needed before Monday send to either add Survey 5 or accept 4.
 
 - **DORA Quick Check** (dora.dev/quickcheck): Self-assessed delivery performance per team. Classified as Elite/High/Medium/Low against Google's research benchmarks.
 - **Westrum Culture Survey** (7 questions, Likert scale): Organizational culture type — pathological, bureaucratic, or generative. 2 minutes per person.
@@ -573,12 +581,12 @@ Two to three sessions with Don across pre-work. Don's two years of operational c
 | Don Salama (Co-CEO) | Daily | 30 min/day | Morning sync + EOD debrief | — |
 | **Chathura Ratnayake (CDO)** | Mon | 90–120 min | Full org ownership, execution model, team health, support unification, PMO integration, sprint reality, AI strategy from build side | 1 |
 | **Jack Kennedy (CTO)** | Mon | 60 min *(reduced from 90)* | AI/innovation roadmap, Neo platform vision, infrastructure plans, his view of the path forward. **Handle with care — focus on what he's building, not what he lost.** | 1 |
-| Dulanjan Wengappuliarachchi (Sr. Dir, Product & Design) | Mon | 60 min | Roadmap, client promises, how product decisions get made, transition to reporting under CDO | 1 |
+| Dulanjan Wengappuliarachchi (VP, Product & GTM) | Mon | 60 min | Roadmap (now have detailed CAKE/Payments/Eng roadmap from PDF), client promises, how product decisions get made, 6 PMs + design director + open marketing role, transition to reporting under CDO | 1 |
 | David Strainick (COO, was CPO) | Mon | 45 min | Account management, onboarding, delivery execution, IT operations, customer experience. **Completely different interview than planned — was 30 min on HR/culture.** Validate whether he's in the seat to stay. | 1 |
-| **Randy Brown (VP Engineering, CAKE Tech)** | Tue | 60 min | CAKE team capacity vs. system surface area, outage patterns, POS V3/V4 coexistence | 1 |
+| **Randy Brown (VP Eng, Restaurant Technology, 10)** | Tue | 60 min | CAKE team capacity vs. system surface area (9 engineers for 15+ live systems), outage patterns, POS V3/V4 coexistence, Frontend/Backend team split | 1 |
 | Zubair Syed (VP Eng, Enterprise Solutions) | Tue | 60 min | Concierge/Retail execution, enterprise customer projects, team structure, offshore coordination. Largest eng org (58). | 1 |
-| Akshay Bhasin (Payments, 18) | Tue | 45 min | Payments engineering, architecture (cleanest codebase), scaling, how this team operates differently. Scope expanded from QE Lead — clarify. | 1 |
-| Mark Guilarte (PMO, 4) | Tue | 30 min | Project management process, cross-team coordination, execution discipline. New under Chathura. | 2 |
+| Akshay Bhasin (VP Payments Engineering, 20+) | Tue | 45 min | Payments R&D (Kevin Reyes, 9), Restaurant QE (7), Biz Ops (4), PCI counterparts. Architecture (cleanest codebase). Why is Restaurant QE under Payments, not Restaurant? | 1 |
+| Mark Guilarte (VP Program Management, 4) | Tue | 30 min | PMO domain allocation: Qaiser (Restaurant), Vanessa (Payments), Ian (AI), Debbie (Ops Eng). Cross-team coordination, execution discipline. New under Chathura. | 2 |
 | Engineering Managers / Tech Leads (2–3) | Tue | 45 min each | Sprint reality, blockers, ground-level perspective. Target: one from CAKE, one from Enterprise, one from Payments. | 1 |
 | Senior ICs (2–3) | Tue | 30 min each | Day-to-day delivery, tooling, AI usage, what slows them down | 1 |
 | Rajik Gunatilaka (VP & LK Country Head) | Wed | 45 min (video) | Sri Lanka workflow, communication, quality. Reports to Strainick (COO), dotted line to Chathura. | 2 |
@@ -664,7 +672,7 @@ Evening work (Mon & Tue, ~1.5 hrs): AI-assisted synthesis of interview notes, cr
 - Zubair Syed, senior ICs, enterprise technology.
 - Trace 1–2 real customer promises from sale to production using Value Stream Mapping — capture lead time, process time, wait time, %Complete-and-Accurate at each step.
 - Map decision rights for the 10–15 most critical recurring decisions using RAPID.
-- Akshay Bhasin — Payments org (18 people), scope clarification (was QE Lead with 7 in March). Architecture review of the cleanest codebase.
+- Akshay Bhasin — Payments org (20+ people: R&D 9, Restaurant QE 7, Biz Ops 4, PCI counterparts). Architecture review of the cleanest codebase. Why does Restaurant QE report to Payments, not Restaurant?
 - Mark Guilarte — PMO (4 people, new under Chathura). How does PMO integrate with engineering sprints? Cross-team coordination model.
 - **Goal: find where reality deviates from the official story. Move from anecdote to pattern.**
 

@@ -1,0 +1,69 @@
+{
+  "name": "Thiwanka Wimalasuriya",
+  "id": "thiwanka-wimalasuriya",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": "CAKE / Restaurant",
+  "executive": null,
+  "geography": "SL",
+  "status": "active",
+  "email": "thiwanka.wimalasuriya@madmobile.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 117,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "5b51754727c98e2ce515913c",
+      "email": "thiwanka.wimalasuriya@madmobile.com",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 12,
+      "issues_resolved_90d": 9,
+      "open_assigned": 47,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5b51754727c98e2ce515913c",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "thiwankaw",
+      "prs_authored": 5,
+      "prs_reviewed": 84,
+      "review_cluster": "syscolabs"
+    },
+    "confluence": {
+      "account_id": "5b51754727c98e2ce515913c",
+      "email": "thiwanka.wimalasuriya@madmobile.com",
+      "pages_total": 241,
+      "pages_90d": 7,
+      "spaces": [
+        "DB",
+        "DEP",
+        "ES",
+        "LP",
+        "SWAT",
+        "TT"
+      ]
+    }
+  }
+}

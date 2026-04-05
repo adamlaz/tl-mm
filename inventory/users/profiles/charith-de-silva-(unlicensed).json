@@ -1,0 +1,37 @@
+{
+  "name": "Charith De Silva (Unlicensed)",
+  "id": "charith-de-silva-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Dinesh De Silva (Unlicensed)",
+    "Chula De Silva (Unlicensed)",
+    "Deshapriya De Silva (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b4c84d25f430b2c1c4efafe",
+      "email": "",
+      "pages_total": 7,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB"
+      ]
+    }
+  }
+}

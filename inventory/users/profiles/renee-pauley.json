@@ -1,0 +1,40 @@
+{
+  "name": "Renee Pauley",
+  "id": "renee-pauley",
+  "title": "Recruiting",
+  "team": "Recruiting",
+  "manager": "Bailey Shatney",
+  "division": "HR",
+  "executive": "Bailey Shatney",
+  "geography": "unknown",
+  "status": "quiet",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart",
+    "jira"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "712020:15de0d4c-063f-4894-bb67-93ab815466c6",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

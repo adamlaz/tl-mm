@@ -1,0 +1,27 @@
+{
+  "name": "David Strainick",
+  "id": "david-strainick",
+  "title": "COO",
+  "team": null,
+  "manager": "Don Salama",
+  "division": "Operations",
+  "executive": "David Strainick",
+  "geography": "US",
+  "status": "quiet",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

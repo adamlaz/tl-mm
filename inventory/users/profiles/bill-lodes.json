@@ -1,0 +1,27 @@
+{
+  "name": "Bill Lodes",
+  "id": "bill-lodes",
+  "title": "Former CRO",
+  "team": null,
+  "manager": null,
+  "division": "Sales & Marketing",
+  "executive": null,
+  "geography": "unknown",
+  "status": "consulting",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

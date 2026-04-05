@@ -1,0 +1,34 @@
+{
+  "name": "Rishan Inusha (Deactivated)",
+  "id": "rishan-inusha-(deactivated)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Han Liu (Deactivated)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5bfc44eddda509509754a8fa",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "CR"
+      ]
+    }
+  }
+}

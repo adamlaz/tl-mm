@@ -1,0 +1,34 @@
+{
+  "name": "James Van Buskirk",
+  "id": "james-van-buskirk",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "CAKE / Restaurant",
+  "executive": null,
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "level": "low"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "712020:d13a1c0f-7b9b-41d7-b1f7-382238129766",
+      "email": null,
+      "workspaces": [
+        "madpayments"
+      ],
+      "nickname": "James Van Buskirk",
+      "prs_authored": 0,
+      "prs_reviewed": 1,
+      "review_cluster": "syscolabs"
+    }
+  }
+}

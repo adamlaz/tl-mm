@@ -1,0 +1,35 @@
+{
+  "name": "Shanika Wickramasinghe (Unlicensed)",
+  "id": "shanika-wickramasinghe-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Dasun Wickramasinghe (Unlicensed)",
+    "Ruchiranga Wickramasinghe (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:5e703a3e-59d4-4d44-b2a2-b875115b5052",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "CR"
+      ]
+    }
+  }
+}

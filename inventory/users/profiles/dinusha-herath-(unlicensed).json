@@ -1,0 +1,37 @@
+{
+  "name": "Dinusha Herath (Unlicensed)",
+  "id": "dinusha-herath-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Wasantha Herath (Unlicensed)",
+    "Dilshan Prathiba (Unlicensed)",
+    "Dinuksha Ishwari (Unlicensed)",
+    "Danula Eranjith (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b122a5878cd734fe39f22a8",
+      "email": "",
+      "pages_total": 62,
+      "pages_90d": 0,
+      "spaces": [
+        "DB"
+      ]
+    }
+  }
+}

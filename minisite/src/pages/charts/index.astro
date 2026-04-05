@@ -4,17 +4,19 @@ import SectionHeader from '../../components/SectionHeader.astro';
 
 const chartGroups = [
   {
-    domain: 'AWS',
+    domain: 'Infrastructure',
     charts: [
       { slug: 'aws_cost_by_account', title: 'Cost by Account' },
       { slug: 'aws_cost_by_service', title: 'Cost by Service' },
       { slug: 'aws_cost_trend', title: 'Cost Trend' },
       { slug: 'aws_resource_inventory', title: 'Resource Inventory' },
       { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes' },
+      { slug: 'aws_cost_waterfall', title: 'AWS Cost Composition (Waterfall)' },
+      { slug: 'aws_cost_pareto', title: 'AWS Cost Concentration (Pareto)' },
     ],
   },
   {
-    domain: 'Bitbucket',
+    domain: 'Engineering',
     charts: [
       { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency' },
       { slug: 'bitbucket_languages', title: 'Language Distribution' },
@@ -24,10 +26,15 @@ const chartGroups = [
       { slug: 'bb_deploy_tags', title: 'Deploy Tags' },
       { slug: 'review_network', title: 'Review Network' },
       { slug: 'bb_reviewer_concentration', title: 'Reviewer Concentration' },
+      { slug: 'workspace_health_radar', title: 'Workspace Engineering Health (Radar)' },
+      { slug: 'pr_cycle_violin', title: 'PR Cycle Time Distribution (Violin)' },
+      { slug: 'repo_health_bubble', title: 'Repository Health Matrix (Bubble)' },
+      { slug: 'commit_calendar', title: 'Commit Activity Calendar' },
+      { slug: 'build_duration_range', title: 'Build Duration Bands (Range)' },
     ],
   },
   {
-    domain: 'Jira',
+    domain: 'Delivery',
     charts: [
       { slug: 'jira_org_overview', title: 'Org Overview' },
       { slug: 'jira_velocity_trend', title: 'Velocity Trend' },
@@ -42,13 +49,18 @@ const chartGroups = [
       { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)' },
       { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)' },
       { slug: 'user_workload_distribution', title: 'User Workload Distribution' },
+      { slug: 'kpi_bullet', title: 'KPI vs DORA Benchmarks (Bullet)' },
+      { slug: 'jira_issue_pareto', title: 'Issue Concentration (Pareto)' },
+      { slug: 'jira_workflow_funnel', title: 'Workflow Stage Dwell Time (Funnel)' },
+      { slug: 'sprint_rankflow', title: 'Sprint Velocity Rankings (Rankflow)' },
     ],
   },
   {
-    domain: 'Confluence',
+    domain: 'Documentation',
     charts: [
       { slug: 'confluence_creation_trend', title: 'Page Creation Trend' },
       { slug: 'confluence_page_density', title: 'Page Density by Space' },
+      { slug: 'confluence_wordcloud', title: 'Documentation Topics (Wordcloud)' },
     ],
   },
   {
@@ -57,6 +69,20 @@ const chartGroups = [
       { slug: 'user_activity_levels', title: 'User Activity Levels' },
       { slug: 'user_contribution_top20', title: 'Top 20 Contributors' },
       { slug: 'user_cross_system', title: 'Cross-System Users' },
+    ],
+  },
+  {
+    domain: 'People',
+    charts: [
+      { slug: 'people_org_map', title: 'People Network' },
+      { slug: 'team_interaction_heatmap', title: 'Cross-Team Interactions' },
+      { slug: 'team_composition', title: 'Team Composition' },
+      { slug: 'people_coverage_sankey', title: 'System Access Coverage' },
+      { slug: 'key_person_risk', title: 'Key Person Risk' },
+      { slug: 'activity_trends', title: 'Activity by Team' },
+      { slug: 'communication_gaps', title: 'Org Chart vs System Activity' },
+      { slug: 'geography_activity', title: 'Geography & Activity' },
+      { slug: 'user_system_venn', title: 'Cross-System User Coverage (Venn)' },
     ],
   },
 ];
@@ -73,7 +99,7 @@ const totalCharts = chartGroups.reduce((s, g) => s + g.charts.length, 0);
   <div class="space-y-8">
     {chartGroups.map(({ domain, charts }) => (
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">{domain}</h2>
+        <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">{domain}</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {charts.map(({ slug, title }) => (
             <a

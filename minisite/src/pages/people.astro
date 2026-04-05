@@ -2,108 +2,177 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import DataTable from '../components/DataTable.astro';
+import OrgChart from '../components/OrgChart.astro';
 import { getCollection } from 'astro:content';
-import { num, fmt } from '../lib/parse';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
-const users = await getCollection('userAudit');
+const num = (v: any) => Number(v) || 0;
+const fmt = (v: any) => Number(v)?.toLocaleString() ?? v;
 
-const byActivity = new Map<string, number>();
-const byRole = new Map<string, number>();
-for (const u of users) {
-  const level = u.data.activity_level || 'unknown';
-  byActivity.set(level, (byActivity.get(level) ?? 0) + 1);
-  const role = u.data.jira_role || 'unknown';
-  byRole.set(role, (byRole.get(role) ?? 0) + 1);
-}
+let peopleDir: any[] = [];
+try { peopleDir = await getCollection('peopleDirectory') as any; } catch {}
 
-const highActivity = byActivity.get('high') ?? 0;
-const medActivity = byActivity.get('medium') ?? 0;
-const lowActivity = byActivity.get('low') ?? 0;
-const inactiveCount = byActivity.get('inactive') ?? 0;
+const people = peopleDir.filter((u: any) => u.data.status !== 'bot');
+const activePeople = people.filter((u: any) =>
+  u.data.activity_level === 'high' || u.data.activity_level === 'medium',
+);
+const inOrgChart = people.filter((u: any) =>
+  (u.data.systems as string || '').includes('org_chart'),
+);
+const uniqueTeams = [...new Set(people.map((u: any) => u.data.team).filter(Boolean))];
+const usCount = people.filter((u: any) => u.data.geography === 'US').length;
+const slCount = people.filter((u: any) => u.data.geography === 'SL').length;
 
-const multiSystem = users.filter((u) => num(u.data.systems_active_90d) >= 2).length;
+let networkData: any = {
+  betweenness_top20: [], communities: [], community_count: 0,
+  graph_stats: { nodes: 0, edges: 0 },
+};
+try {
+  networkData = JSON.parse(readFileSync(resolve('../inventory/users/network_metrics.json'), 'utf-8'));
+} catch {}
 
-const activityRows = [...byActivity.entries()]
-  .sort((a, b) => b[1] - a[1])
-  .map(([level, count]) => ({ level, count, pct: `${((count / users.length) * 100).toFixed(1)}%` }));
+let riskData: any = { people: {}, teams: {} };
+try {
+  riskData = JSON.parse(readFileSync(resolve('../inventory/users/people_risk.json'), 'utf-8'));
+} catch {}
 
-const roleRows = [...byRole.entries()]
-  .sort((a, b) => b[1] - a[1])
-  .map(([role, count]) => ({ role, count }));
+let commGaps: any = { gaps: [] };
+try {
+  commGaps = JSON.parse(readFileSync(resolve('../inventory/users/communication_gaps.json'), 'utf-8'));
+} catch {}
 
-const userTableRows = users
-  .sort((a, b) => num(b.data.total_activity_90d) - num(a.data.total_activity_90d))
-  .map((u) => ({
-    name: u.data.display_name,
-    activity: u.data.activity_level,
-    systems: u.data.systems_active_90d,
-    total: u.data.total_activity_90d,
-    prs: u.data.bb_prs_authored,
-    'jira created': u.data.jira_issues_created_90d,
-    'jira resolved': u.data.jira_issues_resolved_90d,
-    role: u.data.jira_role,
-    'conf pages': u.data.confluence_pages_90d,
-  }));
+const riskPeople = Object.entries(riskData.people || {}) as [string, any][];
+const highRiskCount = riskPeople.filter(([, p]) => p.score > 60).length;
+const sortedRisk = [...riskPeople].sort(([, a], [, b]) => b.score - a.score);
+
+const activeNotInOrg = people.filter((u: any) =>
+  (u.data.activity_level === 'high' || u.data.activity_level === 'medium') &&
+  !(u.data.systems as string || '').includes('org_chart'),
+).length;
+
+const orgChartInactive = people.filter((u: any) =>
+  (u.data.systems as string || '').includes('org_chart') &&
+  u.data.activity_level === 'inactive',
+).length;
+
+const communities = networkData.communities || [];
+const communityCount = networkData.community_count || communities.length;
+const largestCommunity = [...communities].sort((a: any, b: any) => b.size - a.size)[0];
+
+const top3Risk = sortedRisk.slice(0, 3);
+
+const highSeverityGapCount = (commGaps.gaps || []).filter((g: any) => g.severity === 'high').length;
+
+const graphNodes = networkData.graph_stats?.nodes ?? 0;
+const graphEdges = networkData.graph_stats?.edges ?? 0;
 ---
 
-<BaseLayout title="People">
+<BaseLayout title="People & Organization">
   <SectionHeader
-    title="People"
-    description="User activity across source control, project tracking, documentation, and cloud access over the last 90 days."
+    title="People & Organization"
+    description="Cross-system view of ~370 people at Mad Mobile — organizational structure, collaboration networks, key-person risk, and activity across source control, project tracking, documentation, and cloud."
   />
 
-  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-    <MetricCard label="Total Users" value={users.length.toString()} />
-    <MetricCard label="High Activity" value={highActivity.toString()} subtitle="Active in 3+ systems" />
-    <MetricCard label="Medium Activity" value={medActivity.toString()} />
-    <MetricCard
-      label="Low / Inactive"
-      value={(lowActivity + inactiveCount).toString()}
-      subtitle={`${inactiveCount} fully inactive`}
-    />
-    <MetricCard label="Multi-System" value={multiSystem.toString()} subtitle="Active in 2+ systems (90 days)" />
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Executive Summary</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-8">
+    <MetricCard label="Total People" value={people.length.toString()} subtitle="Across 5 systems" />
+    <MetricCard label="Active (90d)" value={activePeople.length.toString()} subtitle="High or medium activity" />
+    <MetricCard label="In Org Chart" value={inOrgChart.length.toString()} subtitle="From org chart PDFs" />
+    <MetricCard label="Teams Mapped" value={uniqueTeams.length.toString()} />
+    <MetricCard label="Geography" value={`${usCount} US / ${slCount} SL`} />
+    <MetricCard label="Key Risks" value={highRiskCount.toString()} subtitle="Risk score > 60" />
   </dl>
 
-  <div class="grid lg:grid-cols-2 gap-6 mb-8">
-    <div>
-      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Activity Distribution</h2>
-      <DataTable
-        columns={[
-          { key: 'level', label: 'Activity Level' },
-          { key: 'count', label: 'Users', align: 'right' },
-          { key: 'pct', label: '% Total', align: 'right' },
-        ]}
-        rows={activityRows}
-      />
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Organization Structure</h2>
+
+  <OrgChart dataPath="../analysis/charts/org_chart_data.json" title="Organization Structure — New Operating Model (April 2026)" height="700px" />
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Digital / Engineering (CDO)</h3>
+      <p class="text-sm text-[var(--text-secondary)]">
+        <strong>Chathura Ratnayake</strong> — largest org (100+). Dulanjan W. (Product & GTM, 10+), Randy Brown (Restaurant Tech, 10),
+        Zubair Syed (Enterprise, 58), Akshay Bhasin (Payments, 20+), Mark Guilarte (PMO, 4), Customer Support.
+      </p>
     </div>
-    <div>
-      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Users by Role</h2>
-      <DataTable
-        columns={[
-          { key: 'role', label: 'Role' },
-          { key: 'count', label: 'Users', align: 'right' },
-        ]}
-        rows={roleRows}
-      />
+    <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Technology / AI (CTO)</h3>
+      <p class="text-sm text-[var(--text-secondary)]">
+        <strong>Jack Kennedy</strong> — narrowed to AI and innovation post-reorg. One direct report: Jeremy Diggins.
+      </p>
+    </div>
+    <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Key Change</h3>
+      <p class="text-sm text-[var(--text-secondary)]">
+        April 3 reorg: Siegel (COO) and Lodes (CRO) departed. Chathura promoted to CDO with authority over
+        all engineering, product, design, PMO, and customer support. Kennedy narrowed to AI only.
+      </p>
+    </div>
+    <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Scope</h3>
+      <p class="text-sm text-[var(--text-secondary)]">
+        Don confirmed: <strong>Retail and Neo/AI in scope</strong> alongside CAKE/Restaurant (primary focus). All three product lines covered.
+      </p>
     </div>
   </div>
 
-  <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">All Users</h2>
-  <DataTable
-    columns={[
-      { key: 'name', label: 'Name' },
-      { key: 'activity', label: 'Activity' },
-      { key: 'systems', label: 'Systems Active', align: 'right' },
-      { key: 'total', label: 'Total Actions (90 days)', align: 'right' },
-      { key: 'prs', label: 'PRs', align: 'right' },
-      { key: 'jira created', label: 'Jira Created', align: 'right' },
-      { key: 'jira resolved', label: 'Jira Resolved', align: 'right' },
-      { key: 'role', label: 'Role' },
-      { key: 'conf pages', label: 'Confluence (90 days)', align: 'right' },
-    ]}
-    rows={userTableRows}
-    searchable
-    pageSize={25}
-  />
+  <SectionHeader title="Key Findings" description="Data-backed insights from cross-system people analysis" />
+
+  <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
+    <div class="border-l-4 border-[var(--status-amber)] bg-[var(--surface)] rounded-r-xl p-4 space-y-1">
+      <p class="text-sm font-semibold text-[var(--text)]">{activeNotInOrg} active people not in org chart</p>
+      <p class="text-xs text-[var(--text-secondary)]">Contributing via Jira, Bitbucket, or Confluence but not in the CDO or executive org chart PDFs. Likely Enterprise Solutions (Zubair's 58), contractors, or recent hires.</p>
+    </div>
+    <div class="border-l-4 border-[var(--status-amber)] bg-[var(--surface)] rounded-r-xl p-4 space-y-1">
+      <p class="text-sm font-semibold text-[var(--text)]">{orgChartInactive} org chart people have zero system activity</p>
+      <p class="text-xs text-[var(--text-secondary)]">Named on the org chart but no Jira issues, PRs, or Confluence pages in 90 days. Could be non-technical staff or a disengagement signal.</p>
+    </div>
+    <div class="border-l-4 border-[var(--status-amber)] bg-[var(--surface)] rounded-r-xl p-4 space-y-1">
+      <p class="text-sm font-semibold text-[var(--text)]">{communityCount} natural communities vs {uniqueTeams.length} org chart teams</p>
+      <p class="text-xs text-[var(--text-secondary)]">Collaboration clusters don't follow org boundaries. Largest community ({largestCommunity?.size ?? '?'} members) is only {largestCommunity ? Number(largestCommunity.team_alignment_pct).toFixed(0) : '?'}% aligned with any single team.</p>
+    </div>
+    <div class="border-l-4 border-[var(--status-red)] bg-[var(--surface)] rounded-r-xl p-4 space-y-1">
+      <p class="text-sm font-semibold text-[var(--text)]">Top 3 risk people handle &gt;35% of team code reviews</p>
+      <p class="text-xs text-[var(--text-secondary)]">{top3Risk.map(([name, p]) => `${name} (${Number(p.score).toFixed(0)})`).join(', ')}. Platform and Restaurant Backend are highest-risk teams.</p>
+    </div>
+    <div class="border-l-4 border-[var(--status-amber)] bg-[var(--surface)] rounded-r-xl p-4 space-y-1">
+      <p class="text-sm font-semibold text-[var(--text)]">{highSeverityGapCount} team pairs share projects with zero interaction</p>
+      <p class="text-xs text-[var(--text-secondary)]">Teams that work on the same Jira projects but have no code review or comment interaction. Enterprise/PMO and PCI Compliance/Product are the most concerning.</p>
+    </div>
+  </div>
+
+  <SectionHeader title="Explore" />
+
+  <div class="grid sm:grid-cols-2 gap-4 mb-8">
+    <a href="/people/teams" class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-start justify-between">
+      <div>
+        <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">Teams</h3>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">{uniqueTeams.length} teams mapped. Composition, geography split, and activity breakdown per team.</p>
+      </div>
+      <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+    <a href="/people/risk" class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-start justify-between">
+      <div>
+        <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">Risk & Bus Factor</h3>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">{highRiskCount} people at risk (score &gt; 60). Review bottlenecks, knowledge concentration, and key-person analysis.</p>
+      </div>
+      <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+    <a href="/people/network" class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-start justify-between">
+      <div>
+        <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">Interaction Network</h3>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">{graphNodes} people, {graphEdges} interaction edges. Cross-team collaboration, communities, and communication gaps.</p>
+      </div>
+      <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+    <a href="/people/directory" class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-start justify-between">
+      <div>
+        <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">Full Directory</h3>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">{people.length} people searchable by name, team, title, or project. Org chart + system activity merged.</p>
+      </div>
+      <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+  </div>
 </BaseLayout>
+

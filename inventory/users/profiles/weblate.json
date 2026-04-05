@@ -1,0 +1,34 @@
+{
+  "name": "weblate",
+  "id": "weblate",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "bot",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "557058:4e135426-5801-4ec6-822d-f32ffb415f44",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "mmweblate",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

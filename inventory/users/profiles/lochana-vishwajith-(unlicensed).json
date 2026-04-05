@@ -1,0 +1,34 @@
+{
+  "name": "Lochana Vishwajith (Unlicensed)",
+  "id": "lochana-vishwajith-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:e0ec3b85-4f05-4174-ab39-0d401bbd2186",
+      "email": "",
+      "pages_total": 26,
+      "pages_90d": 0,
+      "spaces": [
+        "DB",
+        "ES",
+        "LP"
+      ]
+    }
+  }
+}

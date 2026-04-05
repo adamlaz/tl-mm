@@ -1,0 +1,32 @@
+{
+  "name": "Anton Yakovenko (Unlicensed)",
+  "id": "anton-yakovenko-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:af57f51e-4eaf-43d3-8f23-18a01a21a3fa",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "DEP"
+      ]
+    }
+  }
+}

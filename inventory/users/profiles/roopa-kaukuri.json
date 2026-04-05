@@ -1,0 +1,63 @@
+{
+  "name": "Roopa Kaukuri",
+  "id": "roopa-kaukuri",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 343,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "62618666f698310070a93d23",
+      "email": "",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 290,
+      "issues_resolved_90d": 53,
+      "open_assigned": 138,
+      "bugs_created_90d": 7,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "62618666f698310070a93d23",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Roopa Kaukuri",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "62618666f698310070a93d23",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "TT"
+      ]
+    }
+  }
+}

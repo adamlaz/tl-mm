@@ -1,0 +1,47 @@
+{
+  "name": "Adam Hartman",
+  "id": "adam-hartman",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 7,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "61fd802f845d670071f4a885",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 1,
+      "open_assigned": 2,
+      "bugs_created_90d": 3,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "61fd802f845d670071f4a885",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Adam Hartman",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

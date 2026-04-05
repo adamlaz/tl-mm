@@ -1,0 +1,511 @@
+---
+import {
+  catHash, catClass, initials,
+  badgeHTML, barHTML, avatarHTML, booleanHTML,
+  currencyHTML, listHTML, linkHTML, dateHTML,
+  heatHTML, sparklineHTML,
+} from '../lib/tabulator-formatters';
+
+interface Column {
+  key: string;
+  label: string;
+  align?: 'left' | 'right';
+  sortable?: boolean;
+  filterable?: boolean;
+  type?: 'text' | 'number' | 'badge' | 'bar' | 'avatar' | 'boolean' | 'currency' | 'list' | 'date' | 'sparkline' | 'heat';
+  badgeMap?: Record<string, string>;
+  barMax?: number;
+  barInvert?: boolean;
+  subtitleKey?: string;
+  width?: string;
+  minWidth?: string;
+  headerFilter?: boolean | string;
+  headerFilterFunc?: string;
+  bottomCalc?: string;
+  frozen?: boolean;
+  responsive?: number;
+  cssClass?: string;
+  heatMax?: number;
+}
+
+interface Props {
+  columns: Column[];
+  rows: Record<string, any>[];
+  searchable?: boolean;
+  pageSize?: number;
+  hrefKey?: string;
+  groupBy?: string;
+  frozenLeft?: number;
+  exportable?: boolean;
+  treeData?: boolean;
+  treeChildKey?: string;
+  selectable?: boolean;
+  clipboard?: boolean;
+  responsiveCollapse?: boolean;
+  persistId?: string;
+  height?: string;
+  groupHeader?: string;
+  groupCalc?: boolean;
+  rowFormatter?: string;
+  initialSort?: Array<{column: string, dir: 'asc' | 'desc'}>;
+  placeholder?: string;
+}
+
+const {
+  columns,
+  rows,
+  searchable = false,
+  pageSize = 25,
+  hrefKey,
+  groupBy,
+  frozenLeft,
+  exportable = false,
+  treeData = false,
+  treeChildKey = '_children',
+  selectable = false,
+  clipboard = false,
+  responsiveCollapse = false,
+  persistId,
+  height,
+  groupHeader,
+  groupCalc = false,
+  rowFormatter,
+  initialSort,
+  placeholder = 'No data available',
+} = Astro.props;
+
+const gridId = `tg-${Math.random().toString(36).slice(2, 8)}`;
+
+const extraKeys = new Set<string>();
+for (const col of columns) {
+  if (col.subtitleKey) extraKeys.add(col.subtitleKey);
+}
+
+const linkColumns = new Set<string>();
+if (hrefKey) linkColumns.add(columns[0]?.key ?? '');
+for (const col of columns) {
+  if (rows.some((r) => r[`_href_${col.key}`])) linkColumns.add(col.key);
+}
+
+function cleanRow(row: Record<string, any>): Record<string, any> {
+  const clean: Record<string, any> = {};
+  for (const col of columns) clean[col.key] = row[col.key] ?? '';
+  for (const key of extraKeys) if (row[key] !== undefined) clean[key] = row[key];
+  if (hrefKey && row[hrefKey]) clean[hrefKey] = row[hrefKey];
+  for (const [k, v] of Object.entries(row)) {
+    if (k.startsWith('_href_')) clean[k] = v;
+  }
+  if (treeData && row[treeChildKey]) {
+    clean[treeChildKey] = (row[treeChildKey] as Record<string, any>[]).map(cleanRow);
+  }
+  return clean;
+}
+
+const cleanRows = rows.map(cleanRow);
+const dataJson = JSON.stringify(cleanRows);
+
+const columnConfigs = columns.map((c, i) => ({
+  key: c.key,
+  label: c.label,
+  type: c.type || 'text',
+  align: c.align,
+  sortable: c.sortable,
+  filterable: c.filterable,
+  badgeMap: c.badgeMap || null,
+  barMax: c.barMax || 100,
+  barInvert: c.barInvert || false,
+  subtitleKey: c.subtitleKey || null,
+  width: c.width || null,
+  minWidth: c.minWidth || null,
+  headerFilter: c.headerFilter || null,
+  headerFilterFunc: c.headerFilterFunc || null,
+  bottomCalc: c.bottomCalc || null,
+  frozen: c.frozen || (frozenLeft ? i < frozenLeft : false),
+  responsive: c.responsive ?? undefined,
+  cssClass: c.cssClass || null,
+  heatMax: c.heatMax || 100,
+  isLink: linkColumns.has(c.key),
+  isFirst: i === 0,
+}));
+
+const configJson = JSON.stringify({
+  columns: columnConfigs,
+  hrefKey: hrefKey || '',
+  searchable,
+  pageSize,
+  groupBy: groupBy || '',
+  exportable,
+  treeData,
+  treeChildKey,
+  selectable,
+  clipboard,
+  responsiveCollapse,
+  persistId: persistId || '',
+  height: height || '',
+  groupHeader: groupHeader || '',
+  groupCalc,
+  rowFormatter: rowFormatter || '',
+  initialSort: initialSort || [],
+  placeholder,
+});
+---
+
+<div class="tl-grid-wrapper" id={`${gridId}-wrap`}>
+  {exportable && (
+    <div class="tl-export-bar">
+      <button class="tl-export-btn" data-action="csv" data-grid={gridId} type="button">CSV</button>
+      <button class="tl-export-btn" data-action="json" data-grid={gridId} type="button">JSON</button>
+    </div>
+  )}
+  {searchable && (
+    <div class="tl-search-wrap">
+      <input
+        type="search"
+        class="tl-search-input"
+        placeholder="Search..."
+        data-search={gridId}
+        aria-label="Search table"
+      />
+    </div>
+  )}
+  <div id={gridId}></div>
+</div>
+
+<script type="application/json" id={`${gridId}-data`} set:html={dataJson} />
+<script type="application/json" id={`${gridId}-config`} set:html={configJson} />
+
+<script is:inline define:vars={{ gridId }}>
+(function() {
+  var _initKey = '__tl_grid_' + gridId;
+
+  function init() {
+    if (window[_initKey]) { try { window[_initKey].destroy(); } catch(e){} }
+
+    var dataEl = document.getElementById(gridId + '-data');
+    var confEl = document.getElementById(gridId + '-config');
+    var gridEl = document.getElementById(gridId);
+    if (!dataEl || !confEl || !gridEl) return;
+
+    var rows, cfg;
+    try {
+      rows = JSON.parse(dataEl.textContent || '[]');
+      cfg = JSON.parse(confEl.textContent || '{}');
+    } catch(e) { return; }
+
+    var CAT = ['tl-cat-0','tl-cat-1','tl-cat-2','tl-cat-3','tl-cat-4','tl-cat-5','tl-cat-6','tl-cat-7'];
+    var ST = {green:'tl-st-green',amber:'tl-st-amber',red:'tl-st-red',muted:'tl-st-muted',accent:'tl-st-accent'};
+    var SEQ_L = ['#E8EEF5','#C0DCD8','#E0D498','#D0A040','#C06030','#902820'];
+    var SEQ_D = ['#18202A','#1A2E2C','#2E2814','#50401A','#704020','#E0A060'];
+    var SPARK_C = ['#5A6CD0','#2AA89A','#C4A030','#D05848','#6A80B8'];
+
+    function h(s) {
+      var v = 5381; s = String(s||'').toLowerCase().trim();
+      for (var i = 0; i < s.length; i++) v = ((v << 5) + v) + s.charCodeAt(i);
+      return Math.abs(v) % 8;
+    }
+    function pn(v) { return parseFloat(String(v||'0').replace(/[^0-9.\-]/g,'')) || 0; }
+    function ini(n) {
+      var p = String(n||'').split(/\s+/).filter(Boolean);
+      if (!p.length) return '?';
+      return p.length === 1 ? p[0][0].toUpperCase() : (p[0][0]+p[p.length-1][0]).toUpperCase();
+    }
+    function bc(val, bm) {
+      var s = String(val);
+      var m = bm ? (bm[s] || bm[s.toLowerCase()]) : null;
+      return (m && ST[m]) ? ST[m] : CAT[h(s)];
+    }
+    function lw(html, href) {
+      if (!href) return html;
+      var ext = String(href).indexOf('http') === 0;
+      var a = ext ? ' target="_blank" rel="noopener noreferrer"' : '';
+      var ar = ext ? '<span class="tl-ext-arrow">\u2197</span>' : '';
+      return '<a class="tl-cell-link" href="'+href+'"'+a+'>'+html+ar+'</a>';
+    }
+    function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+
+    function buildFormatter(c) {
+      if (c.type === 'badge') {
+        return function(cell) {
+          var v = cell.getValue(); if (!v && v !== 0) return '';
+          var rec = cell.getData();
+          var cls = bc(v, c.badgeMap);
+          var out = '<span class="tl-badge '+cls+'">'+v+'</span>';
+          var href = rec['_href_'+c.key] || (c.isFirst && cfg.hrefKey ? rec[cfg.hrefKey] : '');
+          if (c.isLink && href) out = lw(out, href);
+          return out;
+        };
+      }
+      if (c.type === 'bar') {
+        return function(cell) {
+          var v = cell.getValue(); if (v === '' || v === null || v === undefined) return '';
+          var n = pn(v), mx = c.barMax > 0 ? c.barMax : 100;
+          var pct = Math.min(100, Math.max(0, (n/mx)*100));
+          var cl;
+          if (c.barInvert) { cl = pct<=40?'tl-bar--green':pct<=70?'tl-bar--amber':'tl-bar--red'; }
+          else { cl = pct<=40?'tl-bar--red':pct<=70?'tl-bar--amber':'tl-bar--green'; }
+          return '<div class="tl-bar-wrap"><span class="tl-bar-label">'+v+'</span><div class="tl-bar-track"><div class="tl-bar-fill '+cl+'" style="width:'+pct+'%"></div></div></div>';
+        };
+      }
+      if (c.type === 'avatar') {
+        return function(cell) {
+          var v = cell.getValue(); if (!v) return '';
+          var rec = cell.getData();
+          var sub = c.subtitleKey ? (rec[c.subtitleKey]||'') : '';
+          var i = ini(v), cls = CAT[h(v)];
+          var nm = '<span class="tl-avatar-name">'+v+'</span>';
+          var href = rec['_href_'+c.key] || (c.isFirst && cfg.hrefKey ? rec[cfg.hrefKey] : '');
+          if (c.isLink || href) nm = lw(nm, href);
+          var sh = sub ? '<div class="tl-avatar-sub">'+sub+'</div>' : '';
+          return '<div class="tl-avatar-cell"><div class="tl-avatar-circle '+cls+'">'+i+'</div><div>'+nm+sh+'</div></div>';
+        };
+      }
+      if (c.type === 'boolean') {
+        return function(cell) {
+          var v = cell.getValue();
+          var s = String(v||'').toLowerCase().trim();
+          var y = s==='yes'||s==='true'||s==='1'||s==='active'||s==='enabled';
+          if (y) return '<span class="tl-bool tl-bool--yes"><span class="tl-bool-icon">\u2713</span>'+v+'</span>';
+          return '<span class="tl-bool tl-bool--no"><span class="tl-bool-icon">\u2014</span>'+v+'</span>';
+        };
+      }
+      if (c.type === 'currency') {
+        return function(cell) {
+          var v = cell.getValue(); if (!v && v !== 0) return '';
+          return '<span class="tl-currency">'+v+'</span>';
+        };
+      }
+      if (c.type === 'list') {
+        return function(cell) {
+          var v = cell.getValue(); if (!v) return '';
+          return String(v).split(/,\s*/).map(function(item) {
+            return '<span class="tl-list-pill '+CAT[h(item)]+'">'+item.trim()+'</span>';
+          }).join(' ');
+        };
+      }
+      if (c.type === 'heat') {
+        return function(cell) {
+          var v = cell.getValue(); if (v === '' || v === null || v === undefined) return '';
+          var n = pn(v), mx = c.heatMax||100;
+          var norm = Math.min(1, Math.max(0, n/mx));
+          var pal = isDark() ? SEQ_D : SEQ_L;
+          var idx = Math.min(pal.length-1, Math.floor(norm*(pal.length-1)));
+          var bg = pal[idx];
+          var fg = norm > 0.5 ? (isDark()?'#1E1810':'#FFF6EE') : (isDark()?'#90A0B0':'#404860');
+          return '<span class="tl-heat-cell" style="background:'+bg+';color:'+fg+'">'+v+'</span>';
+        };
+      }
+      if (c.type === 'sparkline') {
+        return function(cell) {
+          var v = cell.getValue(); if (!v || !Array.isArray(v)) return '';
+          var m = Math.max.apply(null, v.concat([1]));
+          return '<span class="tl-spark">'+v.map(function(x,i) {
+            var ht = Math.max(2, Math.round((x/m)*18));
+            return '<span class="tl-spark-seg" style="height:'+ht+'px;background:'+SPARK_C[i%SPARK_C.length]+'"></span>';
+          }).join('')+'</span>';
+        };
+      }
+      if (c.type === 'date') {
+        return function(cell) {
+          var v = cell.getValue(); if (!v) return '';
+          return '<span style="white-space:nowrap">'+v+'</span>';
+        };
+      }
+      if (c.isLink) {
+        return function(cell) {
+          var v = cell.getValue(); if (!v) return v;
+          var rec = cell.getData();
+          var href = rec['_href_'+c.key] || (c.isFirst && cfg.hrefKey ? rec[cfg.hrefKey] : '');
+          return href ? lw(String(v), href) : String(v);
+        };
+      }
+      return undefined;
+    }
+
+    var tabulatorCols = cfg.columns.map(function(c) {
+      var customTypes = ['badge','bar','avatar','boolean','currency','list','date','sparkline','heat'];
+      var hasCustom = c.type && customTypes.indexOf(c.type) >= 0;
+      var col = {
+        field: c.key,
+        title: c.label,
+        headerSort: c.sortable !== false,
+        cssClass: '',
+      };
+
+      if (c.width) col.width = c.width;
+      if (c.minWidth) col.minWidth = c.minWidth;
+      if (c.frozen) col.frozen = true;
+      if (c.responsive !== undefined) col.responsive = c.responsive;
+      if (c.cssClass) col.cssClass = c.cssClass;
+
+      if (c.type === 'number' || c.align === 'right') {
+        col.hozAlign = 'right';
+        col.cssClass = (col.cssClass ? col.cssClass + ' ' : '') + 'tl-num-cell';
+        col.sorter = 'number';
+      }
+
+      if (c.type === 'bar' || c.type === 'heat' || c.type === 'currency') {
+        col.sorter = 'number';
+        col.sorterParams = { alignEmptyValues: 'bottom' };
+      }
+
+      if (c.headerFilter) {
+        if (c.headerFilter === true || c.headerFilter === 'input') {
+          col.headerFilter = 'input';
+          col.headerFilterPlaceholder = 'Filter...';
+        } else if (c.headerFilter === 'list' || c.headerFilter === 'select') {
+          col.headerFilter = 'list';
+          col.headerFilterParams = { valuesLookup: true, clearable: true, multiselect: true };
+          col.headerFilterFunc = 'in';
+          col.headerFilterPlaceholder = 'All';
+        }
+      } else if (c.filterable) {
+        col.headerFilter = 'list';
+        col.headerFilterParams = { valuesLookup: true, clearable: true, multiselect: true };
+        col.headerFilterFunc = 'in';
+        col.headerFilterPlaceholder = 'All';
+      }
+
+      if (c.bottomCalc) col.bottomCalc = c.bottomCalc;
+
+      var fmt = buildFormatter(c);
+      if (fmt) {
+        col.formatter = fmt;
+        col.formatterParams = {};
+      }
+
+      return col;
+    });
+
+    var hasFrozen = tabulatorCols.some(function(c) { return c.frozen; });
+
+    var layoutMode = tabulatorCols.length > 6 ? 'fitData' : 'fitDataFill';
+
+    var opts = {
+      data: rows,
+      columns: tabulatorCols,
+      layout: layoutMode,
+      movableColumns: false,
+      placeholder: cfg.placeholder || 'No data available',
+    };
+
+    if (cfg.responsiveCollapse && !hasFrozen) {
+      opts.responsiveLayout = 'collapse';
+    }
+
+    if (cfg.height) {
+      opts.height = cfg.height;
+      opts.renderVertical = 'virtual';
+    } else if (rows.length > (cfg.pageSize || 25)) {
+      opts.pagination = true;
+      opts.paginationSize = cfg.pageSize || 25;
+      opts.paginationSizeSelector = [10, 25, 50, 100];
+      opts.paginationCounter = 'rows';
+    }
+
+    if (cfg.groupBy) {
+      opts.groupBy = cfg.groupBy;
+      opts.groupToggleElement = 'header';
+      if (cfg.groupCalc) {
+        opts.groupStartOpen = true;
+      }
+    }
+
+    if (cfg.treeData) {
+      opts.dataTree = true;
+      opts.dataTreeChildField = cfg.treeChildKey || '_children';
+      opts.dataTreeStartExpanded = false;
+    }
+
+    if (cfg.selectable) {
+      opts.selectable = true;
+    }
+
+    if (cfg.clipboard) {
+      opts.clipboard = true;
+      opts.clipboardCopyRowRange = 'active';
+    }
+
+    if (cfg.initialSort && cfg.initialSort.length) {
+      opts.initialSort = cfg.initialSort;
+    }
+
+    if (cfg.persistId) {
+      opts.persistence = {
+        sort: true,
+        filter: true,
+        columns: false,
+      };
+      opts.persistenceID = cfg.persistId;
+      opts.persistenceMode = 'local';
+    }
+
+    if (cfg.rowFormatter) {
+      var _field = cfg.rowFormatter;
+      opts.rowFormatter = function(row) {
+        var d = row.getData();
+        var val = d[_field];
+        var el = row.getElement();
+        el.classList.remove('tl-row-danger','tl-row-warning','tl-row-muted');
+        if (val === 'danger' || val === 'red') el.classList.add('tl-row-danger');
+        else if (val === 'warning' || val === 'amber') el.classList.add('tl-row-warning');
+        else if (val === 'muted' || val === 'inactive') el.classList.add('tl-row-muted');
+      };
+    }
+
+    var TabulatorModule = window.Tabulator;
+    if (!TabulatorModule) {
+      console.error('Tabulator not loaded');
+      return;
+    }
+
+    var table = new TabulatorModule(gridEl, opts);
+    window[_initKey] = table;
+
+    var searchInput = document.querySelector('[data-search="'+gridId+'"]');
+    if (searchInput) {
+      var debounce;
+      searchInput.addEventListener('input', function(e) {
+        clearTimeout(debounce);
+        debounce = setTimeout(function() {
+          var val = e.target.value;
+          if (!val) { table.clearFilter(); return; }
+          table.setFilter(function(data) {
+            var s = val.toLowerCase();
+            for (var k in data) {
+              if (String(data[k]||'').toLowerCase().indexOf(s) >= 0) return true;
+            }
+            return false;
+          });
+        }, 200);
+      });
+    }
+
+    var exportBtns = document.querySelectorAll('[data-grid="'+gridId+'"]');
+    exportBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var action = btn.getAttribute('data-action');
+        if (action === 'csv') table.download('csv', 'export.csv');
+        else if (action === 'json') table.download('json', 'export.json');
+      });
+    });
+  }
+
+  function tryInit() {
+    if (window.Tabulator) {
+      init();
+    } else {
+      setTimeout(tryInit, 50);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', tryInit);
+  } else {
+    tryInit();
+  }
+
+  document.addEventListener('astro:page-load', function() {
+    if (document.getElementById(gridId)) tryInit();
+  });
+})();
+</script>

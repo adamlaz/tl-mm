@@ -1,0 +1,39 @@
+{
+  "name": "Madison Bloomfield",
+  "id": "madison-bloomfield",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "level": "low"
+  },
+  "systems": [
+    "jira"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:1f401b3e-c1e1-4ea3-b739-ac4dba37cb29",
+      "email": "",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

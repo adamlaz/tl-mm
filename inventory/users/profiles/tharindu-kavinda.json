@@ -1,0 +1,32 @@
+{
+  "name": "Tharindu kavinda",
+  "id": "tharindu-kavinda",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:ae2c9415-ecd0-4a0c-8fab-c8334a752491",
+      "email": "",
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE"
+      ]
+    }
+  }
+}

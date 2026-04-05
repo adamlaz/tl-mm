@@ -1,0 +1,32 @@
+{
+  "name": "Marap Pullige Jinawardana (Unlicensed)",
+  "id": "marap-pullige-jinawardana-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5ba0e21b1e436030d5c4af0d",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "SWAT"
+      ]
+    }
+  }
+}

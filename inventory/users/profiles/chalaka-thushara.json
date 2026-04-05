@@ -1,0 +1,52 @@
+{
+  "name": "chalaka.thushara",
+  "id": "chalaka-thushara",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 12,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "email": "",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 8,
+      "open_assigned": 117,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "chalaka.thushara",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

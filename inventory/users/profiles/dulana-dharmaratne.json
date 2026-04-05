@@ -1,0 +1,53 @@
+{
+  "name": "Dulana Dharmaratne",
+  "id": "dulana-dharmaratne",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 14,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "62da52247654479e0609b5c4",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 14,
+      "issues_resolved_90d": 0,
+      "open_assigned": 25,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "62da52247654479e0609b5c4",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Dulana Dharmaratne",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Fayaz Abdul",
+  "id": "fayaz-abdul",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 2,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:2a787c20-c893-4435-bd8b-1629240eaf72",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 0,
+      "open_assigned": 33,
+      "bugs_created_90d": 0,
+      "timeZone": "Europe/London",
+      "active": true
+    },
+    "confluence": {
+      "account_id": "712020:2a787c20-c893-4435-bd8b-1629240eaf72",
+      "email": "",
+      "pages_total": 26,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

@@ -1,73 +1,96 @@
 @import 'tailwindcss';
+@import './tabulator-tl.css';
 
+/* TL standard palette + Mad Mobile client accent (hue ~245) */
 @theme {
-  /* --- Primitive tokens (raw OKLCH, mode-independent) --- */
+  /* ── TL Deliverable Standard: warm neutrals (hue ~80 light, ~300 dark) ── */
+  --color-warm-98: oklch(97.5% 0.002 80);
+  --color-warm-93: oklch(93% 0.003 80);
+  --color-warm-18: oklch(18% 0.015 300);
+  --color-warm-13: oklch(13% 0.015 300);
+  --color-warm-26: oklch(26% 0.012 300);
+  --color-warm-36: oklch(36% 0.008 300);
+  --color-warm-46: oklch(46% 0.006 300);
+  --color-warm-66: oklch(66% 0.004 80);
+  --color-warm-76: oklch(76% 0.004 80);
 
-  /* Blue accent series (hue ~245, derived from Mad Mobile navy) */
-  --color-accent-700: oklch(0.35 0.14 245);
-  --color-accent-600: oklch(0.43 0.15 245);
-  --color-accent-500: oklch(0.52 0.14 245);
-  --color-accent-400: oklch(0.62 0.12 245);
-  --color-accent-100: oklch(0.91 0.03 245);
-  --color-accent-50: oklch(0.97 0.01 245);
+  /* ── TL Structural Steel (hue ~250) ── */
+  --color-steel-86: oklch(86% 0.003 250);
+  --color-steel-93: oklch(93% 0.003 250);
+  --color-steel-36: oklch(36% 0.008 250);
+  --color-steel-26: oklch(26% 0.012 250);
+  --color-steel-ring: oklch(62% 0.12 250);
 
-  /* Slate structural series (hue ~250) */
-  --color-steel-600: oklch(0.45 0.03 250);
-  --color-steel-400: oklch(0.60 0.02 250);
-  --color-steel-200: oklch(0.82 0.01 250);
-  --color-steel-100: oklch(0.92 0.005 250);
+  /* ── Client accent: Mad Mobile navy (hue ~245, tactical use only) ── */
+  --color-accent-std: oklch(0.43 0.15 245);
+  --color-accent-hover: oklch(0.35 0.14 245);
+  --color-accent-subtle-light: oklch(0.97 0.01 245);
+  --color-accent-subtle-dark: oklch(0.22 0.04 245);
 
-  /* Cool neutrals (slate-tinted) */
-  --color-neutral-950: oklch(0.13 0.015 250);
-  --color-neutral-900: oklch(0.18 0.015 250);
-  --color-neutral-800: oklch(0.26 0.012 250);
-  --color-neutral-700: oklch(0.36 0.008 250);
-  --color-neutral-600: oklch(0.46 0.006 250);
-  --color-neutral-500: oklch(0.56 0.005 250);
-  --color-neutral-400: oklch(0.66 0.004 250);
-  --color-neutral-300: oklch(0.76 0.004 250);
-  --color-neutral-200: oklch(0.86 0.003 250);
-  --color-neutral-100: oklch(0.93 0.003 250);
-  --color-neutral-50: oklch(0.975 0.002 250);
+  /* ── TL Status palette (fixed, never client-derived) ── */
+  --color-status-green: oklch(65% 0.17 145);
+  --color-status-amber: oklch(75% 0.15 75);
+  --color-status-red: oklch(60% 0.2 25);
+  --color-status-green-bg-light: oklch(95% 0.04 145);
+  --color-status-amber-bg-light: oklch(95% 0.04 75);
+  --color-status-red-bg-light: oklch(95% 0.04 25);
+  --color-status-green-bg-dark: oklch(25% 0.04 145);
+  --color-status-amber-bg-dark: oklch(25% 0.04 75);
+  --color-status-red-bg-dark: oklch(25% 0.04 25);
 
-  /* Typography */
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  /* ── Typography ── */
+  --font-sans: 'Noto Sans', system-ui, sans-serif;
+  --font-display: 'Noto Sans Display', 'Noto Sans', system-ui, sans-serif;
+  --font-mono: 'Noto Sans Mono', ui-monospace, monospace;
 }
 
-/* --- Semantic tokens: Light mode --- */
+/* ── Semantic tokens: Light mode ── */
 :root {
-  --bg: var(--color-neutral-50);
-  --text: var(--color-neutral-900);
-  --text-secondary: var(--color-neutral-700);
-  --text-muted: var(--color-neutral-600);
-  --accent: var(--color-accent-600);
-  --accent-hover: var(--color-accent-700);
-  --accent-subtle: var(--color-accent-50);
-  --surface: oklch(1 0 0);
-  --surface-alt: var(--color-neutral-100);
-  --border: var(--color-neutral-200);
-  --border-subtle: var(--color-neutral-100);
-  --ring: var(--color-accent-400);
+  --bg: var(--color-warm-98);
+  --surface: oklch(100% 0 0);
+  --surface-alt: var(--color-warm-93);
+  --text: var(--color-warm-18);
+  --text-secondary: var(--color-warm-36);
+  --text-muted: var(--color-warm-46);
+  --accent: var(--color-accent-std);
+  --accent-hover: var(--color-accent-hover);
+  --accent-subtle: var(--color-accent-subtle-light);
+  --border: var(--color-steel-86);
+  --border-subtle: var(--color-steel-93);
+  --ring: var(--color-steel-ring);
+  --status-green: var(--color-status-green);
+  --status-amber: var(--color-status-amber);
+  --status-red: var(--color-status-red);
+  --status-green-bg: var(--color-status-green-bg-light);
+  --status-amber-bg: var(--color-status-amber-bg-light);
+  --status-red-bg: var(--color-status-red-bg-light);
+  --surface-hover: oklch(97% 0.008 245);
 }
 
-/* --- Semantic tokens: Dark mode --- */
+/* ── Semantic tokens: Dark mode ── */
 [data-theme='dark'] {
-  --bg: var(--color-neutral-950);
-  --text: var(--color-neutral-100);
-  --text-secondary: var(--color-neutral-300);
-  --text-muted: var(--color-neutral-400);
-  --accent: var(--color-accent-400);
-  --accent-hover: var(--color-accent-500);
-  --accent-subtle: oklch(0.22 0.04 245);
-  --surface: var(--color-neutral-900);
-  --surface-alt: var(--color-neutral-800);
-  --border: var(--color-neutral-700);
-  --border-subtle: var(--color-neutral-800);
-  --ring: var(--color-accent-500);
+  --bg: var(--color-warm-13);
+  --text: var(--color-warm-93);
+  --text-secondary: var(--color-warm-76);
+  --text-muted: var(--color-warm-66);
+  --accent: oklch(0.62 0.12 245);
+  --accent-hover: oklch(0.52 0.14 245);
+  --accent-subtle: var(--color-accent-subtle-dark);
+  --surface: var(--color-warm-18);
+  --surface-alt: var(--color-warm-26);
+  --border: var(--color-steel-36);
+  --border-subtle: var(--color-steel-26);
+  --ring: oklch(0.52 0.14 245);
+  --status-green: var(--color-status-green);
+  --status-amber: var(--color-status-amber);
+  --status-red: var(--color-status-red);
+  --status-green-bg: var(--color-status-green-bg-dark);
+  --status-amber-bg: var(--color-status-amber-bg-dark);
+  --status-red-bg: var(--color-status-red-bg-dark);
+  --surface-hover: oklch(22% 0.015 245);
 }
 
-/* --- View transitions --- */
+/* ── View transitions ── */
 ::view-transition-old(root) {
   animation: fade-out 200ms ease-out;
 }
@@ -97,6 +120,18 @@
   ::view-transition-new(root) {
     animation: none;
   }
+}
+
+/* D2 diagram styling */
+.d2-diagram-wrap svg {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+}
+
+.d2-diagram-wrap .d2-diagram {
+  display: flex;
+  justify-content: center;
 }
 
 /* Keyboard focus indicators */

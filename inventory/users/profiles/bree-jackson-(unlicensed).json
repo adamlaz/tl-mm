@@ -1,0 +1,32 @@
+{
+  "name": "Bree Jackson (Unlicensed)",
+  "id": "bree-jackson-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:32549fb1-452e-4f4f-82d5-082f90d422ea",
+      "email": "",
+      "pages_total": 113,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

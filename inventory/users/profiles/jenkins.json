@@ -1,0 +1,42 @@
+{
+  "name": "Jenkins",
+  "id": "jenkins",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "bot",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket",
+    "aws_iam"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "557058:13547deb-309f-4399-a81d-cf76d2a8e1f2",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "archon-jenkins",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "aws_iam": {
+      "account_id": "jenkins",
+      "email": null,
+      "aws_profile": "mm-mm-archive",
+      "created_date": "2019-07-28T21:47:04+00:00",
+      "is_service_account": false
+    }
+  }
+}

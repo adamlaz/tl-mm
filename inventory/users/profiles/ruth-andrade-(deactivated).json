@@ -1,0 +1,32 @@
+{
+  "name": "Ruth Andrade (Deactivated)",
+  "id": "ruth-andrade-(deactivated)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": "ruth.andrade@sysco.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:76e402fb-7c2c-41a9-a920-81d033da1d53",
+      "email": "ruth.andrade@sysco.com",
+      "pages_total": 17,
+      "pages_90d": 0,
+      "spaces": [
+        "CR"
+      ]
+    }
+  }
+}

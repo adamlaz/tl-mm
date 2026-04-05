@@ -1,0 +1,33 @@
+{
+  "name": "Adheesha Jithendree (Unlicensed)",
+  "id": "adheesha-jithendree-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "61d2b72ce67ea2006bb8b34c",
+      "email": "",
+      "pages_total": 8,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "CCE"
+      ]
+    }
+  }
+}

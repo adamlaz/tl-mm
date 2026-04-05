@@ -1,0 +1,32 @@
+{
+  "name": "Lakshan Pinto (Unlicensed)",
+  "id": "lakshan-pinto-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:ccb73166-37e9-4770-98a0-66f9c353ab8c",
+      "email": "",
+      "pages_total": 10,
+      "pages_90d": 0,
+      "spaces": [
+        "LP"
+      ]
+    }
+  }
+}

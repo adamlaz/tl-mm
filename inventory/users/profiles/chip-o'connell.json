@@ -1,0 +1,67 @@
+{
+  "name": "Chip O'Connell",
+  "id": "chip-o'connell",
+  "title": "Onboarding Delivery",
+  "team": "Onboarding",
+  "manager": "David Strainick",
+  "division": "Operations",
+  "executive": "David Strainick",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 3,
+    "level": "low"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "5f89b023bd30210069fe0b7f",
+      "email": "",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 60,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5f89b023bd30210069fe0b7f",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Chip O'Connell",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "5f89b023bd30210069fe0b7f",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "P"
+      ]
+    }
+  }
+}

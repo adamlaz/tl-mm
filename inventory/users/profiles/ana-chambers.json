@@ -1,0 +1,67 @@
+{
+  "name": "Ana Chambers",
+  "id": "ana-chambers",
+  "title": "Chief of Staff Strategic Programs",
+  "team": "Restaurant",
+  "manager": "Don Salama",
+  "division": "Executive",
+  "executive": "Don Salama",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 87,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "60e6f8e70dd4f60076b2f3a5",
+      "email": "",
+      "projects": [
+        "REST",
+        "UR"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 56,
+      "issues_resolved_90d": 31,
+      "open_assigned": 186,
+      "bugs_created_90d": 1,
+      "timeZone": "EST5EDT",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "60e6f8e70dd4f60076b2f3a5",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Ana Chambers",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "60e6f8e70dd4f60076b2f3a5",
+      "email": "",
+      "pages_total": 121,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

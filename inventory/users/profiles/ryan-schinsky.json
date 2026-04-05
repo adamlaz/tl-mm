@@ -1,0 +1,35 @@
+{
+  "name": "Ryan Schinsky",
+  "id": "ryan-schinsky",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "level": "low"
+  },
+  "systems": [
+    "jira"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:ffed12e1-6c8f-4b0c-9d8f-28b9f6866b55",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

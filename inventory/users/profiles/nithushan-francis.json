@@ -1,0 +1,32 @@
+{
+  "name": "Nithushan Francis",
+  "id": "nithushan-francis",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:95fa0e6d-85aa-400e-bd59-a8df785796f3",
+      "email": "",
+      "pages_total": 6,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE"
+      ]
+    }
+  }
+}

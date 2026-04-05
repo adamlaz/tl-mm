@@ -1,0 +1,59 @@
+{
+  "name": "Anthony Goad",
+  "id": "anthony-goad",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": "agoad@madmobile.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 23,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "5c34e4c5ff324728a1da55e7",
+      "email": "agoad@madmobile.com",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 23,
+      "issues_resolved_90d": 0,
+      "open_assigned": 4,
+      "bugs_created_90d": 23,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5c34e4c5ff324728a1da55e7",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Anthony Goad",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "5c34e4c5ff324728a1da55e7",
+      "email": "agoad@madmobile.com",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "PT",
+        "TT"
+      ]
+    }
+  }
+}

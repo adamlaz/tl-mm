@@ -1,0 +1,895 @@
+{
+  "gaps": [
+    {
+      "team_a": "Enterprise",
+      "team_b": "PMO",
+      "shared_projects": [
+        "CM",
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Enterprise",
+      "team_b": "PMO Restaurant",
+      "shared_projects": [
+        "CM",
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PCI Compliance",
+      "team_b": "Product",
+      "shared_projects": [
+        "OS",
+        "RL"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PMO",
+      "team_b": "Platform",
+      "shared_projects": [
+        "CM",
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments PMO",
+      "team_b": "Platform",
+      "shared_projects": [
+        "CM",
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments R&D",
+      "team_b": "Product",
+      "shared_projects": [
+        "REST",
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Platform",
+      "team_b": "Restaurant QE",
+      "shared_projects": [
+        "REST",
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Enterprise",
+      "team_b": "Payments PMO",
+      "shared_projects": [
+        "CM"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Enterprise",
+      "team_b": "Product",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Enterprise",
+      "team_b": "Product Payments",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Enterprise",
+      "team_b": "Product Restaurant",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "Onboarding",
+      "shared_projects": [
+        "OS"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "PCI Compliance",
+      "shared_projects": [
+        "OS"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "Payments",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "Payments PMO",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "Payments R&D",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "Restaurant QE",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Onboarding",
+      "team_b": "PCI Compliance",
+      "shared_projects": [
+        "OS"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Onboarding",
+      "team_b": "Product",
+      "shared_projects": [
+        "OS"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Onboarding",
+      "team_b": "Product Payments",
+      "shared_projects": [
+        "OS"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PCI Compliance",
+      "team_b": "PMO",
+      "shared_projects": [
+        "CM"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PCI Compliance",
+      "team_b": "PMO Restaurant",
+      "shared_projects": [
+        "CM"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PCI Compliance",
+      "team_b": "Payments PMO",
+      "shared_projects": [
+        "CM"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PCI Compliance",
+      "team_b": "Product Payments",
+      "shared_projects": [
+        "OS"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PMO",
+      "team_b": "Payments PMO",
+      "shared_projects": [
+        "CM"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PMO",
+      "team_b": "Product Payments",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PMO Restaurant",
+      "team_b": "Payments PMO",
+      "shared_projects": [
+        "CM"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PMO Restaurant",
+      "team_b": "Product",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "PMO Restaurant",
+      "team_b": "Product Payments",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments",
+      "team_b": "Payments PMO",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments",
+      "team_b": "Platform",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments",
+      "team_b": "Product",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments PMO",
+      "team_b": "Payments R&D",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments PMO",
+      "team_b": "Product",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments PMO",
+      "team_b": "Restaurant",
+      "shared_projects": [
+        "CM"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Payments R&D",
+      "team_b": "Product Payments",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Product Payments",
+      "team_b": "Product Restaurant",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Product Payments",
+      "team_b": "Restaurant Backend",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Product Payments",
+      "team_b": "Restaurant Frontend",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Product Payments",
+      "team_b": "Restaurant QE",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 0,
+      "severity": "high"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "Product",
+      "shared_projects": [
+        "OS",
+        "UP"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "PCI Compliance",
+      "team_b": "Restaurant",
+      "shared_projects": [
+        "CM",
+        "RL"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "PMO",
+      "team_b": "PMO Restaurant",
+      "shared_projects": [
+        "CM",
+        "REST"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "PMO",
+      "team_b": "Restaurant",
+      "shared_projects": [
+        "CM",
+        "REST"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "Product",
+      "team_b": "Restaurant QE",
+      "shared_projects": [
+        "REST",
+        "UP"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "Finance",
+      "team_b": "Product Payments",
+      "shared_projects": [
+        "OS"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "PMO",
+      "team_b": "Restaurant QE",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "Payments PMO",
+      "team_b": "Restaurant QE",
+      "shared_projects": [
+        "UP"
+      ],
+      "interaction_count": 1,
+      "severity": "medium"
+    },
+    {
+      "team_a": "Payments R&D",
+      "team_b": "Restaurant Frontend",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    },
+    {
+      "team_a": "Product",
+      "team_b": "Restaurant Frontend",
+      "shared_projects": [
+        "REST"
+      ],
+      "interaction_count": 2,
+      "severity": "medium"
+    }
+  ],
+  "team_project_map": {
+    "Restaurant": [
+      "CM",
+      "REST",
+      "RL",
+      "RRS",
+      "SNUS",
+      "UR",
+      "WM"
+    ],
+    "Finance": [
+      "OS",
+      "UP"
+    ],
+    "Payments R&D": [
+      "CLD",
+      "CLOUD",
+      "DR",
+      "REST",
+      "UP"
+    ],
+    "Onboarding": [
+      "OS"
+    ],
+    "Product": [
+      "AR",
+      "OS",
+      "REST",
+      "RL",
+      "RRS",
+      "SNUS",
+      "UP",
+      "UR"
+    ],
+    "Product Restaurant": [
+      "REST"
+    ],
+    "Product Payments": [
+      "OS",
+      "REST"
+    ],
+    "Restaurant Frontend": [
+      "REST"
+    ],
+    "Restaurant Backend": [
+      "REST"
+    ],
+    "Enterprise": [
+      "CLOUD",
+      "CM",
+      "REST"
+    ],
+    "Payments": [
+      "UP"
+    ],
+    "Restaurant QE": [
+      "DR",
+      "REST",
+      "UP"
+    ],
+    "PCI Compliance": [
+      "CLD",
+      "CM",
+      "OS",
+      "RL"
+    ],
+    "Payments PMO": [
+      "CM",
+      "UP"
+    ],
+    "PMO": [
+      "CM",
+      "REST"
+    ],
+    "PMO Restaurant": [
+      "CM",
+      "REST"
+    ],
+    "Enterprise Technology": [
+      "WM"
+    ],
+    "Platform": [
+      "AR",
+      "CM",
+      "OS",
+      "REST",
+      "UP"
+    ]
+  },
+  "shared_project_pairs": {
+    "Enterprise <-> PCI Compliance": [
+      "CM"
+    ],
+    "Enterprise <-> PMO": [
+      "CM",
+      "REST"
+    ],
+    "Enterprise <-> PMO Restaurant": [
+      "CM",
+      "REST"
+    ],
+    "Enterprise <-> Payments PMO": [
+      "CM"
+    ],
+    "Enterprise <-> Payments R&D": [
+      "CLOUD",
+      "REST"
+    ],
+    "Enterprise <-> Platform": [
+      "CM",
+      "REST"
+    ],
+    "Enterprise <-> Product": [
+      "REST"
+    ],
+    "Enterprise <-> Product Payments": [
+      "REST"
+    ],
+    "Enterprise <-> Product Restaurant": [
+      "REST"
+    ],
+    "Enterprise <-> Restaurant": [
+      "CM",
+      "REST"
+    ],
+    "Enterprise <-> Restaurant Backend": [
+      "REST"
+    ],
+    "Enterprise <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Enterprise <-> Restaurant QE": [
+      "REST"
+    ],
+    "Enterprise Technology <-> Restaurant": [
+      "WM"
+    ],
+    "Finance <-> Onboarding": [
+      "OS"
+    ],
+    "Finance <-> PCI Compliance": [
+      "OS"
+    ],
+    "Finance <-> Payments": [
+      "UP"
+    ],
+    "Finance <-> Payments PMO": [
+      "UP"
+    ],
+    "Finance <-> Payments R&D": [
+      "UP"
+    ],
+    "Finance <-> Platform": [
+      "OS",
+      "UP"
+    ],
+    "Finance <-> Product": [
+      "OS",
+      "UP"
+    ],
+    "Finance <-> Product Payments": [
+      "OS"
+    ],
+    "Finance <-> Restaurant QE": [
+      "UP"
+    ],
+    "Onboarding <-> PCI Compliance": [
+      "OS"
+    ],
+    "Onboarding <-> Platform": [
+      "OS"
+    ],
+    "Onboarding <-> Product": [
+      "OS"
+    ],
+    "Onboarding <-> Product Payments": [
+      "OS"
+    ],
+    "PCI Compliance <-> PMO": [
+      "CM"
+    ],
+    "PCI Compliance <-> PMO Restaurant": [
+      "CM"
+    ],
+    "PCI Compliance <-> Payments PMO": [
+      "CM"
+    ],
+    "PCI Compliance <-> Payments R&D": [
+      "CLD"
+    ],
+    "PCI Compliance <-> Platform": [
+      "CM",
+      "OS"
+    ],
+    "PCI Compliance <-> Product": [
+      "OS",
+      "RL"
+    ],
+    "PCI Compliance <-> Product Payments": [
+      "OS"
+    ],
+    "PCI Compliance <-> Restaurant": [
+      "CM",
+      "RL"
+    ],
+    "PMO <-> PMO Restaurant": [
+      "CM",
+      "REST"
+    ],
+    "PMO <-> Payments PMO": [
+      "CM"
+    ],
+    "PMO <-> Payments R&D": [
+      "REST"
+    ],
+    "PMO <-> Platform": [
+      "CM",
+      "REST"
+    ],
+    "PMO <-> Product": [
+      "REST"
+    ],
+    "PMO <-> Product Payments": [
+      "REST"
+    ],
+    "PMO <-> Product Restaurant": [
+      "REST"
+    ],
+    "PMO <-> Restaurant": [
+      "CM",
+      "REST"
+    ],
+    "PMO <-> Restaurant Backend": [
+      "REST"
+    ],
+    "PMO <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "PMO <-> Restaurant QE": [
+      "REST"
+    ],
+    "PMO Restaurant <-> Payments PMO": [
+      "CM"
+    ],
+    "PMO Restaurant <-> Payments R&D": [
+      "REST"
+    ],
+    "PMO Restaurant <-> Platform": [
+      "CM",
+      "REST"
+    ],
+    "PMO Restaurant <-> Product": [
+      "REST"
+    ],
+    "PMO Restaurant <-> Product Payments": [
+      "REST"
+    ],
+    "PMO Restaurant <-> Product Restaurant": [
+      "REST"
+    ],
+    "PMO Restaurant <-> Restaurant": [
+      "CM",
+      "REST"
+    ],
+    "PMO Restaurant <-> Restaurant Backend": [
+      "REST"
+    ],
+    "PMO Restaurant <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "PMO Restaurant <-> Restaurant QE": [
+      "REST"
+    ],
+    "Payments <-> Payments PMO": [
+      "UP"
+    ],
+    "Payments <-> Payments R&D": [
+      "UP"
+    ],
+    "Payments <-> Platform": [
+      "UP"
+    ],
+    "Payments <-> Product": [
+      "UP"
+    ],
+    "Payments <-> Restaurant QE": [
+      "UP"
+    ],
+    "Payments PMO <-> Payments R&D": [
+      "UP"
+    ],
+    "Payments PMO <-> Platform": [
+      "CM",
+      "UP"
+    ],
+    "Payments PMO <-> Product": [
+      "UP"
+    ],
+    "Payments PMO <-> Restaurant": [
+      "CM"
+    ],
+    "Payments PMO <-> Restaurant QE": [
+      "UP"
+    ],
+    "Payments R&D <-> Platform": [
+      "REST",
+      "UP"
+    ],
+    "Payments R&D <-> Product": [
+      "REST",
+      "UP"
+    ],
+    "Payments R&D <-> Product Payments": [
+      "REST"
+    ],
+    "Payments R&D <-> Product Restaurant": [
+      "REST"
+    ],
+    "Payments R&D <-> Restaurant": [
+      "REST"
+    ],
+    "Payments R&D <-> Restaurant Backend": [
+      "REST"
+    ],
+    "Payments R&D <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Payments R&D <-> Restaurant QE": [
+      "DR",
+      "REST",
+      "UP"
+    ],
+    "Platform <-> Product": [
+      "AR",
+      "OS",
+      "REST",
+      "UP"
+    ],
+    "Platform <-> Product Payments": [
+      "OS",
+      "REST"
+    ],
+    "Platform <-> Product Restaurant": [
+      "REST"
+    ],
+    "Platform <-> Restaurant": [
+      "CM",
+      "REST"
+    ],
+    "Platform <-> Restaurant Backend": [
+      "REST"
+    ],
+    "Platform <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Platform <-> Restaurant QE": [
+      "REST",
+      "UP"
+    ],
+    "Product <-> Product Payments": [
+      "OS",
+      "REST"
+    ],
+    "Product <-> Product Restaurant": [
+      "REST"
+    ],
+    "Product <-> Restaurant": [
+      "REST",
+      "RL",
+      "RRS",
+      "SNUS",
+      "UR"
+    ],
+    "Product <-> Restaurant Backend": [
+      "REST"
+    ],
+    "Product <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Product <-> Restaurant QE": [
+      "REST",
+      "UP"
+    ],
+    "Product Payments <-> Product Restaurant": [
+      "REST"
+    ],
+    "Product Payments <-> Restaurant": [
+      "REST"
+    ],
+    "Product Payments <-> Restaurant Backend": [
+      "REST"
+    ],
+    "Product Payments <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Product Payments <-> Restaurant QE": [
+      "REST"
+    ],
+    "Product Restaurant <-> Restaurant": [
+      "REST"
+    ],
+    "Product Restaurant <-> Restaurant Backend": [
+      "REST"
+    ],
+    "Product Restaurant <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Product Restaurant <-> Restaurant QE": [
+      "REST"
+    ],
+    "Restaurant <-> Restaurant Backend": [
+      "REST"
+    ],
+    "Restaurant <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Restaurant <-> Restaurant QE": [
+      "REST"
+    ],
+    "Restaurant Backend <-> Restaurant Frontend": [
+      "REST"
+    ],
+    "Restaurant Backend <-> Restaurant QE": [
+      "REST"
+    ],
+    "Restaurant Frontend <-> Restaurant QE": [
+      "REST"
+    ]
+  }
+}

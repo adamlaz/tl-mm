@@ -1,0 +1,62 @@
+{
+  "name": "Ian Bennett",
+  "id": "ian-bennett",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:27dd3052-a01a-4c70-96f1-eb76f8984d02",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:27dd3052-a01a-4c70-96f1-eb76f8984d02",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Ian Bennett",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "712020:27dd3052-a01a-4c70-96f1-eb76f8984d02",
+      "email": "",
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "AI"
+      ]
+    }
+  }
+}

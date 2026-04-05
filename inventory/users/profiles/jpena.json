@@ -1,0 +1,39 @@
+{
+  "name": "jpena",
+  "id": "jpena",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 57,
+    "level": "high"
+  },
+  "systems": [
+    "jira"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:f0430f26-0f3a-4d9e-84b8-dbbd50632526",
+      "email": "",
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 57,
+      "open_assigned": 13,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

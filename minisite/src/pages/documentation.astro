@@ -2,22 +2,74 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import DataTable from '../components/DataTable.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
+import { confluenceSpaceUrl, confluencePageUrl } from '../lib/links';
 import { readFileSync } from 'node:fs';
 
 let rcaData: any = {};
 let retroData: any = {};
 let diagramData: any = {};
+let labelsData: any = {};
+let blogData: any = {};
+let rcaStructured: any[] = [];
 try { rcaData = JSON.parse(readFileSync('../inventory/confluence/rca_timeline.json', 'utf-8')); } catch {}
 try { retroData = JSON.parse(readFileSync('../inventory/confluence/retrospectives.json', 'utf-8')); } catch {}
 try { diagramData = JSON.parse(readFileSync('../inventory/confluence/architecture_diagrams.json', 'utf-8')); } catch {}
+try { labelsData = JSON.parse(readFileSync('../inventory/confluence/labels.json', 'utf-8')); } catch {}
+try { blogData = JSON.parse(readFileSync('../inventory/confluence/blog_posts.json', 'utf-8')); } catch {}
+try { rcaStructured = JSON.parse(readFileSync('../inventory/confluence/rca_structured.json', 'utf-8')); } catch {}
 
+/* ── Incidents / RCA ── */
 const incidentsBySystem = Object.entries(rcaData.incidents_by_system ?? {}) as [string, number][];
-const retroCount = retroData.total_retros ?? retroData.retros?.length ?? 30;
+const incidentsByTeam = Object.entries(rcaData.incidents_by_team ?? {}) as [string, number][];
+const rootCauseThemes = Object.entries(rcaData.root_cause_themes ?? {}) as [string, number][];
 
+const rcaRows = (Array.isArray(rcaStructured) ? rcaStructured : [])
+  .filter((r: any) => r.title)
+  .sort((a: any, b: any) => (b.last_modified ?? '').localeCompare(a.last_modified ?? ''))
+  .slice(0, 50)
+  .map((r: any) => ({
+    title: (r.title ?? '').slice(0, 70),
+    _href_title: r.page_id ? confluencePageUrl(r.page_id) : '',
+    system: r.affected_system ?? '—',
+    team: r.team_assigned ?? '—',
+    cause: r.root_cause_theme ?? '—',
+    year: r.year?.toString() ?? '—',
+  }));
+
+/* ── Retrospectives ── */
+const retroCount = retroData.total_fetched ?? retroData.retros?.length ?? 0;
+const retroTeams = Object.entries(retroData.teams ?? {}) as [string, any][];
+const retroThemes = (retroData.common_themes ?? []).slice(0, 15) as { phrase: string; count: number }[];
+const retroDateRange = retroData.date_range ?? {};
+const retroEarliest = (retroDateRange.earliest ?? '').slice(0, 10);
+const retroLatest = (retroDateRange.latest ?? '').slice(0, 10);
+const retroList = (retroData.retrospectives ?? []) as any[];
+
+/* ── Blog posts ── */
+const blogPosts = (blogData.posts ?? []) as any[];
+const blogTotal = blogData.total ?? blogPosts.length;
+const blogBySpace = Object.entries(blogData.by_space ?? {}) as [string, number][];
+const blogAuthors: Record<string, number> = {};
+for (const p of blogPosts) {
+  const author = p.space_name ?? 'Unknown';
+  blogAuthors[author] = (blogAuthors[author] ?? 0) + 1;
+}
+const blogAuthorRows = Object.entries(blogAuthors)
+  .sort((a, b) => b[1] - a[1])
+  .map(([name, count]) => ({ author: name, posts: count }));
+const blogDates = blogPosts.map((p: any) => p.created as string).filter(Boolean).sort();
+const blogEarliest = blogDates[0]?.slice(0, 10) ?? '—';
+const blogLatest = blogDates[blogDates.length - 1]?.slice(0, 10) ?? '—';
+
+/* ── Labels ── */
+const targetLabels = Object.entries(labelsData.target_labels ?? {}) as [string, number][];
+const labeledPageCount = targetLabels.reduce((s, [, c]) => s + c, 0);
+
+/* ── Confluence collections ── */
 const spaces = await getCollection('confluenceSpaces');
 const pages = await getCollection('confluencePages');
 
@@ -31,6 +83,7 @@ const spaceRows = spaces
   .sort((a, b) => num(b.data.page_count) - num(a.data.page_count))
   .map((s) => ({
     key: s.data.key,
+    _href_key: confluenceSpaceUrl(s.data.key),
     name: s.data.name,
     type: s.data.type,
     status: s.data.status,
@@ -43,7 +96,9 @@ const pageRows = pages
   .slice(0, 500)
   .map((p) => ({
     title: p.data.title.slice(0, 80),
+    _href_title: confluencePageUrl(p.data.id),
     space: p.data.space_key,
+    _href_space: confluenceSpaceUrl(p.data.space_key),
     version: p.data.version_number,
     updated: p.data.version_created_at.slice(0, 10),
   }));
@@ -55,7 +110,7 @@ const charts = [
 ---
 
 <BaseLayout title="Documentation">
-  <SectionHeader title="Documentation" description="Confluence documentation activity and content volume." />
+  <SectionHeader title="Documentation" description="Confluence documentation activity and content volume. Click any space key or page title to open in Confluence." />
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Total Pages" value={fmt(totalPages)} />
@@ -66,68 +121,252 @@ const charts = [
 
   <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Spaces</h2>
   <div class="mb-8">
-    <DataTable
+    <TabulatorGrid
       columns={[
-        { key: 'key', label: 'Key' },
-        { key: 'name', label: 'Name' },
-        { key: 'type', label: 'Type' },
-        { key: 'status', label: 'Status' },
-        { key: 'pages', label: 'Pages', align: 'right' },
-        { key: 'recent', label: 'Recent', align: 'right' },
+        { key: 'key', label: 'Key', sortable: true },
+        { key: 'name', label: 'Name', sortable: true },
+        { key: 'type', label: 'Type', sortable: true, filterable: true, type: 'badge' },
+        { key: 'status', label: 'Status', sortable: true, filterable: true, type: 'badge', badgeMap: { current: 'green', archived: 'muted' } },
+        { key: 'pages', label: 'Pages', align: 'right', sortable: true, type: 'number' },
+        { key: 'recent', label: 'Recent', align: 'right', sortable: true, type: 'number' },
       ]}
       rows={spaceRows}
       searchable
+      exportable
       pageSize={25}
     />
   </div>
 
   <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Recent Pages</h2>
   <div class="mb-8">
-    <DataTable
+    <TabulatorGrid
       columns={[
-        { key: 'title', label: 'Title' },
-        { key: 'space', label: 'Space' },
-        { key: 'version', label: 'Version', align: 'right' },
-        { key: 'updated', label: 'Updated' },
+        { key: 'title', label: 'Title', sortable: true },
+        { key: 'space', label: 'Space', sortable: true, filterable: true, type: 'badge' },
+        { key: 'version', label: 'Version', align: 'right', sortable: true, type: 'number' },
+        { key: 'updated', label: 'Updated', sortable: true },
       ]}
       rows={pageRows}
       searchable
+      exportable
       pageSize={25}
     />
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">V7 Deep Analysis</h2>
+  <!-- Deep Analysis -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Incidents Parsed" value={(rcaData.total_incidents_parsed ?? 0).toString()} subtitle="from RCA/post-mortem docs" />
+    <MetricCard label="Incidents Parsed" value={(rcaData.total_incidents_parsed ?? 0).toString()} subtitle={`from ${rcaData.total_filtered_docs ?? 0} filtered docs`} />
     <MetricCard label="Peak Incident Year" value="2022" subtitle="26 incidents" />
     <MetricCard label="Retrospectives" value={retroCount.toString()} subtitle="sprint retros extracted" />
-    <MetricCard label="Arch Diagrams" value={(diagramData.total_results ?? diagramData.pages?.length ?? 0).toString()} subtitle="pages with diagrams" />
+    <MetricCard label="Arch Diagrams" value={(diagramData.summary?.total_architecture_pages ?? diagramData.total_results ?? diagramData.pages?.length ?? 0).toString()} subtitle={`across ${diagramData.summary?.spaces_with_results?.length ?? 0} spaces`} />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Incidents by System</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'system', label: 'System' },
-          { key: 'count', label: 'Incidents', align: 'right' },
+          { key: 'system', label: 'System', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Incidents', align: 'right', sortable: true, type: 'number' },
         ]}
         rows={incidentsBySystem.sort((a: any, b: any) => (b[1] as number) - (a[1] as number)).map(([sys, cnt]: [string, number]) => ({ system: sys, count: cnt }))}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Incidents by Year</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'year', label: 'Year' },
-          { key: 'count', label: 'Incidents', align: 'right' },
+          { key: 'year', label: 'Year', sortable: true },
+          { key: 'count', label: 'Incidents', align: 'right', sortable: true, type: 'number' },
         ]}
         rows={Object.entries(rcaData.incidents_by_year ?? {}).sort((a: any, b: any) => b[0].localeCompare(a[0])).map(([year, cnt]: [string, any]) => ({ year, count: cnt }))}
       />
     </div>
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Incidents by Team</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'team', label: 'Team', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Incidents', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={incidentsByTeam.sort((a, b) => (b[1] as number) - (a[1] as number)).map(([team, cnt]) => ({ team, count: cnt }))}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Root Cause Themes</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'theme', label: 'Theme', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Incidents', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={rootCauseThemes.sort((a, b) => (b[1] as number) - (a[1] as number)).map(([theme, cnt]) => ({ theme, count: cnt }))}
+      />
+    </div>
+  </div>
+
+  {rcaRows.length > 0 && (
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">RCA Documents</h2>
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'title', label: 'Title', sortable: true },
+          { key: 'system', label: 'System', sortable: true, filterable: true, type: 'badge' },
+          { key: 'team', label: 'Team', sortable: true, filterable: true, type: 'badge' },
+          { key: 'cause', label: 'Root Cause', sortable: true, filterable: true, type: 'badge' },
+          { key: 'year', label: 'Year', align: 'right', sortable: true, filterable: true },
+        ]}
+        rows={rcaRows}
+        searchable
+        exportable
+        pageSize={15}
+      />
+    </div>
+  )}
+
+  <!-- Retrospectives -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">Retrospectives</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Retros Analyzed" value={retroCount.toString()} subtitle={`of ${retroData.total_search_results ?? '—'} found`} />
+    <MetricCard label="Teams" value={retroTeams.length.toString()} subtitle={retroTeams.map(([t]) => t).join(', ')} />
+    <MetricCard label="Date Range" value={`${retroEarliest.slice(0, 7) || '—'} → ${retroLatest.slice(0, 7) || '—'}`} subtitle="earliest to latest" />
+    <MetricCard label="Avg per Team" value={retroTeams.length ? Math.round(retroCount / retroTeams.length).toString() : '—'} subtitle="retros per team" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Retros by Team</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'team', label: 'Team', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Retros', align: 'right', sortable: true, type: 'number' },
+          { key: 'latest', label: 'Most Recent', sortable: true },
+        ]}
+        rows={retroTeams.sort((a, b) => b[1].count - a[1].count).map(([team, info]: [string, any]) => ({ team, count: info.count, latest: (info.most_recent ?? '').slice(0, 10) }))}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Common Retro Themes</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'theme', label: 'Theme', sortable: true },
+          { key: 'mentions', label: 'Mentions', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={retroThemes.map((t) => ({ theme: t.phrase, mentions: t.count }))}
+      />
+    </div>
+  </div>
+
+  {retroList.length > 0 && (
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">All Retrospectives</h2>
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'title', label: 'Title', sortable: true },
+          { key: 'team', label: 'Team', sortable: true, filterable: true, type: 'badge' },
+          { key: 'sprint', label: 'Sprint', sortable: true },
+          { key: 'date', label: 'Date', sortable: true },
+        ]}
+        rows={retroList.map((r: any) => ({
+          title: (r.title ?? '').slice(0, 70),
+          _href_title: r.page_id ? confluencePageUrl(r.page_id) : '',
+          team: r.team ?? '—',
+          sprint: r.sprint_name ?? '—',
+          date: (r.last_modified ?? '').slice(0, 10),
+        }))}
+        searchable
+        exportable
+        pageSize={15}
+      />
+    </div>
+  )}
+
+  <!-- Blog Posts -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">Blog Posts</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Total Blog Posts" value={blogTotal.toString()} subtitle={`${blogEarliest} → ${blogLatest}`} />
+    <MetricCard label="Spaces" value={blogBySpace.length.toString()} subtitle={blogBySpace.map(([k]) => k).join(', ')} />
+    <MetricCard label="Authors" value={blogAuthorRows.length.toString()} subtitle="unique contributors" />
+    <MetricCard label="Unlabeled" value={blogPosts.filter((p: any) => !p.labels?.length).length.toString()} subtitle="posts without labels" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Posts by Space</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'space', label: 'Space', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Posts', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={blogBySpace.sort((a, b) => (b[1] as number) - (a[1] as number)).map(([space, count]) => ({
+          space,
+          _href_space: confluenceSpaceUrl(space),
+          count,
+        }))}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Posts by Author</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'author', label: 'Author', sortable: true },
+          { key: 'posts', label: 'Posts', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={blogAuthorRows}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Recent Blog Posts</h2>
+  <div class="mb-8">
+    <TabulatorGrid
+      columns={[
+        { key: 'title', label: 'Title', sortable: true },
+        { key: 'space', label: 'Space', sortable: true, filterable: true, type: 'badge' },
+        { key: 'author', label: 'Author', sortable: true, filterable: true },
+        { key: 'created', label: 'Created', sortable: true },
+      ]}
+      rows={blogPosts.sort((a: any, b: any) => (b.created ?? '').localeCompare(a.created ?? '')).slice(0, 50).map((p: any) => ({
+        title: (p.title ?? '').slice(0, 70),
+        _href_title: p.id ? confluencePageUrl(p.id) : '',
+        space: p.space_key ?? '—',
+        _href_space: p.space_key ? confluenceSpaceUrl(p.space_key) : '',
+        author: p.space_name ?? '—',
+        created: (p.created ?? '').slice(0, 10),
+      }))}
+      searchable
+      exportable
+      pageSize={15}
+    />
+  </div>
+
+  <!-- Labels Analysis -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">Labels Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Labels Tracked" value={targetLabels.length.toString()} subtitle="target labels audited" />
+    <MetricCard label="Labeled Pages" value={labeledPageCount.toString()} subtitle="pages with target labels" />
+    <MetricCard label="Popular Labels" value={labelsData.popular_labels === 'not_available' ? 'N/A' : Object.keys(labelsData.popular_labels ?? {}).length.toString()} subtitle={labelsData.popular_labels === 'not_available' ? 'API limitation' : 'most-used labels'} />
+    <MetricCard label="Blog Labels" value={Object.keys(labelsData.blog_label_frequency ?? {}).length.toString()} subtitle="unique labels on blog posts" />
+  </dl>
+
+  {targetLabels.length > 0 && (
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Target Label Coverage</h2>
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'label', label: 'Label', sortable: true },
+          { key: 'pages', label: 'Pages Tagged', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={targetLabels.sort((a, b) => (b[1] as number) - (a[1] as number)).map(([label, count]) => ({ label, pages: count }))}
+      />
+    </div>
+  )}
+
+  <!-- Charts -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />

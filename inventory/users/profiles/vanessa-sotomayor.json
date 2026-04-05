@@ -1,0 +1,73 @@
+{
+  "name": "Vanessa Sotomayor",
+  "id": "vanessa-sotomayor",
+  "title": "Program Manager",
+  "team": "Payments PMO",
+  "manager": "Akshay Bhasin",
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "Vanessa S."
+  ],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 123,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "5dc2c122ffc8c10df0edb418",
+      "email": "",
+      "projects": [
+        "CM",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 72,
+      "issues_resolved_90d": 28,
+      "open_assigned": 26,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5dc2c122ffc8c10df0edb418",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Vanessa",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "5dc2c122ffc8c10df0edb418",
+      "email": "",
+      "pages_total": 87,
+      "pages_90d": 23,
+      "spaces": [
+        "P",
+        "PT",
+        "TT"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Wikum Wijeysooriya (Unlicensed)",
+  "id": "wikum-wijeysooriya-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "63845e5f9e48f2b9a61399cb",
+      "email": "",
+      "pages_total": 14,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    }
+  }
+}

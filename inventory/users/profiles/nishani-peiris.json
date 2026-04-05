@@ -1,0 +1,68 @@
+{
+  "name": "Nishani Peiris",
+  "id": "nishani-peiris",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "Nishen Peiris"
+  ],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 77,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "5b4874c3b84bc45fea95fa45",
+      "email": "",
+      "projects": [
+        "CM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 26,
+      "open_assigned": 39,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Nishani Peiris",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "5b4874c3b84bc45fea95fa45",
+      "email": "",
+      "pages_total": 174,
+      "pages_90d": 24,
+      "spaces": [
+        "CR",
+        "DEP",
+        "ES",
+        "LP",
+        "TT"
+      ]
+    }
+  }
+}

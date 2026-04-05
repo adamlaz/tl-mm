@@ -1,0 +1,36 @@
+{
+  "name": "Maleesha Wijeratne (Unlicensed)",
+  "id": "maleesha-wijeratne-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5d107aa0e69c1c0c88af1728",
+      "email": "",
+      "pages_total": 67,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB",
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    }
+  }
+}

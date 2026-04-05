@@ -1,0 +1,48 @@
+{
+  "name": "ops",
+  "id": "ops",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "bot",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "5dd53e0803eda50ef387336f",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5dd53e0803eda50ef387336f",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "madpayments"
+      ],
+      "nickname": "ops",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

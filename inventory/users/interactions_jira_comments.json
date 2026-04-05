@@ -1,0 +1,3061 @@
+{
+  "comment_edges": [
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "62618666f698310070a93d23",
+      "count": 58,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 28,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 22,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 18,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 18,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 17,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 16,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "to": "62618666f698310070a93d23",
+      "count": 16,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 16,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 15,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 15,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "62da52247654479e0609b5c4",
+      "count": 14,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 13,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 13,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "62da52247654479e0609b5c4",
+      "count": 13,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:a5b6c6ae-8d0b-46c1-b982-b4bf7b4c538f",
+      "to": "62618666f698310070a93d23",
+      "count": 13,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 11,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 10,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 10,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 10,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 10,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6387b52b213a315af349ec2f",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 10,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62da52247654479e0609b5c4",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "to": "62618666f698310070a93d23",
+      "count": 9,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 8,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 8,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "62da52247654479e0609b5c4",
+      "count": 8,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 8,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "to": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "count": 8,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "5fb2788cd670b8006e5928f3",
+      "count": 8,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "count": 7,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "to": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "count": 7,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 7,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 7,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 7,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 7,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f5a9973ec8aa51d3d27521",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f5a9973ec8aa51d3d27521",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "634042bb14c6b4b22110a197",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "62da52247654479e0609b5c4",
+      "count": 6,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "6387819a489de2f7f46657a1",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "to": "62da52247654479e0609b5c4",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "62da52247654479e0609b5c4",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "629775af9bc7150068ce2bca",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "to": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "to": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:f0069e88-ae01-46bf-83de-855e3c5cddc4",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:f0069e88-ae01-46bf-83de-855e3c5cddc4",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5d2388678b90870c0e828828",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5d2388678b90870c0e828828",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 5,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62da52247654479e0609b5c4",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "to": "60e6f8e70dd4f60076b2f3a5",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62da52247654479e0609b5c4",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f5a9973ec8aa51d3d27521",
+      "to": "62da52247654479e0609b5c4",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "63f5a9973ec8aa51d3d27521",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "629775af9bc7150068ce2bca",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629775af9bc7150068ce2bca",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "to": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:6e2d367e-f90b-419a-b8d3-a91aa5a1b5c5",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:6e2d367e-f90b-419a-b8d3-a91aa5a1b5c5",
+      "to": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 4,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "6387819a489de2f7f46657a1",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "629dbfc79248fe006910be48",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "62da52247654479e0609b5c4",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5f89b023bd30210069fe0b7f",
+      "to": "62618666f698310070a93d23",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "5f89b023bd30210069fe0b7f",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f5a9973ec8aa51d3d27521",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60cb0c6ff650540069eb3a97",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "618bd920785cb2006a044679",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "618bd920785cb2006a044679",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "618bd920785cb2006a044679",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "to": "618bd920785cb2006a044679",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6387819a489de2f7f46657a1",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "634042bb14c6b4b22110a197",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "5fb2788cd670b8006e5928f3",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5d93bf48d748360d84f23374",
+      "to": "62618666f698310070a93d23",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5d93bf48d748360d84f23374",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 3,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b4874c3b84bc45fea95fa45",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "to": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62c83119efb17d6ce630234e",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6155b3fb198b4f00682edde9",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+      "to": "629dbfc79248fe006910be48",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "to": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "to": "60e6f8e70dd4f60076b2f3a5",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "62da52247654479e0609b5c4",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "5f89b023bd30210069fe0b7f",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:938d4652-a896-4147-85c3-0a931f4ac9d9",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "61bb3a46755091006a28f851",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:60873b62-4213-4072-82c6-ee27c49a245a",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:60873b62-4213-4072-82c6-ee27c49a245a",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b517587ce51f259edf232c6",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "602cd6ae39ed51006a4cdafd",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b6a88d423300129cc446e11",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63be568a98bf50328c689f50",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "63be568a98bf50328c689f50",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "63f5a9973ec8aa51d3d27521",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60c1c7315c64b10071686b79",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60c1c7315c64b10071686b79",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "62da52247654479e0609b5c4",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "629dbfc79248fe006910be48",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b4874c3b84bc45fea95fa45",
+      "to": "629dbfc79248fe006910be48",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "to": "618bd920785cb2006a044679",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "63289d8e3ac41ebde76838ad",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "to": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "634042bb14c6b4b22110a197",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60cb0c6ff650540069eb3a97",
+      "to": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "to": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "5e459754bbb5110c9a66e921",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "63f5a9973ec8aa51d3d27521",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62da52247654479e0609b5c4",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62da52247654479e0609b5c4",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b196aae64666649ccb91b35",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b196aae64666649ccb91b35",
+      "to": "62618666f698310070a93d23",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "to": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+      "count": 2,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6387819a489de2f7f46657a1",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "61bb3a46755091006a28f851",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "61bb3a46755091006a28f851",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:1f401b3e-c1e1-4ea3-b739-ac4dba37cb29",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "629dbfc79248fe006910be48",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "to": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "60e6f8e70dd4f60076b2f3a5",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "62da52247654479e0609b5c4",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:a5b6c6ae-8d0b-46c1-b982-b4bf7b4c538f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "to": "712020:a5b6c6ae-8d0b-46c1-b982-b4bf7b4c538f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "to": "5f89b023bd30210069fe0b7f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5f89b023bd30210069fe0b7f",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "62e8a5cda41ecbd0ba1755fc",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "62e8a5cda41ecbd0ba1755fc",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "62da52247654479e0609b5c4",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62da52247654479e0609b5c4",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "62e8a5cda41ecbd0ba1755fc",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:16ffe8f5-d86c-4454-8eaf-2bba6db29cfb",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:16ffe8f5-d86c-4454-8eaf-2bba6db29cfb",
+      "to": "62e8a5cda41ecbd0ba1755fc",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "624190af2e101c006a8c5e3d",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "624190af2e101c006a8c5e3d",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:11f95b27-f328-4c3e-a2f6-7bd992ca759e",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:11f95b27-f328-4c3e-a2f6-7bd992ca759e",
+      "to": "712020:b6179fa3-9c26-4993-a5a4-92fdaaf941e5",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:b6179fa3-9c26-4993-a5a4-92fdaaf941e5",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b6a88d423300129cc446e11",
+      "to": "602cd6ae39ed51006a4cdafd",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "63be568a98bf50328c689f50",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "712020:3d6a0847-1a5e-40b4-a064-e50b9dc6a91c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ca1a8fc3270b449b4feae00",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ca1a8fc3270b449b4feae00",
+      "to": "63624e90c97f5473af71e49d",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:6f6c517f-0104-4c65-bcd3-8672b1bc3ecb",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60cb0c6ff650540069eb3a97",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:6f6c517f-0104-4c65-bcd3-8672b1bc3ecb",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:6f6c517f-0104-4c65-bcd3-8672b1bc3ecb",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b6a88d423300129cc446e11",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62287e48932f0f00716a92ed",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62287e48932f0f00716a92ed",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:500aacce-6497-44dd-9bc8-74f08b8e327c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "6387b52b213a315af349ec2f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:496d0f2b-e93c-48a0-8a58-cf05fa5c6677",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "to": "629775af9bc7150068ce2bca",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6271f93ab27b16006fb93fdb",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6271f93ab27b16006fb93fdb",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "to": "6387b52b213a315af349ec2f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "712020:60873b62-4213-4072-82c6-ee27c49a245a",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5fa477a662584c006b1e8286",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5dc2c122ffc8c10df0edb418",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5dc2c122ffc8c10df0edb418",
+      "to": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "61304f612aa28000688d6bec",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "61304f612aa28000688d6bec",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2b95db1e-2a61-41f4-a556-8e00c91e7652",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:2b95db1e-2a61-41f4-a556-8e00c91e7652",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6387819a489de2f7f46657a1",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5fa477a662584c006b1e8286",
+      "to": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "629775af9bc7150068ce2bca",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "to": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "to": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "635652da76b91b62562d2db6",
+      "to": "712020:3f2e1539-aa9b-41e9-932e-da18afc0c6ee",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "6387819a489de2f7f46657a1",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:06630d89-36aa-4aaa-830f-9905623bfb84",
+      "to": "6155b3fb198b4f00682edde9",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:06630d89-36aa-4aaa-830f-9905623bfb84",
+      "to": "557058:0ab36cae-cce5-4c8d-91a1-ac29e576b2ec",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f5a9973ec8aa51d3d27521",
+      "to": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "63f5a9973ec8aa51d3d27521",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b196aae64666649ccb91b35",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "60e6f8e70dd4f60076b2f3a5",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:0ab36cae-cce5-4c8d-91a1-ac29e576b2ec",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:0ab36cae-cce5-4c8d-91a1-ac29e576b2ec",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "to": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5fb2788cd670b8006e5928f3",
+      "to": "5e459754bbb5110c9a66e921",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "to": "5fb2788cd670b8006e5928f3",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "to": "5e459754bbb5110c9a66e921",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "to": "5fb2788cd670b8006e5928f3",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "to": "5e459754bbb5110c9a66e921",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "5b517587ce51f259edf232c6",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:a5b6c6ae-8d0b-46c1-b982-b4bf7b4c538f",
+      "to": "5b517587ce51f259edf232c6",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6387819a489de2f7f46657a1",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "63f5a9973ec8aa51d3d27521",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "63f5a9973ec8aa51d3d27521",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62c83119efb17d6ce630234e",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62c83119efb17d6ce630234e",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6231defd1dcf800070e95c38",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "6231defd1dcf800070e95c38",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b517587ce51f259edf232c6",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "5b517587ce51f259edf232c6",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:5f6f4ed5-440c-486f-8d23-1dbd47c76894",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:5f6f4ed5-440c-486f-8d23-1dbd47c76894",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "5cab341d6d462664988e8b75",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:4c7b2734-3159-4fd1-b52d-61fd77c0f980",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "62618666f698310070a93d23",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "5b196aae64666649ccb91b35",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "to": "5e459754bbb5110c9a66e921",
+      "count": 1,
+      "type": "jira_comment"
+    },
+    {
+      "from": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+      "to": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+      "count": 1,
+      "type": "jira_comment"
+    }
+  ],
+  "cowork_edges": [
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+      "count": 9,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6387819a489de2f7f46657a1",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 7,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 5,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 5,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "6387819a489de2f7f46657a1",
+      "count": 4,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 3,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 3,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "618bd920785cb2006a044679",
+      "count": 3,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 3,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6155b3fb198b4f00682edde9",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62da52247654479e0609b5c4",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5fa477a662584c006b1e8286",
+      "to": "6387b52b213a315af349ec2f",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "6387819a489de2f7f46657a1",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "5fa477a662584c006b1e8286",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6155b3fb198b4f00682edde9",
+      "to": "619d0149977c5b0072ab8936",
+      "count": 2,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "62e3e8abbc2c449f3d94c970",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "61bb3a46755091006a28f851",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "62c83119efb17d6ce630234e",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "626a9847bae0c1006fad5969",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "629dbfc79248fe006910be48",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63bc76fa49a31f95b8734464",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:a5b6c6ae-8d0b-46c1-b982-b4bf7b4c538f",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5f89b023bd30210069fe0b7f",
+      "to": "62618666f698310070a93d23",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5f89b023bd30210069fe0b7f",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "62da52247654479e0609b5c4",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62e8a5cda41ecbd0ba1755fc",
+      "to": "712020:16ffe8f5-d86c-4454-8eaf-2bba6db29cfb",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "712020:b6179fa3-9c26-4993-a5a4-92fdaaf941e5",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "602cd6ae39ed51006a4cdafd",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63be568a98bf50328c689f50",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:3d6a0847-1a5e-40b4-a064-e50b9dc6a91c",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63624e90c97f5473af71e49d",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63f90f4bce6f37e5ed951f7a",
+      "to": "712020:6f6c517f-0104-4c65-bcd3-8672b1bc3ecb",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5b51754727c98e2ce515913c",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "618bd920785cb2006a044679",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "629775af9bc7150068ce2bca",
+      "to": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62e3e8abbc2c449f3d94c970",
+      "to": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6155d39d289a54006ad552ce",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "618bd920785cb2006a044679",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "6387b52b213a315af349ec2f",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:60873b62-4213-4072-82c6-ee27c49a245a",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5fa477a662584c006b1e8286",
+      "to": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "634042bb14c6b4b22110a197",
+      "to": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "629775af9bc7150068ce2bca",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "to": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62c83119efb17d6ce630234e",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "63bc76fa49a31f95b8734464",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+      "to": "6387819a489de2f7f46657a1",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:0ab36cae-cce5-4c8d-91a1-ac29e576b2ec",
+      "to": "6155b3fb198b4f00682edde9",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:3e2ef232-d5c4-4c0e-94b0-977a305ebaae",
+      "to": "5b51754727c98e2ce515913c",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5b196aae64666649ccb91b35",
+      "to": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "626a9847bae0c1006fad5969",
+      "to": "62ba9e97018dea0d4073bcf1",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "60e6f8e70dd4f60076b2f3a5",
+      "to": "6155d39d289a54006ad552ce",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "624190af2e101c006a8c5e3d",
+      "to": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "634042bb14c6b4b22110a197",
+      "to": "63f90f4bce6f37e5ed951f7a",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5e459754bbb5110c9a66e921",
+      "to": "5fb2788cd670b8006e5928f3",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5b517587ce51f259edf232c6",
+      "to": "62618666f698310070a93d23",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "5ba0dea046a75c66f1183c4f",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5ba0dea046a75c66f1183c4f",
+      "to": "712020:3f2e1539-aa9b-41e9-932e-da18afc0c6ee",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5f6c2af91d34a50077d6defb",
+      "to": "5fb4316a9592df0076910cb2",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62c83119efb17d6ce630234e",
+      "to": "712020:2b95db1e-2a61-41f4-a556-8e00c91e7652",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62ba9e97018dea0d4073bcf1",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+      "to": "634042bb14c6b4b22110a197",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+      "to": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "63f5a9973ec8aa51d3d27521",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+      "to": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "to": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5b196aae64666649ccb91b35",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5cab341d6d462664988e8b75",
+      "to": "62618666f698310070a93d23",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "712020:4c7b2734-3159-4fd1-b52d-61fd77c0f980",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "62618666f698310070a93d23",
+      "to": "63289d8e3ac41ebde76838ad",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5b196aae64666649ccb91b35",
+      "to": "62618666f698310070a93d23",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "5e459754bbb5110c9a66e921",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 1,
+      "type": "jira_cowork"
+    },
+    {
+      "from": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+      "to": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+      "count": 1,
+      "type": "jira_cowork"
+    }
+  ],
+  "fetched_at": "2026-04-05T01:49:30.865743+00:00"
+}

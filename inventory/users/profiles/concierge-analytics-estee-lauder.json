@@ -1,0 +1,36 @@
+{
+  "name": "Concierge Analytics Estee Lauder",
+  "id": "concierge-analytics-estee-lauder",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Concierge Analytics Estee Lauder Aveda",
+    "Concierge Analytics Esteelauder",
+    "Concierge Analytics Esteelauder Ccs",
+    "Concierge Analytics Esteelauder Jml",
+    "Concierge Analytics Esteelauder Origins"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "aws_iam"
+  ],
+  "sources": {
+    "aws_iam": {
+      "account_id": "concierge-analytics-esteelauder-origins",
+      "email": null,
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-10-20T18:11:36+00:00",
+      "is_service_account": false
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Ryan Crawford",
+  "id": "ryan-crawford",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "Ryan Crawford (Unlicensed)",
+    "Ryan Mercado (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "level": "low"
+  },
+  "systems": [
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "5e459754bbb5110c9a66e921",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Ryan",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "626a9847bae0c1006fad5969",
+      "email": "",
+      "pages_total": 10,
+      "pages_90d": 1,
+      "spaces": [
+        "CA",
+        "PT"
+      ]
+    }
+  }
+}

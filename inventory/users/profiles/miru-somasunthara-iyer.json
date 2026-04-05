@@ -1,0 +1,76 @@
+{
+  "name": "Miru Somasunthara Iyer",
+  "id": "miru-somasunthara-iyer",
+  "title": "Senior Product Manager",
+  "team": "Product Restaurant",
+  "manager": "Dulanjan Wengappuliarachchi",
+  "division": "CDO / Product & GTM",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "Miru S.",
+    "Mirunaaliny Somasunthara Iyer"
+  ],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 265,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "5ba0dea046a75c66f1183c4f",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 100,
+      "issues_resolved_90d": 155,
+      "open_assigned": 103,
+      "bugs_created_90d": 10,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5ba0dea046a75c66f1183c4f",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Mirunaaliny S Iyer",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "5ba0dea046a75c66f1183c4f",
+      "email": "",
+      "pages_total": 232,
+      "pages_90d": 10,
+      "spaces": [
+        "CR",
+        "DB",
+        "ES",
+        "LP",
+        "P",
+        "PROD",
+        "TT"
+      ]
+    }
+  }
+}

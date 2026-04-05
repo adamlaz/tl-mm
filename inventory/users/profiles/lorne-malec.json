@@ -1,0 +1,46 @@
+{
+  "name": "Lorne Malec",
+  "id": "lorne-malec",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Payments",
+  "executive": null,
+  "geography": "SL",
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Lorne Malec (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "712020:e36156ce-37d3-4721-9eba-cdc312025480",
+      "email": null,
+      "workspaces": [
+        "madpayments"
+      ],
+      "nickname": "Lorne Malec",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": "madpayments"
+    },
+    "confluence": {
+      "account_id": "712020:e36156ce-37d3-4721-9eba-cdc312025480",
+      "email": "",
+      "pages_total": 7,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

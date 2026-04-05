@@ -1,0 +1,1468 @@
+{
+  "people": {
+    "ana chambers": {
+      "name": "Ana Chambers",
+      "team": "Restaurant",
+      "score": 15.8,
+      "breakdown": {
+        "code_centrality": 2.4,
+        "knowledge_monopoly": 8.4,
+        "confluence_share_pct": 21.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "zachary honnold": {
+      "name": "Zachary Honnold",
+      "team": "Finance",
+      "score": 6.1,
+      "breakdown": {
+        "code_centrality": 1.1,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "peter vu": {
+      "name": "Peter Vu",
+      "team": "Payments R&D",
+      "score": 29.1,
+      "breakdown": {
+        "review_bottleneck": 12.6,
+        "review_share_pct": 12.6,
+        "code_centrality": 6.6,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "das desilva": {
+      "name": "Das DeSilva",
+      "team": "Onboarding",
+      "score": 25.9,
+      "breakdown": {
+        "code_centrality": 0.9,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 60.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "rosen georgiev": {
+      "name": "Rosen Georgiev",
+      "team": "IT Ops",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "chip o'connell": {
+      "name": "Chip O'Connell",
+      "team": "Onboarding",
+      "score": 22.8,
+      "breakdown": {
+        "code_centrality": 1.8,
+        "knowledge_monopoly": 16.0,
+        "confluence_share_pct": 40.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "chathura ratnayake": {
+      "name": "Chathura Ratnayake",
+      "team": "Restaurant",
+      "score": 5.8,
+      "breakdown": {
+        "code_centrality": 0.8,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "dulanjan wengappuliarachchi": {
+      "name": "Dulanjan Wengappuliarachchi",
+      "team": "Product",
+      "score": 33.9,
+      "breakdown": {
+        "code_centrality": 4.5,
+        "knowledge_monopoly": 19.4,
+        "confluence_share_pct": 48.5,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "miru somasunthara iyer": {
+      "name": "Miru Somasunthara Iyer",
+      "team": "Product Restaurant",
+      "score": 37.6,
+      "breakdown": {
+        "code_centrality": 7.6,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 100.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "shavin pieris": {
+      "name": "Shavin Pieris",
+      "team": "Product Payments",
+      "score": 32.3,
+      "breakdown": {
+        "code_centrality": 2.3,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 100.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "richard farber": {
+      "name": "Richard Farber",
+      "team": "Product",
+      "score": 13.6,
+      "breakdown": {
+        "code_centrality": 3.6,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "thaddeus fox": {
+      "name": "Thaddeus Fox",
+      "team": "Product",
+      "score": 33.3,
+      "breakdown": {
+        "code_centrality": 3.7,
+        "knowledge_monopoly": 19.6,
+        "confluence_share_pct": 49.1,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "chris gomersall": {
+      "name": "Chris Gomersall",
+      "team": "Product Design",
+      "score": 35.7,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 100.0,
+        "code_centrality": 0.7,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "ayodele lawal": {
+      "name": "Ayodele Lawal",
+      "team": "L&D",
+      "score": 25.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 50.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "randy brown": {
+      "name": "Randy Brown",
+      "team": "Restaurant",
+      "score": 21.9,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "knowledge_monopoly": 6.2,
+        "confluence_share_pct": 15.6,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "alexander baine": {
+      "name": "Alexander Baine",
+      "team": "Restaurant Frontend",
+      "score": 71.0,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 85.2,
+        "code_centrality": 12.9,
+        "knowledge_monopoly": 18.2,
+        "confluence_share_pct": 45.5,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "cory renard": {
+      "name": "Cory Renard",
+      "team": "Restaurant Frontend",
+      "score": 56.6,
+      "breakdown": {
+        "review_bottleneck": 12.4,
+        "review_share_pct": 12.4,
+        "code_centrality": 16.0,
+        "knowledge_monopoly": 18.2,
+        "confluence_share_pct": 45.5,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "rob quin": {
+      "name": "Rob Quin",
+      "team": "Restaurant Frontend",
+      "score": 21.5,
+      "breakdown": {
+        "code_centrality": 6.5,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "kyle budd": {
+      "name": "Kyle Budd",
+      "team": "Restaurant Backend",
+      "score": 76.6,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 46.9,
+        "code_centrality": 20.2,
+        "knowledge_monopoly": 11.3,
+        "confluence_share_pct": 28.3,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "beau bruderer": {
+      "name": "Beau Bruderer",
+      "team": "Restaurant Backend",
+      "score": 14.0,
+      "breakdown": {
+        "code_centrality": 4.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "siva ganesh": {
+      "name": "Siva Ganesh",
+      "team": "Restaurant Backend",
+      "score": 17.7,
+      "breakdown": {
+        "code_centrality": 2.7,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "harrison minchew": {
+      "name": "Harrison Minchew",
+      "team": "Restaurant Backend",
+      "score": 73.2,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 45.6,
+        "code_centrality": 8.2,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 64.6,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "anderson lavor": {
+      "name": "Anderson Lavor",
+      "team": "Restaurant Backend",
+      "score": 16.8,
+      "breakdown": {
+        "code_centrality": 6.8,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "zubair syed": {
+      "name": "Zubair Syed",
+      "team": "Enterprise",
+      "score": 8.0,
+      "breakdown": {
+        "code_centrality": 3.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "akshay bhasin": {
+      "name": "Akshay Bhasin",
+      "team": "Payments",
+      "score": 30.7,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 91.7,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "kevin reyes": {
+      "name": "Kevin Reyes",
+      "team": "Payments R&D",
+      "score": 32.6,
+      "breakdown": {
+        "review_bottleneck": 14.4,
+        "review_share_pct": 14.4,
+        "code_centrality": 3.2,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "trenton kress": {
+      "name": "Trenton Kress",
+      "team": "Payments R&D",
+      "score": 25.7,
+      "breakdown": {
+        "review_bottleneck": 10.7,
+        "review_share_pct": 10.7,
+        "code_centrality": 5.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "pratikchha kahdka": {
+      "name": "Pratikchha Kahdka",
+      "team": "Payments R&D",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "paul robert": {
+      "name": "Paul Robert",
+      "team": "Payments R&D",
+      "score": 14.8,
+      "breakdown": {
+        "code_centrality": 4.8,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "richard meitzler": {
+      "name": "Richard Meitzler",
+      "team": "Payments R&D",
+      "score": 19.1,
+      "breakdown": {
+        "code_centrality": 4.1,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "gayan karunarathna": {
+      "name": "Gayan Karunarathna",
+      "team": "Payments R&D",
+      "score": 61.0,
+      "breakdown": {
+        "review_bottleneck": 17.2,
+        "review_share_pct": 17.2,
+        "code_centrality": 14.5,
+        "knowledge_monopoly": 14.3,
+        "confluence_share_pct": 35.8,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "susampath madarasinghe": {
+      "name": "Susampath Madarasinghe",
+      "team": "Payments R&D",
+      "score": 42.3,
+      "breakdown": {
+        "code_centrality": 12.3,
+        "knowledge_monopoly": 15.0,
+        "confluence_share_pct": 37.5,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "matthew griffin": {
+      "name": "Matthew Griffin",
+      "team": "Payments R&D",
+      "score": 48.6,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 40.9,
+        "code_centrality": 3.6,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "sowjanya akula": {
+      "name": "Sowjanya Akula",
+      "team": "Restaurant QE",
+      "score": 16.9,
+      "breakdown": {
+        "code_centrality": 6.9,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "darren blackwell": {
+      "name": "Darren Blackwell",
+      "team": "Restaurant QE",
+      "score": 11.8,
+      "breakdown": {
+        "code_centrality": 1.8,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "rekha mohanan": {
+      "name": "Rekha Mohanan",
+      "team": "Restaurant QE",
+      "score": 29.1,
+      "breakdown": {
+        "code_centrality": 2.8,
+        "knowledge_monopoly": 16.3,
+        "confluence_share_pct": 40.8,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "bill fenley": {
+      "name": "Bill Fenley",
+      "team": "Restaurant QE",
+      "score": 43.7,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 100.0,
+        "code_centrality": 3.7,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "kaelon lucas": {
+      "name": "Kaelon Lucas",
+      "team": "Restaurant QE",
+      "score": 7.7,
+      "breakdown": {
+        "code_centrality": 2.7,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "patrycja stevenson": {
+      "name": "Patrycja Stevenson",
+      "team": "Restaurant QE",
+      "score": 22.2,
+      "breakdown": {
+        "code_centrality": 2.4,
+        "knowledge_monopoly": 9.8,
+        "confluence_share_pct": 24.5,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "andy honnold": {
+      "name": "Andy Honnold",
+      "team": "Payments Biz Ops",
+      "score": 21.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "knowledge_monopoly": 16.0,
+        "confluence_share_pct": 40.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "angie mroczka": {
+      "name": "Angie Mroczka",
+      "team": "Payments Biz Ops",
+      "score": 25.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 60.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "mark freid": {
+      "name": "Mark Freid",
+      "team": "PCI Compliance",
+      "score": 30.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 72.7,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "debbie keye": {
+      "name": "Debbie Keye",
+      "team": "PCI Compliance",
+      "score": 10.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "matias lopez riglos": {
+      "name": "Matias Lopez Riglos",
+      "team": "PCI Compliance",
+      "score": 52.7,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 100.0,
+        "code_centrality": 5.4,
+        "knowledge_monopoly": 7.3,
+        "confluence_share_pct": 18.2,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "vanessa sotomayor": {
+      "name": "Vanessa Sotomayor",
+      "team": "Payments PMO",
+      "score": 30.7,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 100.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "mark guilarte": {
+      "name": "Mark Guilarte",
+      "team": "PMO",
+      "score": 33.6,
+      "breakdown": {
+        "code_centrality": 3.6,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 100.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "qaiser pannu": {
+      "name": "Qaiser Pannu",
+      "team": "PMO Restaurant",
+      "score": 63.2,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 100.0,
+        "code_centrality": 3.2,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 100.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "jack kennedy": {
+      "name": "Jack Kennedy",
+      "team": "CTO",
+      "score": 60.8,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 100.0,
+        "code_centrality": 0.8,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 100.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "jeremy diggins": {
+      "name": "Jeremy Diggins",
+      "team": "Enterprise Technology",
+      "score": 41.1,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 100.0,
+        "code_centrality": 1.1,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "bailey shatney": {
+      "name": "Bailey Shatney",
+      "team": "HR",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "ryan schinsky": {
+      "name": "Ryan Schinsky",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "jpena": {
+      "name": "jpena",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "pallavi": {
+      "name": "Pallavi",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "rusiru perera": {
+      "name": "Rusiru Perera",
+      "team": "Restaurant",
+      "score": 14.7,
+      "breakdown": {
+        "code_centrality": 4.7,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "kien pham": {
+      "name": "Kien Pham",
+      "team": "Concierge / Retail / Platform",
+      "score": 10.7,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "wenushka dikowita": {
+      "name": "Wenushka Dikowita",
+      "team": "Restaurant",
+      "score": 48.6,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 37.6,
+        "code_centrality": 3.6,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "malinda lamahewa": {
+      "name": "Malinda Lamahewa",
+      "team": "Platform",
+      "score": 6.0,
+      "breakdown": {
+        "code_centrality": 1.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "benjamin roedell": {
+      "name": "Benjamin Roedell",
+      "team": "Platform",
+      "score": 79.0,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 35.0,
+        "code_centrality": 16.8,
+        "knowledge_monopoly": 17.2,
+        "confluence_share_pct": 43.1,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "poorna manujaya amarasingha": {
+      "name": "Poorna Manujaya Amarasingha",
+      "team": "Enterprise",
+      "score": 57.8,
+      "breakdown": {
+        "review_bottleneck": 15.3,
+        "review_share_pct": 15.3,
+        "code_centrality": 7.6,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 75.6,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "sriharshith akula": {
+      "name": "Sriharshith Akula",
+      "team": "Restaurant",
+      "score": 11.3,
+      "breakdown": {
+        "code_centrality": 1.3,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "brew lamb": {
+      "name": "Brew Lamb",
+      "team": "Restaurant",
+      "score": 13.6,
+      "breakdown": {
+        "code_centrality": 3.6,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "sumeera perera": {
+      "name": "Sumeera Perera",
+      "team": "Restaurant",
+      "score": 14.8,
+      "breakdown": {
+        "code_centrality": 9.8,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "adam veliz": {
+      "name": "Adam Veliz",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "danika munasinghe": {
+      "name": "Danika Munasinghe",
+      "team": "Unknown",
+      "score": 10.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "gregory ladgin": {
+      "name": "Gregory Ladgin",
+      "team": "Restaurant",
+      "score": 5.9,
+      "breakdown": {
+        "code_centrality": 0.9,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "sumnima shah": {
+      "name": "Sumnima Shah",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "jessica conn": {
+      "name": "Jessica Conn",
+      "team": "Restaurant",
+      "score": 6.5,
+      "breakdown": {
+        "code_centrality": 1.5,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "suneth de soyza": {
+      "name": "Suneth De Soyza",
+      "team": "Restaurant",
+      "score": 7.8,
+      "breakdown": {
+        "code_centrality": 2.8,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "kevin o'haugherty": {
+      "name": "Kevin O'Haugherty",
+      "team": "Platform",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "megan messmore": {
+      "name": "Megan Messmore",
+      "team": "Platform",
+      "score": 5.9,
+      "breakdown": {
+        "code_centrality": 0.9,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "jason.bitman": {
+      "name": "jason.bitman",
+      "team": "Concierge / Retail / Platform",
+      "score": 5.7,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "emily stineman": {
+      "name": "Emily Stineman",
+      "team": "Platform",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "michael lee": {
+      "name": "Michael Lee",
+      "team": "Platform",
+      "score": 6.8,
+      "breakdown": {
+        "code_centrality": 1.8,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "rusty clark": {
+      "name": "Rusty Clark",
+      "team": "Concierge / Retail / Platform",
+      "score": 13.6,
+      "breakdown": {
+        "code_centrality": 3.6,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "sanduni dissanayaka": {
+      "name": "Sanduni Dissanayaka",
+      "team": "Restaurant",
+      "score": 10.6,
+      "breakdown": {
+        "code_centrality": 5.6,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "inushi gunathilake": {
+      "name": "Inushi Gunathilake",
+      "team": "Restaurant",
+      "score": 14.0,
+      "breakdown": {
+        "code_centrality": 9.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "austin.spreadbury": {
+      "name": "Austin.Spreadbury",
+      "team": "Restaurant",
+      "score": 9.3,
+      "breakdown": {
+        "code_centrality": 4.3,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "chalaka.thushara": {
+      "name": "chalaka.thushara",
+      "team": "Platform",
+      "score": 9.3,
+      "breakdown": {
+        "code_centrality": 4.3,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "nishani peiris": {
+      "name": "Nishani Peiris",
+      "team": "Unknown",
+      "score": 46.6,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 91.2,
+        "code_centrality": 6.6,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "fayaz abdul": {
+      "name": "Fayaz Abdul",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "ian bennett": {
+      "name": "Ian Bennett",
+      "team": "Restaurant",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "hashan prabodhaka jalath": {
+      "name": "Hashan Prabodhaka Jalath",
+      "team": "Concierge / Retail / Platform",
+      "score": 36.8,
+      "breakdown": {
+        "code_centrality": 1.8,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 58.5,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "raveen panditha": {
+      "name": "Raveen Panditha",
+      "team": "Restaurant",
+      "score": 25.7,
+      "breakdown": {
+        "code_centrality": 10.7,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "cheri siedle": {
+      "name": "Cheri Siedle",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "madison bloomfield": {
+      "name": "Madison Bloomfield",
+      "team": "Platform",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "chathura lalinda ranasingha": {
+      "name": "Chathura Lalinda Ranasingha",
+      "team": "Restaurant",
+      "score": 5.9,
+      "breakdown": {
+        "code_centrality": 0.9,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "pramodi fernando": {
+      "name": "Pramodi Fernando",
+      "team": "Platform",
+      "score": 6.6,
+      "breakdown": {
+        "code_centrality": 1.6,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "daniel lomsak": {
+      "name": "Daniel Lomsak",
+      "team": "Concierge / Retail / Platform",
+      "score": 10.7,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "dilruwan madubashitha": {
+      "name": "Dilruwan Madubashitha",
+      "team": "Restaurant",
+      "score": 7.0,
+      "breakdown": {
+        "code_centrality": 2.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "dulana dharmaratne": {
+      "name": "Dulana Dharmaratne",
+      "team": "Restaurant",
+      "score": 10.8,
+      "breakdown": {
+        "code_centrality": 5.8,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "holly culver": {
+      "name": "Holly Culver",
+      "team": "Restaurant",
+      "score": 51.3,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 39.7,
+        "code_centrality": 11.3,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "chalaka sudusinghe": {
+      "name": "Chalaka Sudusinghe",
+      "team": "CAKE / Restaurant",
+      "score": 57.5,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 59.4,
+        "code_centrality": 1.3,
+        "knowledge_monopoly": 11.3,
+        "confluence_share_pct": 28.1,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "hashan maduwantha": {
+      "name": "Hashan Maduwantha",
+      "team": "CAKE / Restaurant",
+      "score": 67.9,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 37.1,
+        "code_centrality": 2.9,
+        "knowledge_monopoly": 20,
+        "confluence_share_pct": 71.9,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "roopa kaukuri": {
+      "name": "Roopa Kaukuri",
+      "team": "Platform",
+      "score": 13.7,
+      "breakdown": {
+        "code_centrality": 8.7,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "ashen": {
+      "name": "Ashen",
+      "team": "Restaurant",
+      "score": 10.7,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "adam hartman": {
+      "name": "Adam Hartman",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "orlando jimenez": {
+      "name": "Orlando Jimenez",
+      "team": "Enterprise",
+      "score": 44.2,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 44.0,
+        "code_centrality": 4.2,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "kanchana amarathunga": {
+      "name": "Kanchana Amarathunga",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "matt cooke": {
+      "name": "Matt Cooke",
+      "team": "Concierge / Retail / Platform",
+      "score": 27.8,
+      "breakdown": {
+        "review_bottleneck": 15.4,
+        "review_share_pct": 15.4,
+        "code_centrality": 2.4,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "savumi wadduwage": {
+      "name": "Savumi Wadduwage",
+      "team": "Unknown",
+      "score": 5.7,
+      "breakdown": {
+        "code_centrality": 0.7,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "zohra bhayani": {
+      "name": "Zohra Bhayani",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "mauro villaseco": {
+      "name": "Mauro Villaseco",
+      "team": "Platform",
+      "score": 44.7,
+      "breakdown": {
+        "review_bottleneck": 26.9,
+        "review_share_pct": 26.9,
+        "code_centrality": 2.9,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "jake linder": {
+      "name": "jake linder",
+      "team": "Restaurant",
+      "score": 15.6,
+      "breakdown": {
+        "code_centrality": 5.6,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "anthony goad": {
+      "name": "Anthony Goad",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "altaaf anver": {
+      "name": "Altaaf Anver",
+      "team": "Platform",
+      "score": 11.0,
+      "breakdown": {
+        "code_centrality": 1.0,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "thiwanka wimalasuriya": {
+      "name": "Thiwanka Wimalasuriya",
+      "team": "Restaurant",
+      "score": 57.9,
+      "breakdown": {
+        "review_bottleneck": 14.6,
+        "review_share_pct": 14.6,
+        "code_centrality": 11.6,
+        "knowledge_monopoly": 16.7,
+        "confluence_share_pct": 41.8,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "john harre": {
+      "name": "John Harre",
+      "team": "Concierge / Retail / Platform",
+      "score": 60.0,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 34.8,
+        "code_centrality": 25.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "james oliver": {
+      "name": "James Oliver",
+      "team": "Concierge / Retail / Platform",
+      "score": 63.9,
+      "breakdown": {
+        "review_bottleneck": 23.3,
+        "review_share_pct": 23.3,
+        "code_centrality": 23.8,
+        "knowledge_monopoly": 6.8,
+        "confluence_share_pct": 16.9,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "facundo": {
+      "name": "Facundo",
+      "team": "Concierge / Retail / Platform",
+      "score": 10.9,
+      "breakdown": {
+        "code_centrality": 0.9,
+        "cross_system_breadth": 10,
+        "systems_active": 2
+      }
+    },
+    "mike nunez": {
+      "name": "Mike Nunez",
+      "team": "Enterprise",
+      "score": 53.4,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 40.6,
+        "code_centrality": 8.4,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "matthew crumley": {
+      "name": "Matthew Crumley",
+      "team": "Platform",
+      "score": 73.1,
+      "breakdown": {
+        "review_bottleneck": 30,
+        "review_share_pct": 38.1,
+        "code_centrality": 13.0,
+        "knowledge_monopoly": 15.1,
+        "confluence_share_pct": 37.7,
+        "cross_system_breadth": 15,
+        "systems_active": 3
+      }
+    },
+    "air": {
+      "name": "AIR",
+      "team": "Concierge / Retail / Platform",
+      "score": 19.8,
+      "breakdown": {
+        "review_bottleneck": 14.1,
+        "review_share_pct": 14.1,
+        "code_centrality": 0.7,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "ryan crawford": {
+      "name": "Ryan Crawford",
+      "team": "Unknown",
+      "score": 6.4,
+      "breakdown": {
+        "code_centrality": 1.4,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "antonio benjamim mussi schmidt": {
+      "name": "Antonio Benjamim Mussi Schmidt",
+      "team": "Concierge / Retail / Platform",
+      "score": 7.7,
+      "breakdown": {
+        "code_centrality": 2.7,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "jeff pena": {
+      "name": "Jeff Pena",
+      "team": "Concierge / Retail / Platform",
+      "score": 6.6,
+      "breakdown": {
+        "code_centrality": 1.6,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "james van buskirk": {
+      "name": "James Van Buskirk",
+      "team": "CAKE / Restaurant",
+      "score": 6.8,
+      "breakdown": {
+        "code_centrality": 1.8,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    },
+    "ernst fantaisy (unlicensed)": {
+      "name": "Ernst Fantaisy (Unlicensed)",
+      "team": "Unknown",
+      "score": 5.0,
+      "breakdown": {
+        "code_centrality": 0.0,
+        "cross_system_breadth": 5,
+        "systems_active": 1
+      }
+    }
+  },
+  "teams": {
+    "Restaurant": {
+      "avg_top3_risk": 52.6,
+      "max_risk": 57.9,
+      "people_at_risk": 3,
+      "total_scored": 23
+    },
+    "Finance": {
+      "avg_top3_risk": 6.1,
+      "max_risk": 6.1,
+      "people_at_risk": 0,
+      "total_scored": 1
+    },
+    "Payments R&D": {
+      "avg_top3_risk": 50.6,
+      "max_risk": 61.0,
+      "people_at_risk": 4,
+      "total_scored": 9
+    },
+    "Onboarding": {
+      "avg_top3_risk": 24.4,
+      "max_risk": 25.9,
+      "people_at_risk": 0,
+      "total_scored": 2
+    },
+    "IT Ops": {
+      "avg_top3_risk": 5.0,
+      "max_risk": 5.0,
+      "people_at_risk": 0,
+      "total_scored": 1
+    },
+    "Product": {
+      "avg_top3_risk": 26.9,
+      "max_risk": 33.9,
+      "people_at_risk": 2,
+      "total_scored": 3
+    },
+    "Product Restaurant": {
+      "avg_top3_risk": 37.6,
+      "max_risk": 37.6,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "Product Payments": {
+      "avg_top3_risk": 32.3,
+      "max_risk": 32.3,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "Product Design": {
+      "avg_top3_risk": 35.7,
+      "max_risk": 35.7,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "L&D": {
+      "avg_top3_risk": 25.0,
+      "max_risk": 25.0,
+      "people_at_risk": 0,
+      "total_scored": 1
+    },
+    "Restaurant Frontend": {
+      "avg_top3_risk": 49.7,
+      "max_risk": 71.0,
+      "people_at_risk": 2,
+      "total_scored": 3
+    },
+    "Restaurant Backend": {
+      "avg_top3_risk": 55.8,
+      "max_risk": 76.6,
+      "people_at_risk": 2,
+      "total_scored": 5
+    },
+    "Enterprise": {
+      "avg_top3_risk": 51.8,
+      "max_risk": 57.8,
+      "people_at_risk": 3,
+      "total_scored": 4
+    },
+    "Payments": {
+      "avg_top3_risk": 30.7,
+      "max_risk": 30.7,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "Restaurant QE": {
+      "avg_top3_risk": 31.7,
+      "max_risk": 43.7,
+      "people_at_risk": 1,
+      "total_scored": 6
+    },
+    "Payments Biz Ops": {
+      "avg_top3_risk": 23.0,
+      "max_risk": 25.0,
+      "people_at_risk": 0,
+      "total_scored": 2
+    },
+    "PCI Compliance": {
+      "avg_top3_risk": 30.9,
+      "max_risk": 52.7,
+      "people_at_risk": 2,
+      "total_scored": 3
+    },
+    "Payments PMO": {
+      "avg_top3_risk": 30.7,
+      "max_risk": 30.7,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "PMO": {
+      "avg_top3_risk": 33.6,
+      "max_risk": 33.6,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "PMO Restaurant": {
+      "avg_top3_risk": 63.2,
+      "max_risk": 63.2,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "CTO": {
+      "avg_top3_risk": 60.8,
+      "max_risk": 60.8,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "Enterprise Technology": {
+      "avg_top3_risk": 41.1,
+      "max_risk": 41.1,
+      "people_at_risk": 1,
+      "total_scored": 1
+    },
+    "HR": {
+      "avg_top3_risk": 5.0,
+      "max_risk": 5.0,
+      "people_at_risk": 0,
+      "total_scored": 1
+    },
+    "Unknown": {
+      "avg_top3_risk": 21.0,
+      "max_risk": 46.6,
+      "people_at_risk": 1,
+      "total_scored": 16
+    },
+    "Concierge / Retail / Platform": {
+      "avg_top3_risk": 53.6,
+      "max_risk": 63.9,
+      "people_at_risk": 3,
+      "total_scored": 12
+    },
+    "Platform": {
+      "avg_top3_risk": 65.6,
+      "max_risk": 79.0,
+      "people_at_risk": 3,
+      "total_scored": 13
+    },
+    "CAKE / Restaurant": {
+      "avg_top3_risk": 44.1,
+      "max_risk": 67.9,
+      "people_at_risk": 2,
+      "total_scored": 3
+    }
+  }
+}

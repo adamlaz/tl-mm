@@ -1,0 +1,63 @@
+{
+  "name": "Austin.Spreadbury",
+  "id": "austin-spreadbury",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 7,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 2,
+      "open_assigned": 5,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Austin.Spreadbury",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "LP"
+      ]
+    }
+  }
+}

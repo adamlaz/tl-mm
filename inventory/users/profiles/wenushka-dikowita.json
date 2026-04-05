@@ -1,0 +1,67 @@
+{
+  "name": "Wenushka Dikowita",
+  "id": "wenushka-dikowita",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": "CAKE / Restaurant",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 571,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "email": "",
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 66,
+      "issues_resolved_90d": 20,
+      "open_assigned": 42,
+      "bugs_created_90d": 3,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "nickname": "Wenushka Dikowita",
+      "prs_authored": 0,
+      "prs_reviewed": 481,
+      "review_cluster": "syscolabs"
+    },
+    "confluence": {
+      "account_id": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+      "email": "",
+      "pages_total": 17,
+      "pages_90d": 4,
+      "spaces": [
+        "ES",
+        "LP",
+        "TT"
+      ]
+    }
+  }
+}

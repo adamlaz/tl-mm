@@ -1,0 +1,33 @@
+{
+  "name": "Sadik Johnston (Unlicensed)",
+  "id": "sadik-johnston-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "60661e2d90e3950069dd4a25",
+      "email": "",
+      "pages_total": 6,
+      "pages_90d": 0,
+      "spaces": [
+        "ES",
+        "TT"
+      ]
+    }
+  }
+}

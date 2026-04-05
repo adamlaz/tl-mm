@@ -1,0 +1,535 @@
+---
+import { readFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+interface Props {
+  dataPath: string;
+  title: string;
+  height?: string;
+}
+
+const { dataPath, title, height = '700px' } = Astro.props;
+const chartPath = resolve(dataPath);
+const hasData = existsSync(chartPath);
+const chartData = hasData ? readFileSync(chartPath, 'utf-8') : '';
+---
+
+<div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden relative" data-orgchart-wrap>
+  <div class="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between gap-3 flex-wrap">
+    <h3 class="text-sm font-semibold text-[var(--text)] whitespace-nowrap">{title}</h3>
+    <div class="flex items-center gap-1.5">
+      <div class="relative">
+        <svg class="absolute left-2 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[var(--text-muted)] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input
+          type="search"
+          data-orgchart-search
+          placeholder="Search people…"
+          class="w-40 pl-7 pr-2 py-1 text-xs rounded-md border border-[var(--border)] bg-[var(--bg)] text-[var(--text)] placeholder:text-[var(--text-muted)] focus:outline-none focus:ring-1 focus:ring-[var(--ring)] transition-colors"
+        />
+      </div>
+
+      <div class="w-px h-5 bg-[var(--border)] mx-0.5"></div>
+
+      <button type="button" data-orgchart-compact aria-pressed="false" title="Toggle compact layout" class="oc-tb">
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" />
+          <rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" />
+        </svg>
+      </button>
+      <button type="button" data-orgchart-fit title="Fit to screen" class="oc-tb">
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+        </svg>
+      </button>
+      <button type="button" data-orgchart-fullscreen title="Toggle fullscreen" class="oc-tb">
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+        </svg>
+      </button>
+
+      <div class="w-px h-5 bg-[var(--border)] mx-0.5"></div>
+
+      <div class="relative" data-orgchart-export-wrap>
+        <button type="button" data-orgchart-export-toggle title="Export chart" class="oc-tb gap-1">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span class="text-xs hidden sm:inline">Export</span>
+          <svg viewBox="0 0 24 24" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg>
+        </button>
+        <div class="absolute right-0 top-full mt-1 py-1 min-w-[130px] bg-[var(--surface)] border border-[var(--border)] rounded-lg shadow-lg z-20 hidden" data-orgchart-export-menu>
+          <button type="button" data-orgchart-export-png class="oc-drop">
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+            PNG Image
+          </button>
+          <button type="button" data-orgchart-export-svg class="oc-drop">
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+            </svg>
+            SVG Vector
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {hasData ? (
+    <div class="relative">
+      <div data-orgchart style={`min-height:${height};width:100%`}>
+        <script type="application/json" set:html={chartData} />
+      </div>
+      <div class="absolute bottom-4 right-4 flex flex-col gap-1 z-10" data-orgchart-zoom>
+        <button type="button" data-orgchart-zoomin title="Zoom in" class="oc-zoom">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+        </button>
+        <button type="button" data-orgchart-zoomout title="Zoom out" class="oc-zoom">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12" /></svg>
+        </button>
+        <button type="button" data-orgchart-zoomfit title="Fit to view" class="oc-zoom">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3" /><path d="M3 12h3m12 0h3M12 3v3m0 12v3" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  ) : (
+    <div style={`min-height:${height}`} class="flex items-center justify-center bg-[var(--surface-alt)] rounded-b-xl">
+      <p class="text-xs text-[var(--text-muted)]">Org chart data not generated yet</p>
+    </div>
+  )}
+
+  <span class="absolute bottom-2 left-3 text-[10px] text-[var(--text-muted)] opacity-60 pointer-events-none select-none">
+    Scroll to zoom &middot; Drag to pan
+  </span>
+</div>
+
+<style is:global>
+  .oc-tb {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 6px;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 150ms ease, background 150ms ease;
+  }
+  .oc-tb:hover { color: var(--text); background: var(--surface-alt); }
+  .oc-tb[aria-pressed="true"] { color: var(--accent); background: var(--accent-subtle); }
+
+  .oc-drop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--text);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    transition: background 150ms ease;
+  }
+  .oc-drop:hover { background: var(--surface-alt); }
+
+  .oc-zoom {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: color 150ms ease, background 150ms ease;
+  }
+  .oc-zoom:hover { color: var(--text); background: var(--surface-alt); }
+
+  [data-orgchart] svg { border-radius: 0 0 12px 12px; }
+</style>
+
+<script is:inline>
+(function () {
+  if (window.__ocInit) return;
+  window.__ocInit = true;
+
+  /* ── Palette ──────────────────────────────────────────────────── */
+  var P = {
+    light: {
+      ceo:     { bg: '#2E2820', text: '#F0EBE1', stripe: '#2E2820' },
+      csuite:  { bg: '#4A5FC4', text: '#FFFFFF', stripe: '#4A5FC4' },
+      l2:      { bg: '#6B82A0', text: '#FFFFFF', stripe: '#6B82A0' },
+      staff:   { bg: '#F5F0E6', text: '#2E2820', stripe: '#C4B8A0' },
+      subteam: { bg: '#E0E7FF', text: '#2E2820', stripe: '#4A5FC4' },
+      border: '#E8E4DE', surface: '#FFFFFF',
+      cardText: '#2E2820', muted: '#8A8070', accent: '#4A5FC4'
+    },
+    dark: {
+      ceo:     { bg: '#2E2820', text: '#F0EBE1', stripe: '#F0EBE1' },
+      csuite:  { bg: '#6B7FE0', text: '#1E1A1A', stripe: '#6B7FE0' },
+      l2:      { bg: '#8A9EC0', text: '#1E1A1A', stripe: '#8A9EC0' },
+      staff:   { bg: '#3A3430', text: '#E8E4DE', stripe: '#6A6058' },
+      subteam: { bg: '#2A2E4A', text: '#E8E4DE', stripe: '#6B7FE0' },
+      border: '#4A4038', surface: '#1E1A1A',
+      cardText: '#E8E4DE', muted: '#8A8070', accent: '#6B7FE0'
+    }
+  };
+
+  var searchMatches = [];
+
+  function dark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+  function pal()   { return P[dark() ? 'dark' : 'light']; }
+
+  function esc(s) {
+    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  /* ── Node card template ───────────────────────────────────────── */
+  function nodeContent(d) {
+    var data = d.data;
+    var p    = pal();
+    var lc   = p[data.level] || p.staff;
+    var hit  = searchMatches.indexOf(data.id) !== -1;
+    var w    = d.width  || 220;
+    var h    = d.height || 90;
+
+    var bw = hit ? 2 : 1;
+    var bc = hit ? p.accent : p.border;
+    var sh = hit
+      ? '0 0 0 3px ' + p.accent + '40'
+      : '0 1px 4px rgba(0,0,0,' + (dark() ? '.35' : '.07') + ')';
+
+    var o = '<div style="display:flex;border-radius:8px;overflow:hidden;'
+      + 'border:' + bw + 'px solid ' + bc + ';box-shadow:' + sh + ';'
+      + 'width:' + w + 'px;height:' + h + 'px;'
+      + "font-family:'Noto Sans',sans-serif;\">"
+      + '<div style="width:4px;flex-shrink:0;background:' + lc.stripe + '"></div>'
+      + '<div style="flex:1;background:' + p.surface + ';padding:8px 10px;overflow:hidden;'
+      + 'display:flex;flex-direction:column;justify-content:center">';
+
+    o += '<div style="font-weight:600;font-size:12px;color:' + p.cardText
+      + ';line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'
+      + esc(data.name) + '</div>';
+
+    o += '<div style="font-weight:400;font-size:11px;color:' + p.muted
+      + ';line-height:1.3;margin-top:2px;overflow:hidden;text-overflow:ellipsis;'
+      + 'display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'
+      + esc(data.role) + '</div>';
+
+    if (data.headcount) {
+      o += '<div style="margin-top:4px"><span style="display:inline-block;padding:1px 7px;'
+        + 'border-radius:10px;font-size:10px;font-weight:500;line-height:1.4;'
+        + 'background:' + lc.bg + ';color:' + lc.text + '">'
+        + '&middot;&thinsp;' + data.headcount + '</span></div>';
+    }
+
+    if (data._showDiv) {
+      o += '<div style="font-size:9px;color:' + p.muted
+        + ';margin-top:3px;text-transform:uppercase;letter-spacing:.05em;font-weight:500;'
+        + 'white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'
+        + esc(data.division) + '</div>';
+    }
+
+    o += '</div></div>';
+    return o;
+  }
+
+  /* ── Expand / collapse button ─────────────────────────────────── */
+  function buttonContent(params) {
+    var node = params.node;
+    var p    = pal();
+    var collapsed = !node.children;
+    var count = node.data._directSubordinates || 0;
+
+    var o = '<div style="display:flex;align-items:center;justify-content:center">'
+      + '<div style="width:24px;height:24px;border-radius:50%;background:' + p.surface
+      + ';border:1.5px solid ' + p.border
+      + ';display:flex;align-items:center;justify-content:center;cursor:pointer;'
+      + 'box-shadow:0 1px 3px rgba(0,0,0,.1)">';
+
+    if (collapsed && count) {
+      o += '<span style="font-size:10px;font-weight:600;color:' + p.accent
+        + ";font-family:'Noto Sans',sans-serif\">" + count + '</span>';
+    } else {
+      o += '<span style="font-size:14px;line-height:1;color:' + p.muted
+        + ';font-weight:400">' + (collapsed ? '+' : '\u2212') + '</span>';
+    }
+
+    o += '</div></div>';
+    return o;
+  }
+
+  /* ── Helpers ──────────────────────────────────────────────────── */
+  function chartOf(el) {
+    var w = el.closest('[data-orgchart-wrap]');
+    var c = w && w.querySelector('[data-orgchart]');
+    return c && c._oc;
+  }
+  function dataOf(el) {
+    var w = el.closest('[data-orgchart-wrap]');
+    var c = w && w.querySelector('[data-orgchart]');
+    return c && c._ocData;
+  }
+
+  function zoomBy(chart, factor) {
+    try {
+      var st = chart.getChartState();
+      d3.select(st.svg).transition().duration(300)
+        .call(st.zoomBehavior.scaleBy, factor);
+    } catch (_) { /* noop */ }
+  }
+
+  /* ── Init ─────────────────────────────────────────────────────── */
+  var retries = 0;
+  function initOrgCharts() {
+    var Cls = (typeof d3 !== 'undefined' && d3.OrgChart)
+           || (typeof OrgChart !== 'undefined' && OrgChart);
+    if (!Cls) {
+      if (++retries < 30) setTimeout(initOrgCharts, 200);
+      return;
+    }
+    retries = 0;
+
+    document.querySelectorAll('[data-orgchart]').forEach(function (el) {
+      if (el._oc) return;
+      var script = el.querySelector('script[type="application/json"]');
+      if (!script || !script.textContent) return;
+
+      var data;
+      try { data = JSON.parse(script.textContent); } catch (_) { return; }
+
+      var divMap = {};
+      data.forEach(function (d) { divMap[d.id] = d.division; });
+      data.forEach(function (d) {
+        var parentDiv = d.parentId ? divMap[d.parentId] : null;
+        d._showDiv = !!(d.division && d.division !== parentDiv);
+      });
+
+      var chart = new Cls()
+        .container(el)
+        .data(data)
+        .nodeWidth(function ()  { return 220; })
+        .nodeHeight(function (d) {
+          var node = d.data || d;
+          var h = 54;
+          if ((node.role || '').length > 28) h += 14;
+          if (node.headcount) h += 18;
+          if (node._showDiv)  h += 14;
+          return h;
+        })
+        .childrenMargin(function ()        { return 50; })
+        .siblingsMargin(function ()        { return 25; })
+        .compactMarginBetween(function ()  { return 25; })
+        .compactMarginPair(function ()     { return 50; })
+        .initialZoom(0.75)
+        .initialExpandLevel(2)
+        .nodeContent(nodeContent)
+        .buttonContent(buttonContent)
+        .linkUpdate(function () {
+          d3.select(this)
+            .attr('stroke', pal().border)
+            .attr('stroke-width', 1.5);
+        })
+        .nodeUpdate(function () {
+          d3.select(this).select('.node-rect')
+            .attr('stroke', 'none')
+            .attr('fill', 'none')
+            .attr('filter', 'none');
+        })
+        .render();
+
+      el._oc     = chart;
+      el._ocData = data;
+    });
+  }
+
+  /* ── Search (delegated) ───────────────────────────────────────── */
+  var searchTimer;
+  document.addEventListener('input', function (e) {
+    var inp = e.target.closest && e.target.closest('[data-orgchart-search]');
+    if (!inp) return;
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function () {
+      var q     = inp.value.trim().toLowerCase();
+      var chart = chartOf(inp);
+      var data  = dataOf(inp);
+      if (!chart || !data) return;
+
+      if (!q) {
+        searchMatches = [];
+        try { chart.clearHighlighting(); } catch (_) {}
+        chart.render();
+        return;
+      }
+
+      var hits = data.filter(function (d) {
+        return d.name.toLowerCase().indexOf(q) !== -1
+            || (d.role     && d.role.toLowerCase().indexOf(q)     !== -1)
+            || (d.division && d.division.toLowerCase().indexOf(q) !== -1);
+      });
+
+      searchMatches = hits.map(function (d) { return d.id; });
+
+      try {
+        if (hits.length) {
+          chart.setExpanded(hits[0].id).setCentered(hits[0].id).render();
+        } else {
+          chart.render();
+        }
+      } catch (_) { chart.render(); }
+    }, 250);
+  });
+
+  /* ── Click delegation ─────────────────────────────────────────── */
+  document.addEventListener('click', function (e) {
+    var btn;
+
+    btn = e.target.closest('[data-orgchart-compact]');
+    if (btn) {
+      var ch = chartOf(btn);
+      if (!ch) return;
+      var on = btn.getAttribute('aria-pressed') !== 'true';
+      btn.setAttribute('aria-pressed', String(on));
+      ch.compact(on).render();
+      setTimeout(function () { ch.fit(); }, 120);
+      return;
+    }
+
+    btn = e.target.closest('[data-orgchart-fit]');
+    if (btn) { var ch = chartOf(btn); if (ch) ch.fit(); return; }
+
+    btn = e.target.closest('[data-orgchart-fullscreen]');
+    if (btn) {
+      var wrap = btn.closest('[data-orgchart-wrap]');
+      if (!wrap) return;
+      if (document.fullscreenElement === wrap) {
+        document.exitFullscreen();
+      } else {
+        wrap.requestFullscreen().then(function () {
+          wrap.style.background = 'var(--bg)';
+          var ch = chartOf(btn);
+          if (ch) setTimeout(function () { ch.fit(); }, 200);
+        });
+      }
+      return;
+    }
+
+    btn = e.target.closest('[data-orgchart-export-toggle]');
+    if (btn) {
+      var menu = btn.closest('[data-orgchart-export-wrap]')
+                     .querySelector('[data-orgchart-export-menu]');
+      if (menu) menu.classList.toggle('hidden');
+      return;
+    }
+
+    btn = e.target.closest('[data-orgchart-export-png]');
+    if (btn) {
+      var ch = chartOf(btn);
+      if (ch) try { ch.exportImg({ full: true, save: true }); } catch (_) {}
+      closeMenus();
+      return;
+    }
+
+    btn = e.target.closest('[data-orgchart-export-svg]');
+    if (btn) {
+      var ch = chartOf(btn);
+      if (ch) try { ch.exportSvg(); } catch (_) {}
+      closeMenus();
+      return;
+    }
+
+    btn = e.target.closest('[data-orgchart-zoomin]');
+    if (btn) { var ch = chartOf(btn); if (ch) zoomBy(ch, 1.3); return; }
+
+    btn = e.target.closest('[data-orgchart-zoomout]');
+    if (btn) { var ch = chartOf(btn); if (ch) zoomBy(ch, 0.7); return; }
+
+    btn = e.target.closest('[data-orgchart-zoomfit]');
+    if (btn) { var ch = chartOf(btn); if (ch) ch.fit(); return; }
+
+    if (!e.target.closest('[data-orgchart-export-wrap]')) closeMenus();
+  });
+
+  function closeMenus() {
+    document.querySelectorAll('[data-orgchart-export-menu]').forEach(function (m) {
+      m.classList.add('hidden');
+    });
+  }
+
+  document.addEventListener('fullscreenchange', function () {
+    if (!document.fullscreenElement) {
+      document.querySelectorAll('[data-orgchart-wrap]').forEach(function (w) {
+        w.style.background = '';
+        var c = w.querySelector('[data-orgchart]');
+        if (c && c._oc) setTimeout(function () { c._oc.fit(); }, 100);
+      });
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeMenus();
+      if (e.target.matches && e.target.matches('[data-orgchart-search]')) {
+        e.target.value = '';
+        searchMatches = [];
+        var ch = chartOf(e.target);
+        if (ch) ch.render();
+      }
+    }
+  });
+
+  /* ── Theme observer ───────────────────────────────────────────── */
+  new MutationObserver(function () {
+    searchMatches = [];
+    document.querySelectorAll('[data-orgchart]').forEach(function (el) {
+      if (el._oc) el._oc.render();
+    });
+  }).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme']
+  });
+
+  /* ── Resize ───────────────────────────────────────────────────── */
+  var rTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(rTimer);
+    rTimer = setTimeout(function () {
+      document.querySelectorAll('[data-orgchart]').forEach(function (el) {
+        if (el._oc) el._oc.render();
+      });
+    }, 200);
+  });
+
+  /* ── Lifecycle ────────────────────────────────────────────────── */
+  document.addEventListener('astro:page-load', initOrgCharts);
+  document.addEventListener('astro:before-swap', function () {
+    document.querySelectorAll('[data-orgchart]').forEach(function (el) {
+      if (el._oc) {
+        try { var svg = el.querySelector(':scope > svg'); if (svg) svg.remove(); } catch (_) {}
+        el._oc = null;
+        el._ocData = null;
+      }
+    });
+    searchMatches = [];
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initOrgCharts);
+  } else {
+    initOrgCharts();
+  }
+})();
+</script>

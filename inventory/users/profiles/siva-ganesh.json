@@ -1,0 +1,70 @@
+{
+  "name": "Siva Ganesh",
+  "id": "siva-ganesh",
+  "title": "Software Engineer",
+  "team": "Restaurant Backend",
+  "manager": "Kyle Budd",
+  "division": "CDO / Restaurant Technology",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "siva.golla"
+  ],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 10,
+    "level": "low"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 12,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "siva.golla",
+      "prs_authored": 4,
+      "prs_reviewed": 0,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 2,
+      "spaces": [
+        "ES",
+        "LP"
+      ]
+    }
+  }
+}

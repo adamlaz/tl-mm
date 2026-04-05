@@ -8,6 +8,6 @@ const { title, description } = Astro.props;
 ---
 
 <div class="mb-6">
-  <h1 class="text-xl font-bold text-[var(--text)]">{title}</h1>
+  <h1 class="text-xl font-bold text-[var(--text)] font-[var(--font-display)]">{title}</h1>
   {description && <p class="mt-1 text-sm text-[var(--text-secondary)] max-w-2xl">{description}</p>}
 </div>

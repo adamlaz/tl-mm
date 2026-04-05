@@ -1,0 +1,32 @@
+{
+  "name": "Melissa Signoracci (Unlicensed)",
+  "id": "melissa-signoracci-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b5b69d2f105142da5e39063",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

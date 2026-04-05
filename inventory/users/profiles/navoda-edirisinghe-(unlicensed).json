@@ -1,0 +1,35 @@
+{
+  "name": "Navoda Edirisinghe (Unlicensed)",
+  "id": "navoda-edirisinghe-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "63b512e9f3e7004f77fe7937",
+      "email": "",
+      "pages_total": 126,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "DB",
+        "ES",
+        "LP"
+      ]
+    }
+  }
+}

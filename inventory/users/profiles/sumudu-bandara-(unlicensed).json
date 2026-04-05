@@ -1,0 +1,35 @@
+{
+  "name": "Sumudu Bandara (Unlicensed)",
+  "id": "sumudu-bandara-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b123a0d914fd556f9ac21fe",
+      "email": "",
+      "pages_total": 25,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "CR",
+        "DB",
+        "ES"
+      ]
+    }
+  }
+}

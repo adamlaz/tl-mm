@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import { getCollection } from 'astro:content';
+import { num } from '../../lib/parse';
+import { personUrl, personSlug } from '../../lib/links';
+
+let peopleDir: any[] = [];
+try { peopleDir = await getCollection('peopleDirectory') as any; } catch {}
+
+const people = peopleDir.filter((u: any) => u.data.status !== 'bot');
+const activePeople = people.filter((u: any) =>
+  u.data.activity_level === 'high' || u.data.activity_level === 'medium',
+);
+const inOrgChart = people.filter((u: any) =>
+  (u.data.systems || '').includes('org_chart'),
+);
+
+const directoryRows = [...people]
+  .sort((a: any, b: any) => num(b.data.total_activity_90d) - num(a.data.total_activity_90d))
+  .map((u: any) => {
+    const slug = u.data.id || personSlug(u.data.display_name);
+    const managerSlug = u.data.manager ? personSlug(u.data.manager) : '';
+    return {
+      name: u.data.display_name,
+      _href_name: personUrl(slug),
+      title: u.data.title || '',
+      team: u.data.team || '',
+      manager: u.data.manager || '',
+      _href_manager: managerSlug ? personUrl(managerSlug) : '',
+      division: u.data.division || '',
+      geo: u.data.geography || '',
+      status: u.data.status || '',
+      activity: u.data.activity_level || '',
+      total: num(u.data.total_activity_90d),
+      prs: num(u.data.prs_authored),
+      jira_resolved: num(u.data.jira_resolved_90d),
+      prs_reviewed: num(u.data.prs_reviewed),
+      jira_open: num(u.data.jira_open_assigned),
+      confluence: num(u.data.confluence_pages_90d),
+      systems_count: num(u.data.systems_active_90d),
+      _row_class: u.data.activity_level === 'inactive' ? 'muted' : '',
+    };
+  });
+---
+
+<BaseLayout title="People Directory — People & Org">
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)]">Directory</span>
+  </div>
+
+  <SectionHeader
+    title="People Directory"
+    description="491 people identified across Bitbucket, Jira, Confluence, AWS, and the org chart. Click a name to view their full profile."
+  />
+
+  <dl class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+    <MetricCard label="Total People" value={people.length.toString()} subtitle="Excludes bots and service accounts" />
+    <MetricCard label="Active (90d)" value={activePeople.length.toString()} subtitle="High or medium activity" />
+    <MetricCard label="In Org Chart" value={inOrgChart.length.toString()} subtitle="From CDO and executive org charts" />
+  </dl>
+
+  <TabulatorGrid
+    columns={[
+      { key: 'name', label: 'Name', sortable: true, type: 'avatar', subtitleKey: 'title', minWidth: '200px' },
+      { key: 'team', label: 'Team', sortable: true, filterable: true, type: 'badge' },
+      { key: 'manager', label: 'Manager', sortable: true },
+      { key: 'division', label: 'Division', sortable: true, filterable: true, type: 'badge' },
+      { key: 'geo', label: 'Geo', sortable: true, filterable: true, type: 'badge' },
+      { key: 'status', label: 'Status', sortable: true, filterable: true, type: 'badge', badgeMap: { active: 'green', inactive: 'red', unlicensed: 'amber' } },
+      { key: 'activity', label: 'Activity', sortable: true, filterable: true, type: 'badge', badgeMap: { high: 'green', medium: 'amber', low: 'red', none: 'muted' } },
+      { key: 'total', label: 'Total (90d)', align: 'right', sortable: true, type: 'number' },
+      { key: 'prs', label: 'PRs', align: 'right', sortable: true, type: 'number' },
+      { key: 'prs_reviewed', label: 'Reviews', align: 'right', sortable: true, type: 'number' },
+      { key: 'jira_resolved', label: 'Jira Resolved', align: 'right', sortable: true, type: 'number' },
+      { key: 'jira_open', label: 'Open Issues', align: 'right', sortable: true, type: 'number' },
+      { key: 'confluence', label: 'Docs (90d)', align: 'right', sortable: true, type: 'number' },
+    ]}
+    rows={directoryRows}
+    searchable
+    pageSize={30}
+    exportable
+    persistId="people-directory"
+    rowFormatter="_row_class"
+  />
+
+  <div class="mb-8" />
+</BaseLayout>

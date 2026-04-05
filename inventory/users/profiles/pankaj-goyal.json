@@ -1,0 +1,34 @@
+{
+  "name": "Pankaj Goyal",
+  "id": "pankaj-goyal",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "712020:3110e0a3-88f3-42a4-9546-0b06db1421af",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Pankaj Goyal",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Hashan Rathnayake (Unlicensed)",
+  "id": "hashan-rathnayake-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Lasitha.Ratnayake (Unlicensed)",
+    "Salinda Rathnayake (Unlicensed)",
+    "Dulan Ratnayake (Unlicensed)",
+    "Sehan Rathnayake (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b1228bee249415c02f683f5",
+      "email": "",
+      "pages_total": 26,
+      "pages_90d": 0,
+      "spaces": [
+        "DB"
+      ]
+    }
+  }
+}

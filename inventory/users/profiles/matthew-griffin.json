@@ -1,0 +1,73 @@
+{
+  "name": "Matthew Griffin",
+  "id": "matthew-griffin",
+  "title": "Senior Cloud Engineer",
+  "team": "Payments R&D",
+  "manager": "Kevin Reyes",
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 517,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "6155b3fb198b4f00682edde9",
+      "email": "",
+      "projects": [
+        "CLD",
+        "CLOUD",
+        "DR",
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 9,
+      "issues_resolved_90d": 41,
+      "open_assigned": 55,
+      "bugs_created_90d": 0,
+      "timeZone": "America/Los_Angeles",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "6155b3fb198b4f00682edde9",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "nickname": "Matthew Griffin",
+      "prs_authored": 11,
+      "prs_reviewed": 453,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "6155b3fb198b4f00682edde9",
+      "email": "",
+      "pages_total": 4,
+      "pages_90d": 3,
+      "spaces": [
+        "CCE",
+        "PT"
+      ]
+    }
+  }
+}

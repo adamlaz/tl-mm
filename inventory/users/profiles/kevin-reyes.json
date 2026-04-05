@@ -1,0 +1,69 @@
+{
+  "name": "Kevin Reyes",
+  "id": "kevin-reyes",
+  "title": "Director Software Engineering",
+  "team": "Payments R&D",
+  "manager": "Akshay Bhasin",
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 24,
+    "level": "medium"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "6231defd1dcf800070e95c38",
+      "email": "",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 11,
+      "open_assigned": 32,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "6231defd1dcf800070e95c38",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "Kevin Reyes",
+      "prs_authored": 0,
+      "prs_reviewed": 6,
+      "review_cluster": "madpayments"
+    },
+    "confluence": {
+      "account_id": "6231defd1dcf800070e95c38",
+      "email": "",
+      "pages_total": 13,
+      "pages_90d": 4,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

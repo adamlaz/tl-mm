@@ -1,0 +1,71 @@
+{
+  "name": "Anderson Lavor",
+  "id": "anderson-lavor",
+  "title": "Lead Software Engineer",
+  "team": "Restaurant Backend",
+  "manager": "Kyle Budd",
+  "division": "CDO / Restaurant Technology",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 41,
+    "level": "medium"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "6387819a489de2f7f46657a1",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 10,
+      "open_assigned": 32,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "6387819a489de2f7f46657a1",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "nickname": "Anderson Lavor",
+      "prs_authored": 28,
+      "prs_reviewed": 1,
+      "review_cluster": "syscolabs"
+    },
+    "confluence": {
+      "account_id": "6387819a489de2f7f46657a1",
+      "email": "",
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "ES",
+        "TT"
+      ]
+    }
+  }
+}

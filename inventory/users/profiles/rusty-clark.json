@@ -1,0 +1,51 @@
+{
+  "name": "Rusty Clark",
+  "id": "rusty-clark",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 51,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:3e020758-d5ba-4b1c-bd72-7287fdc05fe3",
+      "email": "",
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 7,
+      "issues_resolved_90d": 2,
+      "open_assigned": 13,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:3e020758-d5ba-4b1c-bd72-7287fdc05fe3",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Rusty Clark",
+      "prs_authored": 13,
+      "prs_reviewed": 29,
+      "review_cluster": "madmobile"
+    }
+  }
+}

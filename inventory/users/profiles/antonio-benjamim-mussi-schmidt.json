@@ -1,0 +1,34 @@
+{
+  "name": "Antonio Benjamim Mussi Schmidt",
+  "id": "antonio-benjamim-mussi-schmidt",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": null,
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 30,
+    "level": "medium"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "712020:df2ab188-6718-41e7-a9fa-d904e2b472f2",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Antonio Benjamim Mussi Schmidt",
+      "prs_authored": 19,
+      "prs_reviewed": 11,
+      "review_cluster": "madmobile"
+    }
+  }
+}

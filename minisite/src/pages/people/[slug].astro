@@ -1,0 +1,313 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import { num, fmt } from '../../lib/parse';
+import { confluenceSpaceUrl, jiraProjectUrl, bitbucketRepoUrl, personUrl } from '../../lib/links';
+import { readFileSync, readdirSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+export function getStaticPaths() {
+  const dir = resolve('..', 'inventory', 'users', 'profiles');
+  let files: string[] = [];
+  try { files = readdirSync(dir).filter((f: string) => f.endsWith('.json')); } catch {}
+
+  return files.map((f: string) => {
+    const slug = f.replace('.json', '');
+    return { params: { slug }, props: { slug } };
+  });
+}
+
+const { slug } = Astro.props;
+const profilePath = resolve('..', 'inventory', 'users', 'profiles', `${slug}.json`);
+
+let profile: any = {};
+try { profile = JSON.parse(readFileSync(profilePath, 'utf-8')); } catch {}
+
+let riskData: any = {};
+try { riskData = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'people_risk.json'), 'utf-8')); } catch {}
+
+let networkData: any = {};
+try { networkData = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'network_metrics.json'), 'utf-8')); } catch {}
+
+const name = profile.name ?? slug;
+const title = profile.title ?? '';
+const team = profile.team ?? '';
+const manager = profile.manager ?? '';
+const division = profile.division ?? '';
+const geography = profile.geography ?? '';
+const status = profile.status ?? 'unknown';
+const activity = profile.activity ?? {};
+const systems = profile.systems ?? [];
+const sources = profile.sources ?? {};
+
+const jira = sources.jira ?? {};
+const bb = sources.bitbucket ?? {};
+const conf = sources.confluence ?? {};
+const aws = sources.aws_iam ?? {};
+
+const riskKey = name.toLowerCase();
+const personRisk = riskData.people?.[riskKey] ?? null;
+
+const pagerank = networkData.all_pagerank?.[riskKey] ?? null;
+const betweenness = networkData.all_betweenness?.[riskKey] ?? null;
+const community = (networkData.communities ?? []).find(
+  (c: any) => (c.members ?? []).some((m: any) => m.id === riskKey || m.name?.toLowerCase() === riskKey)
+);
+
+const statusColors: Record<string, string> = {
+  active: 'text-emerald-600 bg-emerald-50 ring-emerald-600/20',
+  quiet: 'text-amber-600 bg-amber-50 ring-amber-600/20',
+  inactive: 'text-gray-500 bg-gray-50 ring-gray-500/20',
+  bot: 'text-blue-500 bg-blue-50 ring-blue-500/20',
+  departed: 'text-red-500 bg-red-50 ring-red-500/20',
+};
+const statusClass = statusColors[status] ?? statusColors['inactive'];
+
+const activityColors: Record<string, string> = {
+  high: 'text-emerald-600 bg-emerald-50 ring-emerald-600/20',
+  medium: 'text-amber-600 bg-amber-50 ring-amber-600/20',
+  low: 'text-orange-500 bg-orange-50 ring-orange-500/20',
+  inactive: 'text-gray-500 bg-gray-50 ring-gray-500/20',
+};
+const activityClass = activityColors[activity.level] ?? activityColors['inactive'];
+
+const jiraProjectRows = (jira.projects ?? []).map((p: string) => ({
+  project: p,
+  _href_project: jiraProjectUrl(p),
+}));
+
+const confSpaceRows = (conf.spaces ?? []).map((s: string) => ({
+  space: s,
+  _href_space: confluenceSpaceUrl(s),
+}));
+
+const bbWorkspaceRows = (bb.workspaces ?? []).map((ws: string) => ({
+  workspace: ws,
+  _href_workspace: `https://bitbucket.org/${ws}`,
+}));
+---
+
+<BaseLayout title={`${name} — People`}>
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
+    <span>/</span>
+    <a href="/people/directory" class="hover:text-[var(--accent)] transition-colors">Directory</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)]">{name}</span>
+  </div>
+
+  <div class="mb-8">
+    <div class="flex flex-wrap items-start gap-4 mb-4">
+      <div class="flex-1 min-w-0">
+        <h1 class="text-2xl font-semibold text-[var(--text)]">{name}</h1>
+        {title && <p class="text-sm text-[var(--text-secondary)] mt-1">{title}</p>}
+        <div class="flex flex-wrap items-center gap-3 mt-3 text-xs text-[var(--text-muted)]">
+          {team && <span>Team: <strong class="text-[var(--text-secondary)]">{team}</strong></span>}
+          {division && <span>Division: <strong class="text-[var(--text-secondary)]">{division}</strong></span>}
+          {geography && <span>Geo: <strong class="text-[var(--text-secondary)]">{geography}</strong></span>}
+          {manager && (
+            <span>Manager: <a href={personUrl(manager.toLowerCase().replace(/\s+/g, '-').replace(/\./g, '-'))} class="text-[var(--accent)] hover:underline">{manager}</a></span>
+          )}
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <span class:list={['inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-medium ring-1 ring-inset', statusClass]}>
+          {status}
+        </span>
+        <span class:list={['inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-medium ring-1 ring-inset', activityClass]}>
+          {activity.level ?? 'unknown'} activity
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activity Overview -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Activity Overview</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Total Activity (90d)" value={fmt(num(String(activity.total_activity_90d ?? 0)))} subtitle={`${activity.systems_active_90d ?? 0} systems active`} />
+    <MetricCard label="Systems" value={systems.length.toString()} subtitle={systems.join(', ')} />
+    {personRisk && <MetricCard label="Risk Score" value={personRisk.score?.toFixed(2) ?? '—'} subtitle="key person risk" />}
+    {pagerank !== null && <MetricCard label="PageRank" value={pagerank.toFixed(4)} subtitle="network influence" />}
+  </dl>
+
+  <!-- System Details -->
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    {systems.includes('jira') && (
+      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          Jira
+        </h3>
+        <dl class="grid grid-cols-2 gap-3 mb-4">
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Created (90d)</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{jira.issues_created_90d ?? 0}</dd>
+          </div>
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Resolved (90d)</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{jira.issues_resolved_90d ?? 0}</dd>
+          </div>
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Open Assigned</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{jira.open_assigned ?? 0}</dd>
+          </div>
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Bugs (90d)</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{jira.bugs_created_90d ?? 0}</dd>
+          </div>
+        </dl>
+        {jiraProjectRows.length > 0 && (
+          <h4 class="text-xs font-medium text-[var(--text-muted)] mb-2">Projects</h4>
+          <div class="flex flex-wrap gap-1.5">
+            {(jira.projects ?? []).map((p: string) => (
+              <a href={jiraProjectUrl(p)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-0.5 text-xs font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">
+                {p}<span class="ml-0.5 text-[10px] opacity-60">↗</span>
+              </a>
+            ))}
+          </div>
+        )}
+        {jira.roles?.length > 0 && (
+          <p class="text-xs text-[var(--text-muted)] mt-3">Roles: {jira.roles.join(', ')}</p>
+        )}
+      </div>
+    )}
+
+    {systems.includes('bitbucket') && (
+      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+          Bitbucket
+        </h3>
+        <dl class="grid grid-cols-2 gap-3 mb-4">
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">PRs Authored</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{bb.prs_authored ?? 0}</dd>
+          </div>
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">PRs Reviewed</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{bb.prs_reviewed ?? 0}</dd>
+          </div>
+        </dl>
+        {(bb.workspaces ?? []).length > 0 && (
+          <h4 class="text-xs font-medium text-[var(--text-muted)] mb-2">Workspaces</h4>
+          <div class="flex flex-wrap gap-1.5">
+            {(bb.workspaces ?? []).map((ws: string) => (
+              <a href={`https://bitbucket.org/${ws}`} target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-0.5 text-xs font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">
+                {ws}<span class="ml-0.5 text-[10px] opacity-60">↗</span>
+              </a>
+            ))}
+          </div>
+        )}
+        {bb.review_cluster && (
+          <p class="text-xs text-[var(--text-muted)] mt-3">Review cluster: {bb.review_cluster}</p>
+        )}
+      </div>
+    )}
+
+    {systems.includes('confluence') && (
+      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+          Confluence
+        </h3>
+        <dl class="grid grid-cols-2 gap-3 mb-4">
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Pages Total</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{conf.pages_total ?? 0}</dd>
+          </div>
+          <div>
+            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Pages (90d)</dt>
+            <dd class="text-lg font-semibold text-[var(--text)]">{conf.pages_90d ?? 0}</dd>
+          </div>
+        </dl>
+        {(conf.spaces ?? []).length > 0 && (
+          <h4 class="text-xs font-medium text-[var(--text-muted)] mb-2">Spaces</h4>
+          <div class="flex flex-wrap gap-1.5">
+            {(conf.spaces ?? []).map((s: string) => (
+              <a href={confluenceSpaceUrl(s)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-0.5 text-xs font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">
+                {s}<span class="ml-0.5 text-[10px] opacity-60">↗</span>
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    )}
+
+    {systems.includes('aws_iam') && (
+      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+          AWS IAM
+        </h3>
+        <dl class="grid grid-cols-2 gap-3">
+          {aws.aws_profile && (
+            <div>
+              <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Profile</dt>
+              <dd class="text-sm font-mono text-[var(--text)]">{aws.aws_profile}</dd>
+            </div>
+          )}
+          {aws.is_service_account !== undefined && (
+            <div>
+              <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Type</dt>
+              <dd class="text-sm text-[var(--text)]">{aws.is_service_account ? 'Service Account' : 'Human User'}</dd>
+            </div>
+          )}
+        </dl>
+      </div>
+    )}
+  </div>
+
+  <!-- Risk & Network -->
+  {(personRisk || betweenness !== null) && (
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3 mt-8">Risk & Network Position</h2>
+    <div class="grid lg:grid-cols-2 gap-6 mb-8">
+      {personRisk && (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4">Key Person Risk</h3>
+          <p class="text-2xl font-semibold text-[var(--text)] mb-4">{personRisk.score?.toFixed(2)}</p>
+          <dl class="space-y-2">
+            {Object.entries(personRisk.breakdown ?? {}).map(([k, v]: [string, any]) => (
+              <div class="flex justify-between text-xs">
+                <dt class="text-[var(--text-muted)]">{k.replace(/_/g, ' ')}</dt>
+                <dd class="font-mono text-[var(--text-secondary)]">{typeof v === 'number' ? v.toFixed(2) : v}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      )}
+      {(betweenness !== null || community) && (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4">Network Position</h3>
+          <dl class="space-y-2">
+            {pagerank !== null && (
+              <div class="flex justify-between text-xs">
+                <dt class="text-[var(--text-muted)]">PageRank</dt>
+                <dd class="font-mono text-[var(--text-secondary)]">{pagerank.toFixed(4)}</dd>
+              </div>
+            )}
+            {betweenness !== null && (
+              <div class="flex justify-between text-xs">
+                <dt class="text-[var(--text-muted)]">Betweenness Centrality</dt>
+                <dd class="font-mono text-[var(--text-secondary)]">{betweenness.toFixed(4)}</dd>
+              </div>
+            )}
+            {community && (
+              <div class="flex justify-between text-xs">
+                <dt class="text-[var(--text-muted)]">Community</dt>
+                <dd class="text-[var(--text-secondary)]">{community.dominant_team} (#{community.community_id}, {community.size} members)</dd>
+              </div>
+            )}
+          </dl>
+        </div>
+      )}
+    </div>
+  )}
+
+  <div class="flex flex-wrap gap-3 mt-8">
+    <a href="/people/directory" class="text-sm text-[var(--accent)] hover:underline">&larr; Back to Directory</a>
+    <a href="/people/risk" class="text-sm text-[var(--accent)] hover:underline">Key Person Risk</a>
+    <a href="/people/network" class="text-sm text-[var(--accent)] hover:underline">Network Analysis</a>
+    <a href="/people/teams" class="text-sm text-[var(--accent)] hover:underline">Team Overview</a>
+  </div>
+</BaseLayout>

@@ -1,0 +1,640 @@
+/*
+ * Tabulator TL Theme — Translation Layer deliverable standard
+ * Built on TL design tokens from global.css.
+ * Maps to client-deliverable-style.md DataTable spec + data-visualization.md palette.
+ */
+
+/* ── Grid container ── */
+.tabulator {
+  font-family: 'Noto Sans', 'Noto Sans Symbols', 'Noto Sans Symbols 2', 'Noto Emoji', system-ui, sans-serif;
+  font-size: 13px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text-secondary);
+}
+
+/* ── Header ── */
+.tabulator .tabulator-header {
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+  background-color: var(--surface);
+  border-right: none;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+  padding: 10px 16px;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-title {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Sort arrows */
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable .tabulator-col-title {
+  padding-right: 20px;
+}
+
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable .tabulator-arrow {
+  border-bottom-color: var(--text-muted);
+  border-top-color: var(--text-muted);
+}
+
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable[aria-sort="ascending"] .tabulator-arrow {
+  border-bottom-color: var(--accent);
+}
+
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable[aria-sort="descending"] .tabulator-arrow {
+  border-top-color: var(--accent);
+}
+
+/* Header filter inputs */
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter input,
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter select {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 11px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter input:focus,
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+  border-color: transparent;
+  background: var(--accent-subtle);
+}
+
+/* Frozen column divider */
+.tabulator .tabulator-header .tabulator-frozen.tabulator-frozen-right {
+  border-left: 2px solid var(--accent);
+}
+
+.tabulator .tabulator-header .tabulator-frozen.tabulator-frozen-left {
+  border-right: 2px solid var(--accent);
+}
+
+/* ── Table body / rows ── */
+.tabulator .tabulator-tableholder {
+  background: var(--surface);
+  overflow-x: auto;
+}
+
+.tabulator .tabulator-tableholder .tabulator-table {
+  background-color: var(--surface);
+  color: var(--text-secondary);
+}
+
+.tabulator .tabulator-row {
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border-subtle);
+  min-height: 38px;
+}
+
+.tabulator .tabulator-row:nth-child(even) {
+  background-color: var(--surface);
+}
+
+.tabulator .tabulator-row:hover {
+  background-color: var(--surface-hover) !important;
+}
+
+.tabulator .tabulator-row .tabulator-cell {
+  font-family: 'Noto Sans', 'Noto Sans Symbols', 'Noto Sans Symbols 2', 'Noto Emoji', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-right: none;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Frozen column borders in body */
+.tabulator .tabulator-row .tabulator-cell.tabulator-frozen.tabulator-frozen-left {
+  border-right: 2px solid var(--accent);
+  border-right-color: color-mix(in oklch, var(--accent) 35%, transparent);
+}
+
+.tabulator .tabulator-row .tabulator-cell.tabulator-frozen.tabulator-frozen-right {
+  border-left: 2px solid var(--accent);
+  border-left-color: color-mix(in oklch, var(--accent) 35%, transparent);
+}
+
+/* Number cells */
+.tabulator .tabulator-row .tabulator-cell.tl-num-cell {
+  font-family: 'Noto Sans Mono', ui-monospace, monospace;
+  font-size: 13px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Row selection ── */
+.tabulator .tabulator-row.tabulator-selected {
+  background-color: var(--accent-subtle) !important;
+}
+
+.tabulator .tabulator-row.tabulator-selected:hover {
+  background-color: var(--accent-subtle) !important;
+}
+
+/* ── Group headers ── */
+.tabulator .tabulator-row.tabulator-group {
+  background: var(--surface-alt);
+  border-bottom: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  min-height: 34px;
+}
+
+.tabulator .tabulator-row.tabulator-group .tabulator-group-toggle {
+  color: var(--accent);
+}
+
+.tabulator .tabulator-row.tabulator-group span {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Group calcs row */
+.tabulator .tabulator-row.tabulator-calcs {
+  background: var(--surface-alt);
+  border-top: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.tabulator .tabulator-row.tabulator-calcs .tabulator-cell {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ── Tree data ── */
+.tabulator .tabulator-row .tabulator-data-tree-control {
+  color: var(--text-muted);
+}
+
+.tabulator .tabulator-row .tabulator-data-tree-control:hover {
+  color: var(--accent);
+}
+
+.tabulator .tabulator-row .tabulator-data-tree-branch {
+  border-left-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
+}
+
+/* ── Footer / pagination ── */
+.tabulator .tabulator-footer {
+  background-color: var(--surface);
+  border-top: 1px solid var(--border-subtle);
+  padding: 8px 16px;
+  color: var(--text-muted);
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 12px;
+}
+
+.tabulator .tabulator-footer .tabulator-page-counter {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.tabulator .tabulator-footer .tabulator-paginator {
+  color: var(--text-muted);
+}
+
+.tabulator .tabulator-footer .tabulator-paginator label {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.tabulator .tabulator-footer .tabulator-page {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin: 0 2px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.tabulator .tabulator-footer .tabulator-page:hover {
+  background: var(--accent-subtle);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.tabulator .tabulator-footer .tabulator-page.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.tabulator .tabulator-footer .tabulator-page:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.tabulator .tabulator-footer .tabulator-page-size {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0 4px;
+}
+
+/* ── Responsive collapse toggle ── */
+.tabulator .tabulator-responsive-collapse {
+  border-top: 1px solid var(--border-subtle);
+  padding: 8px 16px;
+}
+
+.tabulator .tabulator-responsive-collapse table {
+  font-size: 12px;
+}
+
+.tabulator .tabulator-responsive-collapse table tr td:first-child {
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  padding-right: 12px;
+}
+
+.tabulator .tabulator-responsive-collapse-toggle {
+  color: var(--accent);
+}
+
+/* ── Placeholder (no data) ── */
+.tabulator .tabulator-placeholder {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 24px;
+}
+
+/* ── Scrollbar ── */
+.tabulator .tabulator-tableholder::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.tabulator .tabulator-tableholder::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tabulator .tabulator-tableholder::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.tabulator .tabulator-tableholder::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ══════════════════════════════════════════════════════════
+   TL Custom Cell Formatters — shared classes
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Categorical color classes (OKLCH — higher chroma for visual distinction) ── */
+.tl-cat-0 { --cat-fg: oklch(45% 0.14 265); --cat-bg: oklch(95% 0.025 265); }
+.tl-cat-1 { --cat-fg: oklch(48% 0.12 180); --cat-bg: oklch(95% 0.025 180); }
+.tl-cat-2 { --cat-fg: oklch(52% 0.13 85);  --cat-bg: oklch(95% 0.025 85); }
+.tl-cat-3 { --cat-fg: oklch(50% 0.16 15);  --cat-bg: oklch(95% 0.025 15); }
+.tl-cat-4 { --cat-fg: oklch(48% 0.10 240); --cat-bg: oklch(95% 0.020 240); }
+.tl-cat-5 { --cat-fg: oklch(48% 0.13 145); --cat-bg: oklch(95% 0.025 145); }
+.tl-cat-6 { --cat-fg: oklch(46% 0.14 310); --cat-bg: oklch(95% 0.025 310); }
+.tl-cat-7 { --cat-fg: oklch(52% 0.12 55);  --cat-bg: oklch(95% 0.025 55); }
+
+[data-theme="dark"] .tl-cat-0 { --cat-fg: oklch(75% 0.14 265); --cat-bg: oklch(22% 0.030 265); }
+[data-theme="dark"] .tl-cat-1 { --cat-fg: oklch(75% 0.12 180); --cat-bg: oklch(22% 0.030 180); }
+[data-theme="dark"] .tl-cat-2 { --cat-fg: oklch(78% 0.13 85);  --cat-bg: oklch(22% 0.030 85); }
+[data-theme="dark"] .tl-cat-3 { --cat-fg: oklch(73% 0.14 15);  --cat-bg: oklch(22% 0.030 15); }
+[data-theme="dark"] .tl-cat-4 { --cat-fg: oklch(75% 0.10 240); --cat-bg: oklch(22% 0.025 240); }
+[data-theme="dark"] .tl-cat-5 { --cat-fg: oklch(75% 0.13 145); --cat-bg: oklch(22% 0.030 145); }
+[data-theme="dark"] .tl-cat-6 { --cat-fg: oklch(74% 0.14 310); --cat-bg: oklch(22% 0.030 310); }
+[data-theme="dark"] .tl-cat-7 { --cat-fg: oklch(78% 0.12 55);  --cat-bg: oklch(22% 0.030 55); }
+
+/* Status classes */
+.tl-st-green  { --cat-fg: var(--status-green);  --cat-bg: var(--status-green-bg); }
+.tl-st-amber  { --cat-fg: var(--status-amber);  --cat-bg: var(--status-amber-bg); }
+.tl-st-red    { --cat-fg: var(--status-red);     --cat-bg: var(--status-red-bg); }
+.tl-st-muted  { --cat-fg: var(--text-muted);     --cat-bg: var(--surface-alt); }
+.tl-st-accent { --cat-fg: var(--accent);          --cat-bg: var(--accent-subtle); }
+
+/* ── Badge (pill) ── */
+.tl-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-family: 'Noto Sans', 'Noto Sans Symbols', 'Noto Emoji', system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  line-height: 1.6;
+  color: var(--cat-fg);
+  background: var(--cat-bg);
+}
+
+/* ── Bar (horizontal fill indicator) ── */
+.tl-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 110px;
+}
+
+.tl-bar-label {
+  font-family: 'Noto Sans Mono', ui-monospace, monospace;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  min-width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.tl-bar-track {
+  flex: 1;
+  max-width: 72px;
+  height: 6px;
+  background: var(--border-subtle);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.tl-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.tl-bar--green { background: oklch(62% 0.19 145); }
+.tl-bar--amber { background: oklch(72% 0.17 75); }
+.tl-bar--red   { background: oklch(58% 0.22 25); }
+
+/* ── Avatar (initials circle + name + subtitle) ── */
+.tl-avatar-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: normal;
+  padding: 2px 0;
+}
+
+.tl-avatar-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  flex-shrink: 0;
+  color: var(--cat-fg);
+  background: var(--cat-bg);
+}
+
+.tl-avatar-name {
+  font-weight: 500;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.tl-avatar-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.3;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Boolean (check / dash) ── */
+.tl-bool {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Noto Sans', 'Noto Sans Symbols', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tl-bool-icon {
+  font-family: 'Noto Sans Symbols', 'Noto Sans', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.tl-bool--yes {
+  color: var(--status-green);
+  background: var(--status-green-bg);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.tl-bool--no {
+  color: var(--text-muted);
+  background: var(--surface-alt);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* ── Currency ── */
+.tl-currency {
+  font-family: 'Noto Sans Mono', ui-monospace, monospace;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+}
+
+/* ── List pills ── */
+.tl-list-pill {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 1px 2px;
+  white-space: nowrap;
+  color: var(--cat-fg);
+  background: var(--cat-bg);
+}
+
+/* ── Link cells ── */
+.tl-cell-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.tl-cell-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.tl-cell-link .tl-ext-arrow {
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+/* ── Heat cell (intensity background) ── */
+.tl-heat-cell {
+  font-family: 'Noto Sans Mono', ui-monospace, monospace;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  padding: 4px 12px;
+  border-radius: 4px;
+  text-align: right;
+}
+
+/* ── Sparkline (mini multi-bar) ── */
+.tl-spark {
+  display: inline-flex;
+  align-items: end;
+  gap: 1px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.tl-spark-seg {
+  width: 6px;
+  border-radius: 1px 1px 0 0;
+  min-height: 2px;
+}
+
+/* ── Conditional row classes ── */
+.tl-row-danger {
+  background-color: var(--status-red-bg) !important;
+}
+
+.tl-row-warning {
+  background-color: var(--status-amber-bg) !important;
+}
+
+.tl-row-muted {
+  opacity: 0.55;
+}
+
+/* ── Export toolbar ── */
+.tl-export-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface);
+  border-radius: 12px 12px 0 0;
+}
+
+.tl-export-btn {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tl-export-btn:hover {
+  background: var(--accent-subtle);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.tl-export-btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* ── Search bar ── */
+.tl-search-wrap {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface);
+}
+
+.tl-search-wrap:first-child {
+  border-radius: 12px 12px 0 0;
+}
+
+.tl-search-input {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 13px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.tl-search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+  border-color: transparent;
+  background: var(--accent-subtle);
+}
+
+.tl-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ── Grid wrapper ── */
+.tl-grid-wrapper {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: visible;
+}
+
+.tl-grid-wrapper .tabulator {
+  border: none;
+  border-radius: 0;
+}
+
+/* ── Focus ── */
+.tabulator .tabulator-row .tabulator-cell:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: -2px;
+}

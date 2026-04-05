@@ -2,24 +2,49 @@
 
 **For Adam's eyes only.** Working list of what's left before the onsite.
 
+**Last updated:** April 4, evening — after Chathura CDO org chart, Don scope email, Ana logistics email.
+
 ---
+
+## Immediate Actions (This Weekend / Monday Morning)
+
+- [ ] **Reply to Ana** — confirm: Grafana Monday works, org chart received (thank Chathura), pre-reads Monday works, yes TV/screen in conference room is helpful for showing charts/data during interviews.
+- [ ] **Follow up with Chathura re: Survey 5** — his intro email only references 4 surveys (Delivery Performance, Team Culture, Developer Experience, Engineering Practices). He dropped AI Adoption & Tooling. Either: (a) ask him to add it as a 5th link, or (b) merge the most critical AI questions into Survey 4. The AI survey feeds the board deliverable and vendor rationalization — it matters.
+- [ ] **Finish building all surveys in Microsoft Forms** — DevEx draft is live, need DORA, Westrum, Pragmatic Engineer, and AI Adoption & Tooling (pending Chathura resolution). Target: all links ready before Monday morning so Chathura can send.
+- [ ] **Request Enterprise Solutions org detail** — Chathura's PDF had Zubair's page mostly blank ("Enterprise Solution Org." with no names). This is the largest org (58 people) and we have zero personnel data. Ask Chathura or Zubair directly.
 
 ## Data Gaps to Close (Before April 11)
 
 - [ ] **Jira incident query**: Search for issue types "Incident", "Code Red", "Service Interruption" in 2024–2026 to fill the RCA timeline gap. The Confluence post-mortem trail dies after 2023 — Jira may have the missing recent data.
 - [ ] **Root Cause Category field #2**: We queried `customfield_10382` ("Probable/Actual Root Cause Category") which was 0% populated. There's also `customfield_10590` ("Root Cause Category", type: array) that wasn't queried — could be the active one. Re-run the custom fields script targeting this field.
 - [ ] **CloudTrail access escalation**: Ask Ana/Matias if the audit role can get `cloudtrail:LookupEvents` added, or if there's a CloudTrail S3 bucket we can read directly. Deployment frequency from AWS is the one DORA metric we're completely missing.
-- [ ] **Grafana access**: Still pending. If it comes through before onsite, capture dashboard inventory, alert rules, and data source configuration. This is the primary observability layer.
+- [x] ~~**Grafana access**: Still pending.~~ **CONFIRMED for Monday April 7** (Ana: Matias off for holiday weekend). When access arrives, capture dashboard inventory, alert rules, and data source configuration.
 - [ ] **Branch protection validation**: 0/30 repos showed restrictions. Check whether Bitbucket uses project-level branch permissions instead of repo-level. The API endpoint may differ.
 - [ ] **Pipeline coverage expansion**: Currently only top 30 repos. Consider running for all 789 active repos to get a more representative success rate, or at least the top 100.
 
 ## Docs to Finalize (Before April 7)
 
-- [ ] **Send Ana coordination email** — `ana-request.md` is ready. Includes interview calendar, conference room, pre-read folder.
-- [ ] **Finish all 5 surveys in Microsoft Forms** — DevEx draft is live, need DORA, Westrum, Pragmatic Engineer, AI Adoption & Tooling.
-- [ ] **Update Chathura survey intro message** — needs to reference 5 surveys instead of 4.
-- [ ] **Finalize interview schedule grid** — send to Ana for calendar booking. Post-reorg schedule is defined in the state doc.
-- [ ] **Update `interview-prep-with-data.md`** — add V7 data-backed questions (epic completion, incident timeline, reviewer bottlenecks, health checks, priority inflation, estimation discipline).
+- [x] ~~**Update Chathura survey intro message** — needs to reference 5 surveys instead of 4.~~ **Chathura wrote his own version.** Issue: only 4 surveys. See "Immediate Actions" above.
+- [ ] **Send Ana follow-up reply** — see "Immediate Actions" above. Original `ana-request.md` is now partially answered.
+- [ ] **Finalize interview schedule grid** — send to Ana for calendar booking. Post-reorg schedule is defined in the state doc. Ana will work on this early next week.
+- [ ] **Update `interview-prep-with-data.md`** — add V7 data-backed questions, fix titles/durations, remove Siegel, add Akshay/Guilarte sections, add roadmap-based questions from CDO PDF.
+- [ ] **Capture product roadmap data** — the CDO PDF includes a detailed roadmap for CAKE, CAKE+Payments, Payments Ops, and Engineering. Capture into structured format for interview prep and minisite.
+
+## Scope Update from Don
+
+- [x] **Don confirmed (April 3 email):** "Retail and Neo/AI in scope please with main focus obviously restaurant." This explicitly expands scope beyond CAKE-primary to include Concierge/Retail and Neo/AI. Updated in state doc and engagement plan.
+
+## CDO Org Chart — Key Corrections Applied
+
+- [x] **Holly Bobal** — moved from Kennedy to Randy Brown (Restaurant Backend). Kennedy's team is just Jeremy Diggins.
+- [x] **Akshay Bhasin** — VP Payments Engineering, 20+ people (was listed as 18). Includes Payments R&D (Kevin Reyes), Restaurant QE (7), Biz Ops, PCI counterparts.
+- [x] **Randy Brown** — Restaurant Technology, 10 people (was 8). Frontend (3) + Backend (6) + Randy.
+- [x] **Dulanjan W.** — VP, Product & GTM (was Sr. Dir. Product & Design). 6 named PMs, design director, open marketing role, L&D.
+- [x] **Jorge Maltes** — confirmed still at company. PCI DSS Compliance counterpart under Payments.
+- [x] **PMO domain assignments** — Qaiser (Restaurant), Vanessa (Payments), Ian (AI), Debbie (Ops Eng).
+- [ ] **L&D discrepancy** — Chathura's chart places Adriana Z. and Ayodele L. under Dulanjan/Product. Don's chart placed them under Shatney/HR. Clarify onsite or via email.
+- [ ] **Andy Honnold dual-report** — Don's chart: under Garcia (CFO). Chathura's chart: under Akshay (Payments). Clarify onsite.
+- [ ] **Enterprise Solutions detail gap** — Zubair's page in the PDF was mostly blank. 58 people with no names. Need to request.
 
 ## Don Call (April 3 or ASAP)
 
@@ -28,6 +53,7 @@
 - [ ] Key question: Strainick — promote-to-fit or promote-to-move?
 - [ ] Key question: Board deck transparency level (we now have significantly more damaging quantitative evidence)
 - [ ] Flag the incident timeline gap — Don may know if RCA practice moved or died
+- [ ] **NEW:** L&D reporting discrepancy — who owns Adriana/Ayodele, Dulanjan or Shatney?
 
 ## Analysis to Run (Before Onsite)
 
@@ -36,29 +62,32 @@
 - [ ] **Map top 5 reviewer bottleneck repos to teams** — who owns the repos where John Harre, Holly Culver, etc. are bottlenecks? Match to interview subjects.
 - [ ] **Review the auto-generated C4 diagrams** — validate `mad-mobile-c4-context.mmd` and `mad-mobile-c4-container.mmd` for accuracy. Print for onsite architecture whiteboard sessions.
 - [ ] **Scan extracted Confluence architecture pages** — the 94 pages from V5 + the 321KB diagram catalog from V7. Identify which ones to reference in specific interviews.
+- [ ] **Map CDO product roadmap to team capacity** — 12+ ongoing CAKE projects + Payments integrations vs. Randy's 9 engineers + Akshay's 9 R&D engineers. Quantify the project-to-engineer ratio for onsite conversations.
 
 ## Onsite Prep (April 11–12)
 
-- [ ] **Survey analysis** — surveys close April 11. Analyze results same day. Feed into interview questions.
+- [ ] **Survey analysis** — surveys close April 10 (per Chathura's email). Analyze results same day. Feed into interview questions.
 - [ ] **Final hypothesis scorecard update** — score each hypothesis A–I based on all pre-work evidence.
-- [ ] **Print/prep onsite materials** — C4 diagrams, org chart, key metrics one-pager, interview question sheets.
+- [ ] **Print/prep onsite materials** — C4 diagrams, org chart (now detailed), key metrics one-pager, interview question sheets.
 - [ ] **Pre-onsite briefing with Don** (April 10–11) — final alignment session. Review survey results, confirm interview schedule, identify 5 real cases to trace.
 - [ ] **Travel logistics** — Uber from St. Pete to Tampa HQ, confirm room booking with Ana.
 
-## Key Onsite Questions Sharpened by V7
+## Key Onsite Questions Sharpened by V7 + CDO Org Chart
 
-These are the questions the V7 data makes possible that V6 data couldn't:
+These are the questions the V7 data and CDO org chart make possible:
 
 1. **Chathura**: "Epic completion is 27.7%. REST has 260 open epics. How do you decide what gets worked on and what sits?"
 2. **Chathura**: "89% of your issues are 'High' priority with no other levels in use. How does your team triage?"
 3. **Chathura/Randy**: "I see structured post-mortems through 2023, then they largely stop. Where do incident reviews happen now?"
-4. **Randy Brown**: "Payments had 19 incidents in our RCA data, most in 2021–2022. The peak was 26 incidents in 2022. Has reliability actually improved, or did the documentation practice just stop?"
-5. **Randy/Zubair**: "90% of your ECS services have no health checks. Is that a conscious decision or an oversight?"
-6. **Akshay Bhasin**: "The payments codebase has 87% CI/CD coverage and the cleanest architecture. How does your team's process differ from CAKE and Enterprise?"
-7. **Engineering ICs**: "One reviewer handles 581 code reviews across your org. Who do you wait on for reviews, and how long?"
-8. **Engineering ICs**: "Zero repos have branch protection — no required approvals, no required passing builds. Is that intentional?"
-9. **Engineering ICs**: "Story points are on 9% of stories. Do you estimate? If not, how do you predict delivery?"
-10. **Engineering ICs**: "Your pipeline success rate is 60.7% — nearly 40% of builds fail. What's the most common failure?"
+4. **Randy Brown**: "Your roadmap shows 12+ ongoing CAKE projects. Your team is 9 engineers — 3 frontend, 6 backend. How do you allocate across CAKEpop/Kiosk v2, Fixed POS, KDS v2, Cloud/EMS?"
+5. **Randy/Akshay**: "Restaurant QE reports under Payments, not Restaurant. How does that work day-to-day? Do your QE engineers sit in the same sprints as Randy's developers?"
+6. **Akshay Bhasin**: "The payments codebase has 87% CI/CD coverage and the cleanest architecture. Your org is 20+ people with Payments R&D, Restaurant QE, Biz Ops, and PCI compliance. How does your team's process differ from CAKE and Enterprise?"
+7. **Akshay Bhasin**: "Kevin Reyes runs Payments R&D with 9 engineers including SL staff. How does the US/SL split work for payments development specifically?"
+8. **Randy/Zubair**: "90% of your ECS services have no health checks. Is that a conscious decision or an oversight?"
+9. **Engineering ICs**: "One reviewer handles 581 code reviews across your org. Who do you wait on for reviews, and how long?"
+10. **Engineering ICs**: "Zero repos have branch protection — no required approvals, no required passing builds. Is that intentional?"
+11. **Engineering ICs**: "Your pipeline success rate is 60.7% — nearly 40% of builds fail. What's the most common failure?"
+12. **Dulanjan**: "Your roadmap has 12+ ongoing projects in CAKE alone, plus Payments integrations and Engineering platform work. With 6 PMs across those domains, who owns what?"
 
 ---
 

@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Translation Layer LLC — Brand Identity System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:      #1C1914;
+  --surf:    #252018;
+  --surf2:   #2E2920;
+  --bd:      #3C3226;
+  --bd2:     #4A3E2E;
+  --text:    #E2D8C4;
+  --text2:   #9A8A6A;
+  --text3:   #5A5040;
+  --brass:   #C4973A;
+  --brass2:  #9A7020;
+  --steel:   #7A90AA;
+  --steel2:  #4E708A;
+  --syne:    'Syne', sans-serif;
+  --mono:    'JetBrains Mono', monospace;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-weight: 400;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.container { max-width: 860px; margin: 0 auto; padding: 0 40px; }
+.section { padding: 80px 0; border-top: 0.5px solid var(--bd); }
+.section:first-child { border-top: none; }
+
+/* ── Cover ── */
+.cover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  position: relative;
+}
+.cover-eyebrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 48px;
+}
+.cover-mark { margin-bottom: 40px; }
+.cover-title {
+  font-family: var(--syne);
+  font-weight: 800;
+  font-size: clamp(36px, 6vw, 64px);
+  letter-spacing: -0.01em;
+  line-height: 1.0;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.cover-sub {
+  font-family: var(--syne);
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px);
+  letter-spacing: 0.06em;
+  color: var(--brass);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.cover-meta {
+  font-size: 11px;
+  color: var(--text3);
+  letter-spacing: 0.1em;
+  border-top: 0.5px solid var(--bd);
+  padding-top: 24px;
+  display: flex;
+  gap: 32px;
+}
+.cover-rule {
+  width: 48px;
+  height: 1px;
+  background: var(--brass);
+  margin-bottom: 40px;
+}
+
+/* ── Section headers ── */
+.sec-num {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--brass);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+.sec-title {
+  font-family: var(--syne);
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 32px;
+  line-height: 1.15;
+}
+.sub-title {
+  font-family: var(--syne);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 40px 0 14px;
+}
+.sub-title:first-of-type { margin-top: 0; }
+
+/* ── Body text ── */
+p {
+  font-size: 13.5px;
+  line-height: 1.85;
+  color: var(--text2);
+  margin-bottom: 20px;
+  max-width: 640px;
+}
+p strong, b {
+  color: var(--text);
+  font-weight: 500;
+}
+.lead {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 28px;
+  max-width: 640px;
+}
+
+/* ── Mark showcase grid ── */
+.mark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 24px 0;
+}
+.mark-cell {
+  border-radius: 10px;
+  padding: 28px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.mark-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+  font-family: var(--mono);
+  text-align: center;
+}
+
+/* ── Spec table ── */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.spec-table th {
+  text-align: left;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text3);
+  padding: 8px 12px;
+  border-bottom: 0.5px solid var(--bd);
+  font-weight: 400;
+}
+.spec-table td {
+  padding: 10px 12px;
+  border-bottom: 0.5px solid var(--bd);
+  color: var(--text2);
+  vertical-align: middle;
+}
+.spec-table td:first-child { color: var(--brass); font-weight: 500; }
+.spec-table tr:last-child td { border-bottom: none; }
+code {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--brass);
+  background: var(--surf);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+/* ── Domain rows ── */
+.domain-rows { margin: 24px 0; display: flex; flex-direction: column; gap: 8px; }
+.domain-row {
+  background: var(--surf);
+  border: 0.5px solid var(--bd);
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.domain-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+.domain-name {
+  font-family: var(--syne);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+.domain-spec { display: flex; align-items: center; }
+.domain-detail {
+  font-size: 10px;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+}
+
+/* ── Color swatches ── */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+.color-swatch {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 0.5px solid var(--bd);
+}
+.swatch-color {
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 14px;
+}
+.swatch-info {
+  padding: 12px 14px;
+  background: var(--surf);
+}
+.swatch-name {
+  font-family: var(--syne);
+  font-weight: 800;
+  font-size: 12px;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+.swatch-vals {
+  font-size: 10px;
+  color: var(--text3);
+  letter-spacing: 0.06em;
+}
+
+/* ── Lockup display ── */
+.lockup-group { margin: 20px 0; display: flex; flex-direction: column; gap: 10px; }
+.lockup-cell {
+  border-radius: 10px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.lockup-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+}
+
+/* ── Favicon scale ── */
+.fav-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+.fav-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: var(--surf);
+  border-radius: 6px;
+  padding: 10px;
+}
+.fav-sz {
+  font-size: 9px;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+}
+
+/* ── Anim table ── */
+.anim-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+.anim-card {
+  background: var(--surf);
+  border: 0.5px solid var(--bd);
+  border-radius: 10px;
+  padding: 20px 18px;
+}
+.anim-name {
+  font-family: var(--syne);
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--brass);
+  margin-bottom: 4px;
+}
+.anim-trigger {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 10px;
+  display: block;
+}
+.anim-desc {
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+/* ── Usage rules ── */
+.rule-list { list-style: none; margin: 16px 0; display: flex; flex-direction: column; gap: 6px; }
+.rule-list li {
+  padding: 10px 14px;
+  background: var(--surf);
+  border-left: 2px solid var(--brass);
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  color: var(--text2);
+}
+.rule-list.no li { border-left-color: #6A3830; }
+
+/* ── Voice ── */
+.voice-attr {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+.attr-pill {
+  font-family: var(--syne);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brass);
+  border: 0.5px solid var(--brass);
+  border-radius: 4px;
+  padding: 6px 14px;
+}
+
+/* ── Utility ── */
+.brass { color: var(--brass); }
+.steel { color: var(--steel); }
+.dim   { color: var(--text3); }
+.divr  { height: 0.5px; background: var(--bd); margin: 40px 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.surf-card {
+  background: var(--surf);
+  border: 0.5px solid var(--bd);
+  border-radius: 10px;
+  padding: 20px 18px;
+}
+.tag {
+  display: inline-block;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: var(--surf2);
+  color: var(--text3);
+  vertical-align: middle;
+  margin-left: 6px;
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════ COVER -->
+<div class="container">
+<div class="cover">
+  <div class="cover-eyebrow">Translation Layer LLC · Brand Identity System · 2025</div>
+  <div class="cover-mark">
+    <svg viewBox="0 0 100 100" width="180" height="180" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+  </div>
+  <div class="cover-title">Translation<br>Layer</div>
+  <div class="cover-sub">Brand Identity System</div>
+  <div class="cover-rule"></div>
+  <div class="cover-meta">
+    <span>Version 1.0</span>
+    <span>Confidential</span>
+    <span>Translation Layer LLC</span>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ BRAND FOUNDATION -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">01 · Foundation</span>
+  <h2 class="sec-title">The Brand</h2>
+
+  <p class="lead">Translation Layer is not a consulting firm. It is a forge — a place where raw capability is worked into precise, deployable output at the intersection of artificial intelligence, technology, and human organization.</p>
+
+  <p>We operate in the space where executive intent meets engineering reality and neither fully understands the other. We speak both languages. We build the bridge, then we hand it over. Our work is not advice. It is execution, documented and transferable.</p>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Ethos</h3>
+  <div class="voice-attr">
+    <span class="attr-pill">Provocative</span>
+    <span class="attr-pill">Exacting</span>
+    <span class="attr-pill">Relentless</span>
+  </div>
+
+  <p><strong>Provocative</strong> — We challenge the premise before accepting the brief. We design experiences and arguments that make people ask "how did they do that" and "why doesn't ours feel like this."</p>
+  <p><strong>Exacting</strong> — Precision is not perfectionism. We mean the right thing at the right fidelity for the right moment. Every pixel, every parameter, every word is a decision.</p>
+  <p><strong>Relentless</strong> — We ship things that work at scale. We do not stop at good enough. We stop at done-right-and-proven.</p>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Nautical Foundations</h3>
+  <p>The brand's underlying vocabulary is navigational. This is not decoration — it is a genuine operating grammar rooted in the founder's deep background in sailing and scuba diving. Navigation is the discipline of knowing exactly where you are and where you are going under conditions of incomplete information, changing environment, and real consequence for error.</p>
+  <p>This maps precisely to the work Translation Layer does.</p>
+
+  <table class="spec-table">
+    <thead><tr><th>Nautical Term</th><th>Definition</th><th>Brand Application</th></tr></thead>
+    <tbody>
+      <tr><td>The Fix</td><td>Confirmed position from simultaneous bearings</td><td>The mark itself; Translation Layer's core service metaphor</td></tr>
+      <tr><td>LOP</td><td>Line of position — a single bearing constraining location</td><td>Each domain (Business, People, Tech, AI) provides one LOP</td></tr>
+      <tr><td>Bearing</td><td>Direction with purpose, from a known point</td><td>How Translation Layer approaches every engagement</td></tr>
+      <tr><td>Chart</td><td>Documented knowledge of terrain, hazards, depths</td><td>What we leave behind: documented, transferable knowledge</td></tr>
+      <tr><td>Dead Reckoning</td><td>Navigating by known speed and heading when no fix is available</td><td>How we execute under uncertainty: with confidence from first principles</td></tr>
+      <tr><td>Brass Instrument</td><td>Sextant, compass, parallel rules — precision tools of the navigator</td><td>The brass tone in the visual system</td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ THE MARK -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">02 · The Mark</span>
+  <h2 class="sec-title">The Fix</h2>
+
+  <p class="lead">In navigation, a fix is not an estimate. It is a confirmed position obtained by taking simultaneous, independent bearings from multiple known sources — range rings from a chart converging to a single, unambiguous point. Four bearings agree. You know where you are.</p>
+
+  <p>Translation Layer is the fix. Four domains — <strong>Business, People, Technology, and AI</strong> — each provide their bearing. The mark records where they converge. The intersection is not a compromise between the four. It is the only place from which all four can be seen clearly at once. That is the Translation Layer.</p>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Geometric System</h3>
+  <p>The mark is built from four overlapping circles arranged in a 2×2 grid. Each circle is rendered as a 105° arc — the inward-facing portion only — oriented toward the mark's center. The arcs of all four circles converge at the center without touching, implying a fix point rather than marking it explicitly.</p>
+
+  <table class="spec-table">
+    <thead><tr><th>Parameter</th><th>Value</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Coordinate space</td><td><code>0 0 100 100</code></td><td>SVG viewBox, all values in this space</td></tr>
+      <tr><td>Circle radius</td><td><code>29</code> units</td><td>Each of the four underlying circles</td></tr>
+      <tr><td>Circle centers</td><td><code>(37,37) (63,37) (37,63) (63,63)</code></td><td>TL, TR, BL, BR (Business, People, Tech, AI)</td></tr>
+      <tr><td>Arc span</td><td><code>105°</code></td><td>Inward-facing; centered on direction toward (50,50)</td></tr>
+      <tr><td>Arc directions</td><td><code>45° 135° 315° 225°</code></td><td>Each circle's inward bearing toward mark center</td></tr>
+      <tr><td>Mark center</td><td><code>(50, 50)</code></td><td>The implied fix — not marked by default</td></tr>
+      <tr><td>Compass outer radius</td><td><code>4.2</code> units</td><td>4-pointed star when center is shown</td></tr>
+      <tr><td>Compass inner radius</td><td><code>2.1</code> units</td><td>Concave points of the star</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">The Four Domains — Stroke as Symbol</h3>
+  <p>Each arc has a distinct stroke personality encoding its domain's character. The stroke language is not decorative — it is the most precise visual statement of what each domain is.</p>
+
+  <div class="domain-rows">
+    <div class="domain-row">
+  <svg viewBox="0 0 100 100" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2" opacity="1.0"/><path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" opacity="0.18" stroke-dasharray="2 2.5"/><path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" opacity="0.18" stroke-dasharray="7 3"/><path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" opacity="0.18" stroke-dasharray="1.5 2.5"/></svg>
+  <div class="domain-info">
+    <span class="domain-name">Business</span>
+    <span class="domain-spec"><svg width="56" height="7" viewBox="0 0 56 7" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="3.5" x2="56" y2="3.5" stroke="#C4973A" stroke-width="3.3000000000000003"/></svg></span>
+    <span class="domain-detail">sw 2.2 · solid</span>
+  </div>
+</div><div class="domain-row">
+  <svg viewBox="0 0 100 100" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2" opacity="0.18"/><path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" opacity="1.0" stroke-dasharray="2 2.5"/><path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" opacity="0.18" stroke-dasharray="7 3"/><path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" opacity="0.18" stroke-dasharray="1.5 2.5"/></svg>
+  <div class="domain-info">
+    <span class="domain-name">People</span>
+    <span class="domain-spec"><svg width="56" height="7" viewBox="0 0 56 7" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="3.5" x2="56" y2="3.5" stroke="#C4973A" stroke-width="2.0999999999999996" stroke-dasharray="2 2.5"/></svg></span>
+    <span class="domain-detail">sw 1.4 · 2 2.5</span>
+  </div>
+</div><div class="domain-row">
+  <svg viewBox="0 0 100 100" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2" opacity="0.18"/><path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" opacity="0.18" stroke-dasharray="2 2.5"/><path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" opacity="1.0" stroke-dasharray="7 3"/><path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" opacity="0.18" stroke-dasharray="1.5 2.5"/></svg>
+  <div class="domain-info">
+    <span class="domain-name">Technology</span>
+    <span class="domain-spec"><svg width="56" height="7" viewBox="0 0 56 7" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="3.5" x2="56" y2="3.5" stroke="#C4973A" stroke-width="2.25" stroke-dasharray="7 3"/></svg></span>
+    <span class="domain-detail">sw 1.5 · 7 3</span>
+  </div>
+</div><div class="domain-row">
+  <svg viewBox="0 0 100 100" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2" opacity="0.18"/><path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" opacity="0.18" stroke-dasharray="2 2.5"/><path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" opacity="0.18" stroke-dasharray="7 3"/><path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" opacity="1.0" stroke-dasharray="1.5 2.5"/></svg>
+  <div class="domain-info">
+    <span class="domain-name">AI</span>
+    <span class="domain-spec"><svg width="56" height="7" viewBox="0 0 56 7" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="3.5" x2="56" y2="3.5" stroke="#C4973A" stroke-width="1.5" stroke-dasharray="1.5 2.5"/></svg></span>
+    <span class="domain-detail">sw 1 · 1.5 2.5</span>
+  </div>
+</div>
+  </div>
+
+  <table class="spec-table" style="margin-top:20px">
+    <thead><tr><th>Domain</th><th>Circle</th><th>Stroke</th><th>Weight</th><th>Rationale</th></tr></thead>
+    <tbody>
+      <tr><td>Business</td><td>Top-left (37,37)</td><td>Solid</td><td>2.2</td><td>Decisive, structural, the established foundation</td></tr>
+      <tr><td>People</td><td>Top-right (63,37)</td><td>Dots (2 · 2.5)</td><td>1.4</td><td>Rhythmic, human, organic — individual moments in sequence</td></tr>
+      <tr><td>Technology</td><td>Bottom-left (37,63)</td><td>Long dash (7 · 3)</td><td>1.5</td><td>Systematic, measured, regular intervals — machine time</td></tr>
+      <tr><td>AI</td><td>Bottom-right (63,63)</td><td>Fine dots (1.5 · 2.5)</td><td>1.0</td><td>Emergent, probabilistic, becoming — lighter touch than certainty</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">The Center Treatment</h3>
+  <div class="two-col" style="align-items:start">
+    <div>
+      <h4 style="font-family:var(--syne);font-weight:800;font-size:12px;color:var(--text);margin-bottom:10px;letter-spacing:.05em;text-transform:uppercase">Default: No Center</h4>
+      <svg viewBox="0 0 100 100" width="80" height="80" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+      <p style="font-size:11.5px;margin-top:14px">The mark has no center element in its resting state. Translation Layer is the space between, not a point to be named. The four arcs converge toward (50,50) without touching — the fix is implied, not declared.</p>
+    </div>
+    <div>
+      <h4 style="font-family:var(--syne);font-weight:800;font-size:12px;color:var(--text);margin-bottom:10px;letter-spacing:.05em;text-transform:uppercase">Converge: Compass</h4>
+      <svg viewBox="0 0 100 100" width="80" height="80" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+  <polygon points="50.00,45.80 51.48,48.52 54.20,50.00 51.48,51.48 50.00,54.20 48.52,51.48 45.80,50.00 48.52,48.52" fill="#C4973A"/>
+</svg>
+      <p style="font-size:11.5px;margin-top:14px">Under attention — hover states, focus, active interactions, selected states — a 4-pointed navigator's compass star appears at center. The fix is confirmed. This is the Converge animation state.</p>
+    </div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">The Two-Tone System</h3>
+  <p>The mark encodes a fundamental tension in Translation Layer's work: the warm human domains of Business and People against the cool systematic domains of Technology and AI. This is made explicit in the Two-Tone color variant.</p>
+
+  <div class="two-col" style="align-items:start">
+    <div class="surf-card">
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px">
+        <div style="width:24px;height:24px;border-radius:50%;background:#C4973A;flex-shrink:0"></div>
+        <div>
+          <div style="font-family:var(--syne);font-weight:800;font-size:12px;color:var(--text)">Brass Domains</div>
+          <div style="font-size:10px;color:var(--text3)">Business · People</div>
+        </div>
+      </div>
+      <p style="font-size:11.5px">The warm domains. Human organizations, human relationships. The client context we enter. Rendered in brass — the material of navigation instruments, precision tools, architectural craft.</p>
+    </div>
+    <div class="surf-card">
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px">
+        <div style="width:24px;height:24px;border-radius:50%;background:#7A90AA;flex-shrink:0"></div>
+        <div>
+          <div style="font-family:var(--syne);font-weight:800;font-size:12px;color:var(--text)">Steel Domains</div>
+          <div style="font-size:10px;color:var(--text3)">Technology · AI</div>
+        </div>
+      </div>
+      <p style="font-size:11.5px">The cool domains. Systems, code, models, inference. The machine context we work in. Rendered in steel — the material of precision instruments' inner workings, cold and exact.</p>
+    </div>
+  </div>
+
+  <div class="surf-card" style="margin-top:10px">
+    <p style="font-size:12px;color:var(--text);margin:0"><strong>The center stays brass.</strong> Translation Layer is a human endeavor, regardless of what it builds. The fix is ours to confirm — not the machine's.</p>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ COLOR -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">03 · Color</span>
+  <h2 class="sec-title">Brass &amp; Steel</h2>
+
+  <p class="lead">Two metals. Two temperatures. One tension. The color system is built around the same material metaphor as the mark: warm brass for human precision, cool steel for systematic exactness.</p>
+
+  <div class="color-grid">
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#C4973A">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(0,0,0,0.15)"></div>
+      </div>
+      <div class="swatch-info">
+        <div class="swatch-name">Brass · Dark</div>
+        <div class="swatch-vals">#C4973A · OKLCH ~70% 0.12 70 · Primary accent</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#9A6E1A">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(0,0,0,0.15)"></div>
+      </div>
+      <div class="swatch-info">
+        <div class="swatch-name">Brass · Light</div>
+        <div class="swatch-vals">#9A6E1A · Deeper for contrast on light bg · Primary accent</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#7A90AA">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(0,0,0,0.15)"></div>
+      </div>
+      <div class="swatch-info">
+        <div class="swatch-name">Steel · Dark</div>
+        <div class="swatch-vals">#7A90AA · OKLCH ~58% 0.07 240 · Secondary accent</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#4E708A">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(0,0,0,0.15)"></div>
+      </div>
+      <div class="swatch-info">
+        <div class="swatch-name">Steel · Light</div>
+        <div class="swatch-vals">#4E708A · Deeper for contrast on light bg · Secondary accent</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">The Vault — Dark Mode</h3>
+  <p>Deep warm black with luminous brass accent. A private members' club for people building the future. The dominant context for Translation Layer's digital presence.</p>
+
+  <table class="spec-table">
+    <thead><tr><th>Token</th><th>Hex</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td>--bg</td><td>#1C1914</td><td>Page background — deep warm black</td></tr>
+      <tr><td>--surf</td><td>#252018</td><td>Card / component surface</td></tr>
+      <tr><td>--surf-2</td><td>#2E2920</td><td>Raised card, hover surface</td></tr>
+      <tr><td>--bd</td><td>#3C3226</td><td>Primary border</td></tr>
+      <tr><td>--text</td><td>#E2D8C4</td><td>Primary text — warm white</td></tr>
+      <tr><td>--text-2</td><td>#9A8A6A</td><td>Secondary text, captions</td></tr>
+      <tr><td>--text-3</td><td>#5A5040</td><td>Tertiary text, labels</td></tr>
+      <tr><td>--brass</td><td>#C4973A</td><td>Accent — primary interactive, headings</td></tr>
+      <tr><td>--steel</td><td>#7A90AA</td><td>Accent — secondary, Technology / AI domains</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">The Studio — Light Mode</h3>
+  <p>Warm paper ground with deeper brass for contrast. Architectural studio — clean, structural, typography-forward. Equal-weight alternate to The Vault.</p>
+
+  <table class="spec-table">
+    <thead><tr><th>Token</th><th>Hex</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td>--bg</td><td>#F0EBE1</td><td>Page background — warm paper</td></tr>
+      <tr><td>--surf</td><td>#E5DDD0</td><td>Slight depression from bg</td></tr>
+      <tr><td>--bd</td><td>#C8BEA8</td><td>Primary border</td></tr>
+      <tr><td>--text</td><td>#1C1610</td><td>Primary text — warm near-black</td></tr>
+      <tr><td>--text-2</td><td>#6A5A3A</td><td>Secondary text</td></tr>
+      <tr><td>--brass</td><td>#9A6E1A</td><td>Accent — deeper for WCAG contrast</td></tr>
+      <tr><td>--steel</td><td>#4E708A</td><td>Accent — deeper for contrast</td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ TYPOGRAPHY -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">04 · Typography</span>
+  <h2 class="sec-title">Syne &amp; JetBrains Mono</h2>
+
+  <p class="lead">Two typefaces. No others. The pairing signals simultaneously: design provocation (Syne) and engineering credibility (JetBrains Mono).</p>
+
+  <div class="two-col" style="margin:24px 0">
+    <div class="surf-card">
+      <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:32px;color:var(--brass);letter-spacing:-0.01em;line-height:1;margin-bottom:12px">Syne 800</div>
+      <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text);margin-bottom:16px">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+      <p style="font-size:11.5px">Display typeface. Always 800 weight. Uppercase only in all brand contexts. Used for: headings, wordmark, section labels, navigation items, calls to action.</p>
+      <div style="margin-top:12px;font-size:10px;color:var(--text3)">Google Fonts · <code>Syne:wght@800</code></div>
+    </div>
+    <div class="surf-card">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:var(--text);line-height:1.5;margin-bottom:12px">JetBrains Mono<br>400 Regular</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text2);margin-bottom:16px">0123456789 · #C4973A<br>const fix = translate();</div>
+      <p style="font-size:11.5px">Technical typeface. 400 weight (use 500 sparingly for bold). Used for: body copy, specifications, captions, code, labels, sub-headings, data values.</p>
+      <div style="margin-top:12px;font-size:10px;color:var(--text3)">Google Fonts · <code>JetBrains+Mono:wght@400;500</code></div>
+    </div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Type Hierarchy</h3>
+  <table class="spec-table">
+    <thead><tr><th>Role</th><th>Font</th><th>Size</th><th>Weight</th><th>Case</th><th>Tracking</th></tr></thead>
+    <tbody>
+      <tr><td>Display / Hero</td><td>Syne</td><td>48–72px</td><td>800</td><td>Uppercase</td><td>-0.01em</td></tr>
+      <tr><td>Section Heading</td><td>Syne</td><td>28–36px</td><td>800</td><td>Title Case</td><td>-0.01em</td></tr>
+      <tr><td>Sub Heading</td><td>Syne</td><td>14–16px</td><td>800</td><td>Uppercase</td><td>+0.04em</td></tr>
+      <tr><td>Eyebrow / Label</td><td>JetBrains Mono</td><td>9–11px</td><td>400</td><td>Uppercase</td><td>+0.14em</td></tr>
+      <tr><td>Body</td><td>JetBrains Mono</td><td>13–14px</td><td>400</td><td>Sentence</td><td>0</td></tr>
+      <tr><td>Caption / Spec</td><td>JetBrains Mono</td><td>11–12px</td><td>400</td><td>Sentence</td><td>+0.04em</td></tr>
+      <tr><td>Code / Value</td><td>JetBrains Mono</td><td>11–12px</td><td>500</td><td>As-is</td><td>0</td></tr>
+      <tr><td>Wordmark</td><td>Syne</td><td>Variable</td><td>800</td><td>Uppercase</td><td>+0.13em</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Never use</strong>: italic, oblique, condensed, expanded, weights other than 400/500/800, any typeface other than Syne and JetBrains Mono.</p>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ ANIMATION -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">05 · Animation</span>
+  <h2 class="sec-title">Earned Motion</h2>
+
+  <p class="lead">"Every animation earns its existence. Reveals build anticipation, transitions maintain spatial awareness. Nothing loops without reason."</p>
+
+  <p>The mark has four animation states. Each exists for a specific contextual purpose. None is decorative. The level of motion craft is proof of Translation Layer's capability — not decoration of it.</p>
+
+  <div class="anim-grid">
+    <div class="anim-card">
+      <div class="anim-name">Draw In</div>
+      <span class="anim-trigger">Entrance · Page load · Section reveal</span>
+      <div class="anim-desc">Arcs appear sequentially in domain order: Business → People → Technology → AI. Stagger: ~185ms. The sequence encodes the brand argument — human foundations before machine extension. Business arc at full opacity first (confident, solid); AI arc last (emergent, becoming). Total duration: ~800ms.</div>
+    </div>
+    <div class="anim-card">
+      <div class="anim-name">Breathe</div>
+      <span class="anim-trigger">Idle loop · Background state</span>
+      <div class="anim-desc">Four arcs pulse subtly out of phase, creating a slow rotating opacity wave. Each arc's opacity oscillates ±2.5% offset by π/2 radians from its neighbors. Period: 3.2s. The mark is alive and attentive without demanding attention.</div>
+    </div>
+    <div class="anim-card">
+      <div class="anim-name">Converge</div>
+      <span class="anim-trigger">Hover · Focus · Active / selected state</span>
+      <div class="anim-desc">The compass center fades in at (50,50), confirming the fix under attention. Duration: 300ms ease-out. The mark "finds its fix" when examined. Release → center fades (200ms). This is the only moment the center element appears in interactive UI contexts.</div>
+    </div>
+    <div class="anim-card">
+      <div class="anim-name">Scatter</div>
+      <span class="anim-trigger">Exit · Dismiss · Route transition</span>
+      <div class="anim-desc">Arcs retract in reverse order: AI → Technology → People → Business. The human domains hold longest. Stagger: ~150ms between each. Duration per arc: ~190ms. Total: ~650ms. Business arc is the last element present before the mark disappears.</div>
+    </div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Timing Reference</h3>
+  <table class="spec-table">
+    <thead><tr><th>State</th><th>Duration</th><th>Stagger</th><th>Easing</th><th>Loop</th></tr></thead>
+    <tbody>
+      <tr><td>Draw In</td><td>260–345ms per arc</td><td>~185ms</td><td>cubic-bezier(0.22, 1, 0.36, 1)</td><td>No</td></tr>
+      <tr><td>Breathe</td><td>3200ms period</td><td>π/2 rad offset</td><td>Sinusoidal</td><td>Continuous</td></tr>
+      <tr><td>Converge (in)</td><td>300ms</td><td>120ms after trigger</td><td>ease-out</td><td>No</td></tr>
+      <tr><td>Converge (out)</td><td>200ms</td><td>Immediate</td><td>ease-in</td><td>No</td></tr>
+      <tr><td>Scatter</td><td>190ms per arc</td><td>~150ms reverse</td><td>cubic-bezier(0.4, 0, 1, 1)</td><td>No</td></tr>
+    </tbody>
+  </table>
+
+  <div class="surf-card" style="margin-top:16px">
+    <p style="font-size:12px;margin:0"><strong>Implementation note:</strong> Production animation is GSAP-driven. All animations fully respect <code>prefers-reduced-motion</code> — reduce to instant opacity toggle when motion is restricted. The Breathe loop is suspended when the document is not visible (<code>visibilitychange</code>). Target runtime: GSAP 3 with <code>gsap.timeline()</code> and custom easing curves.</p>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ VARIANTS -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">06 · Logo Variants</span>
+  <h2 class="sec-title">The System</h2>
+
+  <h3 class="sub-title">Mark Only</h3>
+  <div class="mark-grid">
+    <div class="mark-cell" style="background:#1C1914">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+  <span class="mark-label">Brass · Dark</span>
+</div>
+    <div class="mark-cell" style="background:#F0EBE1">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#9A6E1A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#9A6E1A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#9A6E1A" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#9A6E1A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+  <span class="mark-label">Brass · Light</span>
+</div>
+    <div class="mark-cell" style="background:#1C1914">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+  <span class="mark-label">Two-Tone · Dark</span>
+</div>
+    <div class="mark-cell" style="background:#F0EBE1">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#9A6E1A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#9A6E1A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#4E708A" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#4E708A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+  <span class="mark-label">Two-Tone · Light</span>
+</div>
+    <div class="mark-cell" style="background:#F8F6F0">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#221A0E" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#221A0E" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#221A0E" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#221A0E" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+  <span class="mark-label">Monochrome</span>
+</div>
+    <div class="mark-cell" style="background:#1C1914">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#F0EBE1" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#F0EBE1" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#F0EBE1" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#F0EBE1" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+  <span class="mark-label">Reversed · White</span>
+</div>
+    <div class="mark-cell" style="background:#1C1914">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+  <polygon points="50.00,45.80 51.48,48.52 54.20,50.00 51.48,51.48 50.00,54.20 48.52,51.48 45.80,50.00 48.52,48.52" fill="#C4973A"/>
+</svg>
+  <span class="mark-label">Compass · Dark</span>
+</div>
+    <div class="mark-cell" style="background:#1C1914">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+  <polygon points="50.00,45.80 51.48,48.52 54.20,50.00 51.48,51.48 50.00,54.20 48.52,51.48 45.80,50.00 48.52,48.52" fill="#C4973A"/>
+</svg>
+  <span class="mark-label">Compass · Two-Tone</span>
+</div>
+    <div class="mark-cell" style="background:#1C1914">
+  <svg viewBox="0 0 100 100" width="64" height="64" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="2"/>
+</svg>
+  <span class="mark-label">Favicon Edition</span>
+</div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Horizontal Lockup</h3>
+  <div class="lockup-group">
+    <div class="lockup-cell" style="background:#1C1914;border:0.5px solid #3C3226;border-radius:10px">
+      <svg viewBox="0 0 240 52" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width:480px">
+<svg x="2" y="2" width="48" height="48" viewBox="0 0 100 100">
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+    <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+    <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" stroke-dasharray="7 3"/>
+    <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+<line x1="58" y1="11" x2="58" y2="41" stroke="#3C3226" stroke-width="0.5"/>
+<text x="66" y="24" font-family="'Syne',sans-serif" font-weight="800" font-size="8.5" letter-spacing="1.8" fill="#C4973A" dominant-baseline="middle">TRANSLATION LAYER</text>
+<text x="66" y="37" font-family="'JetBrains Mono',monospace" font-size="6.5" letter-spacing="1.2" fill="#5A5040" dominant-baseline="middle">LLC · EST. 2025</text>
+</svg>
+      <span class="lockup-label">Vault · Brass</span>
+    </div>
+    <div class="lockup-cell" style="background:#F0EBE1;border:0.5px solid #C8BEA8;border-radius:10px">
+      <svg viewBox="0 0 240 52" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width:480px">
+<svg x="2" y="2" width="48" height="48" viewBox="0 0 100 100">
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#9A6E1A" stroke-width="2.2"/>
+    <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#9A6E1A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+    <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#9A6E1A" stroke-width="1.5" stroke-dasharray="7 3"/>
+    <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#9A6E1A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+<line x1="58" y1="11" x2="58" y2="41" stroke="#C8BEA8" stroke-width="0.5"/>
+<text x="66" y="24" font-family="'Syne',sans-serif" font-weight="800" font-size="8.5" letter-spacing="1.8" fill="#7A5810" dominant-baseline="middle">TRANSLATION LAYER</text>
+<text x="66" y="37" font-family="'JetBrains Mono',monospace" font-size="6.5" letter-spacing="1.2" fill="#9A8A68" dominant-baseline="middle">LLC · EST. 2025</text>
+</svg>
+      <span class="lockup-label">Studio · Brass</span>
+    </div>
+    <div class="lockup-cell" style="background:#1C1914;border:0.5px solid #3C3226;border-radius:10px">
+      <svg viewBox="0 0 240 52" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width:480px">
+<svg x="2" y="2" width="48" height="48" viewBox="0 0 100 100">
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+    <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+    <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+    <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+<line x1="58" y1="11" x2="58" y2="41" stroke="#3C3226" stroke-width="0.5"/>
+<text x="66" y="24" font-family="'Syne',sans-serif" font-weight="800" font-size="8.5" letter-spacing="1.8" fill="#C4973A" dominant-baseline="middle">TRANSLATION LAYER</text>
+<text x="66" y="37" font-family="'JetBrains Mono',monospace" font-size="6.5" letter-spacing="1.2" fill="#5A5040" dominant-baseline="middle">LLC · EST. 2025</text>
+</svg>
+      <span class="lockup-label">Vault · Two-Tone</span>
+    </div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Stacked Lockup</h3>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">
+    <div style="background:#1C1914;border:0.5px solid #3C3226;border-radius:10px;padding:24px 20px;display:flex;flex-direction:column;gap:10px">
+      <svg viewBox="0 0 100 120" width="100" xmlns="http://www.w3.org/2000/svg">
+<svg x="10" y="6" width="80" height="80" viewBox="0 0 100 100">
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+    <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+    <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" stroke-dasharray="7 3"/>
+    <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+<text x="50" y="102" font-family="'Syne',sans-serif" font-weight="800" font-size="6.5" letter-spacing="1.5" fill="#C4973A" text-anchor="middle" dominant-baseline="middle">TRANSLATION LAYER</text>
+<text x="50" y="113" font-family="'JetBrains Mono',monospace" font-size="5.5" letter-spacing="1.0" fill="#5A5040" text-anchor="middle" dominant-baseline="middle">LLC · EST. 2025</text>
+</svg>
+      <span class="lockup-label">Vault · Brass</span>
+    </div>
+    <div style="background:#1C1914;border:0.5px solid #3C3226;border-radius:10px;padding:24px 20px;display:flex;flex-direction:column;gap:10px">
+      <svg viewBox="0 0 100 120" width="100" xmlns="http://www.w3.org/2000/svg">
+<svg x="10" y="6" width="80" height="80" viewBox="0 0 100 100">
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+    <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+    <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+    <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+<text x="50" y="102" font-family="'Syne',sans-serif" font-weight="800" font-size="6.5" letter-spacing="1.5" fill="#C4973A" text-anchor="middle" dominant-baseline="middle">TRANSLATION LAYER</text>
+<text x="50" y="113" font-family="'JetBrains Mono',monospace" font-size="5.5" letter-spacing="1.0" fill="#5A5040" text-anchor="middle" dominant-baseline="middle">LLC · EST. 2025</text>
+</svg>
+      <span class="lockup-label">Vault · Two-Tone</span>
+    </div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Favicon Edition — Scale</h3>
+  <p>At ≤32px, all arc strokes unify to <code>sw 2.0</code>, solid, and the center treatment (if present) simplifies to a single dot. The stroke personality distinctions are invisible at this scale and create visual noise rather than signal. The favicon edition sacrifices domain nuance for legibility — the mark's silhouette is what survives.</p>
+
+  <div style="display:flex;gap:20px;margin:16px 0;flex-wrap:wrap;align-items:flex-end">
+    <div>
+      <div class="lockup-label" style="margin-bottom:8px">Full Detail (Distinct Strokes)</div>
+      <div class="fav-row">
+        <div class="fav-cell"><div style="background:#252018;border-radius:3px;padding:4px"><svg viewBox="0 0 100 100" width="32" height="32" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg></div><span class="fav-sz">32px</span></div>
+        <div class="fav-cell"><div style="background:#252018;border-radius:3px;padding:4px"><svg viewBox="0 0 100 100" width="20" height="20" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg></div><span class="fav-sz">20px</span></div>
+      </div>
+    </div>
+    <div style="width:0.5px;background:var(--bd);align-self:stretch;margin:0 6px"></div>
+    <div>
+      <div class="lockup-label" style="margin-bottom:8px">Favicon Edition (Unified sw 2.0)</div>
+      <div class="fav-row">
+        <div class="fav-cell"><div style="background:#252018;border-radius:3px;padding:4px"><svg viewBox="0 0 100 100" width="32" height="32" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="2"/>
+</svg></div><span class="fav-sz">32px</span></div>
+        <div class="fav-cell"><div style="background:#252018;border-radius:3px;padding:4px"><svg viewBox="0 0 100 100" width="20" height="20" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="2"/>
+</svg></div><span class="fav-sz">20px</span></div>
+        <div class="fav-cell"><div style="background:#252018;border-radius:3px;padding:4px"><svg viewBox="0 0 100 100" width="14" height="14" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#C4973A" stroke-width="2"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#C4973A" stroke-width="2"/>
+</svg></div><span class="fav-sz">14px</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ USAGE -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">07 · Usage</span>
+  <h2 class="sec-title">Guidelines</h2>
+
+  <h3 class="sub-title">Clear Space</h3>
+  <p>Minimum clear space around the mark on all sides: <strong>20% of the mark's rendered height</strong>. At 100px, this is 20px on each side. At 32px, 6.4px. Nothing may intrude into this zone: other marks, text, photography, edges.</p>
+
+  <table class="spec-table">
+    <thead><tr><th>Display Size</th><th>Minimum Clear Space</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>100px</td><td>20px all sides</td><td>Standard web / UI use</td></tr>
+      <tr><td>48px</td><td>10px all sides</td><td>App icon, small card</td></tr>
+      <tr><td>32px</td><td>6px all sides</td><td>Use Favicon Edition at this size</td></tr>
+      <tr><td>16–20px</td><td>3px all sides</td><td>Favicon Edition only</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Minimum Sizes</h3>
+  <table class="spec-table">
+    <thead><tr><th>Variant</th><th>Minimum Display Size</th><th>Reasoning</th></tr></thead>
+    <tbody>
+      <tr><td>Full Detail (Distinct Strokes)</td><td>48px</td><td>Below this, stroke pattern distinctions disappear</td></tr>
+      <tr><td>Favicon Edition (Unified)</td><td>14px</td><td>Arc silhouette holds to approximately this size</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Permitted Usage</h3>
+  <ul class="rule-list">
+    <li>Use on The Vault background (#1C1914) with Brass or Two-Tone variant</li>
+    <li>Use on The Studio background (#F0EBE1) with light Brass or Two-Tone variant</li>
+    <li>Use reversed (white) on any solid dark surface meeting 4.5:1 contrast</li>
+    <li>Use monochrome black on white or very light surfaces for print</li>
+    <li>Use Compass variant in interactive states only (hover, focus, selected)</li>
+    <li>Scale proportionally only — maintain viewBox aspect ratio (1:1)</li>
+    <li>Favicon Edition at ≤32px exclusively</li>
+  </ul>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Never Do This</h3>
+  <ul class="rule-list no">
+    <li>Fill the arc shapes — they are strokes only, always</li>
+    <li>Add drop shadows, glows, emboss, or any effects layer</li>
+    <li>Stretch, skew, or modify proportions in any dimension</li>
+    <li>Reorder or reassign the domain stroke personalities</li>
+    <li>Use on photographic or patterned backgrounds without a solid panel</li>
+    <li>Combine with other brand marks in proximity without brand review</li>
+    <li>Use the Compass center in resting/non-interactive states</li>
+    <li>Recreate or approximate the mark from scratch — use the provided SVG files</li>
+    <li>Use any color other than those in the approved palette on the arcs</li>
+    <li>Use display sizes below the specified minimums</li>
+  </ul>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ VOICE -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">08 · Voice</span>
+  <h2 class="sec-title">How We Speak</h2>
+
+  <p class="lead">Translation Layer's voice is the voice of a builder who has been in the room, seen the failure modes, and knows exactly what to do about them. Not cautious. Not hedging. Not performing confidence — actually confident.</p>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Core Attributes</h3>
+  <div class="anim-grid">
+    <div class="anim-card">
+      <div class="anim-name">Authoritative</div>
+      <div class="anim-desc" style="margin-top:8px">We have done this. We know the failure modes. We lead with the finding, then the reasoning, not the other way around. We do not ask for permission to be right.</div>
+    </div>
+    <div class="anim-card">
+      <div class="anim-name">Direct</div>
+      <div class="anim-desc" style="margin-top:8px">Every sentence has a subject and a verb. Passive voice is a red flag — who does what? We say the hard thing clearly before the soft thing at all.</div>
+    </div>
+    <div class="anim-card">
+      <div class="anim-name">Specific</div>
+      <div class="anim-desc" style="margin-top:8px">We do not say "significant improvement." We say "40% reduction in review cycles." We do not say "leading AI platform." We say which model, what version, what benchmark.</div>
+    </div>
+    <div class="anim-card">
+      <div class="anim-name">Challenged</div>
+      <div class="anim-desc" style="margin-top:8px">We question the premise before accepting the brief. If the question is wrong, the answer does not matter. We say so clearly, then offer the better question.</div>
+    </div>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Language Anti-Patterns</h3>
+  <p>These words and phrases do not appear in Translation Layer's communications. If you find yourself reaching for them, stop and say what you actually mean.</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0">
+    <span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">comprehensive</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">robust</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">utilize</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">facilitate</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">leverage</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">best-in-class</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">synergies</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">holistic</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">seamless</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">innovative</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">cutting-edge</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">world-class</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">transformative</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">empower</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">ideate</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">learnings</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">bandwidth</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">circle back</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">solution</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">ecosystem</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">journey</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">deliverables</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">stakeholders</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">value add</span><span style="font-family:var(--mono);font-size:11px;padding:4px 10px;background:rgba(106,56,48,0.25);border:0.5px solid rgba(180,80,60,0.3);border-radius:4px;color:#C07060;text-decoration:line-through">paradigm shift</span>
+  </div>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">The Test</h3>
+  <div class="surf-card">
+    <p style="font-size:13px;line-height:1.8;margin-bottom:12px">Before any external communication leaves: <strong>Would the CTO of a serious company find this impressive, or would they find it embarrassing?</strong></p>
+    <p style="font-size:12px;margin:0">Serious CTOs read source code. They inspect network tabs. They have seen every consultant's pitch deck. They know immediately when something was written to sound impressive rather than to say something true. Write for that reader.</p>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ DIGITAL -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">09 · Digital</span>
+  <h2 class="sec-title">Interface Principles</h2>
+
+  <p class="lead">The website does not explain what Translation Layer does. It proves it by existing. A CTO who views source should be impressed. A designer who inspects the animations should ask how.</p>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Motion Principles</h3>
+  <ul class="rule-list">
+    <li>Every animation earns its existence — justify it or remove it</li>
+    <li>Reveals build anticipation — content enters with purpose, not nervousness</li>
+    <li>Transitions maintain spatial awareness — users always know where they are</li>
+    <li>Nothing loops without reason — Breathe loops because the mark is alive, not for decoration</li>
+    <li>WebGL and particle systems create atmosphere, not distraction — subordinate to content</li>
+    <li>All animations respect prefers-reduced-motion — reduce to instant state changes</li>
+    <li>The theme transition (Vault ↔ Studio) uses View Transitions API for a clean cross-fade</li>
+  </ul>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Technology Choices as Brand Argument</h3>
+  <p>Translation Layer's site is a portfolio piece. Every technical choice signals capability.</p>
+
+  <table class="spec-table">
+    <thead><tr><th>Choice</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr><td>GSAP animation engine</td><td>We know the right tool. We are not animating with setTimeout.</td></tr>
+      <tr><td>OKLCH color system</td><td>We work in perceptual color space. Our tokens are engineered, not eyeballed.</td></tr>
+      <tr><td>View Transitions API</td><td>We are at the bleeding edge of the web platform, not two versions behind.</td></tr>
+      <tr><td>Custom WebGL atmosphere</td><td>We can write shaders. This is not a Vanta.js background.</td></tr>
+      <tr><td>Sub-40ms TTI</td><td>We know what the CTO will check. We passed before they opened devtools.</td></tr>
+      <tr><td>Semantic HTML, WCAG AAA</td><td>Premium means inclusive. Accessibility is craft evidence, not legal obligation.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divr"></div>
+
+  <h3 class="sub-title">Anti-References</h3>
+  <p>The following are active anti-targets. If the work begins to resemble any of these, the direction is wrong.</p>
+  <ul class="rule-list no">
+    <li>Generic SaaS landing pages — stock photos, gradient blobs, "Get Started Free"</li>
+    <li>Big Four consulting gravitas — safe, forgettable, committee-designed</li>
+    <li>Startup hype — buzzwords, empty promises, template aesthetics</li>
+    <li>Landing page builders — anything that looks like it emerged from a system designed to look like everything else</li>
+    <li>AI-generated imagery as principal visual content — we are the experts, we do not use AI art as our proof of AI expertise</li>
+  </ul>
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ FILE REFERENCE -->
+<div class="container">
+<div class="section">
+  <span class="sec-num">10 · Assets</span>
+  <h2 class="sec-title">File Reference</h2>
+
+  <table class="spec-table">
+    <thead><tr><th>File</th><th>Variant</th><th>Use</th></tr></thead>
+    <tbody>
+      <tr><td>tl-mark-brass-dark.svg</td><td>Brass · All arcs · Full detail</td><td>Primary digital — dark backgrounds</td></tr>
+      <tr><td>tl-mark-brass-light.svg</td><td>Brass · Darker · Full detail</td><td>Primary digital — light backgrounds</td></tr>
+      <tr><td>tl-mark-twotone-dark.svg</td><td>Brass+Steel · Full detail</td><td>Canonical — dark backgrounds</td></tr>
+      <tr><td>tl-mark-twotone-light.svg</td><td>Brass+Steel lighter · Full detail</td><td>Canonical — light backgrounds</td></tr>
+      <tr><td>tl-mark-mono.svg</td><td>Monochrome dark · Full detail</td><td>Print, single-color embroidery, stamp</td></tr>
+      <tr><td>tl-mark-reversed.svg</td><td>Warm white · Full detail</td><td>Dark material (card stock, apparel)</td></tr>
+      <tr><td>tl-mark-favicon.svg</td><td>Brass · Unified sw 2.0</td><td>Favicon, app icon, ≤32px all uses</td></tr>
+      <tr><td>tl-mark-compass-dark.svg</td><td>Brass + Compass center</td><td>Interaction state reference</td></tr>
+      <tr><td>tl-mark-compass-twotone.svg</td><td>Two-Tone + Compass center</td><td>Interaction state reference</td></tr>
+      <tr><td>tl-lockup-h-dark-brass.svg</td><td>Horizontal · Vault · Brass</td><td>Email signature, document header</td></tr>
+      <tr><td>tl-lockup-h-light-brass.svg</td><td>Horizontal · Studio · Brass</td><td>Light document header</td></tr>
+      <tr><td>tl-lockup-h-dark-twotone.svg</td><td>Horizontal · Vault · Two-Tone</td><td>Canonical horizontal lockup</td></tr>
+      <tr><td>tl-lockup-h-mono.svg</td><td>Horizontal · Monochrome</td><td>Print, black-only</td></tr>
+      <tr><td>tl-lockup-v-dark-brass.svg</td><td>Stacked · Vault · Brass</td><td>Square contexts, social profiles</td></tr>
+      <tr><td>tl-lockup-v-dark-twotone.svg</td><td>Stacked · Vault · Two-Tone</td><td>Canonical stacked lockup</td></tr>
+      <tr><td>tl-lockup-v-light-brass.svg</td><td>Stacked · Studio · Brass</td><td>Light square contexts</td></tr>
+    </tbody>
+  </table>
+
+  <div class="surf-card" style="margin-top:20px">
+    <p style="font-size:12px;margin:0"><strong>All SVG files use viewBox="0 0 100 100"</strong> for mark-only variants and <code>viewBox="0 0 240 52"</code> for horizontal lockups. Scale by adjusting <code>width</code> and <code>height</code> attributes only — never modify the viewBox or internal coordinates. All path data is precisely computed from the geometric specification.</p>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="container" style="padding:60px 0;border-top:0.5px solid var(--bd);margin-top:0">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px">
+    <div>
+      <svg viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M 65.75,33.21 A 29 29 0 0 1 33.21,65.75" fill="none" stroke="#C4973A" stroke-width="2.2"/>
+  <path d="M 66.79,65.75 A 29 29 0 0 1 34.25,33.21" fill="none" stroke="#C4973A" stroke-width="1.4" stroke-dasharray="2 2.5"/>
+  <path d="M 33.21,34.25 A 29 29 0 0 1 65.75,66.79" fill="none" stroke="#7A90AA" stroke-width="1.5" stroke-dasharray="7 3"/>
+  <path d="M 34.25,66.79 A 29 29 0 0 1 66.79,34.25" fill="none" stroke="#7A90AA" stroke-width="1" stroke-dasharray="1.5 2.5"/>
+</svg>
+    </div>
+    <div style="text-align:right;font-size:10px;color:var(--text3);letter-spacing:0.1em">
+      <div>TRANSLATION LAYER LLC</div>
+      <div>BRAND IDENTITY SYSTEM · VERSION 1.0 · 2025</div>
+      <div style="margin-top:6px">CONFIDENTIAL · ALL RIGHTS RESERVED</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

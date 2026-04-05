@@ -1,0 +1,800 @@
+[
+  {
+    "source": "aws_iam",
+    "canonical_name": "Cakelab Fsapi Store Internal User",
+    "email": null,
+    "account_id": "CakeLab-fsapi-store-internal-user",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-cake-development",
+      "created_date": "2020-07-22T05:51:22+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Insight2W 2Winsight Mm2Kk3Hjipir",
+    "email": null,
+    "account_id": "insight2W-2Winsight-MM2KK3HJIPIR",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-cake-development",
+      "created_date": "2018-06-22T15:29:46+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Leapset Dev Bucket User",
+    "email": null,
+    "account_id": "leapset-dev-bucket-user",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-cake-development",
+      "created_date": "2021-04-07T10:33:32+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Menu Api Sync User",
+    "email": null,
+    "account_id": "menu_api_sync_user",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-cake-development",
+      "created_date": "2021-05-31T06:41:39+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Minuteman Service User",
+    "email": null,
+    "account_id": "minuteman-service-user",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-cake-development",
+      "created_date": "2019-06-24T06:09:13+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Analytics Madmobile",
+    "email": null,
+    "account_id": "analytics-madmobile",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-06-26T18:00:00+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Cake Analytics Ikes",
+    "email": null,
+    "account_id": "cake-analytics-ikes",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-08-31T14:05:29+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Cake Analytics Onp",
+    "email": null,
+    "account_id": "cake-analytics-onp",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2023-06-12T14:29:38+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Chandon Edge",
+    "email": null,
+    "account_id": "chandon-edge",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-10-18T19:21:23+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Ascena",
+    "email": null,
+    "account_id": "concierge-analytics-ascena",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2023-04-28T12:37:55+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Belk",
+    "email": null,
+    "account_id": "concierge-analytics-belk",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-08-10T15:02:21+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Brooks Brothers",
+    "email": null,
+    "account_id": "concierge-analytics-brooks-brothers",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-06-12T19:58:58+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Burlington",
+    "email": null,
+    "account_id": "concierge-analytics-burlington",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-10-20T19:30:12+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Estee Lauder",
+    "email": null,
+    "account_id": "concierge-analytics-estee-lauder",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-06-12T21:10:39+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Estee Lauder Aveda",
+    "email": null,
+    "account_id": "concierge-analytics-estee-lauder-aveda",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-10-20T18:08:36+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Esteelauder",
+    "email": null,
+    "account_id": "concierge-analytics-esteelauder",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2023-09-08T17:21:03+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Esteelauder Ccs",
+    "email": null,
+    "account_id": "concierge-analytics-esteelauder-ccs",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-10-20T18:10:01+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Esteelauder Jml",
+    "email": null,
+    "account_id": "concierge-analytics-esteelauder-jml",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-10-20T18:10:53+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Esteelauder Origins",
+    "email": null,
+    "account_id": "concierge-analytics-esteelauder-origins",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-10-20T18:11:36+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Guess",
+    "email": null,
+    "account_id": "concierge-analytics-guess",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-06-26T20:40:42+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Helzberg",
+    "email": null,
+    "account_id": "concierge-analytics-helzberg",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-11-02T14:52:47+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Jfw",
+    "email": null,
+    "account_id": "concierge-analytics-jfw",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2023-07-12T13:15:21+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Kings Hawaiian",
+    "email": null,
+    "account_id": "concierge-analytics-kings-hawaiian",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2023-01-23T13:51:28+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Pacsun",
+    "email": null,
+    "account_id": "concierge-analytics-pacsun",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2021-07-23T15:12:40+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Pandora",
+    "email": null,
+    "account_id": "concierge-analytics-pandora",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-10-31T17:09:19+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Ralph Lauren",
+    "email": null,
+    "account_id": "concierge-analytics-ralph-lauren",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-05-28T21:21:18+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Signet",
+    "email": null,
+    "account_id": "concierge-analytics-signet",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-10-01T19:36:41+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Tractor Supply",
+    "email": null,
+    "account_id": "concierge-analytics-tractor-supply",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2021-07-23T15:18:01+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Urban",
+    "email": null,
+    "account_id": "concierge-analytics-urban",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-05-26T20:27:01+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Print",
+    "email": null,
+    "account_id": "concierge-print",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-09-16T17:17:52+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Cs Analytics",
+    "email": null,
+    "account_id": "cs-analytics",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2024-09-05T18:13:55+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Jacksonfw Edge",
+    "email": null,
+    "account_id": "jacksonfw-edge",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-10-17T19:21:37+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Marvel Us Document Service",
+    "email": null,
+    "account_id": "marvel-us-document-service",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-06-08T14:23:43+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Openai Assistant",
+    "email": null,
+    "account_id": "openai-assistant",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2024-07-11T17:59:25+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Eu Domo",
+    "email": null,
+    "account_id": "concierge-analytics-eu-domo",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-eu",
+      "created_date": "2021-03-31T19:35:36+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Eu Ralph Lauren",
+    "email": null,
+    "account_id": "concierge-analytics-eu-ralph-lauren",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-eu",
+      "created_date": "2020-05-28T21:27:45+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Concierge Analytics Apac Domo",
+    "email": null,
+    "account_id": "concierge-analytics-apac-domo",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-apac",
+      "created_date": "2021-05-14T16:02:49+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Eks Tmp User",
+    "email": null,
+    "account_id": "eks-tmp-user",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-retail-prod-apac",
+      "created_date": "2022-03-04T19:55:41+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Readonly User Chefs Grille",
+    "email": null,
+    "account_id": "readonly-user-chefs-grille",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-customer-analytics",
+      "created_date": "2024-08-15T00:47:00+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Jenkins",
+    "email": null,
+    "account_id": "jenkins",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-mm-archive",
+      "created_date": "2019-07-28T21:47:04+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Greymatter Guardduty Integration",
+    "email": null,
+    "account_id": "greymatter-guardduty-integration",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-security",
+      "created_date": "2025-04-09T15:42:15+00:00",
+      "is_service_account": false
+    }
+  },
+  {
+    "source": "aws_iam",
+    "canonical_name": "Rapid7 Guardduty Logs",
+    "email": null,
+    "account_id": "rapid7-guardduty-logs",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": null,
+    "aliases": [],
+    "metadata": {
+      "aws_profile": "mm-security",
+      "created_date": "2024-04-11T16:54:38+00:00",
+      "is_service_account": false
+    }
+  }
+]

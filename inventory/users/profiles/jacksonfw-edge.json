@@ -1,0 +1,30 @@
+{
+  "name": "Jacksonfw Edge",
+  "id": "jacksonfw-edge",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "aws_iam"
+  ],
+  "sources": {
+    "aws_iam": {
+      "account_id": "jacksonfw-edge",
+      "email": null,
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-10-17T19:21:37+00:00",
+      "is_service_account": false
+    }
+  }
+}

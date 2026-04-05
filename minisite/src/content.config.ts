@@ -228,6 +228,37 @@ const userAudit = defineCollection({
   }),
 });
 
+const peopleDirectory = defineCollection({
+  loader: csvLoader({ path: '../analysis/people_directory.csv', idColumn: 'id' }),
+  schema: z.object({
+    id: str,
+    display_name: str,
+    title: str,
+    team: str,
+    manager: str,
+    division: str,
+    geography: str,
+    status: str,
+    email: str,
+    activity_level: str,
+    systems_active_90d: str,
+    total_activity_90d: str,
+    systems: str,
+    bb_workspaces: str,
+    prs_authored: str,
+    prs_reviewed: str,
+    jira_created_90d: str,
+    jira_resolved_90d: str,
+    jira_open_assigned: str,
+    jira_bugs_90d: str,
+    jira_projects: str,
+    jira_role: str,
+    confluence_pages_total: str,
+    confluence_pages_90d: str,
+    aliases: str,
+  }),
+});
+
 const toolingCatalog = defineCollection({
   loader: jsonExtractLoader({
     path: '../inventory/tooling_catalog.json',
@@ -261,5 +292,6 @@ export const collections = {
   confluenceSpaces,
   confluencePages,
   userAudit,
+  peopleDirectory,
   toolingCatalog,
 };

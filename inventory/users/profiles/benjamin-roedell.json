@@ -1,0 +1,71 @@
+{
+  "name": "Benjamin Roedell",
+  "id": "benjamin-roedell",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 365,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "email": "",
+      "projects": [
+        "CM",
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 16,
+      "issues_resolved_90d": 27,
+      "open_assigned": 39,
+      "bugs_created_90d": 3,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "nickname": "Benjamin Roedell",
+      "prs_authored": 36,
+      "prs_reviewed": 275,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+      "email": "",
+      "pages_total": 72,
+      "pages_90d": 11,
+      "spaces": [
+        "DB",
+        "ES",
+        "MMA",
+        "PROD",
+        "PT",
+        "TT"
+      ]
+    }
+  }
+}

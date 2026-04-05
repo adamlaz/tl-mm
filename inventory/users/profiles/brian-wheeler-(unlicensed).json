@@ -1,0 +1,32 @@
+{
+  "name": "Brian Wheeler (Unlicensed)",
+  "id": "brian-wheeler-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": "bwheeler@madmobile.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5d1503a91e063b0bcd711aaf",
+      "email": "bwheeler@madmobile.com",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

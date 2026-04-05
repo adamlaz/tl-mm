@@ -1,0 +1,33 @@
+{
+  "name": "Rushika Ivanthi Pallemulla (Unlicensed)",
+  "id": "rushika-ivanthi-pallemulla-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:651e252c-64fe-494d-ad62-5b1d5c937036",
+      "email": "",
+      "pages_total": 48,
+      "pages_90d": 0,
+      "spaces": [
+        "ES",
+        "LP"
+      ]
+    }
+  }
+}

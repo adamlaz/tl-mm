@@ -1,0 +1,30 @@
+{
+  "name": "Menu Api Sync User",
+  "id": "menu-api-sync-user",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "aws_iam"
+  ],
+  "sources": {
+    "aws_iam": {
+      "account_id": "menu_api_sync_user",
+      "email": null,
+      "aws_profile": "mm-cake-development",
+      "created_date": "2021-05-31T06:41:39+00:00",
+      "is_service_account": false
+    }
+  }
+}

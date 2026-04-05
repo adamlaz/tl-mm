@@ -1,0 +1,66 @@
+{
+  "name": "Das DeSilva",
+  "id": "das-desilva",
+  "title": "Onboarding",
+  "team": "Onboarding",
+  "manager": "David Strainick",
+  "division": "Operations",
+  "executive": "David Strainick",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 4,
+    "level": "low"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "63289d8e3ac41ebde76838ad",
+      "email": "",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 14,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "63289d8e3ac41ebde76838ad",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Das DeSilva",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "63289d8e3ac41ebde76838ad",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "TT"
+      ]
+    }
+  }
+}

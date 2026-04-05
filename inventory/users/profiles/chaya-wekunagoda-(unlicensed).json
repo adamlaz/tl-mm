@@ -1,0 +1,33 @@
+{
+  "name": "Chaya Wekunagoda (Unlicensed)",
+  "id": "chaya-wekunagoda-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:28787607-1e35-4409-901b-602f2c506f69",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "PROD"
+      ]
+    }
+  }
+}

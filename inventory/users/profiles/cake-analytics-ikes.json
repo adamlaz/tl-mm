@@ -1,0 +1,30 @@
+{
+  "name": "Cake Analytics Ikes",
+  "id": "cake-analytics-ikes",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "aws_iam"
+  ],
+  "sources": {
+    "aws_iam": {
+      "account_id": "cake-analytics-ikes",
+      "email": null,
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2022-08-31T14:05:29+00:00",
+      "is_service_account": false
+    }
+  }
+}

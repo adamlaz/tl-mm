@@ -1,0 +1,32 @@
+{
+  "name": "Derick Warshaw (Unlicensed)",
+  "id": "derick-warshaw-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": "dwarshaw@madmobile.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:bdd5900c-9f5d-4ac4-a585-202f60a5583b",
+      "email": "dwarshaw@madmobile.com",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

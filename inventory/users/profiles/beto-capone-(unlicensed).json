@@ -1,0 +1,34 @@
+{
+  "name": "Beto Capone (Unlicensed)",
+  "id": "beto-capone-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "BettyJo Maloney (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "63695edcd3f3a7ad527aef67",
+      "email": "",
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

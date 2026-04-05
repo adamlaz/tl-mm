@@ -1,0 +1,37 @@
+{
+  "name": "Concierge Analytics Ascena",
+  "id": "concierge-analytics-ascena",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Concierge Analytics Belk",
+    "Concierge Analytics Guess",
+    "Concierge Analytics Pacsun",
+    "Concierge Analytics Pandora",
+    "Concierge Analytics Signet",
+    "Concierge Analytics Urban"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "aws_iam"
+  ],
+  "sources": {
+    "aws_iam": {
+      "account_id": "concierge-analytics-urban",
+      "email": null,
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-05-26T20:27:01+00:00",
+      "is_service_account": false
+    }
+  }
+}

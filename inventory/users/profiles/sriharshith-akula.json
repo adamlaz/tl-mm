@@ -1,0 +1,52 @@
+{
+  "name": "Sriharshith Akula",
+  "id": "sriharshith-akula",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": "CAKE / Restaurant",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 2,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 25,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Sriharshith Akula",
+      "prs_authored": 1,
+      "prs_reviewed": 0,
+      "review_cluster": "syscolabs"
+    }
+  }
+}

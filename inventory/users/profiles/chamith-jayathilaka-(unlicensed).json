@@ -1,0 +1,33 @@
+{
+  "name": "Chamith Jayathilaka (Unlicensed)",
+  "id": "chamith-jayathilaka-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:72e299bc-c463-4104-a2ee-1b9cc83a4e07",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "MMA",
+        "PT"
+      ]
+    }
+  }
+}

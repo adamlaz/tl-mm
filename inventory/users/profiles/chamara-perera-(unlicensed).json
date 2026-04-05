@@ -1,0 +1,35 @@
+{
+  "name": "Chamara Perera (Unlicensed)",
+  "id": "chamara-perera-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Malinga Perera (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b12323378cd734fe39f22b4",
+      "email": "",
+      "pages_total": 110,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Nisal Weerakoon (Deactivated)",
+  "id": "nisal-weerakoon-(deactivated)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5ba0dfb12433c0381a912c7d",
+      "email": "",
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "PROD"
+      ]
+    }
+  }
+}

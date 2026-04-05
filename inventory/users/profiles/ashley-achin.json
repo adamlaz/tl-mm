@@ -1,0 +1,47 @@
+{
+  "name": "Ashley Achin",
+  "id": "ashley-achin",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Ashley Achin (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "712020:2b015982-ccf2-4587-a522-2cf6d80fcd0a",
+      "email": null,
+      "workspaces": [
+        "madpayments"
+      ],
+      "nickname": "Ashley Achin",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "712020:2b015982-ccf2-4587-a522-2cf6d80fcd0a",
+      "email": "",
+      "pages_total": 47,
+      "pages_90d": 0,
+      "spaces": [
+        "P",
+        "PROD"
+      ]
+    }
+  }
+}

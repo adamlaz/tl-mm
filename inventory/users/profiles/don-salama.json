@@ -1,0 +1,27 @@
+{
+  "name": "Don Salama",
+  "id": "don-salama",
+  "title": "Co-CEO",
+  "team": null,
+  "manager": "Board",
+  "division": "Executive",
+  "executive": "Don Salama",
+  "geography": "US",
+  "status": "quiet",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "DevOps Integration",
+  "id": "devops-integration",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "712020:586024e2-7081-46b9-a9ed-3a7e99886a32",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "DevOps Integration",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

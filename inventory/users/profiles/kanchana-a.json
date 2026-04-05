@@ -1,0 +1,29 @@
+{
+  "name": "Kanchana A",
+  "id": "kanchana-a",
+  "title": "Senior Payments Operations Analyst",
+  "team": "Payments Biz Ops",
+  "manager": null,
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "SL",
+  "status": "quiet",
+  "email": null,
+  "aliases": [
+    "Kanchana A (SL)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

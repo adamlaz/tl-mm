@@ -2,10 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import DataTable from '../components/DataTable.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
+import { bitbucketRepoUrl } from '../lib/links';
 import { readFileSync } from 'node:fs';
 
 let pipelineData: any = {};
@@ -13,11 +14,13 @@ let branchData: any = {};
 let openPRData: any = {};
 let depData: any = {};
 let reviewSummary: any = {};
+let aiToolingData: any = {};
 try { pipelineData = JSON.parse(readFileSync('../inventory/bitbucket/pipeline_history.json', 'utf-8')); } catch {}
 try { branchData = JSON.parse(readFileSync('../inventory/bitbucket/branch_restrictions.json', 'utf-8')); } catch {}
 try { openPRData = JSON.parse(readFileSync('../inventory/bitbucket/open_prs.json', 'utf-8')); } catch {}
 try { depData = JSON.parse(readFileSync('../inventory/bitbucket/dependency_analysis.json', 'utf-8')); } catch {}
 try { reviewSummary = JSON.parse(readFileSync('../inventory/bitbucket/review_network_summary.json', 'utf-8')); } catch {}
+try { aiToolingData = JSON.parse(readFileSync('../inventory/bitbucket/ai_tooling.json', 'utf-8')); } catch {}
 
 const pipeSuccessRate = pipelineData.overall_success_rate_pct ?? 'N/A';
 const openPRCount = openPRData.total_open_prs ?? openPRData.summary?.total ?? 0;
@@ -28,6 +31,9 @@ const reposChecked = branchData.summary?.repos_checked ?? branchData.repos_check
 const repos = await getCollection('bitbucketRepos');
 const prs = await getCollection('bitbucketPRs');
 const commits = await getCollection('bitbucketCommits');
+
+let bbAiToolingRows: any[] = [];
+try { bbAiToolingRows = await getCollection('bbAiTooling'); } catch {}
 
 const activeRepos = repos.filter((r) => r.data.is_active === 'True');
 const byWorkspace = new Map<string, number>();
@@ -59,11 +65,110 @@ const repoTableRows = activeRepos
   .slice(0, 200)
   .map((r) => ({
     name: r.data.name,
+    _href_name: bitbucketRepoUrl(r.data.workspace, r.data.slug),
     workspace: r.data.workspace,
     language: r.data.language,
     project: r.data.project,
     updated: r.data.updated_on.slice(0, 10),
   }));
+
+/* ── Dependency & Security Analysis ── */
+const depPerRepo = (depData.per_repo ?? []) as any[];
+let totalDeps = 0;
+let reposWithDeps = 0;
+let tsAdoptionCount = 0;
+const depDetailRows: Record<string, string | number>[] = [];
+
+for (const r of depPerRepo) {
+  const fileEntries = Object.entries(r.dep_files || {});
+  if (fileEntries.length === 0) continue;
+  reposWithDeps++;
+  let repoHasTs = false;
+  for (const [, info] of fileEntries) {
+    const depCount = (info as any).total_deps ?? (info as any).dependency_count ?? 0;
+    totalDeps += depCount;
+    if ((info as any).has_typescript) repoHasTs = true;
+    depDetailRows.push({
+      repo: r.repo,
+      _href_repo: bitbucketRepoUrl(r.workspace, r.repo),
+      workspace: r.workspace,
+      stack: (info as any).type ?? 'unknown',
+      deps: depCount,
+      frameworks: Object.keys((info as any).notable_frameworks || {}).join(', ') || '—',
+    });
+  }
+  if (repoHasTs) tsAdoptionCount++;
+}
+depDetailRows.sort((a, b) => (b.deps as number) - (a.deps as number));
+
+const stackDistRows = Object.entries(depData.stack_distribution ?? {})
+  .filter(([, count]) => (count as number) > 0)
+  .sort((a, b) => (b[1] as number) - (a[1] as number))
+  .map(([stack, count]) => ({ stack, repos: count as number }));
+
+const frameworkRows = Object.entries(depData.framework_frequency ?? {})
+  .sort((a, b) => (b[1] as number) - (a[1] as number))
+  .map(([framework, count]) => ({ framework, repos: count as number }));
+
+/* ── Pipeline History & Trends ── */
+const pipePerRepo = (pipelineData.per_repo ?? []) as any[];
+const activePipelines = pipePerRepo.filter((r) => r.total_runs > 0);
+const totalPipeRuns = pipelineData.total_pipeline_runs ?? 0;
+const totalFailed = activePipelines.reduce((s: number, r: any) => s + (r.failed ?? 0), 0);
+const totalErrors = activePipelines.reduce((s: number, r: any) => s + (r.error ?? 0), 0);
+const medianDurations = activePipelines
+  .filter((r: any) => r.median_build_s != null)
+  .map((r: any) => r.median_build_s as number);
+const avgMedianBuild =
+  medianDurations.length > 0 ? medianDurations.reduce((s: number, v: number) => s + v, 0) / medianDurations.length : 0;
+
+const pipelineTableRows = activePipelines
+  .sort((a: any, b: any) => b.total_runs - a.total_runs)
+  .map((r: any) => ({
+    repo: r.repo,
+    _href_repo: bitbucketRepoUrl(r.workspace, r.repo),
+    workspace: r.workspace,
+    runs: r.total_runs,
+    success_rate: `${r.success_rate_pct}%`,
+    failed: r.failed,
+    median: r.median_build_s != null ? `${Math.round(r.median_build_s)}s` : '—',
+    p95: r.p95_build_s != null ? `${Math.round(r.p95_build_s)}s` : '—',
+  }));
+
+/* ── AI Tooling ── */
+const aiReposScanned = aiToolingData.repos_scanned ?? 0;
+const aiReposWithTooling = aiToolingData.repos_with_ai_tooling ?? 0;
+const aiAdoptionRate = aiToolingData.adoption_rate ?? 0;
+
+const aiRepoRows = bbAiToolingRows.length > 0
+  ? bbAiToolingRows
+      .filter((r: any) => r.data.has_ai_tooling === 'True' || r.data.has_ai_tooling === 'true')
+      .map((r: any) => ({
+        repo: r.data.repo,
+        _href_repo: bitbucketRepoUrl(r.data.workspace, r.data.repo),
+        workspace: r.data.workspace,
+        tools: r.data.tools_detected,
+        files: r.data.ai_files_found,
+      }))
+  : (aiToolingData.repos ?? [])
+      .filter((r: any) => r.has_ai_tooling)
+      .map((r: any) => ({
+        repo: r.repo,
+        _href_repo: bitbucketRepoUrl(r.workspace, r.repo),
+        workspace: r.workspace,
+        tools: (r.tools_detected ?? []).join(', '),
+        files: (r.ai_files_found ?? []).join(', '),
+      }));
+
+const toolFrequency = new Map<string, number>();
+for (const repo of (aiToolingData.repos ?? [])) {
+  for (const tool of (repo.tools_detected ?? [])) {
+    toolFrequency.set(tool, (toolFrequency.get(tool) ?? 0) + 1);
+  }
+}
+const toolFreqRows = [...toolFrequency.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([tool, count]) => ({ tool, repos: count }));
 
 const charts = [
   { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency' },
@@ -90,7 +195,7 @@ const charts = [
     <MetricCard label="Recent Commits" value={fmt(totalCommits)} subtitle="Last 30 days" />
   </dl>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Pipeline Success" value={`${pipeSuccessRate}%`} subtitle={`${pipelineData.repos_with_pipelines ?? 0} repos with pipelines`} />
     <MetricCard label="Open PRs" value={openPRCount.toString()} subtitle={`${oldPRCount} older than 7 days`} />
@@ -101,20 +206,20 @@ const charts = [
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Repos by Workspace</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'workspace', label: 'Workspace' },
-          { key: 'repos', label: 'Repos', align: 'right' },
+          { key: 'workspace', label: 'Workspace', sortable: true },
+          { key: 'repos', label: 'Repos', align: 'right', sortable: true, type: 'number' },
         ]}
         rows={wsRows}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Top Languages</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'language', label: 'Language' },
-          { key: 'repos', label: 'Repos', align: 'right' },
+          { key: 'language', label: 'Language', sortable: true, type: 'badge' },
+          { key: 'repos', label: 'Repos', align: 'right', sortable: true, type: 'number' },
         ]}
         rows={langRows}
       />
@@ -123,24 +228,179 @@ const charts = [
 
   <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Active Repositories</h2>
   <div class="mb-8">
-    <DataTable
+    <TabulatorGrid
       columns={[
-        { key: 'name', label: 'Name' },
-        { key: 'workspace', label: 'Workspace' },
-        { key: 'language', label: 'Language' },
-        { key: 'project', label: 'Project' },
-        { key: 'updated', label: 'Updated' },
+        { key: 'name', label: 'Name', sortable: true },
+        { key: 'workspace', label: 'Workspace', sortable: true, filterable: true },
+        { key: 'language', label: 'Language', sortable: true, filterable: true, type: 'badge' },
+        { key: 'project', label: 'Project', sortable: true, filterable: true },
+        { key: 'updated', label: 'Updated', sortable: true },
       ]}
       rows={repoTableRows}
+      groupBy="workspace"
       searchable
+      exportable
       pageSize={25}
     />
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
-  <div class="grid lg:grid-cols-2 gap-6">
+  <!-- Dependency & Security Analysis -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Dependency &amp; Security Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Repos Scanned" value={fmt(depData.repos_analyzed ?? 0)} subtitle={`${reposWithDeps} with dependency files`} />
+    <MetricCard label="Total Dependencies" value={fmt(totalDeps)} subtitle="across all repos" />
+    <MetricCard label="TypeScript Adoption" value={`${tsAdoptionCount} repos`} subtitle={`${depData.repos_analyzed ? Math.round((tsAdoptionCount / depData.repos_analyzed) * 100) : 0}% of scanned`} />
+    <MetricCard label="Frameworks Detected" value={Object.keys(depData.framework_frequency ?? {}).length.toString()} subtitle="unique frameworks" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Stack Distribution</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'stack', label: 'Stack', sortable: true, type: 'badge' },
+          { key: 'repos', label: 'Repos', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={stackDistRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Framework Frequency</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'framework', label: 'Framework', sortable: true, type: 'badge' },
+          { key: 'repos', label: 'Repos', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={frameworkRows}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Per-Repo Dependency Details</h2>
+  <div class="mb-8">
+    <TabulatorGrid
+      columns={[
+        { key: 'repo', label: 'Repo', sortable: true },
+        { key: 'workspace', label: 'Workspace', sortable: true, filterable: true },
+        { key: 'stack', label: 'Stack', sortable: true, filterable: true, type: 'badge' },
+        { key: 'deps', label: 'Deps', align: 'right', sortable: true, type: 'number' },
+        { key: 'frameworks', label: 'Notable Frameworks', sortable: true },
+      ]}
+      rows={depDetailRows}
+      searchable
+      exportable
+      pageSize={15}
+    />
+  </div>
+
+  <!-- Pipeline History & Trends -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Pipeline History &amp; Trends</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Overall Success Rate" value={`${pipeSuccessRate}%`} subtitle={`${fmt(totalPipeRuns)} total runs`} />
+    <MetricCard label="Active Pipelines" value={activePipelines.length.toString()} subtitle={`of ${pipelineData.repos_checked ?? 0} repos checked`} />
+    <MetricCard label="Avg Build Duration" value={`${Math.round(avgMedianBuild)}s`} subtitle="median across active repos" />
+    <MetricCard label="Failed Runs" value={fmt(totalFailed)} subtitle={`+ ${totalErrors} errors`} />
+  </dl>
+
+  <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Pipeline Runs by Repo</h2>
+  <div class="mb-8">
+    <TabulatorGrid
+      columns={[
+        { key: 'repo', label: 'Repo', sortable: true },
+        { key: 'workspace', label: 'Workspace', sortable: true, filterable: true },
+        { key: 'runs', label: 'Runs', align: 'right', sortable: true, type: 'number' },
+        { key: 'success_rate', label: 'Success Rate', align: 'right', sortable: true, type: 'bar', barMax: 100, bottomCalc: 'avg' },
+        { key: 'failed', label: 'Failed', align: 'right', sortable: true, type: 'number' },
+        { key: 'median', label: 'Median Build', align: 'right', sortable: true },
+        { key: 'p95', label: 'P95 Build', align: 'right', sortable: true },
+      ]}
+      rows={pipelineTableRows}
+      searchable
+      exportable
+      pageSize={15}
+    />
+  </div>
+
+  <!-- AI Tooling in Repos -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">AI Tooling in Repos</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Repos Scanned" value={aiReposScanned.toString()} subtitle="across all workspaces" />
+    <MetricCard label="AI-Enabled Repos" value={aiReposWithTooling.toString()} subtitle={`${aiAdoptionRate}% adoption rate`} />
+    <MetricCard label="Tools Found" value={toolFrequency.size.toString()} subtitle="unique AI tools" />
+    <MetricCard label="Top Tool" value={toolFreqRows[0]?.tool ?? '—'} subtitle={`in ${toolFreqRows[0]?.repos ?? 0} repos`} />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Tool Adoption</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'tool', label: 'Tool', sortable: true, type: 'badge' },
+          { key: 'repos', label: 'Repos', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={toolFreqRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Repos with AI Tooling</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'repo', label: 'Repo', sortable: true },
+          { key: 'workspace', label: 'Workspace', sortable: true, filterable: true },
+          { key: 'tools', label: 'Tools Detected', sortable: true },
+          { key: 'files', label: 'Config Files' },
+        ]}
+        rows={aiRepoRows}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Open Pull Requests</h2>
+  <p class="text-sm text-[var(--text-secondary)] mb-4">
+    {(openPRData.all_open_prs || []).length} open PRs across all repositories. PRs with zero reviewers highlighted.
+  </p>
+
+  {(openPRData.all_open_prs || []).length > 0 && (
+    <div class="mb-10">
+      <TabulatorGrid
+        columns={[
+          { key: 'title', label: 'Title', sortable: true, minWidth: '200px' },
+          { key: 'repo', label: 'Repository', sortable: true, filterable: true, type: 'badge' },
+          { key: 'author', label: 'Author', sortable: true },
+          { key: 'age_days', label: 'Age (days)', align: 'right', sortable: true, type: 'bar', barMax: 365, barInvert: true },
+          { key: 'comments', label: 'Comments', align: 'right', sortable: true, type: 'number' },
+          { key: 'reviewers', label: 'Reviewers', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={(openPRData.all_open_prs || []).map((pr: any) => ({
+          title: pr.title,
+          repo: pr.repo,
+          author: pr.author,
+          age_days: pr.age_days,
+          comments: pr.comment_count ?? 0,
+          reviewers: pr.reviewer_count ?? 0,
+        }))}
+        searchable
+        exportable
+        pageSize={25}
+        groupBy="repo"
+        height="500px"
+        initialSort={[{ column: 'age_days', dir: 'desc' }]}
+      />
+    </div>
+  )}
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />
     ))}
+  </div>
+
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-center justify-between">
+    <div>
+      <p class="text-sm font-medium text-[var(--text)]">Team-enriched risk analysis available</p>
+      <p class="text-xs text-[var(--text-secondary)]">See how review bottlenecks and code ownership map to teams and individuals.</p>
+    </div>
+    <a href="/people/risk" class="px-3 py-1.5 text-xs font-medium text-[var(--accent)] border border-[var(--accent)] rounded-lg hover:bg-[var(--accent-subtle)] transition-colors flex-shrink-0">People &rarr; Risk</a>
   </div>
 </BaseLayout>

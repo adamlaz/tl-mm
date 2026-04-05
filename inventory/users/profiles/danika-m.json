@@ -1,0 +1,29 @@
+{
+  "name": "Danika M",
+  "id": "danika-m",
+  "title": "Senior Quality Engineer",
+  "team": "Restaurant QE",
+  "manager": "Akshay Bhasin",
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "SL",
+  "status": "quiet",
+  "email": null,
+  "aliases": [
+    "Danika M (SL)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Rohana Kumara (Unlicensed)",
+  "id": "rohana-kumara-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5ba0e20cc5ff9570992f707d",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB",
+        "SWAT"
+      ]
+    }
+  }
+}

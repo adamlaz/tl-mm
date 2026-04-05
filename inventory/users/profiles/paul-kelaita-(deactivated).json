@@ -1,0 +1,32 @@
+{
+  "name": "Paul Kelaita (Deactivated)",
+  "id": "paul-kelaita-(deactivated)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:c55e58fb-6bf1-4d21-a31f-8d34554b30da",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "DB"
+      ]
+    }
+  }
+}

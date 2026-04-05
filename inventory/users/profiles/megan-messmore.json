@@ -1,0 +1,39 @@
+{
+  "name": "Megan Messmore",
+  "id": "megan-messmore",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 5,
+    "level": "low"
+  },
+  "systems": [
+    "jira"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:4c7b2734-3159-4fd1-b52d-61fd77c0f980",
+      "email": "",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 0,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+import { getCollection } from 'astro:content';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { personUrl, personSlug } from '../../lib/links';
+
+const num = (v: any) => Number(v) || 0;
+const fmt = (v: any) => Number(v)?.toLocaleString() ?? v;
+
+let networkData: any = {
+  betweenness_top20: [], pagerank_top20: [],
+  communities: [], community_count: 0,
+  graph_stats: { nodes: 0, edges: 0, density: 0 },
+};
+try {
+  networkData = JSON.parse(readFileSync(resolve('../inventory/users/network_metrics.json'), 'utf-8'));
+} catch {}
+
+let teamInteractions: any = { teams: [], top_cross_team: [] };
+try {
+  teamInteractions = JSON.parse(readFileSync(resolve('../inventory/users/team_interactions.json'), 'utf-8'));
+} catch {}
+
+let commGaps: any = { gaps: [] };
+try {
+  commGaps = JSON.parse(readFileSync(resolve('../inventory/users/communication_gaps.json'), 'utf-8'));
+} catch {}
+
+let peopleDir: any[] = [];
+try { peopleDir = await getCollection('peopleDirectory') as any; } catch {}
+const uniqueTeams = [...new Set(
+  peopleDir.filter((u: any) => u.data.status !== 'bot').map((u: any) => u.data.team).filter(Boolean),
+)];
+
+const highSeverityGaps = (commGaps.gaps || []).filter((g: any) => g.severity === 'high');
+
+const crossTeamRows = (teamInteractions.top_cross_team || []).map((t: any) => ({
+  team_a: t.team_a,
+  team_b: t.team_b,
+  count: t.count,
+}));
+
+const gapRows = (commGaps.gaps || []).map((g: any) => ({
+  team_a: g.team_a,
+  team_b: g.team_b,
+  shared_projects: (g.shared_projects || []).join(', '),
+  severity: g.severity,
+  interaction_count: g.interaction_count ?? 0,
+}));
+
+const communities = [...(networkData.communities || [])].sort((a: any, b: any) => b.size - a.size);
+const communityRows = communities.map((c: any, i: number) => ({
+  num: i + 1,
+  size: c.size,
+  dominant_team: c.dominant_team || '—',
+  alignment: `${Number(c.team_alignment_pct).toFixed(1)}%`,
+}));
+
+const betweennessRows = (networkData.betweenness_top20 || []).map((p: any) => ({
+  name: p.name,
+  _href_name: personUrl(personSlug(p.name)),
+  team: p.team,
+  score: Number(p.score).toFixed(3),
+}));
+
+const pagerankRows = (networkData.pagerank_top20 || []).map((p: any) => ({
+  name: p.name,
+  _href_name: personUrl(personSlug(p.name)),
+  team: p.team,
+  score: Number(p.score).toFixed(3),
+}));
+
+const degreeRows = (networkData.degree_centrality_top20 || []).map((p: any) => ({
+  name: p.name,
+  _href_name: personUrl(personSlug(p.name)),
+  team: p.team,
+  score: Number(p.score).toFixed(3),
+}));
+---
+
+<BaseLayout title="Interaction Network — People & Org">
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)]">Interaction Network</span>
+  </div>
+
+  <SectionHeader
+    title="Interaction Network"
+    description="Cross-system collaboration analysis from code reviews, Jira comments, and sprint co-membership."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Graph Nodes" value={(networkData.graph_stats?.nodes ?? 0).toString()} />
+    <MetricCard label="Interaction Edges" value={(networkData.graph_stats?.edges ?? 0).toString()} />
+    <MetricCard label="Communities" value={(networkData.community_count ?? 0).toString()} />
+    <MetricCard
+      label="Communication Gaps"
+      value={highSeverityGaps.length.toString()}
+      subtitle="High severity"
+    />
+  </dl>
+
+  <div class="mb-8">
+    <ChartEmbed slug="people_org_map" title="People Network Graph" />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <ChartEmbed slug="team_interaction_heatmap" title="Cross-Team Heatmap" />
+    <ChartEmbed slug="communication_gaps" title="Org Chart vs System Activity" />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Top Cross-Team Interactions</h2>
+
+  {crossTeamRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'team_a', label: 'Team A', sortable: true, type: 'badge' },
+          { key: 'team_b', label: 'Team B', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Interactions', align: 'right', sortable: true, type: 'heat', heatMax: 200 },
+        ]}
+        rows={crossTeamRows}
+        pageSize={15}
+      />
+    </div>
+  )}
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Communication Gaps</h2>
+
+  <p class="text-sm text-[var(--text-secondary)] mb-4">
+    {highSeverityGaps.length} team pairs share Jira projects but have zero direct interaction.
+  </p>
+
+  {gapRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'team_a', label: 'Team A', sortable: true, type: 'badge' },
+          { key: 'team_b', label: 'Team B', sortable: true, type: 'badge' },
+          { key: 'shared_projects', label: 'Shared Projects', sortable: true },
+          { key: 'interaction_count', label: 'Interactions', align: 'right', sortable: true, type: 'number' },
+          { key: 'severity', label: 'Severity', sortable: true, filterable: true, type: 'badge', badgeMap: { high: 'red', medium: 'amber', low: 'green' } },
+        ]}
+        rows={gapRows}
+        pageSize={25}
+      />
+    </div>
+  )}
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Community Detection</h2>
+
+  <p class="text-sm text-[var(--text-secondary)] mb-4">
+    Network analysis detected <strong>{networkData.community_count ?? communities.length}</strong> natural collaboration communities
+    vs <strong>{uniqueTeams.length}</strong> org chart teams. Low alignment indicates work patterns don't follow org boundaries.
+  </p>
+
+  {communityRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'num', label: 'Community #', align: 'right', sortable: true, type: 'number' },
+          { key: 'size', label: 'Size', align: 'right', sortable: true, type: 'number' },
+          { key: 'dominant_team', label: 'Dominant Team', sortable: true, type: 'badge' },
+          { key: 'alignment', label: 'Alignment %', align: 'right', sortable: true, type: 'bar', barMax: 100 },
+        ]}
+        rows={communityRows}
+      />
+    </div>
+  )}
+
+  <div class="grid lg:grid-cols-3 gap-6 mb-8">
+    <div>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Bridge People (Betweenness)</h3>
+      <TabulatorGrid
+        columns={[
+          { key: 'name', label: 'Name', sortable: true },
+          { key: 'team', label: 'Team', sortable: true, type: 'badge' },
+          { key: 'score', label: 'Score', align: 'right', sortable: true, type: 'bar', barMax: 0.1 },
+        ]}
+        rows={betweennessRows}
+      />
+    </div>
+    <div>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Most Depended On (PageRank)</h3>
+      <TabulatorGrid
+        columns={[
+          { key: 'name', label: 'Name', sortable: true },
+          { key: 'team', label: 'Team', sortable: true, type: 'badge' },
+          { key: 'score', label: 'Score', align: 'right', sortable: true, type: 'bar', barMax: 0.05 },
+        ]}
+        rows={pagerankRows}
+      />
+    </div>
+    <div>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Most Connected (Degree)</h3>
+      <TabulatorGrid
+        columns={[
+          { key: 'name', label: 'Name', sortable: true },
+          { key: 'team', label: 'Team', sortable: true, type: 'badge' },
+          { key: 'score', label: 'Score', align: 'right', sortable: true, type: 'bar', barMax: 0.2 },
+        ]}
+        rows={degreeRows}
+      />
+    </div>
+  </div>
+</BaseLayout>

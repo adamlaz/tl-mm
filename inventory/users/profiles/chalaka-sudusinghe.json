@@ -1,0 +1,62 @@
+{
+  "name": "Chalaka Sudusinghe",
+  "id": "chalaka-sudusinghe",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "CAKE / Restaurant",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 74,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "62835f95cc1d15006fa9eee6",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 2,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "62835f95cc1d15006fa9eee6",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "Chalaka Sudusinghe",
+      "prs_authored": 3,
+      "prs_reviewed": 65,
+      "review_cluster": "syscolabs"
+    },
+    "confluence": {
+      "account_id": "62835f95cc1d15006fa9eee6",
+      "email": "",
+      "pages_total": 47,
+      "pages_90d": 2,
+      "spaces": [
+        "DB",
+        "ES",
+        "LP",
+        "TT"
+      ]
+    }
+  }
+}

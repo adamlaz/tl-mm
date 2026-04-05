@@ -1,0 +1,33 @@
+{
+  "name": "Komalka Wasala (Unlicensed)",
+  "id": "komalka-wasala-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:2e6bf8f7-e2e5-412c-a950-3cdb728a1471",
+      "email": "",
+      "pages_total": 11,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "TT"
+      ]
+    }
+  }
+}

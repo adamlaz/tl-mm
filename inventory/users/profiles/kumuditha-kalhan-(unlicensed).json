@@ -1,0 +1,33 @@
+{
+  "name": "Kumuditha Kalhan (Unlicensed)",
+  "id": "kumuditha-kalhan-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5f68ffbf06e3420071028e78",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "LP"
+      ]
+    }
+  }
+}

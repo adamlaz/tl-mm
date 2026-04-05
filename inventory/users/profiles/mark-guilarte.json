@@ -1,0 +1,60 @@
+{
+  "name": "Mark Guilarte",
+  "id": "mark-guilarte",
+  "title": "VP Program Management",
+  "team": "PMO",
+  "manager": "Chathura Ratnayake",
+  "division": "CDO / PMO",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 313,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "63bc76fa49a31f95b8734464",
+      "email": "",
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 268,
+      "issues_resolved_90d": 35,
+      "open_assigned": 104,
+      "bugs_created_90d": 4,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "confluence": {
+      "account_id": "63bc76fa49a31f95b8734464",
+      "email": "",
+      "pages_total": 21,
+      "pages_90d": 10,
+      "spaces": [
+        "ES",
+        "LP",
+        "P",
+        "PROD",
+        "TT"
+      ]
+    }
+  }
+}

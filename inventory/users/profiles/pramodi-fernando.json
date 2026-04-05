@@ -1,0 +1,55 @@
+{
+  "name": "Pramodi Fernando",
+  "id": "pramodi-fernando",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 11,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "63f5a9973ec8aa51d3d27521",
+      "email": "",
+      "projects": [
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 8,
+      "issues_resolved_90d": 3,
+      "open_assigned": 20,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "63f5a9973ec8aa51d3d27521",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "nickname": "Pramodi Fernando",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

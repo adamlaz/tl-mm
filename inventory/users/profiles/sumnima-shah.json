@@ -1,0 +1,52 @@
+{
+  "name": "Sumnima Shah",
+  "id": "sumnima-shah",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 56,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:5e39443d-1bcd-4884-a143-0f91346ce1a8",
+      "email": "",
+      "projects": [
+        "RL",
+        "SNUS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 39,
+      "issues_resolved_90d": 17,
+      "open_assigned": 6,
+      "bugs_created_90d": 38,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:5e39443d-1bcd-4884-a143-0f91346ce1a8",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Sumnima Shah",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

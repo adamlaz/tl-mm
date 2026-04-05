@@ -1,0 +1,64 @@
+{
+  "name": "John Harre",
+  "id": "john-harre",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 608,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "557058:e2f97df0-c02b-4dc7-9298-7f9b57a577ee",
+      "email": "",
+      "projects": [
+        "RL",
+        "RRS",
+        "SNUS"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 3,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "557058:e2f97df0-c02b-4dc7-9298-7f9b57a577ee",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "John Harre",
+      "prs_authored": 27,
+      "prs_reviewed": 581,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "557058:e2f97df0-c02b-4dc7-9298-7f9b57a577ee",
+      "email": "",
+      "pages_total": 9,
+      "pages_90d": 0,
+      "spaces": [
+        "MMA",
+        "PT"
+      ]
+    }
+  }
+}

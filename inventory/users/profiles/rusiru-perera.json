@@ -1,0 +1,63 @@
+{
+  "name": "Rusiru Perera",
+  "id": "rusiru-perera",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 12,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 11,
+      "issues_resolved_90d": 0,
+      "open_assigned": 17,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabsconf"
+      ],
+      "nickname": "Rusiru Perera",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 1,
+      "spaces": [
+        "DB"
+      ]
+    }
+  }
+}

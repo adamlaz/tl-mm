@@ -1,0 +1,1255 @@
+{
+  "betweenness_top20": [
+    {
+      "id": "sumeera perera",
+      "name": "Sumeera Perera",
+      "team": "Restaurant",
+      "score": 0.109472
+    },
+    {
+      "id": "kyle budd",
+      "name": "Kyle Budd",
+      "team": "Restaurant Backend",
+      "score": 0.104768
+    },
+    {
+      "id": "dulanjan wengappuliarachchi",
+      "name": "Dulanjan Wengappuliarachchi",
+      "team": "Product",
+      "score": 0.099118
+    },
+    {
+      "id": "thiwanka wimalasuriya",
+      "name": "Thiwanka Wimalasuriya",
+      "team": "Restaurant",
+      "score": 0.097563
+    },
+    {
+      "id": "benjamin roedell",
+      "name": "Benjamin Roedell",
+      "team": "Platform",
+      "score": 0.096526
+    },
+    {
+      "id": "alexander baine",
+      "name": "Alexander Baine",
+      "team": "Restaurant Frontend",
+      "score": 0.088148
+    },
+    {
+      "id": "roopa kaukuri",
+      "name": "Roopa Kaukuri",
+      "team": "Platform",
+      "score": 0.083408
+    },
+    {
+      "id": "wenushka dikowita",
+      "name": "Wenushka Dikowita",
+      "team": "Restaurant",
+      "score": 0.079787
+    },
+    {
+      "id": "beau bruderer",
+      "name": "Beau Bruderer",
+      "team": "Restaurant Backend",
+      "score": 0.075919
+    },
+    {
+      "id": "miru somasunthara iyer",
+      "name": "Miru Somasunthara Iyer",
+      "team": "Product Restaurant",
+      "score": 0.075246
+    },
+    {
+      "id": "ryan crawford",
+      "name": "Ryan Crawford",
+      "team": "Unknown",
+      "score": 0.067385
+    },
+    {
+      "id": "michael lee",
+      "name": "Michael Lee",
+      "team": "Platform",
+      "score": 0.066251
+    },
+    {
+      "id": "mike nunez",
+      "name": "Mike Nunez",
+      "team": "Enterprise",
+      "score": 0.054997
+    },
+    {
+      "id": "inushi gunathilake",
+      "name": "Inushi Gunathilake",
+      "team": "Restaurant",
+      "score": 0.042664
+    },
+    {
+      "id": "zubair syed",
+      "name": "Zubair Syed",
+      "team": "Enterprise",
+      "score": 0.041178
+    },
+    {
+      "id": "ana chambers",
+      "name": "Ana Chambers",
+      "team": "Restaurant",
+      "score": 0.039398
+    },
+    {
+      "id": "matthew crumley",
+      "name": "Matthew Crumley",
+      "team": "Platform",
+      "score": 0.03613
+    },
+    {
+      "id": "matthew griffin",
+      "name": "Matthew Griffin",
+      "team": "Payments R&D",
+      "score": 0.036022
+    },
+    {
+      "id": "james oliver",
+      "name": "James Oliver",
+      "team": "Concierge / Retail / Platform",
+      "score": 0.036006
+    },
+    {
+      "id": "cory renard",
+      "name": "Cory Renard",
+      "team": "Restaurant Frontend",
+      "score": 0.035255
+    }
+  ],
+  "pagerank_top20": [
+    {
+      "id": "john harre",
+      "name": "John Harre",
+      "team": "Concierge / Retail / Platform",
+      "score": 0.054113
+    },
+    {
+      "id": "james oliver",
+      "name": "James Oliver",
+      "team": "Concierge / Retail / Platform",
+      "score": 0.051563
+    },
+    {
+      "id": "kyle budd",
+      "name": "Kyle Budd",
+      "team": "Restaurant Backend",
+      "score": 0.043821
+    },
+    {
+      "id": "benjamin roedell",
+      "name": "Benjamin Roedell",
+      "team": "Platform",
+      "score": 0.036337
+    },
+    {
+      "id": "cory renard",
+      "name": "Cory Renard",
+      "team": "Restaurant Frontend",
+      "score": 0.034572
+    },
+    {
+      "id": "gayan karunarathna",
+      "name": "Gayan Karunarathna",
+      "team": "Payments R&D",
+      "score": 0.031339
+    },
+    {
+      "id": "matthew crumley",
+      "name": "Matthew Crumley",
+      "team": "Platform",
+      "score": 0.028109
+    },
+    {
+      "id": "alexander baine",
+      "name": "Alexander Baine",
+      "team": "Restaurant Frontend",
+      "score": 0.027821
+    },
+    {
+      "id": "susampath madarasinghe",
+      "name": "Susampath Madarasinghe",
+      "team": "Payments R&D",
+      "score": 0.026711
+    },
+    {
+      "id": "thiwanka wimalasuriya",
+      "name": "Thiwanka Wimalasuriya",
+      "team": "Restaurant",
+      "score": 0.025001
+    },
+    {
+      "id": "holly culver",
+      "name": "Holly Culver",
+      "team": "Restaurant",
+      "score": 0.024558
+    },
+    {
+      "id": "raveen panditha",
+      "name": "Raveen Panditha",
+      "team": "Restaurant",
+      "score": 0.023076
+    },
+    {
+      "id": "sumeera perera",
+      "name": "Sumeera Perera",
+      "team": "Restaurant",
+      "score": 0.02119
+    },
+    {
+      "id": "inushi gunathilake",
+      "name": "Inushi Gunathilake",
+      "team": "Restaurant",
+      "score": 0.019454
+    },
+    {
+      "id": "roopa kaukuri",
+      "name": "Roopa Kaukuri",
+      "team": "Platform",
+      "score": 0.018903
+    },
+    {
+      "id": "mike nunez",
+      "name": "Mike Nunez",
+      "team": "Enterprise",
+      "score": 0.0181
+    },
+    {
+      "id": "harrison minchew",
+      "name": "Harrison Minchew",
+      "team": "Restaurant Backend",
+      "score": 0.017779
+    },
+    {
+      "id": "miru somasunthara iyer",
+      "name": "Miru Somasunthara Iyer",
+      "team": "Product Restaurant",
+      "score": 0.016524
+    },
+    {
+      "id": "poorna manujaya amarasingha",
+      "name": "Poorna Manujaya Amarasingha",
+      "team": "Enterprise",
+      "score": 0.016381
+    },
+    {
+      "id": "sowjanya akula",
+      "name": "Sowjanya Akula",
+      "team": "Restaurant QE",
+      "score": 0.014972
+    }
+  ],
+  "degree_centrality_top20": [
+    {
+      "id": "kyle budd",
+      "name": "Kyle Budd",
+      "team": "Restaurant Backend",
+      "score": 0.537736
+    },
+    {
+      "id": "matthew crumley",
+      "name": "Matthew Crumley",
+      "team": "Platform",
+      "score": 0.509434
+    },
+    {
+      "id": "benjamin roedell",
+      "name": "Benjamin Roedell",
+      "team": "Platform",
+      "score": 0.471698
+    },
+    {
+      "id": "miru somasunthara iyer",
+      "name": "Miru Somasunthara Iyer",
+      "team": "Product Restaurant",
+      "score": 0.415094
+    },
+    {
+      "id": "alexander baine",
+      "name": "Alexander Baine",
+      "team": "Restaurant Frontend",
+      "score": 0.415094
+    },
+    {
+      "id": "thiwanka wimalasuriya",
+      "name": "Thiwanka Wimalasuriya",
+      "team": "Restaurant",
+      "score": 0.377358
+    },
+    {
+      "id": "wenushka dikowita",
+      "name": "Wenushka Dikowita",
+      "team": "Restaurant",
+      "score": 0.377358
+    },
+    {
+      "id": "mike nunez",
+      "name": "Mike Nunez",
+      "team": "Enterprise",
+      "score": 0.367925
+    },
+    {
+      "id": "sumeera perera",
+      "name": "Sumeera Perera",
+      "team": "Restaurant",
+      "score": 0.320755
+    },
+    {
+      "id": "qaiser pannu",
+      "name": "Qaiser Pannu",
+      "team": "PMO Restaurant",
+      "score": 0.311321
+    },
+    {
+      "id": "cory renard",
+      "name": "Cory Renard",
+      "team": "Restaurant Frontend",
+      "score": 0.301887
+    },
+    {
+      "id": "inushi gunathilake",
+      "name": "Inushi Gunathilake",
+      "team": "Restaurant",
+      "score": 0.283019
+    },
+    {
+      "id": "harrison minchew",
+      "name": "Harrison Minchew",
+      "team": "Restaurant Backend",
+      "score": 0.283019
+    },
+    {
+      "id": "matias lopez riglos",
+      "name": "Matias Lopez Riglos",
+      "team": "PCI Compliance",
+      "score": 0.283019
+    },
+    {
+      "id": "holly culver",
+      "name": "Holly Culver",
+      "team": "Restaurant",
+      "score": 0.273585
+    },
+    {
+      "id": "rob quin",
+      "name": "Rob Quin",
+      "team": "Restaurant Frontend",
+      "score": 0.264151
+    },
+    {
+      "id": "james oliver",
+      "name": "James Oliver",
+      "team": "Concierge / Retail / Platform",
+      "score": 0.254717
+    },
+    {
+      "id": "matthew griffin",
+      "name": "Matthew Griffin",
+      "team": "Payments R&D",
+      "score": 0.254717
+    },
+    {
+      "id": "poorna manujaya amarasingha",
+      "name": "Poorna Manujaya Amarasingha",
+      "team": "Enterprise",
+      "score": 0.245283
+    },
+    {
+      "id": "sanduni dissanayaka",
+      "name": "Sanduni Dissanayaka",
+      "team": "Restaurant",
+      "score": 0.235849
+    }
+  ],
+  "communities": [
+    {
+      "community_id": 5,
+      "size": 31,
+      "members": [
+        {
+          "id": "altaaf anver",
+          "name": "Altaaf Anver",
+          "team": "Platform"
+        },
+        {
+          "id": "angelo senaratne (unlicensed)",
+          "name": "Angelo Senaratne (Unlicensed)",
+          "team": "Unknown"
+        },
+        {
+          "id": "aruna dissanayake",
+          "name": "Aruna Dissanayake",
+          "team": "Unknown"
+        },
+        {
+          "id": "ashen",
+          "name": "Ashen",
+          "team": "Restaurant"
+        },
+        {
+          "id": "austin.spreadbury",
+          "name": "Austin.Spreadbury",
+          "team": "Restaurant"
+        },
+        {
+          "id": "beau bruderer",
+          "name": "Beau Bruderer",
+          "team": "Restaurant Backend"
+        },
+        {
+          "id": "chalaka sudusinghe",
+          "name": "Chalaka Sudusinghe",
+          "team": "CAKE / Restaurant"
+        },
+        {
+          "id": "chathura lalinda ranasingha",
+          "name": "Chathura Lalinda Ranasingha",
+          "team": "Restaurant"
+        },
+        {
+          "id": "dilruwan madubashitha",
+          "name": "Dilruwan Madubashitha",
+          "team": "Restaurant"
+        },
+        {
+          "id": "dineth samarakkody (unlicensed)",
+          "name": "Dineth Samarakkody (Unlicensed)",
+          "team": "Unknown"
+        },
+        {
+          "id": "dulana dharmaratne",
+          "name": "Dulana Dharmaratne",
+          "team": "Restaurant"
+        },
+        {
+          "id": "gregory ladgin",
+          "name": "Gregory Ladgin",
+          "team": "Restaurant"
+        },
+        {
+          "id": "hashan prabodhaka jalath",
+          "name": "Hashan Prabodhaka Jalath",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "inushi gunathilake",
+          "name": "Inushi Gunathilake",
+          "team": "Restaurant"
+        },
+        {
+          "id": "james van buskirk",
+          "name": "James Van Buskirk",
+          "team": "CAKE / Restaurant"
+        },
+        {
+          "id": "janithmi dissanayake (unlicensed)",
+          "name": "Janithmi Dissanayake (Unlicensed)",
+          "team": "Unknown"
+        },
+        {
+          "id": "michael lee",
+          "name": "Michael Lee",
+          "team": "Platform"
+        },
+        {
+          "id": "nishani peiris",
+          "name": "Nishani Peiris",
+          "team": "Unknown"
+        },
+        {
+          "id": "poorna manujaya amarasingha",
+          "name": "Poorna Manujaya Amarasingha",
+          "team": "Enterprise"
+        },
+        {
+          "id": "pramodi fernando",
+          "name": "Pramodi Fernando",
+          "team": "Platform"
+        },
+        {
+          "id": "randy brown",
+          "name": "Randy Brown",
+          "team": "Restaurant"
+        },
+        {
+          "id": "raveen panditha",
+          "name": "Raveen Panditha",
+          "team": "Restaurant"
+        },
+        {
+          "id": "rob quin",
+          "name": "Rob Quin",
+          "team": "Restaurant Frontend"
+        },
+        {
+          "id": "rusiru perera",
+          "name": "Rusiru Perera",
+          "team": "Restaurant"
+        },
+        {
+          "id": "ruwinda ranganayake (unlicensed)",
+          "name": "Ruwinda Ranganayake (Unlicensed)",
+          "team": "Unknown"
+        },
+        {
+          "id": "sanduni dissanayaka",
+          "name": "Sanduni Dissanayaka",
+          "team": "Restaurant"
+        },
+        {
+          "id": "shavin pieris",
+          "name": "Shavin Pieris",
+          "team": "Product Payments"
+        },
+        {
+          "id": "sumeera perera",
+          "name": "Sumeera Perera",
+          "team": "Restaurant"
+        },
+        {
+          "id": "thiwanka wimalasuriya",
+          "name": "Thiwanka Wimalasuriya",
+          "team": "Restaurant"
+        },
+        {
+          "id": "wenushka dikowita",
+          "name": "Wenushka Dikowita",
+          "team": "Restaurant"
+        },
+        {
+          "id": "zubair syed",
+          "name": "Zubair Syed",
+          "team": "Enterprise"
+        }
+      ],
+      "team_distribution": {
+        "Unknown": 6,
+        "Restaurant": 14,
+        "Restaurant Backend": 1,
+        "Platform": 3,
+        "Product Payments": 1,
+        "Enterprise": 2,
+        "Restaurant Frontend": 1,
+        "CAKE / Restaurant": 2,
+        "Concierge / Retail / Platform": 1
+      },
+      "dominant_team": "Restaurant",
+      "team_alignment_pct": 45.2
+    },
+    {
+      "community_id": 0,
+      "size": 20,
+      "members": [
+        {
+          "id": "akshay bhasin",
+          "name": "Akshay Bhasin",
+          "team": "Payments"
+        },
+        {
+          "id": "bill fenley",
+          "name": "Bill Fenley",
+          "team": "Restaurant QE"
+        },
+        {
+          "id": "chathura ratnayake",
+          "name": "Chathura Ratnayake",
+          "team": "Restaurant"
+        },
+        {
+          "id": "cory renard",
+          "name": "Cory Renard",
+          "team": "Restaurant Frontend"
+        },
+        {
+          "id": "darren blackwell",
+          "name": "Darren Blackwell",
+          "team": "Restaurant QE"
+        },
+        {
+          "id": "harrison minchew",
+          "name": "Harrison Minchew",
+          "team": "Restaurant Backend"
+        },
+        {
+          "id": "holly culver",
+          "name": "Holly Culver",
+          "team": "Restaurant"
+        },
+        {
+          "id": "jehan wijesinghe (unlicensed)",
+          "name": "Jehan Wijesinghe (Unlicensed)",
+          "team": "Unknown"
+        },
+        {
+          "id": "jessica conn",
+          "name": "Jessica Conn",
+          "team": "Restaurant"
+        },
+        {
+          "id": "kaelon lucas",
+          "name": "Kaelon Lucas",
+          "team": "Restaurant QE"
+        },
+        {
+          "id": "mark guilarte",
+          "name": "Mark Guilarte",
+          "team": "PMO"
+        },
+        {
+          "id": "miru somasunthara iyer",
+          "name": "Miru Somasunthara Iyer",
+          "team": "Product Restaurant"
+        },
+        {
+          "id": "patrycja stevenson",
+          "name": "Patrycja Stevenson",
+          "team": "Restaurant QE"
+        },
+        {
+          "id": "paul robert",
+          "name": "Paul Robert",
+          "team": "Payments R&D"
+        },
+        {
+          "id": "qaiser pannu",
+          "name": "Qaiser Pannu",
+          "team": "PMO Restaurant"
+        },
+        {
+          "id": "rekha mohanan",
+          "name": "Rekha Mohanan",
+          "team": "Restaurant QE"
+        },
+        {
+          "id": "savumi wadduwage",
+          "name": "Savumi Wadduwage",
+          "team": "Unknown"
+        },
+        {
+          "id": "sowjanya akula",
+          "name": "Sowjanya Akula",
+          "team": "Restaurant QE"
+        },
+        {
+          "id": "vanessa sotomayor",
+          "name": "Vanessa Sotomayor",
+          "team": "Payments PMO"
+        },
+        {
+          "id": "jake linder",
+          "name": "jake linder",
+          "team": "Restaurant"
+        }
+      ],
+      "team_distribution": {
+        "Payments PMO": 1,
+        "Restaurant Frontend": 1,
+        "Restaurant QE": 6,
+        "Payments R&D": 1,
+        "Unknown": 2,
+        "Restaurant": 4,
+        "Payments": 1,
+        "Restaurant Backend": 1,
+        "PMO": 1,
+        "Product Restaurant": 1,
+        "PMO Restaurant": 1
+      },
+      "dominant_team": "Restaurant QE",
+      "team_alignment_pct": 30.0
+    },
+    {
+      "community_id": 6,
+      "size": 17,
+      "members": [
+        {
+          "id": "air",
+          "name": "AIR",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "alexander baine",
+          "name": "Alexander Baine",
+          "team": "Restaurant Frontend"
+        },
+        {
+          "id": "antonio benjamim mussi schmidt",
+          "name": "Antonio Benjamim Mussi Schmidt",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "camilo souza",
+          "name": "Camilo Souza",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "jack kennedy",
+          "name": "Jack Kennedy",
+          "team": "CTO"
+        },
+        {
+          "id": "james oliver",
+          "name": "James Oliver",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "jeff pena",
+          "name": "Jeff Pena",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "jeremy diggins",
+          "name": "Jeremy Diggins",
+          "team": "Enterprise Technology"
+        },
+        {
+          "id": "john harre",
+          "name": "John Harre",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "juan manuel rodriguez",
+          "name": "Juan Manuel Rodriguez",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "kien pham",
+          "name": "Kien Pham",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "matias rondan",
+          "name": "Matias Rondan",
+          "team": "Unknown"
+        },
+        {
+          "id": "matt cooke",
+          "name": "Matt Cooke",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "mauro villaseco",
+          "name": "Mauro Villaseco",
+          "team": "Platform"
+        },
+        {
+          "id": "rusty clark",
+          "name": "Rusty Clark",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "anil.rathore",
+          "name": "anil.rathore",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "jason.bitman",
+          "name": "jason.bitman",
+          "team": "Concierge / Retail / Platform"
+        }
+      ],
+      "team_distribution": {
+        "Unknown": 1,
+        "Concierge / Retail / Platform": 12,
+        "Platform": 1,
+        "CTO": 1,
+        "Enterprise Technology": 1,
+        "Restaurant Frontend": 1
+      },
+      "dominant_team": "Concierge / Retail / Platform",
+      "team_alignment_pct": 70.6
+    },
+    {
+      "community_id": 3,
+      "size": 14,
+      "members": [
+        {
+          "id": "adam lazarus",
+          "name": "Adam Lazarus",
+          "team": "Unknown"
+        },
+        {
+          "id": "anderson lavor",
+          "name": "Anderson Lavor",
+          "team": "Restaurant Backend"
+        },
+        {
+          "id": "benjamin roedell",
+          "name": "Benjamin Roedell",
+          "team": "Platform"
+        },
+        {
+          "id": "chris gomersall",
+          "name": "Chris Gomersall",
+          "team": "Product Design"
+        },
+        {
+          "id": "daniel lomsak",
+          "name": "Daniel Lomsak",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "facundo",
+          "name": "Facundo",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "hashan maduwantha",
+          "name": "Hashan Maduwantha",
+          "team": "CAKE / Restaurant"
+        },
+        {
+          "id": "kyle budd",
+          "name": "Kyle Budd",
+          "team": "Restaurant Backend"
+        },
+        {
+          "id": "matias lopez riglos",
+          "name": "Matias Lopez Riglos",
+          "team": "PCI Compliance"
+        },
+        {
+          "id": "matthew crumley",
+          "name": "Matthew Crumley",
+          "team": "Platform"
+        },
+        {
+          "id": "matthew griffin",
+          "name": "Matthew Griffin",
+          "team": "Payments R&D"
+        },
+        {
+          "id": "mike nunez",
+          "name": "Mike Nunez",
+          "team": "Enterprise"
+        },
+        {
+          "id": "orlando jimenez",
+          "name": "Orlando Jimenez",
+          "team": "Enterprise"
+        },
+        {
+          "id": "richard meitzler",
+          "name": "Richard Meitzler",
+          "team": "Payments R&D"
+        }
+      ],
+      "team_distribution": {
+        "Platform": 2,
+        "PCI Compliance": 1,
+        "Restaurant Backend": 2,
+        "Enterprise": 2,
+        "Payments R&D": 2,
+        "Concierge / Retail / Platform": 2,
+        "Unknown": 1,
+        "Product Design": 1,
+        "CAKE / Restaurant": 1
+      },
+      "dominant_team": "Platform",
+      "team_alignment_pct": 14.3
+    },
+    {
+      "community_id": 2,
+      "size": 10,
+      "members": [
+        {
+          "id": "chip o'connell",
+          "name": "Chip O'Connell",
+          "team": "Onboarding"
+        },
+        {
+          "id": "das desilva",
+          "name": "Das DeSilva",
+          "team": "Onboarding"
+        },
+        {
+          "id": "malinda lamahewa",
+          "name": "Malinda Lamahewa",
+          "team": "Platform"
+        },
+        {
+          "id": "megan messmore",
+          "name": "Megan Messmore",
+          "team": "Platform"
+        },
+        {
+          "id": "richard farber",
+          "name": "Richard Farber",
+          "team": "Product"
+        },
+        {
+          "id": "roopa kaukuri",
+          "name": "Roopa Kaukuri",
+          "team": "Platform"
+        },
+        {
+          "id": "ryan crawford",
+          "name": "Ryan Crawford",
+          "team": "Unknown"
+        },
+        {
+          "id": "william yen (unlicensed)",
+          "name": "William Yen (Unlicensed)",
+          "team": "Unknown"
+        },
+        {
+          "id": "zachary honnold",
+          "name": "Zachary Honnold",
+          "team": "Finance"
+        },
+        {
+          "id": "chalaka.thushara",
+          "name": "chalaka.thushara",
+          "team": "Platform"
+        }
+      ],
+      "team_distribution": {
+        "Unknown": 2,
+        "Onboarding": 2,
+        "Platform": 4,
+        "Finance": 1,
+        "Product": 1
+      },
+      "dominant_team": "Platform",
+      "team_alignment_pct": 40.0
+    },
+    {
+      "community_id": 1,
+      "size": 7,
+      "members": [
+        {
+          "id": "ana chambers",
+          "name": "Ana Chambers",
+          "team": "Restaurant"
+        },
+        {
+          "id": "brew lamb",
+          "name": "Brew Lamb",
+          "team": "Restaurant"
+        },
+        {
+          "id": "dulanjan wengappuliarachchi",
+          "name": "Dulanjan Wengappuliarachchi",
+          "team": "Product"
+        },
+        {
+          "id": "siva ganesh",
+          "name": "Siva Ganesh",
+          "team": "Restaurant Backend"
+        },
+        {
+          "id": "sriharshith akula",
+          "name": "Sriharshith Akula",
+          "team": "Restaurant"
+        },
+        {
+          "id": "suneth de soyza",
+          "name": "Suneth De Soyza",
+          "team": "Restaurant"
+        },
+        {
+          "id": "thaddeus fox",
+          "name": "Thaddeus Fox",
+          "team": "Product"
+        }
+      ],
+      "team_distribution": {
+        "Restaurant": 4,
+        "Product": 2,
+        "Restaurant Backend": 1
+      },
+      "dominant_team": "Restaurant",
+      "team_alignment_pct": 57.1
+    },
+    {
+      "community_id": 4,
+      "size": 6,
+      "members": [
+        {
+          "id": "gayan karunarathna",
+          "name": "Gayan Karunarathna",
+          "team": "Payments R&D"
+        },
+        {
+          "id": "kevin reyes",
+          "name": "Kevin Reyes",
+          "team": "Payments R&D"
+        },
+        {
+          "id": "lorne malec",
+          "name": "Lorne Malec",
+          "team": "Payments"
+        },
+        {
+          "id": "peter vu",
+          "name": "Peter Vu",
+          "team": "Payments R&D"
+        },
+        {
+          "id": "susampath madarasinghe",
+          "name": "Susampath Madarasinghe",
+          "team": "Payments R&D"
+        },
+        {
+          "id": "trenton kress",
+          "name": "Trenton Kress",
+          "team": "Payments R&D"
+        }
+      ],
+      "team_distribution": {
+        "Payments": 1,
+        "Payments R&D": 5
+      },
+      "dominant_team": "Payments R&D",
+      "team_alignment_pct": 83.3
+    },
+    {
+      "community_id": 7,
+      "size": 2,
+      "members": [
+        {
+          "id": "alex domingues da silva",
+          "name": "Alex Domingues da Silva",
+          "team": "Concierge / Retail / Platform"
+        },
+        {
+          "id": "fernando zelaya",
+          "name": "Fernando Zelaya",
+          "team": "Concierge / Retail / Platform"
+        }
+      ],
+      "team_distribution": {
+        "Concierge / Retail / Platform": 2
+      },
+      "dominant_team": "Concierge / Retail / Platform",
+      "team_alignment_pct": 100.0
+    }
+  ],
+  "community_count": 8,
+  "graph_stats": {
+    "nodes": 107,
+    "edges": 778,
+    "density": 0.068595
+  },
+  "all_betweenness": {
+    "cory renard": 0.035255,
+    "sowjanya akula": 0.01277,
+    "thiwanka wimalasuriya": 0.097563,
+    "rusiru perera": 0.012756,
+    "miru somasunthara iyer": 0.075246,
+    "sumeera perera": 0.109472,
+    "inushi gunathilake": 0.042664,
+    "richard farber": 0.001549,
+    "roopa kaukuri": 0.083408,
+    "qaiser pannu": 0.016521,
+    "sanduni dissanayaka": 0.033599,
+    "wenushka dikowita": 0.079787,
+    "dulana dharmaratne": 0.000552,
+    "malinda lamahewa": 0.000937,
+    "alexander baine": 0.088148,
+    "harrison minchew": 0.016382,
+    "randy brown": 0.0,
+    "paul robert": 0.03494,
+    "raveen panditha": 0.013075,
+    "patrycja stevenson": 0.00065,
+    "jake linder": 0.0,
+    "rob quin": 0.025047,
+    "rekha mohanan": 0.007555,
+    "chalaka.thushara": 0.019636,
+    "dulanjan wengappuliarachchi": 0.099118,
+    "austin.spreadbury": 0.017996,
+    "brew lamb": 0.0,
+    "suneth de soyza": 0.001863,
+    "mauro villaseco": 0.001626,
+    "ana chambers": 0.039398,
+    "thaddeus fox": 0.000926,
+    "kaelon lucas": 0.01825,
+    "pramodi fernando": 0.0,
+    "shavin pieris": 0.032455,
+    "michael lee": 0.066251,
+    "matthew crumley": 0.03613,
+    "bill fenley": 0.015483,
+    "jessica conn": 0.0,
+    "dilruwan madubashitha": 0.01167,
+    "anderson lavor": 0.00586,
+    "holly culver": 0.016636,
+    "kyle budd": 0.104768,
+    "nishani peiris": 0.003569,
+    "jehan wijesinghe (unlicensed)": 0.0,
+    "benjamin roedell": 0.096526,
+    "james oliver": 0.036006,
+    "darren blackwell": 0.000736,
+    "ruwinda ranganayake (unlicensed)": 0.0,
+    "mark guilarte": 0.023567,
+    "chip o'connell": 0.000202,
+    "akshay bhasin": 0.0,
+    "zubair syed": 0.041178,
+    "sriharshith akula": 0.009313,
+    "matthew griffin": 0.036022,
+    "zachary honnold": 0.000599,
+    "siva ganesh": 0.0,
+    "poorna manujaya amarasingha": 0.004642,
+    "chathura ratnayake": 0.00451,
+    "gregory ladgin": 0.005262,
+    "altaaf anver": 0.016287,
+    "angelo senaratne (unlicensed)": 0.0,
+    "dineth samarakkody (unlicensed)": 0.0,
+    "chathura lalinda ranasingha": 0.0,
+    "ashen": 0.001082,
+    "hashan maduwantha": 0.019278,
+    "vanessa sotomayor": 0.0,
+    "savumi wadduwage": 0.0,
+    "beau bruderer": 0.075919,
+    "adam lazarus": 0.0,
+    "matias lopez riglos": 0.032792,
+    "ryan crawford": 0.067385,
+    "kevin reyes": 0.02176,
+    "orlando jimenez": 0.02365,
+    "janithmi dissanayake (unlicensed)": 0.0,
+    "william yen (unlicensed)": 0.0,
+    "megan messmore": 0.0,
+    "das desilva": 0.0,
+    "john harre": 0.0,
+    "mike nunez": 0.054997,
+    "trenton kress": 0.001666,
+    "peter vu": 0.000387,
+    "air": 0.0,
+    "matt cooke": 0.009015,
+    "gayan karunarathna": 0.003142,
+    "hashan prabodhaka jalath": 0.010358,
+    "rusty clark": 0.007817,
+    "antonio benjamim mussi schmidt": 9e-05,
+    "jeremy diggins": 0.022642,
+    "chalaka sudusinghe": 0.000942,
+    "jack kennedy": 9e-05,
+    "susampath madarasinghe": 0.010651,
+    "lorne malec": 0.0,
+    "richard meitzler": 0.012875,
+    "jeff pena": 0.0,
+    "kien pham": 0.0,
+    "james van buskirk": 0.003275,
+    "juan manuel rodriguez": 0.0034,
+    "camilo souza": 0.0,
+    "fernando zelaya": 0.0,
+    "alex domingues da silva": 0.0,
+    "aruna dissanayake": 0.0,
+    "facundo": 0.014321,
+    "chris gomersall": 0.0,
+    "matias rondan": 0.0,
+    "jason.bitman": 0.0,
+    "daniel lomsak": 0.0,
+    "anil.rathore": 0.0
+  },
+  "all_pagerank": {
+    "cory renard": 0.034572,
+    "sowjanya akula": 0.014972,
+    "thiwanka wimalasuriya": 0.025001,
+    "rusiru perera": 0.010149,
+    "miru somasunthara iyer": 0.016524,
+    "sumeera perera": 0.02119,
+    "inushi gunathilake": 0.019454,
+    "richard farber": 0.007828,
+    "roopa kaukuri": 0.018903,
+    "qaiser pannu": 0.007003,
+    "sanduni dissanayaka": 0.012175,
+    "wenushka dikowita": 0.007863,
+    "dulana dharmaratne": 0.012528,
+    "malinda lamahewa": 0.002184,
+    "alexander baine": 0.027821,
+    "harrison minchew": 0.017779,
+    "randy brown": 0.001529,
+    "paul robert": 0.010458,
+    "raveen panditha": 0.023076,
+    "patrycja stevenson": 0.005284,
+    "jake linder": 0.012106,
+    "rob quin": 0.014089,
+    "rekha mohanan": 0.006093,
+    "chalaka.thushara": 0.009218,
+    "dulanjan wengappuliarachchi": 0.009655,
+    "austin.spreadbury": 0.009322,
+    "brew lamb": 0.007755,
+    "suneth de soyza": 0.006157,
+    "mauro villaseco": 0.006191,
+    "ana chambers": 0.005176,
+    "thaddeus fox": 0.007993,
+    "kaelon lucas": 0.005913,
+    "pramodi fernando": 0.003569,
+    "shavin pieris": 0.005047,
+    "michael lee": 0.003933,
+    "matthew crumley": 0.028109,
+    "bill fenley": 0.007985,
+    "jessica conn": 0.003231,
+    "dilruwan madubashitha": 0.00439,
+    "anderson lavor": 0.014728,
+    "holly culver": 0.024558,
+    "kyle budd": 0.043821,
+    "nishani peiris": 0.014189,
+    "jehan wijesinghe (unlicensed)": 0.001529,
+    "benjamin roedell": 0.036337,
+    "james oliver": 0.051563,
+    "darren blackwell": 0.003963,
+    "ruwinda ranganayake (unlicensed)": 0.001529,
+    "mark guilarte": 0.007892,
+    "chip o'connell": 0.003969,
+    "akshay bhasin": 0.001529,
+    "zubair syed": 0.00642,
+    "sriharshith akula": 0.002802,
+    "matthew griffin": 0.007845,
+    "zachary honnold": 0.002434,
+    "siva ganesh": 0.005819,
+    "poorna manujaya amarasingha": 0.016381,
+    "chathura ratnayake": 0.001803,
+    "gregory ladgin": 0.001848,
+    "altaaf anver": 0.002112,
+    "angelo senaratne (unlicensed)": 0.001529,
+    "dineth samarakkody (unlicensed)": 0.001529,
+    "chathura lalinda ranasingha": 0.00189,
+    "ashen": 0.001547,
+    "hashan maduwantha": 0.006258,
+    "vanessa sotomayor": 0.001529,
+    "savumi wadduwage": 0.001529,
+    "beau bruderer": 0.008643,
+    "adam lazarus": 0.001529,
+    "matias lopez riglos": 0.011737,
+    "ryan crawford": 0.003051,
+    "kevin reyes": 0.007027,
+    "orlando jimenez": 0.009016,
+    "janithmi dissanayake (unlicensed)": 0.001547,
+    "william yen (unlicensed)": 0.001989,
+    "megan messmore": 0.001989,
+    "das desilva": 0.001989,
+    "john harre": 0.054113,
+    "mike nunez": 0.0181,
+    "trenton kress": 0.010928,
+    "peter vu": 0.01422,
+    "air": 0.001529,
+    "matt cooke": 0.005116,
+    "gayan karunarathna": 0.031339,
+    "hashan prabodhaka jalath": 0.003971,
+    "rusty clark": 0.007754,
+    "antonio benjamim mussi schmidt": 0.005947,
+    "jeremy diggins": 0.002418,
+    "chalaka sudusinghe": 0.002718,
+    "jack kennedy": 0.001785,
+    "susampath madarasinghe": 0.026711,
+    "lorne malec": 0.001529,
+    "richard meitzler": 0.008925,
+    "jeff pena": 0.003479,
+    "kien pham": 0.001529,
+    "james van buskirk": 0.003826,
+    "juan manuel rodriguez": 0.002355,
+    "camilo souza": 0.005356,
+    "fernando zelaya": 0.001529,
+    "alex domingues da silva": 0.00283,
+    "aruna dissanayake": 0.001529,
+    "facundo": 0.001847,
+    "chris gomersall": 0.001529,
+    "matias rondan": 0.002137,
+    "jason.bitman": 0.001529,
+    "daniel lomsak": 0.001529,
+    "anil.rathore": 0.002263
+  }
+}

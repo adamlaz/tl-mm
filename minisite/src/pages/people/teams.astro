@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+import { getCollection } from 'astro:content';
+import { num } from '../../lib/parse';
+import { personUrl, personSlug } from '../../lib/links';
+
+let peopleDir: any[] = [];
+try { peopleDir = await getCollection('peopleDirectory') as any; } catch {}
+
+const people = peopleDir.filter((u: any) => u.data.status !== 'bot');
+
+const teamMap = new Map<string, any[]>();
+for (const p of people) {
+  const t = p.data.team;
+  if (!t) continue;
+  if (!teamMap.has(t)) teamMap.set(t, []);
+  teamMap.get(t)!.push(p);
+}
+
+const teamStatsRows = [...teamMap.entries()]
+  .filter(([, members]) => members.length >= 2)
+  .map(([team, members]) => {
+    const active = members.filter(
+      (m: any) => m.data.activity_level === 'high' || m.data.activity_level === 'medium',
+    ).length;
+    const us = members.filter((m: any) => m.data.geography === 'US').length;
+    const sl = members.filter(
+      (m: any) => m.data.geography === 'SL' || m.data.geography === 'Sri Lanka',
+    ).length;
+    const totals = members.map((m: any) => num(m.data.total_activity_90d));
+    const avg = totals.length
+      ? Math.round(totals.reduce((a: number, b: number) => a + b, 0) / totals.length)
+      : 0;
+    const inactive = members.filter(
+      (m: any) => m.data.activity_level === 'inactive',
+    ).length;
+    const prTotals = members.map((m: any) => num(m.data.prs_authored));
+    const avgPrs = prTotals.length
+      ? Math.round(prTotals.reduce((a: number, b: number) => a + b, 0) / prTotals.length)
+      : 0;
+    const jiraTotals = members.map((m: any) => num(m.data.jira_resolved_90d));
+    const avgJira = jiraTotals.length
+      ? Math.round(jiraTotals.reduce((a: number, b: number) => a + b, 0) / jiraTotals.length)
+      : 0;
+    const sorted = [...members].sort(
+      (a: any, b: any) => num(b.data.total_activity_90d) - num(a.data.total_activity_90d),
+    );
+    const topName = sorted[0]?.data.display_name || '—';
+    const topSlug = sorted[0]?.data.id || personSlug(topName);
+    return {
+      team,
+      people: members.length,
+      active,
+      inactive,
+      us,
+      sl,
+      avg_activity: avg,
+      avg_prs: avgPrs,
+      avg_jira: avgJira,
+      top_contributor: topName,
+      _href_top_contributor: topName !== '—' ? personUrl(topSlug) : '',
+    };
+  })
+  .sort((a, b) => b.people - a.people);
+---
+
+<BaseLayout title="Team Intelligence — People & Org">
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)]">Teams</span>
+  </div>
+
+  <SectionHeader
+    title="Team Intelligence"
+    description="Composition, geography, and activity breakdown across 26 mapped teams."
+  />
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <ChartEmbed slug="team_composition" title="Team Composition by Geography" />
+    <ChartEmbed slug="activity_trends" title="Activity Distribution by Team" />
+    <ChartEmbed slug="geography_activity" title="Geography & Activity Distribution" />
+    <ChartEmbed slug="people_coverage_sankey" title="System Access by Activity Level" />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Team Stats</h2>
+
+  {teamStatsRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'team', label: 'Team', sortable: true, type: 'badge' },
+          { key: 'people', label: 'People', align: 'right', sortable: true, type: 'number', bottomCalc: 'sum' },
+          { key: 'active', label: 'Active', align: 'right', sortable: true, type: 'number', bottomCalc: 'sum' },
+          { key: 'inactive', label: 'Inactive', align: 'right', sortable: true, type: 'number' },
+          { key: 'us', label: 'US', align: 'right', sortable: true, type: 'number' },
+          { key: 'sl', label: 'SL', align: 'right', sortable: true, type: 'number' },
+          { key: 'avg_activity', label: 'Avg Activity', align: 'right', sortable: true, type: 'bar', barMax: 200 },
+          { key: 'avg_prs', label: 'Avg PRs', align: 'right', sortable: true, type: 'number' },
+          { key: 'avg_jira', label: 'Avg Jira', align: 'right', sortable: true, type: 'number' },
+          { key: 'top_contributor', label: 'Top Contributor', sortable: true },
+        ]}
+        rows={teamStatsRows}
+        searchable
+        exportable
+      />
+    </div>
+  )}
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Cross-System Activity</h2>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <ChartEmbed slug="user_activity_levels" title="Activity Levels" />
+    <ChartEmbed slug="user_contribution_top20" title="Top 20 Contributors" />
+    <ChartEmbed slug="user_cross_system" title="Cross-System Presence" />
+    <ChartEmbed slug="user_workload_distribution" title="Workload Distribution" />
+  </div>
+</BaseLayout>

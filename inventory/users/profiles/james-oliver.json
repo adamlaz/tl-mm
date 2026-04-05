@@ -1,0 +1,66 @@
+{
+  "name": "James Oliver",
+  "id": "james-oliver",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 509,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "email": "",
+      "projects": [
+        "CLD",
+        "CM",
+        "RL",
+        "UR"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 35,
+      "issues_resolved_90d": 76,
+      "open_assigned": 27,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "James Oliver",
+      "prs_authored": 9,
+      "prs_reviewed": 389,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+      "email": "",
+      "pages_total": 11,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

@@ -2,8 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import DataTable from '../components/DataTable.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
+import C4Container from '../diagrams/c4-container.mdx';
+import C4Context from '../diagrams/c4-context.mdx';
 import { getCollection } from 'astro:content';
 import { num, fmtCurrency } from '../lib/parse';
 import { readFileSync } from 'node:fs';
@@ -12,16 +14,28 @@ let eksData: any[] = [];
 let rdsData: any[] = [];
 let ecsData: any = {};
 let tagData: any = {};
+let securityData: any = {};
+let backupData: any = {};
+let costOptData: any = {};
+let networkData: any = {};
+let cwDashData: any = {};
 try { eksData = JSON.parse(readFileSync('../inventory/aws/eks_clusters.json', 'utf-8')); } catch {}
 try { rdsData = JSON.parse(readFileSync('../inventory/aws/rds_instances.json', 'utf-8')); } catch {}
 try { ecsData = JSON.parse(readFileSync('../inventory/aws/ecs_task_definitions.json', 'utf-8')); } catch {}
 try { tagData = JSON.parse(readFileSync('../inventory/aws/tagging_compliance.json', 'utf-8')); } catch {}
+try { securityData = JSON.parse(readFileSync('../inventory/aws/security_posture.json', 'utf-8')); } catch {}
+try { backupData = JSON.parse(readFileSync('../inventory/aws/backup_dr.json', 'utf-8')); } catch {}
+try { costOptData = JSON.parse(readFileSync('../inventory/aws/cost_optimization.json', 'utf-8')); } catch {}
+try { networkData = JSON.parse(readFileSync('../inventory/aws/network_topology.json', 'utf-8')); } catch {}
+try { cwDashData = JSON.parse(readFileSync('../inventory/aws/cloudwatch_dashboards.json', 'utf-8')); } catch {}
 
+/* ---------- ECS ---------- */
 const ecsServicesCount = ecsData.total_services_analyzed ?? 0;
 const noHealthCheck = ecsData.containers_without_health_check ?? 0;
 const totalContainers = ecsData.total_containers ?? 1;
 const healthCheckPct = totalContainers > 0 ? Math.round((noHealthCheck / totalContainers) * 100) : 0;
 
+/* ---------- Costs & Resources (CSV collections) ---------- */
 const costs = await getCollection('awsCosts');
 const resources = await getCollection('awsResources');
 
@@ -64,14 +78,111 @@ const charts = [
   { slug: 'aws_resource_inventory', title: 'Resource Inventory' },
   { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes' },
 ];
+
+/* ---------- Security Posture ---------- */
+const secAccounts = Object.values(securityData.accounts ?? {}) as any[];
+const totalIamUsers = secAccounts.reduce((s, a) => s + (a.iam?.account_summary?.users ?? 0), 0);
+const totalIamRoles = secAccounts.reduce((s, a) => s + (a.iam?.account_summary?.roles ?? 0), 0);
+const totalMfaDevices = secAccounts.reduce((s, a) => s + (a.iam?.account_summary?.mfa_devices ?? 0), 0);
+const totalActiveKeys = secAccounts.reduce((s, a) => s + (a.iam?.account_summary?.access_keys_active ?? 0), 0);
+
+const securityRows = secAccounts.map((a: any) => ({
+  account: (a.profile ?? '').replace('mm-', ''),
+  users: a.iam?.account_summary?.users ?? 0,
+  roles: a.iam?.account_summary?.roles ?? 0,
+  policies: a.iam?.account_summary?.policies ?? 0,
+  mfa: a.iam?.account_summary?.mfa_devices ?? 0,
+  keys: a.iam?.account_summary?.access_keys_active ?? 0,
+  min_pw: a.iam?.password_policy?.min_length ?? '?',
+  guardduty: a.guardduty?._error ? 'Access Denied' : 'Active',
+}));
+
+/* ---------- Tagging Compliance ---------- */
+const tagSummary = tagData.overall_summary ?? {};
+const ec2Tag = tagSummary.ec2 ?? {};
+const lambdaTag = tagSummary.lambda ?? {};
+const s3Tag = tagSummary.s3 ?? {};
+
+const tagPerAccount = Object.entries(tagData.per_account ?? {}).map(([name, data]: [string, any]) => ({
+  account: name.replace('mm-', ''),
+  ec2_total: data.ec2?.total ?? 0,
+  ec2_pct: data.ec2?.compliance_pct != null ? `${data.ec2.compliance_pct}%` : 'N/A',
+  lambda_total: data.lambda?.custom ?? data.lambda?.total ?? 0,
+  lambda_pct: data.lambda?.compliance_pct != null ? `${data.lambda.compliance_pct}%` : 'N/A',
+  s3_total: data.s3?.custom ?? data.s3?.total ?? 0,
+  s3_pct: data.s3?.compliance_pct != null ? `${data.s3.compliance_pct}%` : 'N/A',
+}));
+
+/* ---------- Backup & DR ---------- */
+const backupAccounts = Object.values(backupData.accounts ?? {}) as any[];
+const totalBackupPlans = backupAccounts.reduce((s, a) => s + (a.backup_plans?.length ?? 0), 0);
+const totalRecoveryPoints = backupAccounts.reduce(
+  (s, a) => s + (a.backup_vaults ?? []).reduce((vs: number, v: any) => vs + (v.recovery_points ?? 0), 0),
+  0,
+);
+const totalRdsSnapshots = backupAccounts.reduce(
+  (s, a) => s + (a.rds_snapshots?.automated_count ?? 0) + (a.rds_snapshots?.manual_count ?? 0),
+  0,
+);
+
+const backupRows = backupAccounts.map((a: any) => ({
+  account: (a.profile ?? '').replace('mm-', ''),
+  plans: a.backup_plans?.length ?? 0,
+  vaults: a.backup_vaults?.length ?? 0,
+  recovery_pts: (a.backup_vaults ?? []).reduce((s: number, v: any) => s + (v.recovery_points ?? 0), 0),
+  rds_auto: a.rds_snapshots?.automated_count ?? 0,
+  rds_manual: a.rds_snapshots?.manual_count ?? 0,
+}));
+
+/* ---------- Cost Optimization ---------- */
+const savingsPlans = costOptData.savings_plans ?? {};
+const spUtilization = savingsPlans.overall_utilization_pct ?? '0';
+const spCommitment = parseFloat(savingsPlans.total_commitment ?? '0');
+const forecast = costOptData.forecast ?? {};
+const forecastAmount = parseFloat(forecast.total_amount ?? '0');
+const costTrends = costOptData.cost_trends ?? {};
+const totalSpend6m = costTrends.total_spend ?? 0;
+const costTrendDirection = costTrends.trend ?? 'unknown';
+
+/* ---------- Network Topology ---------- */
+const netAccounts = Object.values(networkData.accounts ?? {}) as any[];
+const totalVpcPeering = netAccounts.reduce((s, a) => s + (a.vpc_peering?.length ?? 0), 0);
+const totalNatGw = netAccounts.reduce((s, a) => s + (a.nat_gateways?.total ?? 0), 0);
+const totalSgs = netAccounts.reduce((s, a) => s + (a.security_groups?.total_security_groups ?? 0), 0);
+const allWideOpen = netAccounts.flatMap((a: any) =>
+  (a.security_groups?.wide_open_rules ?? []).map((r: any) => ({
+    account: (a.profile ?? '').replace('mm-', ''),
+    sg_name: r.sg_name,
+    rule: r.rule,
+    ports: r.ports,
+    protocol: r.protocol,
+  })),
+);
+const wideOpenUnique = [
+  ...new Map(allWideOpen.map((r: any) => [`${r.account}|${r.sg_name}|${r.rule}`, r])).values(),
+];
+const totalWideOpenSgs = new Set(wideOpenUnique.map((r: any) => `${r.account}|${r.sg_name}`)).size;
+
+/* ---------- CloudWatch Dashboards ---------- */
+const cwSummary = cwDashData.summary ?? {};
+const dashboardRows = (cwDashData.dashboards ?? [] as any[])
+  .filter((d: any, i: number, arr: any[]) => arr.findIndex((x: any) => x.name === d.name && x.profile === d.profile) === i)
+  .map((d: any) => ({
+    name: d.name,
+    account: (d.profile ?? '').replace('mm-', ''),
+    widgets: d.widget_count ?? 0,
+    alarms: d.alarm_count ?? 0,
+    modified: d.last_modified ? d.last_modified.split(' ')[0] : 'unknown',
+  }));
 ---
 
-<BaseLayout title="AWS Infrastructure">
+<BaseLayout title="Infrastructure">
   <SectionHeader
-    title="AWS Infrastructure"
-    description="18 AWS accounts managed under a centralized cloud organization. Cost and resource data from March 2026."
+    title="Infrastructure"
+    description="18 AWS accounts managed under a centralized cloud organization. Cost, resource, security, and operational data — March/April 2026."
   />
 
+  <!-- ── Top-level Metrics ── -->
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Monthly Spend" value={`$${Math.round(totalCost / 1000)}K`} subtitle="March 2026" />
     <MetricCard label="EC2 Instances" value={ec2Count.toString()} subtitle="83% pre-Graviton" />
@@ -79,7 +190,8 @@ const charts = [
     <MetricCard label="RDS Instances" value={rdsCount.toString()} />
   </dl>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <!-- ── Deep Analysis ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="EKS Clusters" value={eksData.length?.toString() ?? '0'} subtitle={eksData[0] ? `K8s ${eksData[0].k8s_version}` : ''} />
     <MetricCard label="RDS Instances" value={rdsData.length?.toString() ?? '0'} subtitle="Deep: engine versions, Multi-AZ" />
@@ -90,25 +202,25 @@ const charts = [
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">EKS Clusters</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'name', label: 'Cluster' },
-          { key: 'profile', label: 'Account' },
-          { key: 'k8s_version', label: 'K8s Version' },
-          { key: 'status', label: 'Status' },
+          { key: 'name', label: 'Cluster', sortable: true },
+          { key: 'profile', label: 'Account', sortable: true, filterable: true },
+          { key: 'k8s_version', label: 'K8s Version', sortable: true },
+          { key: 'status', label: 'Status', sortable: true, filterable: true, type: 'badge', badgeMap: { ACTIVE: 'green', CREATING: 'amber', DELETING: 'red', FAILED: 'red', UPDATING: 'amber' } },
         ]}
         rows={eksData.map((e: any) => ({ name: e.name, profile: e.profile?.replace('mm-',''), k8s_version: e.k8s_version, status: e.status }))}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">RDS Instances</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'id', label: 'Instance' },
-          { key: 'engine', label: 'Engine' },
-          { key: 'version', label: 'Version' },
-          { key: 'multi_az', label: 'Multi-AZ' },
-          { key: 'encrypted', label: 'Encrypted' },
+          { key: 'id', label: 'Instance', sortable: true },
+          { key: 'engine', label: 'Engine', sortable: true, filterable: true },
+          { key: 'version', label: 'Version', sortable: true },
+          { key: 'multi_az', label: 'Multi-AZ', sortable: true, filterable: true, type: 'boolean' },
+          { key: 'encrypted', label: 'Encrypted', sortable: true, filterable: true, type: 'boolean' },
         ]}
         rows={rdsData.map((r: any) => ({ id: r.db_identifier, engine: r.engine, version: r.engine_version, multi_az: r.multi_az ? 'Yes' : 'No', encrypted: r.storage_encrypted ? 'Yes' : 'No' }))}
       />
@@ -118,32 +230,182 @@ const charts = [
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Cost by Account</h2>
-      <DataTable
+      <TabulatorGrid
+        exportable
         columns={[
-          { key: 'account', label: 'Account' },
-          { key: 'cost', label: 'Cost', align: 'right' },
-          { key: 'pct', label: '% Total', align: 'right' },
+          { key: 'account', label: 'Account', sortable: true, filterable: true },
+          { key: 'cost', label: 'Cost', align: 'right', sortable: true, type: 'currency', bottomCalc: 'sum' },
+          { key: 'pct', label: '% Total', align: 'right', sortable: true, type: 'bar', barMax: 100 },
         ]}
         rows={accountRows}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Top 20 Services</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'service', label: 'Service' },
-          { key: 'cost', label: 'Cost', align: 'right' },
-          { key: 'pct', label: '% Total', align: 'right' },
+          { key: 'service', label: 'Service', sortable: true, filterable: true },
+          { key: 'cost', label: 'Cost', align: 'right', sortable: true, type: 'currency' },
+          { key: 'pct', label: '% Total', align: 'right', sortable: true, type: 'bar', barMax: 100 },
         ]}
         rows={serviceRows}
       />
     </div>
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
+  <!-- ── Cost Optimization ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Cost Optimization</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Savings Plans Util." value={`${spUtilization}%`} subtitle="Q1 2026 utilization" />
+    <MetricCard label="SP Commitment" value={`$${Math.round(spCommitment / 1000)}K`} subtitle="Q1 2026 total commitment" />
+    <MetricCard label="6-Month Spend" value={`$${(totalSpend6m / 1_000_000).toFixed(1)}M`} subtitle={`Oct 2025 – Mar 2026 (${costTrendDirection})`} />
+    <MetricCard label="30-Day Forecast" value={`$${Math.round(forecastAmount / 1000)}K`} subtitle="projected next period" />
+  </dl>
+
+  <!-- ── Security Posture ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Security Posture</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <MetricCard label="IAM Users" value={totalIamUsers.toString()} subtitle={`across ${securityData.accounts_scanned ?? 0} scanned accounts`} />
+    <MetricCard label="IAM Roles" value={totalIamRoles.toString()} subtitle="total roles provisioned" />
+    <MetricCard label="MFA Devices" value={totalMfaDevices.toString()} subtitle={totalMfaDevices === 0 ? 'CRITICAL — none enrolled' : 'enrolled'} />
+    <MetricCard label="Active Access Keys" value={totalActiveKeys.toString()} subtitle="service + user keys" />
+  </dl>
+  <div class="mb-8">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">IAM Summary by Account</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'account', label: 'Account', sortable: true, filterable: true },
+        { key: 'users', label: 'Users', align: 'right', sortable: true, type: 'number' },
+        { key: 'roles', label: 'Roles', align: 'right', sortable: true, type: 'number' },
+        { key: 'policies', label: 'Policies', align: 'right', sortable: true, type: 'number' },
+        { key: 'mfa', label: 'MFA', align: 'right', sortable: true, type: 'number' },
+        { key: 'keys', label: 'Access Keys', align: 'right', sortable: true, type: 'number' },
+        { key: 'min_pw', label: 'Min PW Length', align: 'right', sortable: true, type: 'number' },
+        { key: 'guardduty', label: 'GuardDuty', sortable: true, filterable: true, type: 'badge', badgeMap: { Active: 'green', 'Access Denied': 'red' } },
+      ]}
+      rows={securityRows}
+    />
+  </div>
+
+  <!-- ── Network Security ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Network Security</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <MetricCard label="VPC Peering" value={totalVpcPeering.toString()} subtitle="active connections" />
+    <MetricCard label="NAT Gateways" value={totalNatGw.toString()} subtitle="across scanned accounts" />
+    <MetricCard label="Security Groups" value={totalSgs.toString()} subtitle="total SGs" />
+    <MetricCard label="Wide-Open SGs" value={totalWideOpenSgs.toString()} subtitle={`${wideOpenUnique.length} rules exposed to 0.0.0.0/0`} />
+  </dl>
+  {wideOpenUnique.length > 0 && (
+    <div class="mb-8">
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Wide-Open Security Group Rules (0.0.0.0/0)</h2>
+      <TabulatorGrid
+        exportable
+        columns={[
+          { key: 'account', label: 'Account', sortable: true, filterable: true },
+          { key: 'sg_name', label: 'Security Group', sortable: true, filterable: true },
+          { key: 'ports', label: 'Port(s)', sortable: true },
+          { key: 'protocol', label: 'Protocol', sortable: true, filterable: true },
+          { key: 'rule', label: 'Rule', sortable: true },
+        ]}
+        rows={wideOpenUnique}
+        searchable={true}
+        pageSize={15}
+      />
+    </div>
+  )}
+
+  <!-- ── Tagging Compliance ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Tagging & Naming Compliance</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <MetricCard label="EC2 Naming" value={`${ec2Tag.naming_compliance_pct ?? 0}%`} subtitle={`${ec2Tag.total ?? 0} instances — ${ec2Tag.unnamed ?? 0} unnamed`} />
+    <MetricCard label="Lambda Naming" value={`${lambdaTag.naming_compliance_pct ?? 0}%`} subtitle={`${lambdaTag.custom ?? 0} custom functions`} />
+    <MetricCard label="S3 Naming" value={`${s3Tag.naming_compliance_pct ?? 0}%`} subtitle={`${s3Tag.custom ?? 0} custom buckets — ${s3Tag.common_issues?.no_org_prefix ?? 0} missing org prefix`} />
+  </dl>
+  <div class="mb-8">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Compliance by Account</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'account', label: 'Account', sortable: true, filterable: true },
+        { key: 'ec2_total', label: 'EC2', align: 'right', sortable: true, type: 'number' },
+        { key: 'ec2_pct', label: 'EC2 Compliance', align: 'right', sortable: true, type: 'bar', barMax: 100, bottomCalc: 'avg' },
+        { key: 'lambda_total', label: 'Lambda', align: 'right', sortable: true, type: 'number' },
+        { key: 'lambda_pct', label: 'Lambda Compliance', align: 'right', sortable: true, type: 'bar', barMax: 100, bottomCalc: 'avg' },
+        { key: 's3_total', label: 'S3', align: 'right', sortable: true, type: 'number' },
+        { key: 's3_pct', label: 'S3 Compliance', align: 'right', sortable: true, type: 'bar', barMax: 100, bottomCalc: 'avg' },
+      ]}
+      rows={tagPerAccount}
+      searchable={true}
+    />
+  </div>
+
+  <!-- ── Backup & DR ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Backup & Disaster Recovery</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <MetricCard label="Backup Plans" value={totalBackupPlans.toString()} subtitle={`across ${backupData.accounts_scanned ?? 0} accounts`} />
+    <MetricCard label="Recovery Points" value={totalRecoveryPoints.toString()} subtitle="in backup vaults" />
+    <MetricCard label="RDS Snapshots" value={totalRdsSnapshots.toString()} subtitle="automated + manual" />
+    <MetricCard label="Accounts Scanned" value={(backupData.accounts_scanned ?? 0).toString()} subtitle="of 18 total" />
+  </dl>
+  <div class="mb-8">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Backup Summary by Account</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'account', label: 'Account', sortable: true, filterable: true },
+        { key: 'plans', label: 'Backup Plans', align: 'right', sortable: true, type: 'number' },
+        { key: 'vaults', label: 'Vaults', align: 'right', sortable: true, type: 'number' },
+        { key: 'recovery_pts', label: 'Recovery Points', align: 'right', sortable: true, type: 'number' },
+        { key: 'rds_auto', label: 'RDS Auto Snaps', align: 'right', sortable: true, type: 'number' },
+        { key: 'rds_manual', label: 'RDS Manual Snaps', align: 'right', sortable: true, type: 'number' },
+      ]}
+      rows={backupRows}
+    />
+  </div>
+
+  <!-- ── CloudWatch Dashboards ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">CloudWatch Dashboards</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <MetricCard label="Dashboards" value={(cwSummary.total_dashboards ?? 0).toString()} subtitle="configured" />
+    <MetricCard label="Widgets" value={(cwSummary.total_widgets ?? 0).toString()} subtitle="total across dashboards" />
+    <MetricCard label="Alarm References" value={(cwSummary.total_alarm_references ?? 0).toString()} subtitle={cwSummary.total_alarm_references === 0 ? 'no alarms linked' : 'linked to dashboards'} />
+    <MetricCard label="Namespaces" value={(cwSummary.all_metric_namespaces?.length ?? 0).toString()} subtitle="metric namespaces tracked" />
+  </dl>
+  <div class="mb-8">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Dashboard Inventory</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'name', label: 'Dashboard', sortable: true, filterable: true },
+        { key: 'account', label: 'Account', sortable: true, filterable: true },
+        { key: 'widgets', label: 'Widgets', align: 'right', sortable: true, type: 'number' },
+        { key: 'alarms', label: 'Alarms', align: 'right', sortable: true, type: 'number' },
+        { key: 'modified', label: 'Last Modified', sortable: true, type: 'date' },
+      ]}
+      rows={dashboardRows}
+    />
+  </div>
+
+  <!-- ── C4 Diagrams ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">C4 Diagrams</h2>
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden p-6 mb-6">
+    <h3 class="text-sm font-semibold text-[var(--text)] mb-4">C4 Container Diagram — Mad Mobile Platform</h3>
+    <p class="text-xs text-[var(--text-muted)] mb-4">Source: AWS ECS Inventory, extracted April 2026</p>
+    <div class="d2-diagram-wrap">
+      <C4Container />
+    </div>
+  </div>
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden p-6 mb-6">
+    <h3 class="text-sm font-semibold text-[var(--text)] mb-4">C4 System Context — Mad Mobile</h3>
+    <p class="text-xs text-[var(--text-muted)] mb-4">Source: AWS Inventory, extracted April 2026</p>
+    <div class="d2-diagram-wrap">
+      <C4Context />
+    </div>
+  </div>
+
+  <!-- ── Charts ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />
     ))}
   </div>
 </BaseLayout>
+

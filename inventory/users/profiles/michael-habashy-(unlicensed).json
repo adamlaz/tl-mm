@@ -1,0 +1,35 @@
+{
+  "name": "Michael Habashy (Unlicensed)",
+  "id": "michael-habashy-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Michael Gibaldi (Unlicensed)",
+    "Michael Weaver (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "615759bfc5388b00694898a9",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

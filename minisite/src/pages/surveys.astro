@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import DataTable from '../components/DataTable.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
 
 const surveys = [
   { name: 'DORA Quick Check', questions: 9, time: '~3 min', audience: 'Leads, Managers', measures: 'Deploy frequency, lead time, change failure rate, recovery time, reliability' },
@@ -88,13 +88,13 @@ const surveyDetails = [
 
   <div class="mb-10">
     <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Survey Summary</h2>
-    <DataTable
+    <TabulatorGrid
       columns={[
-        { key: 'name', label: 'Survey' },
-        { key: 'questions', label: 'Questions', align: 'right' },
-        { key: 'time', label: 'Time' },
-        { key: 'audience', label: 'Audience' },
-        { key: 'measures', label: 'Measures' },
+        { key: 'name', label: 'Survey', sortable: true },
+        { key: 'questions', label: 'Questions', align: 'right', sortable: true, type: 'number' },
+        { key: 'time', label: 'Time', sortable: true },
+        { key: 'audience', label: 'Audience', sortable: true, type: 'badge' },
+        { key: 'measures', label: 'Measures', sortable: true },
       ]}
       rows={surveys}
     />
@@ -102,44 +102,51 @@ const surveyDetails = [
 
   <div class="mb-10">
     <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Who Takes What</h2>
-    <DataTable
+    <TabulatorGrid
       columns={[
-        { key: 'role', label: 'Role' },
-        { key: 'dora', label: 'DORA' },
-        { key: 'westrum', label: 'Westrum' },
-        { key: 'devex', label: 'DevEx' },
-        { key: 'pragmatic', label: 'Pragmatic' },
-        { key: 'ai', label: 'AI Tooling' },
+        { key: 'role', label: 'Role', sortable: true, type: 'badge' },
+        { key: 'dora', label: 'DORA', sortable: true, type: 'boolean' },
+        { key: 'westrum', label: 'Westrum', sortable: true, type: 'boolean' },
+        { key: 'devex', label: 'DevEx', sortable: true, type: 'boolean' },
+        { key: 'pragmatic', label: 'Pragmatic', sortable: true, type: 'boolean' },
+        { key: 'ai', label: 'AI Tooling', sortable: true, type: 'boolean' },
       ]}
-      rows={matrix}
+      rows={matrix.map(r => ({
+        ...r,
+        dora: r.dora === '✓' ? 'Yes' : 'No',
+        westrum: r.westrum === '✓' ? 'Yes' : 'No',
+        devex: r.devex === '✓' ? 'Yes' : 'No',
+        pragmatic: r.pragmatic === '✓' ? 'Yes' : 'No',
+        ai: r.ai === '✓' ? 'Yes' : 'No',
+      }))}
     />
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Deployment Timeline</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'date', label: 'Date' },
-          { key: 'milestone', label: 'Milestone' },
+          { key: 'date', label: 'Date', sortable: true },
+          { key: 'milestone', label: 'Milestone', sortable: true },
         ]}
         rows={timeline}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">DORA Crosswalk</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'metric', label: 'Metric' },
-          { key: 'selfReport', label: 'Self-Report' },
-          { key: 'systemData', label: 'System Data Source' },
+          { key: 'metric', label: 'Metric', sortable: true, minWidth: '160px' },
+          { key: 'selfReport', label: 'Self-Report', sortable: true, minWidth: '120px' },
+          { key: 'systemData', label: 'System Data Source', sortable: true, minWidth: '200px' },
         ]}
         rows={doraCrosswalk}
       />
     </div>
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Details</h2>
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Details</h2>
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {surveyDetails.map((s) => (
       <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">

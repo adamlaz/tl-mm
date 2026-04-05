@@ -1,0 +1,3654 @@
+[
+  {
+    "source": "jira",
+    "canonical_name": "Ryan Schinsky",
+    "email": "",
+    "account_id": "712020:ffed12e1-6c8f-4b0c-9d8f-28b9f6866b55",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Kiel Williams",
+    "email": "",
+    "account_id": "712020:f614a47d-45a8-4162-a49b-ffd740a2b35f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Bailey Shatney",
+    "email": "",
+    "account_id": "712020:f2e7767f-80b3-414a-8ef0-e5efe326e0cb",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "jpena",
+    "email": "",
+    "account_id": "712020:f0430f26-0f3a-4d9e-84b8-dbbd50632526",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 57,
+      "open_assigned": 13,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Pallavi",
+    "email": "",
+    "account_id": "712020:efd09b87-3d39-4731-80d3-9ba5ab41b984",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Abigail Bernstein",
+    "email": "",
+    "account_id": "712020:ee9fa334-21d2-4b47-bd28-f739a1268ec8",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Rob Quin",
+    "email": "",
+    "account_id": "712020:e87e8aeb-0aee-47af-8e26-252166aa0cdf",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 4,
+      "open_assigned": 19,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Cory Renard",
+    "email": "",
+    "account_id": "712020:e87e3bb6-223a-4250-b2cf-9b02c42f5cec",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 8,
+      "open_assigned": 25,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "paul.roberts",
+    "email": "",
+    "account_id": "712020:c83ca556-0b81-4161-ba74-f4e2189e855c",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLD",
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 11,
+      "open_assigned": 15,
+      "bugs_created_90d": 1,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Nicholas Allen",
+    "email": "",
+    "account_id": "712020:c752f3d8-3672-44dd-b5d2-de5f6e0c78e0",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Rusiru Perera",
+    "email": "",
+    "account_id": "712020:b9805f4e-a400-4ab9-a830-d371eaaf726e",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 11,
+      "issues_resolved_90d": 0,
+      "open_assigned": 17,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Kien Pham",
+    "email": "",
+    "account_id": "712020:b049aa5d-6c14-497e-b8d3-3081e2f29bd9",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "RRS",
+        "SNUS"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 10,
+      "open_assigned": 8,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Wenushka Dikowita",
+    "email": "",
+    "account_id": "712020:aeb8c5ad-59d0-45b9-bdc5-75bc34a0fc7b",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 66,
+      "issues_resolved_90d": 20,
+      "open_assigned": 42,
+      "bugs_created_90d": 3,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Christian Orellana",
+    "email": "",
+    "account_id": "712020:a62316a3-377d-4a03-88d4-5680c5fafb58",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Malinda Lamahewa",
+    "email": "",
+    "account_id": "712020:a5b6c6ae-8d0b-46c1-b982-b4bf7b4c538f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 10,
+      "issues_resolved_90d": 4,
+      "open_assigned": 151,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Benjamin Roedell",
+    "email": "",
+    "account_id": "712020:9df1dec1-364c-425d-8f3e-c0a526f38a58",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM",
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 16,
+      "issues_resolved_90d": 27,
+      "open_assigned": 39,
+      "bugs_created_90d": 3,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Daniel Leniz",
+    "email": "",
+    "account_id": "712020:96ae6a72-fc72-4388-8804-a81d116aa19f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Rekha Mohanan",
+    "email": "",
+    "account_id": "712020:951ab061-86de-48c5-ab20-14137f95d9d7",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 38,
+      "issues_resolved_90d": 12,
+      "open_assigned": 15,
+      "bugs_created_90d": 30,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Poorna Manujaya Amarasingha",
+    "email": "",
+    "account_id": "712020:938d4652-a896-4147-85c3-0a931f4ac9d9",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLOUD"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 111,
+      "issues_resolved_90d": 66,
+      "open_assigned": 298,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Kolkata",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Richard Farber",
+    "email": "",
+    "account_id": "712020:8fc7ac9e-dab6-4d4b-85eb-961b5bff8c2b",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS",
+        "RL",
+        "RRS",
+        "SNUS",
+        "UR"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 249,
+      "issues_resolved_90d": 101,
+      "open_assigned": 30,
+      "bugs_created_90d": 27,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Sriharshith Akula",
+    "email": "",
+    "account_id": "712020:895eb59d-f975-446a-abe1-6ca4b701c755",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 25,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Francina Golden",
+    "email": "",
+    "account_id": "712020:88a6ead1-7695-4c0f-969d-51c6000a406d",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Pratikchha Khadka",
+    "email": "",
+    "account_id": "712020:86484628-55c5-49cf-b010-cd32af69729f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Cameron Yelverton",
+    "email": "",
+    "account_id": "712020:860eab17-141d-4de5-84b7-b277f87bff87",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Brew Lamb",
+    "email": "",
+    "account_id": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 57,
+      "issues_resolved_90d": 2,
+      "open_assigned": 5,
+      "bugs_created_90d": 39,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Sumeera Perera",
+    "email": "",
+    "account_id": "712020:7531689f-acea-4fca-817f-32c6d219ef4e",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 34,
+      "issues_resolved_90d": 2,
+      "open_assigned": 56,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Manuel Garcia",
+    "email": "",
+    "account_id": "712020:721a4758-5ebe-4155-83a0-f61bce1c0222",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Adam Veliz",
+    "email": "",
+    "account_id": "712020:718c5899-b0c3-40a6-915d-c9f30b4e89c9",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Zachary McCoy",
+    "email": "",
+    "account_id": "712020:70b6b749-412a-42f8-bba8-389eaf797d4e",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Danika Munasinghe",
+    "email": "",
+    "account_id": "712020:6d276070-95b6-4af3-8d2a-1b7d34219c49",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 28,
+      "open_assigned": 22,
+      "bugs_created_90d": 15,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Sadeep Udugama",
+    "email": "",
+    "account_id": "712020:62c0d7a0-373c-4d7b-a21e-311f6fd13661",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Gregory Ladgin",
+    "email": "",
+    "account_id": "712020:60873b62-4213-4072-82c6-ee27c49a245a",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 7,
+      "issues_resolved_90d": 0,
+      "open_assigned": 2,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Sumnima Shah",
+    "email": "",
+    "account_id": "712020:5e39443d-1bcd-4884-a143-0f91346ce1a8",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "RL",
+        "SNUS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 39,
+      "issues_resolved_90d": 17,
+      "open_assigned": 6,
+      "bugs_created_90d": 38,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Jessica Conn",
+    "email": "",
+    "account_id": "712020:57ddba6b-8a2f-42f5-935f-4d6031ae9b8f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST",
+        "RL",
+        "RRS",
+        "SNUS",
+        "UR"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 2,
+      "open_assigned": 2,
+      "bugs_created_90d": 8,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Suneth De Soyza",
+    "email": "",
+    "account_id": "712020:5418036e-c696-4e68-b559-08dd3057344a",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 4,
+      "open_assigned": 29,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Kevin O'Haugherty",
+    "email": "",
+    "account_id": "712020:500aacce-6497-44dd-9bc8-74f08b8e327c",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 30,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Karen Licker",
+    "email": "",
+    "account_id": "712020:4d481d3c-b1bc-487b-a7a1-7740ceb05012",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Megan Messmore",
+    "email": "",
+    "account_id": "712020:4c7b2734-3159-4fd1-b52d-61fd77c0f980",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 0,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "jason.bitman",
+    "email": "",
+    "account_id": "712020:49d312d4-2bcf-4708-b354-a0d7884b0913",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Emily Stineman",
+    "email": "",
+    "account_id": "712020:496d0f2b-e93c-48a0-8a58-cf05fa5c6677",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Michael Lee",
+    "email": "",
+    "account_id": "712020:46030b51-2971-48db-a9be-38fbe7ee8ea6",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 6,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Isaac Kim",
+    "email": "",
+    "account_id": "712020:41d25617-1f53-44dc-b840-a3d0db017bcd",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Rusty Clark",
+    "email": "",
+    "account_id": "712020:3e020758-d5ba-4b1c-bd72-7287fdc05fe3",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 7,
+      "issues_resolved_90d": 2,
+      "open_assigned": 13,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Sanduni Dissanayaka",
+    "email": "",
+    "account_id": "712020:3c206d44-73aa-4e85-b497-e4494f47ef8d",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 17,
+      "issues_resolved_90d": 2,
+      "open_assigned": 15,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Inushi Gunathilake",
+    "email": "",
+    "account_id": "712020:36ec0c81-0f94-4cab-a2f3-30c51477643b",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 17,
+      "issues_resolved_90d": 3,
+      "open_assigned": 12,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Antonio Mussi",
+    "email": "",
+    "account_id": "712020:350fc12a-7ac7-4a74-97b1-6c81825de3cb",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 28,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Austin.Spreadbury",
+    "email": "",
+    "account_id": "712020:3402d792-ad95-4b93-baa9-1eb98fa20742",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 2,
+      "open_assigned": 5,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "chalaka.thushara",
+    "email": "",
+    "account_id": "712020:307b812f-8551-4864-9304-cd13cdd278f3",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 8,
+      "open_assigned": 117,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Mark Do",
+    "email": "",
+    "account_id": "712020:2fb265b6-48e6-4d0a-aeca-13d7b4f85994",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Nishani Peiris",
+    "email": "",
+    "account_id": "712020:2d2cabc2-6d9f-4144-b224-57c31f32c767",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLD",
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 5,
+      "open_assigned": 40,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Thaddeus Fox",
+    "email": "",
+    "account_id": "712020:2cf53905-ed0c-43b1-a938-63e913afcdb3",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 159,
+      "issues_resolved_90d": 126,
+      "open_assigned": 146,
+      "bugs_created_90d": 15,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "zachary.honnold",
+    "email": "",
+    "account_id": "712020:2c9fdd23-0faa-4376-b466-e04d864132f4",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS",
+        "UP"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 19,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Beau Bruderer",
+    "email": "",
+    "account_id": "712020:2b95db1e-2a61-41f4-a556-8e00c91e7652",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 6,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Fayaz Abdul",
+    "email": "",
+    "account_id": "712020:2a787c20-c893-4435-bd8b-1629240eaf72",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 0,
+      "open_assigned": 33,
+      "bugs_created_90d": 0,
+      "timeZone": "Europe/London",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Ian Bennett",
+    "email": "",
+    "account_id": "712020:27dd3052-a01a-4c70-96f1-eb76f8984d02",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Hashan Prabodhaka Jalath",
+    "email": "",
+    "account_id": "712020:257ccac9-93ad-424d-bee3-5ed569ce5afa",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 15,
+      "issues_resolved_90d": 23,
+      "open_assigned": 164,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Raveen Panditha",
+    "email": "raveen.panditha@madmobile.com",
+    "account_id": "712020:24c80284-89a1-4193-8c8b-494b855950cf",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 16,
+      "issues_resolved_90d": 15,
+      "open_assigned": 23,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Cheri Siedle",
+    "email": "",
+    "account_id": "712020:242cf045-ef4e-42b9-8588-666ca59863f8",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 78,
+      "issues_resolved_90d": 0,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Madison Bloomfield",
+    "email": "",
+    "account_id": "712020:1f401b3e-c1e1-4ea3-b739-ac4dba37cb29",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Natasha Samath",
+    "email": "",
+    "account_id": "712020:191b6f8d-4cdb-44b3-9b51-70d1b79b02af",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Chris Gomersall",
+    "email": "",
+    "account_id": "712020:1834620c-58a5-46a7-914c-62d47b9ab495",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 1,
+      "open_assigned": 3,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Chathura Lalinda Ranasingha",
+    "email": "",
+    "account_id": "712020:16ffe8f5-d86c-4454-8eaf-2bba6db29cfb",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 1,
+      "open_assigned": 13,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "ayodele.lawal",
+    "email": "",
+    "account_id": "712020:16f5e7b2-42e6-48ad-9eeb-65034c9d746c",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Renee Pauley",
+    "email": "",
+    "account_id": "712020:15de0d4c-063f-4894-bb67-93ab815466c6",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Susampath Madarasinghe",
+    "email": "",
+    "account_id": "712020:1207530a-94a2-45eb-8535-9756a34fc9b5",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 29,
+      "issues_resolved_90d": 0,
+      "open_assigned": 36,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Adam Lazarus",
+    "email": "adam.lazarus@madmobile.com",
+    "account_id": "712020:06630d89-36aa-4aaa-830f-9905623bfb84",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Akshay Bhasin",
+    "email": "",
+    "account_id": "712020:04794b67-dcf0-4c49-8761-817f9de57b39",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 5,
+      "open_assigned": 2,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Alexander Baine",
+    "email": "",
+    "account_id": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 13,
+      "open_assigned": 23,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "siva.golla",
+    "email": "",
+    "account_id": "712020:029cf67e-fa94-439f-a5c8-3cad7398cd44",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 12,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Debbie Keye",
+    "email": "",
+    "account_id": "712020:00bf153b-544a-4ef1-a5f9-9d0afba9a758",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM",
+        "OS",
+        "RL"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 53,
+      "issues_resolved_90d": 26,
+      "open_assigned": 4,
+      "bugs_created_90d": 1,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Zubair Syed",
+    "email": "",
+    "account_id": "63f90f4bce6f37e5ed951f7a",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 1,
+      "open_assigned": 26,
+      "bugs_created_90d": 1,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Pramodi Fernando",
+    "email": "",
+    "account_id": "63f5a9973ec8aa51d3d27521",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 8,
+      "issues_resolved_90d": 3,
+      "open_assigned": 20,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Mark Guilarte",
+    "email": "",
+    "account_id": "63bc76fa49a31f95b8734464",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 268,
+      "issues_resolved_90d": 35,
+      "open_assigned": 104,
+      "bugs_created_90d": 4,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Patrycja Stevenson",
+    "email": "",
+    "account_id": "6387b52b213a315af349ec2f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 33,
+      "issues_resolved_90d": 9,
+      "open_assigned": 5,
+      "bugs_created_90d": 22,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Anderson Lavor",
+    "email": "",
+    "account_id": "6387819a489de2f7f46657a1",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 10,
+      "open_assigned": 32,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Bill Fenley",
+    "email": "",
+    "account_id": "634042bb14c6b4b22110a197",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "DR",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 1,
+      "open_assigned": 18,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Das DeSilva",
+    "email": "",
+    "account_id": "63289d8e3ac41ebde76838ad",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 1,
+      "open_assigned": 14,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Daniel Lomsak",
+    "email": "",
+    "account_id": "62fbf4991e82e839c24fbda5",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 7,
+      "open_assigned": 12,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Jeremy Diggins",
+    "email": "",
+    "account_id": "62ec6a9d3cc20c06c8af7ecf",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 12,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Dilruwan Madubashitha",
+    "email": "",
+    "account_id": "62e8a5cda41ecbd0ba1755fc",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 32,
+      "issues_resolved_90d": 30,
+      "open_assigned": 47,
+      "bugs_created_90d": 0,
+      "timeZone": "US/Central",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Sowjanya Akula",
+    "email": "",
+    "account_id": "62e3e8abbc2c449f3d94c970",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 68,
+      "issues_resolved_90d": 45,
+      "open_assigned": 14,
+      "bugs_created_90d": 67,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Dulana Dharmaratne",
+    "email": "",
+    "account_id": "62da52247654479e0609b5c4",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 14,
+      "issues_resolved_90d": 0,
+      "open_assigned": 25,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Kaelon Lucas",
+    "email": "",
+    "account_id": "62c83119efb17d6ce630234e",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 23,
+      "issues_resolved_90d": 23,
+      "open_assigned": 40,
+      "bugs_created_90d": 22,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Dulanjan Wengappuliarachchi",
+    "email": "",
+    "account_id": "62ba9e97018dea0d4073bcf1",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "AR",
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 61,
+      "issues_resolved_90d": 11,
+      "open_assigned": 106,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Shavin Pieris",
+    "email": "",
+    "account_id": "629dbfc79248fe006910be48",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 81,
+      "issues_resolved_90d": 6,
+      "open_assigned": 33,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Holly Culver",
+    "email": "",
+    "account_id": "629775af9bc7150068ce2bca",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST",
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 2,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Chalaka Sudusinghe",
+    "email": "",
+    "account_id": "62835f95cc1d15006fa9eee6",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 2,
+      "open_assigned": 4,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Hashan Maduwantha",
+    "email": "",
+    "account_id": "6271f93ab27b16006fb93fdb",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 2,
+      "open_assigned": 22,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Roopa Kaukuri",
+    "email": "",
+    "account_id": "62618666f698310070a93d23",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 290,
+      "issues_resolved_90d": 53,
+      "open_assigned": 138,
+      "bugs_created_90d": 7,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Ashen",
+    "email": "",
+    "account_id": "624190af2e101c006a8c5e3d",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 9,
+      "issues_resolved_90d": 20,
+      "open_assigned": 24,
+      "bugs_created_90d": 3,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Andrew Honnold",
+    "email": "",
+    "account_id": "62389ae3a1d81f0069d72d6d",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 0,
+      "open_assigned": 3,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Kevin Reyes",
+    "email": "",
+    "account_id": "6231defd1dcf800070e95c38",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 11,
+      "open_assigned": 32,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Adam Hartman",
+    "email": "",
+    "account_id": "61fd802f845d670071f4a885",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 1,
+      "open_assigned": 2,
+      "bugs_created_90d": 3,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "chathura.ratnayake",
+    "email": "",
+    "account_id": "61bb3a46755091006a28f851",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 0,
+      "open_assigned": 24,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Rosen Georgiev",
+    "email": "",
+    "account_id": "61b3b4656d002b006b6669dc",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 7,
+      "issues_resolved_90d": 1,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Orlando Jimenez",
+    "email": "",
+    "account_id": "619d0149977c5b0072ab8936",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLOUD"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 9,
+      "open_assigned": 20,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Darren Blackwell",
+    "email": "",
+    "account_id": "618bd920785cb2006a044679",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 30,
+      "issues_resolved_90d": 1,
+      "open_assigned": 26,
+      "bugs_created_90d": 30,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Kanchana Amarathunga",
+    "email": "",
+    "account_id": "616d0136e79ff6006f0eb2d3",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 2,
+      "open_assigned": 17,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Matt Cooke",
+    "email": "",
+    "account_id": "6160493c78e5e400709927a6",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "RL"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 30,
+      "issues_resolved_90d": 5,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Madmobile Analytics",
+    "email": "",
+    "account_id": "615dc73f64ff01007165b33c",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Wing Hung Peter Wu",
+    "email": "",
+    "account_id": "615758f77a6be40071c6e53e",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 15,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Kyle Budd",
+    "email": "",
+    "account_id": "6155d39d289a54006ad552ce",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 9,
+      "open_assigned": 31,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Matthew Griffin",
+    "email": "",
+    "account_id": "6155b3fb198b4f00682edde9",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLD",
+        "CLOUD",
+        "DR",
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 9,
+      "issues_resolved_90d": 41,
+      "open_assigned": 55,
+      "bugs_created_90d": 0,
+      "timeZone": "America/Los_Angeles",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Trenton Kress",
+    "email": "",
+    "account_id": "6155b3fb07ac3c0068cdefb9",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 8,
+      "issues_resolved_90d": 4,
+      "open_assigned": 7,
+      "bugs_created_90d": 0,
+      "timeZone": "US/Pacific",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Savumi Wadduwage",
+    "email": "",
+    "account_id": "61304f612aa28000688d6bec",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Ana Chambers",
+    "email": "",
+    "account_id": "60e6f8e70dd4f60076b2f3a5",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST",
+        "UR"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 56,
+      "issues_resolved_90d": 31,
+      "open_assigned": 186,
+      "bugs_created_90d": 1,
+      "timeZone": "EST5EDT",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Zohra Bhayani",
+    "email": "",
+    "account_id": "60bf81d0758a5d006a364b39",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UR"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 40,
+      "issues_resolved_90d": 4,
+      "open_assigned": 7,
+      "bugs_created_90d": 31,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Gayan Karunarathna",
+    "email": "",
+    "account_id": "60b5d55d367bda00715daaa2",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 16,
+      "open_assigned": 10,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Mauro Villaseco",
+    "email": "",
+    "account_id": "5fb2788cd670b8006e5928f3",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 11,
+      "issues_resolved_90d": 6,
+      "open_assigned": 30,
+      "bugs_created_90d": 4,
+      "timeZone": "America/Buenos_Aires",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Mark Freid",
+    "email": "",
+    "account_id": "5fa559a89494af006eef50e5",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "US/Pacific",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "jake linder",
+    "email": "",
+    "account_id": "5fa477a662584c006b1e8286",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 36,
+      "issues_resolved_90d": 26,
+      "open_assigned": 13,
+      "bugs_created_90d": 9,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Angie Mroczka",
+    "email": "",
+    "account_id": "5fa46af50b4e3a006be81fd0",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 0,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "timeZone": "America/Chicago",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Adriana Marie Zuniga",
+    "email": "",
+    "account_id": "5f95a0a544658b00710340ff",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 3,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Chip O'Connell",
+    "email": "",
+    "account_id": "5f89b023bd30210069fe0b7f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 3,
+      "issues_resolved_90d": 0,
+      "open_assigned": 60,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "ops",
+    "email": "",
+    "account_id": "5dd53e0803eda50ef387336f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Vanessa Sotomayor",
+    "email": "",
+    "account_id": "5dc2c122ffc8c10df0edb418",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 72,
+      "issues_resolved_90d": 28,
+      "open_assigned": 26,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Ayushka Weerasinghe",
+    "email": "",
+    "account_id": "5dbff5dde41bfe0df6c24161",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Richard Meitzler",
+    "email": "",
+    "account_id": "5d4c5ac269c71b0d4336e754",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 7,
+      "open_assigned": 16,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Anthony Goad",
+    "email": "agoad@madmobile.com",
+    "account_id": "5c34e4c5ff324728a1da55e7",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 23,
+      "issues_resolved_90d": 0,
+      "open_assigned": 4,
+      "bugs_created_90d": 23,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Mirunaaliny Somasunthara Iyer",
+    "email": "",
+    "account_id": "5ba0dea046a75c66f1183c4f",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 100,
+      "issues_resolved_90d": 155,
+      "open_assigned": 103,
+      "bugs_created_90d": 10,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Altaaf Anver",
+    "email": "",
+    "account_id": "5b517587ce51f259edf232c6",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "OS",
+        "UP"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 14,
+      "issues_resolved_90d": 13,
+      "open_assigned": 14,
+      "bugs_created_90d": 6,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Thiwanka Wimalasuriya",
+    "email": "thiwanka.wimalasuriya@madmobile.com",
+    "account_id": "5b51754727c98e2ce515913c",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 12,
+      "issues_resolved_90d": 9,
+      "open_assigned": 47,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Nishen Peiris",
+    "email": "",
+    "account_id": "5b4874c3b84bc45fea95fa45",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 27,
+      "issues_resolved_90d": 26,
+      "open_assigned": 39,
+      "bugs_created_90d": 0,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Jack Kennedy",
+    "email": "",
+    "account_id": "557058:e9344e05-eee9-4cf0-900e-1d3271f4e7f5",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 1,
+      "open_assigned": 2,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "John Harre",
+    "email": "",
+    "account_id": "557058:e2f97df0-c02b-4dc7-9298-7f9b57a577ee",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "RL",
+        "RRS",
+        "SNUS"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 3,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Harrison Minchew",
+    "email": "",
+    "account_id": "557058:cde9d327-6aed-457f-8d7d-d5af11510c84",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 10,
+      "open_assigned": 39,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "James Oliver",
+    "email": "",
+    "account_id": "557058:c01b089e-4c30-4611-b695-0fd905b0d3ef",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLD",
+        "CM",
+        "RL",
+        "UR"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 35,
+      "issues_resolved_90d": 76,
+      "open_assigned": 27,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Facundo",
+    "email": "",
+    "account_id": "557058:a7e1acce-6c41-419b-9b2b-b81efbf92cb2",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 6,
+      "open_assigned": 22,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Mike Nunez",
+    "email": "",
+    "account_id": "557058:953dfbf4-0efb-43eb-9bdf-f29bb8d62d06",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLOUD"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 35,
+      "issues_resolved_90d": 16,
+      "open_assigned": 19,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Randy Brown",
+    "email": "rbrown@madmobile.com",
+    "account_id": "557058:4636ecfe-12d2-4405-ab0d-2dc02134a861",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 1,
+      "open_assigned": 6,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Qaiser Pannu",
+    "email": "qpannu@madmobile.com",
+    "account_id": "557058:2a94a16e-e16a-4617-994d-80bd6a127a0c",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CM",
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 49,
+      "issues_resolved_90d": 35,
+      "open_assigned": 51,
+      "bugs_created_90d": 10,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Matthew Crumley",
+    "email": "",
+    "account_id": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "AR",
+        "OS",
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 10,
+      "open_assigned": 19,
+      "bugs_created_90d": 1,
+      "timeZone": "US/Eastern",
+      "active": true
+    }
+  },
+  {
+    "source": "jira",
+    "canonical_name": "Matias Lopez Riglos",
+    "email": "",
+    "account_id": "557058:0ab36cae-cce5-4c8d-91a1-ac29e576b2ec",
+    "title": null,
+    "team": null,
+    "manager": null,
+    "division": null,
+    "executive": null,
+    "geography": null,
+    "status": "active",
+    "aliases": [],
+    "metadata": {
+      "projects": [
+        "CLD"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 31,
+      "issues_resolved_90d": 44,
+      "open_assigned": 173,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+]

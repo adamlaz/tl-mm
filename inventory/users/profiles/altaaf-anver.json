@@ -1,0 +1,63 @@
+{
+  "name": "Altaaf Anver",
+  "id": "altaaf-anver",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 29,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "5b517587ce51f259edf232c6",
+      "email": "",
+      "projects": [
+        "OS",
+        "UP"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 14,
+      "issues_resolved_90d": 13,
+      "open_assigned": 14,
+      "bugs_created_90d": 6,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5b517587ce51f259edf232c6",
+      "email": null,
+      "workspaces": [
+        "syscolabs"
+      ],
+      "nickname": "Altaaf Anver",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "5b517587ce51f259edf232c6",
+      "email": "",
+      "pages_total": 21,
+      "pages_90d": 2,
+      "spaces": [
+        "CCE",
+        "P"
+      ]
+    }
+  }
+}

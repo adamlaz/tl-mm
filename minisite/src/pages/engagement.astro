@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import DataTable from '../components/DataTable.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
 
 const phases = [
   { phase: 'Pre-Work', timeline: 'Now → Apr 11', status: 'Complete', detail: 'System scanning, surveys, pre-read analysis, alignment sessions' },
@@ -22,15 +22,15 @@ const leadership = [
 ];
 
 const hypotheses = [
-  { id: 'A', name: 'Portfolio Sprawl', statement: 'Too many products, no shared platform discipline.', test: 'Count active codebases. Teams on >1 product? Shared services vs. duplication?' },
-  { id: 'B', name: 'Sales-Led Chaos', statement: 'Revenue promises create roadmap churn and tech debt.', test: 'Ask sales what they promise. Ask eng what surprises them mid-sprint. Ask product who overrides.' },
-  { id: 'C', name: 'Fake Platforming', statement: "Leadership talks 'platform'; teams maintain customer-specific patchwork.", test: 'Show me the shared platform layer. What does Neo actually consist of in production?' },
-  { id: 'D', name: 'Unclear Ownership', statement: 'Formal authority and operational authority are misaligned — CONFIRMED and resolved by April 3 reorg.', test: 'Map who actually decides on architecture, staffing, priorities. Trace whether teams have fully transitioned to CDO chain.' },
-  { id: 'E', name: 'Dependency Drag', statement: 'A few people or teams are routing bottlenecks.', test: 'Whose approval do you need? Who do you wait on? Map the dependency graph.' },
-  { id: 'F', name: 'Legacy Gravity', statement: 'CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate.', test: 'What constraint costs the most velocity? Ratio of maintenance vs. new feature hours?' },
-  { id: 'G', name: 'Missing Cadence', statement: 'No consistent execution inspection; leadership discovers reality through fire drills.', test: "What's the weekly rhythm? What metrics are reviewed? How does bad news travel?" },
-  { id: 'H', name: 'Biz-Tech Mistranslation', statement: "Business says 'eng is slow'; eng says 'business is chaotic'; real issue is undefined tradeoffs.", test: 'Ask both sides why delivery is slow. Compare answers. Look for structural decision gaps.' },
-  { id: 'I', name: 'Architectural Polarity', statement: 'Simultaneous AI-native building + legacy POS maintenance = irreconcilable engineering split.', test: 'How are teams allocated? Do engineers rotate or get stuck? Is there a migration path?' },
+  { id: 'A', name: 'Portfolio Sprawl', statement: 'Too many products, no shared platform discipline.', test: 'Count active codebases. Teams on >1 product? Shared services vs. duplication?', link: '/engineering' },
+  { id: 'B', name: 'Sales-Led Chaos', statement: 'Revenue promises create roadmap churn and tech debt.', test: 'Ask sales what they promise. Ask eng what surprises them mid-sprint. Ask product who overrides.', link: '/delivery' },
+  { id: 'C', name: 'Fake Platforming', statement: "Leadership talks 'platform'; teams maintain customer-specific patchwork.", test: 'Show me the shared platform layer. What does Neo actually consist of in production?', link: '/infrastructure' },
+  { id: 'D', name: 'Unclear Ownership', statement: 'Formal authority and operational authority are misaligned — CONFIRMED and resolved by April 3 reorg.', test: 'Map who actually decides on architecture, staffing, priorities. Trace whether teams have fully transitioned to CDO chain.', link: '/people' },
+  { id: 'E', name: 'Dependency Drag', statement: 'A few people or teams are routing bottlenecks.', test: 'Whose approval do you need? Who do you wait on? Map the dependency graph.', link: '/engineering' },
+  { id: 'F', name: 'Legacy Gravity', statement: 'CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate.', test: 'What constraint costs the most velocity? Ratio of maintenance vs. new feature hours?', link: '/infrastructure' },
+  { id: 'G', name: 'Missing Cadence', statement: 'No consistent execution inspection; leadership discovers reality through fire drills.', test: "What's the weekly rhythm? What metrics are reviewed? How does bad news travel?", link: '/delivery' },
+  { id: 'H', name: 'Biz-Tech Mistranslation', statement: "Business says 'eng is slow'; eng says 'business is chaotic'; real issue is undefined tradeoffs.", test: 'Ask both sides why delivery is slow. Compare answers. Look for structural decision gaps.', link: '/delivery' },
+  { id: 'I', name: 'Architectural Polarity', statement: 'Simultaneous AI-native building + legacy POS maintenance = irreconcilable engineering split.', test: 'How are teams allocated? Do engineers rotate or get stuck? Is there a migration path?', link: '/infrastructure' },
 ];
 
 const systems = [
@@ -63,7 +63,7 @@ const deliverables = [
   </dl>
 
   <div class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">Phase Timeline</h2>
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Phase Timeline</h2>
     <div class="grid gap-4 sm:grid-cols-3">
       {phases.map((p) => (
         <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
@@ -75,9 +75,9 @@ const deliverables = [
               class:list={[
                 'text-[10px] font-medium uppercase tracking-wider px-2 py-0.5 rounded-full',
                 p.status === 'Complete'
-                  ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300'
+                  ? 'text-[var(--status-green)] bg-[var(--status-green-bg)]'
                   : p.status === 'Upcoming'
-                    ? 'bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300'
+                    ? 'text-[var(--status-amber)] bg-[var(--status-amber-bg)]'
                     : 'bg-[var(--surface-alt)] text-[var(--text-muted)]',
               ]}
             >
@@ -92,7 +92,7 @@ const deliverables = [
   </div>
 
   <div class="mb-10">
-    <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">Company Snapshot</h2>
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Company Snapshot</h2>
     <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
       <dl class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
         <div>
@@ -121,11 +121,11 @@ const deliverables = [
 
   <div class="mb-10">
     <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Post-Reorg Leadership (April 2026)</h2>
-    <DataTable
+    <TabulatorGrid
       columns={[
-        { key: 'name', label: 'Name' },
-        { key: 'role', label: 'Role' },
-        { key: 'scope', label: 'Scope' },
+        { key: 'name', label: 'Name', sortable: false },
+        { key: 'role', label: 'Role', type: 'badge', sortable: false },
+        { key: 'scope', label: 'Scope', sortable: false },
       ]}
       rows={leadership}
     />
@@ -133,37 +133,44 @@ const deliverables = [
 
   <div class="mb-10">
     <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Nine Hypotheses</h2>
-    <DataTable
-      columns={[
-        { key: 'id', label: 'ID' },
-        { key: 'name', label: 'Name' },
-        { key: 'statement', label: 'Hypothesis' },
-        { key: 'test', label: 'How We Test' },
-      ]}
-      rows={hypotheses}
-    />
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {hypotheses.map((h) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--surface-alt)] px-2 py-0.5 rounded">
+              {h.id}
+            </span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{h.name}</h3>
+          </div>
+          <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-2">{h.statement}</p>
+          <p class="text-[11px] text-[var(--text-muted)] leading-relaxed">{h.test}</p>
+          <a href={h.link} class="text-xs text-[var(--accent)] hover:underline mt-2 inline-block">View evidence →</a>
+        </div>
+      ))}
+    </div>
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Six Systems Framework</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'system', label: 'System' },
-          { key: 'question', label: 'Core Question' },
-          { key: 'focus', label: 'What We Look For' },
+          { key: 'system', label: 'System', type: 'badge', sortable: false },
+          { key: 'question', label: 'Core Question', sortable: false },
+          { key: 'focus', label: 'What We Look For', sortable: false },
         ]}
         rows={systems}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Deliverables</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'tier', label: 'Tier' },
-          { key: 'items', label: 'Deliverables' },
+          { key: 'tier', label: 'Tier', type: 'badge', sortable: false, badgeMap: { Core: 'green', Expected: 'amber', Stretch: 'muted' } },
+          { key: 'items', label: 'Deliverables', sortable: false },
         ]}
         rows={deliverables}
+        rowFormatter="_tier_style"
       />
     </div>
   </div>

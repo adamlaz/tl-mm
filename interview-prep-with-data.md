@@ -14,7 +14,7 @@
 
 ## Monday, April 13 — Leadership + Architecture
 
-### Jack Kennedy (CTO, 90 min)
+### Jack Kennedy (CTO, 60 min)
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -30,7 +30,7 @@
 
 ---
 
-### Chathura Ratnayake (SVP Global Software Engineering, 90 min)
+### Chathura Ratnayake (CDO, 90–120 min)
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -48,30 +48,44 @@
 
 ---
 
-### Dulanjan Wengappuliarachchi (Sr. Director Product & GTM, 60 min)
+### Dulanjan Wengappuliarachchi (VP, Product & GTM, 60 min)
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
 | 1 | "Every major retail customer has their own Jira project — Brooks Brothers, Ralph Lauren, Estee Lauder, Signet, Tractor Supply, and more. How do you roll up a portfolio view across 20+ customer projects?" | 20+ customer-specific Jira projects | A (Portfolio Sprawl) |
 | 2 | "In the last 30 days across all of Jira, 916 issues were created but only 658 resolved. For engineering specifically, the gap is smaller but still growing — 269 net over 26 weeks. How do you decide what gets deprioritized?" | Overall: 916 created / 658 resolved (30d). Eng 26-week net: -269 | B (Sales-Led Chaos) |
 | 3 | "The documented prioritization process uses multi-department scoring and exec alignment on the top 5. How often does a customer escalation or sales promise override that process mid-sprint?" | From Restaurant Update deck; sprint scope change data (pending from V3 scripts) | B (Sales-Led Chaos) |
-| 4 | "You own PM, Product Design, Product Marketing, and L&D/Training, with two open roles (Payments PM, Product Marketing Manager). What suffers most from that breadth right now?" | Org chart, open headcount | E (Dependency Drag) |
+| 4 | "You have 6 PMs — 3 on Restaurant (Miru, Jake, TBD) and 3 on Payments/Ops/Engineering (Shavin, Richard, Thaddeus). Plus Chris on design, an open marketing role, and L&D. That's a broad scope. What suffers most from that breadth right now?" | CDO org chart detail, open headcount | E (Dependency Drag) |
+| 5 | "The CDO roadmap shows 12+ ongoing CAKE projects, 4+ Payments integrations, and Engineering platform work — plus a 'Next Up' queue of 20+ items. How does the multi-department scoring process actually work with that volume? Does executive alignment on the top 5 hold, or does it get overridden?" | CDO product roadmap | B (Sales-Led Chaos) |
+| 6 | "Don confirmed that Retail and Neo/AI are in scope for this review, not just CAKE. What do the Concierge/Retail and Neo/AI product roadmaps look like? Are those managed through your team or through different PMs?" | Don scope email | A (Portfolio Sprawl) |
 
 ---
 
-### Steven Seigel (COO, 45 min)
+### Akshay Bhasin (VP Payments Engineering, 20+, 45 min)
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
-| 1 | "The Monvia AWS account is spending ~$25,900/month on what appears to be legacy Leapset/Sysco Labs infrastructure — including instances on 2012-era hardware. Is that a revenue-generating product, or orphaned infrastructure?" | mm-monvia: $25,859/month, m1 instances, "leapset-svn" instance | F (Legacy Gravity) |
-| 2 | "Total AWS spend is approximately $383,000/month. Does that match what you see on the finance side? The management account shows $309K which I assume is consolidated billing." | mm-madmobile-mgmt: $309,237, total: $382,904 | — |
-| 3 | "MenuPad-Prod-Metro is running at ~$2,000/month with a live instance. What product or customer does that serve?" | mm-menupad-prod-metro: $2,038, running r4.xlarge | A (Portfolio Sprawl) |
+| 1 | "The payments codebase has 87% CI/CD coverage, TypeScript throughout, domain-driven project structure, and the cleanest architecture in the company. Your team runs very differently from CAKE and Enterprise. Was that a deliberate engineering decision, and how did you get there?" | madpayments: 80 repos, 65% active, 87% CI/CD, EKS-native, 0 IAM users, TF state | I (Architectural Polarity) |
+| 2 | "Your org has 9 Payments R&D engineers under Kevin Reyes, plus 7 Restaurant QE engineers, plus Biz Ops, plus PCI counterparts. That's 20+ people. Restaurant QE reporting under Payments rather than Restaurant Technology is unusual — how does that work? Do your QE engineers sit in the same sprints as Randy's developers?" | CDO org chart PDF | E (Dependency Drag) |
+| 3 | "The CDO roadmap shows 4+ Payments integration projects ongoing — Sardine, RS2, CYBS, South State Bank. Plus 6+ Payments Ops projects. How do 9 R&D engineers cover that while also supporting the CAKE payment gateway?" | CDO org chart product roadmap | A (Portfolio Sprawl) |
+| 4 | "Payments had 19 incidents in our RCA data, most in 2021–2022. The peak was 26 incidents in 2022. Has reliability actually improved, or did the documentation practice just stop?" | 50 structured RCAs parsed, Payments top system | F (Legacy Gravity) |
+| 5 | "Your SL engineers (Gayan K., Susampath M.) are in R&D. How does the US/SL split work for payments development specifically? PR reviews, timezone handoffs, code ownership?" | CDO org chart showing SL staff in R&D | E (Dependency Drag) |
+
+---
+
+### Mark Guilarte (VP Program Management, 4 people, 30 min)
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "Your team has one PM per domain — Qaiser on Restaurant, Vanessa on Payments, Ian on AI, Debbie on Ops Engineering. That's 4 people coordinating across 100+ engineers. How do you maintain visibility across all those teams?" | CDO org chart PMO assignments | G (Missing Cadence) |
+| 2 | "The product roadmap shows 12+ ongoing CAKE projects, 4+ Payments integrations, and Engineering platform work. How does the PMO GTM tracker work in practice? Does it actually drive the 4-week release cadence, or do teams ship independently?" | CDO org chart product roadmap; Restaurant Update deck GTM process | G (Missing Cadence) |
+| 3 | "Ian is the Project Lead for AI. What does that portfolio look like day-to-day? Which AI/Neo projects are active, and who is he coordinating with — Kennedy's team, Chathura's, or both?" | PMO AI assignment vs. Kennedy/Chathura split | C (Fake Platforming) |
 
 ---
 
 ## Tuesday, April 14 — Engineering Deep Dive
 
-### Randy Brown (VP Engineering, Restaurant, 60 min)
+### Randy Brown (VP Eng, Restaurant Technology, 10 people, 60 min)
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -79,11 +93,13 @@
 | 2 | "The syscolabs workspace has 1,527 repos, but 76% haven't been touched in 90 days. The QA project alone has 222 repos. Is there a plan to archive or consolidate?" | syscolabs: 1,527 repos, 361 active, 1,166 stale | A (Portfolio Sprawl) |
 | 3 | "PR cycle time for cake-payment-gateway averages 78 hours. react-cinco averages 31 hours. OLO averages 24 hours. Are these the same team? What drives the difference?" | PR metrics from bitbucket/metrics.json | E (Dependency Drag) |
 | 4 | "I found Jenkins servers running in the CAKE Development AWS account. Are you on Jenkins, Bitbucket Pipelines, or both? Is there a consolidation plan?" | Jenkins EC2 in mm-cake-development; bitbucket-pipelines.yml in repos | I (Architectural Polarity) |
-| 5 | "The CAKE ecosystem has 15+ live systems maintained by ~10 engineers plus ~7 QE. The engagement plan deck says V3 and V4 POS run simultaneously. What's the migration path? Are both actively maintained?" | Restaurant Update deck | F (Legacy Gravity) |
+| 5 | "The CAKE ecosystem has 15+ live systems maintained by 9 engineers — 3 frontend under Alexander Baine, 6 backend under Kyle Budd. The QE team (7 people) reports to Akshay in Payments, not to you. How does that work day-to-day?" | CDO org chart detail | E (Dependency Drag) |
+| 6 | "Your roadmap shows 12+ ongoing projects — OLO V2, EMS 2.0, QSR KDS, KDS v2, Restaurant Admin 2.0, VP3350, and more. With your team assignments (CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS), how do you allocate 9 engineers across all of that?" | CDO org chart product roadmap + team assignments | A (Portfolio Sprawl) |
+| 7 | "POS V3 (Pondus) and V4 (Elio) are running simultaneously. What's the migration path? Are both actively maintained?" | Restaurant Update deck | F (Legacy Gravity) |
 
 ---
 
-### Zubair Syed (VP Software Engineering, 45 min)
+### Zubair Syed (VP Eng, Enterprise Solutions, 58 people, 60 min)
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -93,13 +109,14 @@
 
 ---
 
-### Bill Lodes (CRO, 45 min)
+### Bill Lodes (Former CRO, consulting — OPTIONAL, 30 min)
+
+*Lodes exited April 3. Only interview if available and Don thinks it's valuable. Low priority.*
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
-| 1 | "I see per-customer Jira projects for every major retail client — 32 of them, each with its own project space. Does the sales team file directly into these? How does a customer request become an engineering work item?" | 32 customer success Jira projects, 2,525 open CS issues | B (Sales-Led Chaos) |
-| 2 | "Sprint scope change data [from V3 scripts] — how often do customer escalations override sprint plans?" | Pending: scope_change.json | B (Sales-Led Chaos) |
-| 3 | "Are there features being sold today that don't exist or don't work reliably? Walk me through the last time a sales commitment surprised engineering." | Glassdoor signal + hypothesis | B (Sales-Led Chaos) |
+| 1 | "Customer support is now unified under Chathura (CDO). When you ran it, how did escalations flow from support to engineering? What broke in that handoff?" | Reorg change | G (Missing Cadence) |
+| 2 | "The 32 per-customer Jira projects — was that your team's model? How did customer requests become engineering work items?" | 32 customer success Jira projects, 2,525 open CS issues | B (Sales-Led Chaos) |
 
 ---
 
@@ -136,35 +153,44 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 |---|---|---|---|
 | 1 | "Which Bitbucket workspaces and repos do the Sri Lanka engineers primarily contribute to?" | 4 workspaces, unclear LK allocation | D (Unclear Ownership) |
 | 2 | "How do PR reviews work across the timezone boundary? Do PRs from LK sit overnight waiting for US review, or is there local review authority?" | PR cycle time variance | E (Dependency Drag) |
-| 3 | "You report to the CPO, not the CTO. How does that work day-to-day? Do your engineers take technical direction from Chathura/Zubair while reporting through you administratively?" | Org chart: LK → Strainick, not Kennedy | D (Unclear Ownership) |
+| 3 | "You report to the COO (Strainick), not the CDO (Chathura). How does that work day-to-day? Do your engineers take technical direction from Chathura/Zubair while reporting through you administratively?" | Org chart: LK → Strainick (COO), dotted line to Chathura (CDO) | D (Unclear Ownership) |
 
 ---
 
-### Tech Support (Joel Maldonado or Michael Lee, 30 min)
+### Customer Support Lead (TBD, 30 min)
+
+*Support now unified under Chathura (CDO) — previously under Lodes (CRO). Key to understanding the full build-to-support chain.*
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
-| 1 | "The Jira data shows about 916 bug-type issues created per month. How does that correlate with what you see in support ticket volume?" | created_last_30d=916 | F (Legacy Gravity) |
-| 2 | "Walk me through a CAKE payment outage from the support perspective — from first customer call to resolution. How does the escalation path to engineering work?" | Tech support → CRO, not CTO | D (Unclear Ownership) |
+| 1 | "Support is now under Chathura, the same executive who owns engineering. Has that changed how escalations work? Is the path from support ticket to engineering fix shorter now?" | Reorg: support → CDO | G (Missing Cadence) |
+| 2 | "Walk me through a CAKE payment outage from the support perspective — from first customer call to resolution. Who gets paged, what tools do you use, and how long does it typically take?" | 19 Payments incidents in RCA data | F (Legacy Gravity) |
 | 3 | "When you escalate a technical issue, what's the typical response time from engineering? Hours? Days?" | — | G (Missing Cadence) |
 
 ---
 
-### David Strainick (CPO, 30 min)
+### David Strainick (COO, 45 min)
 
-| # | Question | Hypothesis |
-|---|---|---|
-| 1 | "IT and Sri Lanka both report to you rather than the CTO. How did that structure come about? Does it work?" | D (Unclear Ownership) |
-| 2 | "What's the current attrition situation? The Glassdoor signal is rough — 2.4/5, 31% recommend. Is that improving?" | Culture |
+*Moved from CPO to COO in April 3 reorg. Now owns Account Management, Onboarding, Delivery, IT — the entire customer operations chain. Completely different interview than originally planned.*
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "You now own the full customer operations chain — Account Management (9), Onboarding (Das DeSilva, 10), Delivery (Chip O'Connell, 3), and IT (Rosen Georgiev). Walk me through how a new customer goes from signed contract to live deployment. Where does it break?" | Org chart: COO scope | G (Missing Cadence) |
+| 2 | "IT reports to you now, not CTO. Jorge Maltes is still Dir. IT working on PCI compliance, Rosen Georgiev handles day-to-day ops. How do you govern IT priorities across both compliance and operations?" | CDO org chart + executive chart | D (Unclear Ownership) |
+| 3 | "Sri Lanka's country head (Rajik Gunatilaka) reports to you. Engineering resources there have dotted lines to Chathura/Zubair. How does that work in practice? Who sets priorities for SL engineers?" | Org chart: SL → COO, not CDO | D (Unclear Ownership) |
+| 4 | "The 32 per-customer Jira projects for retail clients — Brooks Brothers, Ralph Lauren, Estee Lauder — each with their own project space. How does a customer request flow from your Account Management team into engineering?" | 32 customer success Jira projects, 2,525 open CS issues | B (Sales-Led Chaos) |
 
 ---
 
-### Greg Schmitzer (President & Co-Founder, 30 min)
+### Greg Schmitzer (President & Head of Sales & Marketing, 30 min)
 
-| # | Question | Hypothesis |
-|---|---|---|
-| 1 | "You have one direct report (Karen Licker, Sr. Director Marketing). What does your day-to-day operating role look like at this point?" | D (Unclear Ownership) |
-| 2 | "The Sysco/CAKE partnership and acquisition — from your perspective, is the integration done? The codebase still has two separate Bitbucket workspaces." | F (Legacy Gravity) |
+*Expanded role — absorbed Lodes' sales org. Now has Bobby Jaklitsch (Field Sales, 4), Peter Vu (Inbound, 3), Karen Licker (Marketing, 1).*
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "You've absorbed the full sales organization — field sales, inbound, and marketing. With Don confirming Retail and Neo/AI are in scope alongside CAKE, how does the sales team position these three product lines?" | Don scope email + reorg | A (Portfolio Sprawl) |
+| 2 | "Are there features being sold today that don't exist or don't work reliably? The CDO roadmap shows dozens of items marked TBD or Backlog. How does the sales team know what's actually shippable?" | CDO product roadmap | B (Sales-Led Chaos) |
+| 3 | "The Sysco/CAKE partnership and acquisition — from your perspective, is the integration done? The codebase still has two separate Bitbucket workspaces." | 4 Bitbucket workspaces | F (Legacy Gravity) |
 
 ---
 

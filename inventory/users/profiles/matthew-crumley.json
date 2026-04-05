@@ -1,0 +1,73 @@
+{
+  "name": "Matthew Crumley",
+  "id": "matthew-crumley",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": "Unknown",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 366,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "email": "",
+      "projects": [
+        "AR",
+        "OS",
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 6,
+      "issues_resolved_90d": 10,
+      "open_assigned": 19,
+      "bugs_created_90d": 1,
+      "timeZone": "US/Eastern",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments",
+        "syscolabsconf"
+      ],
+      "nickname": "Matthew Crumley",
+      "prs_authored": 33,
+      "prs_reviewed": 299,
+      "review_cluster": "mixed"
+    },
+    "confluence": {
+      "account_id": "557058:1c951bec-6a6a-45dd-a820-2ee405e91821",
+      "email": "",
+      "pages_total": 63,
+      "pages_90d": 18,
+      "spaces": [
+        "CCE",
+        "ES",
+        "MMA",
+        "P",
+        "PROD",
+        "PT",
+        "TT"
+      ]
+    }
+  }
+}

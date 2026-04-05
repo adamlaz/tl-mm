@@ -10,7 +10,9 @@ const repos = await getCollection('bitbucketRepos');
 const projects = await getCollection('jiraProjects');
 const pages = await getCollection('confluencePages');
 const tools = await getCollection('toolingCatalog');
-const users = await getCollection('userAudit');
+let users: any[] = [];
+try { users = await getCollection('peopleDirectory') as any; } catch {}
+if (!users.length) { try { users = await getCollection('userAudit') as any; } catch {} }
 
 const epicData = JSON.parse(readFileSync('../inventory/jira/epic_completion.json', 'utf-8'));
 const rcaData = JSON.parse(readFileSync('../inventory/confluence/rca_timeline.json', 'utf-8'));
@@ -29,6 +31,15 @@ const activeTools = tools.filter((t) => t.data.status === 'confirmed_active').le
 
 const costDisplay = totalAwsCost > 0 ? `$${Math.round(totalAwsCost / 1000)}K` : '$383K';
 
+const findings = [
+  { title: '27.7% Epic Completion', detail: 'Only 1 in 4 epics resolved — weak delivery follow-through', severity: 'warning' },
+  { title: '89% Priority Inflation', detail: 'Nearly all issues marked High — priorities are meaningless', severity: 'critical' },
+  { title: '0 Repos with Branch Protection', detail: 'No repositories have branch restrictions enabled', severity: 'critical' },
+  { title: '60.7% Pipeline Success Rate', detail: '4 in 10 builds fail — CI/CD reliability is a drag on velocity', severity: 'warning' },
+  { title: '9% Story Point Coverage', detail: 'Estimation is almost nonexistent — capacity planning impossible', severity: 'warning' },
+  { title: 'Key Person Risk', detail: 'Top 3 risk people each handle >35% of their team code reviews — knowledge silos across Platform and Restaurant', severity: 'warning' },
+];
+
 const sections = [
   {
     href: '/engagement',
@@ -38,8 +49,8 @@ const sections = [
     metricLabel: 'phases',
   },
   {
-    href: '/aws',
-    title: 'AWS Infrastructure',
+    href: '/infrastructure',
+    title: 'Infrastructure',
     desc: 'Cost breakdown, resource counts, and runtime analysis across 18 AWS accounts.',
     metric: costDisplay,
     metricLabel: 'monthly',
@@ -67,17 +78,10 @@ const sections = [
   },
   {
     href: '/people',
-    title: 'People',
-    desc: 'Who is active where — activity across source control, project tracking, documentation, and cloud access.',
-    metric: users.length.toString(),
-    metricLabel: 'users',
-  },
-  {
-    href: '/org',
-    title: 'Org Chart',
-    desc: 'Updated organization structure — April 2026 with headcount.',
-    metric: '7',
-    metricLabel: 'directs',
+    title: 'People & Org',
+    desc: 'Organization structure, team intelligence, interaction networks, and key-person risk across 5 systems.',
+    metric: users.filter((u: any) => u.data.status !== 'bot').length.toString(),
+    metricLabel: 'people',
   },
   {
     href: '/surveys',
@@ -97,7 +101,7 @@ const sections = [
     href: '/charts',
     title: 'Charts',
     desc: 'Interactive charts spanning infrastructure, engineering, delivery, and documentation.',
-    metric: '31',
+    metric: '39',
     metricLabel: 'charts',
   },
 ];
@@ -114,6 +118,19 @@ const sections = [
     </p>
   </div>
 
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Key Findings</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-10">
+    {findings.map((f) => (
+      <div class:list={[
+        'border-l-4 bg-[var(--surface)] rounded-r-lg p-4',
+        f.severity === 'critical' ? 'border-[var(--status-red)]' : 'border-[var(--status-amber)]',
+      ]}>
+        <p class="text-sm font-medium text-[var(--text)]">{f.title}</p>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">{f.detail}</p>
+      </div>
+    ))}
+  </div>
+
   <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
     <MetricCard label="AWS Monthly Spend" value={costDisplay} subtitle="March 2026 (18 accounts)" />
     <MetricCard label="Repositories" value={fmt(repos.length)} subtitle={`${activeRepos} active`} />
@@ -122,7 +139,7 @@ const sections = [
     <MetricCard label="Tools Identified" value={tools.length.toString()} subtitle={`${activeTools} confirmed active`} />
   </dl>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
     <MetricCard label="Epic Completion" value={`${epicData.overall_resolution_rate_pct}%`} subtitle={`${epicData.resolved} of ${epicData.total_epics} resolved`} />
     <MetricCard label="Priority Inflation" value="89%" subtitle="of issues marked High" />
@@ -131,7 +148,7 @@ const sections = [
     <MetricCard label="Story Points" value={`${customFields.story_points_coverage?.coverage_pct ?? 9}%`} subtitle="stories estimated" />
   </dl>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Explore</h2>
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Explore</h2>
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {sections.map(({ href, title, desc, metric, metricLabel }) => (
       <a

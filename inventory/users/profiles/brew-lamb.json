@@ -1,0 +1,63 @@
+{
+  "name": "Brew Lamb",
+  "id": "brew-lamb",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 60,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 57,
+      "issues_resolved_90d": 2,
+      "open_assigned": 5,
+      "bugs_created_90d": 39,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Brew Lamb",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "712020:7f699eb4-08bb-490a-9d6d-844ceddc08de",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 1,
+      "spaces": [
+        "CR"
+      ]
+    }
+  }
+}

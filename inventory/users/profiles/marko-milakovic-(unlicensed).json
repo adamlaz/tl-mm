@@ -1,0 +1,33 @@
+{
+  "name": "Marko Milakovic (Unlicensed)",
+  "id": "marko-milakovic-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:20121f94-8fe3-482e-a41c-4673fc83e895",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "P"
+      ]
+    }
+  }
+}

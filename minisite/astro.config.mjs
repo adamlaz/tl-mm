@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
+import mdx from '@astrojs/mdx';
+import d2 from 'astro-d2';
 
 export default defineConfig({
   output: 'static',
@@ -9,4 +11,17 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  integrations: [
+    d2({
+      skipGeneration: false,
+      theme: {
+        default: '0',
+        dark: '200',
+      },
+      pad: 40,
+      sketch: false,
+      inline: true,
+    }),
+    mdx(),
+  ],
 });

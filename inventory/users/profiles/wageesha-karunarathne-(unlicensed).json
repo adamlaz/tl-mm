@@ -1,0 +1,33 @@
+{
+  "name": "Wageesha Karunarathne (Unlicensed)",
+  "id": "wageesha-karunarathne-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5ba0e636f478130ea4724c0c",
+      "email": "",
+      "pages_total": 37,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB"
+      ]
+    }
+  }
+}

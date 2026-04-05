@@ -1,0 +1,32 @@
+{
+  "name": "Kokila Widyaratna (Unlicensed)",
+  "id": "kokila-widyaratna-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "614997f372728e006f92ffb5",
+      "email": "",
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "ES"
+      ]
+    }
+  }
+}

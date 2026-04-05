@@ -1,0 +1,7216 @@
+{
+  "nodes": [
+    {
+      "id": "cory renard",
+      "name": "Cory Renard",
+      "team": "Restaurant Frontend",
+      "geo": "unknown",
+      "degree_in": 19,
+      "degree_out": 13
+    },
+    {
+      "id": "sowjanya akula",
+      "name": "Sowjanya Akula",
+      "team": "Restaurant QE",
+      "geo": "unknown",
+      "degree_in": 7,
+      "degree_out": 10
+    },
+    {
+      "id": "thiwanka wimalasuriya",
+      "name": "Thiwanka Wimalasuriya",
+      "team": "Restaurant",
+      "geo": "SL",
+      "degree_in": 21,
+      "degree_out": 19
+    },
+    {
+      "id": "rusiru perera",
+      "name": "Rusiru Perera",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 12,
+      "degree_out": 9
+    },
+    {
+      "id": "miru somasunthara iyer",
+      "name": "Miru Somasunthara Iyer",
+      "team": "Product Restaurant",
+      "geo": "unknown",
+      "degree_in": 19,
+      "degree_out": 25
+    },
+    {
+      "id": "sumeera perera",
+      "name": "Sumeera Perera",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 20,
+      "degree_out": 14
+    },
+    {
+      "id": "inushi gunathilake",
+      "name": "Inushi Gunathilake",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 22,
+      "degree_out": 8
+    },
+    {
+      "id": "richard farber",
+      "name": "Richard Farber",
+      "team": "Product",
+      "geo": "unknown",
+      "degree_in": 5,
+      "degree_out": 7
+    },
+    {
+      "id": "roopa kaukuri",
+      "name": "Roopa Kaukuri",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 10,
+      "degree_out": 13
+    },
+    {
+      "id": "qaiser pannu",
+      "name": "Qaiser Pannu",
+      "team": "PMO Restaurant",
+      "geo": "unknown",
+      "degree_in": 7,
+      "degree_out": 26
+    },
+    {
+      "id": "sanduni dissanayaka",
+      "name": "Sanduni Dissanayaka",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 15,
+      "degree_out": 10
+    },
+    {
+      "id": "wenushka dikowita",
+      "name": "Wenushka Dikowita",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 8,
+      "degree_out": 32
+    },
+    {
+      "id": "dulana dharmaratne",
+      "name": "Dulana Dharmaratne",
+      "team": "Restaurant",
+      "geo": "SL",
+      "degree_in": 13,
+      "degree_out": 6
+    },
+    {
+      "id": "malinda lamahewa",
+      "name": "Malinda Lamahewa",
+      "team": "Platform",
+      "geo": "SL",
+      "degree_in": 2,
+      "degree_out": 2
+    },
+    {
+      "id": "alexander baine",
+      "name": "Alexander Baine",
+      "team": "Restaurant Frontend",
+      "geo": "US",
+      "degree_in": 21,
+      "degree_out": 23
+    },
+    {
+      "id": "harrison minchew",
+      "name": "Harrison Minchew",
+      "team": "Restaurant Backend",
+      "geo": "unknown",
+      "degree_in": 15,
+      "degree_out": 15
+    },
+    {
+      "id": "randy brown",
+      "name": "Randy Brown",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 15
+    },
+    {
+      "id": "paul robert",
+      "name": "Paul Robert",
+      "team": "Payments R&D",
+      "geo": "unknown",
+      "degree_in": 14,
+      "degree_out": 11
+    },
+    {
+      "id": "raveen panditha",
+      "name": "Raveen Panditha",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 14,
+      "degree_out": 11
+    },
+    {
+      "id": "patrycja stevenson",
+      "name": "Patrycja Stevenson",
+      "team": "Restaurant QE",
+      "geo": "unknown",
+      "degree_in": 3,
+      "degree_out": 2
+    },
+    {
+      "id": "jake linder",
+      "name": "jake linder",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 8,
+      "degree_out": 3
+    },
+    {
+      "id": "rob quin",
+      "name": "Rob Quin",
+      "team": "Restaurant Frontend",
+      "geo": "unknown",
+      "degree_in": 15,
+      "degree_out": 13
+    },
+    {
+      "id": "rekha mohanan",
+      "name": "Rekha Mohanan",
+      "team": "Restaurant QE",
+      "geo": "unknown",
+      "degree_in": 5,
+      "degree_out": 3
+    },
+    {
+      "id": "chalaka.thushara",
+      "name": "chalaka.thushara",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 5,
+      "degree_out": 5
+    },
+    {
+      "id": "dulanjan wengappuliarachchi",
+      "name": "Dulanjan Wengappuliarachchi",
+      "team": "Product",
+      "geo": "SL",
+      "degree_in": 11,
+      "degree_out": 12
+    },
+    {
+      "id": "austin.spreadbury",
+      "name": "Austin.Spreadbury",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 14,
+      "degree_out": 4
+    },
+    {
+      "id": "brew lamb",
+      "name": "Brew Lamb",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 4,
+      "degree_out": 4
+    },
+    {
+      "id": "suneth de soyza",
+      "name": "Suneth De Soyza",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 3,
+      "degree_out": 3
+    },
+    {
+      "id": "mauro villaseco",
+      "name": "Mauro Villaseco",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 4,
+      "degree_out": 8
+    },
+    {
+      "id": "ana chambers",
+      "name": "Ana Chambers",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 6,
+      "degree_out": 7
+    },
+    {
+      "id": "thaddeus fox",
+      "name": "Thaddeus Fox",
+      "team": "Product",
+      "geo": "unknown",
+      "degree_in": 5,
+      "degree_out": 5
+    },
+    {
+      "id": "kaelon lucas",
+      "name": "Kaelon Lucas",
+      "team": "Restaurant QE",
+      "geo": "unknown",
+      "degree_in": 12,
+      "degree_out": 5
+    },
+    {
+      "id": "pramodi fernando",
+      "name": "Pramodi Fernando",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 5,
+      "degree_out": 5
+    },
+    {
+      "id": "shavin pieris",
+      "name": "Shavin Pieris",
+      "team": "Product Payments",
+      "geo": "unknown",
+      "degree_in": 6,
+      "degree_out": 6
+    },
+    {
+      "id": "michael lee",
+      "name": "Michael Lee",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 8,
+      "degree_out": 11
+    },
+    {
+      "id": "matthew crumley",
+      "name": "Matthew Crumley",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 25,
+      "degree_out": 29
+    },
+    {
+      "id": "bill fenley",
+      "name": "Bill Fenley",
+      "team": "Restaurant QE",
+      "geo": "unknown",
+      "degree_in": 11,
+      "degree_out": 5
+    },
+    {
+      "id": "jessica conn",
+      "name": "Jessica Conn",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 4,
+      "degree_out": 1
+    },
+    {
+      "id": "dilruwan madubashitha",
+      "name": "Dilruwan Madubashitha",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 4,
+      "degree_out": 6
+    },
+    {
+      "id": "anderson lavor",
+      "name": "Anderson Lavor",
+      "team": "Restaurant Backend",
+      "geo": "unknown",
+      "degree_in": 16,
+      "degree_out": 8
+    },
+    {
+      "id": "holly culver",
+      "name": "Holly Culver",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 16,
+      "degree_out": 13
+    },
+    {
+      "id": "kyle budd",
+      "name": "Kyle Budd",
+      "team": "Restaurant Backend",
+      "geo": "unknown",
+      "degree_in": 32,
+      "degree_out": 25
+    },
+    {
+      "id": "nishani peiris",
+      "name": "Nishani Peiris",
+      "team": "Unknown",
+      "geo": "SL",
+      "degree_in": 9,
+      "degree_out": 7
+    },
+    {
+      "id": "jehan wijesinghe (unlicensed)",
+      "name": "Jehan Wijesinghe (Unlicensed)",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "benjamin roedell",
+      "name": "Benjamin Roedell",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 28,
+      "degree_out": 22
+    },
+    {
+      "id": "james oliver",
+      "name": "James Oliver",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 9,
+      "degree_out": 18
+    },
+    {
+      "id": "darren blackwell",
+      "name": "Darren Blackwell",
+      "team": "Restaurant QE",
+      "geo": "unknown",
+      "degree_in": 5,
+      "degree_out": 7
+    },
+    {
+      "id": "ruwinda ranganayake (unlicensed)",
+      "name": "Ruwinda Ranganayake (Unlicensed)",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 0,
+      "degree_out": 1
+    },
+    {
+      "id": "mark guilarte",
+      "name": "Mark Guilarte",
+      "team": "PMO",
+      "geo": "unknown",
+      "degree_in": 12,
+      "degree_out": 8
+    },
+    {
+      "id": "chip o'connell",
+      "name": "Chip O'Connell",
+      "team": "Onboarding",
+      "geo": "US",
+      "degree_in": 2,
+      "degree_out": 2
+    },
+    {
+      "id": "akshay bhasin",
+      "name": "Akshay Bhasin",
+      "team": "Payments",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 9
+    },
+    {
+      "id": "zubair syed",
+      "name": "Zubair Syed",
+      "team": "Enterprise",
+      "geo": "unknown",
+      "degree_in": 6,
+      "degree_out": 8
+    },
+    {
+      "id": "sriharshith akula",
+      "name": "Sriharshith Akula",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 2,
+      "degree_out": 3
+    },
+    {
+      "id": "matthew griffin",
+      "name": "Matthew Griffin",
+      "team": "Payments R&D",
+      "geo": "US",
+      "degree_in": 12,
+      "degree_out": 15
+    },
+    {
+      "id": "zachary honnold",
+      "name": "Zachary Honnold",
+      "team": "Finance",
+      "geo": "US",
+      "degree_in": 1,
+      "degree_out": 3
+    },
+    {
+      "id": "siva ganesh",
+      "name": "Siva Ganesh",
+      "team": "Restaurant Backend",
+      "geo": "unknown",
+      "degree_in": 4,
+      "degree_out": 3
+    },
+    {
+      "id": "poorna manujaya amarasingha",
+      "name": "Poorna Manujaya Amarasingha",
+      "team": "Enterprise",
+      "geo": "SL",
+      "degree_in": 13,
+      "degree_out": 13
+    },
+    {
+      "id": "chathura ratnayake",
+      "name": "Chathura Ratnayake",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 1,
+      "degree_out": 4
+    },
+    {
+      "id": "gregory ladgin",
+      "name": "Gregory Ladgin",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 2,
+      "degree_out": 3
+    },
+    {
+      "id": "altaaf anver",
+      "name": "Altaaf Anver",
+      "team": "Platform",
+      "geo": "SL",
+      "degree_in": 2,
+      "degree_out": 4
+    },
+    {
+      "id": "angelo senaratne (unlicensed)",
+      "name": "Angelo Senaratne (Unlicensed)",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "dineth samarakkody (unlicensed)",
+      "name": "Dineth Samarakkody (Unlicensed)",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "chathura lalinda ranasingha",
+      "name": "Chathura Lalinda Ranasingha",
+      "team": "Restaurant",
+      "geo": "US",
+      "degree_in": 2,
+      "degree_out": 1
+    },
+    {
+      "id": "ashen",
+      "name": "Ashen",
+      "team": "Restaurant",
+      "geo": "SL",
+      "degree_in": 1,
+      "degree_out": 3
+    },
+    {
+      "id": "hashan maduwantha",
+      "name": "Hashan Maduwantha",
+      "team": "CAKE / Restaurant",
+      "geo": "US",
+      "degree_in": 9,
+      "degree_out": 8
+    },
+    {
+      "id": "vanessa sotomayor",
+      "name": "Vanessa Sotomayor",
+      "team": "Payments PMO",
+      "geo": "unknown",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "savumi wadduwage",
+      "name": "Savumi Wadduwage",
+      "team": "Unknown",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "beau bruderer",
+      "name": "Beau Bruderer",
+      "team": "Restaurant Backend",
+      "geo": "unknown",
+      "degree_in": 11,
+      "degree_out": 4
+    },
+    {
+      "id": "adam lazarus",
+      "name": "Adam Lazarus",
+      "team": "Unknown",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "matias lopez riglos",
+      "name": "Matias Lopez Riglos",
+      "team": "PCI Compliance",
+      "geo": "unknown",
+      "degree_in": 12,
+      "degree_out": 18
+    },
+    {
+      "id": "ryan crawford",
+      "name": "Ryan Crawford",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 6,
+      "degree_out": 4
+    },
+    {
+      "id": "kevin reyes",
+      "name": "Kevin Reyes",
+      "team": "Payments R&D",
+      "geo": "US",
+      "degree_in": 7,
+      "degree_out": 10
+    },
+    {
+      "id": "orlando jimenez",
+      "name": "Orlando Jimenez",
+      "team": "Enterprise",
+      "geo": "US",
+      "degree_in": 7,
+      "degree_out": 16
+    },
+    {
+      "id": "janithmi dissanayake (unlicensed)",
+      "name": "Janithmi Dissanayake (Unlicensed)",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 1,
+      "degree_out": 1
+    },
+    {
+      "id": "william yen (unlicensed)",
+      "name": "William Yen (Unlicensed)",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 1,
+      "degree_out": 1
+    },
+    {
+      "id": "megan messmore",
+      "name": "Megan Messmore",
+      "team": "Platform",
+      "geo": "US",
+      "degree_in": 1,
+      "degree_out": 1
+    },
+    {
+      "id": "das desilva",
+      "name": "Das DeSilva",
+      "team": "Onboarding",
+      "geo": "US",
+      "degree_in": 1,
+      "degree_out": 1
+    },
+    {
+      "id": "john harre",
+      "name": "John Harre",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 8,
+      "degree_out": 10
+    },
+    {
+      "id": "mike nunez",
+      "name": "Mike Nunez",
+      "team": "Enterprise",
+      "geo": "US",
+      "degree_in": 25,
+      "degree_out": 14
+    },
+    {
+      "id": "trenton kress",
+      "name": "Trenton Kress",
+      "team": "Payments R&D",
+      "geo": "unknown",
+      "degree_in": 5,
+      "degree_out": 8
+    },
+    {
+      "id": "peter vu",
+      "name": "Peter Vu",
+      "team": "Payments R&D",
+      "geo": "unknown",
+      "degree_in": 8,
+      "degree_out": 8
+    },
+    {
+      "id": "air",
+      "name": "AIR",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 0,
+      "degree_out": 9
+    },
+    {
+      "id": "matt cooke",
+      "name": "Matt Cooke",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 4,
+      "degree_out": 5
+    },
+    {
+      "id": "gayan karunarathna",
+      "name": "Gayan Karunarathna",
+      "team": "Payments R&D",
+      "geo": "SL",
+      "degree_in": 7,
+      "degree_out": 3
+    },
+    {
+      "id": "hashan prabodhaka jalath",
+      "name": "Hashan Prabodhaka Jalath",
+      "team": "Concierge / Retail / Platform",
+      "geo": "SL",
+      "degree_in": 12,
+      "degree_out": 12
+    },
+    {
+      "id": "rusty clark",
+      "name": "Rusty Clark",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 3,
+      "degree_out": 4
+    },
+    {
+      "id": "antonio benjamim mussi schmidt",
+      "name": "Antonio Benjamim Mussi Schmidt",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 3,
+      "degree_out": 1
+    },
+    {
+      "id": "jeremy diggins",
+      "name": "Jeremy Diggins",
+      "team": "Enterprise Technology",
+      "geo": "US",
+      "degree_in": 2,
+      "degree_out": 12
+    },
+    {
+      "id": "chalaka sudusinghe",
+      "name": "Chalaka Sudusinghe",
+      "team": "CAKE / Restaurant",
+      "geo": "US",
+      "degree_in": 4,
+      "degree_out": 3
+    },
+    {
+      "id": "jack kennedy",
+      "name": "Jack Kennedy",
+      "team": "CTO",
+      "geo": "US",
+      "degree_in": 2,
+      "degree_out": 4
+    },
+    {
+      "id": "susampath madarasinghe",
+      "name": "Susampath Madarasinghe",
+      "team": "Payments R&D",
+      "geo": "SL",
+      "degree_in": 8,
+      "degree_out": 2
+    },
+    {
+      "id": "lorne malec",
+      "name": "Lorne Malec",
+      "team": "Payments",
+      "geo": "SL",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "richard meitzler",
+      "name": "Richard Meitzler",
+      "team": "Payments R&D",
+      "geo": "unknown",
+      "degree_in": 15,
+      "degree_out": 4
+    },
+    {
+      "id": "jeff pena",
+      "name": "Jeff Pena",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 3,
+      "degree_out": 0
+    },
+    {
+      "id": "kien pham",
+      "name": "Kien Pham",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 2
+    },
+    {
+      "id": "james van buskirk",
+      "name": "James Van Buskirk",
+      "team": "CAKE / Restaurant",
+      "geo": "SL",
+      "degree_in": 7,
+      "degree_out": 3
+    },
+    {
+      "id": "juan manuel rodriguez",
+      "name": "Juan Manuel Rodriguez",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 8,
+      "degree_out": 1
+    },
+    {
+      "id": "camilo souza",
+      "name": "Camilo Souza",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 4,
+      "degree_out": 0
+    },
+    {
+      "id": "fernando zelaya",
+      "name": "Fernando Zelaya",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 0,
+      "degree_out": 1
+    },
+    {
+      "id": "alex domingues da silva",
+      "name": "Alex Domingues da Silva",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 1,
+      "degree_out": 0
+    },
+    {
+      "id": "aruna dissanayake",
+      "name": "Aruna Dissanayake",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 0,
+      "degree_out": 1
+    },
+    {
+      "id": "facundo",
+      "name": "Facundo",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 6,
+      "degree_out": 2
+    },
+    {
+      "id": "chris gomersall",
+      "name": "Chris Gomersall",
+      "team": "Product Design",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 1
+    },
+    {
+      "id": "matias rondan",
+      "name": "Matias Rondan",
+      "team": "Unknown",
+      "geo": "Unknown",
+      "degree_in": 3,
+      "degree_out": 0
+    },
+    {
+      "id": "jason.bitman",
+      "name": "jason.bitman",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 1
+    },
+    {
+      "id": "daniel lomsak",
+      "name": "Daniel Lomsak",
+      "team": "Concierge / Retail / Platform",
+      "geo": "US",
+      "degree_in": 0,
+      "degree_out": 3
+    },
+    {
+      "id": "anil.rathore",
+      "name": "anil.rathore",
+      "team": "Concierge / Retail / Platform",
+      "geo": "Unknown",
+      "degree_in": 7,
+      "degree_out": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": "cory renard",
+      "to": "sowjanya akula",
+      "weight": 30,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "jake linder",
+      "weight": 10,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "harrison minchew",
+      "weight": 15,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "darren blackwell",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "rekha mohanan",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "patrycja stevenson",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "mark guilarte",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "gregory ladgin",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "holly culver",
+      "weight": 17,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "alexander baine",
+      "weight": 15,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "matthew crumley",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "thiwanka wimalasuriya",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "cory renard",
+      "to": "james van buskirk",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "miru somasunthara iyer",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "holly culver",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "cory renard",
+      "weight": 6,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "rekha mohanan",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "paul robert",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "sanduni dissanayaka",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "mark guilarte",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "alexander baine",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sowjanya akula",
+      "to": "harrison minchew",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "rusiru perera",
+      "weight": 22,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "sumeera perera",
+      "weight": 18,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "inushi gunathilake",
+      "weight": 16,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "dulana dharmaratne",
+      "weight": 15,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "wenushka dikowita",
+      "weight": 6,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "sanduni dissanayaka",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "alexander baine",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "michael lee",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "dilruwan madubashitha",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "chathura lalinda ranasingha",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "raveen panditha",
+      "weight": 29,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "nishani peiris",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "harrison minchew",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "mike nunez",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "matthew crumley",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "holly culver",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "cory renard",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "hashan maduwantha",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "thiwanka wimalasuriya",
+      "to": "poorna manujaya amarasingha",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "inushi gunathilake",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "sanduni dissanayaka",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "raveen panditha",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "sumeera perera",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "alexander baine",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "shavin pieris",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "dulana dharmaratne",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rusiru perera",
+      "to": "rob quin",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "sowjanya akula",
+      "weight": 18,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "cory renard",
+      "weight": 15,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "alexander baine",
+      "weight": 13,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "rekha mohanan",
+      "weight": 9,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "kaelon lucas",
+      "weight": 8,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "rusiru perera",
+      "weight": 7,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "inushi gunathilake",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "rob quin",
+      "weight": 7,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "dulana dharmaratne",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "paul robert",
+      "weight": 7,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "holly culver",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "mark guilarte",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "sanduni dissanayaka",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "darren blackwell",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "thiwanka wimalasuriya",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "austin.spreadbury",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "wenushka dikowita",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "harrison minchew",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "michael lee",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "pramodi fernando",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "anderson lavor",
+      "weight": 2,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "matthew crumley",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "miru somasunthara iyer",
+      "to": "qaiser pannu",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "inushi gunathilake",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "alexander baine",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "pramodi fernando",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "rob quin",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "thiwanka wimalasuriya",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "dulana dharmaratne",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "wenushka dikowita",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "harrison minchew",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "jake linder",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "austin.spreadbury",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "sanduni dissanayaka",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "raveen panditha",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sumeera perera",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "sumeera perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "raveen panditha",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "cory renard",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "jake linder",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "zubair syed",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "inushi gunathilake",
+      "to": "alexander baine",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "richard farber",
+      "to": "roopa kaukuri",
+      "weight": 17,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "richard farber",
+      "to": "nishani peiris",
+      "weight": 6,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "richard farber",
+      "to": "chalaka.thushara",
+      "weight": 7,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "richard farber",
+      "to": "malinda lamahewa",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "richard farber",
+      "to": "mauro villaseco",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "richard farber",
+      "to": "ryan crawford",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "richard farber",
+      "to": "shavin pieris",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "mauro villaseco",
+      "weight": 8,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "chalaka.thushara",
+      "weight": 9,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "richard farber",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "chip o'connell",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "nishani peiris",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "shavin pieris",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "benjamin roedell",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "malinda lamahewa",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "michael lee",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "altaaf anver",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "william yen (unlicensed)",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "megan messmore",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "roopa kaukuri",
+      "to": "das desilva",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "sanduni dissanayaka",
+      "weight": 16,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "paul robert",
+      "weight": 10,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "inushi gunathilake",
+      "weight": 9,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "miru somasunthara iyer",
+      "weight": 10,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "rob quin",
+      "weight": 9,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "alexander baine",
+      "weight": 9,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "sumeera perera",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "jessica conn",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "cory renard",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "jake linder",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "kaelon lucas",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "bill fenley",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "michael lee",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "harrison minchew",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "dulana dharmaratne",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "darren blackwell",
+      "weight": 6,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "austin.spreadbury",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "mark guilarte",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "kyle budd",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "rusiru perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "sowjanya akula",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "pramodi fernando",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "gregory ladgin",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "matthew crumley",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "nishani peiris",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "qaiser pannu",
+      "to": "thiwanka wimalasuriya",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "thiwanka wimalasuriya",
+      "weight": 7,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "dulana dharmaratne",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "inushi gunathilake",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "alexander baine",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "sumeera perera",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "dilruwan madubashitha",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "rob quin",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "austin.spreadbury",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sanduni dissanayaka",
+      "to": "michael lee",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "rusiru perera",
+      "weight": 15,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "sumeera perera",
+      "weight": 13,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "dulana dharmaratne",
+      "weight": 13,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "raveen panditha",
+      "weight": 53,
+      "channels": [
+        "jira_comment",
+        "jira_cowork",
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "sanduni dissanayaka",
+      "weight": 9,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "pramodi fernando",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "alexander baine",
+      "weight": 18,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "thiwanka wimalasuriya",
+      "weight": 53,
+      "channels": [
+        "jira_comment",
+        "jira_cowork",
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "austin.spreadbury",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "kyle budd",
+      "weight": 20,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "zubair syed",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "michael lee",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "janithmi dissanayake (unlicensed)",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "ashen",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "matthew crumley",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "poorna manujaya amarasingha",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "nishani peiris",
+      "weight": 20,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "holly culver",
+      "weight": 17,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "chalaka sudusinghe",
+      "weight": 17,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "harrison minchew",
+      "weight": 16,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "anderson lavor",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "beau bruderer",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "cory renard",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "benjamin roedell",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "richard meitzler",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "james van buskirk",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "hashan maduwantha",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "hashan prabodhaka jalath",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "matias lopez riglos",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "james oliver",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "wenushka dikowita",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "dulana dharmaratne",
+      "to": "alexander baine",
+      "weight": 11,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulana dharmaratne",
+      "to": "inushi gunathilake",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulana dharmaratne",
+      "to": "rusiru perera",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulana dharmaratne",
+      "to": "rob quin",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulana dharmaratne",
+      "to": "austin.spreadbury",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulana dharmaratne",
+      "to": "thiwanka wimalasuriya",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "malinda lamahewa",
+      "to": "roopa kaukuri",
+      "weight": 14,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "malinda lamahewa",
+      "to": "altaaf anver",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "kaelon lucas",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "miru somasunthara iyer",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "paul robert",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "jessica conn",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "mark guilarte",
+      "weight": 2,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "dulana dharmaratne",
+      "weight": 2,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "rusiru perera",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "sanduni dissanayaka",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "james oliver",
+      "weight": 75,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "john harre",
+      "weight": 64,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "cory renard",
+      "weight": 50,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "holly culver",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "benjamin roedell",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "harrison minchew",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "matthew crumley",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "mike nunez",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "kyle budd",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "rob quin",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "james van buskirk",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "thiwanka wimalasuriya",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "alexander baine",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "miru somasunthara iyer",
+      "weight": 11,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "kaelon lucas",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "cory renard",
+      "weight": 53,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "sowjanya akula",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "jake linder",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "holly culver",
+      "weight": 18,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "anderson lavor",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "mark guilarte",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "thiwanka wimalasuriya",
+      "weight": 16,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "matthew crumley",
+      "weight": 15,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "alexander baine",
+      "weight": 15,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "james van buskirk",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "paul robert",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "kyle budd",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "harrison minchew",
+      "to": "mike nunez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "miru somasunthara iyer",
+      "weight": 10,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 8,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "austin.spreadbury",
+      "weight": 8,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "kaelon lucas",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "anderson lavor",
+      "weight": 9,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "harrison minchew",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "alexander baine",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "dulana dharmaratne",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "rusiru perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "rob quin",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "sanduni dissanayaka",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "thiwanka wimalasuriya",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "matthew crumley",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "mike nunez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "randy brown",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "miru somasunthara iyer",
+      "weight": 9,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "sowjanya akula",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "jessica conn",
+      "weight": 6,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "darren blackwell",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "mark guilarte",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "trenton kress",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "matthew crumley",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "kevin reyes",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "mike nunez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "peter vu",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "paul robert",
+      "to": "gayan karunarathna",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "dulana dharmaratne",
+      "weight": 8,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "sanduni dissanayaka",
+      "weight": 8,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "sumeera perera",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "wenushka dikowita",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "rusiru perera",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "thiwanka wimalasuriya",
+      "weight": 23,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "nishani peiris",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "poorna manujaya amarasingha",
+      "weight": 12,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "harrison minchew",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "raveen panditha",
+      "to": "hashan prabodhaka jalath",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "patrycja stevenson",
+      "to": "jake linder",
+      "weight": 12,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "patrycja stevenson",
+      "to": "cory renard",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "jake linder",
+      "to": "cory renard",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "jake linder",
+      "to": "harrison minchew",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "jake linder",
+      "to": "patrycja stevenson",
+      "weight": 2,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "alexander baine",
+      "weight": 9,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "dulana dharmaratne",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "sanduni dissanayaka",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "austin.spreadbury",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "inushi gunathilake",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "michael lee",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "rusiru perera",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "miru somasunthara iyer",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "kaelon lucas",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "matthew crumley",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "benjamin roedell",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "james van buskirk",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rob quin",
+      "to": "anderson lavor",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rekha mohanan",
+      "to": "cory renard",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rekha mohanan",
+      "to": "holly culver",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "rekha mohanan",
+      "to": "sowjanya akula",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "chalaka.thushara",
+      "to": "roopa kaukuri",
+      "weight": 14,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "chalaka.thushara",
+      "to": "zachary honnold",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "chalaka.thushara",
+      "to": "chip o'connell",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "chalaka.thushara",
+      "to": "ryan crawford",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "chalaka.thushara",
+      "to": "richard farber",
+      "weight": 5,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "anderson lavor",
+      "weight": 7,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "raveen panditha",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "sumeera perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "miru somasunthara iyer",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "ana chambers",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "siva ganesh",
+      "weight": 9,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "chathura ratnayake",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "alexander baine",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "mark guilarte",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "ryan crawford",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dulanjan wengappuliarachchi",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "austin.spreadbury",
+      "to": "rob quin",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "austin.spreadbury",
+      "to": "miru somasunthara iyer",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "austin.spreadbury",
+      "to": "sanduni dissanayaka",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "austin.spreadbury",
+      "to": "zubair syed",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "brew lamb",
+      "to": "suneth de soyza",
+      "weight": 9,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "brew lamb",
+      "to": "thaddeus fox",
+      "weight": 9,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "brew lamb",
+      "to": "benjamin roedell",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "brew lamb",
+      "to": "ana chambers",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "suneth de soyza",
+      "to": "brew lamb",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "suneth de soyza",
+      "to": "thaddeus fox",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "suneth de soyza",
+      "to": "benjamin roedell",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "ryan crawford",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "john harre",
+      "weight": 44,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "james oliver",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "holly culver",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "benjamin roedell",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "mike nunez",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "anil.rathore",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mauro villaseco",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "ana chambers",
+      "to": "brew lamb",
+      "weight": 7,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "ana chambers",
+      "to": "thaddeus fox",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "ana chambers",
+      "to": "benjamin roedell",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "ana chambers",
+      "to": "sriharshith akula",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "ana chambers",
+      "to": "suneth de soyza",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "ana chambers",
+      "to": "kyle budd",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "ana chambers",
+      "to": "ryan crawford",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thaddeus fox",
+      "to": "suneth de soyza",
+      "weight": 6,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thaddeus fox",
+      "to": "brew lamb",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thaddeus fox",
+      "to": "sriharshith akula",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thaddeus fox",
+      "to": "benjamin roedell",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "thaddeus fox",
+      "to": "ana chambers",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kaelon lucas",
+      "to": "miru somasunthara iyer",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kaelon lucas",
+      "to": "rob quin",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kaelon lucas",
+      "to": "austin.spreadbury",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "kaelon lucas",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kaelon lucas",
+      "to": "beau bruderer",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "pramodi fernando",
+      "to": "inushi gunathilake",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "pramodi fernando",
+      "to": "rusiru perera",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "pramodi fernando",
+      "to": "dulana dharmaratne",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "pramodi fernando",
+      "to": "thiwanka wimalasuriya",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "pramodi fernando",
+      "to": "michael lee",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "shavin pieris",
+      "to": "sumeera perera",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "shavin pieris",
+      "to": "richard farber",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "shavin pieris",
+      "to": "dilruwan madubashitha",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "shavin pieris",
+      "to": "sanduni dissanayaka",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "shavin pieris",
+      "to": "benjamin roedell",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "shavin pieris",
+      "to": "roopa kaukuri",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "sumeera perera",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "inushi gunathilake",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "rusiru perera",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "dulana dharmaratne",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "kyle budd",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "sanduni dissanayaka",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "rob quin",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "austin.spreadbury",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "alexander baine",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "roopa kaukuri",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "michael lee",
+      "to": "pramodi fernando",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "qaiser pannu",
+      "weight": 7,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "kyle budd",
+      "weight": 36,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "inushi gunathilake",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "miru somasunthara iyer",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "cory renard",
+      "weight": 51,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "benjamin roedell",
+      "weight": 28,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "harrison minchew",
+      "weight": 25,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "holly culver",
+      "weight": 17,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "alexander baine",
+      "weight": 15,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "poorna manujaya amarasingha",
+      "weight": 14,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "paul robert",
+      "weight": 13,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "mike nunez",
+      "weight": 13,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "beau bruderer",
+      "weight": 12,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "anderson lavor",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "trenton kress",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "richard meitzler",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "thiwanka wimalasuriya",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "gayan karunarathna",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "orlando jimenez",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "siva ganesh",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "matias lopez riglos",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "peter vu",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "hashan maduwantha",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "hashan prabodhaka jalath",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "james van buskirk",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "susampath madarasinghe",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "rob quin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "facundo",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew crumley",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "bill fenley",
+      "to": "qaiser pannu",
+      "weight": 7,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "bill fenley",
+      "to": "zubair syed",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "bill fenley",
+      "to": "sumeera perera",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "bill fenley",
+      "to": "matthew griffin",
+      "weight": 2,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "bill fenley",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "jessica conn",
+      "to": "paul robert",
+      "weight": 8,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dilruwan madubashitha",
+      "to": "rob quin",
+      "weight": 6,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dilruwan madubashitha",
+      "to": "austin.spreadbury",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dilruwan madubashitha",
+      "to": "inushi gunathilake",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dilruwan madubashitha",
+      "to": "thiwanka wimalasuriya",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dilruwan madubashitha",
+      "to": "sanduni dissanayaka",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "dilruwan madubashitha",
+      "to": "chathura lalinda ranasingha",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "miru somasunthara iyer",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "mark guilarte",
+      "weight": 8,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "qaiser pannu",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "harrison minchew",
+      "weight": 2,
+      "channels": [
+        "jira_cowork",
+        "code_review"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "kyle budd",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "rob quin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "anderson lavor",
+      "to": "matias lopez riglos",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "miru somasunthara iyer",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "rekha mohanan",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "james oliver",
+      "weight": 78,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "john harre",
+      "weight": 52,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "cory renard",
+      "weight": 43,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "benjamin roedell",
+      "weight": 16,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "kyle budd",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "mike nunez",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "alexander baine",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "matthew crumley",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "matt cooke",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "anil.rathore",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "holly culver",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "sumeera perera",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "bill fenley",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "kaelon lucas",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "jake linder",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "patrycja stevenson",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "mark guilarte",
+      "weight": 3,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "zubair syed",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "miru somasunthara iyer",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "ana chambers",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "matthew crumley",
+      "weight": 29,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "benjamin roedell",
+      "weight": 21,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "poorna manujaya amarasingha",
+      "weight": 13,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "beau bruderer",
+      "weight": 12,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "anderson lavor",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "richard meitzler",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "mike nunez",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "siva ganesh",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "matias lopez riglos",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "james van buskirk",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "hashan maduwantha",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "hashan prabodhaka jalath",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "orlando jimenez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "rob quin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kyle budd",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "nishani peiris",
+      "to": "richard farber",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "nishani peiris",
+      "to": "sumeera perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "nishani peiris",
+      "to": "shavin pieris",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "nishani peiris",
+      "to": "raveen panditha",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "nishani peiris",
+      "to": "thiwanka wimalasuriya",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "nishani peiris",
+      "to": "hashan maduwantha",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "nishani peiris",
+      "to": "hashan prabodhaka jalath",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jehan wijesinghe (unlicensed)",
+      "to": "qaiser pannu",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "jehan wijesinghe (unlicensed)",
+      "to": "miru somasunthara iyer",
+      "weight": 5,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "siva ganesh",
+      "weight": 3,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "ana chambers",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "mauro villaseco",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "ryan crawford",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "shavin pieris",
+      "weight": 3,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "thaddeus fox",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "john harre",
+      "weight": 74,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "james oliver",
+      "weight": 33,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "kyle budd",
+      "weight": 24,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "matthew crumley",
+      "weight": 14,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "anderson lavor",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "mike nunez",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "holly culver",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "poorna manujaya amarasingha",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "richard meitzler",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "beau bruderer",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "matias lopez riglos",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "anil.rathore",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "hashan prabodhaka jalath",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "benjamin roedell",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "sumeera perera",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "inushi gunathilake",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "cory renard",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "jake linder",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "kaelon lucas",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "miru somasunthara iyer",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "paul robert",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "jessica conn",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "john harre",
+      "weight": 126,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "benjamin roedell",
+      "weight": 16,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "mike nunez",
+      "weight": 14,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "kyle budd",
+      "weight": 13,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "holly culver",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "camilo souza",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "matias rondan",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "matt cooke",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "anil.rathore",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james oliver",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "darren blackwell",
+      "to": "sowjanya akula",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "darren blackwell",
+      "to": "miru somasunthara iyer",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "darren blackwell",
+      "to": "cory renard",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "darren blackwell",
+      "to": "kaelon lucas",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "darren blackwell",
+      "to": "qaiser pannu",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "darren blackwell",
+      "to": "paul robert",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "darren blackwell",
+      "to": "mark guilarte",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "ruwinda ranganayake (unlicensed)",
+      "to": "thiwanka wimalasuriya",
+      "weight": 4,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "alexander baine",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "kyle budd",
+      "weight": 5,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "inushi gunathilake",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "paul robert",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "anderson lavor",
+      "weight": 7,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "cory renard",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "mark guilarte",
+      "to": "harrison minchew",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "chip o'connell",
+      "to": "roopa kaukuri",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "chip o'connell",
+      "to": "chalaka.thushara",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "darren blackwell",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "qaiser pannu",
+      "weight": 3,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "raveen panditha",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "sumeera perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "kaelon lucas",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "miru somasunthara iyer",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "paul robert",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "mark guilarte",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "akshay bhasin",
+      "to": "richard meitzler",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "raveen panditha",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "sumeera perera",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "benjamin roedell",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "austin.spreadbury",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "zubair syed",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "sriharshith akula",
+      "to": "brew lamb",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "sriharshith akula",
+      "to": "thaddeus fox",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "sriharshith akula",
+      "to": "mike nunez",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "bill fenley",
+      "weight": 4,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "orlando jimenez",
+      "weight": 70,
+      "channels": [
+        "jira_cowork",
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "matias lopez riglos",
+      "weight": 93,
+      "channels": [
+        "jira_cowork",
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "benjamin roedell",
+      "weight": 42,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "kyle budd",
+      "weight": 34,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "matthew crumley",
+      "weight": 31,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "hashan maduwantha",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "mike nunez",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "poorna manujaya amarasingha",
+      "weight": 14,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "anderson lavor",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "richard meitzler",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "hashan prabodhaka jalath",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "susampath madarasinghe",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "facundo",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matthew griffin",
+      "to": "beau bruderer",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "zachary honnold",
+      "to": "richard farber",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "zachary honnold",
+      "to": "shavin pieris",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "zachary honnold",
+      "to": "chalaka.thushara",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "siva ganesh",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 10,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "siva ganesh",
+      "to": "benjamin roedell",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "siva ganesh",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "raveen panditha",
+      "weight": 25,
+      "channels": [
+        "jira_comment",
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "kyle budd",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "nishani peiris",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "matthew crumley",
+      "weight": 15,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "anderson lavor",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "beau bruderer",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "benjamin roedell",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "richard meitzler",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "hashan prabodhaka jalath",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "matias lopez riglos",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "chalaka sudusinghe",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "facundo",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "poorna manujaya amarasingha",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "chathura ratnayake",
+      "to": "austin.spreadbury",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "chathura ratnayake",
+      "to": "kaelon lucas",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "chathura ratnayake",
+      "to": "miru somasunthara iyer",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "chathura ratnayake",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "gregory ladgin",
+      "to": "austin.spreadbury",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "gregory ladgin",
+      "to": "rusiru perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "gregory ladgin",
+      "to": "cory renard",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "altaaf anver",
+      "to": "sumeera perera",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "altaaf anver",
+      "to": "alexander baine",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "altaaf anver",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "altaaf anver",
+      "to": "roopa kaukuri",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "angelo senaratne (unlicensed)",
+      "to": "wenushka dikowita",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "angelo senaratne (unlicensed)",
+      "to": "thiwanka wimalasuriya",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dineth samarakkody (unlicensed)",
+      "to": "wenushka dikowita",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "dineth samarakkody (unlicensed)",
+      "to": "thiwanka wimalasuriya",
+      "weight": 2,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "chathura lalinda ranasingha",
+      "to": "dilruwan madubashitha",
+      "weight": 2,
+      "channels": [
+        "jira_comment",
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "ashen",
+      "to": "raveen panditha",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "ashen",
+      "to": "sumeera perera",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "ashen",
+      "to": "wenushka dikowita",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "kyle budd",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "poorna manujaya amarasingha",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "raveen panditha",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "chalaka sudusinghe",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "nishani peiris",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "matthew crumley",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan maduwantha",
+      "to": "hashan prabodhaka jalath",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "vanessa sotomayor",
+      "to": "cory renard",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "vanessa sotomayor",
+      "to": "rekha mohanan",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "savumi wadduwage",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "savumi wadduwage",
+      "to": "sumeera perera",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "beau bruderer",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "beau bruderer",
+      "to": "sumeera perera",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "beau bruderer",
+      "to": "kaelon lucas",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "beau bruderer",
+      "to": "kyle budd",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "adam lazarus",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "adam lazarus",
+      "to": "matias lopez riglos",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "bill fenley",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "zubair syed",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "matthew griffin",
+      "weight": 36,
+      "channels": [
+        "jira_cowork",
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "orlando jimenez",
+      "weight": 72,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "benjamin roedell",
+      "weight": 46,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "kyle budd",
+      "weight": 35,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "matthew crumley",
+      "weight": 34,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "mike nunez",
+      "weight": 27,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "hashan maduwantha",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "poorna manujaya amarasingha",
+      "weight": 17,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "anderson lavor",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "richard meitzler",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "peter vu",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "hashan prabodhaka jalath",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "susampath madarasinghe",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "kevin reyes",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "facundo",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matias lopez riglos",
+      "to": "beau bruderer",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "ryan crawford",
+      "to": "ana chambers",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "ryan crawford",
+      "to": "dulanjan wengappuliarachchi",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "ryan crawford",
+      "to": "mauro villaseco",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "ryan crawford",
+      "to": "chalaka.thushara",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "alexander baine",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "inushi gunathilake",
+      "weight": 1,
+      "channels": [
+        "jira_comment"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "peter vu",
+      "weight": 49,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "trenton kress",
+      "weight": 38,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "gayan karunarathna",
+      "weight": 31,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "susampath madarasinghe",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "paul robert",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "richard meitzler",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "matthew crumley",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kevin reyes",
+      "to": "mike nunez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "matthew griffin",
+      "weight": 35,
+      "channels": [
+        "jira_cowork",
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "matias lopez riglos",
+      "weight": 77,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "benjamin roedell",
+      "weight": 46,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "kyle budd",
+      "weight": 34,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "matthew crumley",
+      "weight": 31,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "mike nunez",
+      "weight": 23,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "hashan maduwantha",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "poorna manujaya amarasingha",
+      "weight": 13,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "anderson lavor",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "peter vu",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "kevin reyes",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "hashan prabodhaka jalath",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "richard meitzler",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "trenton kress",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "facundo",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "orlando jimenez",
+      "to": "beau bruderer",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "janithmi dissanayake (unlicensed)",
+      "to": "wenushka dikowita",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "william yen (unlicensed)",
+      "to": "roopa kaukuri",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "megan messmore",
+      "to": "roopa kaukuri",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "das desilva",
+      "to": "roopa kaukuri",
+      "weight": 1,
+      "channels": [
+        "jira_cowork"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "james oliver",
+      "weight": 141,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "kyle budd",
+      "weight": 38,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "holly culver",
+      "weight": 20,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "benjamin roedell",
+      "weight": 18,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "mike nunez",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "matt cooke",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "matias rondan",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "orlando jimenez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "anil.rathore",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "john harre",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "matias lopez riglos",
+      "weight": 61,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "orlando jimenez",
+      "weight": 56,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "benjamin roedell",
+      "weight": 45,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "matthew crumley",
+      "weight": 35,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "kyle budd",
+      "weight": 34,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "matthew griffin",
+      "weight": 32,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "hashan maduwantha",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "poorna manujaya amarasingha",
+      "weight": 14,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "anderson lavor",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "richard meitzler",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "thiwanka wimalasuriya",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "hashan prabodhaka jalath",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "facundo",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "mike nunez",
+      "to": "beau bruderer",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "peter vu",
+      "weight": 54,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "gayan karunarathna",
+      "weight": 23,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "susampath madarasinghe",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "kevin reyes",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "paul robert",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "matthew crumley",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "mike nunez",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "trenton kress",
+      "to": "richard meitzler",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "trenton kress",
+      "weight": 50,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "gayan karunarathna",
+      "weight": 32,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "kevin reyes",
+      "weight": 17,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "susampath madarasinghe",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "paul robert",
+      "weight": 5,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "matthew crumley",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "richard meitzler",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "peter vu",
+      "to": "mike nunez",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "john harre",
+      "weight": 46,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "kyle budd",
+      "weight": 35,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "james oliver",
+      "weight": 22,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "holly culver",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "mike nunez",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "benjamin roedell",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "matias rondan",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "anil.rathore",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "air",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matt cooke",
+      "to": "james oliver",
+      "weight": 42,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matt cooke",
+      "to": "holly culver",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matt cooke",
+      "to": "john harre",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matt cooke",
+      "to": "benjamin roedell",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "matt cooke",
+      "to": "mike nunez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "gayan karunarathna",
+      "to": "susampath madarasinghe",
+      "weight": 10,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "gayan karunarathna",
+      "to": "peter vu",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "gayan karunarathna",
+      "to": "richard meitzler",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "poorna manujaya amarasingha",
+      "weight": 23,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "raveen panditha",
+      "weight": 21,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "kyle budd",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "nishani peiris",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "matthew crumley",
+      "weight": 15,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "anderson lavor",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "beau bruderer",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "benjamin roedell",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "richard meitzler",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "matias lopez riglos",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "matthew griffin",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "hashan prabodhaka jalath",
+      "to": "chalaka sudusinghe",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rusty clark",
+      "to": "antonio benjamim mussi schmidt",
+      "weight": 19,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rusty clark",
+      "to": "jeff pena",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rusty clark",
+      "to": "jeremy diggins",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "rusty clark",
+      "to": "jack kennedy",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "antonio benjamim mussi schmidt",
+      "to": "rusty clark",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "john harre",
+      "weight": 18,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "rusty clark",
+      "weight": 12,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "james oliver",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "holly culver",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "jeff pena",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "mike nunez",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "benjamin roedell",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "camilo souza",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "jack kennedy",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "antonio benjamim mussi schmidt",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "anil.rathore",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jeremy diggins",
+      "to": "juan manuel rodriguez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "chalaka sudusinghe",
+      "to": "poorna manujaya amarasingha",
+      "weight": 8,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "chalaka sudusinghe",
+      "to": "thiwanka wimalasuriya",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "chalaka sudusinghe",
+      "to": "raveen panditha",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jack kennedy",
+      "to": "rusty clark",
+      "weight": 12,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jack kennedy",
+      "to": "jeff pena",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jack kennedy",
+      "to": "jeremy diggins",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jack kennedy",
+      "to": "antonio benjamim mussi schmidt",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "susampath madarasinghe",
+      "to": "gayan karunarathna",
+      "weight": 11,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "susampath madarasinghe",
+      "to": "benjamin roedell",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "lorne malec",
+      "to": "peter vu",
+      "weight": 9,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "lorne malec",
+      "to": "kevin reyes",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "richard meitzler",
+      "to": "susampath madarasinghe",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "richard meitzler",
+      "to": "kevin reyes",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "richard meitzler",
+      "to": "gayan karunarathna",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "richard meitzler",
+      "to": "matthew crumley",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kien pham",
+      "to": "matt cooke",
+      "weight": 6,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "kien pham",
+      "to": "mike nunez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james van buskirk",
+      "to": "matthew crumley",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james van buskirk",
+      "to": "cory renard",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "james van buskirk",
+      "to": "harrison minchew",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "juan manuel rodriguez",
+      "to": "camilo souza",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "fernando zelaya",
+      "to": "alex domingues da silva",
+      "weight": 4,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "aruna dissanayake",
+      "to": "thiwanka wimalasuriya",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "facundo",
+      "to": "mike nunez",
+      "weight": 3,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "facundo",
+      "to": "matias lopez riglos",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "chris gomersall",
+      "to": "kyle budd",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "jason.bitman",
+      "to": "camilo souza",
+      "weight": 2,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "daniel lomsak",
+      "to": "mike nunez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "daniel lomsak",
+      "to": "orlando jimenez",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    },
+    {
+      "from": "daniel lomsak",
+      "to": "benjamin roedell",
+      "weight": 1,
+      "channels": [
+        "code_review"
+      ]
+    }
+  ],
+  "node_count": 107,
+  "edge_count": 778
+}

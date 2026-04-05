@@ -1,0 +1,36 @@
+{
+  "name": "Sankha Jayalath (Unlicensed)",
+  "id": "sankha-jayalath-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Tharuka Jayalath (Unlicensed)",
+    "Anuradha Jayalath (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b12270f6f644323020751e3",
+      "email": "",
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB"
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Susampath Madarasinghe",
+  "id": "susampath-madarasinghe",
+  "title": "Senior Software Engineer",
+  "team": "Payments R&D",
+  "manager": "Kevin Reyes",
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "Susampath M"
+  ],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 52,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "712020:1207530a-94a2-45eb-8535-9756a34fc9b5",
+      "email": "",
+      "projects": [
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 29,
+      "issues_resolved_90d": 0,
+      "open_assigned": 36,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:1207530a-94a2-45eb-8535-9756a34fc9b5",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "madpayments"
+      ],
+      "nickname": "Susampath Madarasinghe",
+      "prs_authored": 9,
+      "prs_reviewed": 0,
+      "review_cluster": "mixed"
+    },
+    "confluence": {
+      "account_id": "712020:1207530a-94a2-45eb-8535-9756a34fc9b5",
+      "email": "",
+      "pages_total": 45,
+      "pages_90d": 14,
+      "spaces": [
+        "MMA",
+        "P",
+        "PROD",
+        "PT"
+      ]
+    }
+  }
+}

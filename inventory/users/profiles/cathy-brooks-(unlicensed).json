@@ -1,0 +1,32 @@
+{
+  "name": "Cathy Brooks (Unlicensed)",
+  "id": "cathy-brooks-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": "cbrooks@madmobile.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:ffabf168-52f0-48bc-9582-f57bc627fcb3",
+      "email": "cbrooks@madmobile.com",
+      "pages_total": 4,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

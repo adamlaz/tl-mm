@@ -1,0 +1,61 @@
+{
+  "name": "Dulanjan Wengappuliarachchi",
+  "id": "dulanjan-wengappuliarachchi",
+  "title": "VP Product & GTM",
+  "team": "Product",
+  "manager": "Chathura Ratnayake",
+  "division": "CDO / Product & GTM",
+  "executive": "Chathura Ratnayake",
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "Dulanjan W."
+  ],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 73,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "62ba9e97018dea0d4073bcf1",
+      "email": "",
+      "projects": [
+        "AR",
+        "REST",
+        "UP"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 61,
+      "issues_resolved_90d": 11,
+      "open_assigned": 106,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "confluence": {
+      "account_id": "62ba9e97018dea0d4073bcf1",
+      "email": "",
+      "pages_total": 82,
+      "pages_90d": 1,
+      "spaces": [
+        "ES",
+        "LP",
+        "PROD"
+      ]
+    }
+  }
+}

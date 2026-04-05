@@ -1,0 +1,32 @@
+{
+  "name": "Ernst Fantaisy (Unlicensed)",
+  "id": "ernst-fantaisy-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "level": "low"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:d3a38897-fff3-4df8-a7a3-32ab06d049a8",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 1,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

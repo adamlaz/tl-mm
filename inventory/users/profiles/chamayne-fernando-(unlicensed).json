@@ -1,0 +1,35 @@
+{
+  "name": "Chamayne Fernando (Unlicensed)",
+  "id": "chamayne-fernando-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Rashandi Fernando (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:604a14be-3309-40d8-a99f-3f9616292918",
+      "email": "",
+      "pages_total": 11,
+      "pages_90d": 0,
+      "spaces": [
+        "CCE",
+        "LP"
+      ]
+    }
+  }
+}

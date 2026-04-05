@@ -1,0 +1,35 @@
+{
+  "name": "Roshan Thamalaka (Unlicensed)",
+  "id": "roshan-thamalaka-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "Roshan Ranasinghe (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5b12378efa615349cb01705b",
+      "email": "",
+      "pages_total": 11,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB"
+      ]
+    }
+  }
+}

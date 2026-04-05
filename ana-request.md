@@ -1,65 +1,60 @@
-**Subject:** Re: Survey distribution + a few pre-onsite items
+**Subject:** Re: Pre-onsite updates + one new access request
 
 Hi Ana,
 
-Thanks for the update — and congratulations to Chathura on the CDO role! That's a significant move and great context for the review.
+Hope you're having a good weekend. A few updates and one new request.
 
-**Quick status from my side:** The system access has been working great — I've completed several rounds of automated analysis across Bitbucket, Jira, Confluence, and all 18 AWS accounts. I have quantitative baselines on source control activity, sprint velocity, backlog health, infrastructure costs, deployment patterns, and documentation coverage. I've also pulled the most relevant architecture, deployment, and incident docs directly from Confluence. The data foundation for the onsite is solid — every interview will be grounded in specific numbers rather than generic questions.
-
-Happy to have the survey intro come from Chathura. That actually makes a lot of sense given his new scope across all engineering verticals. I'm building the surveys in Microsoft Forms on the Mad Mobile account, and I'll have all four links ready to drop in before midday Monday. I've drafted a message below for Chathura to review and adjust — he should make it his own.
+**Status update:** The pre-work analysis is going well. I've now completed a comprehensive cross-system people map — 499 unique individuals identified across Bitbucket, Jira, Confluence, and AWS, merged with the org chart data from Don and Chathura. I have team assignments, collaboration networks, and risk analysis ready for the onsite. This will make every interview much more targeted.
 
 ---
 
-**Draft message for Chathura (for his review/edit):**
+**1. Grafana access** — Monday still works great. Looking forward to seeing the monitoring setup.
 
-> **Subject:** Quick engineering surveys — please complete by April 10
->
-> Team,
->
-> As part of the technology operations review that Don has initiated, Adam Lazarus will be onsite April 13–15 conducting interviews and system walkthroughs. Before he arrives, I'd like everyone in engineering and product to complete a short set of surveys.
->
-> These take **under 15 minutes total** and are completely anonymous — no individual responses will be attributed to anyone by name.
->
-> The surveys measure deployment speed, team culture, developer experience, and engineering practices using industry-standard benchmarks. The goal isn't to evaluate anyone — it's to understand where our systems and processes help or hinder your ability to do great work.
->
-> **Your honest answers matter.** The more candid you are, the more useful this will be for all of us. We plan to re-run these same surveys at 30 and 60 days so we can measure whether changes we make are actually working.
->
-> Here are the links:
-> - [Survey 1 — Delivery Performance] *(engineering leads/managers only — one per team)*
-> - [Survey 2 — Team Culture] *(everyone in engineering and product)*
-> - [Survey 3 — Developer Experience] *(individual contributors only)*
-> - [Survey 4 — Engineering Practices] *(engineering leads and senior engineers)*
->
-> Please complete by **Thursday, April 10**.
->
-> I know surveys aren't anyone's favorite thing, but this is a real opportunity to be heard.
->
-> Chathura
+**2. Enterprise Solutions org** — Still the biggest gap. Chathura's PDF had Zubair's page mostly blank. This is the largest org (~58 people) and I currently have zero names below Zubair. If there's a version with that team's structure, or if Zubair can send one directly, that would be extremely helpful before the onsite.
+
+**3. Pre-read documents** — Looking forward to whatever lands Monday. Retail and Neo/AI roadmaps especially, per Don's scope confirmation.
+
+**4. Interview scheduling** — I'll have the full grid to you early this week. Updated for the April 3 reorg — Siegel removed, Strainick refocused as COO, Akshay and Guilarte added.
+
+**5. Conference room** — Yes, a TV/screen would be very helpful. I'll be showing interactive charts and data during several conversations.
 
 ---
 
-**A few other items:**
+**6. NEW: Microsoft 365 / Azure AD access request**
 
-**1. Grafana access**
-I found that MM runs a self-hosted Grafana stack for monitoring. Could you check with Matias or the cloud team about getting me read-only viewer access?
+For the people and organizational analysis, I need read access to the Microsoft 365 directory and calendar data via the Microsoft Graph API. This requires admin consent in your Azure AD tenant — my account (`adam.lazarus@madmobile.com`) currently can't authorize the permissions on its own due to your Conditional Access policies (which is good security practice, by the way).
 
-**2. Updated org chart**
-With the reorganization and Chathura's new role, could you share an updated org chart or even just a current list of names and roles? I have the March version from Don but it's likely stale now. Most interested in product, engineering, customer success, and support organizations.
+**What I need approved:**
 
-**3. Pre-read documents**
-I've been pulling a lot directly from Confluence and have a solid foundation already — architecture docs, deployment docs, RCAs, product specs. That said, I'm still looking forward to the curated folder whenever it's ready. The things I haven't been able to find in the systems are:
-- **Concierge/Retail and Neo/AI product roadmaps** (if they exist as decks or docs outside Confluence)
-- **Revenue breakdown by product line** (CAKE vs Concierge vs Neo vs Payments)
+An IT admin (Rosen or Matias) to grant the following Microsoft Graph API permissions to the "Microsoft Graph Command Line Tools" app (app ID: `14d82eec-204b-4c2f-b7e8-296a70dab67e`) for my account:
 
-**4. Interview scheduling**
-I'll send the full interview grid shortly — 15+ sessions across April 13–15, each 30–60 minutes. Once you have it, could you book the calendar blocks and protect the time? A few of the key sessions are 60–90 minutes.
+- **User.Read.All** — Read the company directory (names, titles, departments, managers, office locations). This gives me the full employee list with reporting structure, which is critical for mapping the org accurately — especially Zubair's Enterprise Solutions team.
+- **People.Read** — See organizational relationships and relevant contacts.
+- **Calendars.Read** — Read-only access to calendars. Two purposes:
+  1. **Interview scheduling**: I can check availability for the 18–21 interview slots during April 13–15 and send you a proposed schedule that avoids conflicts, rather than going back and forth on times.
+  2. **Meeting pattern analysis**: Historical calendar data shows how teams actually coordinate — which groups meet regularly, where there are cross-team syncs, and where there are gaps. This feeds directly into the interaction analysis for the board deliverable.
+- **Group.Read.All** or **Team.ReadBasic.All** — See which Microsoft Teams channels exist and their membership. This maps the informal communication structure.
 
-**5. Conference room**
-We need a room that supports private 1:1 conversations for all three days — not a fishbowl in the middle of the floor.
+**How to do it:** In the Azure AD portal (entra.microsoft.com), go to Enterprise Applications → search for "Microsoft Graph Command Line Tools" → Permissions → Grant admin consent. Alternatively, Rosen or Matias can run a PowerShell command — happy to provide the exact steps if that's easier.
+
+**Scope and duration:** This is read-only access for my account only, limited to the engagement period. I won't modify any data. Happy to have the permissions revoked after April 25 when deliverables are complete.
 
 ---
 
-None of this is blocking — just things that would sharpen the picture before I arrive.
+**7. Incident reports / post-mortems** — I've been able to pull structured post-mortem documents from Confluence going back to 2020, and the data is excellent — 50 incidents parsed with root causes, affected systems, resolution timelines. But the trail largely stops after 2023. I found 26 structured RCAs in 2022, but only 5 in 2024 and 2 in 2025 (both in the Team Tesla space, not the original Taurus space where the earlier ones lived).
+
+I'm hoping this means the incident review process migrated to a different tool or location rather than stopped entirely. Could you help me find out:
+- **Did RCA/post-mortem documentation move somewhere?** Possible places: a Teams channel, Guru, a different Confluence space, a Jira project with an "Incident" issue type, PagerDuty, or Opsgenie?
+- **Is there a current on-call or incident response tool** I should be looking at? (The Grafana/Mimir stack suggests alerting exists, but I can't see the alert rules or notification channels yet.)
+- **Who would know?** If there's a specific person who owns the incident process now, I'd love to talk to them onsite — or just know where to look.
+
+This is important for the board deliverable — incident response maturity is one of the key DORA metrics, and right now I can't tell if Mad Mobile got dramatically better at reliability (great news) or stopped documenting incidents (concerning news). Either answer is useful, but I need to know which one.
+
+**8. CloudTrail access** — One more from the AWS side: could the audit role (`Global-Audit-RO`) get `cloudtrail:LookupEvents` permission added? Or is there a CloudTrail S3 bucket I can read directly? Deployment frequency from AWS is the one DORA metric I'm completely missing, and it would strengthen the board deliverable significantly.
+
+---
+
+None of this is blocking the onsite — I can work with what I have — but items 6, 7, and 8 would meaningfully improve the depth of the analysis.
 
 Thanks,
 Adam

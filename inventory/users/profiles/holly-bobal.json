@@ -1,0 +1,27 @@
+{
+  "name": "Holly Bobal",
+  "id": "holly-bobal",
+  "title": "Senior Software Engineer",
+  "team": "Restaurant Backend",
+  "manager": "Kyle Budd",
+  "division": "CDO / Restaurant Technology",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "quiet",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "org_chart"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    }
+  }
+}

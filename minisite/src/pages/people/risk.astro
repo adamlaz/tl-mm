@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { personUrl, personSlug, bitbucketRepoUrl } from '../../lib/links';
+
+const num = (v: any) => Number(v) || 0;
+const fmt = (v: any) => Number(v)?.toLocaleString() ?? v;
+
+let riskData: any = { people: {}, teams: {} };
+try {
+  riskData = JSON.parse(readFileSync(resolve('../inventory/users/people_risk.json'), 'utf-8'));
+} catch {}
+
+let busFactor: any = {
+  heavy_reviewers_100plus: [], reviewer_bottleneck_repos: [],
+  summary: { heavy_reviewers: 0, bottleneck_repos: 0 },
+};
+try {
+  busFactor = JSON.parse(readFileSync(resolve('../inventory/cross_system/bus_factor.json'), 'utf-8'));
+} catch {}
+
+const riskPeople = Object.values(riskData.people || {}) as any[];
+const sortedRisk = [...riskPeople].sort((a, b) => b.score - a.score);
+const topRiskPerson = sortedRisk[0];
+const highRiskCount = riskPeople.filter((p) => p.score > 60).length;
+
+const riskTeamEntries = Object.entries(riskData.teams || {}) as [string, any][];
+const topRiskTeam = [...riskTeamEntries].sort((a, b) => b[1].avg_top3_risk - a[1].avg_top3_risk)[0];
+
+const riskBreakdownRows = sortedRisk.map((p: any) => ({
+  name: p.name,
+  _href_name: personUrl(personSlug(p.name)),
+  team: p.team,
+  score: Number(p.score).toFixed(1),
+  review_share: `${Number(p.breakdown?.review_share_pct ?? 0).toFixed(1)}%`,
+  code_centrality: Number(p.breakdown?.code_centrality ?? 0).toFixed(1),
+  knowledge_pct: `${Number(p.breakdown?.confluence_share_pct ?? 0).toFixed(1)}%`,
+  systems: p.breakdown?.systems_active ?? 0,
+}));
+
+const teamRiskRows = [...riskTeamEntries]
+  .sort((a, b) => b[1].avg_top3_risk - a[1].avg_top3_risk)
+  .map(([team, data]: [string, any]) => ({
+    team,
+    avg_top3: Number(data.avg_top3_risk).toFixed(1),
+    max_risk: Number(data.max_risk).toFixed(1),
+    at_risk: data.people_at_risk,
+    scored: data.total_scored,
+  }));
+
+const reviewerRows = (busFactor.heavy_reviewers_100plus || []).map((r: any) => ({
+  name: r.name,
+  _href_name: personUrl(personSlug(r.name)),
+  given: fmt(r.reviews_given ?? 0),
+  received: fmt(r.reviews_received ?? 0),
+  prs: fmt(r.prs_authored ?? 0),
+  repos: r.repos?.length ?? 0,
+}));
+
+const bottleneckRows = (busFactor.reviewer_bottleneck_repos || []).map((r: any) => ({
+  repo: r.repo,
+  reviewer: r.top_reviewer,
+  pct: `${Number(r.pct).toFixed(1)}%`,
+  prs: r.total_prs,
+}));
+---
+
+<BaseLayout title="Risk & Bus Factor — People & Org">
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)]">Risk &amp; Bus Factor</span>
+  </div>
+
+  <SectionHeader
+    title="Risk & Bus Factor"
+    description="Key person risk analysis combining review concentration, code centrality, knowledge monopoly, and cross-system breadth."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard
+      label="Highest Risk"
+      value={topRiskPerson?.name ?? '—'}
+      subtitle={topRiskPerson ? `Score: ${Number(topRiskPerson.score).toFixed(1)}` : ''}
+    />
+    <MetricCard
+      label="Highest Risk Team"
+      value={topRiskTeam ? topRiskTeam[0] : '—'}
+      subtitle={topRiskTeam ? `Avg top-3: ${Number(topRiskTeam[1].avg_top3_risk).toFixed(1)}` : ''}
+    />
+    <MetricCard
+      label="People at Risk"
+      value={highRiskCount.toString()}
+      subtitle="Risk score > 60"
+    />
+    <MetricCard
+      label="Heavy Reviewers"
+      value={(busFactor.summary?.heavy_reviewers ?? 0).toString()}
+      subtitle="100+ reviews given"
+    />
+  </dl>
+
+  <div class="mb-8">
+    <ChartEmbed slug="key_person_risk" title="Key Person Risk Scores" />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Risk Breakdown</h2>
+
+  {riskBreakdownRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'name', label: 'Name', sortable: true },
+          { key: 'team', label: 'Team', sortable: true, filterable: true, type: 'badge' },
+          { key: 'score', label: 'Risk Score', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true },
+          { key: 'review_share', label: 'Review Share', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true },
+          { key: 'code_centrality', label: 'Code Centrality', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true },
+          { key: 'knowledge_pct', label: 'Knowledge %', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true },
+          { key: 'systems', label: 'Systems', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={riskBreakdownRows}
+        height="400px"
+        exportable
+      />
+    </div>
+  )}
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Team Risk Summary</h2>
+
+  {teamRiskRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'team', label: 'Team', sortable: true, type: 'badge' },
+          { key: 'avg_top3', label: 'Avg Top-3 Risk', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true, bottomCalc: 'avg' },
+          { key: 'max_risk', label: 'Max Risk', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true, bottomCalc: 'avg' },
+          { key: 'at_risk', label: 'At Risk', align: 'right', sortable: true, type: 'number', bottomCalc: 'sum' },
+          { key: 'scored', label: 'Scored', align: 'right', sortable: true, type: 'number', bottomCalc: 'sum' },
+        ]}
+        rows={teamRiskRows}
+      />
+    </div>
+  )}
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Review Bottlenecks</h2>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Top Reviewers</h3>
+      <TabulatorGrid
+        columns={[
+          { key: 'name', label: 'Name', sortable: true },
+          { key: 'given', label: 'Given', align: 'right', sortable: true, type: 'number' },
+          { key: 'received', label: 'Received', align: 'right', sortable: true, type: 'number' },
+          { key: 'prs', label: 'PRs', align: 'right', sortable: true, type: 'number' },
+          { key: 'repos', label: 'Repos', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={reviewerRows}
+      />
+    </div>
+    <div>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Bottleneck Repos</h3>
+      <TabulatorGrid
+        columns={[
+          { key: 'repo', label: 'Repository', sortable: true },
+          { key: 'reviewer', label: 'Top Reviewer', sortable: true },
+          { key: 'pct', label: 'Review %', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true },
+          { key: 'prs', label: 'Total PRs', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={bottleneckRows}
+      />
+    </div>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <ChartEmbed slug="review_network" title="Review Network" />
+    <ChartEmbed slug="bb_reviewer_concentration" title="Reviewer Concentration" />
+  </div>
+</BaseLayout>

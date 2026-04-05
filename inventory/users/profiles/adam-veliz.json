@@ -1,0 +1,35 @@
+{
+  "name": "Adam Veliz",
+  "id": "adam-veliz",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 5,
+    "level": "low"
+  },
+  "systems": [
+    "jira"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:718c5899-b0c3-40a6-915d-c9f30b4e89c9",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

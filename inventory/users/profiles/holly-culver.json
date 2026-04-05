@@ -1,0 +1,53 @@
+{
+  "name": "Holly Culver",
+  "id": "holly-culver",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 527,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "629775af9bc7150068ce2bca",
+      "email": "",
+      "projects": [
+        "REST",
+        "WM"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 2,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "629775af9bc7150068ce2bca",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Holly Culver",
+      "prs_authored": 17,
+      "prs_reviewed": 508,
+      "review_cluster": "madmobile"
+    }
+  }
+}

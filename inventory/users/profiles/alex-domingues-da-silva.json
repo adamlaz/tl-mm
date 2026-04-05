@@ -1,0 +1,34 @@
+{
+  "name": "Alex Domingues da Silva",
+  "id": "alex-domingues-da-silva",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "6247563445ece00069cb11eb",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Alex Domingues da Silva",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": "madmobile"
+    }
+  }
+}

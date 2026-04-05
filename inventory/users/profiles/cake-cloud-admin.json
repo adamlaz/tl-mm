@@ -1,0 +1,36 @@
+{
+  "name": "Cake Cloud Admin",
+  "id": "cake-cloud-admin",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "bot",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "63281612140ba0bf6517ae5a",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "nickname": "Cake Cloud Admin",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

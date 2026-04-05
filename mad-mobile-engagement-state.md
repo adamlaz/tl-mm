@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 4, 2026 (updated April 4 with V7 "sponge mode" deep collection — 25 enrichment items across all platforms)
+**Date:** April 4, 2026 (updated April 4 with CDO org chart from Chathura, Don scope expansion, Ana logistics updates, Chathura survey email — multiple corrections to personnel data)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -54,9 +54,9 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 | Manuel Garcia | Interim CFO | Finance, Revenue Operations | Small — Mark Do (Controller), Zach Honnold (RevOps, 1), Andy Honnold (Payments Strategy, 1) |
 | Greg Schmitzer | President & Head of Sales & Marketing | Field sales, inbound sales, marketing strategy | Bobby Jaklitsch (Field, 4), Peter Vu (Inbound, 3), Karen Licker (Marketing, 1) |
 | David Strainick | **COO** *(was Chief People Officer)* | Account Management, Customer Onboarding, Customer Delivery, IT | Das DeSilva (Onboarding, 10), Dir. Account Mgmt (9), Rosen Georgiev (IT), Chip O'Connell (Onboarding Delivery, 3) |
-| Chathura Ratnayake | **CDO** *(was SVP Global Software Engineering)* | ALL engineering (restaurant, enterprise, payments), product, design, platform, PMO, ALL customer support | Mark Guilarte (PMO, 4), Akshay Bhasin (Payments, 18), Zubair Syed (Enterprise Solutions, 58), Randy Brown (CAKE Tech, 8), Dulanjan W. (Product & Design, 6) |
-| Jack Kennedy | CTO | **AI capabilities and platform innovation only** *(operational engineering scope removed)* | Jeremy Diggins, Holly Bobal — small team |
-| Bailey Shatney | **VP of Human Resources** *(new to org chart — was David Strainick's domain)* | HR, recruiting, L&D | Renee Pauley (Recruiting), Ayodele Lawal (L&D), Adriana Zuniga (L&D) |
+| Chathura Ratnayake | **CDO** *(was SVP Global Software Engineering)* | ALL engineering (restaurant, enterprise, payments), product, design, platform, PMO, ALL customer support | Mark Guilarte (PMO, 4), Akshay Bhasin (Payments & Financial Services, 20+), Zubair Syed (Enterprise Solutions, 58), Randy Brown (Restaurant Tech, 10), Dulanjan W. (Product & GTM, 10+) |
+| Jack Kennedy | CTO | **AI capabilities and platform innovation only** *(operational engineering scope removed)* | Jeremy Diggins — very small team |
+| Bailey Shatney | **VP of Human Resources** *(new to org chart — was David Strainick's domain)* | HR, recruiting | Renee Pauley (Recruiting). **Note:** L&D (Ayodele Lawal, Adriana Zuniga) may report here per Don's chart OR under Dulanjan's Product team per Chathura's chart — discrepancy flagged. |
 | Ana Chambers | Chief of Staff, Strategic Programs | Cross-company execution, initiative alignment | — |
 
 **Key changes from March org chart:**
@@ -64,7 +64,7 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 1. **Steven Siegel (COO) — EXITED.** Payments strategy, data/analytics, revenue ops responsibilities redistributed.
 2. **Bill Lodes (CRO) — EXITED.** Staying in consulting capacity on payments strategy transition. Sales absorbed by Greg Schmitzer.
 3. **Chathura Ratnayake — PROMOTED to CDO.** Now owns: all engineering across all verticals, product, design, platform, PMO, and ALL customer support. This is the single largest org in the company (~94+ people based on reported counts).
-4. **Jack Kennedy — SCOPE NARROWED.** Retains CTO title but operational engineering authority transferred to Chathura. Now focused on "AI capabilities and innovation across the platform." Very small direct team (Jeremy Diggins + Holly Bobal).
+4. **Jack Kennedy — SCOPE NARROWED.** Retains CTO title but operational engineering authority transferred to Chathura. Now focused on "AI capabilities and innovation across the platform." Direct team is just Jeremy Diggins. (**Correction:** Holly Bobal is under Randy Brown's Restaurant Backend team per Chathura's CDO org chart, not under Kennedy.)
 5. **David Strainick — MOVED from CPO to COO.** Now owns Account Management, Onboarding, Delivery, and IT. IT (Jorge Maltes → Rosen Georgiev) now reports through COO, not CTO.
 6. **Bailey Shatney — NEW to executive team.** VP of HR. Takes over People functions from Strainick.
 7. **Manuel Garcia — NEW to executive team.** Interim CFO. Also absorbed Revenue Operations (previously Siegel).
@@ -73,38 +73,154 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 
 **Kennedy/Chathura dynamic: RESOLVED.** The hypothesis that formal and operational authority were misaligned (Hypothesis D) has been resolved by org structure change. Chathura now has both formal AND operational authority. Kennedy's role is explicitly narrowed to AI/innovation. This is no longer a "live variable" — it's a confirmed finding. Can now be referenced openly in all materials.
 
-### Chathura's Direct Reports (from org chart)
-- **Mark Guilarte** — PMO (4 people). New under Chathura.
-- **Akshay Bhasin** — Payments (18 people). Previously QE Lead — scope expanded or relabeled to Payments.
-- **Zubair Syed** — Enterprise Solutions (58 people). Largest eng org.
-- **Randy Brown** — CAKE Tech (8 people). Restaurant engineering.
-- **Dulanjan Wengappuliarachchi** — Product & Design (6 people).
+### Chathura's Direct Reports (from CDO org chart, April 3)
+
+**Leadership Structure** (per Chathura's org chart PDF):
+
+- **Dulanjan W.** — VP, Product & GTM (10+ people)
+- **Randy Brown** — VP Engineering, Restaurant Technology (10 people)
+- **Zubair Syed** — VP Engineering, Enterprise Solutions (58 people)
+- **Akshay Bhasin** — VP Payments Engineering (20+ people)
+- **Mark Guilarte** — VP Program Management (4 people)
 - **Customer Support** — all levels, headcount TBD. New under Chathura.
 
-### New Names on the Org Chart
+**Note:** Chathura flagged "we are working through some title changes." Titles below are from his April 3 org chart PDF and may differ from earlier sources.
+
+#### Randy Brown — Restaurant Technology (10 people)
+
+| Sub-Team | Name | Title |
+|---|---|---|
+| **Frontend** | Alexander Baine | Manager, Software Engineering |
+| | Cory Renard | Staff Software Engineer |
+| | Rob Quin | Software Engineer |
+| **Backend** | Kyle Budd | Manager, Software Engineering |
+| | Beau Bruderer | Senior Software Engineer |
+| | Holly Bobal | Senior Software Engineer |
+| | Siva Ganesh | Software Engineer |
+| | Harrison Minchew | Lead Software Engineer |
+| | Anderson Lavor | Lead Software Engineer |
+
+Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
+
+#### Akshay Bhasin — Payments & Financial Services (20+ people)
+
+| Sub-Team | Name | Title |
+|---|---|---|
+| **Payments R&D** | Kevin Reyes | Director, Software Engineering |
+| | Trenton Kress | Staff Software Engineer |
+| | Pratikchha Kahdka | Software Engineer |
+| | Peter Wu | Staff Software Engineer |
+| | Paul Robert | Senior Software Engineer |
+| | Richard Meitzler | Staff Software Engineer |
+| | Gayan K (SL) | Staff Software Engineer |
+| | Susampath M (SL) | Senior Software Engineer |
+| | Matthew Griffin | Senior Cloud Engineer |
+| **Restaurant QE** | Sowjanya Akula | Senior Quality Engineer |
+| | Danika M (SL) | Senior Quality Engineer |
+| | Darren Blackwell | Quality Automation Engineer |
+| | Rekha Mohanan | Senior Quality Engineer |
+| | Bill Fenley | Senior Software Engineer, Quality |
+| | Kaelon Lucas | Quality Automation Engineer |
+| | Patrycja Stevenson | Senior Software Engineer, Quality |
+| **Biz Operations** | Andy Honnold | Sr. Director Payments Strategy |
+| | Altaaf A (SL) | Payment Operations Manager |
+| | Kanchana A (SL) | Senior Payments Operations Analyst |
+| | Angie Mroczka | Payment Risk Fraud Analyst |
+| **PCI DSS Counterparts** | Mark Freid | Senior Security Engineer |
+| | Debbie Keye | PMO |
+| | Jorge Maltes | Dir. Information Technology |
+| | Matias Riglos | Solution Operations |
+| **PMO Counterpart** | Vanessa Sotomayor | Program Manager |
+| **Product (TBD)** | TBD | Product Manager |
+
+**Andy Honnold dual-reporting note:** Don's executive org chart places Andy Honnold under Garcia (CFO). Chathura's functional org chart places him under Akshay as Sr. Director Payments Strategy. Likely functional reporting through Payments, administrative through Finance. Clarify onsite.
+
+**Enterprise Solutions Operations note:** Operations team transitioned Nov 2025. 57% reduction on L2 team size (Oct 2025), 72% reduction on L3 team size (Oct 2025). Altaaf and Kanchana support payments ecosystem.
+
+#### Dulanjan W. — Product & GTM (10+ people)
+
+| Sub-Team | Name | Title |
+|---|---|---|
+| **PM (Restaurant)** | Miru S. | Senior Product Manager |
+| | Jake L. | Product Manager |
+| | TBD | Product Manager |
+| **PM (Payments/Ops/Eng)** | Shavin P. | Senior Product Manager |
+| | Richard F. | Product Manager |
+| | Thaddeus F. | Product Manager |
+| **Product Design** | Chris Gomersall | Director, Product Design |
+| **Product Marketing** | TBD | Product Marketing Manager |
+| **L&D** | Adriana Z. | Technical Training Specialist |
+| | Ayodele L. | Technical Training Specialist |
+
+**L&D reporting discrepancy:** Chathura's CDO org chart places Adriana Z. and Ayodele L. under Dulanjan's Product L&D team. Don's executive org chart placed them under Bailey Shatney (VP HR). Could be a matrix situation or a reorg-day discrepancy. Clarify onsite.
+
+#### Mark Guilarte — PMO (4 people)
+
+| Domain | Name | Title |
+|---|---|---|
+| Restaurant | Qaiser P. | Senior Program Manager |
+| Payments | Vanessa S. | Program Manager |
+| AI | Ian B. | Project Lead |
+| Ops Engineering | Debbie K. | Senior Project Manager |
+
+### New Names on the Org Chart (Executive Level — from Don's April 3 chart)
 - **Manuel Garcia** — Interim CFO
 - **Bailey Shatney** — VP Human Resources
 - **Mark Do** — Assistant Controller (reports to Garcia)
 - **Zachary Honnold** — RevOps (1), reports to Garcia
-- **Andrew Honnold** — Payments Strategy (1), reports to Garcia
 - **Bobby Jaklitsch** — Field Sales (4), reports to Schmitzer
 - **Peter Vu** — Inbound Sales (3), reports to Schmitzer
 - **Das DeSilva** — Onboarding (10), reports to Strainick
 - **Chip O'Connell** — Onboarding Delivery (3), reports to Strainick
 - **Mark Guilarte** — PMO (4), reports to Chathura
-- **Holly Bobal** — reports to Kennedy (role TBD)
 - **Renee Pauley** — Recruiting, reports to Shatney
-- **Ayodele Lawal** — L&D, reports to Shatney
-- **Adriana Zuniga** — L&D, reports to Shatney
+
+### New Names from CDO Org Chart (from Chathura's April 3 PDF)
+- **Alexander Baine** — Manager, Software Engineering (Restaurant Frontend, reports to Randy Brown)
+- **Cory Renard** — Staff Software Engineer (Restaurant Frontend)
+- **Rob Quin** — Software Engineer (Restaurant Frontend)
+- **Kyle Budd** — Manager, Software Engineering (Restaurant Backend)
+- **Beau Bruderer** — Senior Software Engineer (Restaurant Backend)
+- **Siva Ganesh** — Software Engineer (Restaurant Backend)
+- **Harrison Minchew** — Lead Software Engineer (Restaurant Backend)
+- **Anderson Lavor** — Lead Software Engineer (Restaurant Backend)
+- **Kevin Reyes** — Director, Software Engineering (Payments R&D, reports to Akshay)
+- **Trenton Kress** — Staff Software Engineer (Payments R&D)
+- **Pratikchha Kahdka** — Software Engineer (Payments R&D)
+- **Peter Wu** — Staff Software Engineer (Payments R&D)
+- **Paul Robert** — Senior Software Engineer (Payments R&D)
+- **Richard Meitzler** — Staff Software Engineer (Payments R&D)
+- **Gayan K (SL)** — Staff Software Engineer (Payments R&D)
+- **Susampath M (SL)** — Senior Software Engineer (Payments R&D)
+- **Sowjanya Akula** — Senior Quality Engineer (Restaurant QE under Akshay)
+- **Danika M (SL)** — Senior Quality Engineer (Restaurant QE)
+- **Darren Blackwell** — Quality Automation Engineer (Restaurant QE)
+- **Rekha Mohanan** — Senior Quality Engineer (Restaurant QE)
+- **Bill Fenley** — Senior Software Engineer, Quality (Restaurant QE)
+- **Kaelon Lucas** — Quality Automation Engineer (Restaurant QE)
+- **Patrycja Stevenson** — Senior Software Engineer, Quality (Restaurant QE)
+- **Angie Mroczka** — Payment Risk Fraud Analyst (Payments Biz Ops)
+- **Altaaf A (SL)** — Payment Operations Manager (Payments Biz Ops)
+- **Kanchana A (SL)** — Senior Payments Operations Analyst (Payments Biz Ops)
+- **Mark Freid** — Senior Security Engineer (PCI DSS Compliance)
+- **Miru S.** — Senior Product Manager (Product, Restaurant)
+- **Jake L.** — Product Manager (Product, Restaurant)
+- **Shavin P.** — Senior Product Manager (Product, Payments/Ops/Eng)
+- **Richard F.** — Product Manager (Product)
+- **Thaddeus F.** — Product Manager (Product)
+- **Qaiser P.** — Senior Program Manager (PMO, Restaurant)
+- **Ian B.** — Project Lead (PMO, AI)
+- **Debbie K.** — Senior Project Manager (PMO, Ops Engineering)
 
 ### Departed
 - **Steven Siegel** — Former COO. Exited April 3, 2026.
 - **Bill Lodes** — Former CRO. Exited April 3, 2026. Consulting on payments strategy transition.
 
 ### IT / Infrastructure Contacts (Access Provisioning)
-- **Rosen Georgiev** — IT (reports to Strainick/COO). Previously identified as Jira/Confluence admin. April org chart shows him under IT. **Clarification needed:** March chart listed Jorge Maltes as Director Information Technology — confirm whether Maltes departed or chart shows different level.
-- **Matias Lopez Riglos** — DevOps/infra. Filed AWS provisioning ticket. Handles Bitbucket invites. Reports to Zubair Syed.
-- **Matthew Griffin** — Cloud team. Assigned AWS account provisioning (Jira ticket CLD-2431).
+- **Rosen Georgiev** — IT (reports to Strainick/COO). Day-to-day IT operations. Previously identified as Jira/Confluence admin.
+- **Jorge Maltes** — Dir. Information Technology. **RESOLVED:** Not departed — confirmed present in Chathura's CDO org chart as PCI DSS Compliance counterpart under Payments. Maltes handles IT governance/compliance; Georgiev handles day-to-day IT under COO.
+- **Matias Lopez Riglos** — DevOps/infra ("Solution Operations" per CDO org chart, listed as PCI DSS counterpart under Payments). Filed AWS provisioning ticket. Handles Bitbucket invites.
+- **Matthew Griffin** — Senior Cloud Engineer (Payments R&D under Kevin Reyes). Assigned AWS account provisioning (Jira ticket CLD-2431).
 
 ### Sri Lanka
 - **Rajik Gunatilaka** — VP & LK Country Head. Reports to Strainick (COO), not CDO. Engineering resources in Sri Lanka have dotted-line relationships to Chathura/Zubair.
@@ -171,7 +287,7 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 - **IaC**: Terraform (state buckets in multiple accounts)
 
 ### Not Yet Confirmed
-- Grafana dashboard access (requested from Ana/Matias)
+- Grafana dashboard access — **confirmed for Monday April 7** (Ana: "I can get you access on Monday. Matias is off today for the holiday weekend.")
 - Guru access (requested from Ana)
 - Internal survey tool (Ana checking with HR)
 
@@ -187,12 +303,25 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 ## 5. What I Already Have (Pre-Read Materials)
 
 ### Received
-1. **Org chart** — MadMobile_OrgChart_v2_pptx.pdf (March 2026, from Don). Updated version pending from HR.
-2. **Restaurant Update deck** — Restaurant_Update_March_2026.pdf. Contains: product team org, restaurant engineering team, prioritization process, requirements process, restaurant roadmap, CAKE ecosystem map, AI usage overview, GTM process.
+1. **Org chart (executive)** — MadMobile_OrgChart_v2_pptx.pdf (March 2026, from Don). Superseded by April 3 reorg.
+2. **Org chart (executive, April 3 reorg)** — From Don, April 3. Executive-level post-reorg structure.
+3. **CDO Org Chart & Product Roadmap** — "CDO Organization and Product Roadmap - 2026" PDF from Chathura (April 3). 10-page document containing: leadership structure, product team detail, restaurant engineering team detail, payments & financial services org detail, enterprise solutions operations notes, PMO org, and **product roadmap for CAKE, CAKE+Payments, Payments Ops, and Engineering**.
+4. **Restaurant Update deck** — Restaurant_Update_March_2026.pdf. Contains: product team org, restaurant engineering team, prioritization process, requirements process, restaurant roadmap, CAKE ecosystem map, AI usage overview, GTM process.
 
-### Pending (Ana's team gathering into a shared folder)
-- Product roadmaps: Concierge/Retail, Neo/AI
-- Revenue breakdown by product line
+### Product Roadmap (from CDO Org Chart PDF, April 2026)
+
+| Column | Category | Key Ongoing Projects |
+|---|---|---|
+| CAKE | Restaurant product | Custom Quick PIN (Mar 15), CAKE OLO V2 UI Revamp (Mar 31), EMS 2.0 Variant Indicator at Location Level (Mar 31), QSR KDS Multi-POS Deployment (Mar 31), KDS V2 PAC Enhancements (TBD), KDS Application (Early May), Restaurant Admin 2.0 (Early May), Reporting (Early May) |
+| CAKE + Payments | Payment integrations | New Payment Device VP3350 (Mar 15), MadPay App Hardening for Kiosk (Apr 15), CAKE POP Certification with CyberSource (End Apr), South State Bank Integration (End May) |
+| Payments Ops | Operations tooling | Sardine Integration (End Apr), RS2 Integration (End May), CYBS Integration (End May), Customer Health Score Enhancements (TBD), Reporting (TBD), Suspicious Tip Holds (TBD), Worldpay Mastercard MATCH (TBD), Proxy for Portals (TBD) |
+| Engineering | Platform/infra | Multi-Location Reporting/Sales Reports (Mar 15), Convert Existing Customers to PAYG (Apr), Onboarding Backend Services to NestJS (TBD), Existing Workflow to Flow Conversion (TBD) |
+
+**Next Up / Planned:** EzCater Integration (Design), Tip Auth Flows (Plan), Updates to TIP Reporting for BBBA (Plan), Tax Exempt Delivery Orders (Plan), Kiosk V2 Reporting (Plan), Support Salaried Employees (Plan), Channel Pricing (Backlog), Handling Menu Variations (Backlog), Hardening (Plan), Gateway Enhancement for Provider ID (TBD), Pre-Auth (Backlog), Dual Pricing/Cash Discount (Backlog), Digital Gift Cards (Backlog), Support Extra Fees (Backlog), PCI Compliance Audit Support (TBD), Migration Tools for MPP (TBD), Reporting for MPP (TBD), Re-Do OLO Flows for MPP (TBD), MadPay App Consolidation (TBD), various onboarding/CPQ fixes (Backlog), Post Support Case Sentiment (Backlog), Automate CC Rates from SF to Payments (Backlog).
+
+### Pending (Ana's team gathering into a shared folder — target: early Monday April 7)
+- Product roadmaps: Concierge/Retail, Neo/AI — **Don confirmed Retail and Neo/AI are in scope** ("with main focus obviously restaurant")
+- Revenue breakdown by product line — Ana working on this
 - Architecture diagrams beyond CAKE ecosystem
 - Engineering team assignments by product line (beyond restaurant)
 - Deployment environments, release cadence, CI/CD documentation
@@ -213,7 +342,7 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 - **In active development**: CAKE OLO UI Refresh, EMS 2.0 Multi Location, Gift Cards (Factor 4), CAKEpop features, KDS v2, VP 3350 (new payment device)
 - **Planned**: OLO v2, Loyalty v2, Restaurant Admin 2.0
 - **Third-party integrations**: Checkmate, 7Shifts, OLO.com, LRS, Paytronix, Bloop, DoorDash, NOLO, Orca, Davo, Parafin, Dolce, QSR KDS
-- **Team size**: ~10 engineers + ~7 QE under Randy Brown. This ratio vs. system surface area is a primary investigation target.
+- **Team size**: 9 engineers (2 managers, 2 leads, 2 staff, 3 ICs) under Randy Brown. Restaurant QE (7 people) reports under Akshay Bhasin (Payments), not Randy — unusual structure. Combined: ~16 people for 15+ live systems. This ratio vs. system surface area is a primary investigation target.
 
 ### Source Control (Bitbucket) — Inventoried April 3
 
@@ -363,7 +492,9 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 | Product Manager | | ✅ | | | ✅ |
 | Product Designer | | ✅ | | | ✅ |
 
-**Deployment:** Building in Microsoft Forms on MM account. Intro message from Chathura (as CDO). Draft message sent to Ana for Chathura's review (April 3 email). Chathura message needs update to reference 5 surveys instead of 4.
+**Deployment:** Building in Microsoft Forms on MM account. Chathura (as CDO) has finalized his own version of the survey intro email.
+**ISSUE: Chathura's email only references 4 surveys, not 5.** His email mentions: Delivery Performance (leads/managers), Team Culture (everyone), Developer Experience (ICs), Engineering Practices (leads/seniors). He dropped the AI Adoption & Tooling survey. **Action needed:** Follow up with Chathura to either add Survey 5 or understand why he excluded it. The AI survey feeds directly into the board deliverable and vendor rationalization — it's important.
+**Chathura's survey email key changes from Adam's draft:** Added "As mentioned in technology all hands" framing, deadline April 10, message will come directly from Chathura. His version is polished and ready to send.
 **DevEx survey draft live:** https://forms.cloud.microsoft/r/021mP98Sf9
 **Designed for re-use:** Mad Mobile can re-run at 30/60 days without Adam.
 
@@ -379,16 +510,16 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 |-----|-------|----------|-------|-------|
 | Chathura Ratnayake | CDO | 90–120 min | Full org ownership, execution model, team health, support unification, PMO integration, sprint reality, AI strategy from build side | **Most important interview of the engagement.** Owns the entire build-to-support chain. May need two sessions. |
 | Jack Kennedy | CTO | 60 min *(reduced from 90)* | AI/innovation roadmap, Neo platform vision, infrastructure plans, his view of the path forward | **Handle with care.** Operational scope just removed. Focus on what he's building, not what he lost. Don't probe the reorg dynamics directly — let him volunteer. |
-| Dulanjan W. | Sr. Dir. Product & Design | 60 min | Roadmap governance, product decisions, design process, PM/engineering handoff | Now reports to Chathura. Ask about the transition. |
+| Dulanjan W. | VP, Product & GTM | 60 min | Roadmap governance, product decisions, design process, PM/engineering handoff, product roadmap (from PDF) | Now reports to Chathura. Has 6 named PMs, 1 design director, open marketing role, L&D. Ask about the transition. |
 | David Strainick | COO *(was CPO)* | 45 min | Account management, onboarding, delivery execution, IT operations, customer experience | **Completely different interview than planned.** Was going to be 30 min on HR/culture. Now 45 min on operational execution. Ask about IT governance and how onboarding/delivery handoff works with engineering. |
 
 ### Tuesday, April 14 — Engineering Deep Dive
 
 | Who | Title | Duration | Focus | Notes |
 |-----|-------|----------|-------|-------|
-| Randy Brown | VP Eng, CAKE Tech (8) | 60 min | CAKE engineering, outage patterns, V3→V4 migration, team capacity vs. system surface area | 8 engineers for 15+ live systems. This ratio is the story. |
+| Randy Brown | VP Eng, Restaurant Technology (10) | 60 min | CAKE engineering, outage patterns, V3→V4 migration, team capacity vs. system surface area | 9 engineers (2 managers, 2 leads, 2 staff, 3 ICs) for 15+ live systems. Frontend (3) and Backend (6) split. This ratio is the story. |
 | Zubair Syed | VP Eng, Enterprise Solutions (58) | 60 min | Concierge/Retail execution, enterprise customer projects, team structure, offshore coordination | Largest eng org by headcount. |
-| Akshay Bhasin | Payments (18) | 45 min | Payments engineering, architecture (the cleanest codebase), scaling, how this team operates differently | Scope appears expanded from QE Lead to Payments org. Clarify. |
+| Akshay Bhasin | VP Payments Engineering (20+) | 45 min | Payments engineering, architecture (the cleanest codebase), scaling, how this team operates differently, QE org, PCI compliance | Scope confirmed: Payments R&D (Kevin Reyes, 9), Restaurant QE (7), Biz Operations (4), PCI counterparts. Much larger than originally reported. |
 | Mark Guilarte | PMO (4) | 30 min | Project management process, cross-team coordination, execution discipline | New under Chathura. How does PMO integrate with engineering sprints? |
 | Engineering Managers (2–3) | Various | 45 min each | Team execution, dependencies, sprint reality, tooling | Target: one from CAKE, one from Enterprise, one from Payments |
 | Senior ICs (2–3) | Various | 30 min each | Day-to-day delivery, tooling, AI usage, what slows them down | |
@@ -463,14 +594,19 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
   - **Tier 2**: AWS cost optimization, security posture scan (GuardDuty, ACM, IAM, S3), Confluence architecture diagram catalog (321KB), cross-system deploy correlation, bus factor analysis (57 heavy reviewers, 17 bottleneck repos), dependency/package analysis (Node 12, Java 4, TypeScript 8, React 5), CloudWatch dashboard content (6 dashboards), ECS task definition analysis (68 services, 90% no health checks, 49 images), AWS tagging compliance audit, Jira custom fields (Root Cause 0% populated, Story Points 9%)
   - **Tier 3**: AWS network topology, Jira workflow audit, Confluence labels/blog posts, AWS backup/DR assessment, PR review network visualization (interactive HTML), auto-generated C4 context + container diagrams
 - **Engagement minisite updated** — V7 findings added to all pages (Dashboard, Engineering, Delivery, AWS, Documentation). 31 charts, 17 CSVs, 94 JSON inventory files, 124 content text files, 3 Mermaid diagrams.
+- **CDO Org Chart & Product Roadmap received** from Chathura (April 3). 10-page PDF with detailed org chart for all CDO direct reports (except Enterprise Solutions/Zubair which was mostly blank), product roadmap for CAKE/Payments/Engineering. Key corrections: Holly Bobal under Randy Brown (not Kennedy), Akshay Bhasin org is 20+ people (not 18), Randy Brown team is 10 (not 8), Dulanjan title is VP Product & GTM, Jorge Maltes confirmed still at company (PCI counterpart).
+- **Ana logistics partially confirmed** (April 3 email): Grafana Monday, pre-reads Monday, interview scheduling next week, conference room needs TV/screen response.
+- **Don scope confirmed** (April 3 email): "Retail and Neo/AI in scope please with main focus obviously restaurant."
 
 ### In Progress 🔄
 - Building all 5 surveys in Microsoft Forms on MM account (DevEx draft live: https://forms.cloud.microsoft/r/021mP98Sf9)
-- Working with Don on reorg-specific questions via call guide (Kennedy's future, Strainick appointment, Shatney background, Bhasin scope, board deck transparency)
-- Waiting on Ana: pre-read items not in Confluence (roadmaps as decks, revenue breakdown by product line)
-- Waiting on Ana: Grafana viewer access (route to Matias/cloud team)
+- **ISSUE:** Chathura's survey intro email only references 4 surveys — dropped AI & Tooling (Survey 5). Need to follow up before Monday send.
+- Working with Don on reorg-specific questions via call guide (Kennedy's future, Strainick appointment, Shatney background, board deck transparency)
+- Waiting on Ana: pre-read items not in Confluence — **target: early Monday April 7**
+- Waiting on Ana: Grafana viewer access — **confirmed Monday April 7** (Matias off holiday weekend)
 - Waiting on Ana: routing questions on Monvia, MenuPad, Relate, Neo/AI
-- Waiting on Ana: interview calendar blocks + conference room (April 13–15)
+- Waiting on Ana: interview calendar blocks + conference room (April 13–15) — **Ana will work on early next week.** She asked: "Do you need a TV/screen available in the room?" **→ Reply needed: yes, useful for showing charts/data during interviews.**
+- **Don confirmed scope expansion:** "Retail and Neo/AI in scope please with main focus obviously restaurant." Concierge/Retail and Neo/AI product roadmaps now explicitly requested.
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
@@ -480,7 +616,7 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 3. **Finalize interview schedule grid** — send to Ana for calendar booking
 4. **Work with Don** on survey intro message and deployment timing (target: April 7)
 5. **Collect pre-read docs** as Ana's folder becomes available
-6. **Review analysis charts** — open `analysis/charts/*.html` in browser, identify top findings to lead with onsite
+6. **Review analysis charts** — open `analysis/charts/*.json` in browser, identify top findings to lead with onsite
 7. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine
 
 ### System Exploration — Completed (Key Answers)
@@ -554,7 +690,7 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 - `inventory/confluence/content/` — 94 extracted Confluence pages (architecture, RCAs, deployment docs)
 - `inventory/tooling_catalog.json` — 28 identified tools with vendor, category, cost status
 - `analysis/*.csv` — 17 spreadsheet-ready CSV exports
-- `analysis/charts/*.html` — 31 interactive Plotly charts (including review network graph)
+- `analysis/charts/*.json` — 31 interactive Plotly charts (including review network graph)
 - `interview-prep-with-data.md` — Per-interviewee data-backed questions organized by interview day
 - `vendor-spend-request.md` — Ready for Don: SaaS/tooling spend request
 - `ana-request.md` — Ready-to-send coordination email for Ana
@@ -578,8 +714,11 @@ Five instruments ready. Target deployment: **Monday, April 7** (via Microsoft Fo
 
 ### Open Clarifications (Pending Don Call / Onsite)
 
-- **Akshay Bhasin scope:** March org chart = QE Lead (7 people). April org chart = Payments (18 people). Either a scope expansion (absorbed Payments engineering) or a relabeling (March chart was incomplete). Clarify onsite — 18 people in Payments is a significant org.
-- **IT Director:** March org chart listed Jorge Maltes as Director Information Technology. April org chart shows Rosen Georgiev under IT (Strainick). Either Maltes left/was moved and Rosen absorbed IT, or the chart shows a different level. Clarify — IT now reports through COO, whoever runs IT is Adam's contact for infrastructure access and tooling governance.
+- **Akshay Bhasin scope: PARTIALLY RESOLVED.** CDO org chart confirms VP Payments Engineering with 20+ people: Payments R&D (Kevin Reyes as Director, 9 people), Restaurant QE (7 people), Biz Operations (Andy Honnold + 3), plus PCI DSS counterparts. This is a much larger org than "18 people" — the March chart was incomplete. **Remaining question:** Was Restaurant QE always under Payments, or is this a reorg consolidation? Having QE for Restaurant under the Payments VP (not the Restaurant VP) is an unusual structure worth probing.
+- **IT Director: RESOLVED.** Jorge Maltes confirmed still at company — appears as Dir. Information Technology under PCI DSS Compliance counterparts in Chathura's Payments org chart. Rosen Georgiev handles day-to-day IT under COO (Strainick). Two people, two roles: Maltes = IT governance/compliance, Georgiev = IT operations.
+- **Andy Honnold dual-reporting:** Don's executive chart places Andy Honnold (Payments Strategy) under Garcia (CFO). Chathura's functional chart places him under Akshay (Payments VP) as Sr. Director Payments Strategy. Likely functional through Payments, administrative through Finance. Clarify onsite — affects how Payments strategy decisions flow.
+- **L&D reporting discrepancy:** Chathura's CDO org chart places Adriana Zuniga and Ayodele Lawal as Technical Training Specialists under Dulanjan's Product L&D team. Don's executive org chart placed them under Bailey Shatney (VP HR). Could be matrix (product-owned content, HR-owned development programs), or a reorg-day discrepancy. Clarify onsite.
+- **Enterprise Solutions (Zubair) detail gap:** Chathura's PDF had the Enterprise Solutions org chart page mostly blank (just "Enterprise Solution Org."). The Operations sub-page noted team transitions and reductions (57% L2, 72% L3) but no personnel detail. **Still don't have names/structure for the largest org (58 people).** Need to request from Zubair or Chathura before onsite.
 - **Strainick interview recalibration:** Interview shifted from 30 min on HR/culture to 45 min on COO operations. Secondary purpose: validate whether Strainick is in the seat to stay. If Don's answer reveals this was a "promote to move," focus the interview on documenting the customer operations chain (Account Mgmt → Onboarding → Delivery → IT) as a process map rather than relying on Strainick's strategic perspective.
 - **Bailey Shatney framing:** Position Adam's deliverables as a potential resource for Bailey. If she's new and ramping, the Westrum Culture survey baseline, Glassdoor data, and interview themes on culture/retention are exactly what she needs to build her own 90-day plan. This creates a natural ally.
 

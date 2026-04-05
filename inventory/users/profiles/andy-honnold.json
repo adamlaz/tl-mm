@@ -1,0 +1,52 @@
+{
+  "name": "Andy Honnold",
+  "id": "andy-honnold",
+  "title": "Sr Director Payments Strategy",
+  "team": "Payments Biz Ops",
+  "manager": "Akshay Bhasin",
+  "division": "CDO / Payments & Financial Services",
+  "executive": "Chathura Ratnayake",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [
+    "Andrew Honnold"
+  ],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "level": "low"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "62389ae3a1d81f0069d72d6d",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 0,
+      "open_assigned": 3,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "confluence": {
+      "account_id": "62389ae3a1d81f0069d72d6d",
+      "email": "",
+      "pages_total": 2,
+      "pages_90d": 0,
+      "spaces": [
+        "P"
+      ]
+    }
+  }
+}

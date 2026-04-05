@@ -2,20 +2,27 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
-import DataTable from '../components/DataTable.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
+import { jiraProjectUrl } from '../lib/links';
 import { readFileSync } from 'node:fs';
 
 let epicData: any = {};
 let priorityData: any = {};
 let blockingData: any = {};
 let statusData: any = {};
+let workflowData: any = {};
+let rootCauseData: any = {};
+let customFieldData: any = {};
 try { epicData = JSON.parse(readFileSync('../inventory/jira/epic_completion.json', 'utf-8')); } catch {}
 try { priorityData = JSON.parse(readFileSync('../inventory/jira/priority_distribution.json', 'utf-8')); } catch {}
 try { blockingData = JSON.parse(readFileSync('../inventory/jira/blocking_chains.json', 'utf-8')); } catch {}
 try { statusData = JSON.parse(readFileSync('../inventory/jira/status_transitions.json', 'utf-8')); } catch {}
+try { workflowData = JSON.parse(readFileSync('../inventory/jira/workflows.json', 'utf-8')); } catch {}
+try { rootCauseData = JSON.parse(readFileSync('../inventory/jira/root_cause_distribution.json', 'utf-8')); } catch {}
+try { customFieldData = JSON.parse(readFileSync('../inventory/jira/custom_fields.json', 'utf-8')); } catch {}
 
 const epicResRate = epicData.overall_resolution_rate_pct ?? 0;
 const priorityDist = (priorityData.distribution ?? []) as Array<{priority: string; count: number; pct_of_sample: number}>;
@@ -65,6 +72,71 @@ const velocityRows = velocity
     rate: `${num(v.data.completion_rate).toFixed(1)}%`,
   }));
 
+/* --- Workflow Analysis data --- */
+const statuses = workflowData.statuses ?? {};
+const totalStatuses = statuses.total ?? 0;
+const customStatusCount = statuses.custom_count ?? 0;
+const builtinStatusCount = statuses.builtin_count ?? 0;
+const byCategory = statuses.by_category ?? {};
+const categoryRows = Object.entries(byCategory)
+  .sort((a: any, b: any) => (b[1] as number) - (a[1] as number))
+  .map(([cat, count]) => ({
+    category: cat,
+    count: count as number,
+    pct: `${((count as number) / totalStatuses * 100).toFixed(0)}%`,
+  }));
+
+const statusDurations = (statusData.status_durations ?? []) as Array<{status: string; sample_count: number; median_hours: number; median_days: number}>;
+const bottleneck = statusData.bottleneck ?? {};
+const durationRows = statusDurations
+  .sort((a, b) => b.sample_count - a.sample_count)
+  .map((d) => ({
+    status: d.status,
+    samples: d.sample_count,
+    median_hrs: d.median_hours.toFixed(1),
+    median_days: d.median_days.toFixed(1),
+  }));
+
+/* --- Root Cause Analysis data --- */
+const rcFieldName = rootCauseData.field_name ?? 'Root Cause Category';
+const rcBugsSampled = rootCauseData.total_bugs_sampled ?? 0;
+const rcPopulated = rootCauseData.populated_count ?? 0;
+const rcPopRate = rootCauseData.population_rate_pct ?? 0;
+const rcDistribution = rootCauseData.distribution ?? {};
+const rcDistRows = Object.entries(rcDistribution)
+  .sort((a: any, b: any) => (b[1] as number) - (a[1] as number))
+  .map(([cause, count]) => ({
+    cause,
+    count: count as number,
+    pct: rcBugsSampled > 0 ? `${((count as number) / rcBugsSampled * 100).toFixed(1)}%` : '0%',
+  }));
+
+/* --- Custom Fields data --- */
+const totalCustomFields = customFieldData.total_custom_fields ?? 0;
+const spCoverage = customFieldData.story_points_coverage ?? {};
+const spCoveragePct = spCoverage.coverage_pct ?? 0;
+const spSampled = spCoverage.total_stories_sampled ?? 0;
+const spWithPoints = spCoverage.with_points ?? 0;
+const interestingFields = (customFieldData.interesting_fields ?? []) as Array<{id: string; name: string; type: string; custom_type: string}>;
+
+const fieldTypeMap = new Map<string, number>();
+for (const f of interestingFields) {
+  const t = f.type;
+  fieldTypeMap.set(t, (fieldTypeMap.get(t) ?? 0) + 1);
+}
+const fieldTypeRows = [...fieldTypeMap.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([type, count]) => ({ type, count }));
+
+const rcRelatedFields = interestingFields.filter((f) =>
+  f.name.toLowerCase().includes('root cause') || f.name.toLowerCase().includes('rca')
+);
+const rcFieldRows = rcRelatedFields.map((f) => ({
+  name: f.name,
+  id: f.id,
+  type: f.type,
+}));
+
 const charts = [
   { slug: 'jira_org_overview', title: 'Org Overview' },
   { slug: 'jira_velocity_trend', title: 'Velocity Trend' },
@@ -95,36 +167,36 @@ const charts = [
     <MetricCard label="Median Cycle Time" value={`${medianCycle.toFixed(1)}d`} subtitle="Days to resolve" />
   </dl>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">V7 Deep Analysis</h2>
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Epic Completion" value={`${epicResRate}%`} subtitle={`${epicData.resolved ?? 0} of ${epicData.total_epics ?? 0} epics resolved (12mo)`} />
     <MetricCard label="Priority Inflation" value={`${highPct}%`} subtitle="of open issues are 'High'" />
     <MetricCard label="Blocking Issues" value={(blockingData.issues_blocked ?? 0).toString()} subtitle={`${blockingData.issues_blocking_others ?? 0} blocking others`} />
-    <MetricCard label="Story Points Coverage" value="9%" subtitle="of stories have estimates" />
+    <MetricCard label="Story Points Coverage" value={`${spCoveragePct}%`} subtitle={`${spWithPoints} of ${spSampled} stories have estimates`} />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Priority Distribution</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'priority', label: 'Priority' },
-          { key: 'count', label: 'Count', align: 'right' },
-          { key: 'pct', label: '%', align: 'right' },
+          { key: 'priority', label: 'Priority', sortable: true, type: 'badge', badgeMap: { Highest: 'red', High: 'amber', Medium: 'muted', Low: 'green', Lowest: 'green' } },
+          { key: 'count', label: 'Count', align: 'right', sortable: true, type: 'number' },
+          { key: 'pct', label: '%', align: 'right', sortable: true, type: 'bar', barMax: 100 },
         ]}
         rows={priorityDist.map((d: any) => ({ priority: d.priority, count: d.count, pct: `${d.pct_of_sample}%` }))}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Top Epics by Project</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'project', label: 'Project' },
-          { key: 'total', label: 'Epics', align: 'right' },
-          { key: 'resolved', label: 'Resolved', align: 'right' },
-          { key: 'rate', label: 'Rate', align: 'right' },
+          { key: 'project', label: 'Project', sortable: true },
+          { key: 'total', label: 'Epics', align: 'right', sortable: true, type: 'number' },
+          { key: 'resolved', label: 'Resolved', align: 'right', sortable: true, type: 'number' },
+          { key: 'rate', label: 'Rate', align: 'right', sortable: true, type: 'bar', barMax: 100 },
         ]}
-        rows={(epicData.top_10_by_count ?? []).map((e: any) => ({ project: e.project, total: e.total_epics, resolved: e.resolved, rate: `${e.resolution_rate_pct}%` }))}
+        rows={(epicData.top_10_by_count ?? []).map((e: any) => ({ project: e.project, _href_project: jiraProjectUrl(e.project), total: e.total_epics, resolved: e.resolved, rate: `${e.resolution_rate_pct}%` }))}
       />
     </div>
   </div>
@@ -132,33 +204,191 @@ const charts = [
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Projects by Classification</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'classification', label: 'Classification' },
-          { key: 'projects', label: 'Projects', align: 'right' },
-          { key: 'issues', label: 'Issues', align: 'right' },
+          { key: 'classification', label: 'Classification', sortable: true, type: 'badge' },
+          { key: 'projects', label: 'Projects', align: 'right', sortable: true, type: 'number' },
+          { key: 'issues', label: 'Issues', align: 'right', sortable: true },
         ]}
         rows={classRows}
       />
     </div>
     <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Recent Sprints</h2>
-      <DataTable
+      <TabulatorGrid
         columns={[
-          { key: 'board', label: 'Board' },
-          { key: 'sprint', label: 'Sprint' },
-          { key: 'done', label: 'Done', align: 'right' },
-          { key: 'total', label: 'Total', align: 'right' },
-          { key: 'rate', label: 'Rate', align: 'right' },
+          { key: 'board', label: 'Board', sortable: true, filterable: true },
+          { key: 'sprint', label: 'Sprint', sortable: true },
+          { key: 'done', label: 'Done', align: 'right', sortable: true, type: 'number' },
+          { key: 'total', label: 'Total', align: 'right', sortable: true, type: 'number' },
+          { key: 'rate', label: 'Rate', align: 'right', sortable: true, type: 'bar', barMax: 100, bottomCalc: 'avg' },
         ]}
         rows={velocityRows}
+        groupBy="board"
         searchable
+        exportable
         pageSize={25}
       />
     </div>
   </div>
 
-  <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
+  <!-- Workflow Analysis -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Workflow Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Total Statuses" value={totalStatuses.toString()} subtitle={`${customStatusCount} custom, ${builtinStatusCount} built-in`} />
+    <MetricCard label="In Progress Statuses" value={(byCategory['In Progress'] ?? 0).toString()} subtitle={`${((byCategory['In Progress'] ?? 0) / totalStatuses * 100).toFixed(0)}% of all statuses`} />
+    <MetricCard label="Issues Analyzed" value={(statusData.issues_analyzed ?? 0).toString()} subtitle="Transition sample set" />
+    <MetricCard label="Bottleneck" value={bottleneck.status ?? 'N/A'} subtitle={bottleneck.median_days ? `${bottleneck.median_days}d median wait` : ''} />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Status Categories</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'category', label: 'Category', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Statuses', align: 'right', sortable: true, type: 'number' },
+          { key: 'pct', label: '%', align: 'right', sortable: true },
+        ]}
+        rows={categoryRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Status Duration Analysis</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'status', label: 'Status', sortable: true },
+          { key: 'samples', label: 'Samples', align: 'right', sortable: true, type: 'number' },
+          { key: 'median_hrs', label: 'Median Hrs', align: 'right', sortable: true, type: 'heat', heatMax: 500 },
+          { key: 'median_days', label: 'Median Days', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={durationRows}
+        searchable
+        exportable
+        pageSize={10}
+      />
+    </div>
+  </div>
+
+  <!-- Root Cause Analysis -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Root Cause Analysis</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Bugs Sampled" value={rcBugsSampled.toString()} subtitle="Bug issues checked for RCA" />
+    <MetricCard label="RCA Population" value={`${rcPopRate}%`} subtitle={`${rcPopulated} of ${rcBugsSampled} have a root cause`} />
+    <MetricCard label="RCA Field" value={rcFieldName} subtitle={`Field: ${rootCauseData.field_id ?? 'N/A'}`} />
+    <MetricCard label="RCA-Related Fields" value={rcRelatedFields.length.toString()} subtitle="Custom fields for root cause tracking" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Root Cause Distribution</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'cause', label: 'Category', sortable: true, type: 'badge' },
+          { key: 'count', label: 'Count', align: 'right', sortable: true, type: 'number' },
+          { key: 'pct', label: '%', align: 'right', sortable: true },
+        ]}
+        rows={rcDistRows}
+      />
+      {rcPopRate === 0 && (
+        <p class="mt-3 text-xs text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border)] rounded-lg px-4 py-3">
+          <strong>Gap:</strong> The root cause category field is unpopulated across all {rcBugsSampled} sampled bugs.
+          Establishing an RCA discipline would improve defect prevention.
+        </p>
+      )}
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Root Cause Custom Fields</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'name', label: 'Field Name', sortable: true },
+          { key: 'id', label: 'Field ID' },
+          { key: 'type', label: 'Type', sortable: true },
+        ]}
+        rows={rcFieldRows}
+      />
+      <p class="mt-3 text-xs text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border)] rounded-lg px-4 py-3">
+        Multiple root-cause-related fields exist ({rcRelatedFields.length} total), suggesting fragmented categorization across projects.
+      </p>
+    </div>
+  </div>
+
+  <!-- Estimation & Custom Fields -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Estimation & Custom Fields</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Custom Fields" value={totalCustomFields.toString()} subtitle="Total Jira custom fields" />
+    <MetricCard label="Story Points Coverage" value={`${spCoveragePct}%`} subtitle={`${spWithPoints} of ${spSampled} sampled stories`} />
+    <MetricCard label="Notable Fields" value={interestingFields.length.toString()} subtitle="Fields relevant to delivery analysis" />
+    <MetricCard label="Field Types" value={fieldTypeRows.length.toString()} subtitle="Distinct data types in use" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Field Type Distribution</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'type', label: 'Field Type', sortable: true },
+          { key: 'count', label: 'Count', align: 'right', sortable: true, type: 'number' },
+        ]}
+        rows={fieldTypeRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Notable Custom Fields</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'name', label: 'Field Name', sortable: true },
+          { key: 'type', label: 'Type', sortable: true, filterable: true },
+          { key: 'id', label: 'Field ID' },
+        ]}
+        rows={interestingFields.map((f) => ({ name: f.name, type: f.type, id: f.id }))}
+        searchable
+        exportable
+        pageSize={10}
+      />
+    </div>
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Full Project Directory</h2>
+  <p class="text-sm text-[var(--text-secondary)] mb-4">
+    All {projects.length} Jira projects. Filter by classification, category, or lead to navigate the portfolio.
+  </p>
+
+  <div class="mb-10">
+    <TabulatorGrid
+      columns={[
+        { key: 'key', label: 'Key', sortable: true },
+        { key: 'name', label: 'Name', sortable: true },
+        { key: 'lead', label: 'Lead', sortable: true },
+        { key: 'category', label: 'Category', sortable: true, filterable: true, type: 'badge' },
+        { key: 'classification', label: 'Classification', sortable: true, filterable: true, type: 'badge' },
+        { key: 'issues', label: 'Issues', align: 'right', sortable: true, type: 'number' },
+      ]}
+      rows={projects.map((p: any) => ({
+        key: p.data.key,
+        _href_key: jiraProjectUrl(p.data.key),
+        name: p.data.name,
+        lead: p.data.lead || '',
+        category: p.data.category || '',
+        classification: p.data.classification || 'unclassified',
+        issues: num(p.data.issue_count),
+      }))}
+      searchable
+      exportable
+      pageSize={25}
+      groupBy="classification"
+    />
+  </div>
+
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-center justify-between mb-8">
+    <div>
+      <p class="text-sm font-medium text-[var(--text)]">People directory with team and manager context</p>
+      <p class="text-xs text-[var(--text-secondary)]">See org chart positions, team assignments, and cross-system activity for all assignees.</p>
+    </div>
+    <a href="/people/directory" class="px-3 py-1.5 text-xs font-medium text-[var(--accent)] border border-[var(--accent)] rounded-lg hover:bg-[var(--accent-subtle)] transition-colors flex-shrink-0">People &rarr; Directory</a>
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />

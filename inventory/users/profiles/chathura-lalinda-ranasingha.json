@@ -1,0 +1,53 @@
+{
+  "name": "Chathura Lalinda Ranasingha",
+  "id": "chathura-lalinda-ranasingha",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 6,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:16ffe8f5-d86c-4454-8eaf-2bba6db29cfb",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "reporter"
+      ],
+      "issues_created_90d": 5,
+      "issues_resolved_90d": 1,
+      "open_assigned": 13,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:16ffe8f5-d86c-4454-8eaf-2bba6db29cfb",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs",
+        "syscolabsconf"
+      ],
+      "nickname": "Chathura Lalinda Ranasingha",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

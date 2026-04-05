@@ -1,0 +1,32 @@
+{
+  "name": "Dhammika Sriyananda (Unlicensed)",
+  "id": "dhammika-sriyananda-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:243c55e5-dbed-4619-8c31-e5262b68c6d9",
+      "email": "",
+      "pages_total": 24,
+      "pages_90d": 0,
+      "spaces": [
+        "CR"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Matt Cooke",
+  "id": "matt-cooke",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 308,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "6160493c78e5e400709927a6",
+      "email": "",
+      "projects": [
+        "RL"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 30,
+      "issues_resolved_90d": 5,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "6160493c78e5e400709927a6",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Matt Cooke",
+      "prs_authored": 16,
+      "prs_reviewed": 257,
+      "review_cluster": "madmobile"
+    }
+  }
+}

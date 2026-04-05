@@ -1,0 +1,34 @@
+{
+  "name": "Thinuwan Wickramaarachchi (Unlicensed)",
+  "id": "thinuwan-wickramaarachchi-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "620250508df9a200718ddf21",
+      "email": "",
+      "pages_total": 8,
+      "pages_90d": 0,
+      "spaces": [
+        "CA",
+        "ES",
+        "PROD"
+      ]
+    }
+  }
+}

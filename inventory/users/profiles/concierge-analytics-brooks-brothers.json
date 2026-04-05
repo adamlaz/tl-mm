@@ -1,0 +1,30 @@
+{
+  "name": "Concierge Analytics Brooks Brothers",
+  "id": "concierge-analytics-brooks-brothers",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "aws_iam"
+  ],
+  "sources": {
+    "aws_iam": {
+      "account_id": "concierge-analytics-brooks-brothers",
+      "email": null,
+      "aws_profile": "mm-retail-prod-us",
+      "created_date": "2020-06-12T19:58:58+00:00",
+      "is_service_account": false
+    }
+  }
+}

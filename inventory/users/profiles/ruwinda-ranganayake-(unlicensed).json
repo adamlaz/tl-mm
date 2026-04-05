@@ -1,0 +1,33 @@
+{
+  "name": "Ruwinda Ranganayake (Unlicensed)",
+  "id": "ruwinda-ranganayake-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:6e2d367e-f90b-419a-b8d3-a91aa5a1b5c5",
+      "email": "",
+      "pages_total": 38,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "TT"
+      ]
+    }
+  }
+}

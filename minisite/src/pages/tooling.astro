@@ -3,7 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 import StatusBadge from '../components/StatusBadge.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
 import { getCollection } from 'astro:content';
+import { readFileSync } from 'node:fs';
 
 const tools = await getCollection('toolingCatalog');
 
@@ -19,6 +21,60 @@ const categories = [...byCategory.entries()].sort((a, b) => a[0].localeCompare(b
 const activeCount = tools.filter((t) => t.data.status === 'confirmed_active').length;
 const inferredCount = tools.filter((t) => t.data.status === 'inferred').length;
 const categoryCount = byCategory.size;
+
+let aiToolingDocs: Record<string, any[]> | null = null;
+try {
+  aiToolingDocs = JSON.parse(readFileSync('../inventory/confluence/ai_tooling_docs.json', 'utf-8'));
+} catch {}
+
+let toolingExpenseDocs: Record<string, any[]> | null = null;
+try {
+  toolingExpenseDocs = JSON.parse(readFileSync('../inventory/confluence/tooling_expense_docs.json', 'utf-8'));
+} catch {}
+
+function formatDate(iso: string): string {
+  if (!iso) return '';
+  return iso.slice(0, 10);
+}
+
+const aiRows: Record<string, string>[] = [];
+if (aiToolingDocs) {
+  const sections: [string, string][] = [
+    ['cursor_title', 'Cursor IDE'],
+    ['ai_tooling', 'AI Workflows'],
+    ['ai_strategy', 'AI Strategy'],
+    ['lovable', 'Lovable / Low-Code'],
+  ];
+  for (const [key, label] of sections) {
+    const items = aiToolingDocs[key];
+    if (Array.isArray(items)) {
+      for (const item of items) {
+        if (item.title && !item.title.endsWith('.csv') && !item.title.endsWith('.pdf') && !item.title.endsWith('.png') && !item.title.endsWith('.json')) {
+          aiRows.push({ category: label, title: item.title, space: item.space ?? '', modified: formatDate(item.last_modified) });
+        }
+      }
+    }
+  }
+}
+
+const expenseRows: Record<string, string>[] = [];
+if (toolingExpenseDocs) {
+  const sections: [string, string][] = [
+    ['tool_inventory', 'Tool Inventories'],
+    ['budget_cost', 'Cost Analysis'],
+    ['vendors', 'Vendor Contracts'],
+  ];
+  for (const [key, label] of sections) {
+    const items = toolingExpenseDocs[key];
+    if (Array.isArray(items)) {
+      for (const item of items) {
+        if (item.title && !item.title.endsWith('.csv') && !item.title.endsWith('.pdf') && !item.title.endsWith('.png') && !item.title.endsWith('.json') && !item.title.endsWith('.docx') && !item.title.endsWith('.xlsx') && !item.title.endsWith('.xls')) {
+          expenseRows.push({ category: label, title: item.title, space: item.space ?? '', modified: formatDate(item.last_modified) });
+        }
+      }
+    }
+  }
+}
 ---
 
 <BaseLayout title="Tooling">
@@ -37,7 +93,7 @@ const categoryCount = byCategory.size;
   <div class="space-y-8">
     {categories.map(([category, categoryTools]) => (
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">{category}</h2>
+        <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">{category}</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {categoryTools.map((t) => (
             <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
@@ -59,4 +115,42 @@ const categoryCount = byCategory.size;
       </div>
     ))}
   </div>
+
+  {aiRows.length > 0 && (
+    <div class="mt-12">
+      <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">AI Tooling References</h2>
+      <p class="text-xs text-[var(--text-secondary)] mb-4">Confluence pages referencing AI tools, coding assistants, and automation frameworks used at Mad Mobile.</p>
+      <TabulatorGrid
+        columns={[
+          { key: 'category', label: 'Category', sortable: true, filterable: true, type: 'badge' },
+          { key: 'title', label: 'Page Title', sortable: true },
+          { key: 'space', label: 'Space', sortable: true, filterable: true, type: 'badge' },
+          { key: 'modified', label: 'Last Modified', sortable: true, type: 'date' },
+        ]}
+        rows={aiRows}
+        searchable
+        pageSize={15}
+        exportable
+      />
+    </div>
+  )}
+
+  {expenseRows.length > 0 && (
+    <div class="mt-12">
+      <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Tooling Expense Documentation</h2>
+      <p class="text-xs text-[var(--text-secondary)] mb-4">Confluence pages related to tool inventories, vendor contracts, licensing, and cost analysis.</p>
+      <TabulatorGrid
+        columns={[
+          { key: 'category', label: 'Category', sortable: true, filterable: true, type: 'badge' },
+          { key: 'title', label: 'Page Title', sortable: true },
+          { key: 'space', label: 'Space', sortable: true, filterable: true, type: 'badge' },
+          { key: 'modified', label: 'Last Modified', sortable: true, type: 'date' },
+        ]}
+        rows={expenseRows}
+        searchable
+        pageSize={15}
+        exportable
+      />
+    </div>
+  )}
 </BaseLayout>

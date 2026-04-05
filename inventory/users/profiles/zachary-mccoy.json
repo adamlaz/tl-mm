@@ -1,0 +1,35 @@
+{
+  "name": "Zachary McCoy",
+  "id": "zachary-mccoy",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "jira"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:70b6b749-412a-42f8-bba8-389eaf797d4e",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 0,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}

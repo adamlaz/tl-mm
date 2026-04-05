@@ -68,10 +68,12 @@ Congrats on the reorg — big moves, clean execution. Friday announcement, all-h
 - Has Don had a candid conversation with Chathura about capacity, priorities, and what he can realistically change in the first 90 days?
 - My surveys and onsite interviews will give Chathura real data to work with. Does Don want me to position the deliverables partly as tools for Chathura?
 
-**5. "Is the Bhasin move what it looks like?"**
+**5. "Is the Bhasin move what it looks like?"** *(PARTIALLY RESOLVED)*
 - March chart: Akshay Bhasin = QE Lead with 7 people
 - April chart: Akshay Bhasin = Payments with 18 people
-- Did he absorb the Payments engineering org, or was the March chart just incomplete?
+- **CDO org chart (April 3) confirms:** VP Payments Engineering with 20+ people. Payments R&D (Kevin Reyes as Director, 9 people), Restaurant QE (7), Biz Operations (Andy Honnold + 3), PCI counterparts (Maltes, Freid, Riglos, Keye). Much larger than "18."
+- **Remaining question:** Was Restaurant QE always under Payments, or was this a consolidation? Having QE for Restaurant under the Payments VP (not the Restaurant VP) is unusual.
+- **New question:** Andy Honnold appears under Akshay in Chathura's chart but under Garcia (CFO) in Don's. Dual reporting?
 
 **6. "Talk to me about Strainick — is COO a promote-to-fit or a promote-to-move?"**
 - He went from Chief People Officer to COO. That's not a lateral — it's a lane change.
@@ -148,7 +150,10 @@ Congrats on the reorg — big moves, clean execution. Friday announcement, all-h
 
 
 **Bhasin scope clarification:**
+*PARTIALLY RESOLVED via CDO org chart: VP Payments Eng, 20+ people. Still ask about Restaurant QE reporting under Payments and Andy Honnold dual-report.*
 
+**L&D reporting discrepancy (NEW):**
+*Chathura's chart puts Adriana Z. and Ayodele L. under Dulanjan/Product L&D. Don's chart puts them under Shatney/HR. Which is correct? Matrix situation?*
 
 **Strainick — promote to fit or promote to move?**
 
@@ -162,10 +167,17 @@ Congrats on the reorg — big moves, clean execution. Friday announcement, all-h
 **Board deck transparency level:**
 
 
+**Don scope confirmation (from April 3 email):**
+*"Retail and Neo/AI in scope please with main focus obviously restaurant." — Updated all docs. Concierge/Retail and Neo/AI roadmaps explicitly requested.*
+
+**Jorge Maltes (RESOLVED):**
+*Not departed. Confirmed in CDO org chart as Dir. IT under PCI DSS Compliance counterparts (Payments). Rosen Georgiev handles day-to-day IT ops under COO.*
+
 **Revenue data owner:**
 
 
 **Survey 5 approved?**
+*NOTE: Chathura's survey email only references 4 surveys. He dropped AI & Tooling. Need to either ask Don to push for it or accept 4.*
 
 
 **Interview adds/removes/landmines:**

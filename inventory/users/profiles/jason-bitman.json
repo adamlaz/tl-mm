@@ -1,0 +1,47 @@
+{
+  "name": "jason.bitman",
+  "id": "jason-bitman",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 1,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:49d312d4-2bcf-4708-b354-a0d7884b0913",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 0,
+      "open_assigned": 0,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:49d312d4-2bcf-4708-b354-a0d7884b0913",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "jason.bitman",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": "madmobile"
+    }
+  }
+}

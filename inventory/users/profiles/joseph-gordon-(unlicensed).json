@@ -1,0 +1,32 @@
+{
+  "name": "Joseph Gordon (Unlicensed)",
+  "id": "joseph-gordon-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": "jgordon@madmobile.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:7bf0e3f2-48c6-4e67-84a9-b23ad5bc020e",
+      "email": "jgordon@madmobile.com",
+      "pages_total": 35,
+      "pages_90d": 0,
+      "spaces": [
+        "PT"
+      ]
+    }
+  }
+}

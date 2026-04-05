@@ -1,0 +1,33 @@
+{
+  "name": "Raj Miandad Azhar Ali (Unlicensed)",
+  "id": "raj-miandad-azhar-ali-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "5c11e3582f0d584c4b23d7ac",
+      "email": "",
+      "pages_total": 42,
+      "pages_90d": 0,
+      "spaces": [
+        "DB",
+        "ES"
+      ]
+    }
+  }
+}

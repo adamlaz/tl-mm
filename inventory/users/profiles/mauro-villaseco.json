@@ -1,0 +1,64 @@
+{
+  "name": "Mauro Villaseco",
+  "id": "mauro-villaseco",
+  "title": null,
+  "team": "Platform",
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 3,
+    "total_activity_90d": 228,
+    "level": "high"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "5fb2788cd670b8006e5928f3",
+      "email": "",
+      "projects": [
+        "OS"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 11,
+      "issues_resolved_90d": 6,
+      "open_assigned": 30,
+      "bugs_created_90d": 4,
+      "timeZone": "America/Buenos_Aires",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "5fb2788cd670b8006e5928f3",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Mauro Villaseco",
+      "prs_authored": 0,
+      "prs_reviewed": 204,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "5fb2788cd670b8006e5928f3",
+      "email": "",
+      "pages_total": 10,
+      "pages_90d": 7,
+      "spaces": [
+        "ES",
+        "PT"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Caroline Coffey (Unlicensed)",
+  "id": "caroline-coffey-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:f1b38960-b9a8-4c39-bca1-4838120a86f1",
+      "email": "",
+      "pages_total": 24,
+      "pages_90d": 0,
+      "spaces": [
+        "PROD",
+        "PT"
+      ]
+    }
+  }
+}

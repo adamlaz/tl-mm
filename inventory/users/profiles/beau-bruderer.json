@@ -1,0 +1,57 @@
+{
+  "name": "Beau Bruderer",
+  "id": "beau-bruderer",
+  "title": "Senior Software Engineer",
+  "team": "Restaurant Backend",
+  "manager": "Kyle Budd",
+  "division": "CDO / Restaurant Technology",
+  "executive": "Chathura Ratnayake",
+  "geography": "unknown",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 20,
+    "level": "medium"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "712020:2b95db1e-2a61-41f4-a556-8e00c91e7652",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 2,
+      "issues_resolved_90d": 6,
+      "open_assigned": 9,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:2b95db1e-2a61-41f4-a556-8e00c91e7652",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Beau Bruderer",
+      "prs_authored": 12,
+      "prs_reviewed": 0,
+      "review_cluster": "mixed"
+    }
+  }
+}

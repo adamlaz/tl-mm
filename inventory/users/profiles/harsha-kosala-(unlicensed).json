@@ -1,0 +1,34 @@
+{
+  "name": "Harsha Kosala (Unlicensed)",
+  "id": "harsha-kosala-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:737a29a2-3eab-40b1-b356-2bb009c1e049",
+      "email": "",
+      "pages_total": 72,
+      "pages_90d": 0,
+      "spaces": [
+        "LP",
+        "PROD",
+        "TT"
+      ]
+    }
+  }
+}

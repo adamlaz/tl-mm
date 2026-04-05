@@ -1,0 +1,32 @@
+{
+  "name": "Dinuwan.Senanayake (Unlicensed)",
+  "id": "dinuwan-senanayake-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "612ca5e5a0dfd1006884ca6f",
+      "email": "",
+      "pages_total": 3,
+      "pages_90d": 0,
+      "spaces": [
+        "ES"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Diluksha Madushan (Unlicensed)",
+  "id": "diluksha-madushan-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "712020:ea5614cb-3448-4330-b0bb-1e71cb8cbca6",
+      "email": "",
+      "pages_total": 30,
+      "pages_90d": 0,
+      "spaces": [
+        "CR",
+        "DB",
+        "ES",
+        "LP"
+      ]
+    }
+  }
+}

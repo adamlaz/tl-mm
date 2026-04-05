@@ -1,0 +1,33 @@
+{
+  "name": "Aaron Feldmeyer (Unlicensed)",
+  "id": "aaron-feldmeyer-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": "afeldmeyer@madmobile.com",
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:7593d649-90df-48cc-b96e-2861c0f9f573",
+      "email": "afeldmeyer@madmobile.com",
+      "pages_total": 76,
+      "pages_90d": 0,
+      "spaces": [
+        "AIMM",
+        "PT"
+      ]
+    }
+  }
+}

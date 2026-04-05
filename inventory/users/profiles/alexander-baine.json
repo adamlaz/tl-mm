@@ -1,0 +1,68 @@
+{
+  "name": "Alexander Baine",
+  "id": "alexander-baine",
+  "title": "Manager Software Engineering",
+  "team": "Restaurant Frontend",
+  "manager": "Randy Brown",
+  "division": "CDO / Restaurant Technology",
+  "executive": "Chathura Ratnayake",
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 385,
+    "level": "high"
+  },
+  "systems": [
+    "org_chart",
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "org_chart": {
+      "account_id": null,
+      "email": null
+    },
+    "jira": {
+      "account_id": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 4,
+      "issues_resolved_90d": 13,
+      "open_assigned": 23,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Alexander Baine",
+      "prs_authored": 12,
+      "prs_reviewed": 356,
+      "review_cluster": "mixed"
+    },
+    "confluence": {
+      "account_id": "712020:02b26547-cbbd-4c3f-bff3-02ca3fcf168b",
+      "email": "",
+      "pages_total": 5,
+      "pages_90d": 0,
+      "spaces": [
+        "PT",
+        "TT"
+      ]
+    }
+  }
+}

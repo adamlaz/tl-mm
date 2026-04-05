@@ -1,0 +1,58 @@
+{
+  "name": "Facundo",
+  "id": "facundo",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": "Concierge / Retail / Platform",
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 8,
+    "level": "low"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "557058:a7e1acce-6c41-419b-9b2b-b81efbf92cb2",
+      "email": "",
+      "projects": [],
+      "roles": [],
+      "issues_created_90d": 1,
+      "issues_resolved_90d": 6,
+      "open_assigned": 22,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "557058:a7e1acce-6c41-419b-9b2b-b81efbf92cb2",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Facundo",
+      "prs_authored": 1,
+      "prs_reviewed": 0,
+      "review_cluster": "madmobile"
+    },
+    "confluence": {
+      "account_id": "557058:a7e1acce-6c41-419b-9b2b-b81efbf92cb2",
+      "email": "",
+      "pages_total": 1,
+      "pages_90d": 0,
+      "spaces": [
+        "MMA"
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Ashen",
+  "id": "ashen",
+  "title": null,
+  "team": "Restaurant",
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "SL",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 2,
+    "total_activity_90d": 35,
+    "level": "medium"
+  },
+  "systems": [
+    "jira",
+    "bitbucket",
+    "confluence"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "624190af2e101c006a8c5e3d",
+      "email": "",
+      "projects": [
+        "REST"
+      ],
+      "roles": [
+        "assignee"
+      ],
+      "issues_created_90d": 9,
+      "issues_resolved_90d": 20,
+      "open_assigned": 24,
+      "bugs_created_90d": 3,
+      "timeZone": "Asia/Colombo",
+      "active": true
+    },
+    "bitbucket": {
+      "account_id": "624190af2e101c006a8c5e3d",
+      "email": null,
+      "workspaces": [
+        "madmobile",
+        "syscolabs"
+      ],
+      "nickname": "Ashen",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    },
+    "confluence": {
+      "account_id": "624190af2e101c006a8c5e3d",
+      "email": "",
+      "pages_total": 47,
+      "pages_90d": 6,
+      "spaces": [
+        "CA",
+        "ES",
+        "LP",
+        "TT"
+      ]
+    }
+  }
+}

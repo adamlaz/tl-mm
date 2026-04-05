@@ -1,0 +1,33 @@
+{
+  "name": "Dineth Samarakkody (Unlicensed)",
+  "id": "dineth-samarakkody-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "60c1c7315c64b10071686b79",
+      "email": "",
+      "pages_total": 36,
+      "pages_90d": 0,
+      "spaces": [
+        "DB",
+        "LP"
+      ]
+    }
+  }
+}

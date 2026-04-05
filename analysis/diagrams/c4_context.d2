@@ -1,0 +1,89 @@
+direction: down
+
+# Source: AWS Inventory, extracted April 2026
+
+external_actors: External Actors {
+  style.fill: "#E0E7FF"
+
+  retail_customers: Retail Customers {
+    shape: person
+    style.fill: "#E0E7FF"
+  }
+  retail_brands: Retail Brands\nAscena, Belk, Brooks Brothers, Burlington, Esteelauder, Esteelauder Aveda... {
+    shape: person
+    style.fill: "#E0E7FF"
+  }
+  sysco: Sysco / Restaurant Chains {
+    shape: person
+    style.fill: "#E0E7FF"
+  }
+  payment_processors: Payment Processors\nAurus, RS2 Bankworks {
+    shape: person
+    style.fill: "#E0E7FF"
+  }
+  apple_bestbuy: Apple / Best Buy {
+    shape: person
+    style.fill: "#E0E7FF"
+  }
+}
+
+platform: Mad Mobile Platform {
+  style.fill: "#DCFCE7"
+  style.stroke: "#2A9D8F"
+
+  cake: CAKE POS {
+    style.fill: "#F5F0E6"
+  }
+  concierge: Concierge {
+    style.fill: "#E0E7FF"
+  }
+  payments: Mad Payments {
+    style.fill: "#FCE7EC"
+  }
+  neo_ai: Neo AI / Marvel Cloud {
+    style.fill: "#F0E7F0"
+  }
+  platform_svc: Platform Services {
+    style.fill: "#E8ECF0"
+  }
+}
+
+infra: Infrastructure {
+  style.fill: "#E8F5E0"
+
+  aws: AWS\nECS, EKS, DynamoDB, S3, Lambda {
+    style.fill: "#E8F5E0"
+  }
+  monitoring: Monitoring\nPrometheus, OpenTelemetry {
+    style.fill: "#E8F5E0"
+  }
+  cicd: CI/CD\nBitbucket Pipelines, CodePipeline {
+    style.fill: "#E8F5E0"
+  }
+}
+
+dns: DNS / Domains (8) {
+  style.fill: "#F0E7F0"
+
+  madmobile_ai: madmobile.ai
+  make_cake_com: make-cake.com
+  take_cake_io: take-cake.io
+  madpayments_com: madpayments.com
+  take_cake_com: take-cake.com
+  bake_cake_io: bake-cake.io
+  bake_cake_com: bake-cake.com
+  make_cake_io: make-cake.io
+}
+
+# Relationships
+external_actors.retail_customers -> platform.cake: "POS & ordering"
+external_actors.retail_customers -> platform.concierge: "clienteling"
+external_actors.retail_brands -> platform.concierge: "analytics"
+external_actors.sysco -> platform.cake: "CAKE POS"
+external_actors.payment_processors -> platform.payments: "card processing"
+external_actors.apple_bestbuy -> platform.concierge: "concierge deployments"
+
+platform -> infra.aws: "runs on"
+platform -> infra.monitoring: "observability"
+platform -> infra.cicd: "deployments"
+platform -> dns: "serves"

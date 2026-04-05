@@ -1,0 +1,36 @@
+{
+  "name": "John Siemering (Unlicensed)",
+  "id": "john-siemering-(unlicensed)",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [
+    "John Thompson (Unlicensed)",
+    "John Estilette (Unlicensed)",
+    "John Ueckert (Unlicensed)"
+  ],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "confluence"
+  ],
+  "sources": {
+    "confluence": {
+      "account_id": "557058:1e651816-1f14-46d8-b345-27c8a4a2384f",
+      "email": "",
+      "pages_total": 73,
+      "pages_90d": 0,
+      "spaces": [
+        "DB"
+      ]
+    }
+  }
+}

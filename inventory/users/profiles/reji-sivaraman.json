@@ -1,0 +1,34 @@
+{
+  "name": "Reji Sivaraman",
+  "id": "reji-sivaraman",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": null,
+  "status": "inactive",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 0,
+    "total_activity_90d": 0,
+    "level": "inactive"
+  },
+  "systems": [
+    "bitbucket"
+  ],
+  "sources": {
+    "bitbucket": {
+      "account_id": "712020:0b9bef28-cd92-409a-9cf6-85b115f286f0",
+      "email": null,
+      "workspaces": [
+        "madmobile"
+      ],
+      "nickname": "Reji Sivaraman",
+      "prs_authored": 0,
+      "prs_reviewed": 0,
+      "review_cluster": null
+    }
+  }
+}

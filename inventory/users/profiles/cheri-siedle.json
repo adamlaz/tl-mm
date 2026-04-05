@@ -1,0 +1,40 @@
+{
+  "name": "Cheri Siedle",
+  "id": "cheri-siedle",
+  "title": null,
+  "team": null,
+  "manager": null,
+  "division": null,
+  "executive": null,
+  "geography": "US",
+  "status": "active",
+  "email": null,
+  "aliases": [],
+  "activity": {
+    "systems_active_90d": 1,
+    "total_activity_90d": 78,
+    "level": "high"
+  },
+  "systems": [
+    "jira"
+  ],
+  "sources": {
+    "jira": {
+      "account_id": "712020:242cf045-ef4e-42b9-8588-666ca59863f8",
+      "email": "",
+      "projects": [
+        "WM"
+      ],
+      "roles": [
+        "assignee",
+        "reporter"
+      ],
+      "issues_created_90d": 78,
+      "issues_resolved_90d": 0,
+      "open_assigned": 1,
+      "bugs_created_90d": 0,
+      "timeZone": "America/New_York",
+      "active": true
+    }
+  }
+}
