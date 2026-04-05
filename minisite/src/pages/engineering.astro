@@ -6,6 +6,7 @@ import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
+import FindingCard from '../components/FindingCard.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
 import { bitbucketRepoUrl } from '../lib/links';
@@ -186,9 +187,22 @@ const charts = [
 
 <BaseLayout title="Engineering">
   <SectionHeader
+    eyebrow="ENGINEERING"
     title="Engineering"
-    description="Source control health across 4 Bitbucket workspaces."
+    description="Source control health across 4 Bitbucket workspaces. Data extracted April 3–4, 2026 (V7)."
   />
+
+  <div class="grid sm:grid-cols-2 gap-4 mb-8">
+    <FindingCard severity="red" title="0 Repos with Branch Protection" detail="No repositories have required approvals or passing build checks. Any developer can push directly to main without review." evidence="0 of 30 checked repos have branch restrictions" />
+    <FindingCard severity="red" title="60.7% Pipeline Success Rate" detail="Nearly 4 in 10 builds fail across the top 30 most active repos." evidence="1,563 runs, 60.7% success, 39.3% failure" href="/engagement/hypotheses" hrefLabel="Hypothesis E" />
+    <FindingCard severity="amber" title="201 Stale Open PRs" detail="175 older than 30 days. 167 (83%) have zero comments. 66 (33%) have zero reviewers assigned." evidence="201 open, 175 >30d, 167 zero comments" />
+    <FindingCard severity="amber" title="Reviewer Bottleneck: 581 Reviews" detail="John Harre handles 581 code reviews. 17 repos have a single reviewer handling >50% of all PRs." evidence="57 people handle 100+ reviews, 17 bottleneck repos" href="/people/risk" hrefLabel="Key Person Risk" />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <ChartEmbed slug="pipeline_health_gauge" title="Pipeline Health" />
+    <ChartEmbed slug="bb_reviewer_concentration" title="Reviewer Concentration" />
+  </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Total Repos" value={fmt(repos.length)} subtitle={`${activeRepos.length} active, ${Math.round((1 - activeRepos.length / repos.length) * 100)}% stale`} />
@@ -404,5 +418,13 @@ const charts = [
       <p class="text-xs text-[var(--text-secondary)]">See how review bottlenecks and code ownership map to teams and individuals.</p>
     </div>
     <a href="/people/risk" class="px-3 py-1.5 text-xs font-medium text-[var(--accent)] border border-[var(--accent)] rounded-lg hover:bg-[var(--accent-subtle)] transition-colors flex-shrink-0">People &rarr; Risk</a>
+  </div>
+
+  <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard severity="red" title="89.4% Priority Inflation" detail="Priorities are meaningless — code quality issues compound when triage is broken." href="/delivery" hrefLabel="Delivery" />
+      <FindingCard severity="amber" title="RCA Process Gap: 2024–Present" detail="Structured post-mortems stop after 2023 — engineering incidents go undocumented." href="/documentation" hrefLabel="Documentation" />
+    </div>
   </div>
 </BaseLayout>

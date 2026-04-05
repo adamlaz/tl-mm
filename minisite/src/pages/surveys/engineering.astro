@@ -1,0 +1,113 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+
+const yesNoQuestions = [
+  { num: 'Q1', title: 'Can you do a build and deployment in one step?' },
+  { num: 'Q2', title: 'Do you deploy to production at least once per week?' },
+  { num: 'Q3', title: 'Do you have automated tests that give you confidence in your deployments?' },
+  { num: 'Q4', title: 'Do you fix bugs before writing new features?' },
+  { num: 'Q5', title: 'Do you have up-to-date architecture and system documentation?' },
+  { num: 'Q6', title: 'Do you do code reviews before merging?' },
+  { num: 'Q7', title: 'Do you have on-call rotations with clear escalation paths?' },
+  { num: 'Q8', title: 'Do engineers have quiet working conditions (2+ hours uninterrupted focus)?' },
+  { num: 'Q9', title: 'Can new engineers push code to production in their first week?' },
+  { num: 'Q10', title: 'Do you do blameless post-mortems after incidents?' },
+  { num: 'Q11', title: 'Are engineers involved in product decisions?' },
+  { num: 'Q12', title: 'Do you have a career ladder with clear levels and expectations?' },
+];
+
+const contextQuestions = [
+  { num: 'Q13', title: 'Team / Product Area', type: 'Free text' },
+  { num: 'Q14', title: 'Your Role', type: 'Free text' },
+  { num: 'Q15', title: 'Is there a question where you answered No that frustrates you the most?', type: 'Free text' },
+];
+---
+
+<BaseLayout title="Pragmatic Engineer Test">
+  <SectionHeader
+    eyebrow="PRAGMATIC ENGINEER TEST"
+    title="Engineering Culture Maturity"
+    description="15 questions, ~3 minutes. 12 yes/no engineering practice checks + 3 context questions. Created by Gergely Orosz as a successor to Joel Spolsky's classic Joel Test."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <MetricCard label="Questions" value="15" subtitle="12 yes/no + 3 context" />
+    <MetricCard label="Audience" value="3–5 Leads" subtitle="Senior engineers" />
+    <MetricCard label="Scoring" value="10+ = Mature" subtitle="Below 6 = red flag" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Engineering Practice Questions</h2>
+    <div class="grid gap-4">
+      {yesNoQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+              <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+              Yes
+            </li>
+            <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+              <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+              No
+            </li>
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Context Questions</h2>
+    <div class="grid sm:grid-cols-2 gap-3">
+      {contextQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-start gap-2">
+          <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded shrink-0">{q.num}</span>
+          <div>
+            <p class="text-sm font-semibold text-[var(--text)]">{q.title}</p>
+            <p class="text-xs text-[var(--text-muted)] mt-0.5">{q.type}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Scoring Guide</h2>
+    <div class="grid gap-4">
+      <FindingCard
+        severity="green"
+        title="11–12: Mature Engineering Culture"
+        detail="Strong foundation. Identify the 1-2 gaps and address them."
+      />
+      <FindingCard
+        severity="amber"
+        title="8–10: Solid but Gaps Exist"
+        detail="Identify the specific 'No' answers — they likely compound."
+      />
+      <FindingCard
+        severity="amber"
+        title="5–7: Significant Gaps"
+        detail="Systemic issues likely. Multiple foundational practices missing."
+      />
+      <FindingCard
+        severity="red"
+        title="0–4: Foundational Practices Missing"
+        detail="Urgent attention needed. Engineering basics are not in place."
+      />
+    </div>
+  </div>
+
+  <p class="text-xs text-[var(--text-muted)] leading-relaxed">
+    Source: Gergely Orosz, 'The Pragmatic Engineer Test,' The Pragmatic Engineer Newsletter
+  </p>
+</BaseLayout>

@@ -6,6 +6,7 @@ import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
+import FindingCard from '../components/FindingCard.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
 import { jiraProjectUrl } from '../lib/links';
@@ -156,7 +157,20 @@ const charts = [
 ---
 
 <BaseLayout title="Delivery">
-  <SectionHeader title="Delivery" description={`Jira delivery health across ${projects.length} projects.`} />
+  <SectionHeader eyebrow="DELIVERY" title="Delivery" description={`Jira delivery health across ${projects.length} projects. Data extracted April 3–4, 2026 (V7).`} />
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <FindingCard severity="red" title="27.7% Epic Completion" detail="481 engineering epics in 12 months, only 133 resolved. REST: 18.5%. NEO: 12.5%." evidence="481 total, 133 resolved" href="/engagement/hypotheses" hrefLabel="Hypothesis A" />
+    <FindingCard severity="red" title="89.4% Priority Inflation" detail="Nearly every open issue marked High. No other levels in use. Priority is meaningless as a triage signal." evidence="89.4% High, 10.6% None" />
+    <FindingCard severity="amber" title="59-Day Cycle Time (P50)" detail="Engineering-only, In Progress to Done. P75 = 210 days. P95 = 233 days." evidence="P50: 59d, P75: 210d, P95: 233d" />
+    <FindingCard severity="amber" title="9% Story Point Coverage" detail="Story Points populated on only 27 of 300 sampled stories. Capacity planning impossible." evidence="9% coverage, 27/300 stories" />
+    <FindingCard severity="amber" title="0% Root Cause Category" detail="Jira field exists but populated on 0% of resolved bugs. Process documented in Confluence but not enforced." evidence="customfield_10382: 0% populated" />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <ChartEmbed slug="jira_epic_completion" title="Epic Completion" />
+    <ChartEmbed slug="jira_priority_inflation" title="Priority Inflation" />
+  </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard
@@ -395,5 +409,13 @@ const charts = [
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />
     ))}
+  </div>
+
+  <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard severity="red" title="83% Pre-Graviton EC2" detail="Infrastructure debt constrains delivery velocity — 167 of 201 instances on legacy hardware." href="/infrastructure" hrefLabel="Infrastructure" />
+      <FindingCard severity="red" title="0 Repos with Branch Protection" detail="No required approvals or build checks — code quality issues flow directly to delivery." href="/engineering" hrefLabel="Engineering" />
+    </div>
   </div>
 </BaseLayout>

@@ -47,7 +47,16 @@ const groups: NavGroup[] = [
         ],
       },
       { href: '/tooling', label: 'Tooling', icon: 'tool' },
-      { href: '/surveys', label: 'Surveys', icon: 'clipboard' },
+      {
+        href: '/surveys', label: 'Surveys', icon: 'clipboard',
+        children: [
+          { href: '/surveys/dora', label: 'DORA' },
+          { href: '/surveys/culture', label: 'Culture' },
+          { href: '/surveys/devex', label: 'DevEx' },
+          { href: '/surveys/engineering', label: 'Engineering' },
+          { href: '/surveys/ai-tooling', label: 'AI & Tooling' },
+        ],
+      },
     ],
   },
   {

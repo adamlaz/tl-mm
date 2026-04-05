@@ -1,0 +1,269 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+
+const likertLabels = [
+  '1 — Strongly Disagree',
+  '2 — Disagree',
+  '3 — Neutral',
+  '4 — Agree',
+  '5 — Strongly Agree',
+];
+
+const sectionA = [
+  { num: 'Q1', title: 'I can validate my code changes quickly through automated tests and CI/CD.' },
+  { num: 'Q2', title: 'Code reviews on my team happen promptly and don\'t create long waiting periods.' },
+  { num: 'Q3', title: 'When I deploy to production, I get clear, fast feedback on whether the deployment succeeded.' },
+  { num: 'Q4', title: 'When I have a question about requirements, I can get an answer quickly without waiting days.' },
+];
+
+const sectionB = [
+  { num: 'Q5', title: 'I understand the codebase(s) I work in well enough to be productive.' },
+  { num: 'Q6', title: 'Our development tools and processes are well-documented and easy to set up.' },
+  { num: 'Q7', title: 'I rarely have to context-switch between unrelated projects during the same day.' },
+  { num: 'Q8', title: 'The number of different systems, languages, and tools I need is manageable.' },
+  { num: 'Q9', title: 'I don\'t spend excessive time on toil (manual processes, workarounds, fighting infrastructure).' },
+];
+
+const sectionC = [
+  { num: 'Q10', title: 'I can typically get 2+ hours of uninterrupted focus time during my workday.' },
+  { num: 'Q11', title: 'Meetings and interruptions don\'t frequently break my concentration.' },
+  { num: 'Q12', title: 'I feel productive most days — I can see the impact of my work.' },
+];
+
+const sectionD = [
+  { num: 'Q13', title: 'I would recommend Mad Mobile as a good place to work for an engineer.' },
+  { num: 'Q14', title: 'I believe the work I\'m doing matters to the company\'s success.' },
+];
+
+const contextQuestions = [
+  { num: 'Q15', title: 'Team / Product Area', type: 'Free text' },
+  { num: 'Q16', title: 'Role', type: 'Multi-choice: Software Engineer, QE, DevOps/SRE, Engineering Manager, Product Manager, Designer, Other' },
+  { num: 'Q17', title: 'Tenure', type: 'Multi-choice: < 6 months, 6–12 months, 1–2 years, 2–5 years, 5+ years' },
+  { num: 'Q18', title: 'What is the single biggest thing that slows you down?', type: 'Free text' },
+];
+
+const sectionE = [
+  {
+    num: 'Q19',
+    title: 'Which Bitbucket workspace(s) does your team use?',
+    options: ['madmobile', 'syscolabs', 'madpayments', 'syscolabsconf', 'I don\'t know'],
+  },
+  {
+    num: 'Q20',
+    title: 'How many Jira projects do you actively work across?',
+    options: ['1', '2–3', '4–6', '7+'],
+  },
+  {
+    num: 'Q21',
+    title: 'How do you typically learn about priority changes?',
+    options: ['Manager tells me', 'Slack/Teams', 'Jira ticket', 'Sprint review/standup', 'Just appears in queue'],
+  },
+  {
+    num: 'Q22',
+    title: 'How confident are you that your team\'s backlog accurately reflects the real priorities?',
+    options: ['1 — Not at all confident', '2', '3', '4', '5 — Very confident'],
+  },
+  {
+    num: 'Q23',
+    title: 'What CI/CD system does your team use?',
+    options: ['Bitbucket Pipelines', 'Jenkins', 'Both', 'Other', 'I don\'t know'],
+  },
+];
+
+const scoringRows = [
+  { dimension: 'Speed', questions: 'Q1, Q2, Q3', measures: 'Feedback loop speed — automated testing, code review latency, deploy feedback' },
+  { dimension: 'Effectiveness', questions: 'Q5, Q6, Q8, Q9', measures: 'Cognitive load — codebase understanding, tooling docs, system count, toil' },
+  { dimension: 'Quality', questions: 'Q4, Q7', measures: 'Requirements clarity and context-switching frequency' },
+  { dimension: 'Impact', questions: 'Q12, Q13, Q14', measures: 'Perceived productivity, recommendation, and meaning' },
+];
+---
+
+<BaseLayout title="Developer Experience">
+  <SectionHeader
+    eyebrow="DEVELOPER EXPERIENCE"
+    title="DX Core 4 Survey"
+    description="23 questions, ~7 minutes. Developer experience across feedback loops, cognitive load, flow state, and satisfaction. Maps to four executive dimensions: Speed, Effectiveness, Quality, Impact."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Questions" value="23" subtitle="18 core + 5 MM-specific" />
+    <MetricCard label="Audience" value="ICs Only" subtitle="Engineers, QE, DevOps" />
+    <MetricCard label="Dimensions" value="4" subtitle="Speed, Effectiveness, Quality, Impact" />
+    <MetricCard label="Scale" value="1–5 Likert" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section A — Feedback Loops</h2>
+    <div class="grid gap-4">
+      {sectionA.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {likertLabels.map((label) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section B — Cognitive Load</h2>
+    <div class="grid gap-4">
+      {sectionB.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {likertLabels.map((label) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section C — Flow State</h2>
+    <div class="grid gap-4">
+      {sectionC.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {likertLabels.map((label) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section D — Satisfaction</h2>
+    <div class="grid gap-4">
+      {sectionD.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {likertLabels.map((label) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Context Questions</h2>
+    <div class="grid sm:grid-cols-2 gap-3">
+      {contextQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-start gap-2">
+          <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded shrink-0">{q.num}</span>
+          <div>
+            <p class="text-sm font-semibold text-[var(--text)]">{q.title}</p>
+            <p class="text-xs text-[var(--text-muted)] mt-0.5">{q.type}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section E — MM Context</h2>
+    <div class="grid gap-4">
+      {sectionE.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {q.options.map((opt) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {opt}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">DX Core 4 Scoring Guide</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'dimension', label: 'Dimension', sortable: true, type: 'badge' },
+        { key: 'questions', label: 'Questions', sortable: true },
+        { key: 'measures', label: 'Measures', sortable: true, minWidth: '280px' },
+      ]}
+      rows={scoringRows}
+    />
+  </div>
+
+  <div class="mb-10">
+    <div class="bg-[var(--surface)] border-l-[3px] border-l-[var(--accent)] rounded-xl p-5">
+      <h3 class="text-sm font-semibold text-[var(--text)] mb-3">MM Context — What Each Question Validates</h3>
+      <dl class="space-y-2 text-xs text-[var(--text-secondary)]">
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q19 — Bitbucket Workspaces</dt>
+          <dd>Segments responses by acquisition boundary (madmobile vs syscolabs vs madpayments). Reveals whether teams know which workspace they belong to.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q20 — Jira Project Count</dt>
+          <dd>Tests cognitive load from project sprawl. Engineers working across 4+ projects likely experience higher context-switching overhead.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q21 — Priority Changes</dt>
+          <dd>Tests Hypothesis B (communication gaps between business and engineering) and Hypothesis G (priority misalignment). "Just appears in queue" is a red flag.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q22 — Backlog Confidence</dt>
+          <dd>Tests whether backlogs serve as reliable planning tools or are stale/ignored. Low confidence signals planning process breakdown.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q23 — CI/CD System</dt>
+          <dd>Validates the dual CI/CD finding (Bitbucket Pipelines + Jenkins coexistence). "Both" or "I don't know" responses confirm fragmentation.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <p class="text-xs text-[var(--text-muted)] leading-relaxed">
+    Source: Noda, Storey, Forsgren, Greiler — 'DevEx: What Actually Drives Productivity,' ACM Queue, 2023
+  </p>
+</BaseLayout>

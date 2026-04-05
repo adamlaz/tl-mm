@@ -6,6 +6,7 @@ import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
+import FindingCard from '../components/FindingCard.astro';
 import C4Container from '../diagrams/c4-container.mdx';
 import C4Context from '../diagrams/c4-context.mdx';
 import { getCollection } from 'astro:content';
@@ -180,9 +181,22 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
 
 <BaseLayout title="Infrastructure">
   <SectionHeader
+    eyebrow="INFRASTRUCTURE"
     title="Infrastructure"
-    description="18 AWS accounts managed under a centralized cloud organization. Cost, resource, security, and operational data — March/April 2026."
+    description="18 AWS accounts managed under a centralized cloud organization. Cost, resource, security, and operational data — March/April 2026. Data extracted April 3–4, 2026 (V7)."
   />
+
+  <div class="grid sm:grid-cols-2 gap-4 mb-8">
+    <FindingCard severity="red" title="83% Pre-Graviton EC2" detail="167 of 201 running instances on pre-Graviton hardware. AWS charges the same for less performance. Migration is free velocity." evidence="201 running, 23 stopped, 167 pre-Graviton (83%)" href="/engagement/hypotheses" hrefLabel="Hypothesis F: Legacy Gravity" />
+    <FindingCard severity="red" title="90% ECS Containers Missing Health Checks" detail="61 of 68 active ECS services have no container health check. Services can be unhealthy without detection." evidence="68 services, 61 without health checks, 49 unique images" />
+    <FindingCard severity="amber" title="21% Lambda on EOL Runtimes" detail="53 of 248 Lambda functions running Python 2.7, Node 6/8/10/12. Security patches no longer available." evidence="248 functions, 53 EOL (21%)" />
+    <FindingCard severity="amber" title="$383K Monthly AWS Spend" detail="March 2026 across 18 accounts. ~$309K in management account (likely consolidated billing). Monvia: $25.9K/month for legacy workloads on m1 hardware." evidence="18 accounts, $383K total, Monvia $25.9K" />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <ChartEmbed slug="aws_instance_audit" title="EC2 Instance Generation Audit" />
+    <ChartEmbed slug="aws_lambda_runtimes" title="Lambda Runtime Distribution" />
+  </div>
 
   <!-- ── Top-level Metrics ── -->
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -408,6 +422,14 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />
     ))}
+  </div>
+
+  <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard severity="red" title="60.7% Pipeline Success Rate" detail="4 in 10 builds fail — infrastructure reliability feeds pipeline failures." href="/engineering" hrefLabel="Engineering" />
+      <FindingCard severity="red" title="27.7% Epic Completion" detail="Infrastructure debt cascades into delivery: only 1 in 4 epics resolved." href="/delivery" hrefLabel="Delivery" />
+    </div>
   </div>
 </BaseLayout>
 

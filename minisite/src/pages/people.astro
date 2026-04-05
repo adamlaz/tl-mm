@@ -3,6 +3,7 @@ export const prerender = true;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
+import FindingCard from '../components/FindingCard.astro';
 import MetricCard from '../components/MetricCard.astro';
 import OrgChart from '../components/OrgChart.astro';
 import { getCollection } from 'astro:content';
@@ -72,9 +73,17 @@ const graphEdges = networkData.graph_stats?.edges ?? 0;
 
 <BaseLayout title="People & Organization">
   <SectionHeader
+    eyebrow="PEOPLE & ORGANIZATION"
     title="People & Organization"
-    description="Cross-system view of ~370 people at Mad Mobile — organizational structure, collaboration networks, key-person risk, and activity across source control, project tracking, documentation, and cloud."
+    description="Cross-system view of ~370 people at Mad Mobile — organizational structure, collaboration networks, key-person risk, and activity across source control, project tracking, documentation, and cloud. Data extracted April 3, 2026 (V6)."
   />
+
+  <div class="grid sm:grid-cols-2 gap-4 mb-8">
+    <FindingCard severity="amber" title="39% Inactive Users with Access" detail="65 of 168 cross-system users are inactive but retain access to Bitbucket, Jira, Confluence, or AWS. Security and licensing implications." evidence="168 users audited, 65 inactive (39%)" />
+    <FindingCard severity="amber" title="Key Person Risk: Top 3 Handle >35% of Reviews" detail="Knowledge concentrated in a few individuals across Platform and Restaurant teams. Bus factor concerns." evidence="57 people handle 100+ reviews each" href="/people/risk" hrefLabel="Risk Detail" />
+    <FindingCard severity="amber" title="Communication Gaps Detected" detail="High-severity gaps between teams that should be collaborating based on org structure. System activity contradicts formal reporting lines." href="/people/network" hrefLabel="Network Analysis" />
+    <FindingCard severity="green" title="499 Individuals Mapped" detail="Cross-referenced across Bitbucket, Jira, Confluence, AWS, and org chart into a unified people graph with team assignments and activity profiles." evidence="499 unique identities, 5 source systems" />
+  </div>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Executive Summary</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-8">
@@ -175,6 +184,14 @@ const graphEdges = networkData.graph_stats?.edges ?? 0;
       </div>
       <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
     </a>
+  </div>
+
+  <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard severity="amber" title="Reviewer Bottleneck: 581 Reviews" detail="People concentration creates engineering bottlenecks — one person handles 581 code reviews." href="/engineering" hrefLabel="Engineering" />
+      <FindingCard severity="amber" title="59-Day Cycle Time (P50)" detail="People dependencies contribute to delivery drag — the median story takes two months." href="/delivery" hrefLabel="Delivery" />
+    </div>
   </div>
 </BaseLayout>
 

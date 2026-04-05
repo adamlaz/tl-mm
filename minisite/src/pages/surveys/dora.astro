@@ -1,0 +1,173 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+
+const coreQuestions = [
+  {
+    num: 'Q1',
+    title: 'Deployment Frequency',
+    description: 'How often does your team deploy code to production?',
+    options: [
+      'On-demand (multiple deploys per day)',
+      'Between once per day and once per week',
+      'Between once per week and once per month',
+      'Between once per month and once every 6 months',
+      'Fewer than once every 6 months',
+    ],
+  },
+  {
+    num: 'Q2',
+    title: 'Lead Time for Changes',
+    description: 'How long does it typically take for a commit to reach production?',
+    options: [
+      'Less than one hour',
+      'Between one hour and one day',
+      'Between one day and one week',
+      'Between one week and one month',
+      'Between one month and six months',
+      'More than six months',
+    ],
+  },
+  {
+    num: 'Q3',
+    title: 'Change Failure Rate',
+    description: 'What percentage of deployments to production result in a degraded service or require remediation?',
+    options: ['0–5%', '6–15%', '16–30%', '31–45%', '46–60%', '61%+'],
+  },
+  {
+    num: 'Q4',
+    title: 'Failed Deployment Recovery Time',
+    description: 'When a service incident or defect occurs, how long to restore service?',
+    options: [
+      'Less than one hour',
+      'Between one hour and one day',
+      'Between one day and one week',
+      'Between one week and one month',
+      'More than one month',
+    ],
+  },
+  {
+    num: 'Q5',
+    title: 'Reliability',
+    description: 'To what extent do you meet or exceed your reliability targets (SLAs/SLOs)?',
+    options: [
+      'Consistently meet or exceed',
+      'Meet most of the time',
+      'Meet about half the time',
+      'Rarely meet them',
+      "We don't have formal reliability targets",
+    ],
+  },
+];
+
+const contextQuestions = [
+  { num: 'Q6', title: 'Team Name / Product Area', type: 'Free text' },
+  { num: 'Q7', title: 'How many engineers on your team?', type: 'Free text' },
+  { num: 'Q8', title: 'What percentage of time goes to maintenance/legacy vs new features?', type: 'Free text' },
+  { num: 'Q9', title: 'Anything that would significantly improve delivery performance?', type: 'Free text' },
+];
+
+const benchmarkRows = [
+  { metric: 'Deployment Frequency', elite: 'On-demand (multiple/day)', high: 'Between once/day and once/week', medium: 'Between once/week and once/month', low: 'Between once/month and once every 6 months' },
+  { metric: 'Lead Time for Changes', elite: 'Less than one hour', high: 'Between one day and one week', medium: 'Between one week and one month', low: 'Between one month and six months' },
+  { metric: 'Change Failure Rate', elite: '0–5%', high: '6–15%', medium: '16–30%', low: '31–45%' },
+  { metric: 'Failed Deployment Recovery Time', elite: 'Less than one hour', high: 'Less than one day', medium: 'Between one day and one week', low: 'Between one week and one month' },
+  { metric: 'Reliability', elite: 'Exceeds targets', high: 'Meets targets', medium: 'Meets about half', low: 'Rarely meets them' },
+];
+
+const crossRefRows = [
+  { metric: 'Deploy Frequency', selfReport: 'DORA Q1', actual: 'Bitbucket deploy tags, release branches', gap: 'Compare self-report tier vs actual cadence' },
+  { metric: 'Lead Time', selfReport: 'DORA Q2', actual: 'PR cycle time: 0.6h to 235h range', gap: 'If lead reports weekly but PRs take 48h avg, probe why' },
+  { metric: 'Change Failure Rate', selfReport: 'DORA Q3', actual: 'Jira bug creation rate: 11,985 total bugs', gap: 'Bug-to-story ratio by project' },
+  { metric: 'Recovery Time', selfReport: 'DORA Q4', actual: 'Grafana MTTR dashboards (pending access)', gap: 'Access confirmed for Apr 7' },
+  { metric: 'Reliability', selfReport: 'DORA Q5', actual: 'CloudWatch alarms (pending permission)', gap: 'cloudwatch:DescribeAlarms not in audit role' },
+];
+---
+
+<BaseLayout title="DORA Quick Check">
+  <SectionHeader
+    eyebrow="DORA QUICK CHECK"
+    title="Software Delivery Performance"
+    description="9 questions, ~3 minutes. Self-assessed delivery performance against Google's DORA research benchmarks (33,000+ professionals). Results classify teams as Elite / High / Medium / Low."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <MetricCard label="Questions" value="9" subtitle="~3 minutes" />
+    <MetricCard label="Audience" value="Eng Leads" subtitle="1 per team/squad" />
+    <MetricCard label="Benchmarks" value="4 tiers" subtitle="Elite / High / Medium / Low" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Core DORA Questions</h2>
+    <div class="grid gap-4">
+      {coreQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <p class="text-xs text-[var(--text-secondary)] mb-3">{q.description}</p>
+          <ul class="space-y-1">
+            {q.options.map((opt) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {opt}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Context Questions</h2>
+    <div class="grid sm:grid-cols-2 gap-3">
+      {contextQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-start gap-2">
+          <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded shrink-0">{q.num}</span>
+          <div>
+            <p class="text-sm font-semibold text-[var(--text)]">{q.title}</p>
+            <p class="text-xs text-[var(--text-muted)] mt-0.5">{q.type}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">DORA Performance Benchmarks</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'metric', label: 'Metric', sortable: true, minWidth: '160px' },
+        { key: 'elite', label: 'Elite', sortable: true },
+        { key: 'high', label: 'High', sortable: true },
+        { key: 'medium', label: 'Medium', sortable: true },
+        { key: 'low', label: 'Low', sortable: true },
+      ]}
+      rows={benchmarkRows}
+    />
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">DORA vs System Data Cross-Reference</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'metric', label: 'Metric', sortable: true, minWidth: '140px' },
+        { key: 'selfReport', label: 'Self-Report', sortable: true },
+        { key: 'actual', label: 'Actual', sortable: true, minWidth: '200px' },
+        { key: 'gap', label: 'Gap', sortable: true, minWidth: '200px' },
+      ]}
+      rows={crossRefRows}
+    />
+  </div>
+
+  <p class="text-xs text-[var(--text-muted)] leading-relaxed">
+    Source: dora.dev/quickcheck — Accelerate State of DevOps Research
+  </p>
+</BaseLayout>

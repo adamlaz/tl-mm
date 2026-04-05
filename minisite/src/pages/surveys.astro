@@ -4,6 +4,8 @@ export const prerender = true;
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
+import FindingCard from '../components/FindingCard.astro';
+import MilestoneStep from '../components/MilestoneStep.astro';
 import TabulatorGrid from '../components/TabulatorGrid.astro';
 
 const surveys = [
@@ -73,20 +75,66 @@ const surveyDetails = [
     key: 'Q7 vs Q12 gap = strategy credibility problem. Segment CAKE vs Retail vs Neo vs Payments.',
   },
 ];
+
+const exploreCards = [
+  { href: '/surveys/dora', title: 'DORA Quick Check', desc: '9 questions, ~3 min. Deploy frequency, lead time, change failure rate, recovery time.', metric: '9', metricLabel: 'questions' },
+  { href: '/surveys/culture', title: 'Westrum Culture', desc: '7 questions, ~2 min. Organizational culture type: pathological, bureaucratic, or generative.', metric: '7', metricLabel: 'questions' },
+  { href: '/surveys/devex', title: 'Developer Experience', desc: '23 questions, ~7 min. Feedback loops, cognitive load, flow state, satisfaction (DX Core 4).', metric: '23', metricLabel: 'questions' },
+  { href: '/surveys/engineering', title: 'Pragmatic Engineer Test', desc: '15 questions, ~3 min. 12 yes/no engineering culture maturity checks + 3 context.', metric: '15', metricLabel: 'questions' },
+  { href: '/surveys/ai-tooling', title: 'AI Adoption & Tooling', desc: '16 questions, ~5 min. AI adoption, tooling landscape, strategy clarity.', metric: '16', metricLabel: 'questions' },
+];
+
+const milestones = [
+  { date: 'Apr 1-3', title: 'Survey instruments finalized', detail: 'All 5 instruments reviewed, question sets locked, scoring guides prepared.', status: 'complete' as const },
+  { date: 'Apr 4', title: 'DevEx draft live in Microsoft Forms', detail: 'First survey built. Link: forms.cloud.microsoft/r/021mP98Sf9', status: 'complete' as const },
+  { date: 'Apr 5', title: 'DORA, Westrum, Pragmatic Eng building', detail: 'Remaining core surveys being constructed in Microsoft Forms.', status: 'active' as const },
+  { date: 'Apr 5', title: 'AI Adoption & Tooling pending Chathura', detail: "Survey 5 inclusion follow-up sent. Chathura's email only references 4 surveys.", status: 'blocked' as const },
+  { date: 'Apr 7', title: 'Chathura sends intro as CDO', detail: 'Survey links distributed to all engineering, product, design, and QE via Chathura\'s intro email.', status: 'upcoming' as const },
+  { date: 'Apr 10', title: 'Response deadline', detail: '3 business days. Reminder sent to incomplete respondents.', status: 'upcoming' as const },
+  { date: 'Apr 10-11', title: 'Surveys close + pre-onsite analysis', detail: 'Score all instruments, segment by team/product area, identify top patterns, build interview questions.', status: 'upcoming' as const },
+];
 ---
 
 <BaseLayout title="Surveys">
   <SectionHeader
-    title="Surveys"
-    description="Five diagnostic surveys deployed to Mad Mobile engineering, product, and design teams."
+    eyebrow="SURVEYS"
+    title="Five Diagnostic Instruments"
+    description="Industry-standard assessments deployed to Mad Mobile engineering, product, and design teams. Designed for independent re-use at 30/60 days without TL involvement."
   />
 
+  <div class="grid sm:grid-cols-2 gap-4 mb-8">
+    <FindingCard
+      severity="amber"
+      title="Survey 5 Inclusion Pending"
+      detail="Chathura's intro email references 4 surveys. AI Adoption & Tooling (Survey 5, 16 questions) feeds the board deliverable and vendor rationalization. Follow-up sent April 5."
+      status="In Progress"
+    />
+    <FindingCard
+      severity="green"
+      title="Designed for Independent Re-Use"
+      detail="All 5 instruments designed so Mad Mobile can re-run at 30/60 days without TL involvement. Baseline scores established pre-onsite. Includes scoring templates and comparison guidance."
+    />
+  </div>
+
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Surveys" value="5" />
-    <MetricCard label="Total Questions" value={totalQuestions.toString()} subtitle="Across all surveys" />
-    <MetricCard label="Est. Total Time" value="~20 min" subtitle="Per respondent (max)" />
+    <MetricCard label="Surveys" value="5" subtitle={`${totalQuestions} total questions`} />
+    <MetricCard label="Est. Time" value="~20 min" subtitle="per respondent (max)" />
     <MetricCard label="Deadline" value="Apr 10" subtitle="3 business days" />
+    <MetricCard label="Platform" value="MS Forms" subtitle="On MM account" />
   </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Deployment Timeline</h2>
+    {milestones.map((m, i) => (
+      <MilestoneStep
+        date={m.date}
+        title={m.title}
+        detail={m.detail}
+        status={m.status}
+        last={i === milestones.length - 1}
+      />
+    ))}
+  </div>
 
   <div class="mb-10">
     <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Survey Summary</h2>
@@ -126,16 +174,6 @@ const surveyDetails = [
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
     <div>
-      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Deployment Timeline</h2>
-      <TabulatorGrid
-        columns={[
-          { key: 'date', label: 'Date', sortable: true },
-          { key: 'milestone', label: 'Milestone', sortable: true },
-        ]}
-        rows={timeline}
-      />
-    </div>
-    <div>
       <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">DORA Crosswalk</h2>
       <TabulatorGrid
         columns={[
@@ -146,6 +184,51 @@ const surveyDetails = [
         rows={doraCrosswalk}
       />
     </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Deployment Timeline</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'date', label: 'Date', sortable: true },
+          { key: 'milestone', label: 'Milestone', sortable: true },
+        ]}
+        rows={timeline}
+      />
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Instruments</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {exploreCards.map((card) => (
+        <a
+          href={card.href}
+          class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] transition-colors"
+        >
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <h3 class="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">{card.title}</h3>
+            <span class="shrink-0 text-2xl font-mono font-semibold text-[var(--accent)] tabular-nums leading-none">{card.metric}</span>
+          </div>
+          <p class="text-[13px] text-[var(--text-secondary)] leading-relaxed mb-3">{card.desc}</p>
+          <span class="text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">{card.metricLabel}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Deployment Message Template</h2>
+    <div class="bg-[var(--surface)] border-l-[3px] border-l-[var(--accent)] rounded-xl p-5">
+      <p class="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">Subject: Quick surveys ahead of our technology review</p>
+      <div class="text-[13px] text-[var(--text-secondary)] leading-relaxed space-y-3">
+        <p>Team,</p>
+        <p>As part of my onboarding as Co-CEO, I've asked Adam Lazarus to help me get a clear picture of how our technology and delivery systems work. Adam has deep experience translating between business and engineering, and he'll be onsite April 13–15.</p>
+        <p>Before he arrives, I'd like everyone in engineering and product to complete a short set of surveys. These take under 15 minutes total and are completely anonymous.</p>
+        <p>The surveys measure things like deployment speed, team culture, and developer experience using industry-standard benchmarks. The goal isn't to evaluate anyone — it's to understand where the system helps or hinders your ability to do great work.</p>
+        <p>Your honest answers matter. Please complete by April 10.</p>
+        <p>Thanks,<br />Don</p>
+      </div>
+    </div>
+    <p class="text-xs text-[var(--text-muted)] mt-3 leading-relaxed">Note: Chathura finalized his own version of this message. His version references 4 surveys (dropped AI Adoption & Tooling). Follow-up sent April 5 to add Survey 5.</p>
   </div>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Details</h2>

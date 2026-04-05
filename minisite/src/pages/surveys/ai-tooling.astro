@@ -1,0 +1,285 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+
+const likertLabels = [
+  '1 — Strongly Disagree',
+  '2 — Disagree',
+  '3 — Neutral',
+  '4 — Agree',
+  '5 — Strongly Agree',
+];
+
+const sectionAQuestions = [
+  {
+    num: 'Q1',
+    title: 'Which AI tools do you use at least weekly?',
+    description: 'Select all that apply.',
+    options: [
+      'Cursor',
+      'GitHub Copilot',
+      'ChatGPT / OpenAI',
+      'Claude (Anthropic)',
+      'Gemini (Google)',
+      'Guru',
+      'AI features in existing tools (e.g. Jira, Confluence, Slack)',
+      'Amazon CodeWhisperer / Q',
+      'Custom internal tools',
+      'None',
+      'Other',
+    ],
+  },
+  {
+    num: 'Q2',
+    title: 'What do you primarily use AI tools for?',
+    description: 'Select all that apply.',
+    options: [
+      'Writing / generating code',
+      'Code review / debugging',
+      'Writing tests',
+      'Documentation',
+      'User stories / requirements',
+      'Analyzing logs / RCA',
+      'Data analysis',
+      'Internal communication',
+      'Learning new technologies',
+      'None',
+      'Other',
+    ],
+  },
+];
+
+const sectionBQuestions = [
+  { num: 'Q3', title: 'AI tools meaningfully improve my daily productivity.' },
+  { num: 'Q4', title: 'I have the training and support I need to use AI tools effectively.' },
+  { num: 'Q5', title: 'My team has clear guidelines on when and how to use AI tools.' },
+  { num: 'Q6', title: 'I trust the output from AI tools enough to use it without heavy manual review.' },
+  { num: 'Q7', title: 'Mad Mobile\'s AI strategy for our products (CAKE, Concierge, Neo) is clear to me.' },
+];
+
+const sectionCFreeText = [
+  { num: 'Q8', title: 'What are the 3–5 tools most essential to your daily work?', type: 'Free text' },
+  { num: 'Q9', title: 'Are there tools your team pays for but rarely uses?', type: 'Free text' },
+  { num: 'Q10', title: 'Are there tools or capabilities you wish you had?', type: 'Free text' },
+];
+
+const sectionCLikert = [
+  { num: 'Q11a', title: 'There are too many tools with overlapping functionality.' },
+  { num: 'Q11b', title: 'My tools are well-integrated and data flows between them smoothly.' },
+  { num: 'Q11c', title: 'I get adequate onboarding when new tools are introduced.' },
+  { num: 'Q11d', title: 'I know who to ask when I have tool problems.' },
+];
+
+const sectionDQuestions = [
+  {
+    num: 'Q12',
+    title: 'How confident are you that Mad Mobile can deliver competitive AI-powered features in 12 months?',
+    options: [
+      '1 — Not at all confident',
+      '2',
+      '3',
+      '4',
+      '5 — Very confident',
+    ],
+  },
+  {
+    num: 'Q13',
+    title: 'What is the biggest barrier to Mad Mobile\'s AI product vision?',
+    options: [
+      'Infrastructure readiness',
+      'Skills / talent gaps',
+      'Tech debt',
+      'Strategy not clearly defined',
+      'Spread too thin across products',
+      'No significant barrier',
+      'Other',
+    ],
+  },
+];
+
+const contextQuestions = [
+  { num: 'Q14', title: 'Team / Product Area', type: 'Free text' },
+  { num: 'Q15', title: 'Role', type: 'Multi-choice: Software Engineer, QE, DevOps/SRE, Engineering Manager, Product Manager, Designer, Other' },
+  { num: 'Q16', title: 'Tenure', type: 'Multi-choice: < 6 months, 6–12 months, 1–2 years, 2–5 years, 5+ years' },
+];
+
+const scoringRows = [
+  { dimension: 'AI Adoption Maturity', questions: 'Q1, Q2, Q3, Q4, Q5, Q6', measures: 'Tool breadth, use-case depth, perceived productivity gain, training adequacy, policy clarity, trust' },
+  { dimension: 'AI Strategy Clarity', questions: 'Q7, Q12, Q13', measures: 'Product strategy visibility, delivery confidence, dominant constraint' },
+  { dimension: 'Tooling Health', questions: 'Q8, Q9, Q10, Q11a–d', measures: 'Essential tools, shelfware, unmet needs, sprawl, integration, onboarding, support' },
+];
+---
+
+<BaseLayout title="AI Adoption & Tooling">
+  <SectionHeader
+    eyebrow="AI ADOPTION & TOOLING"
+    title="AI Tool Usage, Effectiveness & Strategy"
+    description="16 questions, ~5 minutes. Maps actual AI adoption vs perception, identifies tooling sprawl and gaps, captures AI strategy clarity. Results feed the board deliverable and vendor rationalization."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <MetricCard label="Questions" value="16" />
+    <MetricCard label="Audience" value="All Eng + Product + Design + QE" subtitle="Managers and ICs" />
+    <MetricCard label="Dimensions" value="3" subtitle="Adoption, Strategy Clarity, Tooling Health" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section A — AI Tool Usage</h2>
+    <div class="grid gap-4">
+      {sectionAQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <p class="text-xs text-[var(--text-secondary)] mb-3">{q.description}</p>
+          <ul class="space-y-1">
+            {q.options.map((opt) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {opt}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section B — AI Effectiveness</h2>
+    <div class="grid gap-4">
+      {sectionBQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {likertLabels.map((label) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section C — Tooling Landscape</h2>
+    <div class="grid sm:grid-cols-2 gap-3 mb-4">
+      {sectionCFreeText.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-start gap-2">
+          <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded shrink-0">{q.num}</span>
+          <div>
+            <p class="text-sm font-semibold text-[var(--text)]">{q.title}</p>
+            <p class="text-xs text-[var(--text-muted)] mt-0.5">{q.type}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="grid gap-4">
+      {sectionCLikert.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {likertLabels.map((label) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Section D — AI in Products</h2>
+    <div class="grid gap-4">
+      {sectionDQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <ul class="space-y-1">
+            {q.options.map((opt) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {opt}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Context</h2>
+    <div class="grid sm:grid-cols-2 gap-3">
+      {contextQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-start gap-2">
+          <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded shrink-0">{q.num}</span>
+          <div>
+            <p class="text-sm font-semibold text-[var(--text)]">{q.title}</p>
+            <p class="text-xs text-[var(--text-muted)] mt-0.5">{q.type}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Scoring Guide</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'dimension', label: 'Dimension', sortable: true, type: 'badge' },
+        { key: 'questions', label: 'Questions', sortable: true },
+        { key: 'measures', label: 'Measures', sortable: true, minWidth: '300px' },
+      ]}
+      rows={scoringRows}
+    />
+  </div>
+
+  <div class="mb-10">
+    <div class="bg-[var(--surface)] border-l-[3px] border-l-[var(--accent)] rounded-xl p-5">
+      <h3 class="text-sm font-semibold text-[var(--text)] mb-3">Key Cross-References</h3>
+      <dl class="space-y-2 text-xs text-[var(--text-secondary)]">
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q7 vs Q12 — Strategy Credibility</dt>
+          <dd>If strategy clarity (Q7) is low but delivery confidence (Q12) is also low, the organization lacks both vision and belief. If Q7 is low but Q12 is high, practitioners think they can deliver but don't know what.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q1 vs Q3 — Adoption vs Value</dt>
+          <dd>Separates people who use AI tools from people who find them productive. High adoption + low productivity = wrong tools or inadequate training.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q9 + Q10 — Vendor Rationalization</dt>
+          <dd>Q9 identifies shelfware (paying for tools nobody uses). Q10 identifies unmet needs. Together they feed vendor consolidation recommendations.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[var(--text)]">Q13 — Dominant Constraint</dt>
+          <dd>Single-select forces practitioners to name the one biggest barrier. Distribution across options reveals whether the problem is strategic, technical, or resource-based.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <p class="text-xs text-[var(--text-muted)] leading-relaxed">
+    Source: Custom for this engagement. No academic benchmark. Baseline scores become the benchmark for 30/60-day re-runs.
+  </p>
+</BaseLayout>

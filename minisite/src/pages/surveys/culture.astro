@@ -1,0 +1,123 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+
+const likertLabels = [
+  '1 — Strongly Disagree',
+  '2 — Disagree',
+  '3 — Neutral',
+  '4 — Agree',
+  '5 — Strongly Agree',
+];
+
+const likertQuestions = [
+  {
+    num: 'Q1',
+    title: 'Information is actively sought out',
+    description: 'People proactively look for information to do their jobs well, rather than waiting for it to come to them.',
+  },
+  {
+    num: 'Q2',
+    title: 'Messengers are not punished',
+    description: 'When someone delivers bad news or reports a problem, they are thanked and supported — not blamed, sidelined, or ignored.',
+  },
+  {
+    num: 'Q3',
+    title: 'Responsibilities are shared',
+    description: 'When problems arise, teams collaborate across boundaries rather than pointing fingers.',
+  },
+  {
+    num: 'Q4',
+    title: 'Cross-functional collaboration is encouraged',
+    description: 'Working with people outside your immediate team is easy, supported, and normal.',
+  },
+  {
+    num: 'Q5',
+    title: 'Failure leads to inquiry, not punishment',
+    description: 'When something goes wrong, the response focuses on understanding and preventing recurrence — not finding someone to blame.',
+  },
+  {
+    num: 'Q6',
+    title: 'New ideas are welcomed',
+    description: 'People feel comfortable proposing new approaches without fear of being shot down.',
+  },
+];
+---
+
+<BaseLayout title="Westrum Culture Survey">
+  <SectionHeader
+    eyebrow="WESTRUM CULTURE SURVEY"
+    title="Organizational Culture Type"
+    description="7 questions, ~2 minutes. Measures whether information flows through pathological, bureaucratic, or generative patterns. DORA research shows generative cultures predict significantly better delivery performance."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <MetricCard label="Questions" value="7" subtitle="6 Likert + 1 open" />
+    <MetricCard label="Audience" value="All Eng + PM" subtitle="Leads, managers, senior ICs" />
+    <MetricCard label="Scale" value="1–5 Likert" subtitle="Strongly Disagree to Strongly Agree" />
+  </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Likert Questions</h2>
+    <div class="grid gap-4">
+      {likertQuestions.map((q) => (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{q.num}</span>
+            <h3 class="text-sm font-semibold text-[var(--text)]">{q.title}</h3>
+          </div>
+          <p class="text-xs text-[var(--text-secondary)] mb-3">{q.description}</p>
+          <ul class="space-y-1">
+            {likertLabels.map((label) => (
+              <li class="text-xs text-[var(--text-muted)] flex items-start gap-2">
+                <span class="shrink-0 mt-1 w-1 h-1 rounded-full bg-[var(--border)]" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Open Response</h2>
+    <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">Q7</span>
+        <h3 class="text-sm font-semibold text-[var(--text)]">What is one thing about how information flows at Mad Mobile that you would change?</h3>
+      </div>
+      <p class="text-xs text-[var(--text-muted)]">Free text</p>
+    </div>
+  </div>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Scoring Guide</h2>
+    <div class="grid gap-4">
+      <FindingCard
+        severity="red"
+        title="Pathological (1.0–2.4)"
+        detail="Power-oriented. Information is hoarded, messengers are shot, failure is punished, new ideas are crushed."
+      />
+      <FindingCard
+        severity="amber"
+        title="Bureaucratic (2.5–3.4)"
+        detail="Rule-oriented. Information moves through channels, failure leads to CYA, new ideas create problems."
+      />
+      <FindingCard
+        severity="green"
+        title="Generative (3.5–5.0)"
+        detail="Performance-oriented. Information is actively sought, failure leads to inquiry, new ideas are welcomed."
+      />
+    </div>
+  </div>
+
+  <p class="text-xs text-[var(--text-muted)] leading-relaxed">
+    Source: Westrum, 'A typology of organisational cultures,' BMJ Quality & Safety, 2004; dora.dev
+  </p>
+</BaseLayout>

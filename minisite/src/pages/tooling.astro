@@ -6,6 +6,8 @@ import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 import StatusBadge from '../components/StatusBadge.astro';
 import TabulatorGrid from '../components/TabulatorGrid.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
+import FindingCard from '../components/FindingCard.astro';
 import { getCollection } from 'astro:content';
 import { readFileSync } from 'node:fs';
 
@@ -81,9 +83,20 @@ if (toolingExpenseDocs) {
 
 <BaseLayout title="Tooling">
   <SectionHeader
+    eyebrow="TOOLING"
     title="Vendor & Tool Catalog"
-    description="All identified tools and vendors in the Mad Mobile technology stack."
+    description="All identified tools and vendors in the Mad Mobile technology stack. Data extracted April 3, 2026 (V5)."
   />
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <FindingCard severity="amber" title="28 Tools, Utilization Unknown" detail="Tools cataloged across build pipelines, monitoring, security, and documentation. Whether they're used effectively is a key onsite question." evidence="28 tools, 5 categories" />
+    <FindingCard severity="green" title="Self-Hosted Grafana Stack" detail="Mimir + Loki + Tempo in Shared Services. Not Datadog or New Relic. Payments has its own Grafana instance." evidence="Grafana/Mimir/Loki/Tempo, viewer access Apr 7" />
+    <FindingCard severity="amber" title="Dual CI/CD System" detail="Jenkins for CAKE (found in CAKE Dev account). Bitbucket Pipelines for Retail and Payments. Two systems, two workflows." evidence="Jenkins (CAKE), Bitbucket Pipelines (Retail, Payments)" />
+  </div>
+
+  <div class="mb-10">
+    <ChartEmbed slug="workspace_health_radar" title="Workspace Engineering Health" description="Normalized 0–100 scores across 4 Bitbucket workspaces. Quality variance is a tooling and process story." interactive />
+  </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Total Tools" value={tools.length.toString()} />
@@ -91,6 +104,24 @@ if (toolingExpenseDocs) {
     <MetricCard label="Inferred" value={inferredCount.toString()} />
     <MetricCard label="Categories" value={categoryCount.toString()} />
   </dl>
+
+  <div class="mb-10">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">DORA Cross-Reference: Self-Report vs System Data</h2>
+    <TabulatorGrid
+      columns={[
+        { key: 'metric', label: 'DORA Metric', sortable: false },
+        { key: 'source', label: 'System Data Source', sortable: false },
+        { key: 'actual', label: 'Pre-Work Finding', sortable: false },
+      ]}
+      rows={[
+        { metric: 'Deploy Frequency', source: 'Bitbucket deploy tags, release branches', actual: 'Varies by workspace — madpayments highest cadence' },
+        { metric: 'Lead Time', source: 'PR cycle time', actual: '0.6h (cloud-shared-dev) to 235h (concierge-associate)' },
+        { metric: 'Change Failure Rate', source: 'Jira bug creation rate', actual: '11,985 total bugs, ~916 issues created/month' },
+        { metric: 'Recovery Time', source: 'Grafana MTTR dashboards', actual: 'Pending — Grafana access confirmed Apr 7' },
+        { metric: 'Reliability', source: 'CloudWatch alarms', actual: 'Pending — cloudwatch:DescribeAlarms not in audit role' },
+      ]}
+    />
+  </div>
 
   <div class="space-y-8">
     {categories.map(([category, categoryTools]) => (
@@ -155,4 +186,12 @@ if (toolingExpenseDocs) {
       />
     </div>
   )}
+
+  <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard severity="red" title="60.7% Pipeline Success Rate" detail="Tooling fragmentation is a root cause — dual CI/CD contributes to build reliability issues." href="/engineering" hrefLabel="Engineering" />
+      <FindingCard severity="amber" title="Survey 5: AI Adoption & Tooling" detail="Survey results will map actual tool usage vs what's paid for. Feeds vendor rationalization." href="/surveys/ai-tooling" hrefLabel="AI & Tooling Survey" />
+    </div>
+  </div>
 </BaseLayout>

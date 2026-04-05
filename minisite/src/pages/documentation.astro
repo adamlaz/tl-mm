@@ -6,6 +6,7 @@ import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 import TabulatorGrid from '../components/TabulatorGrid.astro';
 import ChartEmbed from '../components/ChartEmbed.astro';
+import FindingCard from '../components/FindingCard.astro';
 import { getCollection } from 'astro:content';
 import { num, fmt } from '../lib/parse';
 import { confluenceSpaceUrl, confluencePageUrl } from '../lib/links';
@@ -112,7 +113,18 @@ const charts = [
 ---
 
 <BaseLayout title="Documentation">
-  <SectionHeader title="Documentation" description="Confluence documentation activity and content volume. Click any space key or page title to open in Confluence." />
+  <SectionHeader eyebrow="DOCUMENTATION" title="Documentation" description="Confluence documentation activity and content volume. Click any space key or page title to open in Confluence. Data extracted April 3, 2026 (V5–V7)." />
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <FindingCard severity="amber" title="RCA Process Gap: 2024–Present" detail="Structured post-mortem docs stop after 2023. 26 in 2022, 5 in 2024, 2 in 2025. Either the process migrated or stopped." evidence="50 total RCAs, peak 2022 (26)" href="/engagement/hypotheses" hrefLabel="Hypothesis G" />
+    <FindingCard severity="amber" title="Architecture Docs Fragmented" detail="No centralized architecture space. Docs spread across MMA, ES, LP, CCE, PT Confluence spaces." evidence="165 spaces total, arch docs in 5+ spaces" />
+    <FindingCard severity="green" title="Active Documentation Culture" detail="Multiple spaces updated daily. Consistent release docs. Leapset Platform alone has 6,445 pages. The gap is organization, not volume." evidence="14,111 pages indexed, 94 key pages extracted" />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-10">
+    <ChartEmbed slug="confluence_rca_timeline" title="RCA Timeline" />
+    <ChartEmbed slug="confluence_postmortem_funnel" title="Post-Mortem Funnel" />
+  </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Total Pages" value={fmt(totalPages)} />
@@ -373,5 +385,13 @@ const charts = [
     {charts.map((c) => (
       <ChartEmbed slug={c.slug} title={c.title} />
     ))}
+  </div>
+
+  <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard severity="amber" title="0% Root Cause Category" detail="Documentation gaps mirror delivery process gaps — the field exists but is never populated." href="/delivery" hrefLabel="Delivery" />
+      <FindingCard severity="red" title="90% ECS No Health Checks" detail="Infrastructure monitoring absent — documentation can't capture what isn't detected." href="/infrastructure" hrefLabel="Infrastructure" />
+    </div>
   </div>
 </BaseLayout>

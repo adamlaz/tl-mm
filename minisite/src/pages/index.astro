@@ -4,6 +4,7 @@ export const prerender = true;
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MetricCard from '../components/MetricCard.astro';
 import { getCollection } from 'astro:content';
+import FindingCard from '../components/FindingCard.astro';
 import { num, fmt } from '../lib/parse';
 import { readFileSync } from 'node:fs';
 
@@ -53,49 +54,49 @@ const sections = [
   {
     href: '/infrastructure',
     title: 'Infrastructure',
-    desc: 'Cost breakdown, resource counts, and runtime analysis across 18 AWS accounts.',
+    desc: '18 AWS accounts, $383K/month. 83% pre-Graviton EC2, 90% ECS containers without health checks.',
     metric: costDisplay,
     metricLabel: 'monthly',
   },
   {
     href: '/engineering',
     title: 'Engineering',
-    desc: 'Source control health: repository activity, pull request speed, and build automation coverage.',
+    desc: '3,191 repos across 4 workspaces. 0 branch protection, 60.7% pipeline success, 201 stale PRs.',
     metric: fmt(repos.length),
     metricLabel: 'repos',
   },
   {
     href: '/delivery',
     title: 'Delivery',
-    desc: 'Sprint performance, time from start to done, scope changes, and work-type balance.',
+    desc: '141 Jira projects. 27.7% epic completion, 89.4% priority inflation, 59-day cycle time P50.',
     metric: projects.length.toString(),
     metricLabel: 'projects',
   },
   {
     href: '/documentation',
     title: 'Documentation',
-    desc: 'Documentation volume, space activity, and content creation patterns.',
+    desc: '14,111 Confluence pages indexed. RCA process gap since 2023, architecture docs fragmented across 5+ spaces.',
     metric: fmt(pages.length),
     metricLabel: 'pages',
   },
   {
     href: '/people',
     title: 'People & Org',
-    desc: 'Organization structure, team intelligence, interaction networks, and key-person risk across 5 systems.',
+    desc: '499 individuals mapped across 5 systems. Key person risk, communication gaps, 39% inactive users with access.',
     metric: users.filter((u: any) => u.data.status !== 'bot').length.toString(),
     metricLabel: 'people',
   },
   {
     href: '/surveys',
     title: 'Surveys',
-    desc: 'Five team health surveys covering deployment maturity, culture, developer experience, engineering practices, and AI adoption.',
+    desc: 'Five diagnostic instruments: DORA, Westrum Culture, DevEx, Pragmatic Engineer, AI Adoption & Tooling.',
     metric: '5',
     metricLabel: 'surveys',
   },
   {
     href: '/tooling',
     title: 'Tooling',
-    desc: 'Vendor and tool catalog across build pipelines, monitoring, security, and more.',
+    desc: '28 tools cataloged. Dual CI/CD (Jenkins + Pipelines), self-hosted Grafana stack, utilization unknown.',
     metric: tools.length.toString(),
     metricLabel: 'tools',
   },
@@ -123,13 +124,11 @@ const sections = [
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Key Findings</h2>
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-10">
     {findings.map((f) => (
-      <div class:list={[
-        'border-l-4 bg-[var(--surface)] rounded-r-lg p-4',
-        f.severity === 'critical' ? 'border-[var(--status-red)]' : 'border-[var(--status-amber)]',
-      ]}>
-        <p class="text-sm font-medium text-[var(--text)]">{f.title}</p>
-        <p class="text-xs text-[var(--text-secondary)] mt-1">{f.detail}</p>
-      </div>
+      <FindingCard
+        severity={f.severity === 'critical' ? 'red' : 'amber'}
+        title={f.title}
+        detail={f.detail}
+      />
     ))}
   </div>
 

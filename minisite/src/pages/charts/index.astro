@@ -15,6 +15,9 @@ const chartGroups = [
       { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes' },
       { slug: 'aws_cost_waterfall', title: 'AWS Cost Composition (Waterfall)' },
       { slug: 'aws_cost_pareto', title: 'AWS Cost Concentration (Pareto)' },
+      { slug: 'aws_instance_audit', title: 'EC2 Instance Generation Audit' },
+      { slug: 'aws_security_posture', title: 'Security Posture' },
+      { slug: 'aws_tagging_compliance', title: 'Tagging & Naming Compliance' },
     ],
   },
   {
@@ -33,6 +36,8 @@ const chartGroups = [
       { slug: 'repo_health_bubble', title: 'Repository Health Matrix (Bubble)' },
       { slug: 'commit_calendar', title: 'Commit Activity Calendar' },
       { slug: 'build_duration_range', title: 'Build Duration Bands (Range)' },
+      { slug: 'pipeline_health_gauge', title: 'Pipeline Health (Gauge)' },
+      { slug: 'dora_lead_time_gauge', title: 'DORA Lead Time (Gauge)' },
     ],
   },
   {
@@ -55,6 +60,12 @@ const chartGroups = [
       { slug: 'jira_issue_pareto', title: 'Issue Concentration (Pareto)' },
       { slug: 'jira_workflow_funnel', title: 'Workflow Stage Dwell Time (Funnel)' },
       { slug: 'sprint_rankflow', title: 'Sprint Velocity Rankings (Rankflow)' },
+      { slug: 'jira_epic_completion', title: 'Epic Completion by Project' },
+      { slug: 'jira_priority_inflation', title: 'Priority Distribution' },
+      { slug: 'jira_blocking_chains', title: 'Blocking Chains' },
+      { slug: 'jira_workflow_states', title: 'Workflow State Distribution' },
+      { slug: 'jira_root_cause', title: 'Root Cause Distribution' },
+      { slug: 'kpi_gauges', title: 'DORA-Aligned KPI Dashboard (Gauge)' },
     ],
   },
   {
@@ -63,6 +74,9 @@ const chartGroups = [
       { slug: 'confluence_creation_trend', title: 'Page Creation Trend' },
       { slug: 'confluence_page_density', title: 'Page Density by Space' },
       { slug: 'confluence_wordcloud', title: 'Documentation Topics (Wordcloud)' },
+      { slug: 'confluence_rca_timeline', title: 'RCA Incident Frequency' },
+      { slug: 'confluence_retro_themes', title: 'Retrospective Themes' },
+      { slug: 'confluence_postmortem_funnel', title: 'Post-Mortem Funnel' },
     ],
   },
   {
@@ -85,6 +99,19 @@ const chartGroups = [
       { slug: 'communication_gaps', title: 'Org Chart vs System Activity' },
       { slug: 'geography_activity', title: 'Geography & Activity' },
       { slug: 'user_system_venn', title: 'Cross-System User Coverage (Venn)' },
+      { slug: 'centrality_beeswarm', title: 'Network Centrality (Beeswarm)' },
+      { slug: 'network_communities', title: 'Community Detection' },
+      { slug: 'identity_match_quality', title: 'Identity Match Quality' },
+    ],
+  },
+  {
+    domain: 'Engagement',
+    charts: [
+      { slug: 'hypothesis_evidence_radar', title: 'Hypothesis Evidence Strength (Radar)' },
+      { slug: 'org_size_treemap', title: 'Organization Size by Executive (Treemap)' },
+      { slug: 'reorg_sankey', title: 'Reorg Responsibility Flow (Sankey)' },
+      { slug: 'engagement_effort_waterfall', title: 'Engagement Effort Allocation (Waterfall)' },
+      { slug: 'methodology_heatmap', title: 'Framework × System Coverage (Heatmap)' },
     ],
   },
 ];
@@ -94,6 +121,7 @@ const totalCharts = chartGroups.reduce((s, g) => s + g.charts.length, 0);
 
 <BaseLayout title="Charts">
   <SectionHeader
+    eyebrow="CHART GALLERY"
     title="Chart Gallery"
     description={`${totalCharts} interactive visualizations across infrastructure, engineering, delivery, and documentation.`}
   />
