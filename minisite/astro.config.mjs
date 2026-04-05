@@ -13,7 +13,7 @@ export default defineConfig({
   },
   integrations: [
     d2({
-      skipGeneration: false,
+      skipGeneration: true,
       theme: {
         default: '0',
         dark: '200',
