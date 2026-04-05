@@ -6,6 +6,7 @@ const SECURITY_HEADERS: Record<string, string> = {
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
   'X-Robots-Tag': 'noindex, nofollow',
+  'X-Middleware': 'active',
 };
 
 function addSecurityHeaders(response: Response): Response {

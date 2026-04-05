@@ -2,3 +2,4 @@
 minisite/.vercel/
 minisite/node_modules/
 .env.local
+.vercel
