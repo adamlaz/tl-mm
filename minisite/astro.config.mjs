@@ -7,7 +7,7 @@ import d2 from 'astro-d2';
 
 export default defineConfig({
   output: 'server',
-  adapter: vercel({ middlewareMode: 'edge' }),
+  adapter: vercel(),
   vite: {
     plugins: [tailwindcss()],
   },
