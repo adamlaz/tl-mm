@@ -27,7 +27,15 @@ from pathlib import Path
 TENANT_ID = "0edabf89-5e13-42c3-abd6-f687e9fe0f3a"
 USER_ID = "39c1e1ec-60e1-43ac-a793-fb4d0b470e14"
 BASE_URL = "https://forms.cloud.microsoft/formapi/api"
-DEVEX_FORM_ID = "ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUNVdXNk1IQUxTUTlKRkNIQjVSUDQzS1VCTi4u"
+
+FORM_IDS = {
+    "devex": "ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUNVdXNk1IQUxTUTlKRkNIQjVSUDQzS1VCTi4u",
+    "dora": "ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUQU9JNFJJMzg2R1dGUlhWRTYwODc1UURaVi4u",
+    "westrum": "ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRURjJXR01JU0Q5Tk8xSFNKUVFWMEIxQ1FSMC4u",
+    "pragmatic": "ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUNUtQWVRMWlZQRExUME1LMjNJM1lER0xaTC4u",
+    "ai_tooling": "ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUMDNHRTNRU05KRTdRWDJWTE41UFZEMkUxNi4u",
+}
+DEVEX_FORM_ID = FORM_IDS["devex"]
 
 ROOT = Path(__file__).parent.parent
 
@@ -115,6 +123,14 @@ class FormsAPI:
         time.sleep(0.4)
         return r
 
+    def patch_question(self, form_id, question_id, body):
+        r = self._req("PATCH", f"forms('{form_id}')/questions('{question_id}')", body)
+        time.sleep(0.3)
+        return r
+
+    def update_form(self, form_id, body):
+        return self._req("PATCH", f"forms('{form_id}')", body)
+
 
 # --- Question info builders ---
 
@@ -123,7 +139,7 @@ def rating_5(left="Strongly Disagree", right="Strongly Agree"):
         "Length": 5, "RatingShape": "Number",
         "LeftDescription": left, "RightDescription": right,
         "MinRating": 1, "ShuffleOptions": False,
-        "ShowRatingLabel": False, "IsMathQuiz": False,
+        "ShowRatingLabel": True, "IsMathQuiz": False,
     }
 
 
@@ -132,12 +148,12 @@ def choice_info(options, allow_other=False):
         "Choices": [{"Description": o, "IsGenerated": False} for o in options],
         "ChoiceType": 0, "AllowOtherAnswer": allow_other,
         "OptionDisplayStyle": "ListAll",
-        "ChoiceRestrictionType": "None", "ShowRatingLabel": False,
+        "ChoiceRestrictionType": "None", "ShowRatingLabel": True,
     }
 
 
 def text_info(multiline=False):
-    return {"Multiline": multiline, "ShowRatingLabel": False}
+    return {"Multiline": multiline, "ShowRatingLabel": True}
 
 
 # --- Survey definitions ---
@@ -147,8 +163,10 @@ def get_surveys():
         "dora": {
             "title": "DORA Quick Check \u2014 Mad Mobile Engineering Assessment",
             "description": (
-                "Software delivery performance against Google\u2019s DORA research benchmarks. "
-                "~3 minutes. One per team/squad. Responses are anonymous."
+                "Takes approximately 3 minutes. One response per team or squad. "
+                "Your responses are anonymous \u2014 only aggregate patterns are reported, never individual answers. "
+                "This is not a performance review. The goal is a delivery performance baseline we can re-measure at 30 and 60 days. "
+                "Pick the answer that best describes your team\u2019s actual performance over the last 3 months."
             ),
             "questions": [
                 {"title": "How often does your team deploy code to production?",
@@ -201,8 +219,10 @@ def get_surveys():
         "westrum": {
             "title": "Westrum Organizational Culture Survey \u2014 Mad Mobile",
             "description": (
-                "Measures organizational culture type \u2014 Pathological, Bureaucratic, or Generative. "
-                "~2 minutes. Scale: 1=Strongly Disagree to 5=Strongly Agree. Responses are anonymous."
+                "Takes approximately 2 minutes. Measures how information flows across the organization. "
+                "Your responses are anonymous \u2014 only aggregate patterns are reported, never individual answers. "
+                "Rate each statement based on your experience at Mad Mobile over the last 6 months. "
+                "Answer based on reality, not aspiration. Scale: 1 = Strongly Disagree to 5 = Strongly Agree."
             ),
             "questions": [
                 {"title": "Information is actively sought out.",
@@ -237,8 +257,9 @@ def get_surveys():
         "pragmatic": {
             "title": "Pragmatic Engineer Test \u2014 Mad Mobile",
             "description": (
-                "Engineering culture maturity \u2014 12 yes/no questions by Gergely Orosz. "
-                "~2 minutes. Answer based on how your team actually operates today. Responses are anonymous."
+                "Takes approximately 2 minutes. 12 yes/no questions on engineering culture maturity. "
+                "Your responses are anonymous \u2014 only aggregate patterns are reported, never individual answers. "
+                "Answer based on how your team actually operates today \u2014 not how things are supposed to work or what\u2019s written in a wiki."
             ),
             "questions": [
                 {"title": "Can you do a build and deployment in one step?",
@@ -295,8 +316,10 @@ def get_surveys():
         "ai_tooling": {
             "title": "AI Adoption & Tooling Survey \u2014 Mad Mobile",
             "description": (
-                "AI tool adoption, effectiveness, tooling landscape, and AI readiness. "
-                "~5 minutes. All engineering, product, design, QE. Responses are anonymous."
+                "Takes approximately 5 minutes. Covers AI tool adoption, effectiveness, the broader tooling landscape, "
+                "and AI product readiness. Results feed into the AI strategy assessment and vendor/tool rationalization. "
+                "Your responses are anonymous \u2014 only aggregate patterns are reported, never individual answers. "
+                "All engineering, product, design, and QE \u2014 managers and ICs both."
             ),
             "questions": [
                 {"title": "Which AI tools do you use at least weekly?",
@@ -453,20 +476,141 @@ def cmd_test(api):
         return False
 
 
-def cmd_inspect(api):
-    print(f"Inspecting DevEx form questions...")
-    r = api.get_questions(DEVEX_FORM_ID)
+def cmd_inspect(api, form_name="devex", limit=None):
+    form_id = FORM_IDS.get(form_name, form_name)
+    print(f"Inspecting form: {form_name} ({form_id[:30]}...)")
+    r = api.get_questions(form_id)
     if r.ok:
         data = r.json()
         questions = data.get("value", data) if isinstance(data, dict) else data
         if isinstance(questions, list):
             for i, q in enumerate(questions):
+                if limit and i >= limit:
+                    break
                 print(f"\n--- Question {i+1} ---")
                 print(json.dumps(q, indent=2))
+            print(f"\nTotal questions: {len(questions)}")
         else:
             print(json.dumps(data, indent=2))
     else:
         print(f"FAILED: {r.status_code} - {r.text[:500]}")
+
+
+def _get_questions(api, form_id):
+    r = api.get_questions(form_id)
+    if not r.ok:
+        print(f"FAILED to get questions: {r.status_code} - {r.text[:300]}")
+        return []
+    data = r.json()
+    return data.get("value", data) if isinstance(data, dict) else data
+
+
+def cmd_patch_toggles(api, form_names=None):
+    """Enable subtitle and label visibility on all questions via questionInfo fields."""
+    if form_names is None:
+        form_names = ["dora", "westrum", "pragmatic", "ai_tooling"]
+
+    for name in form_names:
+        form_id = FORM_IDS[name]
+        print(f"\n{'='*60}")
+        print(f"Patching toggles: {name}")
+        print(f"{'='*60}")
+        questions = _get_questions(api, form_id)
+        if not questions:
+            continue
+
+        for i, q in enumerate(questions):
+            qid = q.get("id", "")
+            title_short = q.get("title", "?")[:55]
+
+            qi_str = q.get("questionInfo", "")
+            if not qi_str:
+                print(f"  [{i+1}/{len(questions)}] SKIP (no questionInfo) - {title_short}")
+                continue
+
+            try:
+                qi = json.loads(qi_str)
+            except (json.JSONDecodeError, TypeError):
+                print(f"  [{i+1}/{len(questions)}] SKIP (bad JSON) - {title_short}")
+                continue
+
+            changed = False
+            if "ShowRatingLabel" in qi and not qi["ShowRatingLabel"]:
+                qi["ShowRatingLabel"] = True
+                changed = True
+            if q.get("subtitle") and not qi.get("ShowSubtitle"):
+                qi["ShowSubtitle"] = True
+                changed = True
+
+            if not changed:
+                print(f"  [{i+1}/{len(questions)}] OK (already set) - {title_short}")
+                continue
+
+            r = api.patch_question(form_id, qid, {"questionInfo": json.dumps(qi)})
+            status = "OK" if r.status_code in (200, 204) else f"FAIL({r.status_code})"
+            print(f"  [{i+1}/{len(questions)}] {status} - {title_short}")
+            if r.status_code not in (200, 204):
+                print(f"    {r.text[:200]}")
+
+
+def cmd_update_forms(api, form_names=None):
+    """PATCH form descriptions and question content from updated survey definitions."""
+    surveys = get_surveys()
+    if form_names is None:
+        form_names = ["dora", "westrum", "pragmatic", "ai_tooling"]
+
+    for name in form_names:
+        if name not in surveys:
+            print(f"No survey definition for: {name}")
+            continue
+        form_id = FORM_IDS[name]
+        survey = surveys[name]
+
+        print(f"\n{'='*60}")
+        print(f"Updating: {name}")
+        print(f"{'='*60}")
+
+        r = api.update_form(form_id, {
+            "title": survey["title"],
+            "description": survey.get("description", ""),
+        })
+        print(f"  Form metadata: {'OK' if r.status_code in (200, 204) else f'FAIL({r.status_code})'}")
+
+        questions = _get_questions(api, form_id)
+        if not questions:
+            continue
+
+        sorted_live = sorted(questions, key=lambda q: q.get("order", 0))
+
+        for i, q_live in enumerate(sorted_live):
+            if i >= len(survey["questions"]):
+                break
+            q_def = survey["questions"][i]
+            qid = q_live.get("id", "")
+            title_short = q_def["title"][:55]
+
+            qi = q_def.get("question_info")
+            if qi and isinstance(qi, dict):
+                qi = dict(qi)
+                qi["ShowRatingLabel"] = True
+                if q_def.get("subtitle"):
+                    qi["ShowSubtitle"] = True
+
+            patch = {
+                "title": q_def["title"],
+                "required": q_def.get("required", True),
+                "questionInfo": json.dumps(qi) if qi else "",
+            }
+            if q_def.get("subtitle"):
+                patch["subtitle"] = q_def["subtitle"]
+            if q_def.get("allow_multiple"):
+                patch["allowMultipleValues"] = True
+
+            r = api.patch_question(form_id, qid, patch)
+            status = "OK" if r.status_code in (200, 204) else f"FAIL({r.status_code})"
+            print(f"  [{i+1}/{len(questions)}] {status} - {title_short}")
+            if r.status_code not in (200, 204):
+                print(f"    {r.text[:200]}")
 
 
 def cmd_create(api, survey_name="all"):
@@ -535,11 +679,15 @@ def cmd_create(api, survey_name="all"):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2 or sys.argv[1] not in ("test", "inspect", "create"):
-        print("Usage: python scripts/create_ms_forms.py {test|inspect|create} [survey_name]")
-        print("  test     - verify auth works")
-        print("  inspect  - dump existing DevEx form questions")
-        print("  create   - create surveys (all, or: dora, westrum, pragmatic, ai_tooling)")
+    COMMANDS = ("test", "inspect", "create", "patch-toggles", "update-forms")
+    if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:
+        print(f"Usage: python scripts/create_ms_forms.py {{{','.join(COMMANDS)}}} [args]")
+        print("  test                   - verify auth works")
+        print("  inspect [form_name] [N]- dump form questions (default: devex, N=limit)")
+        print("  create [survey_name]   - create surveys (all, or: dora, westrum, pragmatic, ai_tooling)")
+        print("  patch-toggles [names]  - enable subtitle/label visibility on all questions")
+        print("  update-forms [names]   - PATCH content from updated survey definitions")
+        print(f"\nForm names: {', '.join(FORM_IDS.keys())}")
         sys.exit(1)
 
     auth = load_auth()
@@ -549,9 +697,17 @@ if __name__ == "__main__":
     if action == "test":
         ok = cmd_test(api)
         if ok:
-            print("\nAuth works! Run 'inspect' to see question format, or 'create' to build surveys.")
+            print("\nAuth works!")
     elif action == "inspect":
-        cmd_inspect(api)
+        form = sys.argv[2] if len(sys.argv) > 2 else "devex"
+        limit = int(sys.argv[3]) if len(sys.argv) > 3 else None
+        cmd_inspect(api, form, limit)
     elif action == "create":
         survey = sys.argv[2] if len(sys.argv) > 2 else "all"
         cmd_create(api, survey)
+    elif action == "patch-toggles":
+        names = sys.argv[2:] if len(sys.argv) > 2 else None
+        cmd_patch_toggles(api, names)
+    elif action == "update-forms":
+        names = sys.argv[2:] if len(sys.argv) > 2 else None
+        cmd_update_forms(api, names)

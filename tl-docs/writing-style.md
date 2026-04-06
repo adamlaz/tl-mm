@@ -110,6 +110,55 @@ Across all media: do NOT speculate about findings before the work is done. Do NO
 
 ---
 
+## Email and Message Discipline
+
+Emails and messages are the highest-volume writing Translation Layer produces. They are also the most likely to drift into AI-generated slop. These rules prevent that.
+
+### Structure
+
+- **Preamble is 1–2 lines.** Not a paragraph. Not a thesis statement. "Thanks for X. Updates below." is enough.
+- **One flat numbered list for asks.** Don't nest asks inside bolded subsections inside sections. The recipient scans top-to-bottom. A single numbered list respects that.
+- **Priority order, not category order.** Sort asks by importance, not by organizational grouping. The most useful thing you need this week goes first.
+- **No closing recap paragraph.** Don't re-summarize what you just said. End with a short status line and your name.
+- **Prioritize at the bottom.** If you want to call out which items matter most, one sentence after the list: "Items 1, 3, and 5 would be most useful this week."
+
+### Brevity
+
+- **Context only when it earns its place.** "SaaS vendor spend — the 90-day plan commits to cost reductions and I need actuals to back the numbers" earns its context. "GitHub — still active alongside Bitbucket?" doesn't need any.
+- **Don't explain how you'll use the thing you're asking for.** "Can IT grant read-only Graph API permissions on my account?" — not "This lets me pull the org directory and check calendar availability for interview scheduling, which feeds into the organizational analysis for the board deliverable."
+- **One sentence per ask when possible.** If you need two, fine. Three means you're over-explaining.
+- **Strip rationale from routine confirms.** "Grafana access Monday — perfect." Not "Grafana access Monday via Matias — this will allow me to complete the observability gap analysis."
+
+### Tone Calibration
+
+- **Close relationships (sponsor, long-time colleagues):** Dashes instead of bullets for reactions. Skip formal headers. Fragments are fine. "Solid work for 3 weeks" not "This represents an impressive accomplishment given the compressed timeline." Sign off naturally — "Happy Easter" not "Best regards."
+- **Working relationships (client ops, technical leads):** Professional but not stiff. First-name address. Direct asks without softening preamble. "Can you or Zubair send a rough list?" not "Would it be possible at your convenience to share..."
+- **Formal relationships (board, investors, lenders):** Full sentences. Framework references. No fragments. But still direct — see Executive Deliverables register.
+
+### AI-Tell Phrases to Avoid in Messages
+
+These phrases signal AI-generated writing and erode credibility. They are the email equivalent of the Tier 1 banned words.
+
+| AI-Tell Phrase | What to Write Instead |
+|---|---|
+| "plugs directly into" | "fits" or "feeds" or just state the connection |
+| "the single most impactful thing" | "most useful thing" or just say it's high priority |
+| "this gives me the framing I need" | cut it — just say what you'll do |
+| "I'll make sure the X and Y plug directly into the Z" | "I'll align X with Z" or cut entirely |
+| "meaningfully improve the depth of the analysis" | "would help" |
+| "transformative for the deliverable" | "would make a difference" |
+| "I want to ensure alignment between" | state the specific alignment |
+| "this is especially important given" | state the fact, drop the meta-narration |
+| "would be the single most X" | overstatement — just prioritize it |
+| "none of this is blocking the onsite" | "nothing above blocks the onsite" (shorter, same meaning) |
+| any sentence starting with "This gives me..." | rewrite from the recipient's perspective or cut |
+
+### The Email Test
+
+Read the email out loud. If it sounds like a consultant wrote it, rewrite. If you can hear yourself actually saying it to the person across a table, send it.
+
+---
+
 ## Emoji, Icon, and Symbol Conventions
 
 Emojis, icons, and symbols are precision communication tools — not decoration. Use them when they are the clearest, fastest way to convey meaning. Never use them to paper over vagueness, add false warmth, or mimic casual chat tone in professional work.
