@@ -255,6 +255,51 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 
 ---
 
+## Financial Model Questions (from 90-Day Plan, April 5)
+
+*Data-backed questions from Don's 90-day plan deck and 52-week cash flow model. Use opportunistically during interviews — these demonstrate financial literacy and connect technology findings to the board narrative.*
+
+### Chathura (CDO)
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| F1 | "The 90-day plan commits to $50K/month in software cost reductions starting June. Where does that come from in your org? Which tools or contracts are on the table?" | Cost Savings Assumptions sheet: $50K/mo "Other Misc Software / Operating" from Jun 1 | A (Portfolio Sprawl) |
+| F2 | "Sysco-sourced deals are declining at -1.07 per week while Direct is rising at +0.23. From a product perspective, does the CAKE roadmap need to shift to support Direct sales vs. Sysco channel?" | PMTS Assumptions: Sysco slope -1.066, Direct slope +0.231 | B (Sales-Led Chaos) |
+
+### Strainick (COO)
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| F3 | "The 90-day plan flags backlog onboarding as the #1 execution risk — HIGH likelihood, HIGH impact. I see 2,500+ open customer implementation tickets in Jira, 77% older than a year. What's the technology bottleneck in the signed-to-live pipeline?" | Deck slide 11 + Jira CS segment: 2,525 open, 1,957 >1yr | G (Missing Cadence) |
+| F4 | "The financial model shows 309 backlog accounts to onboard between May and August — roughly 23 per week. Has the team ever sustained that rate?" | Backlog&Base Assumptions: 277 spread accounts over 12 weeks | G (Missing Cadence) |
+
+### Randy Brown (Restaurant)
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| F5 | "The cash flow model shows AWS at $290K/month, and the 90-day plan commits to a $50K/month reduction by June. CAKE Dev alone has 31 EC2 instances including 9 Jenkins servers. Where's the low-hanging fruit in your part of the infrastructure?" | Cost Savings: AWS $50K/mo from Jun 1; AWS inventory: CAKE Dev 31 EC2, 9 Jenkins | F (Legacy Gravity) |
+
+### Akshay Bhasin (Payments)
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| F6 | "Payments COS is running ~63% of gross revenue. WorldPay BIMERFIN clears monthly on the 10th. The blended take rate varies 2.7–3.4% across the forecast. Is the take rate optimizable, or is that structurally fixed by interchange and network fees?" | PMTS Assumptions: gross take 3.547%, net take 1.632%, processor spread 1.915% | H (Biz-Tech Mistranslation) |
+| F7 | "The payments model projects GPV growing from ~$54M/week to ~$66M/week over 52 weeks, driven by backlog conversion and new merchant adds. Does the current architecture scale to that volume without additional infrastructure investment?" | PMTS Assumptions: total GPV growth trajectory | I (Architectural Polarity) |
+
+### Greg Schmitzer (Sales)
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| F8 | "Retail revenue is heavily concentrated in a handful of named clients — Winmark, Ralph Lauren, Estee Lauder, Signet, and Urban account for the majority of the $5.9M in retail. What does the pipeline diversity look like for the next 4 quarters?" | retail_client_revenue.csv: top 5 = ~$3.6M of $5.9M total | A (Portfolio Sprawl) |
+| F9 | "The Sysco sales channel is declining at -1.07 deals/week with an R² of 0.40 — that's a real trend, not noise. Meanwhile Direct is growing at +0.23/week. Is the sales team structured to accelerate the Direct channel, or is Sysco still the primary motion?" | Assumptions Net New: channel regression data | B (Sales-Led Chaos) |
+
+### Manuel Garcia (CFO, if time)
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| F10 | "AP is stretching 300+ days for some vendors — BDO and LinkedIn are both 200+ days past due. How does that affect vendor relationships and your negotiating leverage on contract renewals?" | AP 03.30.26: BDO 309 days, LinkedIn 203 days, multiple vendors 100+ days | G (Missing Cadence) |
+
+### Rajik (SL) — SENSITIVITY NOTE
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| — | DO NOT reference the SL cost restructuring ($275K→$50K/month) or any financial data from the 90-day plan. The SL reduction is the largest single cost cut in the plan and may not be fully communicated to Rajik's team. Stick to the coordination and engineering questions already planned. | — | — |
+
+---
+
 ## Reference: Hypothesis Key
 
 | Code | Pattern | One-Liner |

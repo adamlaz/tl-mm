@@ -1,3 +1,7 @@
+> **SENT** — Both messages below were sent on April 5, 2026 at approximately 9:30 PM ET.
+> - Message 1 (Ana/Chathura/Don): Sent as reply-all on the existing thread
+> - Message 2 (Don private): Sent as separate reply to Don's 90-day plan email
+
 # Sunday Evening Messages — April 5, 2026
 
 ---

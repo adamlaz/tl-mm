@@ -1,0 +1,63 @@
+{
+  "forecast_date": "2026-04-03",
+  "total_monthly_impact": 278500,
+  "total_annual_impact": 3342000,
+  "items": [
+    {
+      "action": "Head Count Reductions",
+      "monthly_impact": 83333,
+      "effective_date": "2026-04-15",
+      "annual_impact": 1000000,
+      "notes": "Includes 18% burden ($15K/mo)"
+    },
+    {
+      "action": "Consultant (Non FTE)",
+      "monthly_impact": 30000,
+      "effective_date": "2026-04-15",
+      "annual_impact": 360000,
+      "notes": "Contractual obligations TBD"
+    },
+    {
+      "action": "Amazon Web Services / Cloud",
+      "monthly_impact": 50000,
+      "effective_date": "2026-06-01",
+      "annual_impact": 600000,
+      "notes": "Must catch up on AP; AWS open to renegotiation once past due invoices are paid"
+    },
+    {
+      "action": "Other Misc Software / Operating",
+      "monthly_impact": 50000,
+      "effective_date": "2026-06-01",
+      "annual_impact": 600000,
+      "notes": ""
+    },
+    {
+      "action": "Tampa Rent (PwC)",
+      "monthly_impact": 70400,
+      "effective_date": "2026-10-01",
+      "annual_impact": 844800,
+      "notes": "Challenging negotiation to sublet half. Goal: cut 40% after 3 months"
+    }
+  ],
+  "ap_paydown_plans": [
+    {
+      "vendor": "Cooley LLP",
+      "monthly_payment": 50000,
+      "total_outstanding": 650000,
+      "start_date": "2026-07-01"
+    },
+    {
+      "vendor": "BDO USA",
+      "monthly_payment": 50000,
+      "total_outstanding": 426000,
+      "start_date": "2026-06-25"
+    }
+  ],
+  "sl_restructuring": {
+    "current_monthly": 275000,
+    "target_monthly": 50000,
+    "onshore_offset_monthly": 167000,
+    "net_monthly_savings": 58000,
+    "annualized_savings": 696000
+  }
+}

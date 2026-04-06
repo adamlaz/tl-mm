@@ -1,0 +1,376 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricCard from '../components/MetricCard.astro';
+import TabulatorGrid from '../components/TabulatorGrid.astro';
+import FindingCard from '../components/FindingCard.astro';
+import { fmt, fmtCurrency } from '../lib/parse';
+import { readFileSync } from 'node:fs';
+
+/* ---------- Helpers ---------- */
+function parseCSV(path: string): Record<string, string>[] {
+  const raw = readFileSync(path, 'utf-8').trim();
+  const [header, ...lines] = raw.split('\n');
+  const keys = header.split(',');
+  return lines.map(line => {
+    const vals = line.split(',');
+    return Object.fromEntries(keys.map((k, i) => [k, vals[i] ?? '']));
+  });
+}
+
+function int(s: string | undefined): number {
+  return parseInt(s ?? '0') || 0;
+}
+
+function fmtDollar(v: number): string {
+  if (v < 0) return `-$${fmt(Math.abs(v))}`;
+  return `$${fmt(v)}`;
+}
+
+/* ---------- Load Data ---------- */
+let revenueRaw: Record<string, string>[] = [];
+let cashFlowRaw: Record<string, string>[] = [];
+let retailRaw: Record<string, string>[] = [];
+let costData: any = {};
+let paymentsData: any = {};
+let risksData: any = {};
+let vendorData: any = {};
+
+try { revenueRaw = parseCSV('../analysis/revenue_by_product.csv'); } catch {}
+try { cashFlowRaw = parseCSV('../analysis/cash_flow_quarterly.csv'); } catch {}
+try { retailRaw = parseCSV('../analysis/retail_client_revenue.csv'); } catch {}
+try { costData = JSON.parse(readFileSync('../analysis/cost_reduction_targets.json', 'utf-8')); } catch {}
+try { paymentsData = JSON.parse(readFileSync('../analysis/payments_model.json', 'utf-8')); } catch {}
+try { risksData = JSON.parse(readFileSync('../analysis/key_risks.json', 'utf-8')); } catch {}
+try { vendorData = JSON.parse(readFileSync('../inventory/vendor_spend_from_ap.json', 'utf-8')); } catch {}
+
+/* ---------- Revenue by Product ---------- */
+const totalAnnualRevenue = revenueRaw.reduce((s, r) => s + int(r.total_operating_inflows), 0);
+const revenueRows = revenueRaw.map(r => ({
+  quarter: r.quarter,
+  payments: fmtCurrency(int(r.net_payments)),
+  cake_saas: fmtCurrency(int(r.cake_saas)),
+  retail: fmtCurrency(int(r.retail)),
+  other: fmtCurrency(int(r.other_parafin)),
+  total: fmtCurrency(int(r.total_operating_inflows)),
+}));
+
+/* ---------- Cash Flow ---------- */
+const cashEndings = cashFlowRaw.map(r => int(r.cash_ending));
+const lowestCash = cashEndings.length ? Math.min(...cashEndings) : 0;
+const lowestCashQ = cashFlowRaw.find(r => int(r.cash_ending) === lowestCash)?.quarter ?? 'N/A';
+
+const cashFlowRows = cashFlowRaw.map(r => ({
+  quarter: r.quarter,
+  beginning: fmtDollar(int(r.cash_beginning)),
+  inflows: fmtDollar(int(r.operating_inflows)),
+  outflows: fmtDollar(int(r.operating_outflows)),
+  net_cash: fmtDollar(int(r.operating_cash_gen_burn)),
+  debt: fmtDollar(int(r.debt_service)),
+  infusion: int(r.cash_infusion) > 0 ? fmtDollar(int(r.cash_infusion)) : '—',
+  ending: fmtDollar(int(r.cash_ending)),
+}));
+
+/* ---------- Payments ---------- */
+const bl = paymentsData.baseline ?? {};
+const sc = paymentsData.scenarios ?? {};
+const backlog = paymentsData.backlog ?? {};
+
+const merchantCount = bl.merchant_count ?? 0;
+const gpvWeek = bl.gpv_per_merchant_per_week ?? 0;
+const gpvMonth = bl.gpv_per_merchant_per_month ?? 0;
+
+const scenarioRows = Object.entries(sc).map(([key, val]: [string, any]) => ({
+  scenario: key.charAt(0).toUpperCase() + key.slice(1),
+  gpv_scale: `${((val.gpv_scale ?? 0) * 100).toFixed(0)}%`,
+  at_risk: `${((val.risk_haircuts?.at_risk ?? 0) * 100).toFixed(0)}%`,
+  watch: `${((val.risk_haircuts?.watch ?? 0) * 100).toFixed(0)}%`,
+  on_track: `${((val.risk_haircuts?.on_track ?? 0) * 100).toFixed(0)}%`,
+}));
+
+/* ---------- Retail ---------- */
+const totalRetail = retailRaw.reduce((s, r) => s + int(r.total_52wk), 0);
+const topClient = [...retailRaw].sort((a, b) => int(b.total_52wk) - int(a.total_52wk))[0];
+const retailRows = retailRaw.map(r => ({
+  client: r.client,
+  q1: fmtCurrency(int(r.q1_2026)),
+  q2: fmtCurrency(int(r.q2_2026)),
+  q3: fmtCurrency(int(r.q3_2026)),
+  q4: fmtCurrency(int(r.q4_2026)),
+  total: fmtCurrency(int(r.total_52wk)),
+  notes: r.notes ?? '',
+}));
+
+/* ---------- Cost Reductions ---------- */
+const costItems = costData.items ?? [];
+const costRows = costItems.map((c: any) => ({
+  action: c.action,
+  monthly: fmtCurrency(c.monthly_impact ?? 0),
+  annual: fmtCurrency(c.annual_impact ?? 0),
+  effective: c.effective_date ?? '',
+  notes: c.notes ?? '',
+}));
+const totalMonthlyCuts = costData.total_monthly_impact ?? 0;
+const totalAnnualCuts = costData.total_annual_impact ?? 0;
+
+const apPaydown = (costData.ap_paydown_plans ?? []).map((p: any) => ({
+  vendor: p.vendor,
+  monthly: fmtCurrency(p.monthly_payment ?? 0),
+  outstanding: fmtCurrency(p.total_outstanding ?? 0),
+  start: p.start_date ?? '',
+}));
+
+/* ---------- SL Restructuring ---------- */
+const sl = costData.sl_restructuring ?? {};
+
+/* ---------- Risks ---------- */
+const risks = risksData.risks ?? [];
+
+function riskSeverity(r: any): 'red' | 'amber' {
+  if (r.impact === 'CRITICAL') return 'red';
+  if (r.likelihood === 'HIGH' && r.impact === 'HIGH') return 'red';
+  return 'amber';
+}
+
+/* ---------- Vendor Spend ---------- */
+const vendors = [...(vendorData.vendors ?? [])]
+  .sort((a: any, b: any) => (b.annualized_est ?? 0) - (a.annualized_est ?? 0));
+const totalAPDue = vendors.reduce((s: number, v: any) => s + (v.total_due ?? 0), 0);
+const totalAnnualVendor = vendors.reduce((s: number, v: any) => s + (v.annualized_est ?? 0), 0);
+
+const vendorRows = vendors.map((v: any) => ({
+  name: v.name,
+  category: v.category ?? '',
+  total_due: fmtCurrency(v.total_due ?? 0),
+  annualized: fmtCurrency(v.annualized_est ?? 0),
+  invoices: v.invoices ?? 0,
+  oldest: v.oldest_days ?? 0,
+  notes: v.notes ?? '',
+}));
+---
+
+<BaseLayout title="Financial Intelligence">
+  <SectionHeader
+    eyebrow="FINANCIAL"
+    title="Financial Intelligence"
+    description="90-Day Plan & Cash Flow Analysis. Revenue forecasts, cash position, cost reduction roadmap, payments economics, and risk assessment — Q1–Q4 2026."
+  />
+
+  <div class="grid sm:grid-cols-2 gap-4 mb-8">
+    <FindingCard severity="red" title={`Cash Trough: ${fmtCurrency(lowestCash)} (${lowestCashQ})`} detail="Ending cash dips dangerously close to zero. Any revenue miss or AP acceleration could trigger a liquidity crisis." evidence={`${lowestCashQ} ending: ${fmtCurrency(lowestCash)} | Q4 recovery to $722K depends on inflows materializing`} />
+    <FindingCard severity="red" title="Bridge Bank LOC: CRITICAL" detail="Agreement to defer LOC repayment until business sale closing not confirmed. If demanded before closing, immediate liquidity event." evidence="Active negotiation, legal counsel engaged, sale process timeline shared" />
+    <FindingCard severity="amber" title={`${fmtCurrency(totalAPDue)} AP Outstanding`} detail={`${vendors.length} vendors with aging payables. Multiple vendors 90–300+ days past due.`} evidence={`Oldest invoice: ${Math.max(...vendors.map((v: any) => v.oldest_days ?? 0))} days | ${fmtCurrency(totalAnnualVendor)} annualized vendor spend`} />
+    <FindingCard severity="amber" title="Hardware Lease Gap: $1.7M" detail="$1.3M committed, $3M needed through year end. Balance sheet and lender default status challenge securing additional leases." evidence="$4M facility partially addresses; backlog triaged to prioritize highest-value deployments" />
+  </div>
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="2026 Revenue Forecast" value={`$${(totalAnnualRevenue / 1_000_000).toFixed(1)}M`} subtitle="total operating inflows" />
+    <MetricCard label="Cash Trough" value={`$${Math.round(lowestCash / 1000)}K`} subtitle={`${lowestCashQ} ending cash`} />
+    <MetricCard label="Monthly Cost Cuts" value={`$${Math.round(totalMonthlyCuts / 1000)}K`} subtitle={`${fmtCurrency(totalAnnualCuts)} annualized`} />
+    <MetricCard label="Active Merchants" value={fmt(merchantCount)} subtitle={`$${fmt(gpvWeek)} GPV/wk per merchant`} />
+  </dl>
+
+  <!-- ── 1. Revenue by Product Line ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Revenue by Product Line</h2>
+  <div class="mb-8">
+    <TabulatorGrid
+      exportable
+      columns={[
+        { key: 'quarter', label: 'Quarter', sortable: true },
+        { key: 'payments', label: 'Net Payments', align: 'right', sortable: true, type: 'currency' },
+        { key: 'cake_saas', label: 'CAKE SaaS', align: 'right', sortable: true, type: 'currency' },
+        { key: 'retail', label: 'Retail', align: 'right', sortable: true, type: 'currency' },
+        { key: 'other', label: 'Other/Parafin', align: 'right', sortable: true, type: 'currency' },
+        { key: 'total', label: 'Total', align: 'right', sortable: true, type: 'currency', bottomCalc: 'sum' },
+      ]}
+      rows={revenueRows}
+    />
+  </div>
+
+  <!-- ── 2. Cash Flow Quarterly ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Cash Flow Quarterly</h2>
+  <p class="text-xs text-[var(--status-red)] font-medium mb-3">{lowestCashQ} ending cash of {fmtCurrency(lowestCash)} is critically low — represents the floor of the cash curve before Q4 recovery.</p>
+  <div class="mb-8">
+    <TabulatorGrid
+      exportable
+      columns={[
+        { key: 'quarter', label: 'Quarter', sortable: true },
+        { key: 'beginning', label: 'Beginning Cash', align: 'right', sortable: true, type: 'currency' },
+        { key: 'inflows', label: 'Op Inflows', align: 'right', sortable: true, type: 'currency' },
+        { key: 'outflows', label: 'Op Outflows', align: 'right', sortable: true, type: 'currency' },
+        { key: 'net_cash', label: 'Net Op Cash', align: 'right', sortable: true, type: 'currency' },
+        { key: 'debt', label: 'Debt Service', align: 'right', sortable: true, type: 'currency' },
+        { key: 'infusion', label: 'Cash Infusion', align: 'right', sortable: true, type: 'currency' },
+        { key: 'ending', label: 'Ending Cash', align: 'right', sortable: true, type: 'currency' },
+      ]}
+      rows={cashFlowRows}
+    />
+  </div>
+
+  <!-- ── 3. Payments Economics ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Payments Economics</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <MetricCard label="Active Merchants" value={fmt(merchantCount)} subtitle={`${((bl.annual_churn_rate ?? 0) * 100).toFixed(0)}% annual churn`} />
+    <MetricCard label="GPV / Merchant / Week" value={`$${fmt(gpvWeek)}`} subtitle={`$${fmt(gpvMonth)}/month`} />
+    <MetricCard label="Gross Take Rate" value={`${((bl.gross_take_rate ?? 0) * 100).toFixed(2)}%`} subtitle={`Net: ${((bl.net_take_rate ?? 0) * 100).toFixed(2)}%`} />
+    <MetricCard label="COS % of Gross" value={`${((bl.cos_percentage_of_gross ?? 0) * 100).toFixed(0)}%`} subtitle={`Processor spread: ${((bl.processor_spread ?? 0) * 100).toFixed(2)}%`} />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Scenario Analysis</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'scenario', label: 'Scenario', sortable: true },
+          { key: 'gpv_scale', label: 'GPV Scale', align: 'right', sortable: true },
+          { key: 'at_risk', label: 'At Risk Haircut', align: 'right', sortable: true },
+          { key: 'watch', label: 'Watch Haircut', align: 'right', sortable: true },
+          { key: 'on_track', label: 'On Track', align: 'right', sortable: true },
+        ]}
+        rows={scenarioRows}
+      />
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Backlog Pipeline</h2>
+      <dl class="grid grid-cols-2 gap-3">
+        <MetricCard label="Addressable Accounts" value={(backlog.addressable_accounts ?? 0).toString()} subtitle="in pipeline" />
+        <MetricCard label="Modeled Accounts" value={(backlog.modeled_accounts ?? 0).toString()} subtitle={`${((backlog.attrition_assumption ?? 0) * 100).toFixed(0)}% attrition assumed`} />
+        <MetricCard label="Accounts to Spread" value={(backlog.accounts_spread ?? 0).toString()} subtitle={backlog.spread_window ?? ''} />
+        <MetricCard label="Accounts with TLD" value={(backlog.accounts_with_tld ?? 0).toString()} subtitle="already transacting" />
+      </dl>
+    </div>
+  </div>
+
+  <!-- ── 4. Retail Client Concentration ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Retail Client Concentration</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <MetricCard label="Total Retail Revenue" value={fmtCurrency(totalRetail)} subtitle="52-week forecast" />
+    <MetricCard label="Named Clients" value={(retailRaw.length - 1).toString()} subtitle="+ 'All Other' bucket" />
+    <MetricCard label="Top Client" value={topClient?.client ?? 'N/A'} subtitle={topClient ? fmtCurrency(int(topClient.total_52wk)) : ''} />
+  </dl>
+  <div class="mb-8">
+    <TabulatorGrid
+      exportable
+      columns={[
+        { key: 'client', label: 'Client', sortable: true, filterable: true },
+        { key: 'q1', label: 'Q1 2026', align: 'right', sortable: true, type: 'currency' },
+        { key: 'q2', label: 'Q2 2026', align: 'right', sortable: true, type: 'currency' },
+        { key: 'q3', label: 'Q3 2026', align: 'right', sortable: true, type: 'currency' },
+        { key: 'q4', label: 'Q4 2026', align: 'right', sortable: true, type: 'currency' },
+        { key: 'total', label: '52-Wk Total', align: 'right', sortable: true, type: 'currency', bottomCalc: 'sum' },
+        { key: 'notes', label: 'Notes' },
+      ]}
+      rows={retailRows}
+    />
+  </div>
+
+  <!-- ── 5. Cost Reduction Roadmap ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Cost Reduction Roadmap</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <MetricCard label="Monthly Impact" value={`$${Math.round(totalMonthlyCuts / 1000)}K`} subtitle="committed cuts" />
+    <MetricCard label="Annual Impact" value={`$${(totalAnnualCuts / 1_000_000).toFixed(1)}M`} subtitle="full-year savings" />
+    <MetricCard label="Action Items" value={costItems.length.toString()} subtitle="identified" />
+  </dl>
+  <div class="mb-6">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Committed Cuts</h2>
+    <TabulatorGrid
+      exportable
+      columns={[
+        { key: 'action', label: 'Action', sortable: true },
+        { key: 'monthly', label: 'Monthly Impact', align: 'right', sortable: true, type: 'currency' },
+        { key: 'annual', label: 'Annual Impact', align: 'right', sortable: true, type: 'currency' },
+        { key: 'effective', label: 'Effective Date', sortable: true },
+        { key: 'notes', label: 'Notes' },
+      ]}
+      rows={costRows}
+    />
+  </div>
+  {apPaydown.length > 0 && (
+    <div class="mb-8">
+      <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">AP Paydown Plans</h2>
+      <TabulatorGrid
+        columns={[
+          { key: 'vendor', label: 'Vendor', sortable: true },
+          { key: 'outstanding', label: 'Total Outstanding', align: 'right', sortable: true, type: 'currency' },
+          { key: 'monthly', label: 'Monthly Payment', align: 'right', sortable: true, type: 'currency' },
+          { key: 'start', label: 'Start Date', sortable: true },
+        ]}
+        rows={apPaydown}
+      />
+    </div>
+  )}
+
+  <!-- ── 6. Key Risks ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Key Risks</h2>
+  <div class="grid sm:grid-cols-2 gap-4 mb-8">
+    {risks.map((r: any) => (
+      <FindingCard
+        severity={riskSeverity(r)}
+        title={r.risk}
+        detail={r.description}
+        evidence={`Likelihood: ${r.likelihood} | Impact: ${r.impact} — ${r.mitigation}`}
+      />
+    ))}
+  </div>
+
+  <!-- ── 7. Vendor Spend (Confirmed from AP) ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Vendor Spend (Confirmed from AP)</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <MetricCard label="Total AP Outstanding" value={fmtCurrency(totalAPDue)} subtitle={`as of ${vendorData.as_of ?? 'Mar 2026'}`} />
+    <MetricCard label="Annualized Vendor Spend" value={`$${(totalAnnualVendor / 1_000_000).toFixed(1)}M`} subtitle="estimated run rate" />
+    <MetricCard label="Vendors" value={vendors.length.toString()} subtitle="with AP entries" />
+  </dl>
+  <div class="mb-8">
+    <TabulatorGrid
+      exportable
+      searchable={true}
+      pageSize={20}
+      columns={[
+        { key: 'name', label: 'Vendor', sortable: true, filterable: true },
+        { key: 'category', label: 'Category', sortable: true, filterable: true },
+        { key: 'total_due', label: 'AP Outstanding', align: 'right', sortable: true, type: 'currency' },
+        { key: 'annualized', label: 'Annualized Est.', align: 'right', sortable: true, type: 'currency' },
+        { key: 'invoices', label: 'Invoices', align: 'right', sortable: true, type: 'number' },
+        { key: 'oldest', label: 'Oldest (Days)', align: 'right', sortable: true, type: 'number' },
+        { key: 'notes', label: 'Notes' },
+      ]}
+      rows={vendorRows}
+    />
+  </div>
+
+  <!-- ── 8. SL Restructuring ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">SL (Sri Lanka) Restructuring</h2>
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6 mb-8">
+    <div class="grid sm:grid-cols-3 gap-6 text-center">
+      <div>
+        <span class="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)] mb-1">Before</span>
+        <p class="text-2xl font-bold font-mono tabular-nums text-[var(--status-red)]">{fmtCurrency(sl.current_monthly ?? 275000)}</p>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">monthly SL offshore</p>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <svg class="w-6 h-6 text-[var(--text-muted)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div>
+        <span class="block text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)] mb-1">After</span>
+        <p class="text-2xl font-bold font-mono tabular-nums text-[var(--accent)]">{fmtCurrency((sl.target_monthly ?? 50000) + (sl.onshore_offset_monthly ?? 167000))}</p>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">{fmtCurrency(sl.target_monthly ?? 50000)} SL + {fmtCurrency(sl.onshore_offset_monthly ?? 167000)} onshore</p>
+      </div>
+    </div>
+    <div class="mt-5 pt-4 border-t border-[var(--border-subtle)] text-center">
+      <p class="text-sm font-semibold text-[var(--text)]">
+        Net Monthly Savings: <span class="text-[var(--status-green)]">{fmtCurrency(sl.net_monthly_savings ?? 58000)}</span>
+        <span class="text-[var(--text-muted)] ml-2">({fmtCurrency(sl.annualized_savings ?? 696000)}/year)</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
+    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <FindingCard severity="amber" title="$383K Monthly AWS Spend" detail="Infrastructure cost baseline feeds vendor AP and cloud cost reduction targets." href="/infrastructure" hrefLabel="Infrastructure" />
+      <FindingCard severity="amber" title="28 Tools Cataloged" detail="Tooling rationalization tied to vendor spend optimization." href="/tooling" hrefLabel="Tooling" />
+    </div>
+  </div>
+</BaseLayout>

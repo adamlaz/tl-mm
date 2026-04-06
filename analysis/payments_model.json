@@ -1,0 +1,92 @@
+{
+  "baseline": {
+    "merchant_count": 3328,
+    "gpv_per_merchant_per_week": 13965,
+    "gpv_per_merchant_per_month": 60468,
+    "gross_take_rate": 0.03547,
+    "net_take_rate": 0.01632,
+    "processor_spread": 0.01915,
+    "annual_churn_rate": 0.24,
+    "cos_percentage_of_gross": 0.63
+  },
+  "backlog": {
+    "addressable_accounts": 442,
+    "modeled_accounts": 309,
+    "attrition_assumption": 0.3,
+    "accounts_with_tld": 32,
+    "accounts_spread": 277,
+    "spread_window": "2026-05-20 to 2026-08-05",
+    "initial_onboarding_rate": "40 first week, 15-20/week for 14 weeks, then 5, then 0"
+  },
+  "new_business": {
+    "close_to_transaction_lag_days": 38,
+    "lost_sales_rate": 0.2,
+    "first_revenue_week": "2026-05-27",
+    "channel_trends": {
+      "sysco": {
+        "slope": -1.066,
+        "intercept": 21.011,
+        "r_squared": 0.397,
+        "trend": "Declining -1.07/wk, projects to 0 by mid-May"
+      },
+      "direct": {
+        "slope": 0.231,
+        "intercept": 3.154,
+        "r_squared": 0.205,
+        "trend": "Rising +0.23/wk, gaining share"
+      },
+      "affiliate": {
+        "slope": -0.099,
+        "intercept": 6.132,
+        "r_squared": 0.015,
+        "trend": "Near-flat, high volatility"
+      },
+      "other": {
+        "slope": 0.093,
+        "intercept": 0.67,
+        "r_squared": 0.06,
+        "trend": "Modestly rising, small volumes"
+      }
+    },
+    "steady_state_gpv_per_month": {
+      "sysco": 46626,
+      "direct": 31508,
+      "affiliate": 24600,
+      "other": 82591
+    }
+  },
+  "gpv_ramp_curve": {
+    "month_1": 0.586,
+    "month_2": 0.546,
+    "month_3": 0.556,
+    "month_4": 0.877,
+    "month_5": 0.808,
+    "month_6_plus": 0.874
+  },
+  "scenarios": {
+    "bear": {
+      "gpv_scale": 0.85,
+      "risk_haircuts": {
+        "at_risk": 0.3,
+        "watch": 0.6,
+        "on_track": 0.85
+      }
+    },
+    "base": {
+      "gpv_scale": 1.0,
+      "risk_haircuts": {
+        "at_risk": 0.5,
+        "watch": 0.8,
+        "on_track": 1.0
+      }
+    },
+    "bull": {
+      "gpv_scale": 1.15,
+      "risk_haircuts": {
+        "at_risk": 0.7,
+        "watch": 0.95,
+        "on_track": 1.0
+      }
+    }
+  }
+}

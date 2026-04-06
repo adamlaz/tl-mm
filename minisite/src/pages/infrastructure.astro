@@ -190,7 +190,7 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
     <FindingCard severity="red" title="83% Pre-Graviton EC2" detail="167 of 201 running instances on pre-Graviton hardware. AWS charges the same for less performance. Migration is free velocity." evidence="201 running, 23 stopped, 167 pre-Graviton (83%)" href="/engagement/hypotheses" hrefLabel="Hypothesis F: Legacy Gravity" />
     <FindingCard severity="red" title="90% ECS Containers Missing Health Checks" detail="61 of 68 active ECS services have no container health check. Services can be unhealthy without detection." evidence="68 services, 61 without health checks, 49 unique images" />
     <FindingCard severity="amber" title="21% Lambda on EOL Runtimes" detail="53 of 248 Lambda functions running Python 2.7, Node 6/8/10/12. Security patches no longer available." evidence="248 functions, 53 EOL (21%)" />
-    <FindingCard severity="amber" title="$383K Monthly AWS Spend" detail="March 2026 across 18 accounts. ~$309K in management account (likely consolidated billing). Monvia: $25.9K/month for legacy workloads on m1 hardware." evidence="18 accounts, $383K total, Monvia $25.9K" />
+    <FindingCard severity="amber" title="$383K Monthly AWS Spend" detail="March 2026 across 18 accounts. Cash flow model shows $290K/month (vs. $383K from Cost Explorer — gap likely marketplace subscriptions and support). Board-committed target: $50K/month AWS reduction by June 1. Monvia: $25.9K/month for legacy workloads on m1 hardware." evidence="18 accounts, $383K Cost Explorer, $290K cash flow model, board 90-day plan" />
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">

@@ -1,0 +1,315 @@
+{
+  "source": "AP 03.30.26 from MS Cash Forecast spreadsheet",
+  "as_of": "2026-03-30",
+  "vendors": [
+    {
+      "name": "Amazon Web Services",
+      "total_due": 496012,
+      "category": "Cloud/Hosting",
+      "invoices": 7,
+      "oldest_days": 89,
+      "annualized_est": 3480000,
+      "notes": "$290K/month in cash flow model; consistently 60-90 days past due"
+    },
+    {
+      "name": "BDO USA",
+      "total_due": 325084,
+      "category": "Audit/Tax",
+      "invoices": 15,
+      "oldest_days": 309,
+      "annualized_est": 325000,
+      "notes": "300+ days past due; payment plan starting Jun 2026"
+    },
+    {
+      "name": "Cooley LLP",
+      "total_due": 652000,
+      "category": "Legal (M&A)",
+      "invoices": 8,
+      "oldest_days": 3,
+      "annualized_est": 978000,
+      "notes": "$81.5K/month payment plan; M&A counsel"
+    },
+    {
+      "name": "PwC US Group LLP",
+      "total_due": 745426,
+      "category": "Rent",
+      "invoices": 4,
+      "oldest_days": 131,
+      "annualized_est": 2143200,
+      "notes": "$178.6K/payment; subletting negotiation in progress"
+    },
+    {
+      "name": "Florida Blue",
+      "total_due": 209948,
+      "category": "Health Insurance",
+      "invoices": 2,
+      "oldest_days": 79,
+      "annualized_est": 1860000,
+      "notes": "~$155K/month for ~370 employees"
+    },
+    {
+      "name": "Econsulate (Sri Lanka)",
+      "total_due": 344788,
+      "category": "Offshore Contractors",
+      "invoices": 4,
+      "oldest_days": 94,
+      "annualized_est": 600000,
+      "notes": "Going from $275K/mo to $50K/mo per cost reduction plan"
+    },
+    {
+      "name": "American Express",
+      "total_due": 242424,
+      "category": "Corporate Card",
+      "invoices": 1,
+      "oldest_days": 0,
+      "annualized_est": 1800000,
+      "notes": "$150K/payment cycle"
+    },
+    {
+      "name": "Peak Activity",
+      "total_due": 78325,
+      "category": "Retail Contractors",
+      "invoices": 1,
+      "oldest_days": 35,
+      "annualized_est": 1200000,
+      "notes": "$100K/month retail development"
+    },
+    {
+      "name": "RS2 Software",
+      "total_due": 100000,
+      "category": "Payments Software",
+      "invoices": 5,
+      "oldest_days": 165,
+      "annualized_est": 240000,
+      "notes": "$20K/month; RS2 integration from CDO roadmap"
+    },
+    {
+      "name": "Southteams",
+      "total_due": 139658,
+      "category": "Retail Contractors",
+      "invoices": 3,
+      "oldest_days": 93,
+      "annualized_est": 528000,
+      "notes": "$44-51K/payment; retail development"
+    },
+    {
+      "name": "Intacct (Sage)",
+      "total_due": 113431,
+      "category": "ERP/Accounting",
+      "invoices": 5,
+      "oldest_days": 154,
+      "annualized_est": 213000,
+      "notes": "$53K quarterly"
+    },
+    {
+      "name": "Paragon",
+      "total_due": 73000,
+      "category": "Software",
+      "invoices": 1,
+      "oldest_days": 154,
+      "annualized_est": 73000
+    },
+    {
+      "name": "ID Tech",
+      "total_due": 76010,
+      "category": "Payment Devices",
+      "invoices": 1,
+      "oldest_days": 152,
+      "annualized_est": 150000,
+      "notes": "VP3350 hardware"
+    },
+    {
+      "name": "Datasite",
+      "total_due": 81184,
+      "category": "Virtual Data Room",
+      "invoices": 4,
+      "oldest_days": 181,
+      "annualized_est": 290000,
+      "notes": "Active M&A process"
+    },
+    {
+      "name": "LinkedIn",
+      "total_due": 66175,
+      "category": "Recruiting",
+      "invoices": 3,
+      "oldest_days": 203,
+      "annualized_est": 66000,
+      "notes": "SL discontinued by end of Q1"
+    },
+    {
+      "name": "Marketing VF",
+      "total_due": 61107,
+      "category": "Lead Generation",
+      "invoices": 5,
+      "oldest_days": 94,
+      "annualized_est": 120000
+    },
+    {
+      "name": "Twilio",
+      "total_due": 35460,
+      "category": "Communications",
+      "invoices": 17,
+      "oldest_days": 63,
+      "annualized_est": 200000,
+      "notes": "15+ sub-accounts; $16.8K/month communications infrastructure"
+    },
+    {
+      "name": "Outreach Corporation",
+      "total_due": 33525,
+      "category": "Sales Engagement",
+      "invoices": 3,
+      "oldest_days": 255,
+      "annualized_est": 44700,
+      "notes": "$11.175K/quarter"
+    },
+    {
+      "name": "Dolead",
+      "total_due": 14000,
+      "category": "Lead Generation",
+      "invoices": 1,
+      "oldest_days": 154,
+      "annualized_est": 168000,
+      "notes": "$14-38K/month variable"
+    },
+    {
+      "name": "RedZone Labs",
+      "total_due": 28512,
+      "category": "SL Contractors",
+      "invoices": 4,
+      "oldest_days": 125,
+      "annualized_est": 84000,
+      "notes": "$7K/month"
+    },
+    {
+      "name": "Imperium Data Services",
+      "total_due": 26552,
+      "category": "Software",
+      "invoices": 4,
+      "oldest_days": 93,
+      "annualized_est": 96000,
+      "notes": "$8K/month"
+    },
+    {
+      "name": "Tyk Technologies",
+      "total_due": 18933,
+      "category": "API Gateway",
+      "invoices": 1,
+      "oldest_days": 138,
+      "annualized_est": 38000,
+      "notes": "Was estimated $35K/year; confirmed ~$19K semi-annual"
+    },
+    {
+      "name": "TNT Services",
+      "total_due": 42762,
+      "category": "SL Contractors",
+      "invoices": 6,
+      "oldest_days": 246,
+      "annualized_est": 96000
+    },
+    {
+      "name": "Gainsight",
+      "total_due": 16000,
+      "category": "Customer Success",
+      "invoices": 2,
+      "oldest_days": 136,
+      "annualized_est": 32000,
+      "notes": "$8K/quarter"
+    },
+    {
+      "name": "Figma",
+      "total_due": 12960,
+      "category": "Design",
+      "invoices": 1,
+      "oldest_days": 63,
+      "annualized_est": 12960,
+      "notes": "Single annual invoice"
+    },
+    {
+      "name": "VirtuCrypt",
+      "total_due": 12330,
+      "category": "Encryption/Security",
+      "invoices": 1,
+      "oldest_days": 34,
+      "annualized_est": 148000,
+      "notes": "$12.3K/month"
+    },
+    {
+      "name": "nCLOSE",
+      "total_due": 11500,
+      "category": "Payments Security",
+      "invoices": 1,
+      "oldest_days": 131,
+      "annualized_est": 46000
+    },
+    {
+      "name": "HubSpot",
+      "total_due": 9930,
+      "category": "CRM/Marketing",
+      "invoices": 1,
+      "oldest_days": 24,
+      "annualized_est": 120000
+    },
+    {
+      "name": "Datadog",
+      "total_due": 1507,
+      "category": "Monitoring",
+      "invoices": 3,
+      "oldest_days": 117,
+      "annualized_est": 6000,
+      "notes": "~$500/month; confirms barely used"
+    },
+    {
+      "name": "Guru",
+      "total_due": 2589,
+      "category": "Knowledge Base",
+      "invoices": 1,
+      "oldest_days": 38,
+      "annualized_est": 31000,
+      "notes": "$2.6K/month"
+    },
+    {
+      "name": "Dialpad",
+      "total_due": 35611,
+      "category": "Phone/UCaaS",
+      "invoices": 1,
+      "oldest_days": 129,
+      "annualized_est": 36000
+    },
+    {
+      "name": "Snowflake",
+      "total_due": 451,
+      "category": "Data Warehouse",
+      "invoices": 1,
+      "oldest_days": 35,
+      "annualized_est": 5400,
+      "notes": "Minimal usage"
+    },
+    {
+      "name": "360 Advanced",
+      "total_due": 0,
+      "category": "Cybersecurity Consulting",
+      "invoices": 0,
+      "oldest_days": 0,
+      "annualized_est": 246000,
+      "notes": "$20.5K/month; from historical AP, not in current AP 03.30"
+    },
+    {
+      "name": "ScanSource",
+      "total_due": 0,
+      "category": "Hardware Inventory",
+      "invoices": 0,
+      "oldest_days": 0,
+      "annualized_est": 600000,
+      "notes": "$50K/month; from forecasted payables"
+    },
+    {
+      "name": "iDeals Solutions Group",
+      "total_due": 2065,
+      "category": "Virtual Data Room",
+      "invoices": 2,
+      "oldest_days": 39,
+      "annualized_est": 14000,
+      "notes": "Second VDR alongside Datasite"
+    }
+  ]
+}

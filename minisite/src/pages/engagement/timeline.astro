@@ -21,7 +21,7 @@ const openItems = [
   { item: 'All 5 surveys built in Microsoft Forms', owner: 'Adam', deadline: 'Apr 5', status: 'Complete', category: 'Coordination' },
   { item: 'Finalize interview schedule grid for Ana', owner: 'Adam', deadline: 'Apr 6', status: 'Pending', category: 'Coordination' },
   { item: 'Microsoft 365 / Azure AD access (Graph API)', owner: 'Adam → Ana/IT', deadline: 'Apr 6', status: 'Pending', category: 'Access' },
-  { item: 'Vendor/SaaS spend data from finance', owner: 'Adam → Ana', deadline: 'Apr 10', status: 'Pending', category: 'Data Gap' },
+  { item: 'Vendor/SaaS spend data from finance — partially answered from AP data, confirmed costs for 35+ vendors', owner: 'Adam → Ana', deadline: 'Apr 10', status: 'In Progress', category: 'Data Gap' },
 ];
 
 const accessRows = [
@@ -108,6 +108,12 @@ const accessColumns = [
         title="Ana + Chathura coordination update"
         detail="Send updated requests, next steps, and pre-onsite logistics. Confirm Grafana Monday, interview schedule grid, Survey 5 inclusion."
         status="active"
+      />
+      <MilestoneStep
+        date="Apr 5 evening"
+        title="90-day plan and 52-week cash flow received and analyzed"
+        detail="Board-approved 90-day plan, 52-week cash flow model, revenue by product, cost reduction targets, and vendor AP data. Key finding: $278K/month committed cost cuts (AWS $50K, software $50K, headcount $178K)."
+        status="complete"
       />
       <MilestoneStep
         date="Apr 6"

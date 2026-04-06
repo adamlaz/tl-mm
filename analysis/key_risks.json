@@ -1,0 +1,47 @@
+{
+  "source": "MadMobile_90Dayplan_final.pptx, Slides 11-12",
+  "risks": [
+    {
+      "risk": "Backlog onboarding execution",
+      "likelihood": "HIGH",
+      "impact": "HIGH",
+      "description": "Converting full backlog within 90 days requires sustained throughput the team has not previously achieved",
+      "mitigation": "Onboarding process redesigned, capacity reallocated, backlog triaged by value, daily fulfillment standup, weekly conversion tracking"
+    },
+    {
+      "risk": "New client conversion not confirmed",
+      "likelihood": "MEDIUM",
+      "impact": "HIGH",
+      "description": "Pipeline and conversion assumptions underpin Q2-Q3 revenue ramp; deals not yet closed",
+      "mitigation": "New underwriting standards, pipeline risk-adjusted, sales restructured and re-incentivised, weekly commit vs actual"
+    },
+    {
+      "risk": "Key employee turnover",
+      "likelihood": "MEDIUM",
+      "impact": "HIGH",
+      "description": "Sales, account management and onboarding personnel critical; restructuring creates attrition risk",
+      "mitigation": "Top performers identified, retention packages being confirmed, all-hands communication completed"
+    },
+    {
+      "risk": "PWC rent renegotiation",
+      "likelihood": "MEDIUM",
+      "impact": "MEDIUM",
+      "description": "Tampa office subletting negotiation, no LOC available; $70K/month saving modeled from 10/01/2026",
+      "mitigation": "Fallback: early lease surrender or further space reduction"
+    },
+    {
+      "risk": "Bridge Bank LOC repayment",
+      "likelihood": "HIGH",
+      "impact": "CRITICAL",
+      "description": "Agreement to defer LOC repayment until business sale closing not confirmed; if demanded before closing, immediate liquidity event",
+      "mitigation": "Active negotiation, legal counsel engaged, sale process timeline shared"
+    },
+    {
+      "risk": "Hardware lease extension gap",
+      "likelihood": "HIGH",
+      "impact": "HIGH",
+      "description": "$1.3M committed, $3M needed through year end = $1.7M gap; balance sheet and lender default status challenge securing additional leases",
+      "mitigation": "$4M facility partially addresses; backlog triaged to prioritise highest-value deployments"
+    }
+  ]
+}

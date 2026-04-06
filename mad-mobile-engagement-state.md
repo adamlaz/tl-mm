@@ -325,8 +325,8 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 |---|---|---|---|---|
 | 1 | Product roadmap: Concierge/Retail | High | Needed | Don confirmed Retail in scope. Completes the product picture alongside restaurant roadmap. |
 | 2 | Product roadmap: Neo/AI | High | Needed | Don confirmed Neo/AI in scope. Critical for AI strategy assessment — but per April 5 call, may not exist in any meaningful form. |
-| 3 | Revenue breakdown by product line (CAKE vs Concierge vs Neo vs Payments) | High | Needed — Ana working on | Even approximate revenue breakdown is useful. Revenue data owner unclear post-Siegel exit — likely Garcia (CFO) or Strainick (Account Mgmt). |
-| 4 | Investor/lender presentation deck | High | Expected from Don directly | Don offered to share on April 5 call. Contains "the problems, the analysis, and the proposed solution" that Morgan Stanley / Western Alliance saw. If routed through Ana, capture it. |
+| 3 | Revenue breakdown by product line (CAKE vs Concierge vs Neo vs Payments) | High | Partially resolved — cash flow model shows Payments (~60%), CAKE SaaS (~20%), Retail (~15-20%), Other (Parafin). Still need granular P&L. | Even approximate revenue breakdown is useful. Revenue data owner unclear post-Siegel exit — likely Garcia (CFO) or Strainick (Account Mgmt). |
+| 4 | Investor/lender presentation deck | High | **Received** — 90-day plan deck + 52-week cash flow model, April 5 evening | Don offered to share on April 5 call. Contains "the problems, the analysis, and the proposed solution" that Morgan Stanley / Western Alliance saw. If routed through Ana, capture it. |
 | 5 | Top 3–5 customer escalations (last 12 months) | High | Needed | Especially CAKE payment outages. Gives specific cases to trace onsite. |
 | 6 | Architecture diagrams beyond CAKE ecosystem | Medium | Partially received | Have CAKE ecosystem diagram. Need Concierge and Neo system-level architecture. |
 | 7 | Engineering team assignments by product line (beyond restaurant) | Medium | Partially received | Have restaurant eng team (Randy) and payments (Akshay). Need Enterprise Solutions (Zubair — 58 people, zero names). |
@@ -338,7 +338,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 | 13 | Open strategic initiatives and known problem projects | Medium | Needed | |
 | 14 | Third-party vendor contracts and API dependency inventory | Low | Needed | OpenAI, Anthropic, AWS costs. Visa/Cybersource terms. Major SaaS subscriptions. |
 | 15 | CAKE acquisition integration docs and current state | Low | Needed | Original integration plan from 2020. What's done? What's left? |
-| 16 | Company goals, board goals, CEO goals | Low | Pending Don's deck | Stated priorities for 2026. May be covered by the investor deck Don is sharing. |
+| 16 | Company goals, board goals, CEO goals | Low | **Partially resolved** — 90-day plan covers board commitments and breakeven targets | Stated priorities for 2026. May be covered by the investor deck Don is sharing. |
 
 ---
 
@@ -595,7 +595,7 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - **Hypothesis Scorecard** — each of the nine patterns scored (confirmed / partial / not observed)
 - **30/60/90-Day Action Plan** — sequenced recommendations
 - **Board/Investor Presentation** — board-ready deck Don can take to Morgan Stanley
-- **Baseline Survey Package** — all four surveys with Mad Mobile-specific instructions, baseline scores, and comparison guidance for 30/60-day re-runs
+- **Baseline Survey Package** — all five surveys with Mad Mobile-specific instructions, baseline scores, and comparison guidance for 30/60-day re-runs
 
 ### Expected
 - Architecture topology maps (C4 Context and Container level)
@@ -650,15 +650,17 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - **Bloom Intelligence research** (April 5) — AI-powered restaurant CDP based in St. Petersburg, FL. Founded 2006, Will Wilson CEO. Platform: WiFi analytics, customer profiles, marketing automation, reputation management. Captures data *outside* the POS (foot traffic, WiFi, reviews, web). Integrates with POS systems. Small company — Don says "a few million dollar revenue, couple people." The MM fit: Bloom's external customer data + MM's internal POS transaction data = complete customer view. Don asked Adam to evaluate at a basic level, not build.
 - **Winmark Corporation research** (April 5) — franchisor of value-oriented retail brands: Play It Again Sports (~280 stores), plus 4 other brands (~1,265 total stores across US/Canada). Has proprietary POS called "Data Recycling System" (DRS) with 20+ years of transaction data. Recently did a digital transformation with Rightpoint (BigCommerce). Kennedy is building an AI-developed POS application for them — this is retail/franchise, not restaurant, so a different vertical from CAKE.
 - **File consolidation** (April 5) — archived 7 standalone files into `archive/`, absorbed content into state doc. State doc is now the single source of truth.
+- **90-day plan deck (12 slides) and 52-week cash flow model (65+ sheets) received from Don, analyzed, and structured into 7 analysis artifacts (April 5 evening)**
+- **Combined email sent to Ana/Chathura/Don with survey link update, open items, and 90-day plan acknowledgment (April 5 evening)**
+- **Private reply sent to Don with bullet-point takeaways on 90-day plan and next steps (April 5 evening)**
+- **Email and Message Discipline spec added to tl-docs/writing-style.md (April 5 evening)**
+- **Chathura survey gap addressed — asked to add Survey 5 (AI Adoption & Tooling) to his intro email (April 5 evening)**
 
 ### In Progress 🔄
-- **Ana + Chathura coordination update** — sending tonight (April 5 evening) with all pending requests, next steps, and pre-onsite logistics. Updated `ana-request.md` with Winmark project visibility, Bloom Intelligence context, and investor deck note.
-- **ISSUE:** Chathura's survey intro email only references 4 surveys — dropped AI & Tooling (Survey 5). Following up tonight with link.
 - Waiting on Ana: pre-read items not in Confluence — **target: early Monday April 7**
 - Waiting on Ana: Grafana viewer access — **confirmed Monday April 7** (Matias off holiday weekend)
 - Waiting on Ana: routing questions on Monvia, MenuPad, Relate, Neo/AI
 - Waiting on Ana: interview calendar blocks + conference room (April 13–15)
-- Waiting on Don: investor/lender deck (offered on April 5 call)
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
@@ -922,7 +924,7 @@ Key questions for the vendor/tooling rationalization section of the board delive
 - 6 monitoring/observability tools identified: Grafana (Mimir/Loki/Tempo), Datadog, Nagios, Munin, Graylog, DB Cacti
 - Has anyone proposed consolidating? Is there a roadmap?
 
-**Estimated annual SaaS spend (excluding AWS): $350K–$800K range** based on public pricing. Need actuals to narrow.
+**Estimated annual SaaS spend (excluding AWS): $350K–$800K estimated range, now partially confirmed** — AP data from the cash flow model shows confirmed costs for 35+ vendors. Key confirmed annualized SaaS spend: AWS ~$3.5M, Twilio ~$200K, 360 Advanced $246K, RS2 Software $240K, Intacct (Sage ERP) $213K, HubSpot $120K, VirtuCrypt $148K, Tyk $38K, Gainsight $32K, Guru $31K, Outreach $45K, Figma $13K, Datadog $6K, Snowflake $5K. Non-SaaS vendors (contractors, legal, audit) add significantly: Peak Activity $1.2M/yr, Cooley $978K/yr, Econsulate going to $0.
 
 ---
 
@@ -934,3 +936,126 @@ Key questions for the vendor/tooling rationalization section of the board delive
 - **Mad Mobile Website:** https://madmobile.com/
 - **Bloom Intelligence:** https://bloomintelligence.com/
 - **Winmark Corporation:** https://www.winmarkfranchises.com/
+
+---
+
+## 18. 90-Day Plan & Financial Analysis (Received April 5, 2026)
+
+**Source:** Don's email to Morgan Stanley and Bridge Bank, April 5 evening. 12-slide deck + 52-week cash flow model (65+ sheets).
+
+### Revenue Model
+
+| Stream | Q1 2026 | Q2 2026 | Q3 2026 | Q4 2026 | Share |
+|--------|---------|---------|---------|---------|-------|
+| Payments (net) | $4.5M | $5.1M | $5.9M | $6.7M | ~60% |
+| CAKE SaaS | $1.75M | $1.69M | $1.82M | $2.07M | ~20% |
+| Retail (enterprise) | $0.91M | $2.94M | $0.50M | $1.56M | ~15% (lumpy) |
+| Other (Parafin) | $0.06M | $0.06M | $0.06M | $0.06M | <1% |
+| **Total Inflows** | **$7.19M** | **$9.76M** | **$8.26M** | **$10.36M** | |
+
+### Payments Economics
+- 3,328 merchant locations (baseline March 2026)
+- $13,965 GPV per merchant per week ($60,468/month)
+- Gross take rate: 3.547%, Net take rate: 1.632%, Processor spread: 1.915%
+- ~63% COS on gross payments (WorldPay + interchange + network)
+- WorldPay BIMERFIN clears monthly on the 10th
+- Blended take rate varies 2.7–3.4% across the forecast
+- Backlog: 442 addressable accounts, 309 modeled (30% attrition assumed), onboarding window May–August
+- New business: Sysco channel declining (-1.07 deals/week), Direct rising (+0.23/week)
+- Bear/Base/Bull scenarios modeled with different GPV scales and risk haircuts
+
+### Named Retail Clients (from cash flow detail)
+- **Winmark**: $625K/qtr starting Q2 (Kennedy's AI POS delivery)
+- **Ralph Lauren**: Ongoing, $53–252K periodic payments. **Note in spreadsheet: "Contact jack RE RL resign"**
+- **Estee Lauder**: $46.8K + $454.8K (Q1 + Q3)
+- **Anna Taylor**: $553K (Q2)
+- **Signet**: $321K+ (Q3)
+- **Snipes**: $408K (Q2)
+- **Urban**: $443K (Q1)
+- **Rack Room**: $317K (Q2)
+- **Papa's**: $202K
+- **West Marine**: $77K
+- **Brooks Brothers**: $20K periodic
+- **Note: "Get timing of Knitwell HC fall off"** — Knitwell retail client may be churning
+
+### Cash Position & Breakeven Path
+
+| Quarter | Op. Cash | Cash End | Assessment |
+|---------|----------|----------|------------|
+| Q1 (Apr-Jun) | ($3.4M) | $2.1M | $4M facility bridges gap |
+| Q2 (Jul-Sep) | +$1.2M | $1.95M | **Breakeven achieved** |
+| Q3 (Oct-Dec) | ($473K) | **$147K** | Seasonal risk — razor thin |
+| Q4 (Jan-Mar '27) | +$1.9M | $722K | Recovery |
+
+- Debt service: $1.33M/quarter throughout
+- $4MM additional facility requested within 2–3 weeks — "without confirmed receipt, the business faces a cash constraint within two weeks"
+- Q4 seasonal risk requires ~$1M incremental Q2 investment in sales team
+
+### Cost Reduction Commitments (to Board)
+
+| Action | Monthly Impact | Effective Date | Annual Impact |
+|--------|---------------|---------------|---------------|
+| Headcount reductions | $83K | April 15 | $1.0M |
+| Consultant (non-FTE) | $30K | April 15 | $360K |
+| AWS / Cloud | $50K | June 1 | $600K |
+| Software / Operating | $50K | June 1 | $600K |
+| Tampa rent (PwC) | $70.4K | Oct 1 | $845K |
+| **Total** | **$278.5K** | **Phased by Q4** | **$3.34M** |
+
+- **SL restructuring**: $275K/mo → $50K/mo (82% reduction), offset by $167K/mo onshore. Net savings: $58K/mo ($696K annualized)
+- **AP paydown plans**: Cooley LLP $50K/month starting Jul 1 ($650K total), BDO $50K/month starting Jun 25 ($426K total)
+
+### Key Risks (from Deck)
+
+| Risk | Likelihood | Impact | Key Detail |
+|------|-----------|--------|------------|
+| Backlog onboarding | HIGH | HIGH | Throughput rate never previously achieved |
+| New client conversion | MEDIUM | HIGH | Pipeline deals not yet closed |
+| Employee turnover | MEDIUM | HIGH | Restructuring creates attrition risk |
+| Bridge Bank LOC | **HIGH** | **CRITICAL** | Repayment deferral not confirmed; liquidity event if demanded |
+| Hardware lease gap | HIGH | HIGH | $1.7M gap between $1.3M committed and $3M needed |
+| PwC rent | MEDIUM | MEDIUM | $70K/month saving modeled from Oct; no LOC backing |
+
+### Vendor Spend (Confirmed from AP Data)
+
+See `inventory/vendor_spend_from_ap.json` for full detail. Key technology vendors with confirmed annualized spend:
+
+| Vendor | Annualized | Category |
+|--------|-----------|----------|
+| AWS | ~$3.5M | Cloud/Hosting |
+| Twilio | ~$200K | Communications |
+| 360 Advanced | $246K | Cybersecurity |
+| RS2 Software | $240K | Payments |
+| Intacct (Sage) | $213K | ERP |
+| VirtuCrypt | $148K | Encryption |
+| HubSpot | $120K | CRM/Marketing |
+| Imperium Data | $96K | Software |
+| Paragon | $73K | Software |
+| Outreach | $45K | Sales Engagement |
+| Tyk | $38K | API Gateway |
+| Dialpad | $36K | Phone/UCaaS |
+| Gainsight | $32K | Customer Success |
+| Guru | $31K | Knowledge Base |
+| Figma | $13K | Design |
+| Datadog | $6K | Monitoring |
+| Snowflake | $5K | Data Warehouse |
+
+**Non-technology AP of note:**
+- Datasite + iDeals: Two VDR providers ($290K + $14K) — confirms active M&A process (aligns with Touch Bistro, Section 14)
+- Cooley LLP: $978K/year M&A legal
+- Peak Activity: $1.2M/year retail contractors
+- Southteams: $528K/year retail contractors
+- Econsulate: Going to $0 per cost reduction plan
+- Florida Blue: $1.86M/year health insurance (~370 employees)
+
+### Analysis Artifacts Created (April 5 Evening)
+
+| File | Contents |
+|------|----------|
+| `analysis/revenue_by_product.csv` | Quarterly revenue by product line |
+| `analysis/cash_flow_quarterly.csv` | Quarterly cash position and operating burn/gen |
+| `analysis/cost_reduction_targets.json` | Committed cost cuts with dates, SL restructuring, AP paydown plans |
+| `analysis/retail_client_revenue.csv` | Per-client retail revenue timeline |
+| `analysis/payments_model.json` | Full payments economics: take rates, GPV, merchant counts, scenarios |
+| `analysis/key_risks.json` | Risk matrix from the deck with mitigations |
+| `inventory/vendor_spend_from_ap.json` | 35 vendors with confirmed AP amounts and annualized estimates |
