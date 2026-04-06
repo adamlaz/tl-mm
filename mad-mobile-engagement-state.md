@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 5, 2026 (updated April 5 evening with Don April 5 call findings, Bloom Intelligence/Winmark research, file consolidation, hypothesis investigation leads, Ana email updates)
+**Date:** April 6, 2026 (updated April 6 morning with Ana/Chathura email replies, neo-workspace discovery, CloudTrail access confirmed, survey 5 confirmed, GitHub departing, vendor spend partial data, Graph API instructions sent)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -287,16 +287,23 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - **IaC**: Terraform (state buckets in multiple accounts)
 
 ### Not Yet Confirmed
-- Grafana dashboard access — **confirmed for Monday April 6** (Ana: "I can get you access on Monday. Matias is off today for the holiday weekend.")
-- Guru access (requested from Ana)
+- Grafana dashboard access — Ana says "should be available shortly" (April 6 morning). Standing by.
+- Guru access — Ana checking (April 6 morning)
 - Internal survey tool (Ana checking with HR)
+- **Microsoft Graph API** — Ana checking with IT. Exact steps sent to Ana for Rosen/Matias: grant admin consent on "Microsoft Graph Command Line Tools" app (app ID: `14d82eec-204b-4c2f-b7e8-296a70dab67e`) for permissions `User.Read.All`, `People.Read`, `Calendars.Read`, `Group.Read.All`, `Team.ReadBasic.All`.
+
+### Resolved (April 6)
+- **GitHub**: NOT active — moving out due to cost. Bitbucket is sole SCM. (Chathura, April 6)
+- **CloudTrail**: Chathura confirmed `cloudtrail:LookupEvents` can be added to audit role. (April 6)
 
 ### Phase 2 Access (Partially Complete)
 - ✅ Bitbucket API key (created, working across all 4 workspaces)
 - ✅ Atlassian API token (created, working for Jira + Confluence)
 - ✅ AWS CLI / SSO (18 profiles configured, `Global-Audit-RO` role)
-- ⏳ Grafana viewer access (requested)
+- ✅ CloudTrail access (confirmed April 6 — Chathura approved `cloudtrail:LookupEvents`)
+- ⏳ Grafana viewer access (Ana: "should be available shortly")
 - ⏳ CloudWatch alarm permissions (`cloudwatch:DescribeAlarms` not in audit role — requested)
+- ⏳ Microsoft Graph API (steps sent to Ana for IT, April 6)
 
 ---
 
@@ -329,11 +336,11 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 | 4 | Investor/lender presentation deck | High | **Received** — 90-day plan deck + 52-week cash flow model, April 5 evening | Don offered to share on April 5 call. Contains "the problems, the analysis, and the proposed solution" that Morgan Stanley / Western Alliance saw. If routed through Ana, capture it. |
 | 5 | Top 3–5 customer escalations (last 12 months) | High | Needed | Especially CAKE payment outages. Gives specific cases to trace onsite. |
 | 6 | Architecture diagrams beyond CAKE ecosystem | Medium | Partially received | Have CAKE ecosystem diagram. Need Concierge and Neo system-level architecture. |
-| 7 | Engineering team assignments by product line (beyond restaurant) | Medium | Partially received | Have restaurant eng team (Randy) and payments (Akshay). Need Enterprise Solutions (Zubair — 58 people, zero names). |
+| 7 | Engineering team assignments by product line (beyond restaurant) | Medium | **In progress** — Chathura sending L1 org names April 7 | Have restaurant eng team (Randy) and payments (Akshay). Need Enterprise Solutions (Zubair — 58 people, zero names). Chathura confirmed he will send org names tomorrow (April 7). |
 | 8 | Deployment environments, release cadence, CI/CD documentation | Medium | Partially self-served | Jenkins (CAKE) + Bitbucket Pipelines (Retail, Payments) identified from systems scan. Still need formal environment documentation. |
 | 9 | KPI / scorecard / dashboard screenshots | Medium | Needed | Whatever metrics leadership reviews. |
 | 10 | Sprint velocity metrics (last 6–12 months) | Medium | Self-served from Jira | Have 19 active scrum boards with velocity data. Multiple declining trends. |
-| 11 | Incident reviews / post-mortems / retrospectives | Medium | Partially self-served | 50 structured RCAs from Confluence (2020–2023). Gap in 2024–2025. Asked Ana about where current process lives. |
+| 11 | Incident reviews / post-mortems / retrospectives | Medium | **In progress** — Chathura sending last 90 days April 7 | 50 structured RCAs from Confluence (2020–2023). Gap in 2024–2025. Chathura confirmed he will send available RCAs for last 90 days tomorrow (April 7). |
 | 12 | Engineering and operations tool inventory | Medium | Self-served | 48 tools identified across all platforms. Cost data still needed (see ana-request.md items 10–13). |
 | 13 | Open strategic initiatives and known problem projects | Medium | Needed | |
 | 14 | Third-party vendor contracts and API dependency inventory | Low | Needed | OpenAI, Anthropic, AWS costs. Visa/Cybersource terms. Major SaaS subscriptions. |
@@ -369,6 +376,8 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - **syscolabsconf**: Nearly dead (4% active). Single ECSP project, likely CAKE-era per-merchant configs
 - **No monorepo pattern** — microservices proliferation across all workspaces
 - **Four code lineages confirm CAKE acquisition integration was never completed**
+- **GitHub confirmed NOT active** (April 6, Chathura) — moving out due to cost. Bitbucket is sole SCM.
+- **`neo-workspace` repo discovered** (April 6, Ana) — `madmobile/neo-workspace` is the Bitbucket repo for Kennedy's Winmark delivery. The repo name connects Winmark client work to the Neo platform. Needs immediate scan: file tree, languages, commit history, CI/CD, whether this is a shared Neo codebase or single-client delivery.
 
 ### Jira — Inventoried April 3 (Segmented)
 
@@ -414,7 +423,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 ### Known Challenges (Pre-Engagement Signal + System Evidence)
 - Glassdoor: 2.4/5, 31% recommend, 32% positive outlook
 - Execution velocity problems — **now confirmed quantitatively**: declining sprint velocity, 59-day cycle time P50, backlog growing faster than it's being resolved
-- Neo/AI gap: heavy marketing, **no dedicated production infrastructure found in systems scan** — SageMaker artifacts in R&D only. Don's April 5 comments align with this assessment. **OPEN INVESTIGATION ITEM:** Need to search Jira (NEO, AAK, LAA projects), Bitbucket, and Confluence for Neo artifacts in pre-work, and validate onsite with Kennedy and Chathura. Kennedy currently full-time on Winmark client delivery, not Neo.
+- Neo/AI gap: heavy marketing, **no dedicated production infrastructure found in systems scan** — SageMaker artifacts in R&D only. Don's April 5 comments align with this assessment. **MAJOR UPDATE (April 6):** Ana confirmed the Winmark delivery lives in `madmobile/neo-workspace` (Bitbucket) with Jira project WM (board 1712). The repo name "neo-workspace" is the strongest signal yet that Neo may be a real codebase — or at minimum that Winmark client delivery is being built on/as the Neo platform. **Immediate action:** scan neo-workspace repo (file tree, languages, architecture, AI components) and WM Jira board (epics, velocity, team, scope). Kennedy currently full-time on Winmark client delivery.
 - CAKE reliability: system-wide payment outages
 - Priority whiplash: shifting priorities mid-sprint
 - Sales-driven distortion: sales promises overriding product logic
@@ -435,10 +444,10 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 
 ### Known Data Gaps & Caveats (V7)
 - **Incident timeline gap (2024–2026)**: Structured RCA docs in Confluence largely stop after 2023. Either the process lapsed, moved to another tool, or incidents decreased. Only 5 docs from 2024, 2 from 2025 (both in Team Tesla, not Taurus). **Needs onsite clarification: where do incident reviews happen now?** May also need to query Jira for "Incident" or "Code Red" issue types from 2024–2026.
-- **CloudTrail access denied**: The `Global-Audit-RO` role does not include `cloudtrail:LookupEvents`. Zero deployment frequency data from AWS. Only deploy signal is Bitbucket pipeline timestamps and git tags.
+- **CloudTrail access: RESOLVED** (April 6) — Chathura confirmed `cloudtrail:LookupEvents` can be added to audit role. Once granted, will capture deployment frequency data from AWS. Currently only deploy signal is Bitbucket pipeline timestamps and git tags.
 - **Branch protection data may undercount**: 0 of 30 repos showed restrictions via the Bitbucket API. Could mean genuine absence or the API endpoint handles restrictions differently (e.g., project-level vs. repo-level restrictions). Validate onsite.
 - **Pipeline history covers 30 of 789 active repos**: The 60.7% success rate is from the top 30 most active repos — may not represent the full fleet. Could be better or worse for less-active repos.
-- **Grafana still inaccessible**: The actual monitoring dashboards, alert rules, and on-call configuration remain invisible. CloudWatch dashboards captured are a proxy, not the primary observability layer.
+- **Grafana access imminent**: Ana says "should be available shortly" (April 6 morning). The actual monitoring dashboards, alert rules, and on-call configuration remain invisible until access granted. CloudWatch dashboards captured are a proxy, not the primary observability layer.
 - **No Jira incident query**: Searched Confluence for RCAs but did not query Jira for issue type "Incident" or "Code Red" in 2024–2026. This could fill the incident timeline gap.
 - **Root Cause Category field empty may mean wrong field**: The field "Probable/Actual Root Cause Category" (customfield_10382) showed 0% population. There's also "Root Cause Category" (customfield_10590, type: array) that wasn't queried — may be the active one.
 
@@ -500,9 +509,16 @@ Five instruments ready. Target deployment: **Monday, April 6** (via Microsoft Fo
 | Product Manager | | ✅ | | | ✅ |
 | Product Designer | | ✅ | | | ✅ |
 
-**Deployment:** All 5 surveys built in Microsoft Forms on MM account. Ready for Chathura to send. Links below.
-**ISSUE: Chathura's email only references 4 surveys, not 5.** His email mentions: Delivery Performance (leads/managers), Team Culture (everyone), Developer Experience (ICs), Engineering Practices (leads/seniors). He dropped the AI Adoption & Tooling survey. **Action needed:** Follow up with Chathura to either add Survey 5 or understand why he excluded it. The AI survey feeds directly into the board deliverable and vendor rationalization — it's important.
+**Deployment:** All 5 surveys built in Microsoft Forms on MM account. Chathura confirmed he will add Survey 5 (AI Adoption & Tooling) to his intro email before sending Monday (April 6). All 5 links provided in the email thread.
+**RESOLVED (April 6):** Chathura confirmed "Yes" to adding the 5th survey. Original issue was that his draft email only referenced 4 surveys. Now all 5 are included.
 **Chathura's survey email key changes from Adam's draft:** Added "As mentioned in technology all hands" framing, deadline April 10, message will come directly from Chathura. His version is polished and ready to send.
+
+**Respondent-facing survey links (from April 5 email thread):**
+- Delivery Performance: https://forms.cloud.microsoft/r/WNU3f9ryvZ
+- Team Culture: https://forms.cloud.microsoft/r/AwEJqN022m
+- Developer Experience: https://forms.cloud.microsoft/r/021mP98Sf9
+- Engineering Practices: https://forms.cloud.microsoft/r/AV5BE2eKJP
+- AI Adoption & Tooling: https://forms.cloud.microsoft/r/bPBy7MNCkS
 
 **Microsoft Forms Links (all live):**
 - **DORA Quick Check** (9 questions): https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=RevampFRE&subpage=design&id=ib_aDhNew0Kr1vaH6f4POuzhwTnhYKxDp5P7TQtHDhRUQU9JNFJJMzg2R1dGUlhWRTYwODc1UURaVi4u
@@ -655,45 +671,65 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - **Private reply sent to Don with bullet-point takeaways on 90-day plan and next steps (April 5 evening)**
 - **Email and Message Discipline spec added to tl-docs/writing-style.md (April 5 evening)**
 - **Chathura survey gap addressed — asked to add Survey 5 (AI Adoption & Tooling) to his intro email (April 5 evening)**
+- **Ana/Chathura reply processed** (April 6 morning) — both replied to combined email. Chathura confirmed: Survey 5 inclusion (yes), CloudTrail access (yes), L1 org names tomorrow, incident RCAs tomorrow, GitHub departing (cost), Bloom Intelligence moved to 3rd week of April. Ana confirmed: Winmark Bitbucket (`neo-workspace`) and Jira (WM board 1712), SaaS vendor spend partial data (two spreadsheets coming), Grafana "shortly", Graph API "checking", Guru "checking".
+- **Reply email drafted** (April 6 morning) — `monday-morning-reply.md` with confirms, Graph API exact steps for IT, and updated priorities.
+- **Vendor spend spreadsheets received** (April 6 morning) — Ana shared both files: `Software Spend_v1` (47 active vendors, per-cardholder Amex breakdowns, 47 canceled items) and `Software Spend_Updated 2026` (reduced spends tab showing ~29 vendors cut/reduced, ~$84K Cursor savings, ~$57K Dialpad savings, GitHub/Datadog/Instabug canceled). Files copied to `inventory/`. Bill.com and AWS Marketplace tabs still empty — Ana's next phase.
 
 ### In Progress 🔄
-- Waiting on Ana: pre-read items not in Confluence — **target: early Monday April 7**
-- Waiting on Ana: Grafana viewer access — **confirmed Monday April 7** (Matias off holiday weekend)
-- Waiting on Ana: routing questions on Monvia, MenuPad, Relate, Neo/AI
+- Waiting on Ana: Grafana viewer access — "should be available shortly" (April 6 morning)
+- Waiting on Ana: Microsoft Graph API — exact steps sent for IT (Rosen/Matias), Ana "checking"
+- Waiting on Ana: Guru access — "checking" (April 6 morning)
+- ✅ Ana's vendor spend spreadsheets received (April 6 morning) — 2 files, 47 active vendors, 29 reduced/canceled. Cross-reference with AP data pending.
 - Waiting on Ana: interview calendar blocks + conference room (April 13–15)
+- Waiting on Ana: routing questions on Monvia, MenuPad, Relate
+- Waiting on Chathura: L1 org names for Enterprise Solutions (Zubair) — **tomorrow April 7**
+- Waiting on Chathura: incident/RCA docs for last 90 days — **tomorrow April 7**
+- Waiting on IT: CloudTrail `cloudtrail:LookupEvents` added to audit role — Chathura approved
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
 ### Next Steps (This Week)
 
-**Tonight (April 5):**
-1. **Send Ana/Chathura coordination update** — `ana-request.md` covers all open items including new Winmark and Bloom Intelligence items. Include all 5 survey links.
+**Today (April 6):**
+1. **Send reply email** — `monday-morning-reply.md` with confirms and Graph API instructions for IT.
+2. **Scan `neo-workspace` repo** via Bitbucket API — file tree, languages, commit history, CI/CD config. Most important new lead: if Winmark delivery lives in `neo-workspace`, Neo may be a real codebase, not just marketing.
+3. **Scan Winmark Jira board** (WM project, board 1712) — epics, sprint velocity, active work, team members assigned.
+4. **Grafana capture** — as soon as access arrives. Dashboard inventory, alert rules, data sources.
+5. **Finalize interview schedule grid** — send to Ana for calendar booking.
 
-**Monday–Wednesday (April 7–9):**
-2. **Grafana capture** — Monday April 7 when access arrives. Dashboard inventory, alert rules, data sources.
-3. **Collect pre-read docs** as Ana's folder becomes available Monday.
-4. **Finalize interview schedule grid** — send to Ana for calendar booking.
-5. **Don Sessions 2 and 3** — target April 7–9. Session 2: political landscape. Session 3: pre-onsite briefing.
-6. **Search for Winmark in Jira/Bitbucket/Confluence** — look for project, repo, or space related to Kennedy's client delivery. Evidence of what "AI-developed POS" means.
-7. **Dig deeper on Neo** — search Jira NEO/AAK/LAA projects for actual development artifacts, not just project shells. Search Bitbucket for repos. Search Confluence for technical docs vs. marketing material. This is an open investigation item.
-8. **Update Kennedy interview prep** — reframe from "AI/innovation roadmap" to: what are you building for Winmark, what's the tech stack, is any of it reusable, what does "Neo" actually mean vs. what Winmark is.
-9. **Add Bloom Intelligence to onsite questions for Dulanjan** — he's reportedly already talking to them. What's been discussed? Product fit? Technical integration points?
-10. **Gather independent evidence for Hypothesis B** — Jira epic churn/cancellation data, sprint scope change metrics across boards, roadmap revision history in Confluence.
+**Tomorrow (April 7):**
+6. **Intake Chathura's L1 org names** for Enterprise Solutions (Zubair's 58 people).
+7. **Intake Chathura's incident/RCA docs** for last 90 days — fill the 2024–2026 RCA timeline gap.
+8. **Cross-reference Ana's vendor spend with AP data** — both spreadsheets received April 6. Amex data covers different vendors than Bill.com/AP data. Merge into unified vendor catalog.
+9. **Run CloudTrail queries** once `cloudtrail:LookupEvents` is granted — deployment frequency data from AWS.
+10. **Collect pre-read docs** as Ana's folder becomes available.
+
+**Tuesday–Wednesday (April 8–9):**
+11. **Don Sessions 2 and 3** — Session 2: political landscape. Session 3: pre-onsite briefing.
+12. **Full neo-workspace analysis** — architecture, dependencies, AI components, how it connects to CAKE/Concierge. Does the codebase support multiple clients or is it Winmark-specific?
+13. **Update Kennedy interview prep** — reframe: what are you building for Winmark, what's the tech stack, is any of it reusable, what does "Neo" actually mean vs. what Winmark is.
+14. **Gather independent evidence for Hypothesis B** — Jira epic churn/cancellation data, sprint scope change metrics across boards, roadmap revision history in Confluence.
 
 **Thursday–Friday (April 10–11):**
-11. **Survey analysis** — surveys close April 10. Analyze results same day. Cross-reference DORA self-reports vs. actual system data. Feed into interview questions.
-12. **Pre-onsite briefing with Don** (April 10–11) — final alignment session. Review survey results, confirm interview schedule, identify 5 real cases to trace.
-13. **Final hypothesis scorecard update** — score each hypothesis A–I based on all pre-work evidence.
-14. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine.
+15. **Survey analysis** — surveys close April 10. Analyze results same day. Cross-reference DORA self-reports vs. actual system data. Feed into interview questions.
+16. **Pre-onsite briefing with Don** (April 10–11) — final alignment session. Review survey results, confirm interview schedule, identify 5 real cases to trace.
+17. **Final hypothesis scorecard update** — score each hypothesis A–I based on all pre-work evidence.
+18. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine.
 
 **Pre-Onsite (April 11–12):**
-15. **Print/prep onsite materials** — C4 diagrams, org chart, key metrics one-pager, interview question sheets.
-16. **Travel logistics** — Uber from St. Pete to Tampa HQ, confirm room booking with Ana.
+19. **Print/prep onsite materials** — C4 diagrams, org chart, key metrics one-pager, interview question sheets.
+20. **Travel logistics** — Uber from St. Pete to Tampa HQ, confirm room booking with Ana.
+
+**Deprioritized:**
+- **Bloom Intelligence** — planning conversation moved to 3rd week of April per Chathura. No prep needed this week. Add to onsite questions for Dulanjan only.
 
 ### Data Gaps to Close (Before April 11)
-- [ ] **Jira incident query**: Search for issue types "Incident", "Code Red", "Service Interruption" in 2024–2026 to fill the RCA timeline gap.
+- [ ] **Neo-workspace repo scan** (NEW — highest priority): Scan `madmobile/neo-workspace` via Bitbucket API. File tree, languages, commit history, CI/CD, architecture. Does this repo contain a platform or a single-client app?
+- [ ] **Winmark Jira board scan** (NEW): Scan WM project (board 1712). Epics, sprint velocity, active work, team members. How much work, how many people, what does "AI-developed POS" look like in practice?
+- [ ] **CloudTrail deployment frequency** (UNBLOCKED): Chathura approved `cloudtrail:LookupEvents`. Run queries once IT adds to audit role. Deploy frequency data from AWS fills a major DORA gap.
+- [ ] **Jira incident query**: Search for issue types "Incident", "Code Red", "Service Interruption" in 2024–2026 to fill the RCA timeline gap. Chathura also sending last 90 days of RCA docs tomorrow.
 - [ ] **Root Cause Category field #2**: Query `customfield_10590` ("Root Cause Category", type: array) — may be the active one vs. the 0%-populated `customfield_10382`.
-- [ ] **CloudTrail access escalation**: Ask Ana/Matias if audit role can get `cloudtrail:LookupEvents` added, or if there's a CloudTrail S3 bucket to read directly.
+- [x] ~~**CloudTrail access escalation**~~: **RESOLVED** — Chathura confirmed yes (April 6).
 - [ ] **Branch protection validation**: Check whether Bitbucket uses project-level branch permissions instead of repo-level.
 - [ ] **Pipeline coverage expansion**: Currently only top 30 repos. Consider running for top 100.
 - [ ] **Theme-analyze the 30 sprint retrospectives** — extract recurring "what didn't go well" themes across teams.
@@ -710,7 +746,9 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - [ ] Invoice structure — $10K deferred, payment terms TBD
 
 ### System Exploration — Completed (Key Answers)
-- **Where does Neo/AI live?** No dedicated account. SageMaker in CAKE R&D. Jira projects exist (NEO, AAK, LAA). Confluence docs exist. But no production AI infrastructure found in systems scan. Don's April 5 comments align with this assessment. **OPEN INVESTIGATION:** Need to dig into Jira NEO/AAK/LAA for actual development artifacts (not just project shells), search Bitbucket for repos, and differentiate technical docs from marketing material in Confluence. Kennedy is currently full-time on Winmark client delivery, not Neo. Validate onsite with Kennedy and Chathura.
+- **Where does Neo/AI live?** No dedicated AWS account. SageMaker in CAKE R&D. Jira projects exist (NEO, AAK, LAA). Confluence docs exist. But no production AI infrastructure found in systems scan. Don's April 5 comments align with this assessment. **MAJOR UPDATE (April 6):** Ana confirmed the Winmark delivery lives in Bitbucket repo `madmobile/neo-workspace` with Jira project WM (board 1712). The repo name "neo-workspace" is the strongest signal yet that Neo may be a real codebase — or that Winmark client delivery IS the Neo platform in practice. **IMMEDIATE ACTION:** Scan the repo and Jira board to determine whether this is a platform codebase or a single-client app, what tech stack is in use, and whether any of it is reusable.
+- **Is GitHub still active?** **RESOLVED (April 6):** No. Moving out of GitHub due to cost. Bitbucket is sole SCM. (Chathura, April 6)
+- **Where is the Winmark project?** **RESOLVED (April 6):** Bitbucket: `madmobile/neo-workspace` (develop branch). Jira: project WM, board 1712. (Ana, April 6)
 - **What are MenuPad-Prod-Metro and Monvia?** Legacy accounts with running instances. Monvia is costing $25.9K/month. **Escalated to Ana.**
 - **What CI/CD tools are in use?** Jenkins (CAKE, found in CAKE Dev account) + Bitbucket Pipelines (Retail, Payments). Dual CI/CD system.
 - **How are the four Bitbucket orgs related?** madmobile = Concierge/Retail core. syscolabs = CAKE/Leapset legacy. madpayments = Modern payments (TypeScript, domain-driven). syscolabsconf = Dead CAKE-era configs.
@@ -913,7 +951,7 @@ Key questions for the vendor/tooling rationalization section of the board delive
 - Slack — paid plan alongside Microsoft Teams?
 - Figma — editor seats
 - TeamViewer — annual cost for POS remote access
-- GitHub — still active alongside Bitbucket? (internal docs flag "Can we get rid of this?")
+- GitHub — **RESOLVED (April 6):** Not active, moving out due to cost. Can remove from vendor spend tracking.
 
 **Procurement process questions:**
 - Is there a centralized procurement process, or do teams buy tools independently?
@@ -926,6 +964,33 @@ Key questions for the vendor/tooling rationalization section of the board delive
 
 **Estimated annual SaaS spend (excluding AWS): $350K–$800K estimated range, now partially confirmed** — AP data from the cash flow model shows confirmed costs for 35+ vendors. Key confirmed annualized SaaS spend: AWS ~$3.5M, Twilio ~$200K, 360 Advanced $246K, RS2 Software $240K, Intacct (Sage ERP) $213K, HubSpot $120K, VirtuCrypt $148K, Tyk $38K, Gainsight $32K, Guru $31K, Outreach $45K, Figma $13K, Datadog $6K, Snowflake $5K. Non-SaaS vendors (contractors, legal, audit) add significantly: Peak Activity $1.2M/yr, Cooley $978K/yr, Econsulate going to $0.
 
+**Update (April 6):** Ana shared both spreadsheets same morning. Two files received and copied to `inventory/`:
+- `vendor_spend_v1.xlsx` — Master list of 47 active software vendors on Amex, with per-cardholder breakdowns (Jorge, Mark F, Bruce, Greg, Ed, Anelis, Karen, David), "Not Active & Dead" tab (47 canceled items), and "New Amex Charges" tab.
+- `vendor_spend_updated_2026.xlsx` — Updated Amex tab (16 active vendors), empty Bill.com and AWS Marketplace tabs (next phase), and **Reduced Spends tab** showing 29 vendors with before/after spend and savings.
+
+**Key findings from Ana's vendor data:**
+- **Active cost-cutting confirmed**: ~29 vendors canceled or reduced in last 30 days. Aligns with 90-day plan $50K/month software savings target.
+- **Cursor**: $38,160/year annual contract (AWS Marketplace). $49,588 total Amex historical. $84K annual savings tracked in Reduced Spends (was higher, reduced by $30K). **127 Amex charges** — heavy usage.
+- **Atlassian**: ~$9,200/month estimated on Amex. $201,959 total Amex spend. Largest single vendor on card.
+- **OpenAI ChatGPT**: $1,650/month corporate. $51,266 total Amex. Plus $50/month API for Customer HealthScore.
+- **Anthropic**: $100/month API (Menu Maestro), $125/month Claude Chat. Total ~$225/month. 4 people had access: Andy, Kris, Jack, Zach, Don.
+- **Postman**: $49,231 total Amex. Reduced from $2,562/month to $1,334/month.
+- **JetBrains/IntelliJ**: $41,714 total Amex. Reduced to $4,219/year annual contract ($16,181 savings).
+- **Twilio**: $48,925 + $47,341 (SendGrid) = ~$96K on Amex alone.
+- **Slack**: $34,671 prepaid through Dec 2025, 3 seats. Running alongside Teams.
+- **Sentry**: $27,120 — note says "Turn it off. Can Zubair turn it off?" — still active despite question.
+- **Guru**: $22,758, contract ends June. Bailey (VP HR) now owns. Working on a plan.
+- **GitHub**: CANCELED — $224/month → $0. Confirmed in both spreadsheets and Chathura's email.
+- **Datadog**: CANCELED — Ana canceled in Feb. $196/month → $0.
+- **ElevenLabs**: $99/month for AI Support Phone Agent. Ian owns.
+- **Lovable**: $294/month → $0 (dropped to free). Product team was using Lovable.dev for prototyping.
+- **"MICROSOFT (NEO Login)"**: ~$149/month, note: "what is this being used for? Randy and Jack. Madmobil..." — confirms Neo has Microsoft auth/identity infrastructure.
+- **Dialpad**: $142K→$85K annual ($57K savings). Chathura reviewing.
+- **Bill.com tab empty**: Ana's next phase. This is where the larger vendor invoices live (Twilio invoice, Tyk, VirtuCrypt, etc. from the AP data).
+- **AWS Marketplace tab empty**: Cursor, Keeper, MongoDB Atlas are on AWS Marketplace but not yet audited in this spreadsheet.
+
+**Cross-reference with 90-day plan AP data:** The Amex data covers different vendors than the AP/Bill.com data from the cash flow model. Together they give near-complete visibility. Main gaps: Bill.com invoiced vendors (the larger contracts) and AWS Marketplace subscriptions.
+
 ---
 
 ## 17. Reference Links
@@ -936,6 +1001,8 @@ Key questions for the vendor/tooling rationalization section of the board delive
 - **Mad Mobile Website:** https://madmobile.com/
 - **Bloom Intelligence:** https://bloomintelligence.com/
 - **Winmark Corporation:** https://www.winmarkfranchises.com/
+- **Winmark Bitbucket (neo-workspace):** https://bitbucket.org/madmobile/neo-workspace/src/develop/
+- **Winmark Jira Board:** https://madmobile-eng.atlassian.net/jira/software/c/projects/WM/boards/1712
 
 ---
 
