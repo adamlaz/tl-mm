@@ -1,0 +1,875 @@
+{
+  "metadata": {
+    "engagement": "Mad Mobile Technology Operations Review",
+    "onsite_dates": "April 13-15, 2026",
+    "location": "Mad Mobile Tampa HQ",
+    "interviewer": "Adam Lazarus (adam.lazarus@madmobile.com)",
+    "total_sessions": 23,
+    "total_interview_hours": 13.5,
+    "version": "2.0",
+    "generated": "2026-04-06"
+  },
+  "daily_rhythm": {
+    "don_morning_sync": "8:00-8:30",
+    "morning_block": "8:30-12:00",
+    "lunch": "12:00-1:00",
+    "afternoon_block": "1:00-4:00",
+    "synthesis": "4:00-5:00",
+    "don_debrief": "5:00-5:30",
+    "buffer_minutes": 15,
+    "max_consecutive_sessions": 3
+  },
+  "sessions": [
+    {
+      "id": "M1",
+      "name": "Chathura Ratnayake",
+      "title": "CDO",
+      "email": "chathura.ratnayake@madmobile.com",
+      "org_size": "100+",
+      "day": "Monday",
+      "date": "2026-04-13",
+      "duration_min": 60,
+      "proposed_time": "8:30-9:30",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Full org ownership, execution model, sprint reality, support unification",
+      "topics": [
+        "org structure across all verticals",
+        "sprint velocity trends",
+        "backlog health and grooming",
+        "support unification under CDO",
+        "PMO integration",
+        "AI strategy from the build side",
+        "capacity and prioritization"
+      ],
+      "hypotheses": ["A", "E", "G", "H", "I"],
+      "lead_with": "I've pulled together data across all your teams -- sprint velocity trends, epic completion rates, reviewer bottlenecks, CI/CD coverage by workspace. Some of it might be useful as you're ramping into the CDO role.",
+      "what_they_get": "The full systems picture he hasn't had time to build. Sprint velocity trends, epic completion rates, reviewer bottlenecks, CI/CD coverage by workspace -- assembled across all his teams in one view.",
+      "arc_notes": "Most important interview. Morning freshness for both sides. He's 10 days into CDO -- use 'how are you figuring it out?' framing alongside data probes. Part 1 of 2; follow-up Wednesday W8.",
+      "top_questions": [
+        "Sprint velocity on the Ops Prime board dropped from 127 to 56 completed issues per sprint across Q1 -- a 56% decline. The OS board shows a similar pattern. What happened in Q1?",
+        "There are 18,583 open Jira issues across the org -- 13,725 in engineering, 66% older than a year. Is the backlog actively groomed, or has it become a place where tickets go to die?",
+        "Over 26 weeks, engineering created 4,701 issues and resolved 4,432 -- net growth of 269. Is anyone tracking that trend?",
+        "The madpayments workspace operates very differently from the rest -- TypeScript, 87% CI/CD, EKS-native, zero IAM users. Was that intentional? Could it be a model for other teams?"
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "Sprint velocity charts"},
+        {"path": "/engineering", "label": "Epic completion, PR metrics"},
+        {"path": "/people/teams", "label": "Org overview"},
+        {"path": "/engagement/hypotheses", "label": "Hypothesis board"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Owns all engineering, product, PMO, and customer support (~100+ people). No substitute.", "alternatives": null },
+      "notes": "Part 1 of 2. Follow-up session W8 on Wednesday."
+    },
+    {
+      "id": "M2",
+      "name": "Jack Kennedy",
+      "title": "CTO",
+      "email": "jack.kennedy@madmobile.com",
+      "org_size": "2 (Jeremy Diggins)",
+      "day": "Monday",
+      "date": "2026-04-13",
+      "duration_min": 45,
+      "proposed_time": "9:45-10:30",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "AI/innovation, Neo platform, Winmark delivery",
+      "topics": [
+        "Winmark AI POS build",
+        "Neo platform reality vs. marketing",
+        "tech stack and AI approach",
+        "agentic programming workflow",
+        "infrastructure and observability"
+      ],
+      "hypotheses": ["C", "I"],
+      "lead_with": "I'm genuinely curious about the Winmark build -- an AI-developed POS for 1,265 franchise stores is a significant technical challenge. Walk me through how you're approaching it.",
+      "what_they_get": "Genuine interest in what he's building. Not the org chart changes, not what he lost -- what he's creating right now and what he's learning from agentic programming at scale.",
+      "arc_notes": "Handle with care. Operational scope just removed in April 3 reorg. Focus on what he's building, not what he lost. Don't probe the reorg dynamics directly -- let him volunteer. Lead with curiosity about Winmark.",
+      "top_questions": [
+        "I've looked across all 18 AWS accounts and can't find a dedicated Neo/AI production environment. I see SageMaker artifacts in R&D and active Jira projects, but where does the AI platform actually run in production?",
+        "83% of running EC2 instances are on pre-Graviton hardware, and 21% of Lambda functions are on end-of-life runtimes. Is there a modernization initiative?",
+        "The Shared Services account runs a full Grafana stack -- Mimir, Loki, Tempo. How broadly adopted is it across teams?",
+        "3,191 repos across four Bitbucket workspaces, 75% stale. Is there a repo lifecycle policy?"
+      ],
+      "relevant_pages": [
+        {"path": "/infrastructure", "label": "AWS accounts, SageMaker, no Neo account"},
+        {"path": "/engineering", "label": "neo-workspace repo data"},
+        {"path": "/tooling", "label": "Observability stack"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Only person who can speak to AI/Neo strategy and the Winmark delivery. No substitute.", "alternatives": null },
+      "notes": "Narrowed scope post-reorg. Currently full-time on Winmark client delivery ($5M). Reduced from 60 min."
+    },
+    {
+      "id": "M3",
+      "name": "Dulanjan Wengappuliarachchi",
+      "title": "VP, Product & GTM",
+      "email": "dulanjan.wengappuliarachchi@madmobile.com",
+      "org_size": "10+",
+      "day": "Monday",
+      "date": "2026-04-13",
+      "duration_min": 45,
+      "proposed_time": "10:45-11:30",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Roadmap governance, product decisions, PM/eng handoff",
+      "topics": [
+        "prioritization process",
+        "roadmap management",
+        "PM capacity across 6 PMs",
+        "design handoff",
+        "Retail and Neo/AI roadmaps",
+        "Bloom Intelligence"
+      ],
+      "hypotheses": ["A", "B", "H"],
+      "lead_with": "The documented prioritization process -- multi-department scoring, exec alignment on the top 5, ARB-approved architecture before engineering begins -- is more structured than most companies I've seen. I want to understand how it works in practice.",
+      "what_they_get": "Validation that the process he's built is solid -- and a candid conversation about where it may break under pressure from sales or executive overrides.",
+      "arc_notes": "Reduced from 60 min. Focus on the prioritization process and whether it actually holds under pressure. Don confirmed Retail and Neo/AI are in scope -- ask about those roadmaps.",
+      "top_questions": [
+        "Every major retail customer has their own Jira project -- Brooks Brothers, Ralph Lauren, Estee Lauder. How do you roll up a portfolio view across 20+ customer projects?",
+        "In the last 30 days across all of Jira, 916 issues created but only 658 resolved. How do you decide what gets deprioritized?",
+        "How often does a customer escalation or sales promise override the prioritization process mid-sprint?",
+        "You have 6 PMs, a design director, an open marketing role, and L&D. That's a broad scope. What suffers most from that breadth right now?"
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "Backlog growth, sprint data"},
+        {"path": "/engineering", "label": "Epic completion rates"},
+        {"path": "/engagement/hypotheses", "label": "Hypothesis B: Sales-Led Chaos"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Only product leadership -- owns all PMs, design, product marketing.", "alternatives": ["Miru S. (Sr PM, Restaurant) could cover product process but not the VP perspective"] },
+      "notes": "Reduced from 60 min. Don confirmed Retail and Neo/AI in scope -- ask about Concierge and Neo roadmaps."
+    },
+    {
+      "id": "M4",
+      "name": "David Strainick",
+      "title": "COO",
+      "email": "david.strainick@madmobile.com",
+      "org_size": "Account Mgmt (9), Onboarding (10), Delivery (3), IT",
+      "day": "Monday",
+      "date": "2026-04-13",
+      "duration_min": 45,
+      "proposed_time": "1:00-1:45",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Account management, onboarding pipeline, IT governance, customer ops chain",
+      "topics": [
+        "customer operations chain end-to-end",
+        "onboarding bottleneck",
+        "IT governance split with CTO",
+        "Sri Lanka country head reporting",
+        "backlog onboarding risk from 90-day plan"
+      ],
+      "hypotheses": ["D", "G"],
+      "lead_with": "I've been mapping the customer operations chain -- signed contract to live deployment -- and I'd love to validate it with you. You own the full pipeline now: Account Management, Onboarding, Delivery, and IT.",
+      "what_they_get": "A process map of the operations chain he may not have assembled himself yet, 10 days into a completely new role scope.",
+      "arc_notes": "10 days into COO role (was CPO). Completely different interview than originally planned. Use 'how are you figuring it out?' framing. Watch for whether he has command of the operational details or is still discovering them -- both are valid data.",
+      "top_questions": [
+        "Walk me through how a new customer goes from signed contract to live deployment. Where does it break?",
+        "IT reports to you now, not the CTO. Jorge Maltes handles PCI compliance, Rosen Georgiev handles day-to-day ops. How do you govern IT priorities across both?",
+        "Sri Lanka's country head reports to you. Engineering resources there have dotted lines to Chathura/Zubair. How does that work in practice?",
+        "The 90-day plan flags backlog onboarding as the #1 execution risk -- HIGH likelihood, HIGH impact. I see 2,500+ open customer implementation tickets in Jira, 77% older than a year. What's the technology bottleneck?"
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "CS Jira segment: 2,525 open, 77% >1yr"},
+        {"path": "/people/teams", "label": "Onboarding/delivery team structure"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Only person who owns the full customer operations chain (Account Mgmt, Onboarding, Delivery, IT). No substitute.", "alternatives": null },
+      "notes": "Was CPO, now COO. Completely different interview than originally planned."
+    },
+    {
+      "id": "M5",
+      "name": "Manuel Garcia",
+      "title": "Interim CFO",
+      "email": "manuel.garcia@madmobile.com",
+      "org_size": "Mark Do (Controller), Zach Honnold (RevOps), Andy Honnold (Payments Strategy)",
+      "day": "Monday",
+      "date": "2026-04-13",
+      "duration_min": 30,
+      "proposed_time": "2:00-2:30",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "Financial model, vendor spend, cost reduction targets",
+      "topics": [
+        "90-day plan cost commitments",
+        "vendor/SaaS spend rationalization",
+        "AP stretching and vendor relationships",
+        "revenue operations under new structure"
+      ],
+      "hypotheses": ["A", "G"],
+      "lead_with": "I've been cross-referencing the AP data from the financial model against the vendor spend spreadsheets Ana shared. A few things jumped out that I'd like to validate with you.",
+      "what_they_get": "A technology-informed perspective on which cost cuts are safe vs. risky. The $50K/month software savings target needs someone who understands what the tools actually do.",
+      "arc_notes": "New to exec team. 30 min is sufficient -- focused questions on cost structure and vendor relationships. He owns Finance and RevOps, absorbed from Siegel.",
+      "top_questions": [
+        "The 90-day plan commits to $50K/month in software cost reductions starting June and $50K/month in AWS reductions. Where is the low-hanging fruit vs. what requires engineering work to consolidate?",
+        "AP is stretching 300+ days for some vendors -- BDO at 309 days, LinkedIn at 203 days. How does that affect vendor relationships and negotiating leverage on renewals?",
+        "Revenue Operations moved to you from Siegel. How is that transition going? What are you inheriting?"
+      ],
+      "relevant_pages": [
+        {"path": "/financial", "label": "Revenue model, cost reduction targets"},
+        {"path": "/tooling", "label": "Vendor/tool inventory and spend"}
+      ],
+      "scheduling": { "priority": "PREFERRED", "why": "Financial model and vendor spend perspective. New Interim CFO.", "alternatives": ["Can skip if unavailable -- financial data already captured from the 90-day plan"] },
+      "notes": "New to exec team. Absorbed RevOps from Siegel. Financial model questions from the plan."
+    },
+    {
+      "id": "M6",
+      "name": "Mark Guilarte",
+      "title": "VP Program Management",
+      "email": "mark.guilarte@madmobile.com",
+      "org_size": "4",
+      "day": "Monday",
+      "date": "2026-04-13",
+      "duration_min": 30,
+      "proposed_time": "2:45-3:15",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "PMO integration with engineering sprints, cross-team coordination",
+      "topics": [
+        "PMO domain assignments",
+        "GTM tracker and release cadence",
+        "AI project coordination (Ian)",
+        "cross-team visibility"
+      ],
+      "hypotheses": ["E", "G"],
+      "lead_with": "Your PMO domain assignments map 1:1 to the product lines -- Qaiser on Restaurant, Vanessa on Payments, Ian on AI, Debbie on Ops. That's a clean structure.",
+      "what_they_get": "Recognition that his PMO model is logically organized and an important coordination layer.",
+      "arc_notes": "30 min is sufficient -- focused questions on coordination mechanics.",
+      "top_questions": [
+        "Your team has one PM per domain -- 4 people coordinating across 100+ engineers. How do you maintain visibility across all those teams?",
+        "The product roadmap shows 12+ ongoing CAKE projects, 4+ Payments integrations, and Engineering platform work. How does the GTM tracker work in practice? Does it drive the 4-week release cadence, or do teams ship independently?",
+        "Ian is the Project Lead for AI. What does that portfolio look like day-to-day? Which AI/Neo projects are active?"
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "Sprint and release cadence data"},
+        {"path": "/engagement/hypotheses", "label": "Hypothesis G: Missing Cadence"}
+      ],
+      "scheduling": { "priority": "PREFERRED", "why": "PMO coordination across all product lines.", "alternatives": ["Qaiser P. (Sr PM, Restaurant)", "Vanessa Sotomayor (PM, Payments)"] },
+      "notes": "Moved to Monday to free Tuesday for deeper engineering sessions."
+    },
+    {
+      "id": "M7",
+      "name": "Engineering Manager #1",
+      "title": "Engineering Manager (CAKE team)",
+      "email": null,
+      "org_size": null,
+      "day": "Monday",
+      "date": "2026-04-13",
+      "duration_min": 30,
+      "proposed_time": "3:30-4:00",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Sprint reality, blockers, ground-level CAKE perspective",
+      "topics": [
+        "sprint execution",
+        "velocity trends",
+        "tooling and dependencies",
+        "interrupt-driven work",
+        "priority changes mid-sprint"
+      ],
+      "hypotheses": ["B", "F", "G"],
+      "lead_with": "Adapt based on their team's specific data from velocity and PR metrics. Lead with a specific observation about their board or repo.",
+      "what_they_get": "A voice to the CEO they've never had. The universal closing question gives them direct input to Don.",
+      "arc_notes": "Use EM interview templates. Look up their team's board in velocity data and repos in PR metrics before the session. Moved to Monday afternoon so Tuesday morning VP answers from Randy are fresh for cross-reference.",
+      "top_questions": [
+        "Your board [NAME] shows [TREND] over the last N sprints -- [VALUES]. Does that match your experience? What drove it?",
+        "Your team's average PR merge time on [REPO] is X hours. Does that feel right, or are there outliers skewing it?",
+        "What percentage of your sprint goes to planned work versus interrupt-driven work -- escalations, bugs, support?",
+        "When priorities change mid-sprint, how does your team hear about it?"
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "Sprint velocity by board"},
+        {"path": "/engineering", "label": "PR metrics by repo"}
+      ],
+      "scheduling": { "priority": "FLEXIBLE", "why": "Need a CAKE engineering manager who runs sprints day-to-day.", "alternatives": ["Alexander Baine (Frontend Mgr)", "Kyle Budd (Backend Mgr) -- ask Randy who's better, either works"] },
+      "notes": "TBD name. Target: Alexander Baine or Kyle Budd from Randy's team. Ask Randy in M1/lunch who would be best."
+    },
+    {
+      "id": "T1",
+      "name": "Randy Brown",
+      "title": "VP Eng, Restaurant Technology",
+      "email": "randy.brown@madmobile.com",
+      "org_size": "10",
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 45,
+      "proposed_time": "8:30-9:15",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "CAKE capacity vs. surface area, V3/V4 coexistence, outage patterns",
+      "topics": [
+        "CAKE ecosystem complexity",
+        "team capacity vs. system count",
+        "POS V3/V4 coexistence",
+        "Jenkins vs Pipelines migration",
+        "QE reporting to Payments not Restaurant",
+        "team assignments"
+      ],
+      "hypotheses": ["A", "E", "F", "I"],
+      "lead_with": "The data confirms what you probably already know -- your team is carrying a lot. 9 engineers for 15+ live systems plus 6+ in active development is an extraordinary ratio.",
+      "what_they_get": "Objective, data-backed validation that his team is under-resourced relative to the system surface area. He's probably been saying this internally -- now there's external evidence.",
+      "arc_notes": "Lead with respect for what his team manages on thin resources. Ask him to recommend which EM or IC to talk to on Tuesday afternoon.",
+      "top_questions": [
+        "The REST Jira project has 17,318 issues -- more than the next four projects combined. How much of that is actively worked versus inherited backlog?",
+        "The syscolabs workspace has 1,527 repos, but 76% haven't been touched in 90 days. The QA project alone has 222 repos. Is there a plan to archive or consolidate?",
+        "PR cycle time for cake-payment-gateway averages 78 hours. react-cinco averages 31 hours. Are these the same team? What drives the difference?",
+        "I found Jenkins servers running in the CAKE Development AWS account. Are you on Jenkins, Bitbucket Pipelines, or both? Is there a consolidation plan?"
+      ],
+      "relevant_pages": [
+        {"path": "/engineering", "label": "CAKE repos, PR cycle times, CI/CD"},
+        {"path": "/delivery", "label": "REST project metrics, sprint velocity"},
+        {"path": "/infrastructure", "label": "CAKE Dev AWS account, Jenkins instances"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Owns all CAKE/Restaurant engineering (10 people, 15+ live systems). No substitute.", "alternatives": null },
+      "notes": "Ask him who from his team (Alexander Baine or Kyle Budd) would be best to talk to in M7."
+    },
+    {
+      "id": "T2",
+      "name": "Zubair Syed",
+      "title": "VP Eng, Enterprise Solutions",
+      "email": "zubair.syed@madmobile.com",
+      "org_size": "58",
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 45,
+      "proposed_time": "9:30-10:15",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Concierge/Retail execution, enterprise customers, cross-workspace allocation",
+      "topics": [
+        "Enterprise Solutions org structure",
+        "Concierge/Retail architecture",
+        "workspace allocation across 4 Bitbucket orgs",
+        "US/SL coordination",
+        "reviewer concentration",
+        "team operations"
+      ],
+      "hypotheses": ["A", "D", "E", "I"],
+      "lead_with": "You have the largest engineering team in the company and I have the least data on it -- your section of the CDO org chart was mostly blank. I want to hear directly from you how your org is structured and what you're focused on.",
+      "what_they_get": "Being heard and made visible. His org was literally blank on the CDO chart. Someone is finally asking him to tell his story instead of filling in the gaps around him.",
+      "arc_notes": "Largest org, least visibility. CDO org chart page was blank. Let him tell the story first -- don't lead with data because we don't have his team's data. Ask who from his team should talk to us on Tuesday/Wednesday.",
+      "top_questions": [
+        "How do you allocate teams across the four Bitbucket workspaces? Do engineers move between madmobile, syscolabs, and madpayments, or are they siloed?",
+        "PR reviewer concentration -- are there individuals who review a disproportionate share of PRs? Who are the bottleneck reviewers?",
+        "Assignee concentration -- are there people with 50+ open issues assigned?",
+        "The Operations sub-team had a 57% L2 reduction and 72% L3 reduction in October 2025. How has that played out?"
+      ],
+      "relevant_pages": [
+        {"path": "/people/directory", "label": "Directory (pending Enterprise names)"},
+        {"path": "/engineering", "label": "madmobile + syscolabs workspaces"},
+        {"path": "/people/network", "label": "Reviewer network graph"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Owns Enterprise Solutions (58 people) -- the largest eng org and the one with least visibility. No substitute.", "alternatives": null },
+      "notes": "Still don't have names for his 58-person org. Chathura sending April 7. Ask Zubair who from his team to talk to for T6 or W1."
+    },
+    {
+      "id": "T3",
+      "name": "Akshay Bhasin",
+      "title": "VP Payments Engineering",
+      "email": "akshay.bhasin@madmobile.com",
+      "org_size": "20+",
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 45,
+      "proposed_time": "10:30-11:15",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Payments architecture, QE org structure, PCI, scaling",
+      "topics": [
+        "payments codebase quality",
+        "CI/CD and EKS architecture",
+        "Restaurant QE under Payments",
+        "PCI compliance",
+        "SL engineers in R&D",
+        "payments incident history"
+      ],
+      "hypotheses": ["E", "F", "I"],
+      "lead_with": "Your workspace has the highest CI/CD coverage, cleanest architecture, and most modern stack in the company -- 87% CI/CD, TypeScript throughout, fully containerized on EKS, zero IAM users. I want to understand how you got there.",
+      "what_they_get": "Recognition that his team has built the engineering quality benchmark. He should know that his codebase is the best in the company -- and that the rest of the org could learn from how he got there.",
+      "arc_notes": "Lead with the quality benchmark observation. This is a conversation about what excellent looks like, not what's broken. Then explore the unusual QE structure and payments-specific challenges.",
+      "top_questions": [
+        "The payments codebase has 87% CI/CD coverage, TypeScript throughout, domain-driven structure, EKS-native, 0 IAM users, Terraform state. Your team runs very differently from CAKE and Enterprise. Was that a deliberate engineering decision?",
+        "Restaurant QE -- 7 people -- reports to you, not Randy Brown. That's unusual -- the people testing restaurant software don't report to the person building it. How does that work?",
+        "The CDO roadmap shows 4+ Payments integration projects -- Sardine, RS2, CYBS, South State Bank. Plus 6+ Payments Ops projects. How do 9 R&D engineers cover that?",
+        "Payments had 19 incidents in the RCA data, most in 2021-2022. Peak was 26 incidents in 2022. Has reliability actually improved, or did the documentation practice stop?"
+      ],
+      "relevant_pages": [
+        {"path": "/engineering", "label": "madpayments workspace, CI/CD coverage"},
+        {"path": "/infrastructure", "label": "Payments Prod US -- EKS, zero EC2"},
+        {"path": "/delivery", "label": "Payments sprint data"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Owns Payments engineering (20+ people) including Restaurant QE. No substitute.", "alternatives": null },
+      "notes": "Scope is larger than originally reported: Payments R&D (9), Restaurant QE (7), Biz Ops (4), PCI counterparts."
+    },
+    {
+      "id": "T4",
+      "name": "Matias Riglos",
+      "title": "Solution Operations (DevOps/Infra)",
+      "email": "matias.riglos@madmobile.com",
+      "org_size": null,
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 30,
+      "proposed_time": "11:30-12:00",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "Infrastructure, CI/CD dual system, observability, cloud operations",
+      "topics": [
+        "Jenkins vs Bitbucket Pipelines migration",
+        "observability stack (Grafana/Mimir/Loki/Tempo vs Datadog vs Nagios/Munin)",
+        "artifact registries (CodeArtifact, NpmJS, Archiva, DockerHub, ECR)",
+        "AWS account structure and cost attribution",
+        "Trend Micro vs Wiz overlap"
+      ],
+      "hypotheses": ["F", "I"],
+      "lead_with": "I can see the infrastructure from the outside -- 18 AWS accounts, the Grafana stack in Shared Services, Jenkins in CAKE Dev alongside Pipelines everywhere else. I'd like to understand the operational reality behind that.",
+      "what_they_get": "Someone who has already mapped the infrastructure and wants to understand his operational perspective, not just the architecture diagrams.",
+      "arc_notes": "Fills the pre-lunch gap on Tuesday. He filed the AWS provisioning ticket (CLD-2431), handles Bitbucket invites, and is listed as a PCI DSS counterpart under Payments. Sits at the intersection of infra, security, and CI/CD.",
+      "top_questions": [
+        "I count 6 observability tools in the stack: Grafana/Mimir/Loki/Tempo in Shared Services, Datadog for Concierge, Nagios and Munin from the Cake Engineering Tools page, Graylog, and DB Cacti. What's active vs legacy? Is there a consolidation roadmap?",
+        "Trend Micro Cloud One is costing $1,438/month in the CAKE Dev account. Is that intentional alongside Wiz?",
+        "CodeArtifact, NpmJS, Archiva, DockerHub, and ECR -- five artifact/registry services. Which are current?",
+        "The CAKE Dev account has 31 EC2 instances including 9 Jenkins servers totaling ~$15K/month. How much of that is tool infrastructure vs application workloads?"
+      ],
+      "relevant_pages": [
+        {"path": "/infrastructure", "label": "AWS accounts, EC2, ECS, cost data"},
+        {"path": "/tooling", "label": "CI/CD, observability, artifact registries"},
+        {"path": "/engineering", "label": "Pipeline success rate (60.7%)"}
+      ],
+      "scheduling": { "priority": "PREFERRED", "why": "Infrastructure and DevOps perspective -- CI/CD, observability, cloud ops.", "alternatives": ["Matthew Griffin (Sr Cloud Engineer, Payments R&D) can cover infrastructure topics"] },
+      "notes": "PCI DSS counterpart under Payments. Handles Bitbucket invites and AWS provisioning."
+    },
+    {
+      "id": "T5",
+      "name": "Kevin Reyes",
+      "title": "Director, Software Engineering (Payments R&D)",
+      "email": "kevin.reyes@madmobile.com",
+      "org_size": "9",
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 30,
+      "proposed_time": "1:00-1:30",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Payments R&D team execution, architecture decisions, engineering quality",
+      "topics": [
+        "how the payments engineering quality was built",
+        "TypeScript and EKS architecture decisions",
+        "team execution and sprint cadence",
+        "SL engineer coordination (Gayan K, Susampath M)",
+        "AI tooling adoption (CLAUDE.md in 3 repos)"
+      ],
+      "hypotheses": ["E", "I"],
+      "lead_with": "Akshay told me this morning that your team built the cleanest codebase in the company. I want to understand how -- the specific decisions and practices that got you to 87% CI/CD coverage and a fully containerized stack.",
+      "what_they_get": "Recognition of his team's engineering quality from someone who's seen the data across all workspaces. And a chance to explain the choices that made it work.",
+      "arc_notes": "Director under Akshay. Runs the 9-person Payments R&D team. Cross-reference what he says against what Akshay said in the morning. This is the manager perspective on the best-run engineering team.",
+      "top_questions": [
+        "Your workspace has CLAUDE.md in 3 repos and the highest AI tooling adoption. Did AI tools help build better pipelines, or was the engineering discipline there first?",
+        "How does the US/SL split work for payments development specifically? Gayan and Susampath are in SL -- PR reviews, timezone handoffs, code ownership?",
+        "What's the sprint cadence like for your team? How does it compare to what you see from CAKE or Enterprise?",
+        "If you had to name the one practice that makes the biggest difference for your team's quality, what would it be?"
+      ],
+      "relevant_pages": [
+        {"path": "/engineering", "label": "madpayments workspace, CI/CD, AI tooling"},
+        {"path": "/infrastructure", "label": "Payments Prod US -- EKS architecture"},
+        {"path": "/delivery", "label": "Payments sprint and PR data"}
+      ],
+      "scheduling": { "priority": "PREFERRED", "why": "Director of Payments R&D (9 engineers). Manager-level view of the best-run engineering team.", "alternatives": ["Trenton Kress (Staff Eng, Payments)", "Peter Wu (Staff Eng, Payments)"] },
+      "notes": "Director under Akshay. Cross-reference with T3 (Akshay) answers from morning."
+    },
+    {
+      "id": "T6",
+      "name": "Engineering Manager #2",
+      "title": "Engineering Manager (Enterprise or Payments)",
+      "email": null,
+      "org_size": null,
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 30,
+      "proposed_time": "1:45-2:15",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Sprint reality, blockers, second team perspective",
+      "topics": [
+        "sprint execution",
+        "cross-team dependencies",
+        "tooling",
+        "team coordination"
+      ],
+      "hypotheses": ["B", "E", "G"],
+      "lead_with": "Adapt based on their team's specific data. Lead with something concrete about their domain.",
+      "what_they_get": "A voice to the CEO they've never had.",
+      "arc_notes": "Cross-reference what this person says against the VP interview from the morning. Where do the stories diverge?",
+      "top_questions": [
+        "Your board [NAME] shows [TREND] over the last N sprints -- [VALUES]. Does that match your experience? What drove it?",
+        "Your team's average PR merge time on [REPO] is X hours. Does that feel right, or are there outliers skewing it?",
+        "What percentage of your sprint goes to planned work versus interrupt-driven work?",
+        "When priorities change mid-sprint, how does your team hear about it?"
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "Sprint velocity by board"},
+        {"path": "/engineering", "label": "PR metrics by repo"}
+      ],
+      "scheduling": { "priority": "FLEXIBLE", "why": "Need an engineering manager from Enterprise or Payments -- ground-level sprint reality.", "alternatives": ["Ask Zubair in T2 for a recommendation from his team", "Names pending from Chathura (April 7)"] },
+      "notes": "TBD name. Target: someone from Zubair's Enterprise team. Names pending from Chathura (April 7). Ask Zubair in T2."
+    },
+    {
+      "id": "T7",
+      "name": "Senior IC #1",
+      "title": "Staff/Senior Engineer",
+      "email": null,
+      "org_size": null,
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 30,
+      "proposed_time": "2:30-3:00",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Day-to-day delivery, tooling, AI usage, what slows them down",
+      "topics": [
+        "delivery experience end-to-end",
+        "tooling and AI adoption",
+        "architecture pain points",
+        "cognitive load",
+        "decision-making speed"
+      ],
+      "hypotheses": ["E", "F", "I"],
+      "lead_with": "Genuine interest in their daily experience. Start with 'Walk me through the last piece of work you shipped to production.'",
+      "what_they_get": "A voice to the CEO they've never had. Someone outside their chain who genuinely wants to understand what it's like to build here.",
+      "arc_notes": "Use IC interview templates. These are often the most candid conversations -- people tell you the truth faster in 30 min than VPs do in 60. Follow energy.",
+      "top_questions": [
+        "Walk me through the last piece of work you shipped to production. How long from first commit to production? What slowed it down?",
+        "How many different repos, languages, and tools do you touch in a typical week?",
+        "When you need a decision on architecture or priorities, who do you go to? How long does it take?",
+        "Are you using Cursor for daily development? How effective is it? What would make AI tooling more useful?"
+      ],
+      "relevant_pages": [
+        {"path": "/engineering", "label": "Repo and tech stack data"},
+        {"path": "/tooling", "label": "Tool inventory and AI adoption"},
+        {"path": "/delivery", "label": "Cycle time and deploy data"}
+      ],
+      "scheduling": { "priority": "FLEXIBLE", "why": "Need a staff or senior engineer who ships code daily -- developer experience perspective.", "alternatives": ["Any staff/senior engineer from any team", "Ask any VP for a recommendation -- target someone candid"] },
+      "notes": "TBD name. Target: a staff engineer from any team. Ask VPs on Monday/Tuesday who would be most candid."
+    },
+    {
+      "id": "T8",
+      "name": "QE Lead",
+      "title": "Senior Quality Engineer (Restaurant QE)",
+      "email": null,
+      "org_size": null,
+      "day": "Tuesday",
+      "date": "2026-04-14",
+      "duration_min": 30,
+      "proposed_time": "3:15-3:45",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "QE process, reporting structure anomaly, test automation, tooling",
+      "topics": [
+        "Restaurant QE under Payments not Restaurant",
+        "QE sprint integration with dev teams",
+        "test automation (Cursor POC from Team Castor)",
+        "SpiraTest vs QCenter vs Jira for test execution",
+        "AI-generated test cases"
+      ],
+      "hypotheses": ["E", "G"],
+      "lead_with": "I'm interested in how the QE team works day-to-day -- you test restaurant software but report through the Payments VP. I'd like to understand how that structure plays out in practice.",
+      "what_they_get": "Someone who recognizes the unusual reporting structure and wants to understand their perspective on whether it works or creates friction.",
+      "arc_notes": "Restaurant QE (7 people) reports to Akshay (Payments), not Randy (Restaurant). This is one of the structural anomalies worth probing from inside the team, not just from the VPs.",
+      "top_questions": [
+        "You test restaurant software but report to the Payments VP, not the Restaurant VP. How does that work day-to-day? Do you sit in the same sprints as Randy's developers?",
+        "The API Automation using Cursor POC from Team Castor -- how did that go? Did it change how QE works?",
+        "SpiraTest, QCenter, and Jira -- three places tracking test execution. How do those relate? Is there a plan to consolidate?",
+        "AI-generated automated test cases from acceptance criteria -- how effective is that in practice?"
+      ],
+      "relevant_pages": [
+        {"path": "/engineering", "label": "QE repos, test automation data"},
+        {"path": "/tooling", "label": "Test tools (SpiraTest, QCenter)"},
+        {"path": "/delivery", "label": "QE sprint data"}
+      ],
+      "scheduling": { "priority": "FLEXIBLE", "why": "Need someone from Restaurant QE team (reports to Payments, not Restaurant -- structural anomaly).", "alternatives": ["Sowjanya Akula (Sr QE)", "Darren Blackwell (QE Automation) -- ask Akshay who's most helpful"] },
+      "notes": "TBD name. Target: Sowjanya Akula (Senior QE) or Darren Blackwell (QE Automation). Ask Akshay in T3 who would be best."
+    },
+    {
+      "id": "W1",
+      "name": "Senior IC #2",
+      "title": "Staff/Senior Engineer",
+      "email": null,
+      "org_size": null,
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "8:30-9:00",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Second IC perspective to triangulate against T7",
+      "topics": [
+        "delivery experience",
+        "tooling and AI adoption",
+        "architecture pain",
+        "cognitive load"
+      ],
+      "hypotheses": ["E", "F", "I"],
+      "lead_with": "Same approach as T7 -- genuine curiosity about their daily experience.",
+      "what_they_get": "A voice to the CEO they've never had.",
+      "arc_notes": "Overflow from Tuesday. Second IC from a different team than T7 to get triangulation. Cross-reference what both ICs say against what their VPs said.",
+      "top_questions": [
+        "Walk me through the last piece of work you shipped to production. How long from first commit to production? What slowed it down?",
+        "How many different repos, languages, and tools do you touch in a typical week?",
+        "When you need a decision on architecture or priorities, who do you go to? How long does it take?",
+        "Are you using Cursor for daily development? How effective is it?"
+      ],
+      "relevant_pages": [
+        {"path": "/engineering", "label": "Repo and tech stack data"},
+        {"path": "/tooling", "label": "Tool inventory"},
+        {"path": "/delivery", "label": "Cycle time data"}
+      ],
+      "scheduling": { "priority": "FLEXIBLE", "why": "Second IC from a different team than Tuesday's IC -- triangulates developer experience.", "alternatives": ["Any staff/senior engineer from a different team than T7", "Ask VPs for recommendations"] },
+      "notes": "TBD name. Pick from a different team than T7 for triangulation."
+    },
+    {
+      "id": "W2",
+      "name": "Rajik Gunatilaka",
+      "title": "VP & LK Country Head",
+      "email": "rajik.gunatilaka@madmobile.com",
+      "org_size": "Sri Lanka engineering",
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "9:15-9:45",
+      "tier": 2,
+      "format": "video",
+      "focus": "Sri Lanka coordination, timezone handoffs, reporting lines",
+      "topics": [
+        "SL engineer workspace allocation",
+        "PR review across timezone",
+        "reporting through COO not CDO",
+        "day-to-day coordination"
+      ],
+      "hypotheses": ["D", "E"],
+      "lead_with": "I'm interested in how the US/SL engineering collaboration works day-to-day -- the practicalities of timezone, code review, and priority-setting.",
+      "what_they_get": "Someone taking the SL coordination seriously as an engineering challenge, not treating it as a cost line or an afterthought.",
+      "arc_notes": "Video call. Reduced from 45 min -- three focused questions, 30 is sufficient. SENSITIVITY: DO NOT reference the SL cost restructuring ($275K to $50K/month) or any financial data from the 90-day plan.",
+      "top_questions": [
+        "Which Bitbucket workspaces and repos do the Sri Lanka engineers primarily contribute to?",
+        "How do PR reviews work across the timezone boundary? Do PRs from LK sit overnight waiting for US review, or is there local review authority?",
+        "You report to the COO, not the CDO. How does that work day-to-day? Do your engineers take technical direction from Chathura/Zubair while reporting through you?"
+      ],
+      "relevant_pages": [
+        {"path": "/people/teams", "label": "SL team members"},
+        {"path": "/engineering", "label": "PR cycle time variance"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Only person who can speak to Sri Lanka engineering operations. No substitute. Video call -- more scheduling flexibility.", "alternatives": null },
+      "notes": "Video call. DO NOT reference SL cost restructuring or 90-day plan financial data. Reduced from 45 min."
+    },
+    {
+      "id": "W3",
+      "name": "Greg Schmitzer",
+      "title": "President & Head of Sales & Marketing",
+      "email": "greg.schmitzer@madmobile.com",
+      "org_size": "Bobby Jaklitsch (Field, 4), Peter Vu (Inbound, 3), Karen Licker (Marketing, 1)",
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "10:00-10:30",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "Sales strategy, feature promise pipeline, Sysco channel decline",
+      "topics": [
+        "three product lines positioning",
+        "Sysco vs Direct channel",
+        "feature promise pipeline",
+        "CAKE integration status"
+      ],
+      "hypotheses": ["A", "B"],
+      "lead_with": "You've absorbed the full sales organization -- field sales, inbound, and marketing. I'd like to understand how the three product lines are positioned and where the pipeline is heading.",
+      "what_they_get": "A conversation that takes his expanded role seriously and treats the sales perspective as an important input to the technology assessment.",
+      "arc_notes": "Expanded role -- absorbed CRO scope. Frame questions about feature promises carefully -- validate, don't accuse.",
+      "top_questions": [
+        "With Don confirming Retail and Neo/AI are in scope alongside CAKE, how does the sales team position these three product lines?",
+        "Are there features being sold today that don't exist or don't work reliably? The CDO roadmap shows dozens of items marked TBD or Backlog.",
+        "The Sysco/CAKE partnership and acquisition -- from your perspective, is the integration done? The codebase still has two separate Bitbucket workspaces."
+      ],
+      "relevant_pages": [
+        {"path": "/financial", "label": "Revenue by product, channel regression"},
+        {"path": "/delivery", "label": "Jira backlog growth"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Only sales and marketing leadership. Absorbed CRO role. No substitute.", "alternatives": ["Bobby Jaklitsch (Field Sales) could cover sales pipeline but not the executive view"] },
+      "notes": "Expanded role. Absorbed Lodes' sales org."
+    },
+    {
+      "id": "W4",
+      "name": "Jeremy Diggins",
+      "title": "Director Enterprise Technology",
+      "email": "jeremy.diggins@madmobile.com",
+      "org_size": null,
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "10:45-11:15",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "Enterprise tech landscape, infrastructure decisions",
+      "topics": [
+        "enterprise integrations",
+        "infrastructure landscape",
+        "day-to-day under CTO",
+        "Concierge/Retail tech"
+      ],
+      "hypotheses": ["F", "I"],
+      "lead_with": "You're in a unique position -- reporting to the CTO while most engineering routes through the CDO. I'd like to understand what enterprise technology looks like from your vantage point.",
+      "what_they_get": "Recognition of his unique position in the org and genuine interest in the enterprise technology landscape.",
+      "arc_notes": "Kennedy's only confirmed direct report. Adapt questions based on what Kennedy said Monday. May have insight into how the CTO/CDO split works in practice.",
+      "top_questions": [
+        "What does your day-to-day look like now that most engineering routes through Chathura?",
+        "What are the biggest enterprise technology challenges right now?",
+        "How does the Concierge/Retail architecture compare to the CAKE and Payments stacks?"
+      ],
+      "relevant_pages": [
+        {"path": "/infrastructure", "label": "Retail Prod US, APAC, EU accounts"},
+        {"path": "/engineering", "label": "madmobile workspace data"}
+      ],
+      "scheduling": { "priority": "PREFERRED", "why": "Kennedy's only direct report -- unique vantage point on CTO/CDO split.", "alternatives": ["Can skip if unavailable -- enterprise tech partially covered by Zubair and Kennedy sessions"] },
+      "notes": "Kennedy's only confirmed direct report. Questions adapt based on Monday's Kennedy session."
+    },
+    {
+      "id": "W5",
+      "name": "Bailey Shatney",
+      "title": "VP Human Resources",
+      "email": "bailey.shatney@madmobile.com",
+      "org_size": "Renee Pauley (Recruiting), L&D (2, reporting TBD)",
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "11:30-12:00",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "Culture, hiring, retention, L&D, team health",
+      "topics": [
+        "Glassdoor 2.4",
+        "culture health",
+        "hiring and retention",
+        "L&D reporting",
+        "post-reorg morale"
+      ],
+      "hypotheses": ["G"],
+      "lead_with": "The survey baseline I'm building -- Westrum culture, developer experience, AI adoption -- could be useful for your planning too. Happy to share the results once they're scored.",
+      "what_they_get": "Culture baseline and interview themes for her own 90-day plan. The Westrum survey data, Glassdoor analysis, and culture themes from interviews are exactly what a new VP HR needs.",
+      "arc_notes": "New to exec team. 10 days in. Position deliverables as a resource for her. This creates a natural ally -- she needs data, you have data.",
+      "top_questions": [
+        "You're stepping into a company with a 2.4 Glassdoor rating. What's your read on culture health coming in?",
+        "What's your 90-day plan for the people function?",
+        "L&D -- Adriana Zuniga and Ayodele Lawal -- do they report to you or to Dulanjan's Product team? The org charts disagree."
+      ],
+      "relevant_pages": [
+        {"path": "/people/teams", "label": "Team structure"},
+        {"path": "/people/risk", "label": "Bus factor and retention risk"}
+      ],
+      "scheduling": { "priority": "PREFERRED", "why": "VP HR -- culture, hiring, retention perspective.", "alternatives": ["Can skip or go async -- culture data also captured through surveys and other interviews"] },
+      "notes": "New to exec team. Position Adam's deliverables as a resource for her 90-day plan."
+    },
+    {
+      "id": "W6",
+      "name": "Customer Support Lead",
+      "title": "TBD",
+      "email": null,
+      "org_size": null,
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "1:00-1:30",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "Escalation paths, support-to-eng handoff",
+      "topics": [
+        "support triage process",
+        "escalation flow to engineering",
+        "CAKE payment outage experience",
+        "CDO unification impact"
+      ],
+      "hypotheses": ["F", "G"],
+      "lead_with": "Support moving under Chathura means the full build-to-support chain is now under one executive. I'm interested in whether that's changed how escalations work in practice.",
+      "what_they_get": "Someone who cares about the support experience as part of the delivery system, not just the engineering side.",
+      "arc_notes": "Name TBD -- ask Chathura on Monday. Key to understanding the full build-to-support chain that's now unified under CDO.",
+      "top_questions": [
+        "Support is now under Chathura, the same executive who owns engineering. Has that changed how escalations work? Is the path from support ticket to engineering fix shorter now?",
+        "Walk me through a CAKE payment outage from the support perspective -- from first customer call to resolution. Who gets paged, what tools do you use, how long does it typically take?",
+        "When you escalate a technical issue, what's the typical response time from engineering? Hours? Days?"
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "Incident timeline and RCA data"},
+        {"path": "/engineering", "label": "Pipeline and deployment data"}
+      ],
+      "scheduling": { "priority": "FLEXIBLE", "why": "Need a senior person from Customer Support who handles escalations to engineering.", "alternatives": ["Ask Chathura in Monday's session for a name", "Any experienced support person works"] },
+      "notes": "Name TBD. Ask Chathura in M1 on Monday."
+    },
+    {
+      "id": "W7",
+      "name": "Chris Gomersall",
+      "title": "Director Product Design",
+      "email": "chris.gomersall@madmobile.com",
+      "org_size": null,
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "1:45-2:15",
+      "tier": 2,
+      "format": "in-person",
+      "focus": "Design process, PM/design/eng collaboration, design system",
+      "topics": [
+        "design system existence",
+        "design-to-eng handoff",
+        "AI tooling in design",
+        "Agentic Lovable Dev Flow"
+      ],
+      "hypotheses": ["A"],
+      "lead_with": "I found an 'Agentic Lovable Dev Flow' document in Confluence -- Cursor + Chrome DevTools MCP for rapid UI prototyping. Is the design team experimenting with AI tooling too?",
+      "what_they_get": "Recognition that design is part of the delivery system, not an afterthought. And curiosity about the AI tooling experiments his team is running.",
+      "arc_notes": "Can go async if schedule is tight. If in-person, focus on how design capacity maps to engineering sprint cadence.",
+      "top_questions": [
+        "How does design hand off to engineering? Is there a design system, or is each product line building its own components?",
+        "The Agentic Lovable Dev Flow document -- Cursor + Chrome DevTools MCP. How widespread is this beyond the Tesla team?"
+      ],
+      "relevant_pages": [
+        {"path": "/tooling", "label": "AI tool adoption data"},
+        {"path": "/engineering", "label": "Repo and tech stack info"}
+      ],
+      "scheduling": { "priority": "PREFERRED", "why": "Only design leadership.", "alternatives": ["Can go async (email/Teams follow-up) if unavailable"] },
+      "notes": "Can go async if schedule is tight."
+    },
+    {
+      "id": "W8",
+      "name": "Chathura Ratnayake",
+      "title": "CDO (Follow-up)",
+      "email": "chathura.ratnayake@madmobile.com",
+      "org_size": "100+",
+      "day": "Wednesday",
+      "date": "2026-04-15",
+      "duration_min": 30,
+      "proposed_time": "2:30-3:00",
+      "tier": 1,
+      "format": "in-person",
+      "focus": "Close gaps from Monday, triangulation against 15+ other conversations",
+      "topics": [
+        "generated dynamically from Tuesday synthesis",
+        "divergences between his account and his VPs'",
+        "updated hypothesis probes",
+        "specific follow-ups from post-session captures"
+      ],
+      "hypotheses": ["all active from scorecard"],
+      "lead_with": "I've talked to your entire leadership team and several of their people over the last two days. A few things came up that I'd love your perspective on.",
+      "what_they_get": "The triangulated picture -- what his org is saying that he may not be hearing. By this point you can offer real observations, not just extract information.",
+      "arc_notes": "Questions generated from Tuesday synthesis. This is where the real depth happens. By now you've talked to Randy, Zubair, Akshay, Guilarte, EMs, ICs, and cross-functional partners. You know where stories diverge. The 48-hour gap since M1 gave him time to think about things that came up.",
+      "top_questions": [
+        "Generated dynamically from post-session 'Follow-up' captures across all 15+ prior sessions.",
+        "Specific divergences identified during Tuesday synthesis.",
+        "Updated hypothesis probes based on scorecard status."
+      ],
+      "relevant_pages": [
+        {"path": "/delivery", "label": "All delivery data"},
+        {"path": "/engineering", "label": "All engineering data"},
+        {"path": "/engagement/hypotheses", "label": "Updated hypothesis scorecard"},
+        {"path": "/people/teams", "label": "Full org picture"}
+      ],
+      "scheduling": { "priority": "MUST", "why": "Second session with Chathura to close gaps after 15+ other conversations. No substitute. Book when booking his Monday session.", "alternatives": null },
+      "notes": "Part 2 of 2. Questions come from synthesis, not the prep doc. This is where triangulation pays off."
+    }
+  ]
+}

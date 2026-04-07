@@ -1,0 +1,295 @@
+---
+export const prerender = true;
+
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+
+const raw = readFileSync(resolve(process.cwd(), '../interview_schedule.json'), 'utf-8');
+const schedule = JSON.parse(raw);
+const sessions: any[] = schedule.sessions;
+
+const monday = sessions.filter((s: any) => s.day === 'Monday');
+const tuesday = sessions.filter((s: any) => s.day === 'Tuesday');
+const wednesday = sessions.filter((s: any) => s.day === 'Wednesday');
+
+const tierColor = (t: number) => t === 1 ? 'var(--status-green)' : 'var(--status-amber)';
+const tierBg = (t: number) => t === 1 ? 'var(--status-green-bg)' : 'var(--status-amber-bg)';
+---
+
+<BaseLayout title="Interview Dashboard">
+  <SectionHeader
+    eyebrow="ONSITE COMMAND CENTER"
+    title="Interview Dashboard"
+    description="Live reference during April 13-15 interviews. Open on laptop, share to TV when needed."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+    <MetricCard label="Sessions" value="19" subtitle="3 days onsite" />
+    <MetricCard label="Monday" value="4" subtitle="Leadership + Strategy" />
+    <MetricCard label="Tuesday" value="7" subtitle="Engineering Deep Dive" />
+    <MetricCard label="Wednesday" value="8" subtitle="Validation + Gaps" />
+    <MetricCard label="Max Duration" value="60 min" subtitle="15 min buffers" />
+  </dl>
+
+  <!-- Interview Arc Quick Reference -->
+  <details class="mb-8 bg-[var(--surface)] border border-[var(--border)] rounded-xl">
+    <summary class="px-5 py-4 cursor-pointer text-sm font-semibold text-[var(--text)] flex items-center gap-2">
+      <svg class="w-4 h-4 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0 0l3.5-6.5L22 12l-6.5-3.5L12 2 8.5 8.5 2 12l6.5 3.5L12 22z"/></svg>
+      Interview Arc — 5 Phases
+    </summary>
+    <div class="px-5 pb-5 pt-1">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
+        <div class="rounded-lg border border-[var(--border)] p-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">1. Connect</span>
+          <p class="text-xs text-[var(--text-secondary)] mt-1">2-3 min. Universal opening. Safety, collaboration, anonymity. "Where the system makes it easy or hard for talented people to succeed."</p>
+        </div>
+        <div class="rounded-lg border border-[var(--border)] p-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">2. Their Story</span>
+          <p class="text-xs text-[var(--text-secondary)] mt-1">5-8 min. One open question. Listen — don't steer. Watch for energy shifts, what they skip, what lights them up.</p>
+        </div>
+        <div class="rounded-lg border border-[var(--border)] p-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">3. Data Exploration</span>
+          <p class="text-xs text-[var(--text-secondary)] mt-1">15-25 min. Validate, don't ambush. Frame as puzzles. Follow energy. Pick 3-4 strongest questions. Back off if defensive.</p>
+        </div>
+        <div class="rounded-lg border border-[var(--border)] p-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">4. Forward-Looking</span>
+          <p class="text-xs text-[var(--text-secondary)] mt-1">5-8 min. "Fix one structural issue in 90 days?" "What does your team need most?" "What's working that you'd protect?"</p>
+        </div>
+        <div class="rounded-lg border border-[var(--border)] p-3">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">5. Close with a Gift</span>
+          <p class="text-xs text-[var(--text-secondary)] mt-1">2-3 min. "What's the one thing you'd want Don to know?" Thank them. Ask to follow up via Teams. Never end on data.</p>
+        </div>
+      </div>
+      <div class="mt-3 p-3 rounded-lg bg-[var(--surface-alt)] text-xs text-[var(--text-muted)]">
+        <strong>Post-session capture (first 5 min of buffer):</strong> 1) Confirmed — which hypothesis strengthened? 2) Surprised — what was unexpected? 3) Follow-up — one question for a different person. 4) Signal note — one Layer 2 observation.
+      </div>
+    </div>
+  </details>
+
+  <!-- Reorg Context Reminder -->
+  <details class="mb-8 bg-[var(--surface)] border border-[var(--border)] rounded-xl">
+    <summary class="px-5 py-4 cursor-pointer text-sm font-semibold text-[var(--text)] flex items-center gap-2">
+      <svg class="w-4 h-4 text-[var(--status-amber)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/></svg>
+      Reorg Context — April 3 (10 Days Before Onsite)
+    </summary>
+    <div class="px-5 pb-5 pt-1 text-xs text-[var(--text-secondary)] space-y-2">
+      <p>Half the people are in roles held &lt;2 weeks. "I don't know yet" is a finding. Use "How are you figuring it out?" instead of "How does it work?" For everyone: "How did this work three weeks ago vs. right now?"</p>
+      <p>For new/expanded roles (Strainick, Chathura, Shatney, Garcia): "I know you're only a couple weeks into this scope. I'm not expecting polished answers — I'm interested in what you've seen so far and what you're still figuring out."</p>
+    </div>
+  </details>
+
+  <!-- Monday -->
+  <div class="mb-10">
+    <div class="flex items-center gap-3 mb-4">
+      <h2 class="text-sm font-semibold text-[var(--text)]">Monday, April 13 — Leadership & Strategy</h2>
+      <span class="text-[10px] font-medium text-[var(--text-muted)] bg-[var(--surface-alt)] px-2 py-0.5 rounded-full">{monday.length} sessions · 3h 15m</span>
+    </div>
+    <div class="space-y-3">
+      {monday.map((s: any) => (
+        <details class="bg-[var(--surface)] border border-[var(--border)] rounded-xl border-l-[3px]" style={`border-left-color: ${tierColor(s.tier)};`}>
+          <summary class="px-5 py-4 cursor-pointer">
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3 min-w-0">
+                <span class="shrink-0 text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{s.id}</span>
+                <span class="text-sm font-semibold text-[var(--text)] truncate">{s.name}</span>
+                <span class="hidden sm:inline text-xs text-[var(--text-muted)]">{s.title}</span>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="text-xs font-mono text-[var(--text-muted)]">{s.proposed_time}</span>
+                <span class="text-[10px] font-medium px-2 py-0.5 rounded-full" style={`color: ${tierColor(s.tier)}; background: ${tierBg(s.tier)};`}>{s.duration_min}m</span>
+              </div>
+            </div>
+          </summary>
+          <div class="px-5 pb-5 pt-1 space-y-4">
+            {/* What They Get + Lead With */}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-[var(--surface-alt)] p-3">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--status-green)]">What They Get</span>
+                <p class="text-xs text-[var(--text-secondary)] mt-1">{s.what_they_get}</p>
+              </div>
+              <div class="rounded-lg bg-[var(--surface-alt)] p-3">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">Lead With</span>
+                <p class="text-xs text-[var(--text-secondary)] mt-1">{s.lead_with}</p>
+              </div>
+            </div>
+            {/* Top Questions */}
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">Top Questions</span>
+              <ol class="mt-1.5 space-y-1.5">
+                {s.top_questions.map((q: string, i: number) => (
+                  <li class="flex items-start gap-2 text-xs text-[var(--text-secondary)]">
+                    <span class="shrink-0 w-4 h-4 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-[10px] font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
+                    <span>{q}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            {/* Footer: Hypotheses + Deep Links */}
+            <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-[var(--border)]">
+              <span class="text-[10px] text-[var(--text-muted)] uppercase tracking-wider mr-1">Hypotheses:</span>
+              {(Array.isArray(s.hypotheses) ? s.hypotheses : []).map((h: string) => (
+                <a href="/engagement/hypotheses" class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-[var(--accent-subtle)] text-[var(--accent)] hover:underline">{h}</a>
+              ))}
+              <span class="mx-1 text-[var(--border)]">|</span>
+              {(s.relevant_pages || []).map((p: any) => (
+                <a href={p.path} class="text-[10px] text-[var(--accent)] hover:underline">{p.label}</a>
+              ))}
+            </div>
+            {/* Notes */}
+            {s.notes && (
+              <p class="text-[10px] text-[var(--text-muted)] italic">{s.notes}</p>
+            )}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+
+  <!-- Tuesday -->
+  <div class="mb-10">
+    <div class="flex items-center gap-3 mb-4">
+      <h2 class="text-sm font-semibold text-[var(--text)]">Tuesday, April 14 — Engineering Deep Dive</h2>
+      <span class="text-[10px] font-medium text-[var(--text-muted)] bg-[var(--surface-alt)] px-2 py-0.5 rounded-full">{tuesday.length} sessions · 4h 15m</span>
+    </div>
+    <div class="space-y-3">
+      {tuesday.map((s: any) => (
+        <details class="bg-[var(--surface)] border border-[var(--border)] rounded-xl border-l-[3px]" style={`border-left-color: ${tierColor(s.tier)};`}>
+          <summary class="px-5 py-4 cursor-pointer">
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3 min-w-0">
+                <span class="shrink-0 text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{s.id}</span>
+                <span class="text-sm font-semibold text-[var(--text)] truncate">{s.name}</span>
+                <span class="hidden sm:inline text-xs text-[var(--text-muted)]">{s.title}</span>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="text-xs font-mono text-[var(--text-muted)]">{s.proposed_time}</span>
+                <span class="text-[10px] font-medium px-2 py-0.5 rounded-full" style={`color: ${tierColor(s.tier)}; background: ${tierBg(s.tier)};`}>{s.duration_min}m</span>
+              </div>
+            </div>
+          </summary>
+          <div class="px-5 pb-5 pt-1 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-[var(--surface-alt)] p-3">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--status-green)]">What They Get</span>
+                <p class="text-xs text-[var(--text-secondary)] mt-1">{s.what_they_get}</p>
+              </div>
+              <div class="rounded-lg bg-[var(--surface-alt)] p-3">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">Lead With</span>
+                <p class="text-xs text-[var(--text-secondary)] mt-1">{s.lead_with}</p>
+              </div>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">Top Questions</span>
+              <ol class="mt-1.5 space-y-1.5">
+                {s.top_questions.map((q: string, i: number) => (
+                  <li class="flex items-start gap-2 text-xs text-[var(--text-secondary)]">
+                    <span class="shrink-0 w-4 h-4 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-[10px] font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
+                    <span>{q}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-[var(--border)]">
+              <span class="text-[10px] text-[var(--text-muted)] uppercase tracking-wider mr-1">Hypotheses:</span>
+              {(Array.isArray(s.hypotheses) ? s.hypotheses : []).map((h: string) => (
+                <a href="/engagement/hypotheses" class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-[var(--accent-subtle)] text-[var(--accent)] hover:underline">{h}</a>
+              ))}
+              <span class="mx-1 text-[var(--border)]">|</span>
+              {(s.relevant_pages || []).map((p: any) => (
+                <a href={p.path} class="text-[10px] text-[var(--accent)] hover:underline">{p.label}</a>
+              ))}
+            </div>
+            {s.notes && <p class="text-[10px] text-[var(--text-muted)] italic">{s.notes}</p>}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+
+  <!-- Wednesday -->
+  <div class="mb-10">
+    <div class="flex items-center gap-3 mb-4">
+      <h2 class="text-sm font-semibold text-[var(--text)]">Wednesday, April 15 — Validation & Gap Closing</h2>
+      <span class="text-[10px] font-medium text-[var(--text-muted)] bg-[var(--surface-alt)] px-2 py-0.5 rounded-full">{wednesday.length} sessions · 4h 00m</span>
+    </div>
+    <div class="space-y-3">
+      {wednesday.map((s: any) => (
+        <details class="bg-[var(--surface)] border border-[var(--border)] rounded-xl border-l-[3px]" style={`border-left-color: ${tierColor(s.tier)};`}>
+          <summary class="px-5 py-4 cursor-pointer">
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3 min-w-0">
+                <span class="shrink-0 text-xs font-mono font-bold text-[var(--accent)] bg-[var(--accent-subtle)] px-2 py-0.5 rounded">{s.id}</span>
+                <span class="text-sm font-semibold text-[var(--text)] truncate">{s.name}</span>
+                <span class="hidden sm:inline text-xs text-[var(--text-muted)]">{s.title}</span>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="text-xs font-mono text-[var(--text-muted)]">{s.proposed_time}</span>
+                <span class="text-[10px] font-medium px-2 py-0.5 rounded-full" style={`color: ${tierColor(s.tier)}; background: ${tierBg(s.tier)};`}>{s.duration_min}m</span>
+              </div>
+            </div>
+          </summary>
+          <div class="px-5 pb-5 pt-1 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-[var(--surface-alt)] p-3">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--status-green)]">What They Get</span>
+                <p class="text-xs text-[var(--text-secondary)] mt-1">{s.what_they_get}</p>
+              </div>
+              <div class="rounded-lg bg-[var(--surface-alt)] p-3">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--accent)]">Lead With</span>
+                <p class="text-xs text-[var(--text-secondary)] mt-1">{s.lead_with}</p>
+              </div>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">Top Questions</span>
+              <ol class="mt-1.5 space-y-1.5">
+                {s.top_questions.map((q: string, i: number) => (
+                  <li class="flex items-start gap-2 text-xs text-[var(--text-secondary)]">
+                    <span class="shrink-0 w-4 h-4 rounded-full bg-[var(--accent-subtle)] text-[var(--accent)] text-[10px] font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
+                    <span>{q}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-[var(--border)]">
+              <span class="text-[10px] text-[var(--text-muted)] uppercase tracking-wider mr-1">Hypotheses:</span>
+              {(Array.isArray(s.hypotheses) ? s.hypotheses : []).map((h: string) => (
+                <a href="/engagement/hypotheses" class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-[var(--accent-subtle)] text-[var(--accent)] hover:underline">{h}</a>
+              ))}
+              <span class="mx-1 text-[var(--border)]">|</span>
+              {(s.relevant_pages || []).map((p: any) => (
+                <a href={p.path} class="text-[10px] text-[var(--accent)] hover:underline">{p.label}</a>
+              ))}
+            </div>
+            {s.notes && <p class="text-[10px] text-[var(--text-muted)] italic">{s.notes}</p>}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+
+  <!-- Quick Nav Footer -->
+  <div class="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+    <h3 class="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-3">Quick Reference Pages</h3>
+    <div class="flex flex-wrap gap-2">
+      {[
+        { href: '/engineering', label: 'Engineering' },
+        { href: '/delivery', label: 'Delivery' },
+        { href: '/infrastructure', label: 'Infrastructure' },
+        { href: '/people/teams', label: 'Teams' },
+        { href: '/people/directory', label: 'Directory' },
+        { href: '/people/network', label: 'Review Network' },
+        { href: '/tooling', label: 'Tooling' },
+        { href: '/financial', label: 'Financial' },
+        { href: '/engagement/hypotheses', label: 'Hypotheses' },
+        { href: '/charts', label: 'All Charts' },
+      ].map(link => (
+        <a href={link.href} class="text-xs px-3 py-1.5 rounded-lg border border-[var(--border)] text-[var(--text-secondary)] hover:bg-[var(--accent-subtle)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors">
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
