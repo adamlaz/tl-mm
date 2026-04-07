@@ -8,22 +8,28 @@ import MilestoneStep from '../../components/MilestoneStep.astro';
 import TabulatorGrid from '../../components/TabulatorGrid.astro';
 
 const openItems = [
-  { item: 'Scan neo-workspace repo (Winmark/Neo codebase) — file tree, languages, architecture, CI/CD', owner: 'Adam', deadline: 'Apr 6', status: 'In Progress', category: 'Data Gap' },
-  { item: 'Scan Winmark Jira board (WM project, board 1712) — epics, velocity, team', owner: 'Adam', deadline: 'Apr 6', status: 'In Progress', category: 'Data Gap' },
-  { item: 'Finalize interview schedule grid for Ana', owner: 'Adam', deadline: 'Apr 6', status: 'In Progress', category: 'Coordination' },
-  { item: 'Enterprise Solutions org detail (Zubair — 58 people)', owner: 'Chathura', deadline: 'Apr 7', status: 'In Progress', category: 'Data Gap' },
-  { item: 'Incident/RCA docs for last 90 days', owner: 'Chathura', deadline: 'Apr 7', status: 'In Progress', category: 'Data Gap' },
-  { item: 'Grafana viewer access', owner: 'Ana → Matias', deadline: 'Apr 6', status: 'In Progress', category: 'Access' },
-  { item: 'Microsoft Graph API — exact steps sent to Ana for IT (Rosen/Matias)', owner: 'Ana → IT', deadline: 'Apr 7', status: 'In Progress', category: 'Access' },
+  { item: 'Scan neo-workspace repo (Winmark/Neo codebase) — file tree, languages, architecture, CI/CD', owner: 'Adam', deadline: 'Apr 7', status: 'In Progress', category: 'Data Gap' },
+  { item: 'Scan Winmark Jira board (WM project, board 1712) — epics, velocity, team', owner: 'Adam', deadline: 'Apr 7', status: 'In Progress', category: 'Data Gap' },
+  { item: 'W2 interview replacement (Rajik Gunatilaka departed)', owner: 'Adam', deadline: 'Apr 8', status: 'In Progress', category: 'Coordination' },
+  { item: 'PREFERRED interview sessions — Ana booking next batch', owner: 'Ana', deadline: 'Apr 8', status: 'In Progress', category: 'Coordination' },
+  { item: 'Survey response rate monitoring (13 of 57 so far)', owner: 'Adam', deadline: 'Apr 10', status: 'In Progress', category: 'Coordination' },
+  { item: 'Enterprise Solutions org detail (Zubair — 58 people)', owner: 'Chathura', deadline: 'Apr 9', status: 'In Progress', category: 'Data Gap' },
+  { item: 'Incident/RCA docs for last 90 days', owner: 'Chathura', deadline: 'Apr 9', status: 'In Progress', category: 'Data Gap' },
+  { item: 'Grafana — 3 instances confirmed (CAKE, Retail, Payments)', owner: 'Ana → Matias', deadline: 'Apr 7', status: 'Complete', category: 'Access' },
+  { item: 'Microsoft Graph API — access confirmed and working', owner: 'Ana → IT', deadline: 'Apr 7', status: 'Complete', category: 'Access' },
   { item: 'CloudTrail LookupEvents — Chathura approved, waiting on IT to add to role', owner: 'IT', deadline: 'Apr 7', status: 'Confirmed', category: 'Access' },
   { item: 'Vendor/SaaS spend — 2 Amex spreadsheets received, Bill.com + AWS Marketplace pending', owner: 'Ana', deadline: 'Apr 10', status: 'In Progress', category: 'Data Gap' },
-  { item: 'Guru access', owner: 'Ana', deadline: 'Apr 7', status: 'In Progress', category: 'Access' },
   { item: 'Jira incident query (2024–2026 gap in RCA timeline)', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Data Gap' },
   { item: 'Root Cause Category field #2 (customfield_10590)', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Data Gap' },
   { item: 'Branch protection validation (project-level vs repo-level)', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Data Gap' },
+  { item: 'Jeremy Diggins availability — "at a client onsite that week"', owner: 'Adam', deadline: 'Apr 8', status: 'Pending', category: 'Coordination' },
   { item: 'L&D reporting discrepancy (Dulanjan vs Shatney)', owner: 'Adam', deadline: 'Onsite', status: 'Pending', category: 'Clarification' },
   { item: 'Andy Honnold dual-report (Garcia vs Akshay)', owner: 'Adam', deadline: 'Onsite', status: 'Pending', category: 'Clarification' },
-  { item: 'Chathura survey email — all 5 surveys confirmed', owner: 'Chathura', deadline: 'Apr 6', status: 'Complete', category: 'Coordination' },
+  { item: 'MUST interview sessions booked by Ana', owner: 'Ana', deadline: 'Apr 6', status: 'Complete', category: 'Coordination' },
+  { item: 'All 6 TBD interview slots confirmed by Chathura (Baine, Oliver, Budd, Akula, Renard, Lee)', owner: 'Chathura', deadline: 'Apr 7', status: 'Complete', category: 'Coordination' },
+  { item: 'Interview schedule grid finalized and sent to Ana', owner: 'Adam', deadline: 'Apr 6', status: 'Complete', category: 'Coordination' },
+  { item: 'Guru — 103 users confirmed', owner: 'Ana', deadline: 'Apr 6', status: 'Complete', category: 'Access' },
+  { item: 'Chathura survey email — all 5 surveys sent to 57 recipients', owner: 'Chathura', deadline: 'Apr 6', status: 'Complete', category: 'Coordination' },
   { item: 'CloudTrail access escalation', owner: 'Adam → Chathura', deadline: 'Apr 6', status: 'Complete', category: 'Access' },
   { item: 'Ana + Chathura coordination update', owner: 'Adam', deadline: 'Apr 5', status: 'Complete', category: 'Coordination' },
   { item: 'All 5 surveys built in Microsoft Forms', owner: 'Adam', deadline: 'Apr 5', status: 'Complete', category: 'Coordination' },
@@ -36,8 +42,9 @@ const accessRows = [
   { system: 'Jira / Confluence', status: 'Active', confirmed: 'Apr 1', notes: 'API tokens working' },
   { system: 'AWS SSO (18 accounts)', status: 'Active', confirmed: 'Apr 2', notes: 'Global-Audit-RO role, CLI configured' },
   { system: 'CloudTrail', status: 'Active', confirmed: 'Apr 6', notes: 'Chathura approved LookupEvents — waiting on IT to add to role' },
-  { system: 'Grafana', status: 'Pending', confirmed: 'Apr 6', notes: 'Ana: "should be available shortly"' },
-  { system: 'Microsoft Graph API', status: 'Pending', confirmed: '—', notes: 'Exact steps sent to Ana for IT. 5 read-only permissions requested.' },
+  { system: 'Guru', status: 'Active', confirmed: 'Apr 6', notes: '103 users. Ana confirmed. Contract ends June, Bailey Shatney owns.' },
+  { system: 'Grafana (3 instances)', status: 'Active', confirmed: 'Apr 7', notes: 'observability.madmobile.tools (CAKE), grafana.madcloud.io (Retail), grafana.madpayments.com (Payments)' },
+  { system: 'Microsoft Graph API', status: 'Active', confirmed: 'Apr 7', notes: '5 read-only permissions granted. Revoke after Apr 25.' },
   { system: 'CloudWatch Alarms', status: 'Pending', confirmed: '—', notes: 'cloudwatch:DescribeAlarms not in audit role' },
 ];
 
@@ -67,8 +74,8 @@ const accessColumns = [
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Pre-Work" value="7 rounds" subtitle="V1–V7 complete" />
     <MetricCard label="Data Artifacts" value="31 charts, 17 CSVs" subtitle="94 Confluence pages extracted" />
-    <MetricCard label="Access" value="6 of 9" subtitle="CloudTrail confirmed, Grafana + Graph API pending" />
-    <MetricCard label="Surveys" value="5 of 5 confirmed" subtitle="Chathura sending today" />
+    <MetricCard label="Access" value="9 of 10" subtitle="Only CloudWatch alarms pending" />
+    <MetricCard label="Surveys" value="~13 responses" subtitle="~23% of 57 recipients. Deadline Apr 10" />
   </dl>
 
   <div class="mb-10">
@@ -125,7 +132,13 @@ const accessColumns = [
       <MilestoneStep
         date="Apr 6"
         title="Ana/Chathura replies processed — neo-workspace discovered"
-        detail="Survey 5 confirmed. CloudTrail approved. GitHub departing. neo-workspace repo = Winmark/Neo codebase (key finding). L1 org names + RCA docs tomorrow. Graph API steps sent to IT. Vendor spend partial data coming."
+        detail="Survey 5 confirmed. CloudTrail approved. GitHub departing. neo-workspace repo = Winmark/Neo codebase (key finding). Graph API steps sent to IT. Vendor spend partial data received."
+        status="complete"
+      />
+      <MilestoneStep
+        date="Apr 6–7"
+        title="MUST interviews booked — all TBD slots filled by Chathura"
+        detail="Ana booked all MUST sessions. Chathura confirmed 6 TBD interview slots (Baine, Oliver, Budd, Akula, Renard, Lee). Surveys sent to 57 recipients (~5 responses). Guru 103 users confirmed. MS Graph API in IT/Security review. Rajik Gunatilaka (SL Country Head) departed — W2 slot needs replacement. Jeremy Diggins flagged as potentially unavailable (client onsite)."
         status="active"
       />
       <MilestoneStep

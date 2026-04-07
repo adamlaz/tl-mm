@@ -5,3 +5,4 @@ minisite/node_modules/
 .vercel
 .forms-cookie
 .forms-token
+.m365_token.json

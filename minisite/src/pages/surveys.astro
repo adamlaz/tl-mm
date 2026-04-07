@@ -29,7 +29,8 @@ const matrix = [
 
 const timeline = [
   { date: 'Apr 1–3', milestone: 'Survey instruments finalized, reviewed, Forms built' },
-  { date: 'Apr 6', milestone: 'Deploy via Chathura (CDO) — intro email with survey links' },
+  { date: 'Apr 6', milestone: 'Deployed — Chathura sent to 57 recipients (engineering, product, QE, design, cross-functional)' },
+  { date: 'Apr 7', milestone: '~5 responses received (~9% response rate). Monitoring.' },
   { date: 'Apr 10', milestone: 'Response deadline (3 business days)' },
   { date: 'Apr 11', milestone: 'Pre-onsite analysis: score, segment, identify themes' },
   { date: 'Apr 13–15', milestone: 'Onsite: use survey results to guide interview probes' },
@@ -118,8 +119,8 @@ const milestones = [
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Surveys" value="5" subtitle={`${totalQuestions} total questions`} />
-    <MetricCard label="Est. Time" value="~20 min" subtitle="per respondent (max)" />
-    <MetricCard label="Deadline" value="Apr 10" subtitle="by Friday (per Chathura)" />
+    <MetricCard label="Recipients" value="57" subtitle="Sent by Chathura Apr 6" />
+    <MetricCard label="Responses" value="~5" subtitle="~9% rate. Deadline Apr 10" />
     <MetricCard label="Platform" value="MS Forms" subtitle="On MM account" />
   </dl>
 

@@ -6,8 +6,8 @@
     "interviewer": "Adam Lazarus (adam.lazarus@madmobile.com)",
     "total_sessions": 23,
     "total_interview_hours": 13.5,
-    "version": "2.0",
-    "generated": "2026-04-06"
+    "version": "2.1",
+    "generated": "2026-04-07"
   },
   "daily_rhythm": {
     "don_morning_sync": "8:00-8:30",
@@ -247,10 +247,10 @@
     },
     {
       "id": "M7",
-      "name": "Engineering Manager #1",
-      "title": "Engineering Manager (CAKE team)",
-      "email": null,
-      "org_size": null,
+      "name": "Alexander Baine",
+      "title": "Manager, Software Engineering (Restaurant Frontend)",
+      "email": "alexander.baine@madmobile.com",
+      "org_size": "3 (Cory Renard, Rob Quin)",
       "day": "Monday",
       "date": "2026-04-13",
       "duration_min": 30,
@@ -279,8 +279,8 @@
         {"path": "/delivery", "label": "Sprint velocity by board"},
         {"path": "/engineering", "label": "PR metrics by repo"}
       ],
-      "scheduling": { "priority": "FLEXIBLE", "why": "Need a CAKE engineering manager who runs sprints day-to-day.", "alternatives": ["Alexander Baine (Frontend Mgr)", "Kyle Budd (Backend Mgr) -- ask Randy who's better, either works"] },
-      "notes": "TBD name. Target: Alexander Baine or Kyle Budd from Randy's team. Ask Randy in M1/lunch who would be best."
+      "scheduling": { "priority": "FLEXIBLE", "why": "CAKE engineering manager who runs sprints day-to-day. Confirmed by Chathura.", "alternatives": null },
+      "notes": "Confirmed by Chathura (added by CR). Restaurant Frontend Manager under Randy Brown. Manages Cory Renard (Staff) and Rob Quin (SWE). Look up frontend-specific repos (react-cinco, etc.) and PR cycle times before session. Frontend team of 3 for 15+ live CAKE UI surfaces."
     },
     {
       "id": "T1",
@@ -477,9 +477,9 @@
     },
     {
       "id": "T6",
-      "name": "Engineering Manager #2",
-      "title": "Engineering Manager (Enterprise or Payments)",
-      "email": null,
+      "name": "James Oliver",
+      "title": "Engineering (added by CR)",
+      "email": "joliver@madmobile.com",
       "org_size": null,
       "day": "Tuesday",
       "date": "2026-04-14",
@@ -508,15 +508,15 @@
         {"path": "/delivery", "label": "Sprint velocity by board"},
         {"path": "/engineering", "label": "PR metrics by repo"}
       ],
-      "scheduling": { "priority": "FLEXIBLE", "why": "Need an engineering manager from Enterprise or Payments -- ground-level sprint reality.", "alternatives": ["Ask Zubair in T2 for a recommendation from his team", "Names pending from Chathura (April 7)"] },
-      "notes": "TBD name. Target: someone from Zubair's Enterprise team. Names pending from Chathura (April 7). Ask Zubair in T2."
+      "scheduling": { "priority": "FLEXIBLE", "why": "Engineering perspective -- ground-level sprint reality. Confirmed by Chathura.", "alternatives": null },
+      "notes": "Confirmed by Chathura (added by CR). Role/team needs confirmation -- adapt questions based on his domain. joliver@madmobile.com is on the survey recipient list."
     },
     {
       "id": "T7",
-      "name": "Senior IC #1",
-      "title": "Staff/Senior Engineer",
-      "email": null,
-      "org_size": null,
+      "name": "Kyle Budd",
+      "title": "Manager, Software Engineering (Restaurant Backend)",
+      "email": "kyle.budd@madmobile.com",
+      "org_size": "6 (Bruderer, Bobal, Ganesh, Minchew, Lavor)",
       "day": "Tuesday",
       "date": "2026-04-14",
       "duration_min": 30,
@@ -532,28 +532,28 @@
         "decision-making speed"
       ],
       "hypotheses": ["E", "F", "I"],
-      "lead_with": "Genuine interest in their daily experience. Start with 'Walk me through the last piece of work you shipped to production.'",
-      "what_they_get": "A voice to the CEO they've never had. Someone outside their chain who genuinely wants to understand what it's like to build here.",
-      "arc_notes": "Use IC interview templates. These are often the most candid conversations -- people tell you the truth faster in 30 min than VPs do in 60. Follow energy.",
+      "lead_with": "You manage the backend team that carries the heaviest system load -- CAKE POS core, payment gateway, KDS. The REST Jira project alone has 17,318 issues. I want to understand what that looks like from the inside.",
+      "what_they_get": "Recognition that his backend team carries enormous system weight, and a chance to surface what the data can't show.",
+      "arc_notes": "NOTE: Kyle is a manager, not an IC -- but this slot works for getting a second Restaurant perspective complementing Alexander Baine (Frontend) and Randy Brown (VP). Focus on backend sprint reality, CAKE backend repos, Jenkins/Pipelines.",
       "top_questions": [
-        "Walk me through the last piece of work you shipped to production. How long from first commit to production? What slowed it down?",
-        "How many different repos, languages, and tools do you touch in a typical week?",
-        "When you need a decision on architecture or priorities, who do you go to? How long does it take?",
-        "Are you using Cursor for daily development? How effective is it? What would make AI tooling more useful?"
+        "The REST Jira project has 17,318 issues -- more than the next four combined. How much of that is your team's active work versus inherited backlog?",
+        "PR cycle time for cake-payment-gateway averages 78 hours. What drives that? Is it review bottleneck, test cycles, or something else?",
+        "Your team handles CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS. How do you allocate 6 engineers across all of that?",
+        "Are you on Jenkins, Bitbucket Pipelines, or both? Is there a migration plan?"
       ],
       "relevant_pages": [
-        {"path": "/engineering", "label": "Repo and tech stack data"},
-        {"path": "/tooling", "label": "Tool inventory and AI adoption"},
-        {"path": "/delivery", "label": "Cycle time and deploy data"}
+        {"path": "/engineering", "label": "CAKE backend repos, PR cycle times"},
+        {"path": "/delivery", "label": "REST project metrics, sprint velocity"},
+        {"path": "/infrastructure", "label": "Jenkins instances in CAKE Dev"}
       ],
-      "scheduling": { "priority": "FLEXIBLE", "why": "Need a staff or senior engineer who ships code daily -- developer experience perspective.", "alternatives": ["Any staff/senior engineer from any team", "Ask any VP for a recommendation -- target someone candid"] },
-      "notes": "TBD name. Target: a staff engineer from any team. Ask VPs on Monday/Tuesday who would be most candid."
+      "scheduling": { "priority": "FLEXIBLE", "why": "Restaurant Backend Manager -- ground-level CAKE backend perspective. Confirmed by Chathura.", "alternatives": null },
+      "notes": "Confirmed by Chathura (added by CR). Manager, not IC -- complements Alexander Baine (Frontend Mgr) on Monday and Randy Brown (VP) on Tuesday morning. Backend carries heaviest system load."
     },
     {
       "id": "T8",
-      "name": "QE Lead",
+      "name": "Sowjanya Akula",
       "title": "Senior Quality Engineer (Restaurant QE)",
-      "email": null,
+      "email": "sowjanya.akula@madmobile.com",
       "org_size": null,
       "day": "Tuesday",
       "date": "2026-04-14",
@@ -584,14 +584,14 @@
         {"path": "/tooling", "label": "Test tools (SpiraTest, QCenter)"},
         {"path": "/delivery", "label": "QE sprint data"}
       ],
-      "scheduling": { "priority": "FLEXIBLE", "why": "Need someone from Restaurant QE team (reports to Payments, not Restaurant -- structural anomaly).", "alternatives": ["Sowjanya Akula (Sr QE)", "Darren Blackwell (QE Automation) -- ask Akshay who's most helpful"] },
-      "notes": "TBD name. Target: Sowjanya Akula (Senior QE) or Darren Blackwell (QE Automation). Ask Akshay in T3 who would be best."
+      "scheduling": { "priority": "FLEXIBLE", "why": "Restaurant QE team (reports to Payments, not Restaurant -- structural anomaly). Confirmed by Chathura.", "alternatives": ["Darren Blackwell (QE Automation)"] },
+      "notes": "Confirmed by Chathura (added by CR). Was already the target for this slot. The QE reporting structure anomaly (Restaurant QE under Payments VP, not Restaurant VP) is the key probe."
     },
     {
       "id": "W1",
-      "name": "Senior IC #2",
-      "title": "Staff/Senior Engineer",
-      "email": null,
+      "name": "Cory Renard",
+      "title": "Staff Software Engineer (Restaurant Frontend)",
+      "email": "cory.renard@madmobile.com",
       "org_size": null,
       "day": "Wednesday",
       "date": "2026-04-15",
@@ -607,9 +607,9 @@
         "cognitive load"
       ],
       "hypotheses": ["E", "F", "I"],
-      "lead_with": "Same approach as T7 -- genuine curiosity about their daily experience.",
-      "what_they_get": "A voice to the CEO they've never had.",
-      "arc_notes": "Overflow from Tuesday. Second IC from a different team than T7 to get triangulation. Cross-reference what both ICs say against what their VPs said.",
+      "lead_with": "Genuine curiosity about his daily experience as a Staff Engineer on the CAKE frontend.",
+      "what_they_get": "A voice to the CEO they've never had. Someone outside their chain who genuinely wants to understand what it's like to build here.",
+      "arc_notes": "IC perspective on the same Frontend team whose manager (Alexander Baine) interviews Monday. Good triangulation: does his account match his manager's? Cross-reference what he says against what Baine and Randy Brown said.",
       "top_questions": [
         "Walk me through the last piece of work you shipped to production. How long from first commit to production? What slowed it down?",
         "How many different repos, languages, and tools do you touch in a typical week?",
@@ -617,18 +617,19 @@
         "Are you using Cursor for daily development? How effective is it?"
       ],
       "relevant_pages": [
-        {"path": "/engineering", "label": "Repo and tech stack data"},
-        {"path": "/tooling", "label": "Tool inventory"},
-        {"path": "/delivery", "label": "Cycle time data"}
+        {"path": "/engineering", "label": "Frontend repos, PR cycle times"},
+        {"path": "/tooling", "label": "Tool inventory and AI adoption"},
+        {"path": "/delivery", "label": "Cycle time and deploy data"}
       ],
-      "scheduling": { "priority": "FLEXIBLE", "why": "Second IC from a different team than Tuesday's IC -- triangulates developer experience.", "alternatives": ["Any staff/senior engineer from a different team than T7", "Ask VPs for recommendations"] },
-      "notes": "TBD name. Pick from a different team than T7 for triangulation."
+      "scheduling": { "priority": "FLEXIBLE", "why": "Staff Engineer IC perspective on Restaurant Frontend. Confirmed by Chathura.", "alternatives": ["Rob Quin (SWE, Restaurant Frontend)"] },
+      "notes": "Confirmed by Chathura (added by CR). Reports to Alexander Baine under Randy Brown. Staff Software Engineer on Restaurant Frontend. Triangulation: IC perspective on same team whose manager (Baine) interviews Monday."
     },
     {
       "id": "W2",
-      "name": "Rajik Gunatilaka",
-      "title": "VP & LK Country Head",
-      "email": "rajik.gunatilaka@madmobile.com",
+      "name": "TBD — SL Lead (Rajik departed)",
+      "title": "Sri Lanka Engineering Lead",
+      "email": null,
+      "departed_original": "Rajik Gunatilaka (rajik.gunatilaka@madmobile.com)",
       "org_size": "Sri Lanka engineering",
       "day": "Wednesday",
       "date": "2026-04-15",
@@ -656,8 +657,8 @@
         {"path": "/people/teams", "label": "SL team members"},
         {"path": "/engineering", "label": "PR cycle time variance"}
       ],
-      "scheduling": { "priority": "MUST", "why": "Only person who can speak to Sri Lanka engineering operations. No substitute. Video call -- more scheduling flexibility.", "alternatives": null },
-      "notes": "Video call. DO NOT reference SL cost restructuring or 90-day plan financial data. Reduced from 45 min."
+      "scheduling": { "priority": "MUST", "why": "Need someone who can speak to Sri Lanka engineering operations. Video call.", "alternatives": ["Nishen Peiris (nishen.peiris@madmobile.com)", "Wenushka Dikowita (wenushka.dikowita@madmobile.com)"] },
+      "notes": "RAJIK GUNATILAKA DEPARTED — confirmed by Chathura (April 6): 'no longer with us. Former Sri Lanka center lead.' Slot needs replacement. Highlighted yellow in OneNote. SL operations questions are still valid for any SL lead. DO NOT reference SL cost restructuring or 90-day plan financial data."
     },
     {
       "id": "W3",
@@ -727,7 +728,7 @@
         {"path": "/engineering", "label": "madmobile workspace data"}
       ],
       "scheduling": { "priority": "PREFERRED", "why": "Kennedy's only direct report -- unique vantage point on CTO/CDO split.", "alternatives": ["Can skip if unavailable -- enterprise tech partially covered by Zubair and Kennedy sessions"] },
-      "notes": "Kennedy's only confirmed direct report. Questions adapt based on Monday's Kennedy session."
+      "notes": "Kennedy's only confirmed direct report. Questions adapt based on Monday's Kennedy session. AVAILABILITY FLAG: OneNote note from Chathura: 'going to be at a client onsite that week.' May need to do async/video or skip. Already PREFERRED priority."
     },
     {
       "id": "W5",
@@ -767,8 +768,8 @@
     },
     {
       "id": "W6",
-      "name": "Customer Support Lead",
-      "title": "TBD",
+      "name": "Michael Lee",
+      "title": "Customer Support",
       "email": null,
       "org_size": null,
       "day": "Wednesday",
@@ -797,8 +798,8 @@
         {"path": "/delivery", "label": "Incident timeline and RCA data"},
         {"path": "/engineering", "label": "Pipeline and deployment data"}
       ],
-      "scheduling": { "priority": "FLEXIBLE", "why": "Need a senior person from Customer Support who handles escalations to engineering.", "alternatives": ["Ask Chathura in Monday's session for a name", "Any experienced support person works"] },
-      "notes": "Name TBD. Ask Chathura in M1 on Monday."
+      "scheduling": { "priority": "FLEXIBLE", "why": "Customer Support perspective on escalation paths to engineering. Confirmed by Chathura.", "alternatives": null },
+      "notes": "Confirmed by Chathura (added by CR). New name -- not on engineering survey recipient list (support staff may not have been included). Email TBD."
     },
     {
       "id": "W7",

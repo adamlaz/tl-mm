@@ -4,7 +4,7 @@
 **From:** Adam Lazarus
 **Sessions:** 23 across 3 days | All 30-60 min | 15 min buffers between sessions
 **Room:** Private conference room with TV/screen for all 3 days (I'll share data visualizations during some conversations)
-**Video:** One session is remote (Rajik Gunatilaka, Wednesday 9:15am)
+**Video:** One session is remote (Wednesday 9:15am — SL lead, replacement needed for departed Rajik Gunatilaka)
 
 ---
 
@@ -13,7 +13,7 @@
 - Private 1:1 room for all sessions (same room all 3 days preferred)
 - TV or screen I can share my laptop to (HDMI or AirPlay)
 - Whiteboard or large pad (for architecture walkthroughs)
-- For Rajik (W2, Wednesday 9:15am): video call setup in the same room
+- For W2 (Wednesday 9:15am): video call setup in the same room (SL lead — replacement needed for departed Rajik)
 
 ---
 
@@ -39,7 +39,7 @@ Sessions marked **FLEXIBLE** need a certain role/perspective, not a specific ind
 | **1:00-1:45** | **David Strainick** | **45 min** | **MUST** | Only person who owns the full customer operations chain (Account Mgmt, Onboarding, Delivery, IT). No substitute. 10 days into COO role -- the conversation is about what he's inheriting. |
 | **2:00-2:30** | **Manuel Garcia** | **30 min** | **PREFERRED** | Financial model and vendor spend perspective. New Interim CFO. If unavailable: can skip -- financial data already captured from the 90-day plan. Lower priority than other Monday sessions. |
 | **2:45-3:15** | **Mark Guilarte** | **30 min** | **PREFERRED** | PMO coordination across all product lines. If unavailable: Qaiser P. (Sr PM, Restaurant) or Vanessa Sotomayor (PM, Payments) can cover the program management perspective. |
-| **3:30-4:00** | **EM #1 (TBD)** | **30 min** | **FLEXIBLE** | Need a CAKE engineering manager who runs sprints day-to-day. Target: **Alexander Baine** (Frontend Mgr) or **Kyle Budd** (Backend Mgr) from Randy Brown's team. Ask Randy who's better, or pick either -- both work. |
+| **3:30-4:00** | **Alexander Baine** *(added by CR)* | **30 min** | **FLEXIBLE** | Manager, Software Engineering (Restaurant Frontend). Confirmed by Chathura. Manages Cory Renard, Rob Quin. |
 | 4:00-4:30 | Synthesis | — | — | — |
 | 4:30-5:00 | Don Salama (debrief) | 30 min | — | Daily end-of-day debrief |
 
@@ -58,9 +58,9 @@ Sessions marked **FLEXIBLE** need a certain role/perspective, not a specific ind
 | **11:30-12:00** | **Matias Riglos** | **30 min** | **PREFERRED** | Infrastructure and DevOps perspective -- CI/CD, observability, cloud ops. He's the person who handles AWS provisioning and Bitbucket access. If unavailable: **Matthew Griffin** (Sr Cloud Engineer, Payments R&D) can cover infrastructure topics. |
 | 12:00-1:00 | Lunch (informal) | — | — | With engineering team members |
 | **1:00-1:30** | **Kevin Reyes** | **30 min** | **PREFERRED** | Director of Payments R&D (9 engineers). Manager-level view of the best-run engineering team. If unavailable: **Trenton Kress** or **Peter Wu** (Staff Engineers, Payments R&D) can cover the engineering practices perspective. |
-| **1:45-2:15** | **EM #2 (TBD)** | **30 min** | **FLEXIBLE** | Need an engineering manager from Zubair's Enterprise team or Payments. Ask Zubair in his morning session who would be best. Names pending from Chathura (April 7). |
-| **2:30-3:00** | **Senior IC #1 (TBD)** | **30 min** | **FLEXIBLE** | Need a staff or senior engineer from any team -- someone who ships code daily and can speak to the developer experience. Ask any VP for a recommendation. Target someone candid. |
-| **3:15-3:45** | **QE Lead (TBD)** | **30 min** | **FLEXIBLE** | Need someone from the Restaurant QE team (7 people, reports to Akshay in Payments, not Randy in Restaurant). Target: **Sowjanya Akula** (Sr QE) or **Darren Blackwell** (QE Automation). Ask Akshay in his morning session who would be most helpful. |
+| **1:45-2:15** | **James Oliver** *(added by CR)* | **30 min** | **FLEXIBLE** | Confirmed by Chathura. Role/team needs confirmation — adapt questions based on his domain. |
+| **2:30-3:00** | **Kyle Budd** *(added by CR)* | **30 min** | **FLEXIBLE** | Manager, Software Engineering (Restaurant Backend). Second Restaurant perspective complementing Baine (Frontend) and Randy (VP). Backend carries heaviest system load. |
+| **3:15-3:45** | **Sowjanya Akula** *(added by CR)* | **30 min** | **FLEXIBLE** | Senior Quality Engineer (Restaurant QE). Reports to Akshay in Payments, not Randy in Restaurant — structural anomaly is the key probe. |
 | 4:00-5:00 | Synthesis | — | — | — |
 | 5:00-5:30 | Don Salama (debrief) | 30 min | — | Daily end-of-day debrief |
 
@@ -73,13 +73,13 @@ Sessions marked **FLEXIBLE** need a certain role/perspective, not a specific ind
 | Time | Who | Duration | Priority | Why + Alternatives |
 |------|-----|----------|----------|-------------------|
 | 8:00-8:30 | Don Salama (sync) | 30 min | — | Daily morning sync |
-| **8:30-9:00** | **Senior IC #2 (TBD)** | **30 min** | **FLEXIBLE** | Second staff/senior engineer from a *different* team than Tuesday's IC. Triangulates the developer experience perspective. Ask VPs for recommendations. |
-| **9:15-9:45** | **Rajik Gunatilaka** | **30 min** | **MUST** | Only person who can speak to Sri Lanka engineering operations. No substitute. Video call -- more scheduling flexibility since no room conflict. |
+| **8:30-9:00** | **Cory Renard** *(added by CR)* | **30 min** | **FLEXIBLE** | Staff Software Engineer (Restaurant Frontend). IC perspective on same team whose manager (Baine) interviews Monday. Good triangulation. |
+| **9:15-9:45** | **TBD — SL Lead** *(Rajik Gunatilaka departed)* | **30 min** | **MUST** | **DEPARTED.** Rajik confirmed no longer at company (Chathura, April 6). Need SL replacement. Options: Nishen Peiris, Wenushka Dikowita. Video call. |
 | **10:00-10:30** | **Greg Schmitzer** | **30 min** | **MUST** | Only sales and marketing leadership. Absorbed the CRO role. No substitute. If truly unavailable: **Bobby Jaklitsch** (Field Sales) could cover sales pipeline but not the executive view. |
-| **10:45-11:15** | **Jeremy Diggins** | **30 min** | **PREFERRED** | Kennedy's only direct report -- unique vantage point on enterprise technology and the CTO/CDO split. If unavailable: can skip -- enterprise tech perspective is partially covered by Zubair and Kennedy sessions. |
+| **10:45-11:15** | **Jeremy Diggins** | **30 min** | **PREFERRED** | Kennedy's only direct report -- unique vantage point on enterprise technology and the CTO/CDO split. **NOTE: "going to be at a client onsite that week" (per OneNote).** May need async/video. If unavailable: can skip -- enterprise tech partially covered by Zubair and Kennedy sessions. |
 | **11:30-12:00** | **Bailey Shatney** | **30 min** | **PREFERRED** | VP HR -- culture, hiring, retention perspective. If unavailable: can skip or go async -- culture data is also captured through surveys and other interviews. |
 | 12:00-1:00 | Lunch (informal) | — | — | With cross-functional team |
-| **1:00-1:30** | **Support Lead (TBD)** | **30 min** | **FLEXIBLE** | Need a senior person from Customer Support (now under Chathura). Ask Chathura in Monday's session for a name. Any experienced support person who handles escalations to engineering works. |
+| **1:00-1:30** | **Michael Lee** *(added by CR)* | **30 min** | **FLEXIBLE** | Customer Support. Confirmed by Chathura. Escalation paths, support→engineering handoff. |
 | **1:45-2:15** | **Chris Gomersall** | **30 min** | **PREFERRED** | Only design leadership. If unavailable: can go async (email/Teams follow-up). Design perspective is valuable but not blocking. |
 | **2:30-3:00** | **Chathura (follow-up)** | **30 min** | **MUST** | Second session with Chathura to close gaps from Monday after 15+ other conversations. No substitute. Book this when booking his Monday session. |
 | 3:00-4:00 | Final synthesis | — | — | — |
@@ -99,21 +99,21 @@ Sessions marked **FLEXIBLE** need a certain role/perspective, not a specific ind
 | David Strainick | david.strainick@madmobile.com | Mon | 1:00-1:45 | 45 min | MUST |
 | Manuel Garcia | manuel.garcia@madmobile.com | Mon | 2:00-2:30 | 30 min | PREFERRED |
 | Mark Guilarte | mark.guilarte@madmobile.com | Mon | 2:45-3:15 | 30 min | PREFERRED |
-| EM #1 (TBD) | — | Mon | 3:30-4:00 | 30 min | FLEXIBLE |
+| Alexander Baine | alexander.baine@madmobile.com | Mon | 3:30-4:00 | 30 min | FLEXIBLE |
 | Randy Brown | randy.brown@madmobile.com | Tue | 8:30-9:15 | 45 min | MUST |
 | Zubair Syed | zubair.syed@madmobile.com | Tue | 9:30-10:15 | 45 min | MUST |
 | Akshay Bhasin | akshay.bhasin@madmobile.com | Tue | 10:30-11:15 | 45 min | MUST |
 | Matias Riglos | matias.riglos@madmobile.com | Tue | 11:30-12:00 | 30 min | PREFERRED |
 | Kevin Reyes | kevin.reyes@madmobile.com | Tue | 1:00-1:30 | 30 min | PREFERRED |
-| EM #2 (TBD) | — | Tue | 1:45-2:15 | 30 min | FLEXIBLE |
-| Senior IC #1 (TBD) | — | Tue | 2:30-3:00 | 30 min | FLEXIBLE |
-| QE Lead (TBD) | — | Tue | 3:15-3:45 | 30 min | FLEXIBLE |
-| Senior IC #2 (TBD) | — | Wed | 8:30-9:00 | 30 min | FLEXIBLE |
-| Rajik Gunatilaka | rajik.gunatilaka@madmobile.com | Wed | 9:15-9:45 | 30 min | MUST |
+| James Oliver | joliver@madmobile.com | Tue | 1:45-2:15 | 30 min | FLEXIBLE |
+| Kyle Budd | kyle.budd@madmobile.com | Tue | 2:30-3:00 | 30 min | FLEXIBLE |
+| Sowjanya Akula | sowjanya.akula@madmobile.com | Tue | 3:15-3:45 | 30 min | FLEXIBLE |
+| Cory Renard | cory.renard@madmobile.com | Wed | 8:30-9:00 | 30 min | FLEXIBLE |
+| TBD — SL Lead *(Rajik departed)* | — | Wed | 9:15-9:45 | 30 min | MUST |
 | Greg Schmitzer | greg.schmitzer@madmobile.com | Wed | 10:00-10:30 | 30 min | MUST |
 | Jeremy Diggins | jeremy.diggins@madmobile.com | Wed | 10:45-11:15 | 30 min | PREFERRED |
 | Bailey Shatney | bailey.shatney@madmobile.com | Wed | 11:30-12:00 | 30 min | PREFERRED |
-| Support Lead (TBD) | — | Wed | 1:00-1:30 | 30 min | FLEXIBLE |
+| Michael Lee | — | Wed | 1:00-1:30 | 30 min | FLEXIBLE |
 | Chris Gomersall | chris.gomersall@madmobile.com | Wed | 1:45-2:15 | 30 min | PREFERRED |
 | Chathura (follow-up) | chathura.ratnayake@madmobile.com | Wed | 2:30-3:00 | 30 min | MUST |
 

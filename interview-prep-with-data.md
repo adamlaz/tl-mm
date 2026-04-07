@@ -120,7 +120,81 @@
 
 ---
 
-### Engineering Managers (2–3, 45 min each)
+### Alexander Baine (M7, Mon 3:30-4:00 — Restaurant Frontend Manager)
+
+*Confirmed by Chathura (added by CR). Manager, Software Engineering under Randy Brown. Manages Cory Renard (Staff) and Rob Quin (SWE). Frontend team of 3 for 15+ live CAKE UI surfaces.*
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "Your frontend team of 3 supports 15+ live CAKE UI surfaces -- POS, Kiosk, OLO, KDS, CAKEpop, Restaurant Admin, and more. How do you prioritize what gets engineering attention?" | CDO org chart: 3 frontend engineers, 15+ CAKE systems | A (Portfolio Sprawl) |
+| 2 | "Your board [NAME] shows [TREND] over the last N sprints — [VALUES]. Does that match your experience? What drove it?" | Look up in velocity_full.json before session | G (Missing Cadence) |
+| 3 | "Your team's average PR merge time on [REPO] is X hours. Does that feel right, or are there outliers skewing it?" | Look up in bitbucket/metrics.json (react-cinco, etc.) | E (Dependency Drag) |
+| 4 | "What percentage of your sprint goes to planned work versus interrupt-driven work -- escalations, bugs, support?" | Flow distribution data | B (Sales-Led Chaos) |
+| 5 | "When priorities change mid-sprint, how does your team hear about it?" | Hypothesis B, G | B (Sales-Led Chaos) |
+
+---
+
+### James Oliver (T6, Tue 1:45-2:15 — added by CR)
+
+*Confirmed by Chathura. Role/team needs confirmation. joliver@madmobile.com. Adapt questions based on his domain once identified.*
+
+Use Engineering Manager template questions below, tailored to his specific team data.
+
+---
+
+### Kyle Budd (T7, Tue 2:30-3:00 — Restaurant Backend Manager)
+
+*Confirmed by Chathura (added by CR). Manager, Software Engineering (Restaurant Backend). Manages Beau Bruderer, Holly Bobal, Siva Ganesh, Harrison Minchew, Anderson Lavor. Backend carries heaviest system load -- CAKE POS core, payment gateway, KDS.*
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "The REST Jira project has 17,318 issues — more than the next four combined. How much of that is your team's active work versus inherited backlog?" | REST: 17,318 issues | F (Legacy Gravity) |
+| 2 | "PR cycle time for cake-payment-gateway averages 78 hours. What drives that? Is it review bottleneck, test cycles, or something else?" | bitbucket/metrics.json | E (Dependency Drag) |
+| 3 | "Your team handles CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS. How do you allocate 6 engineers across all of that?" | CDO org chart team assignments | A (Portfolio Sprawl) |
+| 4 | "Are you on Jenkins, Bitbucket Pipelines, or both? Is there a migration plan?" | Jenkins EC2 in CAKE Dev; Pipelines in repos | I (Architectural Polarity) |
+| 5 | "What percentage of your sprint goes to planned work versus interrupt-driven work?" | Flow distribution | B (Sales-Led Chaos) |
+
+---
+
+### Sowjanya Akula (T8, Tue 3:15-3:45 — Senior QE, Restaurant QE)
+
+*Confirmed by Chathura (added by CR). Senior Quality Engineer. Reports to Akshay Bhasin (Payments VP), not Randy Brown (Restaurant VP). The reporting structure anomaly is the key probe.*
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "You test restaurant software but report to the Payments VP, not the Restaurant VP. How does that work day-to-day? Do you sit in the same sprints as Randy's developers?" | CDO org chart: QE under Akshay, not Randy | E (Dependency Drag) |
+| 2 | "The API Automation using Cursor POC from Team Castor — how did that go? Did it change how QE works?" | Confluence AI tooling docs | I (Architectural Polarity) |
+| 3 | "SpiraTest, QCenter, and Jira — three places tracking test execution. How do those relate? Is there a plan to consolidate?" | Tooling catalog | A (Portfolio Sprawl) |
+| 4 | "AI-generated automated test cases from acceptance criteria — how effective is that in practice?" | Confluence QE docs | AI assessment |
+
+---
+
+### Cory Renard (W1, Wed 8:30-9:00 — Staff Engineer, Restaurant Frontend)
+
+*Confirmed by Chathura (added by CR). Staff Software Engineer under Alexander Baine. IC perspective on same team whose manager interviews Monday. Good triangulation.*
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "Walk me through the last piece of work you shipped to production. How long from first commit to production? What slowed it down?" | DORA lead time | DORA |
+| 2 | "How many different repos, languages, and tools do you touch in a typical week?" | Cognitive load | I (Architectural Polarity) |
+| 3 | "When you need a decision on architecture or priorities, who do you go to? How long does it take?" | Decision speed | D (Unclear Ownership) |
+| 4 | "Are you using Cursor for daily development? How effective is it? What would make AI tooling more useful for your workflow?" | AI adoption | AI assessment |
+
+---
+
+### Michael Lee (W6, Wed 1:00-1:30 — Customer Support)
+
+*Confirmed by Chathura (added by CR). Customer Support lead. New name — not on engineering survey recipient list.*
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "Support is now under Chathura, the same executive who owns engineering. Has that changed how escalations work? Is the path from support ticket to engineering fix shorter now?" | Reorg: support → CDO | G (Missing Cadence) |
+| 2 | "Walk me through a CAKE payment outage from the support perspective — from first customer call to resolution. Who gets paged, what tools do you use, and how long does it typically take?" | 19 Payments incidents in RCA data | F (Legacy Gravity) |
+| 3 | "When you escalate a technical issue, what's the typical response time from engineering? Hours? Days?" | — | G (Missing Cadence) |
+
+---
+
+### Engineering Managers — General Template
 
 Adapt these based on which team they lead. Look up their team's board in `inventory/jira/velocity_full.json` and their repos in `inventory/bitbucket/metrics.json` before each session.
 
@@ -147,7 +221,9 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 
 ## Wednesday, April 15 — Cross-Functional Validation
 
-### Rajik Gunatilaka (VP & LK Country Head, 45 min video)
+### ~~Rajik Gunatilaka~~ TBD — SL Lead (W2, Wed 9:15-9:45 video)
+
+**RAJIK DEPARTED** — confirmed by Chathura (April 6): "no longer with us. Former Sri Lanka center lead." Slot needs replacement. Options: Nishen Peiris, Wenushka Dikowita. Questions below remain valid for any SL lead.
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -157,9 +233,9 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 
 ---
 
-### Customer Support Lead (TBD, 30 min)
+### Michael Lee (W6, Wed 1:00-1:30 — Customer Support)
 
-*Support now unified under Chathura (CDO) — previously under Lodes (CRO). Key to understanding the full build-to-support chain.*
+*Confirmed by Chathura (added by CR). Support now unified under Chathura (CDO) — previously under Lodes (CRO). Key to understanding the full build-to-support chain.*
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -293,10 +369,10 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 |---|---|---|---|
 | F10 | "AP is stretching 300+ days for some vendors — BDO and LinkedIn are both 200+ days past due. How does that affect vendor relationships and your negotiating leverage on contract renewals?" | AP 03.30.26: BDO 309 days, LinkedIn 203 days, multiple vendors 100+ days | G (Missing Cadence) |
 
-### Rajik (SL) — SENSITIVITY NOTE
+### SL Lead (W2 replacement) — SENSITIVITY NOTE
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
-| — | DO NOT reference the SL cost restructuring ($275K→$50K/month) or any financial data from the 90-day plan. The SL reduction is the largest single cost cut in the plan and may not be fully communicated to Rajik's team. Stick to the coordination and engineering questions already planned. | — | — |
+| — | **Rajik departed.** DO NOT reference the SL cost restructuring ($275K→$50K/month) or any financial data from the 90-day plan. The SL reduction is the largest single cost cut in the plan and may not be fully communicated to the SL team. Stick to the coordination and engineering questions already planned. | — | — |
 
 ---
 

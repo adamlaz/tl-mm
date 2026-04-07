@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 6, 2026 (updated April 6 morning with Ana/Chathura email replies, neo-workspace discovery, CloudTrail access confirmed, survey 5 confirmed, GitHub departing, vendor spend partial data, Graph API instructions sent)
+**Date:** April 7, 2026 (updated April 7 with: MUST interviews booked by Ana, 6 TBD interview slots confirmed by Chathura, Rajik Gunatilaka departed, Jeremy Diggins flagged unavailable, survey sent to 57 recipients (~5 responses), Guru 103 users confirmed, MS Graph API IT/Security review active, L1 org names + RCA docs shifted to Apr 9)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -55,7 +55,7 @@ A ~60-hour compressed technology and operations diagnostic sprint for **Mad Mobi
 | Greg Schmitzer | President & Head of Sales & Marketing | Field sales, inbound sales, marketing strategy | Bobby Jaklitsch (Field, 4), Peter Vu (Inbound, 3), Karen Licker (Marketing, 1) |
 | David Strainick | **COO** *(was Chief People Officer)* | Account Management, Customer Onboarding, Customer Delivery, IT | Das DeSilva (Onboarding, 10), Dir. Account Mgmt (9), Rosen Georgiev (IT), Chip O'Connell (Onboarding Delivery, 3) |
 | Chathura Ratnayake | **CDO** *(was SVP Global Software Engineering)* | ALL engineering (restaurant, enterprise, payments), product, design, platform, PMO, ALL customer support | Mark Guilarte (PMO, 4), Akshay Bhasin (Payments & Financial Services, 20+), Zubair Syed (Enterprise Solutions, 58), Randy Brown (Restaurant Tech, 10), Dulanjan W. (Product & GTM, 10+) |
-| Jack Kennedy | CTO | **AI capabilities and platform innovation only** *(operational engineering scope removed)*. **April 5 update:** Currently full-time on single-client AI delivery — building an AI-developed POS application for **Winmark Corporation** ($5M new client, ~1,265 franchise stores including Play It Again Sports). Agentic programming, year-long delivery. Not currently building Neo or internal platform AI. | Jeremy Diggins — very small team |
+| Jack Kennedy | CTO | **AI capabilities and platform innovation only** *(operational engineering scope removed)*. **April 5 update:** Currently full-time on single-client AI delivery — building an AI-developed POS application for **Winmark Corporation** ($5M new client, ~1,265 franchise stores including Play It Again Sports). Agentic programming, year-long delivery. Not currently building Neo or internal platform AI. Direct mobile: (813) 494-5270. | Jeremy Diggins — very small team |
 | Bailey Shatney | **VP of Human Resources** *(new to org chart — was David Strainick's domain)* | HR, recruiting | Renee Pauley (Recruiting). **Note:** L&D (Ayodele Lawal, Adriana Zuniga) may report here per Don's chart OR under Dulanjan's Product team per Chathura's chart — discrepancy flagged. |
 | Ana Chambers | Chief of Staff, Strategic Programs | Cross-company execution, initiative alignment | — |
 
@@ -215,6 +215,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 ### Departed
 - **Steven Siegel** — Former COO. Exited April 3, 2026.
 - **Bill Lodes** — Former CRO. Exited April 3, 2026. Consulting on payments strategy transition.
+- **Rajik Gunatilaka** — Former VP & LK Country Head. Confirmed departed by Chathura (April 6 evening): "no longer with us. Former Sri Lanka center lead." SL Country Head position is now vacant.
 
 ### IT / Infrastructure Contacts (Access Provisioning)
 - **Rosen Georgiev** — IT (reports to Strainick/COO). Day-to-day IT operations. Previously identified as Jira/Confluence admin.
@@ -223,7 +224,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - **Matthew Griffin** — Senior Cloud Engineer (Payments R&D under Kevin Reyes). Assigned AWS account provisioning (Jira ticket CLD-2431).
 
 ### Sri Lanka
-- **Rajik Gunatilaka** — VP & LK Country Head. Reports to Strainick (COO), not CDO. Engineering resources in Sri Lanka have dotted-line relationships to Chathura/Zubair.
+- **Rajik Gunatilaka** — **DEPARTED** (confirmed by Chathura, April 6). Former VP & LK Country Head. Was reporting to Strainick (COO). SL Country Head position is now vacant. Engineering resources in Sri Lanka have dotted-line relationships to Chathura/Zubair — unclear who now manages SL operations day-to-day. **Key onsite question: who assumed SL leadership?** Potential contacts from survey recipient list: Nishen Peiris, Wenushka Dikowita (SL-based names).
 
 ---
 
@@ -281,16 +282,26 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - Shared Artifact Registry has ECR + CodeArtifact + a `mm-techdocs-storage` bucket (suggests Backstage/TechDocs)
 - Marketplace Seller account has Lambda functions for AWS Marketplace entitlements — MM sells via AWS Marketplace
 
-### Confirmed (Updated April 3)
-- **Monitoring**: Grafana/Mimir/Loki/Tempo (self-hosted in Shared Services). Viewer access requested.
+### Confirmed (Updated April 7)
+- **Monitoring**: Grafana/Mimir/Loki/Tempo. **Three instances confirmed:**
+  - `observability.madmobile.tools` — CAKE dev (in-process transition)
+  - `grafana.madcloud.io` — Retail
+  - `grafana.madpayments.com` — Payments
 - **CI/CD**: Jenkins (CAKE) + Bitbucket Pipelines (Retail, Payments). Dual system.
 - **IaC**: Terraform (state buckets in multiple accounts)
+- **Microsoft Graph API**: Read-only access confirmed (April 7). Org directory, calendar, teams/groups.
 
 ### Not Yet Confirmed
-- Grafana dashboard access — Ana says "should be available shortly" (April 6 morning). Standing by.
-- Guru access — Ana checking (April 6 morning)
-- Internal survey tool (Ana checking with HR)
-- **Microsoft Graph API** — Ana checking with IT. Exact steps sent to Ana for Rosen/Matias: grant admin consent on "Microsoft Graph Command Line Tools" app (app ID: `14d82eec-204b-4c2f-b7e8-296a70dab67e`) for permissions `User.Read.All`, `People.Read`, `Calendars.Read`, `Group.Read.All`, `Team.ReadBasic.All`.
+- ⏳ CloudWatch alarm permissions (`cloudwatch:DescribeAlarms` not in audit role — requested)
+
+### Resolved (April 7)
+- **Grafana**: Access granted. **Three instances confirmed:**
+  - `observability.madmobile.tools` — CAKE dev (in-process transition)
+  - `grafana.madcloud.io` — Retail
+  - `grafana.madpayments.com` — Payments
+- **Microsoft Graph API**: Access confirmed and working (April 7). IT/Security review completed by Rosen Georgiev + Mark Freid. 5 read-only permissions granted (`User.Read.All`, `People.Read`, `Calendars.Read`, `Group.Read.All`, `Team.ReadBasic.All`). Scoped to Adam's account, revoke after April 25.
+- **Guru**: 103 users confirmed (Ana, April 6 evening). Contract ends June. Bailey Shatney (VP HR) now owns. Working on a plan.
+- **Internal survey tool**: Microsoft Forms on MM account. All 5 surveys built and deployed.
 
 ### Resolved (April 6)
 - **GitHub**: NOT active — moving out due to cost. Bitbucket is sole SCM. (Chathura, April 6)
@@ -301,9 +312,9 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - ✅ Atlassian API token (created, working for Jira + Confluence)
 - ✅ AWS CLI / SSO (18 profiles configured, `Global-Audit-RO` role)
 - ✅ CloudTrail access (confirmed April 6 — Chathura approved `cloudtrail:LookupEvents`)
-- ⏳ Grafana viewer access (Ana: "should be available shortly")
+- ✅ Grafana access (April 7 — 3 instances: observability.madmobile.tools, grafana.madcloud.io, grafana.madpayments.com)
+- ✅ Microsoft Graph API (April 7 — 5 read-only permissions confirmed)
 - ⏳ CloudWatch alarm permissions (`cloudwatch:DescribeAlarms` not in audit role — requested)
-- ⏳ Microsoft Graph API (steps sent to Ana for IT, April 6)
 
 ---
 
@@ -513,6 +524,10 @@ Five instruments ready. Target deployment: **Monday, April 6** (via Microsoft Fo
 **RESOLVED (April 6):** Chathura confirmed "Yes" to adding the 5th survey. Original issue was that his draft email only referenced 4 surveys. Now all 5 are included.
 **Chathura's survey email key changes from Adam's draft:** Added "As mentioned in technology all hands" framing, deadline April 10, message will come directly from Chathura. His version is polished and ready to send.
 
+**Distribution (April 6):** Chathura sent surveys to **57 recipients** covering engineering, product, QE, design, and cross-functional staff. CC: Adam Lazarus, Don Salama, Ana Chambers, Bailey Shatney, Jack Kennedy.
+
+**Response status (April 7):** ~13 responses received (~23% response rate). Deadline remains April 10.
+
 **Respondent-facing survey links (from April 5 email thread):**
 - Delivery Performance: https://forms.cloud.microsoft/r/WNU3f9ryvZ
 - Team Culture: https://forms.cloud.microsoft/r/AwEJqN022m
@@ -564,7 +579,20 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 
 ## 9. Onsite Interview Plan (April 13–15)
 
-**Updated to reflect April 3 reorg. Major changes: Siegel removed, Lodes deprioritized, Strainick refocused, Kennedy handled with care, Chathura expanded.**
+**Updated to reflect April 3 reorg and April 6–7 scheduling updates.**
+
+**Scheduling Status (April 7):**
+- **MUST sessions: All booked** by Ana (April 6 evening). Calendar invites sent.
+- **PREFERRED sessions: In progress** — Adam asked Ana to proceed with next grouping (April 7 morning). Will confirm final group + timings April 8.
+- **All 6 TBD slots confirmed by Chathura** via OneNote annotations ("added by CR"):
+  - M7: **Alexander Baine** (Restaurant Frontend Manager) — Monday 3:30-4:00
+  - T6: **James Oliver** (`joliver@madmobile.com`) — Tuesday 1:45-2:15
+  - T7: **Kyle Budd** (Restaurant Backend Manager) — Tuesday 2:30-3:00
+  - T8: **Sowjanya Akula** (Senior QE) — Tuesday 3:15-3:45
+  - W1: **Cory Renard** (Staff Engineer, Restaurant Frontend) — Wednesday 8:30-9:00
+  - W6: **Michael Lee** (Customer Support) — Wednesday 1:00-1:30
+- **W2 (Rajik Gunatilaka): DEPARTED** — highlighted yellow in OneNote. Chathura confirmed "no longer with us." Slot needs SL replacement. Options: Nishen Peiris, Wenushka Dikowita (SL-based names on survey list).
+- **W4 (Jeremy Diggins): AVAILABILITY CONCERN** — OneNote note: "going to be at a client onsite that week." May need async/video or skip. PREFERRED priority, alternatives exist.
 
 ### Monday, April 13 — Leadership + Strategy
 
@@ -590,11 +618,11 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 
 | Who | Title | Duration | Focus | Notes |
 |-----|-------|----------|-------|-------|
-| Rajik Gunatilaka | VP & LK Country Head | 45 min (video) | Sri Lanka engineering ops, timezone coordination, reporting lines | Reports to Strainick (COO) now, not CPO. Dotted line to Chathura. |
+| **TBD — SL Lead** *(Rajik Gunatilaka departed)* | VP & LK Country Head | 30 min (video) | Sri Lanka engineering ops, timezone coordination, reporting lines | **Rajik departed** (Chathura, April 6). Need SL replacement. Options: Nishen Peiris, Wenushka Dikowita. |
 | Greg Schmitzer | President & Head of Sales & Marketing | 30 min | Sales/marketing strategy, revenue story, feature promise pipeline | Expanded role — absorbed CRO scope. |
-| Jeremy Diggins | Dir. Enterprise Technology | 30 min | Enterprise tech, infrastructure decisions | Reports to Kennedy. |
+| Jeremy Diggins | Dir. Enterprise Technology | 30 min | Enterprise tech, infrastructure decisions | Reports to Kennedy. **AVAILABILITY FLAG:** OneNote note: "going to be at a client onsite that week." May need async/video. |
 | Bailey Shatney | VP Human Resources | 30 min | Culture, hiring, retention, L&D, team health | New to exec team. Took over from Strainick. |
-| Customer Support Lead (TBD) | TBD | 30 min | Escalation paths, support→engineering handoff | Now under Chathura. Key to understanding full chain. |
+| **Michael Lee** *(added by CR)* | Customer Support | 30 min | Escalation paths, support→engineering handoff | Now under Chathura. Key to understanding full chain. |
 | Chris Gomersall | Dir. Product Design | 30 min or async | Design process, PM/design/eng collaboration | |
 | Bill Lodes (optional) | Former CRO, consulting | 30 min | Payments strategy context, transition items | Only if available and Don thinks it's valuable. Low priority. |
 
@@ -671,35 +699,39 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - **Private reply sent to Don with bullet-point takeaways on 90-day plan and next steps (April 5 evening)**
 - **Email and Message Discipline spec added to tl-docs/writing-style.md (April 5 evening)**
 - **Chathura survey gap addressed — asked to add Survey 5 (AI Adoption & Tooling) to his intro email (April 5 evening)**
+- **MUST interview sessions booked** by Ana (April 6 evening). All calendar invites sent.
+- **All 6 TBD interview slots confirmed by Chathura** via OneNote annotations (April 6–7): Alexander Baine (M7), James Oliver (T6), Kyle Budd (T7), Sowjanya Akula (T8), Cory Renard (W1), Michael Lee (W6). Schedule fully covered.
+- **Reply email sent** (April 7 morning) — confirmed Jack Kennedy meeting @ 9:45a, acknowledged ~5 survey responses, asked Ana to proceed with PREFERRED grouping.
+- **Guru confirmed: 103 users** (Ana, April 6 evening). Contract ends June, Bailey Shatney owns.
 - **Ana/Chathura reply processed** (April 6 morning) — both replied to combined email. Chathura confirmed: Survey 5 inclusion (yes), CloudTrail access (yes), L1 org names tomorrow, incident RCAs tomorrow, GitHub departing (cost), Bloom Intelligence moved to 3rd week of April. Ana confirmed: Winmark Bitbucket (`neo-workspace`) and Jira (WM board 1712), SaaS vendor spend partial data (two spreadsheets coming), Grafana "shortly", Graph API "checking", Guru "checking".
 - **Reply email drafted** (April 6 morning) — `monday-morning-reply.md` with confirms, Graph API exact steps for IT, and updated priorities.
 - **Vendor spend spreadsheets received** (April 6 morning) — Ana shared both files: `Software Spend_v1` (47 active vendors, per-cardholder Amex breakdowns, 47 canceled items) and `Software Spend_Updated 2026` (reduced spends tab showing ~29 vendors cut/reduced, ~$84K Cursor savings, ~$57K Dialpad savings, GitHub/Datadog/Instabug canceled). Files copied to `inventory/`. Bill.com and AWS Marketplace tabs still empty — Ana's next phase.
 
 ### In Progress 🔄
-- Waiting on Ana: Grafana viewer access — "should be available shortly" (April 6 morning)
-- Waiting on Ana: Microsoft Graph API — exact steps sent for IT (Rosen/Matias), Ana "checking"
-- Waiting on Ana: Guru access — "checking" (April 6 morning)
 - ✅ Ana's vendor spend spreadsheets received (April 6 morning) — 2 files, 47 active vendors, 29 reduced/canceled. Cross-reference with AP data pending.
-- Waiting on Ana: interview calendar blocks + conference room (April 13–15)
+- Waiting on Ana: **PREFERRED interview sessions** — Ana booking next batch (April 7). Will confirm final group + timings April 8.
 - Waiting on Ana: routing questions on Monvia, MenuPad, Relate
-- Waiting on Chathura: L1 org names for Enterprise Solutions (Zubair) — **tomorrow April 7**
-- Waiting on Chathura: incident/RCA docs for last 90 days — **tomorrow April 7**
+- Waiting on Chathura: L1 org names for Enterprise Solutions (Zubair) — **Wednesday April 9** *(shifted from April 7 per Ana's update)*
+- Waiting on Chathura: incident/RCA docs for last 90 days — **Wednesday April 9** *(shifted from April 7 per Ana's update)*
 - Waiting on IT: CloudTrail `cloudtrail:LookupEvents` added to audit role — Chathura approved
+- **W2 interview replacement** — Rajik Gunatilaka departed. Need alternative SL contact for Wednesday video session.
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
 ### Next Steps (This Week)
 
-**Today (April 6):**
-1. **Send reply email** — `monday-morning-reply.md` with confirms and Graph API instructions for IT.
-2. **Scan `neo-workspace` repo** via Bitbucket API — file tree, languages, commit history, CI/CD config. Most important new lead: if Winmark delivery lives in `neo-workspace`, Neo may be a real codebase, not just marketing.
-3. **Scan Winmark Jira board** (WM project, board 1712) — epics, sprint velocity, active work, team members assigned.
-4. **Grafana capture** — as soon as access arrives. Dashboard inventory, alert rules, data sources.
-5. **Finalize interview schedule grid** — send to Ana for calendar booking.
+**Today (April 7):**
+1. **Scan `neo-workspace` repo** via Bitbucket API — file tree, languages, commit history, CI/CD config. Most important new lead: if Winmark delivery lives in `neo-workspace`, Neo may be a real codebase, not just marketing.
+2. **Scan Winmark Jira board** (WM project, board 1712) — epics, sprint velocity, active work, team members assigned.
+3. **Grafana capture** — access confirmed (3 instances). Dashboard inventory, alert rules, data sources across CAKE, Retail, and Payments.
+4. **Microsoft Graph API queries** — access confirmed. Run org directory, calendar availability, and Teams/Groups mapping.
+5. **Identify W2 replacement** — Rajik departed, need SL contact for Wednesday video session. Ask Chathura or check with Ana.
+6. **Monitor survey response rate** — 13 of 57 so far (~23%). Deadline April 10.
+6. **Confirm PREFERRED interview timings** with Ana — will finalize April 8.
 
-**Tomorrow (April 7):**
-6. **Intake Chathura's L1 org names** for Enterprise Solutions (Zubair's 58 people).
-7. **Intake Chathura's incident/RCA docs** for last 90 days — fill the 2024–2026 RCA timeline gap.
+**Wednesday (April 9):**
+7. **Intake Chathura's L1 org names** for Enterprise Solutions (Zubair's 58 people). *(shifted from April 7)*
+8. **Intake Chathura's incident/RCA docs** for last 90 days — fill the 2024–2026 RCA timeline gap. *(shifted from April 7)*
 8. **Cross-reference Ana's vendor spend with AP data** — both spreadsheets received April 6. Amex data covers different vendors than Bill.com/AP data. Merge into unified vendor catalog.
 9. **Run CloudTrail queries** once `cloudtrail:LookupEvents` is granted — deployment frequency data from AWS.
 10. **Collect pre-read docs** as Ana's folder becomes available.
@@ -843,8 +875,9 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - **IT Director: RESOLVED.** Jorge Maltes confirmed still at company — appears as Dir. Information Technology under PCI DSS Compliance counterparts in Chathura's Payments org chart. Rosen Georgiev handles day-to-day IT under COO (Strainick). Two people, two roles: Maltes = IT governance/compliance, Georgiev = IT operations.
 - **Andy Honnold dual-reporting:** Don's executive chart places Andy Honnold (Payments Strategy) under Garcia (CFO). Chathura's functional chart places him under Akshay (Payments VP) as Sr. Director Payments Strategy. Likely functional through Payments, administrative through Finance. Clarify onsite — affects how Payments strategy decisions flow.
 - **L&D reporting discrepancy:** Chathura's CDO org chart places Adriana Zuniga and Ayodele Lawal as Technical Training Specialists under Dulanjan's Product L&D team. Don's executive org chart placed them under Bailey Shatney (VP HR). Could be matrix (product-owned content, HR-owned development programs), or a reorg-day discrepancy. Clarify onsite.
-- **Enterprise Solutions (Zubair) detail gap:** Chathura's PDF had the Enterprise Solutions org chart page mostly blank (just "Enterprise Solution Org."). The Operations sub-page noted team transitions and reductions (57% L2, 72% L3) but no personnel detail. **Still don't have names/structure for the largest org (58 people).** Need to request from Zubair or Chathura before onsite.
-- **Strainick interview recalibration:** Interview shifted from 30 min on HR/culture to 45 min on COO operations. Secondary purpose: validate whether Strainick is in the seat to stay. If Don's answer reveals this was a "promote to move," focus the interview on documenting the customer operations chain (Account Mgmt → Onboarding → Delivery → IT) as a process map rather than relying on Strainick's strategic perspective.
+- **Enterprise Solutions (Zubair) detail gap:** Chathura's PDF had the Enterprise Solutions org chart page mostly blank (just "Enterprise Solution Org."). The Operations sub-page noted team transitions and reductions (57% L2, 72% L3) but no personnel detail. **Still don't have names/structure for the largest org (58 people).** Chathura sending by Wednesday April 9 per Ana's update.
+- **Sri Lanka leadership gap:** Rajik Gunatilaka departed (Chathura confirmed April 6). Who is the current SL engineering operations lead? Does this change the SL restructuring timeline ($275K→$50K/month) or operational model? W2 interview slot needs replacement — potential contacts: Nishen Peiris, Wenushka Dikowita.
+- **Strainick interview recalibration:** Interview shifted from 30 min on HR/culture to 45 min on COO operations. Secondary purpose: validate whether Strainick is in the seat to stay. If Don's answer reveals this was a "promote to move," focus the interview on documenting the customer operations chain (Account Mgmt → Onboarding → Delivery → IT) as a process map rather than relying on Strainick's strategic perspective. **Additional probe (April 7):** With Rajik departed, Strainick has lost his SL country head direct report. Ask who manages SL operations now.
 - **Bailey Shatney framing:** Position Adam's deliverables as a potential resource for Bailey. If she's new and ramping, the Westrum Culture survey baseline, Glassdoor data, and interview themes on culture/retention are exactly what she needs to build her own 90-day plan. This creates a natural ally.
 
 ---
