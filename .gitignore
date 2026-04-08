@@ -6,3 +6,4 @@ minisite/node_modules/
 .forms-cookie
 .forms-token
 .m365_token.json
+.env

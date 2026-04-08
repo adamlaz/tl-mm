@@ -3,15 +3,45 @@ interface Props {
   label: string;
   value: string | number;
   subtitle?: string;
+  benchmark?: string;
+  trend?: 'up' | 'down' | 'flat';
+  delta?: string;
+  invertTrend?: boolean;
+  href?: string;
 }
 
-const { label, value, subtitle } = Astro.props;
+const { label, value, subtitle, benchmark, trend, delta, invertTrend, href } = Astro.props;
+
+const trendColor = trend === 'up'
+  ? (invertTrend ? 'var(--status-red)' : 'var(--status-green)')
+  : trend === 'down'
+    ? (invertTrend ? 'var(--status-green)' : 'var(--status-red)')
+    : 'var(--text-muted)';
+
+const Tag = href ? 'a' : 'div';
 ---
 
-<div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+<Tag
+  href={href}
+  class:list={[
+    'bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5',
+    href && 'block hover:border-[var(--accent)] hover:shadow-sm transition-all',
+  ]}
+>
   <dl class="flex flex-col gap-1">
     <dt class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)]">{label}</dt>
-    <dd class="text-2xl font-semibold text-[var(--text)] font-mono tabular-nums">{value}</dd>
+    <dd class="flex items-baseline gap-2">
+      <span class="text-2xl font-semibold text-[var(--text)] font-mono tabular-nums">{value}</span>
+      {delta && trend && (
+        <span class="text-xs font-mono font-medium tabular-nums" style={`color: ${trendColor}`}>
+          {trend === 'up' && '↑'}
+          {trend === 'down' && '↓'}
+          {trend === 'flat' && '→'}
+          {delta}
+        </span>
+      )}
+    </dd>
     {subtitle && <dd class="text-xs text-[var(--text-secondary)] mt-0.5">{subtitle}</dd>}
+    {benchmark && <dd class="text-[10px] text-[var(--text-muted)] mt-0.5">{benchmark}</dd>}
   </dl>
-</div>
+</Tag>

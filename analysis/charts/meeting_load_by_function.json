@@ -1,0 +1,74 @@
+{
+  "option": {
+    "title": {
+      "text": "Meeting Load by Department",
+      "subtext": "Avg hours/day in meetings (2026 YTD)"
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "grid": {
+      "left": 180,
+      "right": 40,
+      "top": 60,
+      "bottom": 30
+    },
+    "xAxis": {
+      "type": "value",
+      "name": "Avg Hours/Day"
+    },
+    "yAxis": {
+      "type": "category",
+      "data": [
+        "Program Management",
+        "External - Peak Activity",
+        "Logistics",
+        "Inbound Sales",
+        "Product",
+        "Sales",
+        "Technical Resources",
+        "Customer Support",
+        "General Operations",
+        "Customer Success",
+        "AI Group",
+        "People Operations",
+        "Marketing",
+        "Payments",
+        "Executive",
+        "Engineering",
+        "Customer Success ",
+        "Architecture",
+        "Software Development",
+        "External Peak Activity"
+      ],
+      "inverse": true
+    },
+    "series": [
+      {
+        "type": "bar",
+        "data": [
+          4.16,
+          3.88,
+          3.76,
+          3.58,
+          3.09,
+          2.95,
+          2.84,
+          2.76,
+          2.75,
+          2.72,
+          2.62,
+          2.57,
+          2.49,
+          2.45,
+          2.09,
+          2.06,
+          2.06,
+          1.91,
+          1.86,
+          1.7
+        ]
+      }
+    ]
+  }
+}

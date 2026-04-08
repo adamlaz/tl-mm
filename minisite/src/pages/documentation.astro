@@ -107,13 +107,13 @@ const pageRows = pages
   }));
 
 const charts = [
-  { slug: 'confluence_creation_trend', title: 'Page Creation Trend' },
-  { slug: 'confluence_page_density', title: 'Page Density by Space' },
+  { slug: 'confluence_creation_trend', title: 'Page Creation Trend', caption: 'Page creation over time. A declining trend means the team is documenting less, which increases knowledge loss as people leave or change roles.' },
+  { slug: 'confluence_page_density', title: 'Page Density by Space', caption: 'How many pages exist per Confluence space. Very dense spaces may be hard to navigate. Very sparse spaces may indicate abandoned or underused documentation areas.' },
 ];
 ---
 
 <BaseLayout title="Documentation">
-  <SectionHeader eyebrow="DOCUMENTATION" title="Documentation" description="Confluence documentation activity and content volume. Click any space key or page title to open in Confluence. Data extracted April 3, 2026 (V5–V7)." />
+  <SectionHeader eyebrow="DOCUMENTATION" title="Documentation" description="The state of technical documentation across 14,111 Confluence pages. Documentation quality directly affects onboarding speed, incident response, and knowledge retention. Key concerns: no root cause analyses since 2023, architecture documentation fragmented across 5+ spaces, and declining page creation rates." />
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
     <FindingCard severity="amber" title="RCA Process Gap: 2024–Present" detail="Structured post-mortem docs stop after 2023. 26 in 2022, 5 in 2024, 2 in 2025. Either the process migrated or stopped." evidence="50 total RCAs, peak 2022 (26)" href="/engagement/hypotheses" hrefLabel="Hypothesis G" />
@@ -122,15 +122,15 @@ const charts = [
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
-    <ChartEmbed slug="confluence_rca_timeline" title="RCA Timeline" />
-    <ChartEmbed slug="confluence_postmortem_funnel" title="Post-Mortem Funnel" />
+    <ChartEmbed slug="confluence_rca_timeline" title="RCA Timeline" caption="Root cause analysis frequency over time. The gap since 2023 means incidents are occurring without structured learning. Each missed RCA is a missed opportunity to prevent recurrence." />
+    <ChartEmbed slug="confluence_postmortem_funnel" title="Post-Mortem Funnel" caption="How many incidents result in documented post-mortems. A narrow funnel (many incidents, few post-mortems) means the team is not learning from failures." />
   </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Total Pages" value={fmt(totalPages)} />
     <MetricCard label="Spaces" value={totalSpaces.toString()} subtitle={`${activeSpaces} current`} />
     <MetricCard label="Active Spaces" value={spacesWithContent.toString()} subtitle="Spaces with at least one page" />
-    <MetricCard label="Recently Updated" value={recentPages.toString()} />
+    <MetricCard label="Recently Updated" value={recentPages.toString()} subtitle="in the last 90 days" />
   </dl>
 
   <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Spaces</h2>
@@ -170,7 +170,7 @@ const charts = [
   <!-- Deep Analysis -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Incidents Parsed" value={(rcaData.total_incidents_parsed ?? 0).toString()} subtitle={`from ${rcaData.total_filtered_docs ?? 0} filtered docs`} />
+    <MetricCard label="Incidents Reviewed" value={(rcaData.total_incidents_parsed ?? 0).toString()} subtitle={`root cause analyses examined · from ${rcaData.total_filtered_docs ?? 0} filtered docs`} />
     <MetricCard label="Peak Incident Year" value="2022" subtitle="26 incidents" />
     <MetricCard label="Retrospectives" value={retroCount.toString()} subtitle="sprint retros extracted" />
     <MetricCard label="Arch Diagrams" value={(diagramData.summary?.total_architecture_pages ?? diagramData.total_results ?? diagramData.pages?.length ?? 0).toString()} subtitle={`across ${diagramData.summary?.spaces_with_results?.length ?? 0} spaces`} />
@@ -304,7 +304,7 @@ const charts = [
     <MetricCard label="Total Blog Posts" value={blogTotal.toString()} subtitle={`${blogEarliest} → ${blogLatest}`} />
     <MetricCard label="Spaces" value={blogBySpace.length.toString()} subtitle={blogBySpace.map(([k]) => k).join(', ')} />
     <MetricCard label="Authors" value={blogAuthorRows.length.toString()} subtitle="unique contributors" />
-    <MetricCard label="Unlabeled" value={blogPosts.filter((p: any) => !p.labels?.length).length.toString()} subtitle="posts without labels" />
+    <MetricCard label="Unlabeled" value={blogPosts.filter((p: any) => !p.labels?.length).length.toString()} subtitle="pages without category tags, harder to find" />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
@@ -383,7 +383,7 @@ const charts = [
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
-      <ChartEmbed slug={c.slug} title={c.title} />
+      <ChartEmbed slug={c.slug} title={c.title} caption={c.caption} />
     ))}
   </div>
 

@@ -120,10 +120,6 @@ function initCharts() {
     const option = parsed.option || parsed;
     applyPostProcessing(option, meta);
 
-    if (option.aria?.decal) {
-      option.aria.decal.show = false;
-    }
-
     if (reducedMotion) {
       disableAnimation(option);
       renderChart(el, option);

@@ -1,212 +1,138 @@
 #!/usr/bin/env python3
-"""Authenticate to Microsoft Graph API and test access.
+"""Microsoft Graph API authentication helpers.
 
-Tries progressively lower permission scopes:
-  1. User.Read only (no admin consent needed) + People API + GAL search
-  2. Exchange Web Services / Outlook contacts
-  3. Manual fallback instructions
+Supports two flows:
+  - Client credentials (application permissions): Calendars.ReadBasic.All, People.Read.All, User.Read.All
+  - Delegated (interactive browser): User.Read, Calendars.Read, People.Read, etc.
+
+Credentials loaded from .env file (M365_CLIENT_ID, M365_TENANT_ID, M365_CLIENT_SECRET).
 """
 
 import sys
 import json
+import os
+from pathlib import Path
+
 import msal
 import requests
 
-CLIENT_ID = "14d82eec-204b-4c2f-b7e8-296a70dab67e"
-AUTHORITY = "https://login.microsoftonline.com/organizations"
-
-TOKEN_FILE = ".m365_token.json"
-
-SCOPE_TIERS = [
-    {
-        "name": "User.Read + People + Contacts",
-        "scopes": ["User.Read", "People.Read", "Contacts.Read"],
-        "description": "Basic profile + People API (no admin consent required)",
-    },
-    {
-        "name": "User.Read only",
-        "scopes": ["User.Read"],
-        "description": "Minimal -- just your own profile",
-    },
-]
+ENV_FILE = Path(__file__).parent.parent / ".env"
+TOKEN_FILE = Path(__file__).parent.parent / ".m365_token.json"
+GRAPH_BASE = "https://graph.microsoft.com/v1.0"
 
 
-def try_auth(app, scopes, tier_name):
-    """Try interactive browser auth with given scopes."""
-    print(f"  Trying: {tier_name}")
-    print(f"  Scopes: {', '.join(scopes)}")
-    print(f"  Opening browser...")
-    sys.stdout.flush()
-    try:
-        result = app.acquire_token_interactive(scopes=scopes)
-        if result and "access_token" in result:
-            print(f"  SUCCESS!")
-            return result
-        err = result.get("error", "unknown") if result else "no result"
-        desc = result.get("error_description", "")[:120] if result else ""
-        print(f"  Failed: {err} - {desc}")
-        return None
-    except Exception as e:
-        print(f"  Exception: {e}")
-        return None
-
-
-def test_endpoints(token):
-    """Test what we can access with the granted token."""
-    headers = {"Authorization": f"Bearer {token}"}
-    results = {}
-
-    print("\nTesting accessible endpoints:\n")
-
-    # /me -- own profile
-    r = requests.get("https://graph.microsoft.com/v1.0/me?$select=displayName,mail,jobTitle,department,officeLocation,userPrincipalName", headers=headers)
-    print(f"  /me                  : {r.status_code}", end="")
-    if r.status_code == 200:
-        d = r.json()
-        print(f"  -> {d.get('displayName')} ({d.get('mail')})")
-        results["me"] = d
-    else:
-        print()
-
-    # /me/people -- People API (up to 1000 relevant people, no admin consent)
-    r = requests.get("https://graph.microsoft.com/v1.0/me/people?$top=999", headers=headers)
-    print(f"  /me/people           : {r.status_code}", end="")
-    if r.status_code == 200:
-        ppl = r.json().get("value", [])
-        print(f"  -> {len(ppl)} people")
-        results["people"] = ppl
-    else:
-        print(f"  -> {r.text[:100]}")
-
-    # /me/contacts -- Outlook contacts
-    r = requests.get("https://graph.microsoft.com/v1.0/me/contacts?$top=999", headers=headers)
-    print(f"  /me/contacts         : {r.status_code}", end="")
-    if r.status_code == 200:
-        contacts = r.json().get("value", [])
-        print(f"  -> {len(contacts)} contacts")
-        results["contacts"] = contacts
-    else:
-        print(f"  -> {r.text[:100]}")
-
-    # /users -- directory enumeration (probably needs admin consent)
-    r = requests.get("https://graph.microsoft.com/v1.0/users?$top=5&$select=displayName,mail,jobTitle,department", headers=headers)
-    print(f"  /users               : {r.status_code}", end="")
-    if r.status_code == 200:
-        u = r.json().get("value", [])
-        print(f"  -> FULL DIRECTORY ACCESS ({len(u)} sample)")
-        results["users_accessible"] = True
-    else:
-        print(f"  -> blocked (expected)")
-        results["users_accessible"] = False
-
-    # /me/joinedTeams -- Teams membership
-    r = requests.get("https://graph.microsoft.com/v1.0/me/joinedTeams", headers=headers)
-    print(f"  /me/joinedTeams      : {r.status_code}", end="")
-    if r.status_code == 200:
-        teams = r.json().get("value", [])
-        print(f"  -> {len(teams)} teams")
-        results["teams"] = teams
-    else:
-        print(f"  -> {r.text[:100]}")
-
-    # /me/transitiveMemberOf -- groups/teams the user belongs to
-    r = requests.get("https://graph.microsoft.com/v1.0/me/transitiveMemberOf?$top=999", headers=headers)
-    print(f"  /me/transitiveMemberOf: {r.status_code}", end="")
-    if r.status_code == 200:
-        groups = r.json().get("value", [])
-        print(f"  -> {len(groups)} groups/teams")
-        results["groups"] = groups
-    else:
-        print()
-
-    # GAL search via /me/people with search query (finds people in the directory)
-    r = requests.get("https://graph.microsoft.com/v1.0/me/people?$search=%22%22&$top=999&$select=displayName,scoredEmailAddresses,jobTitle,department,officeLocation", headers=headers)
-    print(f"  /me/people (search)  : {r.status_code}", end="")
-    if r.status_code == 200:
-        searched = r.json().get("value", [])
-        print(f"  -> {len(searched)} people via search")
-        results["people_search"] = searched
-    else:
-        print()
-
-    return results
-
-
-def main():
-    app = msal.PublicClientApplication(CLIENT_ID, authority=AUTHORITY)
-
-    print("=" * 60)
-    print("MICROSOFT 365 AUTHENTICATION")
-    print("  (Using user-consent-only scopes)")
-    print("=" * 60)
-    print()
-
-    result = None
-    for tier in SCOPE_TIERS:
-        result = try_auth(app, tier["scopes"], tier["name"])
-        if result:
-            break
-        print()
-
-    if not result:
-        print()
-        print("All auth attempts blocked by Conditional Access Policy.")
-        print("The tenant requires registered/compliant devices for all Graph API access.")
+def _load_env():
+    """Load credentials from .env file."""
+    env = {}
+    if ENV_FILE.exists():
+        for line in ENV_FILE.read_text().splitlines():
+            line = line.strip()
+            if line and "=" in line and not line.startswith("#"):
+                k, v = line.split("=", 1)
+                env[k.strip()] = v.strip()
+    client_id = env.get("M365_CLIENT_ID", os.environ.get("M365_CLIENT_ID", ""))
+    tenant_id = env.get("M365_TENANT_ID", os.environ.get("M365_TENANT_ID", ""))
+    client_secret = env.get("M365_CLIENT_SECRET", os.environ.get("M365_CLIENT_SECRET", ""))
+    if not client_id or not tenant_id:
+        print("ERROR: M365_CLIENT_ID and M365_TENANT_ID required in .env")
         sys.exit(1)
+    return client_id, tenant_id, client_secret
 
+
+def get_app_token():
+    """Acquire token via client credentials flow (application permissions)."""
+    client_id, tenant_id, client_secret = _load_env()
+    if not client_secret:
+        print("ERROR: M365_CLIENT_SECRET required in .env for app token")
+        sys.exit(1)
+    authority = f"https://login.microsoftonline.com/{tenant_id}"
+    app = msal.ConfidentialClientApplication(client_id, authority=authority, client_credential=client_secret)
+    result = app.acquire_token_for_client(scopes=["https://graph.microsoft.com/.default"])
+    if not result or "access_token" not in result:
+        err = result.get("error", "unknown") if result else "no result"
+        desc = result.get("error_description", "")[:300] if result else ""
+        print(f"App auth failed: {err} -- {desc}")
+        sys.exit(1)
+    return result["access_token"]
+
+
+def get_delegated_token(scopes=None):
+    """Acquire token via interactive browser flow (delegated permissions)."""
+    client_id, tenant_id, _ = _load_env()
+    authority = f"https://login.microsoftonline.com/{tenant_id}"
+    if scopes is None:
+        scopes = ["User.Read", "User.Read.All", "People.Read", "Calendars.Read", "Group.Read.All", "Team.ReadBasic.All"]
+    if TOKEN_FILE.exists():
+        cached = json.loads(TOKEN_FILE.read_text())
+        token = cached.get("access_token")
+        if token:
+            r = requests.get(f"{GRAPH_BASE}/me", headers={"Authorization": f"Bearer {token}"})
+            if r.status_code == 200:
+                return token
+    app = msal.PublicClientApplication(client_id, authority=authority)
+    print("Opening browser for sign-in...")
+    result = app.acquire_token_interactive(scopes=scopes)
+    if not result or "access_token" not in result:
+        err = result.get("error", "unknown") if result else "no result"
+        print(f"Delegated auth failed: {err}")
+        sys.exit(1)
     token = result["access_token"]
-    granted = result.get("scope", "")
+    TOKEN_FILE.write_text(json.dumps({"access_token": token, "scope": result.get("scope", ""), "client_id": client_id, "tenant_id": tenant_id}, indent=2))
+    return token
 
-    with open(TOKEN_FILE, "w") as f:
-        json.dump({"access_token": token, "scope": granted}, f, indent=2)
 
-    print(f"\nScopes granted: {granted}\n")
+def graph_get(token, path, params=None):
+    """GET request to Graph API with automatic pagination."""
+    headers = {"Authorization": f"Bearer {token}"}
+    url = f"{GRAPH_BASE}{path}" if not path.startswith("http") else path
+    all_values = []
+    while url:
+        r = requests.get(url, headers=headers, params=params)
+        if r.status_code != 200:
+            return {"error": r.status_code, "message": r.text[:300], "values": all_values}
+        data = r.json()
+        all_values.extend(data.get("value", []))
+        url = data.get("@odata.nextLink")
+        params = None
+    return {"values": all_values}
 
-    endpoints = test_endpoints(token)
 
-    # Save whatever we got
-    import os
-    os.makedirs("inventory/users/sources", exist_ok=True)
-
-    if endpoints.get("people"):
-        with open("inventory/users/sources/m365_people.json", "w") as f:
-            json.dump(endpoints["people"], f, indent=2)
-        print(f"\nSaved {len(endpoints['people'])} people to inventory/users/sources/m365_people.json")
-
-    if endpoints.get("people_search"):
-        with open("inventory/users/sources/m365_people_search.json", "w") as f:
-            json.dump(endpoints["people_search"], f, indent=2)
-        print(f"Saved {len(endpoints['people_search'])} people (search) to inventory/users/sources/m365_people_search.json")
-
-    if endpoints.get("contacts"):
-        with open("inventory/users/sources/m365_contacts.json", "w") as f:
-            json.dump(endpoints["contacts"], f, indent=2)
-        print(f"Saved {len(endpoints['contacts'])} contacts to inventory/users/sources/m365_contacts.json")
-
-    if endpoints.get("teams"):
-        with open("inventory/users/sources/m365_teams.json", "w") as f:
-            json.dump(endpoints["teams"], f, indent=2)
-        print(f"Saved {len(endpoints['teams'])} teams to inventory/users/sources/m365_teams.json")
-
-    if endpoints.get("groups"):
-        with open("inventory/users/sources/m365_groups.json", "w") as f:
-            json.dump(endpoints["groups"], f, indent=2)
-        print(f"Saved {len(endpoints['groups'])} groups to inventory/users/sources/m365_groups.json")
-
-    if endpoints.get("me"):
-        with open("inventory/users/sources/m365_me.json", "w") as f:
-            json.dump(endpoints["me"], f, indent=2)
-
-    total_people = len(endpoints.get("people", [])) + len(endpoints.get("people_search", []))
-    print(f"\n{'='*60}")
-    print(f"TOTAL PEOPLE DISCOVERED: {total_people}")
-    if endpoints.get("users_accessible"):
-        print("Full directory access available!")
-    else:
-        print("Full directory (/users) blocked -- using People API data.")
-        print("This gives us names + emails for people relevant to your account.")
-    print(f"{'='*60}")
+def graph_post(token, path, body):
+    """POST request to Graph API."""
+    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+    url = f"{GRAPH_BASE}{path}"
+    r = requests.post(url, headers=headers, json=body)
+    if r.status_code not in (200, 201):
+        return {"error": r.status_code, "message": r.text[:300]}
+    return r.json()
 
 
 if __name__ == "__main__":
-    main()
+    print("=" * 60)
+    print("M365 AUTH TEST")
+    print("=" * 60)
+
+    print("\n--- App token (client credentials) ---")
+    app_token = get_app_token()
+    print("  App token acquired")
+    h = {"Authorization": f"Bearer {app_token}"}
+
+    r = requests.get(f"{GRAPH_BASE}/users?$top=3&$select=displayName,mail", headers=h)
+    print(f"  /users: {r.status_code}", end="")
+    if r.status_code == 200:
+        print(f" -> {len(r.json().get('value',[]))} sample users")
+    else:
+        print(f" -> {r.text[:150]}")
+
+    r = requests.get(f"{GRAPH_BASE}/users?$top=1&$select=id,displayName", headers=h)
+    if r.status_code == 200 and r.json().get("value"):
+        uid = r.json()["value"][0]["id"]
+        r2 = requests.get(f"{GRAPH_BASE}/users/{uid}/calendarView?$top=1&startDateTime=2026-04-07T00:00:00Z&endDateTime=2026-04-08T00:00:00Z&$select=start,end,attendees", headers=h)
+        print(f"  /users/{{id}}/calendarView: {r2.status_code}")
+        r3 = requests.get(f"{GRAPH_BASE}/users/{uid}/people?$top=3", headers=h)
+        print(f"  /users/{{id}}/people: {r3.status_code}")
+
+    r = requests.get(f"{GRAPH_BASE}/groups?$top=3&$select=displayName,groupTypes", headers=h)
+    print(f"  /groups: {r.status_code}")
+
+    print("\nDone.")

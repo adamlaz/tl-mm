@@ -1,0 +1,408 @@
+{
+  "total_people": 197,
+  "orphan_nodes": 38,
+  "orphans": [
+    {
+      "name": "CAKE Ops.Returns",
+      "email": "cake-ops.returns@madmobile.com",
+      "title": null
+    },
+    {
+      "name": "Ops.Shipping Notifications",
+      "email": "shipments@madmobile.com",
+      "title": null
+    },
+    {
+      "name": "mail.sendgrid",
+      "email": "mail.sendgrid@trycake.com",
+      "title": null
+    },
+    {
+      "name": "Rally_Bar",
+      "email": null,
+      "title": "Camera Bar"
+    },
+    {
+      "name": "Juan Manuel Rodriguez",
+      "email": "juan.rodriguez@madmobile.com",
+      "title": "Developer"
+    },
+    {
+      "name": "Lab Aloha BoH",
+      "email": null,
+      "title": "generic account for use with OVPN SSO in MenuPad Aloha labs"
+    },
+    {
+      "name": "Mauro Villaseco",
+      "email": "mvillaseco@madmobile.com",
+      "title": "Sr. Software Engineer"
+    },
+    {
+      "name": "Inushi Gunathilake",
+      "email": "inushi.gunathilake@madmobile.com",
+      "title": "Customer Support"
+    },
+    {
+      "name": "Sadeep Udugama",
+      "email": "sadeep.udugama@madmobile.com",
+      "title": "Contractor"
+    },
+    {
+      "name": "Adam Mead",
+      "email": "adam.mead@madmobile.com",
+      "title": "Avio Contractor"
+    },
+    {
+      "name": "Pankaj Goyal",
+      "email": "pankaj.goyal@madmobile.com",
+      "title": "Project Manager (Developer)"
+    },
+    {
+      "name": "Hema Saini",
+      "email": "hema.saini@madmobile.com",
+      "title": "Developer"
+    },
+    {
+      "name": "Amol Wairagade",
+      "email": "amol.wairagade@madmobile.com",
+      "title": "Developer"
+    },
+    {
+      "name": "Reji Sivaraman",
+      "email": "reji.sivaraman@madmobile.com",
+      "title": "Developer"
+    },
+    {
+      "name": "Jyoti Lokare",
+      "email": "jyoti.lokare@madmobile.com",
+      "title": "Developer"
+    },
+    {
+      "name": "Rob Quin",
+      "email": "rob.quin@madmobile.com",
+      "title": "Software Engineer"
+    },
+    {
+      "name": "Brett Gravlin",
+      "email": "brett.gravlin@madmobile.com",
+      "title": "AE"
+    },
+    {
+      "name": "Beau Bruderer",
+      "email": "beau.bruderer@madmobile.com",
+      "title": "Software Developer"
+    },
+    {
+      "name": "Cina Golden",
+      "email": "francina.golden@madmobile.com",
+      "title": "L1"
+    },
+    {
+      "name": "Jassiel Alvarez",
+      "email": "jassiel.alvarez@madmobile.com",
+      "title": "L1"
+    },
+    {
+      "name": "Rosen Georgiev",
+      "email": "rosen.georgiev@madmobile.org",
+      "title": "Sys Admin"
+    },
+    {
+      "name": "Daniel Leniz",
+      "email": "daniel.leniz@madmobile.com",
+      "title": "L1"
+    },
+    {
+      "name": "Zachary Mccoy",
+      "email": "zachary.mccoy@madmobile.com",
+      "title": "L1"
+    },
+    {
+      "name": "Rusty Clark",
+      "email": "rusty.clark@madmobile.com",
+      "title": "SI Integrator"
+    },
+    {
+      "name": "Samantha Albert",
+      "email": "samantha.albert@madmobile.com",
+      "title": "CSM"
+    },
+    {
+      "name": "Kate Brooks",
+      "email": "kate.brooks@madmobile.com",
+      "title": "L1"
+    },
+    {
+      "name": "Cameron Yelverton",
+      "email": "cameron.yelverton@madmobile.com",
+      "title": "L1"
+    },
+    {
+      "name": "Connor Phillips",
+      "email": "connor.phillips@madmobile.com",
+      "title": "AE"
+    },
+    {
+      "name": "Siva Golla",
+      "email": "siva.golla@madmobile.com",
+      "title": "Full Stack Engineer"
+    },
+    {
+      "name": "Jeff Pena",
+      "email": "jeff.pena@madmobile.com",
+      "title": "Developer QA- Peak Activity"
+    },
+    {
+      "name": "Antonio Mussi",
+      "email": "antonio.mussi@madmobile.com",
+      "title": "Developer - Peak Activity"
+    },
+    {
+      "name": "Cheri Siedle",
+      "email": "cheri.siedle@madmobile.com",
+      "title": "Program Manager - Peak Activity"
+    },
+    {
+      "name": "Rick Russell",
+      "email": "rrussell@madmobile.com",
+      "title": "Board Member"
+    },
+    {
+      "name": "Pratikchha Khadka",
+      "email": "pratikchha.khadka@madmobile.com",
+      "title": null
+    },
+    {
+      "name": "Mark Do",
+      "email": "mark.do@madmobile.com",
+      "title": "Assistant Controller"
+    },
+    {
+      "name": "Jimmy Perez",
+      "email": "jimmy.perez@madmobile.com",
+      "title": "CSA"
+    },
+    {
+      "name": "Andres Lebron",
+      "email": "andres.lebron@madmobile.com",
+      "title": "CSA"
+    },
+    {
+      "name": "Adam Lazarus",
+      "email": "adam.lazarus@madmobile.com",
+      "title": "Tech- Consultant "
+    }
+  ],
+  "metrics": [
+    {
+      "name": "Zubair Syed",
+      "email": "zubair.syed@madmobile.com",
+      "title": "Senior Director Software Engineering",
+      "direct_reports": 9
+    },
+    {
+      "name": "Bruce Bennett",
+      "email": "bbennett@madmobile.com",
+      "title": "Chief Executive Officer",
+      "direct_reports": 7
+    },
+    {
+      "name": "Michael Lee",
+      "email": "Michael.Lee@madmobile.com",
+      "title": "Technical Customer Support Supervisor",
+      "direct_reports": 7
+    },
+    {
+      "name": "Anthony Goad",
+      "email": "agoad@madmobile.com",
+      "title": "Manager Quality Engineering",
+      "direct_reports": 6
+    },
+    {
+      "name": "Bill Lodes",
+      "email": "bill.lodes@madmobile.com",
+      "title": "EVP & GM Restaurant & Payment Solutions",
+      "direct_reports": 6
+    },
+    {
+      "name": "Jack Kennedy",
+      "email": "jkennedy@madmobile.com",
+      "title": "EVP Retail Platform Solutions & AI",
+      "direct_reports": 4
+    },
+    {
+      "name": "Emily Stineman",
+      "email": "emily.stineman@madmobile.com",
+      "title": "Customer Onboarding Team Leader",
+      "direct_reports": 4
+    },
+    {
+      "name": "Randy Brown",
+      "email": "rbrown@madmobile.com",
+      "title": "Vice President Architecture",
+      "direct_reports": 3
+    },
+    {
+      "name": "James Oliver",
+      "email": "joliver@madmobile.com",
+      "title": "Manager Software Engineering",
+      "direct_reports": 3
+    },
+    {
+      "name": "David Strainick",
+      "email": "david.strainick@madmobile.com",
+      "title": "Chief People Officer",
+      "direct_reports": 3
+    },
+    {
+      "name": "Kevin Reyes",
+      "email": "kevin.reyes@madmobile.com",
+      "title": "Manager Software Engineering",
+      "direct_reports": 3
+    },
+    {
+      "name": "Chathura Ratnayake",
+      "email": "chathura.ratnayake@madmobile.com",
+      "title": "SVP Restaurant Software Engineering",
+      "direct_reports": 3
+    },
+    {
+      "name": "Daniel Lomsak",
+      "email": "daniel.lomsak@madmobile.com",
+      "title": "Senior Director Software Engineering",
+      "direct_reports": 3
+    },
+    {
+      "name": "Savumi Wadduwage",
+      "email": "savumi.wadduwage@madmobile.com",
+      "title": "Manager Menu Management",
+      "direct_reports": 3
+    },
+    {
+      "name": "Manuel Garcia",
+      "email": "manuel.garcia@madmobile.com",
+      "title": "Vice President and Controller",
+      "direct_reports": 3
+    },
+    {
+      "name": "Dulanjan Wengappuliarachchi",
+      "email": "dulanjan.wengappuliarachchi@madmobile.com",
+      "title": "Director Product Management",
+      "direct_reports": 3
+    },
+    {
+      "name": "Alexis Maltes",
+      "email": "Alexis.Maltes@madmobile.com",
+      "title": "Customer Onboarding Team Leader",
+      "direct_reports": 3
+    },
+    {
+      "name": "Karen Licker",
+      "email": "Karen.licker@madmobile.com",
+      "title": "Senior Director Marketing",
+      "direct_reports": 3
+    },
+    {
+      "name": "Qaiser Pannu",
+      "email": "qpannu@madmobile.com",
+      "title": "Senior Program Manager",
+      "direct_reports": 2
+    },
+    {
+      "name": "Bobby Jaklitsch",
+      "email": "bobby.jaklitsch@madmobile.com",
+      "title": "Senior Field Sales Enablement Manager",
+      "direct_reports": 2
+    },
+    {
+      "name": "Dilruwan Madubashitha",
+      "email": "dilruwan.madubashitha@madmobile.com",
+      "title": "Director Technical Support",
+      "direct_reports": 2
+    },
+    {
+      "name": "Das DeSilva",
+      "email": "das.desilva@madmobile.com",
+      "title": "Director Customer Onboarding",
+      "direct_reports": 2
+    },
+    {
+      "name": "Mark Guilarte",
+      "email": "mark.guilarte@madmobile.com",
+      "title": "Senior Director Program Management",
+      "direct_reports": 2
+    },
+    {
+      "name": "Ed Piper",
+      "email": "ed.piper@madmobile.com",
+      "title": "Warehouse Manager",
+      "direct_reports": 2
+    },
+    {
+      "name": "Anelis Ricardo",
+      "email": "anelis.ricardo@madmobile.com",
+      "title": "Director Finance & Accounting (Contractor)",
+      "direct_reports": 1
+    },
+    {
+      "name": "Greg Schmitzer",
+      "email": "gschmitzer@madmobile.com",
+      "title": "President",
+      "direct_reports": 1
+    },
+    {
+      "name": "Matias Riglos",
+      "email": "mriglos@madmobile.com",
+      "title": "Contractor",
+      "direct_reports": 1
+    },
+    {
+      "name": "Chip Oconnell",
+      "email": "chip.oconnell@madmobile.com",
+      "title": "Vice President Customer Success",
+      "direct_reports": 1
+    },
+    {
+      "name": "Rosen Georgiev",
+      "email": "rosen.georgiev@madmobile.com",
+      "title": "Information Technology Administrator 1",
+      "direct_reports": 1
+    },
+    {
+      "name": "Ana Chambers",
+      "email": "ana.chambers@madmobile.com",
+      "title": "Senior Project Manager",
+      "direct_reports": 1
+    },
+    {
+      "name": "Altaaf Anver",
+      "email": "Altaaf.Anver@madmobile.com",
+      "title": "Lead SRE Engineer",
+      "direct_reports": 1
+    },
+    {
+      "name": "Suneth De Soyza",
+      "email": "suneth.desoyza@madmobile.com",
+      "title": "Manager Software Engineering",
+      "direct_reports": 1
+    },
+    {
+      "name": "Wenushka Dikowita",
+      "email": "wenushka.dikowita@madmobile.com",
+      "title": "Senior Manager Software Engineering",
+      "direct_reports": 1
+    },
+    {
+      "name": "Bailey Shatney",
+      "email": "bailey.shatney@madmobile.com",
+      "title": "Director of HR",
+      "direct_reports": 1
+    },
+    {
+      "name": "Akshay Bhasin",
+      "email": "akshay.bhasin@madmobile.com",
+      "title": "Payments Engineer ",
+      "direct_reports": 1
+    }
+  ]
+}

@@ -6,14 +6,14 @@ import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 
 const phases = [
-  { phase: 'Pre-Work', timeline: 'Now → Apr 11', status: 'Complete', detail: 'System scanning, automated surveys, and 7 rounds of AI-driven reconnaissance (V1–V7) across Jira, Bitbucket, Confluence, AWS, and HR data — before the first interview.' },
+  { phase: 'Pre-Work', timeline: 'Now → Apr 11', status: 'Complete', detail: 'System scanning, automated surveys, and 7 rounds of AI-driven reconnaissance (data collection rounds) across Jira, Bitbucket, Confluence, AWS, and HR data — before the first interview.' },
   { phase: 'Onsite', timeline: 'Apr 13–15', status: 'Upcoming', detail: '3-day sprint in Tampa: 18–21 structured interviews, architecture walkthroughs, value stream mapping, and decision-rights tracing with data-backed questions.' },
   { phase: 'Deliverables', timeline: 'Apr 16–25', status: 'Pending', detail: 'CEO operating brief, friction register, hypothesis scorecard, and 30/60/90 execution plan — evidence-based, actionable, no filler.' },
 ];
 
 const explore = [
   { href: '/engagement/timeline', title: 'Timeline & Status', desc: 'Pre-work milestones, upcoming dates, open items, and data gaps.', metric: '12', metricLabel: 'milestones' },
-  { href: '/engagement/hypotheses', title: 'Hypotheses', desc: 'Nine execution-failure patterns with quantitative pre-evidence from 7 rounds of system scans.', metric: '9', metricLabel: 'patterns' },
+  { href: '/engagement/hypotheses', title: 'Hypotheses', desc: 'Nine execution-failure patterns with quantitative pre-evidence from 7 data collection rounds.', metric: '9', metricLabel: 'patterns' },
   { href: '/engagement/leadership', title: 'Leadership', desc: 'Post-reorg org structure: two C-suite exits, CDO promotion, and ~100-person org consolidation.', metric: '8', metricLabel: 'executives' },
   { href: '/engagement/interviews', title: 'Interviews', desc: 'Three-day onsite schedule with data-driven questions for every session.', metric: '18–21', metricLabel: 'sessions' },
   { href: '/engagement/deliverables', title: 'Deliverables', desc: 'CEO operating brief, friction register, 30/60/90 plan, and the diagnostic framework.', metric: '5+', metricLabel: 'core outputs' },
@@ -54,7 +54,7 @@ const explore = [
     <MetricCard label="Duration" value="3 wks" subtitle="~60 hours total" />
     <MetricCard label="Interviews" value="18–21" subtitle="Onsite Apr 13–15" />
     <MetricCard label="Hypotheses" value="9" subtitle="1 confirmed pre-onsite" />
-    <MetricCard label="Pre-Work" value="7 rounds" subtitle="V1–V7 automated scans" />
+    <MetricCard label="Pre-Work" value="7 rounds" subtitle="data collection rounds (automated)" />
   </dl>
 
   <div class="mb-10">
@@ -103,7 +103,7 @@ const explore = [
           <dd class="font-mono font-semibold text-[var(--text)]">$70M</dd>
         </div>
         <div>
-          <dt class="text-[var(--text-muted)] text-xs uppercase tracking-wider">Locations</dt>
+          <dt class="text-[var(--text-muted)] text-xs uppercase tracking-wider">Merchant locations</dt>
           <dd class="font-mono font-semibold text-[var(--text)]">21K+</dd>
         </div>
       </dl>

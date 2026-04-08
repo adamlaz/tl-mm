@@ -2,10 +2,11 @@
 export const prerender = true;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import SectionHeader from '../../components/SectionHeader.astro';
 import MetricCard from '../../components/MetricCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
 import { num, fmt } from '../../lib/parse';
-import { confluenceSpaceUrl, jiraProjectUrl, bitbucketRepoUrl, personUrl } from '../../lib/links';
+import { confluenceSpaceUrl, jiraProjectUrl, personUrl, personSlug } from '../../lib/links';
+import { catHash, initials } from '../../lib/tabulator-formatters';
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
@@ -13,7 +14,6 @@ export function getStaticPaths() {
   const dir = resolve('..', 'inventory', 'users', 'profiles');
   let files: string[] = [];
   try { files = readdirSync(dir).filter((f: string) => f.endsWith('.json')); } catch {}
-
   return files.map((f: string) => {
     const slug = f.replace('.json', '');
     return { params: { slug }, props: { slug } };
@@ -32,6 +32,18 @@ try { riskData = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'pe
 let networkData: any = {};
 try { networkData = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'network_metrics.json'), 'utf-8')); } catch {}
 
+let meetingLoadAll: Record<string, any> = {};
+try { meetingLoadAll = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'm365_meeting_load.json'), 'utf-8')); } catch {}
+
+let relevanceAll: any = { edges: [] };
+try { relevanceAll = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'm365_people_relevance.json'), 'utf-8')); } catch {}
+
+let bridgesAll: any[] = [];
+try { bridgesAll = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'm365_crossorg_bridges.json'), 'utf-8')); } catch {}
+
+let teamsDetailAll: any[] = [];
+try { teamsDetailAll = JSON.parse(readFileSync(resolve('..', 'inventory', 'users', 'sources', 'm365_teams_detail.json'), 'utf-8')); } catch {}
+
 const name = profile.name ?? slug;
 const title = profile.title ?? '';
 const team = profile.team ?? '';
@@ -39,6 +51,7 @@ const manager = profile.manager ?? '';
 const division = profile.division ?? '';
 const geography = profile.geography ?? '';
 const status = profile.status ?? 'unknown';
+const executive = profile.executive ?? '';
 const activity = profile.activity ?? {};
 const systems = profile.systems ?? [];
 const sources = profile.sources ?? {};
@@ -50,266 +63,500 @@ const aws = sources.aws_iam ?? {};
 
 const riskKey = name.toLowerCase();
 const personRisk = riskData.people?.[riskKey] ?? null;
-
 const pagerank = networkData.all_pagerank?.[riskKey] ?? null;
 const betweenness = networkData.all_betweenness?.[riskKey] ?? null;
 const community = (networkData.communities ?? []).find(
   (c: any) => (c.members ?? []).some((m: any) => m.id === riskKey || m.name?.toLowerCase() === riskKey)
 );
 
-const statusColors: Record<string, string> = {
-  active: 'text-emerald-600 bg-emerald-50 ring-emerald-600/20',
-  quiet: 'text-amber-600 bg-amber-50 ring-amber-600/20',
-  inactive: 'text-gray-500 bg-gray-50 ring-gray-500/20',
-  bot: 'text-blue-500 bg-blue-50 ring-blue-500/20',
-  departed: 'text-red-500 bg-red-50 ring-red-500/20',
+const email = profile.email ?? '';
+const meetingStats = email ? meetingLoadAll[email] : null;
+
+const relevanceEdges = (relevanceAll.edges || [])
+  .filter((e: any) => e.source === email)
+  .sort((a: any, b: any) => a.rank - b.rank)
+  .slice(0, 10)
+  .map((e: any) => ({
+    rank: e.rank,
+    target_name: e.target_name || e.target,
+    _href_target_name: personUrl(personSlug(e.target_name || e.target.split('@')[0])),
+    target_title: e.target_title || '',
+    target_department: e.target_department || '',
+  }));
+
+const bridgeData = email ? bridgesAll.find((b: any) => b.email === email) : null;
+const bridgeDepts = bridgeData ? Object.entries(bridgeData.bridges_to || {}) as [string, number][] : [];
+
+const memberTeams = email
+  ? teamsDetailAll.filter((t: any) =>
+      (t.members || []).some((m: any) => m.email?.toLowerCase() === email.toLowerCase()),
+    ).map((t: any) => ({
+      name: t.name,
+      member_count: t.member_count || 0,
+      cross_functional: t.cross_functional ? 'Yes' : 'No',
+    }))
+  : [];
+
+const statusMap: Record<string, { color: string; bg: string }> = {
+  active:   { color: 'var(--status-green)', bg: 'var(--status-green-bg)' },
+  quiet:    { color: 'var(--status-amber)', bg: 'var(--status-amber-bg)' },
+  inactive: { color: 'var(--text-muted)',   bg: 'var(--surface-alt)' },
+  bot:      { color: 'var(--text-muted)',   bg: 'var(--surface-alt)' },
+  departed: { color: 'var(--status-red)',   bg: 'var(--status-red-bg)' },
 };
-const statusClass = statusColors[status] ?? statusColors['inactive'];
-
-const activityColors: Record<string, string> = {
-  high: 'text-emerald-600 bg-emerald-50 ring-emerald-600/20',
-  medium: 'text-amber-600 bg-amber-50 ring-amber-600/20',
-  low: 'text-orange-500 bg-orange-50 ring-orange-500/20',
-  inactive: 'text-gray-500 bg-gray-50 ring-gray-500/20',
+const activityColorMap: Record<string, { color: string; bg: string }> = {
+  high:     { color: 'var(--status-green)', bg: 'var(--status-green-bg)' },
+  medium:   { color: 'var(--status-amber)', bg: 'var(--status-amber-bg)' },
+  low:      { color: 'var(--status-red)',   bg: 'var(--status-red-bg)' },
+  inactive: { color: 'var(--text-muted)',   bg: 'var(--surface-alt)' },
 };
-const activityClass = activityColors[activity.level] ?? activityColors['inactive'];
+const sBadge = statusMap[status] ?? statusMap['inactive'];
+const aBadge = activityColorMap[activity.level] ?? activityColorMap['inactive'];
 
-const jiraProjectRows = (jira.projects ?? []).map((p: string) => ({
-  project: p,
-  _href_project: jiraProjectUrl(p),
-}));
+const ini = initials(name);
+const avatarCat = catHash(name);
+const TL_COLORS = ['#4A5FC4', '#2A9D8F', '#C4973A', '#C4574A', '#6B82A0', '#6FAA5C', '#9A6B9A', '#B07A4A'];
+const avatarBg = TL_COLORS[avatarCat];
 
-const confSpaceRows = (conf.spaces ?? []).map((s: string) => ({
-  space: s,
-  _href_space: confluenceSpaceUrl(s),
-}));
+const systemIcons: Record<string, { label: string; dot: string }> = {
+  jira:       { label: 'Jira', dot: '#4A5FC4' },
+  bitbucket:  { label: 'Bitbucket', dot: '#6B82A0' },
+  confluence: { label: 'Confluence', dot: '#2A9D8F' },
+  aws_iam:    { label: 'AWS IAM', dot: '#C4973A' },
+  org_chart:  { label: 'Org Chart', dot: '#9A6B9A' },
+};
 
-const bbWorkspaceRows = (bb.workspaces ?? []).map((ws: string) => ({
-  workspace: ws,
-  _href_workspace: `https://bitbucket.org/${ws}`,
-}));
+const activityChartJson = (() => {
+  if (systems.length <= 1) return '';
+  const sm: Record<string, number> = {};
+  if (sources.jira) sm['Jira'] = (jira.issues_created_90d ?? 0) + (jira.issues_resolved_90d ?? 0);
+  if (sources.bitbucket) sm['Bitbucket'] = (bb.prs_authored ?? 0) + (bb.prs_reviewed ?? 0);
+  if (sources.confluence) sm['Confluence'] = conf.pages_total ?? 0;
+  if (meetingStats) sm['Meetings'] = meetingStats.total_events ?? 0;
+  const cats = Object.keys(sm);
+  const vals = Object.values(sm);
+  if (cats.length < 2) return '';
+  return JSON.stringify({
+    option: {
+      tooltip: { trigger: 'axis', textStyle: { fontFamily: 'Noto Sans', fontSize: 12 } },
+      xAxis: { type: 'category', data: cats, axisLabel: { fontFamily: 'Noto Sans', fontSize: 11, color: '#8A8070' }, axisLine: { lineStyle: { color: '#E8E4DE' } } },
+      yAxis: { type: 'value', axisLabel: { fontFamily: 'Noto Sans Mono', fontSize: 10, color: '#8A8070' }, splitLine: { lineStyle: { color: '#E8E4DE' } } },
+      grid: { left: 40, right: 12, top: 8, bottom: 28 },
+      series: [{ type: 'bar', data: vals.map((v, i) => ({ value: v, itemStyle: { color: TL_COLORS[i % TL_COLORS.length], borderRadius: [3, 3, 0, 0] } })) }],
+      aria: { enabled: true },
+    },
+  });
+})();
+
+const hasJiraActivity = sources.jira && ((jira.issues_created_90d ?? 0) + (jira.issues_resolved_90d ?? 0) + (jira.open_assigned ?? 0) > 0);
+const hasBBActivity = sources.bitbucket && ((bb.prs_authored ?? 0) + (bb.prs_reviewed ?? 0) > 0);
+const hasConfActivity = sources.confluence && ((conf.pages_total ?? 0) > 0);
+const hasRiskOrNetwork = personRisk || betweenness !== null || pagerank !== null;
+
+const riskLabels: Record<string, { name: string; tip: string; max: number }> = {
+  review_bottleneck:    { name: 'Review bottleneck',    tip: 'How much code review depends on this person. Higher = team is blocked if they are unavailable.', max: 30 },
+  review_share_pct:     { name: 'Review share %',       tip: 'Percentage of team code reviews handled by this person.', max: 50 },
+  knowledge_monopoly:   { name: 'Knowledge monopoly',   tip: 'How much unique knowledge this person holds that no one else has. Higher = harder to replace.', max: 30 },
+  code_centrality:      { name: 'Code centrality',      tip: 'How central this person is in the code review network. Higher = more code flows through them.', max: 15 },
+  confluence_share_pct: { name: 'Doc ownership %',      tip: 'Percentage of team documentation authored by this person.', max: 60 },
+  cross_system_breadth: { name: 'Cross-system breadth', tip: 'How many different systems this person touches. Higher = wider blast radius if they leave.', max: 15 },
+  systems_active:       { name: 'Active systems',       tip: 'Number of systems with recent activity.', max: 5 },
+};
+
+function riskBar(key: string, val: any) {
+  const info = riskLabels[key] ?? { name: key.replace(/_/g, ' '), tip: '', max: 30 };
+  const n = typeof val === 'number' ? val : 0;
+  const pct = Math.min(100, Math.max(0, (n / info.max) * 100));
+  const color = pct >= 70 ? 'var(--status-red)' : pct >= 40 ? 'var(--status-amber)' : 'var(--status-green)';
+  return { name: info.name, tip: info.tip, display: typeof val === 'number' ? val.toFixed(1) : val, pct, color };
+}
+
+const riskRows = personRisk?.breakdown
+  ? Object.entries(personRisk.breakdown as Record<string, any>).map(([k, v]) => riskBar(k, v))
+  : [];
+
+const riskScore = personRisk?.score ?? 0;
+const riskLevel = riskScore >= 20 ? 'High' : riskScore >= 10 ? 'Moderate' : riskScore > 0 ? 'Low' : 'None';
+const riskColor = riskScore >= 20 ? 'var(--status-red)' : riskScore >= 10 ? 'var(--status-amber)' : 'var(--status-green)';
+const riskArcPct = Math.min(100, (riskScore / 40) * 100);
+
+const networkLevel = (() => {
+  if (pagerank === null) return null;
+  if (pagerank >= 0.01) return { label: 'Highly connected', color: 'var(--status-green)', desc: 'A central figure in the collaboration network -- well-connected across teams.' };
+  if (pagerank >= 0.003) return { label: 'Well connected', color: 'var(--status-green)', desc: 'Solid connections across the network -- collaborates with a meaningful number of people.' };
+  if (pagerank >= 0.001) return { label: 'Moderately connected', color: 'var(--status-amber)', desc: 'Average connectivity -- works within a defined circle but not broadly connected.' };
+  return { label: 'Peripheral', color: 'var(--text-muted)', desc: 'Limited connections in the collaboration network -- may work independently or in a small team.' };
+})();
+
+const bridgeLevel = (() => {
+  if (betweenness === null) return null;
+  if (betweenness >= 0.05) return { label: 'Key bridge', color: 'var(--status-amber)', desc: 'Sits on many shortest paths between people -- a critical connector between groups.' };
+  if (betweenness >= 0.01) return { label: 'Moderate bridge', color: 'var(--status-green)', desc: 'Connects some groups that would otherwise be less connected.' };
+  return { label: 'Not a bridge', color: 'var(--text-muted)', desc: 'Does not sit between disconnected groups -- collaborates within their own cluster.' };
+})();
 ---
 
 <BaseLayout title={`${name} — People`}>
-  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
-    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
-    <span>/</span>
+  <!-- Breadcrumb -->
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-4">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People</a>
+    <span class="opacity-40">/</span>
     <a href="/people/directory" class="hover:text-[var(--accent)] transition-colors">Directory</a>
-    <span>/</span>
+    <span class="opacity-40">/</span>
     <span class="text-[var(--text-secondary)]">{name}</span>
   </div>
 
-  <div class="mb-8">
-    <div class="flex flex-wrap items-start gap-4 mb-4">
+  <!-- ── Profile Header ── -->
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6 mb-6">
+    <div class="flex gap-5 items-start">
+      <!-- Avatar -->
+      <div
+        class="shrink-0 w-14 h-14 rounded-full flex items-center justify-center text-white text-lg font-semibold"
+        style={`background: ${avatarBg}`}
+      >
+        {ini}
+      </div>
+
+      <!-- Identity -->
       <div class="flex-1 min-w-0">
-        <h1 class="text-2xl font-semibold text-[var(--text)]">{name}</h1>
-        {title && <p class="text-sm text-[var(--text-secondary)] mt-1">{title}</p>}
-        <div class="flex flex-wrap items-center gap-3 mt-3 text-xs text-[var(--text-muted)]">
-          {team && <span>Team: <strong class="text-[var(--text-secondary)]">{team}</strong></span>}
-          {division && <span>Division: <strong class="text-[var(--text-secondary)]">{division}</strong></span>}
-          {geography && <span>Geo: <strong class="text-[var(--text-secondary)]">{geography}</strong></span>}
+        <div class="flex flex-wrap items-center gap-3 mb-1">
+          <h1 class="text-xl font-semibold text-[var(--text)] font-[var(--font-display)]">{name}</h1>
+          <span
+            class="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+            style={`color: ${sBadge.color}; background: ${sBadge.bg};`}
+          >{status}</span>
+          <span
+            class="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+            style={`color: ${aBadge.color}; background: ${aBadge.bg};`}
+          >{activity.level ?? 'unknown'} activity</span>
+        </div>
+        {title && <p class="text-sm text-[var(--text-secondary)]">{title}</p>}
+
+        <!-- Metadata row -->
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-2 text-xs text-[var(--text-muted)]">
+          {team && <span>{team}</span>}
+          {division && <span>{division}</span>}
+          {geography && <span>{geography}</span>}
           {manager && (
-            <span>Manager: <a href={personUrl(manager.toLowerCase().replace(/\s+/g, '-').replace(/\./g, '-'))} class="text-[var(--accent)] hover:underline">{manager}</a></span>
+            <span>Reports to <a href={personUrl(manager.toLowerCase().replace(/\s+/g, '-').replace(/\./g, '-'))} class="text-[var(--accent)] hover:underline">{manager}</a></span>
           )}
+          {executive && <span>Exec: {executive}</span>}
         </div>
-      </div>
-      <div class="flex gap-2">
-        <span class:list={['inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-medium ring-1 ring-inset', statusClass]}>
-          {status}
-        </span>
-        <span class:list={['inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-medium ring-1 ring-inset', activityClass]}>
-          {activity.level ?? 'unknown'} activity
-        </span>
+
+        <!-- System presence -->
+        <div class="flex flex-wrap gap-2 mt-3">
+          {systems.map((s: string) => {
+            const info = systemIcons[s] ?? { label: s, dot: '#8A8070' };
+            return (
+              <span class="inline-flex items-center gap-1.5 px-2 py-0.5 text-[11px] rounded-md bg-[var(--surface-alt)] text-[var(--text-secondary)] border border-[var(--border-subtle)]">
+                <span class="w-1.5 h-1.5 rounded-full" style={`background: ${info.dot}`}></span>
+                {info.label}
+              </span>
+            );
+          })}
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Activity Overview -->
-  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Activity Overview</h2>
-  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Total Activity (90d)" value={fmt(num(String(activity.total_activity_90d ?? 0)))} subtitle={`${activity.systems_active_90d ?? 0} systems active`} />
-    <MetricCard label="Systems" value={systems.length.toString()} subtitle={systems.join(', ')} />
-    {personRisk && <MetricCard label="Risk Score" value={personRisk.score?.toFixed(2) ?? '—'} subtitle="key person risk" />}
-    {pagerank !== null && <MetricCard label="PageRank" value={pagerank.toFixed(4)} subtitle="network influence" />}
-  </dl>
+  <!-- ── Key Metrics + Activity Chart ── -->
+  <div class="grid lg:grid-cols-3 gap-4 mb-8">
+    <div class="lg:col-span-2">
+      <h2 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-3">Activity (90 days)</h2>
+      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <MetricCard label="Total Actions" value={fmt(num(String(activity.total_activity_90d ?? 0)))} subtitle={`${activity.systems_active_90d ?? 0} systems active`} />
+        {hasJiraActivity && <MetricCard label="Jira Issues" value={((jira.issues_created_90d ?? 0) + (jira.issues_resolved_90d ?? 0)).toString()} subtitle={`${jira.open_assigned ?? 0} open assigned`} />}
+        {hasBBActivity && <MetricCard label="Code Reviews" value={((bb.prs_authored ?? 0) + (bb.prs_reviewed ?? 0)).toString()} subtitle={`${bb.prs_authored ?? 0} authored, ${bb.prs_reviewed ?? 0} reviewed`} />}
+        {hasConfActivity && <MetricCard label="Doc Pages" value={(conf.pages_total ?? 0).toString()} subtitle={`${conf.pages_90d ?? 0} in last 90 days`} />}
+      </dl>
+    </div>
 
-  <!-- System Details -->
-  <div class="grid lg:grid-cols-2 gap-6 mb-8">
-    {systems.includes('jira') && (
-      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
-        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-          Jira
-        </h3>
-        <dl class="grid grid-cols-2 gap-3 mb-4">
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Created (90d)</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{jira.issues_created_90d ?? 0}</dd>
-          </div>
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Resolved (90d)</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{jira.issues_resolved_90d ?? 0}</dd>
-          </div>
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Open Assigned</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{jira.open_assigned ?? 0}</dd>
-          </div>
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Bugs (90d)</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{jira.bugs_created_90d ?? 0}</dd>
-          </div>
-        </dl>
-        {jiraProjectRows.length > 0 && (
-          <h4 class="text-xs font-medium text-[var(--text-muted)] mb-2">Projects</h4>
-          <div class="flex flex-wrap gap-1.5">
-            {(jira.projects ?? []).map((p: string) => (
-              <a href={jiraProjectUrl(p)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-0.5 text-xs font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">
-                {p}<span class="ml-0.5 text-[10px] opacity-60">↗</span>
-              </a>
-            ))}
-          </div>
-        )}
-        {jira.roles?.length > 0 && (
-          <p class="text-xs text-[var(--text-muted)] mt-3">Roles: {jira.roles.join(', ')}</p>
-        )}
+    {activityChartJson ? (
+      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden">
+        <div class="px-4 pt-3 pb-0">
+          <h3 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)]">Distribution</h3>
+        </div>
+        <div class="w-full" style="height:160px" data-echarts>
+          <script type="application/json" set:html={activityChartJson} />
+        </div>
       </div>
-    )}
-
-    {systems.includes('bitbucket') && (
-      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
-        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-          Bitbucket
-        </h3>
-        <dl class="grid grid-cols-2 gap-3 mb-4">
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">PRs Authored</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{bb.prs_authored ?? 0}</dd>
-          </div>
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">PRs Reviewed</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{bb.prs_reviewed ?? 0}</dd>
-          </div>
-        </dl>
-        {(bb.workspaces ?? []).length > 0 && (
-          <h4 class="text-xs font-medium text-[var(--text-muted)] mb-2">Workspaces</h4>
-          <div class="flex flex-wrap gap-1.5">
-            {(bb.workspaces ?? []).map((ws: string) => (
-              <a href={`https://bitbucket.org/${ws}`} target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-0.5 text-xs font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">
-                {ws}<span class="ml-0.5 text-[10px] opacity-60">↗</span>
-              </a>
-            ))}
-          </div>
-        )}
-        {bb.review_cluster && (
-          <p class="text-xs text-[var(--text-muted)] mt-3">Review cluster: {bb.review_cluster}</p>
-        )}
-      </div>
-    )}
-
-    {systems.includes('confluence') && (
-      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
-        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-teal-500"></span>
-          Confluence
-        </h3>
-        <dl class="grid grid-cols-2 gap-3 mb-4">
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Pages Total</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{conf.pages_total ?? 0}</dd>
-          </div>
-          <div>
-            <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Pages (90d)</dt>
-            <dd class="text-lg font-semibold text-[var(--text)]">{conf.pages_90d ?? 0}</dd>
-          </div>
-        </dl>
-        {(conf.spaces ?? []).length > 0 && (
-          <h4 class="text-xs font-medium text-[var(--text-muted)] mb-2">Spaces</h4>
-          <div class="flex flex-wrap gap-1.5">
-            {(conf.spaces ?? []).map((s: string) => (
-              <a href={confluenceSpaceUrl(s)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-0.5 text-xs font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">
-                {s}<span class="ml-0.5 text-[10px] opacity-60">↗</span>
-              </a>
-            ))}
-          </div>
-        )}
-      </div>
-    )}
-
-    {systems.includes('aws_iam') && (
-      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
-        <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-          AWS IAM
-        </h3>
-        <dl class="grid grid-cols-2 gap-3">
-          {aws.aws_profile && (
-            <div>
-              <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Profile</dt>
-              <dd class="text-sm font-mono text-[var(--text)]">{aws.aws_profile}</dd>
-            </div>
-          )}
-          {aws.is_service_account !== undefined && (
-            <div>
-              <dt class="text-[11px] uppercase tracking-wider text-[var(--text-muted)]">Type</dt>
-              <dd class="text-sm text-[var(--text)]">{aws.is_service_account ? 'Service Account' : 'Human User'}</dd>
-            </div>
-          )}
-        </dl>
+    ) : (
+      <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 flex items-center justify-center">
+        <p class="text-xs text-[var(--text-muted)]">Single-system user</p>
       </div>
     )}
   </div>
 
-  <!-- Risk & Network -->
-  {(personRisk || betweenness !== null) && (
-    <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3 mt-8">Risk & Network Position</h2>
-    <div class="grid lg:grid-cols-2 gap-6 mb-8">
-      {personRisk && (
-        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
-          <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4">Key Person Risk</h3>
-          <p class="text-2xl font-semibold text-[var(--text)] mb-4">{personRisk.score?.toFixed(2)}</p>
-          <dl class="space-y-2">
-            {Object.entries(personRisk.breakdown ?? {}).map(([k, v]: [string, any]) => (
-              <div class="flex justify-between text-xs">
-                <dt class="text-[var(--text-muted)]">{k.replace(/_/g, ' ')}</dt>
-                <dd class="font-mono text-[var(--text-secondary)]">{typeof v === 'number' ? v.toFixed(2) : v}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      )}
-      {(betweenness !== null || community) && (
-        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
-          <h3 class="text-sm font-semibold text-[var(--text-secondary)] mb-4">Network Position</h3>
-          <dl class="space-y-2">
-            {pagerank !== null && (
-              <div class="flex justify-between text-xs">
-                <dt class="text-[var(--text-muted)]">PageRank</dt>
-                <dd class="font-mono text-[var(--text-secondary)]">{pagerank.toFixed(4)}</dd>
+  <!-- ── System Detail Cards ── -->
+  {(hasJiraActivity || hasBBActivity || hasConfActivity || aws.aws_profile) && (
+    <>
+      <h2 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-3">System Details</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        {hasJiraActivity && (
+          <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="w-2 h-2 rounded-full" style="background: #4A5FC4"></span>
+              <h3 class="text-sm font-semibold text-[var(--text)]">Jira</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-y-2 text-xs mb-3">
+              <div><span class="text-[var(--text-muted)]">Created</span> <span class="font-mono text-[var(--text)] ml-1">{jira.issues_created_90d ?? 0}</span></div>
+              <div><span class="text-[var(--text-muted)]">Resolved</span> <span class="font-mono text-[var(--text)] ml-1">{jira.issues_resolved_90d ?? 0}</span></div>
+              <div><span class="text-[var(--text-muted)]">Open</span> <span class="font-mono text-[var(--text)] ml-1">{jira.open_assigned ?? 0}</span></div>
+              <div><span class="text-[var(--text-muted)]">Bugs</span> <span class="font-mono text-[var(--text)] ml-1">{jira.bugs_created_90d ?? 0}</span></div>
+            </div>
+            {(jira.projects ?? []).length > 0 && (
+              <div class="flex flex-wrap gap-1">
+                {(jira.projects ?? []).map((p: string) => (
+                  <a href={jiraProjectUrl(p)} target="_blank" rel="noopener noreferrer" class="px-1.5 py-0.5 text-[10px] font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">{p}</a>
+                ))}
               </div>
             )}
-            {betweenness !== null && (
-              <div class="flex justify-between text-xs">
-                <dt class="text-[var(--text-muted)]">Betweenness Centrality</dt>
-                <dd class="font-mono text-[var(--text-secondary)]">{betweenness.toFixed(4)}</dd>
+          </div>
+        )}
+
+        {hasBBActivity && (
+          <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="w-2 h-2 rounded-full" style="background: #6B82A0"></span>
+              <h3 class="text-sm font-semibold text-[var(--text)]">Bitbucket</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-y-2 text-xs mb-3">
+              <div><span class="text-[var(--text-muted)]">Authored</span> <span class="font-mono text-[var(--text)] ml-1">{bb.prs_authored ?? 0}</span></div>
+              <div><span class="text-[var(--text-muted)]">Reviewed</span> <span class="font-mono text-[var(--text)] ml-1">{bb.prs_reviewed ?? 0}</span></div>
+            </div>
+            {(bb.workspaces ?? []).length > 0 && (
+              <div class="flex flex-wrap gap-1">
+                {(bb.workspaces ?? []).map((ws: string) => (
+                  <a href={`https://bitbucket.org/${ws}`} target="_blank" rel="noopener noreferrer" class="px-1.5 py-0.5 text-[10px] font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">{ws}</a>
+                ))}
               </div>
             )}
-            {community && (
-              <div class="flex justify-between text-xs">
-                <dt class="text-[var(--text-muted)]">Community</dt>
-                <dd class="text-[var(--text-secondary)]">{community.dominant_team} (#{community.community_id}, {community.size} members)</dd>
+            {bb.review_cluster && <p class="text-[10px] text-[var(--text-muted)] mt-2">Review cluster: {bb.review_cluster}</p>}
+          </div>
+        )}
+
+        {hasConfActivity && (
+          <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="w-2 h-2 rounded-full" style="background: #2A9D8F"></span>
+              <h3 class="text-sm font-semibold text-[var(--text)]">Confluence</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-y-2 text-xs mb-3">
+              <div><span class="text-[var(--text-muted)]">Total Pages</span> <span class="font-mono text-[var(--text)] ml-1">{conf.pages_total ?? 0}</span></div>
+              <div><span class="text-[var(--text-muted)]">Last 90d</span> <span class="font-mono text-[var(--text)] ml-1">{conf.pages_90d ?? 0}</span></div>
+            </div>
+            {(conf.spaces ?? []).length > 0 && (
+              <div class="flex flex-wrap gap-1">
+                {(conf.spaces ?? []).map((s: string) => (
+                  <a href={confluenceSpaceUrl(s)} target="_blank" rel="noopener noreferrer" class="px-1.5 py-0.5 text-[10px] font-mono rounded bg-[var(--surface-alt)] text-[var(--accent)] hover:underline border border-[var(--border-subtle)]">{s}</a>
+                ))}
               </div>
             )}
-          </dl>
-        </div>
-      )}
-    </div>
+          </div>
+        )}
+      </div>
+    </>
   )}
 
-  <div class="flex flex-wrap gap-3 mt-8">
-    <a href="/people/directory" class="text-sm text-[var(--accent)] hover:underline">&larr; Back to Directory</a>
-    <a href="/people/risk" class="text-sm text-[var(--accent)] hover:underline">Key Person Risk</a>
-    <a href="/people/network" class="text-sm text-[var(--accent)] hover:underline">Network Analysis</a>
-    <a href="/people/teams" class="text-sm text-[var(--accent)] hover:underline">Team Overview</a>
+  <!-- ── Risk & Network ── -->
+  {hasRiskOrNetwork && (
+    <>
+      <h2 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-3">Risk & Network Position</h2>
+      <p class="text-xs text-[var(--text-secondary)] mb-3 max-w-2xl">How critical this person is to the organization and how connected they are in the collaboration network.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+        {/* Risk Score Card */}
+        {personRisk && (
+          <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <span class="text-[10px] font-medium uppercase tracking-[0.08em] text-[var(--text-muted)]">Key Person Risk</span>
+                <div class="flex items-baseline gap-2 mt-1">
+                  <span class="text-2xl font-semibold font-mono tabular-nums text-[var(--text)]">{riskScore.toFixed(1)}</span>
+                  <span
+                    class="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+                    style={`color: ${riskColor}; background: ${riskColor}18;`}
+                  >{riskLevel}</span>
+                </div>
+              </div>
+              {/* Mini arc gauge */}
+              <svg class="w-12 h-12 shrink-0" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20" fill="none" stroke="var(--surface-alt)" stroke-width="4" stroke-dasharray="94.25" stroke-dashoffset="0" transform="rotate(-90 24 24)" stroke-linecap="round" />
+                <circle cx="24" cy="24" r="20" fill="none" stroke={riskColor} stroke-width="4" stroke-dasharray="94.25" stroke-dashoffset={(94.25 * (1 - riskArcPct / 100)).toString()} transform="rotate(-90 24 24)" stroke-linecap="round" />
+              </svg>
+            </div>
+            <p class="text-[11px] text-[var(--text-muted)] leading-relaxed">
+              {riskLevel === 'High' ? 'Critical knowledge is heavily concentrated in this person. If they become unavailable, their team will be significantly impacted.' :
+               riskLevel === 'Moderate' ? 'Some knowledge concentration exists. The team has partial coverage but would feel the absence.' :
+               'Knowledge is reasonably distributed. This person could transition without major disruption.'}
+            </p>
+          </div>
+        )}
+
+        {/* Network Connectivity Card */}
+        {networkLevel && (
+          <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+            <span class="text-[10px] font-medium uppercase tracking-[0.08em] text-[var(--text-muted)]">Network Connectivity</span>
+            <div class="flex items-baseline gap-2 mt-1 mb-3">
+              <span
+                class="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+                style={`color: ${networkLevel.color}; background: ${networkLevel.color}18;`}
+              >{networkLevel.label}</span>
+            </div>
+            <p class="text-[11px] text-[var(--text-muted)] leading-relaxed mb-3">{networkLevel.desc}</p>
+            <div class="space-y-1.5 text-xs">
+              <div class="flex justify-between">
+                <span class="text-[var(--text-muted)]">PageRank</span>
+                <span class="font-mono text-[var(--text)]">{pagerank!.toFixed(4)}</span>
+              </div>
+              {betweenness !== null && (
+                <div class="flex justify-between">
+                  <span class="text-[var(--text-muted)]">Betweenness</span>
+                  <span class="font-mono text-[var(--text)]">{betweenness.toFixed(4)}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Community / Bridge Card */}
+        {(community || bridgeLevel) && (
+          <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5">
+            <span class="text-[10px] font-medium uppercase tracking-[0.08em] text-[var(--text-muted)]">Collaboration Group</span>
+            {community && (
+              <div class="mt-1 mb-3">
+                <span class="text-base font-semibold text-[var(--text)]">{community.dominant_team}</span>
+                <span class="text-xs text-[var(--text-muted)] ml-1.5">{community.size} members</span>
+              </div>
+            )}
+            {bridgeLevel && (
+              <div class="mb-3">
+                <span
+                  class="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+                  style={`color: ${bridgeLevel.color}; background: ${bridgeLevel.color}18;`}
+                >{bridgeLevel.label}</span>
+                <p class="text-[11px] text-[var(--text-muted)] leading-relaxed mt-2">{bridgeLevel.desc}</p>
+              </div>
+            )}
+            {!bridgeLevel && community && (
+              <p class="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                This person's primary collaboration cluster, detected algorithmically from actual work patterns rather than the formal org chart.
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+      {riskRows.length > 0 && (
+        <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 mb-8 max-w-lg">
+          <h3 class="text-xs font-medium text-[var(--text-muted)] uppercase tracking-[0.08em] mb-1">Risk Breakdown</h3>
+          <p class="text-[10px] text-[var(--text-muted)] mb-3">Higher bars indicate more concentrated risk in that dimension. This is not a performance measure -- it shows where the organization depends on this individual.</p>
+          <div class="space-y-2.5">
+            {riskRows.map((r) => (
+              <div title={r.tip}>
+                <div class="flex items-center justify-between mb-0.5">
+                  <span class="text-xs text-[var(--text-secondary)]">{r.name}</span>
+                  <span class="text-xs font-mono text-[var(--text)]">{r.display}</span>
+                </div>
+                <div class="h-1.5 rounded-full bg-[var(--surface-alt)] overflow-hidden">
+                  <div class="h-full rounded-full transition-all" style={`width: ${r.pct}%; background: ${r.color};`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div class="flex items-center gap-4 mt-3 pt-2 border-t border-[var(--border-subtle)]">
+            <div class="flex items-center gap-1.5 text-[10px] text-[var(--text-muted)]"><span class="w-2 h-2 rounded-full" style="background: var(--status-green)"></span> Low risk</div>
+            <div class="flex items-center gap-1.5 text-[10px] text-[var(--text-muted)]"><span class="w-2 h-2 rounded-full" style="background: var(--status-amber)"></span> Moderate</div>
+            <div class="flex items-center gap-1.5 text-[10px] text-[var(--text-muted)]"><span class="w-2 h-2 rounded-full" style="background: var(--status-red)"></span> High risk</div>
+          </div>
+        </div>
+      )}
+    </>
+  )}
+
+  <!-- ── Meeting Load ── -->
+  {meetingStats && (
+    <>
+      <h2 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-3">Meeting Load</h2>
+      <p class="text-xs text-[var(--text-secondary)] mb-3 max-w-2xl">Calendar data from M365. High meeting hours reduce time for focused work. Engineering roles above 15 hours/week of meetings typically show declining output.</p>
+      <dl class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
+        <MetricCard label="Hours / Meeting Day" value={Number(meetingStats.avg_hours_per_meeting_day ?? 0).toFixed(1)} benchmark="Healthy: <4 hrs" />
+        <MetricCard label="Recurring %" value={`${Number(meetingStats.recurring_pct ?? 0).toFixed(0)}%`} subtitle="of total meetings" />
+        <MetricCard label="Avg Meeting Size" value={Number(meetingStats.avg_meeting_size ?? 0).toFixed(1)} subtitle="attendees" />
+        <MetricCard label="Total Events" value={(meetingStats.total_events ?? 0).toString()} subtitle={`${meetingStats.days_with_meetings ?? '—'} days with meetings`} />
+      </dl>
+    </>
+  )}
+
+  <!-- ── Top Connections ── -->
+  {relevanceEdges.length > 0 && (
+    <>
+      <h2 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-3">Top Connections</h2>
+      <p class="text-xs text-[var(--text-secondary)] mb-3 max-w-2xl">The people this individual works with most frequently, ranked by interaction strength across meetings, code reviews, and shared work. Cross-department connections indicate bridging behavior.</p>
+      <div class="mb-8">
+        <TabulatorGrid
+          columns={[
+            { key: 'rank', label: '#', align: 'right', sortable: true, type: 'number', width: '50px' },
+            { key: 'target_name', label: 'Name', sortable: true },
+            { key: 'target_title', label: 'Title', sortable: true },
+            { key: 'target_department', label: 'Department', sortable: true, type: 'badge' },
+          ]}
+          rows={relevanceEdges}
+        />
+      </div>
+    </>
+  )}
+
+  <!-- ── Cross-Org Bridge ── -->
+  {bridgeData && (
+    <>
+      <h2 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-3">Cross-Org Bridge</h2>
+      <p class="text-xs text-[var(--text-secondary)] mb-3 max-w-2xl">This person connects their home department ({bridgeData.own_department}) to other parts of the organization. Bridge people are critical for cross-team coordination -- they facilitate information flow between groups that otherwise don't interact.</p>
+      <div class="flex items-center gap-4 mb-3">
+        <div class="text-center">
+          <span class="block text-lg font-semibold font-mono text-[var(--text)]">{bridgeData.bridge_strength}</span>
+          <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">Strength</span>
+        </div>
+        <div class="text-center">
+          <span class="block text-lg font-semibold font-mono text-[var(--text)]">{bridgeDepts.length}</span>
+          <span class="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">Depts Bridged</span>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-8">
+        {bridgeDepts.sort(([,a]: [string, number], [,b]: [string, number]) => b - a).map(([dept, count]: [string, number]) => (
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 text-xs rounded bg-[var(--surface-alt)] border border-[var(--border-subtle)] text-[var(--text-secondary)]">
+            {dept} <span class="font-mono text-[var(--text-muted)]">{count}</span>
+          </span>
+        ))}
+      </div>
+    </>
+  )}
+
+  <!-- ── Teams Membership ── -->
+  {memberTeams.length > 0 && (
+    <>
+      <h2 class="text-xs font-medium uppercase tracking-[0.08em] text-[var(--text-muted)] mb-3">M365 Teams</h2>
+      <div class="mb-8">
+        <TabulatorGrid
+          columns={[
+            { key: 'name', label: 'Team', sortable: true },
+            { key: 'member_count', label: 'Members', align: 'right', sortable: true, type: 'number' },
+            { key: 'cross_functional', label: 'Cross-Functional', sortable: true, type: 'boolean' },
+          ]}
+          rows={memberTeams}
+        />
+      </div>
+    </>
+  )}
+
+  <!-- ── Navigation ── -->
+  <div class="pt-6 mt-4 border-t border-[var(--border-subtle)]">
+    <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs">
+      <a href="/people/directory" class="text-[var(--accent)] hover:underline">← Directory</a>
+      <a href="/people/risk" class="text-[var(--accent)] hover:underline">Key Person Risk</a>
+      <a href="/people/network" class="text-[var(--accent)] hover:underline">Network Analysis</a>
+      <a href="/people/meetings" class="text-[var(--accent)] hover:underline">Meeting Analysis</a>
+      <a href="/people/collaboration" class="text-[var(--accent)] hover:underline">Collaboration</a>
+      <a href="/people/teams" class="text-[var(--accent)] hover:underline">Teams</a>
+    </div>
   </div>
 </BaseLayout>

@@ -1,0 +1,252 @@
+[
+  {
+    "from": "Customer Support",
+    "to": "Software Development",
+    "meetings": 9665
+  },
+  {
+    "from": "Quality Engineering",
+    "to": "Software Development",
+    "meetings": 7706
+  },
+  {
+    "from": "Payments",
+    "to": "Software Development",
+    "meetings": 7117
+  },
+  {
+    "from": "Product",
+    "to": "Software Development",
+    "meetings": 6583
+  },
+  {
+    "from": "Software Development",
+    "to": "Technical Resources",
+    "meetings": 4860
+  },
+  {
+    "from": "Customer Success",
+    "to": "Customer Support",
+    "meetings": 4309
+  },
+  {
+    "from": "Data Strategy",
+    "to": "Software Development",
+    "meetings": 4273
+  },
+  {
+    "from": "Payments",
+    "to": "Quality Engineering",
+    "meetings": 4087
+  },
+  {
+    "from": "Customer Support",
+    "to": "Technical Resources",
+    "meetings": 3817
+  },
+  {
+    "from": "Architecture",
+    "to": "Software Development",
+    "meetings": 3607
+  },
+  {
+    "from": "Software Development",
+    "to": "Solution Operations",
+    "meetings": 3181
+  },
+  {
+    "from": "Customer Support",
+    "to": "General Operations",
+    "meetings": 2829
+  },
+  {
+    "from": "Quality Engineering",
+    "to": "Technical Resources",
+    "meetings": 2651
+  },
+  {
+    "from": "Customer Support",
+    "to": "Product",
+    "meetings": 2553
+  },
+  {
+    "from": "AI Group",
+    "to": "Software Development",
+    "meetings": 2510
+  },
+  {
+    "from": "Customer Success",
+    "to": "Software Development",
+    "meetings": 1928
+  },
+  {
+    "from": "Customer Support",
+    "to": "Payments",
+    "meetings": 1878
+  },
+  {
+    "from": "Customer Success",
+    "to": "Sales",
+    "meetings": 1865
+  },
+  {
+    "from": "Product",
+    "to": "Quality Engineering",
+    "meetings": 1820
+  },
+  {
+    "from": "Product",
+    "to": "Technical Resources",
+    "meetings": 1681
+  },
+  {
+    "from": "Customer Support",
+    "to": "People Operations",
+    "meetings": 1633
+  },
+  {
+    "from": "Data Strategy",
+    "to": "Product",
+    "meetings": 1593
+  },
+  {
+    "from": "Customer Support",
+    "to": "Sales",
+    "meetings": 1579
+  },
+  {
+    "from": "Engineering",
+    "to": "Software Development",
+    "meetings": 1509
+  },
+  {
+    "from": "Customer Support",
+    "to": "Engineering",
+    "meetings": 1507
+  },
+  {
+    "from": "Program Management",
+    "to": "Software Development",
+    "meetings": 1500
+  },
+  {
+    "from": "Architecture",
+    "to": "Quality Engineering",
+    "meetings": 1360
+  },
+  {
+    "from": "Architecture",
+    "to": "Payments",
+    "meetings": 1299
+  },
+  {
+    "from": "Customer Success",
+    "to": "General Operations",
+    "meetings": 1282
+  },
+  {
+    "from": "Payments",
+    "to": "Product",
+    "meetings": 1221
+  },
+  {
+    "from": "Inbound Sales",
+    "to": "Software Development",
+    "meetings": 1111
+  },
+  {
+    "from": "Architecture",
+    "to": "Product",
+    "meetings": 1108
+  },
+  {
+    "from": "Customer Support",
+    "to": "Quality Engineering",
+    "meetings": 1108
+  },
+  {
+    "from": "General Operations",
+    "to": "Software Development",
+    "meetings": 1099
+  },
+  {
+    "from": "Customer Success",
+    "to": "Product",
+    "meetings": 1074
+  },
+  {
+    "from": "AI Group",
+    "to": "Data Strategy",
+    "meetings": 1018
+  },
+  {
+    "from": "Program Management",
+    "to": "Technical Resources",
+    "meetings": 1012
+  },
+  {
+    "from": "Architecture",
+    "to": "Technical Resources",
+    "meetings": 983
+  },
+  {
+    "from": "Sales",
+    "to": "Software Development",
+    "meetings": 938
+  },
+  {
+    "from": "Marketing",
+    "to": "Software Development",
+    "meetings": 923
+  },
+  {
+    "from": "People Operations",
+    "to": "Software Development",
+    "meetings": 896
+  },
+  {
+    "from": "Architecture",
+    "to": "Data Strategy",
+    "meetings": 830
+  },
+  {
+    "from": "AI Group",
+    "to": "Program Management",
+    "meetings": 818
+  },
+  {
+    "from": "Data Strategy",
+    "to": "Technical Resources",
+    "meetings": 754
+  },
+  {
+    "from": "Quality Engineering",
+    "to": "Solution Operations",
+    "meetings": 712
+  },
+  {
+    "from": "AI Group",
+    "to": "Product",
+    "meetings": 712
+  },
+  {
+    "from": "Customer Success",
+    "to": "People Operations",
+    "meetings": 707
+  },
+  {
+    "from": "Customer Support",
+    "to": "Marketing",
+    "meetings": 690
+  },
+  {
+    "from": "Payments",
+    "to": "Solution Operations",
+    "meetings": 668
+  },
+  {
+    "from": "General Operations",
+    "to": "Sales",
+    "meetings": 660
+  }
+]

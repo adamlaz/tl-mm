@@ -1,0 +1,408 @@
+{
+  "option": {
+    "title": {
+      "text": "Cross-Department Relevance",
+      "subtext": "Microsoft 365 collaboration signal strength"
+    },
+    "tooltip": {
+      "position": "top"
+    },
+    "grid": {
+      "left": 180,
+      "top": 60,
+      "right": 40,
+      "bottom": 120
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "AI Group",
+        "Accounting",
+        "Architecture",
+        "Avio Contractor",
+        "Customer Operations",
+        "Customer Success",
+        "Customer Success ",
+        "Customer Support",
+        "Customer Support & Operations",
+        "Data Strategy",
+        "Engagement Management",
+        "Engineering",
+        "Engineering / Retail",
+        "Executive",
+        "Executive Leadership",
+        "External - Peak Activity",
+        "External JFW",
+        "External Peak Activity",
+        "External SI Peak Activity",
+        "External Skillnet"
+      ],
+      "axisLabel": {
+        "rotate": 45
+      }
+    },
+    "yAxis": {
+      "type": "category",
+      "data": [
+        "AI Group",
+        "Accounting",
+        "Architecture",
+        "Avio Contractor",
+        "Customer Operations",
+        "Customer Success",
+        "Customer Success ",
+        "Customer Support",
+        "Customer Support & Operations",
+        "Data Strategy",
+        "Engagement Management",
+        "Engineering",
+        "Engineering / Retail",
+        "Executive",
+        "Executive Leadership",
+        "External - Peak Activity",
+        "External JFW",
+        "External Peak Activity",
+        "External SI Peak Activity",
+        "External Skillnet"
+      ]
+    },
+    "visualMap": {
+      "min": 0,
+      "max": 155,
+      "calculable": true,
+      "orient": "horizontal",
+      "left": "center",
+      "bottom": 10
+    },
+    "series": [
+      {
+        "type": "heatmap",
+        "data": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            5,
+            1
+          ],
+          [
+            0,
+            7,
+            1
+          ],
+          [
+            0,
+            12,
+            1
+          ],
+          [
+            0,
+            13,
+            3
+          ],
+          [
+            0,
+            15,
+            1
+          ],
+          [
+            0,
+            17,
+            1
+          ],
+          [
+            2,
+            0,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            7,
+            4
+          ],
+          [
+            2,
+            9,
+            2
+          ],
+          [
+            2,
+            11,
+            2
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            5,
+            1
+          ],
+          [
+            3,
+            7,
+            3
+          ],
+          [
+            3,
+            10,
+            1
+          ],
+          [
+            5,
+            5,
+            35
+          ],
+          [
+            5,
+            6,
+            6
+          ],
+          [
+            5,
+            7,
+            30
+          ],
+          [
+            5,
+            9,
+            3
+          ],
+          [
+            5,
+            13,
+            1
+          ],
+          [
+            6,
+            5,
+            2
+          ],
+          [
+            6,
+            7,
+            2
+          ],
+          [
+            6,
+            9,
+            1
+          ],
+          [
+            7,
+            0,
+            6
+          ],
+          [
+            7,
+            2,
+            1
+          ],
+          [
+            7,
+            4,
+            1
+          ],
+          [
+            7,
+            5,
+            35
+          ],
+          [
+            7,
+            6,
+            4
+          ],
+          [
+            7,
+            7,
+            155
+          ],
+          [
+            7,
+            8,
+            6
+          ],
+          [
+            7,
+            9,
+            3
+          ],
+          [
+            7,
+            11,
+            7
+          ],
+          [
+            7,
+            13,
+            1
+          ],
+          [
+            9,
+            0,
+            1
+          ],
+          [
+            9,
+            2,
+            4
+          ],
+          [
+            9,
+            5,
+            5
+          ],
+          [
+            9,
+            7,
+            5
+          ],
+          [
+            9,
+            9,
+            12
+          ],
+          [
+            9,
+            11,
+            1
+          ],
+          [
+            11,
+            2,
+            1
+          ],
+          [
+            11,
+            7,
+            2
+          ],
+          [
+            13,
+            0,
+            2
+          ],
+          [
+            13,
+            1,
+            1
+          ],
+          [
+            13,
+            13,
+            12
+          ],
+          [
+            13,
+            14,
+            1
+          ],
+          [
+            15,
+            0,
+            1
+          ],
+          [
+            15,
+            13,
+            1
+          ],
+          [
+            15,
+            17,
+            1
+          ],
+          [
+            15,
+            18,
+            2
+          ],
+          [
+            16,
+            12,
+            1
+          ],
+          [
+            17,
+            0,
+            1
+          ],
+          [
+            17,
+            13,
+            1
+          ],
+          [
+            17,
+            15,
+            1
+          ],
+          [
+            17,
+            18,
+            2
+          ],
+          [
+            18,
+            0,
+            2
+          ],
+          [
+            18,
+            13,
+            2
+          ],
+          [
+            18,
+            15,
+            2
+          ],
+          [
+            18,
+            17,
+            2
+          ],
+          [
+            18,
+            18,
+            2
+          ],
+          [
+            19,
+            5,
+            1
+          ],
+          [
+            19,
+            6,
+            1
+          ],
+          [
+            19,
+            13,
+            3
+          ]
+        ],
+        "label": {
+          "show": false
+        }
+      }
+    ]
+  }
+}

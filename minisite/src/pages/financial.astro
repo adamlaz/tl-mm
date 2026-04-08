@@ -4,6 +4,7 @@ export const prerender = true;
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
 import TabulatorGrid from '../components/TabulatorGrid.astro';
 import FindingCard from '../components/FindingCard.astro';
 import { fmt, fmtCurrency } from '../lib/parse';
@@ -155,7 +156,12 @@ const vendorRows = vendors.map((v: any) => ({
   <SectionHeader
     eyebrow="FINANCIAL"
     title="Financial Intelligence"
-    description="90-Day Plan & Cash Flow Analysis. Revenue forecasts, cash position, cost reduction roadmap, payments economics, and risk assessment — Q1–Q4 2026."
+    description="Financial health of the business across revenue, cash position, cost structure, and risk. This analysis is built from the company's cash forecast model, AP aging report, and 90-day operating plan. The critical question: does the company have enough cash to operate through the year, and where are the danger points?"
+    metrics={[
+      { label: '2026 Forecast', value: `$${(totalAnnualRevenue / 1_000_000).toFixed(1)}M` },
+      { label: 'Cash Trough', value: `$${Math.round(lowestCash / 1000)}K` },
+      { label: 'Monthly Cuts', value: `$${Math.round(totalMonthlyCuts / 1000)}K` },
+    ]}
   />
 
   <div class="grid sm:grid-cols-2 gap-4 mb-8">
@@ -165,16 +171,33 @@ const vendorRows = vendors.map((v: any) => ({
     <FindingCard severity="amber" title="Hardware Lease Gap: $1.7M" detail="$1.3M committed, $3M needed through year end. Balance sheet and lender default status challenge securing additional leases." evidence="$4M facility partially addresses; backlog triaged to prioritize highest-value deployments" />
   </div>
 
+  <div class="mb-8">
+    <ChartEmbed
+      slug="cash_flow_waterfall"
+      title="Cash Flow Waterfall — Q1–Q4 2026"
+      caption="Cash position drops to its lowest point in Q3 before recovering in Q4. The trough depends entirely on revenue inflows materializing on schedule -- any slip creates a liquidity risk. The Q1 cash infusion of $4M from the existing facility is the only reason the company stays solvent through mid-year."
+      source="Source: MS Cash Forecast Model"
+      height="400px"
+    />
+  </div>
+
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="2026 Revenue Forecast" value={`$${(totalAnnualRevenue / 1_000_000).toFixed(1)}M`} subtitle="total operating inflows" />
-    <MetricCard label="Cash Trough" value={`$${Math.round(lowestCash / 1000)}K`} subtitle={`${lowestCashQ} ending cash`} />
+    <MetricCard label="Cash Trough" value={`$${Math.round(lowestCash / 1000)}K`} subtitle={`${lowestCashQ} ending cash`} benchmark="Healthy: >3 months runway" />
     <MetricCard label="Monthly Cost Cuts" value={`$${Math.round(totalMonthlyCuts / 1000)}K`} subtitle={`${fmtCurrency(totalAnnualCuts)} annualized`} />
     <MetricCard label="Active Merchants" value={fmt(merchantCount)} subtitle={`$${fmt(gpvWeek)} GPV/wk per merchant`} />
   </dl>
 
   <!-- ── 1. Revenue by Product Line ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Revenue by Product Line</h2>
-  <div class="mb-8">
+  <p class="text-xs text-[var(--text-secondary)] mb-4 max-w-2xl">Revenue broken down by the four product lines. This shows which business lines are driving cash inflows and where concentration risk exists.</p>
+  <div class="grid lg:grid-cols-2 gap-4 mb-4">
+    <ChartEmbed
+      slug="revenue_by_product_stacked"
+      title="Revenue by Product Line"
+      caption="Payments revenue dominates the mix. CAKE SaaS and Retail are growing but still small relative to total inflows. Heavy dependence on a single product line creates concentration risk."
+    />
+    <div>
     <TabulatorGrid
       exportable
       columns={[
@@ -187,10 +210,12 @@ const vendorRows = vendors.map((v: any) => ({
       ]}
       rows={revenueRows}
     />
+    </div>
   </div>
 
   <!-- ── 2. Cash Flow Quarterly ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Cash Flow Quarterly</h2>
+  <p class="text-xs text-[var(--text-secondary)] mb-3 max-w-2xl">Projected cash position quarter by quarter. The critical question: does the company have enough cash to operate through the year, and where are the danger points?</p>
   <p class="text-xs text-[var(--status-red)] font-medium mb-3">{lowestCashQ} ending cash of {fmtCurrency(lowestCash)} is critically low — represents the floor of the cash curve before Q4 recovery.</p>
   <div class="mb-8">
     <TabulatorGrid
@@ -211,11 +236,12 @@ const vendorRows = vendors.map((v: any) => ({
 
   <!-- ── 3. Payments Economics ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Payments Economics</h2>
+  <p class="text-xs text-[var(--text-secondary)] mb-4 max-w-2xl">Unit economics of the payments business -- how much revenue each merchant generates, what the company keeps after processing costs, and how sensitive the model is to merchant churn.</p>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
     <MetricCard label="Active Merchants" value={fmt(merchantCount)} subtitle={`${((bl.annual_churn_rate ?? 0) * 100).toFixed(0)}% annual churn`} />
-    <MetricCard label="GPV / Merchant / Week" value={`$${fmt(gpvWeek)}`} subtitle={`$${fmt(gpvMonth)}/month`} />
-    <MetricCard label="Gross Take Rate" value={`${((bl.gross_take_rate ?? 0) * 100).toFixed(2)}%`} subtitle={`Net: ${((bl.net_take_rate ?? 0) * 100).toFixed(2)}%`} />
-    <MetricCard label="COS % of Gross" value={`${((bl.cos_percentage_of_gross ?? 0) * 100).toFixed(0)}%`} subtitle={`Processor spread: ${((bl.processor_spread ?? 0) * 100).toFixed(2)}%`} />
+    <MetricCard label="GPV / Merchant / Week" value={`$${fmt(gpvWeek)}`} subtitle={`gross payment volume processed per merchant · $${fmt(gpvMonth)}/month avg`} />
+    <MetricCard label="Gross Take Rate" value={`${((bl.gross_take_rate ?? 0) * 100).toFixed(2)}%`} subtitle={`what the company keeps per transaction · net ${((bl.net_take_rate ?? 0) * 100).toFixed(2)}%`} />
+    <MetricCard label="Processing Cost %" value={`${((bl.cos_percentage_of_gross ?? 0) * 100).toFixed(0)}%`} subtitle={`cost of sale as share of gross revenue · processor spread ${((bl.processor_spread ?? 0) * 100).toFixed(2)}%`} />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
@@ -238,16 +264,24 @@ const vendorRows = vendors.map((v: any) => ({
         <MetricCard label="Addressable Accounts" value={(backlog.addressable_accounts ?? 0).toString()} subtitle="in pipeline" />
         <MetricCard label="Modeled Accounts" value={(backlog.modeled_accounts ?? 0).toString()} subtitle={`${((backlog.attrition_assumption ?? 0) * 100).toFixed(0)}% attrition assumed`} />
         <MetricCard label="Accounts to Spread" value={(backlog.accounts_spread ?? 0).toString()} subtitle={backlog.spread_window ?? ''} />
-        <MetricCard label="Accounts with TLD" value={(backlog.accounts_with_tld ?? 0).toString()} subtitle="already transacting" />
+        <MetricCard label="Already Transacting" value={(backlog.accounts_with_tld ?? 0).toString()} subtitle="accounts live on payments" />
       </dl>
     </div>
   </div>
 
   <!-- ── 4. Retail Client Concentration ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Retail Client Concentration</h2>
+  <p class="text-xs text-[var(--text-secondary)] mb-4 max-w-2xl">Revenue distribution across retail clients. Concentration in a few large clients creates risk -- if any single client churns or delays, the revenue impact is significant.</p>
+  <div class="mb-4">
+    <ChartEmbed
+      slug="retail_concentration_bar"
+      title="Retail Client Revenue (52-Week Forecast)"
+      caption="Winmark is the largest single retail client. The top 3 clients represent over half of total retail revenue. Diversification into smaller clients is limited."
+    />
+  </div>
   <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
     <MetricCard label="Total Retail Revenue" value={fmtCurrency(totalRetail)} subtitle="52-week forecast" />
-    <MetricCard label="Named Clients" value={(retailRaw.length - 1).toString()} subtitle="+ 'All Other' bucket" />
+    <MetricCard label="Named Clients" value={(retailRaw.length - 1).toString()} subtitle="+ remaining smaller clients grouped" />
     <MetricCard label="Top Client" value={topClient?.client ?? 'N/A'} subtitle={topClient ? fmtCurrency(int(topClient.total_52wk)) : ''} />
   </dl>
   <div class="mb-8">
@@ -268,6 +302,14 @@ const vendorRows = vendors.map((v: any) => ({
 
   <!-- ── 5. Cost Reduction Roadmap ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Cost Reduction Roadmap</h2>
+  <p class="text-xs text-[var(--text-secondary)] mb-4 max-w-2xl">Committed cost reductions broken down by action item. Each bar shows the monthly savings from a specific initiative. The largest levers are headcount and cloud spend.</p>
+  <div class="mb-4">
+    <ChartEmbed
+      slug="cost_reduction_waterfall"
+      title="Monthly Cost Reduction Breakdown"
+      caption="Five committed cost reduction actions totaling $278K/month. Tampa rent is the largest single item but has the latest effective date (October). Cloud and headcount reductions take effect in April-June."
+    />
+  </div>
   <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
     <MetricCard label="Monthly Impact" value={`$${Math.round(totalMonthlyCuts / 1000)}K`} subtitle="committed cuts" />
     <MetricCard label="Annual Impact" value={`$${(totalAnnualCuts / 1_000_000).toFixed(1)}M`} subtitle="full-year savings" />
@@ -304,6 +346,14 @@ const vendorRows = vendors.map((v: any) => ({
 
   <!-- ── 6. Key Risks ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Key Risks</h2>
+  <p class="text-xs text-[var(--text-secondary)] mb-4 max-w-2xl">The six highest-likelihood, highest-impact risks to the business. Each is scored by likelihood and impact, with a specific mitigation action. Risks in the upper-right quadrant are the most urgent.</p>
+  <div class="mb-4">
+    <ChartEmbed
+      slug="risk_likelihood_impact"
+      title="Risk Likelihood vs Impact"
+      caption="Each bubble represents a key business risk, positioned by likelihood (horizontal) and impact (vertical). Larger bubbles indicate higher combined severity. The Bridge Bank LOC risk sits at the highest impact level."
+    />
+  </div>
   <div class="grid sm:grid-cols-2 gap-4 mb-8">
     {risks.map((r: any) => (
       <FindingCard
@@ -317,6 +367,14 @@ const vendorRows = vendors.map((v: any) => ({
 
   <!-- ── 7. Vendor Spend (Confirmed from AP) ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Vendor Spend (Confirmed from AP)</h2>
+  <p class="text-xs text-[var(--text-secondary)] mb-4 max-w-2xl">All vendor spend confirmed from accounts payable records. The treemap shows relative spend by category -- larger blocks represent bigger cost centers and the biggest levers for vendor rationalization.</p>
+  <div class="mb-4">
+    <ChartEmbed
+      slug="vendor_spend_treemap"
+      title="Vendor Spend by Category"
+      caption="Technology vendors (Cloud/Hosting, DevOps) represent the largest concentration of AP spend. Rent and legal/M&A costs are the other major categories. The size of each block shows relative annual spend."
+    />
+  </div>
   <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
     <MetricCard label="Total AP Outstanding" value={fmtCurrency(totalAPDue)} subtitle={`as of ${vendorData.as_of ?? 'Mar 2026'}`} />
     <MetricCard label="Annualized Vendor Spend" value={`$${(totalAnnualVendor / 1_000_000).toFixed(1)}M`} subtitle="estimated run rate" />
@@ -333,7 +391,7 @@ const vendorRows = vendors.map((v: any) => ({
         { key: 'total_due', label: 'AP Outstanding', align: 'right', sortable: true, type: 'currency' },
         { key: 'annualized', label: 'Annualized Est.', align: 'right', sortable: true, type: 'currency' },
         { key: 'invoices', label: 'Invoices', align: 'right', sortable: true, type: 'number' },
-        { key: 'oldest', label: 'Oldest (Days)', align: 'right', sortable: true, type: 'number' },
+        { key: 'oldest', label: 'Oldest (Days)', align: 'right', sortable: true, type: 'heat', heatMax: 365 },
         { key: 'notes', label: 'Notes' },
       ]}
       rows={vendorRows}

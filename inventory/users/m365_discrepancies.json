@@ -1,0 +1,462 @@
+{
+  "items": [
+    {
+      "person": "Don Salama",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Board",
+      "directory_manager": "Bruce Bennett"
+    },
+    {
+      "person": "Don Salama",
+      "type": "title_mismatch",
+      "org_chart_title": "Co-CEO",
+      "directory_title": "Board Member"
+    },
+    {
+      "person": "Ana Chambers",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Don Salama",
+      "directory_manager": "Tommy Coppick (Shared)"
+    },
+    {
+      "person": "Ana Chambers",
+      "type": "title_mismatch",
+      "org_chart_title": "Chief of Staff Strategic Programs",
+      "directory_title": "Senior Project Manager"
+    },
+    {
+      "person": "Manuel Garcia",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Don Salama",
+      "directory_manager": "Chris Thomley"
+    },
+    {
+      "person": "Manuel Garcia",
+      "type": "title_mismatch",
+      "org_chart_title": "Interim CFO",
+      "directory_title": "Vice President and Controller"
+    },
+    {
+      "person": "Zachary Honnold",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Manuel Garcia",
+      "directory_manager": "Bill Lodes"
+    },
+    {
+      "person": "Zachary Honnold",
+      "type": "title_mismatch",
+      "org_chart_title": "RevOps",
+      "directory_title": "Sales Development Representative"
+    },
+    {
+      "person": "Greg Schmitzer",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Don Salama",
+      "directory_manager": "Bruce Bennett"
+    },
+    {
+      "person": "Greg Schmitzer",
+      "type": "title_mismatch",
+      "org_chart_title": "President & Head of Sales & Marketing",
+      "directory_title": "President"
+    },
+    {
+      "person": "Bobby Jaklitsch",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Greg Schmitzer",
+      "directory_manager": "Bill Lodes"
+    },
+    {
+      "person": "Bobby Jaklitsch",
+      "type": "title_mismatch",
+      "org_chart_title": "Field Sales",
+      "directory_title": "Senior Field Sales Enablement Manager"
+    },
+    {
+      "person": "Peter Vu",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Kevin Reyes",
+      "directory_manager": "Bill Lodes"
+    },
+    {
+      "person": "Peter Vu",
+      "type": "title_mismatch",
+      "org_chart_title": "Staff Software Engineer",
+      "directory_title": "Account Executive - Inbound"
+    },
+    {
+      "person": "Karen Licker",
+      "type": "title_mismatch",
+      "org_chart_title": "Marketing",
+      "directory_title": "Senior Director Marketing"
+    },
+    {
+      "person": "David Strainick",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Don Salama",
+      "directory_manager": "Bruce Bennett"
+    },
+    {
+      "person": "David Strainick",
+      "type": "title_mismatch",
+      "org_chart_title": "COO",
+      "directory_title": "Chief People Officer"
+    },
+    {
+      "person": "Das DeSilva",
+      "type": "manager_mismatch",
+      "org_chart_manager": "David Strainick",
+      "directory_manager": "Bill Lodes"
+    },
+    {
+      "person": "Das DeSilva",
+      "type": "title_mismatch",
+      "org_chart_title": "Onboarding",
+      "directory_title": "Director Customer Onboarding"
+    },
+    {
+      "person": "Rosen Georgiev",
+      "type": "title_mismatch",
+      "org_chart_title": "IT Ops",
+      "directory_title": "Sys Admin"
+    },
+    {
+      "person": "Chathura Ratnayake",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Don Salama",
+      "directory_manager": "Jim Eddy (Shared)"
+    },
+    {
+      "person": "Chathura Ratnayake",
+      "type": "title_mismatch",
+      "org_chart_title": "CDO",
+      "directory_title": "SVP Restaurant Software Engineering"
+    },
+    {
+      "person": "Dulanjan Wengappuliarachchi",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Chathura Ratnayake",
+      "directory_manager": "Heather Jordan (Shared)"
+    },
+    {
+      "person": "Dulanjan Wengappuliarachchi",
+      "type": "title_mismatch",
+      "org_chart_title": "VP Product & GTM",
+      "directory_title": "Director Product Management"
+    },
+    {
+      "person": "Miru Somasunthara Iyer",
+      "type": "title_mismatch",
+      "org_chart_title": "Senior Product Manager",
+      "directory_title": "Product Manager"
+    },
+    {
+      "person": "Richard Farber",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Dulanjan Wengappuliarachchi",
+      "directory_manager": "Ana Chambers"
+    },
+    {
+      "person": "Richard Farber",
+      "type": "title_mismatch",
+      "org_chart_title": "Product Manager",
+      "directory_title": "Product Owner"
+    },
+    {
+      "person": "Thaddeus Fox",
+      "type": "title_mismatch",
+      "org_chart_title": "Product Manager",
+      "directory_title": "Senior Business Analyst"
+    },
+    {
+      "person": "Chris Gomersall",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Dulanjan Wengappuliarachchi",
+      "directory_manager": "Heather Jordan (Shared)"
+    },
+    {
+      "person": "Adriana Zuniga",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Dulanjan Wengappuliarachchi",
+      "directory_manager": "Jasmine Hopkins (Shared)"
+    },
+    {
+      "person": "Ayodele Lawal",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Dulanjan Wengappuliarachchi",
+      "directory_manager": "David Strainick"
+    },
+    {
+      "person": "Randy Brown",
+      "type": "title_mismatch",
+      "org_chart_title": "VP Engineering Restaurant Technology",
+      "directory_title": "Vice President Architecture"
+    },
+    {
+      "person": "Alexander Baine",
+      "type": "title_mismatch",
+      "org_chart_title": "Manager Software Engineering",
+      "directory_title": "Senior Software Engineer"
+    },
+    {
+      "person": "Cory Renard",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Alexander Baine",
+      "directory_manager": "James Oliver"
+    },
+    {
+      "person": "Kyle Budd",
+      "type": "title_mismatch",
+      "org_chart_title": "Manager Software Engineering",
+      "directory_title": "Senior Software Engineer"
+    },
+    {
+      "person": "Beau Bruderer",
+      "type": "title_mismatch",
+      "org_chart_title": "Senior Software Engineer",
+      "directory_title": "Software Developer"
+    },
+    {
+      "person": "Harrison Minchew",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Kyle Budd",
+      "directory_manager": "John Thompson (Shared)"
+    },
+    {
+      "person": "Harrison Minchew",
+      "type": "title_mismatch",
+      "org_chart_title": "Lead Software Engineer",
+      "directory_title": "Principal Architect"
+    },
+    {
+      "person": "Anderson Lavor",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Kyle Budd",
+      "directory_manager": "Randy Brown"
+    },
+    {
+      "person": "Anderson Lavor",
+      "type": "title_mismatch",
+      "org_chart_title": "Lead Software Engineer",
+      "directory_title": "Staff Software Engineer"
+    },
+    {
+      "person": "Zubair Syed",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Chathura Ratnayake",
+      "directory_manager": "Jack Kennedy"
+    },
+    {
+      "person": "Zubair Syed",
+      "type": "title_mismatch",
+      "org_chart_title": "VP Engineering Enterprise Solutions",
+      "directory_title": "Senior Director Software Engineering"
+    },
+    {
+      "person": "Akshay Bhasin",
+      "type": "title_mismatch",
+      "org_chart_title": "VP Payments Engineering",
+      "directory_title": "Payments Engineer "
+    },
+    {
+      "person": "Kevin Reyes",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Michael Gibaldi (Shared)"
+    },
+    {
+      "person": "Kevin Reyes",
+      "type": "title_mismatch",
+      "org_chart_title": "Director Software Engineering",
+      "directory_title": "Manager Software Engineering"
+    },
+    {
+      "person": "Trenton Kress",
+      "type": "title_mismatch",
+      "org_chart_title": "Staff Software Engineer",
+      "directory_title": "Software Engineer"
+    },
+    {
+      "person": "Richard Meitzler",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Kevin Reyes",
+      "directory_manager": "Daniel Lomsak"
+    },
+    {
+      "person": "Susampath Madarasinghe",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Kevin Reyes",
+      "directory_manager": "Suneth De Soyza"
+    },
+    {
+      "person": "Matthew Griffin",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Kevin Reyes",
+      "directory_manager": "Charles Boice (Shared)"
+    },
+    {
+      "person": "Sowjanya Akula",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Daniel Lomsak"
+    },
+    {
+      "person": "Darren Blackwell",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Anthony Goad"
+    },
+    {
+      "person": "Darren Blackwell",
+      "type": "title_mismatch",
+      "org_chart_title": "Quality Automation Engineer",
+      "directory_title": "Quality Engineer"
+    },
+    {
+      "person": "Rekha Mohanan",
+      "type": "title_mismatch",
+      "org_chart_title": "Senior Quality Engineer",
+      "directory_title": "QA Engineer"
+    },
+    {
+      "person": "Bill Fenley",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Daniel Lomsak"
+    },
+    {
+      "person": "Bill Fenley",
+      "type": "title_mismatch",
+      "org_chart_title": "Senior Software Engineer Quality",
+      "directory_title": "Quality Engineer"
+    },
+    {
+      "person": "Kaelon Lucas",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Anthony Goad"
+    },
+    {
+      "person": "Kaelon Lucas",
+      "type": "title_mismatch",
+      "org_chart_title": "Quality Automation Engineer",
+      "directory_title": "Quality Engineer"
+    },
+    {
+      "person": "Patrycja Stevenson",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Anthony Goad"
+    },
+    {
+      "person": "Patrycja Stevenson",
+      "type": "title_mismatch",
+      "org_chart_title": "Senior Software Engineer Quality",
+      "directory_title": "Quality Engineer"
+    },
+    {
+      "person": "Angie Mroczka",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Andy Honnold",
+      "directory_manager": "William Yen (Shared)"
+    },
+    {
+      "person": "Mark Freid",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Matias Riglos"
+    },
+    {
+      "person": "Debbie Keye",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Mark Guilarte"
+    },
+    {
+      "person": "Debbie Keye",
+      "type": "title_mismatch",
+      "org_chart_title": "PMO",
+      "directory_title": "SCRUM Master"
+    },
+    {
+      "person": "Matias Lopez Riglos",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Charles Boice (Shared)"
+    },
+    {
+      "person": "Matias Lopez Riglos",
+      "type": "title_mismatch",
+      "org_chart_title": "Solution Operations",
+      "directory_title": "Contractor"
+    },
+    {
+      "person": "Vanessa Sotomayor",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Akshay Bhasin",
+      "directory_manager": "Carla Castle (Shared)"
+    },
+    {
+      "person": "Mark Guilarte",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Chathura Ratnayake",
+      "directory_manager": "Carla Castle (Shared)"
+    },
+    {
+      "person": "Mark Guilarte",
+      "type": "title_mismatch",
+      "org_chart_title": "VP Program Management",
+      "directory_title": "Senior Director Program Management"
+    },
+    {
+      "person": "Jack Kennedy",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Don Salama",
+      "directory_manager": "Bruce Bennett"
+    },
+    {
+      "person": "Jack Kennedy",
+      "type": "title_mismatch",
+      "org_chart_title": "CTO",
+      "directory_title": "EVP Retail Platform Solutions & AI"
+    },
+    {
+      "person": "Jeremy Diggins",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Jack Kennedy",
+      "directory_manager": "Tommy Coppick (Shared)"
+    },
+    {
+      "person": "Jeremy Diggins",
+      "type": "title_mismatch",
+      "org_chart_title": "Director Enterprise Technology",
+      "directory_title": "Director of Enterprise Technology"
+    },
+    {
+      "person": "Bailey Shatney",
+      "type": "manager_mismatch",
+      "org_chart_manager": "Don Salama",
+      "directory_manager": "David Strainick"
+    },
+    {
+      "person": "Bailey Shatney",
+      "type": "title_mismatch",
+      "org_chart_title": "VP Human Resources",
+      "directory_title": "Director of HR"
+    },
+    {
+      "person": "Renee Pauley",
+      "type": "title_mismatch",
+      "org_chart_title": "Recruiting",
+      "directory_title": "Recruiter"
+    },
+    {
+      "person": "Bill Lodes",
+      "type": "title_mismatch",
+      "org_chart_title": "Former CRO",
+      "directory_title": "EVP & GM Restaurant & Payment Solutions"
+    }
+  ],
+  "emails_filled": 128,
+  "records_updated": 134
+}

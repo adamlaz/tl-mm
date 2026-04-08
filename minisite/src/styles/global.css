@@ -80,7 +80,7 @@
   --surface-alt: var(--color-warm-26);
   --border: var(--color-steel-36);
   --border-subtle: var(--color-steel-26);
-  --ring: oklch(0.52 0.14 245);
+  --ring: var(--color-steel-ring);
   --status-green: var(--color-status-green);
   --status-amber: var(--color-status-amber);
   --status-red: var(--color-status-red);

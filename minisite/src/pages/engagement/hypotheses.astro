@@ -59,7 +59,7 @@ const hypotheses = [
     status: 'Pre-Evidence',
     statement: 'A few people or teams are routing bottlenecks.',
     test: 'Whose approval do you need? Who do you wait on? Map the dependency graph.',
-    evidence: 'Top reviewer: 581 reviews (John Harre). 17 repos with single reviewer handling >50% of PRs. 57 people handle 100+ reviews each.',
+    evidence: 'Top reviewer: 581 reviews (John Harre). 17 codebases where one reviewer handles more than half of all code reviews. 57 people each did 100+ reviews.',
     link: '/engineering',
     charts: ['key_person_risk', 'bb_reviewer_concentration'],
   },
@@ -68,9 +68,9 @@ const hypotheses = [
     name: 'Legacy Gravity',
     severity: 'amber' as const,
     status: 'Pre-Evidence',
-    statement: 'CAKE architecture prevents speed; no triage of must-modernize vs. can-encapsulate.',
+    statement: 'Legacy CAKE systems slow delivery; leadership has not clearly prioritized what must be replaced versus what can stay behind a stable boundary with less rework.',
     test: 'What constraint costs the most velocity? Ratio of maintenance vs. new feature hours?',
-    evidence: '83% pre-Graviton EC2 (167/201). 21% EOL Lambda runtimes (53/248). CloudFormation stacks from 2016. 15+ live CAKE systems, 9 engineers.',
+    evidence: 'Most cloud servers run on older hardware generations (167 of 201). About one in five serverless functions use end-of-life language versions (53 of 248). Some infrastructure templates date to 2016. 15+ live CAKE systems are supported by only 9 engineers.',
     link: '/infrastructure',
     charts: ['aws_lambda_runtimes'],
   },
@@ -92,7 +92,7 @@ const hypotheses = [
     status: 'Untested',
     statement: 'Business says \'eng is slow\'; eng says \'business is chaotic\'; real issue is undefined tradeoffs.',
     test: 'Ask both sides why delivery is slow. Compare answers. Look for structural decision gaps.',
-    evidence: 'Glassdoor 2.4/5, 31% recommend. Cycle time P50 = 59 days. Backlog net growth of 578 issues over 26 weeks.',
+    evidence: 'Glassdoor 2.4/5, 31% recommend. Median time from start to finish for a unit of work is 59 days—well above what many healthy product teams target for similar-sized items (often days to a few weeks). Backlog grew by a net 578 issues over 26 weeks.',
     link: '/delivery',
     charts: [],
   },
@@ -101,9 +101,9 @@ const hypotheses = [
     name: 'Architectural Polarity',
     severity: 'amber' as const,
     status: 'Pre-Evidence',
-    statement: 'Simultaneous AI-native building + legacy POS maintenance = irreconcilable engineering split.',
+    statement: 'Building new AI-native products while maintaining legacy point-of-sale systems pulls the same organization in two directions at once.',
     test: 'How are teams allocated? Do engineers rotate or get stuck? Is there a migration path?',
-    evidence: '4 Bitbucket workspaces with different quality profiles. madpayments: 87% CI/CD, TypeScript, domain-driven. syscolabs: 76% stale, 1,410 repos with unknown language.',
+    evidence: 'Four separate code-hosting workspaces show different maturity. One cluster has high automated build-and-deploy coverage and consistent modern tooling. Another has 76% stale codebases and 1,410 repositories where the technology mix is unclear.',
     link: '/infrastructure',
     charts: ['workspace_health_radar'],
   },
@@ -122,12 +122,12 @@ const withoutCharts = hypotheses.filter((h) => h.charts.length === 0);
 
   <div class="grid grid-cols-3 gap-4 mb-10">
     <MetricCard label="Confirmed" value="1" subtitle="Hypothesis D — resolved by April 3 reorg" />
-    <MetricCard label="Pre-Evidence" value="5" subtitle="Quantitative signal from V1–V7 scans" />
+    <MetricCard label="Pre-Evidence" value="5" subtitle="data collected, not yet confirmed — from data collection rounds" />
     <MetricCard label="Untested" value="3" subtitle="Require onsite interviews" />
   </div>
 
   <div class="mb-10">
-    <ChartEmbed slug="hypothesis_evidence_radar" title="Hypothesis Evidence Strength — Pre-Onsite" description="Signal strength across all 9 hypotheses from V1–V7 automated scans. 100 = confirmed with quantitative evidence." interactive />
+    <ChartEmbed slug="hypothesis_evidence_radar" title="Hypothesis Evidence Strength — Pre-Onsite" description="Signal strength across all 9 hypotheses from automated data collection rounds. 100 = confirmed with quantitative evidence." interactive />
   </div>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Hypotheses with Pre-Work Evidence</h2>

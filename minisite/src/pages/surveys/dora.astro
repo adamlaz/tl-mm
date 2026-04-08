@@ -93,8 +93,30 @@ const crossRefRows = [
   <SectionHeader
     eyebrow="DORA QUICK CHECK"
     title="Software Delivery Performance"
-    description="9 questions, ~3 minutes. Self-assessed delivery performance against Google's DORA research benchmarks (33,000+ professionals). Results classify teams as Elite / High / Medium / Low."
+    description="DORA (DevOps Research and Assessment) measures how fast and safely code gets to production. Developed by Google's research team, it is the industry standard benchmark used by thousands of engineering organizations worldwide. DORA measures four key metrics: deployment frequency, lead time for changes, change failure rate, and time to restore service. Teams are classified as Elite, High, Medium, or Low performers."
   />
+
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 mb-6">
+    <h3 class="text-sm font-semibold text-[var(--text)] mb-3">DORA Performance Levels</h3>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+      <div>
+        <span class="block text-[10px] font-medium uppercase tracking-wider text-[var(--status-green)] mb-1">Elite</span>
+        <p class="text-[var(--text-secondary)]">Multiple deploys/day, &lt;1hr lead time, &lt;5% failure, &lt;1hr restore</p>
+      </div>
+      <div>
+        <span class="block text-[10px] font-medium uppercase tracking-wider text-[var(--status-green)] mb-1">High</span>
+        <p class="text-[var(--text-secondary)]">Weekly-monthly deploys, 1day-1wk lead time, 0-15% failure, &lt;1day restore</p>
+      </div>
+      <div>
+        <span class="block text-[10px] font-medium uppercase tracking-wider text-[var(--status-amber)] mb-1">Medium</span>
+        <p class="text-[var(--text-secondary)]">Monthly-biannual deploys, 1wk-1mo lead time, 0-15% failure, &lt;1day restore</p>
+      </div>
+      <div>
+        <span class="block text-[10px] font-medium uppercase tracking-wider text-[var(--status-red)] mb-1">Low</span>
+        <p class="text-[var(--text-secondary)]">Fewer than biannual deploys, &gt;6mo lead time, 46-60% failure, &gt;6mo restore</p>
+      </div>
+    </div>
+  </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
     <MetricCard label="Questions" value="9" subtitle="~3 minutes" />

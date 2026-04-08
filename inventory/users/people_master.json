@@ -3,7 +3,7 @@
     "id": "don-salama",
     "canonical_name": "Don Salama",
     "aliases": [],
-    "email": null,
+    "email": "dsalama@madmobile.com",
     "title": "Co-CEO",
     "team": null,
     "manager": "Board",
@@ -16,6 +16,15 @@
       "org_chart": {
         "account_id": null,
         "email": null
+      },
+      "m365_directory": {
+        "mail": "dsalama@madmobile.com",
+        "title": "Board Member",
+        "department": "Executive",
+        "office": "Tampa HQ",
+        "manager": "Bruce Bennett",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:34Z"
       }
     },
     "activity": {
@@ -36,7 +45,7 @@
     "id": "ana-chambers",
     "canonical_name": "Ana Chambers",
     "aliases": [],
-    "email": null,
+    "email": "ana.chambers@madmobile.com",
     "title": "Chief of Staff Strategic Programs",
     "team": "Restaurant",
     "manager": "Don Salama",
@@ -86,6 +95,15 @@
         "spaces": [
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "ana.chambers@madmobile.com",
+        "title": "Senior Project Manager",
+        "department": "Program Management",
+        "office": "Tampa HQ",
+        "manager": "Tommy Coppick (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2021-07-07T17:47:07Z"
       }
     },
     "activity": {
@@ -119,7 +137,7 @@
     "id": "manuel-garcia",
     "canonical_name": "Manuel Garcia",
     "aliases": [],
-    "email": null,
+    "email": "manuel.garcia@madmobile.com",
     "title": "Interim CFO",
     "team": null,
     "manager": "Don Salama",
@@ -144,6 +162,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "manuel.garcia@madmobile.com",
+        "title": "Vice President and Controller",
+        "department": "Finance & Accounting",
+        "office": "Tampa HQ",
+        "manager": "Chris Thomley",
+        "accountEnabled": true,
+        "createdDateTime": "2023-04-11T15:01:45Z"
       }
     },
     "activity": {
@@ -164,7 +191,7 @@
     "id": "mark-do",
     "canonical_name": "Mark Do",
     "aliases": [],
-    "email": null,
+    "email": "mark.do@madmobile.com",
     "title": "Assistant Controller",
     "team": "Finance",
     "manager": "Manuel Garcia",
@@ -189,6 +216,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "mark.do@madmobile.com",
+        "title": "Assistant Controller",
+        "department": "Finance & Accounting",
+        "office": "Tampa",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2026-03-10T20:08:02Z"
       }
     },
     "activity": {
@@ -211,7 +247,7 @@
     "aliases": [
       "zachary.honnold"
     ],
-    "email": null,
+    "email": "zachary.honnold@madmobile.com",
     "title": "RevOps",
     "team": "Finance",
     "manager": "Manuel Garcia",
@@ -241,6 +277,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "zachary.honnold@madmobile.com",
+        "title": "Sales Development Representative",
+        "department": "Inbound Sales",
+        "office": "Tampa HQ",
+        "manager": "Bill Lodes",
+        "accountEnabled": true,
+        "createdDateTime": "2024-07-18T14:05:57Z"
       }
     },
     "activity": {
@@ -272,7 +317,7 @@
     "id": "greg-schmitzer",
     "canonical_name": "Greg Schmitzer",
     "aliases": [],
-    "email": null,
+    "email": "gschmitzer@madmobile.com",
     "title": "President & Head of Sales & Marketing",
     "team": null,
     "manager": "Don Salama",
@@ -285,6 +330,15 @@
       "org_chart": {
         "account_id": null,
         "email": null
+      },
+      "m365_directory": {
+        "mail": "gschmitzer@madmobile.com",
+        "title": "President",
+        "department": "Executive",
+        "office": "Tampa HQ",
+        "manager": "Bruce Bennett",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:34Z"
       }
     },
     "activity": {
@@ -305,7 +359,7 @@
     "id": "bobby-jaklitsch",
     "canonical_name": "Bobby Jaklitsch",
     "aliases": [],
-    "email": null,
+    "email": "bobby.jaklitsch@madmobile.com",
     "title": "Field Sales",
     "team": "Sales",
     "manager": "Greg Schmitzer",
@@ -318,6 +372,15 @@
       "org_chart": {
         "account_id": null,
         "email": null
+      },
+      "m365_directory": {
+        "mail": "bobby.jaklitsch@madmobile.com",
+        "title": "Senior Field Sales Enablement Manager",
+        "department": "Sales",
+        "office": "Remote - North America ",
+        "manager": "Bill Lodes",
+        "accountEnabled": true,
+        "createdDateTime": "2020-09-02T18:30:19Z"
       }
     },
     "activity": {
@@ -341,7 +404,7 @@
       "Peter Wu",
       "Wing Hung Peter Wu"
     ],
-    "email": null,
+    "email": "peter.vu@madmobile.com",
     "title": "Staff Software Engineer",
     "team": "Payments R&D",
     "manager": "Kevin Reyes",
@@ -393,6 +456,15 @@
         "spaces": [
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "peter.vu@madmobile.com",
+        "title": "Account Executive - Inbound",
+        "department": "Sales",
+        "office": "Tampa HQ",
+        "manager": "Bill Lodes",
+        "accountEnabled": true,
+        "createdDateTime": "2024-09-06T18:57:34Z"
       }
     },
     "activity": {
@@ -425,7 +497,7 @@
     "id": "karen-licker",
     "canonical_name": "Karen Licker",
     "aliases": [],
-    "email": null,
+    "email": "Karen.licker@madmobile.com",
     "title": "Marketing",
     "team": "Marketing",
     "manager": "Greg Schmitzer",
@@ -461,6 +533,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "Karen.licker@madmobile.com",
+        "title": "Senior Director Marketing",
+        "department": "Marketing",
+        "office": "Tampa HQ",
+        "manager": "Greg Schmitzer",
+        "accountEnabled": true,
+        "createdDateTime": "2024-07-28T01:44:56Z"
       }
     },
     "activity": {
@@ -481,7 +562,7 @@
     "id": "david-strainick",
     "canonical_name": "David Strainick",
     "aliases": [],
-    "email": null,
+    "email": "david.strainick@madmobile.com",
     "title": "COO",
     "team": null,
     "manager": "Don Salama",
@@ -494,6 +575,15 @@
       "org_chart": {
         "account_id": null,
         "email": null
+      },
+      "m365_directory": {
+        "mail": "david.strainick@madmobile.com",
+        "title": "Chief People Officer",
+        "department": "People Operations",
+        "office": "Tampa HQ",
+        "manager": "Bruce Bennett",
+        "accountEnabled": true,
+        "createdDateTime": "2021-12-02T20:02:36Z"
       }
     },
     "activity": {
@@ -514,7 +604,7 @@
     "id": "das-desilva",
     "canonical_name": "Das DeSilva",
     "aliases": [],
-    "email": null,
+    "email": "das.desilva@madmobile.com",
     "title": "Onboarding",
     "team": "Onboarding",
     "manager": "David Strainick",
@@ -563,6 +653,15 @@
         "spaces": [
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "das.desilva@madmobile.com",
+        "title": "Director Customer Onboarding",
+        "department": "General Operations",
+        "office": "Tampa HQ",
+        "manager": "Bill Lodes",
+        "accountEnabled": true,
+        "createdDateTime": "2022-09-16T19:03:35Z"
       }
     },
     "activity": {
@@ -595,7 +694,7 @@
     "id": "rosen-georgiev",
     "canonical_name": "Rosen Georgiev",
     "aliases": [],
-    "email": null,
+    "email": "rosen.georgiev@madmobile.org",
     "title": "IT Ops",
     "team": "IT Ops",
     "manager": "David Strainick",
@@ -632,6 +731,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "rosen.georgiev@madmobile.org",
+        "title": "Sys Admin",
+        "department": "IT",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-06-02T19:22:04Z"
       }
     },
     "activity": {
@@ -745,7 +853,7 @@
     "aliases": [
       "chathura.ratnayake"
     ],
-    "email": null,
+    "email": "chathura.ratnayake@madmobile.com",
     "title": "CDO",
     "team": "Restaurant",
     "manager": "Don Salama",
@@ -795,6 +903,15 @@
         "spaces": [
           "MMA"
         ]
+      },
+      "m365_directory": {
+        "mail": "chathura.ratnayake@madmobile.com",
+        "title": "SVP Restaurant Software Engineering",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Jim Eddy (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2021-12-15T17:55:48Z"
       }
     },
     "activity": {
@@ -828,7 +945,7 @@
     "aliases": [
       "Dulanjan W."
     ],
-    "email": null,
+    "email": "dulanjan.wengappuliarachchi@madmobile.com",
     "title": "VP Product & GTM",
     "team": "Product",
     "manager": "Chathura Ratnayake",
@@ -871,6 +988,15 @@
           "LP",
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "dulanjan.wengappuliarachchi@madmobile.com",
+        "title": "Director Product Management",
+        "department": "Product",
+        "office": "Tampa HQ",
+        "manager": "Heather Jordan (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-06-26T05:11:55Z"
       }
     },
     "activity": {
@@ -907,7 +1033,7 @@
       "Miru S.",
       "Mirunaaliny Somasunthara Iyer"
     ],
-    "email": null,
+    "email": "mirunaaliny.somasuntharaiyer@madmobile.com",
     "title": "Senior Product Manager",
     "team": "Product Restaurant",
     "manager": "Dulanjan Wengappuliarachchi",
@@ -963,6 +1089,15 @@
           "PROD",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "mirunaaliny.somasuntharaiyer@madmobile.com",
+        "title": "Product Manager",
+        "department": "Product",
+        "office": "Tampa",
+        "manager": "Dulanjan Wengappuliarachchi",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-28T15:19:32Z"
       }
     },
     "activity": {
@@ -1031,7 +1166,7 @@
     "aliases": [
       "Shavin P."
     ],
-    "email": null,
+    "email": "shavin.pieris@madmobile.com",
     "title": "Senior Product Manager",
     "team": "Product Payments",
     "manager": "Dulanjan Wengappuliarachchi",
@@ -1074,6 +1209,15 @@
           "LP",
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "shavin.pieris@madmobile.com",
+        "title": "Senior Product Manager",
+        "department": "Product",
+        "office": "Sri Lanka ",
+        "manager": "Dulanjan Wengappuliarachchi",
+        "accountEnabled": true,
+        "createdDateTime": "2023-11-06T04:04:29Z"
       }
     },
     "activity": {
@@ -1109,7 +1253,7 @@
     "aliases": [
       "Richard F."
     ],
-    "email": null,
+    "email": "richard.farber@madmobile.com",
     "title": "Product Manager",
     "team": "Product",
     "manager": "Dulanjan Wengappuliarachchi",
@@ -1164,6 +1308,15 @@
           "PROD",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "richard.farber@madmobile.com",
+        "title": "Product Owner",
+        "department": "Product",
+        "office": "Tampa HQ",
+        "manager": "Ana Chambers",
+        "accountEnabled": true,
+        "createdDateTime": "2024-02-08T17:52:04Z"
       }
     },
     "activity": {
@@ -1197,7 +1350,7 @@
     "aliases": [
       "Thaddeus F."
     ],
-    "email": null,
+    "email": "thaddeus.fox@madmobile.com",
     "title": "Product Manager",
     "team": "Product",
     "manager": "Dulanjan Wengappuliarachchi",
@@ -1237,6 +1390,15 @@
           "CR",
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "thaddeus.fox@madmobile.com",
+        "title": "Senior Business Analyst",
+        "department": "Product",
+        "office": "Tampa HQ",
+        "manager": "Dulanjan Wengappuliarachchi",
+        "accountEnabled": true,
+        "createdDateTime": "2023-11-22T15:02:38Z"
       }
     },
     "activity": {
@@ -1270,7 +1432,7 @@
     "id": "chris-gomersall",
     "canonical_name": "Chris Gomersall",
     "aliases": [],
-    "email": null,
+    "email": "chris.gomersall@madmobile.com",
     "title": "Director Product Design",
     "team": "Product Design",
     "manager": "Dulanjan Wengappuliarachchi",
@@ -1307,6 +1469,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "chris.gomersall@madmobile.com",
+        "title": "Director Product Design",
+        "department": "Product",
+        "office": "Tampa HQ",
+        "manager": "Heather Jordan (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-12-05T20:39:50Z"
       }
     },
     "activity": {
@@ -1342,7 +1513,7 @@
       "Adriana Z.",
       "Adriana Marie Zuniga"
     ],
-    "email": null,
+    "email": "adriana.zuniga@madmobile.com",
     "title": "Technical Training Specialist",
     "team": "L&D",
     "manager": "Dulanjan Wengappuliarachchi",
@@ -1376,6 +1547,15 @@
         "spaces": [
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "adriana.zuniga@madmobile.com",
+        "title": "Technical Training Specialist",
+        "department": "Customer Support",
+        "office": "Remote - North America ",
+        "manager": "Jasmine Hopkins (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-09-02T18:30:24Z"
       }
     },
     "activity": {
@@ -1399,7 +1579,7 @@
       "Ayodele L.",
       "ayodele.lawal"
     ],
-    "email": null,
+    "email": "ayodele.lawal@madmobile.com",
     "title": "Technical Training Specialist",
     "team": "L&D",
     "manager": "Dulanjan Wengappuliarachchi",
@@ -1433,6 +1613,15 @@
         "spaces": [
           "ES"
         ]
+      },
+      "m365_directory": {
+        "mail": "ayodele.lawal@madmobile.com",
+        "title": "Technical Training Specialist",
+        "department": "People Operations",
+        "office": "Tampa HQ",
+        "manager": "David Strainick",
+        "accountEnabled": true,
+        "createdDateTime": "2023-10-26T19:29:32Z"
       }
     },
     "activity": {
@@ -1515,6 +1704,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "rbrown@madmobile.com",
+        "title": "Vice President Architecture",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Chathura Ratnayake",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-24T18:03:05Z"
       }
     },
     "activity": {
@@ -1548,7 +1746,7 @@
     "id": "alexander-baine",
     "canonical_name": "Alexander Baine",
     "aliases": [],
-    "email": null,
+    "email": "alexander.baine@madmobile.com",
     "title": "Manager Software Engineering",
     "team": "Restaurant Frontend",
     "manager": "Randy Brown",
@@ -1599,6 +1797,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "alexander.baine@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Randy Brown",
+        "accountEnabled": true,
+        "createdDateTime": "2023-10-18T21:08:46Z"
       }
     },
     "activity": {
@@ -1635,7 +1842,7 @@
     "id": "cory-renard",
     "canonical_name": "Cory Renard",
     "aliases": [],
-    "email": null,
+    "email": "cory.renard@madmobile.com",
     "title": "Staff Software Engineer",
     "team": "Restaurant Frontend",
     "manager": "Alexander Baine",
@@ -1686,6 +1893,15 @@
           "ES",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "cory.renard@madmobile.com",
+        "title": "Staff Software Engineer",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "James Oliver",
+        "accountEnabled": true,
+        "createdDateTime": "2024-11-07T19:02:17Z"
       }
     },
     "activity": {
@@ -1722,7 +1938,7 @@
     "id": "rob-quin",
     "canonical_name": "Rob Quin",
     "aliases": [],
-    "email": null,
+    "email": "rob.quin@madmobile.com",
     "title": "Software Engineer",
     "team": "Restaurant Frontend",
     "manager": "Alexander Baine",
@@ -1772,6 +1988,15 @@
         "spaces": [
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "rob.quin@madmobile.com",
+        "title": "Software Engineer",
+        "department": "Software Development",
+        "office": "Tampa",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-05-27T14:15:13Z"
       }
     },
     "activity": {
@@ -1804,7 +2029,7 @@
     "id": "kyle-budd",
     "canonical_name": "Kyle Budd",
     "aliases": [],
-    "email": null,
+    "email": "kyle.budd@madmobile.com",
     "title": "Manager Software Engineering",
     "team": "Restaurant Backend",
     "manager": "Randy Brown",
@@ -1856,6 +2081,15 @@
           "ES",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "kyle.budd@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Randy Brown",
+        "accountEnabled": true,
+        "createdDateTime": "2021-09-29T20:07:14Z"
       }
     },
     "activity": {
@@ -1892,7 +2126,7 @@
     "id": "beau-bruderer",
     "canonical_name": "Beau Bruderer",
     "aliases": [],
-    "email": null,
+    "email": "beau.bruderer@madmobile.com",
     "title": "Senior Software Engineer",
     "team": "Restaurant Backend",
     "manager": "Kyle Budd",
@@ -1933,6 +2167,15 @@
         "prs_authored": 12,
         "prs_reviewed": 0,
         "review_cluster": "mixed"
+      },
+      "m365_directory": {
+        "mail": "beau.bruderer@madmobile.com",
+        "title": "Software Developer",
+        "department": "Software Development",
+        "office": "Tampa",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-05-27T16:59:49Z"
       }
     },
     "activity": {
@@ -2083,7 +2326,7 @@
     "id": "harrison-minchew",
     "canonical_name": "Harrison Minchew",
     "aliases": [],
-    "email": null,
+    "email": "hminchew@madmobile.com",
     "title": "Lead Software Engineer",
     "team": "Restaurant Backend",
     "manager": "Kyle Budd",
@@ -2139,6 +2382,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "hminchew@madmobile.com",
+        "title": "Principal Architect",
+        "department": "Architecture",
+        "office": "Remote - North America ",
+        "manager": "John Thompson (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:34Z"
       }
     },
     "activity": {
@@ -2175,7 +2427,7 @@
     "id": "anderson-lavor",
     "canonical_name": "Anderson Lavor",
     "aliases": [],
-    "email": null,
+    "email": "anderson.lavor@madmobile.com",
     "title": "Lead Software Engineer",
     "team": "Restaurant Backend",
     "manager": "Kyle Budd",
@@ -2229,6 +2481,15 @@
           "ES",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "anderson.lavor@madmobile.com",
+        "title": "Staff Software Engineer",
+        "department": "Software Development",
+        "office": "Houston ",
+        "manager": "Randy Brown",
+        "accountEnabled": true,
+        "createdDateTime": "2022-11-30T15:55:08Z"
       }
     },
     "activity": {
@@ -2261,7 +2522,7 @@
     "id": "zubair-syed",
     "canonical_name": "Zubair Syed",
     "aliases": [],
-    "email": null,
+    "email": "zubair.syed@madmobile.com",
     "title": "VP Engineering Enterprise Solutions",
     "team": "Enterprise",
     "manager": "Chathura Ratnayake",
@@ -2314,6 +2575,15 @@
           "MMA",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "zubair.syed@madmobile.com",
+        "title": "Senior Director Software Engineering",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Jack Kennedy",
+        "accountEnabled": true,
+        "createdDateTime": "2023-02-24T19:16:48Z"
       }
     },
     "activity": {
@@ -2346,7 +2616,7 @@
     "id": "akshay-bhasin",
     "canonical_name": "Akshay Bhasin",
     "aliases": [],
-    "email": null,
+    "email": "akshay.bhasin@madmobile.com",
     "title": "VP Payments Engineering",
     "team": "Payments",
     "manager": "Chathura Ratnayake",
@@ -2397,6 +2667,15 @@
         "spaces": [
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "akshay.bhasin@madmobile.com",
+        "title": "Payments Engineer ",
+        "department": "Payments",
+        "office": "Tampa",
+        "manager": "Chathura Ratnayake",
+        "accountEnabled": true,
+        "createdDateTime": "2025-09-04T16:08:43Z"
       }
     },
     "activity": {
@@ -2430,7 +2709,7 @@
     "id": "kevin-reyes",
     "canonical_name": "Kevin Reyes",
     "aliases": [],
-    "email": null,
+    "email": "kevin.reyes@madmobile.com",
     "title": "Director Software Engineering",
     "team": "Payments R&D",
     "manager": "Akshay Bhasin",
@@ -2482,6 +2761,15 @@
         "spaces": [
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "kevin.reyes@madmobile.com",
+        "title": "Manager Software Engineering",
+        "department": "Payments",
+        "office": "Remote - North America ",
+        "manager": "Michael Gibaldi (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-03-15T20:12:14Z"
       }
     },
     "activity": {
@@ -2515,7 +2803,7 @@
     "id": "trenton-kress",
     "canonical_name": "Trenton Kress",
     "aliases": [],
-    "email": null,
+    "email": "trenton.kress@madmobile.com",
     "title": "Staff Software Engineer",
     "team": "Payments R&D",
     "manager": "Kevin Reyes",
@@ -2568,6 +2856,15 @@
           "MMA",
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "trenton.kress@madmobile.com",
+        "title": "Software Engineer",
+        "department": "Payments",
+        "office": "Remote - North America ",
+        "manager": "Kevin Reyes",
+        "accountEnabled": true,
+        "createdDateTime": "2021-09-30T12:34:22Z"
       }
     },
     "activity": {
@@ -2753,7 +3050,7 @@
     "id": "richard-meitzler",
     "canonical_name": "Richard Meitzler",
     "aliases": [],
-    "email": null,
+    "email": "rmeitzler@madmobile.com",
     "title": "Staff Software Engineer",
     "team": "Payments R&D",
     "manager": "Kevin Reyes",
@@ -2805,6 +3102,15 @@
           "MMA",
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "rmeitzler@madmobile.com",
+        "title": "Staff Software Engineer",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Daniel Lomsak",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:37Z"
       }
     },
     "activity": {
@@ -2837,7 +3143,7 @@
     "aliases": [
       "Gayan K"
     ],
-    "email": null,
+    "email": "gayan.karunarathna@madmobile.com",
     "title": "Staff Software Engineer",
     "team": "Payments R&D",
     "manager": "Kevin Reyes",
@@ -2889,6 +3195,15 @@
         "spaces": [
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "gayan.karunarathna@madmobile.com",
+        "title": "Staff Software Engineer",
+        "department": "Payments",
+        "office": "Sri Lanka ",
+        "manager": "Kevin Reyes",
+        "accountEnabled": true,
+        "createdDateTime": "2021-05-31T15:59:19Z"
       }
     },
     "activity": {
@@ -2925,7 +3240,7 @@
     "aliases": [
       "Susampath M"
     ],
-    "email": null,
+    "email": "susampath.madarasinghe@madmobile.com",
     "title": "Senior Software Engineer",
     "team": "Payments R&D",
     "manager": "Kevin Reyes",
@@ -2980,6 +3295,15 @@
           "PROD",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "susampath.madarasinghe@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Software Development",
+        "office": "Sri Lanka ",
+        "manager": "Suneth De Soyza",
+        "accountEnabled": true,
+        "createdDateTime": "2024-06-14T11:51:18Z"
       }
     },
     "activity": {
@@ -3012,7 +3336,7 @@
     "id": "matthew-griffin",
     "canonical_name": "Matthew Griffin",
     "aliases": [],
-    "email": null,
+    "email": "matt.griffin@madmobile.com",
     "title": "Senior Cloud Engineer",
     "team": "Payments R&D",
     "manager": "Kevin Reyes",
@@ -3068,6 +3392,15 @@
           "CCE",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "matt.griffin@madmobile.com",
+        "title": "Senior Cloud Engineer",
+        "department": "Solution Operations",
+        "office": "Remote - North America ",
+        "manager": "Charles Boice (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2021-09-30T12:33:24Z"
       }
     },
     "activity": {
@@ -3102,7 +3435,7 @@
     "id": "sowjanya-akula",
     "canonical_name": "Sowjanya Akula",
     "aliases": [],
-    "email": null,
+    "email": "sowjanya.akula@madmobile.com",
     "title": "Senior Quality Engineer",
     "team": "Restaurant QE",
     "manager": "Akshay Bhasin",
@@ -3154,6 +3487,15 @@
         "spaces": [
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "sowjanya.akula@madmobile.com",
+        "title": "Senior Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Daniel Lomsak",
+        "accountEnabled": true,
+        "createdDateTime": "2022-07-29T13:48:58Z"
       }
     },
     "activity": {
@@ -3220,7 +3562,7 @@
     "id": "darren-blackwell",
     "canonical_name": "Darren Blackwell",
     "aliases": [],
-    "email": null,
+    "email": "darren.blackwell@madmobile.com",
     "title": "Quality Automation Engineer",
     "team": "Restaurant QE",
     "manager": "Akshay Bhasin",
@@ -3270,6 +3612,15 @@
         "spaces": [
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "darren.blackwell@madmobile.com",
+        "title": "Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Anthony Goad",
+        "accountEnabled": true,
+        "createdDateTime": "2021-11-08T19:27:39Z"
       }
     },
     "activity": {
@@ -3301,7 +3652,7 @@
     "id": "rekha-mohanan",
     "canonical_name": "Rekha Mohanan",
     "aliases": [],
-    "email": null,
+    "email": "rekha.mohanan@madmobile.com",
     "title": "Senior Quality Engineer",
     "team": "Restaurant QE",
     "manager": "Akshay Bhasin",
@@ -3354,6 +3705,15 @@
         "spaces": [
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "rekha.mohanan@madmobile.com",
+        "title": "QA Engineer",
+        "department": "Payments",
+        "office": "Tampa",
+        "manager": "Akshay Bhasin",
+        "accountEnabled": true,
+        "createdDateTime": "2025-11-07T17:41:27Z"
       }
     },
     "activity": {
@@ -3387,7 +3747,7 @@
     "id": "bill-fenley",
     "canonical_name": "Bill Fenley",
     "aliases": [],
-    "email": null,
+    "email": "bill.fenley@madmobile.com",
     "title": "Senior Software Engineer Quality",
     "team": "Restaurant QE",
     "manager": "Akshay Bhasin",
@@ -3441,6 +3801,15 @@
           "AIMM",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "bill.fenley@madmobile.com",
+        "title": "Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Daniel Lomsak",
+        "accountEnabled": true,
+        "createdDateTime": "2022-10-05T17:25:52Z"
       }
     },
     "activity": {
@@ -3474,7 +3843,7 @@
     "id": "kaelon-lucas",
     "canonical_name": "Kaelon Lucas",
     "aliases": [],
-    "email": null,
+    "email": "kaelon.lucas@madmobile.com",
     "title": "Quality Automation Engineer",
     "team": "Restaurant QE",
     "manager": "Akshay Bhasin",
@@ -3517,6 +3886,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "kaelon.lucas@madmobile.com",
+        "title": "Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Anthony Goad",
+        "accountEnabled": true,
+        "createdDateTime": "2022-07-08T13:19:09Z"
       }
     },
     "activity": {
@@ -3548,7 +3926,7 @@
     "id": "patrycja-stevenson",
     "canonical_name": "Patrycja Stevenson",
     "aliases": [],
-    "email": null,
+    "email": "patrycja.stevenson@madmobile.com",
     "title": "Senior Software Engineer Quality",
     "team": "Restaurant QE",
     "manager": "Akshay Bhasin",
@@ -3602,6 +3980,15 @@
           "P",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "patrycja.stevenson@madmobile.com",
+        "title": "Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Anthony Goad",
+        "accountEnabled": true,
+        "createdDateTime": "2022-11-30T18:58:29Z"
       }
     },
     "activity": {
@@ -3771,7 +4158,7 @@
     "id": "angie-mroczka",
     "canonical_name": "Angie Mroczka",
     "aliases": [],
-    "email": null,
+    "email": "angie.mroczka@madmobile.com",
     "title": "Payment Risk Fraud Analyst",
     "team": "Payments Biz Ops",
     "manager": "Andy Honnold",
@@ -3805,6 +4192,15 @@
         "spaces": [
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "angie.mroczka@madmobile.com",
+        "title": "Payment Risk Fraud Analyst",
+        "department": "Payments",
+        "office": "Remote - North America ",
+        "manager": "William Yen (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-09-02T18:30:21Z"
       }
     },
     "activity": {
@@ -3835,7 +4231,7 @@
     "id": "mark-freid",
     "canonical_name": "Mark Freid",
     "aliases": [],
-    "email": null,
+    "email": "mark.freid@madmobile.com",
     "title": "Senior Security Engineer",
     "team": "PCI Compliance",
     "manager": "Akshay Bhasin",
@@ -3884,6 +4280,15 @@
         "spaces": [
           "CCE"
         ]
+      },
+      "m365_directory": {
+        "mail": "mark.freid@madmobile.com",
+        "title": "Senior Security Engineer",
+        "department": "IT Security",
+        "office": "Remote - North America ",
+        "manager": "Matias Riglos",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-28T17:18:05Z"
       }
     },
     "activity": {
@@ -3916,7 +4321,7 @@
     "aliases": [
       "Debbie K."
     ],
-    "email": null,
+    "email": "debbie.keye@madmobile.com",
     "title": "PMO",
     "team": "PCI Compliance",
     "manager": "Akshay Bhasin",
@@ -3968,6 +4373,15 @@
         "spaces": [
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "debbie.keye@madmobile.com",
+        "title": "SCRUM Master",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Mark Guilarte",
+        "accountEnabled": true,
+        "createdDateTime": "2023-08-04T14:58:41Z"
       }
     },
     "activity": {
@@ -4031,7 +4445,7 @@
     "aliases": [
       "Matias Riglos"
     ],
-    "email": null,
+    "email": "mriglos@madmobile.com",
     "title": "Solution Operations",
     "team": "PCI Compliance",
     "manager": "Akshay Bhasin",
@@ -4085,6 +4499,15 @@
           "DB",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "mriglos@madmobile.com",
+        "title": "Contractor",
+        "department": "Solution Operations",
+        "office": "Remote - International ",
+        "manager": "Charles Boice (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:36Z"
       }
     },
     "activity": {
@@ -4123,7 +4546,7 @@
     "aliases": [
       "Vanessa S."
     ],
-    "email": null,
+    "email": "vsotomayor@madmobile.com",
     "title": "Program Manager",
     "team": "Payments PMO",
     "manager": "Akshay Bhasin",
@@ -4177,6 +4600,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "vsotomayor@madmobile.com",
+        "title": "Program Manager",
+        "department": "Payments",
+        "office": "Tampa HQ",
+        "manager": "Carla Castle (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:39Z"
       }
     },
     "activity": {
@@ -4209,7 +4641,7 @@
     "id": "mark-guilarte",
     "canonical_name": "Mark Guilarte",
     "aliases": [],
-    "email": null,
+    "email": "mark.guilarte@madmobile.com",
     "title": "VP Program Management",
     "team": "PMO",
     "manager": "Chathura Ratnayake",
@@ -4253,6 +4685,15 @@
           "PROD",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "mark.guilarte@madmobile.com",
+        "title": "Senior Director Program Management",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Carla Castle (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2023-01-03T21:07:18Z"
       }
     },
     "activity": {
@@ -4344,6 +4785,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "qpannu@madmobile.com",
+        "title": "Senior Program Manager",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Mark Guilarte",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:37Z"
       }
     },
     "activity": {
@@ -4413,7 +4863,7 @@
     "id": "jack-kennedy",
     "canonical_name": "Jack Kennedy",
     "aliases": [],
-    "email": null,
+    "email": "jkennedy@madmobile.com",
     "title": "CTO",
     "team": null,
     "manager": "Don Salama",
@@ -4466,6 +4916,15 @@
           "MMA",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "jkennedy@madmobile.com",
+        "title": "EVP Retail Platform Solutions & AI",
+        "department": "AI Group",
+        "office": "Tampa HQ",
+        "manager": "Bruce Bennett",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:34Z"
       }
     },
     "activity": {
@@ -4500,7 +4959,7 @@
     "id": "jeremy-diggins",
     "canonical_name": "Jeremy Diggins",
     "aliases": [],
-    "email": null,
+    "email": "jeremy.diggins@madmobile.com",
     "title": "Director Enterprise Technology",
     "team": "Enterprise Technology",
     "manager": "Jack Kennedy",
@@ -4541,6 +5000,15 @@
         "prs_authored": 1,
         "prs_reviewed": 20,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "jeremy.diggins@madmobile.com",
+        "title": "Director of Enterprise Technology",
+        "department": "Program Management",
+        "office": "Remote",
+        "manager": "Tommy Coppick (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-03-11T21:10:31Z"
       }
     },
     "activity": {
@@ -4573,7 +5041,7 @@
     "id": "bailey-shatney",
     "canonical_name": "Bailey Shatney",
     "aliases": [],
-    "email": null,
+    "email": "bailey.shatney@madmobile.com",
     "title": "VP Human Resources",
     "team": null,
     "manager": "Don Salama",
@@ -4598,6 +5066,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "bailey.shatney@madmobile.com",
+        "title": "Director of HR",
+        "department": "People Operations",
+        "office": "Tampa",
+        "manager": "David Strainick",
+        "accountEnabled": true,
+        "createdDateTime": "2025-05-08T19:43:21Z"
       }
     },
     "activity": {
@@ -4626,7 +5103,7 @@
     "id": "renee-pauley",
     "canonical_name": "Renee Pauley",
     "aliases": [],
-    "email": null,
+    "email": "renee.pauley@madmobile.com",
     "title": "Recruiting",
     "team": "Recruiting",
     "manager": "Bailey Shatney",
@@ -4651,6 +5128,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "renee.pauley@madmobile.com",
+        "title": "Recruiter",
+        "department": "People Operations",
+        "office": "Tampa",
+        "manager": "Bailey Shatney",
+        "accountEnabled": true,
+        "createdDateTime": "2025-04-24T19:35:50Z"
       }
     },
     "activity": {
@@ -4737,7 +5223,7 @@
     "id": "bill-lodes",
     "canonical_name": "Bill Lodes",
     "aliases": [],
-    "email": null,
+    "email": "bill.lodes@madmobile.com",
     "title": "Former CRO",
     "team": null,
     "manager": null,
@@ -4750,6 +5236,15 @@
       "org_chart": {
         "account_id": null,
         "email": null
+      },
+      "m365_directory": {
+        "mail": "bill.lodes@madmobile.com",
+        "title": "EVP & GM Restaurant & Payment Solutions",
+        "department": "General Operations",
+        "office": "Tampa HQ",
+        "manager": "Bruce Bennett",
+        "accountEnabled": true,
+        "createdDateTime": "2023-09-28T15:35:24Z"
       }
     },
     "activity": {
@@ -4770,7 +5265,7 @@
     "id": "ryan-schinsky",
     "canonical_name": "Ryan Schinsky",
     "aliases": [],
-    "email": null,
+    "email": "ryan.schinsky@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -4791,6 +5286,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "ryan.schinsky@madmobile.com",
+        "title": "Customer Success Associate",
+        "department": "Customer Success",
+        "office": "Tampa",
+        "manager": "Emily Stineman",
+        "accountEnabled": true,
+        "createdDateTime": "2025-12-30T18:48:58Z"
       }
     },
     "activity": {
@@ -4819,7 +5323,7 @@
     "id": "kiel-williams",
     "canonical_name": "Kiel Williams",
     "aliases": [],
-    "email": null,
+    "email": "kiel.williams@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -4840,6 +5344,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "kiel.williams@madmobile.com",
+        "title": "L1",
+        "department": "Customer Support",
+        "office": "Tampa",
+        "manager": "Michael Lee",
+        "accountEnabled": true,
+        "createdDateTime": "2025-08-06T16:10:35Z"
       }
     },
     "activity": {
@@ -4962,7 +5475,7 @@
     "id": "abigail-bernstein",
     "canonical_name": "Abigail Bernstein",
     "aliases": [],
-    "email": null,
+    "email": "Abigail.Bernstein@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -4983,6 +5496,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "Abigail.Bernstein@madmobile.com",
+        "title": "Customer Success Manager",
+        "department": "Customer Success",
+        "office": "Tampa HQ",
+        "manager": "Taylor Butto (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-09-24T18:06:47Z"
       }
     },
     "activity": {
@@ -5003,7 +5525,7 @@
     "id": "nicholas-allen",
     "canonical_name": "Nicholas Allen",
     "aliases": [],
-    "email": null,
+    "email": "nicholas.allen@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -5024,6 +5546,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "nicholas.allen@madmobile.com",
+        "title": "L1 Associate Technical Support Specialist",
+        "department": "Customer Support",
+        "office": "Tampa HQ",
+        "manager": "Joel Maldonado (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2025-01-13T21:08:48Z"
       }
     },
     "activity": {
@@ -5044,7 +5575,7 @@
     "id": "rusiru-perera",
     "canonical_name": "Rusiru Perera",
     "aliases": [],
-    "email": null,
+    "email": "rusiru.perera@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -5091,6 +5622,15 @@
         "spaces": [
           "DB"
         ]
+      },
+      "m365_directory": {
+        "mail": "rusiru.perera@madmobile.com",
+        "title": null,
+        "department": "Customer Support",
+        "office": null,
+        "manager": "Anoma Perera (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-01-04T03:50:23Z"
       }
     },
     "activity": {
@@ -5122,7 +5662,7 @@
     "id": "kien-pham",
     "canonical_name": "Kien Pham",
     "aliases": [],
-    "email": null,
+    "email": "kien.pham@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -5159,6 +5699,15 @@
         "prs_authored": 0,
         "prs_reviewed": 6,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "kien.pham@madmobile.com",
+        "title": "Sr. Software Engineer",
+        "department": "Software Development",
+        "office": "Remote",
+        "manager": "Zubair Syed",
+        "accountEnabled": true,
+        "createdDateTime": "2024-06-14T18:09:42Z"
       }
     },
     "activity": {
@@ -5189,7 +5738,7 @@
     "id": "wenushka-dikowita",
     "canonical_name": "Wenushka Dikowita",
     "aliases": [],
-    "email": null,
+    "email": "wenushka.dikowita@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -5240,6 +5789,15 @@
           "LP",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "wenushka.dikowita@madmobile.com",
+        "title": "Senior Manager Software Engineering",
+        "department": "Engineering",
+        "office": "Sri Lanka ",
+        "manager": "Ahesh Perera (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-06-04T04:33:33Z"
       }
     },
     "activity": {
@@ -5274,7 +5832,7 @@
     "id": "christian-orellana",
     "canonical_name": "Christian Orellana",
     "aliases": [],
-    "email": null,
+    "email": "christian.orellana@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -5295,6 +5853,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "christian.orellana@madmobile.com",
+        "title": "L1 Customer Support",
+        "department": "Customer Support",
+        "office": "Tampa",
+        "manager": "Joel Maldonado (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2025-07-07T14:16:42Z"
       }
     },
     "activity": {
@@ -5315,7 +5882,7 @@
     "id": "malinda-lamahewa",
     "canonical_name": "Malinda Lamahewa",
     "aliases": [],
-    "email": null,
+    "email": "malinda.lamahewa@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -5351,6 +5918,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "malinda.lamahewa@madmobile.com",
+        "title": "Senior Salesforce Developer",
+        "department": "Data Strategy",
+        "office": "Sri Lanka ",
+        "manager": "Eriq Breland (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2023-11-09T11:59:19Z"
       }
     },
     "activity": {
@@ -5382,7 +5958,7 @@
     "id": "benjamin-roedell",
     "canonical_name": "Benjamin Roedell",
     "aliases": [],
-    "email": null,
+    "email": "benjamin.roedell@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -5437,6 +6013,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "benjamin.roedell@madmobile.com",
+        "title": "Solution Architect",
+        "department": "Architecture",
+        "office": "Tampa HQ",
+        "manager": "John Thompson (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2023-09-07T14:34:58Z"
       }
     },
     "activity": {
@@ -5473,7 +6058,7 @@
     "id": "daniel-leniz",
     "canonical_name": "Daniel Leniz",
     "aliases": [],
-    "email": null,
+    "email": "daniel.leniz@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -5494,6 +6079,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "daniel.leniz@madmobile.com",
+        "title": "L1",
+        "department": "Customer Support",
+        "office": "Tampa",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-08-06T19:25:27Z"
       }
     },
     "activity": {
@@ -5514,7 +6108,7 @@
     "id": "poorna-manujaya-amarasingha",
     "canonical_name": "Poorna Manujaya Amarasingha",
     "aliases": [],
-    "email": null,
+    "email": "poorna.amarasingha@madmobile.com",
     "title": null,
     "team": "Enterprise",
     "manager": null,
@@ -5566,6 +6160,15 @@
           "LP",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "poorna.amarasingha@madmobile.com",
+        "title": "Cloud Engineer",
+        "department": "Solution Operations",
+        "office": "Sri Lanka ",
+        "manager": "Kasun Lokuliyana ( Shared Mailbox )",
+        "accountEnabled": true,
+        "createdDateTime": "2023-10-11T11:10:50Z"
       }
     },
     "activity": {
@@ -5601,7 +6204,7 @@
     "id": "sriharshith-akula",
     "canonical_name": "Sriharshith Akula",
     "aliases": [],
-    "email": null,
+    "email": "sriharshith.akula@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -5638,6 +6241,15 @@
         "prs_authored": 1,
         "prs_reviewed": 0,
         "review_cluster": "syscolabs"
+      },
+      "m365_directory": {
+        "mail": "sriharshith.akula@madmobile.com",
+        "title": "Intern",
+        "department": "AI Group",
+        "office": "Tampa",
+        "manager": "Jack Kennedy",
+        "accountEnabled": true,
+        "createdDateTime": "2024-07-28T02:06:06Z"
       }
     },
     "activity": {
@@ -5711,7 +6323,7 @@
     "id": "cameron-yelverton",
     "canonical_name": "Cameron Yelverton",
     "aliases": [],
-    "email": null,
+    "email": "cameron.yelverton@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -5732,6 +6344,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "cameron.yelverton@madmobile.com",
+        "title": "L1",
+        "department": "Customer Support",
+        "office": "Tampa",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-10-16T15:33:13Z"
       }
     },
     "activity": {
@@ -5752,7 +6373,7 @@
     "id": "brew-lamb",
     "canonical_name": "Brew Lamb",
     "aliases": [],
-    "email": null,
+    "email": "brew.lamb@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -5799,6 +6420,15 @@
         "spaces": [
           "CR"
         ]
+      },
+      "m365_directory": {
+        "mail": "brew.lamb@madmobile.com",
+        "title": "Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Anthony Goad",
+        "accountEnabled": true,
+        "createdDateTime": "2023-09-22T14:21:03Z"
       }
     },
     "activity": {
@@ -5830,7 +6460,7 @@
     "id": "sumeera-perera",
     "canonical_name": "Sumeera Perera",
     "aliases": [],
-    "email": null,
+    "email": "sumeera.perera@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -5868,6 +6498,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "sumeera.perera@madmobile.com",
+        "title": "SRE Engineer",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Anoma Perera (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2023-11-06T03:16:27Z"
       }
     },
     "activity": {
@@ -5899,7 +6538,7 @@
     "id": "adam-veliz",
     "canonical_name": "Adam Veliz",
     "aliases": [],
-    "email": null,
+    "email": "adam.veliz@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -5920,6 +6559,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "adam.veliz@madmobile.com",
+        "title": "CSM",
+        "department": "Customer Success",
+        "office": "Tampa",
+        "manager": "Taylor Butto (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2025-11-14T16:20:13Z"
       }
     },
     "activity": {
@@ -5948,7 +6596,7 @@
     "id": "zachary-mccoy",
     "canonical_name": "Zachary McCoy",
     "aliases": [],
-    "email": null,
+    "email": "zachary.mccoy@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -5969,6 +6617,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "zachary.mccoy@madmobile.com",
+        "title": "L1",
+        "department": "Customer Support",
+        "office": "Tampa",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-08-06T19:44:11Z"
       }
     },
     "activity": {
@@ -5989,7 +6646,7 @@
     "id": "danika-munasinghe",
     "canonical_name": "Danika Munasinghe",
     "aliases": [],
-    "email": null,
+    "email": "danika.munasinghe@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -6038,6 +6695,15 @@
           "CCE",
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "danika.munasinghe@madmobile.com",
+        "title": "Senior Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Sri Lanka ",
+        "manager": "Ruvini Shanika (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-04-09T06:13:19Z"
       }
     },
     "activity": {
@@ -6066,7 +6732,7 @@
     "id": "sadeep-udugama",
     "canonical_name": "Sadeep Udugama",
     "aliases": [],
-    "email": null,
+    "email": "sadeep.udugama@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -6087,6 +6753,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "sadeep.udugama@madmobile.com",
+        "title": "Contractor",
+        "department": "Customer Support",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2024-07-31T13:58:47Z"
       }
     },
     "activity": {
@@ -6107,7 +6782,7 @@
     "id": "gregory-ladgin",
     "canonical_name": "Gregory Ladgin",
     "aliases": [],
-    "email": null,
+    "email": "gregory.ladgin@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -6144,6 +6819,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "gregory.ladgin@madmobile.com",
+        "title": "L2 Technical Support Specialist",
+        "department": "Customer Support",
+        "office": "Tampa HQ",
+        "manager": "Michael Lee",
+        "accountEnabled": true,
+        "createdDateTime": "2024-02-16T18:53:04Z"
       }
     },
     "activity": {
@@ -6175,7 +6859,7 @@
     "id": "sumnima-shah",
     "canonical_name": "Sumnima Shah",
     "aliases": [],
-    "email": null,
+    "email": "sumnima.shah@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -6212,6 +6896,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "sumnima.shah@madmobile.com",
+        "title": "Staff Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Anthony Goad",
+        "accountEnabled": true,
+        "createdDateTime": "2023-10-18T21:07:07Z"
       }
     },
     "activity": {
@@ -6240,7 +6933,7 @@
     "id": "jessica-conn",
     "canonical_name": "Jessica Conn",
     "aliases": [],
-    "email": null,
+    "email": "jessica.conn@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -6281,6 +6974,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "jessica.conn@madmobile.com",
+        "title": "L2 Support",
+        "department": "Customer Support",
+        "office": "Tampa",
+        "manager": "James Oliver",
+        "accountEnabled": true,
+        "createdDateTime": "2025-10-08T17:43:02Z"
       }
     },
     "activity": {
@@ -6312,7 +7014,7 @@
     "id": "suneth-de-soyza",
     "canonical_name": "Suneth De Soyza",
     "aliases": [],
-    "email": null,
+    "email": "suneth.desoyza@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -6359,6 +7061,15 @@
           "PROD",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "suneth.desoyza@madmobile.com",
+        "title": "Manager Software Engineering",
+        "department": "Software Development",
+        "office": "Sri Lanka ",
+        "manager": "Zubair Syed",
+        "accountEnabled": true,
+        "createdDateTime": "2024-02-25T15:01:26Z"
       }
     },
     "activity": {
@@ -6444,7 +7155,7 @@
     "id": "megan-messmore",
     "canonical_name": "Megan Messmore",
     "aliases": [],
-    "email": null,
+    "email": "megan.messmore@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -6469,6 +7180,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "megan.messmore@madmobile.com",
+        "title": "CSM",
+        "department": "Customer Success ",
+        "office": "Tampa",
+        "manager": "Tyler Johnson (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2025-03-20T16:43:54Z"
       }
     },
     "activity": {
@@ -6561,7 +7281,7 @@
     "id": "emily-stineman",
     "canonical_name": "Emily Stineman",
     "aliases": [],
-    "email": null,
+    "email": "emily.stineman@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -6586,6 +7306,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "emily.stineman@madmobile.com",
+        "title": "Customer Onboarding Team Leader",
+        "department": "Customer Success",
+        "office": "Tampa HQ",
+        "manager": "Das DeSilva",
+        "accountEnabled": true,
+        "createdDateTime": "2024-01-04T21:18:36Z"
       }
     },
     "activity": {
@@ -6614,7 +7343,7 @@
     "id": "michael-lee",
     "canonical_name": "Michael Lee",
     "aliases": [],
-    "email": null,
+    "email": "Michael.Lee@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -6641,6 +7370,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "Michael.Lee@madmobile.com",
+        "title": "Technical Customer Support Supervisor",
+        "department": "Customer Support",
+        "office": "Tampa HQ",
+        "manager": "Marko Milakovic (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-05-01T15:29:32Z"
       }
     },
     "activity": {
@@ -6672,7 +7410,7 @@
     "id": "isaac-kim",
     "canonical_name": "Isaac Kim",
     "aliases": [],
-    "email": null,
+    "email": "isaac.kim@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -6693,6 +7431,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "isaac.kim@madmobile.com",
+        "title": "L1",
+        "department": "Customer Support",
+        "office": "Tampa",
+        "manager": "Joel Maldonado (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2025-08-06T16:38:40Z"
       }
     },
     "activity": {
@@ -6713,7 +7460,7 @@
     "id": "rusty-clark",
     "canonical_name": "Rusty Clark",
     "aliases": [],
-    "email": null,
+    "email": "rusty.clark@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -6749,6 +7496,15 @@
         "prs_authored": 13,
         "prs_reviewed": 29,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "rusty.clark@madmobile.com",
+        "title": "SI Integrator",
+        "department": "External Peak Activity",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-09-16T14:19:00Z"
       }
     },
     "activity": {
@@ -6779,7 +7535,7 @@
     "id": "sanduni-dissanayaka",
     "canonical_name": "Sanduni Dissanayaka",
     "aliases": [],
-    "email": null,
+    "email": "sanduni.dissanayaka@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -6828,6 +7584,15 @@
           "CCE",
           "LP"
         ]
+      },
+      "m365_directory": {
+        "mail": "sanduni.dissanayaka@madmobile.com",
+        "title": "SRE Engineer",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Anoma Perera (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-05-10T03:22:31Z"
       }
     },
     "activity": {
@@ -6859,7 +7624,7 @@
     "id": "inushi-gunathilake",
     "canonical_name": "Inushi Gunathilake",
     "aliases": [],
-    "email": null,
+    "email": "inushi.gunathilake@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -6898,6 +7663,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "inushi.gunathilake@madmobile.com",
+        "title": "Customer Support",
+        "department": "Customer Support",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2024-04-08T11:51:13Z"
       }
     },
     "activity": {
@@ -6929,7 +7703,7 @@
     "id": "antonio-mussi",
     "canonical_name": "Antonio Mussi",
     "aliases": [],
-    "email": null,
+    "email": "antonio.mussi@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -6954,6 +7728,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "antonio.mussi@madmobile.com",
+        "title": "Developer - Peak Activity",
+        "department": "External SI Peak Activity",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2026-01-08T14:50:06Z"
       }
     },
     "activity": {
@@ -7122,7 +7905,7 @@
     "aliases": [
       "Nishen Peiris"
     ],
-    "email": null,
+    "email": "nishani.peiris@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -7172,6 +7955,15 @@
           "LP",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "nishani.peiris@madmobile.com",
+        "title": "Senior Data Engineer",
+        "department": "Data Strategy",
+        "office": "Sri Lanka ",
+        "manager": "Eriq Breland (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-01-04T03:48:26Z"
       }
     },
     "activity": {
@@ -7338,7 +8130,7 @@
     "id": "hashan-prabodhaka-jalath",
     "canonical_name": "Hashan Prabodhaka Jalath",
     "aliases": [],
-    "email": null,
+    "email": "hashan.jalath@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -7384,6 +8176,15 @@
           "LP",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "hashan.jalath@madmobile.com",
+        "title": " Senior DevOps Engineer",
+        "department": "Solution Operations",
+        "office": "Sri Lanka ",
+        "manager": "Kasun Lokuliyana ( Shared Mailbox )",
+        "accountEnabled": true,
+        "createdDateTime": "2023-11-07T05:15:34Z"
       }
     },
     "activity": {
@@ -7465,6 +8266,15 @@
           "LP",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "raveen.panditha@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Software Development",
+        "office": "Sri Lanka ",
+        "manager": "Malinda Wijegunawardene (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2023-11-09T11:54:11Z"
       }
     },
     "activity": {
@@ -7497,7 +8307,7 @@
     "id": "cheri-siedle",
     "canonical_name": "Cheri Siedle",
     "aliases": [],
-    "email": null,
+    "email": "cheri.siedle@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -7523,6 +8333,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "cheri.siedle@madmobile.com",
+        "title": "Program Manager - Peak Activity",
+        "department": "External - Peak Activity",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2026-01-08T17:13:56Z"
       }
     },
     "activity": {
@@ -7551,7 +8370,7 @@
     "id": "madison-bloomfield",
     "canonical_name": "Madison Bloomfield",
     "aliases": [],
-    "email": null,
+    "email": "madison.bloomfield@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -7576,6 +8395,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "madison.bloomfield@madmobile.com",
+        "title": "CSA",
+        "department": "Customer Success",
+        "office": "Tampa",
+        "manager": "Alexis Maltes",
+        "accountEnabled": true,
+        "createdDateTime": "2025-10-02T19:19:35Z"
       }
     },
     "activity": {
@@ -7604,7 +8432,7 @@
     "id": "natasha-samath",
     "canonical_name": "Natasha Samath",
     "aliases": [],
-    "email": null,
+    "email": "natasha.samath@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -7625,6 +8453,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "natasha.samath@madmobile.com",
+        "title": "L1 Associate Technical Support Specialist",
+        "department": "Customer Support",
+        "office": "Tampa HQ",
+        "manager": "Michael Lee",
+        "accountEnabled": true,
+        "createdDateTime": "2023-10-26T18:35:27Z"
       }
     },
     "activity": {
@@ -7645,7 +8482,7 @@
     "id": "chathura-lalinda-ranasingha",
     "canonical_name": "Chathura Lalinda Ranasingha",
     "aliases": [],
-    "email": null,
+    "email": "lalinda.ranasingha@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -7683,6 +8520,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "lalinda.ranasingha@madmobile.com",
+        "title": "Senior SRE Engineer",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Anoma Perera (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2024-02-19T08:32:25Z"
       }
     },
     "activity": {
@@ -7749,6 +8595,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "adam.lazarus@madmobile.com",
+        "title": "Tech- Consultant ",
+        "department": null,
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2026-04-01T13:08:12Z"
       }
     },
     "activity": {
@@ -7771,7 +8626,7 @@
     "id": "pramodi-fernando",
     "canonical_name": "Pramodi Fernando",
     "aliases": [],
-    "email": null,
+    "email": "pramodi.fernando@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -7811,6 +8666,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "pramodi.fernando@madmobile.com",
+        "title": "L2 Senior Technical Support",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Anoma Perera (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2023-02-20T07:43:45Z"
       }
     },
     "activity": {
@@ -7842,7 +8706,7 @@
     "id": "daniel-lomsak",
     "canonical_name": "Daniel Lomsak",
     "aliases": [],
-    "email": null,
+    "email": "daniel.lomsak@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -7886,6 +8750,15 @@
           "MMA",
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "daniel.lomsak@madmobile.com",
+        "title": "Senior Director Software Engineering",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Chathura Ratnayake",
+        "accountEnabled": true,
+        "createdDateTime": "2022-08-16T19:35:39Z"
       }
     },
     "activity": {
@@ -7916,7 +8789,7 @@
     "id": "dilruwan-madubashitha",
     "canonical_name": "Dilruwan Madubashitha",
     "aliases": [],
-    "email": null,
+    "email": "dilruwan.madubashitha@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -7964,6 +8837,15 @@
           "DB",
           "LP"
         ]
+      },
+      "m365_directory": {
+        "mail": "dilruwan.madubashitha@madmobile.com",
+        "title": "Director Technical Support",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Marko Milakovic (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-07-29T17:02:08Z"
       }
     },
     "activity": {
@@ -7995,7 +8877,7 @@
     "id": "dulana-dharmaratne",
     "canonical_name": "Dulana Dharmaratne",
     "aliases": [],
-    "email": null,
+    "email": "dulana.dharmaratne@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -8033,6 +8915,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "dulana.dharmaratne@madmobile.com",
+        "title": "Senior SRE Engineer",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Anoma Perera (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-07-11T03:41:31Z"
       }
     },
     "activity": {
@@ -8064,7 +8955,7 @@
     "id": "holly-culver",
     "canonical_name": "Holly Culver",
     "aliases": [],
-    "email": null,
+    "email": "holly.culver@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -8102,6 +8993,15 @@
         "prs_authored": 17,
         "prs_reviewed": 508,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "holly.culver@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Technical Resources",
+        "office": "Tampa HQ",
+        "manager": "Zubair Syed",
+        "accountEnabled": true,
+        "createdDateTime": "2022-06-01T14:06:28Z"
       }
     },
     "activity": {
@@ -8136,7 +9036,7 @@
     "id": "chalaka-sudusinghe",
     "canonical_name": "Chalaka Sudusinghe",
     "aliases": [],
-    "email": null,
+    "email": "chalaka.sudusinghe@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -8182,6 +9082,15 @@
           "LP",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "chalaka.sudusinghe@madmobile.com",
+        "title": "Staff Software Engineer",
+        "department": "Software Development",
+        "office": "Sri Lanka ",
+        "manager": "Lahiru Yapa (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-05-17T03:56:05Z"
       }
     },
     "activity": {
@@ -8216,7 +9125,7 @@
     "id": "hashan-maduwantha",
     "canonical_name": "Hashan Maduwantha",
     "aliases": [],
-    "email": null,
+    "email": "hashan.maduwantha@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -8261,6 +9170,15 @@
           "LP",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "hashan.maduwantha@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Software Development",
+        "office": "Sri Lanka ",
+        "manager": "Firzadh Farook (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-05-03T03:53:16Z"
       }
     },
     "activity": {
@@ -8296,7 +9214,7 @@
     "id": "roopa-kaukuri",
     "canonical_name": "Roopa Kaukuri",
     "aliases": [],
-    "email": null,
+    "email": "nagaswaroopa.kaukuri@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -8343,6 +9261,15 @@
         "spaces": [
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "nagaswaroopa.kaukuri@madmobile.com",
+        "title": "Senior Salesforce Developer",
+        "department": "Data Strategy",
+        "office": "Remote - North America ",
+        "manager": "Eriq Breland (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-04-21T16:26:15Z"
       }
     },
     "activity": {
@@ -8454,7 +9381,7 @@
     "id": "adam-hartman",
     "canonical_name": "Adam Hartman",
     "aliases": [],
-    "email": null,
+    "email": "adam.hartman@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -8486,6 +9413,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "adam.hartman@madmobile.com",
+        "title": "L2 Technical Support Representative",
+        "department": "Customer Support",
+        "office": "Remote - North America ",
+        "manager": "Marko Milakovic (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2022-02-04T19:30:26Z"
       }
     },
     "activity": {
@@ -8585,7 +9521,7 @@
     "id": "kanchana-amarathunga",
     "canonical_name": "Kanchana Amarathunga",
     "aliases": [],
-    "email": null,
+    "email": "kanchana.amarathunga@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -8626,6 +9562,15 @@
         "spaces": [
           "CCE"
         ]
+      },
+      "m365_directory": {
+        "mail": "kanchana.amarathunga@madmobile.com",
+        "title": "Senior SRE Engineer",
+        "department": "Payments",
+        "office": "Sri Lanka ",
+        "manager": "Altaaf Anver",
+        "accountEnabled": true,
+        "createdDateTime": "2021-10-15T04:23:46Z"
       }
     },
     "activity": {
@@ -8654,7 +9599,7 @@
     "id": "matt-cooke",
     "canonical_name": "Matt Cooke",
     "aliases": [],
-    "email": null,
+    "email": "matt.cooke@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -8691,6 +9636,15 @@
         "prs_authored": 16,
         "prs_reviewed": 257,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "matt.cooke@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Technical Resources",
+        "office": "Remote - North America ",
+        "manager": "Zubair Syed",
+        "accountEnabled": true,
+        "createdDateTime": "2021-10-07T20:29:50Z"
       }
     },
     "activity": {
@@ -8773,7 +9727,7 @@
     "id": "savumi-wadduwage",
     "canonical_name": "Savumi Wadduwage",
     "aliases": [],
-    "email": null,
+    "email": "savumi.wadduwage@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -8794,6 +9748,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "savumi.wadduwage@madmobile.com",
+        "title": "Manager Menu Management",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Dilruwan Madubashitha",
+        "accountEnabled": true,
+        "createdDateTime": "2021-09-01T03:02:28Z"
       }
     },
     "activity": {
@@ -8824,7 +9787,7 @@
     "id": "zohra-bhayani",
     "canonical_name": "Zohra Bhayani",
     "aliases": [],
-    "email": null,
+    "email": "zohra.bhayani@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -8861,6 +9824,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "zohra.bhayani@madmobile.com",
+        "title": "Quality Engineer",
+        "department": "Quality Engineering",
+        "office": "Tampa HQ",
+        "manager": "Anthony Goad",
+        "accountEnabled": true,
+        "createdDateTime": "2021-06-08T13:04:37Z"
       }
     },
     "activity": {
@@ -8889,7 +9861,7 @@
     "id": "mauro-villaseco",
     "canonical_name": "Mauro Villaseco",
     "aliases": [],
-    "email": null,
+    "email": "mvillaseco@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -8937,6 +9909,15 @@
           "ES",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "mvillaseco@madmobile.com",
+        "title": "Sr. Software Engineer",
+        "department": "Software Development",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2020-11-16T12:59:33Z"
       }
     },
     "activity": {
@@ -8971,7 +9952,7 @@
     "id": "jake-linder",
     "canonical_name": "jake linder",
     "aliases": [],
-    "email": null,
+    "email": "jake.linder@madmobile.com",
     "title": null,
     "team": "Restaurant",
     "manager": null,
@@ -9007,6 +9988,15 @@
           "PROD",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "jake.linder@madmobile.com",
+        "title": "Product Marketing Manager",
+        "department": "Marketing",
+        "office": "Remote - North America ",
+        "manager": "Karen Licker",
+        "accountEnabled": true,
+        "createdDateTime": "2020-09-02T18:30:20Z"
       }
     },
     "activity": {
@@ -9091,7 +10081,7 @@
     "id": "ayushka-weerasinghe",
     "canonical_name": "Ayushka Weerasinghe",
     "aliases": [],
-    "email": null,
+    "email": "ayushka.weerasinghe@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -9112,6 +10102,15 @@
         "bugs_created_90d": 0,
         "timeZone": "America/New_York",
         "active": true
+      },
+      "m365_directory": {
+        "mail": "ayushka.weerasinghe@madmobile.com",
+        "title": "L1 Senior Technical Support Specialist",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Mahesh Rajapakse (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-28T12:16:37Z"
       }
     },
     "activity": {
@@ -9175,6 +10174,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "agoad@madmobile.com",
+        "title": "Manager Quality Engineering",
+        "department": "Technical Resources",
+        "office": "Tampa HQ",
+        "manager": "Zubair Syed",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-29T15:40:05Z"
       }
     },
     "activity": {
@@ -9203,7 +10211,7 @@
     "id": "altaaf-anver",
     "canonical_name": "Altaaf Anver",
     "aliases": [],
-    "email": null,
+    "email": "Altaaf.Anver@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -9250,6 +10258,15 @@
           "CCE",
           "P"
         ]
+      },
+      "m365_directory": {
+        "mail": "Altaaf.Anver@madmobile.com",
+        "title": "Lead SRE Engineer",
+        "department": "Payments",
+        "office": "Sri Lanka ",
+        "manager": "William Yen (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2023-08-23T16:31:37Z"
       }
     },
     "activity": {
@@ -9334,6 +10351,15 @@
           "SWAT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "thiwanka.wimalasuriya@madmobile.com",
+        "title": "Senior Staff Software Engineer",
+        "department": "Software Development",
+        "office": "Sri Lanka ",
+        "manager": "Angelo Senaratne (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-28T12:16:42Z"
       }
     },
     "activity": {
@@ -9370,7 +10396,7 @@
     "id": "john-harre",
     "canonical_name": "John Harre",
     "aliases": [],
-    "email": null,
+    "email": "jharre@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -9418,6 +10444,15 @@
           "MMA",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "jharre@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Technical Resources",
+        "office": "Tampa HQ",
+        "manager": "James Oliver",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:35Z"
       }
     },
     "activity": {
@@ -9450,7 +10485,7 @@
     "id": "james-oliver",
     "canonical_name": "James Oliver",
     "aliases": [],
-    "email": null,
+    "email": "joliver@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -9500,6 +10535,15 @@
         "spaces": [
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "joliver@madmobile.com",
+        "title": "Manager Software Engineering",
+        "department": "Technical Resources",
+        "office": "Tampa HQ",
+        "manager": "Zubair Syed",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:35Z"
       }
     },
     "activity": {
@@ -9607,7 +10651,7 @@
     "id": "mike-nunez",
     "canonical_name": "Mike Nunez",
     "aliases": [],
-    "email": null,
+    "email": "mnunez@madmobile.com",
     "title": null,
     "team": "Enterprise",
     "manager": null,
@@ -9656,6 +10700,15 @@
           "AIMM",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "mnunez@madmobile.com",
+        "title": "Staff DevOps Engineer",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Charles Boice (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:36Z"
       }
     },
     "activity": {
@@ -9688,7 +10741,7 @@
     "id": "matthew-crumley",
     "canonical_name": "Matthew Crumley",
     "aliases": [],
-    "email": null,
+    "email": "mcrumley@madmobile.com",
     "title": null,
     "team": "Platform",
     "manager": null,
@@ -9745,6 +10798,15 @@
           "PT",
           "TT"
         ]
+      },
+      "m365_directory": {
+        "mail": "mcrumley@madmobile.com",
+        "title": "Principal Architect",
+        "department": "Architecture",
+        "office": "Tampa HQ",
+        "manager": "John Thompson (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:36Z"
       }
     },
     "activity": {
@@ -9833,7 +10895,7 @@
     "id": "adam-mead",
     "canonical_name": "Adam Mead",
     "aliases": [],
-    "email": null,
+    "email": "adam.mead@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -9853,6 +10915,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "adam.mead@madmobile.com",
+        "title": "Avio Contractor",
+        "department": "Avio Contractor",
+        "office": "Remote",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-02-07T20:33:30Z"
       }
     },
     "activity": {
@@ -10123,7 +11194,7 @@
       "Ryan Crawford (Unlicensed)",
       "Ryan Mercado (Unlicensed)"
     ],
-    "email": null,
+    "email": "rcrawford@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10154,6 +11225,15 @@
           "CA",
           "PT"
         ]
+      },
+      "m365_directory": {
+        "mail": "rcrawford@madmobile.com",
+        "title": "Senior Software Engineer",
+        "department": "Data Strategy",
+        "office": "Remote - North America ",
+        "manager": "Eriq Breland (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-30T17:33:37Z"
       }
     },
     "activity": {
@@ -10185,7 +11265,7 @@
     "id": "juan-manuel-rodriguez",
     "canonical_name": "Juan Manuel Rodriguez",
     "aliases": [],
-    "email": null,
+    "email": "juan.rodriguez@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10205,6 +11285,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "juan.rodriguez@madmobile.com",
+        "title": "Developer",
+        "department": "Software Development",
+        "office": "Avio Contractor",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2022-07-07T18:54:51Z"
       }
     },
     "activity": {
@@ -10309,7 +11398,7 @@
     "id": "camilo-souza",
     "canonical_name": "Camilo Souza",
     "aliases": [],
-    "email": null,
+    "email": "camilo.souza@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10329,6 +11418,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "camilo.souza@madmobile.com",
+        "title": null,
+        "department": "Software Development",
+        "office": null,
+        "manager": "Qaiser Pannu",
+        "accountEnabled": true,
+        "createdDateTime": "2022-08-31T20:02:55Z"
       }
     },
     "activity": {
@@ -10477,7 +11575,7 @@
     "id": "hema-saini",
     "canonical_name": "Hema Saini",
     "aliases": [],
-    "email": null,
+    "email": "hema.saini@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10497,6 +11595,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "hema.saini@madmobile.com",
+        "title": "Developer",
+        "department": "External Skillnet",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-03-17T13:08:39Z"
       }
     },
     "activity": {
@@ -10517,7 +11624,7 @@
     "id": "pankaj-goyal",
     "canonical_name": "Pankaj Goyal",
     "aliases": [],
-    "email": null,
+    "email": "pankaj.goyal@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10537,6 +11644,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "pankaj.goyal@madmobile.com",
+        "title": "Project Manager (Developer)",
+        "department": "External Skillnet",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-03-17T13:05:43Z"
       }
     },
     "activity": {
@@ -10557,7 +11673,7 @@
     "id": "amol-wairagade",
     "canonical_name": "Amol Wairagade",
     "aliases": [],
-    "email": null,
+    "email": "amol.wairagade@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10577,6 +11693,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "amol.wairagade@madmobile.com",
+        "title": "Developer",
+        "department": "External Skillnet",
+        "office": "Remote",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-03-23T22:48:18Z"
       }
     },
     "activity": {
@@ -10597,7 +11722,7 @@
     "id": "jyoti-lokare",
     "canonical_name": "Jyoti Lokare",
     "aliases": [],
-    "email": null,
+    "email": "jyoti.lokare@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10617,6 +11742,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "jyoti.lokare@madmobile.com",
+        "title": "Developer",
+        "department": "External Skillnet",
+        "office": "Remote",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-03-23T22:53:54Z"
       }
     },
     "activity": {
@@ -10637,7 +11771,7 @@
     "id": "reji-sivaraman",
     "canonical_name": "Reji Sivaraman",
     "aliases": [],
-    "email": null,
+    "email": "reji.sivaraman@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10657,6 +11791,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "reji.sivaraman@madmobile.com",
+        "title": "Developer",
+        "department": "External Skillnet",
+        "office": "Remote",
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2025-03-23T22:51:02Z"
       }
     },
     "activity": {
@@ -10677,7 +11820,7 @@
     "id": "brent-baltzer",
     "canonical_name": "Brent Baltzer",
     "aliases": [],
-    "email": null,
+    "email": "brent.baltzer@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10697,6 +11840,15 @@
         "prs_authored": 0,
         "prs_reviewed": 0,
         "review_cluster": null
+      },
+      "m365_directory": {
+        "mail": "brent.baltzer@madmobile.com",
+        "title": "Senior Graphic Designer",
+        "department": "Marketing",
+        "office": "Tampa HQ",
+        "manager": "Karen Licker",
+        "accountEnabled": true,
+        "createdDateTime": "2024-04-22T16:47:47Z"
       }
     },
     "activity": {
@@ -10759,7 +11911,7 @@
     "id": "antonio-benjamim-mussi-schmidt",
     "canonical_name": "Antonio Benjamim Mussi Schmidt",
     "aliases": [],
-    "email": null,
+    "email": "antonio.mussi@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10779,6 +11931,15 @@
         "prs_authored": 19,
         "prs_reviewed": 11,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "antonio.mussi@madmobile.com",
+        "title": "Developer - Peak Activity",
+        "department": "External SI Peak Activity",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2026-01-08T14:50:06Z"
       }
     },
     "activity": {
@@ -10809,7 +11970,7 @@
     "id": "jeff-pena",
     "canonical_name": "Jeff Pena",
     "aliases": [],
-    "email": null,
+    "email": "jeff.pena@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -10829,6 +11990,15 @@
         "prs_authored": 6,
         "prs_reviewed": 0,
         "review_cluster": "madmobile"
+      },
+      "m365_directory": {
+        "mail": "jeff.pena@madmobile.com",
+        "title": "Developer QA- Peak Activity",
+        "department": "External SI Peak Activity",
+        "office": null,
+        "manager": "",
+        "accountEnabled": true,
+        "createdDateTime": "2026-01-08T14:21:05Z"
       }
     },
     "activity": {
@@ -15263,7 +16433,7 @@
     "id": "mithma-kannangara",
     "canonical_name": "Mithma Kannangara",
     "aliases": [],
-    "email": null,
+    "email": "mithma.kannangara@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -15281,6 +16451,15 @@
         "spaces": [
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "mithma.kannangara@madmobile.com",
+        "title": "Menu Specialist",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Savumi Wadduwage",
+        "accountEnabled": true,
+        "createdDateTime": "2021-06-13T05:31:49Z"
       }
     },
     "activity": {
@@ -15378,7 +16557,7 @@
     "id": "pavani-ratnayake",
     "canonical_name": "Pavani Ratnayake",
     "aliases": [],
-    "email": null,
+    "email": "pavani.ratnayake@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -15396,6 +16575,15 @@
         "spaces": [
           "PROD"
         ]
+      },
+      "m365_directory": {
+        "mail": "pavani.ratnayake@madmobile.com",
+        "title": "Senior Menu Specialist",
+        "department": "Customer Support",
+        "office": "Sri Lanka ",
+        "manager": "Savumi Wadduwage",
+        "accountEnabled": true,
+        "createdDateTime": "2021-06-17T05:15:17Z"
       }
     },
     "activity": {
@@ -17444,7 +18632,7 @@
     "id": "thiwanka-wimalasuriya-(deactivated)",
     "canonical_name": "Thiwanka Wimalasuriya (Deactivated)",
     "aliases": [],
-    "email": null,
+    "email": "thiwanka.wimalasuriya@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -17462,6 +18650,15 @@
         "spaces": [
           "SWAT"
         ]
+      },
+      "m365_directory": {
+        "mail": "thiwanka.wimalasuriya@madmobile.com",
+        "title": "Senior Staff Software Engineer",
+        "department": "Software Development",
+        "office": "Sri Lanka ",
+        "manager": "Angelo Senaratne (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2020-08-28T12:16:42Z"
       }
     },
     "activity": {
@@ -18492,7 +19689,7 @@
     "id": "chathura-ratnayake-(deactivated)",
     "canonical_name": "Chathura Ratnayake (Deactivated)",
     "aliases": [],
-    "email": null,
+    "email": "chathura.ratnayake@madmobile.com",
     "title": null,
     "team": null,
     "manager": null,
@@ -18510,6 +19707,15 @@
         "spaces": [
           "DEP"
         ]
+      },
+      "m365_directory": {
+        "mail": "chathura.ratnayake@madmobile.com",
+        "title": "SVP Restaurant Software Engineering",
+        "department": "Software Development",
+        "office": "Tampa HQ",
+        "manager": "Jim Eddy (Shared)",
+        "accountEnabled": true,
+        "createdDateTime": "2021-12-15T17:55:48Z"
       }
     },
     "activity": {

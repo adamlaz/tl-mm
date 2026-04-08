@@ -1,0 +1,814 @@
+[
+  {
+    "email": "das.desilva@madmobile.com",
+    "own_department": "General Operations",
+    "bridges_to": {
+      "Customer Success": 5,
+      "Logistics": 1,
+      "Software Development": 3,
+      "Customer Support": 5,
+      "Product": 2,
+      "Technical Resources": 1,
+      "Sales": 1,
+      "Inbound Sales": 1,
+      "Program Management": 1,
+      "AI Group": 2,
+      "Architecture": 1
+    },
+    "bridge_strength": 23
+  },
+  {
+    "email": "pratikchha.khadka@madmobile.com",
+    "own_department": "Quality Engineering",
+    "bridges_to": {
+      "Payments": 11,
+      "Software Development": 4,
+      "Architecture": 1,
+      "Solution Operations": 3,
+      "Product": 1,
+      "People Operations": 2
+    },
+    "bridge_strength": 22
+  },
+  {
+    "email": "mcrumley@madmobile.com",
+    "own_department": "Architecture",
+    "bridges_to": {
+      "Software Development": 8,
+      "Solution Operations": 1,
+      "Product": 2,
+      "Payments": 4,
+      "Engineering": 1,
+      "Technical Resources": 1,
+      "Program Management": 1,
+      "IT Infrastructure": 1,
+      "AI Group": 1,
+      "Customer Support": 1
+    },
+    "bridge_strength": 21
+  },
+  {
+    "email": "joliver@madmobile.com",
+    "own_department": "Technical Resources",
+    "bridges_to": {
+      "Program Management": 1,
+      "Software Development": 5,
+      "Customer Support": 3,
+      "General Operations": 2,
+      "Product": 3,
+      "Customer Success": 1,
+      "IT Infrastructure": 1,
+      "AI Group": 1,
+      "Architecture": 1,
+      "Engineering / Retail": 1,
+      "External JFW": 1
+    },
+    "bridge_strength": 20
+  },
+  {
+    "email": "agoad@madmobile.com",
+    "own_department": "Technical Resources",
+    "bridges_to": {
+      "Software Development": 5,
+      "Program Management": 1,
+      "General Operations": 1,
+      "Architecture": 1,
+      "Payments": 1,
+      "Quality Engineering": 2,
+      "Customer Support": 4,
+      "Product": 1,
+      "Customer Success": 1,
+      "People Operations": 1,
+      "Engineering": 1,
+      "External JFW": 1
+    },
+    "bridge_strength": 20
+  },
+  {
+    "email": "ana.chambers@madmobile.com",
+    "own_department": "Program Management",
+    "bridges_to": {
+      "Software Development": 3,
+      "Technical Resources": 1,
+      "AI Group": 1,
+      "IT Infrastructure": 1,
+      "Solution Operations": 1,
+      "Executive": 2,
+      "Product": 2,
+      "Finance & Accounting": 3,
+      "People Operations": 2,
+      "IT Security": 1,
+      "Inbound Sales": 1,
+      "General Operations": 1,
+      "Payments": 1
+    },
+    "bridge_strength": 20
+  },
+  {
+    "email": "mirunaaliny.somasuntharaiyer@madmobile.com",
+    "own_department": "Product",
+    "bridges_to": {
+      "Software Development": 6,
+      "Customer Support": 2,
+      "General Operations": 2,
+      "Quality Engineering": 2,
+      "Payments": 2,
+      "Customer Success": 1,
+      "Technical Resources": 1,
+      "Marketing": 1,
+      "Architecture": 1,
+      "People Operations": 1
+    },
+    "bridge_strength": 19
+  },
+  {
+    "email": "jack.mccarthy@madmobile.com",
+    "own_department": "Finance & Accounting",
+    "bridges_to": {
+      "Payments": 4,
+      "Data Strategy": 1,
+      "Software Development": 4,
+      "General Operations": 2,
+      "Customer Support": 1,
+      "Executive": 1,
+      "Inbound Sales": 2,
+      "Technical Resources": 1,
+      "Customer Success": 1,
+      "Marketing": 1,
+      "Product": 1
+    },
+    "bridge_strength": 19
+  },
+  {
+    "email": "ayodele.lawal@madmobile.com",
+    "own_department": "People Operations",
+    "bridges_to": {
+      "Customer Support": 6,
+      "Customer Success": 6,
+      "Product": 1,
+      "Software Development": 2,
+      "General Operations": 1,
+      "Marketing": 1,
+      "Program Management": 1,
+      "People Engagement": 1
+    },
+    "bridge_strength": 19
+  },
+  {
+    "email": "hminchew@madmobile.com",
+    "own_department": "Architecture",
+    "bridges_to": {
+      "Program Management": 1,
+      "Software Development": 6,
+      "AI Group": 1,
+      "Engineering": 1,
+      "Product": 2,
+      "Technical Resources": 1,
+      "People Operations": 2,
+      "Customer Support": 3,
+      "Logistics": 1
+    },
+    "bridge_strength": 18
+  },
+  {
+    "email": "rosen.georgiev@madmobile.com",
+    "own_department": "IT Infrastructure",
+    "bridges_to": {
+      "Program Management": 1,
+      "IT Security": 1,
+      "Software Development": 4,
+      "Technical Resources": 1,
+      "Logistics": 1,
+      "Data Strategy": 2,
+      "People Operations": 1,
+      "Solution Operations": 1,
+      "Customer Support": 2,
+      "External - Peak Activity": 1,
+      "Finance & Accounting": 2,
+      "Product": 1
+    },
+    "bridge_strength": 18
+  },
+  {
+    "email": "nagaswaroopa.kaukuri@madmobile.com",
+    "own_department": "Data Strategy",
+    "bridges_to": {
+      "Software Development": 4,
+      "Inbound Sales": 1,
+      "General Operations": 2,
+      "Customer Support": 2,
+      "Customer Success": 1,
+      "Architecture": 1,
+      "Program Management": 1,
+      "Payments": 3,
+      "Product": 1,
+      "Finance & Accounting": 2
+    },
+    "bridge_strength": 18
+  },
+  {
+    "email": "sumnima.shah@madmobile.com",
+    "own_department": "Quality Engineering",
+    "bridges_to": {
+      "Technical Resources": 3,
+      "Product": 1,
+      "Program Management": 1,
+      "Software Development": 3,
+      "Architecture": 1,
+      "IT Infrastructure": 1,
+      "Customer Support": 2,
+      "AI Group": 1,
+      "People Operations": 2,
+      "Implementations Quality Engineering": 1,
+      "Engineering / Retail": 1,
+      "External JFW": 1
+    },
+    "bridge_strength": 18
+  },
+  {
+    "email": "peter.vu@madmobile.com",
+    "own_department": "Sales",
+    "bridges_to": {
+      "General Operations": 2,
+      "Customer Success": 2,
+      "Software Development": 4,
+      "Marketing": 1,
+      "Product": 2,
+      "People Operations": 2,
+      "Executive": 1,
+      "Program Management": 1,
+      "Data Strategy": 1,
+      "Payments": 2
+    },
+    "bridge_strength": 18
+  },
+  {
+    "email": "rekha.mohanan@madmobile.com",
+    "own_department": "Payments",
+    "bridges_to": {
+      "Software Development": 4,
+      "Product": 2,
+      "Customer Support": 3,
+      "Quality Engineering": 4,
+      "General Operations": 1,
+      "Solution Operations": 2,
+      "Engineering": 1,
+      "People Operations": 1
+    },
+    "bridge_strength": 18
+  },
+  {
+    "email": "rbrown@madmobile.com",
+    "own_department": "Software Development",
+    "bridges_to": {
+      "Customer Support": 2,
+      "Product": 2,
+      "Logistics": 1,
+      "Payments": 4,
+      "Technical Resources": 1,
+      "Engineering": 1,
+      "Architecture": 1,
+      "General Operations": 1,
+      "Program Management": 1,
+      "Data Strategy": 1,
+      "Customer Success": 1,
+      "Sales": 1
+    },
+    "bridge_strength": 17
+  },
+  {
+    "email": "jkennedy@madmobile.com",
+    "own_department": "AI Group",
+    "bridges_to": {
+      "Program Management": 2,
+      "Executive": 2,
+      "Software Development": 2,
+      "External - Peak Activity": 1,
+      "Product": 1,
+      "External Peak Activity": 1,
+      "Marketing": 1,
+      "Technical Resources": 2,
+      "General Operations": 1,
+      "Accounting": 1,
+      "PS - Production Support - Management": 1,
+      "Engineering / Retail": 1,
+      "PS- Production Support - Engineering": 1
+    },
+    "bridge_strength": 17
+  },
+  {
+    "email": "mriglos@madmobile.com",
+    "own_department": "Solution Operations",
+    "bridges_to": {
+      "Software Development": 4,
+      "Program Management": 1,
+      "Payments": 3,
+      "AI Group": 1,
+      "IT Security": 1,
+      "Technical Resources": 1,
+      "Customer Support": 1,
+      "Architecture": 1,
+      "Engineering": 1,
+      "IT Infrastructure": 1,
+      "Product": 2
+    },
+    "bridge_strength": 17
+  },
+  {
+    "email": "chathura.ratnayake@madmobile.com",
+    "own_department": "Software Development",
+    "bridges_to": {
+      "General Operations": 2,
+      "Product": 2,
+      "Payments": 3,
+      "Program Management": 1,
+      "Inbound Sales": 1,
+      "Technical Resources": 1,
+      "Customer Support": 2,
+      "Solution Operations": 1,
+      "People Operations": 1,
+      "Executive": 1,
+      "Finance & Accounting": 1,
+      "Customer Success ": 1
+    },
+    "bridge_strength": 17
+  },
+  {
+    "email": "benjamin.roedell@madmobile.com",
+    "own_department": "Architecture",
+    "bridges_to": {
+      "Software Development": 6,
+      "Program Management": 1,
+      "Solution Operations": 1,
+      "Data Strategy": 2,
+      "Product": 3,
+      "General Operations": 2,
+      "AI Group": 1,
+      "Inbound Sales": 1
+    },
+    "bridge_strength": 17
+  },
+  {
+    "email": "michael.lee@madmobile.com",
+    "own_department": "Customer Support",
+    "bridges_to": {
+      "Software Development": 2,
+      "General Operations": 2,
+      "Product": 2,
+      "Technical Resources": 1,
+      "Inbound Sales": 1,
+      "Customer Success ": 1,
+      "Customer Success": 1,
+      "Marketing": 1,
+      "People Operations": 1,
+      "Payments": 1,
+      "Program Management": 1,
+      "Tier 1 Support": 2,
+      "Operation": 1
+    },
+    "bridge_strength": 17
+  },
+  {
+    "email": "andres.lebron@madmobile.com",
+    "own_department": "Customer Success",
+    "bridges_to": {
+      "People Operations": 1,
+      "Customer Support": 12,
+      "General Operations": 2,
+      "Customer Success ": 1,
+      "Sales": 1
+    },
+    "bridge_strength": 17
+  },
+  {
+    "email": "jharre@madmobile.com",
+    "own_department": "Technical Resources",
+    "bridges_to": {
+      "Program Management": 1,
+      "People Operations": 2,
+      "Software Development": 4,
+      "Architecture": 1,
+      "AI Group": 2,
+      "IT Security": 1,
+      "External JFW": 1,
+      "Engineering": 1,
+      "Customer Support": 3
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "thiwanka.wimalasuriya@madmobile.com",
+    "own_department": "Software Development",
+    "bridges_to": {
+      "Engineering": 1,
+      "Customer Support": 8,
+      "Technical Resources": 1,
+      "Solution Operations": 1,
+      "Logistics": 1,
+      "Architecture": 1,
+      "Program Management": 1,
+      "General Operations": 1,
+      "Payments": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "zubair.syed@madmobile.com",
+    "own_department": "Software Development",
+    "bridges_to": {
+      "Technical Resources": 1,
+      "Program Management": 1,
+      "Customer Support": 2,
+      "AI Group": 1,
+      "Product": 1,
+      "Solution Operations": 1,
+      "Engineering": 1,
+      "Data Strategy": 1,
+      "Payments": 1,
+      "Architecture": 1,
+      "IT Security": 1,
+      "General Operations": 1,
+      "People Operations": 1,
+      "Engineering / Retail": 1,
+      "External JFW": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "dulanjan.wengappuliarachchi@madmobile.com",
+    "own_department": "Product",
+    "bridges_to": {
+      "Software Development": 4,
+      "General Operations": 2,
+      "Marketing": 1,
+      "Customer Support": 2,
+      "Payments": 3,
+      "Engineering": 1,
+      "Technical Resources": 1,
+      "Customer Success ": 1,
+      "Program Management": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "ashen.weerasinghe@madmobile.com",
+    "own_department": "Quality Engineering",
+    "bridges_to": {
+      "Engineering": 1,
+      "Solution Operations": 3,
+      "Software Development": 8,
+      "Customer Support": 2,
+      "Program Management": 1,
+      "Payments": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "orlando.tovar@madmobile.com",
+    "own_department": "Solution Operations",
+    "bridges_to": {
+      "People Operations": 1,
+      "AI Group": 2,
+      "Architecture": 2,
+      "Program Management": 2,
+      "Technical Resources": 1,
+      "Software Development": 4,
+      "IT Security": 1,
+      "Payments": 3
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "darren.blackwell@madmobile.com",
+    "own_department": "Quality Engineering",
+    "bridges_to": {
+      "Technical Resources": 1,
+      "Program Management": 1,
+      "Software Development": 6,
+      "Product": 3,
+      "Payments": 3,
+      "Engineering": 1,
+      "Architecture": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "bill.lodes@madmobile.com",
+    "own_department": "General Operations",
+    "bridges_to": {
+      "Software Development": 1,
+      "Finance & Accounting": 1,
+      "Marketing": 1,
+      "People Operations": 2,
+      "Sales": 2,
+      "Inbound Sales": 1,
+      "Executive": 1,
+      "Customer Support": 2,
+      "Accounting": 1,
+      "Tier 1 Support": 2,
+      "Operation": 1,
+      "Support": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "shavin.pieris@madmobile.com",
+    "own_department": "Product",
+    "bridges_to": {
+      "Software Development": 8,
+      "Engineering": 1,
+      "Customer Support": 2,
+      "Customer Success": 1,
+      "Marketing": 1,
+      "Architecture": 1,
+      "Inbound Sales": 1,
+      "AI Group": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "wenushka.dikowita@madmobile.com",
+    "own_department": "Engineering",
+    "bridges_to": {
+      "Software Development": 9,
+      "Quality Engineering": 1,
+      "Customer Support": 2,
+      "Product": 1,
+      "Solution Operations": 1,
+      "Technical Resources": 1,
+      "Architecture": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "zachary.honnold@madmobile.com",
+    "own_department": "Inbound Sales",
+    "bridges_to": {
+      "General Operations": 2,
+      "Software Development": 1,
+      "Payments": 1,
+      "Sales": 2,
+      "Data Strategy": 2,
+      "People Operations": 1,
+      "Finance & Accounting": 2,
+      "Customer Success": 2,
+      "Executive": 1,
+      "Program Management": 1,
+      "Customer Success ": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "karen.licker@madmobile.com",
+    "own_department": "Marketing",
+    "bridges_to": {
+      "General Operations": 2,
+      "Software Development": 1,
+      "Product": 2,
+      "People Operations": 2,
+      "Sales": 3,
+      "Customer Support": 2,
+      "Executive": 2,
+      "Finance & Accounting": 1,
+      "Program Management": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "ever.contreras@madmobile.com",
+    "own_department": "Sales",
+    "bridges_to": {
+      "General Operations": 2,
+      "Customer Success": 5,
+      "Customer Support": 1,
+      "Marketing": 2,
+      "Software Development": 1,
+      "Inbound Sales": 1,
+      "People Operations": 2,
+      "Payments": 2
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "jimmy.perez@madmobile.com",
+    "own_department": "Customer Success",
+    "bridges_to": {
+      "People Operations": 2,
+      "Customer Support": 10,
+      "General Operations": 2,
+      "Customer Success ": 1,
+      "Sales": 1
+    },
+    "bridge_strength": 16
+  },
+  {
+    "email": "bill.fenley@madmobile.com",
+    "own_department": "Quality Engineering",
+    "bridges_to": {
+      "Software Development": 8,
+      "Solution Operations": 1,
+      "Product": 2,
+      "Customer Support": 1,
+      "Payments": 3
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "patrycja.stevenson@madmobile.com",
+    "own_department": "Quality Engineering",
+    "bridges_to": {
+      "Software Development": 6,
+      "Architecture": 2,
+      "Technical Resources": 1,
+      "Payments": 5,
+      "Solution Operations": 1
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "alexander.baine@madmobile.com",
+    "own_department": "Software Development",
+    "bridges_to": {
+      "Architecture": 2,
+      "Payments": 2,
+      "Engineering": 1,
+      "Product": 2,
+      "Customer Support": 1,
+      "Quality Engineering": 5,
+      "Software Quality Engineering": 1,
+      "Quality Engineering - Restaurant": 1
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "hashan.jalath@madmobile.com",
+    "own_department": "Solution Operations",
+    "bridges_to": {
+      "Customer Support": 1,
+      "Engineering": 1,
+      "Software Development": 8,
+      "Quality Engineering": 1,
+      "Product": 2,
+      "Program Management": 1,
+      "IT Security": 1
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "nishani.peiris@madmobile.com",
+    "own_department": "Data Strategy",
+    "bridges_to": {
+      "Inbound Sales": 1,
+      "Program Management": 1,
+      "Customer Support": 1,
+      "Software Development": 3,
+      "Engineering": 1,
+      "Solution Operations": 2,
+      "Architecture": 1,
+      "Product": 2,
+      "IT Infrastructure": 1,
+      "Operations Enablement": 1,
+      "Operations Development": 1
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "ibennett@madmobile.com",
+    "own_department": "AI Group",
+    "bridges_to": {
+      "Software Development": 6,
+      "Executive": 1,
+      "General Operations": 1,
+      "Program Management": 1,
+      "Product": 1,
+      "Technical Resources": 1,
+      "Solution Operations": 1,
+      "Customer Success": 1,
+      "Customer Support": 1,
+      "IT Security": 1
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "kristopher.ippolito@madmobile.com",
+    "own_department": "Inbound Sales",
+    "bridges_to": {
+      "General Operations": 2,
+      "Customer Support": 1,
+      "Payments": 2,
+      "Customer Success": 7,
+      "Sales": 1,
+      "Executive": 2
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "jason.bitman@madmobile.com",
+    "own_department": "External JFW",
+    "bridges_to": {
+      "IT Infrastructure": 1,
+      "Program Management": 1,
+      "Software Development": 6,
+      "Engineering / Retail": 1,
+      "Technical Resources": 6
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "rob.quin@madmobile.com",
+    "own_department": "Software Development",
+    "bridges_to": {
+      "People Operations": 1,
+      "AI Group": 1,
+      "Marketing": 1,
+      "Customer Support": 1,
+      "Payments": 1,
+      "Product": 2,
+      "IT Infrastructure": 1,
+      "Architecture": 2,
+      "Quality Engineering": 4,
+      "Technical Resources": 1
+    },
+    "bridge_strength": 15
+  },
+  {
+    "email": "gschmitzer@madmobile.com",
+    "own_department": "Executive",
+    "bridges_to": {
+      "AI Group": 1,
+      "Software Development": 2,
+      "General Operations": 1,
+      "Program Management": 2,
+      "Finance & Accounting": 1,
+      "People Operations": 1,
+      "Marketing": 2,
+      "Inbound Sales": 2,
+      "Sales": 1,
+      "Accounting": 1
+    },
+    "bridge_strength": 14
+  },
+  {
+    "email": "rcrawford@madmobile.com",
+    "own_department": "Data Strategy",
+    "bridges_to": {
+      "Program Management": 1,
+      "Finance & Accounting": 3,
+      "Software Development": 3,
+      "Solution Operations": 1,
+      "AI Group": 1,
+      "General Operations": 1,
+      "People Operations": 1,
+      "Inbound Sales": 1,
+      "Architecture": 1,
+      "Payments": 1
+    },
+    "bridge_strength": 14
+  },
+  {
+    "email": "chip.oconnell@madmobile.com",
+    "own_department": "Customer Support",
+    "bridges_to": {
+      "Logistics": 1,
+      "General Operations": 2,
+      "Software Development": 4,
+      "Customer Success": 1,
+      "Product": 1,
+      "Finance & Accounting": 1,
+      "Technical Resources": 1,
+      "Program Management": 1,
+      "Executive": 1,
+      "AI Group": 1
+    },
+    "bridge_strength": 14
+  },
+  {
+    "email": "bobby.jaklitsch@madmobile.com",
+    "own_department": "Sales",
+    "bridges_to": {
+      "General Operations": 2,
+      "Customer Success": 3,
+      "Inbound Sales": 1,
+      "People Operations": 3,
+      "Software Development": 1,
+      "Product": 1,
+      "Customer Support": 2,
+      "Executive": 1
+    },
+    "bridge_strength": 14
+  },
+  {
+    "email": "adriana.zuniga@madmobile.com",
+    "own_department": "Customer Support",
+    "bridges_to": {
+      "Product": 3,
+      "People Operations": 3,
+      "Marketing": 2,
+      "Software Development": 2,
+      "Customer Success": 2,
+      "General Operations": 1,
+      "HR": 1
+    },
+    "bridge_strength": 14
+  }
+]

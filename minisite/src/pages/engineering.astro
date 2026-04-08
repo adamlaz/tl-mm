@@ -174,14 +174,54 @@ const toolFreqRows = [...toolFrequency.entries()]
   .map(([tool, count]) => ({ tool, repos: count }));
 
 const charts = [
-  { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency' },
-  { slug: 'bitbucket_languages', title: 'Language Distribution' },
-  { slug: 'bitbucket_pipeline_coverage', title: 'Pipeline Coverage' },
-  { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time' },
-  { slug: 'bitbucket_repo_health', title: 'Repo Health' },
-  { slug: 'bb_deploy_tags', title: 'Deploy Tags' },
-  { slug: 'review_network', title: 'Review Network' },
-  { slug: 'bb_reviewer_concentration', title: 'Reviewer Concentration' },
+  {
+    slug: 'bitbucket_commit_frequency',
+    title: 'Commit Frequency',
+    caption:
+      'How often code is committed across repositories. Repos with very low commit frequency may be abandoned or maintained by a single person.',
+  },
+  {
+    slug: 'bitbucket_languages',
+    title: 'Language Distribution',
+    caption:
+      'Programming languages used across the codebase. Language proliferation increases the skills required to maintain the system and can create hiring bottlenecks.',
+  },
+  {
+    slug: 'bitbucket_pipeline_coverage',
+    title: 'Pipeline Coverage',
+    caption:
+      'What percentage of repositories have automated build pipelines. Repos without pipelines have no automated quality checks -- code goes to production untested.',
+  },
+  {
+    slug: 'bitbucket_pr_cycle_time',
+    title: 'PR Cycle Time',
+    caption:
+      'How long pull requests stay open before merge or close. Healthy teams close PRs within 1-2 days. Long tails indicate review bottlenecks or abandoned work.',
+  },
+  {
+    slug: 'bitbucket_repo_health',
+    title: 'Repo Health',
+    caption:
+      'Composite health score per repository based on activity, pipeline status, and PR throughput. Low scores indicate repos that may need attention or archival.',
+  },
+  {
+    slug: 'bb_deploy_tags',
+    title: 'Deploy Tags',
+    caption:
+      'Deployment tagging practices. Tags mark production releases. Repos without deploy tags have no way to track what code is running in production.',
+  },
+  {
+    slug: 'review_network',
+    title: 'Review Network',
+    caption:
+      'Who reviews whose code. Thick ribbons show heavy review relationships. Concentration in a few individuals means knowledge is siloed -- if those people leave, review quality drops.',
+  },
+  {
+    slug: 'bb_reviewer_concentration',
+    title: 'Reviewer Concentration',
+    caption:
+      'How evenly code review work is distributed. When a small number of people handle most reviews, they become bottlenecks and single points of failure.',
+  },
 ];
 ---
 
@@ -189,7 +229,7 @@ const charts = [
   <SectionHeader
     eyebrow="ENGINEERING"
     title="Engineering"
-    description="Source control health across 4 Bitbucket workspaces. Data extracted April 3–4, 2026 (V7)."
+    description="How code gets written, reviewed, and merged across 3,191 repositories in 4 Bitbucket workspaces. Key concerns: no automated quality gates (branch protection) on any repository, a 40% build failure rate, 201 code reviews open for months, and review knowledge concentrated in a small number of individuals."
   />
 
   <div class="grid sm:grid-cols-2 gap-4 mb-8">
@@ -200,22 +240,40 @@ const charts = [
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
-    <ChartEmbed slug="pipeline_health_gauge" title="Pipeline Health" />
-    <ChartEmbed slug="bb_reviewer_concentration" title="Reviewer Concentration" />
+    <ChartEmbed
+      slug="pipeline_health_gauge"
+      title="Pipeline Health"
+      caption="Overall CI/CD pipeline success rate. Industry benchmark is above 95%. At 60.7%, nearly 4 in 10 builds fail."
+    />
+    <ChartEmbed
+      slug="bb_reviewer_concentration"
+      title="Reviewer Concentration"
+      caption="How evenly code review work is distributed. When a small number of people handle most reviews, they become bottlenecks and single points of failure."
+    />
+  </div>
+
+  <div class="my-6">
+    <FindingCard
+      severity="red"
+      title="No Engineering Safety Net"
+      detail="Zero repositories have branch protection, 40% of builds fail, and code review is concentrated in 3-4 individuals per team. This combination means code can reach production without review, without passing tests, and without the knowledge of the people who understand the system best. This is the highest-risk finding in the engineering assessment."
+      href="/people/risk"
+      hrefLabel="Key Person Risk"
+    />
   </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Total Repos" value={fmt(repos.length)} subtitle={`${activeRepos.length} active, ${Math.round((1 - activeRepos.length / repos.length) * 100)}% stale`} />
     <MetricCard label="Pull Requests" value={prs.length.toString()} subtitle="Last 30 days" />
-    <MetricCard label="Avg Review Time" value={`${avgCycleHours.toFixed(1)}h`} subtitle="Hours to merge" />
+    <MetricCard label="Avg Review Time" value={`${avgCycleHours.toFixed(1)}h`} subtitle="Hours to merge" benchmark="Healthy: <24 hrs" />
     <MetricCard label="Recent Commits" value={fmt(totalCommits)} subtitle="Last 30 days" />
   </dl>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Pipeline Success" value={`${pipeSuccessRate}%`} subtitle={`${pipelineData.repos_with_pipelines ?? 0} repos with pipelines`} />
+    <MetricCard label="Pipeline Success" value={`${pipeSuccessRate}%`} subtitle={`${pipelineData.repos_with_pipelines ?? 0} repos with pipelines`} benchmark="Industry: >95%" />
     <MetricCard label="Open PRs" value={openPRCount.toString()} subtitle={`${oldPRCount} older than 7 days`} />
-    <MetricCard label="Branch Protection" value={`${reposWithRestrictions}/${reposChecked}`} subtitle="repos with restrictions" />
+    <MetricCard label="Branch Protection" value={`${reposWithRestrictions}/${reposChecked}`} subtitle="repositories with automated review rules" benchmark="Target: 100%" />
     <MetricCard label="Review Network" value={reviewSummary.total_nodes?.toString() ?? '217'} subtitle={`${reviewSummary.total_edges ?? 1464} review relationships`} />
   </dl>
 
@@ -312,9 +370,9 @@ const charts = [
   <!-- Pipeline History & Trends -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Pipeline History &amp; Trends</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Overall Success Rate" value={`${pipeSuccessRate}%`} subtitle={`${fmt(totalPipeRuns)} total runs`} />
+    <MetricCard label="Overall Success Rate" value={`${pipeSuccessRate}%`} subtitle={`${fmt(totalPipeRuns)} total runs`} benchmark="Industry: >95%" />
     <MetricCard label="Active Pipelines" value={activePipelines.length.toString()} subtitle={`of ${pipelineData.repos_checked ?? 0} repos checked`} />
-    <MetricCard label="Avg Build Duration" value={`${Math.round(avgMedianBuild)}s`} subtitle="median across active repos" />
+    <MetricCard label="Avg Build Duration" value={`${Math.round(avgMedianBuild)}s`} subtitle="median across active repos" benchmark="Target: <5 min" />
     <MetricCard label="Failed Runs" value={fmt(totalFailed)} subtitle={`+ ${totalErrors} errors`} />
   </dl>
 
@@ -341,7 +399,7 @@ const charts = [
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">AI Tooling in Repos</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Repos Scanned" value={aiReposScanned.toString()} subtitle="across all workspaces" />
-    <MetricCard label="AI-Enabled Repos" value={aiReposWithTooling.toString()} subtitle={`${aiAdoptionRate}% adoption rate`} />
+    <MetricCard label="AI-Enabled Repos" value={aiReposWithTooling.toString()} subtitle={`${aiAdoptionRate}% adoption rate`} benchmark="Industry avg: ~30%" />
     <MetricCard label="Tools Found" value={toolFrequency.size.toString()} subtitle="unique AI tools" />
     <MetricCard label="Top Tool" value={toolFreqRows[0]?.tool ?? '—'} subtitle={`in ${toolFreqRows[0]?.repos ?? 0} repos`} />
   </dl>
@@ -408,7 +466,7 @@ const charts = [
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
     {charts.map((c) => (
-      <ChartEmbed slug={c.slug} title={c.title} />
+      <ChartEmbed slug={c.slug} title={c.title} caption={c.caption} />
     ))}
   </div>
 

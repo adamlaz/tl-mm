@@ -108,7 +108,7 @@ if (toolingExpenseDocs) {
   <SectionHeader
     eyebrow="TOOLING"
     title="Vendor & Tool Catalog"
-    description="48 tools identified across Mad Mobile's technology stack. Enriched with Confluence page extraction, AWS cost attribution, Bitbucket dependency scanning, and public pricing estimates. Updated April 5, 2026 (V8)."
+    description="The complete inventory of tools used across the engineering organization. 28 tools identified, spanning CI/CD, monitoring, version control, project management, and communication. Key concerns: dual CI/CD systems (Jenkins and Bitbucket Pipelines), self-hosted monitoring with unknown utilization, and several tools with unconfirmed active status."
   />
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -136,7 +136,7 @@ if (toolingExpenseDocs) {
   </div>
 
   <div class="mb-10">
-    <ChartEmbed slug="workspace_health_radar" title="Workspace Engineering Health" description="Normalized 0–100 scores across 4 Bitbucket workspaces. Quality variance is a tooling and process story." interactive />
+    <ChartEmbed slug="workspace_health_radar" title="Workspace Engineering Health" description="Normalized 0–100 scores across 4 Bitbucket workspaces. Quality variance is a tooling and process story." caption="Aggregate health across five dimensions of engineering tooling and practice. Spokes closer to the center indicate areas that need attention. This radar combines quantitative signals from Bitbucket, Jira, and infrastructure data." interactive />
   </div>
 
   <div class="mb-10">

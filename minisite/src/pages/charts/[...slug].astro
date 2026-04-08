@@ -2,85 +2,53 @@
 export const prerender = true;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { GetStaticPaths } from 'astro';
 
+function slugToTitle(slug: string): string {
+  return slug
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bAws\b/g, 'AWS')
+    .replace(/\bBb\b/g, 'BB')
+    .replace(/\bPr\b/g, 'PR')
+    .replace(/\bDora\b/g, 'DORA')
+    .replace(/\bKpi\b/g, 'KPI')
+    .replace(/\bRca\b/g, 'RCA')
+    .replace(/\bEcs\b/g, 'ECS')
+    .replace(/\bEks\b/g, 'EKS')
+    .replace(/\bRds\b/g, 'RDS')
+    .replace(/\bM365\b/g, 'M365')
+    .replace(/\bSl\b/g, 'SL')
+    .replace(/\bCi\b/g, 'CI')
+    .replace(/\bCd\b/g, 'CD');
+}
+
+function guessDomain(slug: string): string {
+  if (slug.startsWith('aws_')) return 'Infrastructure';
+  if (slug.startsWith('bitbucket_') || slug.startsWith('bb_') || slug.startsWith('review_') || slug.startsWith('commit_') || slug.startsWith('build_') || slug.startsWith('pr_') || slug.startsWith('repo_') || slug.startsWith('workspace_') || slug.startsWith('pipeline_') || slug.startsWith('dora_')) return 'Engineering';
+  if (slug.startsWith('jira_') || slug.startsWith('sprint_') || slug.startsWith('kpi_')) return 'Delivery';
+  if (slug.startsWith('confluence_')) return 'Documentation';
+  if (slug.startsWith('meeting_') || slug.startsWith('org_') || slug.startsWith('people_') || slug.startsWith('team_') || slug.startsWith('key_person') || slug.startsWith('activity_') || slug.startsWith('communication_') || slug.startsWith('geography_') || slug.startsWith('centrality_') || slug.startsWith('network_') || slug.startsWith('bridge_') || slug.startsWith('unified_') || slug.startsWith('divergence_') || slug.startsWith('relevance_') || slug.startsWith('m365_')) return 'People';
+  if (slug.startsWith('revenue_') || slug.startsWith('cash_flow') || slug.startsWith('vendor_') || slug.startsWith('risk_') || slug.startsWith('cost_') || slug.startsWith('retail_')) return 'Financial';
+  if (slug.startsWith('hypothesis_') || slug.startsWith('reorg_') || slug.startsWith('engagement_') || slug.startsWith('methodology_')) return 'Engagement';
+  if (slug.startsWith('user_') || slug.startsWith('bus_') || slug.startsWith('deploy_') || slug.startsWith('identity_')) return 'Cross-System';
+  return 'Other';
+}
+
 export const getStaticPaths: GetStaticPaths = () => {
-  const charts = [
-    { slug: 'aws_cost_by_account', title: 'Cost by Account', domain: 'Infrastructure' },
-    { slug: 'aws_cost_by_service', title: 'Cost by Service', domain: 'Infrastructure' },
-    { slug: 'aws_cost_trend', title: 'Cost Trend', domain: 'Infrastructure' },
-    { slug: 'aws_resource_inventory', title: 'Resource Inventory', domain: 'Infrastructure' },
-    { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes', domain: 'Infrastructure' },
-    { slug: 'aws_security_posture', title: 'Security Posture', domain: 'Infrastructure' },
-    { slug: 'aws_tagging_compliance', title: 'Tagging Compliance', domain: 'Infrastructure' },
-    { slug: 'aws_instance_audit', title: 'Instance Audit', domain: 'Infrastructure' },
-    { slug: 'aws_deploy_frequency', title: 'Deploy Frequency', domain: 'Infrastructure' },
-    { slug: 'pipeline_health_gauge', title: 'Pipeline Health', domain: 'Infrastructure' },
-    { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency', domain: 'Engineering' },
-    { slug: 'bitbucket_languages', title: 'Language Distribution', domain: 'Engineering' },
-    { slug: 'bitbucket_pipeline_coverage', title: 'Pipeline Coverage', domain: 'Engineering' },
-    { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time', domain: 'Engineering' },
-    { slug: 'bitbucket_repo_health', title: 'Repo Health', domain: 'Engineering' },
-    { slug: 'bb_deploy_tags', title: 'Deploy Tags', domain: 'Engineering' },
-    { slug: 'review_network', title: 'Review Network', domain: 'Engineering' },
-    { slug: 'bb_reviewer_concentration', title: 'Reviewer Concentration', domain: 'Engineering' },
-    { slug: 'workspace_health_radar', title: 'Workspace Health', domain: 'Engineering' },
-    { slug: 'pr_cycle_violin', title: 'PR Cycle Distribution', domain: 'Engineering' },
-    { slug: 'repo_health_bubble', title: 'Repository Health Matrix', domain: 'Engineering' },
-    { slug: 'commit_calendar', title: 'Commit Calendar', domain: 'Engineering' },
-    { slug: 'build_duration_range', title: 'Build Duration Bands', domain: 'Engineering' },
-    { slug: 'jira_org_overview', title: 'Org Overview', domain: 'Delivery' },
-    { slug: 'jira_velocity_trend', title: 'Velocity Trend', domain: 'Delivery' },
-    { slug: 'jira_cycle_time', title: 'Cycle Time', domain: 'Delivery' },
-    { slug: 'jira_scope_change', title: 'Scope Change', domain: 'Delivery' },
-    { slug: 'jira_assignee_load', title: 'Assignee Load', domain: 'Delivery' },
-    { slug: 'jira_backlog_age', title: 'Backlog Age', domain: 'Delivery' },
-    { slug: 'jira_flow_distribution', title: 'Flow Distribution', domain: 'Delivery' },
-    { slug: 'jira_flow_distribution_engineering', title: 'Flow Distribution (Engineering)', domain: 'Delivery' },
-    { slug: 'jira_created_vs_resolved', title: 'Created vs Resolved', domain: 'Delivery' },
-    { slug: 'jira_issue_distribution', title: 'Issue Distribution', domain: 'Delivery' },
-    { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)', domain: 'Delivery' },
-    { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)', domain: 'Delivery' },
-    { slug: 'jira_epic_completion', title: 'Epic Completion', domain: 'Delivery' },
-    { slug: 'jira_priority_inflation', title: 'Priority Inflation', domain: 'Delivery' },
-    { slug: 'jira_blocking_chains', title: 'Blocking Chains', domain: 'Delivery' },
-    { slug: 'jira_root_cause', title: 'Root Cause Distribution', domain: 'Delivery' },
-    { slug: 'jira_workflow_states', title: 'Workflow States', domain: 'Delivery' },
-    { slug: 'jira_workflow_funnel', title: 'Workflow Funnel', domain: 'Delivery' },
-    { slug: 'sprint_rankflow', title: 'Sprint Rankings', domain: 'Delivery' },
-    { slug: 'kpi_bullet', title: 'KPI Benchmarks', domain: 'Delivery' },
-    { slug: 'kpi_gauges', title: 'DORA KPI Dashboard', domain: 'Delivery' },
-    { slug: 'dora_lead_time_gauge', title: 'DORA Lead Time', domain: 'Delivery' },
-    { slug: 'confluence_creation_trend', title: 'Page Creation Trend', domain: 'Documentation' },
-    { slug: 'confluence_page_density', title: 'Page Density by Space', domain: 'Documentation' },
-    { slug: 'confluence_wordcloud', title: 'Documentation Topics', domain: 'Documentation' },
-    { slug: 'confluence_rca_timeline', title: 'RCA Incident Timeline', domain: 'Documentation' },
-    { slug: 'confluence_retro_themes', title: 'Retrospective Themes', domain: 'Documentation' },
-    { slug: 'confluence_postmortem_funnel', title: 'Postmortem Coverage', domain: 'Documentation' },
-    { slug: 'user_workload_distribution', title: 'Workload Distribution', domain: 'Cross-System' },
-    { slug: 'user_activity_levels', title: 'Activity Levels', domain: 'Cross-System' },
-    { slug: 'user_contribution_top20', title: 'Top 20 Contributors', domain: 'Cross-System' },
-    { slug: 'user_cross_system', title: 'Cross-System Users', domain: 'Cross-System' },
-    { slug: 'bus_factor_risk', title: 'Bus Factor Risk', domain: 'Cross-System' },
-    { slug: 'deploy_lead_time', title: 'Deploy Lead Time', domain: 'Cross-System' },
-    { slug: 'identity_match_quality', title: 'Identity Match Quality', domain: 'Cross-System' },
-    { slug: 'people_org_map', title: 'People Network', domain: 'People' },
-    { slug: 'team_interaction_heatmap', title: 'Cross-Team Interactions', domain: 'People' },
-    { slug: 'team_composition', title: 'Team Composition', domain: 'People' },
-    { slug: 'people_coverage_sankey', title: 'System Access Coverage', domain: 'People' },
-    { slug: 'key_person_risk', title: 'Key Person Risk', domain: 'People' },
-    { slug: 'activity_trends', title: 'Activity by Team', domain: 'People' },
-    { slug: 'communication_gaps', title: 'Org Chart vs System Activity', domain: 'People' },
-    { slug: 'geography_activity', title: 'Geography & Activity', domain: 'People' },
-    { slug: 'network_communities', title: 'Network Communities', domain: 'People' },
-    { slug: 'centrality_beeswarm', title: 'Centrality Distribution', domain: 'People' },
-  ];
-  return charts.map((chart) => ({
-    params: { slug: chart.slug },
-    props: chart,
-  }));
+  const chartsDir = resolve('../analysis/charts');
+  const files = readdirSync(chartsDir).filter(
+    (f) => f.endsWith('.json') && !f.startsWith('_')
+  );
+  return files.map((f) => {
+    const slug = f.replace('.json', '');
+    return {
+      params: { slug },
+      props: { slug, title: slugToTitle(slug), domain: guessDomain(slug) },
+    };
+  });
 };
 
 interface Props {

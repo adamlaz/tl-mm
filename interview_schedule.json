@@ -626,9 +626,9 @@
     },
     {
       "id": "W2",
-      "name": "TBD — SL Lead (Rajik departed)",
-      "title": "Sri Lanka Engineering Lead",
-      "email": null,
+      "name": "Wenushka Dikowita",
+      "title": "Mgr, Engineering (L3 Sri Lanka)",
+      "email": "wenushka.dikowita@madmobile.com",
       "departed_original": "Rajik Gunatilaka (rajik.gunatilaka@madmobile.com)",
       "org_size": "Sri Lanka engineering",
       "day": "Wednesday",
@@ -657,8 +657,8 @@
         {"path": "/people/teams", "label": "SL team members"},
         {"path": "/engineering", "label": "PR cycle time variance"}
       ],
-      "scheduling": { "priority": "MUST", "why": "Need someone who can speak to Sri Lanka engineering operations. Video call.", "alternatives": ["Nishen Peiris (nishen.peiris@madmobile.com)", "Wenushka Dikowita (wenushka.dikowita@madmobile.com)"] },
-      "notes": "RAJIK GUNATILAKA DEPARTED — confirmed by Chathura (April 6): 'no longer with us. Former Sri Lanka center lead.' Slot needs replacement. Highlighted yellow in OneNote. SL operations questions are still valid for any SL lead. DO NOT reference SL cost restructuring or 90-day plan financial data."
+      "scheduling": { "priority": "MUST", "why": "SL engineering perspective -- manages L3 Sri Lanka team under Zubair, direct visibility into US/SL coordination, PR review patterns, timezone handoffs.", "alternatives": ["Nishen Peiris (nishen.peiris@madmobile.com) -- Sr Engineer on Wenushka's team"] },
+      "notes": "Replaces Rajik Gunatilaka (departed April 6). Wenushka manages the SL engineering team and has the ground-level view of US/SL coordination. DO NOT reference SL cost restructuring or 90-day plan financial data."
     },
     {
       "id": "W3",

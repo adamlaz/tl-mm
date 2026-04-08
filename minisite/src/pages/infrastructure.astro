@@ -75,11 +75,36 @@ const lambdaCount = resources.filter((r) => r.data.type === 'Lambda').length;
 const rdsCount = resources.filter((r) => r.data.type === 'RDS').length;
 
 const charts = [
-  { slug: 'aws_cost_by_account', title: 'Cost by Account' },
-  { slug: 'aws_cost_by_service', title: 'Cost by Service' },
-  { slug: 'aws_cost_trend', title: 'Cost Trend' },
-  { slug: 'aws_resource_inventory', title: 'Resource Inventory' },
-  { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes' },
+  {
+    slug: 'aws_cost_by_account',
+    title: 'Cost by Account',
+    caption:
+      'Spend by AWS account. The largest accounts represent the biggest levers for cost optimization. Consolidation of underutilized accounts could reduce overhead.',
+  },
+  {
+    slug: 'aws_cost_by_service',
+    title: 'Cost by Service',
+    caption:
+      'Which AWS services drive the most cost. Compute (EC2/ECS) and data transfer typically dominate. Services with outsized spend relative to their function are optimization targets.',
+  },
+  {
+    slug: 'aws_cost_trend',
+    title: 'Cost Trend',
+    caption:
+      'Monthly AWS spend over time. A flat or rising trend alongside planned cost reductions indicates the cuts have not yet taken effect.',
+  },
+  {
+    slug: 'aws_resource_inventory',
+    title: 'Resource Inventory',
+    caption:
+      'Total AWS resources by type across all accounts. High resource counts in underutilized categories may indicate orphaned infrastructure.',
+  },
+  {
+    slug: 'aws_lambda_runtimes',
+    title: 'Lambda Runtimes',
+    caption:
+      'Lambda function runtime versions. Outdated runtimes (Node 14, Python 3.8) lose security patches and performance improvements.',
+  },
 ];
 
 /* ---------- Security Posture ---------- */
@@ -183,7 +208,7 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
   <SectionHeader
     eyebrow="INFRASTRUCTURE"
     title="Infrastructure"
-    description="18 AWS accounts managed under a centralized cloud organization. Cost, resource, security, and operational data — March/April 2026. Data extracted April 3–4, 2026 (V7)."
+    description="This section examines Mad Mobile's cloud infrastructure -- the servers, databases, and services that run the product. Covering 18 AWS accounts, $383K/month in spend, and critical gaps in security posture, container health checks, and instance modernization. Key concerns: cost efficiency, security posture, and whether the infrastructure is modern enough to support the next phase of growth."
   />
 
   <div class="grid sm:grid-cols-2 gap-4 mb-8">
@@ -194,8 +219,16 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
-    <ChartEmbed slug="aws_instance_audit" title="EC2 Instance Generation Audit" />
-    <ChartEmbed slug="aws_lambda_runtimes" title="Lambda Runtime Distribution" />
+    <ChartEmbed
+      slug="aws_instance_audit"
+      title="EC2 Instance Generation Audit"
+      caption="EC2 instance generation breakdown. Pre-Graviton instances (M5, T3) cost 20-40% more than current-generation Graviton equivalents for the same workload."
+    />
+    <ChartEmbed
+      slug="aws_lambda_runtimes"
+      title="Lambda Runtime Distribution"
+      caption="Lambda function runtime versions. Outdated runtimes (Node 14, Python 3.8) lose security patches and performance improvements."
+    />
   </div>
 
   <!-- ── Top-level Metrics ── -->
@@ -203,7 +236,7 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
     <MetricCard label="Monthly Spend" value={`$${Math.round(totalCost / 1000)}K`} subtitle="March 2026" />
     <MetricCard label="EC2 Instances" value={ec2Count.toString()} subtitle="83% pre-Graviton" />
     <MetricCard label="Lambda Functions" value={lambdaCount.toString()} subtitle="21% on end-of-life runtimes" />
-    <MetricCard label="RDS Instances" value={rdsCount.toString()} />
+    <MetricCard label="RDS Instances" value={rdsCount.toString()} subtitle="managed databases" />
   </dl>
 
   <!-- ── Deep Analysis ── -->
@@ -272,18 +305,28 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
   <!-- ── Cost Optimization ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Cost Optimization</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Savings Plans Util." value={`${spUtilization}%`} subtitle="Q1 2026 utilization" />
+    <MetricCard label="Savings Plans Util." value={`${spUtilization}%`} subtitle="Q1 2026 utilization" benchmark="Target: >90%" />
     <MetricCard label="SP Commitment" value={`$${Math.round(spCommitment / 1000)}K`} subtitle="Q1 2026 total commitment" />
     <MetricCard label="6-Month Spend" value={`$${(totalSpend6m / 1_000_000).toFixed(1)}M`} subtitle={`Oct 2025 – Mar 2026 (${costTrendDirection})`} />
     <MetricCard label="30-Day Forecast" value={`$${Math.round(forecastAmount / 1000)}K`} subtitle="projected next period" />
   </dl>
+
+  <div class="my-6">
+    <FindingCard
+      severity="amber"
+      title="Infrastructure Modernization Gap"
+      detail="83% of EC2 instances are pre-Graviton, 90% of ECS containers lack health checks, and tagging compliance is below 50%. These are not isolated issues -- they indicate infrastructure that has grown organically without operational standards. Modernization would reduce costs by 20-40% on compute alone while improving reliability."
+      href="/financial"
+      hrefLabel="Cost Impact"
+    />
+  </div>
 
   <!-- ── Security Posture ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Security Posture</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
     <MetricCard label="IAM Users" value={totalIamUsers.toString()} subtitle={`across ${securityData.accounts_scanned ?? 0} scanned accounts`} />
     <MetricCard label="IAM Roles" value={totalIamRoles.toString()} subtitle="total roles provisioned" />
-    <MetricCard label="MFA Devices" value={totalMfaDevices.toString()} subtitle={totalMfaDevices === 0 ? 'CRITICAL — none enrolled' : 'enrolled'} />
+    <MetricCard label="MFA Devices" value={totalMfaDevices.toString()} subtitle={totalMfaDevices === 0 ? 'CRITICAL — none enrolled' : 'enrolled'} benchmark="Target: 100% MFA" />
     <MetricCard label="Active Access Keys" value={totalActiveKeys.toString()} subtitle="service + user keys" />
   </dl>
   <div class="mb-8">
@@ -309,7 +352,7 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
     <MetricCard label="VPC Peering" value={totalVpcPeering.toString()} subtitle="active connections" />
     <MetricCard label="NAT Gateways" value={totalNatGw.toString()} subtitle="across scanned accounts" />
     <MetricCard label="Security Groups" value={totalSgs.toString()} subtitle="total SGs" />
-    <MetricCard label="Wide-Open SGs" value={totalWideOpenSgs.toString()} subtitle={`${wideOpenUnique.length} rules exposed to 0.0.0.0/0`} />
+    <MetricCard label="Wide-Open SGs" value={totalWideOpenSgs.toString()} subtitle={`security groups allowing all inbound traffic · ${wideOpenUnique.length} rules exposed to 0.0.0.0/0`} />
   </dl>
   {wideOpenUnique.length > 0 && (
     <div class="mb-8">
@@ -333,9 +376,9 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
   <!-- ── Tagging Compliance ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Tagging & Naming Compliance</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-    <MetricCard label="EC2 Naming" value={`${ec2Tag.naming_compliance_pct ?? 0}%`} subtitle={`${ec2Tag.total ?? 0} instances — ${ec2Tag.unnamed ?? 0} unnamed`} />
-    <MetricCard label="Lambda Naming" value={`${lambdaTag.naming_compliance_pct ?? 0}%`} subtitle={`${lambdaTag.custom ?? 0} custom functions`} />
-    <MetricCard label="S3 Naming" value={`${s3Tag.naming_compliance_pct ?? 0}%`} subtitle={`${s3Tag.custom ?? 0} custom buckets — ${s3Tag.common_issues?.no_org_prefix ?? 0} missing org prefix`} />
+    <MetricCard label="EC2 Naming" value={`${ec2Tag.naming_compliance_pct ?? 0}%`} subtitle={`${ec2Tag.total ?? 0} instances — ${ec2Tag.unnamed ?? 0} unnamed`} benchmark="Target: 100%" />
+    <MetricCard label="Lambda Naming" value={`${lambdaTag.naming_compliance_pct ?? 0}%`} subtitle={`${lambdaTag.custom ?? 0} custom functions`} benchmark="Target: 100%" />
+    <MetricCard label="S3 Naming" value={`${s3Tag.naming_compliance_pct ?? 0}%`} subtitle={`${s3Tag.custom ?? 0} custom buckets — ${s3Tag.common_issues?.no_org_prefix ?? 0} missing org prefix`} benchmark="Target: 100%" />
   </dl>
   <div class="mb-8">
     <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Compliance by Account</h2>
@@ -380,10 +423,10 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
   <!-- ── CloudWatch Dashboards ── -->
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">CloudWatch Dashboards</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-    <MetricCard label="Dashboards" value={(cwSummary.total_dashboards ?? 0).toString()} subtitle="configured" />
-    <MetricCard label="Widgets" value={(cwSummary.total_widgets ?? 0).toString()} subtitle="total across dashboards" />
-    <MetricCard label="Alarm References" value={(cwSummary.total_alarm_references ?? 0).toString()} subtitle={cwSummary.total_alarm_references === 0 ? 'no alarms linked' : 'linked to dashboards'} />
-    <MetricCard label="Namespaces" value={(cwSummary.all_metric_namespaces?.length ?? 0).toString()} subtitle="metric namespaces tracked" />
+    <MetricCard label="Dashboards" value={(cwSummary.total_dashboards ?? 0).toString()} subtitle="monitoring and alerting coverage · configured" />
+    <MetricCard label="Widgets" value={(cwSummary.total_widgets ?? 0).toString()} subtitle="monitoring and alerting coverage · total across dashboards" />
+    <MetricCard label="Alarm References" value={(cwSummary.total_alarm_references ?? 0).toString()} subtitle={cwSummary.total_alarm_references === 0 ? 'monitoring and alerting coverage · no alarms linked' : 'monitoring and alerting coverage · linked to dashboards'} />
+    <MetricCard label="Namespaces" value={(cwSummary.all_metric_namespaces?.length ?? 0).toString()} subtitle="monitoring and alerting coverage · metric namespaces tracked" />
   </dl>
   <div class="mb-8">
     <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">Dashboard Inventory</h2>
@@ -420,7 +463,7 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
-      <ChartEmbed slug={c.slug} title={c.title} />
+      <ChartEmbed slug={c.slug} title={c.title} caption={c.caption} />
     ))}
   </div>
 

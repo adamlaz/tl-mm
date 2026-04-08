@@ -1,0 +1,5505 @@
+{
+  "total_findings": 5569,
+  "findings": [
+    {
+      "source": "mnunez@madmobile.com",
+      "target": "mriglos@madmobile.com",
+      "layers": {
+        "meeting": 64,
+        "relevance": 27
+      },
+      "layer_count": 2,
+      "total_strength": 91,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "agoad@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jake.linder@madmobile.com",
+      "target": "kyle.budd@madmobile.com",
+      "layers": {
+        "meeting": 22,
+        "relevance": 2
+      },
+      "layer_count": 2,
+      "total_strength": 24,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.fenley@madmobile.com",
+      "target": "rekha.mohanan@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 35,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jkennedy@madmobile.com",
+      "target": "orlando.tovar@madmobile.com",
+      "layers": {
+        "meeting": 128,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 150,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "jake.linder@madmobile.com",
+      "layers": {
+        "meeting": 58,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 72,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.leniz@madmobile.com",
+      "target": "natasha.samath@madmobile.com",
+      "layers": {
+        "meeting": 31,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 45,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kaelon.lucas@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 50,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 61,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "dulana.dharmaratne@madmobile.com",
+      "layers": {
+        "meeting": 47,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 62,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "francina.golden@madmobile.com",
+      "target": "natasha.samath@madmobile.com",
+      "layers": {
+        "meeting": 31,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 52,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ayodele.lawal@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 43,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 49,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jeremy.diggins@madmobile.com",
+      "target": "rbaune@winmarkcorporation.com",
+      "layers": {
+        "meeting": 25,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "pramodi.fernando@madmobile.com",
+      "target": "rusiru.perera@madmobile.com",
+      "layers": {
+        "meeting": 1285,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 1303,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chris.gomersall@madmobile.com",
+      "target": "daniel.lomsak@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 19,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "jake.linder@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 51,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gayan.karunarathna@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 85,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 106,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "amussi@peakactivity.com",
+      "target": "cheri.siedle@madmobile.com",
+      "layers": {
+        "meeting": 100,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 111,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kristopher.ippolito@madmobile.com",
+      "target": "steven.siegel@madmobile.com",
+      "layers": {
+        "meeting": 92,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 117,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "anelis.ricardo@madmobile.com",
+      "target": "mark.do@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 48,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "das.desilva@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 24,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cheri.siedle@madmobile.com",
+      "target": "jeremy.diggins@madmobile.com",
+      "layers": {
+        "meeting": 272,
+        "relevance": 30
+      },
+      "layer_count": 2,
+      "total_strength": 302,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "pmo_restaurant@madmobile.com",
+      "target": "qpannu@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 35,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "kyle.budd@madmobile.com",
+      "layers": {
+        "meeting": 84,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 109,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gschmitzer@madmobile.com",
+      "target": "jkennedy@madmobile.com",
+      "layers": {
+        "meeting": 96,
+        "relevance": 49
+      },
+      "layer_count": 2,
+      "total_strength": 145,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.leniz@madmobile.com",
+      "target": "keith.burgess@madmobile.com",
+      "layers": {
+        "meeting": 30,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 43,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 62,
+        "relevance": 27
+      },
+      "layer_count": 2,
+      "total_strength": 89,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "qpannu@madmobile.com",
+      "layers": {
+        "meeting": 152,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 175,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "francina.golden@madmobile.com",
+      "target": "keith.burgess@madmobile.com",
+      "layers": {
+        "meeting": 30,
+        "relevance": 2
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "danika.munasinghe@madmobile.com",
+      "target": "kanchana.amarathunga@madmobile.com",
+      "layers": {
+        "meeting": 169,
+        "relevance": 40
+      },
+      "layer_count": 2,
+      "total_strength": 209,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 62,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 76,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "marko.milakovic@madmobile.com",
+      "target": "nicholas.allen@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 4
+      },
+      "layer_count": 2,
+      "total_strength": 20,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joel.maldonado@madmobile.com",
+      "target": "samantha.albert@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 34,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jake.linder@madmobile.com",
+      "target": "megan.messmore@madmobile.com",
+      "layers": {
+        "meeting": 68,
+        "relevance": 35
+      },
+      "layer_count": 2,
+      "total_strength": 103,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexis.maltes@madmobile.com",
+      "target": "andres.lebron@madmobile.com",
+      "layers": {
+        "meeting": 12,
+        "relevance": 29
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "gayan.karunarathna@madmobile.com",
+      "layers": {
+        "meeting": 178,
+        "relevance": 33
+      },
+      "layer_count": 2,
+      "total_strength": 211,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "target": "rob.quin@madmobile.com",
+      "layers": {
+        "meeting": 54,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 66,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "andres.lebron@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "vsotomayor@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 73,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 81,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "angie.mroczka@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 40,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 46,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dailyproductionsupportsync@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 68,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 90,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chris.gomersall@madmobile.com",
+      "target": "richard.farber@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 4
+      },
+      "layer_count": 2,
+      "total_strength": 18,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jharre@madmobile.com",
+      "target": "matt.cooke@madmobile.com",
+      "layers": {
+        "meeting": 141,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 157,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 261,
+        "relevance": 43
+      },
+      "layer_count": 2,
+      "total_strength": 304,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ebreland@madmobile.com",
+      "target": "malinda.lamahewa@madmobile.com",
+      "layers": {
+        "meeting": 66,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 91,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "benjamin.roedell@madmobile.com",
+      "target": "richard.farber@madmobile.com",
+      "layers": {
+        "meeting": 292,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 309,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "megan.messmore@madmobile.com",
+      "layers": {
+        "meeting": 60,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 83,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "suneth.desoyza@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 37,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 378,
+        "relevance": 48
+      },
+      "layer_count": 2,
+      "total_strength": 426,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kaelon.lucas@madmobile.com",
+      "target": "siva.golla@madmobile.com",
+      "layers": {
+        "meeting": 72,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 84,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "sriharshith.akula@madmobile.com",
+      "layers": {
+        "meeting": 10,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 19,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kaelon.lucas@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 135,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 152,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.freid@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 12,
+        "relevance": 30
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "keith.robinson@rackroom.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 36,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 54,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "poorna.amarasingha@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 24,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "jorge.maltes@madmobile.com",
+      "layers": {
+        "meeting": 31,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 40,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexis.maltes@madmobile.com",
+      "target": "madison.bloomfield@madmobile.com",
+      "layers": {
+        "meeting": 83,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 108,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 39,
+        "relevance": 40
+      },
+      "layer_count": 2,
+      "total_strength": 79,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 249,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 268,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "megan.messmore@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 5
+      },
+      "layer_count": 2,
+      "total_strength": 13,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 103,
+        "relevance": 36
+      },
+      "layer_count": 2,
+      "total_strength": 139,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adam.hartman@madmobile.com",
+      "target": "richard.farber@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 29,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "michael.lee@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 113,
+        "relevance": 32
+      },
+      "layer_count": 2,
+      "total_strength": 145,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "kemi.lawal@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 25,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dsalama@madmobile.com",
+      "target": "steven.siegel@madmobile.com",
+      "layers": {
+        "meeting": 70,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 93,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chris.gomersall@madmobile.com",
+      "target": "ibennett@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 23,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kristopher.ippolito@madmobile.com",
+      "target": "taylor.butto@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 34,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bbennett@madmobile.com",
+      "target": "chris.gomersall@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ebreland@madmobile.com",
+      "target": "rcrawford@madmobile.com",
+      "layers": {
+        "meeting": 94,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 119,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "megan.messmore@madmobile.com",
+      "layers": {
+        "meeting": 26,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "elaine.cilia@rs2.com",
+      "target": "kevin.reyes@madmobile.com",
+      "layers": {
+        "meeting": 24,
+        "relevance": 4
+      },
+      "layer_count": 2,
+      "total_strength": 28,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "austin.spreadbury@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 45,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 51,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 35,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 53,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ibennett@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 151,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 166,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "darren.blackwell@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 40,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "orlando.tovar@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 19,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "caketraining@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ibennett@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 59,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 79,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ashen.weerasinghe@madmobile.com",
+      "target": "hashan.maduwantha@madmobile.com",
+      "layers": {
+        "meeting": 139,
+        "relevance": 27
+      },
+      "layer_count": 2,
+      "total_strength": 166,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "emily.batts@madmobile.com",
+      "layers": {
+        "meeting": 42,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 61,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "susampath.madarasinghe@madmobile.com",
+      "layers": {
+        "meeting": 188,
+        "relevance": 2
+      },
+      "layer_count": 2,
+      "total_strength": 190,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ever.contreras@madmobile.com",
+      "target": "patrick.smith@madmobile.com",
+      "layers": {
+        "meeting": 9,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 23,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jessica.conn@madmobile.com",
+      "target": "mark.freid@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 15,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "amy.arunamata@ralphlauren.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 71,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 82,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ayodele.lawal@madmobile.com",
+      "target": "samantha.albert@madmobile.com",
+      "layers": {
+        "meeting": 9,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 16,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.guilarte@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 252,
+        "relevance": 34
+      },
+      "layer_count": 2,
+      "total_strength": 286,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "benjamin.roedell@madmobile.com",
+      "target": "fmendez@madmobile.com",
+      "layers": {
+        "meeting": 141,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 161,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "andrew.honnold@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 50,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "das.desilva@madmobile.com",
+      "layers": {
+        "meeting": 89,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 126,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "inushi.gunathilake@madmobile.com",
+      "target": "sadeep.udugama@madmobile.com",
+      "layers": {
+        "meeting": 328,
+        "relevance": 3
+      },
+      "layer_count": 2,
+      "total_strength": 331,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ever.contreras@madmobile.com",
+      "target": "karen.licker@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "lalinda.ranasingha@madmobile.com",
+      "layers": {
+        "meeting": 223,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 247,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "ever.contreras@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 25,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.leniz@madmobile.com",
+      "target": "leonard.davis@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 36,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "benjamin.roedell@madmobile.com",
+      "target": "nagaswaroopa.kaukuri@madmobile.com",
+      "layers": {
+        "meeting": 218,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 255,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "l2techsupport@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 373,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 397,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 122,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 138,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "richard.farber@madmobile.com",
+      "layers": {
+        "meeting": 284,
+        "relevance": 35
+      },
+      "layer_count": 2,
+      "total_strength": 319,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "christian.smith@madmobile.com",
+      "layers": {
+        "meeting": 17,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "rob.quin@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 24,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ibennett@madmobile.com",
+      "target": "savumi.wadduwage@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 28,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "renee.pauley@madmobile.com",
+      "layers": {
+        "meeting": 54,
+        "relevance": 49
+      },
+      "layer_count": 2,
+      "total_strength": 103,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "michael.lee@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 39,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 49,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "karl.grech@rs2.com",
+      "target": "kevin.reyes@madmobile.com",
+      "layers": {
+        "meeting": 26,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "holly.culver@madmobile.com",
+      "target": "jharre@madmobile.com",
+      "layers": {
+        "meeting": 60,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 74,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexis.maltes@madmobile.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 34,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "austin.spreadbury@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 86,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 111,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "rosen.georgiev@madmobile.com",
+      "layers": {
+        "meeting": 9,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dsalama@madmobile.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 193,
+        "relevance": 49
+      },
+      "layer_count": 2,
+      "total_strength": 242,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hminchew@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 29,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "karen.licker@madmobile.com",
+      "target": "shavin.pieris@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 25,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kevin.ohaugherty@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 37,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 62,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dsalama@madmobile.com",
+      "target": "tomolivier@gmail.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 29,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "suneth.desoyza@madmobile.com",
+      "target": "thaddeus.fox@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 28
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adam.veliz@madmobile.com",
+      "target": "brett.gravlin@madmobile.com",
+      "layers": {
+        "meeting": 12,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "kanchana.amarathunga@madmobile.com",
+      "layers": {
+        "meeting": 420,
+        "relevance": 49
+      },
+      "layer_count": 2,
+      "total_strength": 469,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "sowjanya.akula@madmobile.com",
+      "layers": {
+        "meeting": 108,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 122,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "tyler.kendrick@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 43,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ebreland@madmobile.com",
+      "target": "suneth.desoyza@madmobile.com",
+      "layers": {
+        "meeting": 70,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 86,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.guilarte@madmobile.com",
+      "target": "siva.golla@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 22,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.guilarte@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 178,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 200,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 63,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 81,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.guilarte@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 261,
+        "relevance": 44
+      },
+      "layer_count": 2,
+      "total_strength": 305,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "robert.brisson@madmobile.com",
+      "target": "taylor.butto@madmobile.com",
+      "layers": {
+        "meeting": 38,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 60,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "antonio.mussi@madmobile.com",
+      "target": "rusty.clark@madmobile.com",
+      "layers": {
+        "meeting": 230,
+        "relevance": 41
+      },
+      "layer_count": 2,
+      "total_strength": 271,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "rosen.georgiev@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 27
+      },
+      "layer_count": 2,
+      "total_strength": 46,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kyle.budd@madmobile.com",
+      "target": "patrycja.stevenson@madmobile.com",
+      "layers": {
+        "meeting": 23,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 44,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gschmitzer@madmobile.com",
+      "target": "kristopher.ippolito@madmobile.com",
+      "layers": {
+        "meeting": 25,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 36,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "das.desilva@madmobile.com",
+      "target": "robert.brisson@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 43,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "daniel.lomsak@madmobile.com",
+      "layers": {
+        "meeting": 50,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 75,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "david.strainick@madmobile.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 94,
+        "relevance": 44
+      },
+      "layer_count": 2,
+      "total_strength": 138,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 83,
+        "relevance": 39
+      },
+      "layer_count": 2,
+      "total_strength": 122,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "ayodele.lawal@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "brew.lamb@madmobile.com",
+      "target": "sumnima.shah@madmobile.com",
+      "layers": {
+        "meeting": 194,
+        "relevance": 45
+      },
+      "layer_count": 2,
+      "total_strength": 239,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "agoad@madmobile.com",
+      "target": "sumnima.shah@madmobile.com",
+      "layers": {
+        "meeting": 143,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 166,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "darren.blackwell@madmobile.com",
+      "layers": {
+        "meeting": 105,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 127,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "megan.messmore@madmobile.com",
+      "target": "taylor.butto@madmobile.com",
+      "layers": {
+        "meeting": 50,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 75,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hminchew@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 3
+      },
+      "layer_count": 2,
+      "total_strength": 14,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "aschwartz@winmarkcorporation.com",
+      "target": "jeremy.diggins@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 30,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "joel.maldonado@madmobile.com",
+      "layers": {
+        "meeting": 21,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "qpannu@madmobile.com",
+      "target": "siva.golla@madmobile.com",
+      "layers": {
+        "meeting": 46,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 66,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "isaac.kim@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 35,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 58,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "daniel.lomsak@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 26
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "qpannu@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 106,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 118,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "thiwanka.wimalasuriya@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 4
+      },
+      "layer_count": 2,
+      "total_strength": 19,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "ryan.schinsky@madmobile.com",
+      "layers": {
+        "meeting": 7,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 26,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ashan.ruwanpura@madmobile.com",
+      "target": "marko.milakovic@madmobile.com",
+      "layers": {
+        "meeting": 70,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 88,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ebreland@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 90,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 109,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "qpannu@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 277,
+        "relevance": 45
+      },
+      "layer_count": 2,
+      "total_strength": 322,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "nagaswaroopa.kaukuri@madmobile.com",
+      "layers": {
+        "meeting": 302,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 309,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "benjamin.roedell@madmobile.com",
+      "target": "nishani.peiris@madmobile.com",
+      "layers": {
+        "meeting": 72,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 93,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "emily.batts@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 38,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 53,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adam.hartman@madmobile.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 37,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "jake.linder@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 28
+      },
+      "layer_count": 2,
+      "total_strength": 44,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "patrycja.stevenson@madmobile.com",
+      "target": "sowjanya.akula@madmobile.com",
+      "layers": {
+        "meeting": 60,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 76,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexander.baine@madmobile.com",
+      "target": "siva.golla@madmobile.com",
+      "layers": {
+        "meeting": 10,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "johnathan.tait@madmobile.com",
+      "target": "keith.burgess@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexander.baine@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 33,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 54,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulana.dharmaratne@madmobile.com",
+      "target": "thiwanka.wimalasuriya@madmobile.com",
+      "layers": {
+        "meeting": 72,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 88,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexander.baine@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 177,
+        "relevance": 41
+      },
+      "layer_count": 2,
+      "total_strength": 218,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.fenley@madmobile.com",
+      "target": "qpannu@madmobile.com",
+      "layers": {
+        "meeting": 36,
+        "relevance": 41
+      },
+      "layer_count": 2,
+      "total_strength": 77,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "ever.contreras@madmobile.com",
+      "layers": {
+        "meeting": 95,
+        "relevance": 48
+      },
+      "layer_count": 2,
+      "total_strength": 143,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "sanduni.dissanayaka@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 118,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 129,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bbennett@madmobile.com",
+      "target": "steven.siegel@madmobile.com",
+      "layers": {
+        "meeting": 64,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 88,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 48,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.fenley@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 52,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 75,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "christian.orellana@madmobile.com",
+      "target": "leonard.davis@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 35,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 55,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 70,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "angel.dearmas@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 22,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 38,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "darren.blackwell@madmobile.com",
+      "target": "hminchew@madmobile.com",
+      "layers": {
+        "meeting": 105,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 114,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 22,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ebreland@madmobile.com",
+      "target": "mvillaseco@madmobile.com",
+      "layers": {
+        "meeting": 67,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 90,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.lomsak@madmobile.com",
+      "target": "jkennedy@madmobile.com",
+      "layers": {
+        "meeting": 123,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 139,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.fenley@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 40,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 58,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bbennett@madmobile.com",
+      "target": "bill.lodes@madmobile.com",
+      "layers": {
+        "meeting": 69,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 85,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "agoad@madmobile.com",
+      "target": "kaelon.lucas@madmobile.com",
+      "layers": {
+        "meeting": 99,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 120,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "ibennett@madmobile.com",
+      "layers": {
+        "meeting": 73,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 98,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "beau.bruderer@madmobile.com",
+      "target": "kaelon.lucas@madmobile.com",
+      "layers": {
+        "meeting": 113,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 123,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "matt.griffin@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "austin.spreadbury@madmobile.com",
+      "target": "gregory.ladgin@madmobile.com",
+      "layers": {
+        "meeting": 155,
+        "relevance": 40
+      },
+      "layer_count": 2,
+      "total_strength": 195,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "matt.cooke@madmobile.com",
+      "target": "richard.farber@madmobile.com",
+      "layers": {
+        "meeting": 211,
+        "relevance": 44
+      },
+      "layer_count": 2,
+      "total_strength": 255,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 38,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 61,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 74,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "das.desilva@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 72,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 90,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "joel.maldonado@madmobile.com",
+      "layers": {
+        "meeting": 68,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 88,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 50,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 69,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "megan.messmore@madmobile.com",
+      "target": "samantha.albert@madmobile.com",
+      "layers": {
+        "meeting": 49,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 62,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bbennett@madmobile.com",
+      "target": "jim.eddy@madmobile.com",
+      "layers": {
+        "meeting": 7,
+        "relevance": 3
+      },
+      "layer_count": 2,
+      "total_strength": 10,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "sumnima.shah@madmobile.com",
+      "layers": {
+        "meeting": 206,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 225,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hashan.jalath@madmobile.com",
+      "target": "mriglos@madmobile.com",
+      "layers": {
+        "meeting": 88,
+        "relevance": 38
+      },
+      "layer_count": 2,
+      "total_strength": 126,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gschmitzer@madmobile.com",
+      "target": "jeff.pena@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 25,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 364,
+        "relevance": 36
+      },
+      "layer_count": 2,
+      "total_strength": 400,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "ed.piper@madmobile.com",
+      "layers": {
+        "meeting": 71,
+        "relevance": 50
+      },
+      "layer_count": 2,
+      "total_strength": 121,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "jake.linder@madmobile.com",
+      "layers": {
+        "meeting": 141,
+        "relevance": 44
+      },
+      "layer_count": 2,
+      "total_strength": 185,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "sanduni.dissanayaka@madmobile.com",
+      "layers": {
+        "meeting": 61,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 74,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joel.maldonado@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 191,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 216,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "dulana.dharmaratne@madmobile.com",
+      "layers": {
+        "meeting": 136,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 160,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "nishani.peiris@madmobile.com",
+      "layers": {
+        "meeting": 74,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 97,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "dilruwan.madubashitha@madmobile.com",
+      "layers": {
+        "meeting": 102,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 126,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 65,
+        "relevance": 44
+      },
+      "layer_count": 2,
+      "total_strength": 109,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "kemi.lawal@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 21,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bbennett@madmobile.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 102,
+        "relevance": 43
+      },
+      "layer_count": 2,
+      "total_strength": 145,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "caketraining@madmobile.com",
+      "target": "daniel.leniz@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "guru.tudum@rs2.com",
+      "target": "kevin.reyes@madmobile.com",
+      "layers": {
+        "meeting": 30,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 36,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bbennett@madmobile.com",
+      "target": "tomolivier@gmail.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 29,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jharre@madmobile.com",
+      "target": "kien.pham@madmobile.com",
+      "layers": {
+        "meeting": 139,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 149,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ayushka.weerasinghe@madmobile.com",
+      "target": "saadhi.rasheed@madmobile.com",
+      "layers": {
+        "meeting": 28,
+        "relevance": 5
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexander.baine@madmobile.com",
+      "target": "beau.bruderer@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 24,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "nagaswaroopa.kaukuri@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 229,
+        "relevance": 39
+      },
+      "layer_count": 2,
+      "total_strength": 268,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gschmitzer@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 17,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 26,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dailyproductionsupportsync@madmobile.com",
+      "target": "sanduni.dissanayaka@madmobile.com",
+      "layers": {
+        "meeting": 68,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 91,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "kevin.ohaugherty@madmobile.com",
+      "layers": {
+        "meeting": 20,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "kemi.lawal@madmobile.com",
+      "layers": {
+        "meeting": 12,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 23,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "cynthia.petersen@madmobile.com",
+      "layers": {
+        "meeting": 32,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 54,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "kevin.ohaugherty@madmobile.com",
+      "layers": {
+        "meeting": 24,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "target": "sowjanya.akula@madmobile.com",
+      "layers": {
+        "meeting": 154,
+        "relevance": 33
+      },
+      "layer_count": 2,
+      "total_strength": 187,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "paul.roberts@madmobile.com",
+      "target": "pratikchha.khadka@madmobile.com",
+      "layers": {
+        "meeting": 54,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 68,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "lalinda.ranasingha@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 59,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 73,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gregory.ladgin@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 36,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 50,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "patrycja.stevenson@madmobile.com",
+      "layers": {
+        "meeting": 43,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 68,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 302,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 327,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "karen.licker@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 64,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 83,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ebreland@madmobile.com",
+      "target": "nagaswaroopa.kaukuri@madmobile.com",
+      "layers": {
+        "meeting": 245,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 269,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cheri.siedle@madmobile.com",
+      "target": "jpena@peakactivity.com",
+      "layers": {
+        "meeting": 101,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 108,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "gayan.karunarathna@madmobile.com",
+      "layers": {
+        "meeting": 151,
+        "relevance": 40
+      },
+      "layer_count": 2,
+      "total_strength": 191,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "nagaswaroopa.kaukuri@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 35,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "benjamin.roedell@madmobile.com",
+      "target": "shavin.pieris@madmobile.com",
+      "layers": {
+        "meeting": 244,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 264,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ayodele.lawal@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 47,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 63,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "leonard.davis@madmobile.com",
+      "target": "zachary.mccoy@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 37,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "sanduni.dissanayaka@madmobile.com",
+      "layers": {
+        "meeting": 199,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 211,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "mriglos@madmobile.com",
+      "layers": {
+        "meeting": 57,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 74,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bbennett@madmobile.com",
+      "target": "david.strainick@madmobile.com",
+      "layers": {
+        "meeting": 105,
+        "relevance": 46
+      },
+      "layer_count": 2,
+      "total_strength": 151,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "holly.culver@madmobile.com",
+      "target": "rusty.clark@madmobile.com",
+      "layers": {
+        "meeting": 44,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 60,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "andrew.honnold@madmobile.com",
+      "target": "steven.siegel@madmobile.com",
+      "layers": {
+        "meeting": 24,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 49,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chalaka.sudusinghe@madmobile.com",
+      "target": "thiwanka.wimalasuriya@madmobile.com",
+      "layers": {
+        "meeting": 160,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 168,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.lomsak@madmobile.com",
+      "target": "jake.linder@madmobile.com",
+      "layers": {
+        "meeting": 21,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "nagaswaroopa.kaukuri@madmobile.com",
+      "target": "rcrawford@madmobile.com",
+      "layers": {
+        "meeting": 322,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 346,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "rbrown@madmobile.com",
+      "target": "rekha.mohanan@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 37,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 204,
+        "relevance": 41
+      },
+      "layer_count": 2,
+      "total_strength": 245,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "ana.chambers@madmobile.com",
+      "layers": {
+        "meeting": 88,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 99,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexis.maltes@madmobile.com",
+      "target": "austin.spreadbury@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 30,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 294,
+        "relevance": 36
+      },
+      "layer_count": 2,
+      "total_strength": 330,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 80,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 99,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "patrick.smith@madmobile.com",
+      "layers": {
+        "meeting": 29,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 47,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 36,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "trenton.kress@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 114,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 125,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kevin.reyes@madmobile.com",
+      "target": "stephen.rota@rs2.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "agoad@madmobile.com",
+      "target": "brew.lamb@madmobile.com",
+      "layers": {
+        "meeting": 151,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 175,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "david.strainick@madmobile.com",
+      "target": "renee.pauley@madmobile.com",
+      "layers": {
+        "meeting": 29,
+        "relevance": 34
+      },
+      "layer_count": 2,
+      "total_strength": 63,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "karen.licker@madmobile.com",
+      "layers": {
+        "meeting": 52,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 74,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cynthia.petersen@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 33,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 47,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "andrew.honnold@madmobile.com",
+      "target": "chase.oelkers@rs2.com",
+      "layers": {
+        "meeting": 26,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 40,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "susampath.madarasinghe@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 130,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 152,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "pratikchha.khadka@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 66,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 87,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hashan.maduwantha@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 156,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 177,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.freid@madmobile.com",
+      "target": "matt.griffin@madmobile.com",
+      "layers": {
+        "meeting": 29,
+        "relevance": 43
+      },
+      "layer_count": 2,
+      "total_strength": 72,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jeff.pena@madmobile.com",
+      "target": "rusty.clark@madmobile.com",
+      "layers": {
+        "meeting": 211,
+        "relevance": 42
+      },
+      "layer_count": 2,
+      "total_strength": 253,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "nishani.peiris@madmobile.com",
+      "target": "suneth.desoyza@madmobile.com",
+      "layers": {
+        "meeting": 74,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 91,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jassiel.alvarez@madmobile.com",
+      "target": "kevin.ohaugherty@madmobile.com",
+      "layers": {
+        "meeting": 28,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "anderson.lavor@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 41,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 66,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "das.desilva@madmobile.com",
+      "target": "samantha.albert@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "rmeitzler@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chalaka.sudusinghe@madmobile.com",
+      "target": "raveen.panditha@madmobile.com",
+      "layers": {
+        "meeting": 150,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 172,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.lomsak@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 45,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 66,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "susampath.madarasinghe@madmobile.com",
+      "layers": {
+        "meeting": 183,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 196,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "matt.griffin@madmobile.com",
+      "target": "rosen.georgiev@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "l2techsupport@madmobile.com",
+      "target": "sanduni.dissanayaka@madmobile.com",
+      "layers": {
+        "meeting": 387,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 412,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.lomsak@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 51,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 71,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joel.maldonado@madmobile.com",
+      "target": "lalinda.ranasingha@madmobile.com",
+      "layers": {
+        "meeting": 79,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 88,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "anil.rathore@madmobile.com",
+      "target": "slino@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 37,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.fenley@madmobile.com",
+      "target": "darren.blackwell@madmobile.com",
+      "layers": {
+        "meeting": 54,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 71,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ebreland@madmobile.com",
+      "target": "nishani.peiris@madmobile.com",
+      "layers": {
+        "meeting": 77,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 102,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "andrew.honnold@madmobile.com",
+      "layers": {
+        "meeting": 127,
+        "relevance": 46
+      },
+      "layer_count": 2,
+      "total_strength": 173,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "shavin.pieris@madmobile.com",
+      "layers": {
+        "meeting": 213,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 226,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chalaka.sudusinghe@madmobile.com",
+      "target": "hashan.jalath@madmobile.com",
+      "layers": {
+        "meeting": 207,
+        "relevance": 26
+      },
+      "layer_count": 2,
+      "total_strength": 233,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "nishani.peiris@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 28,
+        "relevance": 30
+      },
+      "layer_count": 2,
+      "total_strength": 58,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulana.dharmaratne@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 46,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 58,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "emily.stineman@madmobile.com",
+      "target": "gregory.ladgin@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 2
+      },
+      "layer_count": 2,
+      "total_strength": 17,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hashan.jalath@madmobile.com",
+      "target": "thiwanka.wimalasuriya@madmobile.com",
+      "layers": {
+        "meeting": 136,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 145,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "beau.bruderer@madmobile.com",
+      "target": "mcrumley@madmobile.com",
+      "layers": {
+        "meeting": 7,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 15,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mriglos@madmobile.com",
+      "target": "poorna.amarasingha@madmobile.com",
+      "layers": {
+        "meeting": 78,
+        "relevance": 33
+      },
+      "layer_count": 2,
+      "total_strength": 111,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexis.maltes@madmobile.com",
+      "target": "bill.lodes@madmobile.com",
+      "layers": {
+        "meeting": 39,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 52,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chris.gomersall@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 20,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ibennett@madmobile.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 69,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 85,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "richard.farber@madmobile.com",
+      "target": "steve.foster@ralphlauren.com",
+      "layers": {
+        "meeting": 30,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 52,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.guilarte@madmobile.com",
+      "target": "nagaswaroopa.kaukuri@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 5
+      },
+      "layer_count": 2,
+      "total_strength": 24,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gayan.karunarathna@madmobile.com",
+      "target": "pratikchha.khadka@madmobile.com",
+      "layers": {
+        "meeting": 30,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 47,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "jeremy.diggins@madmobile.com",
+      "layers": {
+        "meeting": 116,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 139,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chalaka.sudusinghe@madmobile.com",
+      "target": "nishen.peiris@madmobile.com",
+      "layers": {
+        "meeting": 161,
+        "relevance": 29
+      },
+      "layer_count": 2,
+      "total_strength": 190,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "mark.freid@madmobile.com",
+      "layers": {
+        "meeting": 53,
+        "relevance": 30
+      },
+      "layer_count": 2,
+      "total_strength": 83,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexis.maltes@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 46,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 63,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "zachary.mccoy@madmobile.com",
+      "layers": {
+        "meeting": 20,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 44,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "austin.spreadbury@madmobile.com",
+      "target": "qpannu@madmobile.com",
+      "layers": {
+        "meeting": 41,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 50,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "mark.freid@madmobile.com",
+      "layers": {
+        "meeting": 56,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 79,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "rekha.mohanan@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 127,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 151,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ayodele.lawal@madmobile.com",
+      "target": "das.desilva@madmobile.com",
+      "layers": {
+        "meeting": 51,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 68,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "orlando.tovar@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 10,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 22,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "kanchana.amarathunga@madmobile.com",
+      "layers": {
+        "meeting": 28,
+        "relevance": 28
+      },
+      "layer_count": 2,
+      "total_strength": 56,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "michael.cerezo@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 36,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "emily.stineman@madmobile.com",
+      "target": "ryan.schinsky@madmobile.com",
+      "layers": {
+        "meeting": 151,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 188,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.reiland@morganstanley.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 24,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "angie.mroczka@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 17,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 35,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "inushi.gunathilake@madmobile.com",
+      "target": "pramodi.fernando@madmobile.com",
+      "layers": {
+        "meeting": 1108,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 1122,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "abigail.bernstein@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 48,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "michael.lee@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 224,
+        "relevance": 35
+      },
+      "layer_count": 2,
+      "total_strength": 259,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kien.pham@madmobile.com",
+      "target": "stephen.kimball@snipesusa.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 22,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "rajeev.mohata@ralphlauren.com",
+      "target": "richard.farber@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 5
+      },
+      "layer_count": 2,
+      "total_strength": 18,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "holly.culver@madmobile.com",
+      "target": "jkennedy@madmobile.com",
+      "layers": {
+        "meeting": 57,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 68,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 473,
+        "relevance": 48
+      },
+      "layer_count": 2,
+      "total_strength": 521,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "isaac.kim@madmobile.com",
+      "target": "joel.maldonado@madmobile.com",
+      "layers": {
+        "meeting": 21,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 45,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "thiwanka.wimalasuriya@madmobile.com",
+      "layers": {
+        "meeting": 165,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 184,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dsalama@madmobile.com",
+      "target": "karen.licker@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 14,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hashan.jalath@madmobile.com",
+      "target": "raveen.panditha@madmobile.com",
+      "layers": {
+        "meeting": 142,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 162,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "antonio.mussi@madmobile.com",
+      "target": "holly.culver@madmobile.com",
+      "layers": {
+        "meeting": 43,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 61,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 93,
+        "relevance": 42
+      },
+      "layer_count": 2,
+      "total_strength": 135,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kevin.ohaugherty@madmobile.com",
+      "target": "megan.messmore@madmobile.com",
+      "layers": {
+        "meeting": 9,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 19,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "angie.mroczka@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 9,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 16,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hminchew@madmobile.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 12,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 29,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "abigail.bernstein@madmobile.com",
+      "target": "megan.messmore@madmobile.com",
+      "layers": {
+        "meeting": 54,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 67,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "orlando.tovar@madmobile.com",
+      "layers": {
+        "meeting": 71,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 91,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gregory.ladgin@madmobile.com",
+      "target": "zachary.mccoy@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 25,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kemi.lawal@madmobile.com",
+      "target": "timothy.mcnamara@madmobile.com",
+      "layers": {
+        "meeting": 21,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 40,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kevin.reyes@madmobile.com",
+      "target": "mcrumley@madmobile.com",
+      "layers": {
+        "meeting": 115,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 126,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "peter.wu@madmobile.com",
+      "target": "trenton.kress@madmobile.com",
+      "layers": {
+        "meeting": 120,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 136,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jeff.pena@madmobile.com",
+      "target": "jkennedy@madmobile.com",
+      "layers": {
+        "meeting": 227,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 247,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "chip.oconnell@madmobile.com",
+      "layers": {
+        "meeting": 45,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 59,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 25,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "angie.mroczka@madmobile.com",
+      "target": "kristopher.ippolito@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 40
+      },
+      "layer_count": 2,
+      "total_strength": 55,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "mcrumley@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "orlando.tovar@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 75,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 90,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "brew.lamb@madmobile.com",
+      "target": "thaddeus.fox@madmobile.com",
+      "layers": {
+        "meeting": 62,
+        "relevance": 38
+      },
+      "layer_count": 2,
+      "total_strength": 100,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "sadeep.udugama@madmobile.com",
+      "layers": {
+        "meeting": 136,
+        "relevance": 2
+      },
+      "layer_count": 2,
+      "total_strength": 138,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kyle.budd@madmobile.com",
+      "target": "sowjanya.akula@madmobile.com",
+      "layers": {
+        "meeting": 33,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 46,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "david.strainick@madmobile.com",
+      "layers": {
+        "meeting": 85,
+        "relevance": 40
+      },
+      "layer_count": 2,
+      "total_strength": 125,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adriana.zuniga@madmobile.com",
+      "target": "ayodele.lawal@madmobile.com",
+      "layers": {
+        "meeting": 150,
+        "relevance": 47
+      },
+      "layer_count": 2,
+      "total_strength": 197,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "david.strainick@madmobile.com",
+      "target": "karen.licker@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 51,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "david.strainick@madmobile.com",
+      "target": "dsalama@madmobile.com",
+      "layers": {
+        "meeting": 158,
+        "relevance": 46
+      },
+      "layer_count": 2,
+      "total_strength": 204,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 62,
+        "relevance": 42
+      },
+      "layer_count": 2,
+      "total_strength": 104,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 66,
+        "relevance": 34
+      },
+      "layer_count": 2,
+      "total_strength": 100,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.fenley@madmobile.com",
+      "target": "patrycja.stevenson@madmobile.com",
+      "layers": {
+        "meeting": 45,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 54,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hashan.jalath@madmobile.com",
+      "target": "nishen.peiris@madmobile.com",
+      "layers": {
+        "meeting": 148,
+        "relevance": 34
+      },
+      "layer_count": 2,
+      "total_strength": 182,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "connor.phillips@madmobile.com",
+      "target": "michael.cerezo@madmobile.com",
+      "layers": {
+        "meeting": 17,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 30,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "pavani.ratnayake@madmobile.com",
+      "target": "savumi.wadduwage@madmobile.com",
+      "layers": {
+        "meeting": 35,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 60,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 144,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 164,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jkennedy@madmobile.com",
+      "target": "rusty.clark@madmobile.com",
+      "layers": {
+        "meeting": 292,
+        "relevance": 38
+      },
+      "layer_count": 2,
+      "total_strength": 330,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "sumnima.shah@madmobile.com",
+      "layers": {
+        "meeting": 199,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 236,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexander.baine@madmobile.com",
+      "target": "cory.renard@madmobile.com",
+      "layers": {
+        "meeting": 116,
+        "relevance": 3
+      },
+      "layer_count": 2,
+      "total_strength": 119,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kevin.reyes@madmobile.com",
+      "target": "susampath.madarasinghe@madmobile.com",
+      "layers": {
+        "meeting": 160,
+        "relevance": 28
+      },
+      "layer_count": 2,
+      "total_strength": 188,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "steven.siegel@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 26,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "mark.freid@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexis.maltes@madmobile.com",
+      "target": "bobby.jaklitsch@madmobile.com",
+      "layers": {
+        "meeting": 53,
+        "relevance": 33
+      },
+      "layer_count": 2,
+      "total_strength": 86,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "angel.dearmas@madmobile.com",
+      "target": "taylor.butto@madmobile.com",
+      "layers": {
+        "meeting": 28,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 52,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "das.desilva@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 39,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 46,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hansana.perera@madmobile.com",
+      "target": "sadeep.udugama@madmobile.com",
+      "layers": {
+        "meeting": 96,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 107,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "pratikchha.khadka@madmobile.com",
+      "target": "rekha.mohanan@madmobile.com",
+      "layers": {
+        "meeting": 56,
+        "relevance": 29
+      },
+      "layer_count": 2,
+      "total_strength": 85,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "megan.messmore@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 42,
+        "relevance": 32
+      },
+      "layer_count": 2,
+      "total_strength": 74,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "shavin.pieris@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 10,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 31,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kemi.lawal@madmobile.com",
+      "target": "thomas.brady@madmobile.com",
+      "layers": {
+        "meeting": 9,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 23,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "bobby.jaklitsch@madmobile.com",
+      "layers": {
+        "meeting": 76,
+        "relevance": 45
+      },
+      "layer_count": 2,
+      "total_strength": 121,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ibennett@madmobile.com",
+      "target": "shavin.pieris@madmobile.com",
+      "layers": {
+        "meeting": 69,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 77,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 34,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ramakrishnareddy.komatireddy@ralphlauren.com",
+      "target": "richard.farber@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 25,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "patrick.smith@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 38,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "darren.blackwell@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 114,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 136,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ayodele.lawal@madmobile.com",
+      "target": "renee.pauley@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 5
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "manuel.garcia@madmobile.com",
+      "target": "stanley.hua@morganstanley.com",
+      "layers": {
+        "meeting": 21,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 30,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "gayan.karunarathna@madmobile.com",
+      "target": "peter.wu@madmobile.com",
+      "layers": {
+        "meeting": 90,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 98,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "antonio.mussi@madmobile.com",
+      "target": "jeff.pena@madmobile.com",
+      "layers": {
+        "meeting": 229,
+        "relevance": 43
+      },
+      "layer_count": 2,
+      "total_strength": 272,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "nishen.peiris@madmobile.com",
+      "layers": {
+        "meeting": 145,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 158,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "patrycja.stevenson@madmobile.com",
+      "target": "siva.golla@madmobile.com",
+      "layers": {
+        "meeting": 43,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 53,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "mriglos@madmobile.com",
+      "layers": {
+        "meeting": 75,
+        "relevance": 6
+      },
+      "layer_count": 2,
+      "total_strength": 81,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "alexander.kohnen@madmobile.com",
+      "target": "ever.contreras@madmobile.com",
+      "layers": {
+        "meeting": 112,
+        "relevance": 48
+      },
+      "layer_count": 2,
+      "total_strength": 160,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "sadeep.udugama@madmobile.com",
+      "target": "seshan.gunatilaka@madmobile.com",
+      "layers": {
+        "meeting": 204,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 220,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jessica.conn@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 40,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 58,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "patrycja.stevenson@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 42,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 65,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 10,
+        "relevance": 13
+      },
+      "layer_count": 2,
+      "total_strength": 23,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cory.renard@madmobile.com",
+      "target": "jake.linder@madmobile.com",
+      "layers": {
+        "meeting": 59,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 67,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mithma.kannangara@madmobile.com",
+      "target": "pavani.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 26,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 47,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "sanduni.dissanayaka@madmobile.com",
+      "layers": {
+        "meeting": 234,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 258,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "chathura.ratnayake@madmobile.com",
+      "layers": {
+        "meeting": 30,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 55,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "agoad@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 20,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jake.linder@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 94,
+        "relevance": 31
+      },
+      "layer_count": 2,
+      "total_strength": 125,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "beau.bruderer@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 23,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "inushi.gunathilake@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 141,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 161,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ibennett@madmobile.com",
+      "target": "mark.freid@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 18,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mcrumley@madmobile.com",
+      "target": "mnunez@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 26,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cheri.siedle@madmobile.com",
+      "target": "rusty.clark@madmobile.com",
+      "layers": {
+        "meeting": 270,
+        "relevance": 47
+      },
+      "layer_count": 2,
+      "total_strength": 317,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "kemi.lawal@madmobile.com",
+      "layers": {
+        "meeting": 25,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 35,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joel.maldonado@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 80,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 92,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "daniel.leniz@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 44,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kevin.reyes@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 302,
+        "relevance": 48
+      },
+      "layer_count": 2,
+      "total_strength": 350,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "keith.burgess@madmobile.com",
+      "target": "leonard.davis@madmobile.com",
+      "layers": {
+        "meeting": 17,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "david.morales@madmobile.com",
+      "target": "kevin.ohaugherty@madmobile.com",
+      "layers": {
+        "meeting": 18,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 29,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "sumeera.perera@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 146,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 167,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chalaka.sudusinghe@madmobile.com",
+      "target": "poorna.amarasingha@madmobile.com",
+      "layers": {
+        "meeting": 138,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 150,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 46,
+        "relevance": 26
+      },
+      "layer_count": 2,
+      "total_strength": 72,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hashan.jalath@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 71,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 86,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "brent.baltzer@madmobile.com",
+      "target": "jkennedy@madmobile.com",
+      "layers": {
+        "meeting": 9,
+        "relevance": 31
+      },
+      "layer_count": 2,
+      "total_strength": 40,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 49,
+        "relevance": 46
+      },
+      "layer_count": 2,
+      "total_strength": 95,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cory.renard@madmobile.com",
+      "target": "qpannu@madmobile.com",
+      "layers": {
+        "meeting": 134,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 141,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.lomsak@madmobile.com",
+      "target": "ibennett@madmobile.com",
+      "layers": {
+        "meeting": 72,
+        "relevance": 48
+      },
+      "layer_count": 2,
+      "total_strength": 120,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "matt.cooke@madmobile.com",
+      "layers": {
+        "meeting": 216,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 235,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "adeluise@versaricap.com",
+      "target": "dsalama@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "sriharshith.akula@madmobile.com",
+      "target": "thaddeus.fox@madmobile.com",
+      "layers": {
+        "meeting": 78,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 97,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 181,
+        "relevance": 35
+      },
+      "layer_count": 2,
+      "total_strength": 216,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "inushi.gunathilake@madmobile.com",
+      "target": "l2techsupport@madmobile.com",
+      "layers": {
+        "meeting": 345,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 370,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 131,
+        "relevance": 30
+      },
+      "layer_count": 2,
+      "total_strength": 161,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "natasha.samath@madmobile.com",
+      "layers": {
+        "meeting": 20,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 41,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "megan.messmore@madmobile.com",
+      "target": "nicole@toastique.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 39,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joel.maldonado@madmobile.com",
+      "target": "megan.messmore@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 31,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kemi.lawal@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 21,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "angie.mroczka@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 37,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ashen.weerasinghe@madmobile.com",
+      "target": "thiwanka.wimalasuriya@madmobile.com",
+      "layers": {
+        "meeting": 141,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 157,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "angie.mroczka@madmobile.com",
+      "layers": {
+        "meeting": 12,
+        "relevance": 41
+      },
+      "layer_count": 2,
+      "total_strength": 53,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.lomsak@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 20,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "jorge.maltes@madmobile.com",
+      "layers": {
+        "meeting": 19,
+        "relevance": 5
+      },
+      "layer_count": 2,
+      "total_strength": 24,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "layers": {
+        "meeting": 69,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 88,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "wenushka.dikowita@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 67,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 104,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.guilarte@madmobile.com",
+      "target": "shavin.pieris@madmobile.com",
+      "layers": {
+        "meeting": 23,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 46,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "pramodi.fernando@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 1488,
+        "relevance": 35
+      },
+      "layer_count": 2,
+      "total_strength": 1523,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "steven.siegel@madmobile.com",
+      "layers": {
+        "meeting": 78,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 100,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "jessica.conn@madmobile.com",
+      "layers": {
+        "meeting": 39,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 58,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cory.renard@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 134,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 159,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cory.renard@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 99,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 108,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "kiel.williams@madmobile.com",
+      "target": "marko.milakovic@madmobile.com",
+      "layers": {
+        "meeting": 14,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 36,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "david.strainick@madmobile.com",
+      "layers": {
+        "meeting": 48,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 71,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "das.desilva@madmobile.com",
+      "target": "savumi.wadduwage@madmobile.com",
+      "layers": {
+        "meeting": 63,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 100,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "richard.farber@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 211,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 228,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "sowjanya.akula@madmobile.com",
+      "layers": {
+        "meeting": 107,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 126,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bailey.shatney@madmobile.com",
+      "target": "keith.burgess@madmobile.com",
+      "layers": {
+        "meeting": 23,
+        "relevance": 19
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "aaron@lakemitchellmarina.com",
+      "target": "ryan.schinsky@madmobile.com",
+      "layers": {
+        "meeting": 8,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 31,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "steven.siegel@madmobile.com",
+      "layers": {
+        "meeting": 10,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jkennedy@madmobile.com",
+      "target": "msoyka@winmarkcorporation.com",
+      "layers": {
+        "meeting": 37,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 57,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "andrew.honnold@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 111,
+        "relevance": 40
+      },
+      "layer_count": 2,
+      "total_strength": 151,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ashen.weerasinghe@madmobile.com",
+      "target": "chalaka.sudusinghe@madmobile.com",
+      "layers": {
+        "meeting": 138,
+        "relevance": 34
+      },
+      "layer_count": 2,
+      "total_strength": 172,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "das.desilva@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 98,
+        "relevance": 31
+      },
+      "layer_count": 2,
+      "total_strength": 129,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "daniel.leniz@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 33,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 55,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "nagaswaroopa.kaukuri@madmobile.com",
+      "target": "nishani.peiris@madmobile.com",
+      "layers": {
+        "meeting": 72,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 89,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "francina.golden@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 49,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 73,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joel.maldonado@madmobile.com",
+      "target": "kevin.ohaugherty@madmobile.com",
+      "layers": {
+        "meeting": 16,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 30,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "andres.lebron@madmobile.com",
+      "target": "jimmy.perez@madmobile.com",
+      "layers": {
+        "meeting": 22,
+        "relevance": 34
+      },
+      "layer_count": 2,
+      "total_strength": 56,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "paul.roberts@madmobile.com",
+      "target": "rmeitzler@madmobile.com",
+      "layers": {
+        "meeting": 68,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 90,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "mark.guilarte@madmobile.com",
+      "layers": {
+        "meeting": 133,
+        "relevance": 33
+      },
+      "layer_count": 2,
+      "total_strength": 166,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulanjan.wengappuliarachchi@madmobile.com",
+      "target": "joliver@madmobile.com",
+      "layers": {
+        "meeting": 142,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 166,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 97,
+        "relevance": 11
+      },
+      "layer_count": 2,
+      "total_strength": 108,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ashen.weerasinghe@madmobile.com",
+      "target": "raveen.panditha@madmobile.com",
+      "layers": {
+        "meeting": 143,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 180,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mirunaaliny.somasuntharaiyer@madmobile.com",
+      "target": "rbrown@madmobile.com",
+      "layers": {
+        "meeting": 255,
+        "relevance": 45
+      },
+      "layer_count": 2,
+      "total_strength": 300,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ana.chambers@madmobile.com",
+      "target": "brew.lamb@madmobile.com",
+      "layers": {
+        "meeting": 179,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 197,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chalaka.thushara@madmobile.com",
+      "target": "zubair.syed@madmobile.com",
+      "layers": {
+        "meeting": 227,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 235,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jessica.conn@madmobile.com",
+      "target": "jorge.maltes@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 22
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "michael.lee@madmobile.com",
+      "target": "trisha.baud@madmobile.com",
+      "layers": {
+        "meeting": 42,
+        "relevance": 12
+      },
+      "layer_count": 2,
+      "total_strength": 54,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 65,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 90,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "christian.smith@madmobile.com",
+      "layers": {
+        "meeting": 12,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "darren.blackwell@madmobile.com",
+      "target": "rekha.mohanan@madmobile.com",
+      "layers": {
+        "meeting": 30,
+        "relevance": 2
+      },
+      "layer_count": 2,
+      "total_strength": 32,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "hashan.jalath@madmobile.com",
+      "target": "poorna.amarasingha@madmobile.com",
+      "layers": {
+        "meeting": 365,
+        "relevance": 35
+      },
+      "layer_count": 2,
+      "total_strength": 400,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jeremy.diggins@madmobile.com",
+      "target": "jkennedy@madmobile.com",
+      "layers": {
+        "meeting": 393,
+        "relevance": 43
+      },
+      "layer_count": 2,
+      "total_strength": 436,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "brent.baltzer@madmobile.com",
+      "target": "jake.linder@madmobile.com",
+      "layers": {
+        "meeting": 25,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 49,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "abiala@madmobile.com",
+      "target": "sagarwal@madmobile.com",
+      "layers": {
+        "meeting": 41,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 62,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "poorna.amarasingha@madmobile.com",
+      "layers": {
+        "meeting": 24,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 42,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "benjamin.roedell@madmobile.com",
+      "target": "susampath.madarasinghe@madmobile.com",
+      "layers": {
+        "meeting": 130,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 145,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "karen.licker@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 48,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 71,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "austin.spreadbury@madmobile.com",
+      "target": "emily.stineman@madmobile.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 30,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 109,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 134,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ashen.weerasinghe@madmobile.com",
+      "target": "hashan.jalath@madmobile.com",
+      "layers": {
+        "meeting": 141,
+        "relevance": 39
+      },
+      "layer_count": 2,
+      "total_strength": 180,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ayodele.lawal@madmobile.com",
+      "target": "dulanjan.wengappuliarachchi@madmobile.com",
+      "layers": {
+        "meeting": 55,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 75,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jorge.maltes@madmobile.com",
+      "target": "mark.freid@madmobile.com",
+      "layers": {
+        "meeting": 92,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 117,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mriglos@madmobile.com",
+      "target": "qpannu@madmobile.com",
+      "layers": {
+        "meeting": 33,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 51,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chalaka.thushara@madmobile.com",
+      "target": "rcrawford@madmobile.com",
+      "layers": {
+        "meeting": 322,
+        "relevance": 16
+      },
+      "layer_count": 2,
+      "total_strength": 338,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "manuel.garcia@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 57,
+        "relevance": 29
+      },
+      "layer_count": 2,
+      "total_strength": 86,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mcrumley@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 191,
+        "relevance": 29
+      },
+      "layer_count": 2,
+      "total_strength": 220,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bobby.jaklitsch@madmobile.com",
+      "target": "tyler.kendrick@madmobile.com",
+      "layers": {
+        "meeting": 87,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 112,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "austin.spreadbury@madmobile.com",
+      "target": "dilruwan.madubashitha@madmobile.com",
+      "layers": {
+        "meeting": 86,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 110,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "cheri.siedle@madmobile.com",
+      "target": "msoyka@winmarkcorporation.com",
+      "layers": {
+        "meeting": 31,
+        "relevance": 24
+      },
+      "layer_count": 2,
+      "total_strength": 55,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "abigail.bernstein@madmobile.com",
+      "target": "bill.lodes@madmobile.com",
+      "layers": {
+        "meeting": 40,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 63,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chip.oconnell@madmobile.com",
+      "target": "manuel.garcia@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 23,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "megan.messmore@madmobile.com",
+      "target": "trisha.baud@madmobile.com",
+      "layers": {
+        "meeting": 60,
+        "relevance": 37
+      },
+      "layer_count": 2,
+      "total_strength": 97,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "ibennett@madmobile.com",
+      "target": "mriglos@madmobile.com",
+      "layers": {
+        "meeting": 27,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 36,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "bill.lodes@madmobile.com",
+      "target": "vsotomayor@madmobile.com",
+      "layers": {
+        "meeting": 42,
+        "relevance": 15
+      },
+      "layer_count": 2,
+      "total_strength": 57,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dilruwan.madubashitha@madmobile.com",
+      "target": "thiwanka.wimalasuriya@madmobile.com",
+      "layers": {
+        "meeting": 99,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 122,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "holly.culver@madmobile.com",
+      "target": "jeff.pena@madmobile.com",
+      "layers": {
+        "meeting": 43,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 61,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "rusiru.perera@madmobile.com",
+      "target": "wenushka.dikowita@madmobile.com",
+      "layers": {
+        "meeting": 143,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 164,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "debbie.keye@madmobile.com",
+      "layers": {
+        "meeting": 75,
+        "relevance": 5
+      },
+      "layer_count": 2,
+      "total_strength": 80,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "debbie.keye@madmobile.com",
+      "target": "rengarajan.balasubramanian@ralphlauren.com",
+      "layers": {
+        "meeting": 15,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "andrew.honnold@madmobile.com",
+      "target": "dsalama@madmobile.com",
+      "layers": {
+        "meeting": 11,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 19,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "pramodi.fernando@madmobile.com",
+      "layers": {
+        "meeting": 41,
+        "relevance": 3
+      },
+      "layer_count": 2,
+      "total_strength": 44,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "altaaf.anver@madmobile.com",
+      "target": "peter.wu@madmobile.com",
+      "layers": {
+        "meeting": 53,
+        "relevance": 10
+      },
+      "layer_count": 2,
+      "total_strength": 63,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "benjamin.roedell@madmobile.com",
+      "target": "jharre@madmobile.com",
+      "layers": {
+        "meeting": 123,
+        "relevance": 18
+      },
+      "layer_count": 2,
+      "total_strength": 141,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joliver@madmobile.com",
+      "target": "poorna.amarasingha@madmobile.com",
+      "layers": {
+        "meeting": 24,
+        "relevance": 9
+      },
+      "layer_count": 2,
+      "total_strength": 33,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "chathura.ratnayake@madmobile.com",
+      "target": "david.strainick@madmobile.com",
+      "layers": {
+        "meeting": 91,
+        "relevance": 30
+      },
+      "layer_count": 2,
+      "total_strength": 121,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "patrick.smith@madmobile.com",
+      "target": "timothy.mcnamara@madmobile.com",
+      "layers": {
+        "meeting": 10,
+        "relevance": 17
+      },
+      "layer_count": 2,
+      "total_strength": 27,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "akshay.bhasin@madmobile.com",
+      "target": "danika.munasinghe@madmobile.com",
+      "layers": {
+        "meeting": 164,
+        "relevance": 21
+      },
+      "layer_count": 2,
+      "total_strength": 185,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mark.messerian@madmobile.com",
+      "target": "peter.vu@madmobile.com",
+      "layers": {
+        "meeting": 62,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 87,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "suneth.desoyza@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 134,
+        "relevance": 8
+      },
+      "layer_count": 2,
+      "total_strength": 142,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "mvillaseco@madmobile.com",
+      "target": "zachary.honnold@madmobile.com",
+      "layers": {
+        "meeting": 152,
+        "relevance": 14
+      },
+      "layer_count": 2,
+      "total_strength": 166,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "christian.orellana@madmobile.com",
+      "target": "michael.lee@madmobile.com",
+      "layers": {
+        "meeting": 20,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 43,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "abigail.bernstein@madmobile.com",
+      "target": "taylor.butto@madmobile.com",
+      "layers": {
+        "meeting": 21,
+        "relevance": 25
+      },
+      "layer_count": 2,
+      "total_strength": 46,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "joel.maldonado@madmobile.com",
+      "target": "kiel.williams@madmobile.com",
+      "layers": {
+        "meeting": 17,
+        "relevance": 23
+      },
+      "layer_count": 2,
+      "total_strength": 40,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "jassiel.alvarez@madmobile.com",
+      "target": "nicholas.allen@madmobile.com",
+      "layers": {
+        "meeting": 26,
+        "relevance": 3
+      },
+      "layer_count": 2,
+      "total_strength": 29,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "dulana.dharmaratne@madmobile.com",
+      "target": "sumeera.perera@madmobile.com",
+      "layers": {
+        "meeting": 885,
+        "relevance": 20
+      },
+      "layer_count": 2,
+      "total_strength": 905,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    },
+    {
+      "source": "das.desilva@madmobile.com",
+      "target": "gregory.ladgin@madmobile.com",
+      "layers": {
+        "meeting": 13,
+        "relevance": 7
+      },
+      "layer_count": 2,
+      "total_strength": 20,
+      "finding": "Meets frequently but no code/work interaction -- meetings without output?"
+    }
+  ]
+}

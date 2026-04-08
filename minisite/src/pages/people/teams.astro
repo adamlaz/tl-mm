@@ -3,9 +3,12 @@ export const prerender = true;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
 import TabulatorGrid from '../../components/TabulatorGrid.astro';
 import ChartEmbed from '../../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { num } from '../../lib/parse';
 import { personUrl, personSlug } from '../../lib/links';
 
@@ -67,6 +70,25 @@ const teamStatsRows = [...teamMap.entries()]
     };
   })
   .sort((a, b) => b.people - a.people);
+
+let teamsAnalysis: any[] = [];
+try {
+  teamsAnalysis = JSON.parse(readFileSync(resolve('../inventory/users/m365_teams_analysis.json'), 'utf-8'));
+} catch {}
+
+const crossFuncTeams = teamsAnalysis.filter((t: any) => t.cross_functional);
+const totalChannels = teamsAnalysis.reduce((s: number, t: any) => s + (t.channel_count || 0), 0);
+const maxMemberCount = teamsAnalysis.length ? Math.max(...teamsAnalysis.map((t: any) => t.member_count || 0)) : 50;
+
+const m365TeamRows = teamsAnalysis.map((t: any) => ({
+  name: t.name,
+  member_count: t.member_count || 0,
+  channel_count: t.channel_count || 0,
+  departments: (t.departments || []).join(', '),
+  cross_functional: t.cross_functional ? 'Yes' : 'No',
+  cross_functional_label: t.cross_functional ? 'Cross-Functional' : 'Single-Department',
+  created: t.created ? new Date(t.created).toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '',
+}));
 ---
 
 <BaseLayout title="Team Intelligence — People & Org">
@@ -79,7 +101,7 @@ const teamStatsRows = [...teamMap.entries()]
   <SectionHeader
     eyebrow="TEAM STRUCTURE"
     title="Team Intelligence"
-    description="Composition, geography, and activity breakdown across 26 mapped teams."
+    description="Team-level analysis of composition, activity, and cross-team interactions. Shows how teams are structured, how active they are across systems, and where cross-team collaboration is strong or weak."
   />
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
@@ -111,6 +133,42 @@ const teamStatsRows = [...teamMap.entries()]
         exportable
       />
     </div>
+  )}
+
+  {teamsAnalysis.length > 0 && (
+    <>
+      <SectionHeader
+        eyebrow="MICROSOFT TEAMS"
+        title="M365 Teams Groups"
+        description={`${teamsAnalysis.length} Teams-enabled groups. ${crossFuncTeams.length} cross-functional (members spanning multiple org branches).`}
+      />
+
+      <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <MetricCard label="Total Teams Groups" value={teamsAnalysis.length.toString()} />
+        <MetricCard label="Cross-Functional" value={crossFuncTeams.length.toString()} />
+        <MetricCard label="Single-Department" value={(teamsAnalysis.length - crossFuncTeams.length).toString()} />
+        <MetricCard label="Total Channels" value={totalChannels.toString()} />
+      </dl>
+
+      <div class="mb-8">
+        <TabulatorGrid
+          columns={[
+            { key: 'name', label: 'Team Name', sortable: true },
+            { key: 'member_count', label: 'Members', align: 'right', sortable: true, type: 'bar', barMax: maxMemberCount },
+            { key: 'channel_count', label: 'Channels', align: 'right', sortable: true, type: 'number' },
+            { key: 'departments', label: 'Departments', sortable: true, type: 'list' },
+            { key: 'cross_functional', label: 'Cross-Func', sortable: true, type: 'boolean' },
+            { key: 'created', label: 'Created', sortable: true, type: 'date' },
+          ]}
+          rows={m365TeamRows}
+          searchable
+          exportable
+          height="500px"
+          groupBy="cross_functional_label"
+          initialSort={[{ column: 'member_count', dir: 'desc' }]}
+        />
+      </div>
+    </>
   )}
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Cross-System Activity</h2>

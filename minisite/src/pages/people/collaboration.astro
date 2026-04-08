@@ -1,0 +1,201 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { personUrl, personSlug } from '../../lib/links';
+
+const num = (v: any) => Number(v) || 0;
+
+let unified: any = { total_pairs: 0, multi_layer_pairs: 0, single_layer_pairs: 0, edges: [] };
+try {
+  unified = JSON.parse(readFileSync(resolve('../inventory/users/unified_interaction_network.json'), 'utf-8'));
+} catch {}
+
+let divergence: any = { total_findings: 0, findings: [] };
+try {
+  divergence = JSON.parse(readFileSync(resolve('../inventory/users/network_divergence_findings.json'), 'utf-8'));
+} catch {}
+
+let relevance: any = { total_edges: 0, edges: [] };
+try {
+  relevance = JSON.parse(readFileSync(resolve('../inventory/users/m365_people_relevance.json'), 'utf-8'));
+} catch {}
+
+let meetingLoad: Record<string, any> = {};
+try {
+  meetingLoad = JSON.parse(readFileSync(resolve('../inventory/users/m365_meeting_load.json'), 'utf-8'));
+} catch {}
+
+function nameFromEmail(email: string): string {
+  const info = meetingLoad[email];
+  if (info?.name) return info.name;
+  return email.split('@')[0].replace(/\./g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase());
+}
+
+const meetingsWithout = divergence.findings.filter(
+  (f: any) => f.finding?.toLowerCase().includes('meetings without') || f.finding?.toLowerCase().includes('meets frequently but no code'),
+).length;
+
+const codeWithout = divergence.findings.filter(
+  (f: any) => f.finding?.toLowerCase().includes('code without meeting') || f.finding?.toLowerCase().includes('code review without'),
+).length;
+
+const multiLayerEdges = unified.edges
+  .filter((e: any) => e.layer_count >= 2)
+  .sort((a: any, b: any) => b.total_strength - a.total_strength);
+
+const meetingStrengths = multiLayerEdges.map((e: any) => num(e.layers?.meeting)).filter((v: number) => v > 0).sort((a: number, b: number) => a - b);
+const relStrengths = multiLayerEdges.map((e: any) => num(e.layers?.relevance)).filter((v: number) => v > 0).sort((a: number, b: number) => a - b);
+const codeStrengths = multiLayerEdges.map((e: any) => num(e.layers?.code_review)).filter((v: number) => v > 0).sort((a: number, b: number) => a - b);
+
+function p95(arr: number[]): number {
+  if (!arr.length) return 100;
+  return arr[Math.floor(arr.length * 0.95)] || arr[arr.length - 1];
+}
+
+const meetingHeatMax = p95(meetingStrengths);
+const relHeatMax = p95(relStrengths);
+const codeHeatMax = p95(codeStrengths);
+const maxTotalStrength = multiLayerEdges.length ? multiLayerEdges[0].total_strength : 100;
+
+const multiRows = multiLayerEdges.slice(0, 500).map((e: any) => ({
+  source_name: nameFromEmail(e.source),
+  _href_source_name: personUrl(personSlug(nameFromEmail(e.source))),
+  target_name: nameFromEmail(e.target),
+  _href_target_name: personUrl(personSlug(nameFromEmail(e.target))),
+  layer_count: String(e.layer_count),
+  meeting_strength: num(e.layers?.meeting),
+  relevance_strength: num(e.layers?.relevance),
+  code_strength: num(e.layers?.code_review),
+  total_strength: num(e.total_strength),
+}));
+
+const divRows = divergence.findings
+  .sort((a: any, b: any) => b.total_strength - a.total_strength)
+  .slice(0, 500)
+  .map((f: any) => ({
+    source_name: nameFromEmail(f.source),
+    _href_source_name: personUrl(personSlug(nameFromEmail(f.source))),
+    target_name: nameFromEmail(f.target),
+    _href_target_name: personUrl(personSlug(nameFromEmail(f.target))),
+    finding: f.finding || '',
+    layer_count: num(f.layer_count),
+    total_strength: num(f.total_strength),
+  }));
+
+const maxDivStrength = divRows.length ? divRows[0].total_strength : 100;
+---
+
+<BaseLayout title="Multi-Layer Collaboration — People & Org">
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)]">Multi-Layer Collaboration</span>
+  </div>
+
+  <SectionHeader
+    eyebrow="UNIFIED INTERACTION ANALYSIS"
+    title="Multi-Layer Collaboration Network"
+    description="Multi-layer collaboration analysis combining meeting, code review, Jira, and Confluence interactions into a unified view. This reveals whether teams collaborate consistently across all work channels or only in some -- and where the gaps are."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+    <MetricCard label="People Who Collaborate" value={unified.total_pairs.toLocaleString()} subtitle="across meetings, code, docs, or tickets" />
+    <MetricCard label="Multi-Channel" value={unified.multi_layer_pairs.toLocaleString()} subtitle="collaborate in 2+ ways" />
+    <MetricCard label="Single-Channel" value={unified.single_layer_pairs.toLocaleString()} subtitle="only interact through one system" />
+    <MetricCard label="Collaboration Gaps" value={divergence.total_findings.toLocaleString()} subtitle="mismatched interaction patterns" />
+    <MetricCard label="Layers Available" value="3" subtitle="meetings, code review, documents" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-4 mb-8">
+    {meetingsWithout > 0 && (
+      <FindingCard
+        severity="red"
+        title={`${meetingsWithout.toLocaleString()} pairs meet regularly but have zero code interaction`}
+        detail="Meetings without corresponding work output may indicate coordination overhead, status-only meetings, or organizational misalignment between meeting patterns and actual work."
+        href="/people/meetings"
+        hrefLabel="Meeting analysis"
+      />
+    )}
+    {codeWithout > 0 && (
+      <FindingCard
+        severity="amber"
+        title={`${codeWithout.toLocaleString()} pairs interact through code review but never meet`}
+        detail="These are async-only working relationships. May be healthy (distributed teams) or indicate missing alignment conversations."
+      />
+    )}
+    <FindingCard
+      severity="green"
+      title={`${unified.multi_layer_pairs.toLocaleString()} pairs interact across multiple layers`}
+      detail="These are the strongest organizational connections -- people who collaborate through meetings AND relevance signals AND/OR code review."
+    />
+  </div>
+
+  <div class="mb-8">
+    <ChartEmbed slug="unified_network_sankey" title="Interaction Layer Composition" height="400px" interactive description="How meetings, relevance signals, and code review combine into the unified network." caption="How collaboration flows across different interaction layers (meetings, code, docs, tickets). Width shows volume. Teams that only collaborate in meetings but not in code or docs may have a communication gap." />
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <ChartEmbed slug="divergence_treemap" title="Where Interaction Layers Diverge" height="400px" interactive description={`${divergence.total_findings.toLocaleString()} findings where interaction patterns don't align across layers.`} caption="Where collaboration patterns diverge across layers. Large blocks indicate pairs or teams with very different interaction patterns depending on the channel. This highlights potential communication breakdowns." />
+    <ChartEmbed slug="relevance_function_heatmap" title="Cross-Department Relevance Signals" interactive description="Microsoft 365 collaboration signal strength between departments." caption="Cross-department relevance scores based on all interaction layers combined. Darker cells indicate stronger cross-department collaboration. Light or empty cells between related departments may indicate gaps." />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Strongest Multi-Layer Connections</h2>
+
+  <p class="text-sm text-[var(--text-secondary)] mb-4">
+    Pairs interacting across 2 or more layers. The three heat columns show per-layer signal strength.
+  </p>
+
+  {multiRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'source_name', label: 'Person A', sortable: true },
+          { key: 'target_name', label: 'Person B', sortable: true },
+          { key: 'layer_count', label: 'Layers', sortable: true, type: 'badge', badgeMap: { '3': 'green', '2': 'amber' } },
+          { key: 'meeting_strength', label: 'Meeting', align: 'right', sortable: true, type: 'heat', heatMax: meetingHeatMax },
+          { key: 'relevance_strength', label: 'Relevance', align: 'right', sortable: true, type: 'heat', heatMax: relHeatMax },
+          { key: 'code_strength', label: 'Code Review', align: 'right', sortable: true, type: 'heat', heatMax: codeHeatMax },
+          { key: 'total_strength', label: 'Total', align: 'right', sortable: true, type: 'bar', barMax: maxTotalStrength },
+        ]}
+        rows={multiRows}
+        searchable
+        exportable
+        height="500px"
+        initialSort={[{ column: 'total_strength', dir: 'desc' }]}
+      />
+    </div>
+  )}
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Divergence Findings</h2>
+
+  <p class="text-sm text-[var(--text-secondary)] mb-4">
+    Where interaction layers don't align -- meetings without code interaction, code without meetings, and other pattern mismatches.
+  </p>
+
+  {divRows.length > 0 && (
+    <div class="mb-8">
+      <TabulatorGrid
+        columns={[
+          { key: 'source_name', label: 'Person A', sortable: true },
+          { key: 'target_name', label: 'Person B', sortable: true },
+          { key: 'finding', label: 'Finding', sortable: true, minWidth: '280px' },
+          { key: 'layer_count', label: 'Layers', align: 'right', sortable: true, type: 'number' },
+          { key: 'total_strength', label: 'Strength', align: 'right', sortable: true, type: 'bar', barMax: maxDivStrength },
+        ]}
+        rows={divRows}
+        searchable
+        exportable
+        height="500px"
+        initialSort={[{ column: 'total_strength', dir: 'desc' }]}
+      />
+    </div>
+  )}
+</BaseLayout>

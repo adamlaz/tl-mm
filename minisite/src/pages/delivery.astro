@@ -136,20 +136,19 @@ const rcRelatedFields = interestingFields.filter((f) =>
 );
 const rcFieldRows = rcRelatedFields.map((f) => ({
   name: f.name,
-  id: f.id,
   type: f.type,
 }));
 
 const charts = [
-  { slug: 'jira_org_overview', title: 'Org Overview' },
-  { slug: 'jira_velocity_trend', title: 'Velocity Trend' },
-  { slug: 'jira_cycle_time', title: 'Cycle Time' },
-  { slug: 'jira_scope_change', title: 'Scope Change' },
-  { slug: 'jira_assignee_load', title: 'Assignee Load' },
-  { slug: 'jira_backlog_age', title: 'Backlog Age' },
-  { slug: 'jira_flow_distribution', title: 'Flow Distribution' },
+  { slug: 'jira_org_overview', title: 'Org Overview', caption: 'High-level view of Jira usage across the organization. Shows the scale and distribution of work tracking.' },
+  { slug: 'jira_velocity_trend', title: 'Velocity Trend', caption: 'How much work each team completes per sprint. Consistent velocity enables reliable forecasting. Erratic velocity means the team cannot predict what it will deliver.' },
+  { slug: 'jira_cycle_time', title: 'Cycle Time', caption: 'How long work items take from start to done. The 59-day median means half of all work takes two months or longer to complete. Healthy teams target 5-15 days.' },
+  { slug: 'jira_scope_change', title: 'Scope Change', caption: 'How much work gets added or removed mid-sprint. High scope change indicates unclear requirements or reactive reprioritization that disrupts planned work.' },
+  { slug: 'jira_assignee_load', title: 'Assignee Load', caption: 'Distribution of open work items per person. Individuals with extremely high loads are likely context-switching constantly, which reduces throughput.' },
+  { slug: 'jira_backlog_age', title: 'Backlog Age', caption: 'How old the open backlog items are. Items sitting for months without action should be closed or reprioritized -- they create noise and false inventory.' },
+  { slug: 'jira_flow_distribution', title: 'Flow Distribution', caption: 'Breakdown of work by type (bug, feature, task, etc.). A healthy flow balances new features with maintenance and bug fixes.' },
   { slug: 'jira_flow_distribution_engineering', title: 'Flow Distribution (Engineering)' },
-  { slug: 'jira_created_vs_resolved', title: 'Created vs Resolved' },
+  { slug: 'jira_created_vs_resolved', title: 'Created vs Resolved', caption: 'Rate of new work creation vs completion. When creation consistently outpaces resolution, the backlog grows unbounded and delivery predictability drops.' },
   { slug: 'jira_issue_distribution', title: 'Issue Distribution' },
   { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)' },
   { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)' },
@@ -157,19 +156,29 @@ const charts = [
 ---
 
 <BaseLayout title="Delivery">
-  <SectionHeader eyebrow="DELIVERY" title="Delivery" description={`Jira delivery health across ${projects.length} projects. Data extracted April 3–4, 2026 (V7).`} />
+  <SectionHeader eyebrow="DELIVERY" title="Delivery" description="How planned work moves from idea to production. Measured through Jira project data across 141 projects. Key concerns: the team starts far more work than it finishes (27.7% epic completion), priority markings are meaningless (89% marked High), estimation is nearly nonexistent (9% story point coverage), and median cycle time is 59 days." />
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
     <FindingCard severity="red" title="27.7% Epic Completion" detail="481 engineering epics in 12 months, only 133 resolved. REST: 18.5%. NEO: 12.5%." evidence="481 total, 133 resolved" href="/engagement/hypotheses" hrefLabel="Hypothesis A" />
     <FindingCard severity="red" title="89.4% Priority Inflation" detail="Nearly every open issue marked High. No other levels in use. Priority is meaningless as a triage signal." evidence="89.4% High, 10.6% None" />
     <FindingCard severity="amber" title="59-Day Cycle Time (P50)" detail="Engineering-only, In Progress to Done. P75 = 210 days. P95 = 233 days." evidence="P50: 59d, P75: 210d, P95: 233d" />
     <FindingCard severity="amber" title="9% Story Point Coverage" detail="Story Points populated on only 27 of 300 sampled stories. Capacity planning impossible." evidence="9% coverage, 27/300 stories" />
-    <FindingCard severity="amber" title="0% Root Cause Category" detail="Jira field exists but populated on 0% of resolved bugs. Process documented in Confluence but not enforced." evidence="customfield_10382: 0% populated" />
+    <FindingCard severity="amber" title="0% Root Cause Category" detail="Jira field exists but populated on 0% of resolved bugs. Process documented in Confluence but not enforced." evidence="Root Cause Category field: 0% populated" />
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
-    <ChartEmbed slug="jira_epic_completion" title="Epic Completion" />
-    <ChartEmbed slug="jira_priority_inflation" title="Priority Inflation" />
+    <ChartEmbed slug="jira_epic_completion" title="Epic Completion" caption="27.7% of epics resolved. In a healthy delivery organization, 60-80% of planned epics complete within their target quarter. This gap means roughly 3 out of 4 planned initiatives stall or are abandoned." />
+    <ChartEmbed slug="jira_priority_inflation" title="Priority Inflation" caption="89% of issues are marked High priority. When everything is urgent, teams cannot distinguish what actually matters. The priority system needs a reset to be meaningful." />
+  </div>
+
+  <div class="my-6">
+    <FindingCard
+      severity="red"
+      title="Delivery Predictability Crisis"
+      detail="27.7% epic completion, 89% priority inflation, and 9% story point coverage combine to create an organization that cannot predict what it will deliver or when. Roadmap commitments to the business are unreliable because the planning system does not produce reliable plans. This is a process and discipline problem, not a capacity problem."
+      href="/engagement/hypotheses"
+      hrefLabel="Hypothesis A: Portfolio Sprawl"
+    />
   </div>
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -179,16 +188,16 @@ const charts = [
       subtitle={`${engProjects.length} engineering`}
     />
     <MetricCard label="Total Issues" value={fmt(totalIssues)} />
-    <MetricCard label="Sprint Completion" value={`${avgCompletion.toFixed(1)}%`} subtitle="Average across sprints" />
-    <MetricCard label="Median Cycle Time" value={`${medianCycle.toFixed(1)}d`} subtitle="Days to resolve" />
+    <MetricCard label="Sprint Completion" value={`${avgCompletion.toFixed(1)}%`} subtitle="Average across sprints" benchmark="Healthy: 70-85%" />
+    <MetricCard label="Median Cycle Time" value={`${medianCycle.toFixed(1)}d`} subtitle="Days to resolve" benchmark="Healthy: 5-15 days" />
   </dl>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Epic Completion" value={`${epicResRate}%`} subtitle={`${epicData.resolved ?? 0} of ${epicData.total_epics ?? 0} epics resolved (12mo)`} />
-    <MetricCard label="Priority Inflation" value={`${highPct}%`} subtitle="of open issues are 'High'" />
+    <MetricCard label="Epic Completion" value={`${epicResRate}%`} subtitle={`${epicData.resolved ?? 0} of ${epicData.total_epics ?? 0} epics resolved (12mo)`} benchmark="Healthy: 60-80%" />
+    <MetricCard label="Priority Inflation" value={`${highPct}%`} subtitle="of open issues are 'High'" benchmark="Healthy: <30% High" />
     <MetricCard label="Blocking Issues" value={(blockingData.issues_blocked ?? 0).toString()} subtitle={`${blockingData.issues_blocking_others ?? 0} blocking others`} />
-    <MetricCard label="Story Points Coverage" value={`${spCoveragePct}%`} subtitle={`${spWithPoints} of ${spSampled} stories have estimates`} />
+    <MetricCard label="Story Points Coverage" value={`${spCoveragePct}%`} subtitle={`${spWithPoints} of ${spSampled} stories have estimates`} benchmark="Healthy: >80%" />
   </dl>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
@@ -291,7 +300,7 @@ const charts = [
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Bugs Sampled" value={rcBugsSampled.toString()} subtitle="Bug issues checked for RCA" />
     <MetricCard label="RCA Population" value={`${rcPopRate}%`} subtitle={`${rcPopulated} of ${rcBugsSampled} have a root cause`} />
-    <MetricCard label="RCA Field" value={rcFieldName} subtitle={`Field: ${rootCauseData.field_id ?? 'N/A'}`} />
+    <MetricCard label="RCA Field" value={rcFieldName} subtitle="Jira field used for root cause category" />
     <MetricCard label="RCA-Related Fields" value={rcRelatedFields.length.toString()} subtitle="Custom fields for root cause tracking" />
   </dl>
 
@@ -318,7 +327,6 @@ const charts = [
       <TabulatorGrid
         columns={[
           { key: 'name', label: 'Field Name', sortable: true },
-          { key: 'id', label: 'Field ID' },
           { key: 'type', label: 'Type', sortable: true },
         ]}
         rows={rcFieldRows}
@@ -333,7 +341,7 @@ const charts = [
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Estimation & Custom Fields</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Custom Fields" value={totalCustomFields.toString()} subtitle="Total Jira custom fields" />
-    <MetricCard label="Story Points Coverage" value={`${spCoveragePct}%`} subtitle={`${spWithPoints} of ${spSampled} sampled stories`} />
+    <MetricCard label="Story Points Coverage" value={`${spCoveragePct}%`} subtitle={`${spWithPoints} of ${spSampled} sampled stories`} benchmark="Healthy: >80%" />
     <MetricCard label="Notable Fields" value={interestingFields.length.toString()} subtitle="Fields relevant to delivery analysis" />
     <MetricCard label="Field Types" value={fieldTypeRows.length.toString()} subtitle="Distinct data types in use" />
   </dl>
@@ -355,9 +363,8 @@ const charts = [
         columns={[
           { key: 'name', label: 'Field Name', sortable: true },
           { key: 'type', label: 'Type', sortable: true, filterable: true },
-          { key: 'id', label: 'Field ID' },
         ]}
-        rows={interestingFields.map((f) => ({ name: f.name, type: f.type, id: f.id }))}
+        rows={interestingFields.map((f) => ({ name: f.name, type: f.type }))}
         searchable
         exportable
         pageSize={10}
@@ -407,7 +414,7 @@ const charts = [
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Charts</h2>
   <div class="grid lg:grid-cols-2 gap-6">
     {charts.map((c) => (
-      <ChartEmbed slug={c.slug} title={c.title} />
+      <ChartEmbed slug={c.slug} title={c.title} caption={c.caption} />
     ))}
   </div>
 

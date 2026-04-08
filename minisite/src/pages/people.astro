@@ -5,6 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import FindingCard from '../components/FindingCard.astro';
 import MetricCard from '../components/MetricCard.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
 import OrgChart from '../components/OrgChart.astro';
 import { getCollection } from 'astro:content';
 import { readFileSync } from 'node:fs';
@@ -45,6 +46,34 @@ try {
   commGaps = JSON.parse(readFileSync(resolve('../inventory/users/communication_gaps.json'), 'utf-8'));
 } catch {}
 
+let orgMetrics: any = { total_people: 0, orphan_nodes: 0, orphans: [], metrics: [] };
+try {
+  orgMetrics = JSON.parse(readFileSync(resolve('../inventory/users/m365_org_metrics.json'), 'utf-8'));
+} catch {}
+
+let discrepancies: any = { items: [], emails_filled: 0, records_updated: 0 };
+try {
+  discrepancies = JSON.parse(readFileSync(resolve('../inventory/users/m365_discrepancies.json'), 'utf-8'));
+} catch {}
+
+let unifiedNet: any = { total_pairs: 0, multi_layer_pairs: 0, single_layer_pairs: 0 };
+try {
+  const raw = JSON.parse(readFileSync(resolve('../inventory/users/unified_interaction_network.json'), 'utf-8'));
+  unifiedNet = { total_pairs: raw.total_pairs, multi_layer_pairs: raw.multi_layer_pairs, single_layer_pairs: raw.single_layer_pairs };
+} catch {}
+
+let divergenceCount = 0;
+try {
+  const raw = JSON.parse(readFileSync(resolve('../inventory/users/network_divergence_findings.json'), 'utf-8'));
+  divergenceCount = raw.total_findings || 0;
+} catch {}
+
+const discItems = discrepancies.items || [];
+const managerMismatches = discItems.filter((d: any) => d.type === 'manager_mismatch').length;
+const titleMismatches = discItems.filter((d: any) => d.type === 'title_mismatch').length;
+const overloadedManagers = (orgMetrics.metrics || []).filter((m: any) => m.direct_reports > 7);
+const topManager = [...(orgMetrics.metrics || [])].sort((a: any, b: any) => b.direct_reports - a.direct_reports)[0];
+
 const riskPeople = Object.entries(riskData.people || {}) as [string, any][];
 const highRiskCount = riskPeople.filter(([, p]) => p.score > 60).length;
 const sortedRisk = [...riskPeople].sort(([, a], [, b]) => b.score - a.score);
@@ -75,14 +104,14 @@ const graphEdges = networkData.graph_stats?.edges ?? 0;
   <SectionHeader
     eyebrow="PEOPLE & ORGANIZATION"
     title="People & Organization"
-    description="Cross-system view of ~370 people at Mad Mobile — organizational structure, collaboration networks, key-person risk, and activity across source control, project tracking, documentation, and cloud. Data extracted April 3, 2026 (V6)."
+    description="Who works here, how they collaborate, and where organizational risk concentrates. Built from M365 directory, calendar, and org chart data cross-referenced with Jira, Bitbucket, and Confluence activity. This section maps the real organizational structure -- not just the org chart, but who actually works with whom."
   />
 
   <div class="grid sm:grid-cols-2 gap-4 mb-8">
     <FindingCard severity="amber" title="39% Inactive Users with Access" detail="65 of 168 cross-system users are inactive but retain access to Bitbucket, Jira, Confluence, or AWS. Security and licensing implications." evidence="168 users audited, 65 inactive (39%)" />
-    <FindingCard severity="amber" title="Key Person Risk: Top 3 Handle >35% of Reviews" detail="Knowledge concentrated in a few individuals across Platform and Restaurant teams. Bus factor concerns." evidence="57 people handle 100+ reviews each" href="/people/risk" hrefLabel="Risk Detail" />
-    <FindingCard severity="amber" title="Communication Gaps Detected" detail="High-severity gaps between teams that should be collaborating based on org structure. System activity contradicts formal reporting lines." href="/people/network" hrefLabel="Network Analysis" />
-    <FindingCard severity="green" title="499 Individuals Mapped" detail="Cross-referenced across Bitbucket, Jira, Confluence, AWS, and org chart into a unified people graph with team assignments and activity profiles." evidence="499 unique identities, 5 source systems" />
+    <FindingCard severity="amber" title="Key Person Risk: Top 3 Handle >35% of Reviews" detail="Important quality checks before software ships are concentrated in a few people on Platform and Restaurant teams. If those people were unavailable, delivery would slow sharply—there is thin backup depth on who can approve or deeply understand the changes." evidence="57 people handle 100+ reviews each" href="/people/risk" hrefLabel="Risk Detail" />
+    <FindingCard severity="amber" title="Communication Gaps Detected" detail="Some teams that the org chart suggests should work together rarely show up in meetings, code review, or shared documents with one another—so day-to-day collaboration does not match how reporting lines are drawn." href="/people/network" hrefLabel="Network Analysis" />
+    <FindingCard severity="green" title="499 Individuals Mapped" detail="Cross-referenced across Bitbucket, Jira, Confluence, AWS, and the org chart into one consolidated directory with team assignments and how active each person is in those systems." evidence="499 unique identities, 5 source systems" />
   </div>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Executive Summary</h2>
@@ -90,9 +119,14 @@ const graphEdges = networkData.graph_stats?.edges ?? 0;
     <MetricCard label="Total People" value={people.length.toString()} subtitle="Across 5 systems" />
     <MetricCard label="Active (90d)" value={activePeople.length.toString()} subtitle="High or medium activity" />
     <MetricCard label="In Org Chart" value={inOrgChart.length.toString()} subtitle="From org chart PDFs" />
-    <MetricCard label="Teams Mapped" value={uniqueTeams.length.toString()} />
+    <MetricCard label="Teams Mapped" value={uniqueTeams.length.toString()} subtitle="M365 Teams channels" />
     <MetricCard label="Geography" value={`${usCount} US / ${slCount} SL`} />
-    <MetricCard label="Key Risks" value={highRiskCount.toString()} subtitle="Risk score > 60" />
+    <MetricCard
+      label="Key Risks"
+      value={highRiskCount.toString()}
+      subtitle="People with concentrated critical knowledge"
+      benchmark="Healthy: 0 high-risk"
+    />
   </dl>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Organization Structure</h2>
@@ -127,6 +161,50 @@ const graphEdges = networkData.graph_stats?.edges ?? 0;
       </p>
     </div>
   </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">M365 Directory Health</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <MetricCard label="Active Accounts" value="411" subtitle="of 1,086 total M365 accounts" />
+    <MetricCard label="Disabled/Departed" value="675" subtitle="of 1,086 total M365 accounts" />
+    <MetricCard label="Real People" value={orgMetrics.total_people.toString()} subtitle="After filtering service accounts" />
+    <MetricCard label="Discrepancies Found" value={discItems.length.toString()} subtitle={`${discrepancies.emails_filled} emails filled`} />
+  </dl>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+    <FindingCard
+      severity="amber"
+      id="ORG-1"
+      title={`${discItems.length} discrepancies between M365 directory and org chart`}
+      detail={`${managerMismatches} manager mismatches, ${titleMismatches} title mismatches between the two sources.`}
+    />
+    <FindingCard
+      severity="amber"
+      id="ORG-2"
+      title={`${orgMetrics.orphan_nodes} people have no manager link in the directory`}
+      detail="People with no manager in the company directory do not appear in manager roll-ups or hierarchy views. That includes some service accounts and may include people whose manager record is wrong or missing."
+    />
+    {topManager && (
+      <FindingCard
+        severity={overloadedManagers.length > 3 ? 'red' : 'amber'}
+        id="ORG-3"
+        title={`Top manager has ${topManager.direct_reports} direct reports`}
+        detail={`${overloadedManagers.length} managers exceed a common rule of thumb of seven direct reports (beyond that, coaching and prioritization usually suffer). ${topManager.name} (${topManager.title}) has the widest span in this data.`}
+      />
+    )}
+  </div>
+
+  <div class="mb-8">
+    <ChartEmbed slug="org_span_of_control" title="Manager Span of Control" />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Interaction Network Summary</h2>
+  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+    <MetricCard label="Meeting Connections" value="24,963" subtitle="pairs of people who attend meetings together" />
+    <MetricCard label="Cross-System Interactions" value="4,452" subtitle="collaboration signals from M365" />
+    <MetricCard label="Code Review Relationships" value="569" subtitle="people who review each other's code" />
+    <MetricCard label="Multi-Channel Collaborators" value={unifiedNet.multi_layer_pairs.toLocaleString()} subtitle="2+ layers" />
+    <MetricCard label="Collaboration Gaps" value={divergenceCount.toLocaleString()} subtitle="mismatched interaction patterns" />
+  </dl>
 
   <SectionHeader title="Key Findings" description="Data-backed insights from cross-system people analysis" />
 
@@ -173,7 +251,21 @@ const graphEdges = networkData.graph_stats?.edges ?? 0;
     <a href="/people/network" class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-start justify-between">
       <div>
         <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">Interaction Network</h3>
-        <p class="text-xs text-[var(--text-secondary)] mt-1">{graphNodes} people, {graphEdges} interaction edges. Cross-team collaboration, communities, and communication gaps.</p>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">{graphNodes} people, {graphEdges} collaboration connections. Cross-team collaboration, communities, and communication gaps.</p>
+      </div>
+      <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+    <a href="/people/meetings" class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-start justify-between">
+      <div>
+        <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">Meetings</h3>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">14 weeks of calendar data. Meeting load, cross-functional flow, organizational bridges.</p>
+      </div>
+      <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+    <a href="/people/collaboration" class="group bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent)] hover:shadow-sm transition-all flex items-start justify-between">
+      <div>
+        <h3 class="text-base font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">Collaboration</h3>
+        <p class="text-xs text-[var(--text-secondary)] mt-1">Three interaction layers unified. Where they align, where they diverge. {unifiedNet.multi_layer_pairs.toLocaleString()} multi-layer connections.</p>
       </div>
       <svg class="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent)] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
     </a>
@@ -189,8 +281,8 @@ const graphEdges = networkData.graph_stats?.edges ?? 0;
   <div class="mt-10 pt-6 border-t border-[var(--border-subtle)]">
     <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Related</h2>
     <div class="grid sm:grid-cols-2 gap-4">
-      <FindingCard severity="amber" title="Reviewer Bottleneck: 581 Reviews" detail="People concentration creates engineering bottlenecks — one person handles 581 code reviews." href="/engineering" hrefLabel="Engineering" />
-      <FindingCard severity="amber" title="59-Day Cycle Time (P50)" detail="People dependencies contribute to delivery drag — the median story takes two months." href="/delivery" hrefLabel="Delivery" />
+      <FindingCard severity="amber" title="Reviewer Bottleneck: 581 Reviews" detail="One individual performed 581 peer code reviews—far more than typical—so queues, delays, and key-person dependency often run through that person." href="/engineering" hrefLabel="Engineering" />
+      <FindingCard severity="amber" title="59-Day Cycle Time (P50)" detail="The typical work item takes about two months from start to finish—longer than many organizations aim for on similar-sized work, which often points to handoffs, waiting, or unclear ownership—not only capacity." href="/delivery" hrefLabel="Delivery" />
     </div>
   </div>
 </BaseLayout>

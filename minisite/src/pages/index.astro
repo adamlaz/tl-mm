@@ -3,10 +3,11 @@ export const prerender = true;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MetricCard from '../components/MetricCard.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
 import { getCollection } from 'astro:content';
 import FindingCard from '../components/FindingCard.astro';
 import { num, fmt } from '../lib/parse';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 
 const awsCosts = await getCollection('awsCosts');
 const repos = await getCollection('bitbucketRepos');
@@ -34,13 +35,47 @@ const activeTools = tools.filter((t) => t.data.status === 'confirmed_active').le
 
 const costDisplay = totalAwsCost > 0 ? `$${Math.round(totalAwsCost / 1000)}K` : '$383K';
 
+const chartCount = readdirSync('../analysis/charts')
+  .filter((f) => f.endsWith('.json') && !f.startsWith('_')).length;
+
 const findings = [
-  { title: '27.7% Epic Completion', detail: 'Only 1 in 4 epics resolved — weak delivery follow-through', severity: 'warning' },
-  { title: '89% Priority Inflation', detail: 'Nearly all issues marked High — priorities are meaningless', severity: 'critical' },
-  { title: '0 Repos with Branch Protection', detail: 'No repositories have branch restrictions enabled', severity: 'critical' },
-  { title: '60.7% Pipeline Success Rate', detail: '4 in 10 builds fail — CI/CD reliability is a drag on velocity', severity: 'warning' },
-  { title: '9% Story Point Coverage', detail: 'Estimation is almost nonexistent — capacity planning impossible', severity: 'warning' },
-  { title: 'Key Person Risk', detail: 'Top 3 risk people each handle >35% of their team code reviews — knowledge silos across Platform and Restaurant', severity: 'warning' },
+  {
+    title: '27.7% Epic Completion',
+    detail: 'Only 1 in 4 planned initiatives were completed. Healthy engineering organizations finish 60\u201380% of planned epics per quarter. This means roadmap commitments to the business are unreliable.',
+    severity: 'critical',
+    chartSlug: 'jira_epic_completion',
+  },
+  {
+    title: '89% Priority Inflation',
+    detail: '89% of all work items are marked "High" priority. When everything is urgent, nothing is \u2014 teams cannot distinguish what actually matters first. The priority system needs a reset.',
+    severity: 'critical',
+  },
+  {
+    title: '0 Repos with Branch Protection',
+    detail: 'No repositories have automated rules preventing code from being merged without review. This means any engineer can push directly to production without a second pair of eyes \u2014 a basic safety net is missing.',
+    severity: 'critical',
+    href: '/engineering',
+    hrefLabel: 'Engineering',
+  },
+  {
+    title: '60.7% Pipeline Success Rate',
+    detail: '4 in 10 automated builds fail. Industry benchmark is above 95%. Every failed build means wasted engineering time debugging infrastructure instead of shipping product.',
+    severity: 'warning',
+    chartSlug: 'pipeline_health_gauge',
+  },
+  {
+    title: '9% Story Point Coverage',
+    detail: 'Only 9% of work items have effort estimates. Without estimation, the organization cannot predict when work will be done or how much capacity is available. Planning is guesswork.',
+    severity: 'warning',
+    href: '/delivery',
+    hrefLabel: 'Delivery',
+  },
+  {
+    title: 'Key Person Risk',
+    detail: 'The top 3 at-risk individuals each handle over 35% of their team\u2019s code reviews. If any one of them leaves, their team loses the ability to review and ship code at its current pace.',
+    severity: 'warning',
+    chartSlug: 'key_person_risk',
+  },
 ];
 
 const sections = [
@@ -110,16 +145,9 @@ const sections = [
   {
     href: '/charts',
     title: 'Charts',
-    desc: 'Interactive charts spanning infrastructure, engineering, delivery, and documentation.',
-    metric: '39',
+    desc: 'Interactive charts spanning infrastructure, engineering, delivery, people, and documentation.',
+    metric: chartCount.toString(),
     metricLabel: 'charts',
-  },
-  {
-    href: '/financial',
-    title: 'Financial',
-    desc: 'Revenue model, cash flow, vendor spend, cost reduction targets.',
-    metric: '$278K/mo',
-    metricLabel: 'cost cuts committed',
   },
 ];
 ---
@@ -129,9 +157,8 @@ const sections = [
     <h1 class="text-2xl font-bold text-[var(--text)]">
       Technology & Operations Review
     </h1>
-    <p class="mt-2 text-sm text-[var(--text-secondary)] max-w-xl">
-      A three-week technology and operations assessment of Mad Mobile's infrastructure,
-      engineering practices, delivery health, documentation, and tooling.
+    <p class="mt-2 text-sm text-[var(--text-secondary)] max-w-2xl">
+      A three-week assessment of Mad Mobile's technology operations covering infrastructure, engineering practices, delivery health, documentation, tooling, and organizational dynamics. This dashboard surfaces the most critical findings. Each section links to detailed analysis with supporting data.
     </p>
   </div>
 
@@ -142,25 +169,42 @@ const sections = [
         severity={f.severity === 'critical' ? 'red' : 'amber'}
         title={f.title}
         detail={f.detail}
+        chartSlug={f.chartSlug}
+        href={f.href}
+        hrefLabel={f.hrefLabel}
       />
     ))}
   </div>
 
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Visual Summary</h2>
+  <div class="grid lg:grid-cols-2 gap-4 mb-10">
+    <ChartEmbed
+      slug="hypothesis_evidence_radar"
+      title="Hypothesis Evidence Strength"
+      caption="Nine hypotheses tested during the assessment. Spokes farther from center indicate stronger evidence. The three strongest findings -- portfolio sprawl, priority inflation, and key person risk -- are confirmed with quantitative data."
+    />
+    <ChartEmbed
+      slug="pipeline_health_gauge"
+      title="Pipeline Health"
+      caption="Overall CI/CD pipeline success rate. The green zone starts at 95% -- the industry baseline for healthy delivery. At 60.7%, roughly 4 in 10 builds fail, which means engineering time is spent debugging infrastructure instead of shipping features."
+    />
+  </div>
+
   <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
-    <MetricCard label="AWS Monthly Spend" value={costDisplay} subtitle="March 2026 (18 accounts)" />
-    <MetricCard label="Repositories" value={fmt(repos.length)} subtitle={`${activeRepos} active`} />
-    <MetricCard label="Jira Projects" value={projects.length.toString()} subtitle={`${engProjects} engineering`} />
-    <MetricCard label="Confluence Pages" value={fmt(pages.length)} subtitle="In Confluence" />
-    <MetricCard label="Tools Identified" value={tools.length.toString()} subtitle={`${activeTools} confirmed active`} />
+    <MetricCard label="AWS Monthly Spend" value={costDisplay} subtitle="March 2026 (18 accounts)" href="/infrastructure" />
+    <MetricCard label="Repositories" value={fmt(repos.length)} subtitle={`${activeRepos} active`} href="/engineering" />
+    <MetricCard label="Jira Projects" value={projects.length.toString()} subtitle={`${engProjects} engineering`} href="/delivery" />
+    <MetricCard label="Confluence Pages" value={fmt(pages.length)} subtitle="Indexed in Confluence" href="/documentation" />
+    <MetricCard label="Tools Identified" value={tools.length.toString()} subtitle={`${activeTools} confirmed active`} href="/tooling" />
   </dl>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-2">Deep Analysis</h2>
   <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
-    <MetricCard label="Epic Completion" value={`${epicData.overall_resolution_rate_pct}%`} subtitle={`${epicData.resolved} of ${epicData.total_epics} resolved`} />
-    <MetricCard label="Priority Inflation" value="89%" subtitle="of issues marked High" />
-    <MetricCard label="Incidents Parsed" value={rcaData.total_incidents_parsed?.toString() ?? '50'} subtitle="Peak: 2022 (26)" />
-    <MetricCard label="ECS Health Checks" value={`${Math.round((ecsData.containers_without_health_check / ecsData.total_containers) * 100)}%`} subtitle="containers missing" />
-    <MetricCard label="Story Points" value={`${customFields.story_points_coverage?.coverage_pct ?? 9}%`} subtitle="stories estimated" />
+    <MetricCard label="Epic Completion" value={`${epicData.overall_resolution_rate_pct}%`} subtitle={`${epicData.resolved} of ${epicData.total_epics} resolved`} benchmark="Healthy: 60\u201380%" href="/delivery" />
+    <MetricCard label="Priority Inflation" value="89%" subtitle="of issues marked High" benchmark="Healthy: <30% High" href="/delivery" />
+    <MetricCard label="Incidents Parsed" value={rcaData.total_incidents_parsed?.toString() ?? '50'} subtitle="Peak: 2022 (26)" href="/documentation" />
+    <MetricCard label="ECS Health Checks" value={`${Math.round((ecsData.containers_without_health_check / ecsData.total_containers) * 100)}%`} subtitle="containers missing" benchmark="Target: 0% missing" href="/infrastructure" />
+    <MetricCard label="Story Points" value={`${customFields.story_points_coverage?.coverage_pct ?? 9}%`} subtitle="stories estimated" benchmark="Healthy: >80%" href="/delivery" />
   </dl>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Explore</h2>

@@ -1,0 +1,1481 @@
+[
+  {
+    "name": "Ext-Madmobile-Winmark",
+    "member_count": 18,
+    "channel_count": 1,
+    "departments": [
+      "Program Management",
+      "IT Infrastructure",
+      "Software Development",
+      "External Peak Activity",
+      "External - Peak Activity",
+      "AI Group"
+    ],
+    "cross_functional": true,
+    "created": "2026-01-08T19:54:24Z"
+  },
+  {
+    "name": "Operations Solutions",
+    "member_count": 11,
+    "channel_count": 8,
+    "departments": [
+      "Data Strategy",
+      "IT Infrastructure"
+    ],
+    "cross_functional": true,
+    "created": "2023-03-10T00:06:59Z"
+  },
+  {
+    "name": "Cake Development Environment",
+    "member_count": 46,
+    "channel_count": 10,
+    "departments": [
+      "Engineering",
+      "General Operations",
+      "Software Development",
+      "Architecture",
+      "Customer Support",
+      "Technical Resources",
+      "Solution Operations",
+      "Data Strategy",
+      "Quality Engineering",
+      "Payments",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-24T10:23:26Z"
+  },
+  {
+    "name": "System Monitoring Alerts",
+    "member_count": 219,
+    "channel_count": 20,
+    "departments": [
+      "Marketing",
+      "Technical Resources",
+      "Customer Support",
+      "Quality Engineering",
+      "Payments",
+      "Sales",
+      "External Skillnet",
+      "General Operations",
+      "External JFW",
+      "Software Development",
+      "IT Security",
+      "Architecture",
+      "External Peak Activity",
+      "Customer Success",
+      "Data Strategy",
+      "Customer Success ",
+      "People Operations",
+      "Program Management",
+      "Avio Contractor",
+      "Solution Operations",
+      "Executive",
+      "AI Group",
+      "Engineering",
+      "Finance & Accounting",
+      "Inbound Sales",
+      "Logistics",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-24T19:06:05Z"
+  },
+  {
+    "name": "Payments Funding Notifications",
+    "member_count": 8,
+    "channel_count": 1,
+    "departments": [
+      "Quality Engineering",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-11T03:08:54Z"
+  },
+  {
+    "name": "CERT",
+    "member_count": 17,
+    "channel_count": 1,
+    "departments": [
+      "People Operations",
+      "Program Management",
+      "IT Infrastructure",
+      "General Operations",
+      "Marketing",
+      "Software Development",
+      "IT Security",
+      "Customer Support",
+      "Logistics",
+      "Solution Operations",
+      "AI Group"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-30T18:15:21Z"
+  },
+  {
+    "name": "Revenue Operations",
+    "member_count": 2,
+    "channel_count": 1,
+    "departments": [
+      "Inbound Sales"
+    ],
+    "cross_functional": false,
+    "created": "2024-06-28T13:07:45Z"
+  },
+  {
+    "name": "CAKE Logistics",
+    "member_count": 49,
+    "channel_count": 3,
+    "departments": [
+      "Sales",
+      "People Operations",
+      "General Operations",
+      "Customer Support",
+      "Logistics",
+      "Customer Success",
+      "Data Strategy",
+      "Customer Success "
+    ],
+    "cross_functional": true,
+    "created": "2024-12-23T17:55:01Z"
+  },
+  {
+    "name": "CAKE support Team",
+    "member_count": 1,
+    "channel_count": 1,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2024-12-10T17:45:12Z"
+  },
+  {
+    "name": "CloudOperations",
+    "member_count": 50,
+    "channel_count": 2,
+    "departments": [
+      "IT Infrastructure",
+      "Engineering",
+      "General Operations",
+      "Software Development",
+      "IT Security",
+      "Technical Resources",
+      "Customer Support",
+      "Solution Operations",
+      "Data Strategy",
+      "Quality Engineering",
+      "Payments",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-27T06:29:57Z"
+  },
+  {
+    "name": "cake-dev-qe-environment-alerts",
+    "member_count": 2,
+    "channel_count": 1,
+    "departments": [
+      "Solution Operations"
+    ],
+    "cross_functional": false,
+    "created": "2025-06-27T10:13:23Z"
+  },
+  {
+    "name": "Cake KTs",
+    "member_count": 3,
+    "channel_count": 1,
+    "departments": [
+      "Engineering",
+      "Customer Support",
+      "General Operations"
+    ],
+    "cross_functional": true,
+    "created": "2023-09-07T15:11:55Z"
+  },
+  {
+    "name": "Observability Improvement Project",
+    "member_count": 3,
+    "channel_count": 2,
+    "departments": [
+      "Customer Support",
+      "General Operations"
+    ],
+    "cross_functional": true,
+    "created": "2022-11-07T16:11:26Z"
+  },
+  {
+    "name": "External-Madmobile-AWS",
+    "member_count": 8,
+    "channel_count": 1,
+    "departments": [
+      "Program Management",
+      "Software Development",
+      "Solution Operations"
+    ],
+    "cross_functional": true,
+    "created": "2025-10-06T05:45:19Z"
+  },
+  {
+    "name": "Onboarding & Training L2 Operations",
+    "member_count": 2,
+    "channel_count": 3,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2024-05-19T14:21:43Z"
+  },
+  {
+    "name": "LK-Restaurant-Engineering & Delivery",
+    "member_count": 10,
+    "channel_count": 12,
+    "departments": [
+      "Software Development",
+      "Quality Engineering",
+      "Engineering"
+    ],
+    "cross_functional": true,
+    "created": "2025-05-20T15:43:49Z"
+  },
+  {
+    "name": "Team-R",
+    "member_count": 3,
+    "channel_count": 5,
+    "departments": [
+      "IT Infrastructure",
+      "IT"
+    ],
+    "cross_functional": true,
+    "created": "2023-10-03T19:52:59Z"
+  },
+  {
+    "name": "Information Technology",
+    "member_count": 5,
+    "channel_count": 17,
+    "departments": [
+      "People Operations",
+      "IT Infrastructure",
+      "Solution Operations",
+      "IT Security"
+    ],
+    "cross_functional": true,
+    "created": "2023-05-03T18:02:50Z"
+  },
+  {
+    "name": "Taurus",
+    "member_count": 0,
+    "channel_count": 1,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2025-06-03T06:06:16Z"
+  },
+  {
+    "name": "Landi & CAKE Collaboration",
+    "member_count": 6,
+    "channel_count": 2,
+    "departments": [
+      "Software Development",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-28T05:20:26Z"
+  },
+  {
+    "name": "Menu Team SL",
+    "member_count": 5,
+    "channel_count": 3,
+    "departments": [
+      "Customer Support",
+      "Customer Success"
+    ],
+    "cross_functional": true,
+    "created": "2025-04-17T05:09:51Z"
+  },
+  {
+    "name": "PMO",
+    "member_count": 0,
+    "channel_count": 1,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2024-07-26T09:30:40Z"
+  },
+  {
+    "name": "Team Tesla",
+    "member_count": 26,
+    "channel_count": 7,
+    "departments": [
+      "IT Infrastructure",
+      "Software Development",
+      "Architecture",
+      "Technical Resources",
+      "Quality Engineering",
+      "Payments",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2023-12-15T14:24:20Z"
+  },
+  {
+    "name": "CAKE Sales Team",
+    "member_count": 52,
+    "channel_count": 10,
+    "departments": [
+      "Sales",
+      "People Operations",
+      "Marketing",
+      "General Operations",
+      "Software Development",
+      "Inbound Sales",
+      "Customer Support",
+      "Executive",
+      "Customer Success",
+      "Data Strategy",
+      "Payments",
+      "Customer Success ",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-02-06T18:32:52Z"
+  },
+  {
+    "name": "Payments Apps Alerts",
+    "member_count": 5,
+    "channel_count": 1,
+    "departments": [
+      "Quality Engineering",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-08T11:24:21Z"
+  },
+  {
+    "name": "Software Spend Tracking",
+    "member_count": 8,
+    "channel_count": 1,
+    "departments": [
+      "People Operations",
+      "IT Infrastructure",
+      "Finance & Accounting",
+      "Software Development",
+      "IT Security",
+      "Customer Support",
+      "AI Group"
+    ],
+    "cross_functional": true,
+    "created": "2024-07-18T15:25:29Z"
+  },
+  {
+    "name": "Change Management",
+    "member_count": 40,
+    "channel_count": 1,
+    "departments": [
+      "Program Management",
+      "IT Infrastructure",
+      "Engineering",
+      "Marketing",
+      "General Operations",
+      "Software Development",
+      "IT Security",
+      "Architecture",
+      "Technical Resources",
+      "Payments",
+      "Customer Support",
+      "Solution Operations",
+      "Data Strategy",
+      "AI Group",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-12T15:25:41Z"
+  },
+  {
+    "name": "HR Operations",
+    "member_count": 0,
+    "channel_count": 1,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2025-04-04T07:39:41Z"
+  },
+  {
+    "name": "Learning & Development",
+    "member_count": 9,
+    "channel_count": 4,
+    "departments": [
+      "People Operations",
+      "Customer Support",
+      "Customer Success"
+    ],
+    "cross_functional": true,
+    "created": "2024-08-01T19:50:34Z"
+  },
+  {
+    "name": "Ext-Madmobile-Coverdash",
+    "member_count": 20,
+    "channel_count": 1,
+    "departments": [
+      "IT Infrastructure",
+      "Marketing",
+      "Software Development",
+      "Data Strategy",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-24T15:52:49Z"
+  },
+  {
+    "name": "Castor",
+    "member_count": 2,
+    "channel_count": 3,
+    "departments": [
+      "Software Development",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2024-07-12T10:19:22Z"
+  },
+  {
+    "name": "Payments",
+    "member_count": 26,
+    "channel_count": 17,
+    "departments": [
+      "IT Infrastructure",
+      "General Operations",
+      "Software Development",
+      "Architecture",
+      "Customer Support",
+      "Solution Operations",
+      "Quality Engineering",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-02-07T19:33:52Z"
+  },
+  {
+    "name": "MM-SL-App Support",
+    "member_count": 2,
+    "channel_count": 6,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2022-08-23T07:45:35Z"
+  },
+  {
+    "name": "EXT-Elo-MM",
+    "member_count": 18,
+    "channel_count": 1,
+    "departments": [
+      "IT Infrastructure",
+      "Software Development",
+      "Customer Support",
+      "Executive",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2023-09-13T19:01:35Z"
+  },
+  {
+    "name": "Ext- MadMobile-Parafin",
+    "member_count": 40,
+    "channel_count": 1,
+    "departments": [
+      "IT Infrastructure",
+      "General Operations",
+      "Marketing",
+      "Inbound Sales",
+      "Customer Support",
+      "Customer Success",
+      "Data Strategy",
+      "Payments",
+      "Customer Success "
+    ],
+    "cross_functional": true,
+    "created": "2025-06-04T16:17:27Z"
+  },
+  {
+    "name": "Madmobile Application Services Team",
+    "member_count": 8,
+    "channel_count": 2,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2022-09-11T13:57:14Z"
+  },
+  {
+    "name": "Major Incident Management (Code Red)",
+    "member_count": 112,
+    "channel_count": 6,
+    "departments": [
+      "Marketing",
+      "Technical Resources",
+      "Customer Support",
+      "Quality Engineering",
+      "Payments",
+      "Sales",
+      "General Operations",
+      "Software Development",
+      "IT Security",
+      "Architecture",
+      "Customer Success",
+      "Data Strategy",
+      "Customer Success ",
+      "People Operations",
+      "Program Management",
+      "Solution Operations",
+      "AI Group",
+      "IT Infrastructure",
+      "Engineering",
+      "Inbound Sales",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-03-04T06:27:56Z"
+  },
+  {
+    "name": "Team CW",
+    "member_count": 3,
+    "channel_count": 1,
+    "departments": [
+      "Sales"
+    ],
+    "cross_functional": false,
+    "created": "2025-01-31T20:51:07Z"
+  },
+  {
+    "name": "EMS Migration",
+    "member_count": 29,
+    "channel_count": 1,
+    "departments": [
+      "Sales",
+      "Software Development",
+      "Customer Support",
+      "Technical Resources",
+      "Customer Success",
+      "AI Group",
+      "Customer Success ",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2024-12-27T18:46:14Z"
+  },
+  {
+    "name": "MadMobile-Payments-Ops",
+    "member_count": 11,
+    "channel_count": 1,
+    "departments": [
+      "Software Development",
+      "Payments",
+      "Customer Support",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2021-10-13T12:26:56Z"
+  },
+  {
+    "name": "CAKE Customer Success",
+    "member_count": 57,
+    "channel_count": 5,
+    "departments": [
+      "People Operations",
+      "Sales",
+      "IT Infrastructure",
+      "Finance & Accounting",
+      "General Operations",
+      "Software Development",
+      "Inbound Sales",
+      "Customer Support",
+      "Logistics",
+      "Customer Success",
+      "Data Strategy",
+      "Customer Success "
+    ],
+    "cross_functional": true,
+    "created": "2024-12-20T20:02:59Z"
+  },
+  {
+    "name": "Team Apollo",
+    "member_count": 10,
+    "channel_count": 6,
+    "departments": [
+      "Program Management",
+      "IT Infrastructure",
+      "Software Development",
+      "Quality Engineering",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2023-12-15T14:28:07Z"
+  },
+  {
+    "name": "SLT - TechOps SL",
+    "member_count": 3,
+    "channel_count": 1,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2022-08-19T03:45:51Z"
+  },
+  {
+    "name": "Cake Dev Environment",
+    "member_count": 45,
+    "channel_count": 6,
+    "departments": [
+      "Program Management",
+      "Engineering",
+      "General Operations",
+      "Software Development",
+      "Architecture",
+      "Customer Support",
+      "Payments",
+      "Solution Operations",
+      "Data Strategy",
+      "Quality Engineering",
+      "AI Group",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-09-30T06:14:31Z"
+  },
+  {
+    "name": "MadMobile Service Reporting",
+    "member_count": 46,
+    "channel_count": 2,
+    "departments": [
+      "Sales",
+      "Program Management",
+      "IT Infrastructure",
+      "General Operations",
+      "Software Development",
+      "IT Security",
+      "Customer Support",
+      "Payments",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2022-10-14T10:35:26Z"
+  },
+  {
+    "name": "Customer_support",
+    "member_count": 4,
+    "channel_count": 1,
+    "departments": [
+      "IT Infrastructure",
+      "Customer Support"
+    ],
+    "cross_functional": true,
+    "created": "2025-04-21T04:19:51Z"
+  },
+  {
+    "name": "Menu Team - Test",
+    "member_count": 4,
+    "channel_count": 2,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2025-07-15T05:47:08Z"
+  },
+  {
+    "name": "Intune-user-testing",
+    "member_count": 1,
+    "channel_count": 1,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2025-06-12T19:50:46Z"
+  },
+  {
+    "name": "CAKE-Salesforce",
+    "member_count": 5,
+    "channel_count": 1,
+    "departments": [
+      "Data Strategy",
+      "Customer Success"
+    ],
+    "cross_functional": true,
+    "created": "2020-09-10T18:59:36Z"
+  },
+  {
+    "name": "IT-TEST2",
+    "member_count": 0,
+    "channel_count": 1,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2023-06-20T08:23:50Z"
+  },
+  {
+    "name": "Sales Packages",
+    "member_count": 10,
+    "channel_count": 1,
+    "departments": [
+      "Sales",
+      "General Operations",
+      "Inbound Sales",
+      "Software Development",
+      "Marketing",
+      "Customer Support",
+      "Technical Resources",
+      "Data Strategy"
+    ],
+    "cross_functional": true,
+    "created": "2025-11-10T20:07:40Z"
+  },
+  {
+    "name": "Mad Mobile Global Hub",
+    "member_count": 205,
+    "channel_count": 4,
+    "departments": [
+      "Marketing",
+      "Technical Resources",
+      "Customer Support",
+      "Quality Engineering",
+      "Payments",
+      "Sales",
+      "External Skillnet",
+      "General Operations",
+      "External JFW",
+      "Software Development",
+      "IT Security",
+      "Architecture",
+      "Customer Success",
+      "Data Strategy",
+      "Customer Success ",
+      "People Operations",
+      "Program Management",
+      "Avio Contractor",
+      "Solution Operations",
+      "Executive",
+      "AI Group",
+      "IT Infrastructure",
+      "Engineering",
+      "Finance & Accounting",
+      "Inbound Sales",
+      "Logistics",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-01-31T17:01:52Z"
+  },
+  {
+    "name": "L2 Technical Support - Teams Channel",
+    "member_count": 54,
+    "channel_count": 11,
+    "departments": [
+      "People Operations",
+      "Engineering",
+      "Software Development",
+      "Customer Support",
+      "Technical Resources",
+      "Customer Success",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-02-22T20:15:59Z"
+  },
+  {
+    "name": "Ext-Madmobile-Mongodb",
+    "member_count": 3,
+    "channel_count": 1,
+    "departments": [
+      "IT Infrastructure"
+    ],
+    "cross_functional": false,
+    "created": "2025-07-02T20:56:27Z"
+  },
+  {
+    "name": "GRC - Compliance Audits",
+    "member_count": 7,
+    "channel_count": 4,
+    "departments": [
+      "IT Infrastructure",
+      "Software Development",
+      "IT Security",
+      "Solution Operations",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-16T21:18:27Z"
+  },
+  {
+    "name": "Product",
+    "member_count": 18,
+    "channel_count": 4,
+    "departments": [
+      "Software Development",
+      "Customer Success ",
+      "Product",
+      "Marketing"
+    ],
+    "cross_functional": true,
+    "created": "2020-12-23T18:51:03Z"
+  },
+  {
+    "name": "marketing-team-only",
+    "member_count": 6,
+    "channel_count": 1,
+    "departments": [
+      "General Operations",
+      "Solution Operations",
+      "Executive",
+      "Marketing"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-24T10:20:00Z"
+  },
+  {
+    "name": "CAKE AI NRA DEV TEAM",
+    "member_count": 8,
+    "channel_count": 1,
+    "departments": [
+      "Software Development",
+      "AI Group",
+      "Architecture",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-03-19T16:02:54Z"
+  },
+  {
+    "name": "Z_Old Mad Mobile Newsroom",
+    "member_count": 22,
+    "channel_count": 4,
+    "departments": [
+      "People Operations",
+      "IT Infrastructure",
+      "Engineering",
+      "Software Development",
+      "Technical Resources",
+      "Customer Support",
+      "Solution Operations",
+      "Data Strategy",
+      "AI Group"
+    ],
+    "cross_functional": true,
+    "created": "2020-12-21T16:38:48Z"
+  },
+  {
+    "name": "DevSecOps",
+    "member_count": 7,
+    "channel_count": 2,
+    "departments": [
+      "Software Development",
+      "Solution Operations"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-24T09:38:18Z"
+  },
+  {
+    "name": "MMLK-A Team",
+    "member_count": 3,
+    "channel_count": 1,
+    "departments": [
+      "Software Development",
+      "Customer Support",
+      "General Operations"
+    ],
+    "cross_functional": true,
+    "created": "2025-05-26T04:10:44Z"
+  },
+  {
+    "name": "Ems-Migration-Alerts",
+    "member_count": 17,
+    "channel_count": 3,
+    "departments": [
+      "IT Infrastructure",
+      "Engineering",
+      "Software Development",
+      "Architecture",
+      "Customer Support",
+      "Customer Success"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-10T14:55:49Z"
+  },
+  {
+    "name": "Payments Alerts",
+    "member_count": 12,
+    "channel_count": 1,
+    "departments": [
+      "General Operations",
+      "Software Development",
+      "Customer Support",
+      "Quality Engineering",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-11T05:49:47Z"
+  },
+  {
+    "name": "LEO",
+    "member_count": 3,
+    "channel_count": 2,
+    "departments": [
+      "Software Development",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2024-04-17T07:02:25Z"
+  },
+  {
+    "name": "Marketing Team",
+    "member_count": 11,
+    "channel_count": 4,
+    "departments": [
+      "Sales",
+      "IT Infrastructure",
+      "Marketing",
+      "General Operations",
+      "Executive"
+    ],
+    "cross_functional": true,
+    "created": "2023-03-22T15:41:36Z"
+  },
+  {
+    "name": "SL IT TEST",
+    "member_count": 0,
+    "channel_count": 4,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2025-06-24T08:03:23Z"
+  },
+  {
+    "name": "CAKE",
+    "member_count": 45,
+    "channel_count": 2,
+    "departments": [
+      "Sales",
+      "Engineering",
+      "Marketing",
+      "Software Development",
+      "IT Security",
+      "Customer Support",
+      "Logistics",
+      "Executive",
+      "Customer Success",
+      "Data Strategy",
+      "Payments",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2020-09-10T18:46:31Z"
+  },
+  {
+    "name": "CAKE - AWS Events and Alerts",
+    "member_count": 6,
+    "channel_count": 2,
+    "departments": [
+      "Software Development",
+      "Solution Operations"
+    ],
+    "cross_functional": true,
+    "created": "2022-10-27T10:39:10Z"
+  },
+  {
+    "name": "Cake-Billbusters",
+    "member_count": 0,
+    "channel_count": 2,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2023-06-05T10:39:29Z"
+  },
+  {
+    "name": "Technology Governance Group",
+    "member_count": 10,
+    "channel_count": 1,
+    "departments": [
+      "Engineering",
+      "Software Development",
+      "Payments",
+      "Architecture"
+    ],
+    "cross_functional": true,
+    "created": "2025-04-24T18:11:41Z"
+  },
+  {
+    "name": "Payments MySQL Errors",
+    "member_count": 5,
+    "channel_count": 1,
+    "departments": [
+      "Quality Engineering",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-11T05:42:08Z"
+  },
+  {
+    "name": "L2 Shift Handover",
+    "member_count": 1,
+    "channel_count": 1,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2026-02-03T11:51:46Z"
+  },
+  {
+    "name": "CZ Project Site",
+    "member_count": 0,
+    "channel_count": 1,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2025-05-05T15:54:06Z"
+  },
+  {
+    "name": "CAKE_AppSupport",
+    "member_count": 2,
+    "channel_count": 1,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2020-09-10T18:47:56Z"
+  },
+  {
+    "name": "PayFac",
+    "member_count": 6,
+    "channel_count": 3,
+    "departments": [
+      "Payments"
+    ],
+    "cross_functional": false,
+    "created": "2021-02-17T22:46:05Z"
+  },
+  {
+    "name": "payments-product",
+    "member_count": 3,
+    "channel_count": 1,
+    "departments": [
+      "Solution Operations",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-24T10:06:57Z"
+  },
+  {
+    "name": "CAKE Core Reporting",
+    "member_count": 15,
+    "channel_count": 2,
+    "departments": [
+      "Payments",
+      "Customer Support",
+      "Product",
+      "General Operations"
+    ],
+    "cross_functional": true,
+    "created": "2022-10-04T07:45:52Z"
+  },
+  {
+    "name": "Payments_adhoc",
+    "member_count": 3,
+    "channel_count": 2,
+    "departments": [
+      "Quality Engineering",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-07T06:54:06Z"
+  },
+  {
+    "name": "payments-operations",
+    "member_count": 39,
+    "channel_count": 1,
+    "departments": [
+      "IT Infrastructure",
+      "General Operations",
+      "Software Development",
+      "Customer Support",
+      "Technical Resources",
+      "Solution Operations",
+      "Customer Success",
+      "Data Strategy",
+      "Payments",
+      "Customer Success "
+    ],
+    "cross_functional": true,
+    "created": "2025-06-27T08:20:09Z"
+  },
+  {
+    "name": "QA Restaurant",
+    "member_count": 6,
+    "channel_count": 1,
+    "departments": [
+      "Software Development",
+      "Quality Engineering"
+    ],
+    "cross_functional": true,
+    "created": "2025-08-26T12:28:18Z"
+  },
+  {
+    "name": "L2 Engineering",
+    "member_count": 3,
+    "channel_count": 1,
+    "departments": [
+      "Software Development",
+      "Customer Support",
+      "Technical Resources"
+    ],
+    "cross_functional": true,
+    "created": "2025-09-18T11:50:10Z"
+  },
+  {
+    "name": "HR OPs",
+    "member_count": 0,
+    "channel_count": 2,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2023-10-02T08:23:38Z"
+  },
+  {
+    "name": "Champion Program",
+    "member_count": 24,
+    "channel_count": 6,
+    "departments": [
+      "People Operations",
+      "IT Infrastructure",
+      "Finance & Accounting",
+      "General Operations",
+      "Software Development",
+      "Marketing",
+      "Inbound Sales",
+      "Technical Resources",
+      "Customer Support",
+      "Customer Success",
+      "Payments",
+      "Quality Engineering",
+      "AI Group",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-01-14T19:48:39Z"
+  },
+  {
+    "name": "Product & Technology Group",
+    "member_count": 10,
+    "channel_count": 1,
+    "departments": [
+      "General Operations",
+      "Software Development",
+      "Customer Support",
+      "AI Group",
+      "Payments",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-10-06T05:52:48Z"
+  },
+  {
+    "name": "Ext-Madmobile-PeakActivity",
+    "member_count": 18,
+    "channel_count": 1,
+    "departments": [
+      "Program Management",
+      "IT Infrastructure",
+      "External SI Peak Activity",
+      "Software Development",
+      "Architecture",
+      "Technical Resources",
+      "External Peak Activity",
+      "External - Peak Activity",
+      "Solution Operations",
+      "Executive",
+      "AI Group"
+    ],
+    "cross_functional": true,
+    "created": "2026-01-07T14:55:48Z"
+  },
+  {
+    "name": "cakeshop-expired",
+    "member_count": 12,
+    "channel_count": 1,
+    "departments": [
+      "Sales",
+      "IT Infrastructure",
+      "Inbound Sales",
+      "Customer Success",
+      "Data Strategy",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-26T06:42:46Z"
+  },
+  {
+    "name": "QA Engineering Team",
+    "member_count": 7,
+    "channel_count": 3,
+    "departments": [
+      "Quality Engineering",
+      "Technical Resources"
+    ],
+    "cross_functional": true,
+    "created": "2025-01-30T17:30:17Z"
+  },
+  {
+    "name": "onboarding-sales",
+    "member_count": 19,
+    "channel_count": 1,
+    "departments": [
+      "Sales",
+      "IT Infrastructure",
+      "Inbound Sales",
+      "Customer Support",
+      "Solution Operations",
+      "Customer Success",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-26T06:33:22Z"
+  },
+  {
+    "name": "Madmobile Application Services - SL",
+    "member_count": 9,
+    "channel_count": 1,
+    "departments": [
+      "Customer Support"
+    ],
+    "cross_functional": false,
+    "created": "2022-08-03T15:05:07Z"
+  },
+  {
+    "name": "Talent Acquisition",
+    "member_count": 1,
+    "channel_count": 5,
+    "departments": [
+      "General Operations"
+    ],
+    "cross_functional": false,
+    "created": "2023-08-03T11:32:02Z"
+  },
+  {
+    "name": "EXT- AE-MM joint collaboration channel",
+    "member_count": 8,
+    "channel_count": 1,
+    "departments": [
+      "Software Development"
+    ],
+    "cross_functional": false,
+    "created": "2021-06-28T14:35:33Z"
+  },
+  {
+    "name": "Admin Alerts and Notifications",
+    "member_count": 3,
+    "channel_count": 2,
+    "departments": [
+      "IT Infrastructure",
+      "IT Security"
+    ],
+    "cross_functional": true,
+    "created": "2025-03-05T19:22:16Z"
+  },
+  {
+    "name": "Payments Batchjob Alerts",
+    "member_count": 4,
+    "channel_count": 1,
+    "departments": [
+      "Quality Engineering",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-07-11T02:59:24Z"
+  },
+  {
+    "name": "Security Operations",
+    "member_count": 7,
+    "channel_count": 5,
+    "departments": [
+      "Program Management",
+      "IT Infrastructure",
+      "Software Development",
+      "IT Security",
+      "Solution Operations",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2022-06-06T17:45:15Z"
+  },
+  {
+    "name": "qe-implementation",
+    "member_count": 8,
+    "channel_count": 1,
+    "departments": [
+      "Quality Engineering",
+      "Solution Operations",
+      "Technical Resources"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-27T10:09:34Z"
+  },
+  {
+    "name": "cs_payments",
+    "member_count": 7,
+    "channel_count": 1,
+    "departments": [
+      "Payments",
+      "Quality Engineering",
+      "Solution Operations"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-24T09:32:04Z"
+  },
+  {
+    "name": "Support Central Hub",
+    "member_count": 60,
+    "channel_count": 5,
+    "departments": [
+      "Sales",
+      "General Operations",
+      "Marketing",
+      "Inbound Sales",
+      "Customer Support",
+      "Technical Resources",
+      "Logistics",
+      "Customer Success",
+      "Customer Success "
+    ],
+    "cross_functional": true,
+    "created": "2025-07-21T14:51:23Z"
+  },
+  {
+    "name": "Outside Sales",
+    "member_count": 9,
+    "channel_count": 1,
+    "departments": [
+      "Sales"
+    ],
+    "cross_functional": false,
+    "created": "2025-10-10T16:10:41Z"
+  },
+  {
+    "name": "Concierge Team",
+    "member_count": 34,
+    "channel_count": 20,
+    "departments": [
+      "Program Management",
+      "IT Infrastructure",
+      "General Operations",
+      "Software Development",
+      "Architecture",
+      "Technical Resources",
+      "Customer Support",
+      "Solution Operations",
+      "Quality Engineering",
+      "AI Group",
+      "Product"
+    ],
+    "cross_functional": true,
+    "created": "2025-02-10T12:15:31Z"
+  },
+  {
+    "name": "Live chat requests",
+    "member_count": 0,
+    "channel_count": 1,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2025-10-17T20:06:45Z"
+  },
+  {
+    "name": "Altair",
+    "member_count": 3,
+    "channel_count": 2,
+    "departments": [
+      "Software Development",
+      "Quality Engineering"
+    ],
+    "cross_functional": true,
+    "created": "2025-05-30T08:28:03Z"
+  },
+  {
+    "name": "Cake Cloud Services",
+    "member_count": 4,
+    "channel_count": 1,
+    "departments": [
+      "Solution Operations",
+      "IT Security"
+    ],
+    "cross_functional": true,
+    "created": "2022-08-02T11:39:38Z"
+  },
+  {
+    "name": "PMO",
+    "member_count": 7,
+    "channel_count": 1,
+    "departments": [
+      "Program Management",
+      "General Operations",
+      "Software Development",
+      "AI Group",
+      "Payments"
+    ],
+    "cross_functional": true,
+    "created": "2025-02-06T16:40:36Z"
+  },
+  {
+    "name": "Payment Engineers",
+    "member_count": 16,
+    "channel_count": 1,
+    "departments": [
+      "Software Development",
+      "Quality Engineering",
+      "Payments",
+      "Architecture"
+    ],
+    "cross_functional": true,
+    "created": "2025-10-10T05:43:04Z"
+  },
+  {
+    "name": "Intune Team",
+    "member_count": 1,
+    "channel_count": 2,
+    "departments": [],
+    "cross_functional": false,
+    "created": "2025-05-30T18:50:59Z"
+  },
+  {
+    "name": "Support Operations",
+    "member_count": 28,
+    "channel_count": 6,
+    "departments": [
+      "People Operations",
+      "Customer Support",
+      "Customer Success"
+    ],
+    "cross_functional": true,
+    "created": "2025-06-06T19:59:02Z"
+  },
+  {
+    "name": "MAUI",
+    "member_count": 10,
+    "channel_count": 1,
+    "departments": [
+      "Program Management",
+      "Software Development",
+      "Architecture",
+      "Technical Resources"
+    ],
+    "cross_functional": true,
+    "created": "2024-04-17T18:30:45Z"
+  },
+  {
+    "name": "HR Team!",
+    "member_count": 4,
+    "channel_count": 8,
+    "departments": [
+      "People Operations",
+      "Customer Support"
+    ],
+    "cross_functional": true,
+    "created": "2024-02-21T18:45:07Z"
+  },
+  {
+    "name": "Pricing",
+    "member_count": 7,
+    "channel_count": 1,
+    "departments": [
+      "Inbound Sales",
+      "Payments",
+      "Customer Success"
+    ],
+    "cross_functional": true,
+    "created": "2022-04-02T16:48:41Z"
+  }
+]

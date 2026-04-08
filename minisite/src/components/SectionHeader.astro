@@ -1,11 +1,17 @@
 ---
+interface MetricItem {
+  label: string;
+  value: string | number;
+}
+
 interface Props {
   title: string;
   description?: string;
   eyebrow?: string;
+  metrics?: MetricItem[];
 }
 
-const { title, description, eyebrow } = Astro.props;
+const { title, description, eyebrow, metrics } = Astro.props;
 ---
 
 <div class="mb-6">
@@ -14,6 +20,16 @@ const { title, description, eyebrow } = Astro.props;
       {eyebrow}
     </span>
   )}
-  <h1 class="text-xl font-bold text-[var(--text)] font-[var(--font-display)]">{title}</h1>
+  <h1 class="text-xl font-semibold text-[var(--text)] font-[var(--font-display)]">{title}</h1>
   {description && <p class="mt-1 text-sm text-[var(--text-secondary)] max-w-2xl">{description}</p>}
+  {metrics && metrics.length > 0 && (
+    <div class="flex flex-wrap gap-x-6 gap-y-2 mt-3 pt-3 border-t border-[var(--border-subtle)]">
+      {metrics.map((m) => (
+        <div class="flex items-baseline gap-1.5">
+          <span class="text-base font-semibold font-mono tabular-nums text-[var(--text)]">{m.value}</span>
+          <span class="text-[10px] font-medium uppercase tracking-wider text-[var(--text-muted)]">{m.label}</span>
+        </div>
+      ))}
+    </div>
+  )}
 </div>

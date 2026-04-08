@@ -1,0 +1,239 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import FindingCard from '../../components/FindingCard.astro';
+import TabulatorGrid from '../../components/TabulatorGrid.astro';
+import ChartEmbed from '../../components/ChartEmbed.astro';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { personUrl, personSlug } from '../../lib/links';
+
+const num = (v: any) => Number(v) || 0;
+const fmt = (v: number) => v.toLocaleString('en-US', { maximumFractionDigits: 1 });
+
+let meetingLoad: Record<string, any> = {};
+try {
+  meetingLoad = JSON.parse(readFileSync(resolve('../inventory/users/m365_meeting_load.json'), 'utf-8'));
+} catch {}
+
+let crossFunc: any[] = [];
+try {
+  crossFunc = JSON.parse(readFileSync(resolve('../inventory/users/m365_meeting_crossfunc.json'), 'utf-8'));
+} catch {}
+
+let bridges: any[] = [];
+try {
+  bridges = JSON.parse(readFileSync(resolve('../inventory/users/m365_crossorg_bridges.json'), 'utf-8'));
+} catch {}
+
+const people = Object.values(meetingLoad) as any[];
+const totalHours = people.reduce((s, p) => s + num(p.total_hours), 0);
+const avgHoursDay = people.length
+  ? people.reduce((s, p) => s + num(p.avg_hours_per_meeting_day), 0) / people.length
+  : 0;
+const avgRecurring = people.length
+  ? people.reduce((s, p) => s + num(p.recurring_pct), 0) / people.length
+  : 0;
+const avgSize = people.length
+  ? people.reduce((s, p) => s + num(p.avg_meeting_size), 0) / people.length
+  : 0;
+
+const deptLoads: Record<string, number[]> = {};
+for (const p of people) {
+  const dept = p.department || 'Unknown';
+  (deptLoads[dept] ??= []).push(num(p.avg_hours_per_meeting_day));
+}
+const deptAvgs = Object.entries(deptLoads)
+  .map(([d, vals]) => ({ dept: d, avg: vals.reduce((a, b) => a + b, 0) / vals.length }))
+  .sort((a, b) => b.avg - a.avg);
+const topDept = deptAvgs[0];
+
+const topCrossFunc = [...crossFunc].sort((a, b) => b.meetings - a.meetings).slice(0, 3);
+const top3Total = topCrossFunc.reduce((s, r) => s + r.meetings, 0);
+const allTotal = crossFunc.reduce((s, r) => s + r.meetings, 0);
+const top3Pct = allTotal > 0 ? ((top3Total / allTotal) * 100).toFixed(0) : '0';
+
+const bridgeDepts = new Set<string>();
+for (const b of bridges) {
+  for (const d of Object.keys(b.bridges_to || {})) bridgeDepts.add(d);
+}
+
+const loadRows = people
+  .map((p) => ({
+    name: p.name || '',
+    _href_name: personUrl(personSlug(p.name || '')),
+    title: p.title || '',
+    department: p.department || 'Unknown',
+    total_hours: Math.round(num(p.total_hours)),
+    avg_hours_day: num(p.avg_hours_per_meeting_day).toFixed(1),
+    recurring_pct: `${num(p.recurring_pct).toFixed(0)}%`,
+    avg_meeting_size: num(p.avg_meeting_size).toFixed(1),
+    total_events: num(p.total_events),
+    days_with_meetings: num(p.days_with_meetings),
+  }))
+  .sort((a, b) => parseFloat(b.avg_hours_day) - parseFloat(a.avg_hours_day));
+
+const maxMeetings = crossFunc.length
+  ? Math.max(...crossFunc.map((r) => r.meetings))
+  : 100;
+
+const crossFuncRows = crossFunc.map((r) => ({
+  from: r.from,
+  to: r.to,
+  meetings: r.meetings,
+}));
+
+const maxBridgeStrength = bridges.length
+  ? Math.max(...bridges.map((b) => b.bridge_strength))
+  : 100;
+
+const bridgeRows = bridges
+  .sort((a: any, b: any) => b.bridge_strength - a.bridge_strength)
+  .map((b: any) => {
+    const bt = b.bridges_to || {};
+    const depts = Object.keys(bt);
+    const topDeptBridge = depts.length
+      ? depts.reduce((a, c) => (bt[c] > bt[a] ? c : a), depts[0])
+      : '';
+    return {
+      name: meetingLoad[b.email]?.name || b.email.split('@')[0],
+      _href_name: personUrl(personSlug(meetingLoad[b.email]?.name || b.email.split('@')[0])),
+      own_department: b.own_department || 'Unknown',
+      departments_bridged: depts.length,
+      bridge_strength: b.bridge_strength,
+      top_bridge: topDeptBridge,
+    };
+  });
+---
+
+<BaseLayout title="Meeting Analysis — People & Org">
+  <div class="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-2">
+    <a href="/people" class="hover:text-[var(--accent)] transition-colors">People &amp; Org</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)]">Meeting Analysis</span>
+  </div>
+
+  <SectionHeader
+    eyebrow="M365 CALENDAR ANALYSIS"
+    title="Meeting Load & Cross-Functional Collaboration"
+    description="Meeting patterns across the organization based on M365 calendar data. Meetings are the largest single consumer of collaborative time. Understanding who meets with whom, how much, and whether it's productive is critical for organizational health."
+  />
+
+  <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+    <MetricCard label="Total Meeting Hours" value={fmt(totalHours)} subtitle="across all tracked calendars" />
+    <MetricCard label="Avg Hours/Day" value={fmt(avgHoursDay)} benchmark="Healthy: <4 hrs" />
+    <MetricCard label="Recurring %" value={`${fmt(avgRecurring)}%`} subtitle="of total meeting time" benchmark="Healthy: <50%" />
+    <MetricCard label="Avg Meeting Size" value={fmt(avgSize)} subtitle="attendees per meeting" benchmark="Typical: 4-8" />
+    <MetricCard label="Cross-Org Bridges" value={bridges.length.toString()} subtitle="people connecting departments" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-4 mb-8">
+    {topDept && (
+      <FindingCard
+        severity="red"
+        title={`${topDept.dept} averages ${topDept.avg.toFixed(1)} hours/day in meetings`}
+        detail="Highest meeting load of any department. Calendar debt at this level crowds out deep work and async collaboration."
+      />
+    )}
+    <FindingCard
+      severity="amber"
+      title={`${fmt(avgRecurring)}% of meeting time is recurring`}
+      detail="Recurring meetings tend to accumulate without review. Pattern suggests calendar debt that compounds over time."
+    />
+    <FindingCard
+      severity="green"
+      title={`${bridges.length} people bridge across ${bridgeDepts.size} departments`}
+      detail="These individuals connect organizational silos through shared meeting attendance. High bridge strength indicates broad cross-functional reach."
+    />
+    <FindingCard
+      severity="amber"
+      title={`Top 3 department pairs account for ${top3Pct}% of cross-functional meetings`}
+      detail={topCrossFunc.map((r) => `${r.from} ↔ ${r.to}`).join(', ')}
+    />
+  </div>
+
+  <div class="mb-8">
+    <ChartEmbed slug="meeting_load_by_function" title="Meeting Load by Department" interactive caption="Weekly meeting hours by department. Departments with high meeting load have less time for focused work. Engineering teams above 15 hours/week of meetings typically show declining code output." />
+  </div>
+
+  <div class="mb-8">
+    <ChartEmbed slug="meeting_crossfunc_chord" title="Cross-Functional Meeting Flow" height="500px" interactive description="Ribbon width shows meeting volume between departments." caption="Which departments meet with which. Thick ribbons indicate heavy cross-department meeting activity. Thin or missing ribbons may indicate collaboration gaps between teams that should be coordinating." />
+  </div>
+
+  <div class="my-6">
+    <FindingCard
+      severity="amber"
+      title="Meeting Load vs Productivity Tradeoff"
+      detail="Departments with the highest meeting hours also show lower code output and longer cycle times. Meetings are necessary for coordination, but beyond 15 hours per week, engineering teams typically see declining productivity. The question is not whether to meet, but whether each recurring meeting is earning its time investment."
+      href="/people/collaboration"
+      hrefLabel="Collaboration Patterns"
+    />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Individual Meeting Load</h2>
+
+  <div class="mb-8">
+    <TabulatorGrid
+      columns={[
+        { key: 'name', label: 'Name', sortable: true, type: 'avatar', subtitleKey: 'title' },
+        { key: 'department', label: 'Department', sortable: true, filterable: true, type: 'badge' },
+        { key: 'total_hours', label: 'Total Hours', align: 'right', sortable: true, type: 'number', bottomCalc: 'sum' },
+        { key: 'avg_hours_day', label: 'Hours/Day', align: 'right', sortable: true, type: 'bar', barMax: 6, barInvert: true },
+        { key: 'recurring_pct', label: 'Recurring', align: 'right', sortable: true, type: 'bar', barMax: 100, barInvert: true },
+        { key: 'avg_meeting_size', label: 'Avg Size', align: 'right', sortable: true, type: 'number' },
+        { key: 'total_events', label: 'Events', align: 'right', sortable: true, type: 'number', bottomCalc: 'sum' },
+        { key: 'days_with_meetings', label: 'Meeting Days', align: 'right', sortable: true, type: 'heat', heatMax: 70 },
+      ]}
+      rows={loadRows}
+      searchable
+      exportable
+      height="500px"
+      initialSort={[{ column: 'avg_hours_day', dir: 'desc' }]}
+    />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Cross-Functional Meeting Volume</h2>
+
+  <div class="mb-8">
+    <TabulatorGrid
+      columns={[
+        { key: 'from', label: 'From', sortable: true, type: 'badge' },
+        { key: 'to', label: 'To', sortable: true, type: 'badge' },
+        { key: 'meetings', label: 'Meetings', align: 'right', sortable: true, type: 'heat', heatMax: maxMeetings },
+      ]}
+      rows={crossFuncRows}
+      searchable
+      exportable
+      initialSort={[{ column: 'meetings', dir: 'desc' }]}
+    />
+  </div>
+
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">Organizational Bridge People</h2>
+
+  <p class="text-sm text-[var(--text-secondary)] mb-4">
+    People who connect departments through shared meeting attendance. Bridge strength = total meetings across non-home departments.
+  </p>
+
+  <div class="mb-8">
+    <ChartEmbed slug="bridge_department_radar" title="Top Bridge Profiles" height="450px" interactive caption="Individuals who regularly bridge between departments. These people are critical connectors -- they facilitate information flow between teams that otherwise do not interact directly." />
+  </div>
+
+  <div class="mb-8">
+    <TabulatorGrid
+      columns={[
+        { key: 'name', label: 'Name', sortable: true },
+        { key: 'own_department', label: 'Home Dept', sortable: true, type: 'badge' },
+        { key: 'departments_bridged', label: 'Depts Bridged', align: 'right', sortable: true, type: 'number' },
+        { key: 'bridge_strength', label: 'Bridge Strength', align: 'right', sortable: true, type: 'bar', barMax: maxBridgeStrength },
+        { key: 'top_bridge', label: 'Strongest Bridge', sortable: true, type: 'badge' },
+      ]}
+      rows={bridgeRows}
+      searchable
+      exportable
+      initialSort={[{ column: 'bridge_strength', dir: 'desc' }]}
+    />
+  </div>
+</BaseLayout>

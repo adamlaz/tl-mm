@@ -95,13 +95,13 @@ const degreeRows = (networkData.degree_centrality_top20 || []).map((p: any) => (
   <SectionHeader
     eyebrow="COLLABORATION NETWORK"
     title="Interaction Network"
-    description="Cross-system collaboration analysis from code reviews, Jira comments, and sprint co-membership."
+    description="Network analysis of collaboration patterns across the organization. These visualizations reveal who works with whom, where communication flows freely, and where gaps exist between teams that should be coordinating."
   />
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Graph Nodes" value={(networkData.graph_stats?.nodes ?? 0).toString()} />
-    <MetricCard label="Interaction Edges" value={(networkData.graph_stats?.edges ?? 0).toString()} />
-    <MetricCard label="Communities" value={(networkData.community_count ?? 0).toString()} />
+    <MetricCard label="People Mapped" value={(networkData.graph_stats?.nodes ?? 0).toString()} subtitle="individuals across all systems" />
+    <MetricCard label="Connections" value={(networkData.graph_stats?.edges ?? 0).toString()} subtitle="pairs who interact across systems" />
+    <MetricCard label="Collaboration Clusters" value={(networkData.community_count ?? 0).toString()} subtitle="algorithmically detected working groups" />
     <MetricCard
       label="Communication Gaps"
       value={highSeverityGaps.length.toString()}
@@ -110,7 +110,11 @@ const degreeRows = (networkData.degree_centrality_top20 || []).map((p: any) => (
   </dl>
 
   <div class="mb-8">
-    <ChartEmbed slug="people_org_map" title="People Network Graph" />
+    <ChartEmbed slug="people_org_map" title="People Network Graph" caption="The collaboration network mapped from actual system activity -- who works with whom based on code reviews, meetings, and document co-authorship. Clusters indicate teams that work closely together. Isolated nodes may indicate people who are disconnected from their peers." />
+  </div>
+
+  <div class="mb-8">
+    <ChartEmbed slug="meeting_network_force" title="M365 Meeting Co-Attendance Network" height="600px" interactive description="Force-directed graph of 195 people. Node size = meeting connections. Color = department. Edge width = shared meeting time." caption="Who attends meetings with whom. Thicker links indicate more frequent co-attendance. Dense clusters show teams that meet frequently. Thin or missing connections between clusters may indicate collaboration gaps." />
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-8">
@@ -177,9 +181,11 @@ const degreeRows = (networkData.degree_centrality_top20 || []).map((p: any) => (
     </div>
   )}
 
+  <p class="text-xs text-[var(--text-secondary)] mb-4 max-w-2xl">Three measures of network importance. <strong>Bridge People</strong> sit between groups that would otherwise be disconnected -- they are critical connectors. <strong>Most Depended On</strong> are the people others interact with most frequently. <strong>Most Connected</strong> have the widest reach across the network. Higher scores in any column indicate greater organizational importance.</p>
+
   <div class="grid lg:grid-cols-3 gap-6 mb-8">
     <div>
-      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Bridge People (Betweenness)</h3>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Bridge People</h3>
       <TabulatorGrid
         columns={[
           { key: 'name', label: 'Name', sortable: true },
@@ -190,7 +196,7 @@ const degreeRows = (networkData.degree_centrality_top20 || []).map((p: any) => (
       />
     </div>
     <div>
-      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Most Depended On (PageRank)</h3>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Most Depended On</h3>
       <TabulatorGrid
         columns={[
           { key: 'name', label: 'Name', sortable: true },
@@ -201,7 +207,7 @@ const degreeRows = (networkData.degree_centrality_top20 || []).map((p: any) => (
       />
     </div>
     <div>
-      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Most Connected (Degree)</h3>
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">Most Connected</h3>
       <TabulatorGrid
         columns={[
           { key: 'name', label: 'Name', sortable: true },
@@ -211,5 +217,14 @@ const degreeRows = (networkData.degree_centrality_top20 || []).map((p: any) => (
         rows={degreeRows}
       />
     </div>
+  </div>
+
+  <div class="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 mt-8">
+    <p class="text-sm text-[var(--text-secondary)]">
+      See how meeting, relevance, and code review networks combine --
+      <a href="/people/collaboration" class="text-[var(--accent)] hover:underline">
+        Multi-Layer Collaboration Analysis
+      </a>
+    </p>
   </div>
 </BaseLayout>

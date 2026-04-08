@@ -1,0 +1,19 @@
+---
+import { GLOSSARY } from '../lib/glossary';
+
+interface Props {
+  term: string;
+}
+
+const { term } = Astro.props;
+const definition = GLOSSARY[term] ?? GLOSSARY[term.toLowerCase()] ?? '';
+---
+
+{definition ? (
+  <dfn
+    class="not-italic cursor-help border-b border-dotted border-[var(--text-muted)]"
+    title={definition}
+  ><slot /></dfn>
+) : (
+  <slot />
+)}

@@ -8,9 +8,10 @@ interface Props {
   href?: string;
   status?: string;
   hrefLabel?: string;
+  chartSlug?: string;
 }
 
-const { id, severity, title, detail, evidence, href, status, hrefLabel } = Astro.props;
+const { id, severity, title, detail, evidence, href, status, hrefLabel, chartSlug } = Astro.props;
 
 const borderMap: Record<string, string> = {
   green: 'var(--status-green)',
@@ -58,9 +59,16 @@ const statusColors = status ? statusColorMap[status] ?? { color: 'var(--text-mut
   {evidence && (
     <p class="text-xs text-[var(--text-muted)] leading-relaxed font-mono">{evidence}</p>
   )}
-  {href && (
-    <a href={href} class="text-xs text-[var(--accent)] hover:underline mt-2 inline-block">
-      {hrefLabel ?? 'View evidence'} →
-    </a>
-  )}
+  <div class="flex items-center gap-3 mt-2">
+    {href && (
+      <a href={href} class="text-xs text-[var(--accent)] hover:underline inline-block">
+        {hrefLabel ?? 'View evidence'} →
+      </a>
+    )}
+    {chartSlug && (
+      <a href={`/charts/${chartSlug}`} class="text-xs text-[var(--accent)] hover:underline inline-block">
+        View chart →
+      </a>
+    )}
+  </div>
 </div>

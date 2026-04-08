@@ -3,133 +3,79 @@ export const prerender = true;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
+import { readdirSync } from 'node:fs';
+import { resolve } from 'node:path';
 
-const chartGroups = [
-  {
-    domain: 'Infrastructure',
-    charts: [
-      { slug: 'aws_cost_by_account', title: 'Cost by Account' },
-      { slug: 'aws_cost_by_service', title: 'Cost by Service' },
-      { slug: 'aws_cost_trend', title: 'Cost Trend' },
-      { slug: 'aws_resource_inventory', title: 'Resource Inventory' },
-      { slug: 'aws_lambda_runtimes', title: 'Lambda Runtimes' },
-      { slug: 'aws_cost_waterfall', title: 'AWS Cost Composition (Waterfall)' },
-      { slug: 'aws_cost_pareto', title: 'AWS Cost Concentration (Pareto)' },
-      { slug: 'aws_instance_audit', title: 'EC2 Instance Generation Audit' },
-      { slug: 'aws_security_posture', title: 'Security Posture' },
-      { slug: 'aws_tagging_compliance', title: 'Tagging & Naming Compliance' },
-    ],
-  },
-  {
-    domain: 'Engineering',
-    charts: [
-      { slug: 'bitbucket_commit_frequency', title: 'Commit Frequency' },
-      { slug: 'bitbucket_languages', title: 'Language Distribution' },
-      { slug: 'bitbucket_pipeline_coverage', title: 'Pipeline Coverage' },
-      { slug: 'bitbucket_pr_cycle_time', title: 'PR Cycle Time' },
-      { slug: 'bitbucket_repo_health', title: 'Repo Health' },
-      { slug: 'bb_deploy_tags', title: 'Deploy Tags' },
-      { slug: 'review_network', title: 'Review Network' },
-      { slug: 'bb_reviewer_concentration', title: 'Reviewer Concentration' },
-      { slug: 'workspace_health_radar', title: 'Workspace Engineering Health (Radar)' },
-      { slug: 'pr_cycle_violin', title: 'PR Cycle Time Distribution (Violin)' },
-      { slug: 'repo_health_bubble', title: 'Repository Health Matrix (Bubble)' },
-      { slug: 'commit_calendar', title: 'Commit Activity Calendar' },
-      { slug: 'build_duration_range', title: 'Build Duration Bands (Range)' },
-      { slug: 'pipeline_health_gauge', title: 'Pipeline Health (Gauge)' },
-      { slug: 'dora_lead_time_gauge', title: 'DORA Lead Time (Gauge)' },
-    ],
-  },
-  {
-    domain: 'Delivery',
-    charts: [
-      { slug: 'jira_org_overview', title: 'Org Overview' },
-      { slug: 'jira_velocity_trend', title: 'Velocity Trend' },
-      { slug: 'jira_cycle_time', title: 'Cycle Time' },
-      { slug: 'jira_scope_change', title: 'Scope Change' },
-      { slug: 'jira_assignee_load', title: 'Assignee Load' },
-      { slug: 'jira_backlog_age', title: 'Backlog Age' },
-      { slug: 'jira_flow_distribution', title: 'Flow Distribution' },
-      { slug: 'jira_flow_distribution_engineering', title: 'Flow Distribution (Engineering)' },
-      { slug: 'jira_created_vs_resolved', title: 'Created vs Resolved' },
-      { slug: 'jira_issue_distribution', title: 'Issue Distribution' },
-      { slug: 'jira_issue_distribution_engineering', title: 'Issue Distribution (Engineering)' },
-      { slug: 'jira_issue_distribution_overall', title: 'Issue Distribution (Overall)' },
-      { slug: 'user_workload_distribution', title: 'User Workload Distribution' },
-      { slug: 'kpi_bullet', title: 'KPI vs DORA Benchmarks (Bullet)' },
-      { slug: 'jira_issue_pareto', title: 'Issue Concentration (Pareto)' },
-      { slug: 'jira_workflow_funnel', title: 'Workflow Stage Dwell Time (Funnel)' },
-      { slug: 'sprint_rankflow', title: 'Sprint Velocity Rankings (Rankflow)' },
-      { slug: 'jira_epic_completion', title: 'Epic Completion by Project' },
-      { slug: 'jira_priority_inflation', title: 'Priority Distribution' },
-      { slug: 'jira_blocking_chains', title: 'Blocking Chains' },
-      { slug: 'jira_workflow_states', title: 'Workflow State Distribution' },
-      { slug: 'jira_root_cause', title: 'Root Cause Distribution' },
-      { slug: 'kpi_gauges', title: 'DORA-Aligned KPI Dashboard (Gauge)' },
-    ],
-  },
-  {
-    domain: 'Documentation',
-    charts: [
-      { slug: 'confluence_creation_trend', title: 'Page Creation Trend' },
-      { slug: 'confluence_page_density', title: 'Page Density by Space' },
-      { slug: 'confluence_wordcloud', title: 'Documentation Topics (Wordcloud)' },
-      { slug: 'confluence_rca_timeline', title: 'RCA Incident Frequency' },
-      { slug: 'confluence_retro_themes', title: 'Retrospective Themes' },
-      { slug: 'confluence_postmortem_funnel', title: 'Post-Mortem Funnel' },
-    ],
-  },
-  {
-    domain: 'Cross-System',
-    charts: [
-      { slug: 'user_activity_levels', title: 'User Activity Levels' },
-      { slug: 'user_contribution_top20', title: 'Top 20 Contributors' },
-      { slug: 'user_cross_system', title: 'Cross-System Users' },
-    ],
-  },
-  {
-    domain: 'People',
-    charts: [
-      { slug: 'people_org_map', title: 'People Network' },
-      { slug: 'team_interaction_heatmap', title: 'Cross-Team Interactions' },
-      { slug: 'team_composition', title: 'Team Composition' },
-      { slug: 'people_coverage_sankey', title: 'System Access Coverage' },
-      { slug: 'key_person_risk', title: 'Key Person Risk' },
-      { slug: 'activity_trends', title: 'Activity by Team' },
-      { slug: 'communication_gaps', title: 'Org Chart vs System Activity' },
-      { slug: 'geography_activity', title: 'Geography & Activity' },
-      { slug: 'user_system_venn', title: 'Cross-System User Coverage (Venn)' },
-      { slug: 'centrality_beeswarm', title: 'Network Centrality (Beeswarm)' },
-      { slug: 'network_communities', title: 'Community Detection' },
-      { slug: 'identity_match_quality', title: 'Identity Match Quality' },
-    ],
-  },
-  {
-    domain: 'Engagement',
-    charts: [
-      { slug: 'hypothesis_evidence_radar', title: 'Hypothesis Evidence Strength (Radar)' },
-      { slug: 'org_size_treemap', title: 'Organization Size by Executive (Treemap)' },
-      { slug: 'reorg_sankey', title: 'Reorg Responsibility Flow (Sankey)' },
-      { slug: 'engagement_effort_waterfall', title: 'Engagement Effort Allocation (Waterfall)' },
-      { slug: 'methodology_heatmap', title: 'Framework × System Coverage (Heatmap)' },
-    ],
-  },
-];
+function slugToTitle(slug: string): string {
+  return slug
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bAws\b/g, 'AWS')
+    .replace(/\bBb\b/g, 'BB')
+    .replace(/\bPr\b/g, 'PR')
+    .replace(/\bDora\b/g, 'DORA')
+    .replace(/\bKpi\b/g, 'KPI')
+    .replace(/\bRca\b/g, 'RCA')
+    .replace(/\bEcs\b/g, 'ECS')
+    .replace(/\bEks\b/g, 'EKS')
+    .replace(/\bRds\b/g, 'RDS')
+    .replace(/\bM365\b/g, 'M365')
+    .replace(/\bSl\b/g, 'SL')
+    .replace(/\bCi\b/g, 'CI')
+    .replace(/\bCd\b/g, 'CD');
+}
 
-const totalCharts = chartGroups.reduce((s, g) => s + g.charts.length, 0);
+function guessDomain(slug: string): string {
+  if (slug.startsWith('aws_')) return 'Infrastructure';
+  if (slug.startsWith('bitbucket_') || slug.startsWith('bb_') || slug.startsWith('review_') || slug.startsWith('commit_') || slug.startsWith('build_') || slug.startsWith('pr_') || slug.startsWith('repo_') || slug.startsWith('workspace_') || slug.startsWith('pipeline_') || slug.startsWith('dora_')) return 'Engineering';
+  if (slug.startsWith('jira_') || slug.startsWith('sprint_') || slug.startsWith('kpi_')) return 'Delivery';
+  if (slug.startsWith('confluence_')) return 'Documentation';
+  if (slug.startsWith('meeting_') || slug.startsWith('org_') || slug.startsWith('people_') || slug.startsWith('team_') || slug.startsWith('key_person') || slug.startsWith('activity_') || slug.startsWith('communication_') || slug.startsWith('geography_') || slug.startsWith('centrality_') || slug.startsWith('network_') || slug.startsWith('bridge_') || slug.startsWith('unified_') || slug.startsWith('divergence_') || slug.startsWith('relevance_') || slug.startsWith('m365_')) return 'People';
+  if (slug.startsWith('revenue_') || slug.startsWith('cash_flow') || slug.startsWith('vendor_') || slug.startsWith('risk_') || slug.startsWith('cost_') || slug.startsWith('retail_')) return 'Financial';
+  if (slug.startsWith('hypothesis_') || slug.startsWith('reorg_') || slug.startsWith('engagement_') || slug.startsWith('methodology_')) return 'Engagement';
+  if (slug.startsWith('user_') || slug.startsWith('bus_') || slug.startsWith('deploy_') || slug.startsWith('identity_')) return 'Cross-System';
+  return 'Other';
+}
+
+const domainOrder = ['Infrastructure', 'Engineering', 'Delivery', 'Documentation', 'Financial', 'People', 'Cross-System', 'Engagement', 'Other'];
+
+const chartsDir = resolve('../analysis/charts');
+const files = readdirSync(chartsDir).filter(
+  (f) => f.endsWith('.json') && !f.startsWith('_')
+);
+
+const allCharts = files.map((f) => {
+  const slug = f.replace('.json', '');
+  return { slug, title: slugToTitle(slug), domain: guessDomain(slug) };
+});
+
+const grouped = new Map<string, typeof allCharts>();
+for (const chart of allCharts) {
+  const list = grouped.get(chart.domain) ?? [];
+  list.push(chart);
+  grouped.set(chart.domain, list);
+}
+
+const chartGroups = domainOrder
+  .filter((d) => grouped.has(d))
+  .map((d) => ({ domain: d, charts: grouped.get(d)!.sort((a, b) => a.title.localeCompare(b.title)) }));
+
+const totalCharts = allCharts.length;
 ---
 
 <BaseLayout title="Charts">
   <SectionHeader
     eyebrow="CHART GALLERY"
     title="Chart Gallery"
-    description={`${totalCharts} interactive visualizations across infrastructure, engineering, delivery, and documentation.`}
+    description={`${totalCharts} interactive visualizations generated from infrastructure, engineering, delivery, financial, people, and documentation data. Each chart is explorable -- scroll to zoom, drag to pan, and click the fullscreen button for a full-viewport view.`}
   />
 
   <div class="space-y-8">
     {chartGroups.map(({ domain, charts }) => (
       <div>
-        <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">{domain}</h2>
+        <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-3">
+          {domain} <span class="text-[var(--text-muted)] font-mono">({charts.length})</span>
+        </h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {charts.map(({ slug, title }) => (
             <a
