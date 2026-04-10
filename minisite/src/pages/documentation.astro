@@ -116,15 +116,25 @@ const charts = [
   <SectionHeader eyebrow="DOCUMENTATION" title="Documentation" description="The state of technical documentation across 14,111 Confluence pages. Documentation quality directly affects onboarding speed, incident response, and knowledge retention. Key concerns: no root cause analyses since 2023, architecture documentation fragmented across 5+ spaces, and declining page creation rates." />
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-    <FindingCard severity="amber" title="RCA Process Gap: 2024–Present" detail="Structured post-mortem docs stop after 2023. 26 in 2022, 5 in 2024, 2 in 2025. Either the process migrated or stopped." evidence="50 total RCAs, peak 2022 (26)" href="/engagement/hypotheses" hrefLabel="Hypothesis G" />
+    <FindingCard severity="amber" title="RCA Learning Loop Broken" detail="RCA template still in use (5 executive RCAs received for Dec 2025 – Mar 2026), but Preventive Actions are empty on 3 of 5. Dec 19 and Feb 27 are the same failure class, 70 days apart — the Dec fix didn't prevent the Feb recurrence." evidence="55 total RCAs (50 Confluence + 5 Executive). 0 completed preventive actions in last 90 days." href="/engagement/hypotheses" hrefLabel="Hypothesis G" />
+    <FindingCard severity="red" title="Same Failure, 70 Days Apart" detail="Dec 19 (ESB CPU spike from POS token loop) and Feb 27 (DB CPU 100% from POS query flood) are the same failure class. The Dec fix (token validity, WAF rules) did not prevent the Feb recurrence. Feb response was scaling up — no root cause fix documented." evidence="5 Executive RCAs, Dec 2025 – Mar 2026" />
     <FindingCard severity="amber" title="Architecture Docs Fragmented" detail="No centralized architecture space. Docs spread across MMA, ES, LP, CCE, PT Confluence spaces." evidence="165 spaces total, arch docs in 5+ spaces" />
     <FindingCard severity="green" title="Active Documentation Culture" detail="Multiple spaces updated daily. Consistent release docs. Leapset Platform alone has 6,445 pages. The gap is organization, not volume." evidence="14,111 pages indexed, 94 key pages extracted" />
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
-    <ChartEmbed slug="confluence_rca_timeline" title="RCA Timeline" caption="Root cause analysis frequency over time. The gap since 2023 means incidents are occurring without structured learning. Each missed RCA is a missed opportunity to prevent recurrence." />
+    <ChartEmbed slug="confluence_rca_timeline" title="RCA Timeline" caption="Root cause analysis frequency over time. The 2024 gap is now partially filled by 5 Executive RCAs received for Dec 2025 – Mar 2026. The template exists but preventive actions are not tracked." />
     <ChartEmbed slug="confluence_postmortem_funnel" title="Post-Mortem Funnel" caption="How many incidents result in documented post-mortems. A narrow funnel (many incidents, few post-mortems) means the team is not learning from failures." />
   </div>
+
+  <!-- Executive RCA Analysis (Dec 2025 – Mar 2026) -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-8">Executive RCA Analysis (Dec 2025 – Mar 2026)</h2>
+  <p class="text-sm text-[var(--text-secondary)] mb-6">5 Executive RCAs received from CDO (Chathura) covering the last 90 days. Two recurring failure classes identified: ESB/DB overload from POS-generated load (Dec 19 + Feb 27, same pattern 70 days apart) and CouchDB document corruption during peak restaurant hours (Sea Grill + Fish Seafood). CouchDB fragility traces back to 2022 Confluence RCAs. Zero completed preventive actions across all 5 documents.</p>
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <ChartEmbed slug="rca_executive_timeline" title="Executive RCA Timeline" caption="Duration and severity of the 5 recent incidents. Sea Grill (288 hours across 12 days) and Toastique (72 hours) were prolonged single-merchant failures. Feb 27 (96 min) was the most impactful platform-wide outage." />
+    <ChartEmbed slug="rca_failure_classes" title="Recurring Failure Classes" caption="The same failure classes repeat across 2020–2026. ESB/DB overload and CouchDB corruption are not new — they appear in both historical Confluence RCAs and the recent executive RCAs." />
+  </div>
+  <ChartEmbed slug="rca_preventive_actions" title="Preventive Action Completion" caption="The RCA template is consistently used, but the learning loop is broken. 3 of 5 executive RCAs have completely empty preventive action tables. Zero items completed across all 5 documents." />
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Total Pages" value={fmt(totalPages)} />

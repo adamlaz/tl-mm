@@ -1,13 +1,24 @@
 ---
 export const prerender = true;
 
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import MetricCard from '../components/MetricCard.astro';
 
+const scheduleRaw = readFileSync(resolve(process.cwd(), '../interview_schedule.json'), 'utf-8');
+const interviewSchedule = JSON.parse(scheduleRaw);
+const scheduleSessions: any[] = interviewSchedule.sessions;
+const onsiteSessionTotal = scheduleSessions.length;
+const onsiteInterviewTotal = scheduleSessions.filter(
+  (s: any) => s.format !== 'debrief' && s.format !== 'group-informal',
+).length;
+const onsiteSessionsShort = `${onsiteSessionTotal} sessions across 3 days`;
+
 const phases = [
   { phase: 'Pre-Work', timeline: 'Now → Apr 11', status: 'Complete', detail: 'System scanning, automated surveys, and 7 rounds of AI-driven reconnaissance (data collection rounds) across Jira, Bitbucket, Confluence, AWS, and HR data — before the first interview.' },
-  { phase: 'Onsite', timeline: 'Apr 13–15', status: 'Upcoming', detail: '3-day sprint in Tampa: 18–21 structured interviews, architecture walkthroughs, value stream mapping, and decision-rights tracing with data-backed questions.' },
+  { phase: 'Onsite', timeline: 'Apr 13–15', status: 'Upcoming', detail: `3-day sprint in Tampa: ${onsiteSessionsShort}, architecture walkthroughs, value stream mapping, and decision-rights tracing with data-backed questions.` },
   { phase: 'Deliverables', timeline: 'Apr 16–25', status: 'Pending', detail: 'CEO operating brief, friction register, hypothesis scorecard, and 30/60/90 execution plan — evidence-based, actionable, no filler.' },
 ];
 
@@ -15,7 +26,7 @@ const explore = [
   { href: '/engagement/timeline', title: 'Timeline & Status', desc: 'Pre-work milestones, upcoming dates, open items, and data gaps.', metric: '12', metricLabel: 'milestones' },
   { href: '/engagement/hypotheses', title: 'Hypotheses', desc: 'Nine execution-failure patterns with quantitative pre-evidence from 7 data collection rounds.', metric: '9', metricLabel: 'patterns' },
   { href: '/engagement/leadership', title: 'Leadership', desc: 'Post-reorg org structure: two C-suite exits, CDO promotion, and ~100-person org consolidation.', metric: '8', metricLabel: 'executives' },
-  { href: '/engagement/interviews', title: 'Interviews', desc: 'Three-day onsite schedule with data-driven questions for every session.', metric: '18–21', metricLabel: 'sessions' },
+  { href: '/engagement/interviews', title: 'Interviews', desc: 'Three-day onsite schedule with data-driven questions for every session.', metric: String(onsiteSessionTotal), metricLabel: 'sessions' },
   { href: '/engagement/deliverables', title: 'Deliverables', desc: 'CEO operating brief, friction register, 30/60/90 plan, and the diagnostic framework.', metric: '5+', metricLabel: 'core outputs' },
 ];
 ---
@@ -24,7 +35,7 @@ const explore = [
   <SectionHeader
     eyebrow="ENGAGEMENT OVERVIEW"
     title="CEO Ramp Accelerator"
-    description="A ~60-hour compressed technology and operations diagnostic for Mad Mobile, Inc. — automated system reconnaissance, 18–21 onsite interviews, and an evidence-based operating brief."
+    description={`A ~60-hour compressed technology and operations diagnostic for Mad Mobile, Inc. — automated system reconnaissance, ${onsiteSessionsShort}, and an evidence-based operating brief.`}
   />
 
   <div class="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 mb-8">
@@ -34,7 +45,7 @@ const explore = [
         <ul class="space-y-1.5 text-xs text-[var(--text-secondary)] leading-relaxed">
           <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>~60-hour compressed diagnostic across 3 weeks</li>
           <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>AI-driven system reconnaissance before the first interview</li>
-          <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>18–21 structured interviews with data-backed questions</li>
+          <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>{onsiteSessionsShort} with data-backed questions</li>
           <li class="flex gap-2"><span class="text-[var(--status-green)] shrink-0">●</span>Evidence-based operating brief Don can act on immediately</li>
         </ul>
       </div>
@@ -52,7 +63,7 @@ const explore = [
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Duration" value="3 wks" subtitle="~60 hours total" />
-    <MetricCard label="Interviews" value="18–21" subtitle="Onsite Apr 13–15" />
+    <MetricCard label="Sessions" value={onsiteSessionTotal} subtitle={`${onsiteInterviewTotal} interviews · Onsite Apr 13–15`} />
     <MetricCard label="Hypotheses" value="9" subtitle="1 confirmed pre-onsite" />
     <MetricCard label="Pre-Work" value="7 rounds" subtitle="data collection rounds (automated)" />
   </dl>

@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 7, 2026 (updated April 7 with: MUST interviews booked by Ana, 6 TBD interview slots confirmed by Chathura, Rajik Gunatilaka departed, Jeremy Diggins flagged unavailable, survey sent to 57 recipients (~5 responses), Guru 103 users confirmed, MS Graph API IT/Security review active, L1 org names + RCA docs shifted to Apr 9)
+**Date:** April 9, 2026 (updated April 9 PM with: **Onsite schedule fully confirmed** — 27 sessions verified via Microsoft Graph calendar API (23 interviews + 1 leadership lunch + 3 Don debriefs). 4 new additions: Matias Riglos, Manuel Garcia, Kevin Reyes, Leadership Team Lunch. W2 (Wenushka Dikowita) and W4 (Jeremy Diggins) resolved. interview_schedule.json bumped to v3.0. Grid, engagement state, minisite, and interview prep all updated. Ana and Don comms drafted. Earlier April 9: RCA docs received from Chathura — 5 executive RCAs, 3 new charts, minisite updated, interview prep enriched. AWS Cost Savings spreadsheet from Ana — 71 initiatives, $367K/yr savings. Previous: April 7 — MUST interviews booked, 6 TBD slots confirmed, Rajik departed, survey sent to 57 recipients, Guru 103 users confirmed, MS Graph API active)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -220,7 +220,7 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 ### IT / Infrastructure Contacts (Access Provisioning)
 - **Rosen Georgiev** — IT (reports to Strainick/COO). Day-to-day IT operations. Previously identified as Jira/Confluence admin.
 - **Jorge Maltes** — Dir. Information Technology. **RESOLVED:** Not departed — confirmed present in Chathura's CDO org chart as PCI DSS Compliance counterpart under Payments. Maltes handles IT governance/compliance; Georgiev handles day-to-day IT under COO.
-- **Matias Lopez Riglos** — DevOps/infra ("Solution Operations" per CDO org chart, listed as PCI DSS counterpart under Payments). Filed AWS provisioning ticket. Handles Bitbucket invites.
+- **Matias Lopez Riglos** — DevOps/infra ("Solution Operations" per CDO org chart, listed as PCI DSS counterpart under Payments). Filed AWS provisioning ticket. Handles Bitbucket invites. **Key cost optimization partner** — partnered with Ana on $367K/yr AWS savings initiative (71 completed initiatives, Sept 2025 – Apr 2026). Also #5 code reviewer (463 reviews). Owns deepest operational knowledge of AWS estate. **Priority onsite interview** — questions on cost governance, Monvia, SP utilization, remaining backlog.
 - **Matthew Griffin** — Senior Cloud Engineer (Payments R&D under Kevin Reyes). Assigned AWS account provisioning (Jira ticket CLD-2431).
 
 ### Sri Lanka
@@ -275,12 +275,13 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - **Jenkins is CI/CD** for CAKE (found in CAKE Development), **Bitbucket Pipelines** for other workloads
 - **Terraform is the IaC standard** (state buckets across many accounts)
 - **Security posture**: GuardDuty active across all accounts, Wiz.io deployed, Security Hub in R&D, Forensics account provisioned (Jan 2026)
-- **MenuPad-Prod-Metro**: Running instance (`venom_new`, r4.xlarge), ~$2K/month. Legacy — asked Ana to route internally.
-- **Monvia**: **$25.9K/month** — significantly more than expected for legacy. Contains Leapset-era SVN instance, m1 hardware. Asked Ana to investigate.
+- **MenuPad-Prod-Metro**: Running instance (`venom_new`, r4.xlarge), ~$2K/month. Legacy — asked Ana to route internally. **UPDATE April 9:** Not present in Ana/Matias cost savings spreadsheet — still unaddressed.
+- **Monvia**: **$25.9K/month** — significantly more than expected for legacy. Contains Leapset-era SVN instance, m1 hardware. Asked Ana to investigate. **UPDATE April 9:** Not present in Ana/Matias cost savings spreadsheet — remains the single largest untouched optimization target ($311K/yr).
 - **MM-Archive**: Running "Relate" instances + FTP server. Legacy product — asked Ana.
 - **No dedicated Neo/AI account**: SageMaker artifacts found in CAKE R&D, but no production AI infrastructure identified. Asked Ana to route to Jack/Chathura.
 - Shared Artifact Registry has ECR + CodeArtifact + a `mm-techdocs-storage` bucket (suggests Backstage/TechDocs)
 - Marketplace Seller account has Lambda functions for AWS Marketplace entitlements — MM sells via AWS Marketplace
+- **$367K/yr in cost savings already achieved** (Ana Chambers/Matias Riglos tracking sheet, received April 9, Sept 2025 – Apr 2026): 71 initiatives across Retail ($181K/yr) and CAKE ($185K/yr). Includes 12 account closures, 6 environment decommissions (TST2, TST3, POS2, Sandbox), 9 K8s extended support fixes, arm64 EKS migrations, tool removals (Sentry $21K, Prismatic $24K, GitLab, N8N, Loki). Work was person-dependent (Ana + Matias) — no formal governance process, no executive review cadence, no automated cost alerting. Remaining opportunity estimated at $500K–$1M/yr (led by Monvia at $311K/yr, Marketplace SaaS ~$70K/month, Mgmt account RDS/ElastiCache/CloudWatch ~$55K/month). **Key onsite questions:** Who owns cost optimization now? Is there a monthly review cadence? What's the Monvia shutdown plan?
 
 ### Confirmed (Updated April 7)
 - **Monitoring**: Grafana/Mimir/Loki/Tempo. **Three instances confirmed:**
@@ -351,10 +352,11 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 | 8 | Deployment environments, release cadence, CI/CD documentation | Medium | Partially self-served | Jenkins (CAKE) + Bitbucket Pipelines (Retail, Payments) identified from systems scan. Still need formal environment documentation. |
 | 9 | KPI / scorecard / dashboard screenshots | Medium | Needed | Whatever metrics leadership reviews. |
 | 10 | Sprint velocity metrics (last 6–12 months) | Medium | Self-served from Jira | Have 19 active scrum boards with velocity data. Multiple declining trends. |
-| 11 | Incident reviews / post-mortems / retrospectives | Medium | **In progress** — Chathura sending last 90 days April 7 | 50 structured RCAs from Confluence (2020–2023). Gap in 2024–2025. Chathura confirmed he will send available RCAs for last 90 days tomorrow (April 7). |
+| 11 | Incident reviews / post-mortems / retrospectives | Medium | **Received** — 5 executive RCAs (Dec 19, Feb 8-19, Feb 27, Mar 14-15, Mar 24). Covers Dec 2025 – Mar 2026. | 55 structured RCAs total (50 Confluence 2020–2023 + 5 Executive Dec 2025 – Mar 2026). Two recurring failure classes: ESB/DB overload (Dec 19 + Feb 27, same pattern 70 days apart) and CouchDB corruption (Sea Grill + Fish Seafood, 4-year pattern). 3 of 5 executive RCAs have empty Preventive Actions. James Oliver is incident owner on 4 of 5. |
 | 12 | Engineering and operations tool inventory | Medium | Self-served | 48 tools identified across all platforms. Cost data still needed (see ana-request.md items 10–13). |
 | 13 | Open strategic initiatives and known problem projects | Medium | Needed | |
 | 14 | Third-party vendor contracts and API dependency inventory | Low | Needed | OpenAI, Anthropic, AWS costs. Visa/Cybersource terms. Major SaaS subscriptions. |
+| 17 | AWS Cost Savings tracking spreadsheet | Medium | **Received** — April 9 from Ana Chambers | 71 completed cost-saving initiatives (Sept 2025 – Apr 2026), $367K/yr savings. Tracked by Ana + Matias Riglos. Covers Retail and CAKE accounts. Jira tickets in CLOUD/CM/CLD projects. |
 | 15 | CAKE acquisition integration docs and current state | Low | Needed | Original integration plan from 2020. What's done? What's left? |
 | 16 | Company goals, board goals, CEO goals | Low | **Partially resolved** — 90-day plan covers board commitments and breakeven targets | Stated priorities for 2026. May be covered by the investor deck Don is sharing. |
 
@@ -369,6 +371,17 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - **Planned**: OLO v2, Loyalty v2, Restaurant Admin 2.0
 - **Third-party integrations**: Checkmate, 7Shifts, OLO.com, LRS, Paytronix, Bloop, DoorDash, NOLO, Orca, Davo, Parafin, Dolce, QSR KDS
 - **Team size**: 9 engineers (2 managers, 2 leads, 2 staff, 3 ICs) under Randy Brown. Restaurant QE (7 people) reports under Akshay Bhasin (Payments), not Randy — unusual structure. Combined: ~16 people for 15+ live systems. This ratio vs. system surface area is a primary investigation target.
+
+### CAKE Infrastructure (from Executive RCAs, April 9)
+- **ESB (Enterprise Service Bus)**: Central message broker for CAKE platform. Scaled from 4 to 7 instances after Feb 27 outage. Running on legacy/retired EC2 instance type. connect.cake.net ALB fronts POS-to-cloud traffic.
+- **CouchDB**: On-premise POS sync layer (edge database). Maintains device docs, deviceID docs, settings docs, device upgrade info docs. **Primary fragility point** — high revision counts cause sync storms that collapse local restaurant networks. 4-year incident pattern (2022–2026).
+- **Keycloak**: Identity/auth service. Timeout observed during Feb 27 outage. Only appearance in executive RCA set.
+- **Leapset API / Operator API / Aggregator API**: Legacy service names still in production (Feb 27 restart sequence).
+- **Pulse**: Remote POS management tool. Known trust issue: showed devices offline when they were actually online (Sea Grill, Fish Seafood).
+- **NinjaOne**: Backup remote management tool (third-party). Used when Pulse state is unreliable.
+- **Bissa certificates**: POS certificate system. Expired on Fish Seafood machines. No automated renewal detected.
+- **Zyxel**: Edge networking equipment. Router offline 127 days at Toastique location.
+- **Code Red / Code Blue**: Two different incident war room labels. Feb 27 = Code Red, Fish Seafood = Code Blue. Severity differentiation unclear.
 
 ### Source Control (Bitbucket) — Inventoried April 3
 
@@ -441,20 +454,25 @@ Team assignments: CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS.
 - Culture erosion: layoffs, shifted bonuses, forced RTO, Houston office shutdown
 - Offshore coordination: Sri Lanka timezone challenges, reporting through People not Engineering
 - **Legacy infrastructure debt**: 83% pre-Graviton EC2, 21% EOL Lambda runtimes, running instances on m1-generation hardware from 2012, CloudFormation stacks from 2016
+- **AWS cost governance is person-dependent**: Ana Chambers + Matias Riglos drove $367K/yr in savings through a personal tracking spreadsheet (71 initiatives, Sept 2025 – Apr 2026). No formal cost review cadence, no budget target ownership, no automated alerting on cost anomalies. With Ana's role change to Chief of Staff, the operational owner of cost optimization is unclear. This work maps directly to Hypotheses F (Legacy Gravity) and G (Missing Cadence) — infrastructure accumulates waste because nobody inspects it on a schedule.
 - **Backlog debt**: 72% of 18,583 open issues are older than 1 year
 - **Epic completion rate: 27.7%** — 481 engineering epics in last 12 months, only 133 resolved. REST project worst at 18.5% (260 epics, 48 resolved). NEO project: 12.5% (8 epics, 1 resolved).
 - **Priority system is broken**: 89.4% of open engineering issues are marked "High", 10.6% are "None". No other priority levels in use. Priority is meaningless as a triage signal.
 - **Estimation discipline near zero**: Story Points field populated on only 9% of resolved stories (27 of 300 sampled)
 - **Root Cause Category process not followed**: Jira field "Probable/Actual Root Cause Category" exists but is populated on 0% of resolved bugs. Process documented in Confluence but not enforced.
 - **90% of ECS containers have no health checks**: 61 of 68 active ECS services have no container health check configured — services can be unhealthy without detection
-- **Incident timeline**: 50 structured post-mortems parsed from Confluence. Peak year: 2022 (26 incidents). Top system: Payments (19), Reports (11), Menu (10). Root causes: application bugs (8), infrastructure/cloud (8), payment provider failures (7), database/RDS (7). **DATA GAP NOTE:** The Taurus space structured RCA process (DE-xxxxx POST MORTEM format) ran 2020–2023, then largely stopped. Team Tesla picked up RCA writing in 2025 (SQS Retry Storm, Menu Core Retry Loop). Only 5 incidents from 2024, 2 from 2025. This could mean: (a) the RCA process died, (b) it migrated to Teams/Slack/Guru, (c) incidents genuinely decreased, or (d) the team changed and the new people don't use the same space. This is a key onsite question — "where do incident reviews happen now?"
+- **Incident timeline**: 55 structured post-mortems (50 Confluence + 5 Executive RCAs). Peak year: 2022 (26 incidents). Top system: Payments (19), Reports (11), Menu (10). Root causes: infrastructure/cloud (10), database/RDS (9), application bugs (8), payment provider (7). **RCA GAP PARTIALLY CLOSED (April 9):** 5 executive RCAs received from Chathura covering Dec 2025 – Mar 2026. The Taurus space format (DE-xxxxx) stopped after 2023, but a new executive RCA format is in use. Key finding: **the RCA template exists and is used, but the learning loop is broken** — 3 of 5 have empty Preventive Actions tables, zero completed preventive items. Still need to query Jira for "Incident"/"Code Red" issue types in 2024–2026.
+- **Executive RCA analysis (April 9)**: Two recurring failure classes: (1) ESB/DB overload from POS-generated load — Dec 19 and Feb 27 are the same failure, 70 days apart, no root cause fix documented; (2) CouchDB document corruption during peak hours — Sea Grill and Fish Seafood, same pattern dating back to 2022 Confluence RCAs (DE-98497 expired cert, DE-98480/474/449/445 CouchDB sync). **CouchDB fragility is a 4-year pattern.**
+- **Code Red vs Code Blue**: Two different war room labels observed in executive RCAs (Feb 27 = Code Red, Fish Seafood = Code Blue). Unclear if these represent severity levels or inconsistent nomenclature. Clarify onsite.
+- **Joel M.**: Incident owner on Dec 19 only (all other executive RCAs owned by James Oliver). Identity/role unknown. Clarify onsite.
+- **James Oliver is de facto incident commander**: Incident Owner or Prepared By on 4 of 5 executive RCAs. Interview T6 (Tue 1:45-2:15) is now the most data-rich slot.
 - **Reviewer bottlenecks**: 57 people handle 100+ code reviews each. Top 5: John Harre (581), Holly Culver (508), Wenushka Dikowita (481), Dan McCune (471), Matias Lopez Riglos (463). 17 repos have a single reviewer handling >50% of all PRs.
 - **Branch protection absent**: 0 of 30 checked repos have required approvals or passing build checks. No branch restrictions enforced.
 - **201 open PRs, 95% stale**: 191 older than 7 days, 175 older than 30 days. 66 (33%) have zero reviewers assigned. 167 (83%) have zero comments.
 - **Pipeline success rate: 60.7%** — 1,563 pipeline runs across 30 repos. Nearly 40% of builds fail.
 
 ### Known Data Gaps & Caveats (V7)
-- **Incident timeline gap (2024–2026)**: Structured RCA docs in Confluence largely stop after 2023. Either the process lapsed, moved to another tool, or incidents decreased. Only 5 docs from 2024, 2 from 2025 (both in Team Tesla, not Taurus). **Needs onsite clarification: where do incident reviews happen now?** May also need to query Jira for "Incident" or "Code Red" issue types from 2024–2026.
+- **Incident timeline gap (2024–2026): PARTIALLY CLOSED (April 9)**: 5 executive RCAs received covering Dec 2025 – Mar 2026. Confluence Taurus space stopped after 2023. New executive format exists but process lives outside Confluence. **Still valuable:** query Jira for "Incident"/"Code Red" issue types in 2024–2026 to fill the remaining gap months.
 - **CloudTrail access: RESOLVED** (April 6) — Chathura confirmed `cloudtrail:LookupEvents` can be added to audit role. Once granted, will capture deployment frequency data from AWS. Currently only deploy signal is Bitbucket pipeline timestamps and git tags.
 - **Branch protection data may undercount**: 0 of 30 repos showed restrictions via the Bitbucket API. Could mean genuine absence or the API endpoint handles restrictions differently (e.g., project-level vs. repo-level restrictions). Validate onsite.
 - **Pipeline history covers 30 of 789 active repos**: The 60.7% success rate is from the top 30 most active repos — may not represent the full fleet. Could be better or worse for less-active repos.
@@ -579,55 +597,60 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 
 ## 9. Onsite Interview Plan (April 13–15)
 
-**Updated to reflect April 3 reorg and April 6–7 scheduling updates.**
+**Updated April 9 — schedule confirmed via Microsoft calendar API query.**
 
-**Scheduling Status (April 7):**
-- **MUST sessions: All booked** by Ana (April 6 evening). Calendar invites sent.
-- **PREFERRED sessions: In progress** — Adam asked Ana to proceed with next grouping (April 7 morning). Will confirm final group + timings April 8.
-- **All 6 TBD slots confirmed by Chathura** via OneNote annotations ("added by CR"):
-  - M7: **Alexander Baine** (Restaurant Frontend Manager) — Monday 3:30-4:00
-  - T6: **James Oliver** (`joliver@madmobile.com`) — Tuesday 1:45-2:15
-  - T7: **Kyle Budd** (Restaurant Backend Manager) — Tuesday 2:30-3:00
-  - T8: **Sowjanya Akula** (Senior QE) — Tuesday 3:15-3:45
-  - W1: **Cory Renard** (Staff Engineer, Restaurant Frontend) — Wednesday 8:30-9:00
-  - W6: **Michael Lee** (Customer Support) — Wednesday 1:00-1:30
-- **W2 (Rajik Gunatilaka): DEPARTED** — highlighted yellow in OneNote. Chathura confirmed "no longer with us." Slot needs SL replacement. Options: Nishen Peiris, Wenushka Dikowita (SL-based names on survey list).
-- **W4 (Jeremy Diggins): AVAILABILITY CONCERN** — OneNote note: "going to be at a client onsite that week." May need async/video or skip. PREFERRED priority, alternatives exist.
+**Scheduling Status (April 9 — CONFIRMED):**
+- **All 27 sessions confirmed** on Microsoft calendar. MUST and PREFERRED batches complete. Calendar invites sent by Ana.
+- **W2 RESOLVED:** Wenushka Dikowita (SL Engineering, video) replaces departed Rajik Gunatilaka. Wednesday 8:30am.
+- **W4 RESOLVED:** Jeremy Diggins confirmed despite client travel concern. Wednesday 9:15am.
+- **4 additions beyond original plan:** Matias Riglos (Tue 11:30), Manuel Garcia (Mon 2:00), Kevin Reyes (Tue 1:00), Leadership Team Lunch (Mon 12:00).
+- **Daily rhythm:** Morning Don syncs canceled. Replaced by end-of-day Don debriefs (Mon 4:30, Tue 5:00, Wed 4:00).
+- **Bill Lodes:** Not scheduled. Deprioritized. Can reach post-onsite in consulting capacity.
 
-### Monday, April 13 — Leadership + Strategy
+### Monday, April 13 — Leadership + Strategy (9 sessions)
 
-| Who | Title | Duration | Focus | Notes |
-|-----|-------|----------|-------|-------|
-| Chathura Ratnayake | CDO | 90–120 min | Full org ownership, execution model, team health, support unification, PMO integration, sprint reality, AI strategy from build side | **Most important interview of the engagement.** Owns the entire build-to-support chain. May need two sessions. |
-| Jack Kennedy | CTO | 60 min *(reduced from 90)* | AI/innovation roadmap, Neo platform vision, infrastructure plans, his view of the path forward | **Handle with care.** Operational scope just removed. Focus on what he's building, not what he lost. Don't probe the reorg dynamics directly — let him volunteer. |
-| Dulanjan W. | VP, Product & GTM | 60 min | Roadmap governance, product decisions, design process, PM/engineering handoff, product roadmap (from PDF) | Now reports to Chathura. Has 6 named PMs, 1 design director, open marketing role, L&D. Ask about the transition. |
-| David Strainick | COO *(was CPO)* | 45 min | Account management, onboarding, delivery execution, IT operations, customer experience | **Completely different interview than planned.** Was going to be 30 min on HR/culture. Now 45 min on operational execution. Ask about IT governance and how onboarding/delivery handoff works with engineering. |
+| Time | Who | Title | Duration | Focus | Notes |
+|------|-----|-------|----------|-------|-------|
+| 8:30-9:30 | Chathura Ratnayake | CDO | 60 min | Org ownership, execution model, sprint reality, support unification, AI strategy | **Most important interview.** Part 1 of 2 (follow-up Wed 2:30). 90 min total. |
+| 9:45-10:30 | Jack Kennedy | CTO | 45 min | AI/Neo strategy, Winmark delivery, innovation roadmap | Handle with care. Operational scope removed. Focus on what he's building. |
+| 10:45-11:30 | Dulanjan W. | VP, Product & GTM | 45 min | Roadmap governance, product decisions, design process, PM/eng handoff | Reports to Chathura. 6 PMs, 1 design director, L&D. |
+| 12:00-1:00 | **Leadership Team Lunch** | All C-Suite | 60 min | Informal dynamics observation | Don, Manny, Strainick, Chathura, Jack, Greg, Bailey. Location: BayShore. Don't probe — observe. |
+| 1:00-1:45 | David Strainick | COO *(was CPO)* | 45 min | Customer operations chain, onboarding, delivery, IT | 10 days into COO role. Different interview than originally planned. |
+| 2:00-2:30 | Manuel Garcia | Interim CFO | 30 min | Financial model, cost reduction targets, vendor spend | **NEW.** Revenue breakdown, $50K/month AWS + software targets, cash position. |
+| 2:45-3:15 | Mark Guilarte | PMO (4) | 30 min | Cross-team coordination, execution discipline | New under Chathura. PMO/sprint integration. |
+| 3:30-4:00 | Alexander Baine | Mgr, Restaurant Frontend | 30 min | Team execution, sprint reality, tooling | Manages Cory Renard, Rob Quin. |
+| 4:30-5:00 | Don Salama | Co-CEO | 30 min | **End-of-day debrief** | Day 1 findings, leadership dynamics from lunch. |
 
-### Tuesday, April 14 — Engineering Deep Dive
+### Tuesday, April 14 — Engineering Deep Dive (9 sessions)
 
-| Who | Title | Duration | Focus | Notes |
-|-----|-------|----------|-------|-------|
-| Randy Brown | VP Eng, Restaurant Technology (10) | 60 min | CAKE engineering, outage patterns, V3→V4 migration, team capacity vs. system surface area | 9 engineers (2 managers, 2 leads, 2 staff, 3 ICs) for 15+ live systems. Frontend (3) and Backend (6) split. This ratio is the story. |
-| Zubair Syed | VP Eng, Enterprise Solutions (58) | 60 min | Concierge/Retail execution, enterprise customer projects, team structure, offshore coordination | Largest eng org by headcount. |
-| Akshay Bhasin | VP Payments Engineering (20+) | 45 min | Payments engineering, architecture (the cleanest codebase), scaling, how this team operates differently, QE org, PCI compliance | Scope confirmed: Payments R&D (Kevin Reyes, 9), Restaurant QE (7), Biz Operations (4), PCI counterparts. Much larger than originally reported. |
-| Mark Guilarte | PMO (4) | 30 min | Project management process, cross-team coordination, execution discipline | New under Chathura. How does PMO integrate with engineering sprints? |
-| Engineering Managers (2–3) | Various | 45 min each | Team execution, dependencies, sprint reality, tooling | Target: one from CAKE, one from Enterprise, one from Payments |
-| Senior ICs (2–3) | Various | 30 min each | Day-to-day delivery, tooling, AI usage, what slows them down | |
+| Time | Who | Title | Duration | Focus | Notes |
+|------|-----|-------|----------|-------|-------|
+| 8:30-9:30 | Randy Brown | VP Eng, Restaurant Tech (10) | 60 min | CAKE engineering, outage patterns, V3→V4, team capacity | 9 engineers for 15+ live systems. **60 min (was 45) — calendar confirmed.** |
+| 9:30-10:15 | Zubair Syed | VP Eng, Enterprise Solutions (58) | 45 min | Enterprise execution, team structure, offshore coordination | Largest eng org. Least visibility. L1 names still pending from Chathura. |
+| 10:30-11:15 | Akshay Bhasin | VP Payments Engineering (20+) | 45 min | Payments architecture, QE org, PCI compliance, scaling | Cleanest codebase. R&D (Kevin Reyes, 9), Restaurant QE (7), Biz Ops (4). |
+| 11:30-12:00 | Matias Riglos | Solution Operations | 30 min | **AWS cost governance, Monvia, observability, infrastructure** | **NEW.** Key cost optimization partner (Ana's spreadsheet). #5 code reviewer (463 reviews). |
+| 1:00-1:30 | Kevin Reyes | Dir, Payments R&D (9) | 30 min | Payments architecture, AI tooling adoption, CI/CD quality | **NEW.** Manages best-run engineering team. CLAUDE.md adoption, cleanest pipelines. |
+| 1:45-2:15 | James Oliver | (Role TBC) | 30 min | Incident process, escalation paths | Incident owner on 4 of 5 recent executive RCAs. De facto incident commander. |
+| 2:30-3:00 | Kyle Budd | Mgr, Restaurant Backend | 30 min | Backend execution, system load, dependencies | Backend carries heaviest system load. |
+| 3:15-3:45 | Sowjanya Akula | Sr Quality Engineer | 30 min | QE process, testing practices, Restaurant QE under Payments anomaly | Reports to Akshay (Payments), not Randy (Restaurant). Structural probe. |
+| 5:00-5:30 | Don Salama | Co-CEO | 30 min | **End-of-day debrief** | Engineering patterns, cross-team themes. Heaviest interview day. |
 
-### Wednesday, April 15 — Cross-Functional + Validation
+### Wednesday, April 15 — Cross-Functional + Validation (9 sessions)
 
-| Who | Title | Duration | Focus | Notes |
-|-----|-------|----------|-------|-------|
-| **TBD — SL Lead** *(Rajik Gunatilaka departed)* | VP & LK Country Head | 30 min (video) | Sri Lanka engineering ops, timezone coordination, reporting lines | **Rajik departed** (Chathura, April 6). Need SL replacement. Options: Nishen Peiris, Wenushka Dikowita. |
-| Greg Schmitzer | President & Head of Sales & Marketing | 30 min | Sales/marketing strategy, revenue story, feature promise pipeline | Expanded role — absorbed CRO scope. |
-| Jeremy Diggins | Dir. Enterprise Technology | 30 min | Enterprise tech, infrastructure decisions | Reports to Kennedy. **AVAILABILITY FLAG:** OneNote note: "going to be at a client onsite that week." May need async/video. |
-| Bailey Shatney | VP Human Resources | 30 min | Culture, hiring, retention, L&D, team health | New to exec team. Took over from Strainick. |
-| **Michael Lee** *(added by CR)* | Customer Support | 30 min | Escalation paths, support→engineering handoff | Now under Chathura. Key to understanding full chain. |
-| Chris Gomersall | Dir. Product Design | 30 min or async | Design process, PM/design/eng collaboration | |
-| Bill Lodes (optional) | Former CRO, consulting | 30 min | Payments strategy context, transition items | Only if available and Don thinks it's valuable. Low priority. |
+| Time | Who | Title | Duration | Focus | Notes |
+|------|-----|-------|----------|-------|-------|
+| 8:30-9:00 | Wenushka Dikowita *(video)* | SL Engineering | 30 min | Sri Lanka ops after Rajik, timezone coordination, reporting lines | **W2 RESOLVED.** #3 code reviewer (481 reviews). SL restructuring impact. |
+| 9:15-9:45 | Jeremy Diggins | Dir. Enterprise Technology | 30 min | Enterprise tech, CTO/CDO split perspective | **W4 RESOLVED — confirmed despite client travel.** Kennedy's direct report. |
+| 10:00-10:30 | Greg Schmitzer | President & Head of Sales & Marketing | 30 min | Sales strategy, revenue story, feature promise pipeline | Absorbed CRO scope. |
+| 10:45-11:15 | Bailey Shatney | VP Human Resources | 30 min | Culture, hiring, retention, L&D, team health | New to exec team. Took over from Strainick. |
+| 11:30-12:00 | Cory Renard | Staff Engineer, Restaurant Frontend | 30 min | IC perspective, day-to-day delivery, tooling, AI usage | Triangulation with Baine (Mon) and Randy (Tue). |
+| 1:00-1:30 | Michael Lee | Customer Support | 30 min | Escalation paths, support→engineering handoff | Under Chathura. Full build-to-support chain. |
+| 1:45-2:15 | Chris Gomersall | Dir. Product Design | 30 min | Design process, PM/design/eng collaboration, design system | Confirmed in-person (was "30 min or async"). |
+| 2:30-3:00 | Chathura Ratnayake (follow-up) | CDO | 30 min | Close gaps from Monday, validate emerging patterns | Part 2 of 2. Share "what I heard this week" and let Chathura react. |
+| 4:00-4:30 | Don Salama | Co-CEO | 30 min | **Final debrief** | Preliminary findings, deliverable preview, timeline. |
 
-**Total interview slots: ~18–21 (was 15+)**
-**Room booking:** Ana will coordinate once schedule is locked.
+**Total: 27 sessions (23 interviews + 1 leadership lunch + 3 Don debriefs)**
+**Calendar source:** Microsoft Graph API, verified April 9. `inventory/calendar_onsite_schedule.json`.
 
 ---
 
@@ -709,12 +732,12 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 
 ### In Progress 🔄
 - ✅ Ana's vendor spend spreadsheets received (April 6 morning) — 2 files, 47 active vendors, 29 reduced/canceled. Cross-reference with AP data pending.
-- Waiting on Ana: **PREFERRED interview sessions** — Ana booking next batch (April 7). Will confirm final group + timings April 8.
-- Waiting on Ana: routing questions on Monvia, MenuPad, Relate
+- ~~Waiting on Ana: PREFERRED interview sessions~~ **DONE** — all 27 sessions confirmed on Microsoft calendar (April 9). Includes 4 new adds: Matias Riglos, Manuel Garcia, Kevin Reyes, Leadership Team Lunch.
+- Waiting on Ana: routing questions on Monvia, MenuPad, Relate (follow-up questions sent in AWS cost savings reply)
 - Waiting on Chathura: L1 org names for Enterprise Solutions (Zubair) — **Wednesday April 9** *(shifted from April 7 per Ana's update)*
-- Waiting on Chathura: incident/RCA docs for last 90 days — **Wednesday April 9** *(shifted from April 7 per Ana's update)*
+- ~~Waiting on Chathura: incident/RCA docs for last 90 days~~ — **RECEIVED April 9.** 5 executive RCAs (Dec 2025 – Mar 2026). Structured into `rca_structured.json` (55 total), 3 new charts, minisite updated, interview prep enriched for James Oliver, Michael Lee, Chathura, Randy Brown, Zubair, Akshay. Pattern analysis: `analysis/rca_pattern_analysis.md`.
 - Waiting on IT: CloudTrail `cloudtrail:LookupEvents` added to audit role — Chathura approved
-- **W2 interview replacement** — Rajik Gunatilaka departed. Need alternative SL contact for Wednesday video session.
+- ~~W2 interview replacement~~ **DONE** — Wenushka Dikowita confirmed for Wednesday 8:30am video session. Replaces departed Rajik Gunatilaka.
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
@@ -724,14 +747,14 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 1. **Scan `neo-workspace` repo** via Bitbucket API — file tree, languages, commit history, CI/CD config. Most important new lead: if Winmark delivery lives in `neo-workspace`, Neo may be a real codebase, not just marketing.
 2. **Scan Winmark Jira board** (WM project, board 1712) — epics, sprint velocity, active work, team members assigned.
 3. **Grafana capture** — access confirmed (3 instances). Dashboard inventory, alert rules, data sources across CAKE, Retail, and Payments.
-4. **Microsoft Graph API queries** — access confirmed. Run org directory, calendar availability, and Teams/Groups mapping.
-5. **Identify W2 replacement** — Rajik departed, need SL contact for Wednesday video session. Ask Chathura or check with Ana.
+4. ~~Microsoft Graph API queries~~ **DONE** — calendar query run April 9. All 27 onsite sessions verified. Saved to `inventory/calendar_onsite_schedule.json`. Org directory and Teams queries still pending.
+5. ~~Identify W2 replacement~~ **DONE** — Wenushka Dikowita confirmed (Wed 8:30am, video).
 6. **Monitor survey response rate** — 13 of 57 so far (~23%). Deadline April 10.
-6. **Confirm PREFERRED interview timings** with Ana — will finalize April 8.
+7. ~~Confirm PREFERRED interview timings~~ **DONE** — all sessions confirmed via calendar April 9.
 
 **Wednesday (April 9):**
 7. **Intake Chathura's L1 org names** for Enterprise Solutions (Zubair's 58 people). *(shifted from April 7)*
-8. **Intake Chathura's incident/RCA docs** for last 90 days — fill the 2024–2026 RCA timeline gap. *(shifted from April 7)*
+8. ~~**Intake Chathura's incident/RCA docs**~~ **DONE** — 5 executive RCAs received and processed. Structured data updated (55 total), 3 new charts, minisite updated, interview prep enriched, pattern analysis created.
 8. **Cross-reference Ana's vendor spend with AP data** — both spreadsheets received April 6. Amex data covers different vendors than Bill.com/AP data. Merge into unified vendor catalog.
 9. **Run CloudTrail queries** once `cloudtrail:LookupEvents` is granted — deployment frequency data from AWS.
 10. **Collect pre-read docs** as Ana's folder becomes available.
@@ -759,13 +782,13 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - [ ] **Neo-workspace repo scan** (NEW — highest priority): Scan `madmobile/neo-workspace` via Bitbucket API. File tree, languages, commit history, CI/CD, architecture. Does this repo contain a platform or a single-client app?
 - [ ] **Winmark Jira board scan** (NEW): Scan WM project (board 1712). Epics, sprint velocity, active work, team members. How much work, how many people, what does "AI-developed POS" look like in practice?
 - [ ] **CloudTrail deployment frequency** (UNBLOCKED): Chathura approved `cloudtrail:LookupEvents`. Run queries once IT adds to audit role. Deploy frequency data from AWS fills a major DORA gap.
-- [ ] **Jira incident query**: Search for issue types "Incident", "Code Red", "Service Interruption" in 2024–2026 to fill the RCA timeline gap. Chathura also sending last 90 days of RCA docs tomorrow.
+- [ ] **Jira incident query**: Search for issue types "Incident", "Code Red", "Service Interruption" in 2024–2026 to fill remaining months of the RCA timeline gap. Executive RCAs received but Jira query still valuable for completeness.
 - [ ] **Root Cause Category field #2**: Query `customfield_10590` ("Root Cause Category", type: array) — may be the active one vs. the 0%-populated `customfield_10382`.
 - [x] ~~**CloudTrail access escalation**~~: **RESOLVED** — Chathura confirmed yes (April 6).
 - [ ] **Branch protection validation**: Check whether Bitbucket uses project-level branch permissions instead of repo-level.
 - [ ] **Pipeline coverage expansion**: Currently only top 30 repos. Consider running for top 100.
 - [ ] **Theme-analyze the 30 sprint retrospectives** — extract recurring "what didn't go well" themes across teams.
-- [ ] **Deep-read the 2 recent Team Tesla RCAs** — SQS Retry Storm (Dec 2025) and Menu Core API Retry Loop (Sept 2025).
+- [ ] **Deep-read the 2 recent Team Tesla RCAs** — SQS Retry Storm (Dec 2025) and Menu Core API Retry Loop (Sept 2025). **PRIORITY ELEVATED:** These may connect to the executive RCA patterns (retry loops, API storms).
 - [ ] **Map top 5 reviewer bottleneck repos to teams** — who owns the repos where John Harre, Holly Culver, etc. are bottlenecks?
 - [ ] **Review the auto-generated C4 diagrams** — validate accuracy. Print for onsite.
 - [ ] **Scan extracted Confluence architecture pages** — the 94 pages from V5 + the 321KB diagram catalog from V7.
@@ -838,8 +861,8 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 | Branch protection (active repos) | 0 of 30 have restrictions | — | Bitbucket API |
 | Open PRs | 201 total, 175 >30 days old | — | Bitbucket API |
 | Open PRs with 0 comments | 167 (83%) | — | Bitbucket API |
-| Incident/RCA documents parsed | 50 (peak year 2022: 26) | — | Confluence API |
-| Top incident system | Payments (19), Reports (11), Menu (10) | — | Confluence RCA analysis |
+| Incident/RCA documents parsed | 55 (50 Confluence + 5 Executive; peak year 2022: 26) | — | Confluence API + Executive RCAs |
+| Top incident system | Payments (19), Reports (11), Menu (10) | — | Confluence + Executive RCA analysis |
 | Sprint retrospectives extracted | 30 across 6 teams | — | Confluence API |
 | Heavy reviewers (>100 reviews) | 57 people | — | Bitbucket PR API |
 | Tech stack (top 30 repos) | Node(12), Java(4), TS(8), React(5), NestJS(3) | — | Bitbucket source API |
@@ -857,7 +880,8 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - `scripts/` — 44 reusable inventory and analysis scripts
 - `minisite/` — Astro-based engagement dashboard (10 pages, 31 charts, V7 deep analysis sections, Vercel deploy)
 - `inventory/cross_system/` — Cross-system correlation data (deploy lead time, bus factor analysis)
-- `inventory/confluence/rca_structured.json` — 50 structured incident records with systems, teams, resolution times
+- `inventory/confluence/rca_structured.json` — 55 structured incident records (50 Confluence + 5 Executive RCAs) with systems, teams, resolution times
+- `analysis/rca_pattern_analysis.md` — Executive RCA pattern analysis: failure classes, escalation timelines, case trace candidates, technology inventory (April 9)
 - `inventory/confluence/retrospectives.json` — 30 sprint retrospective extractions
 - `inventory/aws/ecs_task_definitions.json` — 68 ECS service microservice architecture map
 - `inventory/aws/eks_clusters.json` — EKS cluster deep data (K8s versions, node groups, add-ons)
@@ -876,7 +900,7 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - **Andy Honnold dual-reporting:** Don's executive chart places Andy Honnold (Payments Strategy) under Garcia (CFO). Chathura's functional chart places him under Akshay (Payments VP) as Sr. Director Payments Strategy. Likely functional through Payments, administrative through Finance. Clarify onsite — affects how Payments strategy decisions flow.
 - **L&D reporting discrepancy:** Chathura's CDO org chart places Adriana Zuniga and Ayodele Lawal as Technical Training Specialists under Dulanjan's Product L&D team. Don's executive org chart placed them under Bailey Shatney (VP HR). Could be matrix (product-owned content, HR-owned development programs), or a reorg-day discrepancy. Clarify onsite.
 - **Enterprise Solutions (Zubair) detail gap:** Chathura's PDF had the Enterprise Solutions org chart page mostly blank (just "Enterprise Solution Org."). The Operations sub-page noted team transitions and reductions (57% L2, 72% L3) but no personnel detail. **Still don't have names/structure for the largest org (58 people).** Chathura sending by Wednesday April 9 per Ana's update.
-- **Sri Lanka leadership gap:** Rajik Gunatilaka departed (Chathura confirmed April 6). Who is the current SL engineering operations lead? Does this change the SL restructuring timeline ($275K→$50K/month) or operational model? W2 interview slot needs replacement — potential contacts: Nishen Peiris, Wenushka Dikowita.
+- **Sri Lanka leadership gap:** Rajik Gunatilaka departed (Chathura confirmed April 6). **W2 slot resolved** — Wenushka Dikowita confirmed (Wed 8:30am, video). Remaining questions for the Wenushka interview: Who is the current SL engineering operations lead? Does this change the SL restructuring timeline ($275K→$50K/month)? How does SL eng report operationally (Zubair, Chathura, or someone else)?
 - **Strainick interview recalibration:** Interview shifted from 30 min on HR/culture to 45 min on COO operations. Secondary purpose: validate whether Strainick is in the seat to stay. If Don's answer reveals this was a "promote to move," focus the interview on documenting the customer operations chain (Account Mgmt → Onboarding → Delivery → IT) as a process map rather than relying on Strainick's strategic perspective. **Additional probe (April 7):** With Rajik departed, Strainick has lost his SL country head direct report. Ask who manages SL operations now.
 - **Bailey Shatney framing:** Position Adam's deliverables as a potential resource for Bailey. If she's new and ramping, the Westrum Culture survey baseline, Glassdoor data, and interview themes on culture/retention are exactly what she needs to build her own 90-day plan. This creates a natural ally.
 

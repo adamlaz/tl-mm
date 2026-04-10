@@ -1018,6 +1018,57 @@
       "overlap_with": ["AWS Redshift", "Domo"],
       "notes": "Minimal usage at $5.4K/year suggests either pilot/POC stage or abandoned initiative. Worth investigating whether this should be scaled up or shut down.",
       "interview_question": "Snowflake is at $5.4K/year — is this an active data warehouse or an abandoned pilot?"
+    },
+    {
+      "name": "Pulse",
+      "vendor": "Mad Mobile (internal)",
+      "category": "Remote Management",
+      "status": "confirmed_active",
+      "source": "Executive RCAs (Sea Grill, Fish Seafood) — primary POS remote management tool",
+      "cost_status": "unknown",
+      "confirmed_annual_cost": "",
+      "estimated_annual_cost": "",
+      "pricing_model": "internal",
+      "pricing_notes": "Internal CAKE tool for remote POS management",
+      "teams_using": ["CAKE Support", "CAKE Engineering"],
+      "shared_or_individual": "team_level",
+      "overlap_with": ["NinjaOne"],
+      "notes": "Known trust issue: showed devices offline when they were actually online during Sea Grill and Fish Seafood incidents. NinjaOne used as backup.",
+      "interview_question": "Pulse showed devices as offline when they were actually online during recent incidents. How reliable is Pulse for diagnosing POS state?"
+    },
+    {
+      "name": "NinjaOne",
+      "vendor": "NinjaOne",
+      "category": "Remote Management",
+      "status": "confirmed_active",
+      "source": "Executive RCA (Sea Grill) — backup remote management when Pulse unreliable",
+      "cost_status": "unknown",
+      "confirmed_annual_cost": "",
+      "estimated_annual_cost": "",
+      "pricing_model": "per_device",
+      "pricing_notes": "Per-device pricing typical for RMM tools",
+      "teams_using": ["CAKE Support"],
+      "shared_or_individual": "team_level",
+      "overlap_with": ["Pulse"],
+      "notes": "Used as backup when Pulse showed unreliable state. Devices registered in NinjaOne during Sea Grill incident.",
+      "interview_question": "Is NinjaOne the backup plan when Pulse is unreliable, or is it the primary remote management for some locations?"
+    },
+    {
+      "name": "Keycloak",
+      "vendor": "Red Hat (open-source)",
+      "category": "Identity / Auth",
+      "status": "confirmed_active",
+      "source": "Executive RCA (Feb 27) — Keycloak timeout observed during platform outage",
+      "cost_status": "open_source",
+      "confirmed_annual_cost": "",
+      "estimated_annual_cost": "",
+      "pricing_model": "open_source",
+      "pricing_notes": "Open-source identity provider. Hosting cost included in AWS spend.",
+      "teams_using": ["CAKE Engineering"],
+      "shared_or_individual": "shared",
+      "overlap_with": [],
+      "notes": "Keycloak timeout suspected during Feb 27 multi-system outage. Restarted but did not resolve the issue (timeout was secondary symptom). Only appearance in executive RCA set.",
+      "interview_question": "Keycloak appeared in the Feb 27 outage — is it the primary identity provider for the CAKE platform?"
     }
   ]
 }

@@ -14,7 +14,9 @@
 
 ## Monday, April 13 — Leadership + Architecture
 
-### Jack Kennedy (CTO, 60 min)
+### Jack Kennedy (CTO, 45 min — reduced from 60)
+
+**TIME NOTE:** 45 min, not 60. Drop Q5 (repo lifecycle) if short on time — it's covered in Chathura and Zubair sessions.
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -30,7 +32,9 @@
 
 ---
 
-### Chathura Ratnayake (CDO, 90–120 min)
+### Chathura Ratnayake (CDO, 60 min Mon + 30 min Wed follow-up = 90 min total)
+
+**SESSION SPLIT:** Monday 60 min — org-level questions (Q1-Q6, executive RCA questions, AWS cost savings). Wednesday 30 min — "what I heard this week" validation. Share emerging patterns from 15+ interviews and let Chathura react. Push sprint reality detail, AI strategy, and support unification probes to Wednesday if Monday runs long.
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -42,13 +46,23 @@
 
 | 6 | "Jira tracks everything — sprint work, Brooks Brothers implementations, GRC audits, hardware commercialization. 50 of 141 projects are non-engineering. Is that by design? Does the noise affect engineering teams' ability to see their own work clearly?" | 141 projects: ~68 eng, ~50 CS, ~23 ops | G (Missing Cadence) |
 
+**Executive RCA questions:**
+
+| + | "I reviewed the 5 executive RCAs from the last 90 days. Three have completely empty Preventive Actions tables. The Feb 27 investigation was scheduled for the week of 3/2 — is there a follow-through process for RCA action items, or does the team move on after restoring service?" | 5 executive RCAs, empty preventive actions | G (Missing Cadence) |
+| + | "The Dec 19 and Feb 27 incidents look like the same failure class — POS-generated load overwhelming ESB and database, 70 days apart. The Feb fix was scaling up (ESB 4→7 nodes, doubled DB). Has the underlying POS behavior been addressed, or is the platform relying on the scaled infrastructure to absorb future spikes?" | Dec 19 + Feb 27 RCA pattern | F (Legacy Gravity) |
+
 **If time:**
 - "PR cycle times vary wildly — cloud-shared-development averages 0.6 hours, while concierge-associate averages 236 hours. What drives that spread?"
 - "How does the Sri Lanka team plug into this? Which workspaces and repos do they primarily contribute to?"
 
+**AWS Cost Savings (from Ana's spreadsheet, received April 9):**
+- "Your team has achieved ~$367K/yr in AWS cost savings through Ana and Matias — 71 initiatives from Sept 2025 to April 2026. As CDO, do you plan to formalize infrastructure cost management? The board's 90-day plan targets $50K/month in AWS reductions — is that being tracked against these completed initiatives?"
+
 ---
 
-### Dulanjan Wengappuliarachchi (VP, Product & GTM, 60 min)
+### Dulanjan Wengappuliarachchi (VP, Product & GTM, 45 min — reduced from 60)
+
+**TIME NOTE:** 45 min, not 60. Drop Q6 (Retail/Neo roadmap scope) if short — Don already confirmed scope. L&D reporting discrepancy can be validated with Bailey or Chathura instead.
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
@@ -70,6 +84,7 @@
 | 3 | "The CDO roadmap shows 4+ Payments integration projects ongoing — Sardine, RS2, CYBS, South State Bank. Plus 6+ Payments Ops projects. How do 9 R&D engineers cover that while also supporting the CAKE payment gateway?" | CDO org chart product roadmap | A (Portfolio Sprawl) |
 | 4 | "Payments had 19 incidents in our RCA data, most in 2021–2022. The peak was 26 incidents in 2022. Has reliability actually improved, or did the documentation practice just stop?" | 50 structured RCAs parsed, Payments top system | F (Legacy Gravity) |
 | 5 | "Your SL engineers (Gayan K., Susampath M.) are in R&D. How does the US/SL split work for payments development specifically? PR reviews, timezone handoffs, code ownership?" | CDO org chart showing SL staff in R&D | E (Dependency Drag) |
+| 6 | "Restaurant QE reports to you, not Randy. The last 90 days had 5 production incidents including two CouchDB corruption events and a platform outage. How does QE test for edge conditions like CouchDB sync storms or POS retry loops? Are there integration tests for these failure modes?" | QE under Payments, 5 executive RCAs | E (Dependency Drag) |
 
 ---
 
@@ -96,16 +111,21 @@
 | 5 | "The CAKE ecosystem has 15+ live systems maintained by 9 engineers — 3 frontend under Alexander Baine, 6 backend under Kyle Budd. The QE team (7 people) reports to Akshay in Payments, not to you. How does that work day-to-day?" | CDO org chart detail | E (Dependency Drag) |
 | 6 | "Your roadmap shows 12+ ongoing projects — OLO V2, EMS 2.0, QSR KDS, KDS v2, Restaurant Admin 2.0, VP3350, and more. With your team assignments (CAKEpop/Kiosk v2, Fixed POS, KDS v2/Cloud/Loyalty, Cloud/EMS), how do you allocate 9 engineers across all of that?" | CDO org chart product roadmap + team assignments | A (Portfolio Sprawl) |
 | 7 | "POS V3 (Pondus) and V4 (Elio) are running simultaneously. What's the migration path? Are both actively maintained?" | Restaurant Update deck | F (Legacy Gravity) |
+| 8 | "CouchDB is the local sync layer for CAKE POS. Two recent incidents — Sea Grill and Fish Seafood — both involved CouchDB document corruption causing complete POS failure during dinner service. Is CouchDB revision count health monitored proactively, or is DB cleanup a reactive operation?" | Sea Grill + Fish Seafood executive RCAs | F (Legacy Gravity) |
+| 9 | "The Fish Seafood incident revealed 10 devices in CouchDB vs 6 physical devices on site, inconsistent software versions in deviceID documents, and expired Bissa certificates. How does the system maintain device document integrity?" | Fish Seafood technical details | F (Legacy Gravity) |
 
 ---
 
-### Zubair Syed (VP Eng, Enterprise Solutions, 58 people, 60 min)
+### Zubair Syed (VP Eng, Enterprise Solutions, 58 people, 45 min — reduced from 60)
+
+**TIME NOTE:** 45 min, not 60. Front-load Q1 (team structure across workspaces) and the Feb 27 RCA follow-up (Q4). We still don't have L1 org names for his 58-person org — this is the top priority for this session.
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
 | 1 | "How do you allocate teams across the four Bitbucket workspaces? Do engineers move between madmobile, syscolabs, and madpayments, or are they siloed?" | 4 workspaces with different cultures | I (Architectural Polarity) |
 | 2 | "PR reviewer concentration data [from V3 scripts] — are there individuals who review a disproportionate share of PRs? Who are the bottleneck reviewers?" | Pending: reviewer_concentration.json | E (Dependency Drag) |
 | 3 | "Assignee concentration data [from V3 scripts] — are there people with 50+ open issues assigned?" | Pending: assignee_concentration.json | E (Dependency Drag) |
+| 4 | "You co-authored the Feb 27 RCA where a query running thousands of times from hundreds of merchants drove DB CPU to 100%. The team identified the query was originating from the POS and a fix would need a POS version update. Did that fix ship?" | Feb 27 RCA, Zubair co-author | F (Legacy Gravity) |
 
 ---
 
@@ -134,11 +154,22 @@
 
 ---
 
-### James Oliver (T6, Tue 1:45-2:15 — added by CR)
+### James Oliver (T6, Tue 1:45-2:15 — Incident Commander / Support Operations)
 
-*Confirmed by Chathura. Role/team needs confirmation. joliver@madmobile.com. Adapt questions based on his domain once identified.*
+*Confirmed by Chathura. joliver@madmobile.com. Incident Owner or Prepared By on 4 of the last 5 executive RCAs (Dec 2025 – Mar 2026). De facto CAKE incident commander. This is now one of the most data-rich interviews of the engagement.*
 
-Use Engineering Manager template questions below, tailored to his specific team data.
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "You owned 4 of the last 5 executive RCAs. The Dec 19 and Feb 27 incidents look like the same failure class — POS devices overwhelming ESB and database with excessive requests. The Dec fix extended token validity and added WAF rules. 70 days later, a similar pattern hit again. What happened with the investigation scheduled for the week of 3/2?" | Dec 19 + Feb 27 RCAs, same ESB/DB pattern | F (Legacy Gravity) |
+| 2 | "The Sea Grill and Fish Seafood incidents both center on CouchDB — high revision counts, document corruption, sync storms during peak hours. Both required overnight DB cleanup. Is CouchDB revision count monitoring automated, or does the team only discover it during incidents?" | Sea Grill + Fish Seafood RCAs, CouchDB pattern | F (Legacy Gravity) |
+| 3 | "Three of the five recent RCAs have completely empty Preventive Actions tables. The other two have items marked 'in progress' or 'scheduled.' Is there a process to track preventive actions to completion, or does the team move on after the incident resolves?" | 3/5 empty preventive actions | G (Missing Cadence) |
+| 4 | "Walk me through how a Code Red gets declared. The Feb 27 incident was a Code Red; Fish Seafood escalated to Code Blue. What's the difference, and who has the authority to declare each?" | Code Red (Feb 27) vs Code Blue (Fish Seafood) | G (Missing Cadence) |
+| 5 | "On the Toastique incident, L1 told the merchant it was a Paytronix issue and paused investigation for 2 days. The root cause turned out to be a CAKE modifier group misconfiguration. How does L1 decide when to close an investigation versus escalate?" | Toastique RCA, L1 misattribution | G (Missing Cadence) |
+
+**If time:**
+- "Joel M. was incident owner on Dec 19 — you authored the other four. What's the on-call rotation? Who is Joel?"
+- "The Fish Seafood incident required L1, L2, Sri Lanka L2, and Code Blue / L3. Each tier found new problems the previous tier hadn't caught. Is there a diagnostic runbook, or does each tier start from scratch?"
+- "Both Sea Grill (c0060-11524105) and Fish Seafood (c0060-10930527) are cluster c0060. Is that cluster particularly fragile?"
 
 ---
 
@@ -184,13 +215,15 @@ Use Engineering Manager template questions below, tailored to his specific team 
 
 ### Michael Lee (W6, Wed 1:00-1:30 — Customer Support)
 
-*Confirmed by Chathura (added by CR). Customer Support lead. New name — not on engineering survey recipient list.*
+*Confirmed by Chathura (added by CR). Customer Support lead. Co-author on Sea Grill and Fish Seafood executive RCAs. Key to understanding the full build-to-support chain.*
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
 | 1 | "Support is now under Chathura, the same executive who owns engineering. Has that changed how escalations work? Is the path from support ticket to engineering fix shorter now?" | Reorg: support → CDO | G (Missing Cadence) |
-| 2 | "Walk me through a CAKE payment outage from the support perspective — from first customer call to resolution. Who gets paged, what tools do you use, and how long does it typically take?" | 19 Payments incidents in RCA data | F (Legacy Gravity) |
-| 3 | "When you escalate a technical issue, what's the typical response time from engineering? Hours? Days?" | — | G (Missing Cadence) |
+| 2 | "The Feb 27 outage hit Restaurant Admin, PAC, Guest Manager, and OLO simultaneously for 96 minutes. Walk me through what happened on the support side — from first customer call to resolution." | Feb 27 RCA, 96 min multi-system outage | F (Legacy Gravity) |
+| 3 | "You co-authored the Sea Grill incident review. The merchant called support 7+ times over 12 days, reported 80 walkouts, and hit a $100K payment limit. From a support perspective, what would have changed the outcome?" | Sea Grill RCA, 80 walkouts, 7+ calls | G (Missing Cadence) |
+| 4 | "The Fish Seafood incident required L1, L2, Sri Lanka L2, and eventually Code Blue with L3 — each tier found new problems the previous tier hadn't caught. Is there a diagnostic runbook for CouchDB issues, or does each tier start fresh?" | Fish Seafood RCA, 4-tier escalation | G (Missing Cadence) |
+| 5 | "When you escalate a technical issue, what's the typical response time from engineering? Hours? Days?" | — | G (Missing Cadence) |
 
 ---
 
@@ -235,13 +268,15 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 
 ### Michael Lee (W6, Wed 1:00-1:30 — Customer Support)
 
-*Confirmed by Chathura (added by CR). Support now unified under Chathura (CDO) — previously under Lodes (CRO). Key to understanding the full build-to-support chain.*
+*Confirmed by Chathura (added by CR). Support now unified under Chathura (CDO) — previously under Lodes (CRO). Co-author on Sea Grill and Fish Seafood executive RCAs. Key to understanding the full build-to-support chain.*
 
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
 | 1 | "Support is now under Chathura, the same executive who owns engineering. Has that changed how escalations work? Is the path from support ticket to engineering fix shorter now?" | Reorg: support → CDO | G (Missing Cadence) |
-| 2 | "Walk me through a CAKE payment outage from the support perspective — from first customer call to resolution. Who gets paged, what tools do you use, and how long does it typically take?" | 19 Payments incidents in RCA data | F (Legacy Gravity) |
-| 3 | "When you escalate a technical issue, what's the typical response time from engineering? Hours? Days?" | — | G (Missing Cadence) |
+| 2 | "The Feb 27 outage hit Restaurant Admin, PAC, Guest Manager, and OLO simultaneously for 96 minutes. Walk me through what happened on the support side — from first customer call to resolution." | Feb 27 RCA, 96 min multi-system outage | F (Legacy Gravity) |
+| 3 | "You co-authored the Sea Grill incident review. The merchant called support 7+ times over 12 days, reported 80 walkouts, and hit a $100K payment limit. From a support perspective, what would have changed the outcome?" | Sea Grill RCA, 80 walkouts, 7+ calls | G (Missing Cadence) |
+| 4 | "The Fish Seafood incident required L1, L2, Sri Lanka L2, and eventually Code Blue with L3 — each tier found new problems the previous tier hadn't caught. Is there a diagnostic runbook for CouchDB issues, or does each tier start fresh?" | Fish Seafood RCA, 4-tier escalation | G (Missing Cadence) |
+| 5 | "When you escalate a technical issue, what's the typical response time from engineering? Hours? Days?" | — | G (Missing Cadence) |
 
 ---
 
@@ -270,12 +305,15 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 
 ---
 
-### Chris Gomersall (Director Product Design, 30 min or async)
+### Chris Gomersall (Director Product Design, 30 min — confirmed in-person)
 
-| # | Question | Hypothesis |
-|---|---|---|
-| 1 | "How does design hand off to engineering? Is there a design system, or is each product line building its own components?" | A (Portfolio Sprawl) |
-| 2 | "The engagement found an 'Agentic Lovable Dev Flow' document in Confluence — Cursor + Chrome DevTools MCP. Is the design team experimenting with AI tooling too?" | AI strategy |
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "How does design hand off to engineering? Is there a design system, or is each product line building its own components?" | Multiple product lines (CAKE, Concierge, Payments) with different stacks | A (Portfolio Sprawl) |
+| 2 | "The engagement found an 'Agentic Lovable Dev Flow' document in Confluence — Cursor + Chrome DevTools MCP. Is the design team experimenting with AI tooling too?" | Confluence doc | AI strategy |
+| 3 | "Only 27.7% of engineering epics complete — 481 created in 12 months, 133 resolved. Does the design team have visibility into that? How do you handle designs that get deprioritized mid-sprint?" | Epic completion rate: 27.7% | B (Sales-Led Chaos) |
+| 4 | "How mature is the shared component library? Are CAKE and Concierge building separate UI patterns, or is there a unified design system?" | 4 Bitbucket workspaces with different frontend stacks | I (Architectural Polarity) |
+| 5 | "You report to Dulanjan under Product & GTM. How does the design-to-PM-to-engineering handoff actually work? Who owns the final say on UX tradeoffs when there's a conflict?" | CDO org chart: Chris under Dulanjan | E (Dependency Drag) |
 
 ---
 
@@ -313,6 +351,18 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 - "Trend Micro Cloud One is costing $1,438/month in the CAKE Dev account. Is that intentional alongside Wiz?"
 - "CodeArtifact, NpmJS, Archiva, DockerHub, and ECR — five artifact/registry services. Which are current?"
 
+**Matias / AWS Cost Optimization (from Ana's spreadsheet, received April 9):**
+- "I've reviewed the AWS cost savings spreadsheet that you and Ana tracked — 71 initiatives, $367K/year in savings. Walk me through how you decided what to cut. Was there a scoring model, or was it biggest obvious waste first?"
+- "The spreadsheet shows 12 closed accounts. How did you validate nothing was still needed? Any near-misses where you shut something down and had to bring it back?"
+- "What's the Monvia story? $25.9K/month on legacy m1 hardware — who owns it, what runs there, can it be shut down? It's the single biggest untouched item at $311K/year."
+- "MenuPad-Prod-Metro — same question. What's the `venom_new` instance (r4.xlarge, ~$2K/month)?"
+- "Who monitors AWS cost anomalies now? Is there a threshold alert? A monthly review meeting? Or was this just you and Ana self-directing?"
+- "What's left on your backlog that you haven't gotten to yet?"
+- "The K8s extended support fixes — you hit 9 clusters across both sheets. Are there more still paying the surcharge?"
+- "The arm64 migrations were EKS nodegroups only. Is there a plan for standalone EC2 instances? 83% are still pre-Graviton."
+- "What's the Savings Plan situation? Are they right-sized or were they inherited? Any recent RI/SP review?"
+- "How do new AWS resources get provisioned? Is there a request process or can anyone spin up instances?"
+
 **Dustin (Security):**
 - "Wiz is deployed via CloudFormation across all 18 accounts — that's serious coverage. What's the annual contract? And Snyk was formally onboarded in Jan 2023 with an implementation consultant — is it actively integrated into CI/CD pipelines, or has it gone quiet?"
 - "SonarQube checks show up in release approval workflows ('Sonar & Unit Tests'). Is that the community edition or a paid tier?"
@@ -328,6 +378,9 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 - "AWS Enterprise Support is $17,020/month. Is that actively used for TAM engagement, or is it insurance?"
 - "Amazon MQ (RabbitMQ) across 3 regions is $5,700/month — $68K/year for a managed message broker. Has modernization been considered?"
 - "The CAKE Dev account has 31 EC2 services totaling ~$15K/month. How much of that is Jenkins, Kafka, Elasticsearch — tool infrastructure vs application workloads?"
+
+**For Ana Chambers (reference during informal check-in or logistics):**
+- "I reviewed the AWS cost savings spreadsheet — impressive work. $367K/year across 71 initiatives is material. Two questions: (1) Who carries this forward now that your role has changed to Chief of Staff? (2) Was there ever a formal cost review cadence, or was this you and Matias self-directing?"
 
 ---
 
@@ -364,15 +417,41 @@ Adapt these based on which team they lead. Look up their team's board in `invent
 | F8 | "Retail revenue is heavily concentrated in a handful of named clients — Winmark, Ralph Lauren, Estee Lauder, Signet, and Urban account for the majority of the $5.9M in retail. What does the pipeline diversity look like for the next 4 quarters?" | retail_client_revenue.csv: top 5 = ~$3.6M of $5.9M total | A (Portfolio Sprawl) |
 | F9 | "The Sysco sales channel is declining at -1.07 deals/week with an R² of 0.40 — that's a real trend, not noise. Meanwhile Direct is growing at +0.23/week. Is the sales team structured to accelerate the Direct channel, or is Sysco still the primary motion?" | Assumptions Net New: channel regression data | B (Sales-Led Chaos) |
 
-### Manuel Garcia (CFO, if time)
+### Manuel Garcia (Interim CFO, 30 min — Mon 2:00pm)
+
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
 | F10 | "AP is stretching 300+ days for some vendors — BDO and LinkedIn are both 200+ days past due. How does that affect vendor relationships and your negotiating leverage on contract renewals?" | AP 03.30.26: BDO 309 days, LinkedIn 203 days, multiple vendors 100+ days | G (Missing Cadence) |
+| F11 | "The 90-day plan targets $50K/month in AWS reductions and $50K/month in software reductions by June 1. How are you tracking progress against those targets? Are you getting regular updates from the engineering side?" | 90-day plan cost reduction targets, Ana/Matias $367K/yr already achieved | G (Missing Cadence) |
+| F12 | "Revenue is heavily concentrated — CAKE restaurant is the core, Payments is growing, and Retail sits on a handful of named clients. Can you walk me through the revenue mix by product line?" | Revenue data from 90-day plan, retail_client_revenue.csv | A (Portfolio Sprawl) |
+| F13 | "The cash flow model shows breakeven in Q2 and a $147K low point in Q3. How much cushion is the $4M facility providing? Is Q3 still the concern?" | Cash flow quarterly: Q1 ($3.4M) burn, Q2 breakeven, Q3 $147K low | G (Missing Cadence) |
+| F14 | "The Cooley paydown plan starts July 1 at $50K/month ($650K total) and BDO at $50K/month starting June 25 ($426K total). Are those on track, or has the timeline shifted?" | AP paydown plans from 90-day deck | G (Missing Cadence) |
 
-### SL Lead (W2 replacement) — SENSITIVITY NOTE
+### Kevin Reyes (Dir. Software Engineering, Payments R&D, 30 min — Tue 1:00pm)
+
+*Kevin manages 9 engineers under Akshay Bhasin: Trenton Kress, Peter Wu, Paul Robert, Richard Meitzler, Gayan K (SL), Susampath M (SL), Pratikchha Kahdka, plus Matthew Griffin (Cloud). The Payments workspace is architecturally the most mature in the company.*
+
 | # | Question | Data Point | Hypothesis |
 |---|---|---|---|
-| — | **Rajik departed.** DO NOT reference the SL cost restructuring ($275K→$50K/month) or any financial data from the 90-day plan. The SL reduction is the largest single cost cut in the plan and may not be fully communicated to the SL team. Stick to the coordination and engineering questions already planned. | — | — |
+| 1 | "The madpayments workspace has 87% CI/CD coverage, EKS-native deployment, Terraform IaC, and zero IAM users. That's dramatically cleaner than the rest of the org. How did your team get there? Was it a deliberate re-architecture, or did Payments just start later with better defaults?" | madpayments: 80 repos, 65% active, 87% CI/CD. Others: 26% active or less | I (Architectural Polarity) |
+| 2 | "I found CLAUDE.md files in several of your repos — madpayments-devices-idtech-neo, mad-payments-vp3350, cybersource-bin-service. Your workspace has the highest AI tooling adoption in the company. Was that top-down or did engineers adopt it organically?" | CLAUDE.md in 3+ Payments repos | AI strategy |
+| 3 | "Matias is #5 code reviewer at 463 reviews and several of your engineers show up in the top reviewer lists. How does code review work on your team? Required approvals? Review SLAs?" | Reviewer data: Matias 463 reviews | E (Dependency Drag) |
+| 4 | "You have 2 Sri Lanka-based engineers (Gayan K, Susampath M). How does the timezone split work for code review and incident response? Is the SL team autonomous or dependent on Tampa-side decisions?" | CDO org chart: 2 SL engineers in Payments R&D | E (Dependency Drag) |
+| 5 | "Could the Payments engineering model be replicated across other teams? What would break if you tried to apply the same architecture and process standards to the Restaurant or Enterprise teams?" | Payments vs. rest of org architectural comparison | I (Architectural Polarity) |
+
+### Wenushka Dikowita (SL Engineering, 30 min — Wed 8:30am, video)
+
+*#3 code reviewer by volume (481 reviews). Sri Lanka-based. Replaces departed Rajik Gunatilaka for the SL operations perspective.*
+
+**SENSITIVITY NOTE:** DO NOT reference the SL cost restructuring ($275K→$50K/month) or any financial data from the 90-day plan. The SL reduction is the largest single cost cut in the plan and may not be fully communicated to the SL team. Stick to coordination and engineering questions.
+
+| # | Question | Data Point | Hypothesis |
+|---|---|---|---|
+| 1 | "With Rajik's departure, how is the Sri Lanka engineering team organized day-to-day? Who makes decisions about task allocation, code review assignment, and escalation to Tampa?" | Rajik departed (Chathura confirmed April 6). SL Country Head vacant. | E (Dependency Drag) |
+| 2 | "You're the #3 code reviewer in the entire company — 481 reviews in the last 12 months. That's an enormous load. How do reviews get assigned? Is it concentrated on you, or is it spread across the SL team?" | Code review data: Wenushka 481 reviews (#3 overall) | E (Dependency Drag) |
+| 3 | "How does the timezone offset with Tampa affect your work? Are there decisions that get blocked waiting for Tampa to come online, or does the SL team have enough autonomy to keep moving?" | 10.5 hour offset (SL is UTC+5:30, Tampa UTC-4) | E (Dependency Drag) |
+| 4 | "Which Bitbucket workspaces and repos does the SL team primarily contribute to? The syscolabs workspace has 1,527 repos but 76% are stale — is the SL team still working in those, or have you moved to the madmobile or madpayments workspaces?" | syscolabs: 1,527 repos, 76% stale | A (Portfolio Sprawl) |
+| 5 | "How many engineers are on the SL team currently? Which teams do they map to — Enterprise (Zubair), Payments (Akshay), Restaurant (Randy), or a mix?" | Org chart shows SL engineers under multiple VPs. Operational reporting unclear. | E (Dependency Drag) |
 
 ---
 

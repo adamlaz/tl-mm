@@ -16,6 +16,45 @@ const monday = sessions.filter((s: any) => s.day === 'Monday');
 const tuesday = sessions.filter((s: any) => s.day === 'Tuesday');
 const wednesday = sessions.filter((s: any) => s.day === 'Wednesday');
 
+const sessionCount = sessions.length;
+const tier1Count = sessions.filter((s: any) => s.tier === 1).length;
+const tier2Count = sessions.filter((s: any) => s.tier === 2).length;
+
+const isInterviewSlot = (s: any) => s.format !== 'debrief' && s.format !== 'group-informal';
+
+const timeToMin = (t: string) => {
+  const [h, m] = t.split(':').map(Number);
+  return h * 60 + m;
+};
+
+function parseSessionRange(proposed_time: string): { start: number; end: number } {
+  const [a, b] = proposed_time.split('-').map((x) => x.trim());
+  const toMin = (t: string) => {
+    const [h, m = 0] = t.split(':').map(Number);
+    let hh = h;
+    if (hh >= 1 && hh <= 7) hh += 12;
+    return hh * 60 + m;
+  };
+  return { start: toMin(a), end: toMin(b) };
+}
+
+function countInterviewsInBlock(day: string, blockStart: string, blockEnd: string) {
+  const bs = timeToMin(blockStart);
+  const be = timeToMin(blockEnd);
+  return sessions.filter((s: any) => {
+    if (s.day !== day || !isInterviewSlot(s)) return false;
+    const r = parseSessionRange(s.proposed_time);
+    return r.start < be && r.end > bs;
+  }).length;
+}
+
+const monIntAm = countInterviewsInBlock('Monday', '8:30', '12:00');
+const monIntPm = countInterviewsInBlock('Monday', '13:00', '16:00');
+const tueIntAm = countInterviewsInBlock('Tuesday', '8:30', '12:00');
+const tueIntPm = countInterviewsInBlock('Tuesday', '13:00', '15:45');
+const wedIntAm = countInterviewsInBlock('Wednesday', '8:30', '12:00');
+const wedIntPm = countInterviewsInBlock('Wednesday', '13:00', '15:00');
+
 function toRows(list: any[]) {
   return list.map((s: any) => ({
     time: s.proposed_time,
@@ -36,28 +75,23 @@ const scheduleColumns = [
   { key: 'tier', label: 'Tier', type: 'badge' as const, sortable: false, badgeMap: { 'Tier 1': 'green', 'Tier 2': 'amber' } },
 ];
 
-const timeToMin = (t: string) => {
-  const [h, m] = t.split(':').map(Number);
-  return h * 60 + m;
-};
-
 const rhythmBlocks = [
   { day: 0, start: '8:00', end: '8:30', label: 'Don sync', cat: 0 },
-  { day: 0, start: '8:30', end: '12:00', label: 'Interviews (4)', cat: 1 },
+  { day: 0, start: '8:30', end: '12:00', label: `Interviews (${monIntAm})`, cat: 1 },
   { day: 0, start: '12:00', end: '13:00', label: 'Lunch', cat: 2 },
-  { day: 0, start: '13:00', end: '16:00', label: 'Interviews (3)', cat: 1 },
+  { day: 0, start: '13:00', end: '16:00', label: `Interviews (${monIntPm})`, cat: 1 },
   { day: 0, start: '16:00', end: '16:30', label: 'Synthesis', cat: 3 },
   { day: 0, start: '16:30', end: '17:00', label: 'Don debrief', cat: 0 },
   { day: 1, start: '8:00', end: '8:30', label: 'Don sync', cat: 0 },
-  { day: 1, start: '8:30', end: '12:00', label: 'Interviews (4)', cat: 1 },
+  { day: 1, start: '8:30', end: '12:00', label: `Interviews (${tueIntAm})`, cat: 1 },
   { day: 1, start: '12:00', end: '13:00', label: 'Lunch', cat: 2 },
-  { day: 1, start: '13:00', end: '15:45', label: 'Interviews (4)', cat: 1 },
+  { day: 1, start: '13:00', end: '15:45', label: `Interviews (${tueIntPm})`, cat: 1 },
   { day: 1, start: '16:00', end: '17:00', label: 'Synthesis', cat: 3 },
   { day: 1, start: '17:00', end: '17:30', label: 'Don debrief', cat: 0 },
   { day: 2, start: '8:00', end: '8:30', label: 'Don sync', cat: 0 },
-  { day: 2, start: '8:30', end: '12:00', label: 'Interviews (5)', cat: 1 },
+  { day: 2, start: '8:30', end: '12:00', label: `Interviews (${wedIntAm})`, cat: 1 },
   { day: 2, start: '12:00', end: '13:00', label: 'Lunch', cat: 2 },
-  { day: 2, start: '13:00', end: '15:00', label: 'Interviews (3)', cat: 1 },
+  { day: 2, start: '13:00', end: '15:00', label: `Interviews (${wedIntPm})`, cat: 1 },
   { day: 2, start: '15:00', end: '16:00', label: 'Final synthesis', cat: 3 },
   { day: 2, start: '16:00', end: '16:30', label: 'Don debrief', cat: 0 },
 ];
@@ -74,13 +108,13 @@ const catNames = ['Don sync / debrief', 'Interviews', 'Lunch', 'Synthesis'];
   <SectionHeader
     eyebrow="ONSITE INTERVIEW PLAN"
     title="April 13–15, Tampa HQ"
-    description="23 sessions across 3 days. All MUST sessions booked. All TBD slots confirmed by Chathura. Rajik Gunatilaka (W2) departed — SL replacement needed. Jeremy Diggins (W4) flagged as potentially unavailable (client onsite)."
+    description={`${sessionCount} sessions across 3 days. Calendar confirmed (v${schedule.metadata?.version ?? '3.0'}). Wenushka Dikowita is confirmed for the Sri Lanka (W2) slot. Jeremy Diggins (W4) flagged as potentially unavailable (client onsite).`}
   />
 
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-    <MetricCard label="Sessions" value="23" subtitle="3 days onsite" />
-    <MetricCard label="Tier 1" value="16" subtitle="Must happen face-to-face" />
-    <MetricCard label="Tier 2" value="7" subtitle="Can go async/video if needed" />
+    <MetricCard label="Sessions" value={sessionCount} subtitle="3 days onsite" />
+    <MetricCard label="Tier 1" value={tier1Count} subtitle="Must happen face-to-face" />
+    <MetricCard label="Tier 2" value={tier2Count} subtitle="Can go async/video if needed" />
     <MetricCard label="Cases to Trace" value="5" subtitle="End-to-end process validation" />
   </dl>
 

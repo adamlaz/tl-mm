@@ -1,0 +1,834 @@
+{
+  "generated_at": "2026-04-09T08:47:44.009138",
+  "source": "AWS Cost Savings.xlsx (Ana Chambers / Matias Riglos)",
+  "total_initiatives": 71,
+  "total_yearly_savings": 366615.25,
+  "total_monthly_savings": 30779.87,
+  "by_domain": {
+    "Retail": {
+      "count": 21,
+      "yearly": 181443.0
+    },
+    "CAKE": {
+      "count": 50,
+      "yearly": 185172.25
+    }
+  },
+  "by_category": {
+    "volume_cleanup": {
+      "count": 11,
+      "yearly": 68638.88
+    },
+    "architecture_modernization": {
+      "count": 4,
+      "yearly": 28443.0
+    },
+    "tool_removal": {
+      "count": 7,
+      "yearly": 52316.01
+    },
+    "k8s_support": {
+      "count": 9,
+      "yearly": 41688.0
+    },
+    "resource_cleanup": {
+      "count": 20,
+      "yearly": 55197.0
+    },
+    "account_closure": {
+      "count": 12,
+      "yearly": 58142.88
+    },
+    "other": {
+      "count": 2,
+      "yearly": 2840.6
+    },
+    "env_decommission": {
+      "count": 6,
+      "yearly": 59348.88
+    }
+  },
+  "initiatives": [
+    {
+      "task": "Deleted old volumes and stopped larger ES cluster machines",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-16",
+      "monthly_savings": 1600.0,
+      "yearly_savings": 19200.0,
+      "notes": "",
+      "jira_ticket": "",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Deleted old volumes and stopped GitLab servers",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-16",
+      "monthly_savings": 700.0,
+      "yearly_savings": 8400.0,
+      "notes": "",
+      "jira_ticket": "",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Deleted unused volumes on QA",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-16",
+      "monthly_savings": 72.0,
+      "yearly_savings": 864.0,
+      "notes": "",
+      "jira_ticket": "",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Moved 2 large ES volumes from gp2 to gp3",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-17",
+      "monthly_savings": 516.0,
+      "yearly_savings": 6192.0,
+      "notes": "",
+      "jira_ticket": "",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "EKS nodegroups migrated to arm64 (US)",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-17",
+      "monthly_savings": 176.25,
+      "yearly_savings": 2115.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-58",
+      "category": "architecture_modernization"
+    },
+    {
+      "task": "EKS nodegroups migrated to arm64 (APAC)",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-11",
+      "monthly_savings": 202.33,
+      "yearly_savings": 2428.0,
+      "notes": "",
+      "jira_ticket": "https://mad-mobile.atlassian.net/browse/CM-1673",
+      "category": "architecture_modernization"
+    },
+    {
+      "task": "EKS nodegroups migrated to arm64 (EU)",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-16",
+      "monthly_savings": 241.67,
+      "yearly_savings": 2900.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-54",
+      "category": "architecture_modernization"
+    },
+    {
+      "task": "Knitwell Node Reduction",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "",
+      "monthly_savings": 1750.0,
+      "yearly_savings": 21000.0,
+      "notes": "",
+      "jira_ticket": "",
+      "category": "architecture_modernization"
+    },
+    {
+      "task": "Downgrade N8N",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-09-29",
+      "monthly_savings": 430.0,
+      "yearly_savings": 2400.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-699",
+      "category": "tool_removal"
+    },
+    {
+      "task": "Remove Prismatic (downgrade prior to 10/15, removed on 10/16)",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-10-15",
+      "monthly_savings": 2000.0,
+      "yearly_savings": 24000.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-700",
+      "category": "tool_removal"
+    },
+    {
+      "task": "K8s Extended Support - marvel-cloud-us-dr",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-10-10",
+      "monthly_savings": 360.0,
+      "yearly_savings": 4320.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-90",
+      "category": "k8s_support"
+    },
+    {
+      "task": "K8s Extended Support - marvel-cloud-apac-dr",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-10-08",
+      "monthly_savings": 360.0,
+      "yearly_savings": 4320.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-92",
+      "category": "k8s_support"
+    },
+    {
+      "task": "K8s Extended Support - marvel-cloud-eu-dr",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-10-09",
+      "monthly_savings": 360.0,
+      "yearly_savings": 4320.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-95",
+      "category": "k8s_support"
+    },
+    {
+      "task": "K8s Extended Support - marvel-cloud-qa-dr",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2025-10-21",
+      "monthly_savings": 360.0,
+      "yearly_savings": 4320.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-715",
+      "category": "k8s_support"
+    },
+    {
+      "task": "Stop idle servers on Retail DR account",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2026-01-14",
+      "monthly_savings": 370.0,
+      "yearly_savings": 4440.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-934",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Remove Sentry - Deactivated",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2026-03-03",
+      "monthly_savings": 1750.0,
+      "yearly_savings": 21000.0,
+      "notes": "",
+      "jira_ticket": "",
+      "category": "account_closure"
+    },
+    {
+      "task": "Removed all nodes used by Loki on the dev/qa retail cluster",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2026-03-27",
+      "monthly_savings": 788.0,
+      "yearly_savings": 9456.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-701",
+      "category": "tool_removal"
+    },
+    {
+      "task": "K8s 1.30 to 1.34 - marvel-cloud-prod-apac",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2026-03-31",
+      "monthly_savings": 438.0,
+      "yearly_savings": 5256.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-91",
+      "category": "k8s_support"
+    },
+    {
+      "task": "K8s 1.30 to 1.34 - marvel-cloud-prod-us",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2026-04-06",
+      "monthly_savings": 438.0,
+      "yearly_savings": 5256.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-93",
+      "category": "k8s_support"
+    },
+    {
+      "task": "Cleanup unused snapshots and volumes (retail prod-us account)",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2026-04-07",
+      "monthly_savings": 2000.0,
+      "yearly_savings": 24000.0,
+      "notes": "now",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-1043",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "K8s 1.30 to 1.34 - marvel-cloud-prod-eu",
+      "domain": "Retail",
+      "start_date": "",
+      "end_date": "2026-04-07",
+      "monthly_savings": 438.0,
+      "yearly_savings": 5256.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CM-94",
+      "category": "k8s_support"
+    },
+    {
+      "task": "QA Data Platform reduction",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "",
+      "monthly_savings": 170.0,
+      "yearly_savings": 2048.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-681",
+      "category": "other"
+    },
+    {
+      "task": "Deleted unused volumes on Cake Dev (2018–2023)",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "",
+      "monthly_savings": 170.0,
+      "yearly_savings": 2048.0,
+      "notes": "",
+      "jira_ticket": "",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Terminate stopped instances on the cake-dev account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-09-29",
+      "monthly_savings": 828.0,
+      "yearly_savings": 9936.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-696",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "PCI Logging - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-07",
+      "monthly_savings": 250.0,
+      "yearly_savings": 3000.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-728",
+      "category": "account_closure"
+    },
+    {
+      "task": "Cake Backup - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-07",
+      "monthly_savings": 147.0,
+      "yearly_savings": 1764.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-730",
+      "category": "account_closure"
+    },
+    {
+      "task": "Marvel Hosting - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-07",
+      "monthly_savings": 130.0,
+      "yearly_savings": 1560.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-731",
+      "category": "account_closure"
+    },
+    {
+      "task": "AI Research - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-07",
+      "monthly_savings": 350.0,
+      "yearly_savings": 4200.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-733",
+      "category": "account_closure"
+    },
+    {
+      "task": "NAT Gateways across two regions - Cleanup",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-09",
+      "monthly_savings": 196.0,
+      "yearly_savings": 2352.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "EBS Volumes - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-09",
+      "monthly_savings": 599.56,
+      "yearly_savings": 7194.72,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "account_closure"
+    },
+    {
+      "task": "menupad-stg and sentry-ecom - RDS Instances",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-09",
+      "monthly_savings": 177.21,
+      "yearly_savings": 2126.52,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "tool_removal"
+    },
+    {
+      "task": "VPN Structure Cleanup",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-09",
+      "monthly_savings": 442.87,
+      "yearly_savings": 5314.44,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "13 Unused Elastic IPs",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-13",
+      "monthly_savings": 46.8,
+      "yearly_savings": 561.6,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "S3 - Retired Resources",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-09",
+      "monthly_savings": 176.64,
+      "yearly_savings": 2119.68,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Load Balancers",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-09",
+      "monthly_savings": 158.03,
+      "yearly_savings": 1896.36,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Payments (non-prod) - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-15",
+      "monthly_savings": 247.0,
+      "yearly_savings": 2964.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-729",
+      "category": "account_closure"
+    },
+    {
+      "task": "CAKE New Stag - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-16",
+      "monthly_savings": 2.6,
+      "yearly_savings": 31.2,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-746",
+      "category": "account_closure"
+    },
+    {
+      "task": "CAKE New Development - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-16",
+      "monthly_savings": 6.16,
+      "yearly_savings": 73.92,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-747",
+      "category": "account_closure"
+    },
+    {
+      "task": "User cleanup",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-16",
+      "monthly_savings": 122.0,
+      "yearly_savings": 1464.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-748",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Directory Service - Cleanup",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-17",
+      "monthly_savings": 32.54,
+      "yearly_savings": 390.48,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Work Spaces - Cleanup",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-17",
+      "monthly_savings": 9.06,
+      "yearly_savings": 108.72,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-737",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Cleanup MM-Archive account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-17",
+      "monthly_savings": 410.0,
+      "yearly_savings": 4920.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-752",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "K8s Extended Support -  sd-eks-east2",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-17",
+      "monthly_savings": 360.0,
+      "yearly_savings": 4320.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-712",
+      "category": "k8s_support"
+    },
+    {
+      "task": "Elasticsearch reduction (QA Env)",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-22",
+      "monthly_savings": 1186.97,
+      "yearly_savings": 14243.64,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-682",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Cake-Sandbox01 - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-22",
+      "monthly_savings": 1200.0,
+      "yearly_savings": 14400.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-745",
+      "category": "account_closure"
+    },
+    {
+      "task": "Customer Anayltics - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-16",
+      "monthly_savings": 2.44,
+      "yearly_savings": 29.28,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-751",
+      "category": "account_closure"
+    },
+    {
+      "task": "Decomission POS1 RDS Instance",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-22",
+      "monthly_savings": 477.23,
+      "yearly_savings": 5726.76,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-757",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "K8s Extended Support - ss-eks-east2",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-10-23",
+      "monthly_savings": 360.0,
+      "yearly_savings": 4320.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-713",
+      "category": "k8s_support"
+    },
+    {
+      "task": "Decomission prod-monitor (prometheus) idle server on cake prod",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-12-16",
+      "monthly_savings": 227.76,
+      "yearly_savings": 2733.12,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-867",
+      "category": "tool_removal"
+    },
+    {
+      "task": "sandbox-pulse-writer - Closed Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-12-30",
+      "monthly_savings": 160.48,
+      "yearly_savings": 1925.76,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-876",
+      "category": "account_closure"
+    },
+    {
+      "task": "Terminate stopped EC2s (19 Instances)",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-12-29",
+      "monthly_savings": 42.56,
+      "yearly_savings": 510.72,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-870",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Deleted unused load balancers and assoicated target groups",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-12-31",
+      "monthly_savings": 36.0,
+      "yearly_savings": 432.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-879",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Decommission nat-06741ec1af03a2c52 Nat Gateway in us-east-2 Region",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-05",
+      "monthly_savings": 13.01,
+      "yearly_savings": 156.12,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-882",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Decommission nat-06195c6172bca166a Nat Gateway in us-west-2 Region",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-05",
+      "monthly_savings": 13.01,
+      "yearly_savings": 156.12,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-885",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Decommission nat-0226974c41d5909e6 Nat Gateway in us-west-2 Region",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-05",
+      "monthly_savings": 13.01,
+      "yearly_savings": 156.12,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-886",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Decommission nat-0227359ae429576fd Nat Gateway in us-west-2 Region",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-05",
+      "monthly_savings": 13.01,
+      "yearly_savings": 156.12,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-887",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Decommission nat-0fe5722dd3bb18348 Nat Gateway in us-west-2 Region",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-05",
+      "monthly_savings": 13.01,
+      "yearly_savings": 156.12,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-890",
+      "category": "resource_cleanup"
+    },
+    {
+      "task": "Delete all Idle EBS Storages",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2025-01-06",
+      "monthly_savings": 454.64,
+      "yearly_savings": 5455.68,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-893",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Convert Volume Type form GP2 to GP3 in i-0abe385a489944a41 (DockerPos) Instance",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-12",
+      "monthly_savings": 9.06,
+      "yearly_savings": 108.72,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-908",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Decomission all Idle Volumes in us-east-1 Region in CAKE Production (758050458312) Account",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-12",
+      "monthly_savings": 132.4,
+      "yearly_savings": 1588.8,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-921",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Delete Idle EBS Volumes",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-12",
+      "monthly_savings": 25.6,
+      "yearly_savings": 307.2,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-930",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Investigate on i-0238a0f9f2afd1bdb Server and Decomission",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-14",
+      "monthly_savings": 66.05,
+      "yearly_savings": 792.6,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-929",
+      "category": "other"
+    },
+    {
+      "task": "Delete Unused EBS Volumes in us-east-1 Region",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-01-05",
+      "monthly_savings": 39.54,
+      "yearly_savings": 474.48,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-880",
+      "category": "volume_cleanup"
+    },
+    {
+      "task": "Disable go-daddy domains not being used",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-02-09",
+      "monthly_savings": 178.7,
+      "yearly_savings": 2144.37,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-969",
+      "category": "tool_removal"
+    },
+    {
+      "task": "Shut down all TST3 Clusters",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-02-24",
+      "monthly_savings": 2265.0,
+      "yearly_savings": 27181.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-990",
+      "category": "env_decommission"
+    },
+    {
+      "task": "Deleted all redis and memcached for the dev env tst2",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-02-24",
+      "monthly_savings": 239.44,
+      "yearly_savings": 2873.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-989",
+      "category": "env_decommission"
+    },
+    {
+      "task": "Found instances for the pos2 env, which had the same destiny (destroyed)",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-02-24",
+      "monthly_savings": 64.24,
+      "yearly_savings": 771.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-989",
+      "category": "env_decommission"
+    },
+    {
+      "task": "Stopped the server i-07449058a40785eb0 (tst1-api-new (ha-proxy)).",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-02-27",
+      "monthly_savings": 204.54,
+      "yearly_savings": 2454.48,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLD-2371",
+      "category": "env_decommission"
+    },
+    {
+      "task": "tst2 Environment Decommission",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-03-03",
+      "monthly_savings": 2141.0,
+      "yearly_savings": 25692.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-993",
+      "category": "env_decommission"
+    },
+    {
+      "task": "Decomission pos2-esb-v2 Instance",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-03-20",
+      "monthly_savings": 31.45,
+      "yearly_savings": 377.4,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLD-2402",
+      "category": "env_decommission"
+    },
+    {
+      "task": "Removed all nodes used by Loki on the dev/qa retail cluster",
+      "domain": "CAKE",
+      "start_date": "",
+      "end_date": "2026-03-27",
+      "monthly_savings": 788.0,
+      "yearly_savings": 9456.0,
+      "notes": "",
+      "jira_ticket": "https://madmobile-eng.atlassian.net/browse/CLOUD-701",
+      "category": "tool_removal"
+    }
+  ]
+}

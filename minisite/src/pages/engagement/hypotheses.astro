@@ -70,9 +70,9 @@ const hypotheses = [
     status: 'Pre-Evidence',
     statement: 'Legacy CAKE systems slow delivery; leadership has not clearly prioritized what must be replaced versus what can stay behind a stable boundary with less rework.',
     test: 'What constraint costs the most velocity? Ratio of maintenance vs. new feature hours?',
-    evidence: 'Most cloud servers run on older hardware generations (167 of 201). About one in five serverless functions use end-of-life language versions (53 of 248). Some infrastructure templates date to 2016. 15+ live CAKE systems are supported by only 9 engineers.',
+    evidence: 'Most cloud servers run on older hardware generations (167 of 201). About one in five serverless functions use end-of-life language versions (53 of 248). Some infrastructure templates date to 2016. 15+ live CAKE systems are supported by only 9 engineers. Executive RCAs (Dec 2025 – Mar 2026): CouchDB corruption pattern spans 2022–2026 (4+ years). ESB/DB overload recurred 70 days apart with no root cause fix. POS retry loops and query floods overwhelm platform infrastructure.',
     link: '/infrastructure',
-    charts: ['aws_lambda_runtimes'],
+    charts: ['aws_lambda_runtimes', 'rca_failure_classes'],
   },
   {
     id: 'G',
@@ -81,9 +81,9 @@ const hypotheses = [
     status: 'Pre-Evidence',
     statement: 'No consistent execution inspection; leadership discovers reality through fire drills.',
     test: 'What\'s the weekly rhythm? What metrics are reviewed? How does bad news travel?',
-    evidence: '141 Jira projects. Priority broken: 89.4% High, 10.6% None. Story points on 9% of stories. Root Cause Category populated on 0% of bugs. Structured RCA docs stop after 2023.',
+    evidence: '141 Jira projects. Priority broken: 89.4% High, 10.6% None. Story points on 9% of stories. Root Cause Category populated on 0% of bugs. Structured RCA docs stopped in Confluence after 2023; 5 Executive RCAs received for Dec 2025 – Mar 2026 show the template exists but Preventive Actions are empty on 3 of 5. Same failure class recurred 70 days apart (Dec 19 → Feb 27). Zero completed preventive items.',
     link: '/delivery',
-    charts: ['jira_priority_inflation', 'confluence_rca_timeline'],
+    charts: ['jira_priority_inflation', 'confluence_rca_timeline', 'rca_preventive_actions'],
   },
   {
     id: 'H',

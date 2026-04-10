@@ -284,9 +284,25 @@ const toolingCatalog = defineCollection({
   }),
 });
 
+const awsCostSavings = defineCollection({
+  loader: csvLoader({ path: '../analysis/aws_cost_savings.csv' }),
+  schema: z.object({
+    task: str,
+    domain: str,
+    category: str,
+    start_date: str,
+    end_date: str,
+    monthly_savings: str,
+    yearly_savings: str,
+    notes: str,
+    jira_ticket: str,
+  }),
+});
+
 export const collections = {
   awsCosts,
   awsResources,
+  awsCostSavings,
   bitbucketRepos,
   bitbucketPRs,
   bitbucketCommits,

@@ -41,6 +41,7 @@ const healthCheckPct = totalContainers > 0 ? Math.round((noHealthCheck / totalCo
 /* ---------- Costs & Resources (CSV collections) ---------- */
 const costs = await getCollection('awsCosts');
 const resources = await getCollection('awsResources');
+const costSavings = await getCollection('awsCostSavings');
 
 const marchCosts = costs.filter((c) => c.data.month.startsWith('2026-03'));
 const totalCost = marchCosts.reduce((s, c) => s + num(c.data.cost), 0);
@@ -73,6 +74,42 @@ const serviceRows = [...byService.entries()]
 const ec2Count = resources.filter((r) => r.data.type === 'EC2').length;
 const lambdaCount = resources.filter((r) => r.data.type === 'Lambda').length;
 const rdsCount = resources.filter((r) => r.data.type === 'RDS').length;
+
+/* ---------- Cost Savings (from Ana/Matias tracking sheet) ---------- */
+const totalSavingsYearly = costSavings.reduce((s, c) => s + num(c.data.yearly_savings), 0);
+const totalSavingsMonthly = costSavings.reduce((s, c) => s + num(c.data.monthly_savings), 0);
+const savingsByDomain = new Map<string, number>();
+const savingsByCategory = new Map<string, number>();
+for (const c of costSavings) {
+  const y = num(c.data.yearly_savings);
+  savingsByDomain.set(c.data.domain, (savingsByDomain.get(c.data.domain) ?? 0) + y);
+  savingsByCategory.set(c.data.category, (savingsByCategory.get(c.data.category) ?? 0) + y);
+}
+const accountClosures = costSavings.filter(c => c.data.category === 'account_closure').length;
+
+const categoryLabels: Record<string, string> = {
+  account_closure: 'Account Closures',
+  env_decommission: 'Env Decommissions',
+  k8s_support: 'K8s Support Fees',
+  volume_cleanup: 'Volume/Snapshot Cleanup',
+  tool_removal: 'Tool Removals',
+  architecture_modernization: 'Architecture Modernization',
+  resource_cleanup: 'Resource Cleanup',
+  other: 'Other',
+};
+
+const savingsRows = costSavings
+  .filter(c => num(c.data.yearly_savings) > 0)
+  .sort((a, b) => num(b.data.yearly_savings) - num(a.data.yearly_savings))
+  .map(c => ({
+    task: c.data.task,
+    domain: c.data.domain,
+    category: categoryLabels[c.data.category] ?? c.data.category,
+    end_date: c.data.end_date,
+    monthly_savings: fmtCurrency(num(c.data.monthly_savings)),
+    yearly_savings: fmtCurrency(num(c.data.yearly_savings)),
+    jira_ticket: c.data.jira_ticket,
+  }));
 
 const charts = [
   {
@@ -215,7 +252,7 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
     <FindingCard severity="red" title="83% Pre-Graviton EC2" detail="167 of 201 running instances on pre-Graviton hardware. AWS charges the same for less performance. Migration is free velocity." evidence="201 running, 23 stopped, 167 pre-Graviton (83%)" href="/engagement/hypotheses" hrefLabel="Hypothesis F: Legacy Gravity" />
     <FindingCard severity="red" title="90% ECS Containers Missing Health Checks" detail="61 of 68 active ECS services have no container health check. Services can be unhealthy without detection." evidence="68 services, 61 without health checks, 49 unique images" />
     <FindingCard severity="amber" title="21% Lambda on EOL Runtimes" detail="53 of 248 Lambda functions running Python 2.7, Node 6/8/10/12. Security patches no longer available." evidence="248 functions, 53 EOL (21%)" />
-    <FindingCard severity="amber" title="$383K Monthly AWS Spend" detail="March 2026 across 18 accounts. Cash flow model shows $290K/month (vs. $383K from Cost Explorer — gap likely marketplace subscriptions and support). Board-committed target: $50K/month AWS reduction by June 1. Monvia: $25.9K/month for legacy workloads on m1 hardware." evidence="18 accounts, $383K Cost Explorer, $290K cash flow model, board 90-day plan" />
+    <FindingCard severity="amber" title="$383K Monthly AWS Spend" detail="March 2026 across 18 accounts. Cash flow model shows $290K/month (vs. $383K from Cost Explorer — gap likely marketplace subscriptions and support). Board-committed target: $50K/month AWS reduction by June 1. Internal cost savings work has already achieved ~$367K/yr in reductions (tracked by Ana Chambers & Matias Riglos). Monvia: $25.9K/month for legacy workloads on m1 hardware — single biggest untouched item." evidence="18 accounts, $383K Cost Explorer, $290K cash flow model, $367K/yr already saved, board 90-day plan" />
   </div>
 
   <div class="grid lg:grid-cols-2 gap-6 mb-10">
@@ -318,6 +355,70 @@ const dashboardRows = (cwDashData.dashboards ?? [] as any[])
       detail="83% of EC2 instances are pre-Graviton, 90% of ECS containers lack health checks, and tagging compliance is below 50%. These are not isolated issues -- they indicate infrastructure that has grown organically without operational standards. Modernization would reduce costs by 20-40% on compute alone while improving reliability."
       href="/financial"
       hrefLabel="Cost Impact"
+    />
+  </div>
+
+  <!-- ── Cost Optimization Progress (Ana/Matias) ── -->
+  <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4 mt-10">Cost Optimization Progress</h2>
+  <div class="grid sm:grid-cols-2 gap-4 mb-6">
+    <FindingCard
+      severity="green"
+      title={`$${Math.round(totalSavingsYearly / 1000)}K/yr in AWS Savings Already Achieved`}
+      detail="Ana Chambers and Matias Riglos tracked 71 cost-saving initiatives across Retail and CAKE from Sept 2025 to Apr 2026. Work included closing 9 unused accounts, decommissioning 3 test environments, removing 5 abandoned tools, and migrating EKS to arm64. Positive signal of operational capability — but the work was person-dependent, not process-driven."
+      evidence={`71 initiatives: $${Math.round((savingsByDomain.get('Retail') ?? 0) / 1000)}K/yr Retail + $${Math.round((savingsByDomain.get('CAKE') ?? 0) / 1000)}K/yr CAKE. Source: Ana Chambers spreadsheet (April 2026)`}
+    />
+    <FindingCard
+      severity="amber"
+      title="$500K–$1M/yr Estimated Remaining Opportunity"
+      detail="Monvia ($311K/yr on legacy m1 hardware) is the single biggest untouched item. Marketplace SaaS (Snowflake, Cursor, Snyk, Vanta, MongoDB Atlas) adds ~$70K/month. RDS, ElastiCache, and CloudWatch in the Mgmt account represent $50–55K/month. Pre-Graviton EC2 (83%) and EOL Lambda runtimes (21%) remain unaddressed beyond EKS nodegroups."
+      evidence="Monvia $25.9K/mo, Marketplace ~$70K/mo, Mgmt RDS/ElastiCache/CW ~$55K/mo"
+    />
+  </div>
+
+  <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <MetricCard label="Initiatives Completed" value={costSavings.length.toString()} subtitle="Sept 2025 – Apr 2026" />
+    <MetricCard label="Annual Savings" value={`$${Math.round(totalSavingsYearly / 1000)}K`} subtitle={`$${Math.round((savingsByDomain.get('Retail') ?? 0) / 1000)}K Retail + $${Math.round((savingsByDomain.get('CAKE') ?? 0) / 1000)}K CAKE`} />
+    <MetricCard label="Accounts Closed" value={accountClosures.toString()} subtitle="dead environments and products" />
+    <MetricCard label="Remaining Opportunity" value="$500K+" subtitle="estimated annual, led by Monvia" benchmark="Monvia alone: $311K/yr" />
+  </dl>
+
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+    <ChartEmbed
+      slug="aws_cost_savings_timeline"
+      title="Cumulative Savings Over Time"
+      caption="Monthly cumulative savings achieved by domain. March 2026 was the most active month, driven by Loki removal, K8s upgrades, and snapshot/volume cleanup."
+    />
+    <ChartEmbed
+      slug="aws_cost_savings_pareto"
+      title="Top Savings Initiatives"
+      caption="Pareto view of initiatives by annual savings. Roughly 10 initiatives drive 60%+ of all savings — concentration of impact suggests a few large wins dominated."
+    />
+  </div>
+
+  <div class="mb-8">
+    <ChartEmbed
+      slug="aws_cost_done_vs_remaining"
+      title="Achieved vs Remaining Opportunity"
+      caption="Green bars show savings already realized by category. Amber bars show estimated remaining opportunity. Monvia ($311K/yr) and Marketplace SaaS (~$180K/yr) are the largest untouched categories."
+    />
+  </div>
+
+  <div class="mb-8">
+    <h2 class="text-sm font-semibold text-[var(--text-secondary)] mb-3">All Cost Savings Initiatives</h2>
+    <TabulatorGrid
+      exportable
+      searchable={true}
+      pageSize={15}
+      columns={[
+        { key: 'task', label: 'Initiative', sortable: true, filterable: true },
+        { key: 'domain', label: 'Domain', sortable: true, filterable: true },
+        { key: 'category', label: 'Category', sortable: true, filterable: true },
+        { key: 'end_date', label: 'Completed', sortable: true, type: 'date' },
+        { key: 'monthly_savings', label: 'Monthly', align: 'right', sortable: true, type: 'currency', bottomCalc: 'sum' },
+        { key: 'yearly_savings', label: 'Yearly', align: 'right', sortable: true, type: 'currency', bottomCalc: 'sum' },
+        { key: 'jira_ticket', label: 'Ticket', sortable: true },
+      ]}
+      rows={savingsRows}
     />
   </div>
 

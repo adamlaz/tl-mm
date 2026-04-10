@@ -15,6 +15,8 @@ const monday = sessions.filter((s: any) => s.day === 'Monday');
 const tuesday = sessions.filter((s: any) => s.day === 'Tuesday');
 const wednesday = sessions.filter((s: any) => s.day === 'Wednesday');
 
+const sessionCount = sessions.length;
+
 const tierColor = (t: number) => t === 1 ? 'var(--status-green)' : 'var(--status-amber)';
 const tierBg = (t: number) => t === 1 ? 'var(--status-green-bg)' : 'var(--status-amber-bg)';
 ---
@@ -27,10 +29,10 @@ const tierBg = (t: number) => t === 1 ? 'var(--status-green-bg)' : 'var(--status
   />
 
   <dl class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-    <MetricCard label="Sessions" value="19" subtitle="3 days onsite" />
-    <MetricCard label="Monday" value="4" subtitle="Leadership + Strategy" />
-    <MetricCard label="Tuesday" value="7" subtitle="Engineering Deep Dive" />
-    <MetricCard label="Wednesday" value="8" subtitle="Validation + Gaps" />
+    <MetricCard label="Sessions" value={sessionCount} subtitle="3 days onsite" />
+    <MetricCard label="Monday" value={monday.length} subtitle="Leadership + Strategy" />
+    <MetricCard label="Tuesday" value={tuesday.length} subtitle="Engineering Deep Dive" />
+    <MetricCard label="Wednesday" value={wednesday.length} subtitle="Validation + Gaps" />
     <MetricCard label="Max Duration" value="60 min" subtitle="15 min buffers" />
   </dl>
 

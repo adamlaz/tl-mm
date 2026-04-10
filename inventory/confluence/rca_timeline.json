@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-04-03T20:51:22.048959-04:00",
-  "total_incidents_parsed": 50,
-  "total_filtered_docs": 80,
+  "total_incidents_parsed": 55,
+  "total_filtered_docs": 85,
   "fetch_errors": 0,
   "incidents_by_year": {
     "2020": 1,
@@ -9,16 +9,20 @@
     "2022": 26,
     "2023": 8,
     "2024": 3,
-    "2025": 2
+    "2025": 3,
+    "2026": 4
   },
   "incidents_by_system": {
     "Payments": 19,
     "Reports": 11,
     "Menu": 10,
-    "OLO": 3,
+    "OLO": 4,
     "Cloud/Infrastructure": 2,
+    "CAKE POS": 2,
     "Pulse": 2,
     "Guest Manager": 2,
+    "Admin Portal": 1,
+    "Multi-System": 1,
     "Unknown": 1
   },
   "incidents_by_team": {
@@ -26,20 +30,22 @@
     "Payments": 6,
     "Cloud Services": 5,
     "CAKEAPP DC": 4,
+    "CAKE Support": 3,
     "CAKEAPP GPS": 3,
     "Platform": 3,
     "DBE": 3,
+    "CAKE Engineering": 2,
     "CAKEAPP DU": 2,
     "Stark": 1
   },
   "root_cause_themes": {
     "Other": 12,
+    "Infrastructure / Cloud": 10,
+    "Database / RDS": 9,
     "Application Bug": 8,
-    "Infrastructure / Cloud": 8,
     "Payment Provider": 7,
-    "Database / RDS": 7,
     "Sync / Data Flow": 4,
-    "Deployment / Config": 2,
+    "Deployment / Config": 3,
     "ACH / Funding": 1,
     "Third-party / External": 1
   },

@@ -1,0 +1,72 @@
+task,domain,category,start_date,end_date,monthly_savings,yearly_savings,notes,jira_ticket
+Deleted old volumes and stopped larger ES cluster machines,Retail,volume_cleanup,,2025-09-16,1600.0,19200.0,,
+Deleted old volumes and stopped GitLab servers,Retail,volume_cleanup,,2025-09-16,700.0,8400.0,,
+Deleted unused volumes on QA,Retail,volume_cleanup,,2025-09-16,72.0,864.0,,
+Moved 2 large ES volumes from gp2 to gp3,Retail,volume_cleanup,,2025-09-17,516.0,6192.0,,
+EKS nodegroups migrated to arm64 (US),Retail,architecture_modernization,,2025-09-17,176.25,2115.0,,https://madmobile-eng.atlassian.net/browse/CM-58
+EKS nodegroups migrated to arm64 (APAC),Retail,architecture_modernization,,2025-09-11,202.33,2428.0,,https://mad-mobile.atlassian.net/browse/CM-1673
+EKS nodegroups migrated to arm64 (EU),Retail,architecture_modernization,,2025-09-16,241.67,2900.0,,https://madmobile-eng.atlassian.net/browse/CM-54
+Knitwell Node Reduction,Retail,architecture_modernization,,,1750.0,21000.0,,
+Downgrade N8N,Retail,tool_removal,,2025-09-29,430.0,2400.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-699
+"Remove Prismatic (downgrade prior to 10/15, removed on 10/16)",Retail,tool_removal,,2025-10-15,2000.0,24000.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-700
+K8s Extended Support - marvel-cloud-us-dr,Retail,k8s_support,,2025-10-10,360.0,4320.0,,https://madmobile-eng.atlassian.net/browse/CM-90
+K8s Extended Support - marvel-cloud-apac-dr,Retail,k8s_support,,2025-10-08,360.0,4320.0,,https://madmobile-eng.atlassian.net/browse/CM-92
+K8s Extended Support - marvel-cloud-eu-dr,Retail,k8s_support,,2025-10-09,360.0,4320.0,,https://madmobile-eng.atlassian.net/browse/CM-95
+K8s Extended Support - marvel-cloud-qa-dr,Retail,k8s_support,,2025-10-21,360.0,4320.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-715
+Stop idle servers on Retail DR account,Retail,resource_cleanup,,2026-01-14,370.0,4440.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-934
+Remove Sentry - Deactivated,Retail,account_closure,,2026-03-03,1750.0,21000.0,,
+Removed all nodes used by Loki on the dev/qa retail cluster,Retail,tool_removal,,2026-03-27,788.0,9456.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-701
+K8s 1.30 to 1.34 - marvel-cloud-prod-apac,Retail,k8s_support,,2026-03-31,438.0,5256.0,,https://madmobile-eng.atlassian.net/browse/CM-91
+K8s 1.30 to 1.34 - marvel-cloud-prod-us,Retail,k8s_support,,2026-04-06,438.0,5256.0,,https://madmobile-eng.atlassian.net/browse/CM-93
+Cleanup unused snapshots and volumes (retail prod-us account),Retail,volume_cleanup,,2026-04-07,2000.0,24000.0,now,https://madmobile-eng.atlassian.net/browse/CLOUD-1043
+K8s 1.30 to 1.34 - marvel-cloud-prod-eu,Retail,k8s_support,,2026-04-07,438.0,5256.0,,https://madmobile-eng.atlassian.net/browse/CM-94
+QA Data Platform reduction,CAKE,other,,,170.0,2048.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-681
+Deleted unused volumes on Cake Dev (2018–2023),CAKE,volume_cleanup,,,170.0,2048.0,,
+Terminate stopped instances on the cake-dev account,CAKE,resource_cleanup,,2025-09-29,828.0,9936.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-696
+PCI Logging - Closed Account,CAKE,account_closure,,2025-10-07,250.0,3000.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-728
+Cake Backup - Closed Account,CAKE,account_closure,,2025-10-07,147.0,1764.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-730
+Marvel Hosting - Closed Account,CAKE,account_closure,,2025-10-07,130.0,1560.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-731
+AI Research - Closed Account,CAKE,account_closure,,2025-10-07,350.0,4200.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-733
+NAT Gateways across two regions - Cleanup,CAKE,resource_cleanup,,2025-10-09,196.0,2352.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+EBS Volumes - Closed Account,CAKE,account_closure,,2025-10-09,599.56,7194.72,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+menupad-stg and sentry-ecom - RDS Instances,CAKE,tool_removal,,2025-10-09,177.21,2126.52,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+VPN Structure Cleanup,CAKE,resource_cleanup,,2025-10-09,442.87,5314.44,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+13 Unused Elastic IPs,CAKE,resource_cleanup,,2025-10-13,46.8,561.6,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+S3 - Retired Resources,CAKE,resource_cleanup,,2025-10-09,176.64,2119.68,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+Load Balancers,CAKE,resource_cleanup,,2025-10-09,158.03,1896.36,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+Payments (non-prod) - Closed Account,CAKE,account_closure,,2025-10-15,247.0,2964.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-729
+CAKE New Stag - Closed Account,CAKE,account_closure,,2025-10-16,2.6,31.2,,https://madmobile-eng.atlassian.net/browse/CLOUD-746
+CAKE New Development - Closed Account,CAKE,account_closure,,2025-10-16,6.16,73.92,,https://madmobile-eng.atlassian.net/browse/CLOUD-747
+User cleanup,CAKE,resource_cleanup,,2025-10-16,122.0,1464.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-748
+Directory Service - Cleanup,CAKE,resource_cleanup,,2025-10-17,32.54,390.48,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+Work Spaces - Cleanup,CAKE,resource_cleanup,,2025-10-17,9.06,108.72,,https://madmobile-eng.atlassian.net/browse/CLOUD-737
+Cleanup MM-Archive account,CAKE,resource_cleanup,,2025-10-17,410.0,4920.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-752
+K8s Extended Support -  sd-eks-east2,CAKE,k8s_support,,2025-10-17,360.0,4320.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-712
+Elasticsearch reduction (QA Env),CAKE,resource_cleanup,,2025-10-22,1186.97,14243.64,,https://madmobile-eng.atlassian.net/browse/CLOUD-682
+Cake-Sandbox01 - Closed Account,CAKE,account_closure,,2025-10-22,1200.0,14400.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-745
+Customer Anayltics - Closed Account,CAKE,account_closure,,2025-10-16,2.44,29.28,,https://madmobile-eng.atlassian.net/browse/CLOUD-751
+Decomission POS1 RDS Instance,CAKE,resource_cleanup,,2025-10-22,477.23,5726.76,,https://madmobile-eng.atlassian.net/browse/CLOUD-757
+K8s Extended Support - ss-eks-east2,CAKE,k8s_support,,2025-10-23,360.0,4320.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-713
+Decomission prod-monitor (prometheus) idle server on cake prod,CAKE,tool_removal,,2025-12-16,227.76,2733.12,,https://madmobile-eng.atlassian.net/browse/CLOUD-867
+sandbox-pulse-writer - Closed Account,CAKE,account_closure,,2025-12-30,160.48,1925.76,,https://madmobile-eng.atlassian.net/browse/CLOUD-876
+Terminate stopped EC2s (19 Instances),CAKE,resource_cleanup,,2025-12-29,42.56,510.72,,https://madmobile-eng.atlassian.net/browse/CLOUD-870
+Deleted unused load balancers and assoicated target groups,CAKE,resource_cleanup,,2025-12-31,36.0,432.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-879
+Decommission nat-06741ec1af03a2c52 Nat Gateway in us-east-2 Region,CAKE,resource_cleanup,,2026-01-05,13.01,156.12,,https://madmobile-eng.atlassian.net/browse/CLOUD-882
+Decommission nat-06195c6172bca166a Nat Gateway in us-west-2 Region,CAKE,resource_cleanup,,2026-01-05,13.01,156.12,,https://madmobile-eng.atlassian.net/browse/CLOUD-885
+Decommission nat-0226974c41d5909e6 Nat Gateway in us-west-2 Region,CAKE,resource_cleanup,,2026-01-05,13.01,156.12,,https://madmobile-eng.atlassian.net/browse/CLOUD-886
+Decommission nat-0227359ae429576fd Nat Gateway in us-west-2 Region,CAKE,resource_cleanup,,2026-01-05,13.01,156.12,,https://madmobile-eng.atlassian.net/browse/CLOUD-887
+Decommission nat-0fe5722dd3bb18348 Nat Gateway in us-west-2 Region,CAKE,resource_cleanup,,2026-01-05,13.01,156.12,,https://madmobile-eng.atlassian.net/browse/CLOUD-890
+Delete all Idle EBS Storages,CAKE,volume_cleanup,,2025-01-06,454.64,5455.68,,https://madmobile-eng.atlassian.net/browse/CLOUD-893
+Convert Volume Type form GP2 to GP3 in i-0abe385a489944a41 (DockerPos) Instance,CAKE,volume_cleanup,,2026-01-12,9.06,108.72,,https://madmobile-eng.atlassian.net/browse/CLOUD-908
+Decomission all Idle Volumes in us-east-1 Region in CAKE Production (758050458312) Account,CAKE,volume_cleanup,,2026-01-12,132.4,1588.8,,https://madmobile-eng.atlassian.net/browse/CLOUD-921
+Delete Idle EBS Volumes,CAKE,volume_cleanup,,2026-01-12,25.6,307.2,,https://madmobile-eng.atlassian.net/browse/CLOUD-930
+Investigate on i-0238a0f9f2afd1bdb Server and Decomission,CAKE,other,,2026-01-14,66.05,792.6,,https://madmobile-eng.atlassian.net/browse/CLOUD-929
+Delete Unused EBS Volumes in us-east-1 Region,CAKE,volume_cleanup,,2026-01-05,39.54,474.48,,https://madmobile-eng.atlassian.net/browse/CLOUD-880
+Disable go-daddy domains not being used,CAKE,tool_removal,,2026-02-09,178.7,2144.37,,https://madmobile-eng.atlassian.net/browse/CLOUD-969
+Shut down all TST3 Clusters,CAKE,env_decommission,,2026-02-24,2265.0,27181.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-990
+Deleted all redis and memcached for the dev env tst2,CAKE,env_decommission,,2026-02-24,239.44,2873.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-989
+"Found instances for the pos2 env, which had the same destiny (destroyed)",CAKE,env_decommission,,2026-02-24,64.24,771.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-989
+Stopped the server i-07449058a40785eb0 (tst1-api-new (ha-proxy)).,CAKE,env_decommission,,2026-02-27,204.54,2454.48,,https://madmobile-eng.atlassian.net/browse/CLD-2371
+tst2 Environment Decommission,CAKE,env_decommission,,2026-03-03,2141.0,25692.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-993
+Decomission pos2-esb-v2 Instance,CAKE,env_decommission,,2026-03-20,31.45,377.4,,https://madmobile-eng.atlassian.net/browse/CLD-2402
+Removed all nodes used by Loki on the dev/qa retail cluster,CAKE,tool_removal,,2026-03-27,788.0,9456.0,,https://madmobile-eng.atlassian.net/browse/CLOUD-701

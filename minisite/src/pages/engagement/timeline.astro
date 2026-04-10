@@ -1,17 +1,28 @@
 ---
 export const prerender = true;
 
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import MetricCard from '../../components/MetricCard.astro';
 import MilestoneStep from '../../components/MilestoneStep.astro';
 import TabulatorGrid from '../../components/TabulatorGrid.astro';
 
+const scheduleRaw = readFileSync(resolve(process.cwd(), '../interview_schedule.json'), 'utf-8');
+const interviewSchedule = JSON.parse(scheduleRaw);
+const scheduleSessions: any[] = interviewSchedule.sessions;
+const scheduleSessionTotal = scheduleSessions.length;
+const scheduleInterviewTotal = scheduleSessions.filter(
+  (s: any) => s.format !== 'debrief' && s.format !== 'group-informal',
+).length;
+const onsiteSessionsSummary = `${scheduleSessionTotal} sessions (${scheduleInterviewTotal} interviews)`;
+
 const openItems = [
   { item: 'Scan neo-workspace repo (Winmark/Neo codebase) — file tree, languages, architecture, CI/CD', owner: 'Adam', deadline: 'Apr 7', status: 'In Progress', category: 'Data Gap' },
   { item: 'Scan Winmark Jira board (WM project, board 1712) — epics, velocity, team', owner: 'Adam', deadline: 'Apr 7', status: 'In Progress', category: 'Data Gap' },
-  { item: 'W2 interview replacement (Rajik Gunatilaka departed)', owner: 'Adam', deadline: 'Apr 8', status: 'In Progress', category: 'Coordination' },
-  { item: 'PREFERRED interview sessions — Ana booking next batch', owner: 'Ana', deadline: 'Apr 8', status: 'In Progress', category: 'Coordination' },
+  { item: 'W2 / Sri Lanka slot — Wenushka Dikowita confirmed (SL coverage)', owner: 'Adam', deadline: 'Apr 8', status: 'Complete', category: 'Coordination' },
+  { item: 'PREFERRED interview sessions — all confirmed', owner: 'Ana', deadline: 'Apr 8', status: 'Complete', category: 'Coordination' },
   { item: 'Survey response rate monitoring (13 of 57 so far)', owner: 'Adam', deadline: 'Apr 10', status: 'In Progress', category: 'Coordination' },
   { item: 'Enterprise Solutions org detail (Zubair — 58 people)', owner: 'Chathura', deadline: 'Apr 9', status: 'In Progress', category: 'Data Gap' },
   { item: 'Incident/RCA docs for last 90 days', owner: 'Chathura', deadline: 'Apr 9', status: 'In Progress', category: 'Data Gap' },
@@ -138,7 +149,7 @@ const accessColumns = [
       <MilestoneStep
         date="Apr 6–7"
         title="MUST interviews booked — all TBD slots filled by Chathura"
-        detail="Ana booked all MUST sessions. Chathura confirmed 6 TBD interview slots (Baine, Oliver, Budd, Akula, Renard, Lee). Surveys sent to 57 recipients (~5 responses). Guru 103 users confirmed. MS Graph API in IT/Security review. Rajik Gunatilaka (SL Country Head) departed — W2 slot needs replacement. Jeremy Diggins flagged as potentially unavailable (client onsite)."
+        detail="Ana booked all MUST sessions. Chathura confirmed 6 TBD interview slots (Baine, Oliver, Budd, Akula, Renard, Lee). Surveys sent to 57 recipients (~5 responses). Guru 103 users confirmed. MS Graph API in IT/Security review. Wenushka Dikowita confirmed for the Sri Lanka (W2) slot. Jeremy Diggins flagged as potentially unavailable (client onsite)."
         status="active"
       />
       <MilestoneStep
@@ -156,7 +167,7 @@ const accessColumns = [
       <MilestoneStep
         date="Apr 13–15"
         title="Onsite diagnostic sprint"
-        detail="Tampa HQ. 18–21 interviews, architecture walkthroughs, value stream mapping, real case tracing."
+        detail={`Tampa HQ. ${onsiteSessionsSummary}, architecture walkthroughs, value stream mapping, real case tracing.`}
         status="upcoming"
       />
       <MilestoneStep
