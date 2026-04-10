@@ -30,8 +30,8 @@ const matrix = [
 const timeline = [
   { date: 'Apr 1–3', milestone: 'Survey instruments finalized, reviewed, Forms built' },
   { date: 'Apr 6', milestone: 'Deployed — Chathura sent to 57 recipients (engineering, product, QE, design, cross-functional)' },
-  { date: 'Apr 7', milestone: '~5 responses received (~9% response rate). Monitoring.' },
-  { date: 'Apr 10', milestone: 'Response deadline (3 business days)' },
+  { date: 'Apr 7', milestone: '~13 responses received (~23% response rate). Monitoring.' },
+  { date: 'Apr 10', milestone: '38 responses received (67%). Surveys closed.' },
   { date: 'Apr 11', milestone: 'Pre-onsite analysis: score, segment, identify themes' },
   { date: 'Apr 13–15', milestone: 'Onsite: use survey results to guide interview probes' },
 ];
@@ -89,10 +89,10 @@ const milestones = [
   { date: 'Apr 1-3', title: 'Survey instruments finalized', detail: 'All 5 instruments reviewed, question sets locked, scoring guides prepared.', status: 'complete' as const },
   { date: 'Apr 4', title: 'DevEx draft live in Microsoft Forms', detail: 'First survey built. Link: forms.cloud.microsoft/r/021mP98Sf9', status: 'complete' as const },
   { date: 'Apr 5', title: 'All 5 surveys built in Microsoft Forms', detail: 'DORA (9q), Westrum (7q), Pragmatic Engineer (15q), AI Adoption & Tooling (20q) built. DevEx (23q) was already live. All links ready for distribution.', status: 'complete' as const },
-  { date: 'Apr 5', title: 'AI Adoption & Tooling — follow-up sent', detail: "Survey 5 link sent to Chathura. His intro email only references 4 surveys — pending his confirmation to include the 5th.", status: 'active' as const },
-  { date: 'Apr 6', title: 'Chathura sends intro as CDO', detail: 'Survey links distributed to all engineering, product, design, and QE via Chathura\'s intro email.', status: 'upcoming' as const },
-  { date: 'Apr 10', title: 'Response deadline', detail: '3 business days. Reminder sent to incomplete respondents.', status: 'upcoming' as const },
-  { date: 'Apr 10-11', title: 'Surveys close + pre-onsite analysis', detail: 'Score all instruments, segment by team/product area, identify top patterns, build interview questions.', status: 'upcoming' as const },
+  { date: 'Apr 5', title: 'AI Adoption & Tooling — confirmed by Chathura', detail: "Survey 5 link sent to Chathura and confirmed for inclusion. All 5 surveys deployed.", status: 'complete' as const },
+  { date: 'Apr 6', title: 'Chathura sends intro as CDO', detail: 'Survey links distributed to all engineering, product, design, and QE via Chathura\'s intro email.', status: 'complete' as const },
+  { date: 'Apr 10', title: '38 responses received — surveys closed', detail: '67% response rate (38 of 57). Well above minimum threshold for usable survey data.', status: 'active' as const },
+  { date: 'Apr 10-12', title: 'Pre-onsite analysis', detail: 'Score all instruments, segment by team/product area, identify top patterns, build interview questions. Final prep Sunday evening.', status: 'active' as const },
 ];
 ---
 
@@ -105,10 +105,10 @@ const milestones = [
 
   <div class="grid sm:grid-cols-2 gap-4 mb-8">
     <FindingCard
-      severity="amber"
-      title="Survey 5 Inclusion — Link Sent to Chathura"
-      detail="All 5 surveys built. Chathura's intro email references 4 surveys. AI Adoption & Tooling link (20 questions) sent April 5 — pending his confirmation to include as 5th survey."
-      status="Awaiting Response"
+      severity="green"
+      title="All 5 Surveys Deployed — Chathura Confirmed"
+      detail="All 5 surveys deployed to 57 recipients via Chathura's CDO intro email. AI Adoption & Tooling (Survey 5) confirmed and included. 38 responses received (67%) by April 10 deadline."
+      status="Confirmed"
     />
     <FindingCard
       severity="green"
@@ -120,7 +120,7 @@ const milestones = [
   <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
     <MetricCard label="Surveys" value="5" subtitle={`${totalQuestions} total questions`} />
     <MetricCard label="Recipients" value="57" subtitle="Sent by Chathura Apr 6" />
-    <MetricCard label="Responses" value="~5" subtitle="~9% rate. Deadline Apr 10" />
+    <MetricCard label="Responses" value="38" subtitle="67% rate. Closed Apr 10" />
     <MetricCard label="Platform" value="MS Forms" subtitle="On MM account" />
   </dl>
 
@@ -231,7 +231,7 @@ const milestones = [
         <p>Thanks,<br />Don</p>
       </div>
     </div>
-    <p class="text-xs text-[var(--text-muted)] mt-3 leading-relaxed">Note: Chathura finalized his own version of this message. His version references 4 surveys (dropped AI Adoption & Tooling). All 5 surveys now built with links. AI Adoption & Tooling link sent to Chathura April 5 — awaiting confirmation to include as 5th survey.</p>
+    <p class="text-xs text-[var(--text-muted)] mt-3 leading-relaxed">Note: Chathura finalized his own version of this message. All 5 surveys confirmed and deployed April 6. 38 responses received by deadline (67% of 57 recipients).</p>
   </div>
 
   <h2 class="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-4">Survey Details</h2>

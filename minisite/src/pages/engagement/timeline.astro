@@ -23,9 +23,9 @@ const openItems = [
   { item: 'Scan Winmark Jira board (WM project, board 1712) — epics, velocity, team', owner: 'Adam', deadline: 'Apr 7', status: 'In Progress', category: 'Data Gap' },
   { item: 'W2 / Sri Lanka slot — Wenushka Dikowita confirmed (SL coverage)', owner: 'Adam', deadline: 'Apr 8', status: 'Complete', category: 'Coordination' },
   { item: 'PREFERRED interview sessions — all confirmed', owner: 'Ana', deadline: 'Apr 8', status: 'Complete', category: 'Coordination' },
-  { item: 'Survey response rate monitoring (13 of 57 so far)', owner: 'Adam', deadline: 'Apr 10', status: 'In Progress', category: 'Coordination' },
+  { item: 'Survey response rate monitoring (38 of 57, 67%)', owner: 'Adam', deadline: 'Apr 10', status: 'Complete', category: 'Coordination' },
   { item: 'Enterprise Solutions org detail (Zubair — 58 people)', owner: 'Chathura', deadline: 'Apr 9', status: 'In Progress', category: 'Data Gap' },
-  { item: 'Incident/RCA docs for last 90 days', owner: 'Chathura', deadline: 'Apr 9', status: 'In Progress', category: 'Data Gap' },
+  { item: 'Incident/RCA docs for last 90 days — 5 executive RCAs received', owner: 'Chathura', deadline: 'Apr 9', status: 'Complete', category: 'Data Gap' },
   { item: 'Grafana — 3 instances confirmed (CAKE, Retail, Payments)', owner: 'Ana → Matias', deadline: 'Apr 7', status: 'Complete', category: 'Access' },
   { item: 'Microsoft Graph API — access confirmed and working', owner: 'Ana → IT', deadline: 'Apr 7', status: 'Complete', category: 'Access' },
   { item: 'CloudTrail LookupEvents — Chathura approved, waiting on IT to add to role', owner: 'IT', deadline: 'Apr 7', status: 'Confirmed', category: 'Access' },
@@ -33,7 +33,7 @@ const openItems = [
   { item: 'Jira incident query (2024–2026 gap in RCA timeline)', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Data Gap' },
   { item: 'Root Cause Category field #2 (customfield_10590)', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Data Gap' },
   { item: 'Branch protection validation (project-level vs repo-level)', owner: 'Adam', deadline: 'Apr 7', status: 'Pending', category: 'Data Gap' },
-  { item: 'Jeremy Diggins availability — "at a client onsite that week"', owner: 'Adam', deadline: 'Apr 8', status: 'Pending', category: 'Coordination' },
+  { item: 'Jeremy Diggins availability — confirmed for W4 Wednesday', owner: 'Adam', deadline: 'Apr 8', status: 'Complete', category: 'Coordination' },
   { item: 'L&D reporting discrepancy (Dulanjan vs Shatney)', owner: 'Adam', deadline: 'Onsite', status: 'Pending', category: 'Clarification' },
   { item: 'Andy Honnold dual-report (Garcia vs Akshay)', owner: 'Adam', deadline: 'Onsite', status: 'Pending', category: 'Clarification' },
   { item: 'MUST interview sessions booked by Ana', owner: 'Ana', deadline: 'Apr 6', status: 'Complete', category: 'Coordination' },
@@ -86,7 +86,7 @@ const accessColumns = [
     <MetricCard label="Pre-Work" value="7 rounds" subtitle="V1–V7 complete" />
     <MetricCard label="Data Artifacts" value="31 charts, 17 CSVs" subtitle="94 Confluence pages extracted" />
     <MetricCard label="Access" value="9 of 10" subtitle="Only CloudWatch alarms pending" />
-    <MetricCard label="Surveys" value="~13 responses" subtitle="~23% of 57 recipients. Deadline Apr 10" />
+    <MetricCard label="Surveys" value="38 responses" subtitle="67% of 57 recipients. Closed Apr 10" />
   </dl>
 
   <div class="mb-10">
@@ -149,20 +149,20 @@ const accessColumns = [
       <MilestoneStep
         date="Apr 6–7"
         title="MUST interviews booked — all TBD slots filled by Chathura"
-        detail="Ana booked all MUST sessions. Chathura confirmed 6 TBD interview slots (Baine, Oliver, Budd, Akula, Renard, Lee). Surveys sent to 57 recipients (~5 responses). Guru 103 users confirmed. MS Graph API in IT/Security review. Wenushka Dikowita confirmed for the Sri Lanka (W2) slot. Jeremy Diggins flagged as potentially unavailable (client onsite)."
-        status="active"
+        detail="Ana booked all MUST sessions. Chathura confirmed 6 TBD interview slots (Baine, Oliver, Budd, Akula, Renard, Lee). All 27 sessions confirmed on Microsoft calendar by April 9. Wenushka Dikowita (W2) and Jeremy Diggins (W4) resolved. 38 survey responses received (67% of 57)."
+        status="complete"
       />
       <MilestoneStep
-        date="Apr 6–8"
-        title="Don Sessions 2 and 3"
-        detail="Session 2: political landscape and hypotheses. Session 3: pre-onsite briefing with synthesized findings."
-        status="upcoming"
+        date="Apr 6–10"
+        title="Don Sessions 2, 3, and pre-onsite touchbase"
+        detail="Session 2: political landscape and hypotheses. Session 3: pre-onsite briefing with synthesized findings. Friday April 10 evening: final touchbase — synced on current status, aligned on Don's goals for next week."
+        status="complete"
       />
       <MilestoneStep
-        date="Apr 10–11"
+        date="Apr 10–12"
         title="Survey close and final prep"
-        detail="Survey analysis same day. Final hypothesis scorecard update. Print onsite materials. Pre-onsite briefing with Don."
-        status="upcoming"
+        detail="Surveys closed April 10 with 38 responses (67%). Don touchbase complete. Final prep Sunday evening: survey analysis, hypothesis scorecard, onsite materials, interview question review."
+        status="active"
       />
       <MilestoneStep
         date="Apr 13–15"

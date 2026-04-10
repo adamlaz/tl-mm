@@ -1,6 +1,6 @@
 # Mad Mobile Engagement — Current State & Context
 
-**Date:** April 9, 2026 (updated April 9 PM with: **Onsite schedule fully confirmed** — 27 sessions verified via Microsoft Graph calendar API (23 interviews + 1 leadership lunch + 3 Don debriefs). 4 new additions: Matias Riglos, Manuel Garcia, Kevin Reyes, Leadership Team Lunch. W2 (Wenushka Dikowita) and W4 (Jeremy Diggins) resolved. interview_schedule.json bumped to v3.0. Grid, engagement state, minisite, and interview prep all updated. Ana and Don comms drafted. Earlier April 9: RCA docs received from Chathura — 5 executive RCAs, 3 new charts, minisite updated, interview prep enriched. AWS Cost Savings spreadsheet from Ana — 71 initiatives, $367K/yr savings. Previous: April 7 — MUST interviews booked, 6 TBD slots confirmed, Rajik departed, survey sent to 57 recipients, Guru 103 users confirmed, MS Graph API active)
+**Date:** April 10, 2026 (updated April 10 PM with: **Surveys closed — 38 responses of 57 (67%)**. Don touchbase Friday evening — synced on current status, aligned on his goals for next week. Final prep Sunday evening. **Onsite Monday morning** — arriving Mad Mobile Tampa HQ first thing. Previous April 9 PM: Onsite schedule fully confirmed — 27 sessions verified via Microsoft Graph calendar API (23 interviews + 1 leadership lunch + 3 Don debriefs). 4 new additions: Matias Riglos, Manuel Garcia, Kevin Reyes, Leadership Team Lunch. W2 (Wenushka Dikowita) and W4 (Jeremy Diggins) resolved. interview_schedule.json bumped to v3.0. Grid, engagement state, minisite, and interview prep all updated. Ana and Don comms drafted. Earlier April 9: RCA docs received from Chathura — 5 executive RCAs, 3 new charts, minisite updated, interview prep enriched. AWS Cost Savings spreadsheet from Ana — 71 initiatives, $367K/yr savings. Previous: April 7 — MUST interviews booked, 6 TBD slots confirmed, Rajik departed, survey sent to 57 recipients, Guru 103 users confirmed, MS Graph API active)
 **Author:** Adam Lazarus (Director of Engineering, Legacybox | Translation Layer LLC)
 **Purpose:** Complete context transfer for system exploration and pre-work analysis
 
@@ -729,51 +729,40 @@ If a lead self-reports "weekly deploys" but their repos show biweekly merge cade
 - **Ana/Chathura reply processed** (April 6 morning) — both replied to combined email. Chathura confirmed: Survey 5 inclusion (yes), CloudTrail access (yes), L1 org names tomorrow, incident RCAs tomorrow, GitHub departing (cost), Bloom Intelligence moved to 3rd week of April. Ana confirmed: Winmark Bitbucket (`neo-workspace`) and Jira (WM board 1712), SaaS vendor spend partial data (two spreadsheets coming), Grafana "shortly", Graph API "checking", Guru "checking".
 - **Reply email drafted** (April 6 morning) — `monday-morning-reply.md` with confirms, Graph API exact steps for IT, and updated priorities.
 - **Vendor spend spreadsheets received** (April 6 morning) — Ana shared both files: `Software Spend_v1` (47 active vendors, per-cardholder Amex breakdowns, 47 canceled items) and `Software Spend_Updated 2026` (reduced spends tab showing ~29 vendors cut/reduced, ~$84K Cursor savings, ~$57K Dialpad savings, GitHub/Datadog/Instabug canceled). Files copied to `inventory/`. Bill.com and AWS Marketplace tabs still empty — Ana's next phase.
+- **Survey deadline reached** (April 10) — **38 responses of 57 (67%)**. Well above the ~30% minimum threshold for usable survey data. Response rate tripled from 13 (~23%) on April 7 to 38 (67%) by deadline.
+- **Don touchbase** (April 10 evening) — synced on current status and aligned on his goals for next week. Final pre-onsite alignment before Monday.
+- **All PREFERRED interview sessions confirmed** (April 9) — all 27 sessions on Microsoft calendar. 4 new additions: Matias Riglos, Manuel Garcia, Kevin Reyes, Leadership Team Lunch.
+- **Incident/RCA docs received and processed** (April 9) — 5 executive RCAs (Dec 2025 – Mar 2026). Structured into `rca_structured.json` (55 total), 3 new charts, minisite updated, interview prep enriched. Pattern analysis: `analysis/rca_pattern_analysis.md`.
+- **W2 interview replacement resolved** — Wenushka Dikowita confirmed for Wednesday 8:30am video session. Replaces departed Rajik Gunatilaka.
+- **W4 interview resolved** — Jeremy Diggins confirmed for Wednesday (was flagged as potentially unavailable due to client onsite).
+- **Microsoft Graph API calendar query** — all 27 onsite sessions verified. Saved to `inventory/calendar_onsite_schedule.json`.
 
 ### In Progress 🔄
-- ✅ Ana's vendor spend spreadsheets received (April 6 morning) — 2 files, 47 active vendors, 29 reduced/canceled. Cross-reference with AP data pending.
-- ~~Waiting on Ana: PREFERRED interview sessions~~ **DONE** — all 27 sessions confirmed on Microsoft calendar (April 9). Includes 4 new adds: Matias Riglos, Manuel Garcia, Kevin Reyes, Leadership Team Lunch.
 - Waiting on Ana: routing questions on Monvia, MenuPad, Relate (follow-up questions sent in AWS cost savings reply)
-- Waiting on Chathura: L1 org names for Enterprise Solutions (Zubair) — **Wednesday April 9** *(shifted from April 7 per Ana's update)*
-- ~~Waiting on Chathura: incident/RCA docs for last 90 days~~ — **RECEIVED April 9.** 5 executive RCAs (Dec 2025 – Mar 2026). Structured into `rca_structured.json` (55 total), 3 new charts, minisite updated, interview prep enriched for James Oliver, Michael Lee, Chathura, Randy Brown, Zubair, Akshay. Pattern analysis: `analysis/rca_pattern_analysis.md`.
+- Waiting on Chathura: L1 org names for Enterprise Solutions (Zubair) — **Wednesday April 9** *(shifted from April 7 per Ana's update)* — may arrive onsite
 - Waiting on IT: CloudTrail `cloudtrail:LookupEvents` added to audit role — Chathura approved
-- ~~W2 interview replacement~~ **DONE** — Wenushka Dikowita confirmed for Wednesday 8:30am video session. Replaces departed Rajik Gunatilaka.
 - Mercury banking setup for Translation Layer LLC
 - EIN pending from Northwest
 
-### Next Steps (This Week)
+### Next Steps
 
-**Today (April 7):**
-1. **Scan `neo-workspace` repo** via Bitbucket API — file tree, languages, commit history, CI/CD config. Most important new lead: if Winmark delivery lives in `neo-workspace`, Neo may be a real codebase, not just marketing.
-2. **Scan Winmark Jira board** (WM project, board 1712) — epics, sprint velocity, active work, team members assigned.
-3. **Grafana capture** — access confirmed (3 instances). Dashboard inventory, alert rules, data sources across CAKE, Retail, and Payments.
-4. ~~Microsoft Graph API queries~~ **DONE** — calendar query run April 9. All 27 onsite sessions verified. Saved to `inventory/calendar_onsite_schedule.json`. Org directory and Teams queries still pending.
-5. ~~Identify W2 replacement~~ **DONE** — Wenushka Dikowita confirmed (Wed 8:30am, video).
-6. **Monitor survey response rate** — 13 of 57 so far (~23%). Deadline April 10.
-7. ~~Confirm PREFERRED interview timings~~ **DONE** — all sessions confirmed via calendar April 9.
+**Sunday Evening (April 12) — Final Prep:**
+1. **Survey analysis** — score all 5 instruments (38 responses). Cross-reference DORA self-reports vs. actual system data. Segment by team/product area. Identify top patterns. Feed into interview questions.
+2. **Final hypothesis scorecard update** — score each hypothesis A–I based on all pre-work evidence including survey results.
+3. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine with survey insights.
+4. **Print/prep onsite materials** — C4 diagrams, org chart, key metrics one-pager, interview question sheets.
+5. **Travel logistics** — Uber from St. Pete to Tampa HQ, confirm room booking with Ana.
 
-**Wednesday (April 9):**
-7. **Intake Chathura's L1 org names** for Enterprise Solutions (Zubair's 58 people). *(shifted from April 7)*
-8. ~~**Intake Chathura's incident/RCA docs**~~ **DONE** — 5 executive RCAs received and processed. Structured data updated (55 total), 3 new charts, minisite updated, interview prep enriched, pattern analysis created.
-8. **Cross-reference Ana's vendor spend with AP data** — both spreadsheets received April 6. Amex data covers different vendors than Bill.com/AP data. Merge into unified vendor catalog.
-9. **Run CloudTrail queries** once `cloudtrail:LookupEvents` is granted — deployment frequency data from AWS.
-10. **Collect pre-read docs** as Ana's folder becomes available.
+**Monday (April 13) — Onsite Day 1:**
+6. **Arrive Mad Mobile Tampa HQ first thing (~8:00 AM).** Day 1: 9 sessions.
+7. Chathura (8:30–9:30), Jack Kennedy (9:45–10:30), Dulanjan W. (10:45–11:30), Leadership Team Lunch (12:00–1:00), David Strainick (1:30–2:15), Manuel Garcia (2:15–3:00), Mark Guilarte (3:00–3:45), Alexander Baine (3:45–4:30), Don debrief (4:30–5:00).
 
-**Tuesday–Wednesday (April 8–9):**
-11. **Don Sessions 2 and 3** — Session 2: political landscape. Session 3: pre-onsite briefing.
-12. **Full neo-workspace analysis** — architecture, dependencies, AI components, how it connects to CAKE/Concierge. Does the codebase support multiple clients or is it Winmark-specific?
-13. **Update Kennedy interview prep** — reframe: what are you building for Winmark, what's the tech stack, is any of it reusable, what does "Neo" actually mean vs. what Winmark is.
-14. **Gather independent evidence for Hypothesis B** — Jira epic churn/cancellation data, sprint scope change metrics across boards, roadmap revision history in Confluence.
-
-**Thursday–Friday (April 10–11):**
-15. **Survey analysis** — surveys close April 10. Analyze results same day. Cross-reference DORA self-reports vs. actual system data. Feed into interview questions.
-16. **Pre-onsite briefing with Don** (April 10–11) — final alignment session. Review survey results, confirm interview schedule, identify 5 real cases to trace.
-17. **Final hypothesis scorecard update** — score each hypothesis A–I based on all pre-work evidence.
-18. **Prep interview questions** — `interview-prep-with-data.md` has data-backed questions per interviewee, review and refine.
-
-**Pre-Onsite (April 11–12):**
-19. **Print/prep onsite materials** — C4 diagrams, org chart, key metrics one-pager, interview question sheets.
-20. **Travel logistics** — Uber from St. Pete to Tampa HQ, confirm room booking with Ana.
+**Still Open (Complete if Time Permits Before Sunday):**
+- **Neo-workspace repo scan** — file tree, languages, commit history, CI/CD, architecture.
+- **Winmark Jira board scan** — epics, sprint velocity, active work, team members.
+- **Grafana capture** — 3 instances confirmed. Dashboard inventory, alert rules, data sources.
+- **Cross-reference Ana's vendor spend with AP data** — merge into unified vendor catalog.
+- **Run CloudTrail queries** if IT has granted access.
 
 **Deprioritized:**
 - **Bloom Intelligence** — planning conversation moved to 3rd week of April per Chathura. No prep needed this week. Add to onsite questions for Dulanjan only.
